@@ -1,0 +1,1622 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Meta Ads CLI and MCP Explained: How It Changes Your Campaign Strategy in 2026</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d2423c3c625b.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/73ce3fa5b95f.woff2") format("woff2");
+}
+
+/* tokens */
+:root {
+  --background: rgb(250, 250, 249);
+  --foreground: rgb(16, 14, 13);
+  --primary: rgb(15, 23, 42);
+  --border: rgb(226, 232, 240);
+  --muted-foreground: rgb(144, 139, 133);
+  --surface: rgb(241, 245, 249);
+  --surface-2: rgb(248, 250, 252);
+  --muted: rgb(51, 65, 85);
+  --color-001: rgb(2, 6, 23);
+  --color-002: rgb(225, 228, 232);
+}
+
+:root {
+  /* fonts */
+  --font-body: Merriweather, serif;
+  --font-001: ui-monospace, monospace;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 12.25px;
+  --font-size-003: 14px;
+  --font-size-004: 16px;
+  --font-size-005: 18px;
+  --font-size-006: 20px;
+  --font-size-007: 24px;
+  --font-size-008: 26px;
+  --font-size-009: 36px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  --font-weight-005: 800;
+  /* lineHeights */
+  --line-height-001: 25.6px;
+  --line-height-002: 22.4px;
+  --line-height-003: 24px;
+  --line-height-004: 21px;
+  --line-height-005: 18px;
+  --line-height-006: 25.2px;
+  --line-height-007: 31.2px;
+  --line-height-008: 43.2px;
+  --line-height-009: 19.6px;
+  --line-height-010: 32.5px;
+  --line-height-011: 26px;
+  /* spacing */
+  --space-001: 1.8375px;
+  --space-002: 2px;
+  --space-003: 2.1px;
+  --space-004: 4.9px;
+  --space-005: 5.6px;
+  --space-006: 6px;
+  --space-007: 7px;
+  --space-008: 8px;
+  --space-009: 10px;
+  --space-010: 10.5px;
+  --space-011: 12px;
+  --space-012: 16px;
+  --space-013: 20px;
+  --space-014: 21px;
+  --space-015: 24px;
+  --space-016: 27px;
+  --space-017: 32px;
+  --space-018: 48px;
+  --space-019: 90px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 8px;
+  --radius-003: 12px;
+  --radius-004: 16px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+/* nodes */
+.cn0{display:block;color:var(--foreground);font-family:var(--font-body);font-size:var(--font-size-004);font-weight:var(--font-weight-001);font-style:normal;line-height:var(--line-height-003);letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{display:flex;max-width:1280px;padding-top:var(--space-015);padding-right:var(--space-015);padding-left:var(--space-015);flex-direction:column;margin-left:auto;margin-right:auto}
+.cn2{height:64px;display:block}
+.cn3{display:block}
+.cn4{height:64px;display:flex;justify-content:space-between;align-items:center}
+.cn5{width:161.406px;height:64px;display:flex;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;row-gap:var(--space-008);column-gap:var(--space-008);color:var(--color-001);font-size:var(--font-size-008);font-weight:var(--font-weight-005);line-height:var(--line-height-010);letter-spacing:-0.52px;cursor:pointer}
+.cn6{width:64px;height:64px;display:flex;justify-content:center;align-items:center}
+.cn7{width:64px;height:25px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 64 / 64;vertical-align:middle}
+.cn8{height:37px;display:flex;align-items:center;row-gap:var(--space-015);column-gap:var(--space-015)}
+.cn9{display:block;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--muted-foreground);font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-004);cursor:pointer}
+.cn10{display:block;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--muted-foreground);font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-004);cursor:pointer}
+.cn11{display:block;padding-top:var(--space-008);padding-right:var(--space-012);padding-bottom:var(--space-008);padding-left:var(--space-012);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:rgb(255, 255, 255);font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-004);background-color:var(--primary);cursor:pointer}
+.cn12{width:40px;height:40px;display:none;min-width:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;color:var(--primary);text-align:center;cursor:default}
+.cn13{width:24px;height:24px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn14{width:24px;height:24px;display:none;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn15{width:100%;display:block;max-width:1024px;margin-top:var(--space-018);margin-right:auto;margin-left:auto}
+.cn16{display:block;margin-bottom:var(--space-015)}
+.cn17{height:21px;display:flex;align-items:center;row-gap:var(--space-006);column-gap:var(--space-006);color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004);list-style-type:none;list-style-position:outside}
+.cn18{display:list-item}
+.cn19{display:inline;cursor:pointer}
+.cn20{display:list-item}
+.cn21{display:list-item}
+.cn22{display:inline;cursor:pointer}
+.cn23{display:list-item}
+.cn24{height:21px;display:list-item;overflow-x:hidden;overflow-y:hidden;color:var(--color-001);white-space:nowrap;text-wrap:nowrap}
+.cn25{display:block}
+.cn26{display:block;margin-bottom:var(--space-017)}
+.cn27{display:block;color:var(--color-001);font-size:var(--font-size-009);font-weight:var(--font-weight-005);line-height:39.6px;letter-spacing:-1.08px}
+.cn28{height:22px;display:flex;margin-top:var(--space-011);flex-wrap:wrap;align-items:center;row-gap:var(--space-011);column-gap:var(--space-011);color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004)}
+.cn29{display:block}
+.cn30{display:block}
+.cn31{display:block}
+.cn32{display:block}
+.cn33{display:block;padding-top:var(--space-002);padding-right:var(--space-008);padding-bottom:var(--space-002);padding-left:var(--space-008);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted);font-size:var(--font-size-001);font-weight:var(--font-weight-002);line-height:var(--line-height-005);background-color:var(--surface)}
+.cn34{display:block;line-height:var(--line-height-001)}
+.cn35{display:block}
+.cn36{height:153.562px;display:block;margin-bottom:var(--space-013)}
+.cn37{display:inline;font-weight:var(--font-weight-004)}
+.cn38{display:block}
+.cn39{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn40{display:block;margin-bottom:var(--space-013)}
+.cn41{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:decimal;list-style-position:outside}
+.cn42{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn43{display:inline;font-weight:var(--font-weight-004)}
+.cn44{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn45{display:inline;font-weight:var(--font-weight-004)}
+.cn46{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn47{display:inline;font-weight:var(--font-weight-004)}
+.cn48{display:block;margin-bottom:var(--space-013)}
+.cn49{display:block}
+.cn50{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn51{display:block;margin-bottom:var(--space-013)}
+.cn52{display:table;margin-top:var(--space-014);margin-bottom:var(--space-014);font-size:var(--font-size-003);line-height:var(--line-height-002);border-collapse:collapse;border-spacing:2px}
+.cn53{height:37.3906px;display:table-header-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn54{height:37.3906px;display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn55{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn56{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn57{height:37.3906px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn58{display:table-row-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn59{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn60{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn61{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn62{height:62.1875px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn63{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn64{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn65{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn66{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn67{height:62.1875px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn68{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn69{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn70{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn71{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn72{height:59.7812px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn73{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn74{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn75{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn76{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn77{height:59.7812px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn78{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn79{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn80{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn81{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn82{height:59.7812px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn83{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn84{display:block}
+.cn85{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn86{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:disc;list-style-position:outside}
+.cn87{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn88{display:inline;font-weight:var(--font-weight-004)}
+.cn89{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn90{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn91{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn92{display:list-item;margin-bottom:var(--space-006)}
+.cn93{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn94{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn95{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn96{display:list-item;margin-bottom:var(--space-006)}
+.cn97{display:block}
+.cn98{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn99{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:disc;list-style-position:outside}
+.cn100{display:list-item;margin-bottom:var(--space-006)}
+.cn101{display:list-item;margin-bottom:var(--space-006)}
+.cn102{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn103{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn104{display:list-item;margin-bottom:var(--space-006)}
+.cn105{display:list-item;margin-bottom:var(--space-006)}
+.cn106{display:block}
+.cn107{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn108{height:25.5938px;display:block;margin-bottom:var(--space-013)}
+.cn109{display:inline;font-weight:var(--font-weight-004)}
+.cn110{display:inline;font-weight:var(--font-weight-004)}
+.cn111{display:block}
+.cn112{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn113{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:decimal;list-style-position:outside}
+.cn114{height:76.7812px;display:list-item;margin-bottom:var(--space-006)}
+.cn115{display:inline;font-weight:var(--font-weight-004)}
+.cn116{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn117{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn118{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn119{height:25.5938px;display:list-item;margin-bottom:var(--space-006)}
+.cn120{display:inline;font-weight:var(--font-weight-004)}
+.cn121{height:25.5938px;display:list-item;margin-bottom:var(--space-006)}
+.cn122{display:inline;font-weight:var(--font-weight-004)}
+.cn123{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn124{display:inline;font-weight:var(--font-weight-004)}
+.cn125{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn126{height:25.5938px;display:list-item;margin-bottom:var(--space-006)}
+.cn127{display:inline;font-weight:var(--font-weight-004)}
+.cn128{display:block}
+.cn129{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn130{height:25.5938px;display:block;margin-bottom:var(--space-013)}
+.cn131{display:inline;text-decoration-line:underline;cursor:pointer}
+.cn132{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:disc;list-style-position:outside}
+.cn133{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn134{display:inline;font-weight:var(--font-weight-004)}
+.cn135{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn136{display:inline;font-weight:var(--font-weight-004)}
+.cn137{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn138{display:inline;font-weight:var(--font-weight-004)}
+.cn139{display:block;margin-bottom:var(--space-013)}
+.cn140{display:block}
+.cn141{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn142{display:block;margin-bottom:var(--space-013)}
+.cn143{display:block}
+.cn144{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn145{display:block;margin-bottom:var(--space-013)}
+.cn146{height:159.969px;display:block;margin-top:var(--space-015);margin-bottom:var(--space-015);padding-top:var(--space-012);padding-right:var(--space-013);padding-bottom:var(--space-012);padding-left:var(--space-013);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);overflow-x:auto;overflow-y:auto;color:var(--color-002);white-space:pre;text-wrap:nowrap;background-color:rgb(36, 41, 46)}
+.cn147{display:inline;font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002)}
+.cn148{display:inline}
+.cn149{display:inline}
+.cn150{display:inline}
+.cn151{display:inline}
+.cn152{display:inline}
+.cn153{display:inline}
+.cn154{display:inline}
+.cn155{display:inline}
+.cn156{display:inline}
+.cn157{display:inline}
+.cn158{display:block}
+.cn159{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn160{height:76.7812px;display:block;margin-bottom:var(--space-013)}
+.cn161{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn162{display:inline;text-decoration-line:underline;cursor:pointer}
+.cn163{display:block}
+.cn164{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn165{height:76.7812px;display:block;margin-bottom:var(--space-013)}
+.cn166{display:inline;text-decoration-line:underline;cursor:pointer}
+.cn167{display:block}
+.cn168{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn169{height:102.375px;display:block;margin-bottom:var(--space-013)}
+.cn170{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn171{display:block}
+.cn172{display:block;margin-top:var(--space-018);margin-bottom:var(--space-011);font-size:var(--font-size-007);font-weight:var(--font-weight-003);line-height:var(--line-height-007);letter-spacing:-0.24px}
+.cn173{height:102.375px;display:block;margin-bottom:var(--space-013)}
+.cn174{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn175{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn176{display:inline;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-003);line-height:var(--line-height-002);background-color:var(--surface)}
+.cn177{display:block}
+.cn178{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn179{display:block;margin-bottom:var(--space-013)}
+.cn180{display:table;margin-top:var(--space-014);margin-bottom:var(--space-014);font-size:var(--font-size-003);line-height:var(--line-height-002);border-collapse:collapse;border-spacing:2px}
+.cn181{display:table-header-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn182{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn183{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn184{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn185{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn186{display:table-row-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn187{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn188{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn189{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn190{height:60.9844px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn191{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn192{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn193{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn194{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn195{height:60.9844px;border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn196{display:inline;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-009);background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn197{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn198{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn199{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn200{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn201{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn202{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn203{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn204{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn205{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn206{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn207{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn208{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn209{display:block;margin-bottom:var(--space-013)}
+.cn210{display:block}
+.cn211{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn212{width:100%;display:table;margin-top:var(--space-014);margin-bottom:var(--space-014);font-size:var(--font-size-003);line-height:var(--line-height-002);border-collapse:collapse;border-spacing:2px}
+.cn213{display:table-header-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn214{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn215{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn216{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn217{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;background-color:var(--surface-2);border-collapse:collapse;border-spacing:2px}
+.cn218{display:table-row-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn219{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn220{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn221{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn222{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn223{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn224{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn225{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn226{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn227{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn228{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn229{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn230{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn231{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn232{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn233{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn234{border-width:1px;border-style:solid;border-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-010);padding-bottom:var(--space-007);padding-left:var(--space-010);vertical-align:middle;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn235{display:block;margin-bottom:var(--space-013)}
+.cn236{display:block}
+.cn237{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn238{display:block;margin-bottom:var(--space-013)}
+.cn239{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:disc;list-style-position:outside}
+.cn240{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn241{display:inline;font-weight:var(--font-weight-004)}
+.cn242{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn243{display:inline;font-weight:var(--font-weight-004)}
+.cn244{height:51.1875px;display:list-item;margin-bottom:var(--space-006)}
+.cn245{display:inline;font-weight:var(--font-weight-004)}
+.cn246{display:inline;text-decoration-line:underline;cursor:pointer}
+.cn247{display:block;margin-bottom:var(--space-013)}
+.cn248{display:block}
+.cn249{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn250{display:block;margin-bottom:var(--space-013)}
+.cn251{width:1024px;height:1px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:var(--space-017);margin-bottom:var(--space-017);overflow-x:hidden;overflow-y:hidden}
+.cn252{display:block;margin-top:var(--space-019);margin-bottom:var(--space-016);font-size:var(--font-size-009);font-weight:var(--font-weight-004);line-height:var(--line-height-008);letter-spacing:-0.72px}
+.cn253{display:block;margin-bottom:var(--space-013);padding-left:var(--space-015);list-style-type:decimal;list-style-position:outside}
+.cn254{display:list-item;margin-bottom:var(--space-006)}
+.cn255{display:list-item;margin-bottom:var(--space-006)}
+.cn256{display:list-item;margin-bottom:var(--space-006)}
+.cn257{display:list-item;margin-bottom:var(--space-006)}
+.cn258{display:list-item;margin-bottom:var(--space-006)}
+.cn259{display:list-item;margin-bottom:var(--space-006)}
+.cn260{display:list-item;margin-bottom:var(--space-006)}
+.cn261{display:list-item;margin-bottom:var(--space-006)}
+.cn262{display:block;margin-top:var(--space-018)}
+.cn263{display:block;color:var(--color-001);font-size:var(--font-size-008);font-weight:var(--font-weight-004);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn264{display:block;margin-top:var(--space-012)}
+.cn265{display:block;margin-bottom:var(--space-015)}
+.cn266{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn267{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn268{display:block;margin-bottom:var(--space-015)}
+.cn269{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn270{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn271{display:block;margin-bottom:var(--space-015)}
+.cn272{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn273{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn274{display:block;margin-bottom:var(--space-015)}
+.cn275{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn276{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn277{display:block;margin-bottom:var(--space-015)}
+.cn278{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn279{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn280{display:block;margin-bottom:var(--space-015)}
+.cn281{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn282{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn283{display:block}
+.cn284{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn285{display:block;margin-top:var(--space-006);color:var(--muted-foreground);line-height:var(--line-height-001)}
+.cn286{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:64px;padding-top:var(--space-017)}
+.cn287{display:block;color:var(--color-001);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn288{display:flex;margin-top:var(--space-012);flex-direction:column;row-gap:var(--space-008);column-gap:var(--space-008)}
+.cn289{display:block}
+.cn290{display:block;padding-top:var(--space-013);padding-right:var(--space-013);padding-bottom:var(--space-013);padding-left:var(--space-013);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);cursor:pointer}
+.cn291{height:22px;display:flex;margin-bottom:var(--space-008);align-items:center;row-gap:var(--space-011);column-gap:var(--space-011);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-005)}
+.cn292{display:block;padding-top:var(--space-002);padding-right:var(--space-008);padding-bottom:var(--space-002);padding-left:var(--space-008);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted);font-weight:var(--font-weight-002);background-color:var(--surface)}
+.cn293{display:block}
+.cn294{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn295{height:42px;margin-top:var(--space-006);overflow-x:hidden;overflow-y:hidden;color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004);-webkit-line-clamp:2}
+.cn296{display:block}
+.cn297{display:block;padding-top:var(--space-013);padding-right:var(--space-013);padding-bottom:var(--space-013);padding-left:var(--space-013);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);cursor:pointer}
+.cn298{height:22px;display:flex;margin-bottom:var(--space-008);align-items:center;row-gap:var(--space-011);column-gap:var(--space-011);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-005)}
+.cn299{display:block;padding-top:var(--space-002);padding-right:var(--space-008);padding-bottom:var(--space-002);padding-left:var(--space-008);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted);font-weight:var(--font-weight-002);background-color:var(--surface)}
+.cn300{display:block}
+.cn301{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn302{height:42px;margin-top:var(--space-006);overflow-x:hidden;overflow-y:hidden;color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004);-webkit-line-clamp:2}
+.cn303{display:block}
+.cn304{display:block;padding-top:var(--space-013);padding-right:var(--space-013);padding-bottom:var(--space-013);padding-left:var(--space-013);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);cursor:pointer}
+.cn305{height:22px;display:flex;margin-bottom:var(--space-008);align-items:center;row-gap:var(--space-011);column-gap:var(--space-011);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-005)}
+.cn306{display:block;padding-top:var(--space-002);padding-right:var(--space-008);padding-bottom:var(--space-002);padding-left:var(--space-008);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted);font-weight:var(--font-weight-002);background-color:var(--surface)}
+.cn307{display:block}
+.cn308{display:block;color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-006);letter-spacing:-0.18px}
+.cn309{height:42px;margin-top:var(--space-006);overflow-x:hidden;overflow-y:hidden;color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004);-webkit-line-clamp:2}
+.cn310{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:80px;padding-top:56px;padding-bottom:56px}
+.cn311{display:flex;flex-direction:column;row-gap:var(--space-017);column-gap:var(--space-017)}
+.cn312{display:flex;justify-content:space-between;align-items:center;row-gap:var(--space-015);column-gap:var(--space-015)}
+.cn313{height:26px;display:flex;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;row-gap:var(--space-008);column-gap:var(--space-008);color:var(--color-001);font-size:var(--font-size-006);font-weight:var(--font-weight-005);line-height:var(--line-height-011);letter-spacing:-0.2px;cursor:pointer}
+.cn314{width:40px;height:16px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 40 / 40;vertical-align:middle}
+.cn315{display:contents;min-width:0px}
+.cn316{display:flex;row-gap:4px;column-gap:4px}
+.cn317{display:block;padding-top:var(--space-006);padding-right:var(--space-009);padding-bottom:var(--space-006);padding-left:var(--space-009);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:rgb(255, 255, 255);font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-004);text-align:center;background-color:var(--primary);cursor:default}
+.cn318{display:block;padding-top:var(--space-006);padding-right:var(--space-009);padding-bottom:var(--space-006);padding-left:var(--space-009);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--muted-foreground);font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-004);text-align:center;cursor:default}
+.cn319{display:flex;flex-wrap:wrap;row-gap:var(--space-008);column-gap:var(--space-013);color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004)}
+.cn320{display:block;cursor:pointer}
+.cn321{display:block;cursor:pointer}
+.cn322{display:block;cursor:pointer}
+.cn323{display:block;cursor:pointer}
+.cn324{display:block;cursor:pointer}
+.cn325{display:block;cursor:pointer}
+.cn326{display:block;cursor:pointer}
+.cn327{display:block;color:var(--muted-foreground);font-size:var(--font-size-003);line-height:var(--line-height-004)}
+
+@media (max-width: 571px) {
+.cn1{padding-top:var(--space-012);padding-right:var(--space-012);padding-left:var(--space-012)}
+.cn8{display:none}
+.cn12{display:flex;min-width:0}
+.cn15{margin-top:var(--space-017)}
+.cn36{height:460.688px}
+.cn39{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn42{height:127.969px}
+.cn44{height:153.562px}
+.cn46{height:127.969px}
+.cn50{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn62{height:126.953px}
+.cn67{height:126.953px}
+.cn72{height:126.953px}
+.cn77{height:126.953px}
+.cn82{height:149.344px}
+.cn85{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn87{height:102.375px}
+.cn89{height:102.375px}
+.cn92{height:76.7812px}
+.cn98{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn101{height:25.5938px}
+.cn107{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn108{height:76.7812px}
+.cn112{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn114{height:179.156px}
+.cn119{height:76.7812px}
+.cn121{height:76.7812px}
+.cn123{height:102.375px}
+.cn126{height:76.7812px}
+.cn129{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn130{height:51.1875px}
+.cn133{height:153.562px}
+.cn135{height:127.969px}
+.cn137{height:179.156px}
+.cn141{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn144{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn159{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn160{height:230.344px}
+.cn164{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn165{height:255.938px}
+.cn168{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn169{height:281.531px}
+.cn172{margin-top:40px;margin-bottom:var(--space-009);font-size:var(--font-size-006);line-height:var(--line-height-011);letter-spacing:-0.2px}
+.cn173{height:332.719px}
+.cn178{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn190{height:172.141px}
+.cn195{height:172.141px}
+.cn211{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn237{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn240{height:127.969px}
+.cn242{height:127.969px}
+.cn244{height:127.969px}
+.cn249{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn251{width:343px}
+.cn252{margin-top:65px;margin-bottom:19.5px;font-size:var(--font-size-008);line-height:var(--line-height-010);letter-spacing:-0.52px}
+.cn310{margin-top:var(--space-018);padding-top:40px;padding-bottom:40px}
+.cn312{flex-direction:column;align-items:flex-start}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn36{height:230.344px}
+.cn39{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn44{height:76.7812px}
+.cn50{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn62{height:82.1719px}
+.cn67{height:85.7812px}
+.cn77{height:82.1719px}
+.cn82{height:82.1719px}
+.cn85{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn92{height:51.1875px}
+.cn98{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn107{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn108{height:51.1875px}
+.cn112{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn119{height:51.1875px}
+.cn121{height:51.1875px}
+.cn126{height:51.1875px}
+.cn129{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn133{height:76.7812px}
+.cn135{height:76.7812px}
+.cn137{height:76.7812px}
+.cn141{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn144{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn159{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn160{height:102.375px}
+.cn164{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn165{height:127.969px}
+.cn168{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn169{height:127.969px}
+.cn172{margin-top:44px;margin-bottom:11px;font-size:22px;line-height:28.6px;letter-spacing:-0.22px}
+.cn173{height:153.562px}
+.cn178{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn195{height:62.1875px}
+.cn211{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn237{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn249{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+.cn251{width:720px}
+.cn252{margin-top:75px;margin-bottom:22.5px;font-size:30px;line-height:36px;letter-spacing:-0.6px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1">
+      <header class="cn2">
+        <nav class="cn3">
+          <div class="cn4">
+            <a class="cn5" href="https://withbaker.com/">
+               
+              <span class="cn6">
+                 
+                <img class="cn7" alt="Baker logo" height="64" src="public/assets/cloned/images/d2fb094a4186.webp" width="64" />
+                 
+              </span>
+               BAKER 
+            </a>
+             
+            <div class="cn8">
+              <a class="cn9" href="https://withbaker.com/careers">
+                 Careers 
+              </a>
+               
+              <a class="cn10" href="https://app.withbaker.com/sign-in">
+                 Login 
+              </a>
+               
+              <a class="cn11" href="#contact">
+                 Secure the Partnership 
+              </a>
+               
+            </div>
+             
+            <button class="cn12" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+              <svg class="cn13" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"> <line x1="3" y1="6" x2="21" y2="6"></line> <line x1="3" y1="12" x2="21" y2="12"></line> <line x1="3" y1="18" x2="21" y2="18"></line> </svg>
+               
+              <svg class="cn14" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg>
+               
+            </button>
+             
+          </div>
+           
+        </nav>
+         
+      </header>
+       
+      <main class="cn15">
+        <nav class="cn16" aria-label="Breadcrumb">
+          <ol class="cn17">
+            <li class="cn18">
+              <a class="cn19" href="https://withbaker.com/">
+                Home
+              </a>
+               
+            </li>
+            <li class="cn20" aria-hidden="true">
+              /
+            </li>
+            <li class="cn21">
+              <a class="cn22" href="https://withbaker.com/blog">
+                Blog
+              </a>
+               
+            </li>
+            <li class="cn23" aria-hidden="true">
+              /
+            </li>
+            <li class="cn24">
+              Meta Ads CLI and MCP Explained: How It Changes Your Campaign Strategy in 2026
+            </li>
+          </ol>
+           
+        </nav>
+         
+        <article class="cn25">
+          <header class="cn26">
+            <h1 class="cn27">
+              Meta Ads CLI and MCP Explained: How It Changes Your Campaign Strategy in 2026
+            </h1>
+             
+            <div class="cn28">
+              <span class="cn29">
+                Baker Team
+              </span>
+               
+              <span class="cn30" aria-hidden="true">
+                ·
+              </span>
+               
+              <time class="cn31" datetime="2026-04-30T00:00:00.000Z">
+                April 30, 2026
+              </time>
+               
+              <span class="cn32" aria-hidden="true">
+                ·
+              </span>
+               
+              <span class="cn33">
+                Meta Ads
+              </span>
+               
+            </div>
+             
+          </header>
+           
+          <div class="cn34">
+            <div class="cn35">
+              <p class="cn36">
+                The Meta Ads CLI is an official command-line tool Meta released on April 29, 2026 that wraps the Meta Marketing API into terminal commands and lets AI agents like Claude and ChatGPT manage campaigns through an MCP server. At Baker, we have rebuilt our Meta Ads operations around the new CLI for B2B SaaS clients spending from $3K to $250K per month, and the headline finding is that 
+                <strong class="cn37">
+                  70-80% of the recurring work in a Meta account (audits, reporting, duplication, fatigue checks) can now be driven from natural language with deterministic execution
+                </strong>
+                . This guide is Baker’s CLI + MCP Operating Framework: what the CLI actually does, how to wire it to Claude or ChatGPT safely, and the five workflows that pay back in week one.
+              </p>
+               
+            </div>
+             
+            <section class="cn38">
+              <h2 class="cn39" id="why-the-meta-ads-cli-changes-the-operating-model">
+                Why the Meta Ads CLI Changes the Operating Model
+              </h2>
+               
+              <p class="cn40">
+                For a decade, programmatic Meta work meant writing Marketing API calls in Python or Node, owning auth flow, pagination, retry logic, and a brittle layer between the human strategist and the platform. The CLI collapses that stack into commands a media buyer can read and an LLM can generate [1]. Three implications:
+              </p>
+               
+              <ol class="cn41">
+                <li class="cn42">
+                  <strong class="cn43">
+                    The bottleneck moves from API knowledge to prompt and workflow design.
+                  </strong>
+                   Anyone who can describe a Meta operation in plain English can now execute it reliably.
+                </li>
+                <li class="cn44">
+                  <strong class="cn45">
+                    AI assistants become first-class operators.
+                  </strong>
+                   Claude or ChatGPT can plan and execute multi-step Meta workflows through an MCP server pointed at the CLI, without scraping the Ads Manager UI [2].
+                </li>
+                <li class="cn46">
+                  <strong class="cn47">
+                    The auditable surface improves.
+                  </strong>
+                   CLI commands are text, exit codes are deterministic (0 success, 3 auth error, 4 API error), and JSON output makes every change diff-able [1].
+                </li>
+              </ol>
+               
+              <p class="cn48">
+                For agencies and in-house teams, this is the same shift the Google Ads MCP triggered in October 2025: access moves from developers-only to marketer-friendly plain-English queries, with read-only access protecting against hallucinated changes [2].
+              </p>
+               
+            </section>
+             
+            <section class="cn49">
+              <h2 class="cn50" id="what-the-meta-ads-cli-actually-does">
+                What the Meta Ads CLI Actually Does
+              </h2>
+               
+              <p class="cn51">
+                According to Meta’s launch announcement (John Holstein, Matt Mayberry, Andrew Kutsy, Sanjay Patel), the CLI exposes the Meta Marketing API across five surfaces [1]:
+              </p>
+               
+              <table class="cn52">
+                <thead class="cn53">
+                  <tr class="cn54">
+                    <th class="cn55">
+                      Surface
+                    </th>
+                    <th class="cn56">
+                      Operations
+                    </th>
+                    <th class="cn57">
+                      Example Command
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="cn58">
+                  <tr class="cn59">
+                    <td class="cn60">
+                      Campaigns, ad sets, ads, creatives
+                    </td>
+                    <td class="cn61">
+                      create, list, update, delete (default PAUSED)
+                    </td>
+                    <td class="cn62">
+                      <code class="cn63">
+                        meta ads campaign create --name "Summer Sale" --objective OUTCOME_SALES --daily-budget 5000
+                      </code>
+                    </td>
+                  </tr>
+                  <tr class="cn64">
+                    <td class="cn65">
+                      Insights
+                    </td>
+                    <td class="cn66">
+                      spend, impressions, CTR, ROAS by date and breakdown
+                    </td>
+                    <td class="cn67">
+                      <code class="cn68">
+                        meta ads insights get --campaign_id CAMPAIGN_ID --fields=impressions,conversions --date-preset last_7d
+                      </code>
+                    </td>
+                  </tr>
+                  <tr class="cn69">
+                    <td class="cn70">
+                      Catalogs and product sets
+                    </td>
+                    <td class="cn71">
+                      catalog create, product add, set management
+                    </td>
+                    <td class="cn72">
+                      <code class="cn73">
+                        meta ads catalog create --name "Q2 SKUs"
+                      </code>
+                    </td>
+                  </tr>
+                  <tr class="cn74">
+                    <td class="cn75">
+                      Conversion pixels
+                    </td>
+                    <td class="cn76">
+                      create pixels, link to ad accounts and catalogs via datasets
+                    </td>
+                    <td class="cn77">
+                      <code class="cn78">
+                        meta ads pixel create --name "lead-form-v3"
+                      </code>
+                    </td>
+                  </tr>
+                  <tr class="cn79">
+                    <td class="cn80">
+                      Output formats
+                    </td>
+                    <td class="cn81">
+                      table (human), JSON (jq-compatible), TSV (shell pipelines)
+                    </td>
+                    <td class="cn82">
+                      <code class="cn83">
+                        --output json
+                      </code>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+               
+              <article class="cn84">
+                <h3 class="cn85" id="safety-defaults-baked-in">
+                  Safety defaults baked in
+                </h3>
+                 
+                <ul class="cn86">
+                  <li class="cn87">
+                    New campaigns, ad sets and ads are created in 
+                    <strong class="cn88">
+                      PAUSED
+                    </strong>
+                     state. Nothing spends until a human (or a second authenticated step) flips it live [1].
+                  </li>
+                  <li class="cn89">
+                    Automation flags 
+                    <code class="cn90">
+                      --no-input
+                    </code>
+                     and 
+                    <code class="cn91">
+                      --force
+                    </code>
+                     are opt-in, not default. Interactive prompts protect ad-hoc shell sessions from accidental writes.
+                  </li>
+                  <li class="cn92">
+                    Standard exit codes (
+                    <code class="cn93">
+                      0
+                    </code>
+                     success, 
+                    <code class="cn94">
+                      3
+                    </code>
+                     auth error, 
+                    <code class="cn95">
+                      4
+                    </code>
+                     API error) let CI pipelines fail fast and trigger alerts.
+                  </li>
+                  <li class="cn96">
+                    Tokens and secrets live in environment variables, not flags, keeping credentials out of shell history.
+                  </li>
+                </ul>
+                 
+              </article>
+               
+              <article class="cn97">
+                <h3 class="cn98" id="prerequisites">
+                  Prerequisites
+                </h3>
+                 
+                <ul class="cn99">
+                  <li class="cn100">
+                    Python 3.12 or newer
+                  </li>
+                  <li class="cn101">
+                    <code class="cn102">
+                      pip
+                    </code>
+                     or 
+                    <code class="cn103">
+                      uv
+                    </code>
+                     for installation
+                  </li>
+                  <li class="cn104">
+                    A Meta Business account with Marketing API access
+                  </li>
+                  <li class="cn105">
+                    A system user access token scoped to the ad accounts you want to manage
+                  </li>
+                </ul>
+                 
+              </article>
+               
+            </section>
+             
+            <section class="cn106">
+              <h2 class="cn107" id="how-mcp-connects-claude-and-chatgpt-to-the-cli">
+                How MCP Connects Claude and ChatGPT to the CLI
+              </h2>
+               
+              <p class="cn108">
+                The CLI is the 
+                <strong class="cn109">
+                  deterministic execution layer
+                </strong>
+                . MCP (Model Context Protocol) is the 
+                <strong class="cn110">
+                  bridge
+                </strong>
+                 that lets AI assistants invoke it.
+              </p>
+               
+              <article class="cn111">
+                <h3 class="cn112" id="the-baker-mcp-pattern-for-meta-ads">
+                  The Baker MCP Pattern for Meta Ads
+                </h3>
+                 
+                <ol class="cn113">
+                  <li class="cn114">
+                    <strong class="cn115">
+                      Wrap the CLI in an MCP server.
+                    </strong>
+                     Either build a thin server that exposes a few high-level tools (
+                    <code class="cn116">
+                      audit_account
+                    </code>
+                    , 
+                    <code class="cn117">
+                      pause_underperforming
+                    </code>
+                    , 
+                    <code class="cn118">
+                      pull_insights
+                    </code>
+                    ), or use a third-party server like Pipboard that already exposes Meta Ads operations to Claude [3].
+                  </li>
+                  <li class="cn119">
+                    <strong class="cn120">
+                      Scope the token.
+                    </strong>
+                     Read-only token first. Write-enabled token only when the workflow has a human approval step.
+                  </li>
+                  <li class="cn121">
+                    <strong class="cn122">
+                      Constrain the toolset.
+                    </strong>
+                     Expose 5-10 named CLI commands at most. Less surface = fewer hallucinated arguments.
+                  </li>
+                  <li class="cn123">
+                    <strong class="cn124">
+                      Force structured output.
+                    </strong>
+                     Always pass 
+                    <code class="cn125">
+                      --output json
+                    </code>
+                     so the model parses results deterministically instead of pattern-matching on table layouts.
+                  </li>
+                  <li class="cn126">
+                    <strong class="cn127">
+                      Log every run.
+                    </strong>
+                     Pipe CLI invocations to an append-only log so you can replay and audit any change the assistant made.
+                  </li>
+                </ol>
+                 
+              </article>
+               
+              <article class="cn128">
+                <h3 class="cn129" id="third-party-mcps-already-in-market">
+                  Third-party MCPs already in market
+                </h3>
+                 
+                <p class="cn130">
+                  According to the 
+                  <a class="cn131" href="#sources">
+                    Top 10 MCP Servers for PPC Marketers
+                  </a>
+                   review [3]:
+                </p>
+                 
+                <ul class="cn132">
+                  <li class="cn133">
+                    <strong class="cn134">
+                      Pipboard (Meta Ads):
+                    </strong>
+                     highly rated MCP for Facebook and Instagram Ads. Pulls account visualisations into Claude and executes live optimisations (pause campaigns, reallocate budgets) without logging into Business Manager.
+                  </li>
+                  <li class="cn135">
+                    <strong class="cn136">
+                      Google Ads Official MCP:
+                    </strong>
+                     released October 2025. Same pattern, validated. Marketer-friendly plain-English queries with read-only as default. Explore tier gives 2,800 free daily calls.
+                  </li>
+                  <li class="cn137">
+                    <strong class="cn138">
+                      Custom Agency MCPs:
+                    </strong>
+                     Session Media’s playbook is to wrap internal IP (offer libraries, ICP definitions, naming conventions) inside an MCP so the assistant always operates within the agency’s framework, not generic best practice [4].
+                  </li>
+                </ul>
+                 
+                <p class="cn139">
+                  The Meta Ads CLI now lets every team build the equivalent of Pipboard internally, scoped to their own accounts and conventions.
+                </p>
+                 
+              </article>
+               
+            </section>
+             
+            <section class="cn140">
+              <h2 class="cn141" id="the-five-cli--mcp-workflows-that-pay-back-in-week-one">
+                The Five CLI + MCP Workflows That Pay Back in Week One
+              </h2>
+               
+              <p class="cn142">
+                Baker’s CLI + MCP Operating Framework prioritises workflows by the gap between current manual time and post-CLI time.
+              </p>
+               
+              <article class="cn143">
+                <h3 class="cn144" id="workflow-1-daily-creative-fatigue-audit">
+                  Workflow 1: Daily Creative Fatigue Audit
+                </h3>
+                 
+                <p class="cn145">
+                  Pull hook rate, hold rate and 7-day frequency for every active ad. Flag anything below the thresholds Ralph Burns published (hook rate &lt;25%, hold rate &lt;30%) and anything above prospecting frequency cap (3 per 7 days) [5]. Pre-CLI: 45 minutes of clicking. With CLI + Claude: a 30-second natural-language ask that returns a ranked pause list.
+                </p>
+                 
+                <pre class="cn146">
+                  <code class="cn147">
+                    <span class="cn148">
+                      <span class="cn149">
+                        meta ads insights get \
+                      </span>
+                    </span>
+                    
+
+                    <span class="cn150">
+                      <span class="cn151">
+                          --level ad \
+                      </span>
+                    </span>
+                    
+
+                    <span class="cn152">
+                      <span class="cn153">
+                          --fields=ad_name,impressions,video_3s_rate,video_15s_rate,frequency \
+                      </span>
+                    </span>
+                    
+
+                    <span class="cn154">
+                      <span class="cn155">
+                          --date-preset last_7d \
+                      </span>
+                    </span>
+                    
+
+                    <span class="cn156">
+                      <span class="cn157">
+                          --output json
+                      </span>
+                    </span>
+                  </code>
+                </pre>
+                 
+              </article>
+               
+              <article class="cn158">
+                <h3 class="cn159" id="workflow-2-weekly-andromeda-diagnostics">
+                  Workflow 2: Weekly Andromeda Diagnostics
+                </h3>
+                 
+                <p class="cn160">
+                  Andromeda needs 6+ distinct visual concepts per campaign and consolidated ad set structures [6]. The CLI lists creatives with their 
+                  <code class="cn161">
+                    entity_id
+                  </code>
+                  , so a Claude prompt can count distinct concepts per campaign and flag thin libraries before delivery degrades. See 
+                  <a class="cn162" href="https://withbaker.com/blog/meta-ads-andromeda-algorithm-2026">
+                    Baker’s Andromeda Adaptation Framework
+                  </a>
+                   for the underlying thresholds.
+                </p>
+                 
+              </article>
+               
+              <article class="cn163">
+                <h3 class="cn164" id="workflow-3-capi-event-match-quality-monitoring">
+                  Workflow 3: CAPI Event Match Quality Monitoring
+                </h3>
+                 
+                <p class="cn165">
+                  Standard pixel and Shopify-Meta integrations are wrong roughly 56% of the time, which means the algorithm trains on bad signals before any creative or targeting issue matters [7]. The CLI exposes pixel and dataset health through the insights and pixel commands. A scheduled Claude run can post EMQ scores to Slack daily and flag drops below 7.0. See 
+                  <a class="cn166" href="https://withbaker.com/blog/meta-conversions-api-capi-lead-gen-setup">
+                    Baker’s CAPI setup guide
+                  </a>
+                  .
+                </p>
+                 
+              </article>
+               
+              <article class="cn167">
+                <h3 class="cn168" id="workflow-4-bulk-geographic-duplication">
+                  Workflow 4: Bulk Geographic Duplication
+                </h3>
+                 
+                <p class="cn169">
+                  Duplicating ad sets across 10 European countries used to mean 10 manual edits and 30 chances to leave audience expansion or audience network on by default. With the CLI, you template the ad set once in JSON, loop the country code, and run 
+                  <code class="cn170">
+                    meta ads adset create
+                  </code>
+                   per country with consistent settings. According to Session Media, this single change eliminates the most common source of LinkedIn and Meta misconfiguration in their accounts [4].
+                </p>
+                 
+              </article>
+               
+              <article class="cn171">
+                <h3 class="cn172" id="workflow-5-encac-reporting-joined-to-crm">
+                  Workflow 5: ENCAC Reporting Joined to CRM
+                </h3>
+                 
+                <p class="cn173">
+                  CLI insights export by 
+                  <code class="cn174">
+                    --date-preset
+                  </code>
+                   and 
+                  <code class="cn175">
+                    --breakdown
+                  </code>
+                  , then join in shell with a CRM export keyed on 
+                  <code class="cn176">
+                    lead_id
+                  </code>
+                  . The result is Effective New Customer Acquisition Cost (excluding repeat buyers, attributed via first-click CAPI) at the campaign level. According to John Moran (Tier 11), ENCAC is the only metric that survives iOS 14, Andromeda first-touch reweighting and cross-channel cannibalisation simultaneously [7]. Baker runs this as a weekly scheduled Claude job with the CLI under MCP.
+                </p>
+                 
+              </article>
+               
+            </section>
+             
+            <section class="cn177">
+              <h2 class="cn178" id="failure-modes-to-plan-for">
+                Failure Modes to Plan For
+              </h2>
+               
+              <p class="cn179">
+                The CLI is deterministic. The model orchestrating it is not. The Manus AI Meta automation analysis (Felipe Vergara) documents five failure modes that apply directly to any LLM-driven CLI workflow [8]:
+              </p>
+               
+              <table class="cn180">
+                <thead class="cn181">
+                  <tr class="cn182">
+                    <th class="cn183">
+                      Failure Mode
+                    </th>
+                    <th class="cn184">
+                      What Happens
+                    </th>
+                    <th class="cn185">
+                      CLI Mitigation
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="cn186">
+                  <tr class="cn187">
+                    <td class="cn188">
+                      Budget formatting
+                    </td>
+                    <td class="cn189">
+                      Model inputs monthly budget as daily, risking 30x overspend
+                    </td>
+                    <td class="cn190">
+                      Validate 
+                      <code class="cn191">
+                        --daily-budget
+                      </code>
+                       is &lt; monthly cap before exec; PAUSED default catches it
+                    </td>
+                  </tr>
+                  <tr class="cn192">
+                    <td class="cn193">
+                      Objective mixing
+                    </td>
+                    <td class="cn194">
+                      Model proposes two objectives per campaign, which Meta rejects
+                    </td>
+                    <td class="cn195">
+                      Lint the JSON plan before calling 
+                      <code class="cn196">
+                        campaign create
+                      </code>
+                      ; Meta API will also reject
+                    </td>
+                  </tr>
+                  <tr class="cn197">
+                    <td class="cn198">
+                      ROAS chasing
+                    </td>
+                    <td class="cn199">
+                      Model defunds prospecting to feed retargeting, starving the funnel
+                    </td>
+                    <td class="cn200">
+                      Constrain the toolset so the model cannot rebalance budget across campaigns autonomously
+                    </td>
+                  </tr>
+                  <tr class="cn201">
+                    <td class="cn202">
+                      Asset upload
+                    </td>
+                    <td class="cn203">
+                      Model cannot upload video/image files in remote environments
+                    </td>
+                    <td class="cn204">
+                      Keep humans on creative upload; CLI handles structural ops only
+                    </td>
+                  </tr>
+                  <tr class="cn205">
+                    <td class="cn206">
+                      Locale errors
+                    </td>
+                    <td class="cn207">
+                      Model generates wrong-locale voiceovers or copy
+                    </td>
+                    <td class="cn208">
+                      Pass locale as a required parameter in any creative-build prompt
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+               
+              <p class="cn209">
+                Baker’s rule: the CLI runs in a sandboxed environment with a kill switch, write-enabled commands require human approval, and the assistant’s first job on any new account is read-only audit, not write-back optimisation.
+              </p>
+               
+            </section>
+             
+            <section class="cn210">
+              <h2 class="cn211" id="the-30-day-cli-adoption-plan">
+                The 30-Day CLI Adoption Plan
+              </h2>
+               
+              <table class="cn212">
+                <thead class="cn213">
+                  <tr class="cn214">
+                    <th class="cn215">
+                      Week
+                    </th>
+                    <th class="cn216">
+                      Focus
+                    </th>
+                    <th class="cn217">
+                      Deliverable
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="cn218">
+                  <tr class="cn219">
+                    <td class="cn220">
+                      Week 1
+                    </td>
+                    <td class="cn221">
+                      Install CLI, scope read-only token, expose via MCP
+                    </td>
+                    <td class="cn222">
+                      Claude can answer questions about the account
+                    </td>
+                  </tr>
+                  <tr class="cn223">
+                    <td class="cn224">
+                      Week 2
+                    </td>
+                    <td class="cn225">
+                      Wire workflows 1 and 2 (creative fatigue, Andromeda)
+                    </td>
+                    <td class="cn226">
+                      Daily audit posted to Slack, no human clicks
+                    </td>
+                  </tr>
+                  <tr class="cn227">
+                    <td class="cn228">
+                      Week 3
+                    </td>
+                    <td class="cn229">
+                      Add workflow 3 (CAPI EMQ) and workflow 5 (ENCAC)
+                    </td>
+                    <td class="cn230">
+                      CRM-joined cost-per-new-customer report weekly
+                    </td>
+                  </tr>
+                  <tr class="cn231">
+                    <td class="cn232">
+                      Week 4
+                    </td>
+                    <td class="cn233">
+                      Introduce write-enabled commands behind approval
+                    </td>
+                    <td class="cn234">
+                      Bulk pause and bulk duplicate, human-approved
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+               
+              <p class="cn235">
+                Multi-expert consensus (Pipboard, Session Media, Google Ads MCP rollout) is that read-only adoption captures most of the productivity gain on its own. Write-enabled automation adds incremental value but multiplies risk if the audit and approval layer is missing [3] [4].
+              </p>
+               
+            </section>
+             
+            <section class="cn236">
+              <h2 class="cn237" id="what-this-means-for-agencies-and-in-house-teams">
+                What This Means for Agencies and In-House Teams
+              </h2>
+               
+              <p class="cn238">
+                The CLI does not commoditise Meta Ads expertise. It commoditises the parts of Meta Ads work that were never expertise: clicking through Ads Manager, copy-pasting reports, manually duplicating ad sets. The premium shifts to:
+              </p>
+               
+              <ul class="cn239">
+                <li class="cn240">
+                  <strong class="cn241">
+                    Offer and creative angle.
+                  </strong>
+                   The CLI cannot invent a hook. The Baker EPIC angle framework (Emotional, Practical, Identity, Critical) still drives 80% of the lift on a scaled account.
+                </li>
+                <li class="cn242">
+                  <strong class="cn243">
+                    Tracking architecture.
+                  </strong>
+                   Garbage in, garbage out applies to AI agents as much as to the algorithm. CAPI and first-click attribution remain the highest-leverage technical work [7].
+                </li>
+                <li class="cn244">
+                  <strong class="cn245">
+                    Account strategy.
+                  </strong>
+                   Andromeda consolidation, audience expansion timing and the budget tier audit calibration in 
+                  <a class="cn246" href="https://withbaker.com/blog/meta-ads-audit-checklist-2026">
+                    Baker’s audit checklist
+                  </a>
+                   still need a human strategist.
+                </li>
+              </ul>
+               
+              <p class="cn247">
+                The teams that win in the CLI era are the ones that put their best frameworks behind the MCP, not the ones that try to compete with the CLI on speed.
+              </p>
+               
+            </section>
+             
+            <section class="cn248">
+              <h2 class="cn249" id="frequently-asked-questions-recap">
+                Frequently Asked Questions Recap
+              </h2>
+               
+              <p class="cn250">
+                The seven questions answered in the FAQ schema above cover: what the CLI is, how to use it with Claude or ChatGPT, what MCP is, production safety, automatable workflows, current limitations, and the future of Ads Manager. Each answer is sourced and cross-referenced inside the post.
+              </p>
+               
+            </section>
+             
+            <hr class="cn251" />
+             
+            <h2 class="cn252" id="sources">
+              Sources
+            </h2>
+             
+            <ol class="cn253">
+              <li class="cn254">
+                Holstein, J., Mayberry, M., Kutsy, A., Patel, S. “Introducing the Meta Ads CLI.” Meta for Developers blog, April 29, 2026.
+              </li>
+              <li class="cn255">
+                Wijnand Meijer interview, “What Is A Google Ads MCP.” TrueClicks, 2026. Plus Corey Leno / Developer Assistant, October 2025 Google Ads MCP launch notes.
+              </li>
+              <li class="cn256">
+                “Top 10 MCP Servers for PPC Marketers.” Multi-expert review, April 2026. Includes Pipboard (Meta Ads), Google Ads Official MCP, Microsoft Clarity, Stape GTM.
+              </li>
+              <li class="cn257">
+                Session Media. “5 SaaS Strategies and the LinkedIn Ads Custom MCP Workflow,” April 2026.
+              </li>
+              <li class="cn258">
+                Ralph Burns, Tier 11. Hook rate and hold rate benchmarks, 2026.
+              </li>
+              <li class="cn259">
+                Manel Gomez, Crece sin Limite. “Andromeda Architecture and Campaign Consolidation.” $3.3M Ad Spend Analysis, 2026.
+              </li>
+              <li class="cn260">
+                John Moran, Tier 11. “First-Click CAPI Imports and the 56% Shopify Attribution Problem.” Beauty Account ENCAC Case Study ($26 to $6.73), 2026.
+              </li>
+              <li class="cn261">
+                Felipe Vergara. “Meta Manus AI Automation: Capabilities and Failure Modes,” March 2026.
+              </li>
+            </ol>
+             
+          </div>
+           
+          <section class="cn262">
+            <h2 class="cn263">
+              FAQ
+            </h2>
+             
+            <dl class="cn264">
+              <div class="cn265">
+                <dt class="cn266">
+                  What is the Meta Ads CLI?
+                </dt>
+                 
+                <dd class="cn267">
+                  The Meta Ads CLI is an official command-line tool released by Meta on April 29, 2026 that wraps the Meta Marketing API into terminal commands. It lets developers and AI agents create, list, update and delete campaigns, ad sets, ads, creatives, catalogs and conversion pixels without writing custom API code. It requires Python 3.12+ and installs via pip or uv. New resources default to PAUSED status as a safety guardrail, and outputs are available as a human-readable table, JSON (compatible with jq) or tab-separated values for shell pipelines.
+                </dd>
+                 
+              </div>
+              <div class="cn268">
+                <dt class="cn269">
+                  How do you use Meta Ads CLI with Claude or ChatGPT?
+                </dt>
+                 
+                <dd class="cn270">
+                  The CLI is the deterministic execution layer; Claude or ChatGPT is the planning layer that generates and runs CLI commands through an MCP (Model Context Protocol) server or Code Interpreter. The pattern Baker uses is: install the CLI in a sandboxed environment, expose it to the model with read-only credentials first, and let the model translate natural language briefs into commands like `meta ads insights get --campaign_id 12345 --fields=impressions,conversions --date-preset last_7d`. Always start with --no-input and --force disabled so the human reviews each write before it executes.
+                </dd>
+                 
+              </div>
+              <div class="cn271">
+                <dt class="cn272">
+                  What is MCP and how does it relate to the Meta Ads CLI?
+                </dt>
+                 
+                <dd class="cn273">
+                  MCP (Model Context Protocol) is the open standard that lets AI assistants like Claude and ChatGPT call external tools through a standardised server interface. With an MCP server wrapped around the Meta Ads CLI, an assistant can run audits, build campaigns and pull insights in natural language. Pipboard already operates a third-party MCP for Meta Ads that allows pulling visualisations into Claude and executing live optimisations like pausing campaigns or reallocating budgets without logging into Business Manager.
+                </dd>
+                 
+              </div>
+              <div class="cn274">
+                <dt class="cn275">
+                  Is the Meta Ads CLI safe to use in production accounts?
+                </dt>
+                 
+                <dd class="cn276">
+                  It is safe when scoped correctly. The CLI ships three safety defaults: new campaigns, ad sets and ads are created in PAUSED state, exit codes are standardised (0 success, 3 auth error, 4 API error) so CI/CD pipelines can fail fast, and --no-input plus --force flags must be explicitly passed for unattended runs. Baker's rule for production: read-only token in the AI assistant's MCP server, write-enabled token only in human-reviewed CI workflows, and an approval step on every spend-changing command.
+                </dd>
+                 
+              </div>
+              <div class="cn277">
+                <dt class="cn278">
+                  What can you automate with the Meta Ads CLI in 2026?
+                </dt>
+                 
+                <dd class="cn279">
+                  Five workflows have an immediate ROI when automated: daily creative fatigue audits (pull hook rate and frequency, flag ads above thresholds), weekly Andromeda diagnostics (entity ID diversity, campaign consolidation checks), CAPI Event Match Quality monitoring, ad set duplication for new geographies (apply settings in bulk via JSON output piped into shell), and ENCAC reporting that joins CLI insights with CRM exports. According to Session Media, custom agency MCPs prevent the manual setup errors that plague bulk campaign work, like leaving audience expansion enabled by default.
+                </dd>
+                 
+              </div>
+              <div class="cn280">
+                <dt class="cn281">
+                  What are the limitations of the Meta Ads CLI?
+                </dt>
+                 
+                <dd class="cn282">
+                  The CLI inherits Meta Marketing API rate limits, requires Python 3.12+ (older runtimes are unsupported), and currently does not handle every Business Manager surface (catalog and offline conversion paths exist but some lifecycle operations still require Ads Manager). When orchestrated by AI agents, the failure modes documented for Manus AI on Meta still apply: budget formatting confusion (monthly vs daily), objective mixing inside a single campaign, and over-rotation toward retargeting at the expense of prospecting. Human review on the first PAUSED draft prevents all three.
+                </dd>
+                 
+              </div>
+              <div class="cn283">
+                <dt class="cn284">
+                  Will the Meta Ads CLI replace Meta Ads Manager?
+                </dt>
+                 
+                <dd class="cn285">
+                  No, it changes who uses Ads Manager and when. The CLI absorbs repeatable, structured operations (creation, duplication, reporting, bulk edits) that Ads Manager makes slow. Ads Manager remains the system of record for asset upload, creative preview, manual review and the policy review surface. Multi-expert consensus across Pipboard, Session Media and the Google Ads MCP rollout is that AI-driven CLIs handle 70-80% of recurring tasks, freeing media buyers to spend the remaining time on offer, creative angle and account strategy.
+                </dd>
+                 
+              </div>
+            </dl>
+             
+          </section>
+           
+        </article>
+         
+        <section class="cn286">
+          <h2 class="cn287">
+            Related Posts
+          </h2>
+           
+          <div class="cn288">
+            <article class="cn289">
+              <a class="cn290" href="https://withbaker.com/blog/meta-ads-audit-checklist-2026">
+                 
+                <div class="cn291">
+                  <span class="cn292">
+                    Meta Ads
+                  </span>
+                   
+                  <time class="cn293" datetime="2026-04-30T00:00:00.000Z">
+                    April 30, 2026
+                  </time>
+                   
+                </div>
+                 
+                <h2 class="cn294">
+                  How to Audit a Meta Ads Account: The Complete Agency Checklist (2026)
+                </h2>
+                 
+                <p class="cn295">
+                  Baker's 8-Layer Meta Ads Audit Framework: pixel health, campaign architecture, creative scoring, frequency, audience overlap, funnel, and growth tiers.
+                </p>
+                 
+              </a>
+               
+            </article>
+            <article class="cn296">
+              <a class="cn297" href="https://withbaker.com/blog/meta-conversions-api-capi-lead-gen-setup">
+                 
+                <div class="cn298">
+                  <span class="cn299">
+                    Meta Ads
+                  </span>
+                   
+                  <time class="cn300" datetime="2026-04-16T00:00:00.000Z">
+                    April 16, 2026
+                  </time>
+                   
+                </div>
+                 
+                <h2 class="cn301">
+                  Meta Conversions API (CAPI) for Lead Gen: Complete Setup and First-Click Attribution Guide
+                </h2>
+                 
+                <p class="cn302">
+                  Meta CAPI fixes 56% wrong pixel data. Baker's First-Click CAPI Blueprint covers edge tagging, custom events, and the beauty case: ENCAC $26 to $6.73.
+                </p>
+                 
+              </a>
+               
+            </article>
+            <article class="cn303">
+              <a class="cn304" href="https://withbaker.com/blog/meta-ads-andromeda-algorithm-2026">
+                 
+                <div class="cn305">
+                  <span class="cn306">
+                    Meta Ads
+                  </span>
+                   
+                  <time class="cn307" datetime="2026-04-14T00:00:00.000Z">
+                    April 14, 2026
+                  </time>
+                   
+                </div>
+                 
+                <h2 class="cn308">
+                  Meta Ads Andromeda Algorithm Explained: How It Changes Your Campaign Strategy in 2026
+                </h2>
+                 
+                <p class="cn309">
+                  Meta's Andromeda processes 10,000x more signals per ad. Baker's Andromeda Adaptation Framework covers GEM, Lattice, creative diversity, and targeting.
+                </p>
+                 
+              </a>
+               
+            </article>
+             
+          </div>
+           
+        </section>
+         
+      </main>
+       
+      <footer class="cn310">
+        <div class="cn311">
+          <div class="cn312">
+            <a class="cn313" href="https://withbaker.com/">
+               
+              <img class="cn314" alt="Baker logo" height="40" src="public/assets/cloned/images/d2fb094a4186.webp" width="40" />
+               BAKER 
+            </a>
+             
+            <astro-island class="cn315">
+              <div class="cn316">
+                <button class="cn317" aria-current="true" disabled>
+                  EN
+                </button>
+                <button class="cn318" aria-label="Switch to ES">
+                  ES
+                </button>
+              </div>
+            </astro-island>
+             
+          </div>
+           
+          <nav class="cn319" aria-label="Footer">
+            <a class="cn320" href="https://withbaker.com/blog">
+              Blog
+            </a>
+             
+            <a class="cn321" href="https://withbaker.com/careers">
+              Careers
+            </a>
+             
+            <a class="cn322" href="https://withbaker.com/press">
+              Press
+            </a>
+             
+            <a class="cn323" href="https://withbaker.com/terms">
+              Terms &amp; Conditions
+            </a>
+             
+            <a class="cn324" href="https://withbaker.com/privacy">
+              Privacy Policy
+            </a>
+             
+            <a class="cn325" href="https://withbaker.com/delete-data">
+              Delete Data
+            </a>
+             
+            <a class="cn326" href="https://withbaker.com/legal-notice">
+              Legal Notice
+            </a>
+             
+          </nav>
+           
+          <p class="cn327">
+             © 2026 Baker. All rights reserved. 
+          </p>
+           
+        </div>
+         
+      </footer>
+       
+    </div>
+     
+</body>
+</html>

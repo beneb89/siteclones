@@ -1,0 +1,244 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-color-001: var(--color-001);
+  --color-primary: var(--primary);
+  --color-clr-0: var(--clr-0);
+  --color-clr-1: var(--clr-1);
+  --color-surface-2: var(--surface-2);
+  --color-clr-2: var(--clr-2);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-clr-5: var(--clr-5);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-clr-6: var(--clr-6);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+  --primary: rgb(34, 91, 98);
+  --accent: rgb(71, 158, 245);
+  --border: rgb(210, 210, 210);
+  --muted-foreground: rgb(97, 97, 97);
+  --muted: rgb(80, 80, 80);
+  --surface: rgb(242, 242, 242);
+  --surface-2: rgba(255, 255, 255, 0.3);
+  --color-001: rgb(47, 47, 47);
+}
+
+:root {
+  /* fonts */
+  --font-body: "Segoe UI", SegoeUI-regular, sans-serif;
+  --font-001: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-002: "Segoe UI Semilight", SegoeUI-semiLight, sans-serif;
+  --font-003: "Segoe UI Semibold", SegoeUI-semiBold, sans-serif;
+  --font-004: "Segoe UI", "Segoe UI Web (West European)", -apple-system, blinkmacsystemfont, roboto, "Helvetica Neue", sans-serif;
+  --font-005: FabricMDL2Icons;
+  /* fontSizes */
+  --font-size-001: 8px;
+  --font-size-002: 11px;
+  --font-size-003: 13px;
+  --font-size-004: 14px;
+  --font-size-005: 15px;
+  --font-size-006: 16px;
+  --font-size-007: 24px;
+  --font-size-008: 40px;
+  --font-size-009: 48px;
+  /* fontWeights */
+  --font-weight-001: 350;
+  --font-weight-002: 400;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 20.8px;
+  --line-height-002: 16px;
+  --line-height-003: 18px;
+  --line-height-004: 19.2px;
+  --line-height-005: 21px;
+  --line-height-006: 25px;
+  --line-height-007: 28.8px;
+  --line-height-008: 48px;
+  --line-height-009: 19px;
+  --line-height-010: 57.6px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 4px;
+  --space-003: 5px;
+  --space-004: 8px;
+  --space-005: 9px;
+  --space-006: 10px;
+  --space-007: 12px;
+  --space-008: 13px;
+  --space-009: 14px;
+  --space-010: 15px;
+  --space-011: 24px;
+  --space-012: 30px;
+  --space-013: 32px;
+  --space-014: 36px;
+  --space-015: 48px;
+  --space-016: 60px;
+  --space-017: 80px;
+  --space-018: 96px;
+  /* radii */
+  --radius-001: 8px;
+  --radius-002: 16px;
+  --radius-003: 50%;
+  /* shadows */
+  --shadow-001: rgba(0, 0, 0, 0.1) 0px 5px 15px 0px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgb(129, 129, 134);
+  --clr-1: rgb(6, 23, 36);
+  --clr-2: rgb(10, 46, 74);
+  --clr-3: rgba(0, 0, 0, 0.24);
+  --clr-4: rgba(0, 0, 0, 0.28);
+  --clr-5: rgba(0, 0, 0, 0.1);
+  --clr-6: rgb(246, 242, 239);
+  --clr-7: rgb(18, 47, 51);
+  --clr-8: rgb(230, 230, 230);
+  --clr-9: rgb(0, 103, 184);
+  --clr-10: rgb(16, 16, 16);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bb4279954832.woff2") format("woff2"), url("/assets/cloned/fonts/c6166f130163.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MWF-MDL2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/svg/ac015bae193f.svg") format("svg"), url("/assets/cloned/fonts/b9c9b763bf88.woff") format("woff"), url("/assets/cloned/fonts/6d344dc200c1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SegoeUI-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8687f971a9bd.woff2") format("woff2"), url("/assets/cloned/fonts/e5f63b46415d.woff2") format("woff2"), url("/assets/cloned/fonts/e9bc0f9e068d.woff") format("woff"), url("/assets/cloned/fonts/af4d72de47ee.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3cceb18d6b8d.woff2") format("woff2"), url("/assets/cloned/fonts/8857cb560dbf.woff2") format("woff2"), url("/assets/cloned/fonts/93238ae11bb4.woff") format("woff"), url("/assets/cloned/fonts/c22be6df99d8.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI-semiLight";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3a9670b17b63.woff2") format("woff2"), url("/assets/cloned/fonts/20eacb6ae366.woff2") format("woff2"), url("/assets/cloned/fonts/ca1dead93c50.woff") format("woff"), url("/assets/cloned/fonts/8cd2211b7bf9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ca9568bae9c8.ttf") format("ttf"), url("/assets/cloned/fonts/d0bd25ead9c4.woff2") format("woff2"), url("/assets/cloned/fonts/9356f77a193d.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/49fc6e9a0c31.ttf") format("ttf"), url("/assets/cloned/fonts/20eacb6ae366.woff2") format("woff2"), url("/assets/cloned/fonts/8cd2211b7bf9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e55264f645e8.ttf") format("ttf"), url("/assets/cloned/fonts/e5f63b46415d.woff2") format("woff2"), url("/assets/cloned/fonts/af4d72de47ee.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b8b7e4c391bf.ttf") format("ttf"), url("/assets/cloned/fonts/8857cb560dbf.woff2") format("woff2"), url("/assets/cloned/fonts/c22be6df99d8.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2e352feb61b2.ttf") format("ttf"), url("/assets/cloned/fonts/bf2387ece012.woff2") format("woff2"), url("/assets/cloned/fonts/7f4776596f7c.woff") format("woff");
+}
+html { background: rgb(255, 255, 255); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

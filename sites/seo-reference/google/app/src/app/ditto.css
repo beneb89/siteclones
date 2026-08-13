@@ -1,0 +1,4 @@
+[data-ditto-id="style-search"]::placeholder{color:rgb(95, 99, 104)}
+[data-ditto-id="style-type-to-filter"]::placeholder{color:rgb(95, 99, 104)}
+[data-ditto-id="style-aside"]::before{content:"star" / "";display:block;width:24px;height:24px;margin-left:-36px;color:rgb(48, 63, 159);font-size:24px;line-height:24px}
+[data-ditto-id="style-aside-2"]::before{content:"star" / "";display:block;width:24px;height:24px;margin-left:-36px;color:rgb(48, 63, 159);font-size:24px;line-height:24px}

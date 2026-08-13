@@ -1,0 +1,14 @@
+@keyframes hide-scroll { 
+  0%, 100% { overflow: hidden; }
+}
+
+[data-ditto-id="style-div"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;background-image:linear-gradient(90deg, rgb(72, 75, 78) 0%, rgba(0, 0, 0, 0) 100%)}
+@media (max-width: 571px) {
+[data-ditto-id="style-div"]::before{}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div"]::before{}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div"]::before{}
+}

@@ -1,0 +1,7 @@
+export const dynamic = "force-static";
+
+export function GET() {
+  return new Response("# Consultant Websites: 20+ Inspiring Examples (2026)\n\nWe searched the web for consultants with modern designs to curate this collection of consulting websites.\n\nThis is a generated ditto.site clone. It preserves captured page content, metadata, route structure, and static assets where available.\n\n## Routes\n\n- [Consultant Websites: 20+ Inspiring Examples (2026)](https://www.sitebuilderreport.com/inspiration/consulting-websites) - We searched the web for consultants with modern designs to curate this collection of consulting websites. \n\n## Captured Content\n\n### Consultant Websites: 20+ Inspiring Examples (2026)\nWebsite Builders Templates & Examples Blog About Menu Website Examples Our work is supported by affiliate commissions. Learn More 23 Consulting Website Examples Last Updated January 7 2026 Written By Steve Benjamins We searched the web for consultants with modern designs in order to curate this collection of consulting websites. Some of these consultants built their own website with a website builder while others have hired a website design firm. One trend we noticed: many consultants are now using media (such as webinars, podcasts, articles and social media) to demonstrate their expertise. It’s a way to “show” their skills to potential clients rather than “tell” them. A note on SEO (Search\n", {
+    headers: { "content-type": "text/plain; charset=utf-8" },
+  });
+}

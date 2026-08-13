@@ -1,0 +1,165 @@
+name: clone
+
+# Runs the cloner on GitHub's runners, which have unrestricted outbound
+# network access. Claude Code's sandbox sits behind an egress proxy that
+# denies most target hosts (CONNECT -> 403), so capture can only happen here.
+#
+# Trigger it from the Actions tab ("Run workflow"), or by pushing a change to
+# a target list. Results are committed straight back to the branch that ran.
+
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: Which target list to clone
+        type: choice
+        options:
+          - all
+          - targets.txt
+          - targets-galleries.txt
+          - targets-full.txt
+          - targets-deep.txt
+          - targets-seo.txt
+        default: all
+      force:
+        description: Re-clone sites that already exist
+        type: boolean
+        default: false
+      flags:
+        description: Extra flags passed to ditto (e.g. --mode=multi --styling=css)
+        type: string
+        default: ''
+  push:
+    paths:
+      - 'targets*.txt'
+      - '.github/workflows/clone.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lists: ${{ steps.pick.outputs.lists }}
+    steps:
+      - id: pick
+        # A push (or the "all" choice) does the full set; otherwise just the
+        # one list that was asked for. Each list carries the folder under
+        # sites/ that its output is grouped into, plus any ditto flags that
+        # belong to that list rather than to the run.
+        env:
+          WANTED: ${{ inputs.list || 'all' }}
+        run: |
+          brands='{"list":"targets.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=60"}'
+          galleries='{"list":"targets-galleries.txt","dest":"top20-personal-brands/galleries","flags":""}'
+          full='{"list":"targets-full.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=60"}'
+          deep='{"list":"targets-deep.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=200"}'
+          seo='{"list":"targets-seo.txt","dest":"seo-reference","flags":""}'
+          case "$WANTED" in
+            targets.txt)           lists="[$brands]" ;;
+            targets-galleries.txt) lists="[$galleries]" ;;
+            targets-full.txt)      lists="[$full]" ;;
+            targets-deep.txt)      lists="[$deep]" ;;
+            *)                     lists="[$brands,$galleries,$full,$deep,$seo]" ;;
+          esac
+          echo "lists=$lists" >>"$GITHUB_OUTPUT"
+          echo "cloning: $lists"
+
+  clone:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        target: ${{ fromJSON(needs.plan.outputs.lists) }}
+    name: clone (${{ matrix.target.list }})
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install toolchain
+        run: ./scripts/setup.sh
+
+      - name: Install chromium system libraries
+        working-directory: vendor/ditto
+        run: npx --yes playwright install-deps chromium
+
+      - name: Clone targets
+        id: clone
+        # Individual targets are allowed to fail; the script reports each one
+        # and we still want to keep whatever did come through.
+        continue-on-error: true
+        env:
+          # Via env rather than inline ${{ }}, so the input can't break out of
+          # the command it is meant to extend.
+          LIST: ${{ matrix.target.list }}
+          DEST: ${{ matrix.target.dest }}
+          TFLAGS: ${{ matrix.target.flags }}
+          FORCE: ${{ inputs.force == true && '--force' || '' }}
+          FLAGS: ${{ inputs.flags }}
+          # A multi-page capture of a large site holds every route's evidence
+          # at once; tonyrobbins.com died on the default heap after an hour.
+          # Runners for a private repo have 7 GB, so leave room for Chromium.
+          NODE_OPTIONS: --max-old-space-size=5632
+        # $FLAGS comes last so a dispatch can override the list's own flags.
+        run: ./scripts/clone-batch.sh --file="$LIST" --dest="$DEST" $FORCE $TFLAGS $FLAGS
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A sites
+          if git diff --cached --quiet; then
+            echo "no new site output to commit"
+            exit 0
+          fi
+          git commit -m "Clone sites from ${{ matrix.target.list }}
+
+          Captured on a GitHub runner (run ${{ github.run_id }}), since the
+          sandbox's egress policy blocks the target hosts."
+          # Matrix jobs push to the same branch, so rebase onto whatever the
+          # other job landed first instead of failing the run.
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && \
+              git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            echo "push attempt $attempt failed, retrying in $((attempt * 5))s"
+            sleep $((attempt * 5))
+          done
+          echo "could not push results after 5 attempts" >&2
+          exit 1
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clone-logs-${{ matrix.target.list }}
+          path: logs/
+          if-no-files-found: ignore
+
+      - name: Report
+        if: always()
+        env:
+          LIST: ${{ matrix.target.list }}
+          DEST: ${{ matrix.target.dest }}
+          OUTCOME: ${{ steps.clone.outcome }}
+        run: |
+          {
+            echo "### $LIST"
+            echo
+            if [ "$OUTCOME" = "success" ]; then
+              echo "All targets cloned."
+            else
+              echo "Some targets failed — see the \`clone-logs\` artifact."
+            fi
+            echo
+            echo '```'
+            ls -1 "sites/$DEST" 2>/dev/null | sed "s|^|sites/$DEST/|" \
+              || echo "(nothing under sites/$DEST)"
+            echo '```'
+          } >>"$GITHUB_STEP_SUMMARY"

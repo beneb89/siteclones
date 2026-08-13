@@ -1,0 +1,15 @@
+import type { FeatureCard2Styles } from "../_styles";
+import { cn } from "../../../lib/utils";
+export type FeatureCard2Data = {
+  title: string;
+};
+/** A feature card. */
+export default function FeatureCard2({ d, styles }: { d: FeatureCard2Data; styles: FeatureCard2Styles }) {
+  return (
+    <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap", styles.className)}>
+      <h6 className="block text-background [font-family:'Neue_Haas_Grotesk_Display_Pro_55_Roman',_'Neue_Haas_Grotesk_Display_Pro_55_Roman_Placeholder',_sans-serif] text-base leading-[1.375rem]" data-component="heading">
+        {d.title}
+      </h6>
+    </div>
+  );
+}

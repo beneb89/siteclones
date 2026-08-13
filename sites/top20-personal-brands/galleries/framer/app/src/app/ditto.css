@@ -1,0 +1,26 @@
+[data-ditto-id="style-div"]{mask-image:linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 48%)}
+@media (max-width: 571px) {
+[data-ditto-id="style-div"]{mask-image:linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 60%)}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div"]{mask-image:linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 60%)}
+}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-2"]{mask-image:linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 28%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%)}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-2"]{mask-image:linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 28%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%)}
+}
+[data-ditto-id="style-textarea"]::placeholder{color:rgb(102, 102, 102)}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-3"]{background-image:linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-3"]{background-image:linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)}
+}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-4"]{background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-4"]{background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)}
+}

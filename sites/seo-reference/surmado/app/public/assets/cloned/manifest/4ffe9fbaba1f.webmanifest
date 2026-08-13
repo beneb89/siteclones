@@ -1,0 +1,22 @@
+{
+  "name": "Surmado",
+  "short_name": "Surmado",
+  "description": "AI for small business. We rebuild and run your website, and give you an AI that knows your business.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#002A41",
+  "background_color": "#EFF9FE",
+  "display": "browser",
+  "start_url": "/"
+}
+

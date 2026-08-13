@@ -1,0 +1,14 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# Additions beyond the roundup, captured in full: ditto follows the site's
+# navigation and clones the subpages it reaches, not just the landing page.
+# They land in the same folder as the personal brands.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-full.txt \
+#             --dest=top20-personal-brands --mode=multi --max-routes=60
+#
+# --max-routes caps how far the crawl follows navigation. 60 covers a full
+# nav tree with room to spare; raise it if a site turns out to be deeper.
+
+https://www.aiwithallie.com/              # Allie K. Miller — AI personal brand
+# tonyrobbins.com lives in targets-deep.txt — its crawl needs a higher route cap

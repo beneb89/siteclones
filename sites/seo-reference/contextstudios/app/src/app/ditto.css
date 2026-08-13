@@ -1,0 +1,4 @@
+[data-ditto-id="style-div"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;width:62px;height:62px;background-image:linear-gradient(oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 0%, rgba(0, 0, 0, 0) 100%);border-top-left-radius:16px}
+@media (max-width: 571px) {
+[data-ditto-id="style-div"]::before{width:auto;height:auto}
+}

@@ -1,0 +1,14 @@
+import type { MetadataRoute } from "next";
+import { SITE_ORIGIN } from "../lib/site";
+
+export const dynamic = "force-static";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+  {
+    url: SITE_ORIGIN + "/v3/business_data-social_media-overview/",
+    changeFrequency: "weekly",
+    priority: 1,
+  },
+  ];
+}

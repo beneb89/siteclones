@@ -1,0 +1,597 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-clr-0: var(--clr-0);
+  --color-color-027: var(--color-027);
+  --color-color-002: var(--color-002);
+  --color-color-007: var(--color-007);
+  --color-clr-1: var(--clr-1);
+  --color-color-001: var(--color-001);
+  --color-primary: var(--primary);
+  --color-clr-2: var(--clr-2);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-color-008: var(--color-008);
+  --color-clr-6: var(--clr-6);
+  --color-color-003: var(--color-003);
+  --color-color-004: var(--color-004);
+  --color-clr-7: var(--clr-7);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-color-016: var(--color-016);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+  --color-clr-14: var(--clr-14);
+  --color-color-023: var(--color-023);
+  --color-clr-15: var(--clr-15);
+  --color-color-017: var(--color-017);
+  --color-color-005: var(--color-005);
+  --color-color-012: var(--color-012);
+  --color-clr-16: var(--clr-16);
+  --color-color-021: var(--color-021);
+  --color-color-009: var(--color-009);
+  --color-clr-17: var(--clr-17);
+  --color-clr-18: var(--clr-18);
+  --color-color-014: var(--color-014);
+  --color-color-026: var(--color-026);
+  --color-color-010: var(--color-010);
+  --color-color-011: var(--color-011);
+  --color-clr-19: var(--clr-19);
+  --color-color-025: var(--color-025);
+  --color-color-022: var(--color-022);
+  --color-clr-20: var(--clr-20);
+  --color-clr-21: var(--clr-21);
+  --color-color-020: var(--color-020);
+  --color-surface-4: var(--surface-4);
+  --color-clr-22: var(--clr-22);
+  --color-clr-23: var(--clr-23);
+  --color-surface-2: var(--surface-2);
+  --color-clr-24: var(--clr-24);
+  --color-clr-25: var(--clr-25);
+  --color-clr-26: var(--clr-26);
+  --color-color-024: var(--color-024);
+  --color-clr-27: var(--clr-27);
+  --color-clr-28: var(--clr-28);
+  --color-clr-29: var(--clr-29);
+  --color-clr-30: var(--clr-30);
+  --color-clr-31: var(--clr-31);
+  --color-color-013: var(--color-013);
+  --color-color-019: var(--color-019);
+  --color-clr-32: var(--clr-32);
+  --color-color-018: var(--color-018);
+  --color-clr-33: var(--clr-33);
+  --color-clr-34: var(--clr-34);
+  --color-clr-35: var(--clr-35);
+  --color-clr-36: var(--clr-36);
+  --color-clr-37: var(--clr-37);
+  --color-clr-38: var(--clr-38);
+  --color-clr-39: var(--clr-39);
+  --color-clr-40: var(--clr-40);
+  --color-clr-41: var(--clr-41);
+  --color-clr-42: var(--clr-42);
+  --color-clr-43: var(--clr-43);
+  --color-clr-44: var(--clr-44);
+  --color-clr-45: var(--clr-45);
+  --color-clr-46: var(--clr-46);
+  --color-surface-3: var(--surface-3);
+  --color-clr-47: var(--clr-47);
+  --color-clr-48: var(--clr-48);
+  --color-clr-49: var(--clr-49);
+  --color-color-015: var(--color-015);
+  --color-accent: var(--accent);
+  --color-clr-50: var(--clr-50);
+  --color-color-028: var(--color-028);
+  --color-color-006: var(--color-006);
+  --color-clr-51: var(--clr-51);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(0, 0, 0);
+  --foreground: rgb(0, 0, 0);
+  --primary: rgb(0, 0, 238);
+  --accent: rgb(217, 172, 24);
+  --muted-foreground: rgb(87, 87, 87);
+  --muted: rgb(134, 134, 134);
+  --surface: rgb(240, 240, 240);
+  --surface-2: rgb(234, 235, 237);
+  --surface-3: rgb(220, 225, 235);
+  --surface-4: rgb(252, 251, 252);
+  --color-001: rgb(255, 255, 255);
+  --color-002: rgb(17, 17, 17);
+  --color-003: rgb(207, 207, 207);
+  --color-004: rgb(209, 211, 214);
+  --color-005: rgb(150, 14, 14);
+  --color-006: rgb(105, 105, 105);
+  --color-007: rgba(17, 17, 17, 0.3);
+  --color-008: rgb(28, 28, 28);
+  --color-009: rgb(194, 196, 197);
+  --color-010: rgb(102, 102, 102);
+  --color-011: rgb(10, 10, 10);
+  --color-012: rgb(31, 30, 38);
+  --color-013: rgb(43, 45, 53);
+  --color-014: rgb(158, 158, 158);
+  --color-015: rgb(245, 233, 66);
+  --color-016: rgba(255, 255, 255, 0.2);
+  --color-017: rgb(217, 26, 26);
+  --color-018: rgba(0, 0, 0, 0.67);
+  --color-019: rgb(3, 5, 6);
+  --color-020: rgb(21, 16, 59);
+  --color-021: rgb(21, 20, 28);
+  --color-022: rgb(55, 8, 85);
+  --color-023: rgb(51, 51, 51);
+  --color-024: rgb(79, 71, 63);
+  --color-025: rgb(121, 119, 124);
+  --color-026: rgb(163, 163, 163);
+  --color-027: rgb(69, 69, 69);
+  --color-028: rgb(83, 83, 83);
+}
+
+:root {
+  /* fonts */
+  --font-body: sans-serif;
+  --font-001: "Raveo Variable Variable", sans-serif;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 22px;
+  --font-size-004: 32px;
+  --font-size-005: 64px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 1000;
+  /* lineHeights */
+  --line-height-001: 14px;
+  --line-height-002: 22.4px;
+  --line-height-003: 38.4px;
+  --line-height-004: 26px;
+  --line-height-005: 68px;
+  /* spacing */
+  --space-001: 8px;
+  --space-002: 10px;
+  --space-003: 12px;
+  --space-004: 16px;
+  --space-005: 24px;
+  --space-006: 40px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 8px;
+  --radius-003: 50px;
+  /* zIndices */
+  --z-001: 0;
+  --z-002: 1;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgb(229, 229, 229);
+  --clr-1: rgba(187, 187, 187, 0.15);
+  --clr-2: rgba(255, 255, 255, 0);
+  --clr-3: rgb(255, 187, 28);
+  --clr-4: rgb(250, 75, 189);
+  --clr-5: rgb(32, 97, 247);
+  --clr-6: rgb(237, 237, 237);
+  --clr-7: rgb(255, 219, 0);
+  --clr-8: rgba(0, 0, 0, 0.1);
+  --clr-9: rgb(255,42,30);
+  --clr-10: rgb(255,52,150);
+  --clr-11: rgb(255,86,23);
+  --clr-12: rgb(146,204,41);
+  --clr-13: rgb(44,155,250);
+  --clr-14: rgb(255,185,29);
+  --clr-15: rgb(0, 153, 255);
+  --clr-16: rgba(31, 30, 38, 0);
+  --clr-17: rgb(11, 0, 0);
+  --clr-18: rgb(108, 109, 117);
+  --clr-19: rgb(191, 222, 227);
+  --clr-20: rgb(236, 3, 43);
+  --clr-21: rgb(11, 16, 42);
+  --clr-22: rgb(215, 34, 35);
+  --clr-23: rgb(249, 249, 249);
+  --clr-24: rgba(232, 228, 220, 0);
+  --clr-25: rgb(159, 0, 255);
+  --clr-26: rgba(86, 77, 250, 0);
+  --clr-27: rgb(126, 131, 143);
+  --clr-28: rgb(242, 243, 247);
+  --clr-29: rgb(55, 56, 64);
+  --clr-30: rgb(3, 3, 3);
+  --clr-31: rgba(21, 92, 61, 0.74);
+  --clr-32: rgba(252, 252, 252, 0);
+  --clr-33: rgb(55, 59, 70);
+  --clr-34: rgba(99, 99, 99, 0);
+  --clr-35: rgb(211, 207, 204);
+  --clr-36: rgb(35, 2, 72);
+  --clr-37: rgb(128, 108, 115);
+  --clr-38: rgb(205, 203, 190);
+  --clr-39: rgb(94, 86, 79);
+  --clr-40: rgb(21, 21, 21);
+  --clr-41: rgba(8, 8, 10, 0);
+  --clr-42: rgb(86, 78, 251);
+  --clr-43: rgb(97, 101, 113);
+  --clr-44: rgba(55, 56, 63, 0);
+  --clr-45: rgb(228, 233, 234);
+  --clr-46: rgb(178, 182, 185);
+  --clr-47: rgb(15, 9, 16);
+  --clr-48: rgba(94, 86, 79, 0);
+  --clr-49: rgb(222, 216, 205);
+  --clr-50: rgba(255, 221, 0, 0);
+  --clr-51: rgb(204, 204, 204);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/28506ddaf7ab.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a5368cb4d523.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/829de2c17804.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/31ed49aa3bf3.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/31b9b1d61473.woff2") format("woff2");
+  unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5e3fa6db3c72.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bcbf906d4c64.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/197dd743787c.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f3fd018548ab.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bb12e146cad6.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ea808fe7d65d.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/418c934c0013.woff2") format("woff2");
+  unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d2835f64bac0.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/22b5f26fb634.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9f76c3a5f7ca.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3be39f5de46f.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/be91894f01be.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/974fd13b31db.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b6c838787112.woff2") format("woff2");
+  unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/452fe1601f59.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bcff39a6db6d.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Raveo Variable Variable";
+  font-style: normal;
+  font-weight: 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3342585888b5.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/94357736abb4.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/96126f2d71c7.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d672e61ee3bb.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/af51674aa206.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c95a827796aa.woff2") format("woff2");
+  unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4ac3c1c0a2a4.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0c3a17ff05cf.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/58bbd5227905.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/dbba5ba05c03.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8a68bceee10e.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a8071e6b982b.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/44c62d91b016.woff2") format("woff2");
+  unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e54ea5c4a48a.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/619644a6a41d.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+1EA0-1EF9, U+20AB;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

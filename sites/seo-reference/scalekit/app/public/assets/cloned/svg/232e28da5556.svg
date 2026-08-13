@@ -1,0 +1,14 @@
+<svg width="313" height="222" viewBox="0 0 313 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.75">
+<g style="mix-blend-mode:multiply" opacity="0.25" clip-path="url(#clip0_4475_571)">
+<circle opacity="0.2" cx="266" cy="266" r="266" transform="matrix(-1 0 0 1 532 0)" fill="#4F5EFF"/>
+<circle opacity="0.3" cx="164" cy="164" r="164" transform="matrix(-1 0 0 1 427 99)" fill="#4F5EFF"/>
+<circle opacity="0.4" cx="66.5" cy="66.5" r="66.5" transform="matrix(-1 0 0 1 329 196)" fill="#4F5EFF"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4475_571">
+<rect width="313" height="222" fill="white"/>
+</clipPath>
+</defs>
+</svg>

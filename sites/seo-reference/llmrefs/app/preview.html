@@ -1,0 +1,4069 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Generative Engine Optimization (GEO): The 2026 Guide to AI Search Visibility - LLMrefs</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b2976975b428.woff2") format("woff2");
+  unicode-range: U+20-7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/20fb3b073cdc.woff2") format("woff2");
+  unicode-range: U+A0-FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/020bba2a5331.woff2") format("woff2");
+  unicode-range: U+100-17F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/527c4a394f4f.woff2") format("woff2");
+  unicode-range: U+180-24F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/140dca2e4558.woff2") format("woff2");
+  unicode-range: U+250-2AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7515168fecb0.woff2") format("woff2");
+  unicode-range: U+2B0-2FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3dbaa79e3db4.woff2") format("woff2");
+  unicode-range: U+300-36F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3d3d80b10f85.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/89172fb1888d.woff2") format("woff2");
+  unicode-range: U+4??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/740c86bfa9ea.woff2") format("woff2");
+  unicode-range: U+500-52F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/52787016f625.woff2") format("woff2");
+  unicode-range: U+530-58F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0877905c45f.woff2") format("woff2");
+  unicode-range: U+590-5FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7708b5c14f88.woff2") format("woff2");
+  unicode-range: U+6??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0768ec8124bb.woff2") format("woff2");
+  unicode-range: U+700-74F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/58bfc708d448.woff2") format("woff2");
+  unicode-range: U+780-7BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b4bcf09e476c.woff2") format("woff2");
+  unicode-range: U+900-97F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/217ada962f2d.woff2") format("woff2");
+  unicode-range: U+980-9FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3241a2cebd5a.woff2") format("woff2");
+  unicode-range: U+A00-A7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2b2d19397f47.woff2") format("woff2");
+  unicode-range: U+A80-AFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9ecd4b32b75a.woff2") format("woff2");
+  unicode-range: U+B00-B7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3ecf8c0fe57e.woff2") format("woff2");
+  unicode-range: U+B80-BFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ebe004718fb.woff2") format("woff2");
+  unicode-range: U+C00-C7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f3032a9021c1.woff2") format("woff2");
+  unicode-range: U+C80-CFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/225aab5d1bb2.woff2") format("woff2");
+  unicode-range: U+D00-D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bcebdfc2ba8c.woff2") format("woff2");
+  unicode-range: U+D80-DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f3adfa76608e.woff2") format("woff2");
+  unicode-range: U+E00-E7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4b5c5cd00f50.woff2") format("woff2");
+  unicode-range: U+E80-EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ecb0d0a358c3.woff2") format("woff2");
+  unicode-range: U+F??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/06291107abc4.woff2") format("woff2");
+  unicode-range: U+1000-109F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/610cfd8bf6d1.woff2") format("woff2");
+  unicode-range: U+10A0-10FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1b67c0b9d913.woff2") format("woff2");
+  unicode-range: U+11??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/07fb782d9f9d.woff2") format("woff2");
+  unicode-range: U+1200-137F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9433710251b6.woff2") format("woff2");
+  unicode-range: U+13A0-13FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5a3ee9af4fb1.woff2") format("woff2");
+  unicode-range: U+1400-167F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/efe82dfa4017.woff2") format("woff2");
+  unicode-range: U+1680-169F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ef4c748eb5d6.woff2") format("woff2");
+  unicode-range: U+16A0-16FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/59d88de80ed9.woff2") format("woff2");
+  unicode-range: U+1700-171F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1d1643aa7118.woff2") format("woff2");
+  unicode-range: U+1720-173F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/95c4b964c1dd.woff2") format("woff2");
+  unicode-range: U+1740-175F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/15da1beb3fef.woff2") format("woff2");
+  unicode-range: U+1760-177F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/844947e6b594.woff2") format("woff2");
+  unicode-range: U+1780-17FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5b6540f2afe7.woff2") format("woff2");
+  unicode-range: U+1800-18AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b7eb2a2a6e15.woff2") format("woff2");
+  unicode-range: U+1900-194F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6183e6584336.woff2") format("woff2");
+  unicode-range: U+1950-197F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f9e73980277d.woff2") format("woff2");
+  unicode-range: U+19E0-19FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8ed1a411a177.woff2") format("woff2");
+  unicode-range: U+1D00-1D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6d576169508a.woff2") format("woff2");
+  unicode-range: U+1E??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5667a569f4bb.woff2") format("woff2");
+  unicode-range: U+2580-259F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ea630c7a709e.woff2") format("woff2");
+  unicode-range: U+25A0-25FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3b1dfa6d4d2c.woff2") format("woff2");
+  unicode-range: U+26??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/71444ea21393.woff2") format("woff2");
+  unicode-range: U+2700-27BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f14fbdb75189.woff2") format("woff2");
+  unicode-range: U+27C0-27EF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1539cb2d5fba.woff2") format("woff2");
+  unicode-range: U+27F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b5c7d52252d0.woff2") format("woff2");
+  unicode-range: U+28??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b36bd14c28c2.woff2") format("woff2");
+  unicode-range: U+2900-297F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c7a29dc7d09f.woff2") format("woff2");
+  unicode-range: U+2980-29FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f84dbfc2b0f7.woff2") format("woff2");
+  unicode-range: U+2A??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/10c07b29ac8e.woff2") format("woff2");
+  unicode-range: U+2B??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/424a230a43d2.woff2") format("woff2");
+  unicode-range: U+2E80-2EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/01cad1b0c9a8.woff2") format("woff2");
+  unicode-range: U+2F00-2FDF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/150652a2c74d.woff2") format("woff2");
+  unicode-range: U+2FF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b9af38895a99.woff2") format("woff2");
+  unicode-range: U+3000-303F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5fbe4417b8e1.woff2") format("woff2");
+  unicode-range: U+3040-309F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b686b76e1635.woff2") format("woff2");
+  unicode-range: U+30A0-30FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/49c648f3d397.woff2") format("woff2");
+  unicode-range: U+3100-312F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8a10a6edb7c3.woff2") format("woff2");
+  unicode-range: U+3130-318F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e0d802884324.woff2") format("woff2");
+  unicode-range: U+319?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/24c2b15491ea.woff2") format("woff2");
+  unicode-range: U+31A0-31BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfce66eac63a.woff2") format("woff2");
+  unicode-range: U+31F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4e0fdee0b378.woff2") format("woff2");
+  unicode-range: U+32??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5c79b7477186.woff2") format("woff2");
+  unicode-range: U+33??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e91b9192839a.woff2") format("woff2");
+  unicode-range: U+3400-4DBF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d3b1a72e76a6.woff2") format("woff2");
+  unicode-range: U+4DC0-4DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2b69420bf1cc.woff2") format("woff2");
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/af08922860a1.woff2") format("woff2");
+  unicode-range: U+A000-A48F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/08d1d810fac5.woff2") format("woff2");
+  unicode-range: U+A490-A4CF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b506c0e6208a.woff2") format("woff2");
+  unicode-range: U+AC00-D7AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/98d2fa403fea.woff2") format("woff2");
+  unicode-range: U+D800-DB7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/abb8a98fbb27.woff2") format("woff2");
+  unicode-range: U+DB80-DBFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/19f1129b860c.woff2") format("woff2");
+  unicode-range: U+DC00-DFFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/20059dc979ed.woff2") format("woff2");
+  unicode-range: U+E000-F8FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5913dcf72947.woff2") format("woff2");
+  unicode-range: U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/dcee5cab5fc7.woff2") format("woff2");
+  unicode-range: U+FB00-FB4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9324c06f46c8.woff2") format("woff2");
+  unicode-range: U+FB50-FDFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/729ff7e8cae6.woff2") format("woff2");
+  unicode-range: U+FE0?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/45834603d8e3.woff2") format("woff2");
+  unicode-range: U+FE2?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/12e0a8eda016.woff2") format("woff2");
+  unicode-range: U+FE30-FE4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/539d2f2b3f48.woff2") format("woff2");
+  unicode-range: U+FE50-FE6F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cf6507e5d7b1.woff2") format("woff2");
+  unicode-range: U+FE70-FEFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9c48c0757437.woff2") format("woff2");
+  unicode-range: U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/83b537fd1441.woff2") format("woff2");
+  unicode-range: U+FFF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/317b4a0efc7e.woff2") format("woff2");
+  unicode-range: U+10000-1007F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9b5d63c8c306.woff2") format("woff2");
+  unicode-range: U+10080-100FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/eb8e9a48793b.woff2") format("woff2");
+  unicode-range: U+10100-1013F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e6e41b932af9.woff2") format("woff2");
+  unicode-range: U+10300-1032F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b921dca36f30.woff2") format("woff2");
+  unicode-range: U+10330-1034F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/795890a0c189.woff2") format("woff2");
+  unicode-range: U+10380-1039F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e69ca3f63338.woff2") format("woff2");
+  unicode-range: U+10400-1044F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/00f6da7bf6a0.woff2") format("woff2");
+  unicode-range: U+10450-1047F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/90bf598c6a81.woff2") format("woff2");
+  unicode-range: U+10480-104AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b4e7fe7d3606.woff2") format("woff2");
+  unicode-range: U+10800-1083F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/17b456bbecf8.woff2") format("woff2");
+  unicode-range: U+1D0??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/92d7b18313d4.woff2") format("woff2");
+  unicode-range: U+1D1??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a841364ad40b.woff2") format("woff2");
+  unicode-range: U+1D300-1D35F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4d9e9991957a.woff2") format("woff2");
+  unicode-range: U+1D400-1D7FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e918f9790369.woff2") format("woff2");
+  unicode-range: U+20000-2A6DF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/73af1fdd9d1a.woff2") format("woff2");
+  unicode-range: U+2F800-2FA1F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/53f83d886ac1.woff2") format("woff2");
+  unicode-range: U+E0000-E007F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1cc093d7d9eb.woff2") format("woff2");
+  unicode-range: U+20-7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/562927208c8b.woff2") format("woff2");
+  unicode-range: U+A0-FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fafd92c2e987.woff2") format("woff2");
+  unicode-range: U+100-17F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ae8c5921d3a1.woff2") format("woff2");
+  unicode-range: U+180-24F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/314e08d0d9e6.woff2") format("woff2");
+  unicode-range: U+250-2AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c8e056d5989b.woff2") format("woff2");
+  unicode-range: U+2B0-2FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4733b61558f8.woff2") format("woff2");
+  unicode-range: U+300-36F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0b1b874dbbbe.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b68f4836e22c.woff2") format("woff2");
+  unicode-range: U+4??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9d28908a8876.woff2") format("woff2");
+  unicode-range: U+500-52F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f0e66252b6bc.woff2") format("woff2");
+  unicode-range: U+530-58F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fac591231961.woff2") format("woff2");
+  unicode-range: U+590-5FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9cfac9fba8d5.woff2") format("woff2");
+  unicode-range: U+6??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d21d242b11b2.woff2") format("woff2");
+  unicode-range: U+700-74F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7f7935acced0.woff2") format("woff2");
+  unicode-range: U+780-7BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/509c84c7c4a8.woff2") format("woff2");
+  unicode-range: U+900-97F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e9522c801511.woff2") format("woff2");
+  unicode-range: U+980-9FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7c824f5f2e9b.woff2") format("woff2");
+  unicode-range: U+A00-A7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b1522f297733.woff2") format("woff2");
+  unicode-range: U+A80-AFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/027d17fce892.woff2") format("woff2");
+  unicode-range: U+B00-B7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/73f1d7ae413a.woff2") format("woff2");
+  unicode-range: U+B80-BFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1de2e8f68ef4.woff2") format("woff2");
+  unicode-range: U+C00-C7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7bba405c64f4.woff2") format("woff2");
+  unicode-range: U+C80-CFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/96ca0d25d48d.woff2") format("woff2");
+  unicode-range: U+D00-D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5670ca710e1a.woff2") format("woff2");
+  unicode-range: U+D80-DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/be37e3b7d91e.woff2") format("woff2");
+  unicode-range: U+E00-E7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/eba14c04d784.woff2") format("woff2");
+  unicode-range: U+E80-EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4fbd72f09846.woff2") format("woff2");
+  unicode-range: U+F??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/78875b3163ee.woff2") format("woff2");
+  unicode-range: U+1000-109F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/60ee76915cbe.woff2") format("woff2");
+  unicode-range: U+10A0-10FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/65623d60acba.woff2") format("woff2");
+  unicode-range: U+11??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b899bc18248a.woff2") format("woff2");
+  unicode-range: U+1200-137F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1e1f179cc795.woff2") format("woff2");
+  unicode-range: U+13A0-13FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9b13db60b0d8.woff2") format("woff2");
+  unicode-range: U+1400-167F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1ebdf6b45fcf.woff2") format("woff2");
+  unicode-range: U+1680-169F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2a5fb46b876b.woff2") format("woff2");
+  unicode-range: U+16A0-16FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5d3a911bc8d7.woff2") format("woff2");
+  unicode-range: U+1700-171F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b6e3a18178de.woff2") format("woff2");
+  unicode-range: U+1720-173F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/544586853c7d.woff2") format("woff2");
+  unicode-range: U+1740-175F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/98b444c1c893.woff2") format("woff2");
+  unicode-range: U+1760-177F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c418cd4bfc04.woff2") format("woff2");
+  unicode-range: U+1780-17FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cb425b066a64.woff2") format("woff2");
+  unicode-range: U+1800-18AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fb52b2df5c68.woff2") format("woff2");
+  unicode-range: U+1900-194F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/285409ff5d89.woff2") format("woff2");
+  unicode-range: U+1950-197F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b031db71e38d.woff2") format("woff2");
+  unicode-range: U+19E0-19FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5fdd82340e1b.woff2") format("woff2");
+  unicode-range: U+1D00-1D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/16ddc46e21e2.woff2") format("woff2");
+  unicode-range: U+1E??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/69b5d7fcdef1.woff2") format("woff2");
+  unicode-range: U+1F??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3c8a4d9340d9.woff2") format("woff2");
+  unicode-range: U+2000-206F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fb65ca7485b9.woff2") format("woff2");
+  unicode-range: U+2070-209F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e48148c2cfcf.woff2") format("woff2");
+  unicode-range: U+20A0-20CF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7f53352ef6b0.woff2") format("woff2");
+  unicode-range: U+20D0-20FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f752a5d469a9.woff2") format("woff2");
+  unicode-range: U+2100-214F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/00d01ceeaafb.woff2") format("woff2");
+  unicode-range: U+2150-218F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/91981db8f43b.woff2") format("woff2");
+  unicode-range: U+2190-21FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/124257b588b6.woff2") format("woff2");
+  unicode-range: U+22??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0711a90bdcaa.woff2") format("woff2");
+  unicode-range: U+23??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/73cab3f5e5cd.woff2") format("woff2");
+  unicode-range: U+2400-243F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/513e9486255c.woff2") format("woff2");
+  unicode-range: U+2440-245F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/31f2a7aa13ee.woff2") format("woff2");
+  unicode-range: U+2460-24FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6aaff86272a9.woff2") format("woff2");
+  unicode-range: U+2500-257F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d42b34c2429d.woff2") format("woff2");
+  unicode-range: U+2580-259F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f8ad68258de4.woff2") format("woff2");
+  unicode-range: U+25A0-25FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/37004cd248d7.woff2") format("woff2");
+  unicode-range: U+26??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d378c78bfdcc.woff2") format("woff2");
+  unicode-range: U+2700-27BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9e9a9de24493.woff2") format("woff2");
+  unicode-range: U+27C0-27EF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/56e2c3ca7d43.woff2") format("woff2");
+  unicode-range: U+27F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b481c398fbab.woff2") format("woff2");
+  unicode-range: U+28??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/371a9cfdf3ad.woff2") format("woff2");
+  unicode-range: U+2900-297F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6e5b2cb5a210.woff2") format("woff2");
+  unicode-range: U+2980-29FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6aa5d9706844.woff2") format("woff2");
+  unicode-range: U+2A??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/904a1fd71b2f.woff2") format("woff2");
+  unicode-range: U+2B??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/74a7e3e74d6f.woff2") format("woff2");
+  unicode-range: U+2E80-2EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9b0ded39ad62.woff2") format("woff2");
+  unicode-range: U+2F00-2FDF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0fedc70f9432.woff2") format("woff2");
+  unicode-range: U+2FF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/91ff5f1c7f6f.woff2") format("woff2");
+  unicode-range: U+3000-303F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8029d30f485c.woff2") format("woff2");
+  unicode-range: U+3040-309F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/be56c5d18e28.woff2") format("woff2");
+  unicode-range: U+30A0-30FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3c7a02b90b76.woff2") format("woff2");
+  unicode-range: U+3100-312F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/07a64b69ef3d.woff2") format("woff2");
+  unicode-range: U+3130-318F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ac426eb8a407.woff2") format("woff2");
+  unicode-range: U+319?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7f8de6df8b20.woff2") format("woff2");
+  unicode-range: U+31A0-31BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e191069a25ca.woff2") format("woff2");
+  unicode-range: U+31F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/034c4088745d.woff2") format("woff2");
+  unicode-range: U+32??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a776a09e3f6e.woff2") format("woff2");
+  unicode-range: U+33??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ac4fb659d8aa.woff2") format("woff2");
+  unicode-range: U+3400-4DBF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/55120d5bdaf9.woff2") format("woff2");
+  unicode-range: U+4DC0-4DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a193aa74e0df.woff2") format("woff2");
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/018adc9663dc.woff2") format("woff2");
+  unicode-range: U+A000-A48F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fd9b2f28ee37.woff2") format("woff2");
+  unicode-range: U+A490-A4CF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/821b759f4632.woff2") format("woff2");
+  unicode-range: U+AC00-D7AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/deaa6c2d2ab2.woff2") format("woff2");
+  unicode-range: U+D800-DB7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7f91b069410e.woff2") format("woff2");
+  unicode-range: U+DB80-DBFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a6770eb1b70a.woff2") format("woff2");
+  unicode-range: U+DC00-DFFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/448ef33e5a04.woff2") format("woff2");
+  unicode-range: U+E000-F8FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/541a9a977201.woff2") format("woff2");
+  unicode-range: U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8e1ed1be604e.woff2") format("woff2");
+  unicode-range: U+FB00-FB4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/319374037f61.woff2") format("woff2");
+  unicode-range: U+FB50-FDFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/dbd2f6f5a38b.woff2") format("woff2");
+  unicode-range: U+FE0?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a4760619ee97.woff2") format("woff2");
+  unicode-range: U+FE2?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4aa95c2d5c03.woff2") format("woff2");
+  unicode-range: U+FE30-FE4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/908692ccc1e7.woff2") format("woff2");
+  unicode-range: U+FE50-FE6F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3fc3f4e8372e.woff2") format("woff2");
+  unicode-range: U+FE70-FEFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6fdbeda87e52.woff2") format("woff2");
+  unicode-range: U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9fea6bc9ea25.woff2") format("woff2");
+  unicode-range: U+FFF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/aed1a2de1132.woff2") format("woff2");
+  unicode-range: U+10000-1007F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ac3319e4d6b1.woff2") format("woff2");
+  unicode-range: U+10080-100FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0bbf3dcaf27c.woff2") format("woff2");
+  unicode-range: U+10100-1013F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0f050f58dfd5.woff2") format("woff2");
+  unicode-range: U+10300-1032F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cd89e2400b38.woff2") format("woff2");
+  unicode-range: U+10330-1034F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d73b5237a6a2.woff2") format("woff2");
+  unicode-range: U+10380-1039F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a6ca8caa6a93.woff2") format("woff2");
+  unicode-range: U+10400-1044F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/eae7dc731d33.woff2") format("woff2");
+  unicode-range: U+10450-1047F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/381c8439de8f.woff2") format("woff2");
+  unicode-range: U+10480-104AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fb1dec6203c5.woff2") format("woff2");
+  unicode-range: U+10800-1083F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/594dad6be2d0.woff2") format("woff2");
+  unicode-range: U+1D0??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ec4ced13e145.woff2") format("woff2");
+  unicode-range: U+1D1??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f4d622abc2ad.woff2") format("woff2");
+  unicode-range: U+1D300-1D35F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/33b37ef67dfc.woff2") format("woff2");
+  unicode-range: U+1D400-1D7FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/526b63582e58.woff2") format("woff2");
+  unicode-range: U+20000-2A6DF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/52be786f4602.woff2") format("woff2");
+  unicode-range: U+2F800-2FA1F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/003f5fc97a4c.woff2") format("woff2");
+  unicode-range: U+E0000-E007F;
+}
+
+@font-face {
+  font-family: "GeistMono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/43796eeb0c65.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9a411387d21.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7d89d12c339f.woff2") format("woff2");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+  --primary: lab(49.2872 14.5383 -73.8895);
+  --accent: lab(72.7913 26.9331 75.4345);
+  --border: lab(90.952 0 -0.0000119209);
+  --muted-foreground: lab(39.4898 0 0);
+  --color-001: lab(7.78201 -0.0000149012 0);
+}
+
+:root {
+  /* fonts */
+  --font-body: Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* fontSizes */
+  --font-size-001: 14px;
+  --font-size-002: 16px;
+  --font-size-003: 18px;
+  --font-size-004: 30px;
+  --font-size-005: 36px;
+  /* fontWeights */
+  --font-weight-001: 449;
+  --font-weight-002: 521;
+  --font-weight-003: 600;
+  --font-weight-004: 800;
+  /* lineHeights */
+  --line-height-001: 32px;
+  --line-height-002: 24px;
+  --line-height-003: 36px;
+  --line-height-004: 20px;
+  --line-height-005: 40px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 4px;
+  --space-003: 6px;
+  --space-004: 7.99999px;
+  --space-005: 8px;
+  --space-006: 12px;
+  --space-007: 16px;
+  --space-008: 20px;
+  --space-009: 23.9999px;
+  --space-010: 24px;
+  --space-011: 28.0001px;
+  --space-012: 38.4001px;
+  --space-013: 50.0001px;
+  --space-014: 67.2001px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  --radius-002: 8px;
+  --radius-003: 14px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{height:16877.3px;display:block;overflow-x:hidden;overflow-y:auto;color:var(--foreground);font-family:var(--font-body);font-size:var(--font-size-002);font-weight:var(--font-weight-001);font-style:normal;line-height:var(--line-height-002);letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:"dlig", "liga", "ss02", "ss03";list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{height:72px;display:flex;position:fixed;right:0px;left:0px;z-index:40;flex-direction:column}
+.cn2{height:72px;display:flex;color:var(--background);backdrop-filter:blur(12px)}
+.cn3{width:100%;height:72px;display:flex;padding-right:var(--space-010);padding-left:var(--space-010);align-items:center;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn4{display:flex;flex-shrink:0}
+.cn5{height:28px;display:block;margin-top:-4px;margin-right:-4px;margin-bottom:-4px;margin-left:-4px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);cursor:pointer}
+.cn6{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn7{width:1px;height:1px;display:block;position:absolute;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn8{width:100%;height:36px;display:flex;justify-content:space-between}
+.cn9{height:36px;display:flex;margin-left:var(--space-002);align-items:center;row-gap:2px;column-gap:2px}
+.cn10{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn11{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn12{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn13{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn14{height:36px;display:flex;margin-left:521.969px;align-items:center;row-gap:var(--space-005);column-gap:var(--space-005)}
+.cn15{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-005);padding-right:var(--space-006);padding-bottom:var(--space-005);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn16{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-003);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--accent);cursor:pointer}
+.cn17{display:none;min-width:0px}
+.cn18{width:36px;height:36px;display:inline-flex;position:relative;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-weight:var(--font-weight-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn19{width:auto;height:20px;display:block;min-width:0px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn20{display:block}
+.cn21{display:block;padding-top:96px;padding-bottom:56px;color:var(--background);background-image:linear-gradient(to right bottom, lab(15.1599 0 0) 0%, rgb(0, 0, 0) 100%)}
+.cn22{display:flex;max-width:896px;margin-right:auto;margin-left:auto;padding-right:var(--space-010);padding-left:var(--space-010);flex-direction:column;align-items:center;text-align:center}
+.cn23{width:100%;max-width:768px;display:block;margin-top:var(--space-007);font-size:48px;font-weight:var(--font-weight-004);line-height:48px;text-wrap:pretty}
+.cn24{width:100%;max-width:672px;display:block;margin-top:var(--space-010);font-size:var(--font-size-003);line-height:28px;text-wrap:pretty}
+.cn25{display:block;margin-top:56px;margin-bottom:80px;padding-right:var(--space-010);padding-left:var(--space-010)}
+.cn26{display:grid;max-width:1152px;margin-right:auto;margin-left:auto;row-gap:32px;column-gap:32px;grid-template-columns:800px 320px;grid-template-rows:15901.3px}
+.cn27{width:320px;display:block;min-width:0px;order:2}
+.cn28{height:710px;display:flex;position:sticky;top:96px;flex-direction:column-reverse;row-gap:var(--space-006);column-gap:var(--space-006)}
+.cn29{display:block;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);background-color:var(--background);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(90.9416 -0.0000298023 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px}
+.cn30{height:40px;display:flex;padding-top:var(--space-007);padding-right:var(--space-008);padding-left:var(--space-008);flex-direction:column}
+.cn31{display:block;font-weight:700}
+.cn32{display:block;margin-top:var(--space-002);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006)}
+.cn33{display:block}
+.cn34{display:flex;flex-direction:column;row-gap:2px;column-gap:2px;list-style-type:none;list-style-position:outside}
+.cn35{height:32px;display:list-item}
+.cn36{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn37{height:32px;display:list-item}
+.cn38{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn39{display:list-item}
+.cn40{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn41{display:list-item}
+.cn42{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn43{display:list-item}
+.cn44{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn45{display:list-item}
+.cn46{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn47{display:list-item}
+.cn48{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn49{display:list-item}
+.cn50{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn51{display:list-item}
+.cn52{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-004);cursor:pointer}
+.cn53{height:32px;display:list-item}
+.cn54{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);font-size:var(--font-size-001);line-height:var(--line-height-004);background-color:lab(90.9416 -0.0000298023 0 / 0.5);cursor:pointer}
+.cn55{height:164px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-010);padding-right:var(--space-010);padding-bottom:var(--space-010);padding-left:var(--space-010);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;text-align:center;background-image:linear-gradient(lab(0 0 0 / 0) 0%, lab(90.9416 -0.0000298023 0) 100%);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(90.9416 -0.0000298023 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px}
+.cn56{width:180.391px;height:180.391px;display:block;position:absolute;top:0px;right:0px;z-index:-1;opacity:0.9;aspect-ratio:1 / 1;background-image:radial-gradient(circle farthest-side at right top, rgb(245, 158, 11) 0%, rgba(245, 158, 11, 0) 100%)}
+.cn57{display:block;font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn58{display:flex;margin-top:var(--space-006);justify-content:center;align-items:center}
+.cn59{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn60{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn61{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn62{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn63{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn64{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn65{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn66{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;margin-right:-8px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn67{box-sizing:content-box;width:28px;height:28px;border-width:2px;border-style:solid;border-color:var(--background);display:block;max-width:100%;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn68{height:36px;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:var(--space-007);padding-right:var(--space-007);padding-left:var(--space-007);border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;justify-content:center;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-004);white-space:nowrap;text-wrap:nowrap;background-color:var(--background);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(72.7913 26.9331 75.4345) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;cursor:pointer}
+.cn69{display:block}
+.cn70{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn71{height:15901.3px;display:block;order:1}
+.cn72{height:100%;display:block;font-size:var(--font-size-003);line-height:var(--line-height-001);margin-left:auto;margin-right:auto}
+.cn73{display:block;margin-bottom:var(--space-009)}
+.cn74{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn75{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn76{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn77{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn78{display:block;margin-bottom:var(--space-009)}
+.cn79{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn80{height:96px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn81{display:inline;color:var(--primary);font-weight:500;text-decoration-line:underline;cursor:pointer}
+.cn82{display:inline;color:var(--primary);font-weight:500;text-decoration-line:underline;cursor:pointer}
+.cn83{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn84{display:block;margin-bottom:var(--space-009)}
+.cn85{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:decimal;list-style-position:outside}
+.cn86{height:128px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn87{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn88{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn89{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn90{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn91{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn92{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn93{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn94{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn95{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn96{display:block;margin-bottom:var(--space-009)}
+.cn97{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn98{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn99{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn100{display:block;margin-bottom:var(--space-009)}
+.cn101{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn102{width:100%;display:table;margin-bottom:32px;font-size:var(--font-size-002);line-height:var(--line-height-002);border-collapse:collapse;border-spacing:2px}
+.cn103{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:lab(84.92 0 -0.0000119209);display:table-header-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn104{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn105{display:table-cell;padding-right:var(--space-006);padding-bottom:var(--space-006);vertical-align:bottom;color:var(--color-001);font-weight:var(--font-weight-004);letter-spacing:-0.4px;border-collapse:collapse;border-spacing:2px}
+.cn106{display:table-cell;padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);vertical-align:bottom;color:var(--color-001);font-weight:var(--font-weight-004);letter-spacing:-0.4px;border-collapse:collapse;border-spacing:2px}
+.cn107{display:table-cell;padding-bottom:var(--space-006);padding-left:var(--space-006);vertical-align:bottom;color:var(--color-001);font-weight:var(--font-weight-004);letter-spacing:-0.4px;border-collapse:collapse;border-spacing:2px}
+.cn108{display:table-row-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn109{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn110{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn111{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn112{display:table-cell;padding-top:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn113{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn114{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn115{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn116{display:table-cell;padding-top:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn117{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn118{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn119{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn120{display:table-cell;padding-top:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn121{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn122{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn123{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn124{display:table-cell;padding-top:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn125{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn126{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn127{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn128{display:table-cell;padding-top:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn129{display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn130{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn131{display:table-cell;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn132{display:table-cell;padding-top:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-collapse:collapse;border-spacing:2px}
+.cn133{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn134{display:block;margin-bottom:var(--space-009)}
+.cn135{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn136{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn137{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn138{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn139{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn140{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn141{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn142{height:160px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn143{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn144{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn145{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn146{display:block;margin-bottom:var(--space-009)}
+.cn147{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn148{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn149{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn150{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn151{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn152{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn153{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn154{display:block;margin-bottom:var(--space-009)}
+.cn155{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn156{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn157{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn158{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn159{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn160{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn161{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn162{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn163{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn164{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn165{display:block;margin-bottom:var(--space-009)}
+.cn166{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn167{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn168{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn169{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn170{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn171{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn172{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn173{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn174{display:block;margin-bottom:var(--space-009)}
+.cn175{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn176{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn177{display:block;margin-bottom:var(--space-009)}
+.cn178{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn179{display:block;margin-bottom:var(--space-009)}
+.cn180{height:96px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn181{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn182{height:96px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn183{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn184{height:160px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn185{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn186{height:64px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn187{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn188{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn189{display:block;margin-bottom:var(--space-009)}
+.cn190{height:96px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn191{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn192{height:96px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn193{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn194{height:64px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn195{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn196{height:64px;display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn197{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn198{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn199{display:block;margin-bottom:var(--space-009)}
+.cn200{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn201{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn202{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn203{display:block;margin-bottom:var(--space-009)}
+.cn204{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn205{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn206{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn207{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn208{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn209{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn210{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn211{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn212{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn213{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn214{display:block;margin-bottom:var(--space-009)}
+.cn215{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn216{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn217{display:block;margin-bottom:var(--space-009)}
+.cn218{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn219{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn220{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn221{height:192px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn222{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn223{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn224{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn225{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn226{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn227{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn228{display:block;margin-bottom:var(--space-009)}
+.cn229{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn230{display:block;margin-bottom:var(--space-009)}
+.cn231{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn232{display:block;margin-bottom:var(--space-009)}
+.cn233{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn234{display:block;margin-bottom:var(--space-009)}
+.cn235{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn236{display:block;margin-bottom:var(--space-009)}
+.cn237{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn238{display:block;margin-bottom:var(--space-009)}
+.cn239{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn240{display:block;margin-bottom:var(--space-009)}
+.cn241{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn242{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:decimal;list-style-position:outside}
+.cn243{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn244{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn245{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn246{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn247{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn248{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn249{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn250{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:decimal;list-style-position:outside}
+.cn251{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn252{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn253{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn254{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn255{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn256{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn257{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn258{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn259{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn260{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:decimal;list-style-position:outside}
+.cn261{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn262{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn263{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn264{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn265{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn266{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn267{display:block;margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn268{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn269{height:32px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn270{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn271{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn272{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn273{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn274{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn275{height:32px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn276{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn277{height:32px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn278{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn279{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn280{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn281{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn282{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn283{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn284{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn285{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn286{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn287{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn288{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn289{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn290{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn291{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn292{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn293{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn294{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn295{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn296{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn297{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn298{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn299{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn300{display:block;margin-bottom:var(--space-009)}
+.cn301{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn302{display:block;margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn303{height:96px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn304{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn305{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn306{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn307{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn308{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn309{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn310{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn311{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn312{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn313{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn314{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn315{display:block;margin-bottom:var(--space-009)}
+.cn316{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009)}
+.cn317{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn318{display:block;margin-bottom:var(--space-009)}
+.cn319{display:block;margin-top:var(--space-009);margin-bottom:var(--space-009);padding-left:var(--space-011);list-style-type:decimal;list-style-position:outside}
+.cn320{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn321{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn322{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn323{display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn324{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn325{display:block;margin-bottom:var(--space-009)}
+.cn326{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn327{display:block;margin-bottom:var(--space-009)}
+.cn328{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn329{display:block;margin-bottom:var(--space-009)}
+.cn330{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn331{display:block;margin-bottom:var(--space-009)}
+.cn332{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn333{display:block;margin-bottom:var(--space-009)}
+.cn334{display:block;margin-top:var(--space-013);margin-bottom:var(--space-008);color:var(--color-001);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-003);letter-spacing:-0.75px}
+.cn335{display:block;margin-bottom:var(--space-009)}
+.cn336{display:block;margin-top:var(--space-014);margin-bottom:var(--space-012);color:var(--color-001);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.9px}
+.cn337{display:block;margin-bottom:var(--space-009)}
+.cn338{display:block;margin-top:var(--space-009);padding-left:var(--space-011);list-style-type:disc;list-style-position:outside}
+.cn339{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn340{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn341{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn342{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn343{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn344{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn345{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn346{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn347{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn348{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn349{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn350{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn351{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn352{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn353{height:64px;display:list-item;margin-top:var(--space-006);margin-bottom:var(--space-006);padding-left:var(--space-004)}
+.cn354{display:inline;color:var(--color-001);font-weight:var(--font-weight-003)}
+.cn355{display:block;padding-top:64px;padding-bottom:96px;color:var(--background);background-image:linear-gradient(to right bottom, lab(15.1599 0 0) 0%, rgb(0, 0, 0) 100%)}
+.cn356{display:block;padding-right:var(--space-010);padding-left:var(--space-010)}
+.cn357{display:grid;row-gap:var(--space-010);column-gap:32px;grid-template-rows:336px;list-style-type:none;list-style-position:outside;grid-template-columns:repeat(5, minmax(0, 1fr))}
+.cn358{display:list-item;max-width:320px;grid-column-start:span 2;grid-column-end:span 2}
+.cn359{height:180px;display:flex;flex-direction:column;align-items:flex-start}
+.cn360{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn361{display:block;margin-top:var(--space-006);color:lab(83.8401 -0.0000298023 0);text-wrap:pretty}
+.cn362{height:20px;display:block;margin-top:var(--space-007);color:lab(71.8364 0 0);font-size:var(--font-size-001);line-height:var(--line-height-004)}
+.cn363{display:inline}
+.cn364{height:20px;display:flex;margin-top:var(--space-008);justify-content:center;align-items:center;row-gap:10px;column-gap:10px}
+.cn365{height:20px;display:block;cursor:pointer}
+.cn366{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn367{width:1px;height:1px;display:block;position:absolute;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn368{height:20px;display:block;cursor:pointer}
+.cn369{width:auto;height:20px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn370{width:1px;height:1px;display:block;position:absolute;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn371{height:20px;display:block;cursor:pointer}
+.cn372{width:auto;height:20px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn373{width:1px;height:1px;display:block;position:absolute;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn374{height:20px;display:block;cursor:pointer}
+.cn375{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn376{width:1px;height:1px;display:block;position:absolute;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn377{display:list-item}
+.cn378{display:block;margin-bottom:var(--space-005);font-weight:var(--font-weight-003)}
+.cn379{display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);list-style-type:none;list-style-position:outside}
+.cn380{display:list-item}
+.cn381{display:inline;cursor:pointer}
+.cn382{display:list-item}
+.cn383{display:inline;cursor:pointer}
+.cn384{display:list-item}
+.cn385{display:inline;cursor:pointer}
+.cn386{height:24px;display:list-item}
+.cn387{display:inline;cursor:pointer}
+.cn388{height:336px;display:list-item}
+.cn389{display:block;margin-bottom:var(--space-005);font-weight:var(--font-weight-003)}
+.cn390{height:304px;display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);list-style-type:none;list-style-position:outside}
+.cn391{height:24px;display:list-item}
+.cn392{display:inline;cursor:pointer}
+.cn393{height:24px;display:list-item}
+.cn394{display:inline;cursor:pointer}
+.cn395{height:24px;display:list-item}
+.cn396{display:inline;cursor:pointer}
+.cn397{height:24px;display:list-item}
+.cn398{display:inline;cursor:pointer}
+.cn399{height:24px;display:list-item}
+.cn400{display:inline;cursor:pointer}
+.cn401{height:24px;display:list-item}
+.cn402{display:inline;cursor:pointer}
+.cn403{height:24px;display:list-item}
+.cn404{display:inline;cursor:pointer}
+.cn405{height:24px;display:list-item}
+.cn406{display:inline;cursor:pointer}
+.cn407{height:24px;display:list-item}
+.cn408{display:inline;cursor:pointer}
+.cn409{height:24px;display:list-item}
+.cn410{display:inline;cursor:pointer}
+.cn411{height:24px;display:list-item}
+.cn412{display:inline;cursor:pointer}
+.cn413{display:list-item}
+.cn414{display:block;margin-bottom:var(--space-005);font-weight:var(--font-weight-003)}
+.cn415{height:248px;display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);list-style-type:none;list-style-position:outside}
+.cn416{display:list-item}
+.cn417{display:inline;cursor:pointer}
+.cn418{display:list-item}
+.cn419{display:inline;cursor:pointer}
+.cn420{display:list-item}
+.cn421{display:inline;cursor:pointer}
+.cn422{display:list-item}
+.cn423{display:inline;cursor:pointer}
+.cn424{height:24px;display:list-item}
+.cn425{display:inline;cursor:pointer}
+.cn426{height:24px;display:list-item}
+.cn427{display:inline;cursor:pointer}
+.cn428{height:24px;display:list-item}
+.cn429{display:inline;cursor:pointer}
+.cn430{display:list-item}
+.cn431{display:inline;cursor:pointer}
+.cn432{height:24px;display:list-item}
+.cn433{display:inline;cursor:pointer}
+.cn434{display:block}
+
+@media (max-width: 571px) {
+.cn0{height:30534.1px}
+.cn9{display:none}
+.cn14{margin-left:0}
+.cn15{display:none}
+.cn17{display:block;min-width:0}
+.cn18{top:0px;right:0px;bottom:0px;left:0px}
+.cn19{min-width:0}
+.cn23{font-size:var(--font-size-004);line-height:var(--line-height-003)}
+.cn26{grid-template-rows:28076.1px 710px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn27{width:327px}
+.cn28{position:static;top:auto}
+.cn48{background-color:lab(90.9416 -0.0000298023 0 / 0.5);color:inherit}
+.cn54{color:var(--muted-foreground);background-color:initial}
+.cn71{height:28076.1px}
+.cn77{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn80{height:192px}
+.cn83{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn86{height:352px}
+.cn88{height:288px}
+.cn90{height:192px}
+.cn92{height:160px}
+.cn95{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn99{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn101{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn133{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn136{height:128px}
+.cn138{height:160px}
+.cn140{height:160px}
+.cn142{height:384px}
+.cn145{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn147{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn153{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn156{height:128px}
+.cn158{height:160px}
+.cn160{height:128px}
+.cn162{height:128px}
+.cn164{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn167{height:128px}
+.cn169{height:160px}
+.cn171{height:192px}
+.cn173{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn176{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn178{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn180{height:192px}
+.cn182{height:192px}
+.cn184{height:352px}
+.cn186{height:160px}
+.cn188{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn190{height:192px}
+.cn192{height:224px}
+.cn194{height:160px}
+.cn196{height:128px}
+.cn198{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn202{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn205{height:160px}
+.cn207{height:160px}
+.cn209{height:192px}
+.cn211{height:160px}
+.cn213{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn216{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn219{height:192px}
+.cn221{height:448px}
+.cn223{height:192px}
+.cn225{height:192px}
+.cn227{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn229{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn231{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn233{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn235{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn237{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn239{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn241{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn249{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn259{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn266{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn267{margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn269{height:96px}
+.cn271{height:128px}
+.cn273{height:128px}
+.cn275{height:96px}
+.cn277{height:96px}
+.cn279{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn281{height:128px}
+.cn283{height:160px}
+.cn285{height:160px}
+.cn287{height:96px}
+.cn289{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn291{height:160px}
+.cn293{height:128px}
+.cn295{height:128px}
+.cn297{height:160px}
+.cn299{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn301{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn303{height:256px}
+.cn305{height:160px}
+.cn307{height:128px}
+.cn309{height:128px}
+.cn311{height:192px}
+.cn314{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn317{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn324{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn326{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn328{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn330{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn332{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn334{margin-top:40px;margin-bottom:var(--space-007);font-size:23.9999px;line-height:35.9999px;letter-spacing:-0.599999px}
+.cn336{margin-top:56.0002px;margin-bottom:32.0002px;font-size:30.0001px;letter-spacing:-0.750001px}
+.cn339{height:128px}
+.cn341{height:128px}
+.cn343{height:160px}
+.cn345{height:160px}
+.cn347{height:128px}
+.cn349{height:128px}
+.cn351{height:128px}
+.cn353{height:128px}
+.cn357{grid-template-rows:180px 140px 336px 280px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn358{grid-column-start:initial;grid-column-end:initial}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:19079.3px}
+.cn9{display:none}
+.cn14{margin-left:301.969px}
+.cn17{display:block;min-width:0}
+.cn18{top:0px;right:0px;bottom:0px;left:0px}
+.cn19{min-width:0}
+.cn23{font-size:var(--font-size-005);line-height:var(--line-height-005)}
+.cn26{grid-template-rows:16845.3px 570px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn27{width:720px}
+.cn28{height:570px;position:static;top:auto}
+.cn71{height:16845.3px}
+.cn86{height:160px}
+.cn88{height:128px}
+.cn186{height:96px}
+.cn192{height:128px}
+.cn194{height:96px}
+.cn223{height:96px}
+.cn269{height:64px}
+.cn275{height:64px}
+.cn303{height:128px}
+.cn305{height:96px}
+.cn311{height:96px}
+.cn357{grid-template-rows:180px 140px 336px 280px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn358{grid-column-start:initial;grid-column-end:initial}
+}
+
+@media (min-width: 1601px) {
+.cn3{max-width:1400px;margin-right:260px;margin-left:260px}
+.cn14{margin-left:641.969px}
+.cn25{max-width:1400px;margin-right:260px;margin-left:260px}
+.cn48{background-color:lab(90.9416 -0.0000298023 0 / 0.5);color:inherit}
+.cn54{color:var(--muted-foreground);background-color:initial}
+.cn356{max-width:1400px;margin-right:260px;margin-left:260px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1">
+      <header class="cn2">
+        <div class="cn3">
+          <div class="cn4">
+            <a class="cn5" href="https://llmrefs.com/">
+              <svg class="cn6" fill="none" viewBox="0 0 1767 384" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M1548.06 298h73c.67 8.667 4.17 15.5 10.5 20.5s15.33 7.5 27 7.5c12 0 20.83-2 26.5-6 5.67-4 8.5-9.167 8.5-15.5 0-3.667-1.5-7.333-4.5-11-2.67-3.667-8.67-6.5-18-8.5l-46-10c-23-5-40.17-13-51.5-24-11.33-11.333-17-28-17-50 0-17.333 4.5-32 13.5-44 9.33-12.333 21.83-21.667 37.5-28 15.67-6.667 33.5-10 53.5-10 19.33 0 36.33 3.5 51 10.5 15 7 26.67 16.833 35 29.5 8.33 12.667 12.5 27.5 12.5 44.5h-73c0-8.667-2.5-15.5-7.5-20.5-5-5.333-12.17-8-21.5-8-8.67 0-15.67 2.167-21 6.5-5 4-7.5 9.333-7.5 16 0 10.667 9 18 27 22l46.5 10c20.67 4.333 36.33 11.833 47 22.5 11 10.333 16.5 25.5 16.5 45.5 0 17.667-4.67 33-14 46s-22.33 23-39 30c-16.67 6.667-35.83 10-57.5 10-33 0-59.17-7.833-78.5-23.5-19.33-16-29-36.667-29-62Z"></path><path fill="currentColor" d="M1389.94 127h171.5v64h-171.5v-64Zm171.5-124v66h-21.5c-15.67 0-26 3.667-31 11s-7.5 16.333-7.5 27v270h-77V107c0-25 4.17-45.333 12.5-61 8.33-15.667 20.17-27.167 35.5-34.5 15.33-7.667 33.5-11.5 54.5-11.5 5.33 0 10.83.333 16.5 1 6 .333 12 1 18 2ZM1271.84 383.5c-25 0-47.33-5.667-67-17-19.33-11.333-34.66-26.833-46-46.5-11-20-16.5-42.833-16.5-68.5 0-26 5.34-48.833 16-68.5 11-20 26.17-35.667 45.5-47 19.34-11.333 41.5-17 66.5-17 26.34 0 49 5.5 68 16.5 19 10.667 33.67 26 44 46 10.34 19.667 15.5 43.167 15.5 70.5v19.5l-215 1 1-47.5h137.5c0-13.333-4.5-23.833-13.5-31.5-9-8-21.33-12-37-12-13 0-23.66 2.5-32 7.5-8 5-14 12.833-18 23.5-4 10.333-6 23.667-6 40 0 23.333 4.67 40.667 14 52 9.67 11 24.5 16.5 44.5 16.5 14.67 0 26.84-2.5 36.5-7.5 9.67-5 15.84-12 18.5-21h70.5c-4.33 27.667-18 49.833-41 66.5-23 16.333-51.66 24.5-86 24.5Z"></path><path fill="currentColor" d="M1154.23 127v72.5h-24.5c-22 0-39.33 5.333-52 16-12.33 10.667-18.5 28.333-18.5 53V377h-77V127.5h72.5l6 53.5h-7c3.33-16.667 10.83-30.333 22.5-41 12-11 28.17-16.5 48.5-16.5 4.67 0 9.33.333 14 1 5 .333 10.17 1.167 15.5 2.5ZM644.664 377h-78.5V7h78.5l110 276 110.5-276h79.5v370h-78.5V250c0-13 .167-23.833.5-32.5.333-8.667.667-16.167 1-22.5.667-6.667 1.5-13.5 2.5-20.5l-78.5 202.5h-74l-78-202.5c2.333 13.667 3.667 28.5 4 44.5.667 16 1 34.167 1 54.5V377ZM399.332 7v370h-81V7h81Zm-66.5 370v-75h212.5v75h-212.5Z"></path><path fill="#F59E0B" d="M81 7v370H0V7h81Z"></path><path fill="currentColor" d="M151.5 7v370h-81V7h81ZM85 377v-75h212.5v75H85Z"></path></svg>
+              <span class="cn7">
+                LLMrefs
+              </span>
+            </a>
+          </div>
+          <div class="cn8">
+            <nav class="cn9">
+              <a class="cn10" href="https://llmrefs.com/ai-search-visibility">
+                AI Search Visibility
+              </a>
+              <a class="cn11" href="https://llmrefs.com/tools">
+                Tools
+              </a>
+              <a class="cn12" href="https://llmrefs.com/blog">
+                Blog
+              </a>
+              <a class="cn13" href="https://llmrefs.com/#pricing">
+                Pricing
+              </a>
+            </nav>
+            <div class="cn14">
+              <a class="cn15" href="https://llmrefs.com/login">
+                Sign in
+              </a>
+              <a class="cn16" href="https://llmrefs.com/signup">
+                Create Free Account
+              </a>
+              <div class="cn17">
+                <button class="cn18" aria-label="Open menu" type="button">
+                  <svg class="cn19" aria-hidden="true" fill="currentColor" height="1em" stroke="currentColor" viewBox="0 0 20 20" width="1em" xmlns="http://www.w3.org/2000/svg" strokeWidth="0"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="cn20">
+      <header class="cn21">
+        <div class="cn22">
+          <h1 class="cn23">
+            Generative Engine Optimization (GEO): The 2026 Guide
+          </h1>
+          <p class="cn24">
+            How to get your content cited by AI search engines like ChatGPT, Gemini, Perplexity, Claude, and Google AI Overviews.
+          </p>
+        </div>
+      </header>
+      <section class="cn25">
+        <div class="cn26">
+          <aside class="cn27">
+            <div class="cn28">
+              <div class="cn29">
+                <div class="cn30">
+                  <h2 class="cn31">
+                    Table of Contents
+                  </h2>
+                </div>
+                <div class="cn32">
+                  <nav class="cn33" aria-label="Table of contents">
+                    <ul class="cn34">
+                      <li class="cn35">
+                        <a class="cn36" href="#what-is-generative-engine-optimization">
+                          What Is Generative Engine Optimization?
+                        </a>
+                      </li>
+                      <li class="cn37">
+                        <a class="cn38" href="#geo-vs-seo-what-is-the-difference">
+                          GEO vs SEO: What Is the Difference?
+                        </a>
+                      </li>
+                      <li class="cn39">
+                        <a class="cn40" href="#why-generative-engine-optimization-matters-in-2026">
+                          Why Generative Engine Optimization Matters in 2026
+                        </a>
+                      </li>
+                      <li class="cn41">
+                        <a class="cn42" href="#how-to-optimize-your-content-for-generative-ai-search-engines">
+                          How to Optimize Your Content for Generative AI Search Engines
+                        </a>
+                      </li>
+                      <li class="cn43">
+                        <a class="cn44" href="#how-to-optimize-for-different-ai-search-engines">
+                          How to Optimize for Different AI Search Engines
+                        </a>
+                      </li>
+                      <li class="cn45">
+                        <a class="cn46" href="#generative-engine-optimization-seo-techniques-a-practical-checklist">
+                          Generative Engine Optimization SEO Techniques: A Practical Checklist
+                        </a>
+                      </li>
+                      <li class="cn47">
+                        <a class="cn48" href="#common-generative-engine-optimization-mistakes-to-avoid">
+                          Common Generative Engine Optimization Mistakes to Avoid
+                        </a>
+                      </li>
+                      <li class="cn49">
+                        <a class="cn50" href="#how-to-measure-generative-engine-optimization-performance">
+                          How to Measure Generative Engine Optimization Performance
+                        </a>
+                      </li>
+                      <li class="cn51">
+                        <a class="cn52" href="#the-future-of-seo-with-large-language-models">
+                          The Future of SEO With Large Language Models
+                        </a>
+                      </li>
+                      <li class="cn53">
+                        <a class="cn54" href="#key-takeaways">
+                          Key Takeaways
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="cn55">
+                <div class="cn56"></div>
+                <p class="cn57">
+                  Grow your brand's visibility in AI search
+                </p>
+                <div class="cn58">
+                  <img class="cn59" alt="OpenAI ChatGPT" height="32" src="public/assets/cloned/images/2674bf5f3fbe.png" srcset="public/assets/cloned/images/7508c45dec7e.webp 1x, public/assets/cloned/images/2674bf5f3fbe.png 2x" width="32" />
+                  <img class="cn60" alt="Google Gemini" height="32" src="public/assets/cloned/images/185b092cce92.png" srcset="public/assets/cloned/images/2850bd0c0590.webp 1x, public/assets/cloned/images/185b092cce92.png 2x" width="32" />
+                  <img class="cn61" alt="Perplexity AI" height="32" src="public/assets/cloned/images/6fe592958616.png" srcset="public/assets/cloned/images/ac2639c19abf.webp 1x, public/assets/cloned/images/6fe592958616.png 2x" width="32" />
+                  <img class="cn62" alt="Anthropic Claude" height="32" src="public/assets/cloned/images/153506b70c07.png" srcset="public/assets/cloned/images/6fe2d3c54abc.webp 1x, public/assets/cloned/images/153506b70c07.png 2x" width="32" />
+                  <img class="cn63" alt="xAI Grok" height="32" src="public/assets/cloned/images/d7762f4b1b1d.png" srcset="public/assets/cloned/images/423d7cf81afb.webp 1x, public/assets/cloned/images/d7762f4b1b1d.png 2x" width="32" />
+                  <img class="cn64" alt="Google AI Mode" height="32" src="public/assets/cloned/images/5b0b7457083e.png" srcset="public/assets/cloned/images/ef2922caf05d.webp 1x, public/assets/cloned/images/5b0b7457083e.png 2x" width="32" />
+                  <img class="cn65" alt="Microsoft Copilot" height="32" src="public/assets/cloned/images/f5065e175c3d.png" srcset="public/assets/cloned/images/2acbf09a77d4.webp 1x, public/assets/cloned/images/f5065e175c3d.png 2x" width="32" />
+                  <img class="cn66" alt="Meta AI" height="32" src="public/assets/cloned/images/ace41403e500.png" srcset="public/assets/cloned/images/be8a13687e19.webp 1x, public/assets/cloned/images/ace41403e500.png 2x" width="32" />
+                  <img class="cn67" alt="DeepSeek AI" height="32" src="public/assets/cloned/images/445728435d26.png" srcset="public/assets/cloned/images/58d9d0acc30a.webp 1x, public/assets/cloned/images/445728435d26.png 2x" width="32" />
+                </div>
+                <a class="cn68" href="https://llmrefs.com/learn/ai-seo">
+                  <span class="cn69">
+                    Learn AI SEO
+                  </span>
+                  <svg class="cn70" aria-hidden="true" fill="currentColor" height="1em" stroke="currentColor" viewBox="0 0 20 20" width="1em" xmlns="http://www.w3.org/2000/svg" strokeWidth="0"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+          <div class="cn71">
+            <div class="cn72">
+              <p class="cn73">
+                Search is changing. When someone asks ChatGPT "What is the best project management tool for a remote team?" they do not get a list of links. They get a direct answer with specific recommendations.
+              </p>
+               
+              <p class="cn74">
+                This is generative search. And it is reshaping how brands get discovered online.
+              </p>
+               
+              <p class="cn75">
+                Generative engine optimization (GEO) is the practice of optimizing your content so that AI search engines cite it in their responses. If traditional SEO is about ranking on page one of Google, GEO is about being part of the answer itself.
+              </p>
+               
+              <p class="cn76">
+                This guide explains what generative engine optimization is, how it differs from traditional SEO, and the specific techniques you can use to improve your search visibility in AI-generated content.
+              </p>
+               
+              <h2 class="cn77" id="what-is-generative-engine-optimization">
+                What Is Generative Engine Optimization?
+              </h2>
+               
+              <p class="cn78">
+                Generative engine optimization is the practice of structuring your content so that AI systems can find it, understand it, and cite it in their responses.
+              </p>
+               
+              <p class="cn79">
+                When you search on Google, you get a list of blue links. When you ask a question to ChatGPT or Perplexity, you get a synthesized answer that pulls information from multiple sources across the web. GEO focuses on making your content one of those sources.
+              </p>
+               
+              <p class="cn80">
+                You may also see this called AI SEO, 
+                <a class="cn81" href="https://llmrefs.com/answer-engine-optimization">
+                  answer engine optimization (AEO)
+                </a>
+                , or 
+                <a class="cn82" href="https://llmrefs.com/llm-seo">
+                  large language model optimization (LLMO)
+                </a>
+                . The industry has not settled on a single term yet. They all describe the same goal. Get your content cited by AI.
+              </p>
+               
+              <h3 class="cn83" id="how-generative-search-engines-work">
+                How generative search engines work
+              </h3>
+               
+              <p class="cn84">
+                Traditional search engines rank pages based on keywords, backlinks, and user signals. Generative AI search engines work differently. Here is what happens when someone asks an AI a question.
+              </p>
+               
+              <ol class="cn85">
+                <li class="cn86">
+                  <strong class="cn87">
+                    Query fan-out.
+                  </strong>
+                   The AI does not paste the full prompt into a search engine. It breaks the question into smaller sub-queries and searches for each one separately. If someone asks "What is the best VPN for streaming Netflix in Europe?" the AI might search for "best VPN 2026," "VPN Netflix streaming," and "VPN Europe servers" as three separate queries.
+                </li>
+                <li class="cn88">
+                  <strong class="cn89">
+                    Information retrieval.
+                  </strong>
+                   The AI searches the web and its own knowledge base for relevant sources. Most use a technique called retrieval-augmented generation (RAG). RAG pulls specific passages from web pages and feeds them to the language model as context.
+                </li>
+                <li class="cn90">
+                  <strong class="cn91">
+                    Synthesis.
+                  </strong>
+                   The AI combines information from multiple sources into a single, coherent response. It does not copy and paste. It rewrites and merges information from several pages into one answer.
+                </li>
+                <li class="cn92">
+                  <strong class="cn93">
+                    Citation.
+                  </strong>
+                   The response includes links or references to the original sources. These citations drive referral traffic back to the websites that were used.
+                </li>
+              </ol>
+               
+              <p class="cn94">
+                Your goal with generative engine optimization is to be one of the sources the AI retrieves and cites. That means your content needs to rank for the sub-queries the AI generates, not just the long-form question the user typed.
+              </p>
+               
+              <h3 class="cn95" id="one-important-thing-to-understand-about-llms">
+                One important thing to understand about LLMs
+              </h3>
+               
+              <p class="cn96">
+                Large language models (LLMs) are non-deterministic. Ask the same question five times, and you will get five different responses.
+              </p>
+               
+              <p class="cn97">
+                This means generative engine optimization is not about ranking in a fixed position the way Google works. There is no "position #1" in ChatGPT. Instead, visibility in AI search is about frequency. How often does your brand appear across many different responses to many different prompts?
+              </p>
+               
+              <p class="cn98">
+                Think of it as a mention rate, not a ranking. The higher your frequency, the more AI impressions your brand gets.
+              </p>
+               
+              <h2 class="cn99" id="geo-vs-seo-what-is-the-difference">
+                GEO vs SEO: What Is the Difference?
+              </h2>
+               
+              <p class="cn100">
+                Generative engine optimization and traditional SEO share the same foundation. Both reward high-quality, authoritative content. Both require solid technical implementation. But they differ in some important ways.
+              </p>
+               
+              <h3 class="cn101" id="how-ai-search-differs-from-traditional-search">
+                How AI search differs from traditional search
+              </h3>
+               
+              <table class="cn102">
+                <thead class="cn103">
+                  <tr class="cn104">
+                    <th class="cn105">
+                      Aspect
+                    </th>
+                    <th class="cn106">
+                      Traditional SEO
+                    </th>
+                    <th class="cn107">
+                      Generative Engine Optimization
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="cn108">
+                  <tr class="cn109">
+                    <td class="cn110">
+                      Output format
+                    </td>
+                    <td class="cn111">
+                      List of clickable links
+                    </td>
+                    <td class="cn112">
+                      Synthesized narrative response
+                    </td>
+                  </tr>
+                  <tr class="cn113">
+                    <td class="cn114">
+                      User behavior
+                    </td>
+                    <td class="cn115">
+                      User clicks through to find information
+                    </td>
+                    <td class="cn116">
+                      User gets the answer directly
+                    </td>
+                  </tr>
+                  <tr class="cn117">
+                    <td class="cn118">
+                      Query length
+                    </td>
+                    <td class="cn119">
+                      Short keywords (average 4 words)
+                    </td>
+                    <td class="cn120">
+                      Conversational questions (average 23 words)
+                    </td>
+                  </tr>
+                  <tr class="cn121">
+                    <td class="cn122">
+                      Success metrics
+                    </td>
+                    <td class="cn123">
+                      Rankings, click-through rate, traffic
+                    </td>
+                    <td class="cn124">
+                      Citations, brand mentions, share of voice
+                    </td>
+                  </tr>
+                  <tr class="cn125">
+                    <td class="cn126">
+                      Optimization focus
+                    </td>
+                    <td class="cn127">
+                      Keywords and backlinks
+                    </td>
+                    <td class="cn128">
+                      Content structure and authority signals
+                    </td>
+                  </tr>
+                  <tr class="cn129">
+                    <td class="cn130">
+                      The key question
+                    </td>
+                    <td class="cn131">
+                      "Are we on page one?"
+                    </td>
+                    <td class="cn132">
+                      "Are we in the answer?"
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+               
+              <h3 class="cn133" id="what-stays-the-same-between-geo-and-seo">
+                What stays the same between GEO and SEO
+              </h3>
+               
+              <p class="cn134">
+                Here is the good news. If you have been doing solid SEO work, you are already most of the way there with GEO. The fundamentals have not changed.
+              </p>
+               
+              <ul class="cn135">
+                <li class="cn136">
+                  <strong class="cn137">
+                    E-E-A-T still matters.
+                  </strong>
+                   Experience, expertise, authoritativeness, and trustworthiness influence both Google rankings and AI citations.
+                </li>
+                <li class="cn138">
+                  <strong class="cn139">
+                    Technical optimization still matters.
+                  </strong>
+                   Fast load times, mobile responsiveness, and crawlability help both search engines and AI systems access your content.
+                </li>
+                <li class="cn140">
+                  <strong class="cn141">
+                    Quality content still wins.
+                  </strong>
+                   Thin, surface-level content fails in both environments. AI systems want to cite sources that are genuinely helpful.
+                </li>
+                <li class="cn142">
+                  <strong class="cn143">
+                    Backlinks still matter.
+                  </strong>
+                   AI models use live web search to find sources. Pages with strong backlink profiles are more likely to rank for the sub-queries the AI generates. Links also increase how often your brand appears in Common Crawl, the public dataset that most large language models are trained on. More links means more training data exposure, which makes the AI more familiar with your brand.
+                </li>
+              </ul>
+               
+              <p class="cn144">
+                SEO is not dead. AI models rely on live web search results to generate their answers. Strong SEO performance directly feeds GEO visibility.
+              </p>
+               
+              <h2 class="cn145" id="why-generative-engine-optimization-matters-in-2026">
+                Why Generative Engine Optimization Matters in 2026
+              </h2>
+               
+              <p class="cn146">
+                AI search is not a future trend. It is happening now, and the numbers are significant.
+              </p>
+               
+              <h3 class="cn147" id="the-scale-of-ai-search">
+                The scale of AI search
+              </h3>
+               
+              <ul class="cn148">
+                <li class="cn149">
+                  ChatGPT has over 800 million weekly active users
+                </li>
+                <li class="cn150">
+                  Google AI Overviews appear on billions of searches per month
+                </li>
+                <li class="cn151">
+                  Perplexity processes millions of queries daily
+                </li>
+                <li class="cn152">
+                  Apple is integrating AI-native search (including Perplexity and Claude) directly into Safari
+                </li>
+              </ul>
+               
+              <h3 class="cn153" id="users-behave-differently-in-ai-search">
+                Users behave differently in AI search
+              </h3>
+               
+              <p class="cn154">
+                People interact with AI search engines differently than traditional search. This changes the SEO strategies that work.
+              </p>
+               
+              <ul class="cn155">
+                <li class="cn156">
+                  <strong class="cn157">
+                    Longer sessions.
+                  </strong>
+                   Users spend an average of 6 minutes per AI search session, compared to seconds on Google.
+                </li>
+                <li class="cn158">
+                  <strong class="cn159">
+                    More detailed queries.
+                  </strong>
+                   AI search queries average 23 words, compared to 4 words on Google. Users describe their full situation instead of typing fragments.
+                </li>
+                <li class="cn160">
+                  <strong class="cn161">
+                    Higher trust.
+                  </strong>
+                   Users treat AI responses as authoritative answers, not starting points for more research.
+                </li>
+                <li class="cn162">
+                  <strong class="cn163">
+                    Follow-up questions.
+                  </strong>
+                   Users refine their queries through conversation, providing more context with each message.
+                </li>
+              </ul>
+               
+              <h3 class="cn164" id="ai-search-traffic-converts-differently">
+                AI search traffic converts differently
+              </h3>
+               
+              <p class="cn165">
+                Early data suggests that traffic from AI search engines has different characteristics than Google traffic.
+              </p>
+               
+              <ul class="cn166">
+                <li class="cn167">
+                  <strong class="cn168">
+                    Lower volume, higher intent.
+                  </strong>
+                   Users arriving from AI search tend to be further along in their decision-making.
+                </li>
+                <li class="cn169">
+                  <strong class="cn170">
+                    Higher conversion rates.
+                  </strong>
+                   Users who click through from AI citations are more likely to convert. They have already received a recommendation from the AI.
+                </li>
+                <li class="cn171">
+                  <strong class="cn172">
+                    Growing referral traffic.
+                  </strong>
+                   ChatGPT alone is already driving referral traffic to tens of thousands of distinct domains. Vercel reports that 10% of new signups now come from ChatGPT referrals.
+                </li>
+              </ul>
+               
+              <h3 class="cn173" id="google-rankings-and-ai-visibility-are-diverging">
+                Google rankings and AI visibility are diverging
+              </h3>
+               
+              <p class="cn174">
+                Ranking on page one of Google does not guarantee you will appear in AI answers. And appearing in AI answers does not require ranking on page one.
+              </p>
+               
+              <p class="cn175">
+                Research from GEO firm Brandlight suggests that the overlap between top Google links and AI-cited sources has dropped from 70% to below 20%. This gap is growing as AI systems develop their own preferences for which sources to cite.
+              </p>
+               
+              <h2 class="cn176" id="how-to-optimize-your-content-for-generative-ai-search-engines">
+                How to Optimize Your Content for Generative AI Search Engines
+              </h2>
+               
+              <p class="cn177">
+                Generative engine optimization builds on SEO fundamentals, but adds specific techniques for improving search visibility in AI-generated content. Here are the best practices that work in 2026.
+              </p>
+               
+              <h3 class="cn178" id="1-make-sure-ai-crawlers-can-access-your-content">
+                1. Make sure AI crawlers can access your content
+              </h3>
+               
+              <p class="cn179">
+                Before anything else, AI systems need to be able to read your pages. This sounds obvious, but it is the most common problem we see.
+              </p>
+               
+              <p class="cn180">
+                <strong class="cn181">
+                  Check your robots.txt file.
+                </strong>
+                 Many sites block AI crawlers without realizing it. Cloudflare recently changed its default configuration to block AI bots. If you use Cloudflare, your AI bot traffic may have been shut off automatically.
+              </p>
+               
+              <p class="cn182">
+                <strong class="cn183">
+                  Check your server logs.
+                </strong>
+                 Look for the "ChatGPT-User" user agent in your server logs to see if AI bots are visiting your site. If you use Cloudflare, check the "AI Crawl Metrics" page in your dashboard.
+              </p>
+               
+              <p class="cn184">
+                <strong class="cn185">
+                  Avoid client-side rendering for important content.
+                </strong>
+                 AI crawlers do not browse like humans. They can only read the HTML your server returns. If your content loads via JavaScript after the page renders, AI bots cannot see it. Think about your pricing page. You might have an interactive slider or tabs that reveal different plans. AI bots cannot click or interact with those elements. The content behind them is invisible.
+              </p>
+               
+              <p class="cn186">
+                <strong class="cn187">
+                  Keep content out from behind walls.
+                </strong>
+                 Information behind logins, paywalls, or accordion dropdowns is not accessible to AI crawlers. If you want it cited, it needs to be in the HTML.
+              </p>
+               
+              <h3 class="cn188" id="2-structure-content-so-ai-can-extract-it">
+                2. Structure content so AI can extract it
+              </h3>
+               
+              <p class="cn189">
+                AI systems need to pull specific pieces of information from your content. The easier you make this, the more likely you are to get cited.
+              </p>
+               
+              <p class="cn190">
+                <strong class="cn191">
+                  Use clear heading hierarchies.
+                </strong>
+                 Organize content with a logical H1, H2, H3 structure. Each section should cover one distinct topic or question. AI systems use headings to understand what each section is about.
+              </p>
+               
+              <p class="cn192">
+                <strong class="cn193">
+                  Write in scannable formats.
+                </strong>
+                 Use bullet points and numbered lists for processes, features, and comparisons. One study analyzed 10,000 real-world queries and found that pages with structured lists, quotes, and statistics had 30-40% higher visibility in AI responses.
+              </p>
+               
+              <p class="cn194">
+                <strong class="cn195">
+                  Lead with answers.
+                </strong>
+                 Put the key information at the beginning of each section. Do not bury the answer under paragraphs of context. AI systems are looking for direct, extractable answers.
+              </p>
+               
+              <p class="cn196">
+                <strong class="cn197">
+                  Keep paragraphs short.
+                </strong>
+                 Two to three sentences maximum. Long blocks of text are harder for AI to parse and less likely to be extracted as a citation.
+              </p>
+               
+              <h3 class="cn198" id="3-target-the-sub-queries-ai-actually-searches-for">
+                3. Target the sub-queries AI actually searches for
+              </h3>
+               
+              <p class="cn199">
+                This is where generative engine optimization differs most from traditional SEO strategy. Remember, when someone asks an AI a complex question, the AI breaks it into smaller sub-queries and searches for each one separately. These are called fan-out queries.
+              </p>
+               
+              <p class="cn200">
+                For example, if someone asks ChatGPT "What is the best email marketing platform for a small e-commerce business with less than 10,000 subscribers?" the AI might search for "best email marketing platforms 2026," "email marketing e-commerce features," and "email marketing pricing small business."
+              </p>
+               
+              <p class="cn201">
+                Make sure you have content that ranks for these shorter sub-queries too. Use the same terminology the AI might search for. Think about what fragments of a long question you would search for yourself, and make sure your content addresses each one.
+              </p>
+               
+              <h3 class="cn202" id="4-include-authority-signals-ai-systems-trust">
+                4. Include authority signals AI systems trust
+              </h3>
+               
+              <p class="cn203">
+                AI systems evaluate source credibility when deciding which pages to cite. Give them clear signals that your content is trustworthy.
+              </p>
+               
+              <ul class="cn204">
+                <li class="cn205">
+                  <strong class="cn206">
+                    Add expert quotes with attribution.
+                  </strong>
+                   Include quotes from named experts with their title and company. AI systems treat this as a strong authority signal.
+                </li>
+                <li class="cn207">
+                  <strong class="cn208">
+                    Cite statistics with sources.
+                  </strong>
+                   When you include data, name the source. "According to Semrush clickstream data" carries more weight than an unsourced claim.
+                </li>
+                <li class="cn209">
+                  <strong class="cn210">
+                    Show first-hand experience.
+                  </strong>
+                   Share real observations, case studies, and specific examples from your own work. This demonstrates the "experience" part of E-E-A-T, which AI systems increasingly value.
+                </li>
+                <li class="cn211">
+                  <strong class="cn212">
+                    Include clear author information.
+                  </strong>
+                   Make it obvious who wrote the content and why they are qualified. Author pages with credentials help both SEO and GEO.
+                </li>
+              </ul>
+               
+              <h3 class="cn213" id="5-keep-content-fresh">
+                5. Keep content fresh
+              </h3>
+               
+              <p class="cn214">
+                AI has a huge recency bias. From our data, we see that when content becomes more than 3 months old, AI citations to that page drop off sharply.
+              </p>
+               
+              <p class="cn215">
+                Revisit your important content at least once per quarter. Update statistics, refresh examples, and add new developments. This is not just good practice for SEO. It directly affects how often AI search engines cite your pages.
+              </p>
+               
+              <h3 class="cn216" id="6-build-authority-beyond-your-own-website">
+                6. Build authority beyond your own website
+              </h3>
+               
+              <p class="cn217">
+                AI systems learn about your brand from across the entire web, not just your own site. This is one area where generative engine optimization strategies go beyond traditional on-page SEO.
+              </p>
+               
+              <ul class="cn218">
+                <li class="cn219">
+                  <strong class="cn220">
+                    Unlinked brand mentions carry weight.
+                  </strong>
+                   AI systems give brand mentions more weight even when they are not linked. Casual mentions of your brand across the web can boost your AI visibility.
+                </li>
+                <li class="cn221">
+                  <strong class="cn222">
+                    Get into sources AI already cites.
+                  </strong>
+                   Find out which web pages are already being cited by AI for your target queries. Then get your brand mentioned in those pages. This could be as simple as commenting in a Reddit thread that is already being regularly cited, or emailing the author of a blog post and asking to be included. This is the fastest way to lift your visibility. We have seen brands go from completely invisible to getting their first AI mentions in under an hour using this method.
+                </li>
+                <li class="cn223">
+                  <strong class="cn224">
+                    Be active on platforms AI references.
+                  </strong>
+                   Reddit, YouTube, and forums appear frequently in AI responses. Genuine participation builds visibility. Marketing spam does not.
+                </li>
+                <li class="cn225">
+                  <strong class="cn226">
+                    Consider a Wikipedia entry.
+                  </strong>
+                   Wikipedia appears to be a significant source in AI training data. If your brand qualifies for inclusion, an accurate entry may influence how AI systems describe you.
+                </li>
+              </ul>
+               
+              <h2 class="cn227" id="how-to-optimize-for-different-ai-search-engines">
+                How to Optimize for Different AI Search Engines
+              </h2>
+               
+              <p class="cn228">
+                The core principles of generative engine optimization apply across all platforms. But each AI search engine has its own characteristics worth understanding.
+              </p>
+               
+              <h3 class="cn229" id="chatgpt">
+                ChatGPT
+              </h3>
+               
+              <p class="cn230">
+                ChatGPT has the largest market share at around 70% of AI search usage. It draws from a mix of live web search and its training data. It favors comprehensive, well-sourced content with clear expertise signals. ChatGPT is increasingly driving measurable referral traffic through its citations.
+              </p>
+               
+              <h3 class="cn231" id="google-ai-overviews-and-ai-mode">
+                Google AI Overviews and AI Mode
+              </h3>
+               
+              <p class="cn232">
+                Google AI Overviews integrate traditional search ranking signals with AI synthesis. Content that already ranks well in organic search tends to perform well in AI Overviews too. Schema markup and structured data may influence selection. Local relevance matters for location-based queries.
+              </p>
+               
+              <h3 class="cn233" id="perplexity">
+                Perplexity
+              </h3>
+               
+              <p class="cn234">
+                Perplexity is heavily citation-focused and uses real-time web search. It has a strong preference for recent, up-to-date content and is more transparent about its sources than other platforms. Perplexity also has some of the highest conversion rates for SaaS products.
+              </p>
+               
+              <h3 class="cn235" id="google-gemini">
+                Google Gemini
+              </h3>
+               
+              <p class="cn236">
+                Gemini is the fastest-growing AI search platform. It integrates deeply with Google's existing search infrastructure. Strong Google SEO performance tends to translate into Gemini visibility.
+              </p>
+               
+              <h3 class="cn237" id="claude">
+                Claude
+              </h3>
+               
+              <p class="cn238">
+                Claude tends to synthesize information rather than quote directly. It favors well-structured, logical content. Apple has announced that Claude will be integrated into Safari, which could significantly increase its influence on how people discover content.
+              </p>
+               
+              <h2 class="cn239" id="generative-engine-optimization-seo-techniques-a-practical-checklist">
+                Generative Engine Optimization SEO Techniques: A Practical Checklist
+              </h2>
+               
+              <p class="cn240">
+                Here is a step-by-step checklist you can follow to implement generative engine optimization alongside your existing SEO strategy. These are the best practices for 2026.
+              </p>
+               
+              <h3 class="cn241" id="technical-foundations">
+                Technical foundations
+              </h3>
+               
+              <ol class="cn242">
+                <li class="cn243">
+                  Verify AI crawlers are not blocked in your robots.txt file
+                </li>
+                <li class="cn244">
+                  Check your server or CDN is not rejecting AI bot requests (especially if you use Cloudflare)
+                </li>
+                <li class="cn245">
+                  Ensure important content is server-side rendered, not hidden behind JavaScript
+                </li>
+                <li class="cn246">
+                  Confirm content is not locked behind logins, paywalls, or interactive elements
+                </li>
+                <li class="cn247">
+                  Consider creating an llms.txt file to help AI systems understand your site structure
+                </li>
+                <li class="cn248">
+                  Implement schema markup for FAQs, reviews, and product information
+                </li>
+              </ol>
+               
+              <h3 class="cn249" id="content-optimization">
+                Content optimization
+              </h3>
+               
+              <ol class="cn250">
+                <li class="cn251">
+                  Use clear heading hierarchies (H1, H2, H3) with one topic per section
+                </li>
+                <li class="cn252">
+                  Write in scannable formats with bullet points and numbered lists
+                </li>
+                <li class="cn253">
+                  Lead each section with a direct answer before providing context
+                </li>
+                <li class="cn254">
+                  Keep paragraphs to 2-3 sentences maximum
+                </li>
+                <li class="cn255">
+                  Include expert quotes with name, title, and company attribution
+                </li>
+                <li class="cn256">
+                  Cite statistics and name their sources
+                </li>
+                <li class="cn257">
+                  Use question-based headings that match how people ask AI questions
+                </li>
+                <li class="cn258">
+                  Add clear author information with relevant credentials
+                </li>
+              </ol>
+               
+              <h3 class="cn259" id="ongoing-maintenance">
+                Ongoing maintenance
+              </h3>
+               
+              <ol class="cn260">
+                <li class="cn261">
+                  Refresh important content at least once every 3 months
+                </li>
+                <li class="cn262">
+                  Update statistics and examples with current data
+                </li>
+                <li class="cn263">
+                  Monitor which pages AI search engines are already citing for your target queries
+                </li>
+                <li class="cn264">
+                  Build brand mentions on third-party sites, especially those already cited by AI
+                </li>
+                <li class="cn265">
+                  Track share of voice and citation frequency over time
+                </li>
+              </ol>
+               
+              <h2 class="cn266" id="common-generative-engine-optimization-mistakes-to-avoid">
+                Common Generative Engine Optimization Mistakes to Avoid
+              </h2>
+               
+              <h3 class="cn267" id="content-mistakes">
+                Content mistakes
+              </h3>
+               
+              <ul class="cn268">
+                <li class="cn269">
+                  <strong class="cn270">
+                    Keyword stuffing.
+                  </strong>
+                   AI systems penalize over-optimization just like Google does. Write naturally.
+                </li>
+                <li class="cn271">
+                  <strong class="cn272">
+                    Thin content.
+                  </strong>
+                   Surface-level information does not establish authority. AI wants to cite comprehensive sources.
+                </li>
+                <li class="cn273">
+                  <strong class="cn274">
+                    Outdated information.
+                  </strong>
+                   AI systems have a strong recency bias. Content older than 3 months sees significantly fewer citations.
+                </li>
+                <li class="cn275">
+                  <strong class="cn276">
+                    Missing citations.
+                  </strong>
+                   Claims without named sources lose credibility with both readers and AI.
+                </li>
+                <li class="cn277">
+                  <strong class="cn278">
+                    Walls of text.
+                  </strong>
+                   Long unbroken paragraphs are hard for AI to parse and extract from.
+                </li>
+              </ul>
+               
+              <h3 class="cn279" id="technical-mistakes">
+                Technical mistakes
+              </h3>
+               
+              <ul class="cn280">
+                <li class="cn281">
+                  <strong class="cn282">
+                    Blocking AI crawlers.
+                  </strong>
+                   Check your robots.txt and CDN settings. Cloudflare users should double-check their AI bot configuration.
+                </li>
+                <li class="cn283">
+                  <strong class="cn284">
+                    Relying on client-side rendering.
+                  </strong>
+                   AI crawlers do not execute JavaScript. If your content is in a single-page app or loads dynamically, AI cannot read it.
+                </li>
+                <li class="cn285">
+                  <strong class="cn286">
+                    Hiding content behind interactions.
+                  </strong>
+                   Tabs, accordions, sliders, and dropdowns that require clicks to reveal content are invisible to AI bots.
+                </li>
+                <li class="cn287">
+                  <strong class="cn288">
+                    Slow site performance.
+                  </strong>
+                   Page speed affects how efficiently AI crawlers can access your content.
+                </li>
+              </ul>
+               
+              <h3 class="cn289" id="strategy-mistakes">
+                Strategy mistakes
+              </h3>
+               
+              <ul class="cn290">
+                <li class="cn291">
+                  <strong class="cn292">
+                    Treating GEO and SEO as separate strategies.
+                  </strong>
+                   They work together. AI models use live web search, which means strong SEO directly feeds GEO results.
+                </li>
+                <li class="cn293">
+                  <strong class="cn294">
+                    Mass-producing automated content.
+                  </strong>
+                   Flooding your site with AI-generated articles is bad for SEO and does not help GEO either.
+                </li>
+                <li class="cn295">
+                  <strong class="cn296">
+                    Only optimizing your own site.
+                  </strong>
+                   AI learns about your brand from third-party sources too. You need a presence beyond your own domain.
+                </li>
+                <li class="cn297">
+                  <strong class="cn298">
+                    Not tracking results.
+                  </strong>
+                   Most of AI search is zero-click, so traditional Google Analytics attribution does not capture the full picture. You need AI-specific tracking.
+                </li>
+              </ul>
+               
+              <h2 class="cn299" id="how-to-measure-generative-engine-optimization-performance">
+                How to Measure Generative Engine Optimization Performance
+              </h2>
+               
+              <p class="cn300">
+                Traditional SEO metrics do not fully capture how your brand performs in AI search. You need new metrics and new approaches.
+              </p>
+               
+              <h3 class="cn301" id="the-metrics-that-matter-for-geo">
+                The metrics that matter for GEO
+              </h3>
+               
+              <ul class="cn302">
+                <li class="cn303">
+                  <strong class="cn304">
+                    Share of voice.
+                  </strong>
+                   This is the most important GEO metric. It measures how frequently your brand appears in AI responses across a broad range of prompts. Think of it as your mention rate. The higher the percentage, the more AI impressions your brand gets.
+                </li>
+                <li class="cn305">
+                  <strong class="cn306">
+                    Competitive rank.
+                  </strong>
+                   Knowing your share of voice is useful, but you also need to know how you compare to competitors. This helps you find new optimization opportunities.
+                </li>
+                <li class="cn307">
+                  <strong class="cn308">
+                    Citation tracking.
+                  </strong>
+                   Which specific web pages are being cited by AI to answer queries in your space? And how often?
+                </li>
+                <li class="cn309">
+                  <strong class="cn310">
+                    Brand mention accuracy.
+                  </strong>
+                   How do AI systems describe your brand? Is the information correct and favorable?
+                </li>
+                <li class="cn311">
+                  <strong class="cn312">
+                    AI referral traffic.
+                  </strong>
+                   Check your server logs for the "ChatGPT-User" user agent to see if AI bots are visiting your pages. If you use Cloudflare, it shows this on the AI Crawl Metrics page.
+                </li>
+              </ul>
+               
+              <p class="cn313">
+                Track share of voice and rank over time. This tells you whether your generative engine optimization efforts are growing your brand visibility or falling flat.
+              </p>
+               
+              <h3 class="cn314" id="tools-for-ai-search-visibility-tracking">
+                Tools for AI search visibility tracking
+              </h3>
+               
+              <p class="cn315">
+                Several tools now help brands track and improve their AI search visibility. These tools monitor brand mentions across AI platforms, track citation frequency for specific queries, benchmark your share of voice against competitors, and analyze sentiment in how AI describes your brand.
+              </p>
+               
+              <p class="cn316">
+                The GEO tooling market is still maturing. But the best tools for large language model SEO strategy already provide actionable data you can use to improve your AI visibility today.
+              </p>
+               
+              <h3 class="cn317" id="manual-testing-still-works">
+                Manual testing still works
+              </h3>
+               
+              <p class="cn318">
+                You do not need expensive tools to get started. Run this test yourself.
+              </p>
+               
+              <ol class="cn319">
+                <li class="cn320">
+                  Identify 10-20 queries relevant to your business, especially bottom-of-funnel prompts where people are making purchasing decisions
+                </li>
+                <li class="cn321">
+                  Ask those queries to ChatGPT, Perplexity, and Gemini
+                </li>
+                <li class="cn322">
+                  Note whether your brand appears, how it is described, and which sources are cited
+                </li>
+                <li class="cn323">
+                  Repeat monthly to track changes
+                </li>
+              </ol>
+               
+              <h2 class="cn324" id="the-future-of-seo-with-large-language-models">
+                The Future of SEO With Large Language Models
+              </h2>
+               
+              <p class="cn325">
+                Generative engine optimization is still in its early stages. The playbook is being written in real time. But several trends are already becoming clear.
+              </p>
+               
+              <h3 class="cn326" id="ai-search-will-keep-growing">
+                AI search will keep growing
+              </h3>
+               
+              <p class="cn327">
+                With Apple building AI search into Safari, Google expanding AI Overviews and AI Mode, and ChatGPT adding features like direct shopping integrations with retailers, AI search usage will continue to grow. The businesses that invest in generative engine optimization now will have a significant head start.
+              </p>
+               
+              <h3 class="cn328" id="the-geo-and-seo-strategies-will-merge">
+                The GEO and SEO strategies will merge
+              </h3>
+               
+              <p class="cn329">
+                GEO is not replacing SEO. They are converging. AI models use live web search to find sources, which means traditional SEO directly powers AI visibility. The most effective approach is to optimize for both simultaneously.
+              </p>
+               
+              <h3 class="cn330" id="content-freshness-will-matter-more">
+                Content freshness will matter more
+              </h3>
+               
+              <p class="cn331">
+                AI systems increasingly favor fresh information. The 3-month citation cliff we see in our data will likely become a well-known ranking factor. Brands that refresh content regularly will maintain higher AI visibility than those that publish and forget.
+              </p>
+               
+              <h3 class="cn332" id="multi-modal-content-will-grow-in-importance">
+                Multi-modal content will grow in importance
+              </h3>
+               
+              <p class="cn333">
+                As AI systems improve at understanding images, video, and audio, visual content may become a more important factor in generative engine optimization. Brands that invest in multi-format content now will be better positioned as these capabilities mature.
+              </p>
+               
+              <h3 class="cn334" id="personalization-will-change-the-game">
+                Personalization will change the game
+              </h3>
+               
+              <p class="cn335">
+                AI responses are becoming more personalized. The same question may produce different answers for different users based on their context, location, and conversation history. This means brands will need to cover topics from multiple angles to capture visibility across different user segments.
+              </p>
+               
+              <h2 class="cn336" id="key-takeaways">
+                Key Takeaways
+              </h2>
+               
+              <p class="cn337">
+                Generative engine optimization is about making your content visible in AI-generated responses. Here is what matters most.
+              </p>
+               
+              <ul class="cn338">
+                <li class="cn339">
+                  <strong class="cn340">
+                    GEO is about citations, not rankings.
+                  </strong>
+                   Your goal is to be cited as a source in AI answers, not to hold a fixed position.
+                </li>
+                <li class="cn341">
+                  <strong class="cn342">
+                    SEO is not dead.
+                  </strong>
+                   AI models use live web search. Strong SEO performance directly feeds GEO results.
+                </li>
+                <li class="cn343">
+                  <strong class="cn344">
+                    Make sure AI can read your content.
+                  </strong>
+                   Check your robots.txt, CDN settings, and rendering approach. This is the most common issue we see.
+                </li>
+                <li class="cn345">
+                  <strong class="cn346">
+                    Structure content for extraction.
+                  </strong>
+                   Clear headings, bullet points, short paragraphs, and direct answers make it easy for AI to cite your content.
+                </li>
+                <li class="cn347">
+                  <strong class="cn348">
+                    Target fan-out queries.
+                  </strong>
+                   AI breaks long questions into smaller sub-queries. Make sure you rank for those too.
+                </li>
+                <li class="cn349">
+                  <strong class="cn350">
+                    Keep content fresh.
+                  </strong>
+                   AI has a strong recency bias. Update important content at least once every 3 months.
+                </li>
+                <li class="cn351">
+                  <strong class="cn352">
+                    Build authority beyond your site.
+                  </strong>
+                   Get your brand mentioned in sources AI already cites. This is the fastest path to AI visibility.
+                </li>
+                <li class="cn353">
+                  <strong class="cn354">
+                    Track share of voice, not just traffic.
+                  </strong>
+                   Most AI search is zero-click. You need new metrics to measure GEO performance.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="cn355">
+      <section class="cn356">
+        <ul class="cn357">
+          <li class="cn358">
+            <div class="cn359">
+              <svg class="cn360" fill="none" viewBox="0 0 1767 384" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M1548.06 298h73c.67 8.667 4.17 15.5 10.5 20.5s15.33 7.5 27 7.5c12 0 20.83-2 26.5-6 5.67-4 8.5-9.167 8.5-15.5 0-3.667-1.5-7.333-4.5-11-2.67-3.667-8.67-6.5-18-8.5l-46-10c-23-5-40.17-13-51.5-24-11.33-11.333-17-28-17-50 0-17.333 4.5-32 13.5-44 9.33-12.333 21.83-21.667 37.5-28 15.67-6.667 33.5-10 53.5-10 19.33 0 36.33 3.5 51 10.5 15 7 26.67 16.833 35 29.5 8.33 12.667 12.5 27.5 12.5 44.5h-73c0-8.667-2.5-15.5-7.5-20.5-5-5.333-12.17-8-21.5-8-8.67 0-15.67 2.167-21 6.5-5 4-7.5 9.333-7.5 16 0 10.667 9 18 27 22l46.5 10c20.67 4.333 36.33 11.833 47 22.5 11 10.333 16.5 25.5 16.5 45.5 0 17.667-4.67 33-14 46s-22.33 23-39 30c-16.67 6.667-35.83 10-57.5 10-33 0-59.17-7.833-78.5-23.5-19.33-16-29-36.667-29-62Z"></path><path fill="currentColor" d="M1389.94 127h171.5v64h-171.5v-64Zm171.5-124v66h-21.5c-15.67 0-26 3.667-31 11s-7.5 16.333-7.5 27v270h-77V107c0-25 4.17-45.333 12.5-61 8.33-15.667 20.17-27.167 35.5-34.5 15.33-7.667 33.5-11.5 54.5-11.5 5.33 0 10.83.333 16.5 1 6 .333 12 1 18 2ZM1271.84 383.5c-25 0-47.33-5.667-67-17-19.33-11.333-34.66-26.833-46-46.5-11-20-16.5-42.833-16.5-68.5 0-26 5.34-48.833 16-68.5 11-20 26.17-35.667 45.5-47 19.34-11.333 41.5-17 66.5-17 26.34 0 49 5.5 68 16.5 19 10.667 33.67 26 44 46 10.34 19.667 15.5 43.167 15.5 70.5v19.5l-215 1 1-47.5h137.5c0-13.333-4.5-23.833-13.5-31.5-9-8-21.33-12-37-12-13 0-23.66 2.5-32 7.5-8 5-14 12.833-18 23.5-4 10.333-6 23.667-6 40 0 23.333 4.67 40.667 14 52 9.67 11 24.5 16.5 44.5 16.5 14.67 0 26.84-2.5 36.5-7.5 9.67-5 15.84-12 18.5-21h70.5c-4.33 27.667-18 49.833-41 66.5-23 16.333-51.66 24.5-86 24.5Z"></path><path fill="currentColor" d="M1154.23 127v72.5h-24.5c-22 0-39.33 5.333-52 16-12.33 10.667-18.5 28.333-18.5 53V377h-77V127.5h72.5l6 53.5h-7c3.33-16.667 10.83-30.333 22.5-41 12-11 28.17-16.5 48.5-16.5 4.67 0 9.33.333 14 1 5 .333 10.17 1.167 15.5 2.5ZM644.664 377h-78.5V7h78.5l110 276 110.5-276h79.5v370h-78.5V250c0-13 .167-23.833.5-32.5.333-8.667.667-16.167 1-22.5.667-6.667 1.5-13.5 2.5-20.5l-78.5 202.5h-74l-78-202.5c2.333 13.667 3.667 28.5 4 44.5.667 16 1 34.167 1 54.5V377ZM399.332 7v370h-81V7h81Zm-66.5 370v-75h212.5v75h-212.5Z"></path><path fill="#F59E0B" d="M81 7v370H0V7h81Z"></path><path fill="currentColor" d="M151.5 7v370h-81V7h81ZM85 377v-75h212.5v75H85Z"></path></svg>
+              <p class="cn361">
+                Increase your brand’s visibility in AI search engines. Track keywords and optimize your AI SEO performance.
+              </p>
+              <p class="cn362">
+                © 
+                <span class="cn363">
+                  2026
+                </span>
+                , LLMrefs™. All rights reserved.
+              </p>
+              <div class="cn364">
+                <a class="cn365" href="https://www.linkedin.com/company/llmrefs/" target="_blank">
+                  <svg class="cn366" fill="currentColor" height="1em" stroke="currentColor" viewBox="0 0 448 512" width="1em" xmlns="http://www.w3.org/2000/svg" strokeWidth="0"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                  <span class="cn367">
+                    LLMrefs on LinkedIn: https://www.linkedin.com/company/llmrefs/
+                  </span>
+                </a>
+                <a class="cn368" href="https://x.com/llmrefs" target="_blank">
+                  <svg class="cn369" fill="currentColor" height="1em" stroke="currentColor" viewBox="0 0 512 512" width="1em" xmlns="http://www.w3.org/2000/svg" strokeWidth="0"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                  <span class="cn370">
+                    LLMrefs on X (formerly Twitter): https://x.com/llmrefs
+                  </span>
+                </a>
+                <a class="cn371" href="https://github.com/LLMrefs" target="_blank">
+                  <svg class="cn372" fill="currentColor" height="1em" stroke="currentColor" viewBox="0 0 496 512" width="1em" xmlns="http://www.w3.org/2000/svg" strokeWidth="0"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                  <span class="cn373">
+                    LLMrefs on GitHub: https://github.com/LLMrefs
+                  </span>
+                </a>
+                <a class="cn374" href="https://www.youtube.com/@llmrefs" target="_blank">
+                  <svg class="cn375" fill="currentColor" height="1em" stroke="currentColor" viewBox="0 0 576 512" width="1em" xmlns="http://www.w3.org/2000/svg" strokeWidth="0"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                  <span class="cn376">
+                    LLMrefs on YouTube: https://www.youtube.com/@llmrefs
+                  </span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="cn377">
+            <h3 class="cn378">
+              Product
+            </h3>
+            <ul class="cn379">
+              <li class="cn380">
+                <a class="cn381" href="https://llmrefs.com/ai-seo">
+                  AI SEO (AI Search Optimization)
+                </a>
+              </li>
+              <li class="cn382">
+                <a class="cn383" href="https://llmrefs.com/generative-engine-optimization">
+                  GEO (Generative Engine Optimization)
+                </a>
+              </li>
+              <li class="cn384">
+                <a class="cn385" href="https://llmrefs.com/answer-engine-optimization">
+                  AEO (Answer Engine Optimization)
+                </a>
+              </li>
+              <li class="cn386">
+                <a class="cn387" href="https://llmrefs.com/llm-seo">
+                  LLM SEO (LLM Optimization)
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="cn388">
+            <h3 class="cn389">
+              Resources
+            </h3>
+            <ul class="cn390">
+              <li class="cn391">
+                <a class="cn392" href="https://llmrefs.com/ai-search-visibility">
+                  AI Search Visibility
+                </a>
+              </li>
+              <li class="cn393">
+                <a class="cn394" href="https://llmrefs.com/tools/llms-txt-generator">
+                  LLMs.txt Generator
+                </a>
+              </li>
+              <li class="cn395">
+                <a class="cn396" href="https://llmrefs.com/tools/reddit-threads-finder">
+                  Reddit Threads Finder
+                </a>
+              </li>
+              <li class="cn397">
+                <a class="cn398" href="https://llmrefs.com/tools/ai-crawl-checker">
+                  AI Crawlability Checker
+                </a>
+              </li>
+              <li class="cn399">
+                <a class="cn400" href="https://llmrefs.com/tools/chatgpt-prompts-database">
+                  ChatGPT Prompts Database
+                </a>
+              </li>
+              <li class="cn401">
+                <a class="cn402" href="https://llmrefs.com/tools/query-fan-out">
+                  Query Fan-Out Generator
+                </a>
+              </li>
+              <li class="cn403">
+                <a class="cn404" href="https://llmrefs.com/learn/large-language-models">
+                  Large Language Models
+                </a>
+              </li>
+              <li class="cn405">
+                <a class="cn406" href="https://llmrefs.com/tools/ai-content-optimizer">
+                  AI Content A/B Tester
+                </a>
+              </li>
+              <li class="cn407">
+                <a class="cn408" href="https://llmrefs.com/tools/chatgpt-fan-out-query-extractor">
+                  ChatGPT Query Extractor
+                </a>
+              </li>
+              <li class="cn409">
+                <a class="cn410" href="https://llmrefs.com/ai-seo-api">
+                  AI SEO API Documentation
+                </a>
+              </li>
+              <li class="cn411">
+                <a class="cn412" href="https://chatgpt.com/g/g-68b5fe4b0ed08191954a843528655d99-ai-seo-search-audit" target="_blank">
+                  ChatGPT Search Audit
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="cn413">
+            <h3 class="cn414">
+              Company
+            </h3>
+            <ul class="cn415">
+              <li class="cn416">
+                <a class="cn417" href="https://llmrefs.com/dashboard">
+                  Dashboard
+                </a>
+              </li>
+              <li class="cn418">
+                <a class="cn419" href="https://llmrefs.com/blog">
+                  LLMrefs Blog
+                </a>
+              </li>
+              <li class="cn420">
+                <a class="cn421" href="https://llmrefs.com/signup">
+                  Sign Up
+                </a>
+              </li>
+              <li class="cn422">
+                <a class="cn423" href="https://llmrefs.com/#pricing">
+                  Pricing
+                </a>
+              </li>
+              <li class="cn424">
+                <a class="cn425" href="mailto:hello@llmrefs.com">
+                  Request A Demo
+                </a>
+              </li>
+              <li class="cn426">
+                <a class="cn427" href="https://llmrefs.com/terms">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="cn428">
+                <a class="cn429" href="https://llmrefs.com/privacy">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="cn430">
+                <a class="cn431" href="https://llmrefs.com/about">
+                  About Us
+                </a>
+              </li>
+              <li class="cn432">
+                <a class="cn433" href="mailto:hello@llmrefs.com">
+                  Contact Support
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <section class="cn434" aria-atomic="false" aria-label="Notifications alt+T" aria-live="polite" aria-relevant="additions text"></section>
+</body>
+</html>

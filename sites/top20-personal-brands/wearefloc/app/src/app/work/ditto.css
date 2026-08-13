@@ -1,0 +1,6 @@
+.cn0{display:block;color:var(--foreground);font-family:sans-serif;font-size:12px;font-weight:400;font-style:normal;line-height:14px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--foreground);cursor:none}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-p-3"]{transition:color 0.3s cubic-bezier(0.44, 0, 0.56, 1)}
+[data-ditto-id="style-p-3"]:hover{border-bottom-color:rgb(102, 255, 102);border-left-color:rgb(102, 255, 102);border-right-color:rgb(102, 255, 102);border-top-color:rgb(102, 255, 102);color:rgb(102, 255, 102);outline-color:rgb(102, 255, 102);text-decoration-color:rgb(102, 255, 102)}
+[data-ditto-id="style-p-3"]:focus{border-bottom-color:rgb(242, 255, 242);border-left-color:rgb(242, 255, 242);border-right-color:rgb(242, 255, 242);border-top-color:rgb(242, 255, 242);color:rgb(242, 255, 242);outline-color:rgb(242, 255, 242);text-decoration-color:rgb(242, 255, 242)}

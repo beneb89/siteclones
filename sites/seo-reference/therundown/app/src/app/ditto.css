@@ -1,0 +1,21 @@
+[data-ditto-id="style-search-courses-guides-and-perks"]::placeholder{color:rgb(130, 126, 144)}
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;z-index:1;background-image:linear-gradient(rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0) 28%), linear-gradient(135deg, rgba(151, 124, 254, 0.16), rgba(0, 0, 0, 0) 42%), linear-gradient(315deg, rgba(203, 65, 145, 0.14), rgba(0, 0, 0, 0) 38%);background-size:auto, auto, auto;background-position:0% 0%, 0% 0%, 0% 0%;background-repeat:repeat, repeat, repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::before{}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::before{}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::before{}
+}
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::after{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;z-index:1;background-image:linear-gradient(rgba(255, 255, 255, 0.04) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, rgba(0, 0, 0, 0) 1px);background-size:44px 44px, 44px 44px;background-position:0px 0px, 0px 0px;background-repeat:repeat, repeat;opacity:0.42}
+@media (max-width: 571px) {
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::after{}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::after{}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-play-build-your-own-ai-seo-specialist-with-gumloop"]::after{}
+}

@@ -1,0 +1,12 @@
+[data-ditto-id="style-input"]::placeholder{color:rgb(110, 109, 108)}
+[data-ditto-id="style-div"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;height:909.734px;background-color:rgb(243, 242, 240);background-image:linear-gradient(rgb(255, 255, 255), rgb(243, 242, 240))}
+@media (max-width: 571px) {
+[data-ditto-id="style-div"]::before{display:none;height:100%;bottom:auto}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div"]::before{height:1446.89px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div"]::before{height:885.734px}
+}
+[data-ditto-id="style-input-2"]::placeholder{color:rgb(110, 109, 108)}

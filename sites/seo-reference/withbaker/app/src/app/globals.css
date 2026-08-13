@@ -1,0 +1,160 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-color-001: var(--color-001);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-0: var(--clr-0);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-surface-2: var(--surface-2);
+  --color-color-002: var(--color-002);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(250, 250, 249);
+  --foreground: rgb(16, 14, 13);
+  --primary: rgb(15, 23, 42);
+  --border: rgb(226, 232, 240);
+  --muted-foreground: rgb(144, 139, 133);
+  --surface: rgb(241, 245, 249);
+  --surface-2: rgb(248, 250, 252);
+  --muted: rgb(51, 65, 85);
+  --color-001: rgb(2, 6, 23);
+  --color-002: rgb(225, 228, 232);
+}
+
+:root {
+  /* fonts */
+  --font-body: Merriweather, serif;
+  --font-001: ui-monospace, monospace;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 12.25px;
+  --font-size-003: 14px;
+  --font-size-004: 16px;
+  --font-size-005: 18px;
+  --font-size-006: 20px;
+  --font-size-007: 24px;
+  --font-size-008: 26px;
+  --font-size-009: 36px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  --font-weight-005: 800;
+  /* lineHeights */
+  --line-height-001: 25.6px;
+  --line-height-002: 22.4px;
+  --line-height-003: 24px;
+  --line-height-004: 21px;
+  --line-height-005: 18px;
+  --line-height-006: 25.2px;
+  --line-height-007: 31.2px;
+  --line-height-008: 43.2px;
+  --line-height-009: 19.6px;
+  --line-height-010: 32.5px;
+  --line-height-011: 26px;
+  /* spacing */
+  --space-001: 1.8375px;
+  --space-002: 2px;
+  --space-003: 2.1px;
+  --space-004: 4.9px;
+  --space-005: 5.6px;
+  --space-006: 6px;
+  --space-007: 7px;
+  --space-008: 8px;
+  --space-009: 10px;
+  --space-010: 10.5px;
+  --space-011: 12px;
+  --space-012: 16px;
+  --space-013: 20px;
+  --space-014: 21px;
+  --space-015: 24px;
+  --space-016: 27px;
+  --space-017: 32px;
+  --space-018: 48px;
+  --space-019: 90px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 8px;
+  --radius-003: 12px;
+  --radius-004: 16px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgb(255, 255, 255);
+  --clr-1: rgb(36, 41, 46);
+  --clr-2: rgb(240, 230, 221);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d2423c3c625b.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/73ce3fa5b95f.woff2") format("woff2");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <rect width="880" height="540" fill="#ffffff"/>
+  <text x="40" y="46" font-size="23" font-weight="700" fill="#1e1b4b">The GAQL Prompt Ladder</text>
+  <text x="40" y="72" font-size="14" fill="#6b7280">Three tiers of questions to run against the Google Ads MCP server, by analytical depth</text>
+
+  <!-- Tier 1 -->
+  <rect x="40" y="100" width="800" height="118" rx="12" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
+  <circle cx="74" cy="134" r="16" fill="#6366f1"/>
+  <text x="74" y="140" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="104" y="132" font-size="17" font-weight="700" fill="#312e81">Tier 1 — Triage (read every day)</text>
+  <text x="104" y="156" font-size="13.5" fill="#4b5563">Account-level health snapshot: spend, conversions, CPA, ROAS over the last 7-30 days.</text>
+  <text x="104" y="180" font-size="13.5" fill="#4b5563">"Which campaigns spent the most last week and what did they return?"</text>
+  <text x="104" y="202" font-size="13.5" fill="#4b5563">"Show me cost, conversions and CPA by campaign for the last 14 days."</text>
+
+  <!-- Tier 2 -->
+  <rect x="40" y="234" width="800" height="118" rx="12" fill="#e0e7ff" stroke="#a5b4fc" stroke-width="1.5"/>
+  <circle cx="74" cy="268" r="16" fill="#4f46e5"/>
+  <text x="74" y="274" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="104" y="266" font-size="17" font-weight="700" fill="#312e81">Tier 2 — Diagnose (when a number moves)</text>
+  <text x="104" y="290" font-size="13.5" fill="#4b5563">Segment to find the cause: search terms, ad groups, devices, geos, time-of-day.</text>
+  <text x="104" y="314" font-size="13.5" fill="#4b5563">"What search terms drove spend but zero conversions in Campaign X?"</text>
+  <text x="104" y="336" font-size="13.5" fill="#4b5563">"Break down CPA by device and network for the last 30 days."</text>
+
+  <!-- Tier 3 -->
+  <rect x="40" y="368" width="800" height="118" rx="12" fill="#c7d2fe" stroke="#818cf8" stroke-width="1.5"/>
+  <circle cx="74" cy="402" r="16" fill="#4338ca"/>
+  <text x="74" y="408" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="104" y="400" font-size="17" font-weight="700" fill="#312e81">Tier 3 — Decide (weekly optimization review)</text>
+  <text x="104" y="424" font-size="13.5" fill="#3730a3">Cross-entity ranking that turns into an action plan you still execute by hand.</text>
+  <text x="104" y="448" font-size="13.5" fill="#3730a3">"Rank ad groups by wasted spend and draft the bid/negative changes."</text>
+  <text x="104" y="470" font-size="13.5" fill="#3730a3">"Compare this month vs last by conversion action; flag the biggest regressions."</text>
+
+  <text x="40" y="518" font-size="11.5" fill="#9ca3af">Source: Soku, built on the official Google Ads API MCP server (read-only GAQL surface), 2026.</text>
+</svg>

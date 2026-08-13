@@ -1,0 +1,10 @@
+[data-ditto-id="style-microsoft-advertising"]::before{content:"";display:block;width:192px;height:54px;background-image:url("/assets/cloned/svg/0526e12f46f1.svg");background-size:contain;background-position:50% 50%;background-repeat:no-repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-microsoft-advertising"]::before{width:112.5px}
+}
+[data-ditto-id="style-teaser-d9894dbf35-cta-455869720b"]::after{content:"";display:block;width:12px;height:12px;margin-left:12px;background-image:url("/assets/cloned/svg/013affc878db.svg");background-position:50% 50%;background-repeat:no-repeat}
+[data-ditto-id="style-teaser-bdd457c609-cta-da8d033884"]::after{content:"";display:block;width:12px;height:12px;margin-left:12px;background-image:url("/assets/cloned/svg/013affc878db.svg");background-position:50% 50%;background-repeat:no-repeat}
+[data-ditto-id="style-span"]{background-image:url("/assets/cloned/svg/fa913624b6a0.svg")}
+@media (min-width: 1601px) {
+[data-ditto-id="style-span"]{background-image:url("/assets/cloned/svg/97e9ee89898b.svg")}
+}

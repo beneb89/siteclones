@@ -1,0 +1,65 @@
+# Clone targets — reference pages cited in the SEO/GEO/Paid-Media operating
+# system note (20-areas/brand-positioning/2026-07-31-...).
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-seo.txt
+#
+# Not included: https://mcp.dataforseo.com/mcp — an MCP transport endpoint,
+# not a renderable page.
+
+https://about.ads.microsoft.com/en/solutions/technology/agentic-commerce/mcp-server
+https://adkit.so/resources/google-ads-mcp-setup
+https://adlibrary.com/posts/meta-ads-mcp-setup-guide
+https://amjid.au/insights/microsoft-ads-mcp-server-build-and-use/
+https://app.therundown.ai/guides/build-your-own-ai-seo-specialist-with-gumloop
+https://claudefa.st/blog/tools/mcp-extensions/google-ads-mcp-claude-code
+https://dataforseo.com/apis
+https://dataforseo.com/apis/ai-optimization-api/llm-mentions-api
+https://dataforseo.com/apis/content-analysis-api
+https://dataforseo.com/apis/dataforseo-labs-api
+https://dataforseo.com/apis/serp-api/ads-transparency-api
+https://dataforseo.com/apis/serp-api/youtube-serp-api
+https://dataforseo.com/blog/uncover-competitor-advertising-strategies-with-google-ads-transparency-and-apis
+https://dataforseo.com/help-center/how-to-retrieve-data-on-ads-and-advertisers-from-google-ads
+https://dataforseo.com/model-context-protocol
+https://dataforseo.com/pricing-list
+https://dataforseo.com/pricing/backlinks/backlinks
+https://dataforseo.com/pricing/business-data/social-media
+https://dataforseo.com/pricing/dataforseo-labs/dataforseo-google-api
+https://dataforseo.com/update/introducing-google-ads-search-and-advertisers-in-serp-api
+https://developers.google.com/google-ads/api/docs/access-levels
+https://docs.dataforseo.com/v3/ai_optimization-llm_mentions-aggregated_metrics-live/
+https://docs.dataforseo.com/v3/ai_optimization-llm_mentions-overview/
+https://docs.dataforseo.com/v3/ai_optimization-llm_mentions-search-live/
+https://docs.dataforseo.com/v3/ai_optimization-overview/
+https://docs.dataforseo.com/v3/business_data-social_media-overview/
+https://docs.dataforseo.com/v3/serp-google-ads_search-overview/
+https://docs.dataforseo.com/v3/serp-youtube-overview/
+https://docs.dataforseo.com/v3/serp-youtube-video_info-overview/
+https://docs.dataforseo.com/v3/serp-youtube-video_subtitles-overview/
+https://gitbook.com/docs/guides/seo-and-llm-optimization/geo-guide
+https://github.com/AminForou/mcp-gsc
+https://github.com/googleads/google-ads-mcp
+https://github.com/googleanalytics/google-analytics-mcp
+https://github.com/surendranb/google-analytics-mcp
+https://hi.shopify.com/blog/ad-library-facebook
+https://llmrefs.com/generative-engine-optimization
+https://nextgrowth.ai/dataforseo-api-guide/
+https://ppcnewsfeed.com/ppc-news/2026-06/microsoft-advertising-mcp-server-expands-open-pilot/
+https://proxylook.com/providers/dataforseo
+https://seotuners.com/blog/generative-engine-optimization/generative-engine-optimization-best-practices/
+https://soku.ai/blog/google-ads-mcp-guide
+https://soku.ai/blog/meta-ads-mcp-guide
+https://soku.ai/blog/meta-official-mcp-ai-ad-teams
+https://syntermedia.ai/blog/mcp-server-microsoft-ads
+https://thatmarketingbuddy.com/software/dataforseo
+https://withbaker.com/blog/meta-ads-cli-mcp-2026
+https://writer.com/blog/geo-aeo-optimization/
+https://www.admove.ai/blog/metas-mcp-and-cli-for-advertisers
+https://www.contextstudios.ai/guides/aeo-geo-complete-guide-2026
+https://www.digitalapplied.com/blog/connect-ga4-search-console-claude-mcp-build-2026
+https://www.digitalapplied.com/blog/official-ads-mcp-servers-meta-google-tiktok-2026-playbook
+https://www.foreplay.co/post/google-ads-transparency-center
+https://www.growthspreeofficial.com/blogs/search-console-mcp
+https://www.npmjs.com/package/dataforseo-mcp-server
+https://www.scalekit.com/blog/google-ads-mcp-api
+https://www.surmado.com/blog/answer-engine-optimization-aeo-geo-guide

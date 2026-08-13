@@ -1,0 +1,8 @@
+.cn0{display:block;color:var(--foreground);font-family:sans-serif;font-size:12px;font-weight:400;font-style:normal;line-height:14px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link-6"]:hover{border-bottom-color:rgb(36, 118, 209);border-left-color:rgb(36, 118, 209);border-right-color:rgb(36, 118, 209);border-top-color:rgb(36, 118, 209);color:rgb(36, 118, 209);outline-color:rgb(36, 118, 209);text-decoration-color:rgb(36, 118, 209)}
+[data-ditto-id="style-span"]:hover{border-bottom-color:rgb(36, 118, 209);border-left-color:rgb(36, 118, 209);border-right-color:rgb(36, 118, 209);border-top-color:rgb(36, 118, 209);color:rgb(36, 118, 209);outline-color:rgb(36, 118, 209);text-decoration-color:rgb(36, 118, 209)}
+[data-ditto-id="style-span-6"]:hover{border-bottom-color:rgb(36, 118, 209);border-left-color:rgb(36, 118, 209);border-right-color:rgb(36, 118, 209);border-top-color:rgb(36, 118, 209);color:rgb(36, 118, 209);outline-color:rgb(36, 118, 209);text-decoration-color:rgb(36, 118, 209)}
+[data-ditto-id="style-heading-2"]:hover{border-bottom-color:rgb(36, 118, 209);border-left-color:rgb(36, 118, 209);border-right-color:rgb(36, 118, 209);border-top-color:rgb(36, 118, 209);color:rgb(36, 118, 209);outline-color:rgb(36, 118, 209);text-decoration-color:rgb(36, 118, 209)}
+[data-ditto-id="style-link-8"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}

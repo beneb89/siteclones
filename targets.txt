@@ -1,0 +1,30 @@
+# Clone targets — one URL per line, "#" starts a comment.
+# Run them all with: ./scripts/clone-batch.sh
+#
+# The personal brands and boutique studios named in the "Top 20 Best-Designed
+# Personal Brand Websites in AI & Consulting" roundup. Entries the roundup
+# named without a URL were resolved by search; those are marked (resolved).
+#
+# The roundup's remaining entries are curated galleries rather than personal
+# brands — they live in targets-galleries.txt.
+#
+# Not included: https://www.andrewng.design/ — a different Andrew Ng (a product
+# designer); the roundup names only andrewng.org.
+
+# --- personal brands: AI / research ---------------------------------------
+https://www.andrewng.org/                 # Andrew Ng — research-focused personal site
+https://blog.samaltman.com/               # Sam Altman — long-running personal blog
+# lexfridman.com lives in targets-deep.txt — its crawl needs a higher route cap
+
+# --- personal brands: design / consulting ---------------------------------
+https://guglieri.com/                     # Claudio Guglieri (resolved)
+https://strangewolfstudios.com/           # Danielle McCray / Strange Wolf (resolved)
+
+# --- boutique studios & consultancies -------------------------------------
+https://www.haptic.studio/                # Haptic Studio (resolved)
+https://trifecta.xyz/                     # Trifecta — NY growth studio (resolved, verify domain)
+https://ebbscandinavia.com/               # Ebb Scandinavia (resolved)
+https://wearefloc.com/                    # FLOC* (resolved)
+https://www.primary.studio/               # Primary — brand sprints (resolved)
+https://oakline.studio/                   # Oakline Studio (resolved)
+https://apresentforce.com/                # A Present Force (resolved)

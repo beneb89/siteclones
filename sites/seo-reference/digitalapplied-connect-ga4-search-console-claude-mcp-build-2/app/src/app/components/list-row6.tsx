@@ -1,0 +1,16 @@
+import type { ListRow6Styles } from "../_styles";
+import { cn } from "../../lib/utils";
+export type ListRow6Data = {
+  href: string;
+  label: string;
+};
+/** A list row. */
+export default function ListRow6({ d, styles }: { d: ListRow6Data; styles: ListRow6Styles }) {
+  return (
+    <li className={cn("list-item", styles.className)}>
+      <a className="block py-1 text-sm leading-5 cursor-pointer hover:text-background hover:[text-decoration-color:var(--background)]" data-component="link" href={d.href}>
+        {d.label}
+      </a>
+    </li>
+  );
+}

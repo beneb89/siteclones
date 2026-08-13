@@ -1,0 +1,320 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-clr-0: var(--clr-0);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --color-color-003: var(--color-003);
+  --color-clr-3: var(--clr-3);
+  --color-color-004: var(--color-004);
+  --color-clr-4: var(--clr-4);
+  --color-color-002: var(--color-002);
+  --color-color-001: var(--color-001);
+  --color-clr-5: var(--clr-5);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: lab(2.75381 0 0);
+  --primary: rgb(232, 89, 12);
+  --border: lab(90.952 0 -0.0000119209);
+  --muted-foreground: lab(48.496 0 0);
+  --surface: lab(96.52 -0.0000298023 0.0000119209);
+  --color-001: oklab(0.999994 0.0000455677 0.0000200868 / 0.7);
+  --color-002: oklab(0.999994 0.0000455678 0.0000200868 / 0.4);
+  --color-003: lab(7.78201 -0.0000149012 0);
+  --color-004: oklab(0.999994 0.0000455678 0.0000200868 / 0.5);
+}
+
+:root {
+  /* fonts */
+  --font-body: neueMontrealArabic, "neueMontrealArabic Fallback";
+  --font-001: editorialNew, "editorialNew Fallback";
+  --font-002: neueMontrealMono, "neueMontrealMono Fallback";
+  --font-003: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* fontSizes */
+  --font-size-001: 11.9px;
+  --font-size-002: 12px;
+  --font-size-003: 13.6px;
+  --font-size-004: 14px;
+  --font-size-005: 16px;
+  --font-size-006: 18px;
+  --font-size-007: 20px;
+  --font-size-008: 24px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 20px;
+  --line-height-003: 26px;
+  --line-height-004: 19.25px;
+  --line-height-005: 32px;
+  --line-height-006: 22.1px;
+  --line-height-007: 28px;
+  --line-height-008: 20.4px;
+  --line-height-009: 16px;
+  --line-height-010: 17px;
+  /* spacing */
+  --space-001: 2px;
+  --space-002: 4px;
+  --space-003: 6px;
+  --space-004: 8px;
+  --space-005: 10px;
+  --space-006: 12px;
+  --space-007: 16px;
+  --space-008: 20px;
+  --space-009: 24px;
+  --space-010: 32px;
+  --space-011: 40px;
+  --space-012: 64px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 8px;
+  --radius-003: 10px;
+  --radius-004: 14px;
+  --radius-005: 26px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: oklab(0 0 0 / 0.07);
+  --clr-1: oklab(0.999994 0.0000455677 0.0000200868 / 0.8);
+  --clr-2: rgba(0, 0, 0, 0);
+  --clr-3: rgb(12, 14, 20);
+  --clr-4: oklab(0.999994 0.0000455678 0.0000200868 / 0.05);
+  --clr-5: oklab(0.999994 0.0000455678 0.0000200868 / 0.1);
+  --clr-6: oklab(0.999994 0.0000455678 0.0000200868 / 0.2);
+  --clr-7: rgba(0, 0, 0, 0.25);
+  --clr-8: rgba(0, 0, 0, 0.05);
+  --clr-9: lab(98.26 0 0);
+  --clr-10: oklab(0.644124 0.143079 0.127421 / 0.8);
+  --clr-11: oklab(0.969998 -0.00000959635 0.0000227094 / 0.5);
+  --clr-12: oklab(0.644124 0.143079 0.127421 / 0.5);
+  --clr-13: oklab(0.205 -0.00000207871 0.00000478327 / 0.8);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "editorialNew";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e2d121aa04fb.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/faf8e893a74c.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5c014dbce2a4.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/95c1c542af71.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e7c0ac8738aa.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/303a23c04244.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a8719e8db197.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "editorialNew";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/082086f15692.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GeistSans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3d3c406964e1.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealArabic";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0f6d9618b250.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealArabic";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/92e1ee9e9754.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealArabic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4ef5c7066592.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealArabic";
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bfa4c378eb87.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealArabic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c6d2521f999f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealMono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/09ec2ef5bb43.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealMono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c8f7b0155312.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealMono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/24f202a3bfe6.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealMono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1257f78a7e22.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealMono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/715e5b62272f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "neueMontrealMono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/50a08a425271.woff2") format("woff2");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

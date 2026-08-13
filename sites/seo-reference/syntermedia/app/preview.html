@@ -1,0 +1,2541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>MCP Server for Microsoft Ads: Complete 2026 Guide | Synter</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a3a92e81788c.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f58d15f34e0e.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d11a7d483042.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/989d14cca7a7.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/dfc8073a6dff.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a3a92e81788c.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f58d15f34e0e.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d11a7d483042.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/989d14cca7a7.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/dfc8073a6dff.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ac762bb82258.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5e0f5a2b64c2.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6c5a9e03408d.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e4156925dd35.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e4fe76e95e2f.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ac762bb82258.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5e0f5a2b64c2.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6c5a9e03408d.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e4156925dd35.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e4fe76e95e2f.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/82953e47e5f1.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5eb4fbc68d5d.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f76959de302f.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6a8a849479ab.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3f84a4bfd9a6.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/82953e47e5f1.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5eb4fbc68d5d.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f76959de302f.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6a8a849479ab.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3f84a4bfd9a6.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/84c3f8f3e2c2.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/946711040ca9.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/84c3f8f3e2c2.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/946711040ca9.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/839d455dbc0a.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d2079c2dca7c.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/839d455dbc0a.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d2079c2dca7c.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5ccab0a74f59.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09778b89287a.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5bc21c4690d2.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c9f0101391a1.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c0cee6f78842.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0867628e93da.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cfdeb67e2b2d.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35f0ff14b4ee.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e345bf01ac64.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9f9f4a16cc6.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(230, 233, 239);
+  --primary: rgb(96, 165, 250);
+  --accent: rgb(200, 255, 0);
+  --border: rgb(39, 39, 42);
+  --muted-foreground: rgb(156, 163, 175);
+  --muted: rgb(139, 148, 163);
+  --color-001: rgb(209, 213, 219);
+  --color-002: rgb(184, 192, 204);
+  --color-003: rgb(249, 250, 251);
+  --color-004: rgb(17, 17, 17);
+  --color-005: rgba(255, 255, 255, 0.7);
+  --color-006: rgb(11, 14, 18);
+  --color-007: rgb(0, 0, 0);
+  --color-008: rgba(0, 0, 0, 0.2);
+  --color-009: rgba(200, 255, 0, 0.1);
+}
+
+:root {
+  /* fonts */
+  --font-body: Inter, "Inter Fallback", Inter, ui-sans-serif, system-ui, Inter, ui-sans-serif, system-ui;
+  --font-001: "IBM Plex Mono", "IBM Plex Mono Fallback", "JetBrains Mono", ui-monospace, monospace, ui-monospace, SFMono-Regular, monospace;
+  --font-002: "Space Grotesk", "Space Grotesk Fallback", "Space Grotesk", ui-sans-serif, system-ui;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 16px;
+  --font-size-004: 20px;
+  --font-size-005: 24px;
+  --font-size-006: 30px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 20px;
+  --line-height-002: 26px;
+  --line-height-003: 21px;
+  --line-height-004: 28px;
+  --line-height-005: 32px;
+  --line-height-006: 16px;
+  --line-height-007: 36px;
+  /* spacing */
+  --space-001: 2px;
+  --space-002: 4px;
+  --space-003: 6px;
+  --space-004: 8px;
+  --space-005: 10px;
+  --space-006: 12px;
+  --space-007: 16px;
+  --space-008: 20px;
+  --space-009: 24px;
+  --space-010: 32px;
+  --space-011: 40px;
+  --space-012: 48px;
+  --space-013: 64px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 6px;
+  --radius-003: 8px;
+  --radius-004: 12px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+html { background: #ffffff; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+/* nodes */
+.cn0{min-height:100vh;display:block;color:var(--foreground);font-family:var(--font-body);font-size:0px;font-weight:var(--font-weight-001);font-style:normal;line-height:0px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+.cn1{width:1280px;height:100%;min-height:100vh;display:flex;align-items:stretch;font-size:var(--font-size-002);line-height:var(--line-height-003)}
+.cn2{width:1280px;display:block;min-width:0px;flex-grow:1;flex-basis:0%}
+.cn3{height:100%;min-height:100vh;display:flex;flex-direction:column;background-color:var(--color-006)}
+.cn4{height:57px;display:block;position:fixed;right:0px;left:0px;z-index:50;min-width:0px}
+.cn5{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(42, 48, 58);display:block;background-color:var(--color-006);backdrop-filter:blur(12px)}
+.cn6{display:block;max-width:1152px;margin-right:auto;margin-left:auto;padding-right:var(--space-009);padding-left:var(--space-009)}
+.cn7{height:56px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;justify-content:space-between;align-items:center}
+.cn8{height:40.4688px;display:flex;align-items:center;cursor:pointer}
+.cn9{display:flex;align-items:center;row-gap:var(--space-006);column-gap:var(--space-006)}
+.cn10{width:35px;height:40px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 35 / 40;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn11{display:block;color:var(--background);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-005);letter-spacing:-0.6px}
+.cn12{display:flex;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn13{display:block;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);color:rgba(255, 255, 255, 0.92);font-weight:var(--font-weight-002);line-height:var(--line-height-001);cursor:pointer}
+.cn14{display:block;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);color:rgba(255, 255, 255, 0.92);font-weight:var(--font-weight-002);line-height:var(--line-height-001);cursor:pointer}
+.cn15{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn16{height:36px;display:flex;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--color-005);line-height:var(--line-height-001);text-align:center;cursor:pointer}
+.cn17{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn18{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn19{height:36px;display:flex;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--color-005);line-height:var(--line-height-001);text-align:center;cursor:pointer}
+.cn20{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn21{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn22{height:36px;display:flex;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--color-005);line-height:var(--line-height-001);text-align:center;cursor:pointer}
+.cn23{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn24{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn25{height:36px;display:flex;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--color-005);line-height:var(--line-height-001);text-align:center;cursor:pointer}
+.cn26{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn27{display:block;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);color:var(--color-005);line-height:var(--line-height-001);cursor:pointer}
+.cn28{display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn29{height:32px;display:block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--color-005);text-align:center;cursor:pointer}
+.cn30{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn31{display:block;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);color:var(--color-005);line-height:var(--line-height-001);text-align:center;cursor:pointer}
+.cn32{height:36px;display:flex;padding-top:var(--space-004);padding-right:var(--space-007);padding-bottom:var(--space-004);padding-left:var(--space-007);align-items:center;color:var(--color-006);font-weight:var(--font-weight-004);line-height:var(--line-height-001);text-align:center;background-color:rgb(156, 255, 90);cursor:pointer}
+.cn33{display:none;min-width:0px;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn34{display:inline-flex;padding-top:var(--space-003);padding-right:var(--space-005);padding-bottom:var(--space-003);padding-left:var(--space-005);align-items:center;color:var(--color-006);font-size:var(--font-size-001);font-weight:var(--font-weight-004);line-height:var(--line-height-006);background-color:rgb(156, 255, 90);cursor:pointer}
+.cn35{display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);color:var(--color-005);text-align:center;cursor:pointer}
+.cn36{width:24px;height:24px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn37{display:block;padding-top:56px;flex-grow:1;flex-basis:0%}
+.cn38{height:100%;min-height:100vh;display:block;color:var(--color-003);background-color:var(--color-006)}
+.cn39{height:100%;display:block;max-width:768px;margin-right:auto;margin-left:auto;padding-top:var(--space-013);padding-right:var(--space-009);padding-bottom:var(--space-013);padding-left:var(--space-009)}
+.cn40{display:inline-flex;margin-bottom:var(--space-010);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);color:var(--primary);font-weight:var(--font-weight-002);line-height:var(--line-height-001);cursor:pointer}
+.cn41{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn42{display:block;margin-bottom:var(--space-011)}
+.cn43{width:100%;height:379px;border-width:1px;border-style:solid;border-color:var(--border);display:block;max-width:100%;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1200 / 630;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn44{display:block;margin-bottom:var(--space-012)}
+.cn45{display:flex;margin-bottom:var(--space-007);align-items:center;row-gap:var(--space-006);column-gap:var(--space-006);line-height:var(--line-height-001)}
+.cn46{height:20px;display:flex;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);color:var(--muted)}
+.cn47{width:14px;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn48{display:block;color:rgb(63, 63, 70)}
+.cn49{display:flex;flex-wrap:wrap;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn50{display:block;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-006);background-color:var(--color-009)}
+.cn51{display:block;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-006);background-color:var(--color-009)}
+.cn52{display:block;padding-top:var(--space-001);padding-right:var(--space-004);padding-bottom:var(--space-001);padding-left:var(--space-004);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-006);background-color:var(--color-009)}
+.cn53{display:block;margin-bottom:var(--space-007);font-family:var(--font-002);font-size:36px;font-weight:var(--font-weight-003);line-height:40px;letter-spacing:-0.9px}
+.cn54{display:block;color:var(--color-001);font-size:18px;line-height:29.25px}
+.cn55{display:block;color:var(--color-001);font-size:var(--font-size-003);line-height:var(--line-height-004)}
+.cn56{height:226px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn57{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003)}
+.cn58{display:block}
+.cn59{display:grid;row-gap:var(--space-004);column-gap:var(--space-004);font-size:var(--font-size-002);line-height:var(--line-height-001);grid-template-columns:repeat(auto-fit, minmax(276px, 1fr));grid-template-rows:repeat(4, minmax(0, 1fr))}
+.cn60{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn61{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn62{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn63{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn64{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn65{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn66{display:block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn67{display:block;margin-bottom:var(--space-011)}
+.cn68{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn69{display:block;line-height:var(--line-height-002)}
+.cn70{display:block}
+.cn71{display:grid;margin-top:var(--space-010);margin-bottom:var(--space-010);row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:154px;grid-template-columns:repeat(auto-fit, minmax(228px, 1fr))}
+.cn72{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);text-align:center;background-color:var(--color-004)}
+.cn73{display:block;margin-bottom:var(--space-004);color:var(--accent);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-007)}
+.cn74{display:block;margin-bottom:var(--space-008);font-size:var(--font-size-002);line-height:var(--line-height-001)}
+.cn75{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);text-align:center;background-color:var(--color-004)}
+.cn76{display:block;margin-bottom:var(--space-004);color:var(--accent);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-007)}
+.cn77{display:block;margin-bottom:var(--space-008);font-size:var(--font-size-002);line-height:var(--line-height-001)}
+.cn78{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);text-align:center;background-color:var(--color-004)}
+.cn79{display:block;margin-bottom:var(--space-004);color:var(--accent);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-007)}
+.cn80{display:block;margin-bottom:var(--space-008);font-size:var(--font-size-002);line-height:var(--line-height-001)}
+.cn81{display:block;margin-bottom:var(--space-008)}
+.cn82{display:block;margin-bottom:var(--space-008)}
+.cn83{display:grid;margin-top:var(--space-009);row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:286px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn84{height:286px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn85{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn86{display:block}
+.cn87{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn88{display:list-item;margin-bottom:var(--space-004)}
+.cn89{display:list-item;margin-top:var(--space-002)}
+.cn90{display:list-item;margin-top:var(--space-002)}
+.cn91{display:list-item;margin-top:var(--space-002)}
+.cn92{display:list-item;margin-top:var(--space-002)}
+.cn93{display:list-item;margin-top:var(--space-002)}
+.cn94{display:block;margin-bottom:var(--space-011)}
+.cn95{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn96{display:block;line-height:var(--line-height-002)}
+.cn97{display:block}
+.cn98{display:block;margin-bottom:var(--space-008)}
+.cn99{display:block;margin-bottom:var(--space-008)}
+.cn100{display:grid;margin-top:var(--space-007);row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:326px;grid-template-columns:repeat(auto-fit, minmax(326px, 1fr))}
+.cn101{height:326px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn102{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn103{display:block}
+.cn104{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn105{display:list-item;margin-bottom:var(--space-004)}
+.cn106{display:list-item;margin-top:var(--space-002)}
+.cn107{display:list-item;margin-top:var(--space-002)}
+.cn108{display:list-item;margin-top:var(--space-002)}
+.cn109{display:list-item;margin-top:var(--space-002)}
+.cn110{display:list-item;margin-top:var(--space-002)}
+.cn111{height:326px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn112{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn113{display:block}
+.cn114{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn115{display:list-item;margin-bottom:var(--space-004)}
+.cn116{display:list-item;margin-top:var(--space-002)}
+.cn117{display:list-item;margin-top:var(--space-002)}
+.cn118{display:list-item;margin-top:var(--space-002)}
+.cn119{display:list-item;margin-top:var(--space-002)}
+.cn120{display:list-item;margin-top:var(--space-002)}
+.cn121{height:174px;border-left-width:4px;border-left-style:solid;border-left-color:var(--primary);display:block;margin-top:var(--space-010);margin-bottom:var(--space-010);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-004)}
+.cn122{display:block;margin-bottom:var(--space-008);font-weight:var(--font-weight-003)}
+.cn123{display:block}
+.cn124{display:block;margin-bottom:var(--space-008);font-size:var(--font-size-002);line-height:var(--line-height-001)}
+.cn125{display:block;margin-top:var(--space-009);text-align:center}
+.cn126{height:50px;display:inline-flex;margin-right:var(--space-007);padding-top:var(--space-006);padding-right:var(--space-009);padding-bottom:var(--space-006);padding-left:var(--space-009);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);color:var(--color-003);font-weight:var(--font-weight-002);text-decoration-line:underline;background-color:rgb(28, 36, 48);cursor:pointer}
+.cn127{height:50px;display:inline-flex;padding-top:var(--space-006);padding-right:var(--space-009);padding-bottom:var(--space-006);padding-left:var(--space-009);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);color:var(--color-007);font-weight:var(--font-weight-002);text-decoration-line:underline;background-color:var(--accent);cursor:pointer}
+.cn128{display:block;margin-bottom:var(--space-011)}
+.cn129{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn130{display:block;line-height:var(--line-height-002)}
+.cn131{display:block}
+.cn132{display:grid;margin-top:var(--space-007);row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:238px 238px;grid-template-columns:repeat(auto-fit, minmax(326px, 1fr))}
+.cn133{height:238px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn134{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn135{display:block}
+.cn136{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn137{display:list-item;margin-bottom:var(--space-004)}
+.cn138{display:list-item;margin-top:var(--space-002)}
+.cn139{display:list-item;margin-top:var(--space-002)}
+.cn140{display:list-item;margin-top:var(--space-002)}
+.cn141{height:238px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn142{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn143{display:block}
+.cn144{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn145{display:list-item;margin-bottom:var(--space-004)}
+.cn146{display:list-item;margin-top:var(--space-002)}
+.cn147{display:list-item;margin-top:var(--space-002)}
+.cn148{display:list-item;margin-top:var(--space-002)}
+.cn149{height:238px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn150{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn151{display:block}
+.cn152{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn153{display:list-item;margin-bottom:var(--space-004)}
+.cn154{display:list-item;margin-top:var(--space-002)}
+.cn155{display:list-item;margin-top:var(--space-002)}
+.cn156{display:list-item;margin-top:var(--space-002)}
+.cn157{height:238px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn158{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn159{display:block}
+.cn160{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn161{display:list-item;margin-bottom:var(--space-004)}
+.cn162{display:list-item;margin-top:var(--space-002)}
+.cn163{display:list-item;margin-top:var(--space-002)}
+.cn164{display:list-item;margin-top:var(--space-002)}
+.cn165{display:block;margin-bottom:var(--space-011)}
+.cn166{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn167{display:block;line-height:var(--line-height-002)}
+.cn168{display:block}
+.cn169{height:379px;display:block;margin-top:var(--space-010);margin-bottom:var(--space-010);overflow-x:auto;overflow-y:auto}
+.cn170{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:table;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);font-size:var(--font-size-002);line-height:var(--line-height-001);border-collapse:collapse;border-spacing:2px}
+.cn171{display:table-header-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn172{display:table-row;vertical-align:middle;background-color:var(--color-004);border-collapse:collapse;border-spacing:2px}
+.cn173{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn174{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn175{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn176{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn177{display:table-row-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn178{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn179{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn180{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn181{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn182{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn183{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn184{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn185{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn186{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn187{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn188{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn189{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn190{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn191{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn192{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn193{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn194{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn195{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn196{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn197{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn198{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn199{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn200{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn201{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn202{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn203{display:block;margin-bottom:var(--space-011)}
+.cn204{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn205{display:block;line-height:var(--line-height-002)}
+.cn206{display:block}
+.cn207{display:grid;margin-top:var(--space-007);row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:246px 226px 226px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn208{height:246px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn209{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn210{display:block}
+.cn211{display:block;margin-bottom:var(--space-008);padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-001);background-color:var(--color-008)}
+.cn212{height:226px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn213{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn214{display:block}
+.cn215{display:block;margin-bottom:var(--space-008);padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-001);background-color:var(--color-008)}
+.cn216{height:226px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn217{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn218{display:block}
+.cn219{display:block;margin-bottom:var(--space-008);padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-family:var(--font-001);font-size:var(--font-size-002);line-height:var(--line-height-001);background-color:var(--color-008)}
+.cn220{display:block;margin-bottom:var(--space-011)}
+.cn221{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn222{display:block;line-height:var(--line-height-002)}
+.cn223{display:block}
+.cn224{display:block;margin-bottom:var(--space-008)}
+.cn225{display:grid;margin-top:var(--space-007);row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:282px;grid-template-columns:repeat(auto-fit, minmax(326px, 1fr))}
+.cn226{height:282px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn227{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn228{display:block}
+.cn229{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn230{display:list-item;margin-bottom:var(--space-004)}
+.cn231{display:list-item;margin-top:var(--space-002)}
+.cn232{display:list-item;margin-top:var(--space-002)}
+.cn233{display:list-item;margin-top:var(--space-002)}
+.cn234{display:list-item;margin-top:var(--space-002)}
+.cn235{height:282px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:hidden;overflow-y:hidden;overflow-wrap:break-word;background-color:var(--color-004)}
+.cn236{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn237{display:block}
+.cn238{display:block;margin-bottom:var(--space-008);padding-left:var(--space-009);font-size:var(--font-size-002);line-height:var(--line-height-001);list-style-type:disc;list-style-position:outside}
+.cn239{display:list-item;margin-bottom:var(--space-004)}
+.cn240{display:list-item;margin-top:var(--space-002)}
+.cn241{display:list-item;margin-top:var(--space-002)}
+.cn242{display:list-item;margin-top:var(--space-002)}
+.cn243{display:block;margin-bottom:var(--space-011)}
+.cn244{display:block;margin-top:var(--space-011);margin-bottom:var(--space-007);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005);letter-spacing:-0.24px}
+.cn245{display:block;line-height:var(--line-height-002)}
+.cn246{display:block}
+.cn247{display:block}
+.cn248{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn249{display:block;margin-bottom:var(--space-008)}
+.cn250{display:block;margin-top:var(--space-009)}
+.cn251{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn252{display:block;margin-bottom:var(--space-008)}
+.cn253{display:block;margin-top:var(--space-009)}
+.cn254{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn255{display:block;margin-bottom:var(--space-008)}
+.cn256{display:block;margin-top:var(--space-009)}
+.cn257{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn258{display:block;margin-bottom:var(--space-008)}
+.cn259{display:block;margin-top:var(--space-009)}
+.cn260{display:block;margin-top:var(--space-010);margin-bottom:var(--space-006);color:var(--color-003);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn261{display:block;margin-bottom:var(--space-008)}
+.cn262{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-013);padding-top:var(--space-010);padding-right:var(--space-010);padding-bottom:var(--space-010);padding-left:var(--space-010);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-004)}
+.cn263{display:block;margin-bottom:var(--space-002);font-family:var(--font-002);font-weight:var(--font-weight-003)}
+.cn264{display:block;margin-bottom:var(--space-007);color:var(--color-001);line-height:var(--line-height-001)}
+.cn265{display:flex;row-gap:var(--space-006);column-gap:var(--space-006)}
+.cn266{width:532px;height:42px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;line-height:var(--line-height-001);background-color:var(--color-006);cursor:text}
+.cn266::placeholder{color:rgb(167, 176, 189)}
+.cn267{display:block;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--color-007);font-weight:var(--font-weight-002);line-height:var(--line-height-001);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--accent);cursor:pointer}
+.cn268{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-012);padding-top:var(--space-010);padding-right:var(--space-010);padding-bottom:var(--space-010);padding-left:var(--space-010);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);text-align:center;background-color:var(--color-004)}
+.cn269{display:block;margin-bottom:var(--space-006);color:var(--accent);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-006);letter-spacing:0.6px;text-transform:uppercase}
+.cn270{display:block;margin-bottom:var(--space-006);font-family:var(--font-002);font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn271{display:block;max-width:448px;margin-right:auto;margin-bottom:var(--space-009);margin-left:auto;color:var(--color-001);line-height:var(--line-height-001)}
+.cn272{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;row-gap:var(--space-006);column-gap:var(--space-006)}
+.cn273{height:45px;display:flex;padding-top:var(--space-006);padding-right:var(--space-009);padding-bottom:var(--space-006);padding-left:var(--space-009);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);color:var(--color-007);font-weight:var(--font-weight-002);background-color:var(--accent);cursor:pointer}
+.cn274{height:47px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:var(--space-006);padding-right:var(--space-009);padding-bottom:var(--space-006);padding-left:var(--space-009);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);font-weight:var(--font-weight-002);cursor:pointer}
+.cn275{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-013);padding-top:var(--space-010);padding-right:var(--space-010);padding-bottom:var(--space-010);padding-left:var(--space-010);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);text-align:center;background-color:var(--color-004)}
+.cn276{display:block;margin-bottom:var(--space-006);font-family:var(--font-002);font-size:var(--font-size-005);font-weight:var(--font-weight-003);line-height:var(--line-height-005)}
+.cn277{display:block;max-width:512px;margin-right:auto;margin-bottom:var(--space-009);margin-left:auto;color:var(--color-001)}
+.cn278{height:78px;display:flex;flex-direction:column;align-items:center;row-gap:var(--space-006);column-gap:var(--space-006)}
+.cn279{width:100%;max-width:448px;display:flex;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn280{width:313px;height:46px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-006);padding-right:var(--space-007);padding-bottom:var(--space-006);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;color:var(--foreground);line-height:var(--line-height-001);text-align:start;background-color:var(--color-006);cursor:text}
+.cn280::placeholder{color:rgb(167, 176, 189)}
+.cn281{display:block;padding-top:var(--space-006);padding-right:var(--space-008);padding-bottom:var(--space-006);padding-left:var(--space-008);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--color-007);font-weight:var(--font-weight-002);white-space:nowrap;text-wrap:nowrap;background-color:var(--accent);cursor:pointer}
+.cn282{display:block;color:var(--muted);line-height:var(--line-height-001);cursor:pointer}
+.cn283{display:block;color:var(--color-002);font-family:var(--font-001);background-color:var(--color-006)}
+.cn284{display:block;max-width:1024px;margin-right:auto;margin-left:auto;padding-top:var(--space-012);padding-right:var(--space-009);padding-bottom:var(--space-012);padding-left:var(--space-009)}
+.cn285{display:grid;max-width:896px;margin-right:auto;margin-bottom:var(--space-010);margin-left:auto;row-gap:var(--space-010);column-gap:var(--space-010);grid-template-rows:280px;grid-template-columns:repeat(5, minmax(0, 1fr))}
+.cn286{display:block}
+.cn287{display:block;margin-bottom:var(--space-007);color:var(--foreground);font-family:var(--font-002);font-weight:var(--font-weight-003);line-height:var(--line-height-001);letter-spacing:0.7px;text-transform:uppercase}
+.cn288{display:block;line-height:var(--line-height-001);list-style-type:none;list-style-position:outside}
+.cn289{display:list-item}
+.cn290{display:inline;cursor:pointer}
+.cn291{display:list-item;margin-top:var(--space-004)}
+.cn292{display:inline;cursor:pointer}
+.cn293{display:list-item;margin-top:var(--space-004)}
+.cn294{display:inline;cursor:pointer}
+.cn295{display:list-item;margin-top:var(--space-004)}
+.cn296{display:inline;cursor:pointer}
+.cn297{display:list-item;margin-top:var(--space-004)}
+.cn298{display:inline;cursor:pointer}
+.cn299{display:list-item;margin-top:var(--space-004)}
+.cn300{display:inline;cursor:pointer}
+.cn301{height:280px;display:block}
+.cn302{display:block;margin-bottom:var(--space-007);color:var(--foreground);font-family:var(--font-002);font-weight:var(--font-weight-003);line-height:var(--line-height-001);letter-spacing:0.7px;text-transform:uppercase}
+.cn303{display:block;line-height:var(--line-height-001);list-style-type:none;list-style-position:outside}
+.cn304{display:list-item}
+.cn305{display:inline;cursor:pointer}
+.cn306{display:list-item;margin-top:var(--space-004)}
+.cn307{display:inline;cursor:pointer}
+.cn308{display:list-item;margin-top:var(--space-004)}
+.cn309{display:inline;cursor:pointer}
+.cn310{display:list-item;margin-top:var(--space-004)}
+.cn311{display:inline;cursor:pointer}
+.cn312{display:list-item;margin-top:var(--space-004)}
+.cn313{display:inline;cursor:pointer}
+.cn314{display:list-item;margin-top:var(--space-004)}
+.cn315{display:inline;cursor:pointer}
+.cn316{height:280px;display:block}
+.cn317{display:block;margin-bottom:var(--space-007);color:var(--foreground);font-family:var(--font-002);font-weight:var(--font-weight-003);line-height:var(--line-height-001);letter-spacing:0.7px;text-transform:uppercase}
+.cn318{display:block;line-height:var(--line-height-001);list-style-type:none;list-style-position:outside}
+.cn319{display:list-item}
+.cn320{display:inline;cursor:pointer}
+.cn321{display:list-item;margin-top:var(--space-004)}
+.cn322{display:inline;cursor:pointer}
+.cn323{display:list-item;margin-top:var(--space-004)}
+.cn324{display:inline;cursor:pointer}
+.cn325{display:list-item;margin-top:var(--space-004)}
+.cn326{display:inline;cursor:pointer}
+.cn327{display:list-item;margin-top:var(--space-004)}
+.cn328{display:inline;cursor:pointer}
+.cn329{display:block}
+.cn330{display:block;margin-bottom:var(--space-007);color:var(--foreground);font-family:var(--font-002);font-weight:var(--font-weight-003);line-height:var(--line-height-001);letter-spacing:0.7px;text-transform:uppercase}
+.cn331{display:block;line-height:var(--line-height-001);list-style-type:none;list-style-position:outside}
+.cn332{display:list-item}
+.cn333{display:inline;cursor:pointer}
+.cn334{display:list-item;margin-top:var(--space-004)}
+.cn335{display:inline;cursor:pointer}
+.cn336{display:list-item;margin-top:var(--space-004)}
+.cn337{display:inline;cursor:pointer}
+.cn338{display:list-item;margin-top:var(--space-004)}
+.cn339{display:inline;cursor:pointer}
+.cn340{display:list-item;margin-top:var(--space-004)}
+.cn341{display:inline;cursor:pointer}
+.cn342{display:list-item;margin-top:var(--space-004)}
+.cn343{display:inline;cursor:pointer}
+.cn344{height:280px;display:block}
+.cn345{display:block;margin-bottom:var(--space-007);color:var(--foreground);font-family:var(--font-002);font-weight:var(--font-weight-003);line-height:var(--line-height-001);letter-spacing:0.7px;text-transform:uppercase}
+.cn346{display:block;line-height:var(--line-height-001);list-style-type:none;list-style-position:outside}
+.cn347{display:list-item}
+.cn348{display:inline;cursor:pointer}
+.cn349{display:list-item;margin-top:var(--space-004)}
+.cn350{display:inline;cursor:pointer}
+.cn351{display:list-item;margin-top:var(--space-004)}
+.cn352{display:inline;cursor:pointer}
+.cn353{display:list-item;margin-top:var(--space-004)}
+.cn354{display:inline;cursor:pointer}
+.cn355{display:list-item;margin-top:var(--space-004)}
+.cn356{display:inline;cursor:pointer}
+.cn357{display:list-item;margin-top:var(--space-004)}
+.cn358{display:inline;cursor:pointer}
+.cn359{display:list-item;margin-top:var(--space-004)}
+.cn360{display:inline;cursor:pointer}
+.cn361{display:list-item;margin-top:var(--space-004)}
+.cn362{display:inline;cursor:pointer}
+.cn363{display:list-item;margin-top:var(--space-004)}
+.cn364{display:inline;cursor:pointer}
+.cn365{height:53px;border-top-width:1px;border-top-style:solid;border-top-color:rgb(42, 48, 58);display:flex;padding-top:var(--space-010);justify-content:space-between;align-items:center;line-height:var(--line-height-001)}
+.cn366{display:block;color:var(--muted-foreground)}
+.cn367{display:flex;flex-wrap:wrap;align-items:center;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn368{display:block;color:var(--muted-foreground);cursor:pointer}
+.cn369{display:block;color:var(--muted-foreground);cursor:pointer}
+.cn370{display:block;color:var(--muted-foreground);cursor:pointer}
+.cn371{display:block;color:var(--muted-foreground);cursor:pointer}
+.cn372{display:block;color:var(--muted-foreground);cursor:pointer}
+.cn373{display:block;font-size:var(--font-size-002);line-height:var(--line-height-003)}
+
+@media (max-width: 571px) {
+.cn1{width:375px}
+.cn2{width:375px}
+.cn6{padding-right:var(--space-007);padding-left:var(--space-007)}
+.cn12{display:none}
+.cn28{display:none}
+.cn33{display:flex;min-width:0}
+.cn34{display:flex}
+.cn35{display:block}
+.cn42{margin-right:-24px;margin-left:-24px}
+.cn43{height:197px;border-width:0;border-style:initial;border-color:initial;border-top-left-radius:initial;border-top-right-radius:initial;border-bottom-right-radius:initial;border-bottom-left-radius:initial}
+.cn46{height:40px}
+.cn47{width:12px}
+.cn53{font-size:var(--font-size-006);line-height:37.5px;letter-spacing:-0.75px}
+.cn56{height:310px}
+.cn59{grid-template-rows:repeat(7, minmax(0, 1fr))}
+.cn71{grid-template-rows:134px 134px 134px}
+.cn83{grid-template-rows:454px}
+.cn84{height:454px}
+.cn100{grid-template-rows:394px 306px}
+.cn101{height:394px}
+.cn111{height:306px}
+.cn121{height:274px}
+.cn132{grid-template-rows:238px 238px 258px 238px}
+.cn149{height:258px}
+.cn169{height:579px}
+.cn207{grid-template-rows:374px 334px 334px}
+.cn208{height:374px}
+.cn212{height:334px}
+.cn216{height:334px}
+.cn225{grid-template-rows:282px 278px}
+.cn235{height:278px}
+.cn265{flex-direction:column}
+.cn266{width:261px}
+.cn280{width:244px}
+.cn285{grid-template-rows:216px 196px 280px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn301{height:216px}
+.cn316{height:196px}
+.cn365{height:161px;flex-direction:column}
+.cn367{margin-top:var(--space-007)}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn1{width:768px}
+.cn2{width:768px}
+.cn32{height:56px}
+.cn53{font-size:var(--font-size-006);line-height:37.5px;letter-spacing:-0.75px}
+.cn365{height:89px}
+}
+
+@media (min-width: 1601px) {
+.cn1{width:1920px}
+.cn2{width:1920px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1">
+      <div class="cn2" id="global-agent-app-surface">
+        <div class="cn3">
+          <header class="cn4">
+            <nav class="cn5">
+              <div class="cn6">
+                <div class="cn7">
+                  <a class="cn8" href="https://syntermedia.ai/">
+                    <div class="cn9">
+                      <img class="cn10" alt="Synter" height="40" src="public/assets/cloned/images/a40fecfdbdc2.svg" srcset="public/assets/cloned/svg/ae0a42381e98.svg 1x, public/assets/cloned/images/a40fecfdbdc2.svg 2x" width="35" />
+                      <span class="cn11">
+                        Synter
+                      </span>
+                    </div>
+                  </a>
+                  <div class="cn12">
+                    <a class="cn13" href="https://syntermedia.ai/for/agencies">
+                      Agencies
+                    </a>
+                    <a class="cn14" href="https://syntermedia.ai/for/brands">
+                      Brands
+                    </a>
+                    <div class="cn15">
+                      <button class="cn16" data-ditto-id="menu-trigger-1" aria-controls="marketing-nav-developers-links" aria-expanded="false" type="button">
+                        Developers
+                        <svg class="cn17" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                      </button>
+                    </div>
+                    <div class="cn18">
+                      <button class="cn19" data-ditto-id="menu-trigger-2" aria-controls="marketing-nav-platform-links" aria-expanded="false" type="button">
+                        Platform
+                        <svg class="cn20" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                      </button>
+                    </div>
+                    <div class="cn21">
+                      <button class="cn22" data-ditto-id="menu-trigger-3" aria-controls="marketing-nav-solutions-links" aria-expanded="false" type="button">
+                        Solutions
+                        <svg class="cn23" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                      </button>
+                    </div>
+                    <div class="cn24">
+                      <button class="cn25" data-ditto-id="menu-trigger-4" aria-controls="marketing-nav-company-links" aria-expanded="false" type="button">
+                        Company
+                        <svg class="cn26" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                      </button>
+                    </div>
+                    <a class="cn27" href="https://syntermedia.ai/pricing">
+                      Pricing
+                    </a>
+                  </div>
+                  <div class="cn28">
+                    <button class="cn29" title="Switch to light mode">
+                      <svg class="cn30" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                    </button>
+                    <button class="cn31">
+                      Log in
+                    </button>
+                    <a class="cn32" href="https://syntermedia.ai/get-started?placement=nav_get_started">
+                      Get started
+                    </a>
+                  </div>
+                  <div class="cn33">
+                    <a class="cn34" href="https://syntermedia.ai/get-started?placement=mobile_nav_inline_get_started">
+                      Get started
+                    </a>
+                    <button class="cn35" aria-label="Open menu">
+                      <svg class="cn36" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-sentry-element="Menu" data-sentry-source-file="MarketingNav.tsx"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <main class="cn37">
+            <div class="cn38">
+              <div class="cn39">
+                <a class="cn40" href="https://syntermedia.ai/blog">
+                  <svg class="cn41" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-sentry-element="ArrowLeft" data-sentry-source-file="BlogArticle.tsx"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                  Back to Blog
+                </a>
+                <figure class="cn42">
+                  <img class="cn43" alt="MCP Server for Microsoft Ads: Complete 2026 Guide" height="630" src="public/assets/cloned/images/b6a6d3c68c71.png" srcset="public/assets/cloned/images/f6d20e54d682.webp 1x, public/assets/cloned/images/b6a6d3c68c71.png 2x" width="1200" />
+                </figure>
+                <header class="cn44">
+                  <div class="cn45">
+                    <span class="cn46">
+                      <svg class="cn47" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-sentry-element="Calendar" data-sentry-source-file="BlogArticle.tsx"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                      April 15, 2026
+                    </span>
+                    <span class="cn48">
+                      •
+                    </span>
+                    <div class="cn49">
+                      <span class="cn50">
+                        MCP
+                      </span>
+                      <span class="cn51">
+                        Microsoft Ads
+                      </span>
+                      <span class="cn52">
+                        AI Agents
+                      </span>
+                    </div>
+                  </div>
+                  <h1 class="cn53">
+                    MCP Server for Microsoft Ads: Complete 2026 Guide
+                  </h1>
+                  <p class="cn54">
+                    Microsoft Ads (formerly Bing Ads) reaches over 1 billion monthly searchers on Bing, Yahoo, and Microsoft Edge. For paid search advertisers, it is the most direct complement to Google Ads, with lower CPCs and unique access to LinkedIn profile targeting. Synter MCP connects Microsoft Ads to Claude Desktop so you can operate Bing campaigns alongside Google, Meta, and 11 other platforms.
+                  </p>
+                </header>
+                <article class="cn55">
+                  <div class="cn56">
+                    <h3 class="cn57">
+                      In This Guide
+                    </h3>
+                    <div class="cn58">
+                      <div class="cn59">
+                        <a class="cn60" href="#microsoft-mcp">
+                          1. What Microsoft Ads MCP Does
+                        </a>
+                        <a class="cn61" href="#synter-mcp">
+                          2. Synter MCP for Microsoft Ads
+                        </a>
+                        <a class="cn62" href="#microsoft-tools">
+                          3. Microsoft Ads Agent Tools
+                        </a>
+                        <a class="cn63" href="#campaign-types">
+                          4. Supported Campaign Types
+                        </a>
+                        <a class="cn64" href="#example-prompts">
+                          5. Example Claude Prompts
+                        </a>
+                        <a class="cn65" href="#google-import">
+                          6. Google Ads Import
+                        </a>
+                        <a class="cn66" href="#faq">
+                          7. FAQ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <section class="cn67">
+                    <h2 class="cn68">
+                      What Microsoft Ads MCP Does
+                    </h2>
+                    <div class="cn69">
+                      <div class="cn70" id="microsoft-mcp">
+                        <div class="cn71">
+                          <div class="cn72">
+                            <div class="cn73">
+                              1B+
+                            </div>
+                            <p class="cn74">
+                              Monthly searchers on Microsoft network
+                            </p>
+                          </div>
+                          <div class="cn75">
+                            <div class="cn76">
+                              14
+                            </div>
+                            <p class="cn77">
+                              Platforms in Synter MCP
+                            </p>
+                          </div>
+                          <div class="cn78">
+                            <div class="cn79">
+                              Direct API
+                            </div>
+                            <p class="cn80">
+                              Microsoft Advertising API connection
+                            </p>
+                          </div>
+                        </div>
+                        <p class="cn81">
+                          MCP integration for Microsoft Ads connects your AI tools directly to the Microsoft Advertising API. You can create, manage, and analyze Bing campaigns from Claude Desktop without logging into Microsoft Ads Manager. For teams running Google and Microsoft Search in parallel, this centralizes both search platforms in a single interface.
+                        </p>
+                        <p class="cn82">
+                          Microsoft Ads reaches searchers on Bing, Yahoo, and Microsoft Edge. The Microsoft Audience Network extends reach to MSN, Outlook, and enables LinkedIn profile targeting. The platform consistently delivers lower CPCs than Google for equivalent keywords, making it a high-ROI complement to Google Search.
+                        </p>
+                        <div class="cn83">
+                          <div class="cn84">
+                            <h3 class="cn85">
+                              Microsoft Ads Management via Claude
+                            </h3>
+                            <div class="cn86">
+                              <ul class="cn87">
+                                <li class="cn88">
+                                  Create and manage search campaigns across Bing, Yahoo, and Edge
+                                </li>
+                                <li class="cn89">
+                                  Configure ad groups, keywords, and match types
+                                </li>
+                                <li class="cn90">
+                                  Set bids and automated bidding strategies
+                                </li>
+                                <li class="cn91">
+                                  Upload responsive search ads and audience ads
+                                </li>
+                                <li class="cn92">
+                                  Manage LinkedIn profile targeting for B2B
+                                </li>
+                                <li class="cn93">
+                                  Pull performance reports and competitive insights
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="cn94">
+                    <h2 class="cn95">
+                      Synter MCP for Microsoft Ads
+                    </h2>
+                    <div class="cn96">
+                      <div class="cn97" id="synter-mcp">
+                        <p class="cn98">
+                          Synter MCP connects Claude Desktop to the Microsoft Advertising API through direct OAuth authentication. Microsoft Ads is one of Synter's 14 connected platforms. Managing Microsoft Ads through Synter puts it in the same context as Google Ads, making search budget allocation decisions across both platforms straightforward.
+                        </p>
+                        <p class="cn99">
+                          For B2B advertisers, Microsoft Ads' LinkedIn profile targeting is a standout feature. You can target Bing searchers by job title, company, industry, and seniority. Synter MCP surfaces this capability through natural language so you can combine search intent with professional profile targeting without navigating separate audience interfaces.
+                        </p>
+                        <div class="cn100">
+                          <div class="cn101">
+                            <h3 class="cn102">
+                              Microsoft Ads Unique Features
+                            </h3>
+                            <div class="cn103">
+                              <ul class="cn104">
+                                <li class="cn105">
+                                  LinkedIn profile targeting (job title, industry, company)
+                                </li>
+                                <li class="cn106">
+                                  Microsoft Audience Network (MSN, Outlook, Edge)
+                                </li>
+                                <li class="cn107">
+                                  Direct import from Google Ads campaigns
+                                </li>
+                                <li class="cn108">
+                                  Lower CPC than Google in many verticals
+                                </li>
+                                <li class="cn109">
+                                  Smart Campaigns for smaller accounts
+                                </li>
+                                <li class="cn110">
+                                  Performance Max campaigns
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="cn111">
+                            <h3 class="cn112">
+                              Microsoft Ads Targeting
+                            </h3>
+                            <div class="cn113">
+                              <ul class="cn114">
+                                <li class="cn115">
+                                  Keywords and search intent
+                                </li>
+                                <li class="cn116">
+                                  LinkedIn profile segments
+                                </li>
+                                <li class="cn117">
+                                  In-market and custom audiences
+                                </li>
+                                <li class="cn118">
+                                  Customer match from first-party data
+                                </li>
+                                <li class="cn119">
+                                  Remarketing lists
+                                </li>
+                                <li class="cn120">
+                                  Geographic and demographic targeting
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn121">
+                          <p class="cn122">
+                            Microsoft Ads for B2B advertisers
+                          </p>
+                          <div class="cn123">
+                            <p class="cn124">
+                              LinkedIn profile targeting through Microsoft Ads gives B2B advertisers search intent plus professional context. Synter MCP lets you run Microsoft Ads campaigns targeting specific job titles or industries alongside LinkedIn Ads, with cross-platform performance comparison in a single prompt.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="cn125">
+                          <a class="cn126" href="https://syntermedia.ai/mcp">
+                            View Synter MCP docs
+                          </a>
+                          <a class="cn127" href="https://syntermedia.ai/signup">
+                            Sign up for Synter
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="cn128">
+                    <h2 class="cn129">
+                      Microsoft Ads Agent Tools in Synter MCP
+                    </h2>
+                    <div class="cn130">
+                      <div class="cn131" id="microsoft-tools">
+                        <div class="cn132">
+                          <div class="cn133">
+                            <h3 class="cn134">
+                              Campaign Tools
+                            </h3>
+                            <div class="cn135">
+                              <ul class="cn136">
+                                <li class="cn137">
+                                  create_microsoft_campaign
+                                </li>
+                                <li class="cn138">
+                                  update_microsoft_campaign
+                                </li>
+                                <li class="cn139">
+                                  pause_microsoft_campaign
+                                </li>
+                                <li class="cn140">
+                                  get_microsoft_campaigns
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="cn141">
+                            <h3 class="cn142">
+                              Ad Group and Keyword Tools
+                            </h3>
+                            <div class="cn143">
+                              <ul class="cn144">
+                                <li class="cn145">
+                                  create_microsoft_ad_group
+                                </li>
+                                <li class="cn146">
+                                  add_microsoft_keywords
+                                </li>
+                                <li class="cn147">
+                                  update_microsoft_bids
+                                </li>
+                                <li class="cn148">
+                                  add_microsoft_negative_keywords
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="cn149">
+                            <h3 class="cn150">
+                              Ad and Creative Tools
+                            </h3>
+                            <div class="cn151">
+                              <ul class="cn152">
+                                <li class="cn153">
+                                  create_microsoft_responsive_search_ad
+                                </li>
+                                <li class="cn154">
+                                  create_microsoft_audience_ad
+                                </li>
+                                <li class="cn155">
+                                  import_from_google_ads
+                                </li>
+                                <li class="cn156">
+                                  pause_microsoft_ad
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="cn157">
+                            <h3 class="cn158">
+                              Audience and Reporting
+                            </h3>
+                            <div class="cn159">
+                              <ul class="cn160">
+                                <li class="cn161">
+                                  create_microsoft_audience
+                                </li>
+                                <li class="cn162">
+                                  set_linkedin_profile_targeting
+                                </li>
+                                <li class="cn163">
+                                  get_microsoft_performance
+                                </li>
+                                <li class="cn164">
+                                  get_microsoft_keyword_report
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="cn165">
+                    <h2 class="cn166">
+                      Supported Campaign Types
+                    </h2>
+                    <div class="cn167">
+                      <div class="cn168" id="campaign-types">
+                        <div class="cn169">
+                          <table class="cn170">
+                            <thead class="cn171">
+                              <tr class="cn172">
+                                <th class="cn173">
+                                  Type
+                                </th>
+                                <th class="cn174">
+                                  Network
+                                </th>
+                                <th class="cn175">
+                                  Best For
+                                </th>
+                                <th class="cn176">
+                                  Unique Feature
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody class="cn177">
+                              <tr class="cn178">
+                                <td class="cn179">
+                                  Search
+                                </td>
+                                <td class="cn180">
+                                  Bing, Yahoo, Edge
+                                </td>
+                                <td class="cn181">
+                                  Capturing search intent
+                                </td>
+                                <td class="cn182">
+                                  Lower CPC than Google
+                                </td>
+                              </tr>
+                              <tr class="cn183">
+                                <td class="cn184">
+                                  Audience
+                                </td>
+                                <td class="cn185">
+                                  MSN, Outlook, Edge
+                                </td>
+                                <td class="cn186">
+                                  Native display and retargeting
+                                </td>
+                                <td class="cn187">
+                                  In-feed native format
+                                </td>
+                              </tr>
+                              <tr class="cn188">
+                                <td class="cn189">
+                                  Shopping
+                                </td>
+                                <td class="cn190">
+                                  Bing Shopping
+                                </td>
+                                <td class="cn191">
+                                  E-commerce product ads
+                                </td>
+                                <td class="cn192">
+                                  Bing Product Ads feed
+                                </td>
+                              </tr>
+                              <tr class="cn193">
+                                <td class="cn194">
+                                  Performance Max
+                                </td>
+                                <td class="cn195">
+                                  All Microsoft networks
+                                </td>
+                                <td class="cn196">
+                                  Full funnel automation
+                                </td>
+                                <td class="cn197">
+                                  Cross-network AI optimization
+                                </td>
+                              </tr>
+                              <tr class="cn198">
+                                <td class="cn199">
+                                  Dynamic Search
+                                </td>
+                                <td class="cn200">
+                                  Bing search
+                                </td>
+                                <td class="cn201">
+                                  Large site/catalog coverage
+                                </td>
+                                <td class="cn202">
+                                  Auto-generated from site content
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="cn203">
+                    <h2 class="cn204">
+                      Example Claude Prompts for Microsoft Ads
+                    </h2>
+                    <div class="cn205">
+                      <div class="cn206" id="example-prompts">
+                        <div class="cn207">
+                          <div class="cn208">
+                            <h3 class="cn209">
+                              B2B Search Campaign with LinkedIn Targeting
+                            </h3>
+                            <div class="cn210">
+                              <p class="cn211">
+                                "Create a Microsoft Ads search campaign for our enterprise software. Target keywords around ERP software and procurement automation. Enable LinkedIn profile targeting for VP-level and C-suite at companies with 500+ employees. $200/day, target CPA $120."
+                              </p>
+                            </div>
+                          </div>
+                          <div class="cn212">
+                            <h3 class="cn213">
+                              Google Ads Import and Comparison
+                            </h3>
+                            <div class="cn214">
+                              <p class="cn215">
+                                "Import our top five Google Search campaigns into Microsoft Ads. Then run both for 30 days and compare CPC and cost per conversion. Show me which keywords perform better on Bing vs Google."
+                              </p>
+                            </div>
+                          </div>
+                          <div class="cn216">
+                            <h3 class="cn217">
+                              Cross-Platform Search Budget Allocation
+                            </h3>
+                            <div class="cn218">
+                              <p class="cn219">
+                                "Compare our Google Ads and Microsoft Ads search performance this month. If Microsoft CPA is lower, increase Microsoft budget by $300/day and reduce Google by the same amount."
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="cn220">
+                    <h2 class="cn221">
+                      Google Ads Import via MCP
+                    </h2>
+                    <div class="cn222">
+                      <div class="cn223" id="google-import">
+                        <p class="cn224">
+                          Microsoft Ads supports direct import of Google Ads campaigns, and Synter MCP exposes this as an agent tool. You can prompt Claude to import specific campaigns from Google into Microsoft Ads, with automatic conversion of ad formats and bid strategies. This makes expanding from Google-only to Google plus Microsoft a straightforward one-prompt operation.
+                        </p>
+                        <div class="cn225">
+                          <div class="cn226">
+                            <h3 class="cn227">
+                              What Gets Imported
+                            </h3>
+                            <div class="cn228">
+                              <ul class="cn229">
+                                <li class="cn230">
+                                  Campaign structure and settings
+                                </li>
+                                <li class="cn231">
+                                  Ad groups and keywords
+                                </li>
+                                <li class="cn232">
+                                  Responsive search ads
+                                </li>
+                                <li class="cn233">
+                                  Bidding strategies (converted to Microsoft equivalents)
+                                </li>
+                                <li class="cn234">
+                                  Negative keyword lists
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="cn235">
+                            <h3 class="cn236">
+                              What Needs Manual Setup
+                            </h3>
+                            <div class="cn237">
+                              <ul class="cn238">
+                                <li class="cn239">
+                                  LinkedIn profile targeting (Microsoft-specific)
+                                </li>
+                                <li class="cn240">
+                                  Audience Network campaigns
+                                </li>
+                                <li class="cn241">
+                                  Microsoft UET tag for conversion tracking
+                                </li>
+                                <li class="cn242">
+                                  Bing-specific ad extensions
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="cn243">
+                    <h2 class="cn244">
+                      FAQ
+                    </h2>
+                    <div class="cn245">
+                      <div class="cn246" id="faq">
+                        <div class="cn247">
+                          <h3 class="cn248">
+                            Can I manage Microsoft Ads from Claude Desktop?
+                          </h3>
+                          <p class="cn249">
+                            Yes, with Synter MCP. Connect your Microsoft Advertising account to Synter and install the Synter MCP server in Claude Desktop. You can then create search campaigns, configure ad groups, manage keywords, upload creative, and pull performance reports through natural language prompts. Setup guide at syntermedia.ai/mcp.
+                          </p>
+                        </div>
+                        <div class="cn250">
+                          <h3 class="cn251">
+                            What is the difference between Microsoft Ads and Bing Ads?
+                          </h3>
+                          <p class="cn252">
+                            Bing Ads was rebranded to Microsoft Advertising in 2019. The platform now covers Bing search, Microsoft Edge, Yahoo, and the Microsoft Audience Network (MSN, Outlook, LinkedIn profile targeting). Microsoft Ads reaches a distinct audience from Google: it skews toward higher-income, older professionals, and B2B decision-makers.
+                          </p>
+                        </div>
+                        <div class="cn253">
+                          <h3 class="cn254">
+                            Does Microsoft Ads support Google Ads campaign import?
+                          </h3>
+                          <p class="cn255">
+                            Yes. Microsoft Ads supports direct import from Google Ads, so you can replicate Google Search campaigns in Microsoft Ads with minimal setup. Synter MCP can initiate this import and manage both platforms simultaneously, letting you run parallel campaigns across both search engines from a single Claude conversation.
+                          </p>
+                        </div>
+                        <div class="cn256">
+                          <h3 class="cn257">
+                            How does Microsoft Ads management via MCP work technically?
+                          </h3>
+                          <p class="cn258">
+                            Synter MCP connects to the Microsoft Advertising API using OAuth credentials from your Microsoft Ads account. When you prompt Claude, the Synter MCP server calls the appropriate API endpoints and executes actions in your live account. All actions are logged in Synter&amp;apos;s audit trail.
+                          </p>
+                        </div>
+                        <div class="cn259">
+                          <h3 class="cn260">
+                            Why add Microsoft Ads to a paid media mix that already includes Google?
+                          </h3>
+                          <p class="cn261">
+                            Microsoft Ads typically delivers lower CPCs than Google for the same keywords, with less advertiser competition in many verticals. For B2B advertisers, the LinkedIn profile targeting available in Microsoft Audience Network is unique. Most advertisers who import their Google campaigns to Microsoft see incremental conversions at a lower cost per acquisition.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+                <div class="cn262">
+                  <h3 class="cn263">
+                    Get posts like this in your inbox
+                  </h3>
+                  <p class="cn264">
+                    Technical deep-dives on AI agents, attribution, and ads infrastructure. No spam.
+                  </p>
+                  <form class="cn265">
+                    <input class="cn266" data-ditto-id="style-input" placeholder="your@email.com" type="email" value="" />
+                    <button class="cn267" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <div class="cn268">
+                  <p class="cn269">
+                    Synter
+                  </p>
+                  <h3 class="cn270">
+                    The AI Agent Operator for Ads.
+                  </h3>
+                  <p class="cn271">
+                    Direct API connections to Meta, Google, LinkedIn, TikTok, and 12 more platforms. One interface. No tab hell.
+                  </p>
+                  <div class="cn272">
+                    <a class="cn273" href="https://syntermedia.ai/sign-up?placement=blog_cta_mcp-server-microsoft-ads">
+                      Start Growing
+                    </a>
+                    <a class="cn274" href="https://syntermedia.ai/demo?placement=blog_cta_secondary_mcp-server-microsoft-ads">
+                      See how it works
+                    </a>
+                  </div>
+                </div>
+                <div class="cn275">
+                  <h2 class="cn276">
+                    Is your site ready to run ads?
+                  </h2>
+                  <p class="cn277">
+                    Find out if your tracking is set up correctly, what competitors are spending on, and which campaigns to run first. Takes about 60 seconds. Free.
+                  </p>
+                  <form class="cn278">
+                    <div class="cn279">
+                      <input class="cn280" data-ditto-id="style-input-2" placeholder="yoursite.com" type="text" value="" />
+                      <button class="cn281" type="submit">
+                        Get report →
+                      </button>
+                    </div>
+                    <a class="cn282" href="https://syntermedia.ai/demo" rel="noopener noreferrer" target="_blank">
+                      Or book a 60-min session with Joel ↗
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="cn283">
+            <div class="cn284">
+              <div class="cn285">
+                <div class="cn286">
+                  <h3 class="cn287">
+                    Product
+                  </h3>
+                  <ul class="cn288">
+                    <li class="cn289">
+                      <a class="cn290" href="https://syntermedia.ai/features">
+                        All Features
+                      </a>
+                    </li>
+                    <li class="cn291">
+                      <a class="cn292" href="https://syntermedia.ai/features/ai-agents">
+                        AI Agents
+                      </a>
+                    </li>
+                    <li class="cn293">
+                      <a class="cn294" href="https://syntermedia.ai/features/campaign-management">
+                        Campaign Management
+                      </a>
+                    </li>
+                    <li class="cn295">
+                      <a class="cn296" href="https://syntermedia.ai/features/attribution">
+                        Attribution
+                      </a>
+                    </li>
+                    <li class="cn297">
+                      <a class="cn298" href="https://syntermedia.ai/integrations">
+                        Integrations
+                      </a>
+                    </li>
+                    <li class="cn299">
+                      <a class="cn300" href="https://syntermedia.ai/security-governance">
+                        Security
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn301">
+                  <h3 class="cn302">
+                    Platforms
+                  </h3>
+                  <ul class="cn303">
+                    <li class="cn304">
+                      <a class="cn305" href="https://syntermedia.ai/google-ads-ai-agent">
+                        Google Ads
+                      </a>
+                    </li>
+                    <li class="cn306">
+                      <a class="cn307" href="https://syntermedia.ai/microsoft-ads-ai-agent">
+                        Microsoft Ads
+                      </a>
+                    </li>
+                    <li class="cn308">
+                      <a class="cn309" href="https://syntermedia.ai/linkedin-ads-ai-agent">
+                        LinkedIn Ads
+                      </a>
+                    </li>
+                    <li class="cn310">
+                      <a class="cn311" href="https://syntermedia.ai/meta-ads-ai-agent">
+                        Meta Ads
+                      </a>
+                    </li>
+                    <li class="cn312">
+                      <a class="cn313" href="https://syntermedia.ai/reddit-ads-ai-agent">
+                        Reddit Ads
+                      </a>
+                    </li>
+                    <li class="cn314">
+                      <a class="cn315" href="https://syntermedia.ai/x-ads-ai-agent">
+                        X Ads
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn316">
+                  <h3 class="cn317">
+                    Guides
+                  </h3>
+                  <ul class="cn318">
+                    <li class="cn319">
+                      <a class="cn320" href="https://syntermedia.ai/blog/google-ads-ai-agent-guide">
+                        Google Ads Guide
+                      </a>
+                    </li>
+                    <li class="cn321">
+                      <a class="cn322" href="https://syntermedia.ai/blog/microsoft-ads-ai-agent-guide">
+                        Microsoft Ads Guide
+                      </a>
+                    </li>
+                    <li class="cn323">
+                      <a class="cn324" href="https://syntermedia.ai/blog/linkedin-ads-ai-agent-guide">
+                        LinkedIn Ads Guide
+                      </a>
+                    </li>
+                    <li class="cn325">
+                      <a class="cn326" href="https://syntermedia.ai/blog/reddit-ads-guide-2025">
+                        Reddit Ads Guide
+                      </a>
+                    </li>
+                    <li class="cn327">
+                      <a class="cn328" href="https://syntermedia.ai/blog/x-ads-ai-agent-guide">
+                        X Ads Guide
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn329">
+                  <h3 class="cn330">
+                    Compare
+                  </h3>
+                  <ul class="cn331">
+                    <li class="cn332">
+                      <a class="cn333" href="https://syntermedia.ai/compare/gomarble">
+                        vs GoMarble
+                      </a>
+                    </li>
+                    <li class="cn334">
+                      <a class="cn335" href="https://syntermedia.ai/compare/optmyzr">
+                        vs Optmyzr
+                      </a>
+                    </li>
+                    <li class="cn336">
+                      <a class="cn337" href="https://syntermedia.ai/compare/wordstream">
+                        vs WordStream
+                      </a>
+                    </li>
+                    <li class="cn338">
+                      <a class="cn339" href="https://syntermedia.ai/compare/skai">
+                        vs Skai
+                      </a>
+                    </li>
+                    <li class="cn340">
+                      <a class="cn341" href="https://syntermedia.ai/compare/synter-vs-ploy">
+                        vs Ploy
+                      </a>
+                    </li>
+                    <li class="cn342">
+                      <a class="cn343" href="https://syntermedia.ai/compare">
+                        All Comparisons
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn344">
+                  <h3 class="cn345">
+                    Resources
+                  </h3>
+                  <ul class="cn346">
+                    <li class="cn347">
+                      <a class="cn348" href="https://syntermedia.ai/manual">
+                        Manual
+                      </a>
+                    </li>
+                    <li class="cn349">
+                      <a class="cn350" href="https://docs.syntermedia.ai/?utm_source=syntermedia_ai&amp;utm_medium=website&amp;utm_campaign=footer_docs" rel="noopener noreferrer" target="_blank">
+                        Docs
+                      </a>
+                    </li>
+                    <li class="cn351">
+                      <a class="cn352" href="https://syntermedia.ai/blog">
+                        Blog
+                      </a>
+                    </li>
+                    <li class="cn353">
+                      <a class="cn354" href="https://syntermedia.ai/for/agencies">
+                        Agency
+                      </a>
+                    </li>
+                    <li class="cn355">
+                      <a class="cn356" href="https://syntermedia.ai/demo" rel="noopener noreferrer" target="_blank">
+                        Book a Demo
+                      </a>
+                    </li>
+                    <li class="cn357">
+                      <a class="cn358" href="https://syntermedia.ai/free-report">
+                        Free AI Report
+                      </a>
+                    </li>
+                    <li class="cn359">
+                      <a class="cn360" href="https://syntermedia.ai/mcp">
+                        MCP Server
+                      </a>
+                    </li>
+                    <li class="cn361">
+                      <a class="cn362" href="https://x.com/synterai" rel="noopener noreferrer" target="_blank">
+                        X (Twitter)
+                      </a>
+                    </li>
+                    <li class="cn363">
+                      <a class="cn364" href="https://syntermedia.ai/contact">
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cn365">
+                <p class="cn366">
+                  © 2026 Synter. All rights reserved.
+                </p>
+                <div class="cn367">
+                  <a class="cn368" href="https://syntermedia.ai/privacy">
+                    Privacy Policy
+                  </a>
+                  <a class="cn369" href="https://syntermedia.ai/terms">
+                    Terms of Service
+                  </a>
+                  <a class="cn370" href="https://syntermedia.ai/cookies">
+                    Cookie Notice
+                  </a>
+                  <a class="cn371" href="https://syntermedia.ai/privacy/do-not-sell">
+                    Do Not Sell My Info
+                  </a>
+                  <a class="cn372" href="https://syntermedia.ai/trust">
+                    Trust Center
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="cn373" id="clerk-components"></div>
+     
+</body>
+</html>

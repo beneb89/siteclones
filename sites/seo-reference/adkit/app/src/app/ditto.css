@@ -1,0 +1,4 @@
+@keyframes accordion-up { 
+  0% { height: var(--reka-accordion-content-height); }
+  100% { height: 0px; }
+}

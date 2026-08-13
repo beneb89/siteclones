@@ -1,0 +1,7 @@
+export const dynamic = "force-static";
+
+export function GET() {
+  return new Response("# How to Set Up the Google Ads MCP in 5 steps\n\nGoogle's official Ads MCP is read-only and takes ~30-45 min to wire up. Step-by-step setup for Claude Code, Cursor, and Gemini, with the gotchas.\n\nThis is a generated ditto.site clone. It preserves captured page content, metadata, route structure, and static assets where available.\n\n## Routes\n\n- [How to Set Up the Google Ads MCP in 5 steps](https://adkit.so/resources/google-ads-mcp-setup) - Google's official Ads MCP is read-only and takes ~30-45 min to wire up. Step-by-step setup for Claude Code, Cursor, and Gemini, with the gotchas.\n\n## Captured Content\n\n### How to Set Up the Google Ads MCP in 5 steps\nHome Features Features Ad Library Track competitor ads across platforms AI Ads Generator Create ads from your brand kit AI Ad Cloner Clone and remix competitor ads Ads MCP Server Let your agent run ads for you MCP CLI Ads MCP Meta Ads MCP Google Ads MCP TikTok Ads MCP Reddit Ads MCP LinkedIn Ads MCP X Ads MCP Microsoft Ads MCP Ads CLI Meta Ads CLI Google Ads CLI TikTok Ads CLI Reddit Ads CLI LinkedIn Ads CLI X Ads CLI Microsoft Ads CLI Works with Claude ChatGPT Codex Cursor Hermes OpenClaw Perplexity All → Pricing Free Tools Resources Login AI Agents & MCP How to Set Up the Google Ads MCP in 5 steps By Nico · June 9, 2026 · 8 min read Table of contents: What you'll need 1. Get a developer to\n", {
+    headers: { "content-type": "text/plain; charset=utf-8" },
+  });
+}

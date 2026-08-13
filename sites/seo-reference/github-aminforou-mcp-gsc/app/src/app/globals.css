@@ -1,0 +1,193 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-color-004: var(--color-004);
+  --color-color-005: var(--color-005);
+  --color-color-002: var(--color-002);
+  --color-surface: var(--surface);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-clr-0: var(--clr-0);
+  --color-color-001: var(--color-001);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-color-007: var(--color-007);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-color-009: var(--color-009);
+  --color-muted: var(--muted);
+  --color-color-006: var(--color-006);
+  --color-color-003: var(--color-003);
+  --color-accent: var(--accent);
+  --color-clr-6: var(--clr-6);
+  --color-color-008: var(--color-008);
+  --color-color-010: var(--color-010);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+  --color-clr-14: var(--clr-14);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(31, 35, 40);
+  --primary: rgb(9, 105, 218);
+  --accent: rgb(10, 48, 105);
+  --border: rgb(209, 217, 224);
+  --muted-foreground: rgb(89, 99, 110);
+  --surface: rgb(246, 248, 250);
+  --muted: rgb(128, 128, 128);
+  --color-001: rgba(129, 139, 152, 0.12);
+  --color-002: rgba(209, 217, 224, 0.7);
+  --color-003: rgb(5, 80, 174);
+  --color-004: rgb(37, 41, 46);
+  --color-005: rgb(182, 191, 184);
+  --color-006: rgb(207, 34, 46);
+  --color-007: rgba(31, 35, 40, 0.15);
+  --color-008: rgb(102, 57, 186);
+  --color-009: rgb(84, 174, 255);
+  --color-010: rgb(221, 244, 255);
+}
+
+:root {
+  /* fonts */
+  --font-body: "Mona Sans VF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Backtick Fix", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-001: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --font-002: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* fontSizes */
+  --font-size-001: 0px;
+  --font-size-002: 12px;
+  --font-size-003: 13.6px;
+  --font-size-004: 14px;
+  --font-size-005: 16px;
+  --font-size-006: 20px;
+  --font-size-007: 24px;
+  --font-size-008: 32px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 21px;
+  --line-height-003: 19.72px;
+  --line-height-004: 20.4px;
+  --line-height-005: 18px;
+  --line-height-006: 20px;
+  --line-height-007: 30px;
+  --line-height-008: 16px;
+  --line-height-009: 25px;
+  --line-height-010: 48px;
+  --line-height-011: 14px;
+  --line-height-012: 19.5px;
+  --line-height-013: 0px;
+  --line-height-014: 36px;
+  /* spacing */
+  --space-001: -4px;
+  --space-002: 0.1px;
+  --space-003: 2px;
+  --space-004: 2.72px;
+  --space-005: 3px;
+  --space-006: 4px;
+  --space-007: 4px 10px;
+  --space-008: 5.44px;
+  --space-009: 6px;
+  --space-010: 7.2px;
+  --space-011: 8px;
+  --space-012: 12px;
+  --space-013: 13px;
+  --space-014: 16px;
+  --space-015: 24px;
+  --space-016: 32px;
+  /* radii */
+  --radius-001: 6px;
+  --radius-002: 8px;
+  --radius-003: 24px;
+  --radius-004: 50%;
+  --radius-005: 9999.01px;
+  /* shadows */
+  --shadow-001: rgba(31, 35, 40, 0.15) 0px 0px 0px 1px;
+  --shadow-002: rgba(209, 217, 224, 0.7) 0px -1px 0px 0px inset;
+  /* zIndices */
+  --z-001: 1;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(255, 255, 255, 0);
+  --clr-1: rgb(253, 140, 115);
+  --clr-2: rgba(31, 35, 40, 0.04);
+  --clr-3: rgb(31, 136, 61);
+  --clr-4: rgba(0, 0, 0, 0);
+  --clr-5: rgb(0, 0, 0);
+  --clr-6: rgb(26, 127, 55);
+  --clr-7: rgb(53, 114, 165);
+  --clr-8: rgb(56, 77, 84);
+  --clr-9: rgba(255, 129, 130, 0.4);
+  --clr-10: rgb(255, 235, 233);
+  --clr-11: rgb(239, 242, 245);
+  --clr-12: rgb(28, 129, 57);
+  --clr-13: rgb(129, 139, 152);
+  --clr-14: rgb(16, 16, 16);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+
+html { background: rgb(255, 255, 255); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

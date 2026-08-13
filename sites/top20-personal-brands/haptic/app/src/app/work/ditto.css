@@ -1,0 +1,29 @@
+.cn0{display:block;color:var(--foreground);font-family:sans-serif;font-size:12px;font-weight:400;font-style:normal;line-height:14px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-30"]{background-image:linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-30"]{background-image:linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)}
+}
+[data-ditto-id="style-div-31"]{background-image:linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div-32"]{background-image:linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)}
+}
+[data-ditto-id="style-div-33"]::placeholder{color:rgba(0, 0, 0, 0.3)}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-div-34"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-div-35"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-div-36"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-div-37"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-div-38"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-p"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-a"]:hover{border-bottom-color:rgba(0, 0, 0, 0.5);border-left-color:rgba(0, 0, 0, 0.5);border-right-color:rgba(0, 0, 0, 0.5);border-top-color:rgba(0, 0, 0, 0.5);color:rgba(0, 0, 0, 0.5);outline-color:rgba(0, 0, 0, 0.5);text-decoration-color:rgba(0, 0, 0, 0.5)}
+[data-ditto-id="style-p-2"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-39"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-40"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-3"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-18"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-41"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-42"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-43"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-44"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}

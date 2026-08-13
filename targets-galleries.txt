@@ -1,0 +1,17 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# The curated galleries and roundups the "Top 20 Best-Designed Personal Brand
+# Websites in AI & Consulting" list cites under "Where to Find More". They are
+# collections rather than personal brands, so they clone into their own
+# galleries/ folder beside the brands.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-galleries.txt \
+#             --dest=top20-personal-brands/galleries
+
+https://blog.copyfol.io/personal-brand-website
+https://www.framer.com/blog/13-best-consulting-website-design-examples/
+https://www.designrush.com/best-designs/websites/ai
+https://www.khod.io/resource-center/articles/ai-website-examples
+https://www.nxcode.io/resources/news/ai-website-examples-2026
+https://www.sitebuilderreport.com/inspiration/consulting-websites
+https://99designs.com/inspiration/websites/consultant

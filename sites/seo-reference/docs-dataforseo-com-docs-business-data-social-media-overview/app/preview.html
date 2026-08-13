@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>business_data/social_media/overview – DataForSEO API v.3</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0dde7fd522a3.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/88887a354253.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/005060cff645.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9ff5631df742.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e420c80bab48.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d049f41a9e89.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4e68b75a30e2.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/16d184c287c5.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/68815530676d.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ba04b5bee93c.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ee704f499d46.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/99e42b906a8a.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1ddebf61f904.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2d62a7e1e86c.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "intercom-font";
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/22bfa6fac05c.woff") format("woff");
+}
+
+@font-face {
+  font-family: "intercom-font";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7ec8a3e0ab92.woff") format("woff");
+}
+
+@font-face {
+  font-family: "intercom-font";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5619095c22d2.woff") format("woff");
+}
+
+@font-face {
+  font-family: "intercom-font";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/578d275fbd1a.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vc_grid_v1";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/466492822d76.woff") format("woff"), url("public/assets/cloned/fonts/ffb807fc9171.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "vcpb-plugin-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("public/assets/cloned/fonts/5ba94c167da8.woff") format("woff"), url("public/assets/cloned/fonts/027733655fbc.ttf") format("truetype");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(10, 11, 16);
+  --primary: rgb(164, 203, 72);
+  --accent: rgb(212, 255, 110);
+  --border: rgba(10, 11, 16, 0.08);
+  --muted-foreground: rgb(96, 96, 96);
+  --color-001: rgba(10, 11, 16, 0.16);
+}
+
+:root {
+  /* fonts */
+  --font-body: Inter, sans-serif;
+  --font-001: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* fontSizes */
+  --font-size-001: 11.2px;
+  --font-size-002: 12.8px;
+  --font-size-003: 14px;
+  --font-size-004: 16.38px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 16.8px;
+  --line-height-002: 19.6px;
+  --line-height-003: 16.1px;
+  --line-height-004: 19.2px;
+  --line-height-005: 21px;
+  --line-height-006: 14.72px;
+  --line-height-007: 24.57px;
+  /* spacing */
+  --space-001: 4.8px;
+  --space-002: 8px;
+  --space-003: 10px;
+  --space-004: 12px;
+  --space-005: 12.8px;
+  --space-006: 19.2px;
+  /* radii */
+  --radius-001: 6px;
+  --radius-002: 6.4px;
+  --radius-003: 12.8px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{height:939.422px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column;color:var(--foreground);font-family:var(--font-body);font-size:var(--font-size-003);font-weight:var(--font-weight-001);font-style:normal;line-height:var(--line-height-001);letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{width:100%;height:89.875px;display:block;position:sticky;top:0px;z-index:100;flex-shrink:0;background-color:var(--background)}
+.cn2{display:block;max-width:1536px;padding-right:var(--space-006);padding-left:var(--space-006);margin-left:auto;margin-right:auto}
+.cn3{display:flex;padding-top:9.6px;padding-bottom:9.6px;justify-content:space-between;align-items:center}
+.cn4{display:block;flex-grow:1;flex-basis:0%;color:var(--primary);cursor:pointer}
+.cn5{width:156px;height:23px;display:block;max-width:156px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 250 / 62}
+.cn6{display:flex;justify-content:center;align-items:center;flex-grow:1;flex-basis:0%;column-gap:var(--space-005)}
+.cn7{width:214.391px;height:33.5938px;border-width:1px;border-style:solid;border-color:var(--color-001);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:214.4px;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-shrink:0;line-height:var(--line-height-003);text-align:left;cursor:pointer}
+.cn8{width:auto;height:11px;display:block;position:absolute;top:8.04688px;left:16px;overflow-x:hidden;overflow-y:hidden;transform:matrix(1, 0, 0, 1, -5.59375, -5.59375);transform-origin:5.59375px 5.59375px}
+.cn9{display:inline;padding-left:30.4px;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:12.88px}
+.cn10{width:44.375px;height:20.375px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;position:absolute;top:8.04688px;right:8px;padding-top:3.2px;padding-right:6.4px;padding-bottom:3.2px;padding-left:6.4px;border-top-left-radius:4.8px;border-top-right-radius:4.8px;border-bottom-right-radius:4.8px;border-bottom-left-radius:4.8px;align-items:center;row-gap:1.6px;column-gap:1.6px;color:var(--muted-foreground);font-size:10.4px;font-weight:var(--font-weight-002);line-height:10.4px;background-color:var(--border);transform:matrix(1, 0, 0, 1, 0, -10.1875);transform-origin:22.1875px 10.1875px}
+.cn11{display:block;font-size:12px;line-height:12px}
+.cn12{width:23%;height:33.5938px;min-height:33.6px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;column-gap:4px;font-size:var(--font-size-002);line-height:var(--line-height-004);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-001);cursor:pointer}
+.cn13{display:block}
+.cn14{width:auto;height:13px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn15{width:33.5%;height:33.5938px;display:block;flex-grow:1;flex-basis:0%}
+.cn16{display:flex;justify-content:flex-end;align-items:center;flex-grow:1;flex-basis:0%;transform:none}
+.cn17{display:block}
+.cn18{display:flex;align-items:center;list-style-type:none;list-style-position:outside}
+.cn19{width:100%;display:list-item}
+.cn20{height:33.5938px;min-height:33.6px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;column-gap:var(--space-002);color:var(--primary);font-size:var(--font-size-002);line-height:var(--line-height-004);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn21{width:8px;height:11px;display:block;position:relative;top:0.8px;right:0px;bottom:-0.8px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn22{display:block}
+.cn23{display:flex;align-items:center;column-gap:var(--space-005);list-style-type:none;list-style-position:outside}
+.cn24{width:100%;display:list-item}
+.cn25{height:33.5938px;min-height:33.6px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;font-size:var(--font-size-002);line-height:var(--line-height-004);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-001);cursor:pointer}
+.cn26{width:100%;display:list-item}
+.cn27{height:33.5938px;min-height:33.6px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--background);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-004);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:rgb(178, 221, 76);cursor:pointer}
+.cn28{width:100%;display:list-item}
+.cn29{height:33.5938px;min-height:33.6px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-right:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;font-size:var(--font-size-002);line-height:var(--line-height-004);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-001);cursor:pointer}
+.cn30{width:16px;height:16px;display:block;justify-content:center;align-items:center}
+.cn31{width:auto;height:16px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn32{width:16px;height:28.8px;display:none;min-width:0px;margin-left:var(--space-004);flex-direction:column;justify-content:center;align-items:center;row-gap:4px;overflow-x:hidden;overflow-y:hidden;line-height:var(--line-height-003);text-align:left;cursor:pointer}
+.cn33{width:100%;height:1.6px;display:block;background-color:var(--foreground)}
+.cn34{width:100%;height:1.6px;display:block;background-color:var(--foreground);transform:none}
+.cn35{width:100%;height:1.6px;display:block;background-color:var(--foreground)}
+.cn36{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);background-color:var(--border)}
+.cn37{display:block;max-width:1536px;padding-right:var(--space-006);padding-left:var(--space-006)}
+.cn38{display:flex;justify-content:space-between;align-items:center}
+.cn39{display:flex;align-items:center;column-gap:var(--space-003);line-height:var(--line-height-003);text-align:left;cursor:pointer}
+.cn40{width:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;row-gap:3px}
+.cn41{width:100%;height:2px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;background-color:var(--foreground)}
+.cn42{width:100%;height:2px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;background-color:var(--foreground)}
+.cn43{width:100%;height:2px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;background-color:var(--foreground)}
+.cn44{display:block}
+.cn45{display:none;min-width:0px;align-items:center;column-gap:var(--space-003);line-height:var(--line-height-003);text-align:left;cursor:pointer}
+.cn46{display:inline}
+.cn47{width:auto;height:12px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn48{display:block;flex-grow:1;flex-shrink:0}
+.cn49{display:block;margin-top:var(--space-003)}
+.cn50{display:block;max-width:1536px;padding-right:var(--space-006);padding-left:var(--space-006);margin-left:auto;margin-right:auto}
+.cn51{display:grid;align-items:flex-start;column-gap:var(--space-003);grid-template-rows:839.547px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn52{width:1280px;height:800px;display:block;position:fixed;top:0px;left:0px;z-index:100;visibility:hidden;opacity:0;min-width:0px;max-height:800px;padding-right:var(--space-002);overflow-x:auto;overflow-y:auto;font-size:15.1733px;background-color:rgba(255, 255, 255, 0.6)}
+.cn53{width:40.1406px;height:40.1406px;display:flex;position:fixed;top:20px;right:20px;z-index:102;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;justify-content:center;align-items:center;line-height:17.4493px;text-align:left;background-color:var(--color-001);cursor:pointer}
+.cn54{width:20.0625px;height:2px;display:block;position:absolute;min-width:0px;background-color:var(--foreground);transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0);transform-origin:10.0312px 1px}
+.cn55{width:20.0625px;height:2px;display:block;position:absolute;min-width:0px;background-color:var(--foreground);transform:matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0);transform-origin:10.0312px 1px}
+.cn56{width:300px;height:800px;display:block;position:fixed;top:0px;left:0px;z-index:101;max-width:300px;padding-top:30px;padding-bottom:30px;overflow-x:auto;overflow-y:auto;background-color:var(--background);transform:matrix(1, 0, 0, 1, -300, 0);transform-origin:150px 400px}
+.cn57{height:563.594px;display:block}
+.cn58{height:69.5938px;display:block;list-style-type:none;list-style-position:outside}
+.cn59{display:list-item}
+.cn60{display:block;padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;color:var(--muted-foreground);cursor:pointer}
+.cn61{height:34.7969px;display:list-item}
+.cn62{display:block;padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;color:var(--muted-foreground);cursor:pointer}
+.cn63{display:block;list-style-type:none;list-style-position:outside}
+.cn64{display:list-item}
+.cn65{width:100%;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn66{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn67{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn68{height:38px;display:list-item}
+.cn69{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn70{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn71{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn72{height:38px;display:list-item}
+.cn73{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn74{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn75{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn76{height:38px;display:list-item}
+.cn77{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn78{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn79{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn80{height:38px;display:list-item}
+.cn81{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn82{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn83{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn84{height:38px;display:list-item}
+.cn85{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn86{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn87{display:block;list-style-type:none;list-style-position:outside}
+.cn88{display:list-item}
+.cn89{width:100%;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn90{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn91{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn92{height:38px;display:list-item}
+.cn93{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn94{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn95{display:block;list-style-type:none;list-style-position:outside}
+.cn96{display:list-item}
+.cn97{width:100%;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn98{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn99{display:block;list-style-type:none;list-style-position:outside}
+.cn100{display:list-item}
+.cn101{width:100%;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn102{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn103{height:38px;display:block;list-style-type:none;list-style-position:outside}
+.cn104{height:38px;display:list-item}
+.cn105{width:100%;height:38px;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn106{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn107{display:block;list-style-type:none;list-style-position:outside}
+.cn108{display:list-item}
+.cn109{width:100%;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn110{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn111{display:block;list-style-type:none;list-style-position:outside}
+.cn112{display:list-item}
+.cn113{width:100%;display:flex;margin-left:var(--space-001);padding-top:9px;padding-right:16px;padding-bottom:9px;padding-left:16px;align-items:center;column-gap:var(--space-002);color:var(--muted-foreground);line-height:17.4493px;text-align:left;cursor:pointer}
+.cn114{width:20px;height:20px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn115{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);background-color:var(--border)}
+.cn116{display:grid;align-items:flex-start;column-gap:32px;grid-template-columns:1fr 480px;grid-template-rows:repeat(1, minmax(0, 1fr));aspect-ratio:3 / 2}
+.cn117{height:799.172px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn118{display:block}
+.cn119{height:731.984px;display:block;margin-right:-15px;margin-left:-15px}
+.cn119::before{content:" ";display:table;width:0px;height:0px;color:rgb(10, 11, 16);font-size:var(--font-size-003);line-height:var(--line-height-001)}
+.cn119::after{content:" ";display:table;width:0px;height:0px;color:rgb(10, 11, 16);font-size:var(--font-size-003);line-height:var(--line-height-001)}
+.cn120{height:731.984px;min-height:1px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left}
+.cn121{height:100%;display:block;padding-right:15px;padding-left:15px}
+.cn121::before{content:" ";display:table;width:0px;height:0px;color:rgb(10, 11, 16);font-size:var(--font-size-003);line-height:var(--line-height-001)}
+.cn121::after{content:" ";display:table;width:0px;height:0px;color:rgb(10, 11, 16);font-size:var(--font-size-003);line-height:var(--line-height-001)}
+.cn122{display:block}
+.cn123{display:block;margin-bottom:35px}
+.cn124{display:block}
+.cn125{display:block;font-size:20.8px;font-weight:var(--font-weight-002);line-height:31.2px}
+.cn126{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:flex;margin-top:24px;margin-bottom:32px;padding-bottom:24px;flex-wrap:wrap;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn127{height:38px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--muted-foreground);font-weight:var(--font-weight-002);line-height:var(--line-height-005);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--border);cursor:pointer}
+.cn127::after{content:"Add to Favorites";display:block;position:absolute;top:-38px;right:-81px;bottom:44px;left:0px;z-index:10;width:117px;height:30px;padding-top:6px;padding-right:var(--space-004);padding-bottom:6px;padding-left:var(--space-004);color:rgb(255, 255, 255);font-size:12px;font-weight:var(--font-weight-002);line-height:18px;text-align:center;background-color:rgb(10, 11, 16);opacity:0;border-top-left-radius:4px}
+.cn128{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn129{width:20px;height:20px;display:none;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn130{display:none;min-width:0px}
+.cn131{border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--muted-foreground);font-weight:var(--font-weight-002);line-height:var(--line-height-005);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--border);cursor:pointer}
+.cn131::after{content:"Copy URL";display:block;position:absolute;top:-38px;right:-45px;bottom:44px;left:0px;z-index:10;width:81px;height:30px;padding-top:6px;padding-right:var(--space-004);padding-bottom:6px;padding-left:var(--space-004);color:rgb(255, 255, 255);font-size:12px;font-weight:var(--font-weight-002);line-height:18px;text-align:center;background-color:rgb(10, 11, 16);opacity:0;border-top-left-radius:4px}
+.cn132{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn133{display:none;min-width:0px}
+.cn134{border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--muted-foreground);font-weight:var(--font-weight-002);line-height:var(--line-height-005);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--border);cursor:pointer}
+.cn134::after{content:"Send via Email";display:block;position:absolute;top:-38px;right:-71px;bottom:44px;left:0px;z-index:10;width:107px;height:30px;padding-top:6px;padding-right:var(--space-004);padding-bottom:6px;padding-left:var(--space-004);color:rgb(255, 255, 255);font-size:12px;font-weight:var(--font-weight-002);line-height:18px;text-align:center;background-color:rgb(10, 11, 16);opacity:0;border-top-left-radius:4px}
+.cn135{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn136{display:none;min-width:0px}
+.cn137{border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--muted-foreground);font-weight:var(--font-weight-002);line-height:var(--line-height-005);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--border);cursor:pointer}
+.cn137::after{content:"Share";display:block;position:absolute;top:-38px;right:-22px;bottom:44px;left:0px;z-index:10;width:58px;height:30px;padding-top:6px;padding-right:var(--space-004);padding-bottom:6px;padding-left:var(--space-004);color:rgb(255, 255, 255);font-size:12px;font-weight:var(--font-weight-002);line-height:18px;text-align:center;background-color:rgb(10, 11, 16);opacity:0;border-top-left-radius:4px}
+.cn138{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn139{display:none;min-width:0px}
+.cn140{height:32.7969px;display:flex;margin-top:var(--space-004);margin-bottom:var(--space-004);padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-wrap:wrap;align-items:center;row-gap:var(--space-002);column-gap:4px;font-size:var(--font-size-001);font-weight:var(--font-weight-003);background-color:rgba(178, 221, 76, 0.33)}
+.cn141{width:13px;height:13px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn142{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn143{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn144{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn145{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-007)}
+.cn146{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn147{display:inline;color:var(--primary);cursor:pointer}
+.cn148{display:inline;color:var(--primary);cursor:pointer}
+.cn149{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-007)}
+.cn150{height:53.5781px;display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn151{display:inline-flex;margin-top:var(--space-001);padding-top:var(--space-001);padding-right:var(--space-001);padding-bottom:var(--space-001);padding-left:var(--space-001);border-top-left-radius:1.6px;border-top-right-radius:1.6px;border-bottom-right-radius:1.6px;border-bottom-left-radius:1.6px;align-items:center;column-gap:6.4px;word-break:break-word;background-color:var(--border)}
+.cn152{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn153{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn154{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-007)}
+.cn155{display:block;margin-top:var(--space-004);line-height:var(--line-height-002)}
+.cn156{display:inline;color:var(--primary);cursor:pointer}
+.cn157{display:inline;color:var(--primary);cursor:pointer}
+.cn158{display:inline;color:var(--primary);cursor:pointer}
+.cn159{display:block;margin-top:14px;margin-right:40px;margin-bottom:14px;margin-left:40px}
+.cn160{display:block;margin-top:var(--space-004);margin-bottom:var(--space-004);line-height:var(--line-height-002)}
+.cn161{width:480px;height:704px;display:flex;position:sticky;top:119px;flex-direction:column;row-gap:var(--space-002);overflow-x:hidden;overflow-y:hidden;transform:none}
+.cn162{width:480px;height:225.734px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:absolute;left:0px;min-width:0px;padding-top:var(--space-006);padding-right:var(--space-006);padding-bottom:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;flex-grow:1;flex-basis:0%;row-gap:var(--space-005);background-color:var(--border)}
+.cn163{width:422.875px;display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);align-items:center;flex-shrink:0;row-gap:var(--space-002);column-gap:var(--space-002);overflow-x:auto;overflow-y:auto;background-color:var(--border)}
+.cn164{height:33.5938px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;flex-grow:1;color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-006);text-align:center;background-color:var(--border);cursor:pointer;pointer-events:none}
+.cn165{height:33.5938px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;flex-grow:1;color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-006);text-align:center;cursor:pointer}
+.cn166{height:33.5938px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;flex-grow:1;color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-006);text-align:center;cursor:pointer}
+.cn167{height:33.5938px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;flex-grow:1;color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-006);text-align:center;cursor:pointer}
+.cn168{height:33.5938px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;flex-grow:1;color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-006);text-align:center;cursor:pointer}
+.cn169{height:33.6px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:none;min-width:0px;padding-right:var(--space-006);padding-left:var(--space-006);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-006);text-align:center;cursor:pointer}
+.cn170{width:16px;height:16px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn171{height:138.969px;display:flex;padding-top:var(--space-005);padding-bottom:var(--space-005);flex-direction:column;justify-content:center;align-items:center;row-gap:var(--space-006);text-align:center}
+.cn172{width:34px;height:31px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn173{height:63.1875px;display:flex;flex-direction:column;row-gap:var(--space-005)}
+.cn174{display:block;font-weight:var(--font-weight-002)}
+.cn175{display:block;max-width:384px;color:var(--muted-foreground);font-size:var(--font-size-001)}
+.cn176{height:57.5938px;display:flex;position:fixed;right:28.8px;bottom:30.6667px;left:1193.61px;z-index:99;min-width:0px;flex-direction:column;row-gap:var(--space-006)}
+.cn177{width:60px;height:60px;display:block;position:fixed;right:30px;bottom:115px;z-index:999999;min-width:0px;font-family:var(--font-001)}
+.cn178{width:60px;height:60px;display:flex;padding-top:1px;padding-right:6px;padding-bottom:1px;padding-left:6px;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;justify-content:center;align-items:center;color:var(--accent);line-height:var(--line-height-003);text-align:center;background-color:rgb(50, 54, 60);box-shadow:rgba(0, 0, 0, 0.16) 0px 3.2px 12.8px 0px;cursor:pointer}
+.cn179{width:auto;height:32px;display:block;overflow-x:hidden;overflow-y:hidden}
+
+@media (max-width: 571px) {
+.cn0{height:1299.16px}
+.cn1{height:92.2812px}
+.cn2{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn5{width:140px;height:21px;max-width:140px}
+.cn6{justify-content:flex-end;column-gap:var(--space-002)}
+.cn7{width:36px;height:36px;display:flex;justify-content:center;align-items:center;line-height:0px;border-width:0;border-style:initial;border-color:initial}
+.cn8{height:16px;top:50%;transform:none;position:static;transform-origin:initial}
+.cn9{display:none}
+.cn10{display:none}
+.cn12{height:36px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;line-height:var(--line-height-005);min-height:0;border-width:0;border-style:initial;border-color:initial;padding-right:0;padding-left:0;font-size:inherit;background-color:initial}
+.cn13{display:none}
+.cn14{height:16px}
+.cn15{height:812px;position:fixed;top:0px;right:0px;left:0px;z-index:100;visibility:hidden;opacity:0;min-width:0px;max-height:812px;background-color:rgba(255, 255, 255, 0.6);width:auto}
+.cn16{visibility:hidden}
+.cn17{visibility:hidden}
+.cn18{visibility:hidden}
+.cn19{visibility:hidden}
+.cn20{visibility:hidden}
+.cn21{visibility:hidden}
+.cn22{visibility:hidden}
+.cn23{visibility:hidden}
+.cn24{visibility:hidden}
+.cn25{visibility:hidden}
+.cn26{visibility:hidden}
+.cn27{visibility:hidden}
+.cn28{visibility:hidden}
+.cn29{visibility:hidden}
+.cn30{visibility:hidden}
+.cn31{visibility:hidden}
+.cn32{width:20px;height:36px;display:flex;margin-left:15px;row-gap:5px;min-width:0}
+.cn33{height:2px}
+.cn34{height:2px;transform:matrix(1, 0, 0, 1, 8, 0);transform-origin:10px 1px}
+.cn35{height:2px}
+.cn37{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn45{display:flex;min-width:0}
+.cn46{display:block}
+.cn47{display:block}
+.cn50{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn51{grid-template-rows:1196.88px}
+.cn52{width:375px;height:812px;max-height:812px;font-size:inherit}
+.cn53{width:30px;height:30px;line-height:var(--line-height-003)}
+.cn54{width:15px;transform-origin:7.5px 1px}
+.cn55{width:15px;transform-origin:7.5px 1px}
+.cn56{width:921.594px;height:812px;min-width:250px;transform:matrix(1, 0, 0, 1, -921.594, 0);transform-origin:460.797px 406px;max-width:none}
+.cn65{line-height:var(--line-height-003)}
+.cn69{line-height:var(--line-height-003)}
+.cn73{line-height:var(--line-height-003)}
+.cn77{line-height:var(--line-height-003)}
+.cn81{line-height:var(--line-height-003)}
+.cn85{line-height:var(--line-height-003)}
+.cn89{line-height:var(--line-height-003)}
+.cn93{line-height:var(--line-height-003)}
+.cn97{line-height:var(--line-height-003)}
+.cn101{line-height:var(--line-height-003)}
+.cn105{line-height:var(--line-height-003)}
+.cn109{line-height:var(--line-height-003)}
+.cn113{line-height:var(--line-height-003)}
+.cn115{padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.cn116{column-gap:40px;grid-template-columns:repeat(1, minmax(0, 1fr));aspect-ratio:0.278}
+.cn117{height:1170.88px}
+.cn119{height:auto}
+.cn120{height:1062.5px;float:initial}
+.cn125{font-size:24px;line-height:36px}
+.cn126{margin-top:16px;margin-bottom:24px;padding-bottom:16px;row-gap:6px;column-gap:6px}
+.cn127{height:30px;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px;font-size:13px;line-height:19.5px}
+.cn127::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn128{height:16px}
+.cn131{padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px;font-size:13px;line-height:19.5px}
+.cn131::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn132{height:16px}
+.cn134{padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px;font-size:13px;line-height:19.5px}
+.cn134::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn135{height:16px}
+.cn137{padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px;font-size:13px;line-height:19.5px}
+.cn137::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn138{height:16px}
+.cn140{height:79.5938px;margin-top:15px;margin-bottom:15px;padding-top:var(--space-003);padding-right:var(--space-003);padding-bottom:var(--space-003);padding-left:var(--space-003);border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;row-gap:var(--space-003);column-gap:5px;font-size:inherit}
+.cn141{width:16px;height:16px}
+.cn142{margin-top:15px;margin-bottom:15px}
+.cn143{margin-top:15px;margin-bottom:15px}
+.cn144{margin-top:15px;margin-bottom:15px}
+.cn146{margin-top:15px;margin-bottom:15px}
+.cn150{height:76.7812px;margin-top:15px;margin-bottom:15px}
+.cn151{margin-top:6px;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;column-gap:var(--space-002)}
+.cn152{margin-top:15px;margin-bottom:15px}
+.cn153{margin-top:15px;margin-bottom:15px}
+.cn155{margin-top:15px}
+.cn160{margin-top:15px;margin-bottom:15px}
+.cn161{width:375px;height:812px;position:fixed;top:0px;left:0px;z-index:999;visibility:hidden;opacity:0;min-width:0px;row-gap:var(--space-003);overflow-x:auto;overflow-y:auto;background-color:var(--background);transform:matrix(1, 0, 0, 1, 0, 812);transform-origin:187.5px 406px}
+.cn162{visibility:hidden}
+.cn163{visibility:hidden}
+.cn164{visibility:hidden}
+.cn165{visibility:hidden}
+.cn166{visibility:hidden}
+.cn167{visibility:hidden}
+.cn168{visibility:hidden}
+.cn169{height:42px;display:flex;padding-right:var(--space-004);padding-left:var(--space-004);font-size:12px;line-height:13.8px;min-width:0;border-top-left-radius:initial;border-top-right-radius:initial;border-bottom-right-radius:initial;border-bottom-left-radius:initial}
+.cn170{display:block}
+.cn171{visibility:hidden}
+.cn172{visibility:hidden}
+.cn173{visibility:hidden}
+.cn174{visibility:hidden}
+.cn175{visibility:hidden}
+.cn176{height:42px;right:15px;bottom:15px;left:318px;row-gap:5px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:989.469px;font-size:14.4907px;line-height:17.3888px}
+.cn1{height:92.8438px}
+.cn2{padding-right:14.944px;padding-left:14.944px}
+.cn5{width:153px;max-width:153.493px}
+.cn6{justify-content:flex-end;column-gap:var(--space-002)}
+.cn7{width:36px;height:36px;display:flex;justify-content:center;align-items:center;line-height:0px;border-width:0;border-style:initial;border-color:initial}
+.cn8{height:16px;top:50%;transform:none;position:static;transform-origin:initial}
+.cn9{display:none}
+.cn10{display:none}
+.cn12{width:10%;height:36px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;line-height:21.736px;min-height:0;border-width:0;border-style:initial;border-color:initial;padding-right:0;padding-left:0;font-size:inherit;background-color:initial}
+.cn13{display:none}
+.cn14{height:16px}
+.cn15{height:1024px;position:fixed;top:0px;right:0px;left:0px;z-index:100;visibility:hidden;opacity:0;min-width:0px;max-height:1024px;background-color:rgba(255, 255, 255, 0.6);width:auto}
+.cn16{visibility:hidden}
+.cn17{visibility:hidden}
+.cn18{visibility:hidden}
+.cn19{visibility:hidden}
+.cn20{visibility:hidden}
+.cn21{visibility:hidden}
+.cn22{visibility:hidden}
+.cn23{visibility:hidden}
+.cn24{visibility:hidden}
+.cn25{visibility:hidden}
+.cn26{visibility:hidden}
+.cn27{visibility:hidden}
+.cn28{visibility:hidden}
+.cn29{visibility:hidden}
+.cn30{visibility:hidden}
+.cn31{visibility:hidden}
+.cn32{width:20px;height:36px;display:flex;margin-left:15px;row-gap:5px;line-height:16.6643px;min-width:0}
+.cn33{height:2px}
+.cn34{height:2px;transform:matrix(1, 0, 0, 1, 8, 0);transform-origin:10px 1px}
+.cn35{height:2px}
+.cn37{padding-right:14.944px;padding-left:14.944px}
+.cn39{line-height:16.6643px}
+.cn45{display:flex;line-height:16.6643px;min-width:0}
+.cn46{display:block}
+.cn47{display:block}
+.cn50{padding-right:14.944px;padding-left:14.944px}
+.cn51{grid-template-rows:886.625px}
+.cn52{width:768px;height:1024px;max-height:1024px;font-size:inherit}
+.cn53{width:34.2344px;height:34.2344px;line-height:16.6643px}
+.cn54{width:17.1094px;transform-origin:8.55469px 1px}
+.cn55{width:17.1094px;transform-origin:8.55469px 1px}
+.cn56{height:1024px;transform-origin:150px 512px}
+.cn57{height:564.781px}
+.cn58{height:70.7812px}
+.cn61{height:35.3906px}
+.cn65{line-height:16.6643px}
+.cn69{line-height:16.6643px}
+.cn73{line-height:16.6643px}
+.cn77{line-height:16.6643px}
+.cn81{line-height:16.6643px}
+.cn85{line-height:16.6643px}
+.cn89{line-height:16.6643px}
+.cn93{line-height:16.6643px}
+.cn97{line-height:16.6643px}
+.cn101{line-height:16.6643px}
+.cn105{line-height:16.6643px}
+.cn109{line-height:16.6643px}
+.cn113{line-height:16.6643px}
+.cn115{padding-top:14.944px;padding-right:14.944px;padding-bottom:14.944px;padding-left:14.944px;border-top-left-radius:9.96267px;border-top-right-radius:9.96267px;border-bottom-right-radius:9.96267px;border-bottom-left-radius:9.96267px}
+.cn116{column-gap:40px;grid-template-columns:repeat(1, minmax(0, 1fr));aspect-ratio:0.826}
+.cn117{height:854.75px}
+.cn119{height:784.188px}
+.cn119::before{font-size:14.4907px;line-height:17.3888px}
+.cn119::after{font-size:14.4907px;line-height:17.3888px}
+.cn120{height:784.188px}
+.cn121::before{font-size:14.4907px;line-height:17.3888px}
+.cn121::after{font-size:14.4907px;line-height:17.3888px}
+.cn125{font-size:25.472px;line-height:38.208px}
+.cn126{margin-top:16px;margin-bottom:24px;padding-bottom:16px;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn127{height:32.7812px;padding-top:6.4px;padding-right:6.4px;padding-bottom:6.4px;padding-left:6.4px;font-size:13px;line-height:19.5px}
+.cn127::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn128{height:18px}
+.cn131{padding-top:6.4px;padding-right:6.4px;padding-bottom:6.4px;padding-left:6.4px;font-size:13px;line-height:19.5px}
+.cn131::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn132{height:18px}
+.cn134{padding-top:6.4px;padding-right:6.4px;padding-bottom:6.4px;padding-left:6.4px;font-size:13px;line-height:19.5px}
+.cn134::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn135{height:18px}
+.cn137{padding-top:6.4px;padding-right:6.4px;padding-bottom:6.4px;padding-left:6.4px;font-size:13px;line-height:19.5px}
+.cn137::after{display:none;bottom:calc(100% + 8px);top:auto;right:auto;width:auto;height:auto}
+.cn138{height:18px}
+.cn140{height:37.3906px;margin-top:15px;margin-bottom:15px;padding-top:var(--space-003);padding-right:11.472px;padding-bottom:var(--space-003);padding-left:11.472px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;row-gap:var(--space-003);column-gap:5px;font-size:var(--font-size-003)}
+.cn141{width:16px;height:16px}
+.cn142{margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn143{margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn144{margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn145{font-size:16.9541px;line-height:25.4311px}
+.cn146{height:20.2812px;margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn149{font-size:16.9541px;line-height:25.4311px}
+.cn150{height:58.5625px;margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn151{margin-top:6px;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;column-gap:var(--space-002)}
+.cn152{margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn153{margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn154{font-size:16.9541px;line-height:25.4311px}
+.cn155{height:40.5625px;margin-top:15px;line-height:20.2869px}
+.cn159{margin-top:14.4907px;margin-bottom:14.4907px}
+.cn160{margin-top:15px;margin-bottom:15px;line-height:20.2869px}
+.cn161{width:768px;height:1024px;position:fixed;top:0px;left:0px;z-index:999;visibility:hidden;opacity:0;min-width:0px;row-gap:var(--space-003);overflow-x:auto;overflow-y:auto;background-color:var(--background);transform:matrix(1, 0, 0, 1, 0, 1024);transform-origin:384px 512px}
+.cn162{visibility:hidden}
+.cn163{visibility:hidden}
+.cn164{visibility:hidden}
+.cn165{visibility:hidden}
+.cn166{visibility:hidden}
+.cn167{visibility:hidden}
+.cn168{visibility:hidden}
+.cn169{height:42px;display:flex;padding-right:14.944px;padding-left:14.944px;font-size:12.9813px;line-height:14.9285px;min-width:0;border-top-left-radius:initial;border-top-right-radius:initial;border-bottom-right-radius:initial;border-bottom-left-radius:initial}
+.cn170{display:block}
+.cn171{visibility:hidden}
+.cn172{visibility:hidden}
+.cn173{visibility:hidden}
+.cn174{visibility:hidden}
+.cn175{visibility:hidden}
+.cn176{height:49.3594px;right:20.152px;bottom:22.6053px;left:698.5px;row-gap:9.66133px}
+.cn178{line-height:16.6643px}
+}
+
+@media (min-width: 1601px) {
+.cn0{height:1051.55px}
+.cn1{height:52.7812px}
+.cn12{width:19.5%}
+.cn36{display:none}
+.cn49{margin-top:var(--space-002)}
+.cn51{column-gap:var(--space-002);grid-template-columns:208px 1281.62px;grid-template-rows:990.766px}
+.cn52{width:208px;height:972px;position:sticky;top:73px;max-height:972px;font-size:var(--font-size-002);left:auto;z-index:initial;visibility:inherit;opacity:initial;min-width:0;background-color:initial}
+.cn53{width:33.5938px;height:33.5938px;top:16px;right:16px;line-height:var(--line-height-006);z-index:initial}
+.cn54{width:16.7969px;height:1.59375px;transform-origin:8.39844px 0.796875px}
+.cn55{width:16.7969px;height:1.59375px;transform-origin:8.39844px 0.796875px}
+.cn56{width:200px;height:457.219px;transform:none;position:static;top:auto;left:auto;z-index:initial;max-width:none;padding-top:0;padding-bottom:0;overflow-x:initial;overflow-y:initial;background-color:initial;transform-origin:initial}
+.cn57{height:auto}
+.cn58{height:auto}
+.cn60{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005)}
+.cn61{height:auto}
+.cn62{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005)}
+.cn65{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn66{width:16px;height:16px}
+.cn67{height:auto}
+.cn68{height:auto}
+.cn69{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn70{width:16px;height:16px}
+.cn71{height:auto}
+.cn72{height:auto}
+.cn73{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn74{width:16px;height:16px}
+.cn75{height:auto}
+.cn76{height:auto}
+.cn77{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn78{width:16px;height:16px}
+.cn79{height:auto}
+.cn80{height:auto}
+.cn81{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn82{width:16px;height:16px}
+.cn83{height:auto}
+.cn84{height:auto}
+.cn85{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn86{width:16px;height:16px}
+.cn89{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn90{width:16px;height:16px}
+.cn91{height:auto}
+.cn92{height:auto}
+.cn93{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn94{width:16px;height:16px}
+.cn97{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn98{width:16px;height:16px}
+.cn101{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn102{width:16px;height:16px}
+.cn103{height:auto}
+.cn104{height:auto}
+.cn105{height:30.375px;padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn106{width:16px;height:16px}
+.cn109{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn110{width:16px;height:16px}
+.cn113{padding-top:7.2px;padding-right:var(--space-005);padding-bottom:7.2px;padding-left:var(--space-005);column-gap:6.4px;line-height:var(--line-height-006)}
+.cn114{width:16px;height:16px}
+.cn116{aspect-ratio:1.306}
+.cn117{height:779.578px}
+.cn161{height:950.391px;top:73px}
+.cn176{bottom:46px;left:1833.61px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <header class="cn1" id="header">
+      <div class="cn2">
+        <div class="cn3">
+           
+          <a class="cn4" aria-current="page" href="https://docs.dataforseo.com/v3/" rel="home">
+            <img class="cn5" alt="DataForSeo Logo" height="62" src="public/assets/cloned/images/056e08e8f762.png" width="250" />
+          </a>
+           
+          <div class="cn6">
+            <button class="cn7" title="Search documentation (Ctrl+K)">
+              <svg class="cn8" height="12" viewBox="0 0 12 12" width="12" fill="currentColor">
+                        <use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#magnifying-glass"></use>
+                    </svg>
+               
+              <span class="cn9">
+                 Search 
+              </span>
+               
+              <kbd class="cn10">
+                <span class="cn11">
+                  Ctrl
+                </span>
+                K 
+              </kbd>
+               
+            </button>
+             
+            <button class="cn12" type="button">
+              <span class="cn13">
+                Ask AI
+              </span>
+               
+              <svg class="cn14" height="16" viewBox="0 0 16 16" width="16" fill="currentColor">
+                        <use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#stars"></use>
+                    </svg>
+               
+            </button>
+             
+          </div>
+           
+          <div class="cn15">
+            <div class="cn16">
+              <nav class="cn17">
+                <ul class="cn18">
+                  <li class="cn19">
+                    <a class="cn20" href="https://dataforseo.com/pricing" target="_blank">
+                      Pricing
+                      <svg class="cn21" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-right"></use></svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="cn22">
+                <ul class="cn23">
+                  <li class="cn24">
+                    <a class="cn25" href="https://app.dataforseo.com/signin/" target="_blank">
+                      Sign In
+                    </a>
+                  </li>
+                  <li class="cn26">
+                    <a class="cn27" href="https://app.dataforseo.com/register/" target="_blank">
+                      Sign Up
+                    </a>
+                  </li>
+                  <li class="cn28">
+                    <button class="cn29" aria-label="Toggle theme" id="theme-toggle" title="Switch to dark theme">
+                       
+                      <span class="cn30">
+                        <svg class="cn31" fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 8.5C13.5 11.5 10.5 14 7 14C3.5 14 1 11.5 1 8C1 4.5 3.5 2 7 2C7.5 2 8 2 8.5 2.2C7.5 3 7 4.2 7 5.5C7 7.7 8.8 9.5 11 9.5C12.3 9.5 13.5 9 14.3 8C14.2 8.2 14.1 8.3 14 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+                      </span>
+                       
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+               
+            </div>
+             
+          </div>
+           
+          <button class="cn32">
+            <span class="cn33"></span>
+             
+            <span class="cn34"></span>
+             
+            <span class="cn35"></span>
+             
+          </button>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn36">
+        <div class="cn37">
+          <div class="cn38">
+            <button class="cn39">
+              <div class="cn40">
+                <span class="cn41"></span>
+                 
+                <span class="cn42"></span>
+                 
+                <span class="cn43"></span>
+                 
+              </div>
+               
+              <span class="cn44">
+                 Menu 
+              </span>
+               
+            </button>
+             
+            <button class="cn45">
+              <span class="cn46">
+                 Example 
+              </span>
+               
+              <svg class="cn47" height="16" viewBox="0 0 16 16" width="16" fill="currentColor">
+                        <use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-right"></use>
+                    </svg>
+               
+            </button>
+             
+          </div>
+           
+        </div>
+         
+      </div>
+       
+    </header>
+     
+    <main class="cn48" id="content">
+      <div class="cn49">
+        <div class="cn50">
+          <div class="cn51">
+            <aside class="cn52">
+              <button class="cn53">
+                <span class="cn54"></span>
+                 
+                <span class="cn55"></span>
+                 
+              </button>
+               
+              <div class="cn56">
+                <nav class="cn57" id="menu-menu">
+                  <ul class="cn58" id="menu-main-menu-1">
+                    <li class="cn59" id="menu-item-25749">
+                      <a class="cn60" href="https://docs.dataforseo.com/v3/">
+                        Introduction
+                      </a>
+                    </li>
+                    <li class="cn61" id="menu-item-25750">
+                      <a class="cn62" href="https://docs.dataforseo.com/v3/auth/">
+                        Authentication
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="cn63" id="menu-serp-api-generated-submenu">
+                    <li class="cn64" id="menu-item-25845">
+                      <button class="cn65">
+                        SERP API
+                        <svg class="cn66" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn67" id="menu-ai-optimization-api-generated-submenu">
+                    <li class="cn68" id="menu-item-25296">
+                      <button class="cn69">
+                        AI Optimization API
+                        <svg class="cn70" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn71" id="menu-keywords-data-api-generated-submenu">
+                    <li class="cn72" id="menu-item-25654">
+                      <button class="cn73">
+                        Keywords Data API
+                        <svg class="cn74" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn75" id="menu-domain-analytics-api-generated-submenu">
+                    <li class="cn76" id="menu-item-25636">
+                      <button class="cn77">
+                        Domain Analytics API
+                        <svg class="cn78" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn79" id="menu-dataforseo-labs-api-generated-submenu">
+                    <li class="cn80" id="menu-item-25578">
+                      <button class="cn81">
+                        DataForSEO Labs API
+                        <svg class="cn82" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn83" id="menu-backlinks-api-generated-submenu">
+                    <li class="cn84" id="menu-item-25441">
+                      <button class="cn85">
+                        Backlinks API
+                        <svg class="cn86" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn87" id="menu-onpage-api-generated-submenu">
+                    <li class="cn88" id="menu-item-25813">
+                      <button class="cn89">
+                        OnPage API
+                        <svg class="cn90" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn91" id="menu-content-analysis-api-generated-submenu">
+                    <li class="cn92" id="menu-item-25541">
+                      <button class="cn93">
+                        Content Analysis API
+                        <svg class="cn94" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn95" id="menu-merchant-api-generated-submenu">
+                    <li class="cn96" id="menu-item-25751">
+                      <button class="cn97">
+                        Merchant API
+                        <svg class="cn98" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn99" id="menu-app-data-api-generated-submenu">
+                    <li class="cn100" id="menu-item-25375">
+                      <button class="cn101">
+                        App Data API
+                        <svg class="cn102" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn103" id="menu-business-data-api-generated-submenu">
+                    <li class="cn104" id="menu-item-25465">
+                      <button class="cn105">
+                        Business Data API
+                        <svg class="cn106" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn107" id="menu-databases-generated-submenu">
+                    <li class="cn108" id="menu-item-25553">
+                      <button class="cn109">
+                        Databases
+                        <svg class="cn110" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                  <ul class="cn111" id="menu-appendix-generated-submenu">
+                    <li class="cn112" id="menu-item-25431">
+                      <button class="cn113">
+                        Appendix
+                        <svg class="cn114" height="8" viewBox="0 0 4 8" width="4" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#chevron-bottom"></use></svg>
+                      </button>
+                       
+                    </li>
+                  </ul>
+                </nav>
+                 
+              </div>
+               
+            </aside>
+             
+            <div class="cn115">
+              <div class="cn116">
+                <div class="cn117">
+                  <div class="cn118">
+                    <div class="cn119">
+                      <div class="cn120">
+                        <div class="cn121">
+                          <div class="cn122">
+                            <div class="cn123">
+                              <div class="cn124">
+                                <h1 class="cn125" id="introduction">
+                                  Social Media API: Overview
+                                </h1>
+                                <div class="cn126">
+                                  <button class="cn127" title="Add to Favorites">
+                                    <svg class="cn128" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2L12.5 7L18 8L14 12L15 18L10 15L5 18L6 12L2 8L7.5 7L10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                                     
+                                    <svg class="cn129" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2L12.5 7L18 8L14 12L15 18L10 15L5 18L6 12L2 8L7.5 7L10 2Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                                     
+                                    <span class="cn130">
+                                      Add to Favorites
+                                    </span>
+                                     
+                                  </button>
+                                   
+                                  <button class="cn131" title="Copy URL">
+                                    <svg class="cn132" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 7H7C5.89543 7 5 7.89543 5 9V15C5 16.1046 5.89543 17 7 17H13C14.1046 17 15 16.1046 15 15V9C15 7.89543 14.1046 7 13 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8 7V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V11C16 12.1046 15.1046 13 14 13H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                                     
+                                    <span class="cn133">
+                                      Copy URL
+                                    </span>
+                                     
+                                  </button>
+                                   
+                                  <button class="cn134" title="Send via Email">
+                                    <svg class="cn135" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6L10 11L17 6M3 6V14C3 14.5523 3.44772 15 4 15H16C16.5523 15 17 14.5523 17 14V6M3 6C3 5.44772 3.44772 5 4 5H16C16.5523 5 17 5.44772 17 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                                     
+                                    <span class="cn136">
+                                      Email
+                                    </span>
+                                     
+                                  </button>
+                                   
+                                  <button class="cn137" title="Share">
+                                    <svg class="cn138" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 7C15.1046 7 16 6.10457 16 5C16 3.89543 15.1046 3 14 3C12.8954 3 12 3.89543 12 5C12 6.10457 12.8954 7 14 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6 12C7.10457 12 8 11.1046 8 10C8 8.89543 7.10457 8 6 8C4.89543 8 4 8.89543 4 10C4 11.1046 4.89543 12 6 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14 17C15.1046 17 16 16.1046 16 15C16 13.8954 15.1046 13 14 13C12.8954 13 12 13.8954 12 15C12 16.1046 12.8954 17 14 17Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.5 11L12.5 14M12.5 6L7.5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                                     
+                                    <span class="cn139">
+                                      Share
+                                    </span>
+                                     
+                                  </button>
+                                   
+                                </div>
+                                 
+                                <div class="cn140">
+                                  <img class="cn141" alt="checked" src="public/assets/cloned/svg/9a93a8726b27.svg" />
+                                   This API provides data on the syndication of webpages on social media 
+                                </div>
+                                 
+                                <p class="cn142">
+                                  Social Media API is based on website embeds developed and supported by social media platforms. By mirroring the embed in our environment we are able to aggregate data on social media interactions associated with a certain page. 
+                                </p>
+                                 
+                                <p class="cn143">
+                                  Consequently, by specifying up to ten URLs in the request to Social Media API’s endpoints, you will get the number of social interactions for each corresponding page. 
+                                </p>
+                                 
+                                <p class="cn144">
+                                  For now, Social Media API supports only one social media platform — Pinterest. More datasources will be made available in the future. 
+                                </p>
+                                 
+                                <h3 class="cn145">
+                                  Pinterest
+                                </h3>
+                                 
+                                <p class="cn146">
+                                  <a class="cn147" href="https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/" rel="noopener noreferrer" target="_blank">
+                                    This endpoint
+                                  </a>
+                                   provides the number of pins a page received through a 
+                                  <a class="cn148" href="https://developers.pinterest.com/docs/widgets/save/?" rel="noopener noreferrer" target="_blank">
+                                    Pinterest Save Button embed
+                                  </a>
+                                  . 
+                                </p>
+                                 
+                                <h3 class="cn149">
+                                  Setting a task
+                                </h3>
+                                 
+                                <p class="cn150">
+                                  The returned results are specific to the URLs passed in the 
+                                  <code class="cn151">
+                                    targets
+                                  </code>
+                                   array when setting a task. You can specify up to ten URLs in a single task.
+                                </p>
+                                 
+                                <p class="cn152">
+                                  All endpoints of the Social Media API support the Live method of data retrieval. It doesn’t require making separate POST and GET requests – the results will be provided immediately after setting a task. 
+                                </p>
+                                 
+                                <p class="cn153">
+                                  You can send up to 2000 API calls per minute. 
+                                </p>
+                                 
+                                <h3 class="cn154">
+                                  Priorities and cost
+                                </h3>
+                                 
+                                <p class="cn155">
+                                  The cost can be calculated on the 
+                                  <a class="cn156" href="https://dataforseo.com/pricing/business-data/social-media" rel="noopener noreferrer" target="_blank" title="Pricing">
+                                    Pricing
+                                  </a>
+                                   page. You can check your spending in your 
+                                  <a class="cn157" href="https://app.dataforseo.com/api-access" rel="noopener noreferrer" target="_blank">
+                                    account dashboard
+                                  </a>
+                                   or by making a separate call to 
+                                  <a class="cn158" href="https://docs.dataforseo.com/v3/appendix/user_data/?php" rel="noopener noreferrer" target="_blank">
+                                    the User Data endpoint
+                                  </a>
+                                </p>
+                                 
+                              </div>
+                               
+                            </div>
+                             
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     
+                    <blockquote class="cn159">
+                      <p class="cn160">
+                        Instead of ‘login’ and ‘password’ use your credentials from https://app.dataforseo.com/api-access
+                      </p>
+                    </blockquote>
+                  </div>
+                   
+                </div>
+                 
+                <div class="cn161">
+                  <div class="cn162" id="example-code">
+                    <div class="cn163">
+                      <button class="cn164">
+                         cURL 
+                      </button>
+                       
+                      <button class="cn165">
+                         php 
+                      </button>
+                       
+                      <button class="cn166">
+                         Node.js 
+                      </button>
+                       
+                      <button class="cn167">
+                         Python 
+                      </button>
+                       
+                      <button class="cn168">
+                         cSharp 
+                      </button>
+                       
+                      <button class="cn169" type="button">
+                        <svg class="cn170" height="16" viewBox="0 0 16 16" width="16" fill="currentColor">
+                    <use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#times"></use>
+                </svg>
+                         
+                      </button>
+                       
+                    </div>
+                     
+                    <div class="cn171">
+                      <img class="cn172" alt="" src="public/assets/cloned/svg/9a7cc6c19f3d.svg" />
+                       
+                      <div class="cn173">
+                        <div class="cn174">
+                          Looking for an example?
+                        </div>
+                         
+                        <div class="cn175">
+                           Choose a specific API endpoint from the sidebar to see ready-to-use code samples in your preferred programming language. 
+                        </div>
+                         
+                      </div>
+                    </div>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </div>
+       
+    </main>
+     
+    <div class="cn176">
+       
+    </div>
+     
+    <div class="cn177" id="ai-chat-widget">
+      <button class="cn178" id="ai-chat-launcher">
+        <svg class="cn179" height="32" viewBox="0 0 32 32" width="32" fill="currentColor"><use href="https://docs.dataforseo.com/v3/wp-content/themes/dataforseopublic/assets/img/icons/sprite.svg#stars"></use></svg>
+      </button>
+    </div>
+     
+</body>
+</html>

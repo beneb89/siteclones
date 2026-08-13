@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>tooltip_top_right</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-148.000000, -55.000000)" fill="#0A0910">
+            <path d="M148,71 L162.87868,56.1213203 C164.050253,54.9497475 165.949747,54.9497475 167.12132,56.1213203 C167.683929,56.6839295 168,57.4469912 168,58.2426407 L168,71 L168,71 L148,71 Z" id="tooltip_top_right"></path>
+        </g>
+    </g>
+</svg>

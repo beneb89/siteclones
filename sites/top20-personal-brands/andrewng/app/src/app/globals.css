@@ -1,0 +1,147 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-background: var(--background);
+  --color-color-001: var(--color-001);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-clr-0: var(--clr-0);
+  --color-accent: var(--accent);
+  --color-primary: var(--primary);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-color-002: var(--color-002);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(58, 58, 74);
+  --primary: rgb(208, 232, 247);
+  --accent: rgb(213, 234, 248);
+  --border: rgb(232, 232, 236);
+  --muted-foreground: rgb(138, 138, 154);
+  --color-001: rgb(15, 15, 35);
+  --color-002: rgba(211, 211, 211, 0.5);
+}
+
+:root {
+  /* fonts */
+  --font-body: ABCDiatype, system-ui, sans-serif;
+  --font-001: ABCSynt, Georgia, serif;
+  /* fontSizes */
+  --font-size-001: 13px;
+  --font-size-002: 14px;
+  --font-size-003: 17px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  /* lineHeights */
+  --line-height-001: 28.9px;
+  --line-height-002: 20px;
+  --line-height-003: 27.625px;
+  --line-height-004: 22.1px;
+  /* spacing */
+  --space-001: 16px;
+  --space-002: 20px;
+  --space-003: 24px;
+  --space-004: 32px;
+  --space-005: 40px;
+  --space-006: 48px;
+  --space-007: 56px;
+  --space-008: 64px;
+  --space-009: 80px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgb(231, 242, 250);
+  --clr-2: rgb(232, 242, 250);
+  --clr-3: rgba(16, 24, 40, 0.05);
+  --clr-4: lab(4.97376 4.11057 -13.3687 / 0.6);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "ABCDiatype";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0c41ba3ae9f8.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ABCDiatype";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b05a07266ed0.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ABCSynt";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/65dde0f7fbf4.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ABCSynt";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/162daa11535e.woff2") format("woff2");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

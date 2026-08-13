@@ -1,0 +1,2652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sam Altman</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8028d2438521.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a0f6dd9e7b67.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1ac6efec6bc4.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c445da809103.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e7ca5fe984ad.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1f852a67eb41.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d020df773ca4.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e40729ec2868.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/008f38599a91.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8e8834e0850b.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b300caebe22f.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c1be4dddec50.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(85, 85, 85);
+  --primary: rgb(43, 108, 194);
+  --border: rgba(68, 68, 68, 0.3);
+  --muted-foreground: rgb(68, 68, 68);
+  --muted: rgb(153, 153, 153);
+  --surface: rgb(221, 221, 221);
+  --surface-2: rgba(255, 255, 255, 0.9);
+  --color-001: rgb(170, 170, 170);
+  --color-002: rgb(17, 17, 17);
+  --color-003: rgb(0, 0, 0);
+  --color-004: rgb(34, 34, 34);
+  --color-005: rgb(204, 204, 204);
+  --color-006: rgb(128, 128, 128);
+  --color-007: rgba(255, 255, 255, 0.8);
+  --color-008: rgb(102, 102, 102);
+}
+
+:root {
+  /* fonts */
+  --font-body: Oxygen, sans-serif;
+  --font-001: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  --font-002: "Crimson Text", Georgia, serif;
+  --font-003: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  /* fontSizes */
+  --font-size-001: 11px;
+  --font-size-002: 12px;
+  --font-size-003: 14px;
+  --font-size-004: 16px;
+  --font-size-005: 26px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 400;
+  --font-weight-003: 700;
+  /* lineHeights */
+  --line-height-001: 25.6px;
+  --line-height-002: 22.4px;
+  --line-height-003: 16px;
+  --line-height-004: 28.6px;
+  --line-height-005: 19.2px;
+  --line-height-006: 17.6px;
+  --line-height-007: 20px;
+  /* spacing */
+  --space-001: 1px;
+  --space-002: 2px;
+  --space-003: 4px;
+  --space-004: 5px;
+  --space-005: 6px;
+  --space-006: 8px;
+  --space-007: 10px;
+  --space-008: 15px;
+  --space-009: 16px;
+  --space-010: 20px;
+  --space-011: 21.58px;
+  --space-012: 24px;
+  --space-013: 30px;
+  --space-014: 40px;
+  --space-015: 50px;
+  --space-016: 80px;
+  /* radii */
+  --radius-001: 2px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(255, 255, 255, 0.3);
+  --clr-1: rgba(40, 40, 40, 0.2);
+  --clr-2: rgba(0, 0, 0, 0.2);
+  --clr-3: rgba(0, 0, 0, 0);
+  --clr-4: rgba(0, 0, 0, 0.3);
+  --clr-5: rgb(170, 0, 0);
+}
+
+
+/* page base */
+html { background: #ffffff; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{box-sizing:content-box;display:block;overflow-x:visible;overflow-y:visible;color:var(--foreground);font-family:Oxygen, sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:25.6px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+.cn1{box-sizing:content-box;height:100%;display:block}
+.cn2{box-sizing:content-box;width:53.2344px;height:31.5938px;display:block;position:absolute;top:5px;right:0px;padding-right:7px;font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:11px;line-height:17.6px;text-align:right}
+.cn3{box-sizing:content-box;display:inline}
+.cn4{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--border);display:inline-block;margin-top:2px;margin-bottom:2px;margin-left:5px;padding-top:4px;padding-right:6px;padding-bottom:4px;padding-left:6px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;color:var(--color-007);text-transform:uppercase;text-shadow:rgb(170, 170, 170) 0px 0px 1px;background-image:linear-gradient(rgba(40, 40, 40, 0.2), rgba(0, 0, 0, 0.2));box-shadow:rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset;cursor:pointer}
+.cn5{box-sizing:content-box;display:block;max-width:500px;margin-left:auto;overflow-x:hidden;overflow-y:hidden;margin-right:auto}
+.cn6{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn7{box-sizing:content-box;width:100px;height:32px;display:block;float:left;background-image:url("public/assets/cloned/images/26864d9052e3.png");background-size:100px 32px}
+.cn8{box-sizing:content-box;display:block}
+.cn9{box-sizing:content-box;display:block;max-width:500px;margin-top:50px;margin-right:auto;margin-bottom:50px;margin-left:auto}
+.cn10{box-sizing:content-box;display:block;font-family:"Crimson Text", Georgia, serif;font-size:50px;line-height:50px;letter-spacing:-0.75px}
+.cn11{box-sizing:content-box;display:inline;color:var(--color-004);cursor:pointer}
+.cn12{box-sizing:content-box;height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn13{box-sizing:content-box;height:26960.8px;display:block;max-width:500px;margin-right:auto;margin-left:auto}
+.cn14{box-sizing:content-box;display:block;margin-bottom:80px}
+.cn15{box-sizing:content-box;display:block}
+.cn16{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn17{box-sizing:content-box;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn18{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn19{box-sizing:content-box;display:block}
+.cn20{box-sizing:content-box;display:block}
+.cn21{box-sizing:content-box;height:51.1875px;display:block;margin-top:24px;margin-bottom:24px}
+.cn22{box-sizing:content-box;display:inline}
+.cn23{box-sizing:content-box;display:inline}
+.cn24{box-sizing:content-box;display:block}
+.cn25{box-sizing:content-box;display:block}
+.cn26{box-sizing:content-box;display:block;line-height:20px}
+.cn27{box-sizing:content-box;width:500px;height:667px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;cursor:pointer}
+.cn28{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn29{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn30{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn31{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn32{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn33{box-sizing:content-box;height:25.5938px;display:block;margin-top:24px;margin-bottom:24px}
+.cn34{box-sizing:content-box;display:inline;font-weight:700}
+.cn35{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn36{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn37{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn38{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn39{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn40{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn41{box-sizing:content-box;height:25.5938px;display:block;margin-top:24px;margin-bottom:24px}
+.cn42{box-sizing:content-box;display:inline;font-weight:700}
+.cn43{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn44{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn45{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn46{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn47{box-sizing:content-box;height:255.938px;display:block;margin-top:24px;margin-bottom:24px}
+.cn48{box-sizing:content-box;display:inline}
+.cn49{box-sizing:content-box;display:inline}
+.cn50{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn51{box-sizing:content-box;display:inline;font-weight:700}
+.cn52{box-sizing:content-box;display:inline}
+.cn53{box-sizing:content-box;height:25.5938px;display:block;margin-top:24px;margin-bottom:24px}
+.cn54{box-sizing:content-box;display:inline;font-weight:700}
+.cn55{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn56{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn57{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn58{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn59{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn60{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn61{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn62{box-sizing:content-box;display:block}
+.cn63{box-sizing:content-box;display:inline-block}
+.cn64{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn65{box-sizing:content-box;width:100%;display:inline}
+.cn66{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn67{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn68{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn69{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn70{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn71{box-sizing:content-box;display:inline}
+.cn72{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn73{box-sizing:content-box;display:inline}
+.cn74{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn75{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn76{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn77{box-sizing:content-box;display:inline-block}
+.cn78{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn79{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn80{box-sizing:content-box;width:77px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn81{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn82{box-sizing:content-box;display:inline;cursor:pointer}
+.cn83{box-sizing:content-box;display:inline}
+.cn84{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn85{box-sizing:content-box;display:block}
+.cn86{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn87{box-sizing:content-box;height:28.5938px;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn88{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn89{box-sizing:content-box;display:block}
+.cn90{box-sizing:content-box;display:block}
+.cn91{box-sizing:content-box;height:281.531px;display:block;margin-top:24px;margin-bottom:24px}
+.cn92{box-sizing:content-box;display:inline}
+.cn93{box-sizing:content-box;display:inline}
+.cn94{box-sizing:content-box;display:inline}
+.cn95{box-sizing:content-box;display:inline}
+.cn96{box-sizing:content-box;height:639.844px;display:block;margin-top:24px;margin-bottom:24px}
+.cn97{box-sizing:content-box;display:inline}
+.cn98{box-sizing:content-box;display:inline}
+.cn99{box-sizing:content-box;display:inline}
+.cn100{box-sizing:content-box;display:inline}
+.cn101{box-sizing:content-box;display:inline}
+.cn102{box-sizing:content-box;height:127.969px;display:block;margin-top:24px;margin-bottom:24px}
+.cn103{box-sizing:content-box;display:inline}
+.cn104{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn105{box-sizing:content-box;display:block}
+.cn106{box-sizing:content-box;display:inline-block}
+.cn107{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn108{box-sizing:content-box;width:100%;display:inline}
+.cn109{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn110{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn111{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn112{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn113{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn114{box-sizing:content-box;display:inline}
+.cn115{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn116{box-sizing:content-box;display:inline}
+.cn117{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn118{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn119{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn120{box-sizing:content-box;display:inline-block}
+.cn121{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn122{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn123{box-sizing:content-box;width:83px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn124{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn125{box-sizing:content-box;display:inline;cursor:pointer}
+.cn126{box-sizing:content-box;display:inline}
+.cn127{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn128{box-sizing:content-box;display:block}
+.cn129{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn130{box-sizing:content-box;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn131{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn132{box-sizing:content-box;display:block}
+.cn133{box-sizing:content-box;display:block}
+.cn134{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn135{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn136{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn137{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn138{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn139{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn140{box-sizing:content-box;height:204.75px;display:block;margin-top:24px;margin-bottom:24px}
+.cn141{box-sizing:content-box;display:inline}
+.cn142{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn143{box-sizing:content-box;display:inline}
+.cn144{box-sizing:content-box;height:127.969px;display:block;margin-top:24px;margin-bottom:24px}
+.cn145{box-sizing:content-box;display:inline;font-weight:700}
+.cn146{box-sizing:content-box;height:204.75px;display:block;margin-top:24px;margin-bottom:24px}
+.cn147{box-sizing:content-box;display:inline;font-weight:700}
+.cn148{box-sizing:content-box;height:102.375px;display:block;margin-top:24px;margin-bottom:24px}
+.cn149{box-sizing:content-box;display:inline;font-weight:700}
+.cn150{box-sizing:content-box;height:230.344px;display:block;margin-top:24px;margin-bottom:24px}
+.cn151{box-sizing:content-box;display:inline;font-weight:700}
+.cn152{box-sizing:content-box;display:inline}
+.cn153{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn154{box-sizing:content-box;display:block}
+.cn155{box-sizing:content-box;display:inline-block}
+.cn156{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn157{box-sizing:content-box;width:100%;display:inline}
+.cn158{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn159{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn160{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn161{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn162{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn163{box-sizing:content-box;display:inline}
+.cn164{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn165{box-sizing:content-box;display:inline}
+.cn166{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn167{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn168{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn169{box-sizing:content-box;display:inline-block}
+.cn170{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn171{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn172{box-sizing:content-box;width:77px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn173{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn174{box-sizing:content-box;display:inline;cursor:pointer}
+.cn175{box-sizing:content-box;display:inline}
+.cn176{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn177{box-sizing:content-box;display:block}
+.cn178{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn179{box-sizing:content-box;height:28.5938px;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn180{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn181{box-sizing:content-box;display:block}
+.cn182{box-sizing:content-box;display:block}
+.cn183{box-sizing:content-box;display:inline}
+.cn184{box-sizing:content-box;display:inline}
+.cn185{box-sizing:content-box;display:inline}
+.cn186{box-sizing:content-box;display:inline}
+.cn187{box-sizing:content-box;display:inline}
+.cn188{box-sizing:content-box;display:inline}
+.cn189{box-sizing:content-box;display:inline}
+.cn190{box-sizing:content-box;display:inline}
+.cn191{box-sizing:content-box;height:127.969px;display:block;margin-top:24px;margin-bottom:24px}
+.cn192{box-sizing:content-box;display:inline}
+.cn193{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn194{box-sizing:content-box;display:block}
+.cn195{box-sizing:content-box;display:inline-block}
+.cn196{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn197{box-sizing:content-box;width:100%;display:inline}
+.cn198{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn199{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn200{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn201{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn202{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn203{box-sizing:content-box;display:inline}
+.cn204{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn205{box-sizing:content-box;display:inline}
+.cn206{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn207{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn208{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn209{box-sizing:content-box;display:inline-block}
+.cn210{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn211{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn212{box-sizing:content-box;width:83px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn213{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn214{box-sizing:content-box;display:inline;cursor:pointer}
+.cn215{box-sizing:content-box;display:inline}
+.cn216{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn217{box-sizing:content-box;display:block}
+.cn218{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn219{box-sizing:content-box;height:28.5938px;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn220{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn221{box-sizing:content-box;display:block}
+.cn222{box-sizing:content-box;display:block}
+.cn223{box-sizing:content-box;display:inline}
+.cn224{box-sizing:content-box;display:inline}
+.cn225{box-sizing:content-box;height:179.156px;display:block;margin-top:24px;margin-bottom:24px}
+.cn226{box-sizing:content-box;display:inline}
+.cn227{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn228{box-sizing:content-box;display:block}
+.cn229{box-sizing:content-box;display:inline-block}
+.cn230{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn231{box-sizing:content-box;width:100%;display:inline}
+.cn232{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn233{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn234{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn235{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn236{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn237{box-sizing:content-box;display:inline}
+.cn238{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn239{box-sizing:content-box;display:inline}
+.cn240{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn241{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn242{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn243{box-sizing:content-box;display:inline-block}
+.cn244{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn245{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn246{box-sizing:content-box;width:83px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn247{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn248{box-sizing:content-box;display:inline;cursor:pointer}
+.cn249{box-sizing:content-box;display:inline}
+.cn250{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn251{box-sizing:content-box;display:block}
+.cn252{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn253{box-sizing:content-box;height:28.5938px;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn254{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn255{box-sizing:content-box;display:block}
+.cn256{box-sizing:content-box;display:block}
+.cn257{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn258{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn259{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn260{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn261{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn262{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn263{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn264{box-sizing:content-box;height:76.7812px;display:block;margin-top:24px;margin-bottom:24px}
+.cn265{box-sizing:content-box;display:inline}
+.cn266{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn267{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn268{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn269{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn270{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn271{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn272{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn273{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn274{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn275{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn276{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn277{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn278{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn279{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn280{box-sizing:content-box;display:block;margin-top:16px;margin-bottom:16px;padding-left:40px;list-style-type:decimal;list-style-position:outside}
+.cn281{box-sizing:content-box;display:list-item}
+.cn282{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn283{box-sizing:content-box;display:list-item}
+.cn284{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn285{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn286{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn287{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn288{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn289{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn290{box-sizing:content-box;display:block}
+.cn291{box-sizing:content-box;display:inline-block}
+.cn292{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn293{box-sizing:content-box;width:100%;display:inline}
+.cn294{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn295{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn296{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn297{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn298{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn299{box-sizing:content-box;display:inline}
+.cn300{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn301{box-sizing:content-box;display:inline}
+.cn302{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn303{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn304{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn305{box-sizing:content-box;display:inline-block}
+.cn306{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn307{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn308{box-sizing:content-box;width:94px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn309{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn310{box-sizing:content-box;display:inline;cursor:pointer}
+.cn311{box-sizing:content-box;display:inline}
+.cn312{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn313{box-sizing:content-box;display:block}
+.cn314{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn315{box-sizing:content-box;height:28.5938px;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn316{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn317{box-sizing:content-box;display:block}
+.cn318{box-sizing:content-box;display:block}
+.cn319{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn320{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn321{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn322{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn323{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn324{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn325{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn326{box-sizing:content-box;height:153.562px;display:block;margin-top:24px;margin-bottom:24px}
+.cn327{box-sizing:content-box;display:inline;font-weight:700}
+.cn328{box-sizing:content-box;height:153.562px;display:block;margin-top:24px;margin-bottom:24px}
+.cn329{box-sizing:content-box;display:inline;font-weight:700}
+.cn330{box-sizing:content-box;height:102.375px;display:block;margin-top:24px;margin-bottom:24px}
+.cn331{box-sizing:content-box;display:inline;font-weight:700}
+.cn332{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn333{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn334{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn335{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn336{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn337{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn338{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn339{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn340{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn341{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn342{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn343{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn344{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn345{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn346{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn347{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn348{box-sizing:content-box;display:inline}
+.cn349{box-sizing:content-box;display:inline}
+.cn350{box-sizing:content-box;display:inline}
+.cn351{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn352{box-sizing:content-box;display:inline}
+.cn353{box-sizing:content-box;display:inline}
+.cn354{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn355{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn356{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn357{box-sizing:content-box;display:block}
+.cn358{box-sizing:content-box;display:inline-block}
+.cn359{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn360{box-sizing:content-box;width:100%;display:inline}
+.cn361{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn362{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn363{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn364{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn365{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn366{box-sizing:content-box;display:inline}
+.cn367{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn368{box-sizing:content-box;display:inline}
+.cn369{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn370{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn371{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn372{box-sizing:content-box;display:inline-block}
+.cn373{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn374{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn375{box-sizing:content-box;width:89px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn376{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn377{box-sizing:content-box;display:inline;cursor:pointer}
+.cn378{box-sizing:content-box;display:inline}
+.cn379{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn380{box-sizing:content-box;display:block}
+.cn381{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn382{box-sizing:content-box;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn383{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn384{box-sizing:content-box;display:block}
+.cn385{box-sizing:content-box;display:block}
+.cn386{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn387{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn388{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn389{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn390{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn391{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn392{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn393{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn394{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn395{box-sizing:content-box;width:498px;height:0px;border-width:1px;border-style:inset;border-color:var(--color-006);display:block;margin-top:8px;margin-bottom:8px;overflow-x:hidden;overflow-y:hidden;color:var(--color-006)}
+.cn396{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn397{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn398{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn399{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn400{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn401{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn402{box-sizing:content-box;width:498px;height:0px;border-width:1px;border-style:inset;border-color:var(--color-006);display:block;margin-top:8px;margin-bottom:8px;overflow-x:hidden;overflow-y:hidden;color:var(--color-006)}
+.cn403{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn404{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn405{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn406{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn407{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn408{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn409{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn410{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn411{box-sizing:content-box;width:498px;height:0px;border-width:1px;border-style:inset;border-color:var(--color-006);display:block;margin-top:8px;margin-bottom:8px;overflow-x:hidden;overflow-y:hidden;color:var(--color-006)}
+.cn412{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn413{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn414{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn415{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn416{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn417{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn418{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn419{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn420{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn421{box-sizing:content-box;height:51.1875px;display:block;margin-top:24px;margin-bottom:24px}
+.cn422{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn423{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn424{box-sizing:content-box;display:inline}
+.cn425{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn426{box-sizing:content-box;display:inline}
+.cn427{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn428{box-sizing:content-box;display:inline}
+.cn429{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn430{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn431{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn432{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn433{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn434{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn435{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn436{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn437{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn438{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn439{box-sizing:content-box;display:block}
+.cn440{box-sizing:content-box;display:inline-block}
+.cn441{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn442{box-sizing:content-box;width:100%;display:inline}
+.cn443{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn444{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn445{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn446{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn447{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn448{box-sizing:content-box;display:inline}
+.cn449{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn450{box-sizing:content-box;display:inline}
+.cn451{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn452{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn453{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn454{box-sizing:content-box;display:inline-block}
+.cn455{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn456{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn457{box-sizing:content-box;width:89px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn458{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn459{box-sizing:content-box;display:inline;cursor:pointer}
+.cn460{box-sizing:content-box;display:inline}
+.cn461{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn462{box-sizing:content-box;display:block}
+.cn463{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn464{box-sizing:content-box;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn465{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn466{box-sizing:content-box;display:block}
+.cn467{box-sizing:content-box;display:block}
+.cn468{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn469{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn470{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn471{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn472{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn473{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn474{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn475{box-sizing:content-box;height:127.969px;display:block;margin-top:24px;margin-bottom:24px}
+.cn476{box-sizing:content-box;display:inline}
+.cn477{box-sizing:content-box;display:block;margin-top:24px;margin-bottom:24px}
+.cn478{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn479{box-sizing:content-box;display:block}
+.cn480{box-sizing:content-box;display:inline-block}
+.cn481{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn482{box-sizing:content-box;width:100%;display:inline}
+.cn483{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn484{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn485{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn486{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn487{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn488{box-sizing:content-box;display:inline}
+.cn489{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn490{box-sizing:content-box;display:inline}
+.cn491{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn492{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn493{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn494{box-sizing:content-box;display:inline-block}
+.cn495{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn496{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn497{box-sizing:content-box;width:89px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn498{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn499{box-sizing:content-box;display:inline;cursor:pointer}
+.cn500{box-sizing:content-box;display:inline}
+.cn501{box-sizing:content-box;display:block;margin-top:40px;margin-bottom:80px}
+.cn502{box-sizing:content-box;display:block}
+.cn503{box-sizing:content-box;display:block;margin-bottom:20px}
+.cn504{box-sizing:content-box;height:28.5938px;display:block;margin-top:21.58px;margin-bottom:5px;font-family:"Crimson Text", Georgia, serif;font-size:26px;line-height:28.6px;letter-spacing:-0.39px}
+.cn505{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn506{box-sizing:content-box;display:block}
+.cn507{box-sizing:content-box;display:block}
+.cn508{box-sizing:content-box;display:block;margin-top:16px;margin-bottom:16px;padding-left:40px;list-style-type:decimal;list-style-position:outside}
+.cn509{box-sizing:content-box;display:list-item}
+.cn510{box-sizing:content-box;display:list-item}
+.cn511{box-sizing:content-box;display:list-item}
+.cn512{box-sizing:content-box;display:list-item}
+.cn513{box-sizing:content-box;display:list-item}
+.cn514{box-sizing:content-box;display:list-item}
+.cn515{box-sizing:content-box;display:list-item}
+.cn516{box-sizing:content-box;display:list-item}
+.cn517{box-sizing:content-box;display:list-item}
+.cn518{box-sizing:content-box;display:list-item}
+.cn519{box-sizing:content-box;display:list-item}
+.cn520{box-sizing:content-box;display:list-item}
+.cn521{box-sizing:content-box;display:list-item}
+.cn522{box-sizing:content-box;display:list-item}
+.cn523{box-sizing:content-box;display:list-item}
+.cn524{box-sizing:content-box;display:list-item}
+.cn525{box-sizing:content-box;display:list-item}
+.cn526{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:30px;font-size:14px;line-height:22.4px}
+.cn527{box-sizing:content-box;display:block}
+.cn528{box-sizing:content-box;display:inline-block}
+.cn529{box-sizing:content-box;display:inline-block;min-width:90px;margin-right:35px;padding-right:5px;border-top-right-radius:2px;border-bottom-right-radius:2px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size:12px;font-weight:700;line-height:16px;text-transform:capitalize;background-color:var(--surface-2);cursor:pointer}
+.cn530{box-sizing:content-box;width:100%;display:inline}
+.cn531{box-sizing:content-box;width:18px;height:18px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;margin-right:6px;background-color:var(--muted-foreground)}
+.cn532{box-sizing:content-box;width:5px;height:100%;display:block;position:absolute;top:0px;background-color:var(--primary)}
+.cn533{box-sizing:content-box;width:0px;height:0px;border-right-width:5px;border-right-style:solid;border-right-color:rgba(0, 0, 0, 0);border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:var(--background);border-left-width:5px;border-left-style:solid;border-left-color:rgba(0, 0, 0, 0);display:block;position:absolute;bottom:1px;left:4px}
+.cn534{box-sizing:content-box;display:block;float:left;margin-top:1px}
+.cn535{box-sizing:content-box;display:inline;color:var(--color-002)}
+.cn536{box-sizing:content-box;display:inline}
+.cn537{box-sizing:content-box;display:none;color:var(--color-002)}
+.cn538{box-sizing:content-box;display:inline}
+.cn539{box-sizing:content-box;display:inline;margin-left:3px;color:var(--muted);font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300}
+.cn540{box-sizing:content-box;display:inline-block;min-width:107px;margin-right:20px}
+.cn541{box-sizing:content-box;width:65px;height:20px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn542{box-sizing:content-box;display:inline-block}
+.cn543{box-sizing:content-box;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn544{box-sizing:content-box;height:20px;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;text-align:justify}
+.cn545{box-sizing:content-box;width:89px;height:20px;display:block;position:absolute;max-width:100%;overflow-x:clip;overflow-y:clip}
+.cn546{box-sizing:content-box;display:inline;margin-top:30px;margin-bottom:30px;color:var(--muted)}
+.cn547{box-sizing:content-box;display:inline;cursor:pointer}
+.cn548{box-sizing:content-box;display:inline}
+.cn549{box-sizing:content-box;display:block;margin-top:100px;margin-bottom:100px;font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif}
+.cn550{box-sizing:content-box;display:block;margin-bottom:40px;list-style-type:disc;list-style-position:outside}
+.cn551{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn552{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--color-004);font-weight:700;cursor:pointer}
+.cn553{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn554{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--primary);cursor:pointer}
+.cn555{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn556{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--primary);cursor:pointer}
+.cn557{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn558{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--primary);cursor:pointer}
+.cn559{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn560{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--primary);cursor:pointer}
+.cn561{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn562{box-sizing:content-box;display:inline;margin-right:5px;padding-top:10px;padding-right:5px;padding-bottom:10px;padding-left:5px;color:var(--primary);cursor:pointer}
+.cn563{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn564{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--primary);cursor:pointer}
+.cn565{box-sizing:content-box;height:40px;display:block;float:left;font-size:12px;line-height:19.2px;list-style-type:none}
+.cn566{box-sizing:content-box;border-width:1px;border-style:solid;border-color:var(--surface);display:inline;margin-right:5px;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;color:var(--primary);cursor:pointer}
+.cn567{box-sizing:content-box;width:215px;height:321.969px;display:block;position:absolute;top:0px;left:0px;clear:both;margin-left:40px;font-weight:300}
+.cn568{box-sizing:content-box;height:98.1719px;display:block;margin-bottom:50px;color:var(--muted-foreground);font-size:14px;line-height:22.4px}
+.cn569{box-sizing:content-box;display:block;margin-top:5px;margin-bottom:10px;color:var(--color-004);font-family:"Crimson Text", Georgia, serif;font-size:26px;font-weight:400;line-height:28.6px;letter-spacing:-0.39px}
+.cn570{box-sizing:content-box;display:block;margin-bottom:6px}
+.cn571{box-sizing:content-box;display:block}
+.cn572{box-sizing:content-box;display:inline-block;margin-bottom:4px;padding-top:2px;padding-right:12px;padding-bottom:2px;padding-left:12px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;color:var(--background);font-size:12px;font-weight:700;line-height:19.2px;text-shadow:rgba(0, 0, 0, 0.3) 1px 1px 0px;background-color:var(--primary);cursor:pointer}
+.cn573{box-sizing:content-box;display:none}
+.cn574{box-sizing:content-box;display:none;color:rgb(170, 0, 0)}
+.cn575{box-sizing:content-box;width:121px;height:20px;display:inline;overflow-x:clip;overflow-y:clip}
+.cn576{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:50px;font-size:14px;line-height:22.4px}
+.cn577{box-sizing:content-box;display:block}
+.cn578{box-sizing:content-box;width:180px;height:17px;border-width:1px;border-style:solid;border-color:var(--surface);display:inline-block;max-width:180px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:25px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;overflow-x:clip;overflow-y:clip;color:var(--color-003);font-weight:400;line-height:17px;background-color:var(--background);background-image:url("public/assets/cloned/images/0cfdcfbcbfb5.png");background-size:13px 13px;background-position:5px 7px;background-repeat:no-repeat;cursor:text}
+.cn578::placeholder{color:rgb(204, 204, 204)}
+.cn579{box-sizing:content-box;height:20.7969px;display:block;margin-top:5px;font-size:13px;line-height:20.8px}
+.cn580{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn581{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:50px;font-size:14px;line-height:22.4px}
+.cn582{box-sizing:content-box;display:block}
+.cn583{box-sizing:content-box;display:block;margin-top:10px;margin-bottom:10px;list-style-type:disc;list-style-position:outside}
+.cn584{box-sizing:content-box;display:block;margin-top:30px;margin-bottom:50px;font-size:14px;line-height:22.4px}
+.cn585{box-sizing:content-box;display:inline;color:var(--primary);cursor:pointer}
+.cn586{box-sizing:content-box;width:14px;height:14px;display:block;background-image:url("public/assets/cloned/images/30127bb1a1a4.png")}
+.cn587{box-sizing:content-box;display:block;color:var(--color-003);font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;line-height:11px;text-align:left}
+.cn588{box-sizing:content-box;display:block}
+.cn589{box-sizing:content-box;height:100%;display:none;position:fixed;top:0px;left:0px;z-index:100;cursor:pointer}
+.cn590{display:none}
+.cn591{box-sizing:content-box;width:100%;height:100%;display:none;position:fixed;top:0px;z-index:0;opacity:0.85;background-color:var(--color-003);cursor:pointer}
+.cn592{box-sizing:content-box;width:144px;height:0px;display:block;position:absolute;top:-999px;left:0px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;overflow-x:hidden;overflow-y:hidden;vertical-align:top;color:var(--color-003);line-height:20px;white-space:pre-wrap;overflow-wrap:break-word;background-color:var(--background);cursor:text}
+
+@media (max-width: 571px) {
+.cn5{margin-bottom:20px}
+.cn9{margin-bottom:20px;margin-top:0}
+.cn10{font-size:30px;line-height:30px;letter-spacing:-0.45px}
+.cn12{margin-top:30px}
+.cn13{height:36871.2px;margin-bottom:20px}
+.cn21{height:76.7812px}
+.cn27{width:335px;height:447px}
+.cn47{height:332.719px}
+.cn63{display:block;margin-top:5px;margin-bottom:5px}
+.cn75{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn77{display:block;margin-top:5px;margin-bottom:5px}
+.cn91{height:383.906px}
+.cn96{height:895.781px}
+.cn102{height:204.75px}
+.cn106{display:block;margin-top:5px;margin-bottom:5px}
+.cn118{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn120{display:block;margin-top:5px;margin-bottom:5px}
+.cn140{height:307.125px}
+.cn144{height:204.75px}
+.cn146{height:307.125px}
+.cn148{height:127.969px}
+.cn150{height:358.312px}
+.cn155{display:block;margin-top:5px;margin-bottom:5px}
+.cn167{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn169{display:block;margin-top:5px;margin-bottom:5px}
+.cn191{height:179.156px}
+.cn195{display:block;margin-top:5px;margin-bottom:5px}
+.cn207{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn209{display:block;margin-top:5px;margin-bottom:5px}
+.cn225{height:255.938px}
+.cn229{display:block;margin-top:5px;margin-bottom:5px}
+.cn241{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn243{display:block;margin-top:5px;margin-bottom:5px}
+.cn264{height:102.375px}
+.cn291{display:block;margin-top:5px;margin-bottom:5px}
+.cn303{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn305{display:block;margin-top:5px;margin-bottom:5px}
+.cn326{height:230.344px}
+.cn328{height:204.75px}
+.cn330{height:127.969px}
+.cn358{display:block;margin-top:5px;margin-bottom:5px}
+.cn370{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn372{display:block;margin-top:5px;margin-bottom:5px}
+.cn395{width:333px}
+.cn402{width:333px}
+.cn411{width:333px}
+.cn440{display:block;margin-top:5px;margin-bottom:5px}
+.cn452{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn454{display:block;margin-top:5px;margin-bottom:5px}
+.cn475{height:179.156px}
+.cn480{display:block;margin-top:5px;margin-bottom:5px}
+.cn492{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn494{display:block;margin-top:5px;margin-bottom:5px}
+.cn504{height:57.1875px}
+.cn528{display:block;margin-top:5px;margin-bottom:5px}
+.cn540{display:block;margin-top:5px;margin-bottom:5px;margin-right:0}
+.cn542{display:block;margin-top:5px;margin-bottom:5px}
+.cn552{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn554{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn556{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn558{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn560{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn564{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn566{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn567{width:335px;position:relative;right:0px;bottom:0px;margin-right:auto;margin-bottom:20px;margin-left:auto;height:auto}
+.cn576{font-size:12px;line-height:19.2px}
+.cn578{font-size:14px}
+.cn581{font-size:12px;line-height:19.2px}
+.cn584{font-size:12px;line-height:19.2px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn13{height:28146.6px}
+.cn27{width:468px;height:624px}
+.cn91{height:307.125px}
+.cn102{height:153.562px}
+.cn144{height:153.562px}
+.cn150{height:255.938px}
+.cn395{width:466px}
+.cn402{width:466px}
+.cn411{width:466px}
+.cn552{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn554{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn556{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn558{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn560{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn564{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn566{padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:6px}
+.cn567{width:140px}
+.cn576{font-size:12px;line-height:19.2px}
+.cn578{width:140px;font-size:14px}
+.cn581{font-size:12px;line-height:19.2px}
+.cn584{font-size:12px;line-height:19.2px}
+}
+
+@media (min-width: 1601px) {
+.cn589{width:810px;display:block;left:555px}
+.cn590{box-sizing:content-box;width:810px;height:1080px;display:inline;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 810 / 1080}
+.cn591{width:1920px;display:block}
+}
+
+</style>
+</head>
+<body class="cn0" id="site_760">
+    <div class="cn1" id="container">
+      <nav class="cn2">
+         
+        <span class="cn3">
+           
+          <a class="cn4" data-ditto-id="style-button" href="https://posthaven.com/users/sign_in?return_host=blog.samaltman.com">
+            Login
+          </a>
+           
+        </span>
+         
+      </nav>
+       
+      <header class="cn5" id="topbar">
+        <a class="cn6" href="https://posthaven.com/">
+          <div class="cn7"></div>
+        </a>
+         
+      </header>
+       
+      <div class="cn8" id="flash"></div>
+       
+      <header class="cn9" id="header">
+        <h1 class="cn10">
+          <a class="cn11" data-ditto-id="style-link-2" href="https://blog.samaltman.com/">
+            Sam Altman
+          </a>
+           
+        </h1>
+         
+      </header>
+       
+      <div class="cn12" id="main_container">
+        <div class="cn13" data-ditto-id="style-link-3" id="main">
+          <article class="cn14">
+            <header class="cn15">
+              <div class="cn16" data-ditto-id="style-article">
+                <h2 class="cn17">
+                  <a class="cn18" data-ditto-id="style-div-9" href="https://blog.samaltman.com/2279512">
+                    -
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn19" id="post_body_2279512">
+              <div class="cn20" data-ditto-id="style-link-4">
+                <p class="cn21">
+                  Here is a photo of my family. I love them more than anything.
+                  <br class="cn22" />
+                  <br class="cn23" data-ditto-id="style-p-3" />
+                   
+                </p>
+                <div class="cn24" data-ditto-id="style-br" id="posthaven_gallery[2305120]">
+                  <div class="cn25">
+                    <p class="cn26">
+                      <img class="cn27" data-ditto-id="style-div-15" src="public/assets/cloned/images/bc5bd83f587d.jpeg" />
+                       
+                    </p>
+                     
+                  </div>
+                   
+                </div>
+                 
+                <p class="cn28" data-ditto-id="style-p-4"></p>
+                <p class="cn29" data-ditto-id="style-image">
+                  Images have power, I hope. Normally we try to be pretty private, but in this case I am sharing a photo in the hopes that it might dissuade the next person from throwing a Molotov cocktail at our house, no matter what they think about me.
+                </p>
+                <p class="cn30" data-ditto-id="style-p-15">
+                  The first person did it last night, at 3:45 am in the morning. Thankfully it bounced off the house and no one got hurt.
+                </p>
+                <p class="cn31" data-ditto-id="style-p-21">
+                  Words have power too. There was an incendiary article about me a few days ago. Someone said to me yesterday they thought it was coming at a time of great anxiety about AI and that it made things more dangerous for me. I brushed it aside.
+                </p>
+                <p class="cn32" data-ditto-id="style-p-27">
+                  Now I am awake in the middle of the night and pissed, and thinking that I have underestimated the power of words and narratives. This seems like as good of a time as any to address a few things. 
+                </p>
+                <p class="cn33" data-ditto-id="style-p-5">
+                  <b class="cn34">
+                    First
+                  </b>
+                  , what I believe.
+                </p>
+                <p class="cn35" data-ditto-id="style-p-16">
+                  *Working towards prosperity for everyone, empowering all people, and advancing science and technology are moral obligations for me.
+                </p>
+                <p class="cn36" data-ditto-id="style-b-3">
+                  *AI will be the most powerful tool for expanding human capability and potential that anyone has ever seen. Demand for this tool will be essentially uncapped, and people will do incredible things with it. The world deserves huge amounts of AI and we must figure out how to make it happen.
+                </p>
+                <p class="cn37" data-ditto-id="style-p">
+                  *It will not all go well. The fear and anxiety about AI is justified; we are in the process of witnessing the largest change to society in a long time, and perhaps ever. We have to get safety right, which is not just about aligning a model—we urgently need a society-wide response to be resilient to new threats. This includes things like new policy to help navigate through a difficult economic transition in order to get to a much better future.
+                </p>
+                <p class="cn38" data-ditto-id="style-p-6">
+                   *AI has to be democratized; power cannot be too concentrated. Control of the future belongs to all people and their institutions. AI needs to empower people individually, and we need to make decisions about our future and the new rules collectively. I do not think it is right that a few AI labs would make the most consequential decisions about the shape of our future.
+                </p>
+                <p class="cn39" data-ditto-id="style-p-18">
+                  *Adaptability is critical. We are all learning about something new very quickly; some of our beliefs will be right and some will be wrong, and sometimes we will need to change our mind quickly as the technology develops and society evolves. No one understands the impacts of superintelligence yet, but they will be immense.
+                </p>
+                <p class="cn40" data-ditto-id="style-p-19"></p>
+                <p class="cn41">
+                  <b class="cn42" data-ditto-id="style-p-20">
+                    Second
+                  </b>
+                  , some personal reflections.
+                </p>
+                <p class="cn43" data-ditto-id="style-p-7">
+                  As I reflect on my own work in the first decade of OpenAI, I can point to a lot of things I’m proud of and a bunch of mistakes.
+                </p>
+                <p class="cn44">
+                  I was thinking about our upcoming trial with Elon and remembering how much I held the line on not being willing to agree to the unilateral control he wanted over OpenAI. I’m proud of that, and the narrow path we navigated then to allow the continued existence of OpenAI, and all the achievements that followed.
+                </p>
+                <p class="cn45" data-ditto-id="style-p-13">
+                  I am not proud of being conflict-averse, which has caused great pain for me and OpenAI. I am not proud of handling myself badly in a conflict with our previous board that led to a huge mess for the company. I have made many other mistakes throughout the insane trajectory of OpenAI; I am a flawed person in the center of an exceptionally complex situation, trying to get a little better each year, always working for the mission. We knew going into this how huge the stakes of AI were, and that the personal disagreements between well-meaning people I cared about would be amplified greatly. But it’s another thing to live through these bitter conflicts and often to have to arbitrate them, and the costs have been serious. I am sorry to people I’ve hurt and wish I had learned more faster.
+                </p>
+                <p class="cn46" data-ditto-id="style-p-24">
+                  I am also very aware that OpenAI is now a major platform, not a scrappy startup, and we need to operate in a more predictable way now. It has been an extremely intense, chaotic, and high-pressure few years. 
+                </p>
+                <p class="cn47">
+                  Mostly though, I am extremely proud that we are delivering on our mission, which seemed incredibly unlikely when we started. Against all odds, we figured out how to build very powerful AI, figured out how to amass enough capital to build the infrastructure to deliver it, figured out how to build a product company and business, figured out how to deliver reasonably safe and robust services at a massive scale, and much more.
+                  <br class="cn48" data-ditto-id="style-p-8" />
+                  <br class="cn49" />
+                  A lot of companies say they are going to change the world; we actually did.
+                </p>
+                <p class="cn50" data-ditto-id="style-br-2">
+                  <b class="cn51" data-ditto-id="style-br-3">
+                    <br class="cn52" data-ditto-id="style-p-28" />
+                  </b>
+                </p>
+                <p class="cn53" data-ditto-id="style-b">
+                  <b class="cn54">
+                    Third
+                  </b>
+                  , some thoughts about the industry.
+                </p>
+                <p class="cn55" data-ditto-id="style-p-17">
+                  My personal takeaway from the last several years, and take on why there has been so much Shakespearean drama between the companies in our field, comes down to this: “Once you see AGI you can’t unsee it.” It has a real "ring of power” dynamic to it, and makes people do crazy things. I don’t mean that AGI is the ring itself, but instead the totalizing philosophy of “being the one to control AGI”.
+                </p>
+                <p class="cn56" data-ditto-id="style-b-4">
+                  The only solution I can come up with is to orient towards sharing the technology with people broadly, and for no one to have the ring. The two obvious ways to do this are individual empowerment and making sure democratic system stays in control.
+                </p>
+                <p class="cn57" data-ditto-id="style-p-2">
+                  It is important that the democratic process remains more powerful than companies. Laws and norms are going to change, but we have to work within the democratic process, even though it will be messy and slower than we’d like. We want to be a voice and a stakeholder, but not to have all the power.
+                </p>
+                <p class="cn58" data-ditto-id="style-p-9">
+                  A lot of the criticism of our industry comes from sincere concern about the incredibly high stakes of this technology. This is quite valid, and we welcome good-faith criticism and debate. I empathize with anti-technology sentiments and clearly technology isn’t always good for everyone. But overall, I believe technological progress can make the future unbelievably good, for your family and mine. 
+                </p>
+                <p class="cn59" data-ditto-id="style-p-22"></p>
+                <p class="cn60" data-ditto-id="style-p-25">
+                  While we have that debate, we should de-escalate the rhetoric and tactics and try to have fewer explosions in fewer homes, figuratively and literally.
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn61">
+              <div class="cn62">
+                <div class="cn63" data-ditto-id="style-post-responses">
+                   
+                  <a class="cn64" data-ditto-id="style-div-8" href="#">
+                     
+                    <span class="cn65" data-ditto-id="style-div-4">
+                       
+                      <span class="cn66" data-ditto-id="style-div-17">
+                         
+                        <span class="cn67" data-ditto-id="style-link"></span>
+                         
+                        <span class="cn68" data-ditto-id="style-span"></span>
+                         
+                      </span>
+                       
+                      <span class="cn69">
+                         
+                        <span class="cn70" data-ditto-id="style-span-9">
+                          <span class="cn71" data-ditto-id="style-span-11">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn72" data-ditto-id="style-span-10">
+                          <span class="cn73" data-ditto-id="style-span-2">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn74" data-ditto-id="style-span-7">
+                          2118
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn75" data-ditto-id="style-span-8">
+                   
+                  <iframe class="cn76" id="twitter-widget-1" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn77" data-ditto-id="style-span-12">
+                   
+                  <div class="cn78" data-ditto-id="style-div-2">
+                    <span class="cn79" data-ditto-id="style-twitter-widget-1">
+                      <iframe class="cn80" data-ditto-id="style-div-11" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn81" data-ditto-id="style-div-14">
+                 Posted 
+                <a class="cn82" data-ditto-id="style-span-4" href="https://blog.samaltman.com/2279512">
+                  <span class="cn83" data-ditto-id="style-iframe">
+                    3 months from now
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn84" data-ditto-id="style-div-18">
+            <header class="cn85" data-ditto-id="style-strong">
+              <div class="cn86" data-ditto-id="style-form-2">
+                <h2 class="cn87" data-ditto-id="style-button-2">
+                  <a class="cn88" data-ditto-id="style-div-3" href="https://blog.samaltman.com/sora-update-number-1">
+                    Sora update #1
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn89" id="post_body_2228126">
+              <div class="cn90">
+                <p class="cn91" data-ditto-id="style-span-6">
+                  We have been learning quickly from how people are using Sora and taking feedback from users, rightsholders, and other interested groups. We of course spent a lot of time discussing this before launch, but now that we have a product out we can do more than just theorize.
+                  <br class="cn92" data-ditto-id="style-div-16" />
+                  <br class="cn93" data-ditto-id="style-fb-root" />
+                  We are going to make two changes soon (and many more to come).
+                  <br class="cn94" data-ditto-id="style-twitter-widget-0-2" />
+                  <br class="cn95" data-ditto-id="style-section-2" />
+                  First, we will give rightsholders more granular control over generation of characters, similar to the opt-in model for likeness but with additional controls.
+                </p>
+                <p class="cn96">
+                  We are hearing from a lot of rightsholders who are very excited for this new kind of "interactive fan fiction" and think this new kind of engagement will accrue a lot of value to them, but want the ability to specify how their characters can be used (including not at all). We assume different people will try very different approaches and will figure out what works for them. But we want to apply the same standard towards everyone, and let rightsholders decide how to proceed (our aim of course is to make it so compelling that many people want to). There may be some edge cases of generations that get through that shouldn't, and getting our stack to work well will take some iteration. 
+                  <br class="cn97" data-ditto-id="style-div-10" />
+                  <br class="cn98" data-ditto-id="style-sidebar" />
+                  In particular, we'd like to acknowledge the remarkable creative output of Japan--we are struck by how deep the connection between users and Japanese content is!
+                  <br class="cn99" data-ditto-id="style-bio-2" />
+                  <br class="cn100" data-ditto-id="style-heading" />
+                  Second, we are going to have to somehow make money for video generation. People are generating much more than we expected per user, and a lot of videos are being generated for very small audiences. We are going to try sharing some of this revenue with rightsholders who want their characters generated by users. The exact model will take some trial and error to figure out, but we plan to start very soon. Our hope is that the new kind of engagement is even more valuable than the revenue share, but of course we we want both to be valuable.
+                  <br class="cn101" />
+                </p>
+                <p class="cn102">
+                  Please expect a very high rate of change from us; it reminds me of the early days of ChatGPT. We will make some good decisions and some missteps, but we will take feedback and try to fix the missteps very quickly. We plan to do our iteration on different approaches in Sora, but then apply it consistently across our products.
+                  <br class="cn103" data-ditto-id="style-div" />
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn104" data-ditto-id="style-sidebar-2">
+              <div class="cn105" data-ditto-id="style-bio">
+                <div class="cn106">
+                   
+                  <a class="cn107" data-ditto-id="style-div-6" href="#">
+                     
+                    <span class="cn108" data-ditto-id="style-form">
+                       
+                      <span class="cn109" data-ditto-id="style-button-3">
+                         
+                        <span class="cn110"></span>
+                         
+                        <span class="cn111" data-ditto-id="style-div-5"></span>
+                         
+                      </span>
+                       
+                      <span class="cn112" data-ditto-id="style-twitter-widget-0">
+                         
+                        <span class="cn113" data-ditto-id="style-section">
+                          <span class="cn114" data-ditto-id="style-div-12">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn115" data-ditto-id="style-link-5">
+                          <span class="cn116">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn117">
+                          990
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn118" data-ditto-id="style-span-3">
+                   
+                  <iframe class="cn119" id="twitter-widget-2" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn120" data-ditto-id="style-div-13">
+                   
+                  <div class="cn121">
+                    <span class="cn122">
+                      <iframe class="cn123" data-ditto-id="style-posthaven-view-modal-1" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn124">
+                 Posted 
+                <a class="cn125" data-ditto-id="style-glass-posthaven-view-modal-1" href="https://blog.samaltman.com/sora-update-number-1">
+                  <span class="cn126">
+                    3 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn127">
+            <header class="cn128" data-ditto-id="style-b-2">
+              <div class="cn129">
+                <h2 class="cn130">
+                  <a class="cn131" data-ditto-id="style-p-14" href="https://blog.samaltman.com/sora-2">
+                    Sora 2
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn132" id="post_body_2227392">
+              <div class="cn133" data-ditto-id="style-p-10">
+                <p class="cn134">
+                  We are launching a new app called Sora. This is a combination of a new model called Sora 2, and a new product that makes it easy to create, share, and view videos.
+                </p>
+                <p class="cn135">
+                  This feels to many of us like the “ChatGPT for creativity” moment, and it feels fun and new. There is something great about making it really easy and fast to go from idea to result, and the new social dynamics that emerge.
+                </p>
+                <p class="cn136">
+                  Creativity could be about to go through a Cambrian explosion, and along with it, the quality of art and entertainment can drastically increase. Even in the very early days of playing with Sora, it’s been striking to many of us how open the playing field suddenly feels.
+                </p>
+                <p class="cn137">
+                  In particular, the ability to put yourself and your friends into a video—the team worked very hard on character consistency—with the cameo feature is something we have really enjoyed during testing, and is to many of us a surprisingly compelling new way to connect.
+                </p>
+                <p class="cn138" data-ditto-id="style-p-11">
+                  We also feel some trepidation. Social media has had some good effects on the world, but it’s also had some bad ones. We are aware of how addictive a service like this could become, and we can imagine many ways it could be used for bullying.
+                </p>
+                <p class="cn139" data-ditto-id="style-p-29">
+                  It is easy to imagine the degenerate case of AI video generation that ends up with us all being sucked into an RL-optimized slop feed. The team has put great care and thought into trying to figure out how to make a delightful product that doesn’t fall into that trap, and has come up with a number of promising ideas. We will experiment in the early days of the product with different approaches.
+                </p>
+                <p class="cn140" data-ditto-id="style-b-5">
+                  <span class="cn141">
+                    In addition to the mitigations we have already put in place (which include things like mitigations to prevent someone from misusing someone’s likeness in deepfakes, safeguards for disturbing or illegal content, periodic checks on how Sora is impacting users’ mood and wellbeing, and more) we are sure we will discover new things we need to do if Sora becomes very successful. To help guide us towards more of the good and less of the bad, here are some principles we have for this product:
+                  </span>
+                </p>
+                <p class="cn142">
+                  <br class="cn143" data-ditto-id="style-p-12" />
+                </p>
+                <p class="cn144">
+                  <b class="cn145" data-ditto-id="style-p-23">
+                    *Optimize for long-term user satisfaction. 
+                  </b>
+                  The majority of users, looking back on the past 6 months, should feel that their life is better for using Sora that it would have been if they hadn’t. If that’s not the case, we will make significant changes (and if we can’t fix it, we would discontinue offering the service). 
+                </p>
+                <p class="cn146" data-ditto-id="style-p-26">
+                  *
+                  <b class="cn147">
+                    Encourage users to control their feed.
+                  </b>
+                   You should be able to tell Sora what you want—do you want to see videos that will make you more relaxed, or more energized? Or only videos that fit a specific interest? Or only for a certain about of time? Eventually as our technology progresses, you will be should to the tell Sora what you want in detail in natural language. (However, parental controls for teens include the ability to opt out of a personalized feed, and other things like turning off DMs.)
+                </p>
+                <p class="cn148">
+                  *
+                  <b class="cn149">
+                    Prioritize creation.
+                  </b>
+                   We want to make it easy and rewarding for everyone to participate in the creation process; we believe people are natural-born creators, and creating is important to our satisfaction.
+                </p>
+                <p class="cn150" data-ditto-id="style-link-6">
+                  *
+                  <b class="cn151" data-ditto-id="style-sidebar-3">
+                    Help users achieve their long-term goals. 
+                  </b>
+                  We want to understand a user’s true goals, and help them achieve them. If you want to be more connected to your friends, we will try to help you with that. If you want to get fit, we can show you fitness content that will motivate you. If you want to start a business, we want to help teach you the skills you need. And if you truly just want to doom scroll and be angry, then ok, we’ll help you with that (although we want users to spend time using the app if they think it’s time well spent, we don’t want to be paternalistic about what that means to them).
+                  <br class="cn152" />
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn153">
+              <div class="cn154">
+                <div class="cn155">
+                   
+                  <a class="cn156" data-ditto-id="style-link-7" href="#">
+                     
+                    <span class="cn157">
+                       
+                      <span class="cn158" data-ditto-id="style-link-8">
+                         
+                        <span class="cn159"></span>
+                         
+                        <span class="cn160" data-ditto-id="style-link-9"></span>
+                         
+                      </span>
+                       
+                      <span class="cn161">
+                         
+                        <span class="cn162" data-ditto-id="style-link-10">
+                          <span class="cn163">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn164" data-ditto-id="style-link-11">
+                          <span class="cn165">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn166" data-ditto-id="style-link-12">
+                          632
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn167">
+                   
+                  <iframe class="cn168" data-ditto-id="style-link-13" id="twitter-widget-3" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn169">
+                   
+                  <div class="cn170" data-ditto-id="style-link-14">
+                    <span class="cn171">
+                      <iframe class="cn172" data-ditto-id="style-link-15" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn173">
+                 Posted 
+                <a class="cn174" data-ditto-id="style-link-16" href="https://blog.samaltman.com/sora-2">
+                  <span class="cn175">
+                    3 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn176" data-ditto-id="style-link-17">
+            <header class="cn177">
+              <div class="cn178" data-ditto-id="style-link-18">
+                <h2 class="cn179">
+                  <a class="cn180" data-ditto-id="style-link-19" href="https://blog.samaltman.com/abundant-intelligence">
+                    Abundant Intelligence
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn181" id="post_body_2225757">
+              <div class="cn182" data-ditto-id="style-link-20">
+                Growth in the use of AI services has been astonishing; we expect it to be even more astonishing going forward.
+                <br class="cn183" />
+                <br class="cn184" data-ditto-id="style-link-21" />
+                As AI gets smarter, access to AI will be a fundamental driver of the economy, and maybe eventually something we consider a fundamental human right. Almost everyone will want more AI working on their behalf.
+                <br class="cn185" />
+                <br class="cn186" data-ditto-id="style-link-22" />
+                To be able to deliver what the world needs—for inference compute to run these models, and for training compute to keep making them better and better—we are putting the groundwork in place to be able to significantly expand our ambitions for building out AI infrastructure.
+                <br class="cn187" />
+                <br class="cn188" data-ditto-id="style-link-23" />
+                If AI stays on the trajectory that we think it will, then amazing things will be possible. Maybe with 10 gigawatts of compute, AI can figure out how to cure cancer. Or with 10 gigawatts of compute, AI can figure out how to provide customized tutoring to every student on earth. If we are limited by compute, we’ll have to choose which one to prioritize; no one wants to make that choice, so let’s go build.
+                <br class="cn189" />
+                <br class="cn190" data-ditto-id="style-link-24" />
+                Our vision is simple: we want to create a factory that can produce a gigawatt of new AI infrastructure every week. The execution of this will be extremely difficult; it will take us years to get to this milestone and it will require innovation at every level of the stack, from chips to power to building to robotics. But we have been hard at work on this and believe it is possible. In our opinion, it will be the coolest and most important infrastructure project ever. We are particularly excited to build a lot of this in the US; right now, other countries are building things like chips fabs and new energy production much faster than we are, and we want to help turn that tide.
+                <p class="cn191">
+                  Over the next couple of months, we’ll be talking about some of our plans and the partners we are working with to make this a reality. Later this year, we’ll talk about how we are financing it; given how increasing compute is the literal key to increasing revenue, we have some interesting new ideas.
+                  <br class="cn192" data-ditto-id="style-link-25" />
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn193">
+              <div class="cn194" data-ditto-id="style-link-26">
+                <div class="cn195">
+                   
+                  <a class="cn196" data-ditto-id="style-link-27" href="#">
+                     
+                    <span class="cn197">
+                       
+                      <span class="cn198" data-ditto-id="style-link-28">
+                         
+                        <span class="cn199"></span>
+                         
+                        <span class="cn200" data-ditto-id="style-link-29"></span>
+                         
+                      </span>
+                       
+                      <span class="cn201">
+                         
+                        <span class="cn202" data-ditto-id="style-link-30">
+                          <span class="cn203">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn204" data-ditto-id="style-link-31">
+                          <span class="cn205">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn206" data-ditto-id="style-link-32">
+                          1232
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn207">
+                   
+                  <iframe class="cn208" data-ditto-id="style-link-33" id="twitter-widget-4" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn209">
+                   
+                  <div class="cn210" data-ditto-id="style-link-34">
+                    <span class="cn211">
+                      <iframe class="cn212" data-ditto-id="style-link-35" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn213">
+                 Posted 
+                <a class="cn214" data-ditto-id="style-link-36" href="https://blog.samaltman.com/abundant-intelligence">
+                  <span class="cn215">
+                    3 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn216" data-ditto-id="style-link-37">
+            <header class="cn217">
+              <div class="cn218" data-ditto-id="style-link-38">
+                <h2 class="cn219">
+                  <a class="cn220" data-ditto-id="style-link-39" href="https://blog.samaltman.com/jakub-and-szymon">
+                    Jakub and Szymon
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn221" id="post_body_2222747">
+              <div class="cn222" data-ditto-id="style-link-40">
+                AI has gotten remarkably better in recent years; ChatGPT can do amazing things that we take for granted. This is as it should be, and is the story of human progress. But behind the blinking circle, nicely abstracted away, is the greatest story of human ingenuity I have ever seen. A lot of people have worked unbelievably hard to discover how to build something that most experts thought was impossible on this timeframe, and to build a company to deliver products at massive scale to let people benefit from it. Most people who use ChatGPT will never think about the people that put so much work into it, which is totally ok, but just to take a minute of your time…
+                <br class="cn223" />
+                <br class="cn224" data-ditto-id="style-link-41" />
+                There are two people I'd like to mention that OpenAI would not be OpenAI without: Jakub Pachocki and Szymon Sidor. Time and again, they combine research and engineering to solve impossible problems. They have not gotten enough public credit, but they decided to scale up RL as a baseline to see where it broke when the conventional wisdom was that it didn't scale which led to our Dota result, built much of the infrastructure that enabled a lot of our scientific discoveries, led GPT-4 pretraining, drove together with Ilya and Lukasz the initial ideas that led to the reasoning breakthrough, and have made significant progress exploring new paradigms.
+                <p class="cn225">
+                  Jakub is our chief scientist. He once described Szymon as “indefatigable”, which is as perfect of a use of that word as I have ever heard. OpenAI has not yet thrown a problem at them they have not been able to solve; I have heard about partnerships like there is research labs of the past where two people are able to complement each other so well, but it is very special to get to watch it unfold over the years.
+                  <br class="cn226" data-ditto-id="style-link-42" />
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn227">
+              <div class="cn228" data-ditto-id="style-link-43">
+                <div class="cn229">
+                   
+                  <a class="cn230" data-ditto-id="style-link-44" href="#">
+                     
+                    <span class="cn231">
+                       
+                      <span class="cn232" data-ditto-id="style-link-45">
+                         
+                        <span class="cn233"></span>
+                         
+                        <span class="cn234" data-ditto-id="style-link-46"></span>
+                         
+                      </span>
+                       
+                      <span class="cn235">
+                         
+                        <span class="cn236" data-ditto-id="style-link-47">
+                          <span class="cn237">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn238" data-ditto-id="style-link-48">
+                          <span class="cn239">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn240" data-ditto-id="style-link-49">
+                          940
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn241">
+                   
+                  <iframe class="cn242" data-ditto-id="style-link-50" id="twitter-widget-5" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn243">
+                   
+                  <div class="cn244" data-ditto-id="style-link-51">
+                    <span class="cn245">
+                      <iframe class="cn246" data-ditto-id="style-link-52" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn247">
+                 Posted 
+                <a class="cn248" data-ditto-id="style-link-53" href="https://blog.samaltman.com/jakub-and-szymon">
+                  <span class="cn249">
+                    4 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn250" data-ditto-id="style-link-54">
+            <header class="cn251">
+              <div class="cn252" data-ditto-id="style-link-55">
+                <h2 class="cn253">
+                  <a class="cn254" data-ditto-id="style-link-56" href="https://blog.samaltman.com/the-gentle-singularity">
+                    The Gentle Singularity
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn255" id="post_body_2202875">
+              <div class="cn256" data-ditto-id="style-link-57">
+                <p class="cn257">
+                  We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence, and at least so far it’s much less weird than it seems like it should be.
+                </p>
+                <p class="cn258" data-ditto-id="style-link-58">
+                  Robots are not yet walking the streets, nor are most of us talking to AI all day. People still die of disease, we still can’t easily go to space, and there is a lot about the universe we don’t understand.
+                </p>
+                <p class="cn259">
+                  And yet, we have recently built systems that are smarter than people in many ways, and are able to significantly amplify the output of people using them. The least-likely part of the work is behind us; the scientific insights that got us to systems like GPT-4 and o3 were hard-won, but will take us very far.
+                </p>
+                <p class="cn260" data-ditto-id="style-link-59">
+                  AI will contribute to the world in many ways, but the gains to quality of life from AI driving faster scientific progress and increased productivity will be enormous; the future can be vastly better than the present. Scientific progress is the biggest driver of overall progress; it’s hugely exciting to think about how much more we could have.
+                </p>
+                <p class="cn261">
+                  In some big sense, ChatGPT is already more powerful than any human who has ever lived. Hundreds of millions of people rely on it every day and for increasingly important tasks; a small new capability can create a hugely positive impact; a small misalignment multiplied by hundreds of millions of people can cause a great deal of negative impact.
+                </p>
+                <p class="cn262" data-ditto-id="style-link-60">
+                  2025 has seen the arrival of agents that can do real cognitive work; writing computer code will never be the same. 2026 will likely see the arrival of systems that can figure out novel insights. 2027 may see the arrival of robots that can do tasks in the real world.
+                </p>
+                <p class="cn263">
+                  A lot more people will be able to create software, and art. But the world wants a lot more of both, and experts will probably still be much better than novices, as long as they embrace the new tools. Generally speaking, the ability for one person to get much more done in 2030 than they could in 2020 will be a striking change, and one many people will figure out how to benefit from.
+                </p>
+                <p class="cn264" data-ditto-id="style-link-61">
+                  In the most important ways, the 2030s may not be wildly different. People will still love their families, express their creativity, play games, and swim in lakes.
+                  <br class="cn265" />
+                </p>
+                <p class="cn266" data-ditto-id="style-link-62">
+                  But in still-very-important-ways, the 2030s are likely going to be wildly different from any time that has come before. We do not know how far beyond human-level intelligence we can go, but we are about to find out.
+                </p>
+                <p class="cn267">
+                  In the 2030s, intelligence and energy—ideas, and the ability to make ideas happen—are going to become wildly abundant. These two have been the fundamental limiters on human progress for a long time; with abundant intelligence and energy (and good governance), we can theoretically have anything else.
+                </p>
+                <p class="cn268" data-ditto-id="style-link-63">
+                  Already we live with incredible digital intelligence, and after some initial shock, most of us are pretty used to it. Very quickly we go from being amazed that AI can generate a beautifully-written paragraph to wondering when it can generate a beautifully-written novel; or from being amazed that it can make live-saving medical diagnoses to wondering when it can develop the cures; or from being amazed it can create a small computer program to wondering when it can create an entire new company. This is how the singularity goes: wonders become routine, and then table stakes.
+                </p>
+                <p class="cn269">
+                  We already hear from scientists that they are two or three times more productive than they were before AI. Advanced AI is interesting for many reasons, but perhaps nothing is quite as significant as the fact that we can use it to do faster AI research. We may be able to discover new computing substrates, better algorithms, and who knows what else. If we can do a decade’s worth of research in a year, or a month, then the rate of progress will obviously be quite different.
+                </p>
+                <p class="cn270" data-ditto-id="style-link-64">
+                  From here on, the tools we have already built will help us find further scientific insights and aid us in creating better AI systems. Of course this isn’t the same thing as an AI system completely autonomously updating its own code, but nevertheless this is a larval version of recursive self-improvement.
+                </p>
+                <p class="cn271">
+                  There are other self-reinforcing loops at play. The economic value creation has started a flywheel of compounding infrastructure buildout to run these increasingly-powerful AI systems. And robots that can build other robots (and in some sense, datacenters that can build other datacenters) aren’t that far off. 
+                </p>
+                <p class="cn272" data-ditto-id="style-link-65">
+                  If we have to make the first million humanoid robots the old-fashioned way, but then they can operate the entire supply chain—digging and refining minerals, driving trucks, running factories, etc.—to build more robots, which can build more chip fabrication facilities, data centers, etc, then the rate of progress will obviously be quite different.
+                </p>
+                <p class="cn273">
+                  As datacenter production gets automated, the cost of intelligence should eventually converge to near the cost of electricity. (People are often curious about how much energy a ChatGPT query uses; the average query uses about 0.34 watt-hours, about what an oven would use in a little over one second, or a high-efficiency lightbulb would use in a couple of minutes. It also uses about 0.000085 gallons of water; roughly one fifteenth of a teaspoon.)
+                </p>
+                <p class="cn274" data-ditto-id="style-link-66">
+                  The rate of technological progress will keep accelerating, and it will continue to be the case that people are capable of adapting to almost anything. There will be very hard parts like whole classes of jobs going away, but on the other hand the world will be getting so much richer so quickly that we’ll be able to seriously entertain new policy ideas we never could before. We probably won’t adopt a new social contract all at once, but when we look back in a few decades, the gradual changes will have amounted to something big.
+                </p>
+                <p class="cn275">
+                  If history is any guide, we will figure out new things to do and new things to want, and assimilate new tools quickly (job change after the industrial revolution is a good recent example). Expectations will go up, but capabilities will go up equally quickly, and we’ll all get better stuff. We will build ever-more-wonderful things for each other. People have a long-term important and curious advantage over AI: we are hard-wired to care about other people and what they think and do, and we don’t care very much about machines.
+                </p>
+                <p class="cn276" data-ditto-id="style-link-67">
+                  A subsistence farmer from a thousand years ago would look at what many of us do and say we have fake jobs, and think that we are just playing games to entertain ourselves since we have plenty of food and unimaginable luxuries. I hope we will look at the jobs a thousand years in the future and think they are very fake jobs, and I have no doubt they will feel incredibly important and satisfying to the people doing them.
+                </p>
+                <p class="cn277">
+                  The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year. Many people will choose to live their lives in much the same way, but at least some people will probably decide to “plug in”.
+                </p>
+                <p class="cn278" data-ditto-id="style-link-68">
+                  Looking forward, this sounds hard to wrap our heads around. But probably living through it will feel impressive but manageable. From a relativistic perspective, the singularity happens bit by bit, and the merge happens slowly. We are climbing the long arc of exponential technological progress; it always looks vertical looking forward and flat going backwards, but it’s one smooth curve. (Think back to 2020, and what it would have sounded like to have something close to AGI by 2025, versus what the last 5 years have actually been like.)
+                </p>
+                <p class="cn279">
+                  There are serious challenges to confront along with the huge upsides. We do need to solve the safety issues, technically and societally, but then it’s critically important to widely distribute access to superintelligence given the economic implications. The best path forward might be something like:
+                </p>
+                <ol class="cn280">
+                  <li class="cn281">
+                    <p class="cn282">
+                      Solve the alignment problem, meaning that we can robustly guarantee that we get AI systems to learn and act towards what we collectively really want over the long-term (social media feeds are an example of misaligned AI; the algorithms that power those are incredible at getting you to keep scrolling and clearly understand your short-term preferences, but they do so by exploiting something in your brain that overrides your long-term preference).
+                    </p>
+                  </li>
+                  <li class="cn283">
+                    <p class="cn284">
+                      Then focus on making superintelligence cheap, widely available, and not too concentrated with any person, company, or country. Society is resilient, creative, and adapts quickly. If we can harness the collective will and wisdom of people, then although we’ll make plenty of mistakes and some things will go really wrong, we will learn and adapt quickly and be able to use this technology to get maximum upside and minimal downside. Giving users a lot of freedom, within broad bounds society has to decide on, seems very important. The sooner the world can start a conversation about what these broad bounds are and how we define collective alignment, the better.
+                    </p>
+                  </li>
+                </ol>
+                <p class="cn285">
+                  We (the whole industry, not just OpenAI) are building a brain for the world. It will be extremely personalized and easy for everyone to use; we will be limited by good ideas. For a long time, technical people in the startup industry have made fun of “the idea guys”; people who had an idea and were looking for a team to build it. It now looks to me like they are about to have their day in the sun.
+                </p>
+                <p class="cn286">
+                  OpenAI is a lot of things now, but before anything else, we are a superintelligence research company. We have a lot of work in front of us, but most of the path in front of us is now lit, and the dark areas are receding fast. We feel extraordinarily grateful to get to do what we do.
+                </p>
+                <p class="cn287">
+                  Intelligence too cheap to meter is well within grasp. This may sound crazy to say, but if we told you back in 2020 we were going to be where we are today, it probably sounded more crazy than our current predictions about 2030.
+                </p>
+                <p class="cn288">
+                  May we scale smoothly, exponentially and uneventfully through superintelligence.
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn289">
+              <div class="cn290">
+                <div class="cn291">
+                   
+                  <a class="cn292" data-ditto-id="style-div-7" href="#">
+                     
+                    <span class="cn293">
+                       
+                      <span class="cn294">
+                         
+                        <span class="cn295"></span>
+                         
+                        <span class="cn296"></span>
+                         
+                      </span>
+                       
+                      <span class="cn297">
+                         
+                        <span class="cn298" data-ditto-id="style-button-5">
+                          <span class="cn299">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn300">
+                          <span class="cn301">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn302">
+                          7493
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn303">
+                   
+                  <iframe class="cn304" data-ditto-id="style-link-84" id="twitter-widget-6" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn305">
+                   
+                  <div class="cn306">
+                    <span class="cn307">
+                      <iframe class="cn308" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn309">
+                 Posted 
+                <a class="cn310" data-ditto-id="style-span-5" href="https://blog.samaltman.com/the-gentle-singularity">
+                  <span class="cn311">
+                    7 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn312">
+            <header class="cn313">
+              <div class="cn314">
+                <h2 class="cn315">
+                  <a class="cn316" data-ditto-id="style-link-73" href="https://blog.samaltman.com/three-observations">
+                    Three Observations
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn317" id="post_body_2174132">
+              <div class="cn318">
+                <p class="cn319">
+                  Our mission is to ensure that AGI (Artificial General Intelligence) benefits all of humanity. 
+                </p>
+                <p class="cn320">
+                  Systems that start to point to AGI* are coming into view, and so we think it’s important to understand the moment we are in. AGI is a weakly defined term, but generally speaking we mean it to be a system that can tackle increasingly complex problems, at human level, in many fields.
+                </p>
+                <p class="cn321">
+                  People are tool-builders with an inherent drive to understand and create, which leads to the world getting better for all of us. Each new generation builds upon the discoveries of the generations before to create even more capable tools—electricity, the transistor, the computer, the internet, and soon AGI.
+                </p>
+                <p class="cn322">
+                  Over time, in fits and starts, the steady march of human innovation has brought previously unimaginable levels of prosperity and improvements to almost every aspect of people’s lives.
+                </p>
+                <p class="cn323">
+                  In some sense, AGI is just another tool in this ever-taller scaffolding of human progress we are building together. In another sense, it is the beginning of something for which it’s hard not to say “this time it’s different”; the economic growth in front of us looks astonishing, and we can now imagine a world where we cure all diseases, have much more time to enjoy with our families, and can fully realize our creative potential.
+                </p>
+                <p class="cn324">
+                  In a decade, perhaps everyone on earth will be capable of accomplishing more than the most impactful person can today.
+                </p>
+                <p class="cn325">
+                  We continue to see rapid progress with AI development. Here are three observations about the economics of AI:
+                </p>
+                <p class="cn326">
+                  1. 
+                  <b class="cn327">
+                    The intelligence of an AI model roughly equals the log of the resources used to train and run it.
+                  </b>
+                   These resources are chiefly training compute, data, and inference compute. It appears that you can spend arbitrary amounts of money and get continuous and predictable gains; the scaling laws that predict this are accurate over many orders of magnitude.
+                </p>
+                <p class="cn328">
+                  2. 
+                  <b class="cn329">
+                    The cost to use a given level of AI falls about 10x every 12 months, and lower prices lead to much more use.
+                  </b>
+                   You can see this in the token cost from GPT-4 in early 2023 to GPT-4o in mid-2024, where the price per token dropped about 150x in that time period. Moore’s law changed the world at 2x every 18 months; this is unbelievably stronger. 
+                </p>
+                <p class="cn330">
+                  3. 
+                  <b class="cn331">
+                    The socioeconomic value of linearly increasing intelligence is super-exponential in nature.
+                  </b>
+                   A consequence of this is that we see no reason for exponentially increasing investment to stop in the near future.
+                </p>
+                <p class="cn332">
+                  If these three observations continue to hold true, the impacts on society will be significant.
+                </p>
+                <p class="cn333">
+                  We are now starting to roll out AI agents, which will eventually feel like virtual co-workers.
+                </p>
+                <p class="cn334">
+                  Let’s imagine the case of a software engineering agent, which is an agent that we expect to be particularly important. Imagine that this agent will eventually be capable of doing most things a software engineer at a top company with a few years of experience could do, for tasks up to a couple of days long. It will not have the biggest new ideas, it will require lots of human supervision and direction, and it will be great at some things but surprisingly bad at others.
+                </p>
+                <p class="cn335">
+                  Still, imagine it as a real-but-relatively-junior virtual coworker. Now imagine 1,000 of them. Or 1 million of them. Now imagine such agents in every field of knowledge work.
+                </p>
+                <p class="cn336">
+                  In some ways, AI may turn out to be like the transistor economically—a big scientific discovery that scales well and that seeps into almost every corner of the economy. We don’t think much about transistors, or transistor companies, and the gains are very widely distributed. But we do expect our computers, TVs, cars, toys, and more to perform miracles.
+                </p>
+                <p class="cn337">
+                  The world will not change all at once; it never does. Life will go on mostly the same in the short run, and people in 2025 will mostly spend their time in the same way they did in 2024. We will still fall in love, create families, get in fights online, hike in nature, etc.
+                </p>
+                <p class="cn338">
+                  But the future will be coming at us in a way that is impossible to ignore, and the long-term changes to our society and economy will be huge. We will find new things to do, new ways to be useful to each other, and new ways to compete, but they may not look very much like the jobs of today. 
+                </p>
+                <p class="cn339">
+                  Agency, willfulness, and determination will likely be extremely valuable. Correctly deciding what to do and figuring out how to navigate an ever-changing world will have huge value; resilience and adaptability will be helpful skills to cultivate. AGI will be the biggest lever ever on human willfulness, and enable individual people to have more impact than ever before, not less.
+                </p>
+                <p class="cn340">
+                  We expect the impact of AGI to be uneven. Although some industries will change very little, scientific progress will likely be much faster than it is today; this impact of AGI may surpass everything else.
+                </p>
+                <p class="cn341">
+                  The price of many goods will eventually fall dramatically (right now, the cost of intelligence and the cost of energy constrain a lot of things), and the price of luxury goods and a few inherently limited resources like land may rise even more dramatically.
+                </p>
+                <p class="cn342">
+                  Technically speaking, the road in front of us looks fairly clear. But public policy and collective opinion on how we should integrate AGI into society matter a lot; one of our reasons for launching products early and often is to give society and the technology time to co-evolve.
+                </p>
+                <p class="cn343">
+                  AI will seep into all areas of the economy and society; we will expect everything to be smart. Many of us expect to need to give people more control over the technology than we have historically, including open-sourcing more, and accept that there is a balance between safety and individual empowerment that will require trade-offs.
+                </p>
+                <p class="cn344">
+                  While we never want to be reckless and there will likely be some major decisions and limitations related to AGI safety that will be unpopular, directionally, as we get closer to achieving AGI, we believe that trending more towards individual empowerment is important; the other likely path we can see is AI being used by authoritarian governments to control their population through mass surveillance and loss of autonomy.
+                </p>
+                <p class="cn345">
+                  Ensuring that the benefits of AGI are broadly distributed is critical. The historical impact of technological progress suggests that most of the metrics we care about (health outcomes, economic prosperity, etc.) get better on average and over the long-term, but increasing equality does not seem technologically determined and getting this right may require new ideas.
+                </p>
+                <p class="cn346">
+                  In particular, it does seem like the balance of power between capital and labor could easily get messed up, and this may require early intervention. We are open to strange-sounding ideas like giving some “compute budget” to enable everyone on Earth to use a lot of AI, but we can also see a lot of ways where just relentlessly driving the cost of intelligence as low as possible has the desired effect.
+                </p>
+                <p class="cn347">
+                  Anyone in 2035 should be able to marshall the intellectual capacity equivalent to everyone in 2025; everyone should have access to unlimited genius to direct however they can imagine. There is a great deal of talent right now without the resources to fully express itself, and if we change that, the resulting creative output of the world will lead to tremendous benefits for us all.
+                </p>
+                <br class="cn348" />
+                <br class="cn349" />
+                <br class="cn350" />
+                <p class="cn351">
+                  <br class="cn352" />
+                </p>
+                <br class="cn353" />
+                <p class="cn354">
+                  Thanks especially to Josh Achiam, Boaz Barak and Aleksander Madry for reviewing drafts of this.
+                </p>
+                <p class="cn355">
+                  *By using the term AGI here, we aim to communicate clearly, and we do not intend to alter or interpret the definitions and processes that define our relationship with Microsoft. We fully expect to be partnered with Microsoft for the long term. This footnote seems silly, but on the other hand we know some journalists will try to get clicks by writing something silly so here we are pre-empting the silliness…
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn356">
+              <div class="cn357">
+                <div class="cn358">
+                   
+                  <a class="cn359" data-ditto-id="style-link-69" href="#">
+                     
+                    <span class="cn360">
+                       
+                      <span class="cn361">
+                         
+                        <span class="cn362"></span>
+                         
+                        <span class="cn363"></span>
+                         
+                      </span>
+                       
+                      <span class="cn364">
+                         
+                        <span class="cn365">
+                          <span class="cn366">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn367">
+                          <span class="cn368">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn369">
+                          2774
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn370">
+                   
+                  <iframe class="cn371" id="twitter-widget-7" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn372">
+                   
+                  <div class="cn373">
+                    <span class="cn374">
+                      <iframe class="cn375" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn376">
+                 Posted 
+                <a class="cn377" data-ditto-id="style-link-74" href="https://blog.samaltman.com/three-observations">
+                  <span class="cn378">
+                    11 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn379">
+            <header class="cn380">
+              <div class="cn381">
+                <h2 class="cn382">
+                  <a class="cn383" data-ditto-id="style-link-75" href="https://blog.samaltman.com/reflections">
+                    Reflections
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn384" id="post_body_2163678">
+              <div class="cn385">
+                <p class="cn386">
+                  The second birthday of ChatGPT was only a little over a month ago, and now we have transitioned into the next paradigm of models that can do complex reasoning. New years get people in a reflective mood, and I wanted to share some personal thoughts about how it has gone so far, and some of the things I’ve learned along the way.
+                </p>
+                <p class="cn387">
+                  As we get closer to AGI, it feels like an important time to look at the progress of our company. There is still so much to understand, still so much we don’t know, and it’s still so early. But we know a lot more than we did when we started.
+                </p>
+                <p class="cn388">
+                  We started OpenAI almost nine years ago because we believed that AGI was possible, and that it could be the most impactful technology in human history. We wanted to figure out how to build it and make it broadly beneficial; we were excited to try to make our mark on history. Our ambitions were extraordinarily high and so was our belief that the work might benefit society in an equally extraordinary way.
+                </p>
+                <p class="cn389">
+                  At the time, very few people cared, and if they did, it was mostly because they thought we had no chance of success.
+                </p>
+                <p class="cn390">
+                  In 2022, OpenAI was a quiet research lab working on something temporarily called “Chat With GPT-3.5”. (We are much better at research than we are at naming things.) We had been watching people use the playground feature of our API and knew that developers were really enjoying talking to the model. We thought building a demo around that experience would show people something important about the future and help us make our models better and safer.
+                </p>
+                <p class="cn391">
+                  We ended up mercifully calling it ChatGPT instead, and launched it on November 30th of 2022.
+                </p>
+                <p class="cn392">
+                  We always knew, abstractly, that at some point we would hit a tipping point and the AI revolution would get kicked off. But we didn’t know what the moment would be. To our surprise, it turned out to be this.
+                </p>
+                <p class="cn393">
+                  The launch of ChatGPT kicked off a growth curve like nothing we have ever seen—in our company, our industry, and the world broadly. We are finally seeing some of the massive upside we have always hoped for from AI, and we can see how much more will come soon.
+                </p>
+                <p class="cn394"></p>
+                <hr class="cn395" />
+                <p class="cn396"></p>
+                <p class="cn397">
+                  It hasn’t been easy. The road hasn’t been smooth and the right choices haven’t been obvious.
+                </p>
+                <p class="cn398">
+                  In the last two years, we had to build an entire company, almost from scratch, around this new technology. There is no way to train people for this except by doing it, and when the technology category is completely new, there is no one at all who can tell you exactly how it should be done.
+                </p>
+                <p class="cn399">
+                  Building up a company at such high velocity with so little training is a messy process. It’s often two steps forward, one step back (and sometimes, one step forward and two steps back). Mistakes get corrected as you go along, but there aren’t really any handbooks or guideposts when you’re doing original work. Moving at speed in uncharted waters is an incredible experience, but it is also immensely stressful for all the players. Conflicts and misunderstanding abound.
+                </p>
+                <p class="cn400">
+                  These years have been the most rewarding, fun, best, interesting, exhausting, stressful, and—particularly for the last two—unpleasant years of my life so far. The overwhelming feeling is gratitude; I know that someday I’ll be retired at our ranch watching the plants grow, a little bored, and will think back at how cool it was that I got to do the work I dreamed of since I was a little kid. I try to remember that on any given Friday, when seven things go badly wrong by 1 pm.
+                </p>
+                <p class="cn401"></p>
+                <hr class="cn402" />
+                <p class="cn403"></p>
+                <p class="cn404">
+                  A little over a year ago, on one particular Friday, the main thing that had gone wrong that day was that I got fired by surprise on a video call, and then right after we hung up the board published a blog post about it. I was in a hotel room in Las Vegas. It felt, to a degree that is almost impossible to explain, like a dream gone wrong.
+                </p>
+                <p class="cn405">
+                  Getting fired in public with no warning kicked off a really crazy few hours, and a pretty crazy few days. The “fog of war” was the strangest part. None of us were able to get satisfactory answers about what had happened, or why. 
+                </p>
+                <p class="cn406">
+                  The whole event was, in my opinion, a big failure of governance by well-meaning people, myself included. Looking back, I certainly wish I had done things differently, and I’d like to believe I’m a better, more thoughtful leader today than I was a year ago.
+                </p>
+                <p class="cn407">
+                  I also learned the importance of a board with diverse viewpoints and broad experience in managing a complex set of challenges. Good governance requires a lot of trust and credibility. I appreciate the way so many people worked together to build a stronger system of governance for OpenAI that enables us to pursue our mission of ensuring that AGI benefits all of humanity.
+                </p>
+                <p class="cn408">
+                  My biggest takeaway is how much I have to be thankful for and how many people I owe gratitude towards: to everyone who works at OpenAI and has chosen to spend their time and effort going after this dream, to friends who helped us get through the crisis moments, to our partners and customers who supported us and entrusted us to enable their success, and to the people in my life who showed me how much they cared. [1]
+                </p>
+                <p class="cn409">
+                  We all got back to the work in a more cohesive and positive way and I’m very proud of our focus since then. We have done what is easily some of our best research ever. We grew from about 100 million weekly active users to more than 300 million. Most of all, we have continued to put technology out into the world that people genuinely seem to love and that solves real problems.
+                </p>
+                <p class="cn410"></p>
+                <hr class="cn411" />
+                <p class="cn412"></p>
+                <p class="cn413">
+                  Nine years ago, we really had no idea what we were eventually going to become; even now, we only sort of know. AI development has taken many twists and turns and we expect more in the future.
+                </p>
+                <p class="cn414">
+                  Some of the twists have been joyful; some have been hard. It’s been fun watching a steady stream of research miracles occur, and a lot of naysayers have become true believers. We’ve also seen some colleagues split off and become competitors. Teams tend to turn over as they scale, and OpenAI scales really fast. I think some of this is unavoidable—startups usually see a lot of turnover at each new major level of scale, and at OpenAI numbers go up by orders of magnitude every few months. The last two years have been like a decade at a normal company. When any company grows and evolves so fast, interests naturally diverge. And when any company in an important industry is in the lead, lots of people attack it for all sorts of reasons, especially when they are trying to compete with it.
+                </p>
+                <p class="cn415">
+                  Our vision won’t change; our tactics will continue to evolve. For example, when we started we had no idea we would have to build a product company; we thought we were just going to do great research. We also had no idea we would need such a crazy amount of capital. There are new things we have to go build now that we didn’t understand a few years ago, and there will be new things in the future we can barely imagine now. 
+                </p>
+                <p class="cn416">
+                  We are proud of our track-record on research and deployment so far, and are committed to continuing to advance our thinking on safety and benefits sharing. We continue to believe that the best way to make an AI system safe is by iteratively and gradually releasing it into the world, giving society time to adapt and co-evolve with the technology, learning from experience, and continuing to make the technology safer. We believe in the importance of being world leaders on safety and alignment research, and in guiding that research with feedback from real world applications.
+                </p>
+                <p class="cn417">
+                  We are now confident we know how to build AGI as we have traditionally understood it. We believe that, in 2025, we may see the first AI agents “join the workforce” and materially change the output of companies. We continue to believe that iteratively putting great tools in the hands of people leads to great, broadly-distributed outcomes.
+                </p>
+                <p class="cn418">
+                  We are beginning to turn our aim beyond that, to superintelligence in the true sense of the word. We love our current products, but we are here for the glorious future. With superintelligence, we can do anything else. Superintelligent tools could massively accelerate scientific discovery and innovation well beyond what we are capable of doing on our own, and in turn massively increase abundance and prosperity.
+                </p>
+                <p class="cn419">
+                  This sounds like science fiction right now, and somewhat crazy to even talk about it. That’s alright—we’ve been there before and we’re OK with being there again. We’re pretty confident that in the next few years, everyone will see what we see, and that the need to act with great care, while still maximizing broad benefit and empowerment, is so important. Given the possibilities of our work, OpenAI cannot be a normal company.
+                </p>
+                <p class="cn420">
+                  How lucky and humbling it is to be able to play a role in this work.
+                </p>
+                <p class="cn421">
+                  (Thanks to 
+                  <a class="cn422" data-ditto-id="style-link-76" href="https://www.bloomberg.com/features/2025-sam-altman-interview/" title="Link: https://www.bloomberg.com/features/2025-sam-altman-interview/">
+                    Josh Tyrangiel for sort of prompting this
+                  </a>
+                  . I wish we had had a lot more time.)
+                </p>
+                <p class="cn423">
+                  <br class="cn424" />
+                </p>
+                <p class="cn425">
+                  <br class="cn426" />
+                </p>
+                <p class="cn427">
+                  <br class="cn428" />
+                </p>
+                <p class="cn429">
+                  [1]
+                </p>
+                <p class="cn430">
+                  There were a lot of people who did incredible and gigantic amounts of work to help OpenAI, and me personally, during those few days, but two people stood out from all others.
+                </p>
+                <p class="cn431">
+                  Ron Conway and Brian Chesky went so far above and beyond the call of duty that I’m not even sure how to describe it. I’ve of course heard stories about Ron’s ability and tenaciousness for years and I’ve spent a lot of time with Brian over the past couple of years getting a huge amount of help and advice.
+                </p>
+                <p class="cn432">
+                  But there’s nothing quite like being in the foxhole with people to see what they can really do. I am reasonably confident OpenAI would have fallen apart without their help; they worked around the clock for days until things were done.
+                </p>
+                <p class="cn433">
+                  Although they worked unbelievably hard, they stayed calm and had clear strategic thought and great advice throughout. They stopped me from making several mistakes and made none themselves. They used their vast networks for everything needed and were able to navigate many complex situations. And I’m sure they did a lot of things I don’t know about.
+                </p>
+                <p class="cn434">
+                  What I will remember most, though, is their care, compassion, and support.
+                </p>
+                <p class="cn435">
+                  I thought I knew what it looked like to support a founder and a company, and in some small sense I did. But I have never before seen, or even heard of, anything like what these guys did, and now I get more fully why they have the legendary status they do. They are different and both fully deserve their genuinely unique reputations, but they are similar in their remarkable ability to move mountains and help, and in their unwavering commitment in times of need. The tech industry is far better off for having both of them in it.
+                </p>
+                <p class="cn436">
+                  There are others like them; it is an amazingly special thing about our industry and does much more to make it all work than people realize. I look forward to paying it forward.
+                </p>
+                <p class="cn437">
+                  On a more personal note, thanks especially to Ollie for his support that weekend and always; he is incredible in every way and no one could ask for a better partner.
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn438">
+              <div class="cn439">
+                <div class="cn440">
+                   
+                  <a class="cn441" data-ditto-id="style-link-70" href="#">
+                     
+                    <span class="cn442">
+                       
+                      <span class="cn443">
+                         
+                        <span class="cn444"></span>
+                         
+                        <span class="cn445"></span>
+                         
+                      </span>
+                       
+                      <span class="cn446">
+                         
+                        <span class="cn447">
+                          <span class="cn448">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn449">
+                          <span class="cn450">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn451">
+                          8691
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn452">
+                   
+                  <iframe class="cn453" id="twitter-widget-8" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn454">
+                   
+                  <div class="cn455">
+                    <span class="cn456">
+                      <iframe class="cn457" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn458">
+                 Posted 
+                <a class="cn459" data-ditto-id="style-link-77" href="https://blog.samaltman.com/reflections">
+                  <span class="cn460">
+                    12 months ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn461">
+            <header class="cn462">
+              <div class="cn463">
+                <h2 class="cn464">
+                  <a class="cn465" data-ditto-id="style-link-78" href="https://blog.samaltman.com/gpt-4o">
+                    GPT-4o
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn466" id="post_body_2109392">
+              <div class="cn467">
+                <p class="cn468">
+                  There are two things from our announcement today I wanted to highlight.
+                </p>
+                <p class="cn469">
+                  First, a key part of our mission is to put very capable AI tools in the hands of people for free (or at a great price). I am very proud that we’ve made the best model in the world available for free in ChatGPT, without ads or anything like that. 
+                </p>
+                <p class="cn470">
+                  Our initial conception when we started OpenAI was that we’d create AI and use it to create all sorts of benefits for the world. Instead, it now looks like we’ll create AI and then other people will use it to create all sorts of amazing things that we all benefit from. 
+                </p>
+                <p class="cn471">
+                  We are a business and will find plenty of things to charge for, and that will help us provide free, outstanding AI service to (hopefully) billions of people. 
+                </p>
+                <p class="cn472">
+                  Second, the new voice (and video) mode is the best computer interface I’ve ever used. It feels like AI from the movies; and it’s still a bit surprising to me that it’s real. Getting to human-level response times and expressiveness turns out to be a big change.
+                </p>
+                <p class="cn473">
+                  The original ChatGPT showed a hint of what was possible with language interfaces; this new thing feels viscerally different. It is fast, smart, fun, natural, and helpful.
+                </p>
+                <p class="cn474"></p>
+                <p class="cn475">
+                  Talking to a computer has never felt really natural for me; now it does. As we add (optional) personalization, access to your information, the ability to take actions on your behalf, and more, I can really see an exciting future where we are able to use computers to do much more than ever before.
+                  <br class="cn476" />
+                </p>
+                <p class="cn477">
+                  Finally, huge thanks to the team that poured so much work into making this happen!
+                </p>
+              </div>
+               
+            </div>
+             
+            <footer class="cn478">
+              <div class="cn479">
+                <div class="cn480">
+                   
+                  <a class="cn481" data-ditto-id="style-link-71" href="#">
+                     
+                    <span class="cn482">
+                       
+                      <span class="cn483">
+                         
+                        <span class="cn484"></span>
+                         
+                        <span class="cn485"></span>
+                         
+                      </span>
+                       
+                      <span class="cn486">
+                         
+                        <span class="cn487">
+                          <span class="cn488">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn489">
+                          <span class="cn490">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn491">
+                          4250
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn492">
+                   
+                  <iframe class="cn493" id="twitter-widget-9" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn494">
+                   
+                  <div class="cn495">
+                    <span class="cn496">
+                      <iframe class="cn497" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn498">
+                 Posted 
+                <a class="cn499" data-ditto-id="style-link-79" href="https://blog.samaltman.com/gpt-4o">
+                  <span class="cn500">
+                    2 years ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <article class="cn501">
+            <header class="cn502">
+              <div class="cn503">
+                <h2 class="cn504">
+                  <a class="cn505" data-ditto-id="style-link-80" href="https://blog.samaltman.com/what-i-wish-someone-had-told-me">
+                    What I Wish Someone Had Told Me
+                  </a>
+                </h2>
+                 
+              </div>
+               
+            </header>
+             
+            <div class="cn506" id="post_body_2065118">
+              <div class="cn507">
+                <ol class="cn508">
+                  <li class="cn509">
+                    Optimism, obsession, self-belief, raw horsepower and personal connections are how things get started.
+                  </li>
+                  <li class="cn510">
+                    Cohesive teams, the right combination of calmness and urgency, and unreasonable commitment are how things get finished. Long-term orientation is in short supply; try not to worry about what people think in the short term, which will get easier over time.
+                  </li>
+                  <li class="cn511">
+                    It is easier for a team to do a hard thing that really matters than to do an easy thing that doesn’t really matter; audacious ideas motivate people.
+                  </li>
+                  <li class="cn512">
+                    Incentives are superpowers; set them carefully.
+                  </li>
+                  <li class="cn513">
+                    Concentrate your resources on a small number of high-conviction bets; this is easy to say but evidently hard to do. You can delete more stuff than you think.
+                  </li>
+                  <li class="cn514">
+                    Communicate clearly and concisely.
+                  </li>
+                  <li class="cn515">
+                    Fight bullshit and bureaucracy every time you see it and get other people to fight it too. Do not let the org chart get in the way of people working productively together.
+                  </li>
+                  <li class="cn516">
+                    Outcomes are what count; don’t let good process excuse bad results.
+                  </li>
+                  <li class="cn517">
+                    Spend more time recruiting. Take risks on high-potential people with a fast rate of improvement. Look for evidence of getting stuff done in addition to intelligence.
+                  </li>
+                  <li class="cn518">
+                    Superstars are even more valuable than they seem, but you have to evaluate people on their net impact on the performance of the organization.
+                  </li>
+                  <li class="cn519">
+                    Fast iteration can make up for a lot; it’s usually ok to be wrong if you iterate quickly. Plans should be measured in decades, execution should be measured in weeks.
+                  </li>
+                  <li class="cn520">
+                    Don’t fight the business equivalent of the laws of physics.
+                  </li>
+                  <li class="cn521">
+                    Inspiration is perishable and life goes by fast. Inaction is a particularly insidious type of risk.
+                  </li>
+                  <li class="cn522">
+                    Scale often has surprising emergent properties.
+                  </li>
+                  <li class="cn523">
+                    Compounding exponentials are magic. In particular, you really want to build a business that gets a compounding advantage with scale.
+                  </li>
+                  <li class="cn524">
+                    Get back up and keep going.
+                  </li>
+                  <li class="cn525">
+                    Working with great people is one of the best parts of life.
+                  </li>
+                </ol>
+              </div>
+               
+            </div>
+             
+            <footer class="cn526">
+              <div class="cn527">
+                <div class="cn528">
+                   
+                  <a class="cn529" data-ditto-id="style-link-72" href="#">
+                     
+                    <span class="cn530">
+                       
+                      <span class="cn531">
+                         
+                        <span class="cn532"></span>
+                         
+                        <span class="cn533"></span>
+                         
+                      </span>
+                       
+                      <span class="cn534">
+                         
+                        <span class="cn535">
+                          <span class="cn536">
+                            Up
+                          </span>
+                          vote
+                        </span>
+                         
+                        <span class="cn537">
+                          <span class="cn538">
+                            Up
+                          </span>
+                          voted
+                        </span>
+                         
+                        <span class="cn539">
+                          5198
+                        </span>
+                         
+                      </span>
+                       
+                    </span>
+                     
+                  </a>
+                   
+                </div>
+                 
+                <div class="cn540">
+                   
+                  <iframe class="cn541" id="twitter-widget-10" title="X Post Button"></iframe>
+                   
+                </div>
+                 
+                <div class="cn542">
+                   
+                  <div class="cn543">
+                    <span class="cn544">
+                      <iframe class="cn545" height="1000px" title="fb:share_button Facebook Social Plugin" width="1000px"></iframe>
+                    </span>
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <span class="cn546">
+                 Posted 
+                <a class="cn547" data-ditto-id="style-link-81" href="https://blog.samaltman.com/what-i-wish-someone-had-told-me">
+                  <span class="cn548">
+                    2 years ago
+                  </span>
+                </a>
+                 
+              </span>
+               
+            </footer>
+             
+          </article>
+           
+          <div class="cn549">
+            <ul class="cn550">
+              <li class="cn551">
+                <a class="cn552" data-ditto-id="style-126" href="https://blog.samaltman.com/">
+                  1
+                </a>
+                 
+              </li>
+              <li class="cn553">
+                <a class="cn554" data-ditto-id="style-127" href="https://blog.samaltman.com/?page=2">
+                  2
+                </a>
+                 
+              </li>
+              <li class="cn555">
+                <a class="cn556" data-ditto-id="style-128" href="https://blog.samaltman.com/?page=3">
+                  3
+                </a>
+                 
+              </li>
+              <li class="cn557">
+                <a class="cn558" data-ditto-id="style-129" href="https://blog.samaltman.com/?page=4">
+                  4
+                </a>
+                 
+              </li>
+              <li class="cn559">
+                <a class="cn560" data-ditto-id="style-130" href="https://blog.samaltman.com/?page=5">
+                  5
+                </a>
+                 
+              </li>
+              <li class="cn561">
+                <a class="cn562" data-ditto-id="style-131" href="#">
+                  …
+                </a>
+                 
+              </li>
+              <li class="cn563">
+                <a class="cn564" data-ditto-id="style-132" href="https://blog.samaltman.com/?page=2">
+                  Next
+                </a>
+                 
+              </li>
+              <li class="cn565">
+                <a class="cn566" data-ditto-id="style-133" href="https://blog.samaltman.com/?page=13">
+                  Last
+                </a>
+                 
+              </li>
+            </ul>
+             
+          </div>
+           
+        </div>
+         
+        <aside class="cn567" id="sidebar">
+          <section class="cn568" id="bio">
+            <h3 class="cn569">
+              Sam Altman
+            </h3>
+             
+            <div class="cn570">
+              <form class="cn571">
+                <a class="cn572" data-ditto-id="style-button-4" href="#">
+                   Subscribe by Email 
+                </a>
+                 
+                <div class="cn573">
+                   Enter your email address to get email alerts about new posts on this site. Unsubscribe anytime. 
+                  <div class="cn574">
+                     Email address is invalid. 
+                  </div>
+                   
+                </div>
+                 
+              </form>
+               
+            </div>
+             
+            <iframe class="cn575" id="twitter-widget-0" title="Twitter Follow Button"></iframe>
+             
+          </section>
+           
+          <section class="cn576">
+            <form class="cn577">
+              <input class="cn578" data-ditto-id="style-input" name="query" placeholder="Search this site..." type="text" />
+               
+            </form>
+             
+            <div class="cn579">
+              <a class="cn580" data-ditto-id="style-link-82" href="https://blog.samaltman.com/archive">
+                Browse the Archive »
+              </a>
+               
+            </div>
+             
+          </section>
+           
+          <section class="cn581">
+            <nav class="cn582" id="menu_blogroll">
+              <ul class="cn583"></ul>
+               
+            </nav>
+             
+          </section>
+           
+          <section class="cn584" id="feed_link">
+            <a class="cn585" data-ditto-id="style-link-83" href="http://blog.samaltman.com/posts.atom">
+               
+              <span class="cn586"></span>
+               
+            </a>
+             
+          </section>
+           
+        </aside>
+         
+      </div>
+       
+    </div>
+     
+    <div class="cn587" id="fb-root"></div>
+    <div class="cn588" id="posthaven_spacer_0"></div>
+    <div class="cn589" id="posthaven_view_modal_1">
+      <img class="cn590" height="1080" src="public/assets/cloned/images/79e349176bf9.jpeg" width="810" />
+    </div>
+    <div class="cn591" id="glass_posthaven_view_modal_1"></div>
+    <textarea class="cn592"></textarea>
+</body>
+</html>

@@ -1,0 +1,7 @@
+export default function Icon7() {
+  return (
+    <svg className="w-auto h-5 inline overflow-hidden pointer-events-none focus:outline-clr-21 focus:[outline-style:auto] focus:outline-[5px]" data-component="icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.1838 8.72416L6.78824 3.53868C5.78891 2.92144 4.5 3.64029 4.5 4.81488V15.1859C4.5 16.3604 5.7889 17.0792 6.78823 16.4621L15.1838 11.2766C16.1328 10.6904 16.1328 9.31028 15.1838 8.72416Z" fill="white" style={{ fill: "white", fillOpacity: "1" }} />
+    </svg>
+  );
+}

@@ -1,0 +1,7 @@
+export const dynamic = "force-static";
+
+export function GET() {
+  return new Response("# Microsoft Advertising MCP Server in Open Pilot\n\nMicrosoft Advertising MCP server now in open pilot, enabling custom AI workflows with live campaign data using various AI assistants.\n\nThis is a generated ditto.site clone. It preserves captured page content, metadata, route structure, and static assets where available.\n\n## Routes\n\n- [Microsoft Advertising MCP Server in Open Pilot](https://ppcnewsfeed.com/ppc-news/2026-06/microsoft-advertising-mcp-server-expands-open-pilot/) - Microsoft Advertising MCP server now in open pilot, enabling custom AI workflows with live campaign data using various AI assistants.\n\n## Captured Content\n\n### Microsoft Advertising MCP Server in Open Pilot\nGet PPC updates your way: daily, weekly, or monthly Subscribe Your One-Stop Source for the Latest PPC News Home » PPC News » 2026-06 » Microsoft Advertising MCP Server in Open Pilot Microsoft Advertising MCP Server in Open Pilot June 19, 2026 The Microsoft Advertising MCP server is now in open pilot , enabling businesses and agencies to build custom AI workflows across different AI environments including M365 Copilot, ChatGPT, Claude and others using live campaign data The pilot focuses on read-only access , facilitating the integration of advertising data seamlessly into existing workflows directly. Read the official announcement here: Building a new AI economy that creates value for everyo\n", {
+    headers: { "content-type": "text/plain; charset=utf-8" },
+  });
+}

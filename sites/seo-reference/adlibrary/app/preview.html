@@ -1,0 +1,2652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meta Ads MCP setup guide for media buyers 2026</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "bebasNeue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d80888b38ddc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "courier";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/17503cd2d7c4.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GeistMono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1c33b42f5cab.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GeistSans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c61c6ef6268a.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/72487d939ec3.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7968db2b7369.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f7156215b7d9.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ef9e66f22144.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "instrumentSerif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("public/assets/cloned/fonts/905514201af2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d9986991fb6c.woff2") format("woff2");
+  unicode-range: U+460-52F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b453fff449d7.woff2") format("woff2");
+  unicode-range: U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/63283cd81bfc.woff2") format("woff2");
+  unicode-range: U+1F??;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ccbe898169e3.woff2") format("woff2");
+  unicode-range: U+370-377,U+37A-37F,U+384-38A,U+38C,U+38E-3A1,U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a5364c0b9923.woff2") format("woff2");
+  unicode-range: U+102-103,U+110-111,U+128-129,U+168-169,U+1A0-1A1,U+1AF-1B0,U+300-301,U+303-304,U+308-309,U+323,U+329,U+1EA0-1EF9,U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/08241edf7bc4.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f200ec2b8885.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "silkScreen";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ff6a34b55aec.ttf") format("truetype");
+}
+
+/* tokens */
+:root {
+  --background: rgb(243, 244, 246);
+  --foreground: rgb(0, 0, 0);
+  --primary: rgb(15, 23, 42);
+  --accent: rgb(31, 41, 55);
+  --border: rgb(229, 231, 235);
+  --muted-foreground: rgb(107, 114, 128);
+  --muted: rgb(55, 65, 81);
+  --surface: rgb(249, 250, 251);
+  --surface-2: rgb(255, 255, 255);
+  --color-001: rgb(156, 163, 175);
+  --color-002: rgb(75, 85, 99);
+  --color-003: rgb(17, 24, 39);
+  --color-004: rgb(209, 213, 219);
+}
+
+:root {
+  /* fonts */
+  --font-body: GeistSans, "GeistSans Fallback";
+  --font-001: GeistMono, ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  --font-002: instrumentSerif, "instrumentSerif Fallback";
+  /* fontSizes */
+  --font-size-001: 14px;
+  --font-size-002: 16px;
+  --font-size-003: 18px;
+  --font-size-004: 20px;
+  --font-size-005: 24px;
+  --font-size-006: 30px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 400;
+  --font-weight-003: 500;
+  --font-weight-004: 600;
+  --font-weight-005: 700;
+  /* lineHeights */
+  --line-height-001: 32px;
+  --line-height-002: 20px;
+  --line-height-003: 28px;
+  --line-height-004: 24px;
+  --line-height-005: 39px;
+  --line-height-006: 36px;
+  /* spacing */
+  --space-001: 2px;
+  --space-002: 4px;
+  --space-003: 6px;
+  --space-004: 8px;
+  --space-005: 10px;
+  --space-006: 12px;
+  --space-007: 16px;
+  --space-008: 24px;
+  --space-009: 32px;
+  --space-010: 40px;
+  --space-011: 64px;
+  /* radii */
+  --radius-001: 1.2px;
+  --radius-002: 3.2px;
+  --radius-003: 4px;
+  --radius-004: 9999px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{min-height:100vh;display:flex;flex-direction:column;overflow-x:clip;color:var(--foreground);font-family:var(--font-body);font-size:var(--font-size-005);font-weight:var(--font-weight-002);font-style:normal;line-height:var(--line-height-001);letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background);background-image:linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255))}
+.cn1{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:60;color:var(--surface);background-color:var(--primary)}
+.cn2{height:44px;display:flex;max-width:1280px;padding-top:var(--space-004);padding-right:var(--space-007);padding-bottom:var(--space-004);padding-left:var(--space-007);justify-content:center;align-items:center;row-gap:var(--space-006);column-gap:var(--space-006);font-size:var(--font-size-001);line-height:var(--line-height-002);margin-left:auto;margin-right:auto}
+.cn3{display:block;text-align:center}
+.cn4{display:block;padding-top:var(--space-002);padding-right:var(--space-006);padding-bottom:var(--space-002);padding-left:var(--space-006);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);flex-shrink:0;font-weight:var(--font-weight-003);background-color:rgba(248, 250, 252, 0.15);cursor:pointer}
+.cn5{width:24px;height:24px;display:block;position:absolute;top:22px;right:12px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);color:rgba(248, 250, 252, 0.8);text-align:center;transform:matrix(1, 0, 0, 1, 0, -12);transform-origin:12px 12px;cursor:pointer}
+.cn6{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn7{width:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:20;max-width:1280px;padding-right:var(--space-009);padding-left:var(--space-009)}
+.cn8{display:flex;padding-top:var(--space-007);padding-bottom:var(--space-007);justify-content:space-between;align-items:center}
+.cn9{width:226.5px;display:block;flex-shrink:0;cursor:pointer}
+.cn10{display:flex;align-items:center;row-gap:var(--space-007);column-gap:var(--space-007);justify-items:center;font-family:var(--font-001)}
+.cn11{width:auto;height:80px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 193 / 34;vertical-align:middle;filter:invert(1)}
+.cn12{display:block;font-size:var(--font-size-002);line-height:var(--line-height-004);white-space:nowrap;text-wrap:nowrap}
+.cn13{display:flex;align-items:center;row-gap:var(--space-006);column-gap:var(--space-006);font-family:var(--font-001)}
+.cn14{border-width:1px;border-style:solid;border-color:var(--foreground);display:block;padding-top:var(--space-003);padding-right:var(--space-007);padding-bottom:var(--space-003);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-size:var(--font-size-001);line-height:var(--line-height-002);cursor:pointer}
+.cn15{height:36px;display:block;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);text-align:center;cursor:pointer}
+.cn16{width:auto;height:28px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn17{display:block;padding-bottom:var(--space-011)}
+.cn18{display:block;max-width:1280px;margin-bottom:var(--space-004);padding-top:var(--space-009);padding-right:var(--space-008);padding-left:var(--space-008);margin-left:auto;margin-right:auto}
+.cn19{display:block;color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002)}
+.cn20{display:flex;flex-wrap:wrap;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002);list-style-type:none;list-style-position:outside}
+.cn21{display:flex;align-items:center}
+.cn22{display:block;cursor:pointer}
+.cn23{display:block;margin-right:var(--space-004);margin-left:var(--space-004);color:var(--color-001)}
+.cn24{display:flex;align-items:center}
+.cn25{display:block;cursor:pointer}
+.cn26{display:block;margin-right:var(--space-004);margin-left:var(--space-004);color:var(--color-001)}
+.cn27{display:flex;align-items:center}
+.cn28{display:block;color:var(--muted)}
+.cn29{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn30{display:block;max-width:1280px;padding-top:var(--space-007);padding-right:var(--space-008);padding-bottom:var(--space-007);padding-left:var(--space-008);margin-left:auto;margin-right:auto}
+.cn31{display:flex;justify-content:space-between;align-items:center}
+.cn32{display:flex;align-items:center;font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002)}
+.cn33{display:block;color:var(--muted-foreground);cursor:pointer}
+.cn34{display:block;margin-right:var(--space-004);margin-left:var(--space-004);color:var(--color-001)}
+.cn35{display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn36{display:block;margin-right:var(--space-006);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002)}
+.cn37{display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn38{width:36px;height:36px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;background-color:var(--surface-2);cursor:pointer}
+.cn39{width:16px;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn40{width:36px;height:36px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;background-color:var(--surface-2);cursor:pointer}
+.cn41{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn42{width:36px;height:36px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;text-align:center;background-color:var(--surface-2);cursor:pointer}
+.cn43{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn44{display:block;max-width:1280px;padding-top:var(--space-009);padding-right:var(--space-008);padding-bottom:var(--space-009);padding-left:var(--space-008);margin-left:auto;margin-right:auto}
+.cn45{width:100%;max-width:896px;display:flex;flex-direction:column}
+.cn46{display:block;margin-bottom:var(--space-008);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn47{display:block;margin-bottom:var(--space-009);font-family:var(--font-002);font-size:60px;font-weight:var(--font-weight-001);line-height:60px;letter-spacing:-1.5px}
+.cn48{height:64px;display:block;margin-bottom:var(--space-010);color:var(--color-002);font-weight:var(--font-weight-001)}
+.cn49{display:inline}
+.cn50{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:var(--space-010);column-gap:var(--space-010);color:var(--color-002);font-family:var(--font-001);font-size:var(--font-size-002);font-weight:var(--font-weight-001);line-height:var(--line-height-004)}
+.cn51{display:block;max-width:896px}
+.cn52{display:inline;cursor:pointer}
+.cn53{display:flex;align-items:center}
+.cn54{width:48px;height:48px;display:flex;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;background-color:var(--border)}
+.cn55{display:block;margin-left:var(--space-007)}
+.cn56{display:block;font-weight:var(--font-weight-003)}
+.cn57{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn58{display:block;color:var(--muted-foreground)}
+.cn59{display:block;max-width:1280px;margin-bottom:48px;padding-right:var(--space-008);padding-left:var(--space-008);margin-left:auto;margin-right:auto}
+.cn60{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn61{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn62{width:1232px;height:693px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn63{display:block;pointer-events:none}
+.cn64{display:inline;pointer-events:none}
+.cn65{width:900px;height:900px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 900 / 900;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn66{width:100%;height:693px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 450 / 450;vertical-align:middle}
+.cn67{display:block;max-width:1280px;padding-right:var(--space-008);padding-left:var(--space-008);margin-left:auto;margin-right:auto}
+.cn68{display:none}
+.cn69{display:none;margin-bottom:var(--space-008)}
+.cn70{width:100%;display:flex;padding-top:var(--space-006);padding-right:var(--space-007);padding-bottom:var(--space-006);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:space-between;align-items:center;text-align:left;background-color:var(--background);cursor:pointer}
+.cn71{display:block;min-width:0px;font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002)}
+.cn72{width:20px;height:20px;display:block;min-width:0px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn73{display:block;margin-top:var(--space-004);margin-bottom:auto}
+.cn74{width:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:var(--space-007);padding-bottom:var(--space-007);border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;justify-content:center;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);font-size:var(--font-size-001);font-weight:var(--font-weight-005);line-height:var(--line-height-002);text-align:center;background-color:var(--surface-2);cursor:pointer}
+.cn75{width:16px;height:16px;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn76{display:block;min-width:0px}
+.cn77{display:flex;row-gap:var(--space-011);column-gap:var(--space-011)}
+.cn78{width:896px;height:7538px;display:block}
+.cn79{height:100%;display:block;max-width:896px;font-size:var(--font-size-003);font-weight:var(--font-weight-001);line-height:29.25px}
+.cn80{height:100%;display:block;line-height:var(--line-height-001)}
+.cn81{display:block}
+.cn82{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn83{display:block}
+.cn84{border-left-width:4px;border-left-style:solid;border-left-color:var(--color-004);display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);padding-left:var(--space-007);color:var(--color-002);font-style:italic;line-height:var(--line-height-003)}
+.cn85{height:112px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent)}
+.cn86{display:inline;font-weight:var(--font-weight-002)}
+.cn87{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn87::before{content:"";display:none}
+.cn87::after{content:"";display:none}
+.cn88{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn88::before{content:"";display:none}
+.cn88::after{content:"";display:none}
+.cn89{display:inline;color:var(--primary);cursor:pointer}
+.cn90{display:block}
+.cn91{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn92{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn93{display:inline;color:var(--primary);cursor:pointer}
+.cn94{height:112px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn95{display:inline;color:var(--primary);cursor:pointer}
+.cn96{display:inline;color:var(--primary);cursor:pointer}
+.cn97{display:inline;color:var(--primary);cursor:pointer}
+.cn98{height:140px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn99{display:inline;font-weight:var(--font-weight-002)}
+.cn100{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn100::before{content:"";display:none}
+.cn100::after{content:"";display:none}
+.cn101{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn101::before{content:"";display:none}
+.cn101::after{content:"";display:none}
+.cn102{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn102::before{content:"";display:none}
+.cn102::after{content:"";display:none}
+.cn103{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn103::before{content:"";display:none}
+.cn103::after{content:"";display:none}
+.cn104{display:inline;color:var(--primary);cursor:pointer}
+.cn105{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn106{display:inline;color:var(--primary);cursor:pointer}
+.cn107{display:block}
+.cn108{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn109{height:112px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn110{display:inline;color:var(--primary);cursor:pointer}
+.cn111{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn112{display:inline;color:var(--primary);cursor:pointer}
+.cn113{display:inline;color:var(--primary);cursor:pointer}
+.cn114{height:140px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn115{display:inline;color:var(--primary);cursor:pointer}
+.cn116{display:inline;color:var(--primary);cursor:pointer}
+.cn117{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn118{display:block}
+.cn119{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn120{height:56px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn121{display:inline;color:var(--primary);cursor:pointer}
+.cn122{display:inline;color:var(--primary);cursor:pointer}
+.cn123{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn124{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn125{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn125::before{content:"";display:none}
+.cn125::after{content:"";display:none}
+.cn126{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:var(--space-007);margin-bottom:var(--space-007)}
+.cn127{width:63px;height:24px;display:flex;position:absolute;right:0px;z-index:10;padding-top:var(--space-002);padding-right:var(--space-004);padding-bottom:var(--space-002);padding-left:var(--space-004);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);color:var(--color-002);background-color:var(--border)}
+.cn128{display:block;font-size:12px;line-height:16px}
+.cn129{display:block;opacity:0.5;text-align:center;cursor:pointer}
+.cn130{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn131{height:194px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:auto;overflow-y:auto;font-family:var(--font-001);white-space:pre;text-wrap:nowrap;background-color:var(--surface)}
+.cn132{display:block;color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn132::before{content:"";display:none}
+.cn132::after{content:"";display:none}
+.cn133{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn134{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn135{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:var(--space-007);margin-bottom:var(--space-007)}
+.cn136{width:67px;height:24px;display:flex;position:absolute;right:0px;z-index:10;padding-top:var(--space-002);padding-right:var(--space-004);padding-bottom:var(--space-002);padding-left:var(--space-004);border-bottom-left-radius:var(--radius-001);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);color:var(--color-002);background-color:var(--border)}
+.cn137{display:block;font-size:12px;line-height:16px}
+.cn138{display:block;opacity:0.5;text-align:center;cursor:pointer}
+.cn139{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn140{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:auto;overflow-y:auto;font-family:var(--font-001);white-space:pre;text-wrap:nowrap;background-color:var(--surface)}
+.cn141{display:block;color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn141::before{content:"";display:none}
+.cn141::after{content:"";display:none}
+.cn142{height:56px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn143{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn143::before{content:"";display:none}
+.cn143::after{content:"";display:none}
+.cn144{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn144::before{content:"";display:none}
+.cn144::after{content:"";display:none}
+.cn145{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn146{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn147{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);margin-left:var(--space-008);list-style-type:disc;list-style-position:outside}
+.cn148{height:28px;display:list-item;padding-left:var(--space-002);color:var(--muted);line-height:var(--line-height-003)}
+.cn149{display:inline;font-weight:var(--font-weight-002)}
+.cn150{height:28px;display:list-item;margin-top:var(--space-004);padding-left:var(--space-002);color:var(--muted);line-height:var(--line-height-003)}
+.cn151{display:inline;font-weight:var(--font-weight-002)}
+.cn152{height:28px;display:list-item;margin-top:var(--space-004);padding-left:var(--space-002);color:var(--muted);line-height:var(--line-height-003)}
+.cn153{display:inline;font-weight:var(--font-weight-002)}
+.cn154{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn155{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn156{height:66px;border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:auto;overflow-y:auto;font-family:var(--font-001);white-space:pre;text-wrap:nowrap;background-color:var(--surface)}
+.cn157{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn157::before{content:"";display:none}
+.cn157::after{content:"";display:none}
+.cn158{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn159{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn159::before{content:"";display:none}
+.cn159::after{content:"";display:none}
+.cn160{display:block}
+.cn161{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn162{height:56px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn163{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn163::before{content:"";display:none}
+.cn163::after{content:"";display:none}
+.cn164{height:28px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn165{display:inline;font-weight:var(--font-weight-002)}
+.cn166{height:66px;border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:auto;overflow-y:auto;font-family:var(--font-001);white-space:pre;text-wrap:nowrap;background-color:var(--surface)}
+.cn167{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn167::before{content:"";display:none}
+.cn167::after{content:"";display:none}
+.cn168{height:112px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn169{display:inline;color:var(--primary);cursor:pointer}
+.cn170{height:28px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn171{display:inline;font-weight:var(--font-weight-002)}
+.cn172{height:66px;border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:auto;overflow-y:auto;font-family:var(--font-001);white-space:pre;text-wrap:nowrap;background-color:var(--surface)}
+.cn173{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn173::before{content:"";display:none}
+.cn173::after{content:"";display:none}
+.cn174{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn175{display:inline;color:var(--primary);cursor:pointer}
+.cn176{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn177{height:56px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn178{display:inline;color:var(--primary);cursor:pointer}
+.cn179{display:block}
+.cn180{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn181{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn182{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn183{height:642px;border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:auto;overflow-y:auto;font-family:var(--font-001);white-space:pre;text-wrap:nowrap;background-color:var(--surface)}
+.cn184{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--accent);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn184::before{content:"";display:none}
+.cn184::after{content:"";display:none}
+.cn185{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn186{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn186::before{content:"";display:none}
+.cn186::after{content:"";display:none}
+.cn187{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn188{display:inline;color:var(--primary);cursor:pointer}
+.cn189{height:112px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn190{display:inline;color:var(--primary);cursor:pointer}
+.cn191{display:block}
+.cn192{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn193{height:56px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn194{display:inline;color:var(--primary);cursor:pointer}
+.cn195{height:458px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);overflow-x:auto;overflow-y:auto}
+.cn196{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:table;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);overflow-x:hidden;overflow-y:hidden;background-color:var(--surface-2);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px}
+.cn197{display:table-header-group;vertical-align:middle;background-color:var(--surface)}
+.cn198{display:table-row;vertical-align:middle}
+.cn199{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--color-003);font-weight:var(--font-weight-004);text-align:left}
+.cn200{height:45px;border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--color-003);font-weight:var(--font-weight-004);text-align:left}
+.cn201{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--accent);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn201::before{content:"";display:none}
+.cn201::after{content:"";display:none}
+.cn202{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--color-003);font-weight:var(--font-weight-004);text-align:left}
+.cn203{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);color:var(--accent);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn203::before{content:"";display:none}
+.cn203::after{content:"";display:none}
+.cn204{display:table-row-group;vertical-align:middle}
+.cn205{display:table-row;vertical-align:middle}
+.cn206{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn207{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn208{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn209{display:table-row;vertical-align:middle}
+.cn210{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn211{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn212{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn213{display:table-row;vertical-align:middle}
+.cn214{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn215{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn216{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn217{display:table-row;vertical-align:middle}
+.cn218{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn219{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn220{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn221{display:table-row;vertical-align:middle}
+.cn222{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn223{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn224{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn225{display:table-row;vertical-align:middle}
+.cn226{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn227{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn228{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn229{display:table-row;vertical-align:middle}
+.cn230{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn231{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn232{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-cell;padding-top:var(--space-003);padding-right:var(--space-006);padding-bottom:var(--space-003);padding-left:var(--space-006);vertical-align:middle;color:var(--muted)}
+.cn233{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn234{display:inline;color:var(--primary);cursor:pointer}
+.cn235{display:inline;color:var(--primary);cursor:pointer}
+.cn236{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn237{height:28px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn238{display:inline;color:var(--primary);cursor:pointer}
+.cn239{display:block}
+.cn240{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn241{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn242{height:28px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn243{display:inline;font-weight:var(--font-weight-002)}
+.cn244{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);margin-left:var(--space-008);list-style-type:disc;list-style-position:outside}
+.cn245{height:56px;display:list-item;padding-left:var(--space-002);color:var(--muted);line-height:var(--line-height-003)}
+.cn246{display:inline;font-weight:var(--font-weight-002)}
+.cn247{display:inline;color:var(--primary);cursor:pointer}
+.cn248{height:56px;display:list-item;margin-top:var(--space-004);padding-left:var(--space-002);color:var(--muted);line-height:var(--line-height-003)}
+.cn249{display:inline;font-weight:var(--font-weight-002)}
+.cn250{height:56px;display:list-item;margin-top:var(--space-004);padding-left:var(--space-002);color:var(--muted);line-height:var(--line-height-003)}
+.cn251{display:inline;font-weight:var(--font-weight-002)}
+.cn252{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn253{display:inline;font-weight:var(--font-weight-002)}
+.cn254{height:140px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn255{display:inline;font-weight:var(--font-weight-002)}
+.cn256{display:inline;color:var(--primary);cursor:pointer}
+.cn257{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn257::before{content:"";display:none}
+.cn257::after{content:"";display:none}
+.cn258{display:inline;color:var(--primary);cursor:pointer}
+.cn259{display:inline;color:var(--primary);cursor:pointer}
+.cn260{height:84px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn261{display:inline;color:var(--primary);cursor:pointer}
+.cn262{height:168px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn263{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn263::before{content:"";display:none}
+.cn263::after{content:"";display:none}
+.cn264{display:inline;color:var(--primary);cursor:pointer}
+.cn265{display:inline;color:var(--primary);cursor:pointer}
+.cn266{display:inline;color:var(--primary);cursor:pointer}
+.cn267{display:inline;color:var(--primary);cursor:pointer}
+.cn268{display:block}
+.cn269{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn270{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn271{height:140px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn272{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn272::before{content:"";display:none}
+.cn272::after{content:"";display:none}
+.cn273{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn274{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn275{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn276{height:112px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn277{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn277::before{content:"";display:none}
+.cn277::after{content:"";display:none}
+.cn278{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn279{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn280{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn280::before{content:"";display:none}
+.cn280::after{content:"";display:none}
+.cn281{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn281::before{content:"";display:none}
+.cn281::after{content:"";display:none}
+.cn282{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn282::before{content:"";display:none}
+.cn282::after{content:"";display:none}
+.cn283{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn283::before{content:"";display:none}
+.cn283::after{content:"";display:none}
+.cn284{display:inline;padding-top:var(--space-001);padding-right:var(--space-003);padding-bottom:var(--space-001);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);font-family:var(--font-001);font-size:var(--font-size-001);line-height:var(--line-height-002);overflow-wrap:break-word;background-color:var(--background)}
+.cn284::before{content:"";display:none}
+.cn284::after{content:"";display:none}
+.cn285{display:block;margin-top:var(--space-009);margin-bottom:var(--space-006);font-size:var(--font-size-004);line-height:var(--line-height-003);letter-spacing:-0.5px}
+.cn286{display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn287{display:block;margin-top:var(--space-010);margin-bottom:var(--space-007);font-family:var(--font-002);font-size:var(--font-size-005);letter-spacing:-0.6px}
+.cn288{height:140px;display:block;margin-top:var(--space-007);margin-bottom:var(--space-007);color:var(--accent);line-height:var(--line-height-003)}
+.cn289{display:inline;color:var(--primary);cursor:pointer}
+.cn290{display:inline;color:var(--primary);cursor:pointer}
+.cn291{display:inline;color:var(--primary);cursor:pointer}
+.cn292{display:inline;color:var(--primary);cursor:pointer}
+.cn293{width:272px;display:block}
+.cn294{height:704px;display:flex;position:sticky;top:80px;max-height:704px;margin-bottom:var(--space-009);padding-left:20px;flex-direction:column}
+.cn295{display:block;margin-bottom:var(--space-007);flex-shrink:0;color:var(--color-001);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase}
+.cn296{height:598px;display:block;overflow-x:auto;overflow-y:auto}
+.cn297{border-left-width:2px;border-left-style:solid;border-left-color:var(--background);display:block;padding-left:var(--space-007);list-style-type:none;list-style-position:outside}
+.cn298{display:list-item}
+.cn299{border-left-width:2px;border-left-style:solid;border-left-color:var(--primary);display:block;margin-left:-2px;padding-top:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-007);color:var(--primary);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn300{display:list-item;margin-top:var(--space-004)}
+.cn301{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn302{display:list-item;margin-top:var(--space-004)}
+.cn303{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn304{display:block;margin-top:var(--space-004);list-style-type:none;list-style-position:outside}
+.cn305{display:list-item}
+.cn306{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn307{display:list-item;margin-top:var(--space-004)}
+.cn308{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn309{display:list-item;margin-top:var(--space-004)}
+.cn310{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn311{display:list-item;margin-top:var(--space-004)}
+.cn312{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn313{display:list-item;margin-top:var(--space-004)}
+.cn314{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn315{display:list-item;margin-top:var(--space-004)}
+.cn316{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn317{display:list-item;margin-top:var(--space-004)}
+.cn318{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn319{display:list-item;margin-top:var(--space-004)}
+.cn320{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn321{display:list-item;margin-top:var(--space-004)}
+.cn322{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn323{display:block;margin-top:var(--space-004);list-style-type:none;list-style-position:outside}
+.cn324{display:list-item}
+.cn325{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn326{display:list-item;margin-top:var(--space-004)}
+.cn327{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn328{display:list-item;margin-top:var(--space-004)}
+.cn329{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn330{display:list-item;margin-top:var(--space-004)}
+.cn331{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn332{display:list-item;margin-top:var(--space-004)}
+.cn333{display:block;margin-left:var(--space-006);padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);cursor:pointer}
+.cn334{display:list-item;margin-top:var(--space-004)}
+.cn335{display:block;padding-top:var(--space-002);padding-bottom:var(--space-002);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:pointer}
+.cn336{width:252px;height:70px;display:block;padding-top:var(--space-004);flex-shrink:0}
+.cn337{display:block;margin-top:var(--space-004)}
+.cn338{width:100%;height:54px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:var(--space-007);padding-bottom:var(--space-007);border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;justify-content:center;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);font-size:var(--font-size-001);font-weight:var(--font-weight-005);line-height:var(--line-height-002);text-align:center;background-color:var(--surface-2);cursor:pointer}
+.cn339{width:auto;height:16px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn340{display:block}
+.cn341{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:var(--space-011);padding-top:var(--space-009)}
+.cn342{display:block;margin-bottom:var(--space-009);font-family:var(--font-002);font-size:var(--font-size-006);font-weight:var(--font-weight-001);line-height:var(--line-height-006);letter-spacing:-0.75px}
+.cn343{display:grid;row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:98px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn344{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);cursor:pointer}
+.cn345{height:100%;display:block;font-weight:var(--font-weight-001)}
+.cn346{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:var(--space-011);padding-top:var(--space-009)}
+.cn347{display:block;margin-bottom:var(--space-009);font-family:var(--font-002);font-size:var(--font-size-006);font-weight:var(--font-weight-001);line-height:var(--line-height-006);letter-spacing:-0.75px}
+.cn348{display:block}
+.cn349{display:grid;row-gap:var(--space-009);column-gap:var(--space-009);grid-template-rows:712.859px 712.859px 732.859px;grid-template-columns:repeat(auto-fit, minmax(342px, 1fr))}
+.cn350{height:712.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn351{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn352{height:100%;display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;background-color:var(--background)}
+.cn353{width:96px;height:90px;display:block;opacity:0.3;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 96 / 96;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn354{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn355{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn356{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn357{display:inline;cursor:pointer}
+.cn358{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn359{display:flex;justify-content:space-between;align-items:center}
+.cn360{height:712.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn361{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn362{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn363{width:387.328px;height:217.859px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn364{display:block;object-fit:cover;pointer-events:none}
+.cn365{display:inline;pointer-events:none}
+.cn366{width:387px;height:387px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 600 / 600;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn367{width:100%;height:218px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 300 / 300;vertical-align:middle}
+.cn368{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn369{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn370{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn371{display:inline;cursor:pointer}
+.cn372{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn373{display:flex;margin-top:7px;justify-content:space-between;align-items:center}
+.cn374{height:712.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn375{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn376{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn377{width:387.344px;height:217.875px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn378{display:block;object-fit:cover;pointer-events:none}
+.cn379{display:inline;pointer-events:none}
+.cn380{width:387px;height:387px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 600 / 600;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn381{width:100%;height:218px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 300 / 300;vertical-align:middle}
+.cn382{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn383{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn384{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn385{display:inline;cursor:pointer}
+.cn386{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn387{display:flex;margin-top:77.9844px;justify-content:space-between;align-items:center}
+.cn388{height:712.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn389{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn390{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn391{width:387.328px;height:217.859px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn392{display:block;object-fit:cover;pointer-events:none}
+.cn393{display:inline;pointer-events:none}
+.cn394{width:387px;height:387px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 600 / 600;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn395{width:100%;height:218px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 300 / 300;vertical-align:middle}
+.cn396{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn397{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn398{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn399{display:inline;cursor:pointer}
+.cn400{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn401{display:flex;justify-content:space-between;align-items:center}
+.cn402{height:712.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn403{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn404{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn405{width:387.328px;height:217.859px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn406{display:block;object-fit:cover;pointer-events:none}
+.cn407{display:inline;pointer-events:none}
+.cn408{width:387px;height:387px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 600 / 600;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn409{width:100%;height:218px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 300 / 300;vertical-align:middle}
+.cn410{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn411{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn412{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn413{display:inline;cursor:pointer}
+.cn414{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn415{display:flex;margin-top:39px;justify-content:space-between;align-items:center}
+.cn416{height:712.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn417{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn418{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn419{width:387.344px;height:217.875px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn420{display:block;object-fit:cover;pointer-events:none}
+.cn421{display:inline;pointer-events:none}
+.cn422{width:387px;height:211px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 600 / 327;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn423{width:100%;height:218px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 300 / 163;vertical-align:middle}
+.cn424{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn425{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn426{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn427{display:inline;cursor:pointer}
+.cn428{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn429{display:flex;margin-top:38.9844px;justify-content:space-between;align-items:center}
+.cn430{height:732.859px;border-width:1px;border-style:solid;border-color:var(--color-001);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-direction:column}
+.cn431{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9}
+.cn432{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn433{width:387.328px;height:217.859px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn434{display:block;object-fit:cover;pointer-events:none}
+.cn435{display:inline;pointer-events:none}
+.cn436{width:387px;height:387px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 600 / 600;vertical-align:middle;color:rgba(0, 0, 0, 0);pointer-events:none}
+.cn437{width:100%;height:218px;display:block;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 300 / 300;vertical-align:middle}
+.cn438{display:flex;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);flex-direction:column;flex-grow:1}
+.cn439{display:block;margin-bottom:var(--space-007);color:var(--muted-foreground);font-family:var(--font-001);font-size:var(--font-size-001);font-weight:var(--font-weight-001);line-height:var(--line-height-002);letter-spacing:0.35px;text-transform:uppercase}
+.cn440{display:block;margin-bottom:var(--space-007);font-weight:var(--font-weight-001)}
+.cn441{display:inline;cursor:pointer}
+.cn442{display:block;margin-bottom:var(--space-008);color:var(--color-002);font-weight:var(--font-weight-001);line-height:var(--line-height-005)}
+.cn443{display:flex;justify-content:space-between;align-items:center}
+.cn444{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:var(--space-011);padding-top:var(--space-009)}
+.cn445{display:block;margin-bottom:var(--space-009);font-family:var(--font-002);font-size:var(--font-size-006);font-weight:var(--font-weight-001);line-height:var(--line-height-006);letter-spacing:-0.75px}
+.cn446{display:grid;row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:98px 66px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn447{height:98px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);cursor:pointer}
+.cn448{display:block;font-weight:var(--font-weight-001)}
+.cn449{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);cursor:pointer}
+.cn450{height:100%;display:block;font-weight:var(--font-weight-001)}
+.cn451{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);cursor:pointer}
+.cn452{height:100%;display:block;font-weight:var(--font-weight-001)}
+.cn453{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;margin-top:var(--space-011);padding-top:var(--space-009)}
+.cn454{display:block;margin-bottom:var(--space-009);font-family:var(--font-002);font-size:var(--font-size-006);font-weight:var(--font-weight-001);line-height:var(--line-height-006);letter-spacing:-0.75px}
+.cn455{display:grid;row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:66px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn456{height:66px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);cursor:pointer}
+.cn457{height:100%;display:block;font-weight:var(--font-weight-001)}
+.cn458{height:66px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-007);padding-right:var(--space-007);padding-bottom:var(--space-007);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);cursor:pointer}
+.cn459{height:100%;display:block;font-weight:var(--font-weight-001)}
+.cn460{height:829px;display:block;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-002);line-height:var(--line-height-004)}
+.cn461{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;max-width:1280px;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009)}
+.cn462{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-008);padding-right:var(--space-008);padding-bottom:var(--space-008);padding-left:var(--space-008);border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-right-radius:12px;border-bottom-left-radius:12px;background-color:var(--surface)}
+.cn463{display:flex;justify-content:space-between;align-items:center;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn464{display:block}
+.cn465{display:block;margin-bottom:var(--space-002);color:var(--color-003);font-size:var(--font-size-003);font-weight:var(--font-weight-003);line-height:var(--line-height-003)}
+.cn466{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn467{width:350px;display:flex;min-width:340px;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn468{width:225px;height:42px;border-width:1px;border-style:solid;border-color:var(--color-004);display:block;min-width:0px;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;font-size:var(--font-size-001);line-height:var(--line-height-002);background-color:var(--surface-2);cursor:text}
+.cn468::placeholder{color:rgb(156, 163, 175)}
+.cn469{display:block;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);color:var(--surface-2);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-002);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-003);cursor:pointer}
+.cn470{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;max-width:1280px;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009)}
+.cn471{display:flex;justify-content:space-between;align-items:center}
+.cn472{display:flex;align-items:center;cursor:pointer}
+.cn473{display:flex;align-items:center;row-gap:var(--space-007);column-gap:var(--space-007);justify-items:center;font-family:var(--font-001)}
+.cn474{width:auto;height:80px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 193 / 34;vertical-align:middle;filter:invert(1)}
+.cn475{display:block;white-space:nowrap;text-wrap:nowrap}
+.cn476{height:40px;display:flex;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:var(--space-006);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:space-between;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);text-align:center;cursor:pointer}
+.cn477{overflow-x:hidden;overflow-y:hidden;pointer-events:none;-webkit-line-clamp:1}
+.cn478{width:auto;height:16px;display:block;opacity:0.5;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn479{display:grid;margin-top:var(--space-009);row-gap:var(--space-006);column-gap:var(--space-009);grid-template-rows:24px 24px 24px;grid-template-columns:repeat(4, minmax(0, 1fr))}
+.cn480{display:block;cursor:pointer}
+.cn481{display:block;cursor:pointer}
+.cn482{display:block;cursor:pointer}
+.cn483{display:block;cursor:pointer}
+.cn484{display:block;cursor:pointer}
+.cn485{display:block;cursor:pointer}
+.cn486{display:block;cursor:pointer}
+.cn487{display:block;cursor:pointer}
+.cn488{display:block;cursor:pointer}
+.cn489{display:block;cursor:pointer}
+.cn490{display:block;cursor:pointer}
+.cn491{display:block;cursor:pointer}
+.cn492{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:grid;margin-top:var(--space-009);padding-top:var(--space-008);row-gap:var(--space-009);column-gap:var(--space-009);grid-template-rows:164px;grid-template-columns:repeat(4, minmax(0, 1fr))}
+.cn493{height:164px;display:block}
+.cn494{display:block;margin-bottom:var(--space-006);color:var(--muted-foreground);font-size:var(--font-size-001);font-weight:var(--font-weight-004);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase}
+.cn495{display:block;font-size:var(--font-size-001);line-height:var(--line-height-002);list-style-type:none;list-style-position:outside}
+.cn496{display:list-item}
+.cn497{display:inline;cursor:pointer}
+.cn498{display:list-item;margin-top:var(--space-004)}
+.cn499{display:inline;cursor:pointer}
+.cn500{display:list-item;margin-top:var(--space-004)}
+.cn501{display:inline;cursor:pointer}
+.cn502{display:list-item;margin-top:var(--space-004)}
+.cn503{display:inline;cursor:pointer}
+.cn504{display:list-item;margin-top:var(--space-004)}
+.cn505{display:inline;cursor:pointer}
+.cn506{display:block}
+.cn507{display:block;margin-bottom:var(--space-006);color:var(--muted-foreground);font-size:var(--font-size-001);font-weight:var(--font-weight-004);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase}
+.cn508{display:block;font-size:var(--font-size-001);line-height:var(--line-height-002);list-style-type:none;list-style-position:outside}
+.cn509{display:list-item}
+.cn510{display:inline;cursor:pointer}
+.cn511{display:list-item;margin-top:var(--space-004)}
+.cn512{display:inline;cursor:pointer}
+.cn513{display:list-item;margin-top:var(--space-004)}
+.cn514{display:inline;cursor:pointer}
+.cn515{display:list-item;margin-top:var(--space-004)}
+.cn516{display:inline;cursor:pointer}
+.cn517{height:164px;display:block}
+.cn518{display:block;margin-bottom:var(--space-006);color:var(--muted-foreground);font-size:var(--font-size-001);font-weight:var(--font-weight-004);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase}
+.cn519{display:block;font-size:var(--font-size-001);line-height:var(--line-height-002);list-style-type:none;list-style-position:outside}
+.cn520{display:list-item}
+.cn521{display:inline;cursor:pointer}
+.cn522{display:list-item;margin-top:var(--space-004)}
+.cn523{display:inline;cursor:pointer}
+.cn524{display:list-item;margin-top:var(--space-004)}
+.cn525{display:inline;cursor:pointer}
+.cn526{display:list-item;margin-top:var(--space-004)}
+.cn527{display:inline;cursor:pointer}
+.cn528{display:list-item;margin-top:var(--space-004)}
+.cn529{display:inline;cursor:pointer}
+.cn530{height:164px;display:block}
+.cn531{display:block;margin-bottom:var(--space-006);color:var(--muted-foreground);font-size:var(--font-size-001);font-weight:var(--font-weight-004);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase}
+.cn532{display:block;font-size:var(--font-size-001);line-height:var(--line-height-002);list-style-type:none;list-style-position:outside}
+.cn533{display:list-item}
+.cn534{display:inline;cursor:pointer}
+.cn535{display:list-item;margin-top:var(--space-004)}
+.cn536{display:inline;cursor:pointer}
+.cn537{display:list-item;margin-top:var(--space-004)}
+.cn538{display:inline;cursor:pointer}
+.cn539{display:list-item;margin-top:var(--space-004)}
+.cn540{display:inline;cursor:pointer}
+.cn541{display:list-item;margin-top:var(--space-004)}
+.cn542{display:inline;cursor:pointer}
+.cn543{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;max-width:1280px;padding-top:var(--space-008);padding-right:var(--space-009);padding-bottom:var(--space-008);padding-left:var(--space-009)}
+.cn544{width:100%;max-width:448px;display:block}
+.cn545{display:block;margin-bottom:var(--space-004);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn546{display:flex;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn547{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-grow:1;flex-basis:0%}
+.cn548{width:auto;height:16px;display:block;position:absolute;top:19px;left:12px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--color-001);transform:matrix(1, 0, 0, 1, 0, -8);transform-origin:8px 8px}
+.cn549{width:100%;height:38px;border-width:1px;border-style:solid;border-color:var(--border);display:inline-block;padding-top:var(--space-004);padding-right:var(--space-006);padding-bottom:var(--space-004);padding-left:36px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);overflow-x:clip;overflow-y:clip;font-size:var(--font-size-001);line-height:var(--line-height-002);cursor:text}
+.cn549::placeholder{color:rgb(156, 163, 175)}
+.cn550{border-width:1px;border-style:solid;border-color:var(--foreground);display:block;padding-top:var(--space-004);padding-right:var(--space-007);padding-bottom:var(--space-004);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);font-size:var(--font-size-001);line-height:var(--line-height-002);text-align:center;cursor:pointer}
+.cn551{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;max-width:1280px;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);padding-left:var(--space-009)}
+.cn552{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-002)}
+
+@media (max-width: 571px) {
+.cn0{font-size:var(--font-size-002);line-height:var(--line-height-004)}
+.cn2{max-width:none}
+.cn7{padding-right:var(--space-007);padding-left:var(--space-007);max-width:none}
+.cn9{width:168.297px}
+.cn11{height:48px}
+.cn12{font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn18{padding-right:var(--space-007);padding-left:var(--space-007)}
+.cn30{padding-right:var(--space-007);padding-left:var(--space-007)}
+.cn44{padding-right:var(--space-007);padding-left:var(--space-007)}
+.cn47{font-size:36px;line-height:45px;letter-spacing:-0.9px}
+.cn48{height:97.5px;font-size:var(--font-size-004);line-height:32.5px}
+.cn50{font-size:inherit;line-height:inherit}
+.cn54{width:47.8281px}
+.cn59{padding-right:var(--space-007);padding-left:var(--space-007)}
+.cn65{width:343px;height:343px}
+.cn66{height:193px}
+.cn67{padding-right:var(--space-007);padding-left:var(--space-007)}
+.cn68{display:block}
+.cn69{display:block}
+.cn71{min-width:0}
+.cn72{min-width:0}
+.cn73{margin-bottom:0}
+.cn74{height:54px}
+.cn75{min-width:0}
+.cn76{min-width:0}
+.cn77{flex-direction:column;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn78{width:343px;height:14287px}
+.cn80{line-height:31.5px}
+.cn85{height:308px}
+.cn91{line-height:var(--line-height-001)}
+.cn92{height:196px}
+.cn94{height:308px}
+.cn98{height:392px}
+.cn105{height:224px}
+.cn108{line-height:var(--line-height-001)}
+.cn109{height:252px}
+.cn111{height:224px}
+.cn114{height:308px}
+.cn119{line-height:var(--line-height-001)}
+.cn120{height:112px}
+.cn142{height:168px}
+.cn148{height:56px}
+.cn150{height:56px}
+.cn152{height:84px}
+.cn156{height:65.5px}
+.cn158{height:196px}
+.cn161{line-height:var(--line-height-001)}
+.cn162{height:112px}
+.cn166{height:65.5px}
+.cn168{height:280px}
+.cn172{height:65.5px}
+.cn174{height:224px}
+.cn177{height:140px}
+.cn180{line-height:var(--line-height-001)}
+.cn183{height:632.5px}
+.cn185{height:196px}
+.cn187{height:168px}
+.cn189{height:252px}
+.cn192{line-height:var(--line-height-001)}
+.cn193{height:112px}
+.cn195{height:1114px}
+.cn200{height:107.5px}
+.cn233{height:224px}
+.cn237{height:56px}
+.cn240{line-height:var(--line-height-001)}
+.cn245{height:112px}
+.cn248{height:140px}
+.cn250{height:168px}
+.cn252{height:252px}
+.cn254{height:364px}
+.cn260{height:196px}
+.cn262{height:448px}
+.cn269{line-height:var(--line-height-001)}
+.cn271{height:336px}
+.cn276{height:308px}
+.cn279{height:224px}
+.cn287{line-height:var(--line-height-001)}
+.cn288{height:392px}
+.cn293{display:none}
+.cn294{display:none}
+.cn343{grid-template-rows:82px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn349{grid-template-rows:522.812px 567.812px 516.812px 542.812px 522.812px 542.812px 542.812px}
+.cn350{height:522.812px}
+.cn356{font-size:var(--font-size-004);line-height:25px}
+.cn358{line-height:26px}
+.cn360{height:567.812px}
+.cn366{width:341px;height:341px}
+.cn367{height:192px}
+.cn370{font-size:var(--font-size-004);line-height:25px}
+.cn372{line-height:26px}
+.cn373{margin-top:0}
+.cn374{height:516.812px}
+.cn380{width:341px;height:341px}
+.cn381{height:192px}
+.cn384{font-size:var(--font-size-004);line-height:25px}
+.cn386{line-height:26px}
+.cn387{margin-top:0}
+.cn388{height:542.812px}
+.cn394{width:341px;height:341px}
+.cn395{height:192px}
+.cn398{font-size:var(--font-size-004);line-height:25px}
+.cn400{line-height:26px}
+.cn402{height:522.812px}
+.cn408{width:341px;height:341px}
+.cn409{height:192px}
+.cn412{font-size:var(--font-size-004);line-height:25px}
+.cn414{line-height:26px}
+.cn415{margin-top:0}
+.cn416{height:542.812px}
+.cn422{width:341px;height:186px}
+.cn423{height:192px}
+.cn426{font-size:var(--font-size-004);line-height:25px}
+.cn428{line-height:26px}
+.cn429{margin-top:0}
+.cn430{height:542.812px}
+.cn436{width:341px;height:341px}
+.cn437{height:192px}
+.cn440{font-size:var(--font-size-004);line-height:25px}
+.cn442{line-height:26px}
+.cn446{grid-template-rows:82px 82px 82px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn447{height:82px}
+.cn455{grid-template-rows:58px 58px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn456{height:58px}
+.cn458{height:58px}
+.cn460{height:1251px;font-size:inherit;line-height:inherit}
+.cn461{padding-right:var(--space-007);padding-left:var(--space-007);max-width:none}
+.cn463{flex-direction:column;justify-content:initial;align-items:initial}
+.cn467{width:293px;min-width:0px;flex-direction:column}
+.cn468{width:293px}
+.cn470{padding-right:var(--space-007);padding-left:var(--space-007);max-width:none}
+.cn474{height:48px}
+.cn475{font-size:var(--font-size-001);line-height:var(--line-height-002)}
+.cn476{padding-left:0}
+.cn479{grid-template-rows:24px 24px 24px 24px 48px 24px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn492{grid-template-rows:164px 164px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn543{padding-right:var(--space-007);padding-left:var(--space-007);max-width:none}
+.cn551{padding-right:var(--space-007);padding-left:var(--space-007);max-width:none}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{font-size:var(--font-size-002);line-height:var(--line-height-004)}
+.cn2{max-width:768px}
+.cn7{max-width:768px}
+.cn12{font-size:inherit;line-height:inherit}
+.cn47{font-size:48px;line-height:48px;letter-spacing:-1.2px}
+.cn48{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn50{font-size:inherit;line-height:inherit}
+.cn65{width:720px;height:720px}
+.cn66{height:405px}
+.cn77{row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn78{width:540px;height:10223.5px}
+.cn80{line-height:31.5px}
+.cn85{height:196px}
+.cn91{line-height:var(--line-height-001)}
+.cn92{height:112px}
+.cn94{height:196px}
+.cn98{height:252px}
+.cn105{height:140px}
+.cn108{line-height:var(--line-height-001)}
+.cn109{height:168px}
+.cn111{height:140px}
+.cn114{height:224px}
+.cn119{line-height:var(--line-height-001)}
+.cn120{height:84px}
+.cn142{height:112px}
+.cn150{height:56px}
+.cn152{height:56px}
+.cn156{height:65.5px}
+.cn158{height:auto}
+.cn161{line-height:var(--line-height-001)}
+.cn162{height:84px}
+.cn166{height:65.5px}
+.cn168{height:168px}
+.cn172{height:65.5px}
+.cn174{height:140px}
+.cn177{height:112px}
+.cn180{line-height:var(--line-height-001)}
+.cn183{height:632.5px}
+.cn185{height:112px}
+.cn187{height:112px}
+.cn189{height:168px}
+.cn192{line-height:var(--line-height-001)}
+.cn193{height:84px}
+.cn195{height:830.5px}
+.cn200{height:76px}
+.cn233{height:140px}
+.cn240{line-height:var(--line-height-001)}
+.cn248{height:84px}
+.cn250{height:84px}
+.cn252{height:168px}
+.cn254{height:224px}
+.cn260{height:112px}
+.cn262{height:280px}
+.cn269{line-height:var(--line-height-001)}
+.cn271{height:224px}
+.cn276{height:196px}
+.cn279{height:140px}
+.cn287{line-height:var(--line-height-001)}
+.cn288{height:252px}
+.cn293{width:180px}
+.cn294{height:928px;max-height:928px}
+.cn296{height:822px}
+.cn336{width:160px}
+.cn343{grid-template-rows:82px}
+.cn349{grid-template-rows:628.375px 570.375px 576.375px 564.375px}
+.cn350{height:628.375px}
+.cn356{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn358{line-height:26px}
+.cn359{margin-top:52px}
+.cn360{height:628.375px}
+.cn366{width:342px;height:342px}
+.cn367{height:192px}
+.cn370{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn372{line-height:26px}
+.cn373{margin-top:0}
+.cn374{height:570.375px}
+.cn380{width:342px;height:342px}
+.cn381{height:192px}
+.cn384{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn386{line-height:26px}
+.cn387{margin-top:0}
+.cn388{height:570.375px}
+.cn394{width:342px;height:342px}
+.cn395{height:192px}
+.cn398{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn400{line-height:26px}
+.cn401{margin-top:var(--space-003)}
+.cn402{height:576.375px}
+.cn408{width:342px;height:342px}
+.cn409{height:192px}
+.cn412{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn414{line-height:26px}
+.cn415{margin-top:0}
+.cn416{height:576.375px}
+.cn422{width:342px;height:186px}
+.cn423{height:192px}
+.cn426{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn428{line-height:26px}
+.cn429{margin-top:var(--space-006)}
+.cn430{height:564.375px}
+.cn436{width:342px;height:342px}
+.cn437{height:192px}
+.cn440{font-size:var(--font-size-005);line-height:var(--line-height-001)}
+.cn442{line-height:26px}
+.cn446{grid-template-rows:82px 82px}
+.cn447{height:82px}
+.cn455{grid-template-rows:58px}
+.cn456{height:58px}
+.cn458{height:58px}
+.cn460{height:873px;font-size:inherit;line-height:inherit}
+.cn461{max-width:768px}
+.cn467{width:340px}
+.cn468{width:215px}
+.cn470{max-width:768px}
+.cn479{grid-template-rows:24px 24px 48px}
+.cn543{max-width:768px}
+.cn551{max-width:768px}
+}
+
+@media (min-width: 1601px) {
+.cn2{max-width:1376px}
+.cn7{max-width:1376px;margin-right:272px;margin-left:272px}
+.cn294{height:984px;max-height:984px}
+.cn296{height:878px}
+.cn299{color:var(--muted-foreground);border-left-width:0;border-left-style:initial;border-left-color:initial;margin-left:0;padding-left:0}
+.cn303{border-left-width:2px;border-left-style:solid;border-left-color:var(--primary);margin-left:-2px;padding-left:var(--space-007);color:var(--primary)}
+.cn461{max-width:1376px;margin-right:272px;margin-left:272px}
+.cn470{max-width:1376px;margin-right:272px;margin-left:272px}
+.cn476{box-shadow:rgb(255, 255, 255) 0px 0px 0px 2px, rgb(2, 8, 23) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px}
+.cn543{max-width:1376px;margin-right:272px;margin-left:272px}
+.cn551{max-width:1376px;margin-right:272px;margin-left:272px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1">
+      <div class="cn2">
+        <span class="cn3">
+          Sign up for our special Launch offer
+        </span>
+        <a class="cn4" href="https://adlibrary.com/signup">
+          Click here
+        </a>
+      </div>
+      <button class="cn5" aria-label="Dismiss announcement">
+        <svg class="cn6" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+    <header class="cn7">
+      <div class="cn8">
+        <a class="cn9" href="https://adlibrary.com/">
+          <div class="cn10">
+            <img class="cn11" alt="adlibrary.com Logo" height="34" src="public/assets/cloned/images/5163bf618313.png" width="193" />
+            <span class="cn12">
+              adlibrary.com
+            </span>
+          </div>
+        </a>
+        <nav class="cn13">
+          <a class="cn14" href="https://adlibrary.com/login">
+            Login
+          </a>
+          <button class="cn15" aria-controls="site-nav-menu" aria-expanded="false" aria-label="Open menu">
+            <svg class="cn16" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <article class="cn17">
+      <div class="cn18">
+        <nav class="cn19" aria-label="Breadcrumb">
+          <ol class="cn20">
+            <li class="cn21">
+              <a class="cn22" href="https://adlibrary.com/">
+                Home
+              </a>
+              <span class="cn23">
+                ›
+              </span>
+            </li>
+            <li class="cn24">
+              <a class="cn25" href="https://adlibrary.com/posts">
+                Blog
+              </a>
+              <span class="cn26">
+                ›
+              </span>
+            </li>
+            <li class="cn27">
+              <span class="cn28">
+                Meta Ads MCP setup: connect Claude Code to Meta in 2026
+              </span>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="cn29">
+        <div class="cn30">
+          <div class="cn31">
+            <div class="cn32">
+              <a class="cn33" href="https://adlibrary.com/posts">
+                BLOG
+              </a>
+              <span class="cn34">
+                /
+              </span>
+            </div>
+            <div class="cn35">
+              <span class="cn36">
+                Share
+              </span>
+              <div class="cn37">
+                <a class="cn38" href="https://x.com/intent/tweet?url=https%3A%2F%2Fadlibrary.com%2Fposts%2Fmeta-ads-mcp-setup-guide&amp;text=Meta%20Ads%20MCP%20setup%3A%20connect%20Claude%20Code%20to%20Meta%20in%202026" rel="noopener noreferrer" target="_blank" title="Share on X">
+                  <svg class="cn39" aria-hidden="true" fill="currentColor" viewBox="0 0 512 462.799"><path fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"></path></svg>
+                </a>
+                <a class="cn40" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fadlibrary.com%2Fposts%2Fmeta-ads-mcp-setup-guide" rel="noopener noreferrer" target="_blank" title="Share on LinkedIn">
+                  <svg class="cn41" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                </a>
+                <button class="cn42" title="Copy link">
+                  <svg class="cn43" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cn44">
+          <div class="cn45">
+            <div class="cn46">
+              Guides &amp; Tutorials, Platforms &amp; Tools
+            </div>
+            <h1 class="cn47">
+              Meta Ads MCP setup: connect Claude Code to Meta in 2026
+            </h1>
+            <p class="cn48">
+              <span class="cn49">
+                Four commands to wire Claude Code to Meta's official MCP server — and what to do with it once it's running.
+              </span>
+            </p>
+          </div>
+          <div class="cn50">
+            <div class="cn51">
+              <a class="cn52" href="https://adlibrary.com/author/murat-bock">
+                <div class="cn53">
+                  <div class="cn54">
+                    M
+                  </div>
+                  <div class="cn55">
+                    <p class="cn56">
+                      Murat Bock
+                    </p>
+                    <p class="cn57">
+                      Founder &amp; Fullstack Developer
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <time class="cn58" datetime="2026-05-05T11:00:00.000Z">
+              May 5, 2026
+            </time>
+          </div>
+        </div>
+        <div class="cn59">
+          <div class="cn60">
+            <div class="cn61">
+              <div class="cn62">
+                <div class="cn63">
+                  <picture class="cn64">
+                    <img class="cn65" alt="Claude Code terminal querying the adlibrary API with ad data streaming in, producing structured competitor intelligence reports" height="900" src="public/assets/cloned/images/93408c7cddf3.png" width="900" />
+                  </picture>
+                </div>
+              </div>
+              <img class="cn66" height="450" src="public/assets/cloned/images/9e39d69d112c.png" width="450" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cn67">
+        <div class="cn68">
+          <div class="cn69">
+            <button class="cn70">
+              <span class="cn71">
+                Sections
+              </span>
+              <svg class="cn72" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="cn73">
+              <button class="cn74" aria-label="Summarize this page with AI">
+                <svg class="cn75" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l1.9 5.8L20 9.7l-5.1 1.9L12 17l-1.9-5.4L5 9.7l6.1-1.9L12 2zm6 12l.9 2.6L21 17.5l-2.1.9L18 21l-.9-2.6L15 17.5l2.1-.9L18 14zM6 15l.7 2.1L9 17.8l-2.3.7L6 21l-.7-2.5L3 17.8l2.3-.7L6 15z"></path></svg>
+                <span class="cn76">
+                  Summarize with AI
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cn77">
+          <div class="cn78">
+            <div class="cn79">
+              <div class="cn80">
+                <div class="cn81">
+                  <p class="cn82">
+                    Meta Ads MCP is real, it launched April 29 2026, and the setup is four commands. If you spend €5k–€100k/mo on Meta and you have Claude Code installed, you can have a write-capable Meta Ads MCP agent talking to your ad account before lunch. The catch — and this is the one most tutorials skip — is that wiring Meta Ads MCP without a creative angle is how you automate mediocrity at scale.
+                  </p>
+                </div>
+                <div class="cn83">
+                  <blockquote class="cn84">
+                    <p class="cn85">
+                      <strong class="cn86">
+                        TL;DR:
+                      </strong>
+                       The Meta Ads MCP server at 
+                      <code class="cn87">
+                        mcp.facebook.com/ads
+                      </code>
+                       exposes 29 Marketing API tools to Claude Code via OAuth 2.0 — no developer app required. Add the config block, complete the OAuth flow, run 
+                      <code class="cn88">
+                        ads_get_ad_accounts
+                      </code>
+                       to confirm the connection, then let your Meta Ads MCP agent draft campaigns in PAUSED state for human review. Do Step 0 first: find the angle on 
+                      <a class="cn89" href="https://adlibrary.com/">
+                        adlibrary
+                      </a>
+                       before you build anything.
+                    </p>
+                     
+                  </blockquote>
+                </div>
+                <div class="cn90">
+                  <h2 class="cn91" id="what-meta-ads-mcp-actually-is-and-why-beta-status-matters">
+                    What Meta Ads MCP actually is — and why beta status matters
+                  </h2>
+                   
+                  <p class="cn92">
+                    The 
+                    <a class="cn93" href="https://developers.facebook.com/docs/marketing-apis" rel="noopener noreferrer" target="_blank">
+                      Meta Marketing API
+                    </a>
+                     has existed for years, but using it always required provisioning a Facebook developer app, going through app review, managing access tokens, and writing or buying a wrapper. Meta Ads MCP changes that stack entirely.
+                  </p>
+                   
+                  <p class="cn94">
+                    Hosted at 
+                    <a class="cn95" href="https://mcp.facebook.com/ads" rel="noopener noreferrer" target="_blank">
+                      mcp.facebook.com/ads
+                    </a>
+                    , the official server implements the 
+                    <a class="cn96" href="https://modelcontextprotocol.io/introduction" rel="noopener noreferrer" target="_blank">
+                      Model Context Protocol
+                    </a>
+                     — an open standard that lets AI clients discover and call tools on external servers. Claude Code acts as the MCP client. Meta's server is the tool provider. Authentication runs entirely through OAuth 2.0; you authorize against your existing 
+                    <a class="cn97" href="https://adlibrary.com/glossary/ad-account">
+                      Meta Business Manager
+                    </a>
+                     account and the server handles token management.
+                  </p>
+                   
+                  <p class="cn98">
+                    As of the April 29 2026 launch, the server exposes 
+                    <strong class="cn99">
+                      29 tools
+                    </strong>
+                     across the Meta Marketing API v25.0 surface — including 
+                    <code class="cn100">
+                      ads_create_campaign
+                    </code>
+                    , 
+                    <code class="cn101">
+                      ads_insights_advertiser_context
+                    </code>
+                    , 
+                    <code class="cn102">
+                      ads_get_opportunity_score
+                    </code>
+                    , and 
+                    <code class="cn103">
+                      ads_insights_industry_benchmark
+                    </code>
+                    . The beta label matters: tool signatures may shift between versions, and Meta has not committed to a backward-compatibility guarantee during this phase. Pin your Claude Code MCP config to the current endpoint and watch the 
+                    <a class="cn104" href="https://developers.facebook.com/docs/marketing-apis" rel="noopener noreferrer" target="_blank">
+                      Marketing API changelog
+                    </a>
+                     for deprecation notices.
+                  </p>
+                   
+                  <p class="cn105">
+                    The bigger deal is the write capability. Previous AI-to-Meta integrations were read-only or required a middleware app with full developer access. MCP gives you a scoped, auditable, OAuth-gated write path from a conversational AI interface to live 
+                    <a class="cn106" href="https://adlibrary.com/glossary/ad-account">
+                      ad account
+                    </a>
+                     data — for the first time, without a developer.
+                  </p>
+                </div>
+                <div class="cn107">
+                  <h2 class="cn108" id="step-0-find-the-angle-on-adlibrary-before-you-wire-mcp">
+                    Step 0: find the angle on adlibrary before you wire MCP
+                  </h2>
+                   
+                  <p class="cn109">
+                    Before you run a single install command, do this: go to 
+                    <a class="cn110" href="https://adlibrary.com/features/unified-ad-search">
+                      adlibrary's unified ad search
+                    </a>
+                     and pull the top 20 active ads in your category. Look for the hook pattern that keeps recurring across different brands. That's the angle the algorithm has rewarded — and it's the input your MCP agent needs before it writes a single campaign brief.
+                  </p>
+                   
+                  <p class="cn111">
+                    Here's what happens when buyers skip this step: Claude Code writes a campaign structure that's technically correct but creatively generic. The 
+                    <a class="cn112" href="https://adlibrary.com/glossary/advantage-plus">
+                      Advantage+
+                    </a>
+                     catalog knows it's seen this hook before. The 
+                    <a class="cn113" href="https://adlibrary.com/glossary/learning-phase">
+                      learning phase
+                    </a>
+                     runs long, CPMs spike, and you blame the agent. The agent didn't fail — the brief did.
+                  </p>
+                   
+                  <p class="cn114">
+                    <a class="cn115" href="https://adlibrary.com/features/ad-timeline-analysis">
+                      Ad timeline analysis
+                    </a>
+                     makes this concrete: it shows whether a competitor has been running a specific hook for four days or four weeks. A four-week run at consistent spend is strong signal. A four-day run is a test that hasn't proven anything yet. That distinction — temporal signal — is exactly what an MCP agent can't generate on its own. It can build what you hand it. It can't observe what's working in-market without a 
+                    <a class="cn116" href="https://adlibrary.com/use-cases/ad-data-for-ai-agents">
+                      data layer for AI agents
+                    </a>
+                    .
+                  </p>
+                   
+                  <p class="cn117">
+                    Get the angle first. Then build.
+                  </p>
+                </div>
+                <div class="cn118">
+                  <h2 class="cn119" id="install-4-commands-to-connect-claude-code-to-mcpfacebookcomads">
+                    Install: 4 commands to connect Claude Code to mcp.facebook.com/ads
+                  </h2>
+                   
+                  <p class="cn120">
+                    Prerequisites for the Meta Ads MCP setup: 
+                    <a class="cn121" href="https://docs.anthropic.com/claude/docs/mcp" rel="noopener noreferrer" target="_blank">
+                      Claude Code
+                    </a>
+                     installed, a Meta Business Manager account with at least one 
+                    <a class="cn122" href="https://adlibrary.com/glossary/ad-account">
+                      ad account
+                    </a>
+                     you control.
+                  </p>
+                   
+                  <h3 class="cn123" id="step-1-add-the-mcp-server-to-your-claude-code-config">
+                    Step 1 — Add the MCP server to your Claude Code config
+                  </h3>
+                   
+                  <p class="cn124">
+                    Open (or create) your Claude Code MCP config file. On macOS it lives at 
+                    <code class="cn125">
+                      ~/.claude/mcp.json
+                    </code>
+                    .
+                  </p>
+                   
+                  <div class="cn126">
+                    <div class="cn127">
+                      <span class="cn128">
+                        json
+                      </span>
+                      <button class="cn129" title="Copy code">
+                        <svg class="cn130" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                      </button>
+                    </div>
+                    <pre class="cn131">
+                      <code class="cn132">
+                        {
+  "mcpServers": {
+    "meta-ads": {
+      "url": "https://mcp.facebook.com/ads",
+      "transport": "http"
+    }
+  }
+}
+
+                      </code>
+                    </pre>
+                  </div>
+                   
+                  <p class="cn133">
+                    That's the entire config block. No API keys, no environment variables — OAuth handles auth.
+                  </p>
+                   
+                  <h3 class="cn134" id="step-2-start-claude-code-and-trigger-the-oauth-flow">
+                    Step 2 — Start Claude Code and trigger the OAuth flow
+                  </h3>
+                   
+                  <div class="cn135">
+                    <div class="cn136">
+                      <span class="cn137">
+                        bash
+                      </span>
+                      <button class="cn138" title="Copy code">
+                        <svg class="cn139" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                      </button>
+                    </div>
+                    <pre class="cn140">
+                      <code class="cn141">
+                        claude
+
+                      </code>
+                    </pre>
+                  </div>
+                   
+                  <p class="cn142">
+                    On first use of any 
+                    <code class="cn143">
+                      meta-ads
+                    </code>
+                     tool, Claude Code will surface a login link via 
+                    <code class="cn144">
+                      mcp_meta_ads_get_login_link
+                    </code>
+                    . Click it, log in with the Meta account that owns your ad account, and complete the OAuth consent screen.
+                  </p>
+                   
+                  <h3 class="cn145" id="step-3-pick-your-oauth-scopes-deliberately">
+                    Step 3 — Pick your OAuth scopes deliberately
+                  </h3>
+                   
+                  <p class="cn146">
+                    Meta's consent screen offers three scope tiers:
+                  </p>
+                   
+                  <ul class="cn147">
+                    <li class="cn148">
+                      <strong class="cn149">
+                        Read
+                      </strong>
+                       — view accounts, campaigns, ad sets, ads, and insights
+                    </li>
+                    <li class="cn150">
+                      <strong class="cn151">
+                        Read/write
+                      </strong>
+                       — all of the above plus create, edit, and pause campaigns
+                    </li>
+                    <li class="cn152">
+                      <strong class="cn153">
+                        Read/write/financial
+                      </strong>
+                       — includes billing, payment methods, and spend limit management
+                    </li>
+                  </ul>
+                   
+                  <p class="cn154">
+                    For a first connection, grant read/write but not financial. You want the agent to be able to draft and pause campaigns without being able to touch billing. See the permissions section below for the full audit-trail pattern.
+                  </p>
+                   
+                  <h3 class="cn155" id="step-4-verify-the-connection">
+                    Step 4 — Verify the connection
+                  </h3>
+                   
+                  <pre class="cn156">
+                    <code class="cn157">
+                      ads_get_ad_accounts
+
+                    </code>
+                  </pre>
+                   
+                  <p class="cn158">
+                    Ask Claude Code to call this tool. It should return a list of your Business Manager's ad accounts with IDs and names. If you see accounts, you're connected. If you get an auth error, re-run 
+                    <code class="cn159">
+                      mcp_meta_ads_get_login_link
+                    </code>
+                     and repeat the OAuth flow.
+                  </p>
+                </div>
+                <div class="cn160">
+                  <h2 class="cn161" id="first-read-verify-the-connection-without-touching-live-spend">
+                    First read: verify the connection without touching live spend
+                  </h2>
+                   
+                  <p class="cn162">
+                    Once your Meta Ads MCP connection is confirmed via 
+                    <code class="cn163">
+                      ads_get_ad_accounts
+                    </code>
+                    , run two more read queries before you touch any write tools.
+                  </p>
+                   
+                  <p class="cn164">
+                    <strong class="cn165">
+                      Query 1 — Industry benchmark:
+                    </strong>
+                  </p>
+                   
+                  <pre class="cn166">
+                    <code class="cn167">
+                      ads_insights_industry_benchmark
+
+                    </code>
+                  </pre>
+                   
+                  <p class="cn168">
+                    This returns category-level CPC, CPM, and CTR benchmarks from Meta's aggregate data. It's a useful sanity check that your account has proper read access, and the numbers give you a baseline for evaluating your own account's performance — relevant if you're using the 
+                    <a class="cn169" href="https://adlibrary.com/tools/learning-phase-calculator">
+                      learning phase calculator
+                    </a>
+                     to estimate how many conversions you need before an ad set exits learning.
+                  </p>
+                   
+                  <p class="cn170">
+                    <strong class="cn171">
+                      Query 2 — Advertiser context:
+                    </strong>
+                  </p>
+                   
+                  <pre class="cn172">
+                    <code class="cn173">
+                      ads_insights_advertiser_context
+
+                    </code>
+                  </pre>
+                   
+                  <p class="cn174">
+                    This pulls your account's historical performance context — recent CPMs, conversion volume, audience overlap signals. Cross-reference this against in-market ad data from adlibrary's 
+                    <a class="cn175" href="https://adlibrary.com/features/api-access">
+                      API access layer
+                    </a>
+                     — together they give you a read-side picture of account health and competitor signals.
+                  </p>
+                   
+                  <p class="cn176">
+                    At this point you have confirmed read access. Nothing you've done has touched live spend. Good place to pause and review what the agent is seeing before you grant it write tools in your prompts.
+                  </p>
+                   
+                  <p class="cn177">
+                    For a deeper look at 
+                    <a class="cn178" href="https://adlibrary.com/posts/agentic-marketing-workflows-with-claude-code">
+                      agentic marketing workflows with Claude Code
+                    </a>
+                    , including how to chain read queries into automated reporting loops, that post walks through the orchestration patterns in detail.
+                  </p>
+                </div>
+                <div class="cn179">
+                  <h2 class="cn180" id="first-write-drafting-a-paused-campaign-endtoend">
+                    First write: drafting a paused campaign end-to-end
+                  </h2>
+                   
+                  <p class="cn181">
+                    The safest Meta Ads MCP write pattern on day one: instruct Claude Code to create the full campaign structure — campaign, ad set, ad — with every object in PAUSED state. You review in Ads Manager before activating anything.
+                  </p>
+                   
+                  <p class="cn182">
+                    Here's a prompt template that enforces this:
+                  </p>
+                   
+                  <pre class="cn183">
+                    <code class="cn184">
+                      Using the meta-ads MCP server, create a campaign in account [ACCOUNT_ID] with the following structure. Set status = PAUSED on every object. Do not activate anything.
+
+Campaign:
+- Name: [CAMPAIGN_NAME]
+- Objective: OUTCOME_TRAFFIC
+- Status: PAUSED
+- Special ad categories: none
+
+Ad set:
+- Name: [AD_SET_NAME]
+- Daily budget: 5000 (cents)
+- Targeting: broad, [COUNTRY_CODE]
+- Bid strategy: LOWEST_COST_WITHOUT_CAP
+- Status: PAUSED
+
+Ad:
+- Name: [AD_NAME]
+- Creative: [describe your creative briefly]
+- Status: PAUSED
+
+                    </code>
+                  </pre>
+                   
+                  <p class="cn185">
+                    Claude Code will call 
+                    <code class="cn186">
+                      ads_create_campaign
+                    </code>
+                    , then build the ad set and ad in sequence. All three objects land in your Ads Manager in PAUSED state. You can inspect targeting, budget, creative spec, and placement settings before a human clicks Publish.
+                  </p>
+                   
+                  <p class="cn187">
+                    This is the core workflow covered in depth at 
+                    <a class="cn188" href="https://adlibrary.com/posts/meta-ads-mcp-adlibrary-workflows">
+                      10 Meta Ads MCP workflows for media buyers
+                    </a>
+                     — that post has ready-to-run prompt templates for bulk ad set creation, creative testing matrices, and audience exclusion management.
+                  </p>
+                   
+                  <p class="cn189">
+                    For 
+                    <a class="cn190" href="https://adlibrary.com/posts/automated-facebook-ad-launching">
+                      automated Facebook ad launching
+                    </a>
+                     at scale — where you're launching 20+ ad variations in a single session — the paused-first pattern is not just a safety measure; it's a quality gate. Review 20 AI-drafted ads at once, reject or edit the weak ones, activate the strong set in a batch. That's a different speed of iteration than building one ad at a time.
+                  </p>
+                </div>
+                <div class="cn191">
+                  <h2 class="cn192" id="pipeboard-vs-metas-official-server-when-to-pick-which">
+                    Pipeboard vs Meta's official server: when to pick which
+                  </h2>
+                   
+                  <p class="cn193">
+                    There is a well-maintained third-party alternative to Meta Ads MCP: 
+                    <a class="cn194" href="https://github.com/pipeboard-co/meta-ads-mcp" rel="noopener noreferrer" target="_blank">
+                      Pipeboard's meta-ads-mcp
+                    </a>
+                     on GitHub. It's worth knowing when each option fits.
+                  </p>
+                   
+                  <div class="cn195">
+                    <table class="cn196">
+                      <thead class="cn197">
+                        <tr class="cn198">
+                          <th class="cn199">
+                            Dimension
+                          </th>
+                          <th class="cn200">
+                            Meta official (
+                            <code class="cn201">
+                              mcp.facebook.com/ads
+                            </code>
+                            )
+                          </th>
+                          <th class="cn202">
+                            Pipeboard (
+                            <code class="cn203">
+                              meta-ads-mcp
+                            </code>
+                            )
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="cn204">
+                        <tr class="cn205">
+                          <td class="cn206">
+                            Auth model
+                          </td>
+                          <td class="cn207">
+                            OAuth 2.0, no developer app needed
+                          </td>
+                          <td class="cn208">
+                            Requires Facebook developer app + access token
+                          </td>
+                        </tr>
+                        <tr class="cn209">
+                          <td class="cn210">
+                            Hosting
+                          </td>
+                          <td class="cn211">
+                            Meta-managed cloud
+                          </td>
+                          <td class="cn212">
+                            Self-hosted or local
+                          </td>
+                        </tr>
+                        <tr class="cn213">
+                          <td class="cn214">
+                            License
+                          </td>
+                          <td class="cn215">
+                            Proprietary (Meta ToS)
+                          </td>
+                          <td class="cn216">
+                            BSL 1.1 — restricts commercial hosting
+                          </td>
+                        </tr>
+                        <tr class="cn217">
+                          <td class="cn218">
+                            Tool coverage
+                          </td>
+                          <td class="cn219">
+                            29 tools, Meta-maintained
+                          </td>
+                          <td class="cn220">
+                            Varies by release; community-maintained
+                          </td>
+                        </tr>
+                        <tr class="cn221">
+                          <td class="cn222">
+                            Setup complexity
+                          </td>
+                          <td class="cn223">
+                            4 commands
+                          </td>
+                          <td class="cn224">
+                            Developer app provisioning + token management
+                          </td>
+                        </tr>
+                        <tr class="cn225">
+                          <td class="cn226">
+                            Audit trail
+                          </td>
+                          <td class="cn227">
+                            OAuth consent logs in Business Manager
+                          </td>
+                          <td class="cn228">
+                            Manual token rotation logging
+                          </td>
+                        </tr>
+                        <tr class="cn229">
+                          <td class="cn230">
+                            Beta risk
+                          </td>
+                          <td class="cn231">
+                            Yes — tool signatures may change
+                          </td>
+                          <td class="cn232">
+                            More stable but less feature velocity
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                   
+                  <p class="cn233">
+                    For most 
+                    <a class="cn234" href="https://adlibrary.com/use-cases/media-buyer-workflow">
+                      media buyer workflows
+                    </a>
+                    , the official server wins on setup simplicity and the absence of app provisioning. The BSL 1.1 license on Pipeboard means you can't wrap it in a commercial SaaS product without a separate license — relevant if you're building an 
+                    <a class="cn235" href="https://adlibrary.com/posts/best-meta-business-suite-automation-tools-guide-2026">
+                      automation tool
+                    </a>
+                     for clients.
+                  </p>
+                   
+                  <p class="cn236">
+                    Pipeboard makes sense if: you need local control over the server process, you're on a compliance regime that requires data to stay on-premise, or you want to fork and extend the tool surface yourself.
+                  </p>
+                   
+                  <p class="cn237">
+                    For everyone else: start with 
+                    <a class="cn238" href="https://mcp.facebook.com/ads" rel="noopener noreferrer" target="_blank">
+                      mcp.facebook.com/ads
+                    </a>
+                    .
+                  </p>
+                </div>
+                <div class="cn239">
+                  <h2 class="cn240" id="permissions-audit-trails-and-the-readonly-safety-pattern">
+                    Permissions, audit trails, and the read-only safety pattern
+                  </h2>
+                   
+                  <p class="cn241">
+                    The Meta Ads MCP OAuth scope conversation is the one most setup tutorials skip. Get it wrong and you've given an AI agent the ability to move budget across accounts or change payment methods.
+                  </p>
+                   
+                  <p class="cn242">
+                    <strong class="cn243">
+                      The three-tier model:
+                    </strong>
+                  </p>
+                   
+                  <ul class="cn244">
+                    <li class="cn245">
+                      <strong class="cn246">
+                        Read
+                      </strong>
+                       — safe for any automated agent. Use this for reporting loops, benchmarking, competitive monitoring via 
+                      <a class="cn247" href="https://adlibrary.com/features/api-access">
+                        API access
+                      </a>
+                      .
+                    </li>
+                    <li class="cn248">
+                      <strong class="cn249">
+                        Read/write
+                      </strong>
+                       — appropriate for supervised agents that draft campaigns for human review. The paused-first pattern above is your guard rail.
+                    </li>
+                    <li class="cn250">
+                      <strong class="cn251">
+                        Read/write/financial
+                      </strong>
+                       — only appropriate for tightly scoped workflows with an explicit human approval step for any financial action. Don't grant this to a general-purpose agent.
+                    </li>
+                  </ul>
+                   
+                  <p class="cn252">
+                    <strong class="cn253">
+                      The audit trail question:
+                    </strong>
+                     Meta Business Manager logs OAuth authorizations under Settings &gt; Security &gt; Active Sessions. For team accounts, create a dedicated Business Manager user for MCP access — not your personal admin account. Agent activity stays attributable separately from human actions in the account log.
+                  </p>
+                   
+                  <p class="cn254">
+                    <strong class="cn255">
+                      The read-only safety pattern:
+                    </strong>
+                     For monitoring and reporting agents — think 
+                    <a class="cn256" href="https://adlibrary.com/posts/meta-ads-mcp-247-agent">
+                      always-on Meta Ads agents
+                    </a>
+                     running on a schedule — grant read scope only. These agents can pull 
+                    <code class="cn257">
+                      ads_get_opportunity_score
+                    </code>
+                     daily, flag under-performing ad sets, and surface 
+                    <a class="cn258" href="https://adlibrary.com/glossary/dynamic-creative">
+                      dynamic creative
+                    </a>
+                     fatigue signals without any write exposure. The workflow post at 
+                    <a class="cn259" href="https://adlibrary.com/posts/competitor-ad-to-meta-campaign-mcp">
+                      competitor ad to Meta campaign pipeline
+                    </a>
+                     shows how to chain adlibrary data into a read-only monitoring loop before any write tools fire.
+                  </p>
+                   
+                  <p class="cn260">
+                    For 
+                    <a class="cn261" href="https://adlibrary.com/posts/meta-ads-campaign-automation">
+                      Meta ads campaign automation
+                    </a>
+                     that involves live budget changes, the minimum viable safety pattern is: read/write scope, PAUSED state on all agent-created objects, and a Slack or email approval gate before any status change to ACTIVE.
+                  </p>
+                   
+                  <p class="cn262">
+                    One more thing that often gets missed: 
+                    <code class="cn263">
+                      ads_get_opportunity_score
+                    </code>
+                     is a read tool that calls Meta's internal scoring model against your account. It can surface campaigns where 
+                    <a class="cn264" href="https://adlibrary.com/glossary/advantage-plus">
+                      Advantage+
+                    </a>
+                     signals are strong but your manual targeting is constraining delivery. Run it before you restructure anything — it's a fast signal on where the algorithm wants to go before you let an agent 
+                    <a class="cn265" href="https://adlibrary.com/posts/how-to-launch-multiple-ads-quickly">
+                      launch multiple ads quickly
+                    </a>
+                    . Once the agent fires that launch, the 
+                    <a class="cn266" href="https://adlibrary.com/posts/meta-ads-mcp-vs-ads-manager">
+                      MCP vs Ads Manager
+                    </a>
+                     call shapes what comes next — speed-bound bulk work to MCP, judgment-bound creative QA back to the UI. See also: 
+                    <a class="cn267" href="https://adlibrary.com/guides/facebook-campaign-template-systems">
+                      campaign template system
+                    </a>
+                    .
+                  </p>
+                </div>
+                <div class="cn268">
+                  <h2 class="cn269" id="frequently-asked-questions">
+                    Frequently asked questions
+                  </h2>
+                   
+                  <h3 class="cn270" id="what-is-meta-ads-mcp-and-how-does-it-work">
+                    What is Meta Ads MCP and how does it work?
+                  </h3>
+                   
+                  <p class="cn271">
+                    Meta Ads MCP is Meta's official Model Context Protocol server hosted at 
+                    <code class="cn272">
+                      mcp.facebook.com/ads
+                    </code>
+                    . It exposes 29 tools from the Meta Marketing API v25.0 — including campaign creation, insights retrieval, and opportunity scoring — to any MCP-compatible AI client like Claude Code. Authentication uses OAuth 2.0; you connect once and the AI agent can then read account data and, if you grant write scopes, create or modify campaigns on your behalf.
+                  </p>
+                   
+                  <h3 class="cn273" id="is-meta-ads-mcp-safe-to-connect-with-write-permissions">
+                    Is Meta Ads MCP safe to connect with write permissions?
+                  </h3>
+                   
+                  <p class="cn274">
+                    Yes, with the right guard rails. Meta's OAuth scope picker lets you grant read-only, read/write, or read/write/financial access. The safest production pattern is to grant read and read/write but keep all agent-created campaigns in PAUSED state for human review before activating. Never grant financial scope to an automated agent without an explicit approval step in your workflow.
+                  </p>
+                   
+                  <h3 class="cn275" id="what-is-the-difference-between-metas-official-mcp-server-and-pipeboard">
+                    What is the difference between Meta's official MCP server and Pipeboard?
+                  </h3>
+                   
+                  <p class="cn276">
+                    Meta's official server at 
+                    <code class="cn277">
+                      mcp.facebook.com/ads
+                    </code>
+                     is OAuth-based, requires no developer app provisioning, and is directly maintained by Meta. Pipeboard's open-source meta-ads-mcp (github.com/pipeboard-co/meta-ads-mcp) requires a Facebook developer app but gives you local control and is licensed under BSL 1.1, which restricts commercial hosting. Most media buyers should start with Meta's official server.
+                  </p>
+                   
+                  <h3 class="cn278" id="how-many-tools-does-meta-ads-mcp-expose">
+                    How many tools does Meta Ads MCP expose?
+                  </h3>
+                   
+                  <p class="cn279">
+                    As of its April 29 2026 beta launch, Meta Ads MCP exposes 29 tools including 
+                    <code class="cn280">
+                      ads_create_campaign
+                    </code>
+                    , 
+                    <code class="cn281">
+                      ads_insights_advertiser_context
+                    </code>
+                    , 
+                    <code class="cn282">
+                      ads_get_opportunity_score
+                    </code>
+                    , 
+                    <code class="cn283">
+                      ads_insights_industry_benchmark
+                    </code>
+                    , and 
+                    <code class="cn284">
+                      mcp_meta_ads_get_login_link
+                    </code>
+                    , among others.
+                  </p>
+                   
+                  <h3 class="cn285" id="do-i-need-a-meta-developer-app-to-use-meta-ads-mcp">
+                    Do I need a Meta developer app to use Meta Ads MCP?
+                  </h3>
+                   
+                  <p class="cn286">
+                    No. Meta's official MCP server handles authentication entirely through OAuth 2.0 — you authorize via your existing Meta Business Manager account. No developer app, no app review, no access token wrangling. That is the key advantage over older Marketing API integrations.
+                  </p>
+                   
+                  <h2 class="cn287" id="bottom-line">
+                    Bottom line
+                  </h2>
+                   
+                  <p class="cn288">
+                    Meta Ads MCP is the first write-capable agent path to the 
+                    <a class="cn289" href="https://adlibrary.com/glossary/meta-marketing-api">
+                      Meta Marketing API
+                    </a>
+                     that doesn't require a developer. The setup is four commands. The discipline is in what you do before command one: pull the in-market angle from 
+                    <a class="cn290" href="https://adlibrary.com/">
+                      adlibrary
+                    </a>
+                    , understand what's working, then let the agent build it — paused, reviewable, and scoped to the minimum permissions the task actually needs. For the full 
+                    <a class="cn291" href="https://adlibrary.com/posts/claude-code-for-marketers-intro">
+                      Claude Code for marketers
+                    </a>
+                     picture, including how MCP fits into a broader 
+                    <a class="cn292" href="https://adlibrary.com/posts/claude-code-agentic-marketing-adlibrary-api">
+                      agentic marketing stack
+                    </a>
+                    , those posts are the natural next read.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="cn293">
+            <div class="cn294">
+              <h3 class="cn295">
+                Sections
+              </h3>
+              <nav class="cn296">
+                <ul class="cn297">
+                  <li class="cn298">
+                    <a class="cn299" href="#what-meta-ads-mcp-actually-is-and-why-beta-status-matters">
+                      What Meta Ads MCP actually is — and why beta status matters
+                    </a>
+                  </li>
+                  <li class="cn300">
+                    <a class="cn301" href="#step-0-find-the-angle-on-adlibrary-before-you-wire-mcp">
+                      Step 0: find the angle on adlibrary before you wire MCP
+                    </a>
+                  </li>
+                  <li class="cn302">
+                    <a class="cn303" href="#install-4-commands-to-connect-claude-code-to-mcpfacebookcomads">
+                      Install: 4 commands to connect Claude Code to mcp.facebook.com/ads
+                    </a>
+                    <ul class="cn304">
+                      <li class="cn305">
+                        <a class="cn306" href="#step-1-add-the-mcp-server-to-your-claude-code-config">
+                          Step 1 — Add the MCP server to your Claude Code config
+                        </a>
+                      </li>
+                      <li class="cn307">
+                        <a class="cn308" href="#step-2-start-claude-code-and-trigger-the-oauth-flow">
+                          Step 2 — Start Claude Code and trigger the OAuth flow
+                        </a>
+                      </li>
+                      <li class="cn309">
+                        <a class="cn310" href="#step-3-pick-your-oauth-scopes-deliberately">
+                          Step 3 — Pick your OAuth scopes deliberately
+                        </a>
+                      </li>
+                      <li class="cn311">
+                        <a class="cn312" href="#step-4-verify-the-connection">
+                          Step 4 — Verify the connection
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="cn313">
+                    <a class="cn314" href="#first-read-verify-the-connection-without-touching-live-spend">
+                      First read: verify the connection without touching live spend
+                    </a>
+                  </li>
+                  <li class="cn315">
+                    <a class="cn316" href="#first-write-drafting-a-paused-campaign-endtoend">
+                      First write: drafting a paused campaign end-to-end
+                    </a>
+                  </li>
+                  <li class="cn317">
+                    <a class="cn318" href="#pipeboard-vs-metas-official-server-when-to-pick-which">
+                      Pipeboard vs Meta's official server: when to pick which
+                    </a>
+                  </li>
+                  <li class="cn319">
+                    <a class="cn320" href="#permissions-audit-trails-and-the-readonly-safety-pattern">
+                      Permissions, audit trails, and the read-only safety pattern
+                    </a>
+                  </li>
+                  <li class="cn321">
+                    <a class="cn322" href="#frequently-asked-questions">
+                      Frequently asked questions
+                    </a>
+                    <ul class="cn323">
+                      <li class="cn324">
+                        <a class="cn325" href="#what-is-meta-ads-mcp-and-how-does-it-work">
+                          What is Meta Ads MCP and how does it work?
+                        </a>
+                      </li>
+                      <li class="cn326">
+                        <a class="cn327" href="#is-meta-ads-mcp-safe-to-connect-with-write-permissions">
+                          Is Meta Ads MCP safe to connect with write permissions?
+                        </a>
+                      </li>
+                      <li class="cn328">
+                        <a class="cn329" href="#what-is-the-difference-between-metas-official-mcp-server-and-pipeboard">
+                          What is the difference between Meta's official MCP server and Pipeboard?
+                        </a>
+                      </li>
+                      <li class="cn330">
+                        <a class="cn331" href="#how-many-tools-does-meta-ads-mcp-expose">
+                          How many tools does Meta Ads MCP expose?
+                        </a>
+                      </li>
+                      <li class="cn332">
+                        <a class="cn333" href="#do-i-need-a-meta-developer-app-to-use-meta-ads-mcp">
+                          Do I need a Meta developer app to use Meta Ads MCP?
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="cn334">
+                    <a class="cn335" href="#bottom-line">
+                      Bottom line
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="cn336">
+                <div class="cn337">
+                  <button class="cn338" aria-label="Summarize this page with AI">
+                    <svg class="cn339" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l1.9 5.8L20 9.7l-5.1 1.9L12 17l-1.9-5.4L5 9.7l6.1-1.9L12 2zm6 12l.9 2.6L21 17.5l-2.1.9L18 21l-.9-2.6L15 17.5l2.1-.9L18 14zM6 15l.7 2.1L9 17.8l-2.3.7L6 21l-.7-2.5L3 17.8l2.3-.7L6 15z"></path></svg>
+                    <span class="cn340">
+                      Summarize with AI
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="cn341">
+          <h2 class="cn342">
+            Further Reading
+          </h2>
+          <div class="cn343">
+            <a class="cn344" href="https://adlibrary.com/guides/facebook-campaign-template-systems">
+              <h3 class="cn345">
+                Facebook Campaign Template Systems: Complete Guide
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="cn346">
+          <h2 class="cn347">
+            Related Articles
+          </h2>
+          <div class="cn348">
+            <div class="cn349">
+              <article class="cn350">
+                <div class="cn351">
+                  <div class="cn352">
+                    <img class="cn353" alt="AdLibrary" height="96" src="public/assets/cloned/svg/4f3cf379e434.svg" width="96" />
+                  </div>
+                </div>
+                <div class="cn354">
+                  <div class="cn355">
+                    Competitive Research
+                  </div>
+                  <h3 class="cn356">
+                    <a class="cn357" href="https://adlibrary.com/posts/claude-code-agentic-marketing-adlibrary-api">
+                      Claude Code + AdLibrary API: Building Agentic Marketing Workflows That Actually Ship
+                    </a>
+                  </h3>
+                  <p class="cn358">
+                    Build unattended competitor intelligence workflows using Claude Code and the AdLibrary API. Includes real API call patterns, two worked examples, and observability practices.
+                  </p>
+                  <div class="cn359"></div>
+                </div>
+              </article>
+              <article class="cn360">
+                <div class="cn361">
+                  <div class="cn362">
+                    <div class="cn363">
+                      <div class="cn364">
+                        <picture class="cn365">
+                          <img class="cn366" alt="Diagram showing the evolution from a simple prompt to a full agentic marketing workflow with branching logic, flat vector illustration" height="600" src="public/assets/cloned/images/5385ff90cc51.png" width="600" />
+                        </picture>
+                      </div>
+                    </div>
+                    <img class="cn367" height="300" src="public/assets/cloned/images/d60ceca5ddc4.png" width="300" alt="" />
+                  </div>
+                </div>
+                <div class="cn368">
+                  <div class="cn369">
+                    Guides &amp; Tutorials, Platforms &amp; Tools
+                  </div>
+                  <h3 class="cn370">
+                    <a class="cn371" href="https://adlibrary.com/posts/agentic-marketing-workflows-with-claude-code">
+                      Agentic Marketing Workflows with Claude Code: From One-Off Scripts to Always-On Agents
+                    </a>
+                  </h3>
+                  <p class="cn372">
+                    Build agentic marketing workflows with Claude Code: a 4-stage progression from a simple prompt to a memory-equipped agent with tool-use and approval gates.
+                  </p>
+                  <div class="cn373"></div>
+                </div>
+              </article>
+              <article class="cn374">
+                <div class="cn375">
+                  <div class="cn376">
+                    <div class="cn377">
+                      <div class="cn378">
+                        <picture class="cn379">
+                          <img class="cn380" alt="Claude Code terminal showing AI-assisted marketing workflow with ad variant spreadsheet generation" height="600" src="public/assets/cloned/images/86d311be34a1.png" width="600" />
+                        </picture>
+                      </div>
+                    </div>
+                    <img class="cn381" height="300" src="public/assets/cloned/images/3cdd0e80d76e.png" width="300" alt="" />
+                  </div>
+                </div>
+                <div class="cn382">
+                  <div class="cn383">
+                    Platforms &amp; Tools, Guides &amp; Tutorials
+                  </div>
+                  <h3 class="cn384">
+                    <a class="cn385" href="https://adlibrary.com/posts/claude-code-for-marketers-intro">
+                      Claude Code for Marketers: A Beginner's Intro to Agentic Command-Line Workflows
+                    </a>
+                  </h3>
+                  <p class="cn386">
+                    Claude Code gives marketers a direct line from data to output — ad variants, audits, teardowns, reports, all from the terminal. Here's how to start.
+                  </p>
+                  <div class="cn387"></div>
+                </div>
+              </article>
+              <article class="cn388">
+                <div class="cn389">
+                  <div class="cn390">
+                    <div class="cn391">
+                      <div class="cn392">
+                        <picture class="cn393">
+                          <img class="cn394" alt="Claude Code prompt library organized in terminal folders showing research SEO ad-ops and reporting categories for marketing workflows" height="600" src="public/assets/cloned/images/d1c7b8516e1d.png" width="600" />
+                        </picture>
+                      </div>
+                    </div>
+                    <img class="cn395" height="300" src="public/assets/cloned/images/a40ad2516360.png" width="300" alt="" />
+                  </div>
+                </div>
+                <div class="cn396">
+                  <div class="cn397">
+                    Guides &amp; Tutorials, Platforms &amp; Tools
+                  </div>
+                  <h3 class="cn398">
+                    <a class="cn399" href="https://adlibrary.com/posts/claude-code-prompts-for-marketing">
+                      Claude Code Prompts for Marketing Workflows: A Copy-Paste Library
+                    </a>
+                  </h3>
+                  <p class="cn400">
+                    25+ Claude Code prompts for marketing — competitor research, ad analysis, SEO audits, report generation, and creative batch ops. Copy-paste with setup notes and expected outputs.
+                  </p>
+                  <div class="cn401"></div>
+                </div>
+              </article>
+              <article class="cn402">
+                <div class="cn403">
+                  <div class="cn404">
+                    <div class="cn405">
+                      <div class="cn406">
+                        <picture class="cn407">
+                          <img class="cn408" alt="Split workstation illustration showing CLI terminal on left and code editor IDE on right, flat vector comparison of Claude Code vs Cursor for marketers" height="600" src="public/assets/cloned/images/9bd7640b0e35.png" width="600" />
+                        </picture>
+                      </div>
+                    </div>
+                    <img class="cn409" height="300" src="public/assets/cloned/images/1dbdacf04452.png" width="300" alt="" />
+                  </div>
+                </div>
+                <div class="cn410">
+                  <div class="cn411">
+                    Platforms &amp; Tools
+                  </div>
+                  <h3 class="cn412">
+                    <a class="cn413" href="https://adlibrary.com/posts/claude-code-vs-cursor-for-marketers">
+                      Claude Code vs Cursor for Marketers: Which Agentic Coder Fits Non-Dev Workflows
+                    </a>
+                  </h3>
+                  <p class="cn414">
+                    Compare Claude Code vs Cursor for non-dev marketers: learning curve, CLI vs IDE, sub-agents vs Composer, MCP support, and honest use-case picks by workflow.
+                  </p>
+                  <div class="cn415"></div>
+                </div>
+              </article>
+              <article class="cn416">
+                <div class="cn417">
+                  <div class="cn418">
+                    <div class="cn419">
+                      <div class="cn420">
+                        <picture class="cn421">
+                          <img class="cn422" alt="Meta Marketing API integration software: build vs buy decision framework — split diagram showing raw SDK and code on one side versus managed SaaS dashboard on the other" height="327" src="public/assets/cloned/images/22049a4d0b89.png" width="600" />
+                        </picture>
+                      </div>
+                    </div>
+                    <img class="cn423" height="163" src="public/assets/cloned/images/6ca94eea352a.png" width="300" alt="" />
+                  </div>
+                </div>
+                <div class="cn424">
+                  <div class="cn425">
+                    Platforms &amp; Tools, Advertising Strategy
+                  </div>
+                  <h3 class="cn426">
+                    <a class="cn427" href="https://adlibrary.com/posts/meta-api-integration-software">
+                      Meta Marketing API integration software: what to build vs what to buy
+                    </a>
+                  </h3>
+                  <p class="cn428">
+                    Meta Marketing API integration software is free. The ops tax — auth refresh, rate-limit handling, schema drift — is what costs money. A practical build-vs-buy framework.
+                  </p>
+                  <div class="cn429"></div>
+                </div>
+              </article>
+              <article class="cn430">
+                <div class="cn431">
+                  <div class="cn432">
+                    <div class="cn433">
+                      <div class="cn434">
+                        <picture class="cn435">
+                          <img class="cn436" alt="AdLibrary image" height="600" src="public/assets/cloned/images/d1ccc9755ab2.png" width="600" />
+                        </picture>
+                      </div>
+                    </div>
+                    <img class="cn437" height="300" src="public/assets/cloned/images/61f6db2b3884.png" width="300" alt="" />
+                  </div>
+                </div>
+                <div class="cn438">
+                  <div class="cn439">
+                    Guides &amp; Tutorials, Advertising Strategy
+                  </div>
+                  <h3 class="cn440">
+                    <a class="cn441" href="https://adlibrary.com/posts/facebook-campaign-setup-2026">
+                      Facebook campaign setup: a 2026 tutorial that skips the bad defaults
+                    </a>
+                  </h3>
+                  <p class="cn442">
+                    The default Facebook campaign setup funnels you into Advantage+ before your angles are validated. Skip 3 defaults, add one adlibrary step, and avoid 4 weeks of wasted learning phase.
+                  </p>
+                  <div class="cn443"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="cn444">
+          <h2 class="cn445">
+            Related Features
+          </h2>
+          <div class="cn446">
+            <a class="cn447" href="https://adlibrary.com/features/api-access">
+              <h3 class="cn448">
+                Programmatic Access to the AdLibrary Database
+              </h3>
+            </a>
+            <a class="cn449" href="https://adlibrary.com/features/unified-ad-search">
+              <h3 class="cn450">
+                Search Ads Across Multiple Networks in One Interface
+              </h3>
+            </a>
+            <a class="cn451" href="https://adlibrary.com/features/ad-timeline-analysis">
+              <h3 class="cn452">
+                Filter Ads by Date and Analyze Running Timelines
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="cn453">
+          <h2 class="cn454">
+            Related Use Cases
+          </h2>
+          <div class="cn455">
+            <a class="cn456" href="https://adlibrary.com/use-cases/ad-data-for-ai-agents">
+              <h3 class="cn457">
+                Ad Data for AI Agents
+              </h3>
+            </a>
+            <a class="cn458" href="https://adlibrary.com/use-cases/media-buyer-workflow">
+              <h3 class="cn459">
+                Media Buyer Daily Workflow
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer class="cn460">
+      <div class="cn461">
+        <div class="cn462">
+          <div class="cn463">
+            <div class="cn464">
+              <h3 class="cn465">
+                Get weekly ad insights
+              </h3>
+              <p class="cn466">
+                Top-performing ads and creative strategies, delivered weekly.
+              </p>
+            </div>
+            <form class="cn467">
+              <input class="cn468" data-ditto-id="style-input" placeholder="your@email.com" type="email" value="" />
+              <button class="cn469" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="cn470">
+        <div class="cn471">
+          <a class="cn472" href="https://adlibrary.com/">
+            <div class="cn473">
+              <img class="cn474" alt="adlibrary.com Logo" height="34" src="public/assets/cloned/images/5163bf618313.png" width="193" />
+              <span class="cn475">
+                adlibrary.com
+              </span>
+            </div>
+          </a>
+          <button class="cn476" data-ditto-id="menu-trigger-select-a-theme" aria-autocomplete="none" aria-controls="radix-_R_15b9fivb_" aria-expanded="false" aria-label="Select a theme" dir="ltr" role="combobox" type="button">
+            <span class="cn477">
+              Auto
+            </span>
+            <svg class="cn478" aria-hidden="true" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+        </div>
+        <nav class="cn479">
+          <a class="cn480" href="https://adlibrary.com/ad-library-api" rel="noopener noreferrer" target="_blank">
+            API
+          </a>
+          <a class="cn481" href="https://adlibrary.com/terms">
+            Terms of Service
+          </a>
+          <a class="cn482" href="https://adlibrary.com/privacy-policy">
+            Privacy Policy
+          </a>
+          <a class="cn483" href="https://adlibrary.com/posts">
+            Posts
+          </a>
+          <a class="cn484" href="https://adlibrary.com/features">
+            Features
+          </a>
+          <a class="cn485" href="https://adlibrary.com/guides">
+            Guides
+          </a>
+          <a class="cn486" href="https://adlibrary.com/brands">
+            Discover Brands
+          </a>
+          <a class="cn487" href="https://adlibrary.com/compare">
+            Comparisons
+          </a>
+          <a class="cn488" href="https://adlibrary.com/tools" rel="noopener noreferrer" target="_blank">
+            Free Tools for Marketers
+          </a>
+          <a class="cn489" href="https://adlibrary.com/adtools">
+            Ad Tools
+          </a>
+          <a class="cn490" href="https://adlibrary.com/glossary">
+            Glossary
+          </a>
+          <a class="cn491" href="https://adlibrary.com/alternatives">
+            Alternatives
+          </a>
+        </nav>
+        <div class="cn492">
+          <div class="cn493">
+            <h4 class="cn494">
+              Ad Platforms
+            </h4>
+            <ul class="cn495">
+              <li class="cn496">
+                <a class="cn497" href="https://adlibrary.com/platforms/facebook">
+                  Facebook Ads
+                </a>
+              </li>
+              <li class="cn498">
+                <a class="cn499" href="https://adlibrary.com/platforms/instagram">
+                  Instagram Ads
+                </a>
+              </li>
+              <li class="cn500">
+                <a class="cn501" href="https://adlibrary.com/platforms/tiktok">
+                  TikTok Ads
+                </a>
+              </li>
+              <li class="cn502">
+                <a class="cn503" href="https://adlibrary.com/platforms/youtube">
+                  YouTube Ads
+                </a>
+              </li>
+              <li class="cn504">
+                <a class="cn505" href="https://adlibrary.com/platforms/google">
+                  Google Ads
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cn506">
+            <h4 class="cn507">
+              Browse Ads
+            </h4>
+            <ul class="cn508">
+              <li class="cn509">
+                <a class="cn510" href="https://adlibrary.com/ads-by-format/video">
+                  Video Ads
+                </a>
+              </li>
+              <li class="cn511">
+                <a class="cn512" href="https://adlibrary.com/ads-by-format/image">
+                  Image Ads
+                </a>
+              </li>
+              <li class="cn513">
+                <a class="cn514" href="https://adlibrary.com/ads-by-format/carousel">
+                  Carousel Ads
+                </a>
+              </li>
+              <li class="cn515">
+                <a class="cn516" href="https://adlibrary.com/ad-intelligence-api">
+                  Ad Spy API
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cn517">
+            <h4 class="cn518">
+              Ads by Country
+            </h4>
+            <ul class="cn519">
+              <li class="cn520">
+                <a class="cn521" href="https://adlibrary.com/ads-by-country/us">
+                  United States
+                </a>
+              </li>
+              <li class="cn522">
+                <a class="cn523" href="https://adlibrary.com/ads-by-country/gb">
+                  United Kingdom
+                </a>
+              </li>
+              <li class="cn524">
+                <a class="cn525" href="https://adlibrary.com/ads-by-country/de">
+                  Germany
+                </a>
+              </li>
+              <li class="cn526">
+                <a class="cn527" href="https://adlibrary.com/ads-by-country/fr">
+                  France
+                </a>
+              </li>
+              <li class="cn528">
+                <a class="cn529" href="https://adlibrary.com/ads-by-country/au">
+                  Australia
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cn530">
+            <h4 class="cn531">
+              Industries
+            </h4>
+            <ul class="cn532">
+              <li class="cn533">
+                <a class="cn534" href="https://adlibrary.com/brands/industry/ecommerce">
+                  E-commerce Ads
+                </a>
+              </li>
+              <li class="cn535">
+                <a class="cn536" href="https://adlibrary.com/brands/industry/saas">
+                  SaaS Ads
+                </a>
+              </li>
+              <li class="cn537">
+                <a class="cn538" href="https://adlibrary.com/brands/industry/finance">
+                  Finance Ads
+                </a>
+              </li>
+              <li class="cn539">
+                <a class="cn540" href="https://adlibrary.com/brands/industry/fashion">
+                  Fashion Ads
+                </a>
+              </li>
+              <li class="cn541">
+                <a class="cn542" href="https://adlibrary.com/brands/industry/technology">
+                  Technology Ads
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cn543">
+        <div class="cn544">
+          <p class="cn545">
+            Search pages, articles, and resources on this site
+          </p>
+          <form class="cn546">
+            <div class="cn547">
+              <svg class="cn548" fill="none" height="24" stroke="currentColor" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+              <input class="cn549" data-ditto-id="style-input-2" placeholder="Search this site..." type="search" value="" />
+            </div>
+            <button class="cn550" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="cn551">
+        <p class="cn552">
+          © 2026 AdLibrary. All rights reserved.
+        </p>
+      </div>
+    </footer>
+     
+</body>
+</html>

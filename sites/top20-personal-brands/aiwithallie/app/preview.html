@@ -1,0 +1,2010 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>AI with ALLIE</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/308c963dc508.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Condensed Black";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/76fca0165dc8.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2e209eabf04a.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7261a75eab59.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/81c58fa903a4.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d2758e342025.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/606860979494.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/16a6c9c20c9a.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/06b28ecaaeb9.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c06949bbb4dc.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/757e198501e6.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b3ea8b07ecfc.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cb38382566fe.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4d3dd7bf4646.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/379ae04f7b25.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cb3196a4813f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ecc8bebd1328.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e4e03b44b9eb.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9c561d102cb0.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/81926c0b6217.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c82a70de8621.woff2") format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7d21b8463722.woff2") format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b561f0f6649a.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3012b7ccfcda.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b39e1297dee8.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9249c3d70af2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ae0996afe054.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/71e971255823.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7a565933d910.woff2") format("woff2");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(34, 34, 34);
+  --primary: rgb(244, 227, 5);
+  --accent: rgb(253, 235, 1);
+  --border: rgb(229, 231, 235);
+  --muted-foreground: rgb(65, 64, 66);
+  --surface: rgb(249, 250, 251);
+  --muted: rgb(55, 65, 81);
+  --surface-2: rgba(241, 245, 249, 0.5);
+  --color-001: rgb(0, 0, 0);
+  --color-002: rgb(3, 7, 18);
+  --color-003: rgb(209, 213, 219);
+  --color-004: rgb(42, 42, 42);
+  --color-005: rgb(17, 24, 39);
+  --color-006: rgb(45, 45, 45);
+}
+
+:root {
+  /* fonts */
+  --font-body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-001: "Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-002: Ariel, sans-serif;
+  --font-003: Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-004: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-005: Roboto;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 16px;
+  --font-size-004: 18px;
+  --font-size-005: 20px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 400;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 16px;
+  --line-height-003: 20px;
+  --line-height-004: 28px;
+  /* spacing */
+  --space-001: 4px;
+  --space-002: 8px;
+  --space-003: 12px;
+  --space-004: 16px;
+  --space-005: 20px;
+  --space-006: 24px;
+  --space-007: 32px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 8px;
+  --radius-003: 9999px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgba(0, 0, 0, 0.05);
+  --clr-2: rgba(0, 0, 0, 0.1);
+  --clr-3: rgb(255, 250, 183);
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{height:100%;display:flex;flex-direction:column;color:var(--foreground);font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{display:block}
+.cn2{height:3373.12px;min-height:100vh;display:flex;flex-direction:column}
+.cn3{display:block}
+.cn4{height:768px;display:block;position:fixed;top:16px;right:16px;left:16px;z-index:9999;min-width:0px;pointer-events:none}
+.cn5{height:56px;display:block;padding-top:8px;padding-right:24px;padding-bottom:8px;padding-left:24px;background-color:var(--background)}
+.cn6{display:block;max-width:1152px;margin-right:auto;margin-left:auto}
+.cn7{height:40px;display:flex;justify-content:space-between;align-items:center;margin-left:auto;margin-right:auto}
+.cn8{height:40px;display:flex;align-items:center}
+.cn9{height:40px;display:block;padding-top:4px;padding-right:8px;padding-bottom:4px;padding-left:8px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;cursor:pointer}
+.cn10{height:32px;display:flex;align-items:center}
+.cn11{width:32px;height:32px;display:block;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;overflow-x:hidden;overflow-y:hidden}
+.cn12{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn13{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 100 / 100;vertical-align:middle}
+.cn14{display:block;margin-left:8px;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;line-height:20px}
+.cn15{display:flex;align-items:center}
+.cn16{display:flex;align-items:center}
+.cn17{height:38px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;justify-content:center;align-items:center;color:var(--color-002);font-family:Roboto;font-size:14px;font-weight:600;line-height:20px;text-align:center;background-color:var(--surface);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;cursor:pointer}
+.cn18{height:38px;border-width:1px;border-style:solid;border-color:var(--muted-foreground);display:flex;margin-left:8px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;justify-content:center;align-items:center;color:var(--background);font-family:Roboto;font-size:14px;font-weight:600;line-height:20px;white-space:nowrap;text-wrap:nowrap;background-color:var(--muted-foreground);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;cursor:pointer}
+.cn19{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:8px;text-align:left}
+.cn20{height:30px;display:inline-block;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;text-align:center;cursor:pointer}
+.cn21{display:block;margin-top:6px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px}
+.cn22{width:auto;height:24px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn23{display:block;flex-grow:1}
+.cn24{height:100%;min-height:100vh;display:block;overflow-x:hidden;overflow-y:auto;background-color:var(--background)}
+.cn25{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:32px;padding-bottom:32px;background-color:var(--background);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn26{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn27{display:block;padding-right:24px;padding-left:24px}
+.cn28{display:block;max-width:1152px;margin-right:auto;margin-left:auto}
+.cn29{border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:block;max-width:672px;margin-right:auto;margin-bottom:40px;margin-left:auto;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.cn30{display:flex;padding-top:8px;padding-bottom:8px;flex-direction:column;align-items:center}
+.cn31{width:80px;height:80px;display:block;margin-bottom:16px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;overflow-x:hidden;overflow-y:hidden;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px}
+.cn32{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn33{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 128 / 128;vertical-align:middle}
+.cn34{display:block}
+.cn35{display:block;max-width:576px;margin-right:auto;margin-left:auto}
+.cn36{height:100%;display:block;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:48px;font-weight:700;line-height:48px;text-align:center}
+.cn37{height:100%;display:block}
+.cn38{display:block;margin-top:16px;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:24px;line-height:32px;text-align:center}
+.cn39{display:block}
+.cn40{display:block;max-width:512px;margin-top:16px;margin-right:auto;margin-left:auto}
+.cn41{display:flex;flex-direction:column;align-items:center}
+.cn42{width:100%;display:block;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.cn43{display:flex;flex-direction:column}
+.cn44{border-width:2px;border-style:solid;border-color:var(--muted-foreground);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;overflow-x:hidden;overflow-y:hidden;background-color:var(--surface)}
+.cn45{width:100%;display:flex;align-items:center;background-color:var(--surface)}
+.cn46{width:auto;height:44px;display:block;z-index:10;padding-top:8px;padding-right:12px;padding-bottom:8px;padding-left:12px;overflow-x:clip;overflow-y:clip;color:var(--color-005);font-family:Roboto;font-size:18px;line-height:28px;cursor:text}
+.cn46::placeholder{color:rgb(107, 114, 128)}
+.cn47{width:100%;height:52px;display:block;padding-top:12px;padding-right:20px;padding-bottom:12px;padding-left:20px;overflow-x:clip;overflow-y:clip;color:var(--background);font-family:Roboto;font-size:18px;font-weight:600;line-height:28px;text-align:center;white-space:pre;text-wrap:nowrap;background-color:var(--muted-foreground);cursor:pointer}
+.cn48{height:68px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;row-gap:16px;column-gap:16px}
+.cn49{height:52px;display:block}
+.cn50{display:inline;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:600;line-height:16px;white-space:nowrap;text-wrap:nowrap}
+.cn51{height:20px;display:flex;margin-top:8px;align-items:center;cursor:pointer}
+.cn52{display:block;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;font-weight:600;line-height:20px;white-space:nowrap}
+.cn53{display:block}
+.cn54{display:block;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:600;line-height:16px;white-space:nowrap;text-wrap:nowrap}
+.cn55{display:flex;margin-top:8px;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;row-gap:8px;column-gap:8px}
+.cn56{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn57{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn58{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--muted-foreground)}
+.cn59{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn60{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn61{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn62{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--muted-foreground)}
+.cn63{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn64{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn65{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn66{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--muted-foreground)}
+.cn67{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn68{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn69{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn70{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--muted-foreground)}
+.cn71{width:12px;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn72{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn73{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn74{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--muted-foreground)}
+.cn75{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn76{display:block;max-width:1152px;margin-right:auto;margin-left:auto;padding-right:24px;padding-left:24px}
+.cn77{display:block;max-width:1152px;margin-left:auto;margin-right:auto}
+.cn78{display:block}
+.cn79{display:block;padding-right:24px;padding-left:24px}
+.cn80{display:block;max-width:1152px;margin-right:auto;margin-left:auto}
+.cn81{display:block;margin-bottom:64px}
+.cn82{display:block;padding-top:32px;padding-bottom:32px}
+.cn83{height:24px;display:flex;justify-content:space-between;align-items:center}
+.cn84{height:24px;display:flex;flex-direction:column}
+.cn85{display:block;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:700;white-space:nowrap}
+.cn86{display:grid;margin-top:24px;row-gap:24px;column-gap:24px;grid-template-rows:390.625px;grid-template-columns:repeat(3, minmax(0, 1fr))}
+.cn87{display:block;grid-column-start:span 1;grid-column-end:span 1}
+.cn88{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn89{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn90{display:inline}
+.cn91{display:block}
+.cn92{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn93{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn94{display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn95{display:block}
+.cn96{display:inline}
+.cn97{display:block}
+.cn98{display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn99{display:flex;align-items:center}
+.cn100{display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn101{display:inline}
+.cn102{display:flex;align-items:center}
+.cn103{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn104{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn105{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn106{display:block;margin-top:8px}
+.cn107{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn108{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn109{display:flex;margin-top:12px;align-items:center}
+.cn110{display:flex;overflow-x:hidden;overflow-y:hidden}
+.cn111{width:28px;height:28px;display:block;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px}
+.cn112{width:28px;height:28px;border-width:1px;border-style:solid;border-color:var(--background);display:inline-block;max-width:100%;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;overflow-x:clip;overflow-y:clip;vertical-align:middle}
+.cn113{height:20px;display:flex;margin-left:8px;align-items:center}
+.cn114{display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;font-weight:600;line-height:20px;white-space:nowrap}
+.cn115{display:block;grid-column-start:span 1;grid-column-end:span 1}
+.cn116{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn117{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn118{display:inline}
+.cn119{display:block}
+.cn120{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn121{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn122{display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn123{display:block}
+.cn124{display:inline}
+.cn125{display:block}
+.cn126{display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn127{display:flex;align-items:center}
+.cn128{display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn129{display:inline}
+.cn130{display:flex;align-items:center}
+.cn131{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn132{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn133{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn134{display:block;margin-top:8px}
+.cn135{height:28px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn136{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn137{display:flex;margin-top:12px;align-items:center}
+.cn138{display:flex;overflow-x:hidden;overflow-y:hidden}
+.cn139{width:28px;height:28px;display:block;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px}
+.cn140{width:28px;height:28px;border-width:1px;border-style:solid;border-color:var(--background);display:inline-block;max-width:100%;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;overflow-x:clip;overflow-y:clip;vertical-align:middle}
+.cn141{height:20px;display:flex;margin-left:8px;align-items:center}
+.cn142{display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;font-weight:600;line-height:20px;white-space:nowrap}
+.cn143{display:block;padding-right:24px;padding-left:24px}
+.cn144{display:block;max-width:1152px;margin-right:auto;margin-left:auto}
+.cn145{display:grid;grid-template-rows:1906.5px;grid-template-columns:repeat(12, minmax(0, 1fr))}
+.cn146{display:block;margin-bottom:32px;padding-top:8px;padding-bottom:16px;order:-9999;grid-column-start:span 12;grid-column-end:span 12}
+.cn147{height:100%;display:block}
+.cn148{display:block;margin-bottom:16px}
+.cn149{display:flex;flex-direction:column}
+.cn150{display:block;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:36px;font-weight:700;line-height:40px}
+.cn151{display:block;margin-bottom:32px}
+.cn152{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-bottom:16px}
+.cn153{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn154{width:16px;height:16px;display:block;position:absolute;top:21px;left:8px;transform:matrix(1, 0, 0, 1, 0, -8);transform-origin:8px 8px}
+.cn155{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn156{width:100%;height:42px;border-width:1px;border-style:solid;border-color:var(--surface);display:inline-block;max-width:896px;padding-top:8px;padding-right:12px;padding-bottom:8px;padding-left:32px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;overflow-x:clip;overflow-y:clip;color:var(--color-005);background-color:var(--surface);cursor:text}
+.cn156::placeholder{color:rgb(107, 114, 128)}
+.cn157{display:flex;margin-bottom:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.cn158{display:grid;row-gap:24px;column-gap:24px;grid-template-rows:362.625px 362.625px 362.625px 414.625px;grid-template-columns:repeat(auto-fit, minmax(342px, 1fr))}
+.cn159{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn160{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn161{display:inline}
+.cn162{display:block}
+.cn163{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn164{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn165{display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn166{display:block}
+.cn167{display:inline}
+.cn168{display:block}
+.cn169{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn170{height:16px;display:flex;align-items:center}
+.cn171{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn172{display:inline}
+.cn173{display:flex;align-items:center}
+.cn174{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn175{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn176{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn177{display:block;margin-top:8px}
+.cn178{height:28px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn179{height:24px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn180{display:flex;margin-top:12px;align-items:center}
+.cn181{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn182{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn183{display:inline}
+.cn184{display:block}
+.cn185{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn186{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn187{height:116px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn188{display:block}
+.cn189{display:inline}
+.cn190{display:block}
+.cn191{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn192{height:16px;display:flex;align-items:center}
+.cn193{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn194{display:inline}
+.cn195{display:flex;align-items:center}
+.cn196{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn197{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn198{display:block;margin-top:8px}
+.cn199{height:28px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn200{height:24px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn201{display:flex;margin-top:12px;align-items:center}
+.cn202{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn203{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn204{display:inline}
+.cn205{display:block}
+.cn206{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn207{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn208{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn209{display:block}
+.cn210{display:inline}
+.cn211{display:block}
+.cn212{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn213{height:16px;display:flex;align-items:center}
+.cn214{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn215{display:inline}
+.cn216{display:flex;align-items:center}
+.cn217{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn218{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn219{display:block;margin-top:8px}
+.cn220{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn221{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn222{display:flex;margin-top:12px;align-items:center}
+.cn223{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn224{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn225{display:inline}
+.cn226{display:block}
+.cn227{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn228{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn229{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn230{display:block}
+.cn231{display:inline}
+.cn232{display:block}
+.cn233{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn234{height:16px;display:flex;align-items:center}
+.cn235{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn236{display:inline}
+.cn237{display:flex;align-items:center}
+.cn238{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn239{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn240{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn241{display:block;margin-top:8px}
+.cn242{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn243{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn244{display:flex;margin-top:12px;align-items:center}
+.cn245{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn246{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn247{display:inline}
+.cn248{display:block}
+.cn249{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn250{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn251{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn252{display:block}
+.cn253{display:inline}
+.cn254{display:block}
+.cn255{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn256{height:16px;display:flex;align-items:center}
+.cn257{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn258{display:inline}
+.cn259{display:flex;align-items:center}
+.cn260{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn261{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn262{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn263{display:block;margin-top:8px}
+.cn264{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn265{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn266{display:flex;margin-top:12px;align-items:center}
+.cn267{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn268{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn269{display:inline}
+.cn270{display:block}
+.cn271{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn272{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn273{display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn274{display:block}
+.cn275{display:inline}
+.cn276{display:block}
+.cn277{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn278{height:16px;display:flex;align-items:center}
+.cn279{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn280{display:inline}
+.cn281{display:flex;align-items:center}
+.cn282{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn283{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn284{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn285{display:block;margin-top:8px}
+.cn286{height:28px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn287{height:72px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn288{display:flex;margin-top:12px;align-items:center}
+.cn289{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn290{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn291{display:inline}
+.cn292{display:block}
+.cn293{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn294{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn295{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn296{display:block}
+.cn297{display:inline}
+.cn298{display:block}
+.cn299{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn300{height:16px;display:flex;align-items:center}
+.cn301{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn302{display:inline}
+.cn303{display:flex;align-items:center}
+.cn304{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn305{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn306{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn307{display:block;margin-top:8px}
+.cn308{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn309{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn310{display:flex;margin-top:12px;align-items:center}
+.cn311{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn312{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn313{display:inline}
+.cn314{display:block}
+.cn315{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn316{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn317{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn318{display:block}
+.cn319{display:inline}
+.cn320{display:block}
+.cn321{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn322{height:16px;display:flex;align-items:center}
+.cn323{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn324{display:inline}
+.cn325{display:flex;align-items:center}
+.cn326{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn327{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn328{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn329{display:block;margin-top:8px}
+.cn330{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn331{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn332{display:flex;margin-top:12px;align-items:center}
+.cn333{height:362.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn334{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn335{display:inline}
+.cn336{display:block}
+.cn337{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn338{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn339{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn340{display:block}
+.cn341{display:inline}
+.cn342{display:block}
+.cn343{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn344{height:16px;display:flex;align-items:center}
+.cn345{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn346{display:inline}
+.cn347{display:flex;align-items:center}
+.cn348{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn349{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn350{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn351{display:block;margin-top:8px}
+.cn352{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn353{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn354{display:flex;margin-top:12px;align-items:center}
+.cn355{height:414.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn356{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn357{display:inline}
+.cn358{display:block}
+.cn359{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn360{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn361{display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn362{display:block}
+.cn363{display:inline}
+.cn364{display:block}
+.cn365{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn366{height:16px;display:flex;align-items:center}
+.cn367{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn368{display:inline}
+.cn369{display:flex;align-items:center}
+.cn370{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn371{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn372{display:block;margin-top:8px}
+.cn373{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn374{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn375{display:flex;margin-top:12px;align-items:center}
+.cn376{height:414.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn377{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn378{display:inline}
+.cn379{display:block}
+.cn380{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn381{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn382{height:168px;display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn383{display:block}
+.cn384{display:inline}
+.cn385{display:block}
+.cn386{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn387{height:16px;display:flex;align-items:center}
+.cn388{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn389{display:inline}
+.cn390{display:flex;align-items:center}
+.cn391{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn392{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn393{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn394{display:block;margin-top:8px}
+.cn395{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn396{height:48px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn397{display:flex;margin-top:12px;align-items:center}
+.cn398{height:414.625px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;flex-direction:column;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);cursor:pointer}
+.cn399{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn400{display:inline}
+.cn401{display:block}
+.cn402{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1.9 / 1}
+.cn403{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 800 / 421;vertical-align:middle}
+.cn404{display:block;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn405{display:block}
+.cn406{display:inline}
+.cn407{display:block}
+.cn408{height:16px;display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:center}
+.cn409{height:16px;display:flex;align-items:center}
+.cn410{height:16px;display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:12px;font-weight:300;line-height:16px}
+.cn411{display:inline}
+.cn412{display:flex;align-items:center}
+.cn413{display:flex;align-items:center;color:var(--muted-foreground);font-family:Ariel, sans-serif;font-size:14px;line-height:20px}
+.cn414{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn415{display:block;margin-left:2px;font-size:12px;font-weight:700;line-height:16px}
+.cn416{display:block;margin-top:8px}
+.cn417{height:56px;overflow-x:hidden;overflow-y:hidden;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:20px;font-weight:600;line-height:28px;-webkit-line-clamp:3}
+.cn418{height:72px;margin-top:4px;overflow-x:hidden;overflow-y:hidden;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:300;-webkit-line-clamp:3}
+.cn419{display:flex;margin-top:12px;align-items:center}
+.cn420{display:flex;overflow-x:hidden;overflow-y:hidden}
+.cn421{width:28px;height:28px;display:block;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px}
+.cn422{width:28px;height:28px;border-width:1px;border-style:solid;border-color:var(--background);display:inline-block;max-width:100%;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;overflow-x:clip;overflow-y:clip;vertical-align:middle}
+.cn423{height:20px;display:flex;margin-left:8px;align-items:center}
+.cn424{display:block;color:var(--muted-foreground);font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;font-weight:600;line-height:20px;white-space:nowrap}
+.cn425{display:flex;margin-top:48px;padding-top:16px;padding-right:16px;padding-bottom:32px;padding-left:16px;justify-content:center;align-items:center;row-gap:12px;column-gap:12px;grid-template-columns:repeat(4, minmax(0px, 1fr));grid-template-rows:repeat(2, minmax(0px, 1fr));grid-column-start:span 12;grid-column-end:span 12;margin-left:auto;margin-right:auto}
+.cn426{display:flex;justify-content:flex-end;order:2;row-gap:8px;column-gap:8px;grid-column-start:span 2;grid-column-end:span 2;font-family:Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}
+.cn427{border-width:1px;border-style:solid;border-color:var(--border);display:flex;opacity:0.4;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:not-allowed;pointer-events:none}
+.cn428{border-width:1px;border-style:solid;border-color:var(--border);display:flex;opacity:0.4;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:not-allowed;pointer-events:none}
+.cn429{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;transform:matrix(-1, 0, 0, -1, 0, 0);transform-origin:8px 8px;pointer-events:none}
+.cn430{display:flex;justify-content:center;order:2;row-gap:12px;column-gap:12px;grid-column-start:span 4;grid-column-end:span 4}
+.cn431{height:34px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--background);background-color:var(--muted-foreground);cursor:pointer}
+.cn432{height:34px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:pointer}
+.cn433{height:34px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:pointer}
+.cn434{height:34px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:pointer}
+.cn435{display:flex;align-items:center;order:2;row-gap:8px;column-gap:8px;grid-column-start:span 2;grid-column-end:span 2;font-family:Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}
+.cn436{height:34px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:pointer}
+.cn437{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn438{height:34px;border-width:1px;border-style:solid;border-color:var(--border);display:flex;padding-top:4px;padding-right:12px;padding-bottom:4px;padding-left:12px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;row-gap:8px;column-gap:8px;color:var(--color-002);background-color:var(--surface);cursor:pointer}
+.cn439{display:block;padding-top:32px;padding-right:24px;padding-bottom:32px;padding-left:24px;background-color:var(--background)}
+.cn440{display:block;max-width:1152px;margin-right:auto;margin-left:auto}
+.cn441{display:flex;flex-direction:column;row-gap:24px}
+.cn442{display:grid;row-gap:24px;grid-template-columns:384px 384px 384px;grid-template-rows:172px}
+.cn443{display:block;padding-right:24px;padding-left:24px}
+.cn444{height:100%;display:flex;flex-direction:column;align-items:flex-start}
+.cn445{height:72px;display:flex;padding-top:16px;padding-bottom:16px;align-items:center;column-gap:8px}
+.cn446{width:40px;height:40px;display:block;max-width:100%;overflow-x:hidden;overflow-y:hidden;aspect-ratio:auto 40 / 40;vertical-align:middle}
+.cn447{display:block;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:600}
+.cn448{display:block;text-align:left}
+.cn449{display:block;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;line-height:20px}
+.cn450{display:flex;margin-left:auto;margin-right:auto}
+.cn451{display:flex;flex-direction:column;flex-grow:1;flex-basis:0px;row-gap:12px}
+.cn452{display:block;font-family:"Roboto Condensed", sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;font-weight:600;line-height:20px}
+.cn453{display:flex;flex-direction:column;row-gap:8px}
+.cn454{display:block;max-width:144px;cursor:pointer}
+.cn455{display:block;font-family:Roboto, sans-ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:14px;line-height:20px}
+.cn456{display:flex;padding-right:24px;padding-left:24px;flex-direction:column;align-items:flex-start;row-gap:16px}
+.cn457{width:100%;display:flex;flex-direction:column;align-items:center}
+.cn458{width:100%;display:block;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.cn459{display:flex;flex-direction:column}
+.cn460{border-width:2px;border-style:solid;border-color:var(--muted-foreground);display:flex;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;align-items:center;overflow-x:hidden;overflow-y:hidden;background-color:var(--surface)}
+.cn461{width:100%;display:flex;align-items:center;background-color:var(--surface)}
+.cn462{width:auto;height:44px;display:block;z-index:10;padding-top:8px;padding-right:12px;padding-bottom:8px;padding-left:12px;overflow-x:clip;overflow-y:clip;color:var(--color-005);font-family:Roboto;font-size:18px;line-height:28px;cursor:text}
+.cn462::placeholder{color:rgb(107, 114, 128)}
+.cn463{width:100%;height:52px;display:block;padding-top:12px;padding-right:20px;padding-bottom:12px;padding-left:20px;overflow-x:clip;overflow-y:clip;color:var(--background);font-family:Roboto;font-size:18px;font-weight:600;line-height:28px;text-align:center;white-space:pre;text-wrap:nowrap;background-color:var(--muted-foreground);cursor:pointer}
+.cn464{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;row-gap:8px;column-gap:8px}
+.cn465{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn466{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn467{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--foreground)}
+.cn468{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn469{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn470{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn471{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--foreground)}
+.cn472{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn473{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn474{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn475{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--foreground)}
+.cn476{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn477{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn478{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn479{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--foreground)}
+.cn480{width:12px;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn481{height:44px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;cursor:pointer}
+.cn482{width:44px;height:100%;display:block;position:absolute;top:0px;left:0px;opacity:0.1;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;background-color:var(--color-001)}
+.cn483{display:block;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;color:var(--background);background-color:var(--foreground)}
+.cn484{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn485{display:flex;padding-right:24px;padding-left:24px;justify-content:space-between;align-items:center;row-gap:16px}
+.cn486{width:552px;height:16px;display:block;text-align:left}
+.cn487{display:block;font-family:Ariel, sans-serif;font-size:12px;font-weight:300;line-height:16px}
+.cn488{width:552px;display:flex;justify-content:flex-end;align-items:center;row-gap:16px;column-gap:16px}
+.cn489{height:16px;display:flex;column-gap:20px}
+.cn490{height:16px;display:block;text-decoration-line:underline;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn491{display:block;font-family:Ariel, sans-serif;font-size:12px;font-weight:300;line-height:16px}
+.cn492{display:block;text-decoration-line:underline;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn493{display:block;font-family:Ariel, sans-serif;font-size:12px;font-weight:300;line-height:16px}
+.cn494{display:block}
+.cn495{display:inline;color:var(--muted)}
+.cn496{border-width:1px;border-style:solid;border-color:var(--color-003);display:flex;padding-top:8px;padding-right:12px;padding-bottom:8px;padding-left:12px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;align-items:center;font-size:12px;line-height:16px;background-color:var(--background);cursor:pointer}
+.cn497{width:auto;height:16px;display:block;margin-right:8px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn498{display:block}
+
+@media (max-width: 571px) {
+.cn2{height:6894.56px}
+.cn4{height:780px}
+.cn5{padding-right:16px;padding-left:16px}
+.cn14{display:none}
+.cn27{padding-right:16px;padding-left:16px}
+.cn36{font-size:36px;line-height:40px}
+.cn38{font-size:20px;line-height:28px}
+.cn40{max-width:384px}
+.cn44{flex-direction:column}
+.cn49{height:48px}
+.cn51{height:16px;flex-direction:column;align-items:flex-start}
+.cn52{font-size:12px;line-height:16px}
+.cn55{justify-content:center;align-items:center}
+.cn76{padding-right:16px;padding-left:16px}
+.cn79{padding-right:16px;padding-left:16px}
+.cn81{margin-bottom:0}
+.cn86{grid-template-rows:397.469px 369.469px}
+.cn87{grid-column-start:span 3;grid-column-end:span 3}
+.cn107{font-size:18px;-webkit-line-clamp:2}
+.cn108{-webkit-line-clamp:2}
+.cn109{flex-direction:column;align-items:flex-start}
+.cn113{height:16px;margin-top:4px;margin-left:0}
+.cn114{font-size:12px;line-height:16px}
+.cn115{grid-column-start:span 3;grid-column-end:span 3}
+.cn135{font-size:18px;-webkit-line-clamp:2}
+.cn136{-webkit-line-clamp:2}
+.cn137{flex-direction:column;align-items:flex-start}
+.cn141{height:16px;margin-top:4px;margin-left:0}
+.cn142{font-size:12px;line-height:16px}
+.cn143{padding-right:16px;padding-left:16px}
+.cn145{grid-template-rows:4787.62px}
+.cn146{order:9999}
+.cn150{font-size:30px;line-height:36px}
+.cn156{max-width:none}
+.cn158{grid-template-rows:325.469px 301.469px 353.469px 353.469px 353.469px 325.469px 353.469px 353.469px 353.469px 353.469px 353.469px 369.469px}
+.cn159{height:325.469px}
+.cn178{font-size:18px;-webkit-line-clamp:2}
+.cn179{height:48px;-webkit-line-clamp:2}
+.cn180{flex-direction:column;align-items:flex-start}
+.cn181{height:301.469px}
+.cn187{height:120px}
+.cn199{font-size:18px;-webkit-line-clamp:2}
+.cn200{-webkit-line-clamp:2}
+.cn201{flex-direction:column;align-items:flex-start}
+.cn202{height:353.469px}
+.cn208{height:172px}
+.cn220{font-size:18px;-webkit-line-clamp:2}
+.cn221{-webkit-line-clamp:2}
+.cn222{flex-direction:column;align-items:flex-start}
+.cn223{height:353.469px}
+.cn229{height:172px}
+.cn242{font-size:18px;-webkit-line-clamp:2}
+.cn243{-webkit-line-clamp:2}
+.cn244{flex-direction:column;align-items:flex-start}
+.cn245{height:353.469px}
+.cn251{height:172px}
+.cn264{font-size:18px;-webkit-line-clamp:2}
+.cn265{-webkit-line-clamp:2}
+.cn266{flex-direction:column;align-items:flex-start}
+.cn267{height:325.469px}
+.cn286{font-size:18px;-webkit-line-clamp:2}
+.cn287{height:48px;-webkit-line-clamp:2}
+.cn288{flex-direction:column;align-items:flex-start}
+.cn289{height:353.469px}
+.cn295{height:172px}
+.cn308{font-size:18px;-webkit-line-clamp:2}
+.cn309{-webkit-line-clamp:2}
+.cn310{flex-direction:column;align-items:flex-start}
+.cn311{height:353.469px}
+.cn317{height:172px}
+.cn330{font-size:18px;-webkit-line-clamp:2}
+.cn331{-webkit-line-clamp:2}
+.cn332{flex-direction:column;align-items:flex-start}
+.cn333{height:353.469px}
+.cn339{height:172px}
+.cn352{font-size:18px;-webkit-line-clamp:2}
+.cn353{-webkit-line-clamp:2}
+.cn354{flex-direction:column;align-items:flex-start}
+.cn355{height:353.469px}
+.cn373{font-size:18px;-webkit-line-clamp:2}
+.cn374{-webkit-line-clamp:2}
+.cn375{flex-direction:column;align-items:flex-start}
+.cn376{height:353.469px}
+.cn382{height:172px}
+.cn395{font-size:18px;-webkit-line-clamp:2}
+.cn396{-webkit-line-clamp:2}
+.cn397{flex-direction:column;align-items:flex-start}
+.cn398{height:369.469px}
+.cn417{height:28px;font-size:18px;-webkit-line-clamp:2}
+.cn418{height:48px;-webkit-line-clamp:2}
+.cn419{flex-direction:column;align-items:flex-start}
+.cn423{height:16px;margin-top:4px;margin-left:0}
+.cn424{font-size:12px;line-height:16px}
+.cn425{display:grid;grid-template-columns:68.75px 68.75px 68.75px 68.75px;grid-template-rows:34px 34px;justify-content:initial}
+.cn430{order:1}
+.cn439{padding-right:16px;padding-left:16px}
+.cn442{grid-template-rows:152px 160px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn443{padding-right:0;padding-left:0}
+.cn444{align-items:center}
+.cn448{text-align:center}
+.cn450{display:none}
+.cn456{align-items:center;padding-right:0;padding-left:0}
+.cn460{flex-direction:column}
+.cn464{justify-content:center;align-items:center}
+.cn485{flex-direction:column;padding-right:0;padding-left:0;justify-content:initial}
+.cn486{width:343px;text-align:center}
+.cn488{width:343px;flex-direction:column;justify-content:initial;column-gap:initial}
+.cn489{column-gap:8px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn2{height:4043.39px}
+.cn4{height:992px}
+.cn81{margin-bottom:0}
+.cn86{grid-template-rows:366.828px}
+.cn107{height:84px}
+.cn108{height:72px}
+.cn135{height:56px}
+.cn136{height:72px}
+.cn145{grid-template-rows:2588.56px}
+.cn146{order:9999}
+.cn158{grid-template-rows:300.094px 352.094px 352.094px 352.094px 376.094px 404.094px}
+.cn159{height:300.094px}
+.cn181{height:300.094px}
+.cn202{height:352.094px}
+.cn223{height:352.094px}
+.cn245{height:352.094px}
+.cn267{height:352.094px}
+.cn289{height:352.094px}
+.cn311{height:352.094px}
+.cn333{height:376.094px}
+.cn355{height:376.094px}
+.cn374{height:72px}
+.cn376{height:404.094px}
+.cn398{height:404.094px}
+.cn442{grid-template-columns:240px 240px 240px;grid-template-rows:232px}
+.cn486{width:336px}
+.cn488{width:336px}
+}
+
+@media (min-width: 1601px) {
+.cn4{height:1048px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1">
+      <div class="cn2">
+        <div class="cn3"></div>
+        <div class="cn4"></div>
+        <nav class="cn5">
+          <div class="cn6">
+            <div class="cn7">
+              <div class="cn8" data-ditto-id="style-div-18">
+                <a class="cn9" data-ditto-id="style-link" href="https://www.aiwithallie.com/">
+                  <div class="cn10">
+                    <div class="cn11">
+                      <figure class="cn12">
+                        <img class="cn13" alt="AI with ALLIE logo" height="100" src="public/assets/cloned/images/971be86c7431.png" width="100" />
+                      </figure>
+                    </div>
+                    <span class="cn14">
+                      AI with ALLIE
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="cn15">
+                <div class="cn16" data-ditto-id="style-div-17">
+                  <button class="cn17" data-ditto-id="style-button">
+                    Login
+                  </button>
+                  <a class="cn18" data-ditto-id="style-button-2" href="https://www.aiwithallie.com/subscribe">
+                    Subscribe
+                  </a>
+                </div>
+                <div class="cn19">
+                  <button class="cn20" data-ditto-id="style-headlessui-menu-button-r-0" aria-expanded="false" aria-haspopup="menu" aria-label="Menu" id="headlessui-menu-button-_r_0_" type="button">
+                    <div class="cn21" data-ditto-id="style-div">
+                      <svg class="cn22" data-ditto-id="style-icon-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <main class="cn23">
+          <div class="cn24">
+            <div class="cn25">
+              <div class="cn26">
+                <div class="cn27">
+                  <div class="cn28" data-ditto-id="style-ul">
+                    <div class="cn29">
+                      <div class="cn30">
+                        <div class="cn31">
+                          <figure class="cn32">
+                            <img class="cn33" data-ditto-id="style-span-9" alt="AI with ALLIE" height="128" src="public/assets/cloned/images/724b7ca9ec2b.png" width="128" />
+                          </figure>
+                        </div>
+                        <div class="cn34" data-ditto-id="style-icon-22">
+                          <div class="cn35">
+                            <div class="cn36" data-ditto-id="style-span-8">
+                              <p class="cn37">
+                                AI with ALLIE
+                              </p>
+                            </div>
+                          </div>
+                          <div class="cn38">
+                            <p class="cn39">
+                              Turning AI buzzwords into business tactics. Get hands-on insights from an industry insider. Trusted by 2 million. Subscribe and get access to the AI Fast Track — a 5-day email course to expand what AI can do for you.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cn40" data-ditto-id="style-heading-15">
+                        <div class="cn41">
+                          <form class="cn42">
+                            <div class="cn43">
+                              <div class="cn44">
+                                <div class="cn45" data-ditto-id="style-icon-19">
+                                  <input class="cn46" data-ditto-id="style-q" name="email" placeholder="Enter Your Email" type="email" />
+                                </div>
+                                <input class="cn47" type="submit" value="Subscribe" />
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cn48">
+                      <div class="cn49">
+                        <span class="cn50">
+                          Written by
+                        </span>
+                        <a class="cn51" href="https://www.aiwithallie.com/authors">
+                          <span class="cn52">
+                            AI with ALLIE
+                          </span>
+                        </a>
+                      </div>
+                      <div class="cn53">
+                        <p class="cn54">
+                          Connect
+                        </p>
+                        <div class="cn55">
+                          <a class="cn56" aria-label="Twitter" href="https://www.twitter.com/alliekmiller" rel="noreferrer" target="_blank">
+                            <div class="cn57"></div>
+                            <div class="cn58">
+                              <svg class="cn59" data-ditto-id="style-div-11" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                            </div>
+                          </a>
+                          <a class="cn60" aria-label="LinkedIn" href="https://www.linkedin.com/in/alliekmiller" rel="noreferrer" target="_blank">
+                            <div class="cn61"></div>
+                            <div class="cn62">
+                              <svg class="cn63" data-ditto-id="style-div-12" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                            </div>
+                          </a>
+                          <a class="cn64" aria-label="Youtube" href="https://www.youtube.com/@AKMofficial" rel="noreferrer" target="_blank">
+                            <div class="cn65" data-ditto-id="style-icon-3"></div>
+                            <div class="cn66">
+                              <svg class="cn67" data-ditto-id="style-div-13" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                            </div>
+                          </a>
+                          <a class="cn68" data-ditto-id="style-heading" aria-label="Tiktok" href="https://www.tiktok.com/@alliekmiller" rel="noreferrer" target="_blank">
+                            <div class="cn69"></div>
+                            <div class="cn70">
+                              <svg class="cn71" data-ditto-id="style-div-14" fill="currentColor" viewBox="0 0 2859 3333" xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd"><path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path></svg>
+                            </div>
+                          </a>
+                          <a class="cn72" aria-label="Instagram" href="https://www.instagram.com/alliekmiller" rel="noreferrer" target="_blank">
+                            <div class="cn73"></div>
+                            <div class="cn74">
+                              <svg class="cn75" data-ditto-id="style-figure" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cn76">
+              <div class="cn77">
+                <div class="cn78" id="header-ad-placement"></div>
+              </div>
+            </div>
+            <div class="cn79">
+              <div class="cn80">
+                <div class="cn81">
+                  <div class="cn82">
+                    <div class="cn83">
+                      <div class="cn84" data-ditto-id="style-time-2">
+                        <h4 class="cn85">
+                          Featured Posts
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="cn86">
+                      <div class="cn87" data-ditto-id="style-icon-4">
+                        <div class="cn88">
+                          <div class="cn89" data-ditto-id="style-heading-2">
+                            <a class="cn90" data-ditto-id="style-p-8" href="https://www.aiwithallie.com/p/my-2026-ai-predictions-and-the-three-things-you-need-to-focus-on">
+                              <div class="cn91">
+                                <figure class="cn92">
+                                  <img class="cn93" data-ditto-id="style-div-19" alt="My 2026 AI predictions (and the three things you NEED to focus on)" height="421" src="public/assets/cloned/images/16e4c0131722.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn94">
+                            <div class="cn95">
+                              <a class="cn96" href="https://www.aiwithallie.com/p/my-2026-ai-predictions-and-the-three-things-you-need-to-focus-on">
+                                <div class="cn97">
+                                  <div class="cn98">
+                                    <div class="cn99">
+                                      <span class="cn100">
+                                        <time class="cn101" datetime="2025-12-29T20:34:13.293Z">
+                                          Dec 29, 2025
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn102">
+                                      <span class="cn103">
+                                        <svg class="cn104" data-ditto-id="style-span-5" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn105">
+                                          6
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn106">
+                                    <h2 class="cn107" data-ditto-id="style-span-4">
+                                      My 2026 AI predictions (and the three things you NEED to focus on)
+                                    </h2>
+                                    <p class="cn108" data-ditto-id="style-icon-5">
+                                      The next 12 months in AI will feel like 5 years — here's your roadmap.
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn109" href="https://www.aiwithallie.com/authors">
+                                <div class="cn110" data-ditto-id="style-heading-3">
+                                  <div class="cn111">
+                                    <img class="cn112" alt="Allie K. Miller" src="public/assets/cloned/images/b88cd0c8b981.jpg" />
+                                  </div>
+                                </div>
+                                <div class="cn113">
+                                  <span class="cn114">
+                                    Allie K. Miller
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cn115">
+                        <div class="cn116">
+                          <div class="cn117">
+                            <a class="cn118" href="https://www.aiwithallie.com/p/the-entire-2025-ai-year-in-review">
+                              <div class="cn119">
+                                <figure class="cn120">
+                                  <img class="cn121" alt="The Entire 2025 AI Year in Review" height="421" src="public/assets/cloned/images/897f0ef6eb7c.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn122">
+                            <div class="cn123">
+                              <a class="cn124" href="https://www.aiwithallie.com/p/the-entire-2025-ai-year-in-review">
+                                <div class="cn125">
+                                  <div class="cn126">
+                                    <div class="cn127">
+                                      <span class="cn128">
+                                        <time class="cn129" data-ditto-id="style-time" datetime="2025-12-22T19:38:24.536Z">
+                                          Dec 22, 2025
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn130">
+                                      <span class="cn131">
+                                        <svg class="cn132" data-ditto-id="style-icon" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn133">
+                                          5
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn134">
+                                    <h2 class="cn135" data-ditto-id="style-heading-8">
+                                      The Entire 2025 AI Year in Review
+                                    </h2>
+                                    <p class="cn136">
+                                      What Every Business Leader and Solopreneur Actually Needs to Know
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn137" href="https://www.aiwithallie.com/authors">
+                                <div class="cn138">
+                                  <div class="cn139">
+                                    <img class="cn140" alt="Allie K. Miller" src="public/assets/cloned/images/b88cd0c8b981.jpg" />
+                                  </div>
+                                </div>
+                                <div class="cn141">
+                                  <span class="cn142">
+                                    Allie K. Miller
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cn143">
+              <div class="cn144">
+                <div class="cn145">
+                  <div class="cn146">
+                    <div class="cn147">
+                      <div class="cn148">
+                        <div class="cn149">
+                          <h4 class="cn150">
+                            Archive
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="cn151" data-ditto-id="style-div-4">
+                        <div class="cn152">
+                          <div class="cn153">
+                            <div class="cn154" data-ditto-id="style-div-2">
+                              <svg class="cn155" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path></svg>
+                            </div>
+                            <input class="cn156" data-ditto-id="style-q-2" id="q" name="q" placeholder="Search posts..." type="text" value="" />
+                          </div>
+                        </div>
+                        <div class="cn157"></div>
+                      </div>
+                      <div class="cn158">
+                        <div class="cn159">
+                          <div class="cn160">
+                            <a class="cn161" href="https://www.aiwithallie.com/p/5-hacks-i-used-to-build-a-profitable-app">
+                              <div class="cn162">
+                                <figure class="cn163">
+                                  <img class="cn164" alt="5 hacks I used to build a profitable app" height="421" src="public/assets/cloned/images/ff3e933babad.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn165">
+                            <div class="cn166">
+                              <a class="cn167" href="https://www.aiwithallie.com/p/5-hacks-i-used-to-build-a-profitable-app">
+                                <div class="cn168">
+                                  <div class="cn169">
+                                    <div class="cn170">
+                                      <span class="cn171">
+                                        <time class="cn172" datetime="2026-08-04T14:00:00.000Z">
+                                          -5173 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn173" data-ditto-id="style-div-5">
+                                      <span class="cn174">
+                                        <svg class="cn175" data-ditto-id="style-icon-11" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn176" data-ditto-id="style-span">
+                                          3
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn177">
+                                    <h2 class="cn178" data-ditto-id="style-heading-9">
+                                      5 hacks I used to build a profitable app
+                                    </h2>
+                                    <p class="cn179">
+                                      30% of my AI conversations use this one trick
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn180" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn181">
+                          <div class="cn182">
+                            <a class="cn183" href="https://www.aiwithallie.com/p/this-is-the-hottest-new-job-in-ai">
+                              <div class="cn184">
+                                <figure class="cn185">
+                                  <img class="cn186" alt="THIS is the hottest new job in AI" height="421" src="public/assets/cloned/images/bb4c1ed7d6fe.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn187">
+                            <div class="cn188">
+                              <a class="cn189" href="https://www.aiwithallie.com/p/this-is-the-hottest-new-job-in-ai">
+                                <div class="cn190">
+                                  <div class="cn191">
+                                    <div class="cn192">
+                                      <span class="cn193">
+                                        <time class="cn194" datetime="2026-07-28T13:00:00.000Z">
+                                          -5004 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn195" data-ditto-id="style-div-6">
+                                      <span class="cn196">
+                                        <svg class="cn197" data-ditto-id="style-icon-12" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn198" data-ditto-id="style-div-3">
+                                    <h2 class="cn199" data-ditto-id="style-heading-10">
+                                      THIS is the hottest new job in AI
+                                    </h2>
+                                    <p class="cn200">
+                                      How to get it and how to hire for it
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn201" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn202">
+                          <div class="cn203">
+                            <a class="cn204" href="https://www.aiwithallie.com/p/how-ai-ready-is-your-company">
+                              <div class="cn205">
+                                <figure class="cn206">
+                                  <img class="cn207" alt="Are you AI-First? Get the truth with my free assessment 👀" height="421" src="public/assets/cloned/images/a6a709576b8d.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn208">
+                            <div class="cn209">
+                              <a class="cn210" href="https://www.aiwithallie.com/p/how-ai-ready-is-your-company">
+                                <div class="cn211">
+                                  <div class="cn212">
+                                    <div class="cn213">
+                                      <span class="cn214">
+                                        <time class="cn215" datetime="2026-07-17T14:00:00.000Z">
+                                          -4741 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn216">
+                                      <span class="cn217" data-ditto-id="style-span-2">
+                                        <svg class="cn218" data-ditto-id="style-icon-13" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn219">
+                                    <h2 class="cn220" data-ditto-id="style-heading-4">
+                                      Are you AI-First? Get the truth with my free assessment 👀
+                                    </h2>
+                                    <p class="cn221">
+                                      This has only been shared with my private advisory clients until today. 
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn222" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn223">
+                          <div class="cn224">
+                            <a class="cn225" href="https://www.aiwithallie.com/p/the-3-massive-org-chart-changes-ai-is-causing">
+                              <div class="cn226">
+                                <figure class="cn227">
+                                  <img class="cn228" alt="The 3 massive org chart changes AI is causing" height="421" src="public/assets/cloned/images/604c99a1350d.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn229">
+                            <div class="cn230">
+                              <a class="cn231" href="https://www.aiwithallie.com/p/the-3-massive-org-chart-changes-ai-is-causing">
+                                <div class="cn232">
+                                  <div class="cn233">
+                                    <div class="cn234">
+                                      <span class="cn235">
+                                        <time class="cn236" datetime="2026-07-15T15:36:01.599Z">
+                                          -4695 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn237">
+                                      <span class="cn238">
+                                        <svg class="cn239" data-ditto-id="style-link-4" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn240">
+                                          1
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn241">
+                                    <h2 class="cn242" data-ditto-id="style-p">
+                                      The 3 massive org chart changes AI is causing
+                                    </h2>
+                                    <p class="cn243">
+                                      + HR leaders, I'm hosting a virtual roundtable just for you
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn244" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn245">
+                          <div class="cn246">
+                            <a class="cn247" href="https://www.aiwithallie.com/p/the-best-ai-model-and-tool-for-every-use-case">
+                              <div class="cn248">
+                                <figure class="cn249">
+                                  <img class="cn250" alt="My Exact AI Stack: Which Model I Use for What" height="421" src="public/assets/cloned/images/081550299f89.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn251">
+                            <div class="cn252">
+                              <a class="cn253" href="https://www.aiwithallie.com/p/the-best-ai-model-and-tool-for-every-use-case">
+                                <div class="cn254">
+                                  <div class="cn255">
+                                    <div class="cn256">
+                                      <span class="cn257">
+                                        <time class="cn258" datetime="2026-07-09T13:02:00.000Z">
+                                          -4549 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn259">
+                                      <span class="cn260">
+                                        <svg class="cn261" data-ditto-id="style-icon-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn262">
+                                          1
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn263" data-ditto-id="style-heading-5">
+                                    <h2 class="cn264" data-ditto-id="style-p-3">
+                                      My Exact AI Stack: Which Model I Use for What
+                                    </h2>
+                                    <p class="cn265">
+                                      Fable 5 and GPT-5.6 are both now LIVE. Which is best?
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn266" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn267">
+                          <div class="cn268">
+                            <a class="cn269" href="https://www.aiwithallie.com/p/how-i-built-my-ai-agent-workforce">
+                              <div class="cn270">
+                                <figure class="cn271">
+                                  <img class="cn272" alt="How I built my AI agent workforce " height="421" src="public/assets/cloned/images/a9905ef819ae.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn273">
+                            <div class="cn274">
+                              <a class="cn275" href="https://www.aiwithallie.com/p/how-i-built-my-ai-agent-workforce">
+                                <div class="cn276">
+                                  <div class="cn277">
+                                    <div class="cn278">
+                                      <span class="cn279">
+                                        <time class="cn280" datetime="2026-06-17T13:26:00.000Z">
+                                          -4021 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn281">
+                                      <span class="cn282" data-ditto-id="style-icon-7">
+                                        <svg class="cn283" data-ditto-id="style-span-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn284">
+                                          3
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn285" data-ditto-id="style-heading-6">
+                                    <h2 class="cn286" data-ditto-id="style-p-4">
+                                      How I built my AI agent workforce 
+                                    </h2>
+                                    <p class="cn287">
+                                      Behind the scenes of my business: 34 agents, some humans, and one hire who only writes notes. 
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn288" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn289">
+                          <div class="cn290">
+                            <a class="cn291" href="https://www.aiwithallie.com/p/9-things-every-parent-needs-to-know-about-kids-and-ai">
+                              <div class="cn292">
+                                <figure class="cn293">
+                                  <img class="cn294" alt="9 Things Every Parent Needs to Know About Kids and AI" height="421" src="public/assets/cloned/images/c691a1bbaddf.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn295">
+                            <div class="cn296">
+                              <a class="cn297" href="https://www.aiwithallie.com/p/9-things-every-parent-needs-to-know-about-kids-and-ai">
+                                <div class="cn298">
+                                  <div class="cn299">
+                                    <div class="cn300">
+                                      <span class="cn301">
+                                        <time class="cn302" datetime="2026-05-20T13:51:00.000Z">
+                                          -3349 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn303">
+                                      <span class="cn304" data-ditto-id="style-icon-8">
+                                        <svg class="cn305" data-ditto-id="style-span-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn306">
+                                          2
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn307" data-ditto-id="style-heading-7">
+                                    <h2 class="cn308" data-ditto-id="style-p-5">
+                                      9 Things Every Parent Needs to Know About Kids and AI
+                                    </h2>
+                                    <p class="cn309">
+                                      Covering college majors, data privacy, mental health, and more.
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn310" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn311">
+                          <div class="cn312">
+                            <a class="cn313" href="https://www.aiwithallie.com/p/free-5-minute-guide-on-claude-cowork">
+                              <div class="cn314">
+                                <figure class="cn315">
+                                  <img class="cn316" alt="Here's your free 5-minute guide on Claude Cowork" height="421" src="public/assets/cloned/images/28718a9bc059.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn317">
+                            <div class="cn318">
+                              <a class="cn319" href="https://www.aiwithallie.com/p/free-5-minute-guide-on-claude-cowork">
+                                <div class="cn320">
+                                  <div class="cn321">
+                                    <div class="cn322">
+                                      <span class="cn323">
+                                        <time class="cn324" datetime="2026-04-28T14:03:00.000Z">
+                                          -2822 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn325">
+                                      <span class="cn326">
+                                        <svg class="cn327" data-ditto-id="style-icon-9" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn328">
+                                          1
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn329">
+                                    <h2 class="cn330" data-ditto-id="style-div-10">
+                                      Here's your free 5-minute guide on Claude Cowork
+                                    </h2>
+                                    <p class="cn331">
+                                      Read this to 5x your productivity with AI. No code, no terminal needed.
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn332" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn333">
+                          <div class="cn334">
+                            <a class="cn335" href="https://www.aiwithallie.com/p/the-ai-job-threat-what-to-know-and-do">
+                              <div class="cn336">
+                                <figure class="cn337">
+                                  <img class="cn338" alt="The AI Job Threat: What to Know and What to Do Right Now" height="421" src="public/assets/cloned/images/136e2bb08c71.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn339">
+                            <div class="cn340">
+                              <a class="cn341" href="https://www.aiwithallie.com/p/the-ai-job-threat-what-to-know-and-do">
+                                <div class="cn342">
+                                  <div class="cn343">
+                                    <div class="cn344">
+                                      <span class="cn345">
+                                        <time class="cn346" datetime="2026-03-03T13:17:00.000Z">
+                                          -1477 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn347">
+                                      <span class="cn348">
+                                        <svg class="cn349" data-ditto-id="style-div-15" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn350">
+                                          6
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn351">
+                                    <h2 class="cn352" data-ditto-id="style-input">
+                                      The AI Job Threat: What to Know and What to Do Right Now
+                                    </h2>
+                                    <p class="cn353">
+                                      I read both crisis reports cover to cover - here's the playbook
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn354" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn355">
+                          <div class="cn356">
+                            <a class="cn357" href="https://www.aiwithallie.com/p/30-openclaw-use-cases-that-show-why-everyone-s-obsessed">
+                              <div class="cn358" data-ditto-id="style-div-7">
+                                <figure class="cn359">
+                                  <img class="cn360" alt="The OpenClaw Explosion: 30 Use Cases That Show Why Everyone's Obsessed " height="421" src="public/assets/cloned/images/6a64f96d0f6f.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn361">
+                            <div class="cn362" data-ditto-id="style-div-8">
+                              <a class="cn363" href="https://www.aiwithallie.com/p/30-openclaw-use-cases-that-show-why-everyone-s-obsessed">
+                                <div class="cn364">
+                                  <div class="cn365">
+                                    <div class="cn366" data-ditto-id="style-div-9">
+                                      <span class="cn367">
+                                        <time class="cn368" datetime="2026-02-17T20:17:34.875Z">
+                                          -1148 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn369">
+                                      <span class="cn370" data-ditto-id="style-span-3">
+                                        <svg class="cn371" data-ditto-id="style-icon-14" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn372">
+                                    <h2 class="cn373" data-ditto-id="style-heading-11">
+                                      The OpenClaw Explosion: 30 Use Cases That Show Why Everyone's Obsessed 
+                                    </h2>
+                                    <p class="cn374" data-ditto-id="style-p-2">
+                                      From grocery shopping to negotiating a car to building a YouTube dashboard while you sleep 
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn375" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn376">
+                          <div class="cn377">
+                            <a class="cn378" href="https://www.aiwithallie.com/p/how-to-enable-claude-agent-teams-for-non-technical-users">
+                              <div class="cn379">
+                                <figure class="cn380" data-ditto-id="style-link-2">
+                                  <img class="cn381" alt="How to Enable Claude Agent Teams: For Non-Technical Users" height="421" src="public/assets/cloned/images/c0e388797c04.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn382" data-ditto-id="style-link-3">
+                            <div class="cn383">
+                              <a class="cn384" href="https://www.aiwithallie.com/p/how-to-enable-claude-agent-teams-for-non-technical-users">
+                                <div class="cn385">
+                                  <div class="cn386">
+                                    <div class="cn387" data-ditto-id="style-icon-10">
+                                      <span class="cn388">
+                                        <time class="cn389" datetime="2026-02-09T17:00:16.385Z">
+                                          -953 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn390">
+                                      <span class="cn391">
+                                        <svg class="cn392" data-ditto-id="style-icon-15" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn393">
+                                          2
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn394">
+                                    <h2 class="cn395" data-ditto-id="style-heading-12">
+                                      How to Enable Claude Agent Teams: For Non-Technical Users
+                                    </h2>
+                                    <p class="cn396">
+                                      The step-by-step setup for people who don't live in a terminal
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn397" href="https://www.aiwithallie.com/authors"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cn398">
+                          <div class="cn399">
+                            <a class="cn400" href="https://www.aiwithallie.com/p/claude-code-vs-claude-cowork-vs-openclaw">
+                              <div class="cn401">
+                                <figure class="cn402">
+                                  <img class="cn403" alt="Claude Code vs Claude Cowork vs OpenClaw " height="421" src="public/assets/cloned/images/a0b5aa26d4b3.png" width="800" />
+                                </figure>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="cn404">
+                            <div class="cn405">
+                              <a class="cn406" href="https://www.aiwithallie.com/p/claude-code-vs-claude-cowork-vs-openclaw">
+                                <div class="cn407">
+                                  <div class="cn408">
+                                    <div class="cn409">
+                                      <span class="cn410">
+                                        <time class="cn411" datetime="2026-02-05T19:26:48.903Z">
+                                          -859 hour ago
+                                        </time>
+                                      </span>
+                                    </div>
+                                    <div class="cn412">
+                                      <span class="cn413">
+                                        <svg class="cn414" data-ditto-id="style-icon-16" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-slot="icon"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path></svg>
+                                        <span class="cn415">
+                                          1
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="cn416">
+                                    <h2 class="cn417" data-ditto-id="style-heading-13">
+                                      Claude Code vs Claude Cowork vs OpenClaw 
+                                    </h2>
+                                    <p class="cn418">
+                                      The differences between them in terms of capability and security + a peek at Opus 4.6 benchmarks
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a class="cn419" href="https://www.aiwithallie.com/authors">
+                                <div class="cn420">
+                                  <div class="cn421">
+                                    <img class="cn422" alt="Allie K. Miller" src="public/assets/cloned/images/b88cd0c8b981.jpg" />
+                                  </div>
+                                </div>
+                                <div class="cn423">
+                                  <span class="cn424">
+                                    Allie K. Miller
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cn425">
+                        <div class="cn426">
+                          <a class="cn427" href="https://www.aiwithallie.com/archive?page=1">
+                            First
+                          </a>
+                          <a class="cn428" href="https://www.aiwithallie.com/archive?page=0">
+                            <svg class="cn429" aria-hidden="true" fill="none" height="16px" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+                            Back
+                          </a>
+                        </div>
+                        <div class="cn430">
+                          <a class="cn431" href="https://www.aiwithallie.com/archive?page=1">
+                            1
+                          </a>
+                          <a class="cn432" href="https://www.aiwithallie.com/archive?page=2">
+                            2
+                          </a>
+                          <a class="cn433" href="https://www.aiwithallie.com/archive?page=3">
+                            3
+                          </a>
+                          <a class="cn434" href="https://www.aiwithallie.com/archive?page=4">
+                            4
+                          </a>
+                        </div>
+                        <div class="cn435">
+                          <a class="cn436" href="https://www.aiwithallie.com/archive?page=2">
+                            Next 
+                            <svg class="cn437" data-ditto-id="style-icon-17" aria-hidden="true" fill="none" height="16px" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+                          </a>
+                          <a class="cn438" href="https://www.aiwithallie.com/archive?page=4">
+                            Last
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="cn439">
+          <div class="cn440">
+            <div class="cn441">
+              <div class="cn442">
+                <div class="cn443">
+                  <div class="cn444">
+                    <div class="cn445">
+                      <img class="cn446" alt="Turning AI buzzwords into business tactics. Get hands-on insights from an industry insider. Trusted by 2 million. Subscribe and get access to the AI Fast Track — a 5-day email course to expand what AI can do for you." height="40" src="public/assets/cloned/images/971be86c7431.png" width="40" />
+                      <p class="cn447">
+                        AI with ALLIE
+                      </p>
+                    </div>
+                    <div class="cn448">
+                      <p class="cn449">
+                        Turning AI buzzwords into business tactics. Get hands-on insights from an industry insider. Trusted by 2 million. Subscribe and get access to the AI Fast Track — a 5-day email course to expand what AI can do for you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cn450">
+                  <div class="cn451">
+                    <p class="cn452">
+                      Home
+                    </p>
+                    <div class="cn453">
+                      <a class="cn454" href="https://www.aiwithallie.com/">
+                        <p class="cn455">
+                          Posts
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cn456">
+                  <div class="cn457">
+                    <form class="cn458">
+                      <div class="cn459">
+                        <div class="cn460">
+                          <div class="cn461">
+                            <input class="cn462" data-ditto-id="style-input-2" name="email" placeholder="Enter Your Email" type="email" />
+                          </div>
+                          <input class="cn463" type="submit" value="Subscribe" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="cn464">
+                    <a class="cn465" aria-label="Twitter" href="https://www.twitter.com/alliekmiller" rel="noreferrer" target="_blank">
+                      <div class="cn466"></div>
+                      <div class="cn467">
+                        <svg class="cn468" data-ditto-id="style-p-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                      </div>
+                    </a>
+                    <a class="cn469" aria-label="LinkedIn" href="https://www.linkedin.com/in/alliekmiller" rel="noreferrer" target="_blank">
+                      <div class="cn470"></div>
+                      <div class="cn471">
+                        <svg class="cn472" data-ditto-id="style-div-16" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                      </div>
+                    </a>
+                    <a class="cn473" aria-label="Youtube" href="https://www.youtube.com/@AKMofficial" rel="noreferrer" target="_blank">
+                      <div class="cn474"></div>
+                      <div class="cn475">
+                        <svg class="cn476" data-ditto-id="style-b" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                      </div>
+                    </a>
+                    <a class="cn477" aria-label="Tiktok" href="https://www.tiktok.com/@alliekmiller" rel="noreferrer" target="_blank">
+                      <div class="cn478"></div>
+                      <div class="cn479">
+                        <svg class="cn480" data-ditto-id="style-heading-14" fill="currentColor" viewBox="0 0 2859 3333" xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd"><path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path></svg>
+                      </div>
+                    </a>
+                    <a class="cn481" aria-label="Instagram" href="https://www.instagram.com/alliekmiller" rel="noreferrer" target="_blank">
+                      <div class="cn482"></div>
+                      <div class="cn483" data-ditto-id="style-80">
+                        <svg class="cn484" data-ditto-id="style-76" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cn485">
+                <div class="cn486">
+                  <p class="cn487">
+                    © 2026 AI with ALLIE.
+                  </p>
+                </div>
+                <div class="cn488">
+                  <div class="cn489">
+                    <a class="cn490" data-ditto-id="style-link-5" href="https://beehiiv.com/privacy" rel="noreferrer" target="_blank">
+                      <p class="cn491" data-ditto-id="style-p-7">
+                        Privacy policy
+                      </p>
+                    </a>
+                    <a class="cn492" data-ditto-id="style-link-6" href="https://beehiiv.com/tou" rel="noreferrer" target="_blank">
+                      <p class="cn493">
+                        Terms of use
+                      </p>
+                    </a>
+                  </div>
+                  <div class="cn494">
+                    <span class="cn495">
+                      <a class="cn496" href="https://www.beehiiv.com/?utm_source=AI%20with%20ALLIE&amp;utm_medium=footer" rel="noreferrer" target="_blank">
+                        <svg class="cn497" data-ditto-id="style-icon-18" fill="none" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="#0B0D2A" d="M25.692 13.168H3.866c-.556 0-1.01-.458-1.01-1.017V10.6c0-1.755 1.414-3.178 3.157-3.178H23.52c1.743 0 3.157 1.423 3.157 3.177v1.55a.98.98 0 0 1-.985 1.018ZM21.092 5.745H8.462a1.044 1.044 0 0 1-1.036-1.042C7.426 2.11 9.523 0 12.099 0h5.356c2.576 0 4.673 2.11 4.673 4.703 0 .584-.455 1.042-1.036 1.042ZM26.702 14.845H2.855C1.288 14.845 0 16.142 0 17.718c0 1.576 1.288 2.872 2.855 2.872h8.462c.303-1.627 1.718-2.872 3.436-2.872a3.532 3.532 0 0 1 3.46 2.872h8.463c1.567 0 2.855-1.296 2.855-2.872 0-1.576-1.263-2.873-2.83-2.873ZM25.663 22.268h-7.401v5.745h5.557c1.567 0 2.855-1.297 2.855-2.873v-1.83a1.006 1.006 0 0 0-1.01-1.042ZM3.864 22.268c-.556 0-1.036.457-1.036 1.042v1.83c0 1.576 1.288 2.873 2.855 2.873h5.557v-5.745H3.864Z"></path></svg>
+                        <span class="cn498">
+                          Powered by beehiiv
+                        </span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+</body>
+</html>

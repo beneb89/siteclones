@@ -1,0 +1,26 @@
+# ditto.site toolchain — installed by scripts/setup.sh, never committed
+vendor/
+
+# node
+node_modules/
+npm-debug.log*
+.npm/
+
+# generated apps: keep the source, drop build output and installed deps
+sites/**/node_modules/
+sites/**/.next/
+sites/**/dist/
+sites/**/.turbo/
+
+# raw capture working dirs (screenshots + IR, large and machine-specific)
+sites/**/.clone/
+
+# local env / secrets
+.env
+.env.*
+!.env.example
+
+# os noise
+.DS_Store
+logs/
+sites/.staging/

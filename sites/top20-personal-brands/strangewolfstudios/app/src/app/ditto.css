@@ -1,0 +1,14 @@
+.cn0{display:block;color:var(--foreground);font-family:sans-serif;font-size:12px;font-weight:400;font-style:normal;line-height:14px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+[data-ditto-id="style-div-5"]{background-image:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20730%203%22%3E%3Cpath%20d%3D%22M%201.319%201.167%20L%20729.338%201.167%22%20fill%3D%22transparent%22%20stroke-width%3D%220.58%22%20stroke%3D%22%23AAA%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E)}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-5"]{background-image:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20338%202%22%3E%3Cpath%20d%3D%22M%20-4.85%201.333%20L%20338.701%201.333%22%20fill%3D%22transparent%22%20stroke-width%3D%220.28%22%20stroke%3D%22%23AAA%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E)}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-5"]{background-image:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20338%202%22%3E%3Cpath%20d%3D%22M%20-4.85%201.333%20L%20338.701%201.333%22%20fill%3D%22transparent%22%20stroke-width%3D%220.28%22%20stroke%3D%22%23AAA%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E)}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div-5"]{background-image:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%201340%203%22%3E%3Cpath%20d%3D%22M%200.583%201%20L%201338.834%201%22%20fill%3D%22transparent%22%20stroke-width%3D%221.08%22%20stroke%3D%22%23AAA%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E)}
+}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-2"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}

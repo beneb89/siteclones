@@ -1,0 +1,2227 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-accent: var(--accent);
+  --color-clr-0: var(--clr-0);
+  --color-clr-1: var(--clr-1);
+  --color-border: var(--border);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-2: var(--clr-2);
+  --color-clr-3: var(--clr-3);
+  --color-color-001: var(--color-001);
+  --color-primary: var(--primary);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+  --primary: lab(49.2872 14.5383 -73.8895);
+  --accent: lab(72.7913 26.9331 75.4345);
+  --border: lab(90.952 0 -0.0000119209);
+  --muted-foreground: lab(39.4898 0 0);
+  --color-001: lab(7.78201 -0.0000149012 0);
+}
+
+:root {
+  /* fonts */
+  --font-body: Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* fontSizes */
+  --font-size-001: 14px;
+  --font-size-002: 16px;
+  --font-size-003: 18px;
+  --font-size-004: 30px;
+  --font-size-005: 36px;
+  /* fontWeights */
+  --font-weight-001: 449;
+  --font-weight-002: 521;
+  --font-weight-003: 600;
+  --font-weight-004: 800;
+  /* lineHeights */
+  --line-height-001: 32px;
+  --line-height-002: 24px;
+  --line-height-003: 36px;
+  --line-height-004: 20px;
+  --line-height-005: 40px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 4px;
+  --space-003: 6px;
+  --space-004: 7.99999px;
+  --space-005: 8px;
+  --space-006: 12px;
+  --space-007: 16px;
+  --space-008: 20px;
+  --space-009: 23.9999px;
+  --space-010: 24px;
+  --space-011: 28.0001px;
+  --space-012: 38.4001px;
+  --space-013: 50.0001px;
+  --space-014: 67.2001px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  --radius-002: 8px;
+  --radius-003: 14px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: lab(15.1599 0 0);
+  --clr-1: rgba(0, 0, 0, 0);
+  --clr-2: lab(90.9416 -0.0000298023 0 / 0.5);
+  --clr-3: rgba(245, 158, 11, 0);
+  --clr-4: lab(84.92 0 -0.0000119209);
+  --clr-5: lab(83.8401 -0.0000298023 0);
+  --clr-6: lab(71.8364 0 0);
+  --clr-7: lab(76.5367 23.2092 73.5674);
+  --clr-8: lab(96.8854 0 -0.0000119209);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b2976975b428.woff2") format("woff2");
+  unicode-range: U+20-7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/20fb3b073cdc.woff2") format("woff2");
+  unicode-range: U+A0-FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/020bba2a5331.woff2") format("woff2");
+  unicode-range: U+100-17F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/527c4a394f4f.woff2") format("woff2");
+  unicode-range: U+180-24F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/140dca2e4558.woff2") format("woff2");
+  unicode-range: U+250-2AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7515168fecb0.woff2") format("woff2");
+  unicode-range: U+2B0-2FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3dbaa79e3db4.woff2") format("woff2");
+  unicode-range: U+300-36F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3d3d80b10f85.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/89172fb1888d.woff2") format("woff2");
+  unicode-range: U+4??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/740c86bfa9ea.woff2") format("woff2");
+  unicode-range: U+500-52F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/52787016f625.woff2") format("woff2");
+  unicode-range: U+530-58F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c0877905c45f.woff2") format("woff2");
+  unicode-range: U+590-5FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7708b5c14f88.woff2") format("woff2");
+  unicode-range: U+6??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0768ec8124bb.woff2") format("woff2");
+  unicode-range: U+700-74F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/58bfc708d448.woff2") format("woff2");
+  unicode-range: U+780-7BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b4bcf09e476c.woff2") format("woff2");
+  unicode-range: U+900-97F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/217ada962f2d.woff2") format("woff2");
+  unicode-range: U+980-9FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3241a2cebd5a.woff2") format("woff2");
+  unicode-range: U+A00-A7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2b2d19397f47.woff2") format("woff2");
+  unicode-range: U+A80-AFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9ecd4b32b75a.woff2") format("woff2");
+  unicode-range: U+B00-B7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3ecf8c0fe57e.woff2") format("woff2");
+  unicode-range: U+B80-BFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5ebe004718fb.woff2") format("woff2");
+  unicode-range: U+C00-C7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f3032a9021c1.woff2") format("woff2");
+  unicode-range: U+C80-CFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/225aab5d1bb2.woff2") format("woff2");
+  unicode-range: U+D00-D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bcebdfc2ba8c.woff2") format("woff2");
+  unicode-range: U+D80-DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f3adfa76608e.woff2") format("woff2");
+  unicode-range: U+E00-E7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4b5c5cd00f50.woff2") format("woff2");
+  unicode-range: U+E80-EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ecb0d0a358c3.woff2") format("woff2");
+  unicode-range: U+F??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/06291107abc4.woff2") format("woff2");
+  unicode-range: U+1000-109F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/610cfd8bf6d1.woff2") format("woff2");
+  unicode-range: U+10A0-10FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1b67c0b9d913.woff2") format("woff2");
+  unicode-range: U+11??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/07fb782d9f9d.woff2") format("woff2");
+  unicode-range: U+1200-137F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9433710251b6.woff2") format("woff2");
+  unicode-range: U+13A0-13FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5a3ee9af4fb1.woff2") format("woff2");
+  unicode-range: U+1400-167F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/efe82dfa4017.woff2") format("woff2");
+  unicode-range: U+1680-169F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ef4c748eb5d6.woff2") format("woff2");
+  unicode-range: U+16A0-16FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/59d88de80ed9.woff2") format("woff2");
+  unicode-range: U+1700-171F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1d1643aa7118.woff2") format("woff2");
+  unicode-range: U+1720-173F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/95c4b964c1dd.woff2") format("woff2");
+  unicode-range: U+1740-175F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/15da1beb3fef.woff2") format("woff2");
+  unicode-range: U+1760-177F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/844947e6b594.woff2") format("woff2");
+  unicode-range: U+1780-17FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5b6540f2afe7.woff2") format("woff2");
+  unicode-range: U+1800-18AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b7eb2a2a6e15.woff2") format("woff2");
+  unicode-range: U+1900-194F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6183e6584336.woff2") format("woff2");
+  unicode-range: U+1950-197F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f9e73980277d.woff2") format("woff2");
+  unicode-range: U+19E0-19FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8ed1a411a177.woff2") format("woff2");
+  unicode-range: U+1D00-1D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6d576169508a.woff2") format("woff2");
+  unicode-range: U+1E??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5667a569f4bb.woff2") format("woff2");
+  unicode-range: U+2580-259F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ea630c7a709e.woff2") format("woff2");
+  unicode-range: U+25A0-25FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3b1dfa6d4d2c.woff2") format("woff2");
+  unicode-range: U+26??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/71444ea21393.woff2") format("woff2");
+  unicode-range: U+2700-27BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f14fbdb75189.woff2") format("woff2");
+  unicode-range: U+27C0-27EF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1539cb2d5fba.woff2") format("woff2");
+  unicode-range: U+27F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b5c7d52252d0.woff2") format("woff2");
+  unicode-range: U+28??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b36bd14c28c2.woff2") format("woff2");
+  unicode-range: U+2900-297F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c7a29dc7d09f.woff2") format("woff2");
+  unicode-range: U+2980-29FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f84dbfc2b0f7.woff2") format("woff2");
+  unicode-range: U+2A??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/10c07b29ac8e.woff2") format("woff2");
+  unicode-range: U+2B??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/424a230a43d2.woff2") format("woff2");
+  unicode-range: U+2E80-2EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/01cad1b0c9a8.woff2") format("woff2");
+  unicode-range: U+2F00-2FDF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/150652a2c74d.woff2") format("woff2");
+  unicode-range: U+2FF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b9af38895a99.woff2") format("woff2");
+  unicode-range: U+3000-303F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5fbe4417b8e1.woff2") format("woff2");
+  unicode-range: U+3040-309F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b686b76e1635.woff2") format("woff2");
+  unicode-range: U+30A0-30FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/49c648f3d397.woff2") format("woff2");
+  unicode-range: U+3100-312F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8a10a6edb7c3.woff2") format("woff2");
+  unicode-range: U+3130-318F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e0d802884324.woff2") format("woff2");
+  unicode-range: U+319?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/24c2b15491ea.woff2") format("woff2");
+  unicode-range: U+31A0-31BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cfce66eac63a.woff2") format("woff2");
+  unicode-range: U+31F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4e0fdee0b378.woff2") format("woff2");
+  unicode-range: U+32??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5c79b7477186.woff2") format("woff2");
+  unicode-range: U+33??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e91b9192839a.woff2") format("woff2");
+  unicode-range: U+3400-4DBF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d3b1a72e76a6.woff2") format("woff2");
+  unicode-range: U+4DC0-4DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2b69420bf1cc.woff2") format("woff2");
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/af08922860a1.woff2") format("woff2");
+  unicode-range: U+A000-A48F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/08d1d810fac5.woff2") format("woff2");
+  unicode-range: U+A490-A4CF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b506c0e6208a.woff2") format("woff2");
+  unicode-range: U+AC00-D7AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/98d2fa403fea.woff2") format("woff2");
+  unicode-range: U+D800-DB7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/abb8a98fbb27.woff2") format("woff2");
+  unicode-range: U+DB80-DBFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/19f1129b860c.woff2") format("woff2");
+  unicode-range: U+DC00-DFFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/20059dc979ed.woff2") format("woff2");
+  unicode-range: U+E000-F8FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5913dcf72947.woff2") format("woff2");
+  unicode-range: U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/dcee5cab5fc7.woff2") format("woff2");
+  unicode-range: U+FB00-FB4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9324c06f46c8.woff2") format("woff2");
+  unicode-range: U+FB50-FDFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/729ff7e8cae6.woff2") format("woff2");
+  unicode-range: U+FE0?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/45834603d8e3.woff2") format("woff2");
+  unicode-range: U+FE2?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/12e0a8eda016.woff2") format("woff2");
+  unicode-range: U+FE30-FE4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/539d2f2b3f48.woff2") format("woff2");
+  unicode-range: U+FE50-FE6F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cf6507e5d7b1.woff2") format("woff2");
+  unicode-range: U+FE70-FEFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9c48c0757437.woff2") format("woff2");
+  unicode-range: U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/83b537fd1441.woff2") format("woff2");
+  unicode-range: U+FFF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/317b4a0efc7e.woff2") format("woff2");
+  unicode-range: U+10000-1007F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9b5d63c8c306.woff2") format("woff2");
+  unicode-range: U+10080-100FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eb8e9a48793b.woff2") format("woff2");
+  unicode-range: U+10100-1013F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e6e41b932af9.woff2") format("woff2");
+  unicode-range: U+10300-1032F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b921dca36f30.woff2") format("woff2");
+  unicode-range: U+10330-1034F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/795890a0c189.woff2") format("woff2");
+  unicode-range: U+10380-1039F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e69ca3f63338.woff2") format("woff2");
+  unicode-range: U+10400-1044F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/00f6da7bf6a0.woff2") format("woff2");
+  unicode-range: U+10450-1047F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/90bf598c6a81.woff2") format("woff2");
+  unicode-range: U+10480-104AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b4e7fe7d3606.woff2") format("woff2");
+  unicode-range: U+10800-1083F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/17b456bbecf8.woff2") format("woff2");
+  unicode-range: U+1D0??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/92d7b18313d4.woff2") format("woff2");
+  unicode-range: U+1D1??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a841364ad40b.woff2") format("woff2");
+  unicode-range: U+1D300-1D35F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4d9e9991957a.woff2") format("woff2");
+  unicode-range: U+1D400-1D7FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e918f9790369.woff2") format("woff2");
+  unicode-range: U+20000-2A6DF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/73af1fdd9d1a.woff2") format("woff2");
+  unicode-range: U+2F800-2FA1F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/53f83d886ac1.woff2") format("woff2");
+  unicode-range: U+E0000-E007F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1cc093d7d9eb.woff2") format("woff2");
+  unicode-range: U+20-7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/562927208c8b.woff2") format("woff2");
+  unicode-range: U+A0-FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fafd92c2e987.woff2") format("woff2");
+  unicode-range: U+100-17F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ae8c5921d3a1.woff2") format("woff2");
+  unicode-range: U+180-24F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/314e08d0d9e6.woff2") format("woff2");
+  unicode-range: U+250-2AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c8e056d5989b.woff2") format("woff2");
+  unicode-range: U+2B0-2FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4733b61558f8.woff2") format("woff2");
+  unicode-range: U+300-36F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0b1b874dbbbe.woff2") format("woff2");
+  unicode-range: U+370-3FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b68f4836e22c.woff2") format("woff2");
+  unicode-range: U+4??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9d28908a8876.woff2") format("woff2");
+  unicode-range: U+500-52F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f0e66252b6bc.woff2") format("woff2");
+  unicode-range: U+530-58F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fac591231961.woff2") format("woff2");
+  unicode-range: U+590-5FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9cfac9fba8d5.woff2") format("woff2");
+  unicode-range: U+6??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d21d242b11b2.woff2") format("woff2");
+  unicode-range: U+700-74F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7f7935acced0.woff2") format("woff2");
+  unicode-range: U+780-7BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/509c84c7c4a8.woff2") format("woff2");
+  unicode-range: U+900-97F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e9522c801511.woff2") format("woff2");
+  unicode-range: U+980-9FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7c824f5f2e9b.woff2") format("woff2");
+  unicode-range: U+A00-A7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b1522f297733.woff2") format("woff2");
+  unicode-range: U+A80-AFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/027d17fce892.woff2") format("woff2");
+  unicode-range: U+B00-B7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/73f1d7ae413a.woff2") format("woff2");
+  unicode-range: U+B80-BFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1de2e8f68ef4.woff2") format("woff2");
+  unicode-range: U+C00-C7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7bba405c64f4.woff2") format("woff2");
+  unicode-range: U+C80-CFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/96ca0d25d48d.woff2") format("woff2");
+  unicode-range: U+D00-D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5670ca710e1a.woff2") format("woff2");
+  unicode-range: U+D80-DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/be37e3b7d91e.woff2") format("woff2");
+  unicode-range: U+E00-E7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eba14c04d784.woff2") format("woff2");
+  unicode-range: U+E80-EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4fbd72f09846.woff2") format("woff2");
+  unicode-range: U+F??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/78875b3163ee.woff2") format("woff2");
+  unicode-range: U+1000-109F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/60ee76915cbe.woff2") format("woff2");
+  unicode-range: U+10A0-10FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/65623d60acba.woff2") format("woff2");
+  unicode-range: U+11??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b899bc18248a.woff2") format("woff2");
+  unicode-range: U+1200-137F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1e1f179cc795.woff2") format("woff2");
+  unicode-range: U+13A0-13FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9b13db60b0d8.woff2") format("woff2");
+  unicode-range: U+1400-167F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1ebdf6b45fcf.woff2") format("woff2");
+  unicode-range: U+1680-169F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2a5fb46b876b.woff2") format("woff2");
+  unicode-range: U+16A0-16FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d3a911bc8d7.woff2") format("woff2");
+  unicode-range: U+1700-171F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b6e3a18178de.woff2") format("woff2");
+  unicode-range: U+1720-173F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/544586853c7d.woff2") format("woff2");
+  unicode-range: U+1740-175F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/98b444c1c893.woff2") format("woff2");
+  unicode-range: U+1760-177F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c418cd4bfc04.woff2") format("woff2");
+  unicode-range: U+1780-17FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cb425b066a64.woff2") format("woff2");
+  unicode-range: U+1800-18AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fb52b2df5c68.woff2") format("woff2");
+  unicode-range: U+1900-194F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/285409ff5d89.woff2") format("woff2");
+  unicode-range: U+1950-197F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b031db71e38d.woff2") format("woff2");
+  unicode-range: U+19E0-19FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5fdd82340e1b.woff2") format("woff2");
+  unicode-range: U+1D00-1D7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/16ddc46e21e2.woff2") format("woff2");
+  unicode-range: U+1E??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/69b5d7fcdef1.woff2") format("woff2");
+  unicode-range: U+1F??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3c8a4d9340d9.woff2") format("woff2");
+  unicode-range: U+2000-206F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fb65ca7485b9.woff2") format("woff2");
+  unicode-range: U+2070-209F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e48148c2cfcf.woff2") format("woff2");
+  unicode-range: U+20A0-20CF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7f53352ef6b0.woff2") format("woff2");
+  unicode-range: U+20D0-20FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f752a5d469a9.woff2") format("woff2");
+  unicode-range: U+2100-214F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/00d01ceeaafb.woff2") format("woff2");
+  unicode-range: U+2150-218F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/91981db8f43b.woff2") format("woff2");
+  unicode-range: U+2190-21FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/124257b588b6.woff2") format("woff2");
+  unicode-range: U+22??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0711a90bdcaa.woff2") format("woff2");
+  unicode-range: U+23??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/73cab3f5e5cd.woff2") format("woff2");
+  unicode-range: U+2400-243F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/513e9486255c.woff2") format("woff2");
+  unicode-range: U+2440-245F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/31f2a7aa13ee.woff2") format("woff2");
+  unicode-range: U+2460-24FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6aaff86272a9.woff2") format("woff2");
+  unicode-range: U+2500-257F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d42b34c2429d.woff2") format("woff2");
+  unicode-range: U+2580-259F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f8ad68258de4.woff2") format("woff2");
+  unicode-range: U+25A0-25FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/37004cd248d7.woff2") format("woff2");
+  unicode-range: U+26??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d378c78bfdcc.woff2") format("woff2");
+  unicode-range: U+2700-27BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9e9a9de24493.woff2") format("woff2");
+  unicode-range: U+27C0-27EF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/56e2c3ca7d43.woff2") format("woff2");
+  unicode-range: U+27F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b481c398fbab.woff2") format("woff2");
+  unicode-range: U+28??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/371a9cfdf3ad.woff2") format("woff2");
+  unicode-range: U+2900-297F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6e5b2cb5a210.woff2") format("woff2");
+  unicode-range: U+2980-29FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6aa5d9706844.woff2") format("woff2");
+  unicode-range: U+2A??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/904a1fd71b2f.woff2") format("woff2");
+  unicode-range: U+2B??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/74a7e3e74d6f.woff2") format("woff2");
+  unicode-range: U+2E80-2EFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9b0ded39ad62.woff2") format("woff2");
+  unicode-range: U+2F00-2FDF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0fedc70f9432.woff2") format("woff2");
+  unicode-range: U+2FF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/91ff5f1c7f6f.woff2") format("woff2");
+  unicode-range: U+3000-303F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8029d30f485c.woff2") format("woff2");
+  unicode-range: U+3040-309F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/be56c5d18e28.woff2") format("woff2");
+  unicode-range: U+30A0-30FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3c7a02b90b76.woff2") format("woff2");
+  unicode-range: U+3100-312F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/07a64b69ef3d.woff2") format("woff2");
+  unicode-range: U+3130-318F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ac426eb8a407.woff2") format("woff2");
+  unicode-range: U+319?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7f8de6df8b20.woff2") format("woff2");
+  unicode-range: U+31A0-31BF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e191069a25ca.woff2") format("woff2");
+  unicode-range: U+31F?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/034c4088745d.woff2") format("woff2");
+  unicode-range: U+32??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a776a09e3f6e.woff2") format("woff2");
+  unicode-range: U+33??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ac4fb659d8aa.woff2") format("woff2");
+  unicode-range: U+3400-4DBF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/55120d5bdaf9.woff2") format("woff2");
+  unicode-range: U+4DC0-4DFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a193aa74e0df.woff2") format("woff2");
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/018adc9663dc.woff2") format("woff2");
+  unicode-range: U+A000-A48F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fd9b2f28ee37.woff2") format("woff2");
+  unicode-range: U+A490-A4CF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/821b759f4632.woff2") format("woff2");
+  unicode-range: U+AC00-D7AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/deaa6c2d2ab2.woff2") format("woff2");
+  unicode-range: U+D800-DB7F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7f91b069410e.woff2") format("woff2");
+  unicode-range: U+DB80-DBFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a6770eb1b70a.woff2") format("woff2");
+  unicode-range: U+DC00-DFFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/448ef33e5a04.woff2") format("woff2");
+  unicode-range: U+E000-F8FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/541a9a977201.woff2") format("woff2");
+  unicode-range: U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8e1ed1be604e.woff2") format("woff2");
+  unicode-range: U+FB00-FB4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/319374037f61.woff2") format("woff2");
+  unicode-range: U+FB50-FDFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/dbd2f6f5a38b.woff2") format("woff2");
+  unicode-range: U+FE0?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a4760619ee97.woff2") format("woff2");
+  unicode-range: U+FE2?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4aa95c2d5c03.woff2") format("woff2");
+  unicode-range: U+FE30-FE4F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/908692ccc1e7.woff2") format("woff2");
+  unicode-range: U+FE50-FE6F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3fc3f4e8372e.woff2") format("woff2");
+  unicode-range: U+FE70-FEFF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6fdbeda87e52.woff2") format("woff2");
+  unicode-range: U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9fea6bc9ea25.woff2") format("woff2");
+  unicode-range: U+FFF?;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/aed1a2de1132.woff2") format("woff2");
+  unicode-range: U+10000-1007F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ac3319e4d6b1.woff2") format("woff2");
+  unicode-range: U+10080-100FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0bbf3dcaf27c.woff2") format("woff2");
+  unicode-range: U+10100-1013F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0f050f58dfd5.woff2") format("woff2");
+  unicode-range: U+10300-1032F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cd89e2400b38.woff2") format("woff2");
+  unicode-range: U+10330-1034F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d73b5237a6a2.woff2") format("woff2");
+  unicode-range: U+10380-1039F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a6ca8caa6a93.woff2") format("woff2");
+  unicode-range: U+10400-1044F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eae7dc731d33.woff2") format("woff2");
+  unicode-range: U+10450-1047F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/381c8439de8f.woff2") format("woff2");
+  unicode-range: U+10480-104AF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fb1dec6203c5.woff2") format("woff2");
+  unicode-range: U+10800-1083F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/594dad6be2d0.woff2") format("woff2");
+  unicode-range: U+1D0??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ec4ced13e145.woff2") format("woff2");
+  unicode-range: U+1D1??;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f4d622abc2ad.woff2") format("woff2");
+  unicode-range: U+1D300-1D35F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/33b37ef67dfc.woff2") format("woff2");
+  unicode-range: U+1D400-1D7FF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/526b63582e58.woff2") format("woff2");
+  unicode-range: U+20000-2A6DF;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/52be786f4602.woff2") format("woff2");
+  unicode-range: U+2F800-2FA1F;
+}
+
+@font-face {
+  font-family: "Crisp Noto Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/003f5fc97a4c.woff2") format("woff2");
+  unicode-range: U+E0000-E007F;
+}
+
+@font-face {
+  font-family: "GeistMono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/43796eeb0c65.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c9a411387d21.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7d89d12c339f.woff2") format("woff2");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

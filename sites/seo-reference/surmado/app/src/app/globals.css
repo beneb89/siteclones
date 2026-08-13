@@ -1,0 +1,393 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-color-007: var(--color-007);
+  --color-color-005: var(--color-005);
+  --color-border: var(--border);
+  --color-clr-0: var(--clr-0);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-color-010: var(--color-010);
+  --color-color-006: var(--color-006);
+  --color-primary: var(--primary);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-color-001: var(--color-001);
+  --color-color-011: var(--color-011);
+  --color-accent: var(--accent);
+  --color-surface-2: var(--surface-2);
+  --color-color-004: var(--color-004);
+  --color-color-012: var(--color-012);
+  --color-color-009: var(--color-009);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-color-002: var(--color-002);
+  --color-clr-8: var(--clr-8);
+  --color-surface: var(--surface);
+  --color-color-003: var(--color-003);
+  --color-color-008: var(--color-008);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+  --color-clr-14: var(--clr-14);
+  --color-clr-15: var(--clr-15);
+  --color-clr-16: var(--clr-16);
+  --color-clr-17: var(--clr-17);
+  --color-clr-18: var(--clr-18);
+  --color-clr-19: var(--clr-19);
+  --color-clr-20: var(--clr-20);
+  --color-clr-21: var(--clr-21);
+  --color-clr-22: var(--clr-22);
+  --color-clr-23: var(--clr-23);
+  --color-clr-24: var(--clr-24);
+  --color-clr-25: var(--clr-25);
+  --color-clr-26: var(--clr-26);
+  --color-clr-27: var(--clr-27);
+  --color-clr-28: var(--clr-28);
+  --color-clr-29: var(--clr-29);
+  --color-clr-30: var(--clr-30);
+  --color-clr-31: var(--clr-31);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(239, 249, 254);
+  --foreground: rgb(0, 42, 65);
+  --primary: rgb(107, 90, 166);
+  --accent: rgb(121, 184, 255);
+  --border: rgb(232, 228, 220);
+  --surface: rgba(255, 255, 255, 0.2);
+  --surface-2: rgb(248, 245, 240);
+  --muted-foreground: rgb(128, 128, 128);
+  --color-001: rgb(225, 228, 232);
+  --color-002: rgba(255, 255, 255, 0.85);
+  --color-003: rgba(255, 255, 255, 0.92);
+  --color-004: rgb(158, 203, 255);
+  --color-005: rgb(255, 205, 52);
+  --color-006: rgb(226, 232, 240);
+  --color-007: rgb(21, 93, 150);
+  --color-008: rgba(255, 255, 255, 0.8);
+  --color-009: rgb(58, 80, 104);
+  --color-010: rgb(0, 0, 0);
+  --color-011: rgb(36, 41, 46);
+  --color-012: rgb(255, 171, 112);
+}
+
+:root {
+  /* fonts */
+  --font-body: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-001: "SF Mono", Monaco, "Cascadia Code", monospace;
+  --font-002: "Nunito Sans Variable", "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-003: Arial;
+  --font-004: monospace;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 13.3333px;
+  --font-size-003: 13.6px;
+  --font-size-004: 14px;
+  --font-size-005: 14.4px;
+  --font-size-006: 16px;
+  --font-size-007: 18px;
+  --font-size-008: 20px;
+  --font-size-009: 24px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  --font-weight-005: 1000;
+  /* lineHeights */
+  --line-height-001: 28.8px;
+  --line-height-002: 25.2px;
+  --line-height-003: 27.2px;
+  --line-height-004: 25.6px;
+  --line-height-005: 24.48px;
+  --line-height-006: 20px;
+  --line-height-007: 23.8px;
+  --line-height-008: 24px;
+  --line-height-009: 23.12px;
+  --line-height-010: 20.4px;
+  --line-height-011: 15px;
+  --line-height-012: 22.4px;
+  --line-height-013: 22px;
+  --line-height-014: 21px;
+  --line-height-015: 12px;
+  --line-height-016: 23.4px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 2px;
+  --space-003: 4px;
+  --space-004: 8px;
+  --space-005: 10px;
+  --space-006: 12px;
+  --space-007: 16px;
+  --space-008: 20px;
+  --space-009: 24px;
+  --space-010: 32px;
+  --space-011: 40px;
+  /* radii */
+  --radius-001: 6px;
+  --radius-002: 8px;
+  --radius-003: 16px;
+  --radius-004: 24px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 42, 65, 0.08);
+  --clr-1: rgba(0, 42, 65, 0.18);
+  --clr-2: rgba(0, 0, 0, 0);
+  --clr-3: rgb(255, 255, 255);
+  --clr-4: rgb(29, 117, 188);
+  --clr-5: rgba(29, 117, 188, 0.25);
+  --clr-6: rgba(255, 205, 52, 0.1);
+  --clr-7: rgba(255, 255, 255, 0.12);
+  --clr-8: rgba(255, 255, 255, 0.1);
+  --clr-9: rgba(255, 255, 255, 0.4);
+  --clr-10: rgb(18, 85, 137);
+  --clr-11: rgb(17, 83, 133);
+  --clr-12: rgb(255, 220, 91);
+  --clr-13: rgb(74, 54, 128);
+  --clr-14: rgb(23, 98, 159);
+  --clr-15: rgba(29, 117, 188, 0.365);
+  --clr-16: rgba(0, 0, 0, 0.12);
+  --clr-17: rgba(255, 206, 55, 0.996);
+  --clr-18: rgba(255, 205, 52, 0.96);
+  --clr-19: rgba(255, 207, 59, 0.996);
+  --clr-20: rgb(16, 16, 16);
+  --clr-21: rgb(2, 47, 73);
+  --clr-22: rgb(1, 44, 69);
+  --clr-23: rgb(62, 135, 193);
+  --clr-24: rgb(28, 115, 185);
+  --clr-25: rgba(255, 205, 52, 0.016);
+  --clr-26: rgba(255, 254, 251, 0.855);
+  --clr-27: rgba(255, 205, 52, 0.004);
+  --clr-28: rgba(255, 205, 52, 0.04);
+  --clr-29: rgba(255, 253, 246, 0.855);
+  --clr-30: rgba(255, 254, 252, 0.92);
+  --clr-31: rgba(255, 254, 251, 0.92);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/55120b7e4e37.woff2") format("woff2"), url("/assets/cloned/fonts/8fd1339148ce.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d1b52ef4b30e.woff2") format("woff2"), url("/assets/cloned/fonts/2aa3ee63cd70.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bcbc656101e7.woff2") format("woff2"), url("/assets/cloned/fonts/c3c2bf4ed904.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/92646215b57f.woff2") format("woff2"), url("/assets/cloned/fonts/bbeb6fcf7b25.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c3db633d015b.woff2") format("woff2-variations");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6c98873bea6a.woff2") format("woff2-variations");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a6540039b75d.woff2") format("woff2-variations");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e94bae820afb.woff2") format("woff2-variations");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9291ffd7f36f.woff2") format("woff2-variations");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c3db633d015b.woff2") format("woff2-variations");
+  unicode-range: U+460-52F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6c98873bea6a.woff2") format("woff2-variations");
+  unicode-range: U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a6540039b75d.woff2") format("woff2-variations");
+  unicode-range: U+102-103,U+110-111,U+128-129,U+168-169,U+1A0-1A1,U+1AF-1B0,U+300-301,U+303-304,U+308-309,U+323,U+329,U+1EA0-1EF9,U+20AB;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e94bae820afb.woff2") format("woff2-variations");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9291ffd7f36f.woff2") format("woff2-variations");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/23254951c0f8.woff2") format("woff2"), url("/assets/cloned/fonts/32fab0a4c88d.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c121952b3444.woff2") format("woff2"), url("/assets/cloned/fonts/4e4d9cdaf022.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/92892e5fe59f.woff2") format("woff2"), url("/assets/cloned/fonts/86cf84103e2b.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bd4ff2c17278.woff2") format("woff2"), url("/assets/cloned/fonts/b20aea9d316d.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6af4619aa466.woff2") format("woff2"), url("/assets/cloned/fonts/fe4cdec34fc0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e606c3028f7f.woff2") format("woff2"), url("/assets/cloned/fonts/b24a2f2c685f.woff") format("woff");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

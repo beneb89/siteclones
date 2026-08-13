@@ -1,0 +1,47 @@
+.cn0{height:900px;display:flex;flex-direction:column;color:var(--foreground);font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{height:912px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:1124px}
+}
+
+@media (min-width: 1601px) {
+.cn0{height:1180px}
+}
+[data-ditto-id="style-input-3"]::placeholder{color:rgb(107, 114, 128)}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-div-17"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-button"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-80"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-p-7"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-82"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-18"]:hover{background-color:rgba(0, 0, 0, 0.05)}
+[data-ditto-id="style-headlessui-menu-button-r-0"]:hover{background-color:rgba(0, 0, 0, 0.05)}
+[data-ditto-id="style-heading-15"]:hover{background-color:rgb(243, 244, 246)}
+[data-ditto-id="style-icon-19"]:hover{background-color:rgb(243, 244, 246)}
+[data-ditto-id="style-q"]:hover{opacity:1}
+[data-ditto-id="style-80"]:hover{background-color:rgba(241, 245, 249, 0.5)}
+[data-ditto-id="style-p-7"]:hover{background-color:rgba(241, 245, 249, 0.5)}
+[data-ditto-id="style-82"]:hover{background-color:rgba(241, 245, 249, 0.5)}
+[data-ditto-id="style-link-7"]:hover{opacity:0.8}
+[data-ditto-id="style-link-8"]:hover{opacity:0.8}
+[data-ditto-id="style-div-17"]:focus{box-shadow:rgb(255, 255, 255) 0px 0px 0px 2px, rgb(65, 64, 66) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;outline-color:rgba(0, 0, 0, 0);outline-style:solid;outline-width:2px}
+[data-ditto-id="style-button"]:focus{box-shadow:rgb(255, 255, 255) 0px 0px 0px 2px, rgb(65, 64, 66) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;outline-color:rgba(0, 0, 0, 0);outline-style:solid;outline-width:2px}
+[data-ditto-id="style-div"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-span-8"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-q"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-time-2"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-icon-4"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-8"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-19"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-icon-20"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-input-3"]:focus{border-bottom-color:rgb(37, 99, 235);border-left-color:rgb(37, 99, 235);border-right-color:rgb(37, 99, 235);border-top-color:rgb(37, 99, 235);box-shadow:rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;outline-color:rgba(0, 0, 0, 0);outline-style:solid;outline-width:2px}
+[data-ditto-id="style-94"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-95"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-96"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-97"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-98"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-icon-21"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}

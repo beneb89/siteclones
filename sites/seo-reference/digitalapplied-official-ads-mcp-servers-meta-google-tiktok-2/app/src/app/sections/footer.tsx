@@ -1,0 +1,92 @@
+import Logo, { type LogoData } from "../components/logo";
+import ListRow5 from "../components/list-row5";
+import { Logo_styles, ListRow5_styles, ListRow5_styles2, ListRow5_styles3, ListRow5_styles4 } from "../_styles";
+import { listRow5Data as listRow5DataContent, listRow5Data2 as listRow5Data2Content, listRow5Data3 as listRow5Data3Content, listRow5Data4 as listRow5Data4Content } from "../content";
+const Logo_data: LogoData[] = [
+    { ariaLabel: "Follow us on X (Twitter)", href: "https://x.com/digitalapplied", icon: <>
+        <title>
+          {"X (Twitter)"}
+        </title>
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </> },
+    { ariaLabel: "Follow us on Facebook", href: "https://www.facebook.com/digitalapplied", icon: <>
+        <title>
+          {"Facebook"}
+        </title>
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </> },
+    { ariaLabel: "Follow us on Instagram", href: "https://www.instagram.com/digital_applied", icon: <>
+        <title>
+          {"Instagram"}
+        </title>
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z" />
+        </> },
+    { ariaLabel: "Follow us on LinkedIn", href: "https://www.linkedin.com/company/digitalapplied", icon: <>
+        <title>
+          {"LinkedIn"}
+        </title>
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </> }
+];
+/** Site footer. */
+export default function Footer({ logos = Logo_data, listRow5Data = listRow5DataContent, listRow5Data2 = listRow5Data2Content, listRow5Data3 = listRow5Data3Content, listRow5Data4 = listRow5Data4Content } = {}) {
+  return (
+    <footer className="border-t border-solid border-t-surface block py-16 text-color-001 bg-foreground">
+      <div className="grid px-8 gap-12 grid-cols-[265.469px_189.641px_189.625px_189.625px_189.625px] mx-auto max-w-7xl max-md:px-4 max-lg:grid-cols-1">
+        <div className="block">
+          <a className="h-6 inline-block cursor-pointer" data-component="link" aria-label="Digital Applied" href="/">
+            <img className="w-[8.3125rem] h-6 block max-w-full overflow-clip aspect-[auto_160/40] align-middle text-clr-0" data-component="image" alt="Digital Applied" height="40" src="/assets/cloned/svg/f663faecb265.svg" width="160" />
+          </a>
+          <p className="w-full max-w-80 block mt-4 text-sm leading-[1.4375rem]">
+            An agentic growth partner for teams that would rather ship than schedule. Full-service digital marketing, delivered in days.
+          </p>
+          <div className="block mt-6">
+            <div className="flex gap-4 text-color-006">
+              {logos.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
+            </div>
+          </div>
+        </div>
+        <div className="block">
+          <h5 className="block mb-4 text-background [font-family:'Geist_Mono',_'Geist_Mono_Fallback',_ui-monospace,_SFMono-Regular,_Menlo,_Monaco,_Consolas,_'Liberation_Mono',_'Courier_New',_monospace] text-[0.8125rem] font-medium leading-[1.25rem] tracking-[1.04px] uppercase" data-component="heading">
+            Services
+          </h5>
+          <ul className="block [list-style-type:none] list-outside">
+            {listRow5Data.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles[i]} />)}
+          </ul>
+        </div>
+        <div className="block">
+          <h5 className="block mb-4 text-background [font-family:'Geist_Mono',_'Geist_Mono_Fallback',_ui-monospace,_SFMono-Regular,_Menlo,_Monaco,_Consolas,_'Liberation_Mono',_'Courier_New',_monospace] text-[0.8125rem] font-medium leading-[1.25rem] tracking-[1.04px] uppercase" data-component="heading">
+            Company
+          </h5>
+          <ul className="block [list-style-type:none] list-outside">
+            {listRow5Data2.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles2[i]} />)}
+          </ul>
+        </div>
+        <div className="block">
+          <h5 className="block mb-4 text-background [font-family:'Geist_Mono',_'Geist_Mono_Fallback',_ui-monospace,_SFMono-Regular,_Menlo,_Monaco,_Consolas,_'Liberation_Mono',_'Courier_New',_monospace] text-[0.8125rem] font-medium leading-[1.25rem] tracking-[1.04px] uppercase" data-component="heading">
+            Resources
+          </h5>
+          <ul className="block [list-style-type:none] list-outside">
+            {listRow5Data3.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles3[i]} />)}
+          </ul>
+        </div>
+        <div className="block">
+          <h5 className="block mb-4 text-background [font-family:'Geist_Mono',_'Geist_Mono_Fallback',_ui-monospace,_SFMono-Regular,_Menlo,_Monaco,_Consolas,_'Liberation_Mono',_'Courier_New',_monospace] text-[0.8125rem] font-medium leading-[1.25rem] tracking-[1.04px] uppercase" data-component="heading">
+            Topics
+          </h5>
+          <ul className="block [list-style-type:none] list-outside">
+            {listRow5Data4.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles4[i]} />)}
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-solid border-t-surface flex mt-12 pt-6 px-8 justify-between items-center gap-3 text-color-014 [font-family:'Geist_Mono',_'Geist_Mono_Fallback',_ui-monospace,_SFMono-Regular,_Menlo,_Monaco,_Consolas,_'Liberation_Mono',_'Courier_New',_monospace] text-[0.6875rem] leading-[1.0625rem] tracking-[1.1px] uppercase mx-auto max-w-7xl max-md:px-4 max-md:flex-col max-md:items-start">
+        <span className="block">
+          © 2026 Digital Applied
+        </span>
+        <span className="block">
+          All systems nominal
+        </span>
+      </div>
+    </footer>
+  );
+}

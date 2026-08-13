@@ -1,0 +1,27 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# Sites whose crawl hit --max-routes=60 exactly, meaning the capture was cut
+# short rather than finishing on its own. They get a higher cap here so the
+# rest of their navigation comes through. Everything else in
+# top20-personal-brands/ stopped by itself and needs no deeper run.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-deep.txt \
+#             --dest=top20-personal-brands --mode=multi --max-routes=200
+#
+# lexfridman is cheap per route (~0.5 MB); tonyrobbins is not (~4.7 MB) and is
+# the one that previously exhausted the Node heap. It is listed last so a
+# failure there cannot cost the other one's result.
+#
+# Status: a run at --max-routes=200 failed for both, and the 60-route clones
+# in sites/top20-personal-brands/ are still the current ones. Two things stand
+# in the way, and neither is solved by a bigger number:
+#
+#   1. Depth reaches protected pages. tonyrobbins.com/help answers HTTP 403 to
+#      automated access, and ditto abandons the whole clone over one such
+#      route. At 60 routes the crawl never got there. Going deeper needs a way
+#      to skip a blocked route instead of failing the site.
+#   2. The runner ran out of disk (36 MB left) with the repo checkout alone at
+#      ~2.7 GB before this capture.
+
+https://lexfridman.com/                   # from targets.txt (roundup brand)
+https://www.tonyrobbins.com/              # from targets-full.txt (addition)

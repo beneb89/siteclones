@@ -1,0 +1,7 @@
+export default function Icon24() {
+  return (
+    <svg className="w-4 h-4 block min-w-0 align-text-bottom" aria-hidden="true" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" data-component="Octicon" focusable="false" display="inline-block" overflow="visible">
+      <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+    </svg>
+  );
+}

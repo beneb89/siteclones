@@ -1,0 +1,20 @@
+import type { LogoStyles } from "../_styles";
+import { cn } from "../../../lib/utils";
+export type LogoData = {
+  height: string;
+  imgSrc: string;
+  srcSet: string;
+  width: string;
+};
+/** A logo. */
+export default function Logo({ d, styles }: { d: LogoData; styles: LogoStyles }) {
+  return (
+    <div className="contents min-w-0">
+      <div className={cn("w-full h-[44.25rem] block relative rounded-3xl [align-self:start] shrink-0 col-start-[span_2] overflow-hidden aspect-[1.74/1] max-lg:rounded-[initial] max-lg:aspect-[initial] md:max-lg:opacity-[initial] 2xl:h-[1075.9px] 2xl:opacity-[initial]", styles.className)}>
+        <div className="h-full block absolute top-0 inset-x-0 rounded-3xl max-lg:rounded-[initial]">
+          <img className={cn("w-full h-177 block rounded-3xl overflow-clip object-cover max-lg:rounded-[initial] 2xl:h-269", styles.className2)} data-component="image" alt="" height={d.height} sizes="calc(max((100vw - 96px) / 2, 200px) * 2 + 48px)" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,368 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-clr-0: var(--clr-0);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-color-001: var(--color-001);
+  --color-color-009: var(--color-009);
+  --color-clr-1: var(--clr-1);
+  --color-color-007: var(--color-007);
+  --color-color-013: var(--color-013);
+  --color-clr-2: var(--clr-2);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-color-003: var(--color-003);
+  --color-surface-2: var(--surface-2);
+  --color-color-012: var(--color-012);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-color-010: var(--color-010);
+  --color-color-011: var(--color-011);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-color-006: var(--color-006);
+  --color-color-005: var(--color-005);
+  --color-color-008: var(--color-008);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+  --color-color-014: var(--color-014);
+  --color-color-002: var(--color-002);
+  --color-clr-14: var(--clr-14);
+  --color-clr-15: var(--clr-15);
+  --color-clr-16: var(--clr-16);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-17: var(--clr-17);
+  --color-color-004: var(--color-004);
+  --color-clr-18: var(--clr-18);
+  --color-clr-19: var(--clr-19);
+  --color-clr-20: var(--clr-20);
+  --color-clr-21: var(--clr-21);
+  --color-clr-22: var(--clr-22);
+  --color-clr-23: var(--clr-23);
+  --color-clr-24: var(--clr-24);
+  --color-clr-25: var(--clr-25);
+  --color-clr-26: var(--clr-26);
+  --color-clr-27: var(--clr-27);
+  --color-clr-28: var(--clr-28);
+  --color-clr-29: var(--clr-29);
+  --color-clr-30: var(--clr-30);
+  --color-clr-31: var(--clr-31);
+  --color-clr-32: var(--clr-32);
+  --color-clr-33: var(--clr-33);
+  --color-clr-34: var(--clr-34);
+  --color-clr-35: var(--clr-35);
+  --color-clr-36: var(--clr-36);
+  --color-clr-37: var(--clr-37);
+  --color-clr-38: var(--clr-38);
+  --color-clr-39: var(--clr-39);
+  --color-clr-40: var(--clr-40);
+  --color-clr-41: var(--clr-41);
+  --color-clr-42: var(--clr-42);
+  --color-clr-43: var(--clr-43);
+  --color-clr-44: var(--clr-44);
+  --color-clr-45: var(--clr-45);
+  --color-clr-46: var(--clr-46);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: oklch(1 0 0);
+  --foreground: rgb(121, 121, 121);
+  --primary: rgb(178, 221, 76);
+  --accent: oklch(0.839496 0.175898 124.318 / 0.5);
+  --border: rgba(255, 255, 255, 0.08);
+  --muted-foreground: oklch(0.71 0.024 155);
+  --surface: oklch(0.926 0.01 155);
+  --surface-2: rgb(239, 241, 246);
+  --muted: oklch(0.748 0 0);
+  --color-001: rgb(33, 33, 33);
+  --color-002: oklch(0.86 0.016 155);
+  --color-003: oklch(0.985 0.004 155);
+  --color-004: rgb(36, 41, 43);
+  --color-005: rgba(255, 255, 255, 0.25);
+  --color-006: oklch(0.839496 0.175898 124.318 / 0.1);
+  --color-007: rgb(204, 204, 204);
+  --color-008: rgba(255, 255, 255, 0.75);
+  --color-009: oklch(0.248 0.008 155);
+  --color-010: oklch(0.68 0.2 124);
+  --color-011: rgba(178, 221, 76, 0.2);
+  --color-012: rgb(208, 208, 211);
+  --color-013: rgb(25, 31, 53);
+  --color-014: rgb(0, 98, 206);
+}
+
+:root {
+  /* fonts */
+  --font-body: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 13px;
+  --font-size-003: 14px;
+  --font-size-004: 16px;
+  --font-size-005: 18px;
+  --font-size-006: 22px;
+  --font-size-007: 24px;
+  --font-size-008: 34px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  --font-weight-005: 800;
+  /* lineHeights */
+  --line-height-001: 25.6px;
+  --line-height-002: 22.4px;
+  --line-height-003: 28.8px;
+  --line-height-004: 18px;
+  --line-height-005: 16px;
+  --line-height-006: 26.4px;
+  --line-height-007: 0px;
+  --line-height-008: 19.2px;
+  --line-height-009: 20.8px;
+  --line-height-010: 28.6px;
+  --line-height-011: 34px;
+  --line-height-012: 38.4px;
+  --line-height-013: 40.8px;
+  --line-height-014: 37.4px;
+  --line-height-015: 31.2px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 2px;
+  --space-003: 4px;
+  --space-004: 6px;
+  --space-005: 6.5px;
+  --space-006: 7px;
+  --space-007: 8px;
+  --space-008: 10px;
+  --space-009: 12px;
+  --space-010: 14px;
+  --space-011: 16px;
+  --space-012: 16.25px;
+  --space-013: 18px;
+  --space-014: 20px;
+  --space-015: 22px;
+  --space-016: 24px;
+  --space-017: 25px;
+  --space-018: 28px;
+  --space-019: 32px;
+  --space-020: 35px;
+  --space-021: 38.4px;
+  --space-022: 40px;
+  --space-023: 48px;
+  --space-024: 64px;
+  --space-025: 80px;
+  /* radii */
+  --radius-001: 3px;
+  --radius-002: 4px;
+  --radius-003: 5px;
+  --radius-004: 6px;
+  --radius-005: 7px;
+  --radius-006: 8px;
+  --radius-007: 12px;
+  --radius-008: 14px;
+  --radius-009: 16px;
+  --radius-010: 50%;
+  --radius-011: 9999px;
+  /* shadows */
+  --shadow-001: rgba(18, 28, 109, 0.07) 0px 4px 24px 0px;
+  /* zIndices */
+  --z-001: 1;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: oklch(0 0 0);
+  --clr-1: oklch(1 0 0 / 0.2);
+  --clr-2: rgb(246, 247, 249);
+  --clr-3: rgba(18, 28, 109, 0.07);
+  --clr-4: oklch(0.84 0.18 124.32 / 0.1);
+  --clr-5: rgba(178, 221, 76, 0.25);
+  --clr-6: oklch(0.248 0.008 155 / 0.05);
+  --clr-7: oklch(0.25 0 0 / 0.4);
+  --clr-8: rgba(26, 42, 62, 0.6);
+  --clr-9: rgba(0, 0, 0, 0);
+  --clr-10: rgba(77, 98, 62, 0.5);
+  --clr-11: rgba(231, 247, 248, 0.7);
+  --clr-12: rgba(214, 235, 251, 0.7);
+  --clr-13: rgba(232, 247, 196, 0.7);
+  --clr-14: rgba(137, 141, 154, 0.3);
+  --clr-15: rgb(243, 255, 223);
+  --clr-16: oklch(0.39 0.018 155);
+  --clr-17: oklch(0.18 0.005 155);
+  --clr-18: oklch(0.76 0.195 124);
+  --clr-19: oklab(0.976288 -0.0146506 0.0214626);
+  --clr-20: oklab(0.705944 -0.109778 0.162468);
+  --clr-21: oklab(0.248 -0.00725046 0.00338095 / 0.1256);
+  --clr-22: oklch(0.25 0 0 / 0.1);
+  --clr-23: oklch(0.248 0.008 155 / 0.1);
+  --clr-24: rgba(178, 221, 77, 0.15);
+  --clr-25: rgba(178, 221, 76, 0.69);
+  --clr-26: oklab(0.973892 -0.0161311 0.0236314);
+  --clr-27: oklab(1 0 0 / 0.0165959);
+  --clr-28: oklab(0.98 -0.0167758 0.0248711 / 0.983404);
+  --clr-29: oklab(0.763983 -0.107233 0.15898);
+  --clr-30: oklch(0.248 0.008 155 / 0.6);
+  --clr-31: oklab(0.769531 -0.104712 0.155242);
+  --clr-32: oklab(0.853854 -0.0902966 0.132281);
+  --clr-33: oklab(0.824899 -0.100328 0.147157);
+  --clr-34: oklab(0.248 -0.00725046 0.00338095 / 0.0137279);
+  --clr-35: rgba(251, 253, 245, 0.04);
+  --clr-36: rgba(245, 251, 233, 0.09);
+  --clr-37: rgba(245, 250, 231, 0.043);
+  --clr-38: rgba(234, 246, 207, 0.1);
+  --clr-39: rgba(245, 251, 232, 0.09);
+  --clr-40: oklab(0.985 -0.00362523 0.00169047 / 0.0383744);
+  --clr-41: oklab(0.985 -0.00362523 0.00169047 / 0.0157489);
+  --clr-42: oklab(0.98 -0.0167758 0.0248711 / 0.0158606);
+  --clr-43: oklab(0.996222 -0.00171633 0.00254457);
+  --clr-44: oklab(0.996765 -0.00146962 0.00217879);
+  --clr-45: oklab(0.99051 -0.00431166 0.00639229);
+  --clr-46: oklab(0.99079 -0.00418445 0.0062037);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/428035608c7c.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/537c5abaf3f0.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3dc98c87c13b.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2d6844e2e913.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2481e8f5b0d5.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/557a9c12a3ef.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d62a5652b48e.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/10b8c1f53133.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/402a6192f8ba.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/11f607b106a3.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}
