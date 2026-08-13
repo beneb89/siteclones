@@ -38,6 +38,10 @@ This repo is a workspace for cloning websites into runnable apps with
 - Switching a list to multi-page capture does not rewrite the clones that are
   already there — the skip check only looks for the folder. Dispatch that list
   once with `force: true` to actually recapture it.
+- `--depth=<n>` bounds how many link hops a crawl follows, `--max-routes` how
+  many pages it keeps. Use `--depth` when a target URL is a section of a large
+  portal: the crawler stays on the host, so without it the crawl leaves the
+  section and works through the whole site.
 - A route count that lands exactly on `--max-routes` means the crawl was cut
   short, not that the site ended there. Move such a site to a list with a
   higher cap rather than raising the cap for everything.

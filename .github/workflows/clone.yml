@@ -19,6 +19,7 @@ on:
           - targets-galleries.txt
           - targets-full.txt
           - targets-deep.txt
+          - targets-competitors.txt
           - targets-seo.txt
         default: all
       force:
@@ -55,13 +56,15 @@ jobs:
           galleries='{"list":"targets-galleries.txt","dest":"top20-personal-brands/galleries","flags":""}'
           full='{"list":"targets-full.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=60"}'
           deep='{"list":"targets-deep.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=200"}'
+          competitors='{"list":"targets-competitors.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=60 --depth=2"}'
           seo='{"list":"targets-seo.txt","dest":"seo-reference","flags":""}'
           case "$WANTED" in
+            targets-competitors.txt) lists="[$competitors]" ;;
             targets.txt)           lists="[$brands]" ;;
             targets-galleries.txt) lists="[$galleries]" ;;
             targets-full.txt)      lists="[$full]" ;;
             targets-deep.txt)      lists="[$deep]" ;;
-            *)                     lists="[$brands,$galleries,$full,$deep,$seo]" ;;
+            *)                     lists="[$brands,$galleries,$full,$deep,$competitors,$seo]" ;;
           esac
           echo "lists=$lists" >>"$GITHUB_OUTPUT"
           echo "cloning: $lists"
@@ -77,6 +80,16 @@ jobs:
     name: clone (${{ matrix.target.list }})
     steps:
       - uses: actions/checkout@v4
+
+      - name: Free disk space
+        # The checkout alone is gigabytes of committed clones, and a multi-page
+        # capture writes its evidence on top. A previous run got down to 36 MB
+        # free and failed there, so drop toolchains this job never uses.
+        run: |
+          df -h / | tail -1
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android \
+                      /opt/hostedtoolcache/CodeQL /usr/local/share/boost || true
+          df -h / | tail -1
 
       - uses: actions/setup-node@v4
         with:

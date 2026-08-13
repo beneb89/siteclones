@@ -68,6 +68,7 @@ Each list has a folder under `sites/` that its output is grouped into:
 | `targets-galleries.txt` | `sites/top20-personal-brands/galleries/` | the 7 galleries that roundup cites |
 | `targets-full.txt` | `sites/top20-personal-brands/` | additions beyond the roundup |
 | `targets-deep.txt` | `sites/top20-personal-brands/` | the sites deep enough to need a higher `--max-routes` |
+| `targets-competitors.txt` | `sites/decaid-competitors/` | decaid.academy and its competitive set, multi-page |
 | `targets-seo.txt` | `sites/seo-reference/` | 57 reference pages from the SEO/GEO/paid-media note |
 
 Everything in `sites/top20-personal-brands/` itself is captured in full
