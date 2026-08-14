@@ -67,6 +67,7 @@ jobs:
             targets-galleries.txt) lists="[$galleries]" ;;
             targets-full.txt)      lists="[$full]" ;;
             targets-deep.txt)      lists="[$deep]" ;;
+            targets-seo.txt)       lists="[$seo]" ;;
             *) lists="[$brands,$galleries,$full,$deep,$competitors,$portals,$seo]" ;;
           esac
           echo "lists=$lists" >>"$GITHUB_OUTPUT"
