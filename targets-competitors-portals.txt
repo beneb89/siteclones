@@ -1,0 +1,21 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# The league-A entries from the decaid competitive set: large corporate
+# portals rather than personal-brand sites. They are captured shallower than
+# the rest — landing page plus one hop, 25 routes — because a run at depth 2
+# over all sixteen sites overshot the job's time limit and was cancelled
+# before anything could be committed.
+#
+# This is deliberately partial: the aim is the section that was asked for
+# (training and AI offerings), not a copy of the portal. Expect the route
+# count to sit at the cap and treat these clones as a sample.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-competitors-portals.txt \
+#             --dest=decaid-competitors --mode=multi --max-routes=25 --depth=1
+
+https://www.haufe-akademie.de/hierarchy/ki  # Haufe Akademie — KI (SEO 10)
+https://www.bigdata-ai.fraunhofer.de/       # Fraunhofer Big Data & AI (9.5)
+https://www.ihk.de/koeln                    # IHK-Netzwerk Köln (9)
+https://www.iwu.fraunhofer.de/              # Fraunhofer IWU (8.5)
+https://www.it-schulungen.com/              # IT-Schulungen.com (8.5)
+https://www.cegos-integrata.de/             # Cegos Integrata (7.5)

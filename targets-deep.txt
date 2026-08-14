@@ -24,4 +24,6 @@
 #      ~2.7 GB before this capture.
 
 https://lexfridman.com/                   # from targets.txt (roundup brand)
-https://www.tonyrobbins.com/              # from targets-full.txt (addition)
+# https://www.tonyrobbins.com/            # parked — see status note above; the
+#                                         # 60-route clone stands as the version
+#                                         # of record

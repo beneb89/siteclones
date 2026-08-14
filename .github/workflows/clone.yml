@@ -20,6 +20,7 @@ on:
           - targets-full.txt
           - targets-deep.txt
           - targets-competitors.txt
+          - targets-competitors-portals.txt
           - targets-seo.txt
         default: all
       force:
@@ -58,13 +59,15 @@ jobs:
           deep='{"list":"targets-deep.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=200"}'
           competitors='{"list":"targets-competitors.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=60 --depth=2"}'
           seo='{"list":"targets-seo.txt","dest":"seo-reference","flags":""}'
+          portals='{"list":"targets-competitors-portals.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=25 --depth=1"}'
           case "$WANTED" in
-            targets-competitors.txt) lists="[$competitors]" ;;
+            targets-competitors.txt)         lists="[$competitors]" ;;
+            targets-competitors-portals.txt) lists="[$portals]" ;;
             targets.txt)           lists="[$brands]" ;;
             targets-galleries.txt) lists="[$galleries]" ;;
             targets-full.txt)      lists="[$full]" ;;
             targets-deep.txt)      lists="[$deep]" ;;
-            *)                     lists="[$brands,$galleries,$full,$deep,$competitors,$seo]" ;;
+            *) lists="[$brands,$galleries,$full,$deep,$competitors,$portals,$seo]" ;;
           esac
           echo "lists=$lists" >>"$GITHUB_OUTPUT"
           echo "cloning: $lists"
@@ -120,7 +123,23 @@ jobs:
           # Runners for a private repo have 7 GB, so leave room for Chromium.
           NODE_OPTIONS: --max-old-space-size=5632
         # $FLAGS comes last so a dispatch can override the list's own flags.
-        run: ./scripts/clone-batch.sh --file="$LIST" --dest="$DEST" $FORCE $TFLAGS $FLAGS
+        #
+        # Stop the batch well before the job's own timeout. A job that GitHub
+        # cancels skips every remaining step — including the commit — so a run
+        # that overshoots loses hours of finished captures. Exiting on our own
+        # terms keeps whatever completed: clone-batch writes each site to disk
+        # as it finishes, and the commit step below picks those up.
+        run: |
+          # `|| status=$?` rather than a bare call: the step runs under bash -e,
+          # which would abort on a non-zero exit before the status is read.
+          status=0
+          timeout --signal=INT 240m \
+            ./scripts/clone-batch.sh --file="$LIST" --dest="$DEST" \
+              $FORCE $TFLAGS $FLAGS || status=$?
+          if [ "$status" -eq 124 ] || [ "$status" -eq 130 ]; then
+            echo "::warning::Batch stopped at the 240 minute mark — sites captured so far are kept, the rest of $LIST was not attempted."
+          fi
+          exit "$status"
 
       - name: Commit results
         if: always()

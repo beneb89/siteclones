@@ -1,27 +1,18 @@
 # Clone targets — one URL per line, "#" starts a comment.
 #
-# decaid.academy and the competitive set around it: AI/digital training
-# providers, ranked A/B/C by league with an SEO score in the source table.
-# Captured multi-page so the navigation and subpages come through.
+# decaid.academy and the personal-brand end of its competitive set (leagues B
+# and C in the source table, with the SEO score noted per entry). Captured
+# multi-page so navigation and subpages come through.
+#
+# The league-A entries are large corporate portals and live in
+# targets-competitors-portals.txt, where they are captured shallower. Both
+# lists land in the same folder.
 #
 # Run with: ./scripts/clone-batch.sh --file=targets-competitors.txt \
 #             --dest=decaid-competitors --mode=multi --max-routes=60 --depth=2
-#
-# --depth=2 matters here. Two entries point at a section of a very large
-# portal (haufe-akademie.de/hierarchy/ki, ihk.de/koeln); the crawler stays on
-# the host, so without a depth bound it would wander the whole portal instead
-# of the section that was asked for.
 
 # --- reference ------------------------------------------------------------
 https://www.decaid.academy/               # decaid.academy
-
-# --- league A -------------------------------------------------------------
-https://www.haufe-akademie.de/hierarchy/ki  # Haufe Akademie — KI (SEO 10)
-https://www.bigdata-ai.fraunhofer.de/       # Fraunhofer Big Data & AI (9.5)
-https://www.ihk.de/koeln                    # IHK-Netzwerk Köln (9)
-https://www.iwu.fraunhofer.de/              # Fraunhofer IWU (8.5)
-https://www.it-schulungen.com/              # IT-Schulungen.com (8.5)
-https://www.cegos-integrata.de/             # Cegos Integrata (7.5)
 
 # --- league B -------------------------------------------------------------
 https://www.felixbeilharz.de/             # Felix Beilharz (9.5)

@@ -45,6 +45,11 @@ This repo is a workspace for cloning websites into runnable apps with
 - A route count that lands exactly on `--max-routes` means the crawl was cut
   short, not that the site ended there. Move such a site to a list with a
   higher cap rather than raising the cap for everything.
+- The workflow stops the batch at 240 minutes on purpose. A job GitHub cancels
+  at its own timeout skips every remaining step, so the commit never runs and
+  finished captures are lost — a run over sixteen sites was cancelled that way
+  with nothing to show. Keep a list small enough to finish inside that window,
+  or split it.
 - Multi-page capture of a big site can exhaust Node's heap
   (`Reached heap limit Allocation failed`). The workflow raises it via
   `NODE_OPTIONS`; if a site still dies, lower its `--max-routes` rather than
