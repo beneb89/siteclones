@@ -1,0 +1,21 @@
+{
+  "short_name": "Cegos",
+  "name": "Cegos",
+  "icons": [
+    {
+      "src": "/media/favicon-192x65.png",
+      "type": "image/png",
+      "sizes": "192x65"
+    },
+    {
+      "src": "/media/favicon-512x173.png",
+      "type": "image/png",
+      "sizes": "512x173"
+    }
+  ],
+  "start_url": "/?utm_source=a2hs",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1D0000"
+}

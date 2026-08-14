@@ -1,0 +1,438 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-background: var(--background);
+  --color-clr-0: var(--clr-0);
+  --color-clr-1: var(--clr-1);
+  --color-foreground: var(--foreground);
+  --color-clr-2: var(--clr-2);
+  --color-border: var(--border);
+  --color-clr-3: var(--clr-3);
+  --color-accent: var(--accent);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-color-001: var(--color-001);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-color-002: var(--color-002);
+  --color-color-003: var(--color-003);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+  --color-color-004: var(--color-004);
+  --color-clr-14: var(--clr-14);
+  --color-clr-15: var(--clr-15);
+  --color-clr-16: var(--clr-16);
+  --color-clr-17: var(--clr-17);
+  --color-clr-18: var(--clr-18);
+  --color-clr-19: var(--clr-19);
+  --color-clr-20: var(--clr-20);
+  --color-primary: var(--primary);
+  --color-clr-21: var(--clr-21);
+  --color-surface: var(--surface);
+  --color-clr-22: var(--clr-22);
+  --color-clr-23: var(--clr-23);
+  --color-clr-24: var(--clr-24);
+  --color-clr-25: var(--clr-25);
+  --color-clr-26: var(--clr-26);
+  --color-clr-27: var(--clr-27);
+  --color-clr-28: var(--clr-28);
+  --color-clr-29: var(--clr-29);
+  --color-color-005: var(--color-005);
+  --color-clr-30: var(--clr-30);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 51, 102);
+  --primary: rgb(204, 215, 230);
+  --accent: rgb(86, 189, 102);
+  --border: rgb(227, 235, 245);
+  --surface: rgb(228, 241, 228);
+  --muted-foreground: rgba(128, 128, 128, 0.1);
+  --color-001: rgb(17, 17, 17);
+  --color-002: rgb(0, 0, 0);
+  --color-003: rgb(0, 119, 181);
+  --color-004: rgb(51, 51, 51);
+  --color-005: rgb(36, 121, 41);
+}
+
+:root {
+  /* fonts */
+  --font-body: "Source Sans Pro", sans-serif;
+  --font-001: Korb, sans-serif;
+  --font-002: sans-serif;
+  /* fontSizes */
+  --font-size-001: 0px;
+  --font-size-002: 12px;
+  --font-size-003: 14px;
+  --font-size-004: 15px;
+  --font-size-005: 16px;
+  --font-size-006: 17px;
+  --font-size-007: 18px;
+  --font-size-008: 20px;
+  --font-size-009: 22px;
+  --font-size-010: 24px;
+  --font-size-011: 36px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 400;
+  --font-weight-003: 500;
+  --font-weight-004: 600;
+  /* lineHeights */
+  --line-height-001: 30px;
+  --line-height-002: 24px;
+  --line-height-003: 19.6px;
+  --line-height-004: 25.5px;
+  --line-height-005: 14.4px;
+  --line-height-006: 0px;
+  --line-height-007: 14px;
+  --line-height-008: 18.2px;
+  --line-height-009: 28px;
+  --line-height-010: 20px;
+  --line-height-011: 43.2px;
+  --line-height-012: 36px;
+  --line-height-013: 19.2px;
+  --line-height-014: 27px;
+  --line-height-015: 28.8px;
+  /* spacing */
+  --space-001: -7px;
+  --space-002: -5px;
+  --space-003: -1px;
+  --space-004: 1px;
+  --space-005: 1.6px;
+  --space-006: 2px;
+  --space-007: 3.4px;
+  --space-008: 3.6px;
+  --space-009: 5px;
+  --space-010: 6px;
+  --space-011: 7px;
+  --space-012: 8px;
+  --space-013: 9.6px;
+  --space-014: 10px;
+  --space-015: 12px;
+  --space-016: 14px;
+  --space-017: 15px;
+  --space-018: 16px;
+  --space-019: 18px;
+  --space-020: 20px;
+  --space-021: 21.6px;
+  --space-022: 24px;
+  --space-023: 42px;
+  --space-024: 54px;
+  --space-025: 58px;
+  --space-026: 60px;
+  --space-027: 63.04px;
+  --space-028: 110px;
+  /* radii */
+  --radius-001: 4px;
+  --radius-002: 8px;
+  --radius-003: 18px;
+  --radius-004: 24px;
+  --radius-005: 50%;
+  /* shadows */
+  --shadow-001: rgba(0, 0, 0, 0.25) 0px 4px 20px -5px;
+  /* zIndices */
+  --z-001: 1;
+  --z-002: 2;
+  --z-003: 10;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(255, 255, 255, 0);
+  --clr-1: rgba(0, 51, 102, 0.2);
+  --clr-2: rgba(255, 255, 255, 0.2);
+  --clr-3: rgba(0, 0, 0, 0.25);
+  --clr-4: rgba(0, 0, 0, 0.6);
+  --clr-5: rgb(239, 243, 246);
+  --clr-6: rgba(0, 0, 0, 0);
+  --clr-7: rgba(0, 0, 0, 0.024);
+  --clr-8: rgba(0, 0, 0, 0.1);
+  --clr-9: rgba(128, 128, 128, 0.05);
+  --clr-10: rgba(0, 0, 0, 0.2);
+  --clr-11: rgba(255, 255, 255, 0.7);
+  --clr-12: rgba(0, 0, 0, 0.5);
+  --clr-13: rgba(0, 0, 0, 0.15);
+  --clr-14: rgba(255, 255, 255, 0.75);
+  --clr-15: rgb(75, 164, 144);
+  --clr-16: rgb(175, 204, 122);
+  --clr-17: rgb(24, 119, 242);
+  --clr-18: rgb(255, 0, 0);
+  --clr-19: rgb(221, 48, 118);
+  --clr-20: rgb(40, 103, 178);
+  --clr-21: rgba(0, 51, 102, 0);
+  --clr-22: rgb(16, 20, 25);
+  --clr-23: rgb(18, 101, 103);
+  --clr-24: rgb(37, 211, 102);
+  --clr-25: rgb(5, 166, 63);
+  --clr-26: rgb(0, 136, 204);
+  --clr-27: rgb(46, 133, 51);
+  --clr-28: rgb(176, 196, 214);
+  --clr-29: rgb(220, 68, 21);
+  --clr-30: rgb(213, 64, 72);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/f9d0fd9829ad.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IHK24FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/8537118b4e00.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Korb";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/966cd4fe9b33.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Korb";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0fb2686b490f.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9be660b8fdf7.woff2") format("woff2-variations");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e24a6095493c.woff2") format("woff2-variations");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f9148cca8c36.woff2") format("woff2-variations");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/66ac0f6bb26c.woff2") format("woff2-variations");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/65e26e45618c.woff2") format("woff2-variations");
+  unicode-range: U+590-5FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/51f69c4ece7d.woff2") format("woff2-variations");
+  unicode-range: U+302-303, U+305, U+307-308, U+330, U+391-3A1, U+3A3-3A9, U+3B1-3C9, U+3D1, U+3D5-3D6, U+3F0-3F1, U+3F4-3F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8b2644a8197c.woff2") format("woff2-variations");
+  unicode-range: U+1-C, U+E-1F, U+7F-9F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/86f9e217c69e.woff2") format("woff2-variations");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9be69f385408.woff2") format("woff2-variations");
+  unicode-range: U+100-2AF, U+304, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Open Sans Variable";
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2a29a52804e9.woff2") format("woff2-variations");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Pictograms";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/07e10525274c.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2c193b145a99.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/aebab86c0ac5.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/83016ed9655e.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4b3d97d82a7e.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b099d4097ac6.woff") format("woff");
+}
+
+@font-face {
+  font-family: "UEmoji";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6a6d0f05acc4.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "podigee-podcast-player";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8fca49a77787.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Podlove";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/88178fe60fa9.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Roboto-v2";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5c0288bb81ee.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Roboto-v2";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/10ce48d81ce7.eot") format("embedded-opentype");
+}
+html { background: #ffffff; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

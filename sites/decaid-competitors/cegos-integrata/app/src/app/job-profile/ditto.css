@@ -1,0 +1,134 @@
+.cn0{box-sizing:content-box;height:2637.28px;display:block;overflow-x:hidden;overflow-y:auto;color:var(--foreground);font-family:Raleway, sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:20.3px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{height:4223.31px;font-size:13.0637px;line-height:18.9423px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:2617.92px;font-size:13.5185px;line-height:19.6019px}
+}
+[data-ditto-id="style-input"]::placeholder{color:rgb(29, 0, 0)}
+[data-ditto-id="style-suchen"]::after{content:url("https://www.cegos-integrata.de/assets//media/img/webp/fleche.png.webp");display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;width:35px;height:35px;color:rgb(29, 0, 0);font-size:14px;line-height:14px;text-align:center}
+@media (max-width: 571px) {
+[data-ditto-id="style-suchen"]::after{margin-top:auto;margin-right:auto;margin-bottom:auto;margin-left:auto;font-size:13.0637px;line-height:13.0637px;right:auto;bottom:auto}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-suchen"]::after{margin-top:auto;margin-right:auto;margin-bottom:auto;margin-left:auto;font-size:13.5185px;line-height:13.5185px;right:auto;bottom:auto}
+}
+[data-ditto-id="style-kundenbereich"]::after{content:url("https://www.cegos-integrata.de/assets/media/img/webp/arrow_menu_right_black.png.webp");display:block;width:12px;height:21px;margin-top:-12px;color:rgb(255, 255, 255);font-size:14px;line-height:21px}
+@media (max-width: 571px) {
+[data-ditto-id="style-kundenbereich"]::after{display:none}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-kundenbereich"]::after{display:none}
+}
+[data-ditto-id="style-li"]::after{content:url("https://www.cegos-integrata.de/assets/media/img/webp/arrow_menu_right_black.png.webp");display:block;width:12px;height:21px;margin-top:-12px;color:rgb(255, 255, 255);font-size:14px;line-height:21px}
+@media (max-width: 571px) {
+[data-ditto-id="style-li"]::after{display:none}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-li"]::after{display:none}
+}
+[data-ditto-id="style-i"]::after{content:url("https://www.cegos-integrata.de/assets/media/img/webp/arrow_menu_right_black.png.webp");display:block;width:12px;height:21px;margin-top:-12px;color:rgb(255, 255, 255);font-size:14px;line-height:21px}
+@media (max-width: 571px) {
+[data-ditto-id="style-i"]::after{display:none}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-i"]::after{display:none}
+}
+[data-ditto-id="style-ul"]::after{content:url("https://www.cegos-integrata.de/assets/media/img/webp/arrow_menu_right_black.png.webp");display:block;width:12px;height:21px;margin-top:-12px;color:rgb(255, 255, 255);font-size:14px;line-height:21px}
+@media (max-width: 571px) {
+[data-ditto-id="style-ul"]::after{display:none}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-ul"]::after{display:none}
+}
+[data-ditto-id="style-7"]::after{content:url("https://www.cegos-integrata.de/assets/media/img/webp/arrow_menu_right_black.png.webp");display:block;width:12px;height:21px;margin-top:-12px;color:rgb(255, 255, 255);font-size:14px;line-height:21px}
+@media (max-width: 571px) {
+[data-ditto-id="style-7"]::after{display:none}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-7"]::after{display:none}
+}
+[data-ditto-id="style-input-2"]::placeholder{color:rgb(29, 0, 0)}
+[data-ditto-id="style-suchen-2"]::after{content:url("https://www.cegos-integrata.de/assets//media/img/webp/fleche.png.webp");display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;width:35px;height:35px;color:rgb(29, 0, 0);font-size:14px;line-height:14px;text-align:center}
+@media (max-width: 571px) {
+[data-ditto-id="style-suchen-2"]::after{margin-top:auto;margin-right:auto;margin-bottom:auto;margin-left:auto;font-size:13.0637px;line-height:13.0637px;right:auto;bottom:auto}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-suchen-2"]::after{margin-top:auto;margin-right:auto;margin-bottom:auto;margin-left:auto;font-size:13.5185px;line-height:13.5185px;right:auto;bottom:auto}
+}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-strong-25"]{transition:color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.2s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-br-47"]{transition:color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.2s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-p-121"]{transition:color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.2s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-strong-40"]{transition:color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.2s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-strong-26"]{transition:color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.2s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-br-20"]{transition:color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.2s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.2s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-i-2"]{transition:color 0.3s}
+[data-ditto-id="style-link"]{transition:color 0.3s}
+[data-ditto-id="style-span"]{transition:color 0.3s}
+[data-ditto-id="style-19"]{transition:color 0.3s}
+[data-ditto-id="style-20"]{transition:color 0.3s}
+[data-ditto-id="style-21"]{transition:color 0.3s}
+[data-ditto-id="style-a"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-kontaktieren-sie-uns"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-kundenbereich-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-i-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-19"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-20"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-21"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-4"]:hover{border-bottom-color:rgb(230, 35, 58);border-left-color:rgb(230, 35, 58);border-right-color:rgb(230, 35, 58);border-top-color:rgb(230, 35, 58);color:rgb(230, 35, 58);outline-color:rgb(230, 35, 58);text-decoration-color:rgb(230, 35, 58);text-decoration-line:underline}
+[data-ditto-id="style-br-19"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-49"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-25"]:hover{background-color:rgb(33, 4, 4)}
+[data-ditto-id="style-link-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-121"]:hover{background-color:rgb(38, 10, 10)}
+[data-ditto-id="style-br-51"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-26"]:hover{background-color:rgb(33, 4, 4)}
+[data-ditto-id="style-p-85"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-47"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-86"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-22"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-52"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-48"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-118"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-56"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-33"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-60"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-24"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-43"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-122"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-49"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-123"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-54"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-br-25"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-strong-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-25"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-21"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-20"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-a"]:focus{background-color:rgb(255, 255, 255);border-bottom-color:rgb(0, 0, 0);border-bottom-width:2px;border-left-color:rgb(0, 0, 0);border-left-width:2px;border-right-color:rgb(0, 0, 0);border-right-width:2px;border-top-color:rgb(0, 0, 0);border-top-width:2px;box-shadow:rgba(0, 0, 0, 0.2) 0px 4px 12px 0px;color:rgb(0, 0, 0);outline-color:rgb(0, 0, 0);text-decoration-color:rgb(0, 0, 0)}
+[data-ditto-id="style-link-5"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-99"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-9"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-strong-28"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-strong-43"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-image-17"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-strong-25"]:focus{background-color:rgb(251, 251, 251)}
+[data-ditto-id="style-br-47"]:focus{outline-color:rgb(17, 17, 17);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-121"]:focus{background-color:rgb(251, 251, 251)}
+[data-ditto-id="style-strong-40"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-strong-26"]:focus{background-color:rgb(251, 251, 251)}
+[data-ditto-id="style-br-20"]:focus{outline-color:rgb(20, 20, 20);outline-style:auto;outline-width:5px}

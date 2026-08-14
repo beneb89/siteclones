@@ -1,0 +1,26 @@
+import type { TextLinkStyles } from "../_styles";
+import { cn } from "../../../../lib/utils";
+export type TextLinkData = {
+  href: string;
+  label: string;
+};
+/** A text link. */
+export default function TextLink({ d, styles }: { d: TextLinkData; styles: TextLinkStyles }) {
+  return (
+    <a className={cn("min-h-8 border-solid flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer", styles.className)} href={d.href} target="_self">
+      {" "}
+      <div className="block min-w-0">
+        <div className="flex">
+          <i className={cn("min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface", styles.className2)} />
+          {" "}
+          <div className="block min-w-0 my-auto font-medium leading-5">
+            {d.label}
+          </div>
+          {" "}
+        </div>
+        {" "}
+      </div>
+      {" "}
+    </a>
+  );
+}

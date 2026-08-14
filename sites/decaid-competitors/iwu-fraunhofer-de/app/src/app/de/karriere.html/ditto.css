@@ -1,0 +1,81 @@
+.cn0{display:block;color:var(--foreground);font-family:FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:200;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 1601px) {
+.cn0{font-size:16.8px;line-height:21.6px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-35"]{transition:box-shadow 0.4s, transform 1.5s, color 0.5s, background 1s}
+[data-ditto-id="style-link-27"]{transition:box-shadow 0.4s, transform 1.5s, color 0.5s, background 1s}
+[data-ditto-id="style-link"]{transition:box-shadow 0.4s, transform 1.5s, color 0.5s, background 1s}
+[data-ditto-id="style-figcaption-2"]{transition:box-shadow 0.4s, transform 1.5s, color 0.5s, background 1s}
+[data-ditto-id="style-figure-2"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-36"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-37"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-h3"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-ul-9"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-5"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-6"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-8"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-9"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-10"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-16"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-17"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-18"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-2"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-19"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-20"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-21"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-22"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-23"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-24"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-38"]:hover{text-decoration-line:none}
+[data-ditto-id="style-heading-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li-9"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-39"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-40"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-41"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-35"]:hover{background-color:rgba(31, 130, 192, 0.26);box-shadow:rgba(31, 130, 192, 0.757) 0px 0px 0px 15.1472px inset;color:rgb(173, 209, 232);outline-color:rgb(173, 209, 232);text-decoration-color:rgb(173, 209, 232)}
+[data-ditto-id="style-div-42"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-27"]:hover{background-color:rgba(31, 130, 192, 0.26);box-shadow:rgba(31, 130, 192, 0.757) 0px 0px 0px 15.1472px inset;color:rgb(173, 209, 232);outline-color:rgb(173, 209, 232);text-decoration-color:rgb(173, 209, 232)}
+[data-ditto-id="style-link"]:hover{background-color:rgba(31, 130, 192, 0.22);box-shadow:rgba(31, 130, 192, 0.706) 0px 0px 0px 14.1145px inset;color:rgb(160, 202, 228);outline-color:rgb(160, 202, 228);text-decoration-color:rgb(160, 202, 228)}
+[data-ditto-id="style-link-30"]:hover{text-decoration-line:none}
+[data-ditto-id="style-figcaption-2"]:hover{background-color:rgba(31, 130, 192, 0.26);box-shadow:rgba(31, 130, 192, 0.757) 0px 0px 0px 15.153px inset;color:rgb(173, 209, 232);outline-color:rgb(173, 209, 232);text-decoration-color:rgb(173, 209, 232)}
+[data-ditto-id="style-div-43"]:hover{text-decoration-line:none}
+[data-ditto-id="style-figure-2"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-image-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-44"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-45"]:hover{text-decoration-line:none}
+[data-ditto-id="style-p-11"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-36"]:hover{background-color:rgb(59, 89, 152);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-div-37"]:hover{background-color:rgb(0, 0, 0);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-h3"]:hover{background-color:rgb(179, 18, 23);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-ul-9"]:hover{background-color:rgb(247, 119, 55);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-div-4"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-46"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-35"]:focus{background-color:rgba(31, 130, 192, 0.043);box-shadow:rgba(31, 130, 192, 0.145) 0px 0px 0px 2.87058px inset;color:rgb(63, 148, 201);outline-color:rgb(63, 148, 201);text-decoration-color:rgb(63, 148, 201)}
+[data-ditto-id="style-link-27"]:focus{background-color:rgba(31, 130, 192, 0.043);box-shadow:rgba(31, 130, 192, 0.145) 0px 0px 0px 2.87848px inset;color:rgb(63, 148, 201);outline-color:rgb(63, 148, 201);text-decoration-color:rgb(63, 148, 201)}
+[data-ditto-id="style-link"]:focus{background-color:rgba(31, 130, 192, 0.024);box-shadow:rgba(31, 130, 192, 0.114) 0px 0px 0px 2.30512px inset;color:rgb(55, 144, 199);outline-color:rgb(55, 144, 199);text-decoration-color:rgb(55, 144, 199)}
+[data-ditto-id="style-figcaption-2"]:focus{background-color:rgba(31, 130, 192, 0.043);box-shadow:rgba(31, 130, 192, 0.145) 0px 0px 0px 2.87058px inset;color:rgb(63, 148, 201);outline-color:rgb(63, 148, 201);text-decoration-color:rgb(63, 148, 201)}
+[data-ditto-id="style-div-36"]:focus{background-color:rgb(59, 89, 152)}
+[data-ditto-id="style-div-37"]:focus{background-color:rgb(0, 0, 0)}
+[data-ditto-id="style-h3"]:focus{background-color:rgb(179, 18, 23)}
+[data-ditto-id="style-ul-9"]:focus{background-color:rgb(247, 119, 55)}

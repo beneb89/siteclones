@@ -1,0 +1,88 @@
+.cn0{display:block;color:var(--foreground);font-family:FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:200;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 1601px) {
+.cn0{font-size:16.8px;line-height:21.6px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button-7"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button-8"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button-9"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button-10"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-4"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-5"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-6"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-8"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-9"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-10"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-2"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-16"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-17"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-18"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-19"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-20"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-21"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-22"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-23"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-3"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-24"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-25"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li"]:hover{text-decoration-line:none}
+[data-ditto-id="style-label"]:hover{text-decoration-line:none}
+[data-ditto-id="style-span-4"]:hover{text-decoration-line:none}
+[data-ditto-id="style-input"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-3"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-4"]:hover{text-decoration-line:none}
+[data-ditto-id="style-span-5"]:hover{text-decoration-line:none}
+[data-ditto-id="style-br"]:hover{text-decoration-line:none}
+[data-ditto-id="style-button-11"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-5"]:hover{text-decoration-line:none}
+[data-ditto-id="style-heading"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-6"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-navigation-und-social-media"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-bei-linkedin-teilen"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-33"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-34"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-nav"]:hover{text-decoration-line:none}
+[data-ditto-id="style-ul"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-35"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-36"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-37"]:hover{text-decoration-line:none}
+[data-ditto-id="style-button-7"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-button-8"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-38"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-39"]:hover{text-decoration-line:none}
+[data-ditto-id="style-bei-facebook-teilen-2"]:hover{background-color:rgb(66, 100, 170)}
+[data-ditto-id="style-bei-x-teilen-2"]:hover{background-color:rgb(25, 33, 41)}
+[data-ditto-id="style-bei-linkedin-teilen-2"]:hover{background-color:rgb(10, 134, 204)}
+[data-ditto-id="style-bei-xing-teilen-2"]:hover{background-color:rgb(2, 125, 127)}
+[data-ditto-id="style-button-9"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-button-10"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-40"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-41"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-42"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-43"]:hover{text-decoration-line:underline}

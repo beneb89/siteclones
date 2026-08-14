@@ -1,0 +1,80 @@
+.cn0{display:block;color:var(--foreground);font-family:FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:200;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (min-width: 1601px) {
+.cn0{font-size:16.8px;line-height:21.6px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-b-5"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-source-7"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-source-9"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-source-10"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-figcaption"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-5"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-6"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-8"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-9"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-10"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-16"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-17"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-18"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-2"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-19"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-20"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-21"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-22"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-23"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-24"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-77"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-78"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-article"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-79"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-80"]:hover{text-decoration-line:none}
+[data-ditto-id="style-heading-9"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-10"]:hover{text-decoration-line:none}
+[data-ditto-id="style-ul-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-footer"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-81"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-17"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-button-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-heading-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-8"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-29"]:hover{text-decoration-line:none}
+[data-ditto-id="style-ul-8"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-13"]:hover{text-decoration-line:none}
+[data-ditto-id="style-nav"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-10"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li-16"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-32"]:hover{text-decoration-line:none}
+[data-ditto-id="style-source-4"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-82"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-heading-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-b-5"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-div-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-83"]:hover{text-decoration-line:none}
+[data-ditto-id="style-section-3"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-33"]:hover{text-decoration-line:none}
+[data-ditto-id="style-source-7"]:hover{background-color:rgb(59, 89, 152);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-source-9"]:hover{background-color:rgb(0, 0, 0);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-source-10"]:hover{background-color:rgb(179, 18, 23);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-figcaption"]:hover{background-color:rgb(247, 119, 55);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-div-27"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-aside-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-61"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-source-7"]:focus{background-color:rgb(59, 89, 152)}
+[data-ditto-id="style-source-9"]:focus{background-color:rgb(0, 0, 0)}
+[data-ditto-id="style-source-10"]:focus{background-color:rgb(179, 18, 23)}
+[data-ditto-id="style-figcaption"]:focus{background-color:rgb(247, 119, 55)}

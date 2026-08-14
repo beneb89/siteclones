@@ -1,0 +1,2659 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<title>Fraunhofer-Allianz Big Data und Künstliche Intelligenz</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "FrutigerLTW02";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/da8b813f5573.woff2") format("woff2"), url("public/assets/cloned/fonts/3d78da33385f.woff") format("woff"), url("public/assets/cloned/fonts/a00584af6e10.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FrutigerLTW02";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9352cfd09769.woff2") format("woff2"), url("public/assets/cloned/fonts/aab337509d29.woff") format("woff"), url("public/assets/cloned/fonts/2206e20d8cd0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "icon-font";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5492ce7aa800.woff") format("woff"), url("public/assets/cloned/fonts/8e4544387013.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "VideoJS";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAABTsAAsAAAAAIpAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADsAAABUIIslek9TLzIAAAFEAAAAPgAAAFZRiV32Y21hcAAAAYQAAAEJAAAD5p42+VxnbHlmAAACkAAADtIAABckI4l972hlYWQAABFkAAAAKwAAADYsvIjpaGhlYQAAEZAAAAAdAAAAJA+RCL1obXR4AAARsAAAABcAAAC8Q2YAAGxvY2EAABHIAAAAYAAAAGB7CIGGbWF4cAAAEigAAAAfAAAAIAFAAI9uYW1lAAASSAAAASUAAAIK1cf1oHBvc3QAABNwAAABfAAAAnXdFqh1eJxjYGRgYOBiMGCwY2BycfMJYeDLSSzJY5BiYGGAAJA8MpsxJzM9kYEDxgPKsYBpDiBmg4gCACY7BUgAeJxjYGR7yDiBgZWBgaWQ5RkDA8MvCM0cwxDOeI6BgYmBlZkBKwhIc01hcPjI+FGPHcRdyA4RZgQRADaGCyYAAHic7dPXbcMwAEXRK1vuvffem749XAbKV3bjBA6fXsaIgMMLEWoQJaAEFKNnlELyQ4K27zib5PNF6vl8yld+TKr5kH0+cUw0xv00Hwvx2DResUyFKrV4XoMmLdp06NKjz4AhI8ZMmDJjzoIlK9Zs2LJjz4EjJ85cuHLjziPe/0UWL17mf2tqKLz/9jK9f8tXpGCoRdPKhtS0RqFkWvVQNtSKoVYNtWaoddPXEBqG2jQ9XWgZattQO4baNdSeofYNdWCoQ0MdGerYUCeGOjXUmaHODXVhqEtDXRnq2lA3hro11J2h7g31YKhHQz0Z6tlQL4Z6NdSbod4N9WGoT9MfHF6GmhnZLxyDcRMAAAB4nJ1YC1hU17U+a5/HMA4iA3NmVBDmoQwP5TFnHlFeA4gYiUFRQINoSCBAyK3G2yi+0aipYtFcHYo2xsb4NiY3+VrNxSaX5uvt495ozNdoYoxmem2/L8HGpLc+InB279pnhlGr5mvL4eyz99nrrL32eu1/DQcc/okdYgdHOA6MQKp4r9gx0EcMHMezOalVasW5BM7NcXoSb9fFgE6KtSSBxWz1FYDPG+vMBGcKb9cebu2VS5s2aaTkCvRSf6C7Y+Ppibm5E09v7IDs2/3uZQtbD0zIyppwoHXh/93ukmyYgdePNRp65p5v+3v/9otQl2O7wP34cT88p8Md2YxpYLQZoRcy6FlSBRnwnGAe6BPMSCZo+7NJVqS0cE4uHendzhSnbPH6TDqL1+Nme5LZXkCHnGyoH0kne30WH+gswhm3q+pt/mTas9NLS64GnjmSlTPw0wVQT/ewRaBgxtydy3cuUB9/6SW+vb5yRvr+t0eOfPKJZ/9t3+4tL7xj32Xd3thCxi+ge6ifdsAN+l5+wi5HQ/cCoeull1AszS7CUfEcJzK7sKWJAdJhCd0sPM4+EY7QDm5ov08hXRQXE5bf6PV5Q5+IjW7X7Nku92Ask4l2hCRRD6TPqISiCJeQna3SCFwrhrNzXHzo4yFevBwxpzxk8WCIIfkvVEKVy32SbT8n68gzgaslpaiO2zIGIyuSb7RNf9HSuN26y/7OC1tgEmpiyA6aD4qcgTOiLThwGG0eB694FI8NHLLN6OBlRVaMxNAFS4JdXUG6mW8PwpKuYLCLXKGbu8iwYNdgO06Sn3Th+/vyZAxs8Ro30DjHe9gy8Fywi24OMm7Qyzh3MTZVOMYhLBnoC+J79lpTUyQmorjhnMwlcQ5uPEYGpDjsOkkH49BjQLQBqs3jFtFdJNlksYmoQFDArLh8Xh+Qd6Ghcsb6FUuehDi+U/lqD71K/qiegeV1imcwjl7ExwiSrf4BZyCujV6cVcFo6VX+G9IcPyFjJnUufbU/jzrL1X99as36reXl8K32nFaOr+E8jWJEcJ55DpMVfSMe95/AJaOsGBH2GJCNpiRQbK4C8BjdmQA22QY2j03Em13i2YHqtNLU1NI04Yj2HJgA6fQc6VPNpA/D+Ryks554NnVy2mB72uRUfPLsqR4N0LOBQKArwJYO+5W2fgZX8oC1HR6HjNaQTVIG2FPwnTcXXGZZfNB7TE6pTKZUwaw91XWLAoFFGcnB5PHjsckgBjbWutrL+0h5Y1xw3DRGDumsnXb3MJwXrJIN5U7m0rgJ3yG5w4he5ckFG4pmNEkOm0/xOO4r4yL87wqtQM+hiJIVp+6iG2wPBKD35ElGkDx+UfC2v1mFG1o+M3AjNFty8biKMXwzyxnZLds8wYD2BxmCPHAldPOeLsy/0BugftYhVYFAhO8SqQ0j3oK7dHJZnI/jxmUS4onlxskSF8thmvNZjIrRZwEPxr0lBuLRuz3oy/FOHCsxwOPYh2M+e9u3J5pgPYz9gp6G7C9m0A11F9ddqKMfV+4sbq45/YspOysXvT+3pdFdYNg2fHbW8Dz301MqDVuGrz0Fuh0YMW8mddrpqzST7rV9BcvqPoNvadRndWp0p8HvbiqrFj5yFQ/vNFSXDpxpLEFWp+DcrF3FT1afWshFcmCfeAMjEvO65i0Y6XijQfSRPWx3TV/Df7Km3E1l+kLt56s/rwVzuRusNMhudznkwdLaS+QNdeal2jDPP4l9qHc98vTYZOSkxzD+njBWVWjFPKgipx6DkWvXQiW8OYcewVHE5yukinDMcfGgc0opDltYKDxIGBedkzc6jSfE7tlvESCDFUw0Hx0opS+U0lHCxNottbNWSxX9zZVvEhKWUSyBpaXwBc2a98M6UqPeXAs/GDon8Ax7hsthO8cM5HU7Ad0UvRR9lHmtyQKZ4MAe814X5h9MSUkQmhf96eVJ6p90OjIiqSIjvykvr2l5U55O/fPQKD+jIomYpNyGJQ25uQ2kIikRfAmuBHCPsWqkSDEqgZ5KDI2sifS/R43MbZg0idFHbCPNxXxZws1ACVE6hAhOdJwRkJLFBLPZpRGYJ50pko6XzMkgmSx40ljik6AQcKhFnLcQE6rF7PXFe1Ocoj0T3AXgSgJTDIhHRfHlYZKuSzc6uievOJGXY+i5GJkkTp7UM3y0LqATDbtFcbdBxO7o4T25JYlEjoH0uynUh8rapkxp62QN70svSF+hT4gGPlovlmcm/ComLi7mV4kTykV9NFWjE/QrwgQ4uIcAP0rQF4VZYRP2o3PhHHzfPMJj9Ir+uzKUlrH49ntT18AVvj1sc3YGjUT/Mt2Dxawa8ArcA7bCQIpvfwAYu22vEG/No/5RvPdA7g+AelLrPwzy+LtkLPhnpIxH14m4EYq8eeMHbPEPNm6G7Nv9B4jcFPZ8bJj0SEjP3MPgQdKTqqEoy2v6G32P/Y6dxOv04AxnoAeq+GILvUavtYCBXm+BaIhuodcfrN5B/V2EYMCPh+SxavjGyPwV0x4CJgUPGT0mQaODGBACIJZGsMXwAD0LGXx7l3CdAcKMIKI+f5CepWeD0BvyU/GcdBxPF8SwejC6LGZmAURFdsSWKR5HyHld2kbdIZO1Ixx+bnnzU7n5+blPNV9jnUDWhP2tC68tbN3PVIldsQPxSAcSpjOav7Q05uXn5zW2LLvDXn9B6syscPy9iDLEMmSrJz6nYuWMipukjM0AH8JkGS+XFyMRkzSCH7KD/hwm172SAyZYumHlefr5AddrtA0O0TnwaVZxcRY9Bfukn9Gf05N1r9DV9MoBsJ1f+ZrqUvtPHizJAntWybv7hmqLt6QLuK6ZS9Fqi1jO5rDoWPZXXII5Tgajg53cIXCjDCGIcYrRIY2n6+mXOa/W0bdhau3ryiEYe2FV/5oeaIYK/5w5frCyll6/cYO8DiNhw6t1MBWmznt91QX62UF1N7l0eHBZTRGpKaqpKVIPF9UcIzmReud9TSY75+K899GHbBu6wjoR7RKKZVYiYxSPf5/2wJT5e3NAhmUbVn5KLx1Ujg0+BGvpAIh0DezInTkzF37KVocxrKU3r1+XLtAe2lO3l66kfQfB/unKY+q8N375Ru8bc4pJXfEcESU95q+p8ZNZRTWH1d9FzvUdYXk5rLkcdkEisoKKVHQW/b3GEx6tPaYcoJfOr9wAbSBnv1IHpep0OExr4LPMkpJM+j7sly7UHkOzXjoAZljHCGiyegtNlwljM0v+c19ET9Pvst09a2Mtgcf5/ZSzYO5h1156+eyydfAsxGa9XAuF6vzjh6CssLq6ECysperXX0sX5h5ZdpZe3guxsGIPEtHk/aqXX1hVqP5HYVVVISkrrNqvXorIc+5Ou91Hnr/LcD2afi6eX7UBloOcs7cOpqgGaNfs1g7bNbs9z6wASaylN69d0/TFTIz6Ws8+oGV3mE2612wRTHKcVUbhjKadebloMc+dyXgMVtVK6BwMB/+mVW09igdRBWaRtNQX59d/VD//xdQ0TCiYNj1KT9sq6Wdu5WTbqk3qDXyDaLa1fv621LS01G3z61sD6lH8lAxDLicV921s6Bf92JOYvzNYCL1khbqBXEFUzC521N5NyzNaQIWhjyFyDoBIVrAjmv2UEaLlI+c6zw1jmVIPLLLZZUTj6GxGHW+mq1tgHXR2D85p4Q934+jLbtjVLcyCdS10NVzpHqxp4Q/hK7WopY/NRGx9HGsPGdFjOjcpjBnGYMVqY/4eqT5khWEHWUup2A/pTw7pdWgsWft7ETUERL96nRg0HNFPmCYba6pylECaExX89A9WLUOVB4oKLu/o1oqSYHCgLzBUlAz8hNFDRpeSU1XT+LRmDUgPaKbYdHDn9suF/tu13nHJij0N97LfS0QmqONuyONk7zvUI6Qa0pF9f2+oABL92AT6e0U//z9YqAiWtJLU1JK0gS+1aacwamiNqK067u9ZQ8f1d4qLodMzz3uL89Z68V/Hnr++hXWUuHgw8dfi972PeTyPefu3aNNucemQ74qFuIaJnVkOu4Q+yjuwmmC1FqZpl1i4uzoPxjkpPf3Xv545tl26Rr+dOvUd+omqJzch9dOeU7f10Y64nMcKK137DccIZq2WdXtdZjbEoLSzHwiMtrjYLDxpHQW8gjMX6XFYAE2zSWVD04EGYSs9MbO6sEo20BMEAB4mpvSypsKjZ4Stgzb+c3A9/MQT2+vrBy+qvyFxLUtLlSRF/Ri2wjfZ2dus2Q8lXx4608/jnqK5OOap6NY2PSjYYnECCjiEeLJll/pbmqfeIK+ps3+MxrlEhqmTPipVP7kqlF4VhpEb6r+Q7YOJg38kJ9SHBf3NBl6+9YchfbUjb5ahLSzUM3kPHmwFAsZ5rpai0S7E5xWzZ1j+fW7zsUWP2g5NXTw52ySCTrgG0+lbw60l2Y/CB185CoA8NK+tbRKxfjy6pm5hzQRRR+cMqv1Jbiw6STivtEvt3DRcy0QEh92JlUGo2PG4tSKHl00YD6xc8CK+YPYyy3io2lN8BcSjKRzrIV6ypOAobqxViJPaT9M9Hy5szY33mp7OX/Zu89L/7Ww5vqY2Y8b0pKgoiUhG5cPDPzq8qTV/WkzUOIvXVVA96kmjcBrr3HrYC/Wn+fYP6Z7T1rqy3zknbvqma/FvVk96fNXGkuaXrdHW5JGSxZT/2I/O73v+yNWafMdzc5NdxYurHs6h86e01sLKLz9EBrg+x36rxAaED7hRnAMx7Vzu+9wabh3zG8XLQjx0ablUJzmxdErxYT3kzQSd0SSafVqF5PXgpp0OyYJ1EyNHpGUZmvK575ySzd85JSqF7IBzSAbMM04+MbE58xF3/njXOGecSaermlw2y9PsSQdytLJVr8t+wg+rR8cZYoeNxVIzNdk3Bngi8U5LAlgTFoQnzJCa5EsCgYhCaGL+qPj7TdhG31p9tej3R04N//PXxNwJvyUqwaJqRPJY98TJ5TPndmflRAkAhBfe46sfKW5wizSge08Xb7Ca/GUVs55trngkKkrUS2WPzKttaaqq+idmahugkY+W6fN0I6i3gPt/x88U4wAAeJxjYGRgYADiGU9YXsXz23xl4GZnAIFH7fO+IdMc/WBxDgYmEAUASbMKwAB4nGNgZGBgZwABjj4Ghv//OfoZGBlQgT4ARicDZAAAAHicY2BgYGAfxJijD8Fmu4EqBwCSpgKpAAAAAAAADgBoAH4AzADgAQIBQgFsAZgB7gIuAooC0AL8A2IDjAOoA+AEMASwBNoFCAVaBcAGCAYuBnAGrAb2B04HigfSCCoIcAiGCJwIyAkkCVYJiAmsCfIKIApWCsQLknicY2BkYGDQZ2hmYGcAASYg5gJCBob/YD4DABqrAdAAeJxdkE1qg0AYhl8Tk9AIoVDaVSmzahcF87PMARLIMoFAl0ZHY1BHdBJIT9AT9AQ9RQ9Qeqy+yteNMzDzfM+88w0K4BY/cNAMB6N2bUaPPBLukybCLvleeAAPj8JD+hfhMV7hC3u4wxs7OO4NzQSZcI/8Ltwnfwi75E/hAR7wJTyk/xYeY49fYQ/PztM+jbTZ7LY6OWdBJdX/pqs6NYWa+zMxa13oKrA6Uoerqi/JwtpYxZXJ1coUVmeZUWVlTjq0/tHacjmdxuL90OR8O0UEDYMNdtiSEpz5XQGqzlm30kzUdAYFFOb8R7NOZk0q2lwAyz1i7oAr1xoXvrOgtYhZx8wY5KRV269JZ5yGpmzPTjQhvY9je6vEElPOuJP3mWKnP5M3V+YAAAB4nG2ReVPbMBDF/ULi2EkDBFqO3gdHLxUzDB9IkdexBllydRD49ihO3Ckz7B/a31utZnafkkGyiXnyclxhgB0MMUKKMTLkmGCKV5hhF3vYxxwHOMRrvMERjnGCU7zFO7zHB3zEJ3zGF3zFN5zhHBe4xHf8wE/8wm8w/MEVimTYKv44XR9MSCsUjVoeHE3vjQoNsSZ4mmxZmVWPjSz7jlou6/0qKOWEJdKMtCe793/hQfqxa6XWZHMXFl56RS4TvPXSaDeoy0zUUZB109KstDK8lHo5q6Qi1hcOnqkImubPS6aqRq7mlnaEWabub4iYblba3SRmgldS0+FWdhNtt04F14JUaqkl7tcpOpJtErvNt3Bd9HRT5JWxK25Ldjvp6br4hzfFiIdSmlzTg2fSUzNrLd1LE1ynxq4OVaVoKLjzJ60UPtj1RKzHzsbjly6inVnFBS2MucviPncU7Rr7lfTxRepDs1A2j3ZHRc7PuzFYSfE3ZOd4kjwBy227hA==);
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(85, 85, 85);
+  --primary: rgb(31, 130, 192);
+  --accent: rgb(51, 184, 202);
+  --border: rgb(199, 202, 204);
+  --muted-foreground: rgb(153, 153, 153);
+  --surface: rgb(238, 239, 241);
+  --color-001: rgb(0, 147, 116);
+  --color-002: rgb(15, 20, 25);
+  --color-003: rgb(2, 100, 102);
+  --color-004: rgb(59, 89, 152);
+  --color-005: rgb(9, 118, 180);
+  --color-006: rgb(102, 191, 172);
+  --color-007: rgba(31, 130, 192, 0.85);
+  --color-008: rgb(109, 191, 169);
+}
+
+:root {
+  /* fonts */
+  --font-body: FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* fontSizes */
+  --font-size-001: 0px;
+  --font-size-002: 1px;
+  --font-size-003: 12px;
+  --font-size-004: 13px;
+  --font-size-005: 14px;
+  --font-size-006: 24px;
+  --font-size-007: 28px;
+  /* fontWeights */
+  --font-weight-001: 200;
+  --font-weight-002: 400;
+  /* lineHeights */
+  --line-height-001: 18px;
+  --line-height-002: 15px;
+  --line-height-003: 0px;
+  --line-height-004: 28px;
+  --line-height-005: 24px;
+  --line-height-006: 34px;
+  --line-height-007: 32px;
+  --line-height-008: 22px;
+  --line-height-009: 50px;
+  /* spacing */
+  --space-001: -15px;
+  --space-002: -3px;
+  --space-003: 2px;
+  --space-004: 4.2px;
+  --space-005: 4.9px;
+  --space-006: 5px;
+  --space-007: 6px;
+  --space-008: 8.4px;
+  --space-009: 10px;
+  --space-010: 15px;
+  --space-011: 25px;
+  --space-012: 80px;
+  /* zIndices */
+  --z-001: 1010;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgb(204, 204, 204);
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{display:block;color:var(--foreground);font-family:FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:200;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{height:2982px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:1440px;padding-right:80px;padding-left:80px;overflow-x:hidden;overflow-y:hidden;font-size:0px;margin-left:auto;margin-right:auto}
+.cn2{display:block}
+.cn3{height:191px;min-height:126px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:-1px;line-height:15px}
+.cn4{height:100%;display:block}
+.cn5{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn5::after{content:"";display:block;position:absolute;top:-1px;right:-80px;bottom:-1px;left:1120px;z-index:-1;height:100px}
+.cn6{width:840px;height:100px;border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;float:right;vertical-align:top}
+.cn7{display:block}
+.cn8{width:279.297px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:right;padding-top:25px;padding-right:25px}
+.cn9{display:block;margin-right:45px}
+.cn10{width:32px;height:33px;display:block;position:absolute;top:25px;right:25px;vertical-align:top;color:var(--primary);font-weight:400;line-height:0px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn10::after{content:"";display:inline-block;width:33px;height:33px;color:rgb(31, 130, 192);font-size:33px;line-height:33px;text-align:center}
+.cn11{height:100px;display:inline-block;padding-top:35px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top}
+.cn12{display:inline;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn13{display:inline}
+.cn14{width:179px;height:50px;display:inline;max-width:260px;max-height:50px;overflow-x:clip;overflow-y:clip}
+.cn15{display:block}
+.cn16{width:280px;display:block;float:left;padding-top:15px;padding-right:25px;padding-bottom:15px;padding-left:25px;vertical-align:top;font-size:12px;letter-spacing:0.3px;word-break:break-word;overflow-wrap:break-word}
+.cn17{display:inline;cursor:pointer}
+.cn18{display:inline}
+.cn19{width:840px;height:90px;display:inline-block;vertical-align:top}
+.cn20{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;text-align:right}
+.cn21{width:701.984px;height:45px;min-height:43px;display:inline-block;padding-right:15px;vertical-align:top;font-size:12px;letter-spacing:0.3px}
+.cn22{height:100%;display:block}
+.cn23{height:100%;display:block;list-style-type:none;list-style-position:outside}
+.cn24{height:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;vertical-align:top;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn25{height:100%;display:block;padding-top:15px;padding-right:25px;padding-bottom:15px;padding-left:25px;color:var(--primary)}
+.cn26{height:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;vertical-align:top;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn27{height:100%;display:block;padding-top:15px;padding-right:25px;padding-bottom:15px;padding-left:25px;color:var(--primary);white-space:nowrap}
+.cn28{height:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;vertical-align:top;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn29{height:100%;display:block;padding-top:15px;padding-right:25px;padding-bottom:15px;padding-left:25px;color:var(--primary)}
+.cn30{height:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;vertical-align:top;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn31{height:100%;display:block;padding-top:15px;padding-right:25px;padding-bottom:15px;padding-left:25px;color:var(--primary)}
+.cn32{height:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;vertical-align:top;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn33{height:100%;display:block;padding-top:15px;padding-right:25px;padding-bottom:15px;padding-left:25px;color:var(--primary)}
+.cn34{display:block}
+.cn35{width:920px;height:44px;min-height:43px;display:block;margin-right:-80px;padding-right:80px;padding-bottom:1px;background-color:var(--color-001)}
+.cn36{height:100%;display:block}
+.cn37{width:100%;height:100%;display:table;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-right:15px;padding-left:15px;list-style-type:none;list-style-position:outside}
+.cn38{height:100%;display:table-cell;vertical-align:middle;text-align:center;white-space:nowrap;text-wrap:nowrap}
+.cn39{width:100%;height:100%;display:table;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn40{height:100%;border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-right:5px;padding-left:5px;vertical-align:middle}
+.cn41{height:100%;display:table-cell;vertical-align:middle;text-align:center;white-space:nowrap;text-wrap:nowrap}
+.cn42{width:100%;height:100%;display:table;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn42::after{content:"";display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;width:21.5px;height:33px;padding-top:5px;padding-right:5px;padding-left:5px;color:rgb(255, 255, 255);font-size:12px;line-height:12px;text-align:center}
+.cn43{height:100%;border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-right:5px;padding-left:5px;vertical-align:middle}
+.cn44{height:0px;display:block;position:absolute;right:0px;left:-279.984px;z-index:1010;max-height:0px;margin-right:-80px;margin-left:-80px;padding-right:80px;padding-left:80px;overflow-x:hidden;overflow-y:hidden;text-align:left;white-space:normal;background-color:var(--color-001)}
+.cn45{width:50px;height:50px;display:block;position:absolute;z-index:1010;margin-left:-50px;color:var(--background);font-size:12px;font-weight:400;line-height:50px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn46{height:18px;display:inline-block;margin-top:25px;margin-bottom:5px;padding-right:25px;padding-left:25px;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase}
+.cn47{display:inline-block;font-size:14px;line-height:18px;letter-spacing:1.05px;cursor:pointer}
+.cn48{display:block;padding-top:2px;list-style-type:none;list-style-position:outside}
+.cn49{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn50{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn51{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn52{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn53{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn54{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn55{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn56{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn57{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn58{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn59{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn60{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn61{height:100%;display:table-cell;vertical-align:middle;text-align:center;white-space:nowrap;text-wrap:nowrap}
+.cn62{width:100%;height:100%;display:table;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn63{height:100%;border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-right:5px;padding-left:5px;vertical-align:middle}
+.cn64{height:100%;display:table-cell;vertical-align:middle;text-align:center;white-space:nowrap;text-wrap:nowrap}
+.cn65{width:100%;height:100%;display:table;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn65::after{content:"";display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;width:14.8281px;height:33px;padding-top:5px;padding-right:5px;padding-left:5px;color:rgb(255, 255, 255);font-size:12px;line-height:12px;text-align:center}
+.cn66{height:100%;border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-right:5px;padding-left:5px;vertical-align:middle}
+.cn67{height:0px;display:block;position:absolute;right:0px;left:-279.984px;z-index:1010;max-height:0px;margin-right:-80px;margin-left:-80px;padding-right:80px;padding-left:80px;overflow-x:hidden;overflow-y:hidden;text-align:left;white-space:normal;background-color:var(--color-001)}
+.cn68{width:50px;height:50px;display:block;position:absolute;z-index:1010;margin-left:-50px;color:var(--background);font-size:12px;font-weight:400;line-height:50px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn69{display:inline-block;margin-top:25px;margin-bottom:5px;padding-right:25px;padding-left:25px;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase}
+.cn70{display:inline-block;font-size:14px;line-height:18px;letter-spacing:1.05px;cursor:pointer}
+.cn71{display:block;padding-top:2px;list-style-type:none;list-style-position:outside}
+.cn72{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn73{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn74{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn75{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn76{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn77{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn78{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn79{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn80{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn81{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn82{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn83{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn84{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn85{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn86{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn87{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn88{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn89{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn90{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn91{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn92{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn93{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn94{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn95{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn96{height:100%;display:table-cell;vertical-align:middle;text-align:center;white-space:nowrap;text-wrap:nowrap}
+.cn97{width:100%;height:100%;display:table;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn97::after{content:"";display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;width:12px;height:33px;padding-top:5px;padding-right:5px;padding-left:5px;color:rgb(255, 255, 255);font-size:12px;line-height:12px;text-align:center}
+.cn98{height:100%;border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:table-cell;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-right:5px;padding-left:5px;vertical-align:middle}
+.cn99{height:0px;display:block;position:absolute;right:0px;left:-279.984px;z-index:1010;max-height:0px;margin-right:-80px;margin-left:-80px;padding-right:80px;padding-left:80px;overflow-x:hidden;overflow-y:hidden;text-align:left;white-space:normal;background-color:var(--color-001)}
+.cn100{width:50px;height:50px;display:block;position:absolute;z-index:1010;margin-left:-50px;color:var(--background);font-size:12px;font-weight:400;line-height:50px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn101{display:inline-block;margin-top:25px;margin-bottom:5px;padding-right:25px;padding-left:25px;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase}
+.cn102{display:inline-block;font-size:14px;line-height:18px;letter-spacing:1.05px;cursor:pointer;white-space:nowrap}
+.cn103{display:block;padding-top:2px;list-style-type:none;list-style-position:outside}
+.cn104{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn105{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn106{width:279.984px;height:50px;display:inline-block;opacity:0;margin-bottom:25px;padding-right:25px;padding-left:25px;vertical-align:top}
+.cn107{height:50px;display:table-cell;padding-right:25px;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn108{display:none;vertical-align:middle;text-align:right;white-space:nowrap;text-wrap:nowrap}
+.cn109{display:table;color:var(--background);font-size:12px;font-weight:400;letter-spacing:0.9px;text-transform:uppercase;cursor:pointer}
+.cn109::before{content:"";display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;width:22px;height:43px;color:rgb(255, 255, 255);font-size:22px;line-height:43px;text-align:center}
+.cn109::after{content:"";display:table-cell;position:relative;width:15%;height:100%;padding-top:5px;padding-right:5px;padding-left:5px;color:rgb(255, 255, 255);font-size:12px;line-height:12px;text-align:right}
+.cn110{width:85%;display:table-cell;position:relative;vertical-align:middle}
+.cn111{display:block}
+.cn112{display:block;margin-right:-80px;margin-left:-80px;background-color:var(--primary)}
+.cn113{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:1}
+.cn114{height:448px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn115{width:10240px;height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;transform:matrix(1, 0, 0, 1, 0, 0);transform-origin:5120px 224px}
+.cn115::after{content:".";display:block;width:100%;height:0px;color:rgb(85, 85, 85);font-size:0px;font-weight:200;line-height:0px}
+.cn116{width:1280px;height:448px;min-height:1px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left}
+.cn117{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn118{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;line-height:0px}
+.cn119{width:100%;display:inline}
+.cn120{display:inline}
+.cn121{display:inline}
+.cn122{display:inline}
+.cn123{display:inline}
+.cn124{width:100%;height:448px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn125{display:block;padding-top:12px}
+.cn126{display:block;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn127{width:417.922px;height:296.594px;min-height:42.8571%;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:absolute;top:151.406px;left:80px;padding-top:25px;padding-right:25px;padding-bottom:59px;padding-left:25px;color:var(--background);text-align:left;background-color:var(--color-007)}
+.cn128{display:block;margin-top:-5px;margin-bottom:12.6px;font-size:36px;line-height:40px;letter-spacing:0.9px;word-break:break-word;overflow-wrap:break-word}
+.cn129{display:block;margin-bottom:10px;font-size:18px;line-height:22px}
+.cn130{width:140px;height:37px;border-width:1px;border-style:solid;border-color:var(--background);display:block;position:absolute;top:233.594px;left:250.922px;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn131{width:1280px;height:448px;min-height:1px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left}
+.cn132{height:448px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn133{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;line-height:0px}
+.cn134{display:inline}
+.cn135{display:inline}
+.cn136{display:inline}
+.cn137{display:inline}
+.cn138{display:inline}
+.cn139{width:100%;height:448px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;object-position:0% 34%}
+.cn140{display:block;padding-top:12px}
+.cn141{display:block;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn142{display:none}
+.cn143{display:none}
+.cn144{display:none}
+.cn145{display:none}
+.cn146{display:none}
+.cn147{display:none}
+.cn148{display:none}
+.cn149{display:none}
+.cn150{display:none}
+.cn151{display:none}
+.cn152{display:none}
+.cn153{display:none}
+.cn154{display:none}
+.cn155{display:none}
+.cn156{display:none}
+.cn157{display:none}
+.cn158{width:1280px;height:448px;min-height:1px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left}
+.cn159{height:448px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn160{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;line-height:0px}
+.cn161{display:inline}
+.cn162{display:inline}
+.cn163{display:inline}
+.cn164{display:inline}
+.cn165{display:inline}
+.cn166{width:100%;height:448px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn167{display:block;padding-top:12px}
+.cn168{display:block;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn169{width:102px;height:63px;display:block;position:absolute;top:385px;left:80px;padding-right:25px;padding-bottom:30px;padding-left:25px;color:var(--background);font-size:13px;line-height:24px}
+.cn170{height:33px;display:inline-block;vertical-align:top;letter-spacing:0.975px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn170::before{content:"";display:inline-block;width:13px;height:13px;color:rgb(255, 255, 255);font-size:13px;line-height:13px;text-align:center}
+.cn171{display:inline}
+.cn172{height:100%;display:inline-block;vertical-align:top;letter-spacing:0.975px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn172::before{content:"";display:inline-block;width:13px;height:13px;color:rgb(255, 255, 255);font-size:13px;line-height:13px;text-align:center}
+.cn173{display:inline}
+.cn174{height:100%;display:inline-block;vertical-align:top;letter-spacing:0.975px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn174::before{content:"";display:inline-block;width:13px;height:13px;color:rgb(255, 255, 255);font-size:13px;line-height:13px;text-align:center}
+.cn175{display:inline}
+.cn176{height:100%;display:inline-block;vertical-align:top;letter-spacing:0.975px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn176::before{content:"";display:inline-block;width:13px;height:13px;color:rgb(255, 255, 255);font-size:13px;line-height:13px;text-align:center}
+.cn177{display:inline}
+.cn178{display:none}
+.cn178::before{content:"";display:inline-block;width:16px;height:15.5938px;color:rgb(255, 255, 255);font-size:15.6px;line-height:15.6px;text-align:center}
+.cn179{display:none}
+.cn180{display:block}
+.cn181{height:84px;min-height:84px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;clear:both;background-color:var(--background)}
+.cn181::before{content:"";display:block;position:absolute;top:-1px;right:1118px;bottom:-1px;left:-80px;z-index:-1;height:83px}
+.cn181::after{content:"";display:block;position:absolute;top:-1px;right:-80px;bottom:-1px;left:1118px;z-index:-1;height:83px}
+.cn182{display:block}
+.cn183{display:block}
+.cn184{display:block}
+.cn185{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block}
+.cn186{display:inline-block;vertical-align:top}
+.cn187{display:block}
+.cn188{display:block}
+.cn189{display:block;padding-bottom:25px}
+.cn190{display:block}
+.cn191{width:100%;display:inline-block;margin-top:25px;padding-right:25px;padding-left:25px;vertical-align:top;line-height:0px}
+.cn192{display:block;color:var(--primary);font-size:28px;line-height:32px;letter-spacing:0.7px;word-break:break-word;overflow-wrap:break-word}
+.cn193{display:block;font-size:14px;line-height:22px}
+.cn194{display:block}
+.cn195{display:inline-block;margin-top:25px;vertical-align:top}
+.cn196{display:block;padding-right:25px;padding-left:25px;font-size:14px;line-height:22px}
+.cn197{display:block}
+.cn198{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:inline-block;margin-bottom:-1px;vertical-align:top}
+.cn199{width:25%;display:block}
+.cn200{display:block}
+.cn201{display:block}
+.cn202{display:block}
+.cn203{height:256px;border-width:1px;border-style:solid;border-color:var(--border);display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;vertical-align:top;background-color:var(--primary)}
+.cn204{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn205{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;color:var(--background);word-break:break-word;overflow-wrap:break-word;background-color:var(--primary)}
+.cn206{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn207{display:block;margin-bottom:8.4px;font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn208{display:block;font-size:14px}
+.cn209{display:block;margin-bottom:4.9px}
+.cn210{width:275.5px;height:77px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--primary)}
+.cn211{height:100%;border-width:1px;border-style:solid;border-color:var(--background);display:inline-block;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn211::after{content:"";display:inline-block;width:11px;height:11.4062px;margin-right:3.5px;margin-left:3.5px;color:rgb(255, 255, 255);font-size:11.4px;line-height:11.4px;text-align:center}
+.cn212{display:block}
+.cn213{display:block}
+.cn214{height:84px;min-height:84px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;clear:both;background-color:var(--background)}
+.cn214::before{content:"";display:block;position:absolute;top:-1px;right:1118px;bottom:-1px;left:-80px;z-index:-1;height:83px}
+.cn214::after{content:"";display:block;position:absolute;top:-1px;right:-80px;bottom:-1px;left:1118px;z-index:-1;height:83px}
+.cn215{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn215::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;z-index:-1}
+.cn216{height:256px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn217{width:25%;display:block}
+.cn218{display:block}
+.cn219{display:inline;padding-bottom:512px}
+.cn220{width:280px;height:256px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:0px;vertical-align:top;background-color:var(--primary)}
+.cn221{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn222{height:100%;display:block;background-image:url("public/assets/cloned/images/3ffd6d8fa549.png");background-size:cover;background-position:50% 50%}
+.cn223{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;color:var(--background);word-break:break-word;overflow-wrap:break-word;background-color:var(--primary)}
+.cn223::before{content:"";display:none;position:absolute;bottom:100%;left:0px;width:35px}
+.cn223::after{content:"";display:none;position:absolute;bottom:100%;left:35px;width:100%}
+.cn224{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn225{display:none;margin-bottom:8.4px;font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn226{display:inline;padding-bottom:512px}
+.cn227{width:280px;height:256px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:280px;vertical-align:top}
+.cn228{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn229{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn230{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn231{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn232{display:block;font-size:14px}
+.cn233{display:block;margin-bottom:4.9px}
+.cn234{width:276px;height:83px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn235{display:block;margin-top:-3px;color:var(--primary);list-style-type:none;list-style-position:outside}
+.cn236{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-left:15px;vertical-align:top;font-size:14px}
+.cn236::before{content:"";display:inline-block;width:15px;height:12px;margin-left:-15px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn237{display:inline;font-size:12px;font-weight:400;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn238{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-left:15px;vertical-align:top;font-size:14px}
+.cn238::before{content:"";display:inline-block;width:15px;height:12px;margin-left:-15px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn239{display:inline;font-size:12px;font-weight:400;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn240{display:inline;padding-bottom:512px}
+.cn241{width:280px;height:256px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:560px;vertical-align:top}
+.cn242{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn243{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn244{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn245{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn246{display:block;font-size:14px}
+.cn247{display:block;margin-bottom:4.9px}
+.cn248{width:276px;height:83px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn249{display:block;margin-top:-3px;color:var(--primary);list-style-type:none;list-style-position:outside}
+.cn250{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-left:15px;vertical-align:top;font-size:14px}
+.cn250::before{content:"";display:inline-block;width:15px;height:12px;margin-left:-15px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn251{display:inline;font-size:12px;font-weight:400;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn252{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-left:15px;vertical-align:top;font-size:14px}
+.cn252::before{content:"";display:inline-block;width:15px;height:12px;margin-left:-15px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn253{display:inline;font-size:12px;font-weight:400;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn254{display:inline;padding-bottom:512px}
+.cn255{width:280px;height:256px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:840px;vertical-align:top}
+.cn256{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn257{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn258{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn259{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn260{display:block;font-size:14px}
+.cn261{display:block;margin-bottom:4.9px}
+.cn262{width:276px;height:83px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn263{display:block;margin-top:-3px;color:var(--primary);list-style-type:none;list-style-position:outside}
+.cn264{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-left:15px;vertical-align:top;font-size:14px}
+.cn264::before{content:"";display:inline-block;width:15px;height:12px;margin-left:-15px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn265{display:inline;font-size:12px;font-weight:400;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn266{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:5px;padding-left:15px;vertical-align:top;font-size:14px}
+.cn266::before{content:"";display:inline-block;width:15px;height:12px;margin-left:-15px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn267{display:inline;font-size:12px;font-weight:400;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn268{display:block}
+.cn269{display:block}
+.cn270{height:84px;min-height:84px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;clear:both;background-color:var(--background)}
+.cn270::before{content:"";display:block;position:absolute;top:-1px;right:1118px;bottom:-1px;left:-80px;z-index:-1;height:83px}
+.cn270::after{content:"";display:block;position:absolute;top:-1px;right:-80px;bottom:-1px;left:1118px;z-index:-1;height:83px}
+.cn271{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn271::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;z-index:-1}
+.cn272{width:100%;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top}
+.cn273{display:block;color:var(--primary);font-size:28px;line-height:32px;letter-spacing:0.7px;word-break:break-word;overflow-wrap:break-word}
+.cn274{height:512px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn275{width:25%;display:block}
+.cn276{display:block}
+.cn277{display:inline;padding-bottom:512px}
+.cn278{width:560px;height:512px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:0px;vertical-align:top;background-color:var(--primary)}
+.cn279{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn280{height:512px;display:block;color:var(--primary);text-decoration-line:underline;white-space:nowrap;text-indent:-9999px;text-wrap:nowrap;background-image:url("public/assets/cloned/images/1e966802eb59.jpg");background-size:cover;background-position:50% 50%;cursor:pointer}
+.cn280::after{content:"";display:inline-block;width:0px;height:0px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:0px;line-height:0px}
+.cn281{height:246px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:-247px;margin-left:279px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;color:var(--background);word-break:break-word;overflow-wrap:break-word;background-color:var(--primary)}
+.cn281::before{content:"";display:block;position:absolute;top:-10px;right:244px;bottom:246px;left:0px;width:35px;height:10px}
+.cn281::after{content:"";display:block;position:absolute;top:-10px;right:-35px;bottom:246px;left:35px;height:10px}
+.cn282{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn283{display:block;margin-top:-15px;margin-bottom:6px;margin-left:20px;font-size:12px;line-height:15px;letter-spacing:0.3px;text-align:right}
+.cn284{display:block;margin-bottom:8.4px;font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn285{display:block;font-size:14px}
+.cn286{display:none}
+.cn287{width:277px;height:92px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--primary)}
+.cn288{height:100%;border-width:1px;border-style:solid;border-color:var(--background);display:inline-block;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn288::after{content:"";display:inline-block;width:11px;height:11.4062px;margin-right:3.5px;margin-left:3.5px;color:rgb(255, 255, 255);font-size:11.4px;line-height:11.4px;text-align:center}
+.cn289{display:inline;padding-bottom:512px}
+.cn290{width:560px;height:512px;display:block;position:absolute;top:0px;left:560px;overflow-x:hidden;overflow-y:hidden;vertical-align:top}
+.cn291{display:block}
+.cn292{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:block;margin-right:25px;margin-left:25px;padding-top:25px;padding-bottom:25px}
+.cn292::before{content:"";display:table;width:0px;height:0px}
+.cn292::after{content:"";display:table;width:0px;height:0px}
+.cn293{width:255px;display:block;float:left;color:var(--primary);font-size:28px;line-height:32px;letter-spacing:0.7px;word-break:break-word;overflow-wrap:break-word}
+.cn294{width:255px;height:32px;display:block;float:left;padding-left:25px}
+.cn295{display:inline;padding-right:1px;color:var(--primary);font-size:12px;font-weight:400;line-height:32px;letter-spacing:0.3px;text-decoration-line:underline;cursor:pointer}
+.cn295::before{content:"";display:inline-block;width:12px;height:12px;color:rgb(31, 130, 192);font-size:12px;line-height:12px}
+.cn296{display:block}
+.cn297{width:280px;display:block;float:left;margin-top:25px;margin-bottom:25px;padding-right:25px;padding-left:25px}
+.cn298{box-sizing:content-box;height:148.5px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:25px}
+.cn299{height:100%;display:block}
+.cn300{display:block;margin-bottom:4.2px;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn301{display:inline}
+.cn302{height:36px;display:block;max-height:36px;margin-bottom:4.9px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-size:14px;font-weight:400;letter-spacing:0.35px;text-decoration-line:underline;word-break:break-word;overflow-wrap:break-word}
+.cn303{height:90px;display:block;max-height:126px;overflow-x:hidden;overflow-y:hidden;font-size:14px}
+.cn304{height:100%;display:block}
+.cn305{height:148.5px;display:block;position:absolute;top:0px;right:0px;left:0px;color:var(--primary);text-decoration-line:underline;background-image:url("public/assets/cloned/images/07e2208b7a46.png");cursor:pointer}
+.cn305::after{content:"";display:inline-block;width:0px;height:0px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:0px;line-height:0px}
+.cn306{box-sizing:content-box;height:148.5px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px}
+.cn307{height:100%;display:block}
+.cn308{display:block;margin-bottom:4.2px;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn309{display:inline}
+.cn310{height:36px;display:block;max-height:36px;margin-bottom:4.9px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-size:14px;font-weight:400;letter-spacing:0.35px;text-decoration-line:underline;word-break:break-word;overflow-wrap:break-word}
+.cn311{height:90px;display:block;max-height:126px;overflow-x:hidden;overflow-y:hidden;font-size:14px}
+.cn312{height:100%;display:block}
+.cn313{height:148.5px;display:block;position:absolute;top:25px;right:0px;left:0px;color:var(--primary);text-decoration-line:underline;background-image:url("public/assets/cloned/images/07e2208b7a46.png");cursor:pointer}
+.cn313::after{content:"";display:inline-block;width:0px;height:0px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:0px;line-height:0px}
+.cn314{width:280px;display:block;float:left;margin-top:25px;margin-bottom:25px;padding-right:25px;padding-left:25px}
+.cn315{box-sizing:content-box;height:148.5px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:25px}
+.cn316{height:100%;display:block}
+.cn317{display:block;margin-bottom:4.2px;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn318{display:inline}
+.cn319{height:36px;display:block;max-height:36px;margin-bottom:4.9px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-size:14px;font-weight:400;letter-spacing:0.35px;text-decoration-line:underline;word-break:break-word;overflow-wrap:break-word}
+.cn320{height:90px;display:block;max-height:126px;overflow-x:hidden;overflow-y:hidden;font-size:14px}
+.cn321{height:100%;display:block}
+.cn322{height:148.5px;display:block;position:absolute;top:0px;right:0px;left:0px;color:var(--primary);text-decoration-line:underline;background-image:url("public/assets/cloned/images/07e2208b7a46.png");cursor:pointer}
+.cn322::after{content:"";display:inline-block;width:0px;height:0px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:0px;line-height:0px}
+.cn323{box-sizing:content-box;height:148.5px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px}
+.cn324{height:100%;display:block}
+.cn325{display:block;margin-bottom:4.2px;font-size:12px;line-height:15px;letter-spacing:0.3px}
+.cn326{display:inline}
+.cn327{height:36px;display:block;max-height:36px;margin-bottom:4.9px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);font-size:14px;font-weight:400;letter-spacing:0.35px;text-decoration-line:underline;word-break:break-word;overflow-wrap:break-word}
+.cn328{height:90px;display:block;max-height:126px;overflow-x:hidden;overflow-y:hidden;font-size:14px}
+.cn329{height:100%;display:block}
+.cn330{height:148.5px;display:block;position:absolute;top:25px;right:0px;left:0px;color:var(--primary);text-decoration-line:underline;background-image:url("public/assets/cloned/images/07e2208b7a46.png");cursor:pointer}
+.cn330::after{content:"";display:inline-block;width:0px;height:0px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:0px;line-height:0px}
+.cn331{display:block}
+.cn332{display:block}
+.cn333{height:84px;min-height:84px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;clear:both;background-color:var(--background)}
+.cn333::before{content:"";display:block;position:absolute;top:-1px;right:1118px;bottom:-1px;left:-80px;z-index:-1;height:83px}
+.cn333::after{content:"";display:block;position:absolute;top:-1px;right:-80px;bottom:-1px;left:1118px;z-index:-1;height:83px}
+.cn334{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn334::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;z-index:-1}
+.cn335{width:100%;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top}
+.cn336{display:block;color:var(--primary);font-size:28px;line-height:32px;letter-spacing:0.7px;word-break:break-word;overflow-wrap:break-word}
+.cn337{height:512px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn338{width:25%;display:block}
+.cn339{display:block}
+.cn340{display:inline;padding-bottom:512px}
+.cn341{width:280px;height:512px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:0px;vertical-align:top}
+.cn342{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn343{height:265px;display:block;color:var(--primary);text-decoration-line:underline;white-space:nowrap;text-indent:-9999px;text-wrap:nowrap;background-image:url("public/assets/cloned/images/27fbd78a4cdd.jpg");background-size:cover;background-position:50% 50%;cursor:pointer}
+.cn344{height:246px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn344::before{content:"";display:block;position:absolute;top:-10px;right:243px;bottom:246px;left:0px;width:35px;height:10px}
+.cn344::after{content:"";display:block;position:absolute;top:-10px;right:-35px;bottom:246px;left:35px;height:10px}
+.cn345{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn346{display:block;margin-top:-15px;margin-bottom:6px;margin-left:20px;color:var(--muted-foreground);font-size:12px;line-height:15px;letter-spacing:0.3px;text-align:right}
+.cn347{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn348{display:block;font-size:14px}
+.cn349{display:block;margin-bottom:4.9px}
+.cn350{width:276px;height:77px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn351{height:100%;border-width:1px;border-style:solid;border-color:var(--primary);display:inline-block;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;color:var(--primary);font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn352{display:inline;padding-bottom:512px}
+.cn353{width:280px;height:512px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:280px;vertical-align:top}
+.cn354{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn355{height:265px;display:block;color:var(--primary);text-decoration-line:underline;white-space:nowrap;text-indent:-9999px;text-wrap:nowrap;background-image:url("public/assets/cloned/images/6bac8be684a6.jpg");background-size:cover;background-position:50% 50%;cursor:pointer}
+.cn355::after{content:"";display:inline-block;width:0px;height:0px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:0px;line-height:0px}
+.cn356{height:246px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn356::before{content:"";display:block;position:absolute;top:-10px;right:243px;bottom:246px;left:0px;width:35px;height:10px}
+.cn356::after{content:"";display:block;position:absolute;top:-10px;right:-35px;bottom:246px;left:35px;height:10px}
+.cn357{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn358{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn359{display:block;font-size:14px}
+.cn360{display:block;margin-bottom:4.9px}
+.cn361{width:276px;height:77px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn362{height:100%;border-width:1px;border-style:solid;border-color:var(--primary);display:inline-block;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;color:var(--primary);font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn362::after{content:"";display:inline-block;width:11px;height:11.4062px;margin-right:3.5px;margin-left:3.5px;color:rgb(31, 130, 192);font-size:11.4px;line-height:11.4px;text-align:center}
+.cn363{display:inline;padding-bottom:512px}
+.cn364{width:280px;height:512px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:560px;vertical-align:top}
+.cn365{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn366{height:265px;display:block;color:var(--primary);text-decoration-line:underline;white-space:nowrap;text-indent:-9999px;text-wrap:nowrap;background-image:url("public/assets/cloned/images/1cb86954efa6.jpg");background-size:cover;background-position:50% 50%;cursor:pointer}
+.cn367{height:246px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn367::before{content:"";display:block;position:absolute;top:-10px;right:243px;bottom:246px;left:0px;width:35px;height:10px}
+.cn367::after{content:"";display:block;position:absolute;top:-10px;right:-35px;bottom:246px;left:35px;height:10px}
+.cn368{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn369{display:block;margin-top:-15px;margin-bottom:6px;margin-left:20px;color:var(--muted-foreground);font-size:12px;line-height:15px;letter-spacing:0.3px;text-align:right}
+.cn370{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn371{display:block;font-size:14px}
+.cn372{display:block;margin-bottom:4.9px}
+.cn373{display:block;margin-bottom:4.9px}
+.cn374{width:276px;height:77px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn375{height:100%;border-width:1px;border-style:solid;border-color:var(--primary);display:inline-block;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;color:var(--primary);font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn376{display:inline;padding-bottom:512px}
+.cn377{width:280px;height:512px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:0px;left:840px;vertical-align:top}
+.cn378{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn379{height:265px;display:block;color:var(--primary);text-decoration-line:underline;white-space:nowrap;text-indent:-9999px;text-wrap:nowrap;background-image:url("public/assets/cloned/images/8591e3237d5e.jpg");background-size:cover;background-position:50% 50%;cursor:pointer}
+.cn380{height:246px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;word-break:break-word;overflow-wrap:break-word;background-color:var(--background)}
+.cn380::before{content:"";display:block;position:absolute;top:-10px;right:243px;bottom:246px;left:0px;width:35px;height:10px}
+.cn380::after{content:"";display:block;position:absolute;top:-10px;right:-35px;bottom:246px;left:35px;height:10px}
+.cn381{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn382{display:block;margin-top:-15px;margin-bottom:6px;margin-left:20px;color:var(--muted-foreground);font-size:12px;line-height:15px;letter-spacing:0.3px;text-align:right}
+.cn383{display:block;margin-bottom:8.4px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn384{display:block;font-size:14px}
+.cn385{display:block;margin-bottom:4.9px}
+.cn386{display:inline}
+.cn387{width:276px;height:77px;display:block;position:absolute;bottom:0px;left:1px;padding-top:15px;padding-right:25px;padding-bottom:25px;padding-left:25px;background-color:var(--background)}
+.cn388{height:100%;border-width:1px;border-style:solid;border-color:var(--primary);display:inline-block;min-width:140px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;color:var(--primary);font-size:12px;font-weight:400;line-height:15px;letter-spacing:0.9px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn389{display:block}
+.cn390{height:84px;min-height:84px;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;clear:both;background-color:var(--background)}
+.cn390::before{content:"";display:block;position:absolute;top:-1px;right:1118px;bottom:-1px;left:-80px;z-index:-1;height:83px}
+.cn390::after{content:"";display:block;position:absolute;top:-1px;right:-80px;bottom:-1px;left:1118px;z-index:-1;height:83px}
+.cn391{display:block}
+.cn392{display:block;clear:both}
+.cn393{display:none;visibility:hidden;color:var(--primary);font-size:28px;line-height:32px;letter-spacing:0.7px;word-break:break-word;overflow-wrap:break-word}
+.cn394{display:block}
+.cn395{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;background-color:var(--primary)}
+.cn395::before{content:"";display:block;position:absolute;top:0px;right:1118px;bottom:0px;left:-80px;z-index:-1;background-color:rgb(31, 130, 192)}
+.cn395::after{content:"";display:block;position:absolute;top:0px;right:-80px;bottom:0px;left:1118px;z-index:-1;background-color:rgb(31, 130, 192)}
+.cn396{display:inline-block;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top}
+.cn397{display:inline-block;padding-top:25px;padding-bottom:25px;vertical-align:top}
+.cn398{display:block;color:var(--background);list-style-type:none;list-style-position:outside}
+.cn399{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn399::before{content:"";display:block;position:absolute;top:0px;right:1120px;bottom:0px;left:-80px;z-index:-1}
+.cn399::after{content:"";display:block;position:absolute;top:0px;right:-80px;bottom:0px;left:1120px;z-index:-1}
+.cn400{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:inline-block;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top;background-color:var(--background)}
+.cn401{display:block;float:left;min-width:33.33%;padding-right:5px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px;word-break:break-word;overflow-wrap:break-word}
+.cn402{width:300px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left;max-width:66.66%;vertical-align:middle;font-size:12px;line-height:20px;letter-spacing:0.9px;text-transform:uppercase}
+.cn403{height:100%;display:block;margin-right:45px}
+.cn404{width:100%;height:33px;display:inline-block;align-items:center;vertical-align:top;line-height:14px;text-align:left;white-space:pre;text-indent:25px;text-wrap:nowrap;background-color:var(--background);cursor:default}
+.cn405{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn406{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn407{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn408{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn409{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn410{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn411{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn412{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn413{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn414{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn415{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn416{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn417{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn418{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn419{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn420{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn421{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn422{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn423{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn424{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn425{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn426{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn427{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn428{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn429{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn430{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn431{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn432{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn433{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn434{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn435{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn436{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn437{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn438{min-height:24px;display:block;min-width:24px;padding-right:2px;padding-bottom:1px;padding-left:2px;align-items:center;row-gap:6px;column-gap:6px;font-weight:400;white-space:nowrap}
+.cn439{width:32px;height:100%;display:block;position:absolute;top:0px;right:0px;vertical-align:top;color:var(--background);font-size:0px;font-weight:400;line-height:33px;letter-spacing:normal;text-align:center;background-color:var(--primary);cursor:pointer}
+.cn439::after{content:"";display:inline-block;width:12px;height:33px;color:rgb(255, 255, 255);font-size:12px;line-height:33px;text-align:center}
+.cn440{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:inline-block;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top;background-color:var(--background)}
+.cn441{display:block;float:left;visibility:hidden;min-width:33.33%;padding-right:5px;color:var(--primary);font-size:24px;line-height:28px;letter-spacing:0.6px;word-break:break-word;overflow-wrap:break-word}
+.cn442{width:300px;height:33px;display:block;visibility:hidden;overflow-x:hidden;overflow-y:hidden;line-height:0px;list-style-type:none;list-style-position:outside}
+.cn443{height:33px;display:inline-block;max-width:32px;margin-right:6px;vertical-align:top}
+.cn444{height:33px;display:block;vertical-align:top;color:var(--background);font-size:27px;font-weight:400;line-height:33px;letter-spacing:2.025px;text-align:center;text-transform:uppercase;background-color:var(--primary);cursor:pointer}
+.cn444::after{content:"";display:inline-block;width:26px;height:33px;margin-right:3.5px;margin-left:3.5px;color:rgb(255, 255, 255);font-size:25.65px;line-height:33px;text-align:center}
+.cn445{display:block}
+.cn446{border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:inline-block;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top;font-size:12px;line-height:15px;letter-spacing:0.3px;text-transform:uppercase;background-color:var(--background)}
+.cn447{height:34px;min-height:34px;display:block}
+.cn448{height:100%;display:block;font-size:1px;line-height:0px;letter-spacing:normal;text-align:justify;list-style-type:none;list-style-position:outside}
+.cn448::after{content:"";display:inline-block;width:100%;height:0px;overflow:hidden}
+.cn449{width:7%;display:inline-block;vertical-align:top}
+.cn450{display:inline-block;color:var(--primary);font-size:12px;font-weight:400;line-height:34px;letter-spacing:0.9px;cursor:pointer}
+.cn451{width:120.406px;display:inline-block;vertical-align:top}
+.cn452{display:inline-block;color:var(--primary);font-size:12px;font-weight:400;line-height:34px;letter-spacing:0.9px;cursor:pointer}
+.cn453{width:75.1094px;display:inline-block;vertical-align:top}
+.cn454{display:inline-block;color:var(--primary);font-size:12px;font-weight:400;line-height:34px;letter-spacing:0.9px;cursor:pointer}
+.cn455{width:187.812px;display:inline-block;vertical-align:top}
+.cn456{display:inline-block;color:var(--primary);font-size:12px;font-weight:400;line-height:34px;letter-spacing:0.9px;cursor:pointer}
+.cn457{width:280px;border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;float:left;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;vertical-align:top;font-size:12px;line-height:34px;letter-spacing:0.3px;background-color:var(--background)}
+.cn458{display:inline}
+
+@media (max-width: 571px) {
+.cn1{height:7088.83px;padding-right:25px;padding-left:25px}
+.cn3{height:199px;margin-right:-25px;margin-left:-25px}
+.cn5{padding-top:43px}
+.cn5::after{left:375px;height:145px}
+.cn6{width:375px;top:0px;right:0px;height:auto;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial;float:initial}
+.cn8{width:375px;padding-right:50px;padding-left:50px;position:static;top:auto;right:auto;bottom:auto;left:auto;padding-top:0}
+.cn9{top:134px;right:25px;left:25px;line-height:0px;margin-right:0}
+.cn10{width:45px;height:43px;top:0px;right:45px;z-index:10}
+.cn11{padding-top:25px}
+.cn16{width:375px;display:inline-block;padding-bottom:25px;float:initial;padding-top:0}
+.cn19{width:375px;height:45px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:block;position:absolute;top:0px;left:0px}
+.cn21{width:96.3125px;height:43px;border-right-width:1px;border-right-style:solid;border-right-color:var(--border);display:block;position:absolute;top:0px;left:188.688px;padding-right:0}
+.cn24{display:none}
+.cn26{display:none}
+.cn28{display:none}
+.cn30{display:none}
+.cn32{display:block}
+.cn33{padding-left:15px}
+.cn35{width:45px;float:right;margin-right:0;padding-right:0}
+.cn37{position:static;top:auto;right:auto;bottom:auto;left:auto;padding-right:0;padding-left:0}
+.cn38{display:none}
+.cn41{display:none}
+.cn42::after{width:15%;height:100%;top:auto;right:auto;bottom:auto;left:auto}
+.cn45{display:none}
+.cn46{display:none}
+.cn61{display:none}
+.cn64{display:none}
+.cn65::after{width:15%;height:100%;top:auto;right:auto;bottom:auto;left:auto}
+.cn68{display:none}
+.cn69{display:none}
+.cn96{display:none}
+.cn97::after{width:15%;height:100%;top:auto;right:auto;bottom:auto;left:auto}
+.cn100{display:none}
+.cn101{display:none}
+.cn108{height:43px;display:table-cell}
+.cn109{line-height:10px;font-size:inherit;letter-spacing:inherit}
+.cn109::after{top:0px;right:0px;bottom:0px;left:0px;width:0px;height:33px;font-size:0px;line-height:0px}
+.cn110{display:none}
+.cn112{margin-right:-25px;margin-left:-25px}
+.cn114{height:378.578px}
+.cn115{width:3000px;transform-origin:1500px 189.289px}
+.cn115::after{}
+.cn116{width:375px;height:355.578px}
+.cn124{height:128px}
+.cn125{display:none}
+.cn127{width:375px;position:relative;top:0px;right:0px;bottom:0px;left:0px;background-color:var(--primary);height:auto;border-top-width:0;border-top-style:initial;border-top-color:initial;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial;padding-bottom:0}
+.cn128{margin-bottom:8.4px;font-size:24px;line-height:28px;letter-spacing:0.6px}
+.cn129{font-size:14px;line-height:inherit}
+.cn130{display:inline-block;position:relative;top:0px;right:25px;bottom:0px;left:-25px;margin-top:4.2px;margin-bottom:12px;margin-left:25px;height:auto}
+.cn131{width:375px;height:378.578px}
+.cn132{height:378.578px}
+.cn139{height:128px}
+.cn140{display:none}
+.cn158{width:375px;height:355.578px}
+.cn159{height:355.578px}
+.cn166{height:128px}
+.cn167{display:none}
+.cn169{width:375px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);right:0px;bottom:0px;margin-top:-8px;margin-bottom:-1px;padding-top:5px;padding-bottom:5px;font-size:16px;line-height:35px;text-align:center;height:auto;position:static;top:auto}
+.cn170{letter-spacing:1.2px;text-align:inherit}
+.cn170::before{width:16px;height:16px;font-size:16px;line-height:16px}
+.cn172{letter-spacing:1.2px;text-align:inherit}
+.cn172::before{width:16px;height:16px;font-size:16px;line-height:16px}
+.cn174{letter-spacing:1.2px;text-align:inherit}
+.cn174::before{width:16px;height:16px;font-size:16px;line-height:16px}
+.cn176{letter-spacing:1.2px;text-align:inherit}
+.cn176::before{width:16px;height:16px;font-size:16px;line-height:16px}
+.cn178::before{display:none}
+.cn181{height:25px;min-height:25px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn181::before{right:325px;height:26px}
+.cn181::after{left:325px;height:26px}
+.cn198{margin-left:-1px}
+.cn199{width:100%}
+.cn210{width:318px;margin-right:1px}
+.cn214{height:25px;min-height:25px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn214::before{right:325px;height:26px}
+.cn214::after{left:325px;height:26px}
+.cn215::before{}
+.cn216{height:auto}
+.cn217{width:100%}
+.cn218{height:1024px}
+.cn219{padding-bottom:256px}
+.cn220{width:325px;display:inline-block;position:relative;right:0px;bottom:0px}
+.cn226{padding-bottom:256px}
+.cn227{width:325px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn234{width:320px;margin-right:1px}
+.cn240{padding-bottom:256px}
+.cn241{width:325px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn248{width:320px;margin-right:1px}
+.cn254{padding-bottom:256px}
+.cn255{width:325px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn262{width:320px;margin-right:1px}
+.cn270{height:25px;min-height:25px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn270::before{right:325px;height:26px}
+.cn270::after{left:325px;height:26px}
+.cn271::before{}
+.cn274{height:auto}
+.cn275{width:100%}
+.cn276{height:1609.25px}
+.cn277{padding-bottom:256px}
+.cn278{width:325px;display:inline-block;position:relative;right:0px;bottom:0px}
+.cn280{height:265px}
+.cn281{margin-top:0;margin-left:0}
+.cn281::before{right:288px}
+.cn281::after{}
+.cn286{height:100%;display:block;margin-bottom:4.9px}
+.cn287{width:320px;height:77px;margin-right:1px}
+.cn289{padding-bottom:256px}
+.cn290{width:325px;height:1097.25px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn293{width:275px;float:initial}
+.cn294{width:275px;float:initial;padding-left:0}
+.cn297{width:325px;float:initial}
+.cn298{height:186.812px}
+.cn303{height:126px}
+.cn305{height:186.812px}
+.cn306{height:186.812px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);padding-bottom:25px}
+.cn311{height:126px}
+.cn313{height:186.812px}
+.cn314{width:325px;float:initial}
+.cn315{height:186.812px}
+.cn320{height:126px}
+.cn322{height:186.812px}
+.cn323{height:186.812px}
+.cn328{height:126px}
+.cn330{height:186.812px}
+.cn333{height:25px;min-height:25px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn333::before{right:325px;height:26px}
+.cn333::after{left:325px;height:26px}
+.cn334::before{}
+.cn337{height:auto}
+.cn338{width:100%}
+.cn339{height:2048px}
+.cn340{padding-bottom:256px}
+.cn341{width:325px;display:inline-block;position:relative;right:0px;bottom:0px}
+.cn344::before{right:288px}
+.cn344::after{}
+.cn350{width:320px;margin-right:1px}
+.cn352{padding-bottom:256px}
+.cn353{width:325px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn356::before{right:288px}
+.cn356::after{}
+.cn361{width:320px;margin-right:1px}
+.cn363{padding-bottom:256px}
+.cn364{width:325px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn367::before{right:288px}
+.cn367::after{}
+.cn374{width:320px;margin-right:1px}
+.cn376{padding-bottom:256px}
+.cn377{width:325px;display:inline-block;position:relative;right:0px;bottom:0px;left:0px}
+.cn380::before{right:288px}
+.cn380::after{}
+.cn387{width:320px;margin-right:1px}
+.cn390{height:25px;min-height:25px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn390::before{right:325px;height:26px}
+.cn390::after{left:325px;height:26px}
+.cn395{margin-right:-25px;margin-left:-25px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn395::before{display:none}
+.cn395::after{display:none}
+.cn396{padding-top:35px;padding-right:50px;padding-bottom:35px;padding-left:50px}
+.cn397{margin-top:-10px;padding-right:50px;padding-bottom:35px;padding-left:50px;padding-top:0}
+.cn399::before{display:none}
+.cn399::after{display:none}
+.cn400{border-width:1px;border-style:solid;border-color:var(--border);margin-top:25px;padding-top:35px;padding-bottom:45px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-bottom-width:0;border-bottom-style:initial;border-bottom-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn402{width:273px;max-width:100%}
+.cn440{border-width:1px;border-style:solid;border-color:var(--border);margin-top:25px;padding-top:35px;padding-bottom:45px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-bottom-width:0;border-bottom-style:initial;border-bottom-color:initial}
+.cn445{margin-top:25px;margin-right:-80px;margin-left:-80px}
+.cn446{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);padding-right:105px;padding-left:105px;line-height:12px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn447{height:77px;min-height:0}
+.cn448{font-size:0px}
+.cn448::after{}
+.cn449{width:100%;display:block}
+.cn450{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn451{width:275px;display:block}
+.cn452{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn453{width:275px;display:block}
+.cn454{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn455{width:275px;display:block}
+.cn456{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn457{width:485px;padding-right:105px;padding-left:105px;line-height:11px;border-left-width:0;border-left-style:initial;border-left-color:initial}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn1{height:4928.5px;padding-right:25px;padding-left:25px}
+.cn3{height:199px;margin-right:-25px;margin-left:-25px}
+.cn5{padding-top:43px}
+.cn5::after{left:768px;height:145px}
+.cn6{width:768px;top:0px;right:0px;height:auto;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial;float:initial}
+.cn8{width:768px;padding-right:50px;padding-left:50px;position:static;top:auto;right:auto;bottom:auto;left:auto;padding-top:0}
+.cn9{line-height:0px;margin-right:0}
+.cn10{width:45px;height:43px;top:0px;right:45px;z-index:10}
+.cn11{padding-top:25px}
+.cn16{width:768px;display:inline-block;padding-bottom:25px;float:initial;padding-top:0}
+.cn19{width:768px;height:45px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:block;position:absolute;top:0px;left:0px}
+.cn21{width:97.3125px;height:43px;border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:absolute;top:0px;left:580.688px;padding-right:0}
+.cn24{display:none}
+.cn26{display:none}
+.cn28{display:none}
+.cn30{display:none}
+.cn32{display:block}
+.cn33{padding-left:15px}
+.cn35{width:45px;float:right;margin-right:0;padding-right:0}
+.cn37{position:static;top:auto;right:auto;bottom:auto;left:auto;padding-right:0;padding-left:0}
+.cn38{display:none}
+.cn41{display:none}
+.cn42::after{width:15%;height:100%;top:auto;right:auto;bottom:auto;left:auto}
+.cn45{display:none}
+.cn46{display:none}
+.cn61{display:none}
+.cn64{display:none}
+.cn65::after{width:15%;height:100%;top:auto;right:auto;bottom:auto;left:auto}
+.cn68{display:none}
+.cn69{display:none}
+.cn96{display:none}
+.cn97::after{width:15%;height:100%;top:auto;right:auto;bottom:auto;left:auto}
+.cn100{display:none}
+.cn101{display:none}
+.cn108{height:43px;display:table-cell}
+.cn109{line-height:10px;font-size:inherit;letter-spacing:inherit}
+.cn109::after{top:0px;right:0px;bottom:0px;left:0px;width:0px;height:33px;font-size:0px;line-height:0px}
+.cn110{display:none}
+.cn112{margin-right:-25px;margin-left:-25px}
+.cn115{width:6144px;transform-origin:3072px 224px}
+.cn115::after{}
+.cn116{width:768px}
+.cn127{width:551px;height:252.594px;top:195.406px;left:25px}
+.cn130{top:189.594px;left:384px}
+.cn131{width:768px}
+.cn158{width:768px}
+.cn169{left:25px}
+.cn178::before{display:none}
+.cn181{border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn181::before{right:718px;height:85px}
+.cn181::after{left:718px;height:85px}
+.cn198{margin-left:-1px}
+.cn199{width:50%}
+.cn210{width:354px}
+.cn214{border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn214::before{right:718px;height:85px}
+.cn214::after{left:718px;height:85px}
+.cn215::before{}
+.cn216{height:512px}
+.cn217{width:50%}
+.cn220{width:359px}
+.cn227{width:359px;left:359px}
+.cn234{width:355px}
+.cn241{width:359px;top:256px;left:0px}
+.cn248{width:355px}
+.cn255{width:359px;top:256px;left:359px}
+.cn262{width:355px}
+.cn270{border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn270::before{right:718px;height:85px}
+.cn270::after{left:718px;height:85px}
+.cn271::before{}
+.cn274{height:1024px}
+.cn275{width:50%}
+.cn278{width:718px}
+.cn281{margin-left:358px}
+.cn281::before{right:323px}
+.cn281::after{}
+.cn286{height:100%;display:block;margin-bottom:4.9px}
+.cn287{width:356px;height:77px}
+.cn290{width:718px;top:512px;left:0px}
+.cn293{width:334px}
+.cn294{width:334px}
+.cn297{width:359px}
+.cn314{width:359px}
+.cn333{border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn333::before{right:718px;height:85px}
+.cn333::after{left:718px;height:85px}
+.cn334::before{}
+.cn337{height:1024px}
+.cn338{width:50%}
+.cn341{width:359px}
+.cn344::before{right:322px}
+.cn344::after{}
+.cn350{width:355px}
+.cn353{width:359px;left:359px}
+.cn356::before{right:322px}
+.cn356::after{}
+.cn361{width:355px}
+.cn364{width:359px;top:512px;left:0px}
+.cn367::before{right:322px}
+.cn367::after{}
+.cn374{width:355px}
+.cn377{width:359px;top:512px;left:359px}
+.cn380::before{right:322px}
+.cn380::after{}
+.cn387{width:355px}
+.cn390{border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn390::before{right:718px;height:85px}
+.cn390::after{left:718px;height:85px}
+.cn395{border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn395::before{right:718px}
+.cn395::after{left:718px}
+.cn396{padding-top:35px;padding-bottom:35px}
+.cn397{margin-top:-10px;padding-right:25px;padding-bottom:35px;padding-left:25px;padding-top:0}
+.cn399::before{right:718px}
+.cn399::after{left:718px}
+.cn400{border-width:1px;border-style:solid;border-color:var(--border);margin-top:25px;padding-top:35px;padding-bottom:45px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-bottom-width:0;border-bottom-style:initial;border-bottom-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn402{max-width:100%}
+.cn440{border-width:1px;border-style:solid;border-color:var(--border);margin-top:25px;padding-top:35px;padding-bottom:45px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-bottom-width:0;border-bottom-style:initial;border-bottom-color:initial}
+.cn445{margin-top:25px;margin-right:-80px;margin-left:-80px}
+.cn446{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);padding-right:105px;padding-left:105px;line-height:12px;border-right-width:0;border-right-style:initial;border-right-color:initial;border-left-width:0;border-left-style:initial;border-left-color:initial}
+.cn447{height:38.5px;min-height:0}
+.cn448{font-size:0px}
+.cn448::after{}
+.cn449{width:50%}
+.cn450{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn451{width:334px}
+.cn452{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn453{width:334px}
+.cn454{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn455{width:334px}
+.cn456{font-size:11px;line-height:19.25px;letter-spacing:0.275px}
+.cn457{width:878px;padding-right:105px;padding-left:105px;line-height:11px;border-left-width:0;border-left-style:initial;border-left-color:initial}
+}
+
+@media (min-width: 1601px) {
+.cn0{font-size:16.8px;line-height:21.6px}
+.cn1{height:3576.53px;max-width:1728px;padding-right:96px;padding-left:96px}
+.cn3{height:228.594px;min-height:151.2px;line-height:18px}
+.cn5::after{right:-96px;left:1536px;height:120px}
+.cn6{width:1152px;height:120px}
+.cn8{width:383.281px;padding-top:30px;padding-right:30px}
+.cn9{margin-right:54px}
+.cn10{width:38.3906px;height:39.5938px;top:30px;right:30px}
+.cn10::after{width:40px;height:39.5938px;font-size:39.6px;line-height:39.6px}
+.cn11{height:120px;padding-top:42px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn14{width:215px;height:60px;max-width:312px;max-height:60px}
+.cn16{width:384px;padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px;font-size:14.4px;letter-spacing:0.36px}
+.cn19{width:1152px;height:107.594px}
+.cn21{width:823.766px;height:54px;min-height:51.6px;padding-right:18px;font-size:14.4px;letter-spacing:0.36px}
+.cn24{letter-spacing:1.08px}
+.cn25{padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px}
+.cn26{letter-spacing:1.08px}
+.cn27{padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px}
+.cn28{letter-spacing:1.08px}
+.cn29{padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px}
+.cn30{letter-spacing:1.08px}
+.cn31{padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px}
+.cn32{letter-spacing:1.08px}
+.cn33{padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px}
+.cn35{width:1248px;height:52.5938px;min-height:51.6px;margin-right:-96px;padding-right:96px}
+.cn37{padding-right:18px;padding-left:18px}
+.cn39{font-size:14.4px;letter-spacing:1.08px}
+.cn40{padding-right:6px;padding-left:6px}
+.cn42{font-size:14.4px;letter-spacing:1.08px}
+.cn42::after{width:31.4375px;height:41.5938px;padding-right:6px;padding-left:6px;font-size:14.4px;line-height:14.4px}
+.cn43{padding-right:6px;padding-left:6px}
+.cn44{left:-384px;margin-right:-96px;margin-left:-96px;padding-right:96px;padding-left:96px}
+.cn45{width:60px;height:60px;margin-left:-60px;font-size:14.4px;line-height:60px;letter-spacing:1.08px}
+.cn46{height:21.5938px;margin-top:30px;margin-bottom:6px;padding-right:30px;padding-left:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn47{font-size:16.8px;line-height:21.6px;letter-spacing:1.26px}
+.cn50{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn52{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn54{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn56{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn58{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn60{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn62{font-size:14.4px;letter-spacing:1.08px}
+.cn63{padding-right:6px;padding-left:6px}
+.cn65{font-size:14.4px;letter-spacing:1.08px}
+.cn65::after{width:21.8906px;height:41.5938px;padding-right:6px;padding-left:6px;font-size:14.4px;line-height:14.4px}
+.cn66{padding-right:6px;padding-left:6px}
+.cn67{left:-384px;margin-right:-96px;margin-left:-96px;padding-right:96px;padding-left:96px}
+.cn68{width:60px;height:60px;margin-left:-60px;font-size:14.4px;line-height:60px;letter-spacing:1.08px}
+.cn69{margin-top:30px;margin-bottom:6px;padding-right:30px;padding-left:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn70{font-size:16.8px;line-height:21.6px;letter-spacing:1.26px}
+.cn73{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn75{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn77{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn79{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn81{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn83{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn85{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn87{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn89{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn91{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn93{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn95{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn97{font-size:14.4px;letter-spacing:1.08px}
+.cn97::after{width:15.5625px;height:41.5938px;padding-right:6px;padding-left:6px;font-size:14.4px;line-height:14.4px}
+.cn98{padding-right:6px;padding-left:6px}
+.cn99{left:-384px;margin-right:-96px;margin-left:-96px;padding-right:96px;padding-left:96px}
+.cn100{width:60px;height:60px;margin-left:-60px;font-size:14.4px;line-height:60px;letter-spacing:1.08px}
+.cn101{margin-top:30px;margin-bottom:6px;padding-right:30px;padding-left:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn102{font-size:16.8px;line-height:21.6px;letter-spacing:1.26px}
+.cn105{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn107{height:60px;padding-right:30px;font-size:14.4px;letter-spacing:1.08px}
+.cn109::before{display:none}
+.cn109::after{padding-right:6px;padding-left:6px;font-size:14.4px;line-height:14.4px}
+.cn112{margin-right:-96px;margin-left:-96px}
+.cn114{height:537.594px}
+.cn115{width:13824px;line-height:20.0731px;transform:matrix(1, 0, 0, 1, -5184, 0);transform-origin:6912px 268.797px}
+.cn115::after{}
+.cn116{display:none}
+.cn117{display:none}
+.cn118{display:none}
+.cn119{display:none}
+.cn120{display:none}
+.cn121{display:none}
+.cn122{display:none}
+.cn123{display:none}
+.cn124{display:none}
+.cn125{display:none}
+.cn126{display:none}
+.cn127{display:none}
+.cn128{display:none}
+.cn129{display:none}
+.cn130{display:none}
+.cn131{width:1728px;height:537.594px}
+.cn132{height:537.594px}
+.cn139{height:538px;object-position:initial}
+.cn140{padding-top:14.4px}
+.cn141{font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn142{width:1728px;height:537.594px;min-height:1px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;float:left}
+.cn143{height:537.594px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn144{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;line-height:0px}
+.cn145{display:inline}
+.cn150{width:100%;height:538px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;object-position:0% 34%}
+.cn151{display:block;padding-top:14.4px}
+.cn152{display:block;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn153{width:576.203px;height:372.531px;min-height:57.1429%;border-top-width:1px;border-top-style:solid;border-top-color:var(--border);border-right-width:1px;border-right-style:solid;border-right-color:var(--border);border-left-width:1px;border-left-style:solid;border-left-color:var(--border);display:block;position:absolute;bottom:0px;left:96px;padding-top:30px;padding-right:30px;padding-bottom:70.8px;padding-left:30px;color:var(--background);text-align:left;background-color:var(--color-007)}
+.cn154{display:block;margin-top:-6px;margin-bottom:15.12px;font-size:43.2px;line-height:48px;letter-spacing:1.08px;word-break:break-word;overflow-wrap:break-word}
+.cn155{display:block;margin-bottom:12px;font-size:21.6px;line-height:26.4px}
+.cn156{width:168px;height:44px;border-width:1px;border-style:solid;border-color:var(--background);display:block;position:absolute;right:30px;bottom:30px;min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;font-weight:400;line-height:18px;letter-spacing:1.08px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn157{width:197.094px;height:18px;display:block;position:absolute;bottom:0px;margin-bottom:7.2px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn158{width:1728px;height:537.594px}
+.cn159{height:537.594px}
+.cn166{height:538px}
+.cn167{padding-top:14.4px}
+.cn168{font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn169{width:124px;height:75.5938px;top:462px;left:96px;padding-right:30px;padding-bottom:36px;padding-left:30px;font-size:15.6px;line-height:28.8px}
+.cn170{display:none}
+.cn170::before{display:none}
+.cn171{display:none}
+.cn172{letter-spacing:1.17px}
+.cn172::before{width:16px;height:15.5938px;font-size:15.6px;line-height:15.6px}
+.cn174{letter-spacing:1.17px}
+.cn174::before{width:16px;height:15.5938px;font-size:15.6px;line-height:15.6px}
+.cn176{letter-spacing:1.17px}
+.cn176::before{width:16px;height:15.5938px;font-size:15.6px;line-height:15.6px}
+.cn178{height:39.5938px;display:inline-block;vertical-align:top;letter-spacing:1.17px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn179{display:inline}
+.cn181{height:100.797px;min-height:100.8px}
+.cn181::before{right:1534px;left:-96px;height:99.7969px}
+.cn181::after{right:-96px;left:1534px;height:99.7969px}
+.cn189{padding-bottom:30px}
+.cn191{margin-top:30px;padding-right:30px;padding-left:30px}
+.cn192{font-size:33.6px;line-height:38.4px;letter-spacing:0.84px}
+.cn193{font-size:16.8px;line-height:26.4px}
+.cn195{margin-top:30px}
+.cn196{padding-right:30px;padding-left:30px;font-size:16.8px;line-height:26.4px}
+.cn203{height:307.188px}
+.cn205{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn207{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn208{font-size:16.8px}
+.cn209{margin-bottom:5.88px}
+.cn210{width:379.5px;height:92px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn211{min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;line-height:18px;letter-spacing:1.08px}
+.cn211::after{width:14px;height:13.6875px;margin-right:4.2px;margin-left:4.2px;font-size:13.68px;line-height:13.68px}
+.cn214{height:100.797px;min-height:100.8px}
+.cn214::before{right:1534px;left:-96px;height:99.7969px}
+.cn214::after{right:-96px;left:1534px;height:99.7969px}
+.cn215::before{}
+.cn216{height:307.188px}
+.cn220{width:384px;height:307.188px}
+.cn223::before{width:42px}
+.cn223::after{left:42px}
+.cn227{width:384px;height:307.188px;left:384px}
+.cn229{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn231{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn232{font-size:16.8px}
+.cn233{margin-bottom:5.88px}
+.cn234{width:380px;height:101.594px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn235{margin-top:-3.6px}
+.cn236{padding-top:6px;padding-left:18px;font-size:16.8px}
+.cn236::before{width:18px;height:14.4062px;margin-left:-18px;font-size:14.4px;line-height:14.4px}
+.cn237{font-size:14.4px;letter-spacing:0.36px}
+.cn238{height:28.5938px;padding-top:6px;padding-left:18px;font-size:16.8px}
+.cn238::before{width:18px;height:14.4062px;margin-left:-18px;font-size:14.4px;line-height:14.4px}
+.cn239{font-size:14.4px;letter-spacing:0.36px}
+.cn241{width:384px;height:307.188px;left:768px}
+.cn243{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn245{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn246{font-size:16.8px}
+.cn247{margin-bottom:5.88px}
+.cn248{width:380px;height:101.594px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn249{margin-top:-3.6px}
+.cn250{height:28.5938px;padding-top:6px;padding-left:18px;font-size:16.8px}
+.cn250::before{width:18px;height:14.4062px;margin-left:-18px;font-size:14.4px;line-height:14.4px}
+.cn251{font-size:14.4px;letter-spacing:0.36px}
+.cn252{height:28.5938px;padding-top:6px;padding-left:18px;font-size:16.8px}
+.cn252::before{width:18px;height:14.4062px;margin-left:-18px;font-size:14.4px;line-height:14.4px}
+.cn253{font-size:14.4px;letter-spacing:0.36px}
+.cn255{width:384px;height:307.188px;left:1152px}
+.cn257{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn259{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn260{font-size:16.8px}
+.cn261{margin-bottom:5.88px}
+.cn262{width:380px;height:101.594px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn263{margin-top:-3.6px}
+.cn264{height:28.5938px;padding-top:6px;padding-left:18px;font-size:16.8px}
+.cn264::before{width:18px;height:14.4062px;margin-left:-18px;font-size:14.4px;line-height:14.4px}
+.cn265{font-size:14.4px;letter-spacing:0.36px}
+.cn266{height:28.5938px;padding-top:6px;padding-left:18px;font-size:16.8px}
+.cn266::before{width:18px;height:14.4062px;margin-left:-18px;font-size:14.4px;line-height:14.4px}
+.cn267{font-size:14.4px;letter-spacing:0.36px}
+.cn270{height:100.797px;min-height:100.8px}
+.cn270::before{right:1534px;left:-96px;height:99.7969px}
+.cn270::after{right:-96px;left:1534px;height:99.7969px}
+.cn271::before{}
+.cn272{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn273{font-size:33.6px;line-height:38.4px;letter-spacing:0.84px}
+.cn274{height:614.391px}
+.cn278{width:768px;height:614.391px}
+.cn280{height:614.391px}
+.cn280::after{margin-right:4.2px;margin-left:4.2px}
+.cn281{height:295.188px;margin-top:-296.4px;margin-left:383px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn281::before{top:-12px;right:341px;bottom:295.188px;width:42px;height:12px}
+.cn281::after{top:-12px;right:-42px;bottom:295.188px;left:42px;height:12px}
+.cn283{margin-top:-18px;margin-bottom:7.2px;margin-left:24px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn284{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn285{font-size:16.8px}
+.cn286{height:100%;display:block;margin-bottom:5.88px}
+.cn287{width:381px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn288{min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;line-height:18px;letter-spacing:1.08px}
+.cn288::after{width:14px;height:13.6875px;margin-right:4.2px;margin-left:4.2px;font-size:13.68px;line-height:13.68px}
+.cn290{width:768px;height:614.391px;left:768px}
+.cn292{margin-right:30px;margin-left:30px;padding-top:30px;padding-bottom:30px}
+.cn293{width:354px;font-size:33.6px;line-height:38.4px;letter-spacing:0.84px}
+.cn294{width:354px;height:38.4062px;padding-left:30px}
+.cn295{padding-right:1.2px;font-size:14.4px;line-height:38.4px;letter-spacing:0.36px}
+.cn295::before{width:14px;height:14.4062px;font-size:14.4px;line-height:14.4px}
+.cn297{width:384px;margin-top:30px;margin-bottom:30px;padding-right:30px;padding-left:30px}
+.cn298{height:178.281px;margin-bottom:30px}
+.cn300{margin-bottom:5.04px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn302{height:43.1875px;max-height:43.2px;margin-bottom:5.88px;font-size:16.8px;letter-spacing:0.42px}
+.cn303{height:107.969px;max-height:151.2px;font-size:16.8px}
+.cn305{height:178.281px}
+.cn305::after{margin-right:4.2px;margin-left:4.2px}
+.cn306{height:178.281px;padding-top:30px}
+.cn308{margin-bottom:5.04px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn310{height:43.1875px;max-height:43.2px;margin-bottom:5.88px;font-size:16.8px;letter-spacing:0.42px}
+.cn311{height:107.969px;max-height:151.2px;font-size:16.8px}
+.cn313{height:178.281px;top:30px}
+.cn313::after{margin-right:4.2px;margin-left:4.2px}
+.cn314{width:384px;margin-top:30px;margin-bottom:30px;padding-right:30px;padding-left:30px}
+.cn315{height:178.281px;margin-bottom:30px}
+.cn317{margin-bottom:5.04px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn319{height:43.1875px;max-height:43.2px;margin-bottom:5.88px;font-size:16.8px;letter-spacing:0.42px}
+.cn320{height:107.969px;max-height:151.2px;font-size:16.8px}
+.cn322{height:178.281px}
+.cn322::after{margin-right:4.2px;margin-left:4.2px}
+.cn323{height:178.281px;padding-top:30px}
+.cn325{margin-bottom:5.04px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn327{height:43.1875px;max-height:43.2px;margin-bottom:5.88px;font-size:16.8px;letter-spacing:0.42px}
+.cn328{height:107.969px;max-height:151.2px;font-size:16.8px}
+.cn330{height:178.281px;top:30px}
+.cn330::after{margin-right:4.2px;margin-left:4.2px}
+.cn333{height:100.797px;min-height:100.8px}
+.cn333::before{right:1534px;left:-96px;height:99.7969px}
+.cn333::after{right:-96px;left:1534px;height:99.7969px}
+.cn334::before{}
+.cn335{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn336{font-size:33.6px;line-height:38.4px;letter-spacing:0.84px}
+.cn337{height:614.391px}
+.cn341{width:384px;height:614.391px}
+.cn343{height:318px}
+.cn344{height:295.188px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn344::before{top:-12px;right:340px;bottom:295.188px;width:42px;height:12px}
+.cn344::after{top:-12px;right:-42px;bottom:295.188px;left:42px;height:12px}
+.cn346{margin-top:-18px;margin-bottom:7.2px;margin-left:24px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn347{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn348{font-size:16.8px}
+.cn349{margin-bottom:5.88px}
+.cn350{width:380px;height:92px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn351{min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;line-height:18px;letter-spacing:1.08px}
+.cn353{width:384px;height:614.391px;left:384px}
+.cn355{height:318px}
+.cn355::after{margin-right:4.2px;margin-left:4.2px}
+.cn356{height:295.188px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn356::before{top:-12px;right:340px;bottom:295.188px;width:42px;height:12px}
+.cn356::after{top:-12px;right:-42px;bottom:295.188px;left:42px;height:12px}
+.cn358{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn359{font-size:16.8px}
+.cn360{margin-bottom:5.88px}
+.cn361{width:380px;height:92px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn362{min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;line-height:18px;letter-spacing:1.08px}
+.cn362::after{width:14px;height:13.6875px;margin-right:4.2px;margin-left:4.2px;font-size:13.68px;line-height:13.68px}
+.cn364{width:384px;height:614.391px;left:768px}
+.cn366{height:318px}
+.cn367{height:295.188px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn367::before{top:-12px;right:340px;bottom:295.188px;width:42px;height:12px}
+.cn367::after{top:-12px;right:-42px;bottom:295.188px;left:42px;height:12px}
+.cn369{margin-top:-18px;margin-bottom:7.2px;margin-left:24px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn370{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn371{font-size:16.8px}
+.cn372{margin-bottom:5.88px}
+.cn373{margin-bottom:5.88px}
+.cn374{width:380px;height:92px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn375{min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;line-height:18px;letter-spacing:1.08px}
+.cn377{width:384px;height:614.391px;left:1152px}
+.cn379{height:318px}
+.cn380{height:295.188px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn380::before{top:-12px;right:340px;bottom:295.188px;width:42px;height:12px}
+.cn380::after{top:-12px;right:-42px;bottom:295.188px;left:42px;height:12px}
+.cn382{margin-top:-18px;margin-bottom:7.2px;margin-left:24px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn383{margin-bottom:10.08px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn384{font-size:16.8px}
+.cn385{margin-bottom:5.88px}
+.cn387{width:380px;height:92px;padding-top:18px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn388{min-width:168px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;font-size:14.4px;line-height:18px;letter-spacing:1.08px}
+.cn390{height:100.797px;min-height:100.8px}
+.cn390::before{right:1534px;left:-96px;height:99.7969px}
+.cn390::after{right:-96px;left:1534px;height:99.7969px}
+.cn395::before{right:1534px;left:-96px}
+.cn395::after{right:-96px;left:1534px}
+.cn396{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn397{padding-top:30px;padding-bottom:30px}
+.cn399::before{right:1536px;left:-96px}
+.cn399::after{right:-96px;left:1536px}
+.cn400{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn401{padding-right:6px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn402{width:360px;font-size:14.4px;line-height:24px;letter-spacing:1.08px}
+.cn403{margin-right:54px}
+.cn404{height:40px;line-height:17px;text-indent:30px}
+.cn439{width:38.3906px;line-height:39.6px}
+.cn439::after{width:14px;height:39.5938px;font-size:14.4px;line-height:39.6px}
+.cn440{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px}
+.cn441{padding-right:6px;font-size:28.8px;line-height:33.6px;letter-spacing:0.72px}
+.cn442{width:360px;height:39.5938px}
+.cn443{height:39.5938px;max-width:38.4px;margin-right:7.1875px}
+.cn444{height:39.5938px;font-size:32.4px;line-height:39.6px;letter-spacing:2.43px}
+.cn444::after{width:31px;height:39.5938px;margin-right:4.2px;margin-left:4.2px;font-size:30.78px;line-height:39.6px}
+.cn446{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-size:14.4px;line-height:18px;letter-spacing:0.36px}
+.cn447{height:40.7969px;min-height:40.8px}
+.cn448{font-size:1.2px}
+.cn448::after{}
+.cn449{width:6%}
+.cn450{font-size:14.4px;line-height:40.8px;letter-spacing:1.08px}
+.cn451{width:144.281px}
+.cn452{font-size:14.4px;line-height:40.8px;letter-spacing:1.08px}
+.cn453{width:88.7344px}
+.cn454{font-size:14.4px;line-height:40.8px;letter-spacing:1.08px}
+.cn455{width:214.766px}
+.cn456{font-size:14.4px;line-height:40.8px;letter-spacing:1.08px}
+.cn457{width:384px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-size:14.4px;line-height:40.8px;letter-spacing:0.36px}
+}
+
+</style>
+</head>
+<body class="cn0" id="start">
+    <div class="cn1">
+      <header class="cn2" role="banner">
+         
+        <div class="cn3">
+          <div class="cn4">
+            <div class="cn5">
+              <div class="cn6">
+                <section class="cn7" role="search">
+                  <form class="cn8" id="search-form">
+                    <div class="cn9">
+                       
+                    </div>
+                     
+                    <button class="cn10" data-ditto-id="style-button" type="submit">
+                      Titel - Suche
+                    </button>
+                     
+                  </form>
+                   
+                </section>
+                 
+              </div>
+               
+              <div class="cn11">
+                 
+                <a class="cn12" href="https://www.bigdata-ai.fraunhofer.de/">
+                  <div class="cn13">
+                     
+                    <img class="cn14" alt="" src="public/assets/cloned/svg/56fce6a44671.svg" />
+                     Fraunhofer-Allianz Big Dataund Künstliche Intelligenz
+                  </div>
+                   
+                </a>
+              </div>
+               
+            </div>
+             
+            <div class="cn15">
+              <h1 class="cn16">
+                <a class="cn17" href="https://www.bigdata-ai.fraunhofer.de/">
+                  Fraunhofer-Allianz Big Data
+                  <br class="cn18" />
+                  und Künstliche Intelligenz
+                </a>
+              </h1>
+               
+              <div class="cn19" id="menu">
+                 
+                <div class="cn20">
+                  <div class="cn21">
+                     
+                    <nav class="cn22">
+                      <ul class="cn23">
+                        <li class="cn24">
+                          <a class="cn25" data-ditto-id="style-link" href="https://www.bigdata-ai.fraunhofer.de/de/publikationen.html">
+                            Publikationen
+                          </a>
+                        </li>
+                        <li class="cn26">
+                          <a class="cn27" data-ditto-id="style-link-2" href="https://www.bigdata-ai.fraunhofer.de/de/presse_medien.html">
+                            Neuigkeiten &amp; Presse
+                          </a>
+                        </li>
+                        <li class="cn28">
+                          <a class="cn29" data-ditto-id="style-link-3" href="https://www.bigdata-ai.fraunhofer.de/de/veranstaltungen.html">
+                            Events
+                          </a>
+                        </li>
+                        <li class="cn30">
+                          <a class="cn31" data-ditto-id="style-link-4" href="https://www.bigdata-ai.fraunhofer.de/de/Kontakt.html">
+                            Kontakt
+                          </a>
+                        </li>
+                        <li class="cn32">
+                          <a class="cn33" data-ditto-id="style-link-5" href="https://www.bigdata-ai.fraunhofer.de/en.html">
+                            English
+                          </a>
+                        </li>
+                      </ul>
+                       
+                    </nav>
+                     
+                  </div>
+                   
+                </div>
+                 
+                <div class="cn34" id="nav">
+                  <div class="cn35">
+                    <nav class="cn36">
+                      <ul class="cn37">
+                        <li class="cn38">
+                          <span class="cn39">
+                            <a class="cn40" href="https://www.bigdata-ai.fraunhofer.de/de/leistungsangebot.html">
+                              Leistungsangebot
+                            </a>
+                          </span>
+                           
+                        </li>
+                        <li class="cn41" data-ditto-id="style-li-5">
+                          <span class="cn42">
+                            <a class="cn43" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder.html">
+                              Geschäftsfelder
+                            </a>
+                          </span>
+                           
+                          <div class="cn44">
+                            <span class="cn45" data-ditto-id="style-span">
+                              [X]
+                            </span>
+                             
+                            <span class="cn46">
+                              <a class="cn47" data-ditto-id="style-link-45" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder.html">
+                                Geschäftsfelder
+                              </a>
+                            </span>
+                             
+                            <ul class="cn48">
+                              <li class="cn49">
+                                 
+                                <a class="cn50" data-ditto-id="style-link-6" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder/lifesciences_healthcare.html">
+                                  Lebenswissenschaften &amp; Gesundheit
+                                </a>
+                              </li>
+                              <li class="cn51">
+                                 
+                                <a class="cn52" data-ditto-id="style-link-7" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder/energie_umwelt.html">
+                                  Energie &amp; Umwelt
+                                </a>
+                              </li>
+                              <li class="cn53">
+                                 
+                                <a class="cn54" data-ditto-id="style-link-8" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder/sicherheit.html">
+                                  Sicherheit
+                                </a>
+                              </li>
+                              <li class="cn55">
+                                 
+                                <a class="cn56" data-ditto-id="style-link-9" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder/business_finance.html">
+                                  Handel &amp; Finanzwesen
+                                </a>
+                              </li>
+                              <li class="cn57">
+                                 
+                                <a class="cn58" data-ditto-id="style-link-10" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder/produktion_logistik.html">
+                                  Produktion &amp; Logistik
+                                </a>
+                              </li>
+                              <li class="cn59">
+                                 
+                                <a class="cn60" data-ditto-id="style-link-11" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder/oeffentliche_hand.html">
+                                  Öffentliche Hand
+                                </a>
+                              </li>
+                            </ul>
+                             
+                          </div>
+                           
+                        </li>
+                        <li class="cn61">
+                          <span class="cn62">
+                            <a class="cn63" href="https://www.bigdata-ai.fraunhofer.de/de/projektlandkarte.html">
+                              Use Cases
+                            </a>
+                          </span>
+                           
+                        </li>
+                        <li class="cn64">
+                          <span class="cn65" data-ditto-id="style-span-13">
+                            <a class="cn66" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist.html">
+                              Schulungen
+                            </a>
+                          </span>
+                           
+                          <div class="cn67">
+                            <span class="cn68" data-ditto-id="style-span-2">
+                              [X]
+                            </span>
+                             
+                            <span class="cn69">
+                              <a class="cn70" data-ditto-id="style-link-46" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist.html">
+                                Schulungen
+                              </a>
+                            </span>
+                             
+                            <ul class="cn71">
+                              <li class="cn72" data-ditto-id="style-li-6">
+                                 
+                                <a class="cn73" data-ditto-id="style-link-12" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/termine.html">
+                                  Schulungstermine 2026/2027
+                                </a>
+                              </li>
+                              <li class="cn74">
+                                 
+                                <a class="cn75" data-ditto-id="style-link-13" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/vortraege_workshops.html">
+                                  Weitere Fortbildungsangebote
+                                </a>
+                              </li>
+                              <li class="cn76">
+                                 
+                                <a class="cn77" data-ditto-id="style-link-14" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/inhouse-schulungen.html">
+                                  Inhouse-Schulungen
+                                </a>
+                              </li>
+                              <li class="cn78">
+                                 
+                                <a class="cn79" data-ditto-id="style-link-15" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/schulungsdozent-innen.html">
+                                  Schulungsdozent*innen
+                                </a>
+                              </li>
+                              <li class="cn80">
+                                 
+                                <a class="cn81" data-ditto-id="style-link-16" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/kompakteinstiege.html">
+                                  KI für Einsteiger*innen
+                                </a>
+                              </li>
+                              <li class="cn82" data-ditto-id="style-li-7">
+                                 
+                                <a class="cn83" data-ditto-id="style-link-17" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/python-vorkurs.html">
+                                  Gratis Python Vorkurs
+                                </a>
+                              </li>
+                              <li class="cn84">
+                                 
+                                <a class="cn85" data-ditto-id="style-link-18" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/data-scientist-zertifizierungskurse.html">
+                                  Data Science Weiterbildung
+                                </a>
+                              </li>
+                              <li class="cn86">
+                                 
+                                <a class="cn87" data-ditto-id="style-link-19" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/ai-for-schools.html">
+                                  AI4Schools – Wir bringen Künstliche Intelligenz in die Schule
+                                </a>
+                              </li>
+                              <li class="cn88">
+                                 
+                                <a class="cn89" data-ditto-id="style-link-20" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/generative-ki-training.html">
+                                  Prompt Engineering - Techniken für Generative KI
+                                </a>
+                              </li>
+                              <li class="cn90">
+                                 
+                                <a class="cn91" data-ditto-id="style-link-21" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/kontaktformular.html">
+                                  Kontaktformular
+                                </a>
+                              </li>
+                              <li class="cn92">
+                                 
+                                <a class="cn93" data-ditto-id="style-link-22" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/fit-fuer-EU-AI-Act-weiterbildung.html">
+                                  Fit für den EU AI Act – Weiterbildung nach §4 KI-VO 
+                                </a>
+                              </li>
+                              <li class="cn94">
+                                 
+                                <a class="cn95" data-ditto-id="style-link-23" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/e-learning-ai-literacy.html">
+                                  Digitales Lernpaket zum Thema Künstliche Intelligenz &amp; dem EU AI-Act
+                                </a>
+                              </li>
+                            </ul>
+                             
+                          </div>
+                           
+                        </li>
+                        <li class="cn96">
+                          <span class="cn97" data-ditto-id="style-span-17">
+                            <a class="cn98" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns.html">
+                              Über uns
+                            </a>
+                          </span>
+                           
+                          <div class="cn99">
+                            <span class="cn100" data-ditto-id="style-span-3">
+                              [X]
+                            </span>
+                             
+                            <span class="cn101">
+                              <a class="cn102" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns.html">
+                                Über uns
+                              </a>
+                            </span>
+                             
+                            <ul class="cn103">
+                              <li class="cn104">
+                                 
+                                <a class="cn105" data-ditto-id="style-link-24" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns/institute.html">
+                                  Mitgliedsinstitute der Allianz
+                                </a>
+                              </li>
+                              <li class="cn106">
+                                 
+                                <a class="cn107" data-ditto-id="style-link-25" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns/organisation.html">
+                                  Organisation
+                                </a>
+                              </li>
+                            </ul>
+                             
+                          </div>
+                           
+                        </li>
+                        <li class="cn108" id="morefield">
+                          <span class="cn109">
+                            <span class="cn110">
+                              Mehr
+                            </span>
+                          </span>
+                           
+                        </li>
+                      </ul>
+                       
+                    </nav>
+                     
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+        <div class="cn111">
+          <div class="cn112">
+            <div class="cn113">
+              <div class="cn114">
+                <div class="cn115">
+                  <div class="cn116">
+                    <div class="cn117">
+                      <figure class="cn118" data-ditto-id="style-link-26">
+                        <picture class="cn119">
+                           
+                          <source class="cn120" data-ditto-id="style-div-9" media="(max-width: 1440px)" srcset="public/assets/cloned/images/f56e67c72b76.jpg" />
+                           
+                          <source class="cn121" data-ditto-id="style-div-49" media="(max-width: 960px)" srcset="public/assets/cloned/images/770acf88f995.jpg" />
+                           
+                          <source class="cn122" data-ditto-id="style-heading-2" media="(max-width: 640px)" srcset="public/assets/cloned/images/7dd541d99479.jpg" />
+                           
+                          <source class="cn123" media="(max-width: 320px)" srcset="public/assets/cloned/images/0723d5c289c9.jpg" />
+                           
+                          <img class="cn124" src="public/assets/cloned/images/1db78c1e05cc.jpg" />
+                           
+                        </picture>
+                         
+                        <figcaption class="cn125">
+                          <div class="cn126" data-ditto-id="style-div-33"></div>
+                        </figcaption>
+                         
+                      </figure>
+                       
+                      <div class="cn127">
+                        <h2 class="cn128" id="Ihr-Weg-zur-KI">
+                          Ihr Weg zur KI
+                        </h2>
+                         
+                        <p class="cn129">
+                          Wir holen Sie da ab, wo Sie gerade stehen. Durch den Zusammenschluss von über 30 Fraunhofer-Instituten in einer Allianz erhalten Sie die ganze Bandbreite an Know-how zu Big Data und Künstlicher Intelligenz – von der Strategie bis zur Umsetzung, unabhängig und vertrauenswürdig.
+                        </p>
+                         
+                        <a class="cn130" data-ditto-id="style-div-21" href="https://www.bigdata-ai.fraunhofer.de/de/leistungsangebot.html" title="Mehr Info">
+                          mehr Info
+                        </a>
+                      </div>
+                       
+                    </div>
+                  </div>
+                  <div class="cn131" data-ditto-id="style-div-52">
+                    <div class="cn132" data-ditto-id="style-div-37">
+                      <figure class="cn133">
+                        <picture class="cn134">
+                           
+                          <source class="cn135" media="(max-width: 1440px)" srcset="public/assets/cloned/images/f9ba3223bc34.jpg" />
+                           
+                          <source class="cn136" media="(max-width: 960px)" srcset="public/assets/cloned/images/272aed921169.jpg" />
+                           
+                          <source class="cn137" data-ditto-id="style-div-38" media="(max-width: 640px)" srcset="public/assets/cloned/images/d348ca08a4d5.jpg" />
+                           
+                          <source class="cn138" media="(max-width: 320px)" srcset="public/assets/cloned/images/073cce7f2501.jpg" />
+                           
+                          <img class="cn139" src="public/assets/cloned/images/5bd541a494ad.jpg" title="Allianz_fin Kopie" />
+                           
+                        </picture>
+                         
+                        <figcaption class="cn140">
+                          <div class="cn141"></div>
+                        </figcaption>
+                         
+                      </figure>
+                       
+                    </div>
+                  </div>
+                  <div class="cn142" data-ditto-id="style-p-6">
+                    <div class="cn143" data-ditto-id="style-p-5">
+                      <figure class="cn144">
+                        <picture class="cn145">
+                           
+                          <source class="cn146" data-ditto-id="style-br-7" media="(max-width: 1440px)" srcset="public/assets/cloned/images/f9ba3223bc34.jpg" />
+                           
+                          <source class="cn147" data-ditto-id="style-br-6" media="(max-width: 960px)" srcset="public/assets/cloned/images/272aed921169.jpg" />
+                           
+                          <source class="cn148" media="(max-width: 640px)" srcset="public/assets/cloned/images/d348ca08a4d5.jpg" />
+                           
+                          <source class="cn149" media="(max-width: 320px)" srcset="public/assets/cloned/images/073cce7f2501.jpg" />
+                           
+                          <img class="cn150" data-ditto-id="style-div-53" src="public/assets/cloned/images/5bd541a494ad.jpg" title="Allianz_fin Kopie" />
+                           
+                        </picture>
+                         
+                        <figcaption class="cn151">
+                          <div class="cn152" data-ditto-id="style-div-10"></div>
+                        </figcaption>
+                         
+                      </figure>
+                       
+                      <div class="cn153">
+                        <h2 class="cn154" data-ditto-id="style-p-7" id="Intelligente-Loesungen-fuer-die-Produktion-Logistik-mehr">
+                          Intelligente Lösungen für die Produktion, Logistik &amp; mehr
+                        </h2>
+                         
+                        <p class="cn155">
+                          Künstliche Intelligenz und Big Data können einen Mehrwert für verschiedenste Branchen schaffen. In unseren Geschäftsfeldern erfahren Sie, welche Vorteile sich Ihrem Unternehmen bieten.
+                        </p>
+                         
+                        <a class="cn156" data-ditto-id="style-p-4" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder.html">
+                          mehr Info
+                        </a>
+                        <p class="cn157" data-ditto-id="style-div-39">
+                          © jamesboy - stock.adobe.com
+                        </p>
+                         
+                      </div>
+                       
+                    </div>
+                  </div>
+                  <div class="cn158">
+                    <div class="cn159" data-ditto-id="style-div">
+                      <figure class="cn160">
+                        <picture class="cn161" data-ditto-id="style-li">
+                           
+                          <source class="cn162" data-ditto-id="style-div-40" media="(max-width: 1440px)" srcset="public/assets/cloned/images/f56e67c72b76.jpg" />
+                           
+                          <source class="cn163" media="(max-width: 960px)" srcset="public/assets/cloned/images/770acf88f995.jpg" />
+                           
+                          <source class="cn164" media="(max-width: 640px)" srcset="public/assets/cloned/images/7dd541d99479.jpg" />
+                           
+                          <source class="cn165" media="(max-width: 320px)" srcset="public/assets/cloned/images/0723d5c289c9.jpg" />
+                           
+                          <img class="cn166" src="public/assets/cloned/images/1db78c1e05cc.jpg" />
+                           
+                        </picture>
+                         
+                        <figcaption class="cn167" data-ditto-id="style-li-8">
+                          <div class="cn168"></div>
+                        </figcaption>
+                         
+                      </figure>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cn169" data-ditto-id="style-ul-2">
+                <button class="cn170" data-ditto-id="style-li-4" role="button">
+                  <span class="cn171"></span>
+                </button>
+                <button class="cn172" data-ditto-id="style-div-22" role="button">
+                  <span class="cn173"></span>
+                </button>
+                <button class="cn174" data-ditto-id="style-label-4" role="button">
+                  <span class="cn175"></span>
+                </button>
+                <button class="cn176" data-ditto-id="style-select" role="button">
+                  <span class="cn177" data-ditto-id="style-junge-menschen-fuer-ki-begeistern"></span>
+                </button>
+                <button class="cn178" data-ditto-id="style-div-25" role="button">
+                  <span class="cn179"></span>
+                </button>
+              </div>
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </header>
+       
+      <div class="cn180" data-ditto-id="style-div-11">
+        <div class="cn181"></div>
+         
+      </div>
+       
+      <div class="cn182" data-ditto-id="style-div-41">
+        <div class="cn183" data-ditto-id="style-label">
+          <div class="cn184" data-ditto-id="style-span-4">
+            <div class="cn185" data-ditto-id="style-input">
+              <div class="cn186">
+                 
+                <section class="cn187" data-ditto-id="style-div-2">
+                  <div class="cn188" data-ditto-id="style-label-2">
+                    <div class="cn189" data-ditto-id="style-span-18">
+                      <article class="cn190">
+                        <div class="cn191">
+                           
+                          <h2 class="cn192" data-ditto-id="style-div-12" id="Fraunhofer-Allianz-Big-Data-und-Kuenstliche-Intelligenz">
+                            Fraunhofer-Allianz Big Data und Künstliche Intelligenz
+                          </h2>
+                           
+                          <p class="cn193" data-ditto-id="style-label-5">
+                            KI für Unternehmensstrategie
+                          </p>
+                           
+                        </div>
+                         
+                        <div class="cn194">
+                          <div class="cn195">
+                             
+                            <div class="cn196">
+                              <p class="cn197" data-ditto-id="style-div-8">
+                                Die Fraunhofer-Allianz Big Data und Künstliche Intelligenz vereint das unabhängige Know-how von mehr als 30 Fraunhofer-Instituten und unterstützt Unternehmen auf ihrem Weg zum Einsatz von künstlicher Intelligenz. Unsere Expertinnen und Experten begleiten Unternehmen aller Größen und Branchen bei der KI-Transformation: vom Einstieg über Strategie und Entwicklung bis hin zur sicheren und nachhaltigen Implementierung von vertrauenswürdigen KI-Lösungen. Zusätzlich qualifizieren wir Führungs- und Fachkräfte in unseren KI-Schulungen.
+                              </p>
+                            </div>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </article>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                </section>
+                 
+              </div>
+               
+              <div class="cn198">
+                 
+                <div class="cn199"></div>
+                 
+                <aside class="cn200" data-ditto-id="style-input-3">
+                  <div class="cn201">
+                    <div class="cn202" data-ditto-id="style-div-3">
+                      <div class="cn203">
+                         
+                        <div class="cn204" data-ditto-id="style-span-14">
+                          <div class="cn205">
+                            <div class="cn206">
+                              <h3 class="cn207" data-ditto-id="style-div-42">
+                                Broschüre der Allianz
+                              </h3>
+                               
+                              <div class="cn208" data-ditto-id="style-div-34">
+                                <p class="cn209" data-ditto-id="style-section">
+                                  Unsere Broschüre gibt Ihnen einen kompakten Überblick über die Fraunhofer-Allianz Big Data und Künstliche Intelligenz.
+                                </p>
+                              </div>
+                               
+                            </div>
+                             
+                            <div class="cn210">
+                              <a class="cn211" data-ditto-id="style-div-23" href="https://www.bigdata-ai.fraunhofer.de/content/dam/bigdata/de/documents/Broschueren/BDAI_Broschuere_Leistungsportfolio.pdf" target="_blank" title="Jetzt herunterladen">
+                                Jetzt herunterladen
+                              </a>
+                            </div>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                </aside>
+                 
+              </div>
+               
+            </div>
+          </div>
+           
+          <div class="cn212" data-ditto-id="style-article">
+            <div class="cn213">
+              <div class="cn214"></div>
+               
+            </div>
+             
+            <div class="cn215" data-ditto-id="style-div-54">
+               
+              <div class="cn216">
+                <div class="cn217" data-ditto-id="style-div-32"></div>
+                 
+                <div class="cn218">
+                  <div class="cn219">
+                    <div class="cn220">
+                      <div class="cn221">
+                        <div class="cn222" data-ditto-id="style-li-9"></div>
+                         
+                        <div class="cn223">
+                          <div class="cn224" data-ditto-id="style-div-4">
+                            <h3 class="cn225">
+                              KI gemeinsam weiter denken.
+                            </h3>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn226">
+                    <div class="cn227" data-ditto-id="style-span-15">
+                      <div class="cn228">
+                        <div class="cn229" data-ditto-id="style-div-55">
+                          <div class="cn230">
+                            <h3 class="cn231">
+                              Wir transformieren.
+                            </h3>
+                             
+                            <div class="cn232" data-ditto-id="style-div-43">
+                              <p class="cn233">
+                                Wir unterstützen Unternehmen dabei, ihre individuelle KI-Strategie zu entwickeln und erfolgreich umzusetzen - mit dem unabhängigen Spitzen-Know-how von über 30 Fraunhofer-Instituten für Big Data... 
+                              </p>
+                            </div>
+                          </div>
+                           
+                          <div class="cn234">
+                            <ul class="cn235">
+                              <li class="cn236" data-ditto-id="style-span-5">
+                                <a class="cn237" data-ditto-id="style-textarea" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns.html">
+                                  Über uns
+                                </a>
+                              </li>
+                              <li class="cn238">
+                                <a class="cn239" data-ditto-id="style-span-9" href="https://www.bigdata-ai.fraunhofer.de/de/leistungsangebot.html">
+                                  Unser Angebot für Sie
+                                </a>
+                              </li>
+                            </ul>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn240">
+                    <div class="cn241" data-ditto-id="style-ul-3">
+                      <div class="cn242" data-ditto-id="style-li-3">
+                        <div class="cn243" data-ditto-id="style-div-48">
+                          <div class="cn244">
+                            <h3 class="cn245">
+                              Wir entwickeln.
+                            </h3>
+                             
+                            <div class="cn246">
+                              <p class="cn247" data-ditto-id="style-strong">
+                                Wir entwickeln mit branchenübergreifendem Wissen zukunftsweisende Lösungen und setzen diese erfolgreich in Unternehmen um. Profitieren Sie von Know-how aus verschiedenen... 
+                              </p>
+                            </div>
+                          </div>
+                           
+                          <div class="cn248">
+                            <ul class="cn249" data-ditto-id="style-br">
+                              <li class="cn250" data-ditto-id="style-link-27">
+                                <a class="cn251" data-ditto-id="style-br-5" href="https://www.bigdata-ai.fraunhofer.de/de/projektlandkarte.html" title="Best Practices">
+                                  Best Practices
+                                </a>
+                              </li>
+                              <li class="cn252" data-ditto-id="style-div-44">
+                                <a class="cn253" data-ditto-id="style-fieldset" href="https://www.bigdata-ai.fraunhofer.de/de/geschaeftsfelder.html">
+                                  Geschäftsfelder
+                                </a>
+                              </li>
+                            </ul>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn254" data-ditto-id="style-label-6">
+                    <div class="cn255" data-ditto-id="style-div-13">
+                      <div class="cn256" data-ditto-id="style-div-50">
+                        <div class="cn257" data-ditto-id="style-label-3">
+                          <div class="cn258" data-ditto-id="style-span-12">
+                            <h3 class="cn259" data-ditto-id="style-p">
+                              Wir qualifizieren.
+                            </h3>
+                             
+                            <div class="cn260">
+                              <p class="cn261">
+                                Wir bieten eine Vielzahl an zertifizierten KI- und Data-Science-Schulungen an. Ihre Vorteile: Hands-on Learning mit erfahrenen Data Scientists aus der Praxis, die Ihnen Inhalte qualitativ hochwertig... 
+                              </p>
+                            </div>
+                          </div>
+                           
+                          <div class="cn262" data-ditto-id="style-button-11">
+                            <ul class="cn263" data-ditto-id="style-div-51">
+                              <li class="cn264" data-ditto-id="style-div-15">
+                                <a class="cn265" data-ditto-id="style-cq-captchaimg" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist.html">
+                                  Schulungsprogramm
+                                </a>
+                              </li>
+                              <li class="cn266">
+                                <a class="cn267" data-ditto-id="style-div-26" href="https://www.bigdata-ai.fraunhofer.de/de/data-scientist/inhouse-schulungen.html">
+                                  KI-Kompetenz für Unternehmen
+                                </a>
+                              </li>
+                            </ul>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+            </div>
+          </div>
+           
+          <div class="cn268">
+            <div class="cn269" data-ditto-id="style-div-35">
+              <div class="cn270" data-ditto-id="style-button-2"></div>
+               
+            </div>
+             
+            <div class="cn271" data-ditto-id="style-button-3">
+              <div class="cn272" data-ditto-id="style-div-45">
+                 
+                <h2 class="cn273" data-ditto-id="style-form-2" id="Neues-aus-der-Fraunhofer-Allianz-Big-Data-und-Kuenstliche-Intelligenz">
+                   Neues aus der Fraunhofer-Allianz Big Data und Künstliche Intelligenz
+                </h2>
+                 
+              </div>
+               
+              <div class="cn274">
+                <div class="cn275"></div>
+                 
+                <div class="cn276">
+                  <div class="cn277" data-ditto-id="style-div-16">
+                    <div class="cn278">
+                      <div class="cn279">
+                        <a class="cn280" data-ditto-id="style-div-27" href="https://www.bigdata-ai.fraunhofer.de/de/publikationen/whitepaper-genai-fuer-verschiedene-datentypen.html" target="_blank" title="Kostenlos Herunterladen">
+                           
+                        </a>
+                        <div class="cn281" data-ditto-id="style-div-56">
+                          <div class="cn282" data-ditto-id="style-div-46">
+                            <p class="cn283">
+                              © KI-generiert mit Copilot/Fraunhofer IAIS
+                            </p>
+                             
+                            <h3 class="cn284">
+                              Jenseits von Text und Bild - Generative KI für vielfältige Datenwelten
+                            </h3>
+                             ... 
+                            <div class="cn285">
+                              <p class="cn286">
+                                Praxisnahe Einblicke und innovative Anwendungsbeispiele zur Erschließung komplexer Unternehmensdaten
+                              </p>
+                            </div>
+                          </div>
+                           
+                          <div class="cn287">
+                            <a class="cn288" data-ditto-id="style-div-24" href="https://www.bigdata-ai.fraunhofer.de/de/publikationen/whitepaper-genai-fuer-verschiedene-datentypen.html" target="_blank" title="Kostenlos Herunterladen">
+                              Kostenlos Herunterladen
+                            </a>
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn289">
+                    <div class="cn290" data-ditto-id="style-div-5">
+                      <div class="cn291">
+                        <div class="cn292" data-ditto-id="style-link-28">
+                          <h2 class="cn293" id="Aktuelles-aus-den-Mitgliedsinstituten">
+                             Aktuelles aus den Mitgliedsinstituten
+                          </h2>
+                           
+                          <div class="cn294" data-ditto-id="style-div-57">
+                            <a class="cn295" data-ditto-id="style-heading" href="https://www.bigdata-ai.fraunhofer.de/de/presse_medien/presseinformationen.html">
+                              Presseinformationen
+                            </a>
+                          </div>
+                           
+                        </div>
+                         
+                        <div class="cn296" data-ditto-id="style-div-6">
+                          <div class="cn297" data-ditto-id="interaction-p">
+                            <div class="cn298">
+                              <article class="cn299">
+                                <p class="cn300">
+                                  <span class="cn301" data-ditto-id="style-button-4">
+                                    31.7.2026
+                                  </span>
+                                </p>
+                                 
+                                <h3 class="cn302">
+                                  Fraunhofer IML gewinnt Deutschen Verpackungspreis 2…
+                                </h3>
+                                 
+                                <div class="cn303">
+                                  <div class="cn304">
+                                    Das Fraunhofer-Institut für Materialfluss und Logistik IML wurde mit dem Deutschen Verpackungspreis 2026 in der Kategorie Digitalisierung ausgezeichnet. Mit der Software C…
+                                  </div>
+                                </div>
+                                 
+                                <a class="cn305" data-ditto-id="style-div-28" href="https://www.bigdata-ai.fraunhofer.de/de/presse_medien/presseinformationen/presseinformationen_2026/presseinformation-260731.html" target="_blank">
+                                  mehr Info
+                                </a>
+                              </article>
+                               
+                            </div>
+                             
+                            <div class="cn306" data-ditto-id="style-navigation-und-social-media">
+                              <article class="cn307" data-ditto-id="style-div-7">
+                                <p class="cn308" data-ditto-id="interaction-div">
+                                  <span class="cn309">
+                                    30.7.2026
+                                  </span>
+                                </p>
+                                 
+                                <h3 class="cn310">
+                                  Perspektive 2036: Popakademie und Fraunhofer IDMT untersuc…
+                                </h3>
+                                 
+                                <div class="cn311">
+                                  <div class="cn312">
+                                    Die Popakademie Baden-Württemberg untersucht gemeinsam mit dem Fraunhofer-Institut für Digitale Medientechnologie IDMT im zweijährigen Forschungsprojekt »Pe…
+                                  </div>
+                                </div>
+                                 
+                                <a class="cn313" data-ditto-id="style-div-29" href="https://www.bigdata-ai.fraunhofer.de/de/presse_medien/presseinformationen/presseinformationen_2026/presseinformation-260730.html" target="_blank">
+                                  mehr Info
+                                </a>
+                              </article>
+                               
+                            </div>
+                             
+                          </div>
+                           
+                          <div class="cn314">
+                            <div class="cn315">
+                              <article class="cn316" data-ditto-id="style-bei-facebook-teilen">
+                                <p class="cn317">
+                                  <span class="cn318">
+                                    29.7.2026
+                                  </span>
+                                </p>
+                                 
+                                <h3 class="cn319">
+                                  »Intelligent, aber blind für Geschäftsprozesse«: Neue Stud…
+                                </h3>
+                                 
+                                <div class="cn320" data-ditto-id="style-bei-x-teilen">
+                                  <div class="cn321">
+                                    Viele KI-Initiativen bleiben hinter den Erwartungen zurück. Die Gründe dafür haben Celonis und das Fraunhofer-Institut für Angewandte Informationstechnik FIT nun in einer…
+                                  </div>
+                                </div>
+                                 
+                                <a class="cn322" data-ditto-id="style-span-10" href="https://www.bigdata-ai.fraunhofer.de/de/presse_medien/presseinformationen/presseinformationen_2026/presseinformation-260729.html" target="_blank">
+                                  mehr Info
+                                </a>
+                              </article>
+                               
+                            </div>
+                             
+                            <div class="cn323" data-ditto-id="style-li-2">
+                              <article class="cn324" data-ditto-id="style-bei-linkedin-teilen">
+                                <p class="cn325" data-ditto-id="interaction-span">
+                                  <span class="cn326" data-ditto-id="style-span-16">
+                                    28.7.2026
+                                  </span>
+                                </p>
+                                 
+                                <h3 class="cn327">
+                                  Leistungsschub mit KI – Quantencomputing-basierte M…
+                                </h3>
+                                 
+                                <div class="cn328" data-ditto-id="style-bei-xing-teilen">
+                                  <div class="cn329">
+                                    KI hat in vielen Arbeits- und Lebensbereichen bereits Einzug gehalten. Das Training moderner KI-Modelle erfordert jedoch enorme Rechenressourcen, verbunden mit…
+                                  </div>
+                                </div>
+                                 
+                                <a class="cn330" data-ditto-id="style-span-7" href="https://www.bigdata-ai.fraunhofer.de/de/presse_medien/presseinformationen/presseinformationen_2026/presseinformation-260728.html" target="_blank">
+                                  mehr Info
+                                </a>
+                              </article>
+                               
+                            </div>
+                             
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+            </div>
+          </div>
+           
+          <div class="cn331">
+            <div class="cn332">
+              <div class="cn333" data-ditto-id="style-button-5"></div>
+               
+            </div>
+             
+            <div class="cn334" data-ditto-id="style-div-47">
+              <div class="cn335">
+                 
+                <h2 class="cn336" id="Mehr-Informationen">
+                  Mehr Informationen
+                </h2>
+                 
+              </div>
+               
+              <div class="cn337">
+                <div class="cn338"></div>
+                 
+                <div class="cn339" data-ditto-id="style-div-36">
+                  <div class="cn340">
+                    <div class="cn341">
+                      <div class="cn342">
+                        <a class="cn343" data-ditto-id="style-relatedlinks" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns/institute.html" target="_self" title="Mehr info">
+                           
+                        </a>
+                        <div class="cn344">
+                          <div class="cn345">
+                            <p class="cn346" data-ditto-id="style-source">
+                              © vege / Fotolia.com
+                            </p>
+                             
+                            <h3 class="cn347">
+                              Mitgliedsinstitute
+                            </h3>
+                             
+                            <div class="cn348" data-ditto-id="style-source-2">
+                              <p class="cn349">
+                                Entdecken Sie hier, welche Fraunhofer-Institute ihr unabhängiges Spitzen-Know-how in der Fraunhofer-Allianz Big Data und Künstliche Intelligenz einbringen
+                              </p>
+                            </div>
+                             
+                          </div>
+                           
+                          <div class="cn350">
+                            <a class="cn351" data-ditto-id="style-img" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns/institute.html" target="_self" title="Mehr info">
+                              Mehr info
+                            </a>
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn352">
+                    <div class="cn353" data-ditto-id="style-span-6">
+                      <div class="cn354">
+                        <a class="cn355" data-ditto-id="style-div-30" href="https://www.linkedin.com/company/fraunhofer-allianz-big-data-ai/" target="_blank" title="Jetzt vernetzen">
+                           
+                        </a>
+                        <div class="cn356">
+                          <div class="cn357" data-ditto-id="style-br-3">
+                            <h3 class="cn358">
+                              LinkedIn
+                            </h3>
+                             
+                            <div class="cn359" data-ditto-id="style-li-10">
+                              <p class="cn360">
+                                Bleiben Sie auf dem Laufenden: Auf LinkedIn informieren wir regelmäßig über aktuelle Entwicklungen, spannende Projekte und Einblicke in unsere Geschäftsfelder. Folgen Sie uns und verpassen Sie keine... 
+                              </p>
+                            </div>
+                          </div>
+                           
+                          <div class="cn361" data-ditto-id="style-li-11">
+                            <a class="cn362" data-ditto-id="style-b-3" href="https://www.linkedin.com/company/fraunhofer-allianz-big-data-ai/" target="_blank" title="Jetzt vernetzen">
+                              Jetzt vernetzen
+                            </a>
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn363" data-ditto-id="style-a">
+                    <div class="cn364" data-ditto-id="style-br-2">
+                      <div class="cn365">
+                        <a class="cn366" data-ditto-id="style-b-4" href="https://www.bigdata-ai.fraunhofer.de/de/Kontakt.html" target="_self" title="Gespräch vereinbaren">
+                           
+                        </a>
+                        <div class="cn367">
+                          <div class="cn368" data-ditto-id="style-b">
+                            <p class="cn369">
+                              © Fraunhofer IAIS
+                            </p>
+                             
+                            <h3 class="cn370">
+                              Kontakt
+                            </h3>
+                             
+                            <div class="cn371">
+                              <p class="cn372">
+                                Sie haben Fragen zum Angebot der Fraunhofer-Allianz Big Data und KI? 
+                              </p>
+                               
+                              <p class="cn373" data-ditto-id="style-link-33">
+                                Treten Sie mit uns in Kontakt. Wir freuen uns auf Ihre Nachricht und unterstützen Sie gerne bei Ihrem... 
+                              </p>
+                            </div>
+                          </div>
+                           
+                          <div class="cn374" data-ditto-id="style-link-34">
+                            <a class="cn375" data-ditto-id="interaction-faq-faqitem-1128309645-answer" href="https://www.bigdata-ai.fraunhofer.de/de/Kontakt.html" target="_self" title="Gespräch vereinbaren">
+                              Gespräch vereinbaren
+                            </a>
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                  <div class="cn376">
+                    <div class="cn377">
+                      <div class="cn378" data-ditto-id="style-button-6">
+                        <a class="cn379" data-ditto-id="style-div-17" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns/organisation.html" target="_self" title="Mehr info">
+                           
+                        </a>
+                        <div class="cn380" data-ditto-id="style-h3">
+                          <div class="cn381">
+                            <p class="cn382">
+                              © Fraunhofer IAIS
+                            </p>
+                             
+                            <h3 class="cn383">
+                              Organisation
+                            </h3>
+                             
+                            <div class="cn384">
+                              <p class="cn385">
+                                Sprecher der Fraunhofer-Allianz Big Data und KI ist Prof. Dr. Stefan Wrobel. Auf dieser Seite finden Sie außerdem die Mitglieder des Lenkungskreises und eine Übersicht über das Team der Geschäftsstelle. 
+                                <br class="cn386" data-ditto-id="style-nav" />
+                                 
+                              </p>
+                            </div>
+                             
+                          </div>
+                           
+                          <div class="cn387" data-ditto-id="style-ul">
+                            <a class="cn388" data-ditto-id="interaction-li" href="https://www.bigdata-ai.fraunhofer.de/de/ueber-uns/organisation.html" target="_self" title="Mehr info">
+                              Mehr info
+                            </a>
+                          </div>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+            </div>
+          </div>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn389" data-ditto-id="style-link-29">
+        <div class="cn390"></div>
+         
+      </div>
+       
+      <footer class="cn391" data-ditto-id="style-link-30">
+        <div class="cn392">
+          <h2 class="cn393" data-ditto-id="style-link-31" id="Navigation-und-Social-Media">
+            Navigation und Social Media
+          </h2>
+           
+          <div class="cn394">
+            <div class="cn395" data-ditto-id="style-link-32">
+              <div class="cn396">
+                 
+              </div>
+               
+              <div class="cn397">
+                 
+                <ul class="cn398"></ul>
+                 
+              </div>
+               
+            </div>
+             
+            <div class="cn399" data-ditto-id="style-link-35">
+              <div class="cn400" data-ditto-id="style-link-36">
+                 
+                <h3 class="cn401" data-ditto-id="interaction-faq-faqitem-987626722-answer">
+                  Kooperationen
+                </h3>
+                 
+                <form class="cn402">
+                  <div class="cn403">
+                    <select class="cn404" id="relatedLinks" name="cooperation">
+                      <option class="cn405" data-ditto-id="style-div-18" value="http://www.fraunhofer.de/">
+                        Fraunhofer-Gesellschaft
+                      </option>
+                      <option class="cn406" value="https://www.fraunhofer.at/">
+                        Fraunhofer Austria
+                      </option>
+                      <option class="cn407" value="http://www.fit.fraunhofer.de">
+                        Fraunhofer FIT
+                      </option>
+                      <option class="cn408" value="http://www.fkie.fraunhofer.de/">
+                        Fraunhofer FKIE
+                      </option>
+                      <option class="cn409" data-ditto-id="style-br-4" value="http://www.fokus.fraunhofer.de/">
+                        Fraunhofer FOKUS
+                      </option>
+                      <option class="cn410" value="http://www.hhi.fraunhofer.de/">
+                        Fraunhofer HHI
+                      </option>
+                      <option class="cn411" value="http://www.iais.fraunhofer.de">
+                        Fraunhofer IAIS
+                      </option>
+                      <option class="cn412" value="http://www.iao.fraunhofer.de/">
+                        Fraunhofer IAO
+                      </option>
+                      <option class="cn413" data-ditto-id="style-div-19" value="http://www.idmt.fraunhofer.de/">
+                        Fraunhofer IDMT
+                      </option>
+                      <option class="cn414" value="https://www.iee.fraunhofer.de/">
+                        Fraunhofer IEE
+                      </option>
+                      <option class="cn415" value="https://www.iem.fraunhofer.de/">
+                        Fraunhofer IEM
+                      </option>
+                      <option class="cn416" value="http://www.iese.fraunhofer.de/">
+                        Fraunhofer IESE
+                      </option>
+                      <option class="cn417" value="http://www.iff.fraunhofer.de/">
+                        Fraunhofer IFF
+                      </option>
+                      <option class="cn418" data-ditto-id="style-form" value="http://www.igd.fraunhofer.de/">
+                        Fraunhofer IGD
+                      </option>
+                      <option class="cn419" value="http://www.iis.fraunhofer.de/">
+                        Fraunhofer IIS
+                      </option>
+                      <option class="cn420" value="https://www.ikts.fraunhofer.de/">
+                        Fraunhofer IKTS
+                      </option>
+                      <option class="cn421" value="http://www.ime.fraunhofer.de/">
+                        Fraunhofer IME
+                      </option>
+                      <option class="cn422" value="http://www.iml.fraunhofer.de/">
+                        Fraunhofer IML
+                      </option>
+                      <option class="cn423" value="https://www.ims.fraunhofer.de/">
+                        Fraunhofer IMS
+                      </option>
+                      <option class="cn424" value="https://www.imw.fraunhofer.de/de.html">
+                        Fraunhofer IMW
+                      </option>
+                      <option class="cn425" value="http://www.iosb.fraunhofer.de/">
+                        Fraunhofer IOSB
+                      </option>
+                      <option class="cn426" value="http://www.ipa.fraunhofer.de">
+                        Fraunhofer IPA
+                      </option>
+                      <option class="cn427" value="http://www.ipk.fraunhofer.de/">
+                        Fraunhofer IPK
+                      </option>
+                      <option class="cn428" value="http://www.ipt.fraunhofer.de/">
+                        Fraunhofer IPT
+                      </option>
+                      <option class="cn429" value="http://www.isi.fraunhofer.de/">
+                        Fraunhofer ISI
+                      </option>
+                      <option class="cn430" value="https://www.isst.fraunhofer.de/">
+                        Fraunhofer ISST
+                      </option>
+                      <option class="cn431" value="http://www.itwm.fraunhofer.de/">
+                        Fraunhofer ITWM
+                      </option>
+                      <option class="cn432" value="http://www.ivi.fraunhofer.de/">
+                        Fraunhofer IVI
+                      </option>
+                      <option class="cn433" value="https://www.ivv.fraunhofer.de/">
+                        Fraunhofer IVV
+                      </option>
+                      <option class="cn434" value="https://www.izfp.fraunhofer.de/">
+                        Fraunhofer IZFP
+                      </option>
+                      <option class="cn435" value="http://www.lbf.fraunhofer.de/">
+                        Fraunhofer LBF
+                      </option>
+                      <option class="cn436" value="http://www.mevis.fraunhofer.de/">
+                        Fraunhofer MEVIS
+                      </option>
+                      <option class="cn437" value="http://www.scai.fraunhofer.de/">
+                        Fraunhofer SCAI
+                      </option>
+                      <option class="cn438" value="http://www.sit.fraunhofer.de/">
+                        Fraunhofer SIT
+                      </option>
+                    </select>
+                     
+                  </div>
+                   
+                  <button class="cn439" data-ditto-id="style-span-8" type="submit">
+                    Auswählen
+                  </button>
+                   
+                </form>
+                 
+              </div>
+               
+              <div class="cn440">
+                 
+                <h3 class="cn441">
+                  Folgen Sie uns
+                </h3>
+                 
+                <ul class="cn442">
+                  <li class="cn443">
+                     
+                    <a class="cn444" href="https://www.linkedin.com/company/fraunhofer-gesellschaft" target="_blank" title="Besuchen Sie uns bei LinkedIn"></a>
+                     
+                  </li>
+                </ul>
+                 
+              </div>
+               
+            </div>
+             
+            <div class="cn445">
+              <div class="cn446">
+                 
+                <nav class="cn447">
+                  <ul class="cn448">
+                    <li class="cn449">
+                       
+                      <a class="cn450" data-ditto-id="style-input-2" href="https://www.bigdata-ai.fraunhofer.de/de/sitemap.html">
+                        Sitemap
+                      </a>
+                    </li>
+                    <li class="cn451">
+                       
+                      <a class="cn452" data-ditto-id="style-div-31" href="https://www.bigdata-ai.fraunhofer.de/de/internerBereich.html">
+                        Interner Bereich
+                      </a>
+                    </li>
+                    <li class="cn453">
+                       
+                      <a class="cn454" data-ditto-id="style-span-11" href="https://www.bigdata-ai.fraunhofer.de/de/impressum.html">
+                        Impressum
+                      </a>
+                    </li>
+                    <li class="cn455">
+                       
+                      <a class="cn456" data-ditto-id="style-link-44" href="https://www.bigdata-ai.fraunhofer.de/de/datenschutzerklaerung.html">
+                        Datenschutzinformation
+                      </a>
+                    </li>
+                  </ul>
+                   
+                </nav>
+                 
+              </div>
+               
+              <div class="cn457">
+                <span class="cn458">
+                  © 2026 
+                </span>
+                 
+              </div>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </footer>
+       
+    </div>
+     
+</body>
+</html>

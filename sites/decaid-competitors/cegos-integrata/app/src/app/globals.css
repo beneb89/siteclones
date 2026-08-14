@@ -1,0 +1,236 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-background: var(--background);
+  --color-clr-0: var(--clr-0);
+  --color-color-003: var(--color-003);
+  --color-primary: var(--primary);
+  --color-color-005: var(--color-005);
+  --color-color-019: var(--color-019);
+  --color-surface: var(--surface);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-color-001: var(--color-001);
+  --color-accent: var(--accent);
+  --color-color-004: var(--color-004);
+  --color-color-002: var(--color-002);
+  --color-color-006: var(--color-006);
+  --color-muted: var(--muted);
+  --color-clr-3: var(--clr-3);
+  --color-color-014: var(--color-014);
+  --color-clr-4: var(--clr-4);
+  --color-color-008: var(--color-008);
+  --color-color-007: var(--color-007);
+  --color-color-017: var(--color-017);
+  --color-color-009: var(--color-009);
+  --color-clr-5: var(--clr-5);
+  --color-color-022: var(--color-022);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-color-011: var(--color-011);
+  --color-color-010: var(--color-010);
+  --color-color-012: var(--color-012);
+  --color-color-015: var(--color-015);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-color-020: var(--color-020);
+  --color-color-013: var(--color-013);
+  --color-color-018: var(--color-018);
+  --color-color-023: var(--color-023);
+  --color-clr-13: var(--clr-13);
+  --color-clr-14: var(--clr-14);
+  --color-color-021: var(--color-021);
+  --color-color-016: var(--color-016);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-15: var(--clr-15);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(29, 0, 0);
+  --primary: rgb(230, 35, 58);
+  --accent: rgb(0, 70, 65);
+  --border: rgb(228, 228, 228);
+  --surface: rgb(244, 242, 242);
+  --muted-foreground: rgb(128, 128, 128);
+  --muted: rgb(100, 100, 100);
+  --color-001: rgb(98, 0, 59);
+  --color-002: rgb(0, 62, 0);
+  --color-003: rgb(0, 0, 0);
+  --color-004: rgb(45, 0, 81);
+  --color-005: rgb(165, 0, 98);
+  --color-006: rgb(34, 43, 61);
+  --color-007: rgb(249, 203, 210);
+  --color-008: rgba(29, 0, 0, 0.25);
+  --color-009: rgb(255, 85, 39);
+  --color-010: rgb(189, 244, 204);
+  --color-011: rgb(179, 223, 255);
+  --color-012: rgb(255, 240, 198);
+  --color-013: rgb(222, 197, 255);
+  --color-014: rgba(118, 118, 118, 0.3);
+  --color-015: oklab(0 0 0 / 0.2);
+  --color-016: rgb(207, 229, 177);
+  --color-017: rgb(0, 158, 170);
+  --color-018: rgb(161, 234, 230);
+  --color-019: rgb(246, 167, 215);
+  --color-020: rgb(31, 40, 46);
+  --color-021: rgb(56, 84, 56);
+  --color-022: rgb(0, 196, 102);
+  --color-023: rgb(208, 224, 234);
+}
+
+:root {
+  /* fonts */
+  --font-body: Raleway, sans-serif, sans-serif;
+  --font-001: Raleway, sans-serif;
+  --font-002: Ryker, sans-serif;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 14.1111px;
+  --font-size-004: 16px;
+  --font-size-005: 20px;
+  --font-size-006: 24px;
+  --font-size-007: 40px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 20.3px;
+  --line-height-002: 18px;
+  --line-height-003: 16px;
+  --line-height-004: 12.18px;
+  --line-height-005: 23.2px;
+  --line-height-006: 16.8px;
+  --line-height-007: 21px;
+  --line-height-008: 25px;
+  --line-height-009: 17.5px;
+  --line-height-010: 34.8px;
+  --line-height-011: 58px;
+  --line-height-012: 20px;
+  --line-height-013: 20.4611px;
+  /* spacing */
+  --space-001: 1px;
+  --space-002: 5px;
+  --space-003: 6px;
+  --space-004: 8px;
+  --space-005: 9px;
+  --space-006: 10px;
+  --space-007: 11px;
+  --space-008: 12px;
+  --space-009: 14px;
+  --space-010: 15px;
+  --space-011: 16px;
+  --space-012: 18px;
+  --space-013: 20px;
+  --space-014: 24px;
+  --space-015: 25px;
+  --space-016: 30px;
+  --space-017: 32px;
+  --space-018: 40px;
+  --space-019: 44.9219px;
+  --space-020: 50px;
+  --space-021: 78.3906px;
+  --space-022: 100px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  --radius-002: 4px;
+  --radius-003: 10px;
+  --radius-004: 40px;
+  --radius-005: 50%;
+  /* zIndices */
+  --z-001: 1;
+  --z-002: 3;
+  --z-003: 10;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgb(117, 117, 117);
+  --clr-2: rgb(249, 249, 249);
+  --clr-3: rgba(0, 0, 0, 0.15);
+  --clr-4: rgba(16, 16, 16, 0.3);
+  --clr-5: rgb(82, 82, 82);
+  --clr-6: rgb(162, 97, 225);
+  --clr-7: rgb(193, 111, 97);
+  --clr-8: rgb(237, 64, 169);
+  --clr-9: rgb(255, 185, 62);
+  --clr-10: rgb(0, 123, 234);
+  --clr-11: rgb(115, 57, 9);
+  --clr-12: rgb(88, 192, 112);
+  --clr-13: rgba(0, 0, 0, 0.1);
+  --clr-14: rgb(115, 122, 128);
+  --clr-15: rgb(109, 59, 56);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("/assets/cloned/fonts/dfd54c12d135.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ryker";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("/assets/cloned/fonts/78f4fc6c2121.otf") format("opentype");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+}
