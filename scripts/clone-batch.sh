@@ -54,6 +54,11 @@ total=${#ROWS[@]}
 echo "clone-batch: $total target(s) from $(basename "$TARGETS")"
 
 declare -a OK=() FAILED=() SKIPPED=()
+# A one-line-per-target record of how the run went. The full logs are large
+# and end up buried behind thousands of lines of git output in CI, so keep the
+# verdicts somewhere small enough to read directly.
+SUMMARY="$LOG_DIR/_summary.tsv"
+: >"$SUMMARY"
 i=0
 for row in "${ROWS[@]}"; do
   i=$((i + 1))
@@ -64,6 +69,7 @@ for row in "${ROWS[@]}"; do
 
   if [ "$FORCE" -eq 0 ] && [ -d "$dest/app" ]; then
     echo "        already cloned, skipping (--force to redo)"
+    printf '%s\t%s\t%s\t%s\n' "skipped" "$slug" "$url" "" >>"$SUMMARY"
     SKIPPED+=("$url")
     continue
   fi
@@ -86,14 +92,19 @@ for row in "${ROWS[@]}"; do
       mv "$produced" "$dest/app"
       [ -d "$(dirname "$produced")/.clone" ] && mv "$(dirname "$produced")/.clone" "$dest/.clone"
       echo "        ok — $OUT_REL/$slug/app"
+      printf '%s\t%s\t%s\t%s\n' "ok" "$slug" "$url" "" >>"$SUMMARY"
       OK+=("$url")
     else
-      echo "        FAILED — clone reported success but produced no app/"
+      reason="clone reported success but produced no app/"
+      echo "        FAILED — $reason"
+      printf '%s\t%s\t%s\t%s\n' "failed" "$slug" "$url" "$reason" >>"$SUMMARY"
       FAILED+=("$url")
     fi
   else
-    echo "        FAILED — $(grep -m1 -iE '^error|Error:' "$log" | cut -c1-160)"
+    reason="$(grep -m1 -iE '^error|Error:' "$log" | cut -c1-200)"
+    echo "        FAILED — $reason"
     echo "        log: $LOG_REL/$slug.log"
+    printf '%s\t%s\t%s\t%s\n' "failed" "$slug" "$url" "${reason:-no error line in log}" >>"$SUMMARY"
     FAILED+=("$url")
   fi
   rm -rf "$work"

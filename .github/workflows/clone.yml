@@ -152,7 +152,9 @@ jobs:
             echo "no new site output to commit"
             exit 0
           fi
-          git commit -m "Clone sites from ${{ matrix.target.list }}
+          # -q: a capture commits thousands of files, and printing every path
+          # pushes the batch's own failure summary out of reach of the log API.
+          git commit -q -m "Clone sites from ${{ matrix.target.list }}
 
           Captured on a GitHub runner (run ${{ github.run_id }}), since the
           sandbox's egress policy blocks the target hosts."
@@ -191,8 +193,19 @@ jobs:
               echo "Some targets failed — see the \`clone-logs\` artifact."
             fi
             echo
-            echo '```'
-            ls -1 "sites/$DEST" 2>/dev/null | sed "s|^|sites/$DEST/|" \
-              || echo "(nothing under sites/$DEST)"
-            echo '```'
+            # The per-target verdicts, so a failure's reason is readable here
+            # instead of only inside the log artifact.
+            summary="logs/${DEST}/_summary.tsv"
+            if [ -f "$summary" ]; then
+              echo '| status | site | reason |'
+              echo '| --- | --- | --- |'
+              while IFS=$'\t' read -r status slug url reason; do
+                printf '| %s | %s | %s |\n' "$status" "$slug" "${reason:-—}"
+              done <"$summary"
+            else
+              echo '```'
+              ls -1 "sites/$DEST" 2>/dev/null | sed "s|^|sites/$DEST/|" \
+                || echo "(nothing under sites/$DEST)"
+              echo '```'
+            fi
           } >>"$GITHUB_STEP_SUMMARY"

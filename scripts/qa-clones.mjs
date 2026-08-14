@@ -91,13 +91,21 @@ for (const { list, dest, flags } of readPlan()) {
     }
     const routes = countRoutes(join(app, "src", "app"));
     const bytes = dirBytes(site);
-    const hasEntry = existsSync(join(app, "src", "app", "page.tsx"));
+    // A multi-page capture mirrors the site's paths, so the entry page lands
+    // at the target URL's own path rather than at the root: ihk.de/koeln
+    // generates src/app/koeln/page.tsx and no root page at all. A single-page
+    // capture always writes one page at the root, whatever the URL's path.
+    const entryPath = multi ? new URL(url).pathname.replace(/^\/|\/$/g, "") : "";
+    const hasEntry = existsSync(join(app, "src", "app", entryPath, "page.tsx"));
 
     let status = "ok";
-    if (!hasEntry) status = "thin";
+    if (!hasEntry) status = "no-entry";
     else if (maxRoutes && routes >= maxRoutes) status = "capped";
     else if (multi && routes === 1 && depth) status = "depth";
-    else if (multi && routes === 1) status = "thin";
+    // One route is fine for a genuine one-pager; one route and almost no
+    // payload is worth a look — a placeholder or the wrong domain looks
+    // exactly like this.
+    else if (multi && routes === 1 && bytes < 1_000_000) status = "thin";
 
     rows.push({ list, dest, slug, url, status, routes, maxRoutes, depth, bytes });
   }
@@ -155,7 +163,8 @@ if (process.argv.includes("--json")) {
   const by = (s) => rows.filter((r) => r.status === s).length;
   console.log(
     `\n${rows.length} targets: ${by("ok")} ok, ${by("capped")} capped, ` +
-      `${by("depth")} depth-bound, ${by("thin")} thin, ${by("MISSING")} missing`,
+      `${by("depth")} depth-bound, ${by("thin")} thin, ` +
+      `${by("no-entry")} without entry, ${by("MISSING")} missing`,
   );
   if (orphans.length) {
     console.log(`\n${orphans.length} clone(s) no list claims any more:`);
@@ -165,7 +174,8 @@ if (process.argv.includes("--json")) {
     console.log(
       "\ncapped  = crawl hit --max-routes; the site has more pages than were kept" +
         "\ndepth   = only the entry page came through under --depth" +
-        "\nthin    = cloned but bare — check it rendered at all" +
+        "\nthin     = one route and almost no payload — placeholder or wrong domain?" +
+        "\nno-entry = nothing generated at the target URL's own path" +
         "\nMISSING = capture failed; logs/<dest>/<slug>.log has the reason",
     );
   }
