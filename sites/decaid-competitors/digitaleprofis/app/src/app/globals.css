@@ -1,0 +1,285 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-surface-9: var(--surface-9);
+  --color-clr-0: var(--clr-0);
+  --color-color-002: var(--color-002);
+  --color-clr-1: var(--clr-1);
+  --color-muted: var(--muted);
+  --color-surface-8: var(--surface-8);
+  --color-surface-5: var(--surface-5);
+  --color-color-005: var(--color-005);
+  --color-clr-2: var(--clr-2);
+  --color-color-006: var(--color-006);
+  --color-surface-4: var(--surface-4);
+  --color-surface-2: var(--surface-2);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-color-007: var(--color-007);
+  --color-primary: var(--primary);
+  --color-surface-7: var(--surface-7);
+  --color-clr-3: var(--clr-3);
+  --color-surface: var(--surface);
+  --color-color-001: var(--color-001);
+  --color-color-008: var(--color-008);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-color-004: var(--color-004);
+  --color-surface-10: var(--surface-10);
+  --color-color-012: var(--color-012);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-surface-11: var(--surface-11);
+  --color-surface-6: var(--surface-6);
+  --color-surface-3: var(--surface-3);
+  --color-clr-10: var(--clr-10);
+  --color-surface-12: var(--surface-12);
+  --color-accent: var(--accent);
+  --color-color-003: var(--color-003);
+  --color-color-011: var(--color-011);
+  --color-color-009: var(--color-009);
+  --color-color-010: var(--color-010);
+  --color-color-013: var(--color-013);
+  --color-color-014: var(--color-014);
+  --color-clr-11: var(--clr-11);
+  --color-color-015: var(--color-015);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(26, 25, 24);
+  --primary: rgb(226, 208, 196);
+  --accent: rgb(0, 184, 132);
+  --border: rgba(26, 25, 24, 0.08);
+  --muted-foreground: rgb(112, 107, 103);
+  --surface: rgba(255, 255, 255, 0.16);
+  --muted: rgb(90, 85, 81);
+  --surface-2: rgb(233, 224, 216);
+  --surface-3: rgba(255, 255, 255, 0.12);
+  --surface-4: rgb(248, 244, 241);
+  --surface-5: rgba(255, 255, 255, 0.92);
+  --surface-6: rgba(248, 244, 241, 0.36);
+  --surface-7: rgb(246, 238, 233);
+  --surface-8: rgba(248, 244, 241, 0.82);
+  --surface-9: rgba(255, 255, 255, 0.86);
+  --surface-10: rgba(245, 245, 247, 0.08);
+  --surface-11: rgba(248, 244, 241, 0.9);
+  --surface-12: rgb(240, 240, 240);
+  --color-001: rgb(245, 245, 247);
+  --color-002: rgb(66, 66, 69);
+  --color-003: rgb(0, 0, 0);
+  --color-004: rgb(230, 177, 147);
+  --color-005: rgba(255, 255, 255, 0.55);
+  --color-006: rgb(63, 74, 77);
+  --color-007: rgb(141, 78, 48);
+  --color-008: rgba(245, 245, 247, 0.68);
+  --color-009: rgb(15, 20, 25);
+  --color-010: rgb(83, 100, 113);
+  --color-011: rgb(207, 217, 222);
+  --color-012: rgba(245, 245, 247, 0.75);
+  --color-013: rgb(0, 111, 214);
+  --color-014: rgb(29, 155, 240);
+  --color-015: rgb(249, 24, 128);
+}
+
+:root {
+  /* fonts */
+  --font-body: Geist, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 13px;
+  --font-size-003: 14px;
+  --font-size-004: 15px;
+  --font-size-005: 16px;
+  --font-size-006: 17px;
+  --font-size-007: 19px;
+  --font-size-008: 26.4px;
+  --font-size-009: 40px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 520;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  --font-weight-005: 710;
+  --font-weight-006: 740;
+  --font-weight-007: 750;
+  /* lineHeights */
+  --line-height-001: 25.6px;
+  --line-height-002: 18.2px;
+  --line-height-003: 22.4px;
+  --line-height-004: 21px;
+  --line-height-005: 25.5px;
+  --line-height-006: 12px;
+  --line-height-007: 29.568px;
+  --line-height-008: 41.6px;
+  --line-height-009: 20.8px;
+  --line-height-010: 23.46px;
+  --line-height-011: 21.7px;
+  --line-height-012: 25.46px;
+  --line-height-013: 27.2px;
+  /* spacing */
+  --space-001: -30px;
+  --space-002: -1px;
+  --space-003: 4px;
+  --space-004: 5px;
+  --space-005: 6px;
+  --space-006: 7px;
+  --space-007: 8px 12px;
+  --space-008: 8px;
+  --space-009: 9px;
+  --space-010: 10px;
+  --space-011: 12px;
+  --space-012: 12.16px;
+  --space-013: 12.8px;
+  --space-014: 15.2px;
+  --space-015: 16px;
+  --space-016: 19.2px;
+  --space-017: 20px;
+  --space-018: 22px;
+  --space-019: 24px;
+  --space-020: 28px;
+  --space-021: 30px;
+  --space-022: 34px;
+  --space-023: 42px;
+  --space-024: 51.2px;
+  --space-025: 54px;
+  --space-026: 76.8px;
+  /* radii */
+  --radius-001: 12px;
+  --radius-002: 28px;
+  --radius-003: 34px;
+  --radius-004: 999px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0.07);
+  --clr-1: rgba(0, 0, 0, 0);
+  --clr-2: rgba(0, 0, 0, 0.24);
+  --clr-3: rgba(255, 255, 255, 0.72);
+  --clr-4: rgb(251, 248, 246);
+  --clr-5: rgba(182, 107, 70, 0.24);
+  --clr-6: rgb(44, 44, 46);
+  --clr-7: rgb(17, 17, 17);
+  --clr-8: rgb(255, 180, 171);
+  --clr-9: rgba(251, 248, 246, 0.74);
+  --clr-10: rgba(0, 0, 0, 0.04);
+  --clr-11: rgb(247, 249, 249);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Geist";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fc8d1d088f74.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3938a52b71cd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bd7a3f0ba00c.woff2") format("woff2"), url("/assets/cloned/fonts/d7e08702cdbf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/36e59b632804.woff2") format("woff2"), url("/assets/cloned/fonts/61097ac70449.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/af6ae65ef395.woff2") format("woff2"), url("/assets/cloned/fonts/32e5bfdac02c.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c87e593312b6.woff2") format("woff2"), url("/assets/cloned/fonts/50604cc618cd.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3fda5730669f.woff2") format("woff2"), url("/assets/cloned/fonts/2aab2fa152e0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirpExtendedHeavy";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/831133395446.woff2") format("woff2"), url("/assets/cloned/fonts/3a8921493daa.woff") format("woff");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

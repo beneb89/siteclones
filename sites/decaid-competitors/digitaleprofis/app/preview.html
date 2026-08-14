@@ -1,0 +1,1572 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KI verstehen. Sicher anwenden. | Digitale Profis</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Geist";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fc8d1d088f74.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3938a52b71cd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bd7a3f0ba00c.woff2") format("woff2"), url("public/assets/cloned/fonts/d7e08702cdbf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/36e59b632804.woff2") format("woff2"), url("public/assets/cloned/fonts/61097ac70449.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/af6ae65ef395.woff2") format("woff2"), url("public/assets/cloned/fonts/32e5bfdac02c.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c87e593312b6.woff2") format("woff2"), url("public/assets/cloned/fonts/50604cc618cd.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3fda5730669f.woff2") format("woff2"), url("public/assets/cloned/fonts/2aab2fa152e0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirpExtendedHeavy";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/831133395446.woff2") format("woff2"), url("public/assets/cloned/fonts/3a8921493daa.woff") format("woff");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(26, 25, 24);
+  --primary: rgb(226, 208, 196);
+  --accent: rgb(0, 184, 132);
+  --border: rgba(26, 25, 24, 0.08);
+  --muted-foreground: rgb(112, 107, 103);
+  --surface: rgba(255, 255, 255, 0.16);
+  --muted: rgb(90, 85, 81);
+  --surface-2: rgb(233, 224, 216);
+  --surface-3: rgba(255, 255, 255, 0.12);
+  --surface-4: rgb(248, 244, 241);
+  --surface-5: rgba(255, 255, 255, 0.92);
+  --surface-6: rgba(248, 244, 241, 0.36);
+  --surface-7: rgb(246, 238, 233);
+  --surface-8: rgba(248, 244, 241, 0.82);
+  --surface-9: rgba(255, 255, 255, 0.86);
+  --surface-10: rgba(245, 245, 247, 0.08);
+  --surface-11: rgba(248, 244, 241, 0.9);
+  --surface-12: rgb(240, 240, 240);
+  --color-001: rgb(245, 245, 247);
+  --color-002: rgb(66, 66, 69);
+  --color-003: rgb(0, 0, 0);
+  --color-004: rgb(230, 177, 147);
+  --color-005: rgba(255, 255, 255, 0.55);
+  --color-006: rgb(63, 74, 77);
+  --color-007: rgb(141, 78, 48);
+  --color-008: rgba(245, 245, 247, 0.68);
+  --color-009: rgb(15, 20, 25);
+  --color-010: rgb(83, 100, 113);
+  --color-011: rgb(207, 217, 222);
+  --color-012: rgba(245, 245, 247, 0.75);
+  --color-013: rgb(0, 111, 214);
+  --color-014: rgb(29, 155, 240);
+  --color-015: rgb(249, 24, 128);
+}
+
+:root {
+  /* fonts */
+  --font-body: Geist, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 13px;
+  --font-size-003: 14px;
+  --font-size-004: 15px;
+  --font-size-005: 16px;
+  --font-size-006: 17px;
+  --font-size-007: 19px;
+  --font-size-008: 26.4px;
+  --font-size-009: 40px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 520;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  --font-weight-005: 710;
+  --font-weight-006: 740;
+  --font-weight-007: 750;
+  /* lineHeights */
+  --line-height-001: 25.6px;
+  --line-height-002: 18.2px;
+  --line-height-003: 22.4px;
+  --line-height-004: 21px;
+  --line-height-005: 25.5px;
+  --line-height-006: 12px;
+  --line-height-007: 29.568px;
+  --line-height-008: 41.6px;
+  --line-height-009: 20.8px;
+  --line-height-010: 23.46px;
+  --line-height-011: 21.7px;
+  --line-height-012: 25.46px;
+  --line-height-013: 27.2px;
+  /* spacing */
+  --space-001: -30px;
+  --space-002: -1px;
+  --space-003: 4px;
+  --space-004: 5px;
+  --space-005: 6px;
+  --space-006: 7px;
+  --space-007: 8px 12px;
+  --space-008: 8px;
+  --space-009: 9px;
+  --space-010: 10px;
+  --space-011: 12px;
+  --space-012: 12.16px;
+  --space-013: 12.8px;
+  --space-014: 15.2px;
+  --space-015: 16px;
+  --space-016: 19.2px;
+  --space-017: 20px;
+  --space-018: 22px;
+  --space-019: 24px;
+  --space-020: 28px;
+  --space-021: 30px;
+  --space-022: 34px;
+  --space-023: 42px;
+  --space-024: 51.2px;
+  --space-025: 54px;
+  --space-026: 76.8px;
+  /* radii */
+  --radius-001: 12px;
+  --radius-002: 28px;
+  --radius-003: 34px;
+  --radius-004: 999px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0.07);
+  --clr-1: rgba(0, 0, 0, 0);
+  --clr-2: rgba(0, 0, 0, 0.24);
+  --clr-3: rgba(255, 255, 255, 0.72);
+  --clr-4: rgb(251, 248, 246);
+  --clr-5: rgba(182, 107, 70, 0.24);
+  --clr-6: rgb(44, 44, 46);
+  --clr-7: rgb(17, 17, 17);
+  --clr-8: rgb(255, 180, 171);
+  --clr-9: rgba(251, 248, 246, 0.74);
+  --clr-10: rgba(0, 0, 0, 0.04);
+  --clr-11: rgb(247, 249, 249);
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{display:block;color:var(--foreground);font-family:Geist, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:25.6px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{min-height:100vh;display:block;overflow-x:clip}
+.cn2{width:186px;height:47.9688px;display:block;position:fixed;top:12px;left:12px;z-index:100;padding-top:11.2px;padding-right:16px;padding-bottom:11.2px;padding-left:16px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;color:var(--background);font-weight:600;background-color:var(--foreground);transform:matrix(1, 0, 0, 1, 0, -71.9688);transform-origin:93px 23.9844px;cursor:pointer}
+.cn3{height:54px;min-height:52px;border-width:1px;border-style:solid;border-color:var(--border);display:block;position:fixed;top:24px;right:-440px;left:clamp(187.5px, 50%, calc(100% - 187.5px));z-index:20;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;background-color:var(--surface-9);box-shadow:rgba(0, 0, 0, 0.07) 0px 12px 34px 0px;backdrop-filter:saturate(1.5) blur(18px);transform:matrix(1, 0, 0, 1, -540, 0);transform-origin:540px 27px}
+.cn4{height:52px;min-height:52px;display:grid;padding-right:12px;padding-left:20px;align-items:center;row-gap:20px;column-gap:20px;grid-template-columns:140px 730px 136px;grid-template-rows:52px}
+.cn5{height:28px;display:flex;min-width:0px;max-width:220px;align-items:center;row-gap:9px;column-gap:9px}
+.cn6{width:28px;height:28px;display:block;overflow-x:clip;overflow-y:clip;object-fit:contain;aspect-ratio:auto 28 / 28}
+.cn7{height:15px;display:block;overflow-x:hidden;overflow-y:hidden;font-size:15px;font-weight:700;line-height:15px;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn8{height:25.5938px;display:block}
+.cn9{height:25.5938px;display:flex;justify-content:center;align-items:center;row-gap:21.76px;column-gap:21.76px;list-style-type:none;list-style-position:outside}
+.cn10{display:list-item}
+.cn11{display:inline-flex;align-items:center;row-gap:5px;column-gap:5px;color:var(--color-002);font-size:13px;font-weight:520;line-height:20.8px;cursor:pointer}
+.cn12{display:list-item}
+.cn13{display:inline-flex;align-items:center;row-gap:5px;column-gap:5px;color:var(--color-002);font-size:13px;font-weight:520;line-height:20.8px;cursor:pointer;white-space:nowrap}
+.cn14{height:25.5938px;display:list-item}
+.cn15{height:20.7969px;display:inline-flex;align-items:center;row-gap:5px;column-gap:5px;color:var(--color-002);font-size:13px;font-weight:520;line-height:20.8px;cursor:pointer;white-space:nowrap}
+.cn16{display:list-item}
+.cn17{display:inline-flex;align-items:center;row-gap:5px;column-gap:5px;color:var(--color-002);font-size:13px;font-weight:520;line-height:20.8px;cursor:pointer}
+.cn18{display:list-item}
+.cn19{display:inline-flex;align-items:center;row-gap:5px;column-gap:5px;color:var(--color-002);font-size:13px;font-weight:520;line-height:20.8px;cursor:pointer;white-space:nowrap}
+.cn20{display:list-item}
+.cn21{display:inline-flex;align-items:center;row-gap:5px;column-gap:5px;color:var(--color-002);font-size:13px;font-weight:520;line-height:20.8px;cursor:pointer}
+.cn22{display:flex;min-width:0px;align-items:center;row-gap:8px;column-gap:8px}
+.cn23{width:100%;height:34px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:grid;padding-right:8px;padding-left:8px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;row-gap:7px;column-gap:7px;grid-template-columns:20px 43px 41px;grid-template-rows:32px;grid-auto-flow:column;justify-items:center;font-size:12px;font-weight:600;line-height:12px;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn24{width:20px;height:20px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn24::before{content:"";display:block;position:absolute;top:4px;right:7px;bottom:7px;left:4px;width:9px;height:9px;border-top-left-radius:50%}
+.cn24::after{content:"";display:block;position:absolute;top:13px;right:0px;bottom:6px;left:13px;width:7px;height:1px;transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0);transform-origin:0px 0.5px}
+.cn25{display:block}
+.cn26{width:41px;border-width:1px;border-style:solid;border-color:var(--border);display:block;min-width:29px;padding-top:4px;padding-right:6px;padding-bottom:4px;padding-left:6px;border-top-left-radius:7px;border-top-right-radius:7px;border-bottom-right-radius:7px;border-bottom-left-radius:7px;color:var(--muted);font-size:10px;line-height:10px;text-align:center;background-color:var(--surface-8)}
+.cn27{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;clip-path:inset(50%)}
+.cn28{display:none;position:relative;min-width:0px}
+.cn29{width:34px;height:34px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:inline-grid;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;justify-items:center;cursor:pointer}
+.cn30{width:20px;height:20px;display:block;position:relative;min-width:0px}
+.cn30::before{content:"";display:block;position:absolute;top:5px;right:4px;left:4px;box-shadow:rgb(26, 25, 24) 0px 5px 0px 0px}
+.cn30::after{content:"";display:block;position:absolute;top:15px;right:4px;left:4px}
+.cn31{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn32{border-width:1px;border-style:solid;border-color:var(--border);display:block;position:absolute;top:calc(100% + 14px);right:0px;z-index:30;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;background-color:var(--surface-5);box-shadow:rgba(0, 0, 0, 0.07) 0px 12px 34px 0px;backdrop-filter:saturate(1.8) blur(24px)}
+.cn33{display:block}
+.cn34{display:block;padding-left:40px;list-style-type:disc;list-style-position:outside}
+.cn35{display:list-item}
+.cn36{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn37{display:list-item}
+.cn38{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn39{display:list-item}
+.cn40{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn41{display:list-item}
+.cn42{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn43{display:list-item}
+.cn44{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn45{display:list-item}
+.cn46{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn47{width:min(720px, 100% - 40px);height:fit-content;display:none;position:absolute;left:0px;max-height:704px;margin-top:80px;margin-bottom:auto}
+.cn48{border-width:1px;border-style:solid;border-color:var(--color-005);display:grid;max-height:704px;border-top-left-radius:34px;border-top-right-radius:34px;border-bottom-right-radius:34px;border-bottom-left-radius:34px;overflow-x:hidden;overflow-y:hidden;background-color:var(--background);box-shadow:rgba(0, 0, 0, 0.24) 0px 32px 90px 0px}
+.cn49{display:grid;min-width:0px;padding-top:28px;padding-right:28px;padding-bottom:18px;padding-left:28px;align-items:start;row-gap:22px;column-gap:22px;grid-template-columns:minmax(0px, 1fr) auto}
+.cn50{display:grid;min-width:0px;row-gap:8px;column-gap:8px}
+.cn51{display:block;min-width:0px;color:var(--color-006);font-size:13px;font-weight:700;line-height:13px}
+.cn52{display:block;min-width:0px;font-size:36px;font-weight:760;line-height:37.44px;overflow-wrap:break-word;text-wrap:balance}
+.cn53{width:38px;height:38px;border-width:1px;border-style:solid;border-color:var(--border);display:grid;position:relative;min-width:0px;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;align-items:center;justify-items:center;text-align:center;background-color:var(--surface-4);cursor:pointer}
+.cn54{display:block;min-width:0px}
+.cn54::before{content:"";display:block;position:absolute;top:18px;left:11px;width:16px}
+.cn54::after{content:"";display:block;position:absolute;top:18px;left:11px;width:16px}
+.cn55{display:block;min-width:0px;padding-right:28px;padding-bottom:18px;padding-left:28px}
+.cn56{min-height:62px;border-width:1px;border-style:solid;border-color:var(--surface-2);display:grid;padding-right:18px;padding-left:18px;border-top-left-radius:18px;border-top-right-radius:18px;border-bottom-right-radius:18px;border-bottom-left-radius:18px;align-items:center;row-gap:12px;column-gap:12px;grid-template-columns:auto minmax(0px, 1fr);background-color:var(--background);box-shadow:rgba(26, 25, 24, 0.06) 0px 10px 30px 0px}
+.cn57{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn58{width:20px;height:20px;display:block;position:relative;min-width:0px;color:var(--muted)}
+.cn58::before{content:"";display:block;position:absolute;top:4px;left:4px;width:9px;height:9px;border-top-left-radius:50%}
+.cn58::after{content:"";display:block;position:absolute;top:13px;left:13px;width:7px}
+.cn59{width:100%;min-height:46px;border-width:1px;border-style:solid;border-color:var(--surface-2);display:block;min-width:0px;padding-top:12.8px;padding-right:15.2px;padding-bottom:12.8px;padding-left:15.2px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-right-radius:12px;border-bottom-left-radius:12px;overflow-x:clip;overflow-y:clip;font-size:18px;line-height:21.6px;background-color:var(--background);cursor:text}
+.cn59::placeholder{color:rgb(112, 107, 103)}
+.cn60{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn61{display:grid;min-width:0px;padding-top:10px;padding-right:28px;padding-bottom:28px;padding-left:28px;row-gap:16px;column-gap:16px;color:var(--muted-foreground);font-size:14px;line-height:22.4px}
+.cn62{display:block;min-width:0px}
+.cn63{display:flex;min-width:0px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.cn64{border-width:1px;border-style:solid;border-color:var(--border);display:block;min-width:0px;padding-top:9px;padding-right:12px;padding-bottom:9px;padding-left:12px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;color:var(--foreground);font-size:13px;font-weight:600;line-height:20.8px;background-color:var(--surface-4);cursor:pointer}
+.cn65{border-width:1px;border-style:solid;border-color:var(--border);display:block;min-width:0px;padding-top:9px;padding-right:12px;padding-bottom:9px;padding-left:12px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;color:var(--foreground);font-size:13px;font-weight:600;line-height:20.8px;background-color:var(--surface-4);cursor:pointer}
+.cn66{border-width:1px;border-style:solid;border-color:var(--border);display:block;min-width:0px;padding-top:9px;padding-right:12px;padding-bottom:9px;padding-left:12px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;color:var(--foreground);font-size:13px;font-weight:600;line-height:20.8px;background-color:var(--surface-4);cursor:pointer}
+.cn67{display:none;min-width:0px;padding-top:18px;padding-right:28px;padding-bottom:28px;padding-left:28px;color:var(--muted-foreground);font-size:15px;line-height:24px}
+.cn68{display:none;min-width:0px;max-height:416px;padding-right:14px;padding-left:14px;overflow-x:auto;overflow-y:auto;list-style-type:none;list-style-position:outside}
+.cn69{display:none;min-width:0px;padding-top:18px;padding-right:28px;padding-bottom:28px;padding-left:28px;color:var(--muted-foreground);font-size:15px;line-height:24px}
+.cn70{display:none;min-width:0px;padding-top:18px;padding-right:28px;padding-bottom:28px;padding-left:28px;color:var(--color-007);font-size:15px;line-height:24px}
+.cn71{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:none;min-width:0px;padding-top:14px;padding-right:28px;padding-bottom:24px;padding-left:28px}
+.cn72{display:flex;justify-content:space-between;row-gap:16px;column-gap:16px;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn73{display:block;min-width:0px}
+.cn74{display:block;min-width:0px}
+.cn75{display:block}
+.cn76{display:block;padding-bottom:76.8px}
+.cn77{height:507.312px;display:grid;padding-top:142px;padding-bottom:54px;align-content:center;grid-template-rows:311.312px;text-align:center;background-color:var(--surface-4);grid-template-columns:minmax(0, 1fr)}
+.cn78{display:block}
+.cn79{height:28px;border-width:1px;border-style:solid;border-color:var(--primary);display:inline-flex;max-width:100%;margin-bottom:16px;padding-top:7px;padding-right:10px;padding-bottom:7px;padding-left:10px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-006);font-size:12px;font-weight:750;line-height:12px;text-wrap:balance;background-color:var(--surface-7)}
+.cn80{display:block;font-size:60.16px;font-weight:730;line-height:58.9568px;overflow-wrap:break-word;text-wrap:balance}
+.cn81{display:block;max-width:760px;margin-top:20px;margin-right:auto;margin-left:auto;color:var(--muted);font-size:28px;font-weight:430;line-height:36.96px}
+.cn82{display:flex;margin-top:24px;flex-wrap:wrap;justify-content:center;row-gap:12px;column-gap:12px;font-size:17px;font-weight:600;line-height:27.2px}
+.cn83{height:53.5px;min-height:44px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;padding-top:12.16px;padding-right:19.2px;padding-bottom:12.16px;padding-left:19.2px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;justify-content:center;align-items:center;color:var(--background);background-color:var(--color-006);cursor:pointer}
+.cn84{height:53.5px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--surface-2);display:flex;padding-top:12.16px;padding-right:19.2px;padding-bottom:12.16px;padding-left:19.2px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;justify-content:center;align-items:center;background-color:rgba(255, 255, 255, 0.72);cursor:pointer}
+.cn85{height:53.5px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--surface-2);display:flex;padding-top:12.16px;padding-right:19.2px;padding-bottom:12.16px;padding-left:19.2px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;justify-content:center;align-items:center;background-color:rgba(255, 255, 255, 0.72);cursor:pointer}
+.cn86{width:1240px;display:grid;margin-top:76.8px;margin-right:20px;margin-left:20px;row-gap:34px;column-gap:34px;grid-template-rows:152.5px 428px;text-align:center;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn87{display:grid;max-width:780px;row-gap:16px;column-gap:16px;grid-template-rows:28px 41.5938px 50.9062px;justify-items:center;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn88{height:28px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:7px;padding-right:10px;padding-bottom:7px;padding-left:10px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-size:12px;font-weight:750;line-height:12px;white-space:nowrap;text-wrap:nowrap;background-color:var(--surface-7)}
+.cn89{display:block;font-size:40px;font-weight:710;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn90{display:block;max-width:720px;color:var(--muted-foreground);font-size:19px;line-height:25.46px;text-wrap:pretty}
+.cn91{display:grid;min-width:0px;row-gap:34px;column-gap:34px;grid-template-rows:428px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn92{display:grid;min-width:0px;row-gap:18px;column-gap:18px;grid-template-rows:220px 190px;grid-template-columns:repeat(12, minmax(0, 1fr))}
+.cn93{height:220px;min-height:220px;border-width:1px;border-style:solid;border-color:var(--border);display:grid;min-width:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;align-content:space-between;grid-template-rows:100.5px;grid-column-start:span 6;overflow-x:hidden;overflow-y:hidden;font-weight:600;text-align:left;background-color:var(--background);cursor:pointer;grid-template-columns:minmax(0, 1fr)}
+.cn94{display:block}
+.cn95{display:block;font-size:40px;font-weight:740;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn96{display:block;margin-top:12px;color:var(--muted-foreground);font-size:17px;line-height:23.46px}
+.cn97{height:220px;min-height:220px;border-width:1px;border-style:solid;border-color:var(--border);display:grid;min-width:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;align-content:space-between;grid-template-rows:100.5px;grid-column-start:span 6;overflow-x:hidden;overflow-y:hidden;font-weight:600;text-align:left;background-color:var(--surface-4);cursor:pointer;grid-template-columns:minmax(0, 1fr)}
+.cn98{display:block}
+.cn99{display:block;font-size:40px;font-weight:740;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn100{display:block;margin-top:12px;color:var(--muted);font-size:17px;line-height:23.46px}
+.cn101{height:190px;min-height:190px;border-width:1px;border-style:solid;border-color:var(--surface);display:grid;min-width:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;align-content:space-between;grid-template-rows:100.5px;grid-column-start:span 6;overflow-x:hidden;overflow-y:hidden;color:var(--color-001);font-weight:600;text-align:left;background-color:var(--foreground);cursor:pointer;grid-template-columns:minmax(0, 1fr)}
+.cn102{display:block}
+.cn103{display:block;font-size:40px;font-weight:740;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn104{display:block;margin-top:12px;color:var(--color-008);font-size:17px;line-height:23.46px}
+.cn105{height:190px;min-height:190px;border-width:1px;border-style:solid;border-color:var(--border);display:grid;min-width:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;align-content:space-between;grid-template-rows:123.953px;grid-column-start:span 3;overflow-x:hidden;overflow-y:hidden;font-weight:600;text-align:left;background-color:var(--background);cursor:pointer;grid-template-columns:minmax(0, 1fr)}
+.cn106{display:block}
+.cn107{display:block;font-size:40px;font-weight:740;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn108{display:block;margin-top:12px;color:var(--muted-foreground);font-size:17px;line-height:23.46px}
+.cn109{height:190px;min-height:190px;border-width:1px;border-style:solid;border-color:var(--border);display:grid;min-width:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;align-content:space-between;grid-template-rows:123.953px;grid-column-start:span 3;overflow-x:hidden;overflow-y:hidden;font-weight:600;text-align:left;background-color:var(--surface-4);cursor:pointer;grid-template-columns:minmax(0, 1fr)}
+.cn110{display:block}
+.cn111{display:block;font-size:40px;font-weight:740;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn112{display:block;margin-top:12px;color:var(--muted);font-size:17px;line-height:23.46px}
+.cn113{width:1240px;display:grid;margin-top:76.8px;margin-right:20px;margin-left:20px;row-gap:34px;column-gap:34px;grid-template-rows:152.5px 459.641px;text-align:left;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn114{display:grid;max-width:780px;row-gap:16px;column-gap:16px;grid-template-rows:28px 41.5938px 50.9062px;justify-items:start;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn115{height:28px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:7px;padding-right:10px;padding-bottom:7px;padding-left:10px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-size:12px;font-weight:750;line-height:12px;white-space:nowrap;text-wrap:nowrap;background-color:var(--surface-7)}
+.cn116{display:block;font-size:40px;font-weight:710;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn117{display:block;max-width:720px;color:var(--muted-foreground);font-size:19px;line-height:25.46px;text-wrap:pretty}
+.cn118{display:grid;min-width:0px;row-gap:34px;column-gap:34px;grid-template-rows:459.641px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn119{display:grid;min-width:0px;row-gap:24px;column-gap:24px;grid-template-rows:459.641px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn120{display:block;max-width:100%;list-style-type:none;list-style-position:outside}
+.cn121{height:100%;display:list-item}
+.cn122{height:100%;border-width:1px;border-style:solid;border-color:var(--primary);display:grid;padding-top:42px;padding-right:42px;padding-bottom:42px;padding-left:42px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;align-items:center;row-gap:16px;column-gap:42px;grid-template-rows:67.5781px 290.062px;grid-template-areas:"visual meta" "visual content";background-color:rgb(251, 248, 246);grid-template-columns:1fr 1.222fr}
+.cn122::before{content:"";display:block;width:500.391px;height:262.703px;background-color:rgb(26, 25, 24);background-image:url("public/assets/cloned/images/31ff8d41df87.jpg");background-size:cover;background-position:50% 50%;background-repeat:no-repeat;border-top-left-radius:20px}
+.cn123{height:67.5781px;display:grid;row-gap:12px;column-gap:12px;grid-template-rows:33.1875px 22.3906px;grid-column-start:meta;grid-column-end:meta;grid-row-start:meta;grid-row-end:meta;color:var(--muted-foreground);font-size:14px;font-weight:520;line-height:22.4px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn124{border-width:1px;border-style:solid;border-color:var(--primary);display:block;padding-top:6px;padding-right:10px;padding-bottom:6px;padding-left:10px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;color:var(--color-007);font-size:12px;font-weight:700;line-height:19.2px;background-color:var(--background)}
+.cn125{height:22.3906px;display:block}
+.cn126{display:inline}
+.cn127{display:block;min-width:0px;grid-column-start:content;grid-column-end:content;grid-row-start:content;grid-row-end:content}
+.cn128{display:block;max-width:792px;font-size:52px;font-weight:720;line-height:53.04px;letter-spacing:-1.3px;word-break:break-word;overflow-wrap:break-word;text-wrap:balance}
+.cn129{display:inline-block;cursor:pointer}
+.cn130{display:block;max-width:884px;margin-top:22px;color:var(--muted-foreground);font-size:20px;line-height:30px;text-wrap:pretty}
+.cn131{display:block}
+.cn132{height:48px;min-height:44px;display:inline-flex;margin-top:24px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;row-gap:8px;column-gap:8px;color:var(--background);font-size:15px;font-weight:600;line-height:24px;background-color:var(--color-006);cursor:pointer}
+.cn133{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn134{width:1240px;border-width:1px;border-style:solid;border-color:var(--border);display:grid;margin-top:76.8px;margin-right:20px;margin-left:20px;padding-top:51.2px;padding-right:51.2px;padding-bottom:51.2px;padding-left:51.2px;border-top-left-radius:34px;border-top-right-radius:34px;border-bottom-right-radius:34px;border-bottom-left-radius:34px;row-gap:34px;column-gap:34px;grid-template-rows:127.047px 1180.59px;text-align:left;background-color:var(--surface-4);grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn135{display:grid;max-width:780px;row-gap:16px;column-gap:16px;grid-template-rows:28px 41.5938px 25.4531px;justify-items:start;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn136{border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:7px;padding-right:10px;padding-bottom:7px;padding-left:10px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-size:12px;font-weight:750;line-height:12px;white-space:nowrap;text-wrap:nowrap;background-color:var(--surface-7)}
+.cn137{display:block;font-size:40px;font-weight:710;line-height:41.6px;overflow-wrap:break-word;text-wrap:balance}
+.cn138{display:block;max-width:720px;color:var(--muted-foreground);font-size:19px;line-height:25.46px;text-wrap:pretty}
+.cn139{display:grid;min-width:0px;row-gap:34px;column-gap:34px;grid-template-rows:1180.59px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn140{display:grid;min-width:0px;row-gap:24px;column-gap:24px;grid-template-rows:1180.59px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn141{display:grid;max-width:100%;align-items:stretch;row-gap:30.72px;column-gap:30.72px;grid-template-rows:589.719px 560.156px;list-style-type:none;list-style-position:outside;grid-template-columns:repeat(3, minmax(0, 1fr))}
+.cn142{display:list-item;min-width:0px;grid-column-start:span 2}
+.cn143{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;flex-direction:column;row-gap:22px;column-gap:28px;grid-template-rows:28.1875px 161.25px 251.281px 21px;overflow-x:hidden;overflow-y:hidden;background-color:rgb(251, 248, 246);grid-template-columns:1.353fr 1fr}
+.cn144{width:407.672px;min-height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:0px;margin-top:-30px;margin-bottom:-30px;margin-left:-30px;align-self:stretch;flex-shrink:0;grid-column-start:1;grid-row-start:1;grid-row-end:-1;overflow-x:hidden;overflow-y:hidden;background-color:var(--surface-4)}
+.cn145{height:587.719px;display:block;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn146{width:408px;height:588px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 1024 / 576;vertical-align:bottom}
+.cn147{height:28.1875px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;row-gap:8px;column-gap:12px;grid-column-start:2;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn148{display:flex;flex-wrap:wrap;row-gap:6px;column-gap:6px}
+.cn149{height:28.1875px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:4px;padding-right:9px;padding-bottom:4px;padding-left:9px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-weight:600;background-color:var(--surface-7);cursor:pointer}
+.cn150{height:18.1875px;display:block}
+.cn151{display:inline}
+.cn152{display:block;max-width:960px;grid-column-start:2;font-size:36px;font-weight:700;line-height:40.32px;word-break:break-word;overflow-wrap:break-word;text-wrap:balance}
+.cn153{display:inline-block;cursor:pointer}
+.cn154{height:251.281px;display:block;max-width:960px;flex-grow:1;grid-column-start:2;overflow-x:clip;overflow-y:clip;color:var(--muted-foreground);font-size:17px;line-height:25.5px;text-wrap:pretty}
+.cn155{height:102px;overflow-x:clip;overflow-y:clip;-webkit-line-clamp:4}
+.cn156{height:21px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:8px;column-gap:12px;grid-column-start:2;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn157{height:21px;display:block;color:var(--color-006);font-size:15px;font-weight:600;line-height:21px;cursor:pointer}
+.cn158{width:1px;height:1px;display:block;position:absolute;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn159{display:list-item;min-width:0px}
+.cn160{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;flex-direction:column;row-gap:22px;column-gap:22px;overflow-x:hidden;overflow-y:hidden;background-color:var(--background)}
+.cn161{width:356.062px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:-30px;margin-right:-30px;margin-left:-30px;align-self:stretch;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9;background-color:var(--surface-4)}
+.cn162{display:block;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn163{width:356px;height:200px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 1024 / 576;vertical-align:bottom}
+.cn164{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn165{display:flex;flex-wrap:wrap;row-gap:6px;column-gap:6px}
+.cn166{height:28.1875px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:4px;padding-right:9px;padding-bottom:4px;padding-left:9px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-weight:600;background-color:var(--surface-7);cursor:pointer}
+.cn167{height:18.1875px;display:block}
+.cn168{display:inline}
+.cn169{display:block;max-width:960px;font-size:26.4px;font-weight:700;line-height:29.568px;word-break:break-word;overflow-wrap:break-word;text-wrap:balance}
+.cn170{display:inline-block;cursor:pointer}
+.cn171{height:102px;display:block;max-width:960px;flex-grow:1;overflow-x:clip;overflow-y:clip;color:var(--muted-foreground);font-size:17px;line-height:25.5px;text-wrap:pretty}
+.cn172{height:102px;overflow-x:clip;overflow-y:clip;-webkit-line-clamp:4}
+.cn173{height:21px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn174{height:21px;display:block;color:var(--color-006);font-size:15px;font-weight:600;line-height:21px;cursor:pointer}
+.cn175{width:1px;height:1px;display:block;position:absolute;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn176{display:list-item;min-width:0px}
+.cn177{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;flex-direction:column;row-gap:22px;column-gap:22px;overflow-x:hidden;overflow-y:hidden;background-color:var(--background)}
+.cn178{width:356.062px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:-30px;margin-right:-30px;margin-left:-30px;align-self:stretch;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9;background-color:var(--surface-4)}
+.cn179{display:block;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn180{width:356px;height:200px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 1024 / 576;vertical-align:bottom}
+.cn181{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn182{display:flex;flex-wrap:wrap;row-gap:6px;column-gap:6px}
+.cn183{height:28.1875px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:4px;padding-right:9px;padding-bottom:4px;padding-left:9px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-weight:600;background-color:var(--surface-7);cursor:pointer}
+.cn184{height:18.1875px;display:block}
+.cn185{display:inline}
+.cn186{display:block;max-width:960px;font-size:26.4px;font-weight:700;line-height:29.568px;word-break:break-word;overflow-wrap:break-word;text-wrap:balance}
+.cn187{display:inline-block;cursor:pointer}
+.cn188{height:102px;display:block;max-width:960px;flex-grow:1;overflow-x:clip;overflow-y:clip;color:var(--muted-foreground);font-size:17px;line-height:25.5px;text-wrap:pretty}
+.cn189{height:102px;overflow-x:clip;overflow-y:clip;-webkit-line-clamp:4}
+.cn190{height:21px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn191{height:21px;display:block;color:var(--color-006);font-size:15px;font-weight:600;line-height:21px;cursor:pointer}
+.cn192{width:1px;height:1px;display:block;position:absolute;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn193{display:list-item;min-width:0px}
+.cn194{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;flex-direction:column;row-gap:22px;column-gap:22px;overflow-x:hidden;overflow-y:hidden;background-color:var(--background)}
+.cn195{width:356.062px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:-30px;margin-right:-30px;margin-left:-30px;align-self:stretch;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9;background-color:var(--surface-4)}
+.cn196{display:block;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn197{width:356px;height:200px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 1024 / 576;vertical-align:bottom}
+.cn198{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn199{display:flex;flex-wrap:wrap;row-gap:6px;column-gap:6px}
+.cn200{height:28.1875px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:4px;padding-right:9px;padding-bottom:4px;padding-left:9px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-weight:600;background-color:var(--surface-7);cursor:pointer}
+.cn201{height:18.1875px;display:block}
+.cn202{display:inline}
+.cn203{display:block;max-width:960px;font-size:26.4px;font-weight:700;line-height:29.568px;word-break:break-word;overflow-wrap:break-word;text-wrap:balance}
+.cn204{display:inline-block;cursor:pointer}
+.cn205{height:102px;display:block;max-width:960px;flex-grow:1;overflow-x:clip;overflow-y:clip;color:var(--muted-foreground);font-size:17px;line-height:25.5px;text-wrap:pretty}
+.cn206{height:102px;overflow-x:clip;overflow-y:clip;-webkit-line-clamp:4}
+.cn207{height:21px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn208{height:21px;display:block;color:var(--color-006);font-size:15px;font-weight:600;line-height:21px;cursor:pointer}
+.cn209{width:1px;height:1px;display:block;position:absolute;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn210{display:list-item;min-width:0px}
+.cn211{height:100%;border-width:1px;border-style:solid;border-color:var(--border);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;border-top-left-radius:28px;border-top-right-radius:28px;border-bottom-right-radius:28px;border-bottom-left-radius:28px;flex-direction:column;row-gap:22px;column-gap:22px;overflow-x:hidden;overflow-y:hidden;background-color:var(--background)}
+.cn212{width:356.062px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:-30px;margin-right:-30px;margin-left:-30px;align-self:stretch;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;aspect-ratio:16 / 9;background-color:var(--surface-4)}
+.cn213{display:block;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn214{width:356px;height:200px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 1024 / 576;vertical-align:bottom}
+.cn215{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn216{display:flex;flex-wrap:wrap;row-gap:6px;column-gap:6px}
+.cn217{height:28.1875px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:4px;padding-right:9px;padding-bottom:4px;padding-left:9px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-007);font-weight:600;background-color:var(--surface-7);cursor:pointer}
+.cn218{height:18.1875px;display:block}
+.cn219{display:inline}
+.cn220{display:block;max-width:960px;font-size:26.4px;font-weight:700;line-height:29.568px;word-break:break-word;overflow-wrap:break-word;text-wrap:balance}
+.cn221{display:inline-block;cursor:pointer}
+.cn222{height:131.562px;display:block;max-width:960px;flex-grow:1;overflow-x:clip;overflow-y:clip;color:var(--muted-foreground);font-size:17px;line-height:25.5px;text-wrap:pretty}
+.cn223{height:102px;overflow-x:clip;overflow-y:clip;-webkit-line-clamp:4}
+.cn224{height:21px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:8px;column-gap:12px;color:var(--muted-foreground);font-size:13px;font-weight:520;line-height:18.2px}
+.cn225{height:21px;display:block;color:var(--color-006);font-size:15px;font-weight:600;line-height:21px;cursor:pointer}
+.cn226{width:1px;height:1px;display:block;position:absolute;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn227{width:1240px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:76.8px;margin-right:20px;margin-left:20px}
+.cn228{height:789.828px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:960px;margin-right:auto;margin-left:auto;padding-top:54px;padding-right:28px;padding-bottom:54px;padding-left:28px;border-top-left-radius:34px;border-top-right-radius:34px;border-bottom-right-radius:34px;border-bottom-left-radius:34px;align-items:center;row-gap:32px;column-gap:32px;grid-template-rows:681.828px;justify-items:center;overflow-x:hidden;overflow-y:hidden;color:var(--color-001);text-align:left;background-image:radial-gradient(circle at 50% 0%, rgba(182, 107, 70, 0.24), rgba(0, 0, 0, 0) 36%), linear-gradient(rgb(44, 44, 46) 0%, rgb(17, 17, 17) 100%);background-size:auto, auto;background-position:0% 0%, 0% 0%;background-repeat:repeat, repeat;background-clip:border-box, border-box;background-origin:padding-box, padding-box;background-attachment:scroll, scroll;background-blend-mode:normal, normal;-webkit-background-clip:border-box, border-box;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn229{width:84%;height:100%;display:grid;row-gap:22px;column-gap:22px;grid-template-rows:246.812px 413.016px;justify-items:start;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn230{display:grid;max-width:780px;row-gap:16px;column-gap:16px;grid-template-rows:28px 117.906px 68.9062px;justify-items:start;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn231{height:28px;border-width:1px;border-style:solid;border-color:var(--surface);display:flex;padding-top:7px;padding-right:10px;padding-bottom:7px;padding-left:10px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;align-items:center;color:var(--color-004);font-size:12px;font-weight:750;line-height:12px;white-space:nowrap;text-wrap:nowrap;background-color:var(--surface-10)}
+.cn232{display:block;max-width:780px;font-size:60.16px;font-weight:730;line-height:58.9568px;overflow-wrap:break-word;text-wrap:balance}
+.cn233{width:100%;max-width:640px;display:block;margin-top:18px;color:var(--color-012);font-size:19px;line-height:25.46px}
+.cn234{width:100%;display:grid;row-gap:22px;column-gap:22px;grid-template-rows:279.734px 111.281px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn235{height:279.734px;display:grid;row-gap:16px;column-gap:16px;grid-template-rows:82.5781px 82.5781px 82.5781px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn236{height:82.5781px;display:grid;row-gap:7px;column-gap:7px;grid-template-rows:22.3906px 53.1875px;cursor:default;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn237{display:block;font-size:14px;font-weight:600;line-height:22.4px}
+.cn238{display:inline;color:var(--color-004)}
+.cn239{width:100%;height:53px;min-height:46px;border-width:1px;border-style:solid;border-color:var(--surface);display:block;padding-top:12.8px;padding-right:15.2px;padding-bottom:12.8px;padding-left:15.2px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-right-radius:12px;border-bottom-left-radius:12px;overflow-x:clip;overflow-y:clip;color:var(--foreground);text-align:start;background-color:var(--surface-5);cursor:text}
+.cn240{display:none;min-width:0px;color:rgb(255, 180, 171);font-size:13px;font-weight:600;line-height:16.9px}
+.cn241{height:82.5781px;display:grid;row-gap:7px;column-gap:7px;grid-template-rows:22.3906px 53.1875px;cursor:default;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn242{display:block;font-size:14px;font-weight:600;line-height:22.4px}
+.cn243{width:100%;height:53px;min-height:46px;border-width:1px;border-style:solid;border-color:var(--surface);display:block;padding-top:12.8px;padding-right:15.2px;padding-bottom:12.8px;padding-left:15.2px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-right-radius:12px;border-bottom-left-radius:12px;overflow-x:clip;overflow-y:clip;color:var(--foreground);text-align:start;background-color:var(--surface-5);cursor:text}
+.cn244{display:none;min-width:0px;color:rgb(255, 180, 171);font-size:13px;font-weight:600;line-height:16.9px}
+.cn245{height:82.5781px;display:grid;row-gap:7px;column-gap:7px;grid-template-rows:22.3906px 53.1875px;cursor:default;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn246{display:block;font-size:14px;font-weight:600;line-height:22.4px}
+.cn247{display:inline;color:var(--color-004)}
+.cn248{width:100%;height:53px;min-height:46px;border-width:1px;border-style:solid;border-color:var(--surface);display:block;padding-top:12.8px;padding-right:15.2px;padding-bottom:12.8px;padding-left:15.2px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-right-radius:12px;border-bottom-left-radius:12px;overflow-x:clip;overflow-y:clip;color:var(--foreground);text-align:start;background-color:var(--surface-5);cursor:text}
+.cn248::placeholder{color:rgb(112, 107, 103)}
+.cn249{display:none;min-width:0px;color:rgb(255, 180, 171);font-size:13px;font-weight:600;line-height:16.9px}
+.cn250{height:111.281px;display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;align-items:start;row-gap:16px;column-gap:16px}
+.cn251{width:100%;max-width:704px;height:43.375px;display:block;color:var(--color-008);font-size:14px;line-height:21.7px}
+.cn252{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn253{width:28.5%;min-height:44px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:block;padding-top:12.16px;padding-right:19.2px;padding-bottom:12.16px;padding-left:19.2px;border-top-left-radius:999px;border-top-right-radius:999px;border-bottom-right-radius:999px;border-bottom-left-radius:999px;flex-shrink:0;color:var(--background);font-weight:600;text-align:center;background-color:var(--color-006);cursor:pointer}
+.cn254{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block;color:var(--muted-foreground);background-color:var(--background)}
+.cn255{width:1240px;display:grid;margin-right:20px;margin-left:20px;padding-top:34px;padding-bottom:34px;align-items:start;row-gap:34px;column-gap:34px;grid-template-rows:233.609px;grid-template-columns:1fr auto}
+.cn256{width:100%;max-width:576px;display:grid;row-gap:16px;column-gap:16px;grid-template-rows:17px 24.7969px 159.812px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn257{height:17px;display:block;overflow-x:hidden;overflow-y:hidden;color:var(--foreground);font-size:17px;font-weight:700;line-height:17px;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn258{display:block;line-height:24.8px}
+.cn259{width:100%;max-width:468px;height:159.812px;display:block;font-size:14px;line-height:21.7px}
+.cn260{display:block;margin-bottom:8px;color:var(--foreground);font-weight:700}
+.cn261{display:grid;row-gap:16px;column-gap:16px;grid-template-rows:25.5938px 25.5938px;justify-items:end;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn262{display:block}
+.cn263{height:100%;display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:22px;column-gap:22px;list-style-type:none;list-style-position:outside}
+.cn264{display:list-item}
+.cn265{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn266{display:list-item}
+.cn267{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn268{height:25.5938px;display:list-item}
+.cn269{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn270{display:list-item}
+.cn271{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn272{display:list-item}
+.cn273{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn274{display:list-item}
+.cn275{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn276{display:block}
+.cn277{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:22px;column-gap:22px;list-style-type:none;list-style-position:outside}
+.cn278{display:list-item}
+.cn279{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+.cn280{display:list-item}
+.cn281{display:inline;font-size:14px;font-weight:600;line-height:22.4px;cursor:pointer}
+
+@media (max-width: 571px) {
+.cn3{top:18px;right:-163.5px;transform:matrix(1, 0, 0, 1, -175.5, 0);transform-origin:175.5px 27px}
+.cn4{padding-right:8px;padding-left:16px;row-gap:12px;column-gap:12px;grid-template-columns:1fr auto}
+.cn5{max-width:187.5px}
+.cn8{display:none}
+.cn22{row-gap:4px;column-gap:4px}
+.cn23{width:48%;height:44px;grid-template-rows:42px;grid-template-columns:repeat(1, minmax(0, 1fr));padding-right:0;padding-left:0}
+.cn25{display:none}
+.cn26{display:none}
+.cn28{height:44px;display:block;top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn29{width:44px;height:44px;grid-template-rows:42px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn30{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn30::before{bottom:14px;width:12px;height:1px}
+.cn30::after{bottom:4px;width:12px;height:1px}
+.cn32{height:296px;top:14px;left:-307px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
+.cn34{height:274px;display:grid;row-gap:2px;column-gap:2px;grid-template-rows:44px 44px 44px 44px 44px 44px;list-style-type:none;grid-template-columns:repeat(1, minmax(0, 1fr));padding-left:0}
+.cn36{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn38{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn39{height:44px}
+.cn40{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn42{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn44{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn46{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn76{padding-bottom:54px}
+.cn77{height:574.578px;padding-top:140px;padding-bottom:42px;grid-template-rows:392.578px}
+.cn80{font-size:41.25px;line-height:40.425px}
+.cn81{font-size:22px;line-height:29.04px}
+.cn86{width:335px;margin-top:54px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:228.719px 1066.14px}
+.cn87{grid-template-rows:28px 66.5312px 102.188px}
+.cn89{font-size:32px;line-height:33.28px}
+.cn90{font-size:18px;line-height:25.56px}
+.cn91{row-gap:24px;column-gap:24px;grid-template-rows:1066.14px}
+.cn92{grid-template-rows:220px 220px 206.891px 173.625px 173.625px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn93{border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:115.625px;grid-column-start:1}
+.cn95{font-size:32px;line-height:33.28px}
+.cn97{border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:139.078px;grid-column-start:1}
+.cn99{font-size:32px;line-height:33.28px}
+.cn101{height:206.891px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:148.891px;grid-column-start:1;min-height:0}
+.cn103{font-size:32px;line-height:33.28px}
+.cn105{height:173.625px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:115.625px;grid-column-start:1;min-height:0}
+.cn107{font-size:32px;line-height:33.28px}
+.cn109{height:173.625px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:115.625px;grid-column-start:1;min-height:0}
+.cn111{font-size:32px;line-height:33.28px}
+.cn113{width:335px;margin-top:54px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:169.906px 629.688px}
+.cn114{grid-template-rows:28px 33.2656px 76.6406px}
+.cn116{font-size:32px;line-height:33.28px}
+.cn117{font-size:18px;line-height:25.56px}
+.cn118{row-gap:24px;column-gap:24px;grid-template-rows:629.688px}
+.cn119{grid-template-rows:629.688px}
+.cn122{padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;align-items:start;column-gap:24px;grid-template-rows:149.625px 67.5781px 330.484px;grid-template-areas:"visual" "meta" "content";grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn122::before{width:285px;height:149.625px;border-top-left-radius:14px}
+.cn128{max-width:528px;font-size:35.625px;line-height:36.3375px;letter-spacing:-0.890625px}
+.cn130{max-width:748px;font-size:17px;line-height:25.5px}
+.cn134{width:335px;margin-top:54px;padding-top:22px;padding-right:22px;padding-bottom:22px;padding-left:22px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:169.906px 2626.78px}
+.cn135{grid-template-rows:28px 33.2656px 76.6406px}
+.cn137{font-size:32px;line-height:33.28px}
+.cn138{font-size:18px;line-height:25.56px}
+.cn139{row-gap:24px;column-gap:24px;grid-template-rows:2626.78px}
+.cn140{grid-template-rows:2626.78px}
+.cn141{row-gap:28px;column-gap:28px;grid-template-rows:538.062px 513px 513px 487.906px 462.812px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn142{grid-column-start:1}
+.cn143{display:flex;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;grid-template-columns:minmax(0px, 1.15fr) minmax(260px, 0.85fr);grid-template-rows:auto auto minmax(0px, 1fr) auto}
+.cn144{width:287px;margin-top:-26px;margin-right:-26px;margin-left:-26px;aspect-ratio:16 / 9;min-height:0;margin-bottom:0}
+.cn145{height:auto}
+.cn146{width:287px;height:161px}
+.cn152{font-size:28px;line-height:31.36px}
+.cn154{height:102px}
+.cn160{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn161{width:287px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn163{width:287px;height:161px}
+.cn169{font-size:22.4px;line-height:25.088px}
+.cn177{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn178{width:287px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn180{width:287px;height:161px}
+.cn186{font-size:22.4px;line-height:25.088px}
+.cn194{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn195{width:287px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn197{width:287px;height:161px}
+.cn203{font-size:22.4px;line-height:25.088px}
+.cn211{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn212{width:287px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn214{width:287px;height:161px}
+.cn220{font-size:22.4px;line-height:25.088px}
+.cn222{height:102px}
+.cn227{width:335px;margin-top:54px}
+.cn228{height:942.344px;min-height:430px;padding-top:42px;padding-right:18px;padding-bottom:48px;padding-left:18px;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;grid-template-rows:852.344px}
+.cn229{width:100%;grid-template-rows:352.266px 478.078px}
+.cn230{grid-template-rows:28px 147px 145.266px}
+.cn232{font-size:50px;line-height:49px}
+.cn234{grid-template-rows:279.734px 176.344px}
+.cn250{height:176.344px}
+.cn251{height:108.438px}
+.cn253{width:100%}
+.cn255{width:335px;grid-template-rows:301.781px 114.781px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn256{grid-template-rows:17px 49.5938px 203.188px}
+.cn259{height:203.188px}
+.cn261{grid-template-rows:73.1875px 25.5938px;justify-items:start}
+.cn263{justify-content:flex-start}
+.cn277{justify-content:flex-start}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn3{right:-336px;transform:matrix(1, 0, 0, 1, -360, 0);transform-origin:360px 27px}
+.cn4{row-gap:15.36px;column-gap:15.36px;grid-template-columns:1fr auto}
+.cn5{max-width:260px}
+.cn8{display:none}
+.cn23{width:46%;height:44px;grid-template-rows:42px;grid-template-columns:repeat(1, minmax(0, 1fr));padding-right:0;padding-left:0}
+.cn25{display:none}
+.cn26{display:none}
+.cn28{height:44px;display:block;top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn29{width:44px;height:44px;grid-template-rows:42px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn30{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn30::before{bottom:14px;width:12px;height:1px}
+.cn30::after{bottom:4px;width:12px;height:1px}
+.cn32{height:296px;top:14px;left:-376px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
+.cn34{height:274px;display:grid;row-gap:2px;column-gap:2px;grid-template-rows:44px 44px 44px 44px 44px 44px;list-style-type:none;grid-template-columns:repeat(1, minmax(0, 1fr));padding-left:0}
+.cn36{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn38{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn39{height:44px}
+.cn40{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn42{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn44{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn46{min-height:44px;display:block;padding-top:13px;padding-right:14px;padding-bottom:13px;padding-left:14px;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:14px;font-size:15px;line-height:17.25px;text-decoration-line:initial}
+.cn76{padding-bottom:54px}
+.cn77{height:473.594px;grid-template-rows:277.594px}
+.cn80{font-size:50px;line-height:49px}
+.cn81{font-size:22px;line-height:29.04px}
+.cn86{width:728px;margin-top:54px;grid-template-rows:144.172px 636px}
+.cn87{grid-template-rows:28px 33.2656px 50.9062px}
+.cn89{font-size:32px;line-height:33.28px}
+.cn91{grid-template-rows:636px}
+.cn92{grid-template-rows:220px 190px 190px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn93{grid-template-rows:115.625px;grid-column-start:span 1}
+.cn95{font-size:32px;line-height:33.28px}
+.cn97{grid-template-rows:139.078px;grid-column-start:span 1}
+.cn99{font-size:32px;line-height:33.28px}
+.cn101{grid-template-rows:68.7188px;grid-column-start:1;grid-column-end:-1}
+.cn103{font-size:32px;line-height:33.28px}
+.cn105{grid-template-rows:115.625px;grid-column-start:span 1}
+.cn107{font-size:32px;line-height:33.28px}
+.cn109{grid-template-rows:115.625px;grid-column-start:span 1}
+.cn111{font-size:32px;line-height:33.28px}
+.cn113{width:728px;margin-top:54px;grid-template-rows:144.172px 722.688px}
+.cn114{grid-template-rows:28px 33.2656px 50.9062px}
+.cn116{font-size:32px;line-height:33.28px}
+.cn118{grid-template-rows:722.688px}
+.cn119{grid-template-rows:722.688px}
+.cn122{padding-top:30.72px;padding-right:30.72px;padding-bottom:30.72px;padding-left:30.72px;align-items:start;column-gap:24px;grid-template-rows:348.891px 67.5781px 210.781px;grid-template-areas:"visual" "meta" "content";grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn122::before{width:664.562px;height:348.891px}
+.cn128{max-width:484px;font-size:32.256px;line-height:32.9011px;letter-spacing:-0.8064px}
+.cn130{max-width:748px;font-size:17px;line-height:25.5px}
+.cn134{width:728px;margin-top:54px;padding-top:30.72px;padding-right:30.72px;padding-bottom:30.72px;padding-left:30.72px;grid-template-rows:144.172px 1109.81px}
+.cn135{grid-template-rows:28px 33.2656px 50.9062px}
+.cn137{font-size:32px;line-height:33.28px}
+.cn139{grid-template-rows:1109.81px}
+.cn140{grid-template-rows:1109.81px}
+.cn141{row-gap:28px;column-gap:28px;grid-template-rows:540.906px 540.906px}
+.cn143{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;grid-template-columns:91.7031px 260px;grid-template-rows:28.1875px 125.438px 258.281px 21px}
+.cn144{width:117.703px;margin-top:-26px;margin-bottom:-26px;margin-left:-26px}
+.cn145{height:538.906px}
+.cn146{width:118px;height:539px}
+.cn152{font-size:28px;line-height:31.36px}
+.cn154{height:258.281px}
+.cn160{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn161{width:200.859px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn163{width:201px;height:113px}
+.cn169{font-size:22.4px;line-height:25.088px}
+.cn177{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn178{width:200.844px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn180{width:201px;height:113px}
+.cn186{font-size:22.4px;line-height:25.088px}
+.cn194{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn195{width:200.859px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn197{width:201px;height:113px}
+.cn203{font-size:22.4px;line-height:25.088px}
+.cn211{padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;row-gap:18px;column-gap:18px}
+.cn212{width:200.859px;margin-top:-26px;margin-right:-26px;margin-left:-26px}
+.cn214{width:201px;height:113px}
+.cn220{font-size:22.4px;line-height:25.088px}
+.cn222{height:152.188px}
+.cn227{width:728px;margin-top:54px}
+.cn228{height:769.922px;grid-template-rows:661.922px}
+.cn229{width:100%;grid-template-rows:226.906px 413.016px}
+.cn230{grid-template-rows:28px 98px 68.9062px}
+.cn232{font-size:50px;line-height:49px}
+.cn253{width:32.5%}
+.cn255{width:728px;grid-template-rows:233.609px 67.1875px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn261{justify-items:start}
+.cn263{justify-content:flex-start}
+.cn277{justify-content:flex-start}
+}
+
+@media (min-width: 1601px) {
+.cn3{right:-120px}
+.cn9{row-gap:22px;column-gap:22px}
+.cn76{padding-bottom:84px}
+.cn77{height:511.078px;grid-template-rows:315.078px}
+.cn80{font-size:64px;line-height:62.72px}
+.cn86{width:1280px;margin-top:84px;margin-right:320px;margin-left:320px}
+.cn113{width:1280px;margin-top:84px;margin-right:320px;margin-left:320px;grid-template-rows:152.5px 429.641px}
+.cn118{grid-template-rows:429.641px}
+.cn119{grid-template-rows:429.641px}
+.cn122{grid-template-rows:67.5781px 260.062px}
+.cn122::before{width:518.391px;height:272.141px}
+.cn134{width:1280px;margin-top:84px;margin-right:320px;margin-left:320px;padding-top:54px;padding-right:54px;padding-bottom:54px;padding-left:54px;grid-template-rows:127.047px 1194.3px}
+.cn139{grid-template-rows:1194.3px}
+.cn140{grid-template-rows:1194.3px}
+.cn141{row-gap:34px;column-gap:34px;grid-template-rows:594.938px 565.359px}
+.cn143{grid-template-rows:28.1875px 161.25px 256.5px 21px}
+.cn144{width:420.219px}
+.cn145{height:592.938px}
+.cn146{width:420px;height:593px}
+.cn154{height:256.5px}
+.cn161{width:365.344px}
+.cn163{width:365px;height:206px}
+.cn178{width:365.328px}
+.cn180{width:365px;height:205px}
+.cn195{width:365.328px}
+.cn197{width:365px;height:205px}
+.cn212{width:365.344px}
+.cn214{width:365px;height:206px}
+.cn222{height:131.547px}
+.cn227{width:1280px;margin-top:84px;margin-right:320px;margin-left:320px}
+.cn228{height:797.359px;grid-template-rows:689.359px}
+.cn229{grid-template-rows:254.344px 413.016px}
+.cn230{grid-template-rows:28px 125.438px 68.9062px}
+.cn232{font-size:64px;line-height:62.72px}
+.cn255{width:1280px;margin-right:320px;margin-left:320px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1">
+      <a class="cn2" href="#primary">
+        Zum Inhalt springen
+      </a>
+       
+      <header class="cn3" role="banner">
+        <div class="cn4">
+          <div class="cn5">
+            <img class="cn6" alt="" height="28" src="public/assets/cloned/svg/e9c625b32b54.svg" width="28" />
+             
+            <a class="cn7" href="https://digitaleprofis.de/" rel="home">
+               Digitale Profis 
+            </a>
+             
+          </div>
+           
+          <nav class="cn8" aria-label="Hauptnavigation">
+            <ul class="cn9" role="list">
+              <li class="cn10">
+                <a class="cn11" data-ditto-id="style-9" href="https://digitaleprofis.de/artikel/">
+                  Artikel
+                </a>
+              </li>
+              <li class="cn12">
+                <a class="cn13" data-ditto-id="style-10" href="https://digitaleprofis.de/ki-news/">
+                  KI-News
+                </a>
+              </li>
+              <li class="cn14">
+                <a class="cn15" data-ditto-id="style-11" href="https://digitaleprofis.de/ki-hub/" rel="noopener noreferrer" target="_blank">
+                  KI-Hub für Verwaltungen
+                </a>
+              </li>
+              <li class="cn16">
+                <a class="cn17" data-ditto-id="style-12" href="https://www.youtube.com/@DigitaleProfis" rel="noopener noreferrer" target="_blank">
+                  YouTube
+                </a>
+              </li>
+              <li class="cn18">
+                <a class="cn19" data-ditto-id="style-13" href="https://digitaleprofis.de/ueber-uns/">
+                  Über uns
+                </a>
+              </li>
+              <li class="cn20">
+                <a class="cn21" data-ditto-id="style-14" href="https://digitaleprofis.de/newsletter/">
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+             
+          </nav>
+           
+          <div class="cn22">
+            <a class="cn23" data-ditto-id="style-link" aria-controls="dp-site-search-dialog" aria-haspopup="dialog" href="https://digitaleprofis.de/?s=">
+               
+              <span class="cn24" aria-hidden="true"></span>
+               
+              <span class="cn25" aria-hidden="true">
+                Suchen
+              </span>
+               
+              <kbd class="cn26" aria-hidden="true">
+                Ctrl K
+              </kbd>
+               
+              <span class="cn27" data-ditto-id="style-span-2">
+                Website durchsuchen
+              </span>
+               
+            </a>
+             
+            <details class="cn28">
+              <summary class="cn29" aria-label="Menü öffnen">
+                 
+                <span class="cn30" aria-hidden="true"></span>
+                 
+                <span class="cn31">
+                  Menü öffnen
+                </span>
+                 
+              </summary>
+               
+              <div class="cn32">
+                <nav class="cn33" aria-label="Mobile Hauptnavigation">
+                  <ul class="cn34" role="list">
+                    <li class="cn35">
+                      <a class="cn36" href="https://digitaleprofis.de/artikel/">
+                        Artikel
+                      </a>
+                    </li>
+                    <li class="cn37">
+                      <a class="cn38" href="https://digitaleprofis.de/ki-news/">
+                        KI-News
+                      </a>
+                    </li>
+                    <li class="cn39">
+                      <a class="cn40" href="https://digitaleprofis.de/ki-hub/" rel="noopener noreferrer" target="_blank">
+                        KI-Hub für Verwaltungen
+                      </a>
+                    </li>
+                    <li class="cn41">
+                      <a class="cn42" href="https://www.youtube.com/@DigitaleProfis" rel="noopener noreferrer" target="_blank">
+                        YouTube
+                      </a>
+                    </li>
+                    <li class="cn43">
+                      <a class="cn44" href="https://digitaleprofis.de/ueber-uns/">
+                        Über uns
+                      </a>
+                    </li>
+                    <li class="cn45">
+                      <a class="cn46" href="https://digitaleprofis.de/newsletter/">
+                        Newsletter
+                      </a>
+                    </li>
+                  </ul>
+                   
+                </nav>
+                 
+              </div>
+               
+            </details>
+             
+          </div>
+           
+        </div>
+         
+      </header>
+       
+      <dialog class="cn47" data-ditto-id="interaction-dp-site-search-dialog" aria-labelledby="dp-site-search-title" id="dp-site-search-dialog">
+        <div class="cn48">
+          <header class="cn49">
+            <div class="cn50">
+              <p class="cn51">
+                Direkt zum richtigen Inhalt
+              </p>
+               
+              <h2 class="cn52" id="dp-site-search-title">
+                Was möchtest du finden?
+              </h2>
+               
+            </div>
+             
+            <button class="cn53" data-ditto-id="interaction-suche-schlie-en" aria-label="Suche schließen" type="button">
+              <span class="cn54" aria-hidden="true"></span>
+               
+            </button>
+             
+          </header>
+           
+          <search class="cn55">
+            <form class="cn56">
+              <label class="cn57" for="dp-live-search-input">
+                 Artikel, KI-News und Seiten durchsuchen 
+              </label>
+               
+              <span class="cn58" aria-hidden="true"></span>
+               
+              <input class="cn59" data-ditto-id="style-dp-live-search-input" id="dp-live-search-input" name="s" placeholder="Wonach suchst du?" type="search" />
+               
+            </form>
+             
+          </search>
+           
+          <p class="cn60" aria-atomic="true" aria-live="polite"></p>
+           
+          <div class="cn61">
+            <p class="cn62">
+              Du kannst nach Themen, Tools oder konkreten Fragen suchen.
+            </p>
+             
+            <nav class="cn63" aria-label="Schnelleinstiege">
+              <a class="cn64" href="https://digitaleprofis.de/artikel/">
+                Artikel
+              </a>
+               
+              <a class="cn65" href="https://digitaleprofis.de/ki-news/">
+                KI-News
+              </a>
+               
+              <a class="cn66" href="https://digitaleprofis.de/ueber-uns/">
+                Über uns
+              </a>
+               
+            </nav>
+             
+          </div>
+           
+          <p class="cn67"></p>
+           
+          <ul class="cn68" role="list"></ul>
+           
+          <p class="cn69"></p>
+           
+          <p class="cn70"></p>
+           
+          <footer class="cn71">
+            <a class="cn72" href="https://digitaleprofis.de/?s=">
+               
+              <span class="cn73">
+                Alle Suchergebnisse anzeigen
+              </span>
+               
+              <span class="cn74" aria-hidden="true">
+                →
+              </span>
+               
+            </a>
+             
+          </footer>
+           
+        </div>
+         
+      </dialog>
+       
+      <main class="cn75" id="primary">
+        <div class="cn76">
+          <section class="cn77">
+            <div class="cn78">
+              <p class="cn79">
+                KI verstehen &amp; sicher anwenden
+              </p>
+               
+              <h1 class="cn80">
+                Digitale Profis
+              </h1>
+               
+              <p class="cn81">
+                Wir begleiten dich mit aktuellen KI-News, fundierten Artikeln und praktischen Anleitungen, damit du KI besser einordnen und sinnvoll nutzen kannst.
+              </p>
+               
+              <div class="cn82">
+                <a class="cn83" data-ditto-id="style-link-2" href="https://digitaleprofis.de/artikel/">
+                  Zu den Artikeln
+                </a>
+                 
+                <a class="cn84" data-ditto-id="style-li-9" href="https://digitaleprofis.de/ki-news/">
+                  Aktuelle KI-News
+                </a>
+                 
+                <a class="cn85" data-ditto-id="style-link-3" href="https://digitaleprofis.de/ueber-uns/">
+                  Über uns
+                </a>
+                 
+              </div>
+               
+            </div>
+             
+          </section>
+           
+          <section class="cn86">
+            <header class="cn87">
+              <p class="cn88">
+                Dein Einstieg
+              </p>
+              <h2 class="cn89">
+                Starte dort, wo es für dich passt
+              </h2>
+              <p class="cn90" data-ditto-id="style-div-6">
+                Lies einen praktischen Artikel, verschaffe dir einen Überblick über die Woche oder lerne uns und unsere Arbeit kennen.
+              </p>
+            </header>
+            <div class="cn91">
+              <div class="cn92">
+                <a class="cn93" href="https://digitaleprofis.de/artikel/">
+                  <div class="cn94" data-ditto-id="style-span-4">
+                    <h3 class="cn95" data-ditto-id="style-link-4">
+                      Artikel
+                    </h3>
+                    <p class="cn96" data-ditto-id="style-span-9">
+                      Verständliche Anleitungen und Einordnungen für den praktischen Umgang mit KI.
+                    </p>
+                  </div>
+                </a>
+                 
+                <a class="cn97" data-ditto-id="style-time-2" href="https://digitaleprofis.de/ki-news/">
+                  <div class="cn98" data-ditto-id="style-span-10">
+                    <h3 class="cn99" data-ditto-id="style-figure">
+                      KI-News
+                    </h3>
+                    <p class="cn100">
+                      Die wichtigsten Entwicklungen der Woche – kompakt zusammengefasst und mit Quellen eingeordnet.
+                    </p>
+                  </div>
+                </a>
+                 
+                <a class="cn101" href="https://digitaleprofis.de/ki-hub/" rel="noopener noreferrer" target="_blank">
+                  <div class="cn102">
+                    <h3 class="cn103" data-ditto-id="style-div-7">
+                      KI-Hub für Verwaltungen
+                    </h3>
+                    <p class="cn104">
+                      Unser Lern- und Nachschlageangebot für Städte, Kommunen und Behörden.
+                    </p>
+                  </div>
+                </a>
+                 
+                <a class="cn105" href="https://www.youtube.com/@DigitaleProfis" rel="noopener noreferrer" target="_blank">
+                  <div class="cn106">
+                    <h3 class="cn107" data-ditto-id="style-div-8">
+                      YouTube
+                    </h3>
+                    <p class="cn108">
+                      Tutorials, Einordnungen und aktuelle KI-Themen mit Johannes und Timothy.
+                    </p>
+                  </div>
+                </a>
+                 
+                <a class="cn109" href="https://digitaleprofis.de/ueber-uns/">
+                  <div class="cn110" data-ditto-id="style-div-36">
+                    <h3 class="cn111">
+                      Über uns
+                    </h3>
+                    <p class="cn112">
+                      Wer hinter Digitale Profis steht und wie wir über KI sprechen und arbeiten.
+                    </p>
+                  </div>
+                </a>
+                 
+              </div>
+               
+            </div>
+          </section>
+           
+          <section class="cn113" data-ditto-id="style-time-3">
+            <header class="cn114">
+              <p class="cn115">
+                Neueste Ausgabe
+              </p>
+              <h2 class="cn116" data-ditto-id="style-link-9">
+                Aktuelle KI-News
+              </h2>
+              <p class="cn117">
+                Die wichtigsten Entwicklungen der Woche – kompakt zusammengefasst und mit Quellen eingeordnet.
+              </p>
+            </header>
+            <div class="cn118">
+              <div class="cn119" data-ditto-id="style-div-37">
+                <ul class="cn120" data-ditto-id="style-link-10">
+                  <li class="cn121">
+                    <article class="cn122" data-ditto-id="style-bessere-ki-antworten-mit-spracheingabe-ffnen">
+                      <div class="cn123" data-ditto-id="style-nav">
+                        <p class="cn124">
+                          Neueste KI-News
+                        </p>
+                         
+                        <div class="cn125">
+                          <time class="cn126" datetime="2026-08-06T11:53:59+02:00">
+                            6. August 2026
+                          </time>
+                        </div>
+                      </div>
+                       
+                      <div class="cn127">
+                        <h3 class="cn128">
+                          <a class="cn129" data-ditto-id="style-link-11" href="https://digitaleprofis.de/die-ki-news-der-woche-vom-06-08-2026/" target="_self">
+                            Die KI-News der Woche vom 06.08.2026
+                          </a>
+                        </h3>
+                         
+                        <div class="cn130">
+                          <p class="cn131">
+                            Higgsfield legt einen 95-minütigen KI-Film samt Produktionsprojekt offen, FLUX 3 Video startet und Qwen 3.8 soll Open Weights erhalten. 
+                          </p>
+                        </div>
+                         
+                        <a class="cn132" data-ditto-id="style-div-46" href="https://digitaleprofis.de/die-ki-news-der-woche-vom-06-08-2026/" target="_self">
+                          Aktuelle Ausgabe lesen →
+                          <span class="cn133" data-ditto-id="style-link-12">
+                            : Die KI-News der Woche vom 06.08.2026
+                          </span>
+                        </a>
+                      </div>
+                       
+                    </article>
+                     
+                  </li>
+                </ul>
+                 
+              </div>
+               
+            </div>
+          </section>
+           
+          <section class="cn134">
+            <header class="cn135">
+              <p class="cn136">
+                Artikel
+              </p>
+              <h2 class="cn137">
+                Neu bei uns
+              </h2>
+              <p class="cn138">
+                Unsere neuesten Artikel – verständlich aufbereitet und mit Blick auf die Praxis.
+              </p>
+            </header>
+            <div class="cn139" data-ditto-id="style-button-5">
+              <div class="cn140">
+                <ul class="cn141" data-ditto-id="style-heading">
+                  <li class="cn142" data-ditto-id="style-link-13">
+                    <div class="cn143" data-ditto-id="style-div-30">
+                      <figure class="cn144">
+                        <a class="cn145" data-ditto-id="style-div-31" href="https://digitaleprofis.de/ai-slop-was-ki-massenware-ausmacht/" target="_self">
+                          <img class="cn146" data-ditto-id="style-link-14" alt="KI Slop: Was KI-Spam ist und was besser funktioniert" height="576" sizes="auto, (max-width: 620px) calc(100vw - 32px), (max-width: 980px) 50vw, 33vw" src="public/assets/cloned/images/deb7f44dc314.png" srcset="public/assets/cloned/images/deb7f44dc314.png 1024w, public/assets/cloned/images/679692821fff.png 300w, public/assets/cloned/images/8fa4b0c608f0.png 768w, public/assets/cloned/images/5b7c4d712997.png 1280w" width="1024" />
+                        </a>
+                      </figure>
+                       
+                      <div class="cn147" data-ditto-id="style-article-5">
+                        <div class="cn148">
+                          <a class="cn149" data-ditto-id="style-image" href="https://digitaleprofis.de/artikel/" rel="tag">
+                            Artikel
+                          </a>
+                        </div>
+                        <div class="cn150">
+                          <time class="cn151" datetime="2026-08-11T15:31:11+02:00">
+                            11. August 2026
+                          </time>
+                        </div>
+                      </div>
+                       
+                      <h2 class="cn152">
+                        <a class="cn153" data-ditto-id="style-time" href="https://digitaleprofis.de/ai-slop-was-ki-massenware-ausmacht/" target="_self">
+                          KI Slop: Was KI-Spam ist und was besser funktioniert
+                        </a>
+                      </h2>
+                       
+                      <div class="cn154">
+                        <p class="cn155" data-ditto-id="style-artikel-bersicht">
+                          AI Slop bezeichnet massenhaft produzierte KI-Inhalte ohne eigene Substanz. Der Artikel erklärt die Folgen für Vertrauen und Reichweite und zeigt fünf Merkmale guter Inhalte. 
+                        </p>
+                      </div>
+                       
+                      <div class="cn156">
+                        <a class="cn157" data-ditto-id="style-artikel-bersicht-2" href="https://digitaleprofis.de/ai-slop-was-ki-massenware-ausmacht/" target="_self">
+                          Weiterlesen
+                          <span class="cn158" data-ditto-id="style-div-47">
+                            : KI Slop: Was KI-Spam ist und was besser funktioniert
+                          </span>
+                        </a>
+                      </div>
+                       
+                    </div>
+                     
+                  </li>
+                  <li class="cn159" data-ditto-id="style-p-3">
+                    <div class="cn160">
+                      <figure class="cn161">
+                        <a class="cn162" href="https://digitaleprofis.de/ki-inhalte-kennzeichnen/" target="_self">
+                          <img class="cn163" alt="KI-Inhalte kennzeichnen: Was seit dem 2. August 2026 gilt" height="576" sizes="auto, (max-width: 620px) calc(100vw - 32px), (max-width: 980px) 50vw, 33vw" src="public/assets/cloned/images/51d5eeb1e88e.png" srcset="public/assets/cloned/images/51d5eeb1e88e.png 1024w, public/assets/cloned/images/a7a8712586d7.png 300w, public/assets/cloned/images/8b894a43f48c.png 768w, public/assets/cloned/images/d83bb235eab5.png 1536w, public/assets/cloned/images/df2785f7ac74.png 1672w" width="1024" />
+                        </a>
+                      </figure>
+                       
+                      <div class="cn164">
+                        <div class="cn165">
+                          <a class="cn166" href="https://digitaleprofis.de/artikel/" rel="tag">
+                            Artikel
+                          </a>
+                        </div>
+                        <div class="cn167">
+                          <time class="cn168" data-ditto-id="style-div-9" datetime="2026-08-05T20:02:28+02:00">
+                            5. August 2026
+                          </time>
+                        </div>
+                      </div>
+                       
+                      <h2 class="cn169">
+                        <a class="cn170" data-ditto-id="style-dd" href="https://digitaleprofis.de/ki-inhalte-kennzeichnen/" target="_self">
+                          KI-Inhalte kennzeichnen: Was seit dem 2. August 2026 gilt
+                        </a>
+                      </h2>
+                       
+                      <div class="cn171">
+                        <p class="cn172" data-ditto-id="style-link-15">
+                          Nicht jeder KI-Inhalt braucht ein Label. Dieser Leitfaden erklärt, was für Privatpersonen, Unternehmen und Organisationen seit August 2026 gilt. 
+                        </p>
+                      </div>
+                       
+                      <div class="cn173">
+                        <a class="cn174" data-ditto-id="style-lm-studio-bionic-im-test-ki-agent-mit-lokalen-mode" href="https://digitaleprofis.de/ki-inhalte-kennzeichnen/" target="_self">
+                          Weiterlesen
+                          <span class="cn175" data-ditto-id="style-div-48">
+                            : KI-Inhalte kennzeichnen: Was seit dem 2. August 2026 gilt
+                          </span>
+                        </a>
+                      </div>
+                       
+                    </div>
+                     
+                  </li>
+                  <li class="cn176">
+                    <div class="cn177">
+                      <figure class="cn178">
+                        <a class="cn179" href="https://digitaleprofis.de/seo-im-ki-zeitalter/" target="_self">
+                          <img class="cn180" alt="SEO im KI-Zeitalter: Bei Google, ChatGPT &amp; Co. gefunden werden" height="576" sizes="auto, (max-width: 620px) calc(100vw - 32px), (max-width: 980px) 50vw, 33vw" src="public/assets/cloned/images/5966cbfc05c3.png" srcset="public/assets/cloned/images/5966cbfc05c3.png 1024w, public/assets/cloned/images/a7965ec30e72.png 300w, public/assets/cloned/images/9692802abb13.png 768w, public/assets/cloned/images/83d7d9b55a9e.png 1280w" width="1024" />
+                        </a>
+                      </figure>
+                       
+                      <div class="cn181" data-ditto-id="style-div-10">
+                        <div class="cn182">
+                          <a class="cn183" href="https://digitaleprofis.de/artikel/" rel="tag">
+                            Artikel
+                          </a>
+                        </div>
+                        <div class="cn184">
+                          <time class="cn185" data-ditto-id="style-kurzfassung" datetime="2026-07-28T11:36:00+02:00">
+                            28. Juli 2026
+                          </time>
+                        </div>
+                      </div>
+                       
+                      <h2 class="cn186">
+                        <a class="cn187" data-ditto-id="style-p-37" href="https://digitaleprofis.de/seo-im-ki-zeitalter/" target="_self">
+                          SEO im KI-Zeitalter: Bei Google, ChatGPT &amp; Co. gefunden werden
+                        </a>
+                      </h2>
+                       
+                      <div class="cn188">
+                        <p class="cn189">
+                          KI-Antworten verändern den Weg zur Website, doch SEO bleibt die Basis. Fünf Maßnahmen machen Inhalte für Google und KI-Suchen auffindbar, verständlich und zitierbar. 
+                        </p>
+                      </div>
+                       
+                      <div class="cn190" data-ditto-id="style-button">
+                        <a class="cn191" data-ditto-id="style-link-31" href="https://digitaleprofis.de/seo-im-ki-zeitalter/" target="_self">
+                          Weiterlesen
+                          <span class="cn192" data-ditto-id="style-1-kontextbasiertes-prompting">
+                            : SEO im KI-Zeitalter: Bei Google, ChatGPT &amp; Co. gefunden werden
+                          </span>
+                        </a>
+                      </div>
+                       
+                    </div>
+                     
+                  </li>
+                  <li class="cn193">
+                    <div class="cn194" data-ditto-id="style-p-4">
+                      <figure class="cn195">
+                        <a class="cn196" data-ditto-id="style-div-15" href="https://digitaleprofis.de/lm-studio-bionic-im-test/" target="_self">
+                          <img class="cn197" alt="LM Studio Bionic im Test: KI-Agent mit lokalen Modellen" height="576" sizes="auto, (max-width: 620px) calc(100vw - 32px), (max-width: 980px) 50vw, 33vw" src="public/assets/cloned/images/7fefd10912cd.png" srcset="public/assets/cloned/images/7fefd10912cd.png 1024w, public/assets/cloned/images/c4c086bab2af.png 300w, public/assets/cloned/images/b4f016296d5f.png 768w, public/assets/cloned/images/c585a62453d7.png 1280w" width="1024" />
+                        </a>
+                      </figure>
+                       
+                      <div class="cn198" data-ditto-id="style-p-5">
+                        <div class="cn199">
+                          <a class="cn200" href="https://digitaleprofis.de/artikel/" rel="tag">
+                            Artikel
+                          </a>
+                        </div>
+                        <div class="cn201" data-ditto-id="style-prompt-kopieren-kontext-zuerst-aufgabe-danach">
+                          <time class="cn202" datetime="2026-07-21T12:36:52+02:00">
+                            21. Juli 2026
+                          </time>
+                        </div>
+                      </div>
+                       
+                      <h2 class="cn203">
+                        <a class="cn204" data-ditto-id="style-p-22" href="https://digitaleprofis.de/lm-studio-bionic-im-test/" target="_self">
+                          LM Studio Bionic im Test: KI-Agent mit lokalen Modellen
+                        </a>
+                      </h2>
+                       
+                      <div class="cn205">
+                        <p class="cn206" data-ditto-id="style-2-rollenbasiertes-prompting">
+                          LM Studio Bionic macht offene Modelle zu KI-Agenten für Dateien und Code. Unser Test zeigt Stärken, Kosten und Grenzen bei Datenschutz, Hardware und Tempo. 
+                        </p>
+                      </div>
+                       
+                      <div class="cn207" data-ditto-id="style-p-6">
+                        <a class="cn208" data-ditto-id="style-p-38" href="https://digitaleprofis.de/lm-studio-bionic-im-test/" target="_self">
+                          Weiterlesen
+                          <span class="cn209" data-ditto-id="style-article-3">
+                            : LM Studio Bionic im Test: KI-Agent mit lokalen Modellen
+                          </span>
+                        </a>
+                      </div>
+                       
+                    </div>
+                     
+                  </li>
+                  <li class="cn210">
+                    <div class="cn211" data-ditto-id="style-div-11">
+                      <figure class="cn212" data-ditto-id="style-p-32">
+                        <a class="cn213" href="https://digitaleprofis.de/ki-muss-dich-erst-kennenlernen/" target="_self">
+                          <img class="cn214" alt="Warum KI guten Kontext braucht" height="576" sizes="auto, (max-width: 620px) calc(100vw - 32px), (max-width: 980px) 50vw, 33vw" src="public/assets/cloned/images/f6a0a14f9e2e.webp" srcset="public/assets/cloned/images/f6a0a14f9e2e.webp 1024w, public/assets/cloned/images/d3393adfb976.webp 300w, public/assets/cloned/images/21b29b111ad3.webp 768w, public/assets/cloned/images/1bf01f529830.webp 1280w" width="1024" />
+                        </a>
+                      </figure>
+                       
+                      <div class="cn215" data-ditto-id="style-prompt-kopieren-rolle-mit-auftrag-und-kriterien">
+                        <div class="cn216">
+                          <a class="cn217" href="https://digitaleprofis.de/artikel/" rel="tag">
+                            Artikel
+                          </a>
+                        </div>
+                        <div class="cn218">
+                          <time class="cn219" data-ditto-id="style-p-11" datetime="2026-07-13T12:10:09+02:00">
+                            13. Juli 2026
+                          </time>
+                        </div>
+                      </div>
+                       
+                      <h2 class="cn220" data-ditto-id="style-3-few-shot-prompting">
+                        <a class="cn221" data-ditto-id="style-p-39" href="https://digitaleprofis.de/ki-muss-dich-erst-kennenlernen/" target="_self">
+                          Warum KI guten Kontext braucht
+                        </a>
+                      </h2>
+                       
+                      <div class="cn222" data-ditto-id="style-p-34">
+                        <p class="cn223">
+                          Der erste KI-Test enttäuscht oft, weil der Kontext fehlt. Der Guide zeigt, wie Rollen, Beispiele, Projektwissen, Memory und klare Prüfkriterien aus generischen Antworten brauchbare… 
+                        </p>
+                      </div>
+                       
+                      <div class="cn224" data-ditto-id="style-div-12">
+                        <a class="cn225" data-ditto-id="style-div-22" href="https://digitaleprofis.de/ki-muss-dich-erst-kennenlernen/" target="_self">
+                          Weiterlesen
+                          <span class="cn226" data-ditto-id="style-p-40">
+                            : Warum KI guten Kontext braucht
+                          </span>
+                        </a>
+                      </div>
+                       
+                    </div>
+                     
+                  </li>
+                </ul>
+                 
+              </div>
+               
+            </div>
+          </section>
+           
+          <div class="cn227" id="newsletter">
+            <section class="cn228" aria-labelledby="dp-newsletter-1-title">
+              <div class="cn229" data-ditto-id="style-prompt-kopieren-few-shot-f-r-feste-formate">
+                <div class="cn230" data-ditto-id="style-span-15">
+                  <p class="cn231" data-ditto-id="style-div-34">
+                     KI-Wochenbrief 
+                  </p>
+                   
+                  <h2 class="cn232" id="dp-newsletter-1-title">
+                     Bleib bei KI auf dem Laufenden. 
+                  </h2>
+                   
+                  <p class="cn233" data-ditto-id="style-p-7">
+                     Einmal pro Woche schicken wir dir aktuelle News, verständliche Einordnungen und praktische Anleitungen von Johannes und Timothy. 
+                  </p>
+                   
+                </div>
+                 
+                <form class="cn234" aria-describedby="dp-newsletter-1-notice">
+                   
+                  <div class="cn235" data-ditto-id="style-p-20">
+                    <label class="cn236" data-ditto-id="style-p-27" for="dp-newsletter-1-first-name">
+                       
+                      <span class="cn237" data-ditto-id="style-article-2">
+                         Vorname 
+                        <span class="cn238" data-ditto-id="style-div-2" aria-hidden="true">
+                          *
+                        </span>
+                         
+                      </span>
+                       
+                      <input class="cn239" data-ditto-id="style-div-41" aria-describedby="dp-newsletter-1-first-name-error" aria-errormessage="dp-newsletter-1-first-name-error" id="dp-newsletter-1-first-name" name="1139913" type="text" />
+                       
+                      <span class="cn240" data-ditto-id="style-p-18" id="dp-newsletter-1-first-name-error">
+                         Bitte gib deinen Vornamen ein. 
+                      </span>
+                       
+                    </label>
+                     
+                    <label class="cn241" for="dp-newsletter-1-last-name">
+                       
+                      <span class="cn242">
+                         Nachname 
+                      </span>
+                       
+                      <input class="cn243" data-ditto-id="style-prompt-kopieren-strukturiertes-reasoning" aria-describedby="dp-newsletter-1-last-name-error" aria-errormessage="dp-newsletter-1-last-name-error" id="dp-newsletter-1-last-name" name="1139914" type="text" />
+                       
+                      <span class="cn244" data-ditto-id="style-span-11" id="dp-newsletter-1-last-name-error">
+                         Bitte prüfe diesen Namen. 
+                      </span>
+                       
+                    </label>
+                     
+                    <label class="cn245" for="dp-newsletter-1-email">
+                       
+                      <span class="cn246">
+                         E-Mail 
+                        <span class="cn247" data-ditto-id="style-p-12" aria-hidden="true">
+                          *
+                        </span>
+                         
+                      </span>
+                       
+                      <input class="cn248" data-ditto-id="style-5-meta-prompting" aria-describedby="dp-newsletter-1-email-error" aria-errormessage="dp-newsletter-1-email-error" id="dp-newsletter-1-email" name="email" placeholder="name@example.com" type="email" />
+                       
+                      <span class="cn249" data-ditto-id="style-p-28" id="dp-newsletter-1-email-error">
+                         Bitte gib eine gültige E-Mail-Adresse ein. 
+                      </span>
+                       
+                    </label>
+                     
+                  </div>
+                   
+                  <div class="cn250" data-ditto-id="style-p">
+                    <p class="cn251">
+                       Mit der Anmeldung willigst du in den Versand des Newsletters via CleverReach ein. Du kannst die Einwilligung jederzeit widerrufen. Details findest du in unserer 
+                      <a class="cn252" data-ditto-id="style-div-20" href="https://digitaleprofis.de/datenschutz/">
+                        Datenschutzerklärung
+                      </a>
+                      . 
+                    </p>
+                     
+                    <button class="cn253" data-ditto-id="style-div-45" type="submit">
+                       Newsletter abonnieren 
+                    </button>
+                     
+                  </div>
+                   
+                </form>
+                 
+              </div>
+               
+            </section>
+          </div>
+           
+        </div>
+         
+      </main>
+       
+      <footer class="cn254" role="contentinfo">
+        <div class="cn255" data-ditto-id="style-prompt-verbessern-lassen">
+          <div class="cn256" data-ditto-id="style-p-24">
+            <a class="cn257" data-ditto-id="style-prompt-kopieren-prompt-verbessern-lassen" href="https://digitaleprofis.de/" rel="home">
+               Digitale Profis 
+            </a>
+             
+            <p class="cn258" data-ditto-id="style-span-13">
+              Verständliche Artikel und aktuelle KI-News von Johannes und Timothy.
+            </p>
+             
+            <p class="cn259" data-ditto-id="style-div-13">
+              <strong class="cn260">
+                Wer über KI informiert, sollte offen zeigen, wie sie zum Einsatz kommt.
+              </strong>
+               KI ist Teil unseres Arbeitsalltags. Wir nutzen sie als hilfreiches Werkzeug – zum Beispiel bei der Recherche, beim Aufbau eines Beitrags oder für einen ersten Entwurf. Was wir veröffentlichen, prüfen und bearbeiten wir sorgfältig. Die redaktionellen Entscheidungen und die Verantwortung liegen bei uns. 
+            </p>
+             
+          </div>
+           
+          <div class="cn261" data-ditto-id="style-welche-technik-passt-wann">
+            <nav class="cn262" aria-label="Fußbereich">
+              <ul class="cn263" data-ditto-id="style-table" id="menu-digitale-profis-hauptmenue" role="list">
+                <li class="cn264" data-ditto-id="style-thead" id="menu-item-1100">
+                  <a class="cn265" data-ditto-id="style-tr" href="https://digitaleprofis.de/artikel/">
+                    Artikel
+                  </a>
+                </li>
+                <li class="cn266" data-ditto-id="style-th-2" id="menu-item-1101">
+                  <a class="cn267" data-ditto-id="style-th" href="https://digitaleprofis.de/ki-news/">
+                    KI-News
+                  </a>
+                </li>
+                <li class="cn268" data-ditto-id="style-tbody" id="menu-item-1102">
+                  <a class="cn269" data-ditto-id="style-ul-4" href="https://digitaleprofis.de/ki-hub/" rel="noopener noreferrer" target="_blank">
+                    KI-Hub für Verwaltungen
+                  </a>
+                </li>
+                <li class="cn270" data-ditto-id="style-li-8" id="menu-item-1103">
+                  <a class="cn271" data-ditto-id="style-link-16" href="https://www.youtube.com/@DigitaleProfis" rel="noopener noreferrer" target="_blank">
+                    YouTube
+                  </a>
+                </li>
+                <li class="cn272" data-ditto-id="style-section" id="menu-item-1104">
+                  <a class="cn273" data-ditto-id="style-div-14" href="https://digitaleprofis.de/ueber-uns/">
+                    Über uns
+                  </a>
+                </li>
+                <li class="cn274" data-ditto-id="style-p-29" id="menu-item-1276">
+                  <a class="cn275" data-ditto-id="style-dp-related-posts-title" href="https://digitaleprofis.de/newsletter/">
+                    Newsletter
+                  </a>
+                </li>
+              </ul>
+               
+            </nav>
+             
+            <nav class="cn276" aria-label="Rechtliches">
+              <ul class="cn277" data-ditto-id="style-p-14" role="list">
+                <li class="cn278">
+                  <a class="cn279" data-ditto-id="style-ul-3" href="https://digitaleprofis.de/datenschutz/">
+                    Datenschutz
+                  </a>
+                </li>
+                <li class="cn280" data-ditto-id="style-p-36">
+                  <a class="cn281" data-ditto-id="style-dp-related-posts-title-2" href="https://digitaleprofis.de/impressum/">
+                    Impressum
+                  </a>
+                </li>
+              </ul>
+               
+            </nav>
+             
+          </div>
+           
+        </div>
+         
+      </footer>
+       
+    </div>
+     
+</body>
+</html>
