@@ -105,6 +105,23 @@ and keeps each target's full log in `logs/<dest>/<slug>.log`.
 
 `sites/top20-personal-brands/README.md` indexes that bundle site by site.
 
+## Checking how complete the clones are
+
+```bash
+node scripts/qa-clones.mjs          # table + summary
+node scripts/qa-clones.mjs --json   # same data, machine-readable
+```
+
+Every target is reported as `ok`, `capped` (the crawl hit `--max-routes`, so
+the site has more pages than were kept), `depth` (nothing beyond the entry
+page came through under `--depth`), `thin` (cloned but bare — worth a look) or
+`MISSING` (the capture failed; `logs/<dest>/<slug>.log` says why). It also
+lists clones that no target list claims any more, so a parked or moved target
+cannot drop out of the audit unnoticed.
+
+The pairing of list, folder and flags is read out of the workflow, so the
+report cannot drift from what the runs actually do.
+
 ## Network access
 
 Capture needs outbound HTTPS to the target host. In a locked-down environment

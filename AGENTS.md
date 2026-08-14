@@ -10,6 +10,8 @@ This repo is a workspace for cloning websites into runnable apps with
 - `scripts/clone-batch.sh [--file=<list>] [--dest=<subdir>]` — clones every URL
   in a target list, grouped under `sites/<subdir>/`
 - `scripts/slugs.mjs <list>` — prints the `<slug>` folder each URL maps to
+- `scripts/qa-clones.mjs` — reports per target whether the capture is complete,
+  capped, thin or missing; reads list/dest/flags out of the workflow
 - `targets.txt`, `targets-full.txt` and `targets-deep.txt`
   (→ `top20-personal-brands`, multi-page; `deep` carries a higher route cap),
   `targets-galleries.txt` (→ `top20-personal-brands/galleries`, single page),
