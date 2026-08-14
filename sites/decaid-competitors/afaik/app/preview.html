@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AFAIK ≙ As Far As I Know – Kai Spriestersbach über KI und Suche</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/caae79466725.woff2") format("woff2"), url("public/assets/cloned/fonts/a09e9c63ec96.woff") format("woff"), url("public/assets/cloned/fonts/dd7086fa0532.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3ee5f5f53d52.woff2") format("woff2"), url("public/assets/cloned/fonts/fad8c7ff537f.woff") format("woff"), url("public/assets/cloned/fonts/4ceb7f02c1e9.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/10750305f08d.woff2") format("woff2"), url("public/assets/cloned/fonts/3501be26a34a.woff") format("woff"), url("public/assets/cloned/fonts/106add0c7382.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  font-style: normal;
+  font-weight: 100;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/46325fb35870.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/3826273584c5.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/950ff1427bbe.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/43b3975697eb.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tk-proxima-nova-n1";
+  font-style: normal;
+  font-weight: 100;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/46325fb35870.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tk-proxima-nova-n3";
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/3826273584c5.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tk-proxima-nova-n4";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/950ff1427bbe.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tk-proxima-nova-n7";
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url("public/assets/cloned/fonts/43b3975697eb.woff2") format("woff2");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(36, 36, 36);
+  --primary: rgb(26, 137, 23);
+  --accent: rgb(87, 154, 246);
+  --border: rgb(191, 195, 200);
+  --muted-foreground: rgb(107, 107, 107);
+  --surface: rgb(247, 244, 237);
+  --surface-2: rgb(236, 236, 236);
+  --muted: rgb(68, 68, 68);
+  --surface-3: rgb(244, 244, 244);
+  --surface-4: rgb(240, 240, 240);
+  --color-001: rgb(0, 0, 0);
+  --color-002: rgb(63, 75, 91);
+  --color-003: rgb(185, 74, 72);
+  --color-004: rgb(85, 85, 85);
+  --color-005: rgb(41, 134, 204);
+  --color-006: rgb(28, 25, 23);
+  --color-007: rgb(102, 102, 102);
+  --color-008: rgb(139, 139, 139);
+  --color-009: rgb(168, 162, 158);
+  --color-010: rgb(231, 229, 228);
+  --color-011: rgb(44, 62, 80);
+  --color-012: rgb(0, 90, 240);
+  --color-013: rgb(167, 139, 250);
+  --color-014: rgb(96, 165, 250);
+  --color-015: rgb(245, 158, 11);
+}
+
+:root {
+  /* fonts */
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-001: Georgia, "Times New Roman", Times, serif;
+  --font-002: Arial, Helvetica, sans-serif;
+  --font-003: Arial;
+  /* fontSizes */
+  --font-size-001: 13.76px;
+  --font-size-002: 14.72px;
+  --font-size-003: 16px;
+  --font-size-004: 17.28px;
+  --font-size-005: 18px;
+  --font-size-006: 21.056px;
+  --font-size-007: 21.6px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 650;
+  --font-weight-004: 750;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 36.72px;
+  --line-height-003: 20.64px;
+  --line-height-004: 29.376px;
+  --line-height-005: 25.024px;
+  --line-height-006: 0px;
+  --line-height-007: 36.2163px;
+  --line-height-008: 20.16px;
+  --line-height-009: 25.3184px;
+  --line-height-010: 37.152px;
+  /* spacing */
+  --space-001: 5.6px;
+  --space-002: 8.8px;
+  --space-003: 13.6px;
+  --space-004: 16px;
+  --space-005: 18px;
+  --space-006: 20px;
+  --space-007: 21.6px;
+  --space-008: 24px;
+  --space-009: 24.2144px;
+  --space-010: 38.4px;
+  --space-011: 57.6px;
+  /* radii */
+  --radius-001: 8.8px;
+  --radius-002: 14.4px;
+  --radius-003: 9999px;
+  /* zIndices */
+  --z-001: 1;
+  --z-002: 2;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: color(srgb 0.141176 0.141176 0.141176 / 0.14);
+  --clr-1: color(srgb 0.141176 0.141176 0.141176 / 0.0196);
+  --clr-2: color(srgb 0.419608 0.419608 0.419608 / 0.14);
+  --clr-3: color(srgb 0.92549 0.92549 0.92549 / 0.14);
+  --clr-4: rgba(18, 18, 23, 0.05);
+  --clr-5: rgba(255, 255, 255, 0);
+  --clr-6: rgb(214, 245, 251);
+  --clr-7: color(srgb 0 0 0 / 0.0196);
+  --clr-8: color(srgb 0 0 0 / 0.14);
+  --clr-9: rgb(253, 242, 181);
+  --clr-10: rgb(201, 200, 250);
+  --clr-11: rgb(255, 233, 206);
+  --clr-12: rgb(194, 255, 194);
+  --clr-13: rgb(244, 222, 222);
+  --clr-14: rgb(255, 219, 249);
+  --clr-15: rgba(0, 0, 0, 0.07);
+  --clr-16: rgb(69, 69, 74);
+  --clr-17: rgb(46, 46, 48);
+  --clr-18: rgb(244, 61, 55);
+  --clr-19: rgba(0, 0, 0, 0.15);
+  --clr-20: rgba(0, 0, 0, 0.2);
+  --clr-21: rgba(255, 255, 255, 0.4);
+  --clr-22: rgba(0, 0, 0, 0);
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{box-sizing:content-box;display:block;color:var(--foreground);font-family:Arial, Helvetica, sans-serif;font-size:21.6px;font-weight:400;font-style:normal;line-height:36.72px;letter-spacing:-0.0648px;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{box-sizing:content-box;width:1px;height:1px;display:block;position:absolute;top:0px;left:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;color:var(--primary);text-decoration-line:underline;clip-path:inset(50%);cursor:pointer}
+.cn2{box-sizing:content-box;display:block}
+.cn3{box-sizing:content-box;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:block;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif}
+.cn4{display:block}
+.cn5{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-right:20px;padding-left:20px}
+.cn6{display:flex;max-width:1120px;margin-right:auto;margin-left:auto;padding-top:14px;padding-bottom:14px;justify-content:space-between;align-items:center;row-gap:20px;column-gap:20px}
+.cn7{display:block;line-height:0px}
+.cn8{box-sizing:content-box;height:51.6875px;display:inline-block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn9{box-sizing:content-box;width:120px;height:52px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 318 / 137}
+.cn10{display:flex;justify-content:flex-end;align-items:center}
+.cn11{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-wrap:wrap;justify-content:flex-end;align-items:center;row-gap:20px;column-gap:20px;font-size:17.28px;font-weight:500;line-height:29.376px}
+.cn12{display:none;min-width:0px;vertical-align:middle;line-height:21px;letter-spacing:normal;text-align:center;cursor:pointer}
+.cn13{box-sizing:content-box;width:24px;height:24px;display:block;overflow-x:hidden;overflow-y:hidden;pointer-events:none}
+.cn14{box-sizing:content-box;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;row-gap:20px;column-gap:20px}
+.cn15{box-sizing:content-box;display:block;row-gap:20px;column-gap:20px}
+.cn16{box-sizing:content-box;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;row-gap:20px;column-gap:20px}
+.cn17{box-sizing:content-box;display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;row-gap:20px;column-gap:20px}
+.cn18{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-wrap:wrap;justify-content:flex-end;align-items:center;row-gap:20px;column-gap:20px;list-style-type:none;list-style-position:outside}
+.cn19{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn20{box-sizing:content-box;height:29.375px;display:block;z-index:1;cursor:pointer}
+.cn21{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn22{width:10.3594px;height:10.3594px;display:block;margin-left:4.32px;align-self:center;font-family:Arial;font-weight:400;line-height:0px;letter-spacing:normal;text-align:center;cursor:pointer}
+.cn23{box-sizing:content-box;width:auto;height:10px;display:inline-block;margin-top:1.296px;overflow-x:hidden;overflow-y:hidden}
+.cn24{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn25{box-sizing:content-box;height:29.375px;display:block;z-index:1;cursor:pointer}
+.cn26{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn27{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn28{box-sizing:content-box;height:29.375px;display:block;z-index:1;cursor:pointer}
+.cn29{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn30{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn31{box-sizing:content-box;height:29.375px;display:block;z-index:1;cursor:pointer}
+.cn32{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn33{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn34{box-sizing:content-box;height:29.375px;display:block;z-index:1;cursor:pointer}
+.cn35{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn36{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn37{box-sizing:content-box;height:29.375px;display:block;z-index:1;cursor:pointer}
+.cn38{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn39{width:10.3594px;height:10.3594px;display:block;margin-left:4.32px;align-self:center;font-family:Arial;font-weight:400;line-height:0px;letter-spacing:normal;text-align:center;cursor:pointer}
+.cn40{box-sizing:content-box;width:auto;height:10px;display:inline-block;margin-top:1.296px;overflow-x:hidden;overflow-y:hidden}
+.cn41{box-sizing:content-box;height:3px;display:block;position:fixed;top:0px;right:0px;left:0px;z-index:9999;margin-top:20px;pointer-events:none}
+.cn42{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:76.8px;padding-right:20px;padding-left:20px}
+.cn43{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:720px;margin-right:auto;margin-left:auto;padding-right:40px;padding-left:40px}
+.cn44{display:block;max-width:920px;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:76.8px;font-weight:800;line-height:76.8px;letter-spacing:-4.4544px;word-break:break-word;text-wrap:pretty}
+.cn45{box-sizing:content-box;display:flow-root;max-width:720px;margin-top:56px;font-family:Georgia, "Times New Roman", Times, serif}
+.cn46{box-sizing:content-box;width:236px;height:223.984px;display:table;float:right;margin-bottom:57.6px;margin-left:43.2px}
+.cn47{box-sizing:content-box;height:223.984px;display:inline-block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn48{width:236px;height:224px;display:inline;max-width:100%;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;overflow-x:clip;overflow-y:clip;aspect-ratio:1.0536 / 1;vertical-align:bottom}
+.cn49{box-sizing:content-box;height:253.531px;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn50{box-sizing:content-box;display:inline;font-style:italic}
+.cn51{box-sizing:content-box;height:144.875px;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn52{box-sizing:content-box;display:inline;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn53{display:grid;max-width:720px;padding-top:38.4px;padding-bottom:38.4px;flex-wrap:wrap;row-gap:16px;column-gap:16px;grid-template-rows:311.172px 336.031px 383.453px 335.594px 335.75px 359.594px 351.625px 311.75px 287.75px 311.891px 335.594px 411.125px 340.156px;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;letter-spacing:normal;list-style-type:none;list-style-position:outside;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn54{box-sizing:content-box;height:257.172px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn55{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn56{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn57{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn58{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn59{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn60{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn61{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn62{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn63{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 572}
+.cn64{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn65{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn66{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn67{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn68{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn69{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 578}
+.cn70{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn71{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn72{box-sizing:content-box;height:273.234px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn73{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn74{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn75{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn76{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn77{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn78{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn79{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn80{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn81{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 574}
+.cn82{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn83{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn84{box-sizing:content-box;height:320.656px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn85{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn86{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn87{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 577}
+.cn88{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn89{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn90{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn91{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn92{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn93{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn94{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn95{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn96{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn97{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn98{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn99{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn100{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn101{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn102{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn103{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn104{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn105{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn106{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn107{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn108{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn109{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn110{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn111{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn112{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn113{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn114{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn115{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn116{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn117{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn118{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn119{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn120{box-sizing:content-box;height:296.797px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn121{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn122{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn123{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn124{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn125{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn126{box-sizing:content-box;height:288.828px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn127{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn128{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn129{box-sizing:content-box;width:146px;height:73px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 512}
+.cn130{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn131{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn132{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn133{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn134{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn135{box-sizing:content-box;width:146px;height:146px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 1024}
+.cn136{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn137{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn138{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn139{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn140{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn141{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn142{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn143{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn144{box-sizing:content-box;height:248.953px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn145{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn146{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn147{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn148{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn149{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn150{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn151{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn152{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn153{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn154{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn155{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn156{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn157{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn158{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn159{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 572}
+.cn160{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn161{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn162{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn163{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn164{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn165{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn166{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn167{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn168{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn169{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn170{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn171{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 577}
+.cn172{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn173{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn174{box-sizing:content-box;height:272.797px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn175{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn176{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn177{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 576}
+.cn178{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn179{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn180{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn181{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn182{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn183{box-sizing:content-box;width:146px;height:82px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 575}
+.cn184{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn185{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn186{box-sizing:content-box;height:348.328px;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn187{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn188{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn189{box-sizing:content-box;width:146px;height:76px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 535}
+.cn190{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn191{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn192{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn193{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn194{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn195{box-sizing:content-box;width:146px;height:110px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1024 / 768}
+.cn196{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn197{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn198{box-sizing:content-box;border-width:1px;border-style:solid;border-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:list-item;clear:both;margin-top:8.8px;margin-right:20px;margin-bottom:20px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;border-top-left-radius:14.4px;border-top-right-radius:14.4px;border-bottom-right-radius:14.4px;border-bottom-left-radius:14.4px;overflow-wrap:break-word}
+.cn199{box-sizing:content-box;display:block;margin-bottom:13.6px}
+.cn200{box-sizing:content-box;display:inline-block;font-weight:650;cursor:pointer}
+.cn201{box-sizing:content-box;width:146px;height:183px;display:block;max-width:100%;border-top-left-radius:8.8px;border-top-right-radius:8.8px;border-bottom-right-radius:8.8px;border-bottom-left-radius:8.8px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 819 / 1024}
+.cn202{box-sizing:content-box;display:inline;font-weight:650;cursor:pointer}
+.cn203{box-sizing:content-box;display:block;margin-top:5.6px;color:var(--muted-foreground);font-size:13.76px;line-height:20.64px}
+.cn204{box-sizing:content-box;display:block;max-width:720px;margin-top:80.64px;margin-bottom:19.2px;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:38.4px;font-weight:750;line-height:43.776px;letter-spacing:-1.344px;text-wrap:pretty}
+.cn205{box-sizing:content-box;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn206{box-sizing:content-box;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn207{box-sizing:content-box;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn208{box-sizing:content-box;width:162px;height:162.172px;display:table;float:left;margin-top:57.6px;margin-right:43.2px;margin-bottom:57.6px}
+.cn209{width:162px;height:162px;display:inline;max-width:100%;border-top-left-radius:9999px;border-top-right-radius:9999px;border-bottom-right-radius:9999px;border-bottom-left-radius:9999px;overflow-x:clip;overflow-y:clip;aspect-ratio:0.998939 / 1;vertical-align:bottom}
+.cn210{box-sizing:content-box;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn211{box-sizing:content-box;height:36.2188px;display:block;max-width:720px;margin-top:24.2144px;margin-bottom:24.2144px;font-size:21.056px;line-height:36.2163px;letter-spacing:-0.063168px;text-wrap:pretty}
+.cn212{box-sizing:content-box;display:inline;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn213{box-sizing:content-box;display:block;max-width:720px;margin-top:20px}
+.cn214{box-sizing:content-box;height:58.1562px;display:block}
+.cn215{box-sizing:content-box;height:20.1562px;border-width:1px;border-style:solid;border-color:var(--foreground);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px;flex-direction:row-reverse;justify-content:flex-end;align-items:center;row-gap:24px;column-gap:24px;grid-template-columns:auto min-content;cursor:pointer}
+.cn215::after{content:"";display:block;width:8px;height:8px;transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, -1.76777, -1.76777);transform-origin:5px 5px}
+.cn216{box-sizing:content-box;display:block;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:18px;font-weight:750;line-height:20.16px;letter-spacing:-0.72px;text-wrap:pretty}
+.cn217{box-sizing:content-box;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px}
+.cn218{box-sizing:content-box;display:block;margin-top:21.6px;line-height:37.152px;text-wrap:pretty}
+.cn219{box-sizing:content-box;height:57.1562px;display:block}
+.cn220{box-sizing:content-box;height:100%;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px;flex-direction:row-reverse;justify-content:flex-end;align-items:center;row-gap:24px;column-gap:24px;grid-template-columns:auto min-content;cursor:pointer}
+.cn220::after{content:"";display:block;width:8px;height:8px;transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, -1.76777, -1.76777);transform-origin:5px 5px}
+.cn221{box-sizing:content-box;height:100%;display:block;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:18px;font-weight:750;line-height:20.16px;letter-spacing:-0.72px;text-wrap:pretty}
+.cn222{box-sizing:content-box;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px}
+.cn223{box-sizing:content-box;display:block;margin-top:21.6px;line-height:37.152px;text-wrap:pretty}
+.cn224{box-sizing:content-box;height:57.1562px;display:block}
+.cn225{box-sizing:content-box;height:100%;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px;flex-direction:row-reverse;justify-content:flex-end;align-items:center;row-gap:24px;column-gap:24px;grid-template-columns:auto min-content;cursor:pointer}
+.cn225::after{content:"";display:block;width:8px;height:8px;transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, -1.76777, -1.76777);transform-origin:5px 5px}
+.cn226{box-sizing:content-box;height:100%;display:block;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:18px;font-weight:750;line-height:20.16px;letter-spacing:-0.72px;text-wrap:pretty}
+.cn227{box-sizing:content-box;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px}
+.cn228{box-sizing:content-box;display:block;margin-top:21.6px;line-height:37.152px;text-wrap:pretty}
+.cn229{box-sizing:content-box;height:57.1562px;display:block}
+.cn230{box-sizing:content-box;height:100%;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px;flex-direction:row-reverse;justify-content:flex-end;align-items:center;row-gap:24px;column-gap:24px;grid-template-columns:auto min-content;cursor:pointer}
+.cn230::after{content:"";display:block;width:8px;height:8px;transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, -1.76777, -1.76777);transform-origin:5px 5px}
+.cn231{box-sizing:content-box;height:100%;display:block;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:18px;font-weight:750;line-height:20.16px;letter-spacing:-0.72px;text-wrap:pretty}
+.cn232{box-sizing:content-box;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);border-left-width:1px;border-left-style:solid;border-left-color:var(--foreground);display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2;padding-top:18px;padding-right:24px;padding-bottom:18px;padding-left:24px}
+.cn233{box-sizing:content-box;display:block;margin-top:21.6px;line-height:37.152px;text-wrap:pretty}
+.cn234{box-sizing:content-box;border-top-width:1px;border-top-style:solid;border-top-color:color(srgb 0.141176 0.141176 0.141176 / 0.14);display:block;margin-top:96px;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif}
+.cn235{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:64px;padding-right:20px;padding-bottom:38.4px;padding-left:20px}
+.cn236{display:block;max-width:1120px;margin-right:auto;margin-left:auto}
+.cn237{display:block;line-height:0px}
+.cn238{box-sizing:content-box;height:51.6875px;display:inline-block;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+.cn239{box-sizing:content-box;width:120px;height:52px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 318 / 137}
+.cn240{display:flex;margin-top:20px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;row-gap:20px;column-gap:20px}
+.cn241{display:flex;row-gap:38.4px;column-gap:38.4px}
+.cn242{box-sizing:content-box;height:25.3125px;display:block;min-width:0px;flex-basis:100%;word-break:break-word;overflow-wrap:break-word}
+.cn243{display:block;color:var(--muted-foreground);font-size:14.72px;line-height:25.3184px;text-wrap:pretty}
+.cn244{box-sizing:content-box;height:25.3125px;display:block;min-width:0px;flex-grow:1;flex-basis:0px;word-break:break-word;overflow-wrap:break-word}
+.cn245{box-sizing:content-box;width:0px;height:20px;display:block;clear:both}
+.cn246{height:70.0312px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;row-gap:144px;column-gap:144px}
+.cn247{box-sizing:content-box;height:70.0312px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column;flex-wrap:wrap;align-items:flex-start;row-gap:20px;column-gap:20px;font-size:14.72px;font-weight:500;line-height:25.024px}
+.cn248{box-sizing:content-box;height:70.0312px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column;flex-wrap:wrap;align-items:flex-start;flex-grow:1;row-gap:20px;column-gap:20px;list-style-type:none;list-style-position:outside}
+.cn249{box-sizing:content-box;height:25.0156px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn250{box-sizing:content-box;height:25.0156px;display:block;z-index:1;cursor:pointer}
+.cn251{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn252{box-sizing:content-box;height:25.0156px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn253{box-sizing:content-box;height:25.0156px;display:block;z-index:1;cursor:pointer}
+.cn254{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn255{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column;flex-wrap:wrap;align-items:flex-start;row-gap:20px;column-gap:20px;font-size:14.72px;font-weight:500;line-height:25.024px}
+.cn256{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column;flex-wrap:wrap;align-items:flex-start;flex-grow:1;row-gap:20px;column-gap:20px;list-style-type:none;list-style-position:outside}
+.cn257{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn258{box-sizing:content-box;height:25.0156px;display:block;z-index:1;cursor:pointer}
+.cn259{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn260{box-sizing:content-box;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;align-items:center}
+.cn261{box-sizing:content-box;height:25.0156px;display:block;z-index:1;cursor:pointer}
+.cn262{box-sizing:content-box;display:inline;overflow-wrap:break-word}
+.cn263{box-sizing:content-box;height:96px;display:block;clear:both;margin-top:20px}
+.cn264{height:25.3125px;display:flex;margin-top:20px;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:8px;column-gap:8px}
+.cn265{box-sizing:content-box;display:block;font-size:14.72px;line-height:25.3184px;text-wrap:pretty}
+.cn266{box-sizing:content-box;display:block;font-size:14.72px;line-height:25.3184px;text-wrap:pretty}
+.cn267{box-sizing:content-box;display:inline;color:var(--primary);text-decoration-line:underline;cursor:pointer}
+
+@media (max-width: 571px) {
+.cn0{font-size:18.2475px;line-height:31.0208px;letter-spacing:-0.0547425px}
+.cn11{font-size:16.088px;line-height:27.3496px}
+.cn12{display:flex;line-height:19px;min-width:0}
+.cn14{display:none}
+.cn42{margin-top:40px}
+.cn43{padding-right:20px;padding-left:20px}
+.cn44{font-size:45px;line-height:45px;letter-spacing:-2.25px}
+.cn45{margin-top:32px}
+.cn46{margin-bottom:32px;margin-left:36.495px}
+.cn49{height:477.172px;margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn51{height:181.406px;margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn53{padding-top:24px;padding-bottom:24px;grid-template-rows:314.766px 346.406px 348.125px 347.266px 370.984px 323.844px 347.266px 347.266px 347.266px 347.562px 347.266px 347.562px 305.125px 452.625px 347.562px 299.562px 323.562px 322.406px 347.266px 323.844px 323.562px 347.266px 335.75px 426.875px 502.453px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn54{height:260.766px}
+.cn57{width:295px;height:166px}
+.cn60{margin-right:20px}
+.cn63{width:295px;height:165px}
+.cn69{width:295px;height:167px}
+.cn72{height:284.469px;margin-right:20px}
+.cn75{width:295px;height:166px}
+.cn81{width:295px;height:165px}
+.cn84{height:261.047px;margin-right:20px}
+.cn87{width:295px;height:166px}
+.cn93{width:295px;height:166px}
+.cn96{margin-right:20px}
+.cn99{width:295px;height:166px}
+.cn105{width:295px;height:166px}
+.cn108{margin-right:20px}
+.cn111{width:295px;height:166px}
+.cn117{width:295px;height:166px}
+.cn120{height:284.766px;margin-right:20px}
+.cn123{width:295px;height:166px}
+.cn126{height:242.328px}
+.cn129{width:295px;height:148px}
+.cn132{margin-right:20px}
+.cn135{width:295px;height:295px}
+.cn141{width:295px;height:166px}
+.cn144{height:236.766px;margin-right:20px}
+.cn147{width:295px;height:166px}
+.cn153{width:295px;height:166px}
+.cn156{margin-right:20px}
+.cn159{width:295px;height:165px}
+.cn165{width:295px;height:166px}
+.cn168{margin-right:20px}
+.cn171{width:295px;height:166px}
+.cn174{height:260.766px}
+.cn177{width:295px;height:166px}
+.cn180{margin-right:20px}
+.cn183{width:295px;height:166px}
+.cn186{height:272.953px}
+.cn189{width:295px;height:154px}
+.cn192{margin-right:20px}
+.cn195{width:295px;height:221px}
+.cn201{width:295px;height:369px}
+.cn204{margin-top:62.16px;margin-bottom:14.8px;font-size:29.6px;line-height:33.744px;letter-spacing:-1.036px}
+.cn205{margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn206{margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn207{margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn208{margin-top:32px;margin-right:36.495px;margin-bottom:32px}
+.cn210{margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn211{height:30.2344px;margin-top:20.7px;margin-bottom:20.7px;font-size:18px;line-height:30.24px;letter-spacing:-0.054px}
+.cn218{margin-top:18.2475px;line-height:31.3857px}
+.cn219{height:77.3125px}
+.cn223{margin-top:18.2475px;line-height:31.3857px}
+.cn224{height:97.4688px}
+.cn228{margin-top:18.2475px;line-height:31.3857px}
+.cn229{height:97.4688px}
+.cn233{margin-top:18.2475px;line-height:31.3857px}
+.cn234{margin-top:56px}
+.cn235{padding-top:36px;padding-bottom:24px}
+.cn241{flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.cn242{flex-grow:1}
+.cn244{height:20px;flex-basis:100%}
+.cn246{row-gap:80px;column-gap:80px}
+.cn263{height:56px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{font-size:20.016px;line-height:34.0272px;letter-spacing:-0.060048px}
+.cn11{font-size:16.7168px;line-height:28.4186px}
+.cn20{height:28.4219px}
+.cn22{width:10.0156px;height:10.0156px;margin-left:4.1792px}
+.cn23{margin-top:1.25376px}
+.cn25{height:28.4219px}
+.cn28{height:28.4219px}
+.cn31{height:28.4219px}
+.cn34{height:28.4219px}
+.cn37{height:28.4219px}
+.cn39{width:10.0156px;height:10.0156px;margin-left:4.1792px}
+.cn40{margin-top:1.25376px}
+.cn42{margin-top:46.08px}
+.cn43{padding-right:30.72px;padding-left:30.72px}
+.cn44{font-size:49.92px;line-height:49.92px;letter-spacing:-2.89536px}
+.cn45{margin-top:38.4px}
+.cn46{margin-bottom:38.4px;margin-left:40.032px}
+.cn49{height:191.531px;margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn51{height:95.7656px;margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn53{padding-top:24px;padding-bottom:24px;grid-template-rows:328.422px 359.969px 361.844px 336.906px 384.594px 337.531px 360.906px 360.906px 360.906px 337.219px 360.906px 361.219px 317.266px 476.906px 361.219px 313.219px 337.219px 335.969px 336.906px 337.531px 337.219px 360.906px 348.422px 421.078px 532.812px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn54{height:274.422px}
+.cn57{width:319px;height:180px}
+.cn63{width:319px;height:178px}
+.cn69{width:319px;height:180px}
+.cn72{height:274.109px}
+.cn75{width:319px;height:179px}
+.cn81{width:319px;height:179px}
+.cn84{height:274.734px}
+.cn87{width:319px;height:180px}
+.cn93{width:319px;height:179px}
+.cn99{width:319px;height:179px}
+.cn105{width:319px;height:179px}
+.cn111{width:319px;height:180px}
+.cn117{width:319px;height:179px}
+.cn120{height:298.422px}
+.cn123{width:319px;height:180px}
+.cn126{height:254.469px}
+.cn129{width:319px;height:160px}
+.cn135{width:319px;height:319px}
+.cn141{width:319px;height:180px}
+.cn144{height:250.422px}
+.cn147{width:319px;height:180px}
+.cn153{width:319px;height:180px}
+.cn159{width:319px;height:178px}
+.cn165{width:319px;height:179px}
+.cn171{width:319px;height:180px}
+.cn174{height:274.422px}
+.cn177{width:319px;height:180px}
+.cn183{width:319px;height:179px}
+.cn186{height:285.625px}
+.cn189{width:319px;height:167px}
+.cn195{width:319px;height:239px}
+.cn201{width:319px;height:399px}
+.cn204{margin-top:62.16px;margin-bottom:14.8px;font-size:29.6px;line-height:33.744px;letter-spacing:-1.036px}
+.cn205{margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn206{margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn207{margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn208{margin-top:38.4px;margin-right:40.032px;margin-bottom:38.4px}
+.cn210{margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn211{height:31.9219px;margin-top:21.344px;margin-bottom:21.344px;font-size:18.56px;line-height:31.9232px;letter-spacing:-0.05568px}
+.cn218{margin-top:20.016px;line-height:34.4275px}
+.cn223{margin-top:20.016px;line-height:34.4275px}
+.cn228{margin-top:20.016px;line-height:34.4275px}
+.cn233{margin-top:20.016px;line-height:34.4275px}
+.cn234{margin-top:61.44px}
+.cn235{padding-top:38.4px;padding-bottom:24px}
+.cn241{flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.cn242{flex-grow:1}
+.cn244{height:20px;flex-basis:100%}
+.cn246{row-gap:92.16px;column-gap:92.16px}
+.cn263{height:61.4375px}
+}
+
+@media (min-width: 1601px) {
+.cn42{margin-top:80px}
+.cn49{height:297.125px;margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn51{height:148.562px;margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn53{padding-top:40px;padding-bottom:40px}
+.cn204{margin-top:87.36px;margin-bottom:20.8px;font-size:41.6px;line-height:47.424px;letter-spacing:-1.456px}
+.cn205{margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn206{margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn207{margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn210{margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn211{height:37.1406px;margin-top:24.84px;margin-bottom:24.84px;line-height:37.152px;font-size:inherit;letter-spacing:inherit}
+.cn235{padding-bottom:40px}
+.cn241{row-gap:40px;column-gap:40px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <a class="cn1" data-ditto-id="style-wp-skip-link" href="#wp--skip-link--target" id="wp-skip-link">
+      Zum Inhalt springen
+    </a>
+    <div class="cn2">
+      <header class="cn3">
+        <div class="cn4">
+          <div class="cn5">
+            <div class="cn6">
+              <div class="cn7">
+                <a class="cn8" data-ditto-id="style-link" aria-current="page" href="https://www.afaik.de/" rel="home">
+                  <img class="cn9" data-ditto-id="style-image" alt="Afaik min" height="137" src="public/assets/cloned/svg/d179f89faeae.svg" width="318" />
+                </a>
+              </div>
+               
+              <div class="cn10">
+                <nav class="cn11" aria-label="Haupnav">
+                  <button class="cn12" aria-haspopup="dialog" aria-label="Menü öffnen">
+                    <svg class="cn13" aria-hidden="true" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor"><path d="M4 7.5h16v1.5H4z"></path><path d="M4 15h16v1.5H4z"></path></svg>
+                  </button>
+                   
+                  <div class="cn14" data-ditto-id="style-modal-1" id="modal-1">
+                    <div class="cn15">
+                      <div class="cn16">
+                        <div class="cn17" id="modal-1-content">
+                          <ul class="cn18">
+                            <li class="cn19" data-ditto-id="style-li">
+                              <a class="cn20" data-ditto-id="style-link-2" href="https://www.afaik.de/ki-beratung/" title="Meine KI-Beratungsleistungen im Detail">
+                                <span class="cn21" data-ditto-id="style-span">
+                                  Beratung
+                                </span>
+                              </a>
+                              <button class="cn22" data-ditto-id="style-untermen-von-beratung" aria-expanded="false" aria-label="Untermenü von Beratung">
+                                <svg class="cn23" data-ditto-id="style-icon" aria-hidden="true" fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg>
+                              </button>
+                            </li>
+                            <li class="cn24">
+                              <a class="cn25" data-ditto-id="style-5" href="https://www.afaik.de/artikel/">
+                                <span class="cn26" data-ditto-id="style-23">
+                                  Artikel
+                                </span>
+                              </a>
+                            </li>
+                            <li class="cn27">
+                              <a class="cn28" data-ditto-id="style-6" href="https://www.afaik.de/newsletter/">
+                                <span class="cn29" data-ditto-id="style-24">
+                                  Newsletter
+                                </span>
+                              </a>
+                            </li>
+                            <li class="cn30">
+                              <a class="cn31" data-ditto-id="style-7" href="https://www.afaik.de/podcast/" title="Synapsensprung – Wo Technologie, Philosophie und Gesellschaft aufeinandertreffen">
+                                <span class="cn32" data-ditto-id="style-25">
+                                  Podcast
+                                </span>
+                              </a>
+                            </li>
+                            <li class="cn33">
+                              <a class="cn34" data-ditto-id="style-8" href="https://www.afaik.de/kai-spriestersbach/">
+                                <span class="cn35" data-ditto-id="style-26">
+                                  Über mich
+                                </span>
+                              </a>
+                            </li>
+                            <li class="cn36" data-ditto-id="style-li-2">
+                              <a class="cn37" data-ditto-id="style-link-3" href="#">
+                                <span class="cn38" data-ditto-id="style-span-2">
+                                  Bücher
+                                </span>
+                              </a>
+                              <button class="cn39" data-ditto-id="style-untermen-von-b-cher" aria-expanded="false" aria-label="Untermenü von Bücher">
+                                <svg class="cn40" data-ditto-id="style-icon-2" aria-hidden="true" fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg>
+                              </button>
+                            </li>
+                          </ul>
+                           
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                     
+                  </div>
+                </nav>
+              </div>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </header>
+       
+      <div class="cn41" aria-hidden="true"></div>
+       
+      <main class="cn42" id="wp--skip-link--target">
+        <article class="cn43">
+          <h1 class="cn44">
+            As Far As I Know
+          </h1>
+           
+          <div class="cn45" data-ditto-id="style-figure">
+            <figure class="cn46">
+              <a class="cn47" data-ditto-id="style-div-62" href="https://www.afaik.de/kai-spriestersbach/">
+                <img class="cn48" data-ditto-id="style-div-14" alt="Kai Spriestersbach – Head of AI, KI-Experte, Forscher, Bestseller Autor und Speaker" height="896" sizes="(max-width: 944px) 100vw, 944px" src="public/assets/cloned/images/e06a57c177bf.jpg" srcset="public/assets/cloned/images/e06a57c177bf.jpg 944w, public/assets/cloned/images/2ee8b4d5be07.jpg 768w" width="944" />
+              </a>
+            </figure>
+             
+            <p class="cn49" data-ditto-id="style-heading-13">
+              <em class="cn50" data-ditto-id="style-p">
+                AFAIK steht für „As Far As I Know“ — zu Deutsch: so weit ich weiß.
+              </em>
+               Die Abkürzung ist im Internet weit verbreitet, vor allem in Chats, Foren und sozialen Medien, um auszudrücken, dass eine Aussage auf dem eigenen Wissensstand basiert, ohne Anspruch auf Vollständigkeit.
+            </p>
+             
+            <p class="cn51" data-ditto-id="style-form-2">
+              Und genau das ist auch die Haltung dieses Blogs. Hier schreibe ich, 
+              <a class="cn52" data-ditto-id="style-label" href="https://www.afaik.de/kai-spriestersbach/" rel="noopener" target="_blank" title="Über Kai Spriestersbach">
+                Kai Spriestersbach
+              </a>
+               über KI, Suchmaschinen und das, was dazwischen passiert — wissenschaftlich fundiert, journalistisch aufbereitet, verständlich geschrieben.
+            </p>
+             
+            <ul class="cn53">
+              <li class="cn54" data-ditto-id="style-wp-block-search-input-2">
+                <div class="cn55" data-ditto-id="style-suchen">
+                  <a class="cn56" data-ditto-id="style-footer" aria-label="Skimmer, Scanner, Reader: Diese drei Lesertypen gibt es nicht" href="https://www.afaik.de/skimmer-scanner-reader-gibt-es-nicht/">
+                    <img class="cn57" data-ditto-id="style-div-64" alt="Screenshot" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/6fb50f2cabe0.jpg" srcset="public/assets/cloned/images/6fb50f2cabe0.jpg 1024w, public/assets/cloned/images/0177d36aa6e3.jpg 2048w, public/assets/cloned/images/c46685be57ea.jpg 768w, public/assets/cloned/images/0ccb9eda6992.jpg 1536w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn58" data-ditto-id="style-div-21" href="https://www.afaik.de/skimmer-scanner-reader-gibt-es-nicht/">
+                  Skimmer, Scanner, Reader: Diese drei Lesertypen gibt es nicht
+                </a>
+                <time class="cn59" data-ditto-id="style-div-44" datetime="2026-08-10T13:06:09+02:00">
+                  10. August 2026
+                </time>
+              </li>
+              <li class="cn60" data-ditto-id="style-link-4">
+                <div class="cn61" data-ditto-id="style-image-2">
+                  <a class="cn62" data-ditto-id="style-div-2" aria-label="LLM Readability: Muss ich meinen Content jetzt für Maschinen umschreiben?" href="https://www.afaik.de/llm-readability-diskurs/">
+                    <img class="cn63" data-ditto-id="style-div-65" alt="Screenshot" height="572" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/0f465fc89c68.jpg" srcset="public/assets/cloned/images/0f465fc89c68.jpg 1024w, public/assets/cloned/images/c70c70e27aed.jpg 768w, public/assets/cloned/images/fc4bd4467a6b.jpg 1536w, public/assets/cloned/images/b6b1b4f87050.jpg 1548w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn64" data-ditto-id="style-div-6" href="https://www.afaik.de/llm-readability-diskurs/">
+                  LLM Readability: Muss ich meinen Content jetzt für Maschinen umschreiben?
+                </a>
+                <time class="cn65" data-ditto-id="style-p-9" datetime="2026-08-08T17:14:24+02:00">
+                  8. August 2026
+                </time>
+              </li>
+              <li class="cn66" data-ditto-id="style-div">
+                <div class="cn67" data-ditto-id="style-div-45">
+                  <a class="cn68" data-ditto-id="style-div-63" aria-label="ARC-AGI-3: „GPT-5.6 Sol schlägt Opus 5“ – nur ist das kein Vergleich, sondern ein Messproblem" href="https://www.afaik.de/arc-agi-3-gpt-5-6-sol-opus-5-messproblem/">
+                    <img class="cn69" data-ditto-id="style-footer-nav" alt="Screenshot" height="578" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/86fb1c6a6d37.jpg" srcset="public/assets/cloned/images/86fb1c6a6d37.jpg 1024w, public/assets/cloned/images/6ba4b4abda2a.jpg 768w, public/assets/cloned/images/b718726ab7ea.jpg 1368w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn70" data-ditto-id="style-ul-17" href="https://www.afaik.de/arc-agi-3-gpt-5-6-sol-opus-5-messproblem/">
+                  ARC-AGI-3: „GPT-5.6 Sol schlägt Opus 5“ – nur ist das kein Vergleich, sondern ein Messproblem
+                </a>
+                <time class="cn71" data-ditto-id="style-li-20" datetime="2026-08-06T16:04:11+02:00">
+                  6. August 2026
+                </time>
+              </li>
+              <li class="cn72" data-ditto-id="style-link-5">
+                <div class="cn73" data-ditto-id="style-span-3">
+                  <a class="cn74" data-ditto-id="style-li-21" aria-label="0,22 gegen 0,06: Warum KI-Agenten viel schneller klug werden als verlässlich" href="https://www.afaik.de/narayanan-icml-2026-was-bleibt-zu-tun/">
+                    <img class="cn75" data-ditto-id="style-link-6" alt="Screenshot" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/383237cd8e68.jpg" srcset="public/assets/cloned/images/383237cd8e68.jpg 1024w, public/assets/cloned/images/cb28f88f298c.jpg 768w, public/assets/cloned/images/e68e052a7860.jpg 1536w, public/assets/cloned/images/a98db98ba320.jpg 1720w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn76" data-ditto-id="style-span-4" href="https://www.afaik.de/narayanan-icml-2026-was-bleibt-zu-tun/">
+                  0,22 gegen 0,06: Warum KI-Agenten viel schneller klug werden als verlässlich
+                </a>
+                <time class="cn77" data-ditto-id="style-footer-nav-2" datetime="2026-07-28T16:14:50+02:00">
+                  28. Juli 2026
+                </time>
+              </li>
+              <li class="cn78" data-ditto-id="style-ul-3">
+                <div class="cn79" data-ditto-id="style-li-25">
+                  <a class="cn80" data-ditto-id="style-link-7" aria-label="Faktor 5: Googles ATLAS-Studie und Anthropics Economic Index messen dasselbe – und liegen um das Fünffache auseinander" href="https://www.afaik.de/faktor-5-googles-atlas-und-anthropics-economic-index/">
+                    <img class="cn81" data-ditto-id="style-span-5" alt="Screenshot" height="574" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/2fe6891be10b.jpg" srcset="public/assets/cloned/images/2fe6891be10b.jpg 1024w, public/assets/cloned/images/aeb8f72c31ab.jpg 768w, public/assets/cloned/images/c6eeab6c1744.jpg 1536w, public/assets/cloned/images/c27e4e9103b6.jpg 2044w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn82" data-ditto-id="style-li-23" href="https://www.afaik.de/faktor-5-googles-atlas-und-anthropics-economic-index/">
+                  Faktor 5: Googles ATLAS-Studie und Anthropics Economic Index messen dasselbe – und liegen um das Fünffache auseinander
+                </a>
+                <time class="cn83" data-ditto-id="style-link-8" datetime="2026-07-27T19:47:33+02:00">
+                  27. Juli 2026
+                </time>
+              </li>
+              <li class="cn84" data-ditto-id="style-span-6">
+                <div class="cn85" data-ditto-id="style-div-66">
+                  <a class="cn86" data-ditto-id="style-div-3" aria-label="Googles ATLAS-Studie: eine Landkarte der KI-Nutzung" href="https://www.afaik.de/googles-atlas-studie/">
+                    <img class="cn87" data-ditto-id="style-p-10" alt="Screenshot" height="577" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/b850ffd702cd.jpg" srcset="public/assets/cloned/images/b850ffd702cd.jpg 1024w, public/assets/cloned/images/50e78ad4c93a.jpg 2048w, public/assets/cloned/images/23dcb742b53e.jpg 768w, public/assets/cloned/images/399121a39d0b.jpg 1536w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn88" data-ditto-id="style-p-199" href="https://www.afaik.de/googles-atlas-studie/">
+                  Googles ATLAS-Studie: eine Landkarte der KI-Nutzung
+                </a>
+                <time class="cn89" data-ditto-id="style-link-9" datetime="2026-07-27T18:46:30+02:00">
+                  27. Juli 2026
+                </time>
+              </li>
+              <li class="cn90" data-ditto-id="style-p-176">
+                <div class="cn91" data-ditto-id="style-blockquote-15">
+                  <a class="cn92" data-ditto-id="style-p-200" aria-label="Schon wieder eine GEO-Studie, die viel weniger beweist, als ihre Autoren behaupten" href="https://www.afaik.de/geo-studie-die-weniger-beweist-als-behauptet/">
+                    <img class="cn93" data-ditto-id="style-ftnref1" alt="Screenshot" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/f172a034734a.jpg" srcset="public/assets/cloned/images/f172a034734a.jpg 1024w, public/assets/cloned/images/1b7d0a4701a2.jpg 768w, public/assets/cloned/images/8e54979bf71c.jpg 1536w, public/assets/cloned/images/2e332b506d6e.jpg 2028w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn94" data-ditto-id="style-p-201" href="https://www.afaik.de/geo-studie-die-weniger-beweist-als-behauptet/">
+                  Schon wieder eine GEO-Studie, die viel weniger beweist, als ihre Autoren behaupten
+                </a>
+                <time class="cn95" data-ditto-id="style-p-181" datetime="2026-07-22T16:03:02+02:00">
+                  22. Juli 2026
+                </time>
+              </li>
+              <li class="cn96" data-ditto-id="style-ftnref2">
+                <div class="cn97" data-ditto-id="style-p-151">
+                  <a class="cn98" data-ditto-id="style-em-8" aria-label="Woran man KI-Geschichten erkennt – und warum das weniger bedeutet, als es klingt" href="https://www.afaik.de/woran-man-ki-geschichten-erkennt/">
+                    <img class="cn99" data-ditto-id="style-p-204" alt="Screenshot" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/e75a214aa639.jpg" srcset="public/assets/cloned/images/e75a214aa639.jpg 1024w, public/assets/cloned/images/baeecea79dca.jpg 2048w, public/assets/cloned/images/b69cd62ae39f.jpg 768w, public/assets/cloned/images/b9473ae355bd.jpg 1536w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn100" data-ditto-id="style-p-202" href="https://www.afaik.de/woran-man-ki-geschichten-erkennt/">
+                  Woran man KI-Geschichten erkennt – und warum das weniger bedeutet, als es klingt
+                </a>
+                <time class="cn101" data-ditto-id="style-cite-3" datetime="2026-07-16T14:51:23+02:00">
+                  16. Juli 2026
+                </time>
+              </li>
+              <li class="cn102" data-ditto-id="style-link-23">
+                <div class="cn103" data-ditto-id="style-p-206">
+                  <a class="cn104" data-ditto-id="style-p-203" aria-label="Die Bühne im Maschinengeist: Was Claude über unser eigenes Denken verraten könnte" href="https://www.afaik.de/die-buehne-im-maschinengeist/">
+                    <img class="cn105" data-ditto-id="style-strong" alt="Screenshot" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/971e79751308.jpg" srcset="public/assets/cloned/images/971e79751308.jpg 1024w, public/assets/cloned/images/9fbed3f06a94.jpg 2048w, public/assets/cloned/images/cc31be57e179.jpg 768w, public/assets/cloned/images/20ccf2a8ec93.jpg 1536w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn106" data-ditto-id="style-hr" href="https://www.afaik.de/die-buehne-im-maschinengeist/">
+                  Die Bühne im Maschinengeist: Was Claude über unser eigenes Denken verraten könnte
+                </a>
+                <time class="cn107" data-ditto-id="style-heading-48" datetime="2026-07-10T13:28:11+02:00">
+                  10. Juli 2026
+                </time>
+              </li>
+              <li class="cn108" data-ditto-id="style-p-11">
+                <div class="cn109" data-ditto-id="style-blockquote-2">
+                  <a class="cn110" data-ditto-id="style-p-185" aria-label="Schlechte Prompts, schlechte Texte: Warum mich diese KI-„Studie“ so ärgert" href="https://www.afaik.de/schlechte-prompts-schlechte-texte/">
+                    <img class="cn111" data-ditto-id="style-strong-135" alt="Screenshot" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/8d533273bb71.jpg" srcset="public/assets/cloned/images/8d533273bb71.jpg 1024w, public/assets/cloned/images/6a0d25a579a5.jpg 2048w, public/assets/cloned/images/d982f384a48c.jpg 768w, public/assets/cloned/images/4f7ed2c71857.jpg 1536w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn112" data-ditto-id="style-p-186" href="https://www.afaik.de/schlechte-prompts-schlechte-texte/">
+                  Schlechte Prompts, schlechte Texte: Warum mich diese KI-„Studie“ so ärgert
+                </a>
+                <time class="cn113" data-ditto-id="style-p-187" datetime="2026-07-09T15:17:19+02:00">
+                  9. Juli 2026
+                </time>
+              </li>
+              <li class="cn114" data-ditto-id="style-strong-128">
+                <div class="cn115" data-ditto-id="style-p-213">
+                  <a class="cn116" data-ditto-id="style-strong-130" aria-label="Zitiert heißt nicht empfohlen: Was drei Experimente über Self-Promotional Content in der KI-Suche zeigen" href="https://www.afaik.de/geo-zitiert-heisst-nicht-empfohlen-self-promotional-content/">
+                    <img class="cn117" data-ditto-id="style-p-205" alt="Screenshot" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/38b7d68805b5.jpg" srcset="public/assets/cloned/images/38b7d68805b5.jpg 1024w, public/assets/cloned/images/dcb80ba314e4.jpg 768w, public/assets/cloned/images/c5811c716faa.jpg 1536w, public/assets/cloned/images/3dcb1e611b80.jpg 1654w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn118" data-ditto-id="style-blockquote-3" href="https://www.afaik.de/geo-zitiert-heisst-nicht-empfohlen-self-promotional-content/">
+                  Zitiert heißt nicht empfohlen: Was drei Experimente über Self-Promotional Content in der KI-Suche zeigen
+                </a>
+                <time class="cn119" data-ditto-id="style-p-207" datetime="2026-07-07T12:41:52+02:00">
+                  7. Juli 2026
+                </time>
+              </li>
+              <li class="cn120" data-ditto-id="style-p-23">
+                <div class="cn121" data-ditto-id="style-blockquote-4">
+                  <a class="cn122" data-ditto-id="style-p-152" aria-label="Agenten sind keine Kolleg:innen. Und genau deshalb brauchen sie eine Plattform" href="https://www.afaik.de/agenten-sind-keine-kolleg-innen/">
+                    <img class="cn123" data-ditto-id="style-p-24" alt="Ki agenten keine kollegen" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/ba9c2b5a159b.jpg" srcset="public/assets/cloned/images/ba9c2b5a159b.jpg 1024w, public/assets/cloned/images/e0a116103208.jpg 768w, public/assets/cloned/images/a705d9478af3.jpg 1536w, public/assets/cloned/images/ef915b50d974.jpg 1672w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn124" data-ditto-id="style-hr-2" href="https://www.afaik.de/agenten-sind-keine-kolleg-innen/">
+                  Agenten sind keine Kolleg:innen. Und genau deshalb brauchen sie eine Plattform
+                </a>
+                <time class="cn125" data-ditto-id="style-heading-40" datetime="2026-06-29T22:17:35+02:00">
+                  29. Juni 2026
+                </time>
+              </li>
+              <li class="cn126" data-ditto-id="style-p-25">
+                <div class="cn127" data-ditto-id="style-p-26">
+                  <a class="cn128" data-ditto-id="style-p-16" aria-label="Trust ist nicht neu. Neu ist, dass KI Suchen Aussagen prüfen könnte." href="https://www.afaik.de/trust-ist-die-neue-sichtbarkeit/">
+                    <img class="cn129" data-ditto-id="style-blockquote-6" alt="Screenshot" height="512" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/834c5ed5ca92.jpg" srcset="public/assets/cloned/images/834c5ed5ca92.jpg 1024w, public/assets/cloned/images/117029127971.jpg 768w, public/assets/cloned/images/14c0a6cec89f.jpg 1536w, public/assets/cloned/images/0adcd4f94b22.jpg 1806w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn130" data-ditto-id="style-p-27" href="https://www.afaik.de/trust-ist-die-neue-sichtbarkeit/">
+                  Trust ist nicht neu. Neu ist, dass KI Suchen Aussagen prüfen könnte.
+                </a>
+                <time class="cn131" data-ditto-id="style-strong-136" datetime="2026-06-26T15:13:33+02:00">
+                  26. Juni 2026
+                </time>
+              </li>
+              <li class="cn132" data-ditto-id="style-p-183">
+                <div class="cn133" data-ditto-id="style-hr-6">
+                  <a class="cn134" data-ditto-id="style-heading-17" aria-label="AI Content Detektoren: Kann man KI-Texte erkennen?" href="https://www.afaik.de/ai-content-detectoren/">
+                    <img class="cn135" data-ditto-id="style-p-86" alt="AI Content Detection" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/84fe8ca27dd0.jpg" srcset="public/assets/cloned/images/84fe8ca27dd0.jpg 1024w, public/assets/cloned/images/731518f6f86a.jpg 768w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn136" data-ditto-id="style-p-12" href="https://www.afaik.de/ai-content-detectoren/">
+                  AI Content Detektoren: Kann man KI-Texte erkennen?
+                </a>
+                <time class="cn137" data-ditto-id="style-p-17" datetime="2026-06-23T16:43:27+02:00">
+                  23. Juni 2026
+                </time>
+              </li>
+              <li class="cn138" data-ditto-id="style-strong-2">
+                <div class="cn139" data-ditto-id="style-p-208">
+                  <a class="cn140" data-ditto-id="style-heading" aria-label="Der KI-Graben: Warum GenAI die einen besser macht – und die anderen abhängig" href="https://www.afaik.de/der-ki-graben/">
+                    <img class="cn141" data-ditto-id="style-p-28" alt="Graben" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/91bc313030b1.jpg" srcset="public/assets/cloned/images/91bc313030b1.jpg 1024w, public/assets/cloned/images/245a88189589.jpg 768w, public/assets/cloned/images/95cd604cf623.jpg 1536w, public/assets/cloned/images/9a205ebdae52.jpg 1672w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn142" data-ditto-id="style-blockquote-13" href="https://www.afaik.de/der-ki-graben/">
+                  Der KI-Graben: Warum GenAI die einen besser macht – und die anderen abhängig
+                </a>
+                <time class="cn143" data-ditto-id="style-p-195" datetime="2026-06-15T11:31:18+02:00">
+                  15. Juni 2026
+                </time>
+              </li>
+              <li class="cn144" data-ditto-id="style-strong-129">
+                <div class="cn145" data-ditto-id="style-p-87">
+                  <a class="cn146" data-ditto-id="style-p-18" aria-label="Der mythische KI-Monat" href="https://www.afaik.de/der-mythische-ki-monat/">
+                    <img class="cn147" data-ditto-id="style-p-177" alt="Magical man month ai" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/63bf7b809a39.jpg" srcset="public/assets/cloned/images/63bf7b809a39.jpg 1024w, public/assets/cloned/images/8f97d306b741.jpg 768w, public/assets/cloned/images/c82291723f7f.jpg 1536w, public/assets/cloned/images/2a8a9e1f3704.jpg 1672w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn148" data-ditto-id="style-strong-134" href="https://www.afaik.de/der-mythische-ki-monat/">
+                  Der mythische KI-Monat
+                </a>
+                <time class="cn149" data-ditto-id="style-hr-7" datetime="2026-06-14T20:52:18+02:00">
+                  14. Juni 2026
+                </time>
+              </li>
+              <li class="cn150" data-ditto-id="style-heading-49">
+                <div class="cn151" data-ditto-id="style-p-153">
+                  <a class="cn152" data-ditto-id="style-ol-3" aria-label="Claude Opus 4.8: Warum Ehrlichkeit das eigentliche Upgrade ist" href="https://www.afaik.de/claude-opus-4-8-warum-ehrlichkeit-das-eigentliche-upgrade-ist/">
+                    <img class="cn153" data-ditto-id="style-p-196" alt="YpL7kUiw LM HD" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/ceb74a1dac7a.jpg" srcset="public/assets/cloned/images/ceb74a1dac7a.jpg 1024w, public/assets/cloned/images/77fd08705152.jpg 768w, public/assets/cloned/images/20e5e790c820.jpg 1280w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn154" data-ditto-id="style-em-9" href="https://www.afaik.de/claude-opus-4-8-warum-ehrlichkeit-das-eigentliche-upgrade-ist/">
+                  Claude Opus 4.8: Warum Ehrlichkeit das eigentliche Upgrade ist
+                </a>
+                <time class="cn155" data-ditto-id="style-ul-18" datetime="2026-06-05T23:00:33+02:00">
+                  5. Juni 2026
+                </time>
+              </li>
+              <li class="cn156" data-ditto-id="style-p-19">
+                <div class="cn157" data-ditto-id="style-ul-8">
+                  <a class="cn158" data-ditto-id="style-li-4" aria-label="WaveScope: Wie Wavelets Coding-Agenten das Sehen beibringen" href="https://www.afaik.de/wavescope-wavelets-fuer-coding-agenten/">
+                    <img class="cn159" data-ditto-id="style-em-7" alt="Screenshot" height="572" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/56397184260c.jpg" srcset="public/assets/cloned/images/56397184260c.jpg 1024w, public/assets/cloned/images/e137ef8c129e.jpg 2048w, public/assets/cloned/images/a17f6a5c30dc.jpg 768w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn160" data-ditto-id="style-p-194" href="https://www.afaik.de/wavescope-wavelets-fuer-coding-agenten/">
+                  WaveScope: Wie Wavelets Coding-Agenten das Sehen beibringen
+                </a>
+                <time class="cn161" data-ditto-id="style-strong-133" datetime="2026-06-03T17:32:30+02:00">
+                  3. Juni 2026
+                </time>
+              </li>
+              <li class="cn162" data-ditto-id="style-p-184">
+                <div class="cn163" data-ditto-id="style-hr-3">
+                  <a class="cn164" data-ditto-id="style-heading-47" aria-label="Vom Bauchgefühl zur Evidenz: Warum GEO wissenschaftlicher arbeiten muss" href="https://www.afaik.de/wissenschaft-im-geo/">
+                    <img class="cn165" data-ditto-id="style-p-154" alt="Screenshot" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/2fd8abacbb11.jpg" srcset="public/assets/cloned/images/2fd8abacbb11.jpg 1024w, public/assets/cloned/images/827a2fc69792.jpg 2048w, public/assets/cloned/images/7d75d9375733.jpg 768w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn166" data-ditto-id="style-em-10" href="https://www.afaik.de/wissenschaft-im-geo/">
+                  Vom Bauchgefühl zur Evidenz: Warum GEO wissenschaftlicher arbeiten muss
+                </a>
+                <time class="cn167" data-ditto-id="style-em-12" datetime="2026-06-01T13:51:46+02:00">
+                  1. Juni 2026
+                </time>
+              </li>
+              <li class="cn168" data-ditto-id="style-p-209">
+                <div class="cn169" data-ditto-id="style-heading-2">
+                  <a class="cn170" data-ditto-id="style-p-178" aria-label="Habe ich mich bei der llms.txt geirrt? Drei Signale, die das Bild verschieben." href="https://www.afaik.de/llms-txt-agentic-search/">
+                    <img class="cn171" data-ditto-id="style-p-20" alt="Screenshot" height="577" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/f155ea2497d6.jpg" srcset="public/assets/cloned/images/f155ea2497d6.jpg 1024w, public/assets/cloned/images/3bc751943436.jpg 2048w, public/assets/cloned/images/bc5926703fe6.jpg 768w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn172" data-ditto-id="style-ul-2" href="https://www.afaik.de/llms-txt-agentic-search/">
+                  Habe ich mich bei der llms.txt geirrt? Drei Signale, die das Bild verschieben.
+                </a>
+                <time class="cn173" data-ditto-id="style-p-88" datetime="2026-05-27T17:29:43+02:00">
+                  27. Mai 2026
+                </time>
+              </li>
+              <li class="cn174" data-ditto-id="style-p-197">
+                <div class="cn175" data-ditto-id="style-em-11">
+                  <a class="cn176" data-ditto-id="style-p-21" aria-label="Mit Schema.org in den Knowledge Graph der KI-Suche?" href="https://www.afaik.de/schema-org-knowledge-graph-ki-suche/">
+                    <img class="cn177" data-ditto-id="style-strong-74" alt="Schema org ki ki" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/9b3733c74402.jpg" srcset="public/assets/cloned/images/9b3733c74402.jpg 1024w, public/assets/cloned/images/e7e49b42b341.jpg 768w, public/assets/cloned/images/9b5442fef1ce.jpg 1672w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn178" data-ditto-id="style-p-22" href="https://www.afaik.de/schema-org-knowledge-graph-ki-suche/">
+                  Mit Schema.org in den Knowledge Graph der KI-Suche?
+                </a>
+                <time class="cn179" data-ditto-id="style-p-29" datetime="2026-05-26T18:02:12+02:00">
+                  26. Mai 2026
+                </time>
+              </li>
+              <li class="cn180" data-ditto-id="style-p-188">
+                <div class="cn181" data-ditto-id="style-blockquote-14">
+                  <a class="cn182" data-ditto-id="style-p-77" aria-label="Google I/O 2026: Warum Search nicht mehr Search ist – und warum SEO seine Messlatte verliert" href="https://www.afaik.de/google-io-2026/">
+                    <img class="cn183" data-ditto-id="style-strong-3" alt="Google io" height="575" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/258f4b0aabf4.png" srcset="public/assets/cloned/images/258f4b0aabf4.png 1024w, public/assets/cloned/images/c398b888d677.png 768w, public/assets/cloned/images/efd82a9d065b.png 1200w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn184" data-ditto-id="style-newsletter-leads-bottom" href="https://www.afaik.de/google-io-2026/">
+                  Google I/O 2026: Warum Search nicht mehr Search ist – und warum SEO seine Messlatte verliert
+                </a>
+                <time class="cn185" data-ditto-id="style-heading-3" datetime="2026-05-20T18:08:38+02:00">
+                  20. Mai 2026
+                </time>
+              </li>
+              <li class="cn186" data-ditto-id="style-p-30">
+                <div class="cn187" data-ditto-id="style-strong-21">
+                  <a class="cn188" data-ditto-id="style-p-36" aria-label="Harness Engineering: Wie wir KI-Agenten zuverlässiger machen – aber nicht unfehlbar" href="https://www.afaik.de/harness-engineering/">
+                    <img class="cn189" data-ditto-id="style-div-12" alt="Harness engineering" height="535" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/6b016b247ec4.jpg" srcset="public/assets/cloned/images/6b016b247ec4.jpg 1024w, public/assets/cloned/images/c8a90afc57b4.jpg 768w, public/assets/cloned/images/b95998f322ec.jpg 1735w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn190" data-ditto-id="style-form" href="https://www.afaik.de/harness-engineering/">
+                  Harness Engineering: Wie wir KI-Agenten zuverlässiger machen – aber nicht unfehlbar
+                </a>
+                <time class="cn191" data-ditto-id="style-div-51" datetime="2026-05-06T12:48:21+02:00">
+                  6. Mai 2026
+                </time>
+              </li>
+              <li class="cn192" data-ditto-id="style-label-2">
+                <div class="cn193" data-ditto-id="style-tnp-1">
+                  <a class="cn194" data-ditto-id="style-div-52" aria-label="ARC-AGI-3: Haben GPT-5.5 und Opus 4.7 wirklich so schlecht abgeschnitten – oder wurde ihnen nur nicht genug geholfen?" href="https://www.afaik.de/arc-agi-3-haben-gpt-5-5-und-opus-4-7-wirklich-so-schlecht-abgeschnitten/">
+                    <img class="cn195" data-ditto-id="style-label-3" alt="ARC AGI 3 Haben GPT 5.5 und Opus 4.7 wirklich so schlecht abgeschnitten – oder wurde ihnen nur nicht genug geholfen" height="768" sizes="(max-width: 1024px) 100vw, 1024px" src="public/assets/cloned/images/52e398e499c5.png" srcset="public/assets/cloned/images/52e398e499c5.png 1024w, public/assets/cloned/images/53574bbc8a13.png 768w, public/assets/cloned/images/3117ae23b307.png 320w, public/assets/cloned/images/fdf3ad273754.png 1448w" width="1024" />
+                  </a>
+                </div>
+                <a class="cn196" data-ditto-id="style-tnp-2" href="https://www.afaik.de/arc-agi-3-haben-gpt-5-5-und-opus-4-7-wirklich-so-schlecht-abgeschnitten/">
+                  ARC-AGI-3: Haben GPT-5.5 und Opus 4.7 wirklich so schlecht abgeschnitten – oder wurde ihnen nur nicht genug geholfen?
+                </a>
+                <time class="cn197" data-ditto-id="style-div-8" datetime="2026-05-02T19:41:58+02:00">
+                  2. Mai 2026
+                </time>
+              </li>
+              <li class="cn198" data-ditto-id="style-label-4">
+                <div class="cn199" data-ditto-id="style-input">
+                  <a class="cn200" data-ditto-id="style-link-10" aria-label="KI ist wie der Knopf im Aufzug" href="https://www.afaik.de/ki-ist-wie-der-knopf-im-aufzug/">
+                    <img class="cn201" data-ditto-id="style-div-32" alt="ChatGPT Image 1. Mai 2026, 15 10" height="1024" sizes="(max-width: 819px) 100vw, 819px" src="public/assets/cloned/images/959e5a77dba0.png" srcset="public/assets/cloned/images/959e5a77dba0.png 819w, public/assets/cloned/images/0c2340241b62.png 768w, public/assets/cloned/images/cc909c031bc0.png 1122w" width="819" />
+                  </a>
+                </div>
+                <a class="cn202" data-ditto-id="style-button-2" href="https://www.afaik.de/ki-ist-wie-der-knopf-im-aufzug/">
+                  KI ist wie der Knopf im Aufzug
+                </a>
+                <time class="cn203" data-ditto-id="style-p-13" datetime="2026-05-01T15:26:06+02:00">
+                  1. Mai 2026
+                </time>
+              </li>
+            </ul>
+             
+            <h2 class="cn204" data-ditto-id="style-em">
+              Warum „As Far As I Know“?
+            </h2>
+             
+            <p class="cn205" data-ditto-id="style-div-9">
+              Wer komplexe Themen verständlich machen will, muss vereinfachen. Und wer vereinfacht, wird zwangsläufig ungenau. Das ist kein Bug, das ist die Realität — die Welt und ihre Phänomene sind zu komplex für absolute Aussagen.
+            </p>
+             
+            <p class="cn206" data-ditto-id="style-beitrag-teilen">
+              Meine Artikel versuchen den Spagat: wissenschaftlich sauber recherchieren, journalistisch einordnen, und trotzdem so schreiben, dass man keine drei Fachbücher als Vorwissen braucht. 
+            </p>
+             
+            <p class="cn207" data-ditto-id="style-span-18">
+              „As far as I know“ ist dabei nicht Einschränkung, sondern Haltung: Ich teile, was ich weiß — und bin transparent darüber, wo die Grenzen meines Wissens liegen.
+            </p>
+             
+            <figure class="cn208" data-ditto-id="style-link-11">
+              <img class="cn209" data-ditto-id="style-link-12" alt="Kai Spriestersbach" height="935" sizes="(max-width: 934px) 100vw, 934px" src="public/assets/cloned/images/d425ff6ee7d4.jpg" srcset="public/assets/cloned/images/d425ff6ee7d4.jpg 934w, public/assets/cloned/images/d71752d7fbff.jpg 768w" width="934" />
+            </figure>
+             
+            <p class="cn210" data-ditto-id="style-button">
+              Ich bin Kai Spriestersbach — ich forsche, schreibe und arbeite seit über einem Jahrzehnt an der Schnittstelle von Suchmaschinen, Inhalten, Menschen und Technologie.
+            </p>
+             
+            <p class="cn211" data-ditto-id="style-autoreninformation">
+              <a class="cn212" data-ditto-id="style-link-13" href="https://www.afaik.de/kai-spriestersbach/" rel="noopener" target="_blank" title="Über Kai Spriestersbach">
+                Mehr über mich →
+              </a>
+            </p>
+             
+            <div class="cn213" data-ditto-id="style-span-7" id="wp-block-themeisle-blocks-accordion-25918d29">
+              <details class="cn214" data-ditto-id="style-p-31">
+                <summary class="cn215" data-ditto-id="style-div-4">
+                  <h4 class="cn216" data-ditto-id="style-p-155">
+                    Was bedeutet AFAIK?
+                  </h4>
+                </summary>
+                <div class="cn217" data-ditto-id="style-p-156">
+                  <p class="cn218" data-ditto-id="style-link-14">
+                    AFAIK ist die Abkürzung für „As Far As I Know“ – auf Deutsch: „so weit ich weiß“. Der Ausdruck wird verwendet, um zu signalisieren, dass eine Aussage auf dem eigenen Wissensstand basiert, ohne Anspruch auf absolute Richtigkeit.
+                  </p>
+                   
+                </div>
+              </details>
+               
+              <details class="cn219" data-ditto-id="style-div-7">
+                <summary class="cn220" data-ditto-id="style-p-192">
+                  <h4 class="cn221" data-ditto-id="style-br">
+                    Wie verwendet man AFAIK richtig?
+                  </h4>
+                </summary>
+                <div class="cn222" data-ditto-id="style-em-2">
+                  <p class="cn223" data-ditto-id="style-div-43">
+                    AFAIK wird meist am Anfang oder Ende eines Satzes verwendet, z. B. „AFAIK ist das Meeting um 14 Uhr“ oder „Das Projekt läuft noch, afaik.“ Es ist in Chats, E-Mails, Foren und sozialen Medien gebräuchlich und signalisiert eine gewisse Unsicherheit oder Einschränkung der eigenen Aussage.
+                  </p>
+                   
+                </div>
+              </details>
+               
+              <details class="cn224" data-ditto-id="style-div-46">
+                <summary class="cn225" data-ditto-id="style-beitragsnavigation">
+                  <h4 class="cn226" data-ditto-id="style-div-53">
+                    Ist AFAIK eine formelle oder informelle Abkürzung?
+                  </h4>
+                </summary>
+                <div class="cn227" data-ditto-id="style-span-17">
+                  <p class="cn228" data-ditto-id="style-link-15">
+                    AFAIK ist informell und gehört zur sogenannten Netzsprache. In geschäftlichen E-Mails oder offiziellen Dokumenten sollte man besser „meines Wissens nach“ oder „so weit ich weiß“ ausschreiben. In Slack, Teams, WhatsApp oder Foren ist die Abkürzung dagegen völlig üblich.
+                  </p>
+                   
+                </div>
+              </details>
+               
+              <details class="cn229" data-ditto-id="style-div-58">
+                <summary class="cn230" data-ditto-id="style-link-16">
+                  <h4 class="cn231" data-ditto-id="style-span-38">
+                    Was ist der Unterschied zwischen AFAIK und IMHO?
+                  </h4>
+                </summary>
+                <div class="cn232" data-ditto-id="style-div-39">
+                  <p class="cn233" data-ditto-id="style-div-40">
+                    Beide Abkürzungen drücken Unsicherheit oder Subjektivität aus, aber auf unterschiedliche Weise: AFAIK („As Far As I Know“) bezieht sich auf den eigenen Wissensstand — man hält etwas für faktisch richtig, kann es aber nicht garantieren. IMHO („In My Humble Opinion“) kennzeichnet dagegen eine persönliche Meinung oder Einschätzung. Kurz: AFAIK sagt „ich glaube, das stimmt“, IMHO sagt „so sehe ich das“.
+                  </p>
+                   
+                </div>
+              </details>
+               
+            </div>
+             
+          </div>
+        </article>
+         
+      </main>
+       
+      <footer class="cn234" data-ditto-id="style-div-5">
+        <div class="cn235" data-ditto-id="style-heading-51">
+          <div class="cn236" data-ditto-id="style-div-54">
+            <div class="cn237" data-ditto-id="style-ul-20">
+              <a class="cn238" data-ditto-id="style-figure-3" aria-current="page" href="https://www.afaik.de/" rel="home">
+                <img class="cn239" data-ditto-id="style-image-35" alt="Afaik min" height="137" src="public/assets/cloned/svg/d179f89faeae.svg" width="318" />
+              </a>
+            </div>
+             
+            <div class="cn240" data-ditto-id="style-p-32">
+              <div class="cn241" data-ditto-id="style-figure-2">
+                <div class="cn242" data-ditto-id="style-blockquote-9">
+                  <p class="cn243" data-ditto-id="style-p-2">
+                    As Far As I Know
+                  </p>
+                </div>
+                 
+                <div class="cn244" data-ditto-id="style-cite">
+                  <div class="cn245" data-ditto-id="style-p-33" aria-hidden="true"></div>
+                   
+                </div>
+                 
+              </div>
+               
+              <div class="cn246" data-ditto-id="style-figure-11">
+                <nav class="cn247" data-ditto-id="style-image-7" aria-label="Footer Nav">
+                  <ul class="cn248" data-ditto-id="style-p-3">
+                    <li class="cn249" data-ditto-id="style-heading-46">
+                      <a class="cn250" data-ditto-id="style-p-4" href="https://www.afaik.de/newsletter/">
+                        <span class="cn251" data-ditto-id="style-blockquote">
+                          Newsletter abonnieren
+                        </span>
+                      </a>
+                    </li>
+                    <li class="cn252" data-ditto-id="style-p-34">
+                      <a class="cn253" data-ditto-id="style-cite-2" href="https://www.afaik.de/podcast/">
+                        <span class="cn254" data-ditto-id="style-link-24">
+                          Podcast Synapsensprung
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                 
+                <nav class="cn255" data-ditto-id="style-p-5" aria-label="Footer Nav 2">
+                  <ul class="cn256" data-ditto-id="style-figure-5">
+                    <li class="cn257" data-ditto-id="style-image-3">
+                      <a class="cn258" data-ditto-id="style-p-7" href="https://www.afaik.de/datenschutz/">
+                        <span class="cn259" data-ditto-id="style-figure-4">
+                          Datenschutz
+                        </span>
+                      </a>
+                    </li>
+                    <li class="cn260" data-ditto-id="style-image-36">
+                      <a class="cn261" data-ditto-id="style-p-35" href="https://www.afaik.de/impressum/">
+                        <span class="cn262" data-ditto-id="style-p-6">
+                          Impressum
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+               
+            </div>
+             
+            <div class="cn263" data-ditto-id="style-figure-14" aria-hidden="true"></div>
+             
+            <div class="cn264" data-ditto-id="style-image-4">
+              <p class="cn265" data-ditto-id="style-p-8">
+                © Kai Spriestersbach
+              </p>
+               
+              <p class="cn266" data-ditto-id="style-footer-3">
+                Gehosted von 
+                <a class="cn267" data-ditto-id="style-div-10" href="https://www.cms-admins.de/" rel="noopener" target="_blank">
+                  CMS ADMINS
+                </a>
+              </p>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </footer>
+    </div>
+     
+</body>
+</html>

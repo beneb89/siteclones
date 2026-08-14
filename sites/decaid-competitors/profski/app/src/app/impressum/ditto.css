@@ -1,0 +1,33 @@
+.cn0{min-height:100vh;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;color:var(--foreground);font-family:font-body, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;font-size:20px;font-weight:300;font-style:normal;line-height:28px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+
+@media (max-width: 571px) {
+.cn0{height:4894.75px;font-size:18px;line-height:25.2px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:3618.89px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-4"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-8"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-heading-5"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-p-12"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-10"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-8"]:hover{background-color:rgb(44, 53, 71)}
+[data-ditto-id="style-link-10"]:hover{background-color:rgb(44, 52, 71)}
+[data-ditto-id="style-link"]:hover{background-color:rgb(44, 53, 71)}
+[data-ditto-id="style-link-4"]:hover{background-color:rgb(44, 52, 71)}
+[data-ditto-id="style-heading-5"]:hover{background-color:rgba(3, 20, 64, 0.77);border-left-color:rgb(196, 196, 196);border-right-color:rgb(196, 196, 196);border-top-color:rgb(196, 196, 196);color:rgb(196, 196, 196);outline-color:rgb(196, 196, 196);text-decoration-color:rgb(196, 196, 196)}
+[data-ditto-id="style-p-12"]:hover{background-color:rgba(3, 20, 64, 0.77);border-left-color:rgb(196, 196, 196);border-right-color:rgb(196, 196, 196);border-top-color:rgb(196, 196, 196);color:rgb(196, 196, 196);outline-color:rgb(196, 196, 196);text-decoration-color:rgb(196, 196, 196)}
+[data-ditto-id="style-link-8"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-icon"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-10"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-ebene-1"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-icon-2"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-4"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-social-media-icon-insta"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-heading-5"]:focus{background-color:rgba(3, 20, 64, 0.035);border-left-color:rgb(9, 9, 9);border-right-color:rgb(9, 9, 9);border-top-color:rgb(9, 9, 9);color:rgb(9, 9, 9);outline-color:rgb(9, 9, 9);text-decoration-color:rgb(9, 9, 9)}
+[data-ditto-id="style-p-12"]:focus{background-color:rgba(3, 20, 64, 0.082);border-left-color:rgb(21, 21, 21);border-right-color:rgb(21, 21, 21);border-top-color:rgb(21, 21, 21);color:rgb(21, 21, 21);outline-color:rgb(21, 21, 21);text-decoration-color:rgb(21, 21, 21)}

@@ -1,0 +1,11 @@
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-a-9"]{transition:text-decoration-color 0.2s}
+[data-ditto-id="style-button-7"]{transition:background-color 0.15s, border-color 0.15s, color 0.15s}
+[data-ditto-id="style-button-8"]{transition:background-color 0.15s, border-color 0.15s, color 0.15s}
+[data-ditto-id="style-button-9"]{transition:background-color 0.15s, border-color 0.15s, color 0.15s}
+[data-ditto-id="style-a-9"]:hover{text-decoration-color:rgb(28, 42, 72)}
+[data-ditto-id="style-button-7"]:hover{background-color:rgb(44, 62, 99);border-bottom-color:rgb(44, 62, 99);border-left-color:rgb(44, 62, 99);border-right-color:rgb(44, 62, 99);border-top-color:rgb(44, 62, 99)}
+[data-ditto-id="style-button-8"]:hover{background-color:rgb(44, 62, 99);border-bottom-color:rgb(44, 62, 99);border-left-color:rgb(44, 62, 99);border-right-color:rgb(44, 62, 99);border-top-color:rgb(44, 62, 99)}
+[data-ditto-id="style-button-9"]:hover{background-color:rgb(27, 42, 72);color:rgb(253, 251, 246);outline-color:rgb(253, 251, 246);text-decoration-color:rgb(253, 251, 246)}
+[data-ditto-id="style-a-9"]:focus{text-decoration-color:rgb(234, 147, 84)}

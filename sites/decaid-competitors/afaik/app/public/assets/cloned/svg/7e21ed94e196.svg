@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 424" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="424" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"></rect>
+  <text x="40" y="38" font-size="21" font-weight="700" fill="#111827">Das „originellste“ Zehntel ist kein Menschen-Reservat</text>
+  <text x="40" y="60" font-size="13.5" fill="#6b7280">Zusammensetzung der 10 % seltensten Geschichten im narrativen Merkmalsraum (Testset, je 1 377 Texte)</text>
+  <text x="110" y="124" font-size="12.5" font-weight="700" fill="#111827" text-anchor="end">Mensch</text>
+  <rect x="118" y="108" width="505" height="24" rx="3" fill="#1d3557"></rect>
+  <text x="631" y="125" font-size="12.5" font-weight="700" fill="#1d3557">340</text>
+  <text x="110" y="164" font-size="12.5" fill="#374151" text-anchor="end">Kimi</text>
+  <rect x="118" y="148" width="201" height="24" rx="3" fill="#e07a5f"></rect>
+  <text x="327" y="165" font-size="12.5" font-weight="700" fill="#e07a5f">135</text>
+  <text x="110" y="204" font-size="12.5" fill="#374151" text-anchor="end">DeepSeek</text>
+  <rect x="118" y="188" width="189" height="24" rx="3" fill="#e07a5f"></rect>
+  <text x="315" y="205" font-size="12.5" font-weight="700" fill="#e07a5f">127</text>
+  <text x="110" y="244" font-size="12.5" fill="#374151" text-anchor="end">Gemini</text>
+  <rect x="118" y="228" width="131" height="24" rx="3" fill="#e07a5f"></rect>
+  <text x="257" y="245" font-size="12.5" font-weight="700" fill="#e07a5f">88</text>
+  <text x="110" y="284" font-size="12.5" fill="#374151" text-anchor="end">GPT</text>
+  <rect x="118" y="268" width="106" height="24" rx="3" fill="#e07a5f"></rect>
+  <text x="232" y="285" font-size="12.5" font-weight="700" fill="#e07a5f">71</text>
+  <text x="110" y="324" font-size="12.5" fill="#374151" text-anchor="end">Claude</text>
+  <rect x="118" y="308" width="98" height="24" rx="3" fill="#e07a5f"></rect>
+  <text x="224" y="325" font-size="12.5" font-weight="700" fill="#e07a5f">66</text>
+  <rect x="360" y="176" width="360" height="150" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"></rect>
+  <text x="380" y="205" font-size="14" font-weight="700" fill="#c2410c">KI-Modelle zusammen: 487</text>
+  <text x="380" y="226" font-size="13" fill="#7c2d12">— mehr als die 340 menschlichen Texte.</text>
+  <text x="380" y="255" font-size="12.5" fill="#7c2d12">Grund: Im Korpus stecken fünfmal so viele</text>
+  <text x="380" y="272" font-size="12.5" fill="#7c2d12">KI-Geschichten. Pro Modell sind menschliche</text>
+  <text x="380" y="289" font-size="12.5" fill="#7c2d12">Texte hier dennoch überrepräsentiert</text>
+  <text x="380" y="306" font-size="12.5" fill="#7c2d12">(24,7 % vs. 7,1 %). „Selten“ ≠ „menschlich“.</text>
+  <line x1="40" y1="388" x2="720" y2="388" stroke="#e5e7eb" stroke-width="1"></line>
+  <text x="40" y="406" font-size="11" fill="#9ca3af">Quelle: Russell et al., „StoryScope“, arXiv:2604.03136 (2026), Tabelle 12 · Darstellung: afaik.de</text>
+</svg>

@@ -1,0 +1,20 @@
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-a"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-ebene-1-2"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-svg"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-social-media-icon-insta-2"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-span"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-span-2"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-cookie-zustimmung-ndern"]{transition:opacity 0.256s ease-out}
+[data-ditto-id="style-a"]:hover{border-bottom-color:rgba(255, 255, 255, 0.77)}
+[data-ditto-id="style-span"]:hover{border-bottom-color:rgba(0, 0, 0, 0)}
+[data-ditto-id="style-span-2"]:hover{border-bottom-color:rgba(0, 0, 0, 0)}
+[data-ditto-id="style-cookie-zustimmung-ndern"]:hover{box-shadow:none}
+[data-ditto-id="style-a"]:focus{border-bottom-color:rgba(255, 255, 255, 0.082)}
+[data-ditto-id="style-ebene-1-2"]:focus{outline-color:rgb(71, 71, 71);outline-style:auto;outline-width:3px}
+[data-ditto-id="style-svg"]:focus{outline-color:rgb(71, 71, 71);outline-style:auto;outline-width:3px}
+[data-ditto-id="style-social-media-icon-insta-2"]:focus{outline-color:rgb(71, 71, 71);outline-style:auto;outline-width:3px}
+[data-ditto-id="style-span"]:focus{border-bottom-color:rgba(0, 0, 0, 0)}
+[data-ditto-id="style-span-2"]:focus{border-bottom-color:rgba(0, 0, 0, 0)}
+[data-ditto-id="style-cookie-zustimmung-ndern"]:focus{background-color:rgb(60, 60, 60);border-bottom-color:rgb(62, 62, 62);border-bottom-width:3px;border-left-color:rgb(62, 62, 62);border-left-width:3px;border-right-color:rgb(62, 62, 62);border-right-width:3px;border-top-color:rgb(62, 62, 62);border-top-width:3px;box-shadow:none;outline-color:rgba(236, 236, 236, 0.8);outline-style:dashed;outline-width:1px}

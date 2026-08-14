@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="100%" role="img" aria-labelledby="t1 d1" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t1">Automatisierungsanteil: Google ATLAS gegenüber Anthropic Economic Index</title>
+  <desc id="d1">Google ATLAS beziffert vollständige Automatisierung mit unter zehn Prozent der arbeitsbezogenen Interaktionen, der Anthropic Economic Index mit 48,62 Prozent. Die Definitionen der beiden Anbieter sind nicht deckungsgleich.</desc>
+  <style>
+.ink{fill:#1a1a1a}.mut{fill:#6b6b6b}.rule{stroke:#e2e0da}.barbg{fill:#f1efe8}
+@media (prefers-color-scheme:dark){.ink{fill:#ededed}.mut{fill:#9a9a9a}.rule{stroke:#343431}.barbg{fill:#262624}}
+</style>
+  <text x="24" y="30" class="ink" font-size="17" font-weight="500">Vollständige Automatisierung: zwei Messungen, Faktor 5</text>
+  <text x="24" y="52" class="mut" font-size="12.5">Anteil der arbeitsbezogenen Interaktionen, die als vollständige Delegation an die KI klassifiziert wurden</text>
+  <g class="rule" stroke-width="1">
+    <line x1="240" y1="78" x2="240" y2="232"></line>
+    <line x1="350" y1="78" x2="350" y2="232"></line>
+    <line x1="460" y1="78" x2="460" y2="232"></line>
+    <line x1="570" y1="78" x2="570" y2="232"></line>
+    <line x1="680" y1="78" x2="680" y2="232"></line>
+  </g>
+  <g class="mut" font-size="11">
+    <text x="240" y="72" text-anchor="middle">0</text>
+    <text x="350" y="72" text-anchor="middle">25 %</text>
+    <text x="460" y="72" text-anchor="middle">50 %</text>
+    <text x="570" y="72" text-anchor="middle">75 %</text>
+    <text x="680" y="72" text-anchor="middle">100 %</text>
+  </g>
+  <text x="24" y="112" class="ink" font-size="13.5" font-weight="500">Google ATLAS v1.0</text>
+  <text x="24" y="130" class="mut" font-size="11.5">6,5 % nicht-routine · 26,9 % routine</text>
+  <rect x="240" y="98" width="44" height="30" fill="#eb6834" rx="0"></rect>
+  <text x="296" y="118" class="ink" font-size="13.5" font-weight="500">unter 10 %</text>
+  <text x="24" y="188" class="ink" font-size="13.5" font-weight="500">Anthropic Economic Index</text>
+  <text x="24" y="206" class="mut" font-size="11.5">Rest: 51,38 % „augmentation“</text>
+  <rect x="240" y="174" width="214" height="30" fill="#2a78d6" rx="0"></rect>
+  <text x="466" y="194" class="ink" font-size="13.5" font-weight="500">48,62 %</text>
+  <line x1="24" y1="252" x2="696" y2="252" class="rule" stroke-width="1"></line>
+  <text x="24" y="272" class="mut" font-size="11.5">Nicht ineinander umrechenbar: Google klassifiziert die vermutete Absicht, eine Tätigkeit vollständig abzugeben; Anthropic</text>
+  <text x="24" y="288" class="mut" font-size="11.5">zählt als „automation“, dass die Person das Modell die Aufgabe erledigen lässt. Erhebung April bzw. Mai 2026.</text>
+</svg>

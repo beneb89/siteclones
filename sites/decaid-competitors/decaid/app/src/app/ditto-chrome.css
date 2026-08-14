@@ -1,0 +1,14 @@
+[data-ditto-id="style-section"]{background-image:radial-gradient(circle at 0% 100%, rgb(255, 234, 0), rgb(0, 0, 0) 21%)}
+@media (max-width: 571px) {
+[data-ditto-id="style-section"]{background-image:radial-gradient(circle at 0px 100%, rgb(0, 0, 0), rgb(0, 0, 0))}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-section"]{background-image:radial-gradient(circle at 0px 100%, rgb(0, 0, 0), rgb(0, 0, 0))}
+}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-21"]:hover{border-bottom-color:rgba(190, 190, 190, 0.75);border-left-color:rgba(190, 190, 190, 0.75);border-right-color:rgba(190, 190, 190, 0.75);border-top-color:rgba(190, 190, 190, 0.75);color:rgba(190, 190, 190, 0.75);outline-color:rgba(190, 190, 190, 0.75);text-decoration-color:rgba(190, 190, 190, 0.75)}
+[data-ditto-id="style-22"]:hover{border-bottom-color:rgba(190, 190, 190, 0.75);border-left-color:rgba(190, 190, 190, 0.75);border-right-color:rgba(190, 190, 190, 0.75);border-top-color:rgba(190, 190, 190, 0.75);color:rgba(190, 190, 190, 0.75);outline-color:rgba(190, 190, 190, 0.75);text-decoration-color:rgba(190, 190, 190, 0.75)}
+[data-ditto-id="style-23"]:hover{border-bottom-color:rgba(190, 190, 190, 0.75);border-left-color:rgba(190, 190, 190, 0.75);border-right-color:rgba(190, 190, 190, 0.75);border-top-color:rgba(190, 190, 190, 0.75);color:rgba(190, 190, 190, 0.75);outline-color:rgba(190, 190, 190, 0.75);text-decoration-color:rgba(190, 190, 190, 0.75)}
+[data-ditto-id="style-24"]:hover{border-bottom-color:rgba(190, 190, 190, 0.75);border-left-color:rgba(190, 190, 190, 0.75);border-right-color:rgba(190, 190, 190, 0.75);border-top-color:rgba(190, 190, 190, 0.75);color:rgba(190, 190, 190, 0.75);outline-color:rgba(190, 190, 190, 0.75);text-decoration-color:rgba(190, 190, 190, 0.75)}
+[data-ditto-id="style-25"]:hover{border-bottom-color:rgba(190, 190, 190, 0.75);border-left-color:rgba(190, 190, 190, 0.75);border-right-color:rgba(190, 190, 190, 0.75);border-top-color:rgba(190, 190, 190, 0.75);color:rgba(190, 190, 190, 0.75);outline-color:rgba(190, 190, 190, 0.75);text-decoration-color:rgba(190, 190, 190, 0.75)}
+[data-ditto-id="style-26"]:hover{border-bottom-color:rgba(190, 190, 190, 0.75);border-left-color:rgba(190, 190, 190, 0.75);border-right-color:rgba(190, 190, 190, 0.75);border-top-color:rgba(190, 190, 190, 0.75);color:rgba(190, 190, 190, 0.75);outline-color:rgba(190, 190, 190, 0.75);text-decoration-color:rgba(190, 190, 190, 0.75)}

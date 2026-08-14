@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prof. Klemens Skibicki: Speaker für Digitalisierung &amp; Wandel</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "ebgaramond";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/233688b5dca1.woff2") format("woff2"), url("public/assets/cloned/fonts/c6cae0f1dd89.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ebgaramond";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2f1d2a02a2ec.woff2") format("woff2"), url("public/assets/cloned/fonts/223b44399c77.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fcicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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);
+}
+
+@font-face {
+  font-family: "font-body";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d74561ca2594.woff2") format("woff2"), url("public/assets/cloned/fonts/8c0d154049ac.woff") format("woff");
+}
+
+@font-face {
+  font-family: "font-body";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9f897ee53b92.woff2") format("woff2"), url("public/assets/cloned/fonts/23b4307c54a7.woff") format("woff");
+}
+
+@font-face {
+  font-family: "font-headlines";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9b1c9cf4da2a.woff2") format("woff2"), url("public/assets/cloned/fonts/339669ea9d7c.woff") format("woff");
+}
+
+@font-face {
+  font-family: "slick";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/93baa4bb3926.woff") format("woff"), url("public/assets/cloned/fonts/7857e642b8d7.ttf") format("truetype");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+  --primary: rgb(0, 0, 238);
+  --accent: rgb(181, 160, 93);
+  --border: rgb(3, 20, 64);
+  --color-001: rgb(17, 17, 17);
+  --color-002: rgb(236, 236, 236);
+  --color-003: rgba(112, 112, 112, 0.1);
+}
+
+:root {
+  /* fonts */
+  --font-body: font-body, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  /* fontSizes */
+  --font-size-001: 15px;
+  --font-size-002: 19.0787px;
+  --font-size-003: 20px;
+  --font-size-004: 24.236px;
+  --font-size-005: 40px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 700;
+  /* lineHeights */
+  --line-height-001: 28px;
+  --line-height-002: 0px;
+  --line-height-003: 19.0787px;
+  --line-height-004: 48px;
+  /* spacing */
+  --space-001: -12px;
+  --space-002: -9.2px;
+  --space-003: -6px;
+  --space-004: -4.6px;
+  --space-005: -2px;
+  --space-006: 4px;
+  --space-007: 8px;
+  --space-008: 9.6px;
+  --space-009: 12px;
+  --space-010: 16px;
+  --space-011: 19.0787px;
+  --space-012: 23.8483px;
+  --space-013: 24px;
+  --space-014: 26.4px;
+  --space-015: 32px;
+  --space-016: 40px;
+  --space-017: 43.2px;
+  --space-018: 60.8px;
+  --space-019: 64px;
+  --space-020: 107.8px;
+  /* radii */
+  --radius-001: 1000px;
+  /* shadows */
+  --shadow-001: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgba(0, 0, 0, 0.5);
+  --clr-2: rgba(0, 0, 0, 0.16);
+  --clr-3: rgb(255, 0, 0);
+}
+
+
+/* page base */
+html { background: #ffffff; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{min-height:100vh;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;color:var(--foreground);font-family:font-body, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;font-size:20px;font-weight:300;font-style:normal;line-height:28px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+.cn1{height:800px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn2{width:100%;display:block;position:absolute;top:0px;bottom:800px;left:1219.2px;min-width:0px}
+.cn3{width:121.594px;height:50px;display:flex;position:absolute;top:36.8px;left:0px;z-index:10;max-width:100%;padding-right:60.8px;padding-left:60.8px;justify-content:flex-end;transform:matrix(1, 0, 0, 1, -60.7969, 0);transform-origin:60.7969px 25px;pointer-events:none}
+.cn4{width:50px;height:50px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;justify-content:center;align-items:center;color:var(--primary);background-color:var(--accent);cursor:pointer;pointer-events:all}
+.cn5{display:block;font-style:italic;line-height:0px;pointer-events:all}
+.cn6{width:26px;height:26px;display:inline;overflow-x:hidden;overflow-y:hidden;pointer-events:all}
+.cn7{width:50px;height:50px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:8px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;justify-content:center;align-items:center;color:var(--primary);background-color:var(--accent);cursor:pointer;pointer-events:all}
+.cn8{display:block;font-style:italic;line-height:0px;pointer-events:all}
+.cn9{width:auto;height:26px;display:inline;overflow-x:hidden;overflow-y:hidden;pointer-events:all}
+.cn10{width:50px;height:50px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:8px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;justify-content:center;align-items:center;color:var(--primary);background-color:var(--accent);cursor:pointer;pointer-events:all}
+.cn11{display:block;font-style:italic;line-height:0px;pointer-events:all}
+.cn12{width:26px;height:26px;display:inline;overflow-x:hidden;overflow-y:hidden;pointer-events:all}
+.cn13{width:50px;height:50px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:8px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;justify-content:center;align-items:center;color:var(--primary);background-color:var(--accent);cursor:pointer;pointer-events:all}
+.cn14{display:block;font-style:italic;line-height:0px;pointer-events:all}
+.cn15{width:auto;height:26px;display:inline;overflow-x:hidden;overflow-y:hidden;pointer-events:all}
+.cn16{width:300px;height:800px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:100;min-width:300px;max-width:100%;flex-direction:column;justify-content:flex-start;align-items:center;background-color:var(--border)}
+.cn17{width:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:1;padding-top:70.4px;padding-right:32px;padding-bottom:70.4px;padding-left:32px;justify-content:center;color:var(--primary);background-color:var(--background);cursor:pointer}
+.cn18{width:auto;height:43px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:350px;max-height:250px;align-self:center;overflow-x:clip;overflow-y:clip;object-fit:contain;vertical-align:middle}
+.cn19{width:100%;display:none;min-width:0px;padding-top:19.2px;padding-right:19.2px;padding-bottom:19.2px;padding-left:19.2px;justify-content:center;align-items:center;color:var(--background);font-size:24.3146px;line-height:24.3146px;letter-spacing:0.972584px;text-align:center;text-transform:uppercase;background-color:var(--border);cursor:pointer}
+.cn19::before{content:"";margin-right:12.8px;background-color:rgb(255, 255, 255)}
+.cn20{width:100%;display:block;margin-top:20.8px;background-color:var(--border)}
+.cn21{display:flex;flex-direction:column;align-items:stretch}
+.cn22{height:88px;display:flex;padding-top:16px;padding-right:32px;padding-bottom:16px;padding-left:32px;justify-content:center;align-items:center;color:var(--primary);cursor:pointer}
+.cn23{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:block;margin-bottom:-6px;padding-bottom:4px;color:var(--background);font-size:24.236px}
+.cn24{height:60px;display:flex;padding-top:16px;padding-right:32px;padding-bottom:16px;padding-left:32px;justify-content:center;align-items:center;color:var(--primary);cursor:pointer}
+.cn25{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:block;margin-bottom:-6px;padding-bottom:4px;color:var(--background);font-size:24.236px}
+.cn26{height:60px;display:flex;padding-top:16px;padding-right:32px;padding-bottom:16px;padding-left:32px;justify-content:center;align-items:center;color:var(--primary);cursor:pointer}
+.cn27{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:block;margin-bottom:-6px;padding-bottom:4px;color:var(--background);font-size:24.236px}
+.cn28{height:60px;display:flex;padding-top:16px;padding-right:32px;padding-bottom:16px;padding-left:32px;justify-content:center;align-items:center;color:var(--primary);cursor:pointer}
+.cn29{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:block;margin-bottom:-6px;padding-bottom:4px;color:var(--background);font-size:24.236px}
+.cn30{width:980px;height:800px;min-height:100vh;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-height:1000px;color:var(--background);background-color:var(--background)}
+.cn31{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:0;overflow-x:hidden;overflow-y:hidden}
+.cn32{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn32::before{content:"";display:table;width:0px;height:0px}
+.cn32::after{content:"";display:table;width:0px;height:0px}
+.cn33{width:980px;height:800px;min-height:1px;display:block;float:left}
+.cn34{height:100%;display:block}
+.cn35{width:100%;height:100%;min-height:100vh;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-height:1000px;flex-direction:column}
+.cn36{width:980px;height:552.891px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:0;background-image:url("public/assets/cloned/images/c96be764f58f.jpg");background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn37{width:980px;height:247.109px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;max-height:1000px;align-items:flex-end}
+.cn38{width:100%;height:247.109px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:43.2px;padding-right:43.2px;padding-bottom:43.2px;padding-left:43.2px;background-color:var(--accent)}
+.cn39{display:block;margin-top:-11px;margin-bottom:-12.5px;font-family:font-headlines, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;font-size:50px;font-weight:700;line-height:55px;word-break:break-word}
+.cn40{display:block;margin-top:24px;margin-bottom:-6px}
+.cn41{display:block;margin-top:32px;margin-bottom:-6px}
+.cn42{height:100%;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:19.0787px;padding-right:19.0787px;padding-bottom:19.0787px;padding-left:23.8483px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;align-items:center;font-size:19.0787px;line-height:19.0787px;background-color:var(--border);cursor:pointer}
+.cn42::after{content:"";display:none;position:relative;width:19.0787px;height:19.0787px;margin-left:9.53933px;background-color:rgb(255, 255, 255)}
+.cn43{height:2227.94px;min-height:400px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn44{display:block;padding-top:107.8px;padding-bottom:107.8px}
+.cn45{display:flex;max-width:100%;padding-right:60.8px;padding-left:60.8px;justify-content:space-between}
+.cn46{display:block;max-width:1000px;margin-right:auto;margin-left:auto;flex-direction:column;flex-grow:1;flex-basis:0%;text-align:center}
+.cn47{display:block}
+.cn48{display:block;margin-top:-11px;margin-bottom:-12.5px;color:var(--border);font-family:font-headlines, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;font-size:50px;font-weight:700;line-height:55px;word-break:break-word}
+.cn49{display:block;margin-top:24px;margin-bottom:-6px;word-break:break-word}
+.cn50{display:block;margin-top:32px;margin-bottom:-6px;word-break:break-word}
+.cn51{display:inline;font-weight:700}
+.cn52{display:block;margin-top:32px;list-style-type:disc;list-style-position:outside}
+.cn53{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:-4.6px;margin-bottom:-6px;list-style-type:none}
+.cn53::before{content:"";display:inline-block;position:relative;top:6px;right:0px;bottom:-6px;left:0px;width:20px;height:20px;margin-right:10px;background-color:rgb(3, 20, 64)}
+.cn54{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:9.6px;margin-bottom:-6px;list-style-type:none}
+.cn54::before{content:"";display:inline-block;position:relative;top:6px;right:0px;bottom:-6px;left:0px;width:20px;height:20px;margin-right:10px;background-color:rgb(3, 20, 64)}
+.cn55{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:9.6px;margin-bottom:-6px;list-style-type:none}
+.cn55::before{content:"";display:inline-block;position:relative;top:6px;right:0px;bottom:-6px;left:0px;width:20px;height:20px;margin-right:10px;background-color:rgb(3, 20, 64)}
+.cn56{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:9.6px;margin-bottom:-6px;list-style-type:none}
+.cn56::before{content:"";display:inline-block;position:relative;top:6px;right:0px;bottom:-6px;left:0px;width:20px;height:20px;margin-right:10px;background-color:rgb(3, 20, 64)}
+.cn57{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-top:9.6px;margin-bottom:-6px;list-style-type:none}
+.cn57::before{content:"";display:inline-block;position:relative;top:6px;right:0px;bottom:-6px;left:0px;width:20px;height:20px;margin-right:10px;background-color:rgb(3, 20, 64)}
+.cn58{height:84px;display:block;margin-top:-4.6px;margin-bottom:-6px;word-break:break-word}
+.cn59{display:inline;font-weight:700}
+.cn60{display:inline;font-weight:700}
+.cn61{display:block;margin-top:32px;margin-bottom:-6px;word-break:break-word}
+.cn62{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:var(--border);display:inline;margin-right:-2px;margin-bottom:-2px;margin-left:-2px;padding-right:2px;padding-left:2px;border-top-left-radius:4px;border-top-right-radius:4px;cursor:pointer}
+.cn63{display:block;margin-top:32px;margin-bottom:-6px;word-break:break-word}
+.cn64{height:100%;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:19.0787px;padding-right:19.0787px;padding-bottom:19.0787px;padding-left:23.8483px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;align-items:center;color:var(--background);font-size:19.0787px;line-height:19.0787px;background-color:var(--accent);cursor:pointer}
+.cn64::after{content:"";display:none;position:relative;width:19.0787px;height:19.0787px;margin-left:9.53933px;background-color:rgb(255, 255, 255)}
+.cn65{display:block;margin-top:32px;margin-bottom:-6px;word-break:break-word}
+.cn66{height:100%;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:19.0787px;padding-right:19.0787px;padding-bottom:19.0787px;padding-left:23.8483px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;align-items:center;color:var(--background);font-size:19.0787px;line-height:19.0787px;background-color:var(--accent);cursor:pointer}
+.cn66::after{content:"";display:none;position:relative;width:19.0787px;height:19.0787px;margin-left:9.53933px;background-color:rgb(255, 255, 255)}
+.cn67{display:block;margin-bottom:107.8px;padding-top:107.8px;padding-bottom:107.8px;background-color:var(--color-003)}
+.cn68{display:block;max-width:100%;padding-right:60.8px;padding-left:60.8px}
+.cn69{display:grid;row-gap:72px;column-gap:72px;grid-template-rows:829.203px;grid-template-columns:repeat(3, minmax(0, 1fr))}
+.cn70{height:829.203px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column-reverse;justify-content:space-between;color:var(--primary);text-align:left;background-color:var(--background);box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;cursor:pointer}
+.cn71{height:330px;min-height:330px;display:block;background-image:url("public/assets/cloned/images/0d94354b11c3.jpg");background-size:cover;background-position:43% 42%;background-repeat:no-repeat}
+.cn72{height:499.203px;display:block;padding-top:40px;padding-right:40px;padding-bottom:64px;padding-left:40px;background-color:var(--background)}
+.cn73{display:block}
+.cn74{display:block;margin-top:-9.2px;margin-bottom:-12px;color:var(--border);font-size:40px;font-weight:700;line-height:48px;text-transform:uppercase;word-break:break-word}
+.cn75{display:block;margin-top:26.4px;color:var(--foreground)}
+.cn76{display:block;margin-top:-4.6px;margin-bottom:-6px;word-break:break-word}
+.cn77{height:57.2344px;display:block;position:absolute;right:123.203px;bottom:330px;left:40px;transform:matrix(1, 0, 0, 1, 0, 28.6172);transform-origin:87.4609px 28.6172px}
+.cn78{height:100%;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:19.0787px;padding-right:19.0787px;padding-bottom:19.0787px;padding-left:23.8483px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;align-items:center;color:var(--background);font-size:19.0787px;line-height:19.0787px;background-color:var(--accent);white-space:nowrap}
+.cn78::after{content:"";display:none;position:relative;width:19.0787px;height:19.0787px;margin-left:9.53933px;background-color:rgb(255, 255, 255)}
+.cn79{height:829.203px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column-reverse;justify-content:space-between;color:var(--primary);text-align:left;background-color:var(--background);box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;cursor:pointer}
+.cn80{height:330px;min-height:330px;display:block;background-image:url("public/assets/cloned/images/68b7da34b3e2.jpg");background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn81{height:375.203px;display:block;padding-top:40px;padding-right:40px;padding-bottom:64px;padding-left:40px;background-color:var(--background)}
+.cn82{display:block}
+.cn83{display:block;margin-top:-9.2px;margin-bottom:-12px;color:var(--border);font-size:40px;font-weight:700;line-height:48px;text-transform:uppercase;word-break:break-word}
+.cn84{display:block;margin-top:26.4px;color:var(--foreground)}
+.cn85{display:block;margin-top:-4.6px;margin-bottom:-6px;word-break:break-word}
+.cn86{height:57.2344px;display:block;position:absolute;right:123.219px;bottom:330px;left:40px;transform:matrix(1, 0, 0, 1, 0, 28.6172);transform-origin:87.4609px 28.6172px}
+.cn87{height:100%;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:19.0787px;padding-right:19.0787px;padding-bottom:19.0787px;padding-left:23.8483px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;align-items:center;color:var(--background);font-size:19.0787px;line-height:19.0787px;background-color:var(--accent);white-space:nowrap}
+.cn87::after{content:"";display:none;position:relative;width:19.0787px;height:19.0787px;margin-left:9.53933px;background-color:rgb(255, 255, 255)}
+.cn88{height:829.203px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;flex-direction:column-reverse;justify-content:space-between;color:var(--primary);text-align:left;background-color:var(--background);box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;cursor:pointer}
+.cn89{height:330px;min-height:330px;display:block;background-image:url("public/assets/cloned/images/16d42f5349ba.jpg");background-size:cover;background-position:44% 45%;background-repeat:no-repeat}
+.cn90{height:459.203px;display:block;padding-top:40px;padding-right:40px;padding-bottom:64px;padding-left:40px;background-color:var(--background)}
+.cn91{display:block}
+.cn92{display:block;margin-top:-9.2px;margin-bottom:-12px;color:var(--border);font-size:40px;font-weight:700;line-height:48px;text-transform:uppercase;word-break:break-word}
+.cn93{display:block;margin-top:26.4px;color:var(--foreground)}
+.cn94{display:block;margin-top:-4.6px;margin-bottom:-6px;word-break:break-word}
+.cn95{height:57.2344px;display:block;position:absolute;right:123.203px;bottom:330px;left:40px;transform:matrix(1, 0, 0, 1, 0, 28.6172);transform-origin:87.4609px 28.6172px}
+.cn96{height:100%;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:19.0787px;padding-right:19.0787px;padding-bottom:19.0787px;padding-left:23.8483px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;align-items:center;color:var(--background);font-size:19.0787px;line-height:19.0787px;background-color:var(--accent);white-space:nowrap}
+.cn96::after{content:"";display:none;position:relative;width:19.0787px;height:19.0787px;margin-left:9.53933px;background-color:rgb(255, 255, 255)}
+.cn97{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:40px;color:var(--background);background-color:var(--accent)}
+.cn98{height:261.406px;display:flex;max-width:100%;padding-right:60.8px;padding-left:60.8px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.cn99{display:block;padding-bottom:40px;flex-shrink:0}
+.cn100{height:148px;display:flex;margin-left:-24px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;justify-content:center;flex-shrink:0;cursor:pointer}
+.cn101{width:100%;height:100px;min-height:100px;display:block;max-width:250px;overflow-x:clip;overflow-y:clip;object-fit:contain;vertical-align:middle}
+.cn102{width:159px;height:113.406px;display:block;margin-left:32px;padding-bottom:40px;flex-shrink:0}
+.cn103{display:block;margin-top:-4.6px;margin-bottom:-6px}
+.cn104{display:inline}
+.cn105{display:inline}
+.cn106{display:inline}
+.cn107{height:68px;display:block;margin-left:32px;padding-bottom:40px;flex-shrink:0}
+.cn108{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:inline-block;margin-bottom:-2px;white-space:nowrap;text-wrap:nowrap;direction:rtl;cursor:pointer}
+.cn109{display:inline}
+.cn110{width:164px;display:flex;margin-left:32px;padding-bottom:40px;flex-shrink:0}
+.cn111{display:flex;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;cursor:pointer}
+.cn112{display:block;font-style:italic;line-height:0px}
+.cn113{width:auto;height:32px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn114{display:flex;margin-left:10px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;cursor:pointer}
+.cn115{display:block;font-style:italic;line-height:0px}
+.cn116{width:32px;height:32px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn117{display:flex;margin-left:10px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:1000px;border-top-right-radius:1000px;border-bottom-right-radius:1000px;border-bottom-left-radius:1000px;cursor:pointer}
+.cn118{display:block;font-style:italic;line-height:0px}
+.cn119{width:32px;height:32px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn120{width:314px;display:block;margin-left:32px;padding-bottom:40px;flex-shrink:0}
+.cn121{display:flex;margin-top:-4.6px;margin-bottom:-6px;text-transform:uppercase}
+.cn122{display:block;padding-top:8px;padding-right:24px;padding-bottom:8px;cursor:pointer}
+.cn123{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:inline;margin-bottom:-2px}
+.cn124{border-left-width:2px;border-left-style:solid;border-left-color:var(--background);display:block;padding-top:8px;padding-bottom:8px;padding-left:24px;cursor:pointer}
+.cn125{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0);display:inline;margin-bottom:-2px}
+.cn126{display:block;color:var(--color-001);font-size:15px;line-height:21px}
+.cn127{width:48px;height:48px;display:block;position:fixed;bottom:40px;left:40px;z-index:99999999;pointer-events:none}
+.cn128{width:48px;height:100%;min-height:41px;display:block;position:absolute;top:0px;left:0px;opacity:0;max-width:100%;justify-content:center;align-items:center;color:var(--color-002);line-height:15px;text-align:center;box-shadow:rgba(0, 0, 0, 0.5) 0px 0px 6px 1px;cursor:pointer;pointer-events:none}
+.cn129{width:48px;height:48px;display:block;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 48 / 48;vertical-align:middle;pointer-events:none}
+
+@media (max-width: 571px) {
+.cn0{height:4945.02px;font-size:18px;line-height:25.2px}
+.cn1{height:869.25px;flex-direction:column}
+.cn2{position:relative;right:0px;bottom:0px;left:0px;margin-bottom:-16px;padding-top:16px;background-color:var(--border);min-width:0}
+.cn3{width:375px;position:relative;top:0px;right:-187.5px;bottom:0px;left:187.5px;padding-right:40px;padding-left:40px;justify-content:center;transform:matrix(1, 0, 0, 1, -187.5, 0);transform-origin:187.5px 25px}
+.cn4{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn6{width:25px;height:25px}
+.cn7{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn9{height:25px}
+.cn10{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn12{width:25px;height:25px}
+.cn13{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn15{height:25px}
+.cn16{width:375px;height:222.625px;z-index:0;min-width:100%}
+.cn17{padding-top:32px;padding-right:40px;padding-bottom:32px;padding-left:40px}
+.cn18{height:100px;min-height:100px;max-height:200px}
+.cn19{display:flex;font-size:20.2472px;line-height:20.2472px;letter-spacing:0.809888px;min-width:0}
+.cn19::before{display:block;width:15px;height:15px}
+.cn20{display:none}
+.cn30{width:375px;height:596.625px;min-height:0}
+.cn33{width:375px;height:596.625px}
+.cn35{min-height:0}
+.cn36{width:375px;height:300px;min-height:300px}
+.cn37{width:375px;height:296.625px;display:block}
+.cn38{height:296.625px;padding-top:40px;padding-right:40px;padding-bottom:64px;padding-left:40px}
+.cn39{margin-top:-6.16px;margin-bottom:-7px;font-size:28px;line-height:30.8px}
+.cn40{margin-bottom:-5.4px}
+.cn41{margin-bottom:-5.4px}
+.cn42{padding-top:18.0618px;padding-right:18.0618px;padding-bottom:18.0618px;padding-left:22.5772px;font-size:18.0618px;line-height:18.0618px}
+.cn42::after{width:18.0618px;height:18.0618px;margin-left:9.0309px}
+.cn43{height:3519.98px;min-height:406px}
+.cn44{padding-top:76.545px;padding-bottom:76.545px}
+.cn45{padding-right:40px;padding-left:40px}
+.cn48{margin-top:-6.16px;margin-bottom:-7px;font-size:28px;line-height:30.8px}
+.cn49{margin-bottom:-5.4px}
+.cn50{height:25.2031px;margin-bottom:-5.4px}
+.cn53{margin-top:-4.14px;margin-bottom:-5.4px}
+.cn53::before{top:5.4px;bottom:-5.4px;width:18px;height:18px;margin-right:9px}
+.cn54{margin-bottom:-5.4px}
+.cn54::before{top:5.4px;bottom:-5.4px;width:18px;height:18px;margin-right:9px}
+.cn55{margin-bottom:-5.4px}
+.cn55::before{top:5.4px;bottom:-5.4px;width:18px;height:18px;margin-right:9px}
+.cn56{margin-bottom:-5.4px}
+.cn56::before{top:5.4px;bottom:-5.4px;width:18px;height:18px;margin-right:9px}
+.cn57{margin-bottom:-5.4px}
+.cn57::before{top:5.4px;bottom:-5.4px;width:18px;height:18px;margin-right:9px}
+.cn58{height:201.625px;margin-top:-4.14px;margin-bottom:-5.4px}
+.cn61{margin-bottom:-5.4px}
+.cn62{margin-right:-1.8px;margin-left:-1.8px;padding-right:1.8px;padding-left:1.8px;border-top-left-radius:3.6px;border-top-right-radius:3.6px}
+.cn63{margin-bottom:-5.4px}
+.cn64{padding-top:18.0618px;padding-right:18.0618px;padding-bottom:18.0618px;padding-left:22.5772px;font-size:18.0618px;line-height:18.0618px}
+.cn64::after{width:18.0618px;height:18.0618px;margin-left:9.0309px}
+.cn65{margin-bottom:-5.4px}
+.cn66{padding-top:18.0618px;padding-right:18.0618px;padding-bottom:18.0618px;padding-left:22.5772px;font-size:18.0618px;line-height:18.0618px}
+.cn66::after{width:18.0618px;height:18.0618px;margin-left:9.0309px}
+.cn67{margin-bottom:76.545px;padding-top:76.545px;padding-bottom:76.545px}
+.cn68{padding-right:40px;padding-left:40px}
+.cn69{grid-template-rows:609.781px 542.594px 618.203px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn70{height:609.781px}
+.cn71{height:172px;min-height:172px}
+.cn72{height:437.781px}
+.cn74{margin-top:-6.44px;margin-bottom:-8.4px;font-size:28px;line-height:33.6px}
+.cn76{margin-top:-4.14px;margin-bottom:-5.4px}
+.cn77{height:54.1562px;right:93.3906px;bottom:172px;transform:matrix(1, 0, 0, 1, 0, 27.0781);transform-origin:80.8047px 27.0781px}
+.cn78{padding-top:18.0618px;padding-right:18.0618px;padding-bottom:18.0618px;padding-left:22.5772px;font-size:18.0618px;line-height:18.0618px}
+.cn78::after{width:18.0618px;height:18.0618px;margin-left:9.0309px}
+.cn79{height:542.594px}
+.cn80{height:172px;min-height:172px}
+.cn81{height:370.594px}
+.cn83{margin-top:-6.44px;margin-bottom:-8.4px;font-size:28px;line-height:33.6px}
+.cn85{margin-top:-4.14px;margin-bottom:-5.4px}
+.cn86{height:54.1562px;right:93.3906px;bottom:172px;transform:matrix(1, 0, 0, 1, 0, 27.0781);transform-origin:80.8047px 27.0781px}
+.cn87{padding-top:18.0618px;padding-right:18.0618px;padding-bottom:18.0618px;padding-left:22.5772px;font-size:18.0618px;line-height:18.0618px}
+.cn87::after{width:18.0618px;height:18.0618px;margin-left:9.0309px}
+.cn88{height:618.203px}
+.cn89{height:172px;min-height:172px}
+.cn90{height:446.203px}
+.cn92{margin-top:-6.44px;margin-bottom:-8.4px;font-size:28px;line-height:33.6px}
+.cn94{margin-top:-4.14px;margin-bottom:-5.4px}
+.cn95{height:54.1562px;right:93.3906px;bottom:172px;transform:matrix(1, 0, 0, 1, 0, 27.0781);transform-origin:80.8047px 27.0781px}
+.cn96{padding-top:18.0618px;padding-right:18.0618px;padding-bottom:18.0618px;padding-left:22.5772px;font-size:18.0618px;line-height:18.0618px}
+.cn96::after{width:18.0618px;height:18.0618px;margin-left:9.0309px}
+.cn98{height:515.781px;padding-right:40px;padding-left:40px;flex-direction:column;text-align:center}
+.cn102{width:145px;height:106.094px;margin-left:0}
+.cn103{height:75.6094px;margin-top:-4.14px;margin-bottom:-5.4px}
+.cn107{height:65.2031px;margin-left:0}
+.cn110{width:152.391px;margin-left:0}
+.cn113{height:29px}
+.cn114{margin-left:9px}
+.cn116{width:29px;height:29px}
+.cn117{margin-left:9px}
+.cn119{width:29px;height:29px}
+.cn120{width:286px;margin-left:0}
+.cn121{margin-top:-4.14px;margin-bottom:-5.4px}
+.cn127{left:15px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:4089.83px}
+.cn1{height:853.25px;flex-direction:column}
+.cn2{position:relative;right:0px;bottom:0px;left:0px;margin-bottom:-16px;padding-top:16px;background-color:var(--border);min-width:0}
+.cn3{width:768px;position:relative;top:0px;right:-384px;bottom:0px;left:384px;padding-right:40px;padding-left:40px;justify-content:center;transform:matrix(1, 0, 0, 1, -384, 0);transform-origin:384px 25px}
+.cn4{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn6{width:25px;height:25px}
+.cn7{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn9{height:25px}
+.cn10{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn12{width:25px;height:25px}
+.cn13{max-width:50px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;flex-grow:1;flex-basis:0%}
+.cn15{height:25px}
+.cn16{width:768px;height:224.391px;z-index:0;min-width:100%}
+.cn17{padding-top:32px;padding-right:40px;padding-bottom:32px;padding-left:40px}
+.cn18{height:100px;min-height:100px;max-height:200px}
+.cn19{display:flex;font-size:22.0135px;line-height:22.0135px;letter-spacing:0.880539px;min-width:0}
+.cn19::before{display:block;width:15px;height:15px}
+.cn20{display:none}
+.cn30{width:768px;height:578.859px;min-height:0}
+.cn33{width:768px;height:578.859px}
+.cn35{min-height:0}
+.cn36{width:768px;height:300px;min-height:300px}
+.cn37{width:768px;height:278.859px;display:block}
+.cn38{height:278.859px;padding-top:40px;padding-right:40px;padding-bottom:64px;padding-left:40px}
+.cn39{margin-top:-6.7584px;margin-bottom:-7.68px;font-size:30.72px;line-height:33.792px}
+.cn42{padding-top:18.5034px;padding-right:18.5034px;padding-bottom:18.5034px;padding-left:23.1292px;font-size:18.5034px;line-height:18.5034px}
+.cn42::after{width:18.5034px;height:18.5034px;margin-left:9.25169px}
+.cn43{height:2665.77px;min-height:512px}
+.cn44{padding-top:97.72px;padding-bottom:97.72px}
+.cn45{padding-right:40px;padding-left:40px}
+.cn48{margin-top:-6.7584px;margin-bottom:-7.68px;font-size:30.72px;line-height:33.792px}
+.cn58{height:112px}
+.cn64{padding-top:18.5034px;padding-right:18.5034px;padding-bottom:18.5034px;padding-left:23.1292px;font-size:18.5034px;line-height:18.5034px}
+.cn64::after{width:18.5034px;height:18.5034px;margin-left:9.25169px}
+.cn66{padding-top:18.5034px;padding-right:18.5034px;padding-bottom:18.5034px;padding-left:23.1292px;font-size:18.5034px;line-height:18.5034px}
+.cn66::after{width:18.5034px;height:18.5034px;margin-left:9.25169px}
+.cn67{margin-bottom:97.72px;padding-top:97.72px;padding-bottom:97.72px}
+.cn68{padding-right:40px;padding-left:40px}
+.cn69{grid-template-rows:670.703px 652.984px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn70{height:670.703px}
+.cn71{height:172px;min-height:172px}
+.cn72{height:498.703px}
+.cn74{margin-top:-7.0656px;margin-bottom:-9.216px;font-size:30.72px;line-height:36.864px}
+.cn77{height:55.5px;right:94.375px;bottom:172px;transform:matrix(1, 0, 0, 1, 0, 27.75);transform-origin:86.8125px 27.75px}
+.cn78{padding-top:18.5034px;padding-right:18.5034px;padding-bottom:18.5034px;padding-left:23.1292px;font-size:18.5034px;line-height:18.5034px}
+.cn78::after{width:18.5034px;height:18.5034px;margin-left:9.25169px}
+.cn79{height:670.703px}
+.cn80{height:172px;min-height:172px}
+.cn81{height:396.984px}
+.cn83{margin-top:-7.0656px;margin-bottom:-9.216px;font-size:30.72px;line-height:36.864px}
+.cn86{height:55.5px;right:94.375px;bottom:172px;transform:matrix(1, 0, 0, 1, 0, 27.75);transform-origin:86.8125px 27.75px}
+.cn87{padding-top:18.5034px;padding-right:18.5034px;padding-bottom:18.5034px;padding-left:23.1292px;font-size:18.5034px;line-height:18.5034px}
+.cn87::after{width:18.5034px;height:18.5034px;margin-left:9.25169px}
+.cn88{height:652.984px}
+.cn89{height:172px;min-height:172px}
+.cn90{height:480.984px}
+.cn92{margin-top:-7.0656px;margin-bottom:-9.216px;font-size:30.72px;line-height:36.864px}
+.cn95{height:55.5px;right:94.375px;bottom:172px;transform:matrix(1, 0, 0, 1, 0, 27.75);transform-origin:86.8125px 27.75px}
+.cn96{padding-top:18.5034px;padding-right:18.5034px;padding-bottom:18.5034px;padding-left:23.1292px;font-size:18.5034px;line-height:18.5034px}
+.cn96::after{width:18.5034px;height:18.5034px;margin-left:9.25169px}
+.cn98{height:530.812px;padding-right:40px;padding-left:40px;flex-direction:column;text-align:center}
+.cn102{margin-left:0}
+.cn107{margin-left:0}
+.cn110{margin-left:0}
+.cn120{margin-left:0}
+.cn127{left:15px}
+}
+
+@media (min-width: 1601px) {
+.cn1{height:1080px}
+.cn3{top:60.8px}
+.cn16{width:400px;height:1080px;min-width:400px;margin-right:1459.2px;margin-left:60.8px}
+.cn17{margin-top:60.8px}
+.cn18{height:62px}
+.cn20{margin-top:44.8px}
+.cn22{height:60px;padding-right:0;padding-left:0}
+.cn23{font-size:26.3933px}
+.cn24{padding-right:0;padding-left:0}
+.cn25{font-size:26.3933px}
+.cn26{padding-right:0;padding-left:0}
+.cn27{font-size:26.3933px}
+.cn28{padding-right:0;padding-left:0}
+.cn29{font-size:26.3933px}
+.cn30{width:1920px;height:1080px;position:absolute;min-width:0px;right:auto;bottom:auto}
+.cn33{width:1920px;height:1080px}
+.cn35{display:inline-block;flex-direction:initial}
+.cn36{width:1920px;height:1080px;position:absolute;z-index:-1;right:auto;bottom:auto}
+.cn37{width:1920px;height:1080px;min-height:100vh;padding-right:60.8px;padding-left:60.8px}
+.cn38{height:286.891px;max-width:610px;margin-top:60.8px;margin-bottom:60.8px;margin-left:460.8px;padding-top:48px;padding-right:48px;padding-bottom:48px;padding-left:48px}
+.cn42{padding-top:19.7978px;padding-right:19.7978px;padding-bottom:19.7978px;padding-left:24.7472px;font-size:19.7978px;line-height:19.7978px}
+.cn42::after{width:19.7978px;height:19.7978px;margin-left:9.89888px}
+.cn43{height:2213.27px;min-height:540px}
+.cn44{padding-top:140px;padding-bottom:140px}
+.cn64{padding-top:19.7978px;padding-right:19.7978px;padding-bottom:19.7978px;padding-left:24.7472px;font-size:19.7978px;line-height:19.7978px}
+.cn64::after{width:19.7978px;height:19.7978px;margin-left:9.89888px}
+.cn66{padding-top:19.7978px;padding-right:19.7978px;padding-bottom:19.7978px;padding-left:24.7472px;font-size:19.7978px;line-height:19.7978px}
+.cn66::after{width:19.7978px;height:19.7978px;margin-left:9.89888px}
+.cn67{margin-bottom:140px;padding-top:140px;padding-bottom:140px}
+.cn69{grid-template-rows:649.203px}
+.cn70{height:649.203px}
+.cn72{height:311.203px}
+.cn77{height:59.3906px;right:328.938px;transform:matrix(1, 0, 0, 1, 0, 29.6953);transform-origin:91.2656px 29.6953px}
+.cn78{padding-top:19.7978px;padding-right:19.7978px;padding-bottom:19.7978px;padding-left:24.7472px;font-size:19.7978px;line-height:19.7978px}
+.cn78::after{width:19.7978px;height:19.7978px;margin-left:9.89888px}
+.cn79{height:649.203px}
+.cn81{height:263.203px}
+.cn86{height:59.3906px;right:328.938px;transform:matrix(1, 0, 0, 1, 0, 29.6953);transform-origin:91.2656px 29.6953px}
+.cn87{padding-top:19.7978px;padding-right:19.7978px;padding-bottom:19.7978px;padding-left:24.7472px;font-size:19.7978px;line-height:19.7978px}
+.cn87::after{width:19.7978px;height:19.7978px;margin-left:9.89888px}
+.cn88{height:649.203px}
+.cn90{height:319.203px}
+.cn95{height:59.3906px;right:328.938px;transform:matrix(1, 0, 0, 1, 0, 29.6953);transform-origin:91.2656px 29.6953px}
+.cn96{padding-top:19.7978px;padding-right:19.7978px;padding-bottom:19.7978px;padding-left:24.7472px;font-size:19.7978px;line-height:19.7978px}
+.cn96::after{width:19.7978px;height:19.7978px;margin-left:9.89888px}
+.cn98{height:188px}
+.cn127{pointer-events:initial}
+.cn128{border-top-left-radius:0%;border-top-right-radius:0%;border-bottom-right-radius:0%;border-bottom-left-radius:0%;animation-name:ccm-icon-show--link;animation-duration:1s;animation-timing-function:cubic-bezier(0.5, 0, 0.5, 1.5);animation-fill-mode:forwards;opacity:initial;pointer-events:initial}
+.cn129{pointer-events:initial}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <header class="cn1">
+      <div class="cn2">
+        <div class="cn3">
+          <a class="cn4" data-ditto-id="style-link-8" href="#" title="E-Mail schreiben">
+            <i class="cn5">
+              <svg class="cn6" data-ditto-id="style-icon" height="17.3" viewBox="0 0 29.6 17.3" width="29.6" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M13.9,13.8V31.1H43.5V13.8Zm14.8,9.9L17.2,15.4H40.1Zm-5-1.6-8.1,6.5V16.2Zm1.3,1,3.7,2.7,3.7-2.7,8,6.4H17.1Zm8.8-1,8.1-5.8V28.7Z" transform="translate(-13.9 -13.8)" fill="#fff"></path></svg>
+            </i>
+          </a>
+           
+          <a class="cn7" data-ditto-id="style-link-10" href="https://www.linkedin.com/in/skibicki/" target="_blank">
+            <i class="cn8">
+               
+              <svg class="cn9" data-ditto-id="style-ebene-1" id="Ebene_1" viewBox="0 0 500 500" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px" version="1.1" enable-background="new 0 0 500 500" fill="currentColor">
+<g>
+	<path fill="#FFFFFF" d="M142.8,94.6c0,23.8-17.6,43.1-46.5,43.1c-27.2,0-44.8-19.3-44.8-43.1c0-24.4,18.1-43.1,45.9-43.1
+		C125.2,51.5,142.2,70.2,142.8,94.6z M53.8,448.9V171.7H140v277.2H53.8z"></path>
+	<path fill="#FFFFFF" d="M191.5,260.2c0-34.6-1.1-63.5-2.3-88.4h74.8l4,38.5h1.7c11.3-18.1,39.1-44.8,85.6-44.8
+		c56.7,0,99.2,38,99.2,119.6v163.8h-86.2V295.3c0-35.7-12.5-60.1-43.7-60.1c-23.8,0-38,16.4-44.2,32.3c-2.3,5.7-2.8,13.6-2.8,21.5
+		v159.9h-86.2V260.2z"></path>
+</g>
+</svg>
+               
+            </i>
+          </a>
+           
+          <a class="cn10" data-ditto-id="style-link" href="https://www.facebook.com/profski.klemens/?locale=de_DE" target="_blank">
+            <i class="cn11">
+              <svg class="cn12" data-ditto-id="style-icon-2" height="28.533" viewBox="0 0 14.808 28.533" width="14.808" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <path id="Social_Media_Icon_FB" data-name="Social Media Icon FB" d="M56.747,63.812V50.8h4.368l.656-5.073H56.747V42.487c0-1.469.405-2.475,2.512-2.475h2.679V35.481a35.884,35.884,0,0,0-3.916-.2c-3.87,0-6.524,2.363-6.524,6.706v3.74H47.13V50.8h4.377V63.812Z" transform="translate(-47.13 -35.279)" fill="#fff"></path>
+</svg>
+               
+            </i>
+          </a>
+           
+          <a class="cn13" data-ditto-id="style-link-4" href="https://www.instagram.com/klemensskibicki_profski/?hl=de" target="_blank">
+            <i class="cn14">
+              <svg class="cn15" data-ditto-id="style-social-media-icon-insta" height="27.587" id="Social_Media_Icon_Insta" viewBox="0 0 28.953 27.587" width="28.953" xmlns="http://www.w3.org/2000/svg" data-name="Social Media Icon Insta" fill="currentColor">
+  <path id="Pfad_149" data-name="Pfad 149" d="M52.221,58.9H41.132A8.932,8.932,0,0,1,32.2,49.966V40.223a8.932,8.932,0,0,1,8.932-8.913h11.09a8.932,8.932,0,0,1,8.932,8.932v9.743A8.932,8.932,0,0,1,52.221,58.9ZM41.132,33.29A6.941,6.941,0,0,0,34.2,40.223v9.761a6.941,6.941,0,0,0,6.933,6.933h11.09a6.941,6.941,0,0,0,6.933-6.933V40.223a6.941,6.941,0,0,0-6.933-6.933Z" transform="translate(-32.2 -31.31)" fill="#fff"></path>
+  <path id="Pfad_150" data-name="Pfad 150" d="M57.694,62.928a7.934,7.934,0,1,1,7.934-7.934,7.934,7.934,0,0,1-7.934,7.934Zm0-13.889a5.954,5.954,0,1,0,5.954,5.954A5.954,5.954,0,0,0,57.694,49.04Z" transform="translate(-43.225 -41.199)" fill="#fff"></path>
+  <path id="Pfad_151" data-name="Pfad 151" d="M90.937,44.935a1.645,1.645,0,1,1-.483-1.164A1.649,1.649,0,0,1,90.937,44.935Z" transform="translate(-67.008 -38.832)" fill="#fff"></path>
+</svg>
+               
+            </i>
+          </a>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn16">
+        <a class="cn17" href="https://www.profski.com/" title="Startseite">
+          <img class="cn18" alt="Logo PROFSKI GmbH" src="public/assets/cloned/svg/9494604e9835.svg" />
+        </a>
+         
+        <label class="cn19" for="nav-open">
+          Menü
+        </label>
+         
+        <div class="cn20">
+          <nav class="cn21">
+            <a class="cn22" href="https://www.profski.com/ueber-klemens-skibicki/">
+              <span class="cn23" data-ditto-id="style-div">
+                Über Klemens Skibicki
+              </span>
+            </a>
+            <a class="cn24" href="https://www.profski.com/themen/">
+              <span class="cn25" data-ditto-id="style-div-2">
+                Themen
+              </span>
+            </a>
+            <a class="cn26" href="https://www.profski.com/formate/">
+              <span class="cn27" data-ditto-id="style-main">
+                Formate
+              </span>
+            </a>
+            <a class="cn28" href="https://www.profski.com/kontakt/">
+              <span class="cn29" data-ditto-id="style-div-3">
+                Kontakt
+              </span>
+            </a>
+             
+          </nav>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn30">
+        <div class="cn31">
+          <div class="cn32">
+            <div class="cn33" aria-hidden="false">
+              <div class="cn34">
+                <div class="cn35">
+                  <div class="cn36"></div>
+                   
+                  <div class="cn37">
+                    <div class="cn38" data-ditto-id="style-p-9">
+                      <h2 class="cn39">
+                        #Profski
+                      </h2>
+                       
+                      <p class="cn40">
+                        Der Mensch im digitalen Strukturwandel mit Künstlicher Intelligenz als Beschleuniger
+                      </p>
+                       
+                      <p class="cn41">
+                        <a class="cn42" data-ditto-id="style-heading" href="https://www.profski.com/ueber-klemens-skibicki/">
+                          Mehr erfahren
+                        </a>
+                      </p>
+                       
+                    </div>
+                     
+                  </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </header>
+     
+    <main class="cn43" id="main">
+      <section class="cn44">
+        <div class="cn45">
+          <div class="cn46">
+            <div class="cn47">
+              <h1 class="cn48">
+                Künstliche Intelligenz/Digitalisierung ist mehr als Technologie. Sie verändert, wie wir arbeiten, kommunizieren und führen! Der MENSCH bleibt im Mittelpunkt!
+              </h1>
+               
+              <p class="cn49" data-ditto-id="style-heading-6">
+                Prof. Dr. Klemens Skibicki – alias #Profski – erklärt diesen Wandel verständlich, motivierend und unterhaltsam. Für Unternehmen, die mitdenken. Und Menschen, die mitgehen.
+              </p>
+               
+              <p class="cn50">
+                <strong class="cn51">
+                  Was Sie erwartet:
+                </strong>
+              </p>
+               
+              <ul class="cn52">
+                <li class="cn53" data-ditto-id="style-p-13">
+                  Keynotes, die Denkräume öffnen und motivieren
+                </li>
+                <li class="cn54">
+                  Workshops, die Veränderung verankern
+                </li>
+                <li class="cn55">
+                  Strategieberatung mit Blick fürs Ganze
+                </li>
+                <li class="cn56">
+                  Impulse zwischen Wirtschaftsgeschichte &amp; Zukunft
+                </li>
+                <li class="cn57" data-ditto-id="style-heading-5">
+                  <p class="cn58" data-ditto-id="style-p-12">
+                    <strong class="cn59">
+                      NEU
+                    </strong>
+                    : KI und digitale Vernetzung – nicht nur Verstehen, sondern sofort 
+                    <strong class="cn60">
+                      Fühlen, Begreifen, Erleben 
+                    </strong>
+                    und auf sich und die eigene Organisation übertragen – das Führungskräfteseminar für IHR Team in der Digitalstadt Ahaus mit #Profski.
+                  </p>
+                   
+                  <p class="cn61" data-ditto-id="style-link-9">
+                    <a class="cn62" data-ditto-id="style-heading-2" href="https://www.future-leadership-camp.de/" rel="noopener noreferrer" target="_blank">
+                      https://www.future-leadership-camp.de/
+                    </a>
+                  </p>
+                   
+                </li>
+              </ul>
+               
+              <p class="cn63">
+                <a class="cn64" data-ditto-id="style-heading-3" href="https://www.profski.com/kontakt/">
+                  Keynote anfragen
+                </a>
+              </p>
+               
+              <p class="cn65" data-ditto-id="style-p-14">
+                <a class="cn66" data-ditto-id="style-p" href="https://www.profski.com/ueber-klemens-skibicki/">
+                  Mehr über #Profski erfahren
+                </a>
+              </p>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </section>
+       
+      <section class="cn67">
+        <div class="cn68">
+          <div class="cn69">
+            <a class="cn70" data-ditto-id="style-p-2" href="https://www.profski.com/ueber-klemens-skibicki/">
+               
+              <div class="cn71"></div>
+               
+              <div class="cn72">
+                <div class="cn73" data-ditto-id="style-p-15">
+                  <h3 class="cn74">
+                    Über Klemens Skibicki
+                  </h3>
+                   
+                </div>
+                 
+                <div class="cn75">
+                  <p class="cn76" data-ditto-id="style-p-16">
+                    Professor, Unternehmer, Wirtschaftshistoriker, Speaker. Seit über 20 Jahren begleite ich Organisationen im digitalen Wandel – mit klarer Sprache und wissenschaftlichem Fundament.
+                  </p>
+                   
+                </div>
+                 
+                <div class="cn77">
+                  <span class="cn78" data-ditto-id="style-p-3">
+                    Mehr erfahren
+                  </span>
+                   
+                </div>
+                 
+              </div>
+               
+            </a>
+             
+            <a class="cn79" data-ditto-id="style-p-4" href="https://www.profski.com/themen/">
+               
+              <div class="cn80"></div>
+               
+              <div class="cn81">
+                <div class="cn82">
+                  <h3 class="cn83" data-ditto-id="style-p-10">
+                    Themen
+                  </h3>
+                   
+                </div>
+                 
+                <div class="cn84">
+                  <p class="cn85">
+                    Die Themen, mit denen ich mich beschäftige, sind ein buntes Potpourri aus digitaler Transformation, künstlicher Intelligenz bis hin zu Brand Personas und Wirtschaftsgeschichte.
+                  </p>
+                   
+                </div>
+                 
+                <div class="cn86">
+                  <span class="cn87" data-ditto-id="style-em">
+                    Mehr erfahren
+                  </span>
+                   
+                </div>
+                 
+              </div>
+               
+            </a>
+             
+            <a class="cn88" data-ditto-id="style-p-5" href="https://www.profski.com/formate/">
+               
+              <div class="cn89"></div>
+               
+              <div class="cn90">
+                <div class="cn91" data-ditto-id="style-heading-4">
+                  <h3 class="cn92" data-ditto-id="style-p-11">
+                    Formate
+                  </h3>
+                   
+                </div>
+                 
+                <div class="cn93">
+                  <p class="cn94">
+                    Verständnis schaffen, Impulse setzen, Veränderung anstoßen. Im Rahmen von Workshops, strategischer Beratung oder Moderation auf Augenhöhe, biete ich inhaltliche Tiefe und mache die richtige Einstellung zur Veränderung erlebbar.
+                  </p>
+                   
+                </div>
+                 
+                <div class="cn95">
+                  <span class="cn96" data-ditto-id="style-p-6">
+                    Mehr erfahren
+                  </span>
+                   
+                </div>
+                 
+              </div>
+               
+            </a>
+             
+          </div>
+           
+        </div>
+         
+      </section>
+       
+    </main>
+     
+    <footer class="cn97">
+      <div class="cn98">
+        <div class="cn99" data-ditto-id="style-p-19">
+          <a class="cn100" data-ditto-id="style-p-7" href="https://www.profski.com/" title="Startseite">
+            <img class="cn101" data-ditto-id="style-p-8" alt="Logo PROFSKI GmbH" src="public/assets/cloned/svg/cfa0eaaa7dae.svg" />
+          </a>
+        </div>
+         
+        <div class="cn102">
+          <p class="cn103">
+             PROFSKI GmbH
+            <br class="cn104" />
+             Moltkestr. 67-69
+            <br class="cn105" />
+             50674 Köln
+            <br class="cn106" />
+             
+          </p>
+           
+        </div>
+         
+        <div class="cn107" data-ditto-id="style-p-17">
+          <a class="cn108" data-ditto-id="style-p-18" href="#" title="E-Mail schreiben">
+            moc.iksforp@ofni
+          </a>
+          <br class="cn109" data-ditto-id="style-link-2" />
+           
+        </div>
+         
+        <div class="cn110">
+          <a class="cn111" href="https://www.linkedin.com/in/skibicki/" target="_blank">
+            <i class="cn112">
+               
+              <svg class="cn113" id="Ebene_1" viewBox="0 0 500 500" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px" version="1.1" enable-background="new 0 0 500 500" fill="currentColor">
+<g>
+	<path fill="#FFFFFF" d="M142.8,94.6c0,23.8-17.6,43.1-46.5,43.1c-27.2,0-44.8-19.3-44.8-43.1c0-24.4,18.1-43.1,45.9-43.1
+		C125.2,51.5,142.2,70.2,142.8,94.6z M53.8,448.9V171.7H140v277.2H53.8z"></path>
+	<path fill="#FFFFFF" d="M191.5,260.2c0-34.6-1.1-63.5-2.3-88.4h74.8l4,38.5h1.7c11.3-18.1,39.1-44.8,85.6-44.8
+		c56.7,0,99.2,38,99.2,119.6v163.8h-86.2V295.3c0-35.7-12.5-60.1-43.7-60.1c-23.8,0-38,16.4-44.2,32.3c-2.3,5.7-2.8,13.6-2.8,21.5
+		v159.9h-86.2V260.2z"></path>
+</g>
+</svg>
+               
+            </i>
+          </a>
+           
+          <a class="cn114" href="https://www.facebook.com/profski.klemens/?locale=de_DE" target="_blank">
+            <i class="cn115">
+              <svg class="cn116" data-ditto-id="style-ul" height="28.533" viewBox="0 0 14.808 28.533" width="14.808" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <path id="Social_Media_Icon_FB" data-name="Social Media Icon FB" d="M56.747,63.812V50.8h4.368l.656-5.073H56.747V42.487c0-1.469.405-2.475,2.512-2.475h2.679V35.481a35.884,35.884,0,0,0-3.916-.2c-3.87,0-6.524,2.363-6.524,6.706v3.74H47.13V50.8h4.377V63.812Z" transform="translate(-47.13 -35.279)" fill="#fff"></path>
+</svg>
+               
+            </i>
+          </a>
+           
+          <a class="cn117" data-ditto-id="style-52" href="https://www.instagram.com/klemensskibicki_profski/?hl=de" target="_blank">
+            <i class="cn118">
+              <svg class="cn119" height="27.587" id="Social_Media_Icon_Insta" viewBox="0 0 28.953 27.587" width="28.953" xmlns="http://www.w3.org/2000/svg" data-name="Social Media Icon Insta" fill="currentColor">
+  <path id="Pfad_149" data-name="Pfad 149" d="M52.221,58.9H41.132A8.932,8.932,0,0,1,32.2,49.966V40.223a8.932,8.932,0,0,1,8.932-8.913h11.09a8.932,8.932,0,0,1,8.932,8.932v9.743A8.932,8.932,0,0,1,52.221,58.9ZM41.132,33.29A6.941,6.941,0,0,0,34.2,40.223v9.761a6.941,6.941,0,0,0,6.933,6.933h11.09a6.941,6.941,0,0,0,6.933-6.933V40.223a6.941,6.941,0,0,0-6.933-6.933Z" transform="translate(-32.2 -31.31)" fill="#fff"></path>
+  <path id="Pfad_150" data-name="Pfad 150" d="M57.694,62.928a7.934,7.934,0,1,1,7.934-7.934,7.934,7.934,0,0,1-7.934,7.934Zm0-13.889a5.954,5.954,0,1,0,5.954,5.954A5.954,5.954,0,0,0,57.694,49.04Z" transform="translate(-43.225 -41.199)" fill="#fff"></path>
+  <path id="Pfad_151" data-name="Pfad 151" d="M90.937,44.935a1.645,1.645,0,1,1-.483-1.164A1.649,1.649,0,0,1,90.937,44.935Z" transform="translate(-67.008 -38.832)" fill="#fff"></path>
+</svg>
+               
+            </i>
+          </a>
+           
+        </div>
+         
+        <div class="cn120">
+          <p class="cn121">
+            <a class="cn122" href="https://www.profski.com/impressum/">
+              <span class="cn123">
+                Impressum
+              </span>
+            </a>
+             
+            <a class="cn124" href="https://www.profski.com/datenschutz/">
+              <span class="cn125" data-ditto-id="style-link-3">
+                Datenschutz
+              </span>
+            </a>
+             
+          </p>
+           
+        </div>
+         
+      </div>
+       
+    </footer>
+     
+    <div class="cn126">
+       
+      <div class="cn127" aria-label="Cookie-Zustimmung ändern" role="complementary">
+        <button class="cn128" aria-haspopup="dialog" aria-label="Cookie-Zustimmung ändern" title="Cookie-Zustimmung ändern" type="button">
+          <img class="cn129" alt="Cookie-Zustimmung ändern" height="48" src="public/assets/cloned/svg/35ba39f4cbb4.svg" width="48" />
+           
+        </button>
+         
+      </div>
+       
+    </div>
+</body>
+</html>

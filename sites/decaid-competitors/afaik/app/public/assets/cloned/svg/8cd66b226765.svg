@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="100%" role="img" aria-labelledby="t2 d2" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t2">Arbeit und Nichtarbeit: wo die 86,5 Prozent herkommen</title>
+  <desc id="d2">Google ATLAS teilt konversationelle Nutzung in 13,5 Prozent Arbeit und 86,5 Prozent Nichtarbeit. Der Anthropic Economic Index trennt dieselbe Nutzung in 43,36 Prozent Arbeit, 40,2 Prozent Privatleben und 16,45 Prozent Studium und Lernen.</desc>
+  <style>
+.ink{fill:#1a1a1a}.mut{fill:#6b6b6b}.rule{stroke:#e2e0da}
+@media (prefers-color-scheme:dark){.ink{fill:#ededed}.mut{fill:#9a9a9a}.rule{stroke:#343431}}
+</style>
+  <text x="24" y="30" class="ink" font-size="17" font-weight="500">Woher die 86,5 Prozent Nichtarbeit kommen</text>
+  <text x="24" y="52" class="mut" font-size="12.5">Aufteilung der klassifizierten Konversationen nach Nutzungskontext</text>
+  <g font-size="11.5">
+    <rect x="24" y="66" width="10" height="10" fill="#2a78d6"></rect>
+    <text x="40" y="75" class="mut">Arbeit</text>
+    <rect x="98" y="66" width="10" height="10" fill="#b8b6ae"></rect>
+    <text x="114" y="75" class="mut">privat</text>
+    <rect x="166" y="66" width="10" height="10" fill="#eb6834"></rect>
+    <text x="182" y="75" class="mut">Studium und Lernen</text>
+  </g>
+  <text x="24" y="118" class="ink" font-size="13.5" font-weight="500">Google ATLAS v1.0</text>
+  <text x="24" y="136" class="mut" font-size="11.5">Gemini App und AI Mode</text>
+  <rect x="240" y="102" width="59" height="34" fill="#2a78d6"></rect>
+  <rect x="301" y="102" width="379" height="34" fill="#b8b6ae"></rect>
+  <text x="252" y="124" font-size="12" font-weight="500" fill="#ffffff">13,5 %</text>
+  <text x="313" y="124" font-size="12" font-weight="500" fill="#2c2c2a">86,5 % nicht arbeitsbezogen — Lernen inbegriffen</text>
+  <text x="24" y="196" class="ink" font-size="13.5" font-weight="500">Anthropic Economic Index</text>
+  <text x="24" y="214" class="mut" font-size="11.5">Claude Chat und Cowork</text>
+  <rect x="240" y="180" width="191" height="34" fill="#2a78d6"></rect>
+  <rect x="433" y="180" width="177" height="34" fill="#b8b6ae"></rect>
+  <rect x="612" y="180" width="68" height="34" fill="#eb6834"></rect>
+  <text x="252" y="202" font-size="12" font-weight="500" fill="#ffffff">43,36 %</text>
+  <text x="445" y="202" font-size="12" font-weight="500" fill="#2c2c2a">40,2 %</text>
+  <text x="624" y="202" font-size="12" font-weight="500" fill="#ffffff">16,45 %</text>
+  <line x1="24" y1="248" x2="696" y2="248" class="rule" stroke-width="1"></line>
+  <text x="24" y="268" class="mut" font-size="11.5">Anthropic führt Studium und Lernen als eigene dritte Kategorie. Genau dieser Anteil verschwindet bei Google unsichtbar</text>
+  <text x="24" y="284" class="mut" font-size="11.5">im Nichtarbeitsblock und lässt ihn größer erscheinen, als er im Sinne von Freizeitnutzung ist.</text>
+</svg>

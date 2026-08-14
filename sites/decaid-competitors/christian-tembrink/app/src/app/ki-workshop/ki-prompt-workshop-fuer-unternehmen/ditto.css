@@ -1,0 +1,52 @@
+.cn0{display:block;padding-bottom:130px;color:var(--foreground);font-family:"Times New Roman";font-size:16px;font-weight:400;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+
+@media (min-width: 1601px) {
+.cn0{height:9007.34px;overflow-x:auto;overflow-y:auto}
+}
+[data-ditto-id="style-div-18"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:6236.81px;left:0px;height:0px;background-image:linear-gradient(rgba(0, 0, 0, 0.07) 0px, rgba(0, 0, 0, 0))}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-18"]::before{bottom:9037.45px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-18"]::before{bottom:6660.42px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div-18"]::before{}
+}
+[data-ditto-id="style-div-19"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:467.703px;left:0px;height:0px;background-image:linear-gradient(rgba(0, 0, 0, 0.07) 0px, rgba(0, 0, 0, 0))}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-19"]::before{bottom:817.703px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-19"]::before{bottom:515.703px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div-19"]::before{}
+}
+[data-ditto-id="style-div-20"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:1444.78px;left:0px;height:0px;background-image:linear-gradient(rgba(0, 0, 0, 0.07) 0px, rgba(0, 0, 0, 0))}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-20"]::before{bottom:1538.66px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-20"]::before{bottom:1435.05px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-div-20"]::before{}
+}
+[data-ditto-id="style-capcode-2"]::placeholder{color:rgb(117, 117, 117)}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-75816d6e-642e-4955-b5ec-7f35ab04799f"]:hover{background-color:rgba(241, 250, 241, 0.1);border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-61d1d065-ea59-44d3-a6ba-8c3a184f57ba"]:hover{background-color:rgba(241, 250, 241, 0.1);border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-58b74512-4553-4da0-9338-950daf7bb8df"]:hover{background-color:rgba(241, 250, 241, 0.1);border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-label-3"]:hover{border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-button"]:hover{background-color:rgba(1, 176, 246, 0.9)}
+[data-ditto-id="style-capcode-2"]:hover{background-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-icon-3"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-75816d6e-642e-4955-b5ec-7f35ab04799f"]:focus{background-color:rgba(0, 0, 0, 0);border-bottom-color:rgb(241, 250, 241);border-left-color:rgb(241, 250, 241);border-right-color:rgb(241, 250, 241);border-top-color:rgb(241, 250, 241)}
+[data-ditto-id="style-61d1d065-ea59-44d3-a6ba-8c3a184f57ba"]:focus{background-color:rgba(0, 0, 0, 0);border-bottom-color:rgb(241, 250, 241);border-left-color:rgb(241, 250, 241);border-right-color:rgb(241, 250, 241);border-top-color:rgb(241, 250, 241)}
+[data-ditto-id="style-58b74512-4553-4da0-9338-950daf7bb8df"]:focus{background-color:rgba(0, 0, 0, 0);border-bottom-color:rgb(241, 250, 241);border-left-color:rgb(241, 250, 241);border-right-color:rgb(241, 250, 241);border-top-color:rgb(241, 250, 241)}
+[data-ditto-id="style-icon-10"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-linkedin-4"]:focus{box-shadow:rgb(255, 255, 255) 0px 0px 0px 2px;outline-color:rgb(0, 0, 255);outline-style:solid;outline-width:2px}
+[data-ditto-id="style-icon-11"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-caprefreshbtn-2"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-capcode-2"]:focus{background-color:rgba(0, 0, 0, 0)}

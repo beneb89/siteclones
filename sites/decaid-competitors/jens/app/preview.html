@@ -1,0 +1,1385 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jens Polomski — KI-Marketing, Speaker &amp; Newsletter</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8e5abec1d434.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9a69f773aec6.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8f85557b7ee1.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5494908bf230.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8e3f4dd6bdc4.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8e5abec1d434.woff2") format("woff2");
+  unicode-range: U+460-52F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9a69f773aec6.woff2") format("woff2");
+  unicode-range: U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8f85557b7ee1.woff2") format("woff2");
+  unicode-range: U+102-103,U+110-111,U+128-129,U+168-169,U+1A0-1A1,U+1AF-1B0,U+300-301,U+303-304,U+308-309,U+323,U+329,U+1EA0-1EF9,U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/5494908bf230.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8e3f4dd6bdc4.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/675e33ff5963.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0fc86bd9864d.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4659496e5284.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/40e822b8350b.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/89452b7564b0.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/675e33ff5963.woff2") format("woff2");
+  unicode-range: U+460-52F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0fc86bd9864d.woff2") format("woff2");
+  unicode-range: U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4659496e5284.woff2") format("woff2");
+  unicode-range: U+102-103,U+110-111,U+128-129,U+168-169,U+1A0-1A1,U+1AF-1B0,U+300-301,U+303-304,U+308-309,U+323,U+329,U+1EA0-1EF9,U+20AB;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/40e822b8350b.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/89452b7564b0.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/205385290bb3.woff2") format("woff2");
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cc46c52ec3ed.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f468c478b970.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/205385290bb3.woff2") format("woff2");
+  unicode-range: U+900-97F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+20F0,U+25CC,U+A830-A839,U+A8E0-A8FF,U+11B00-11B09;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cc46c52ec3ed.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f468c478b970.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d6891fb20072.woff2") format("woff2");
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/111a12eb15a3.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c7c680ed5f8.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d6891fb20072.woff2") format("woff2");
+  unicode-range: U+900-97F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+20F0,U+25CC,U+A830-A839,U+A8E0-A8FF,U+11B00-11B09;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/111a12eb15a3.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c7c680ed5f8.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9e2e724913b5.woff2") format("woff2");
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e2e94e060d94.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7ebe00bbc61a.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9e2e724913b5.woff2") format("woff2");
+  unicode-range: U+900-97F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+20F0,U+25CC,U+A830-A839,U+A8E0-A8FF,U+11B00-11B09;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e2e94e060d94.woff2") format("woff2");
+  unicode-range: U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7ebe00bbc61a.woff2") format("woff2");
+  unicode-range: U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* tokens */
+:root {
+  --background: rgb(250, 250, 247);
+  --foreground: rgb(14, 17, 22);
+  --primary: rgb(26, 42, 82);
+  --accent: rgb(74, 108, 247);
+  --border: rgba(14, 17, 22, 0.1);
+  --muted-foreground: rgb(90, 100, 120);
+  --surface: rgb(255, 255, 255);
+  --surface-2: rgb(244, 237, 224);
+  --surface-3: oklab(0.999994 0.0000455678 0.0000200868 / 0.95);
+  --color-001: rgba(233, 237, 247, 0.65);
+  --color-002: rgb(233, 237, 247);
+  --color-003: rgba(255, 255, 255, 0.14);
+  --color-004: rgb(143, 168, 255);
+  --color-005: rgb(16, 27, 58);
+  --color-006: rgb(74, 222, 128);
+  --color-007: oklab(0.945881 -0.000324309 -0.0141085 / 0.358039);
+  --color-008: rgb(21, 128, 61);
+}
+
+:root {
+  /* fonts */
+  --font-body: Poppins, "Poppins Fallback", system-ui, sans-serif;
+  --font-001: "IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;
+  /* fontSizes */
+  --font-size-001: 10px;
+  --font-size-002: 11px;
+  --font-size-003: 12px;
+  --font-size-004: 13px;
+  --font-size-005: 14px;
+  --font-size-006: 15px;
+  --font-size-007: 16px;
+  --font-size-008: 18px;
+  --font-size-009: 20px;
+  --font-size-010: 22px;
+  --font-size-011: 24px;
+  --font-size-012: 28px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 400;
+  --font-weight-003: 500;
+  --font-weight-004: 600;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 20px;
+  --line-height-003: 19.5px;
+  --line-height-004: 16px;
+  --line-height-005: 28px;
+  --line-height-006: 16.5px;
+  --line-height-007: 15px;
+  --line-height-008: 21.7px;
+  --line-height-009: 17.4px;
+  --line-height-010: 21px;
+  --line-height-011: 33px;
+  --line-height-012: 32px;
+  --line-height-013: 37.8px;
+  /* spacing */
+  --space-001: 4px;
+  --space-002: 6px;
+  --space-003: 8px;
+  --space-004: 10px;
+  --space-005: 12px;
+  --space-006: 16px;
+  --space-007: 20px;
+  --space-008: 24px;
+  --space-009: 26px;
+  --space-010: 28px;
+  --space-011: 32px;
+  --space-012: 36px;
+  --space-013: 44px;
+  --space-014: 48px;
+  --space-015: 56px;
+  --space-016: 80px;
+  --space-017: 140px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  --radius-002: 16px;
+  --radius-003: 20px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgba(0, 0, 0, 0.25);
+  --clr-2: rgba(14, 17, 22, 0.04);
+  --clr-3: rgb(0, 0, 0);
+  --clr-4: oklab(0.231437 -0.00337134 -0.0616663 / 0.6);
+  --clr-5: oklab(0.176731 -0.0018529 -0.0112796 / 0.55);
+  --clr-6: oklab(0.231437 -0.00337134 -0.0616663 / 0.85);
+}
+
+
+/* page base */
+html { background: rgb(250, 250, 247); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+/* nodes */
+.cn0{height:4613.92px;min-height:100vh;display:flex;flex-direction:column;color:var(--foreground);font-family:Poppins, "Poppins Fallback", system-ui, sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{width:100%;height:88px;display:flex;position:sticky;top:0px;z-index:40;padding-top:24px;padding-right:56px;padding-bottom:24px;padding-left:56px;align-items:center;row-gap:36px;column-gap:36px;background-color:var(--primary)}
+.cn2{height:25.5px;display:block;color:var(--color-002);font-size:17px;font-weight:600;line-height:25.5px;letter-spacing:-0.17px;cursor:pointer}
+.cn3{display:inline;color:var(--color-004)}
+.cn4{display:block;flex-grow:1;flex-basis:0%}
+.cn5{display:flex;row-gap:28px;column-gap:28px;color:var(--color-001);font-size:14px;line-height:20px}
+.cn6{display:block;cursor:pointer}
+.cn7{display:block;cursor:pointer}
+.cn8{display:block;cursor:pointer}
+.cn9{display:block;cursor:pointer}
+.cn10{display:block;cursor:pointer}
+.cn11{display:block;cursor:pointer}
+.cn12{display:block;cursor:pointer}
+.cn13{width:40px;height:40px;border-width:1px;border-style:solid;border-color:var(--color-003);display:flex;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;color:var(--color-002);text-align:center;cursor:default}
+.cn14{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn15{display:block;padding-top:10px;padding-right:18px;padding-bottom:10px;padding-left:18px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;color:var(--primary);font-size:14px;font-weight:500;line-height:20px;background-color:var(--color-002);cursor:pointer}
+.cn16{width:40px;height:40px;border-width:1px;border-style:solid;border-color:var(--color-003);display:none;min-width:0px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;color:var(--color-002);text-align:center;cursor:default}
+.cn17{width:auto;height:18px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn18{display:block;flex-grow:1;flex-basis:0%;background-color:var(--background)}
+.cn19{height:802.672px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:80px;padding-right:56px;padding-bottom:140px;padding-left:56px;overflow-x:hidden;overflow-y:hidden;color:var(--color-002);background-color:var(--primary)}
+.cn20{width:600px;height:600px;border-width:1px;border-style:solid;border-color:var(--color-003);display:block;position:absolute;top:-260px;right:-260px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;pointer-events:none}
+.cn21{width:440px;height:440px;border-width:1px;border-style:solid;border-color:var(--color-003);display:block;position:absolute;top:-180px;right:-180px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;pointer-events:none}
+.cn22{height:100%;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:1100px;margin-right:auto;margin-left:auto;align-items:center;row-gap:80px;column-gap:80px;grid-template-columns:594.984px 425px;grid-template-rows:582.672px}
+.cn23{display:block}
+.cn24{height:37.5px;border-width:1px;border-style:solid;border-color:var(--color-003);display:inline-flex;margin-bottom:36px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;align-items:center;row-gap:10px;column-gap:10px;color:var(--color-001);font-size:13px;line-height:19.5px}
+.cn25{width:6px;height:6px;display:block;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;background-color:var(--accent)}
+.cn26{height:288px;display:block;font-size:96px;font-weight:500;line-height:96px;letter-spacing:-3.84px}
+.cn27{display:inline}
+.cn28{width:100%;max-width:480px;height:91.1719px;display:block;margin-top:32px;color:var(--color-001);font-size:19px;font-weight:300;line-height:30.4px}
+.cn29{display:inline;color:var(--color-002);font-weight:500}
+.cn30{display:flex;margin-top:44px;flex-wrap:wrap;row-gap:14px;column-gap:14px}
+.cn31{height:54px;display:flex;padding-top:16px;padding-right:26px;padding-bottom:16px;padding-left:26px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;align-items:center;row-gap:10px;column-gap:10px;color:var(--primary);font-size:14px;font-weight:500;line-height:20px;background-color:var(--color-002);cursor:pointer}
+.cn32{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn33{border-width:1px;border-style:solid;border-color:var(--color-003);display:block;padding-top:16px;padding-right:26px;padding-bottom:16px;padding-left:26px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;font-size:14px;font-weight:500;line-height:20px;cursor:pointer}
+.cn34{display:flex;flex-direction:column;align-items:center;row-gap:12px;column-gap:12px}
+.cn35{display:block;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;text-align:center;cursor:pointer}
+.cn36{width:100%;height:320px;display:block;max-width:100%;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 320 / 320;vertical-align:middle;color:rgba(0, 0, 0, 0);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.14) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px}
+.cn37{display:block;color:var(--color-007);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:10px;line-height:15px;letter-spacing:1.8px;text-transform:uppercase}
+.cn38{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:block;padding-top:48px;padding-right:56px;padding-bottom:48px;padding-left:56px;background-color:var(--background)}
+.cn39{display:flex;max-width:1100px;margin-right:auto;margin-left:auto;align-items:center;row-gap:48px;column-gap:48px}
+.cn40{display:block;color:var(--muted-foreground);font-size:13px;line-height:19.5px;white-space:nowrap;text-wrap:nowrap}
+.cn41{display:flex;justify-content:space-between;align-items:center;flex-grow:1;flex-basis:0%;row-gap:12px;column-gap:24px}
+.cn42{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn43{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn44{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn45{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn46{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn47{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn48{display:block;opacity:0.75;font-size:18px;font-weight:500;line-height:28px;letter-spacing:-0.18px}
+.cn49{display:block;padding-top:140px;padding-right:56px;padding-bottom:140px;padding-left:56px;background-color:var(--background)}
+.cn50{display:grid;max-width:880px;margin-right:auto;margin-left:auto;align-items:center;row-gap:48px;column-gap:48px;grid-template-rows:230.688px;grid-template-columns:auto 1fr}
+.cn51{display:block;justify-content:center}
+.cn52{width:180px;height:180px;display:block;max-width:100%;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 180 / 180;vertical-align:middle;color:rgba(0, 0, 0, 0)}
+.cn53{display:block}
+.cn54{width:1px;height:1px;display:block;position:absolute;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%)}
+.cn55{display:block;margin-bottom:14px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn56{display:block;font-size:28px;line-height:37.8px;letter-spacing:-0.28px}
+.cn57{display:inline;color:var(--muted-foreground)}
+.cn58{display:inline;color:var(--primary);font-weight:500}
+.cn59{height:25px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--primary);display:inline-flex;margin-top:24px;padding-bottom:4px;align-items:center;row-gap:8px;column-gap:8px;color:var(--primary);font-size:14px;font-weight:500;line-height:20px;cursor:pointer}
+.cn60{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn61{display:block;padding-right:56px;padding-bottom:140px;padding-left:56px;background-color:var(--background)}
+.cn62{display:block;max-width:1100px;margin-right:auto;margin-left:auto}
+.cn63{display:block;margin-bottom:80px;text-align:center}
+.cn64{display:block;margin-bottom:20px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn65{display:block;font-size:48px;font-weight:500;line-height:50.4px;letter-spacing:-1.44px}
+.cn66{display:grid;row-gap:24px;column-gap:24px;grid-template-rows:307.5px;grid-template-columns:repeat(3, minmax(0, 1fr))}
+.cn67{height:307.5px;min-height:300px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:36px;padding-right:36px;padding-bottom:36px;padding-left:36px;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;flex-direction:column;row-gap:16px;column-gap:16px;overflow-x:hidden;overflow-y:hidden;background-color:var(--surface);cursor:pointer}
+.cn68{width:350.656px;height:4px;display:block;position:absolute;top:0px;left:0px;min-width:0px;background-color:var(--accent)}
+.cn69{width:40px;height:40px;display:flex;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;color:var(--surface);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:13px;font-weight:500;line-height:19.5px;background-color:var(--primary)}
+.cn70{display:block;margin-top:4px;font-size:24px;font-weight:500;line-height:32px;letter-spacing:-0.48px}
+.cn71{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:15px;font-weight:300}
+.cn72{height:39.5px;display:flex;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;align-self:flex-start;row-gap:8px;column-gap:8px;color:var(--color-002);font-size:13px;font-weight:600;line-height:19.5px;background-color:var(--primary)}
+.cn73{width:12px;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn74{height:307.5px;min-height:300px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:36px;padding-right:36px;padding-bottom:36px;padding-left:36px;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;flex-direction:column;row-gap:16px;column-gap:16px;overflow-x:hidden;overflow-y:hidden;background-color:var(--surface);cursor:pointer}
+.cn75{width:350.672px;height:4px;display:block;position:absolute;top:0px;left:0px;min-width:0px;background-color:var(--accent)}
+.cn76{width:40px;height:40px;display:flex;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;color:var(--surface);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:13px;font-weight:500;line-height:19.5px;background-color:var(--primary)}
+.cn77{display:block;margin-top:4px;font-size:24px;font-weight:500;line-height:32px;letter-spacing:-0.48px}
+.cn78{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:15px;font-weight:300}
+.cn79{height:39.5px;display:flex;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;align-self:flex-start;row-gap:8px;column-gap:8px;color:var(--color-002);font-size:13px;font-weight:600;line-height:19.5px;background-color:var(--primary)}
+.cn80{width:12px;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn81{height:307.5px;min-height:300px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:36px;padding-right:36px;padding-bottom:36px;padding-left:36px;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;flex-direction:column;row-gap:16px;column-gap:16px;overflow-x:hidden;overflow-y:hidden;background-color:var(--surface);cursor:pointer}
+.cn82{width:350.656px;height:4px;display:block;position:absolute;top:0px;left:0px;min-width:0px;background-color:var(--accent)}
+.cn83{width:40px;height:40px;display:flex;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;color:var(--surface);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:13px;font-weight:500;line-height:19.5px;background-color:var(--primary)}
+.cn84{display:block;margin-top:4px;font-size:24px;font-weight:500;line-height:32px;letter-spacing:-0.48px}
+.cn85{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:15px;font-weight:300}
+.cn86{height:39.5px;display:flex;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;justify-content:center;align-items:center;align-self:flex-start;row-gap:8px;column-gap:8px;color:var(--color-002);font-size:13px;font-weight:600;line-height:19.5px;background-color:var(--primary)}
+.cn87{width:12px;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn88{display:block;padding-right:56px;padding-bottom:140px;padding-left:56px;background-color:var(--background)}
+.cn89{display:block;max-width:1100px;margin-right:auto;margin-left:auto}
+.cn90{display:flex;margin-bottom:44px;flex-wrap:wrap;justify-content:space-between;align-items:baseline;row-gap:16px;column-gap:16px}
+.cn91{display:block}
+.cn92{display:block;margin-bottom:12px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn93{display:block;font-size:36px;font-weight:500;line-height:54px;letter-spacing:-0.72px;white-space:nowrap}
+.cn94{display:block;color:var(--primary);font-size:14px;font-weight:500;line-height:20px;cursor:pointer}
+.cn95{display:grid;row-gap:20px;column-gap:20px;grid-template-rows:361.5px;grid-template-columns:repeat(auto-fit, minmax(259px, 1fr))}
+.cn96{height:361.5px;min-height:180px;display:flex;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;flex-direction:column;row-gap:10px;column-gap:10px;background-color:var(--surface);cursor:pointer}
+.cn97{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:10px;line-height:15px;letter-spacing:1.4px;text-transform:uppercase}
+.cn98{display:block;font-size:22px;font-weight:500;line-height:33px;letter-spacing:-0.44px}
+.cn99{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:14px;font-weight:300;line-height:21px}
+.cn100{display:block;color:var(--primary);font-size:13px;font-weight:500;line-height:19.5px}
+.cn101{height:361.5px;min-height:180px;display:flex;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;flex-direction:column;row-gap:10px;column-gap:10px;background-color:var(--surface);cursor:pointer}
+.cn102{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:10px;line-height:15px;letter-spacing:1.4px;text-transform:uppercase}
+.cn103{display:block;font-size:22px;font-weight:500;line-height:33px;letter-spacing:-0.44px}
+.cn104{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:14px;font-weight:300;line-height:21px}
+.cn105{display:block;color:var(--primary);font-size:13px;font-weight:500;line-height:19.5px}
+.cn106{height:361.5px;min-height:180px;display:flex;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;flex-direction:column;row-gap:10px;column-gap:10px;background-color:var(--surface);cursor:pointer}
+.cn107{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:10px;line-height:15px;letter-spacing:1.4px;text-transform:uppercase}
+.cn108{display:block;font-size:22px;font-weight:500;line-height:33px;letter-spacing:-0.44px}
+.cn109{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:14px;font-weight:300;line-height:21px}
+.cn110{display:block;color:var(--primary);font-size:13px;font-weight:500;line-height:19.5px}
+.cn111{height:361.5px;min-height:180px;display:flex;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;flex-direction:column;row-gap:10px;column-gap:10px;background-color:var(--surface);cursor:pointer}
+.cn112{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:10px;line-height:15px;letter-spacing:1.4px;text-transform:uppercase}
+.cn113{display:block;font-size:22px;font-weight:500;line-height:33px;letter-spacing:-0.44px}
+.cn114{display:block;flex-grow:1;flex-basis:0%;color:var(--muted-foreground);font-size:14px;font-weight:300;line-height:21px}
+.cn115{display:block;color:var(--primary);font-size:13px;font-weight:500;line-height:19.5px}
+.cn116{display:block;padding-right:56px;padding-bottom:140px;padding-left:56px;background-color:var(--background)}
+.cn117{display:block;max-width:880px;margin-right:auto;margin-left:auto}
+.cn118{display:flex;margin-bottom:44px;flex-wrap:wrap;justify-content:space-between;align-items:baseline;row-gap:16px;column-gap:16px}
+.cn119{display:block;font-size:36px;font-weight:500;line-height:54px;letter-spacing:-0.72px}
+.cn120{display:block;color:var(--primary);font-size:14px;font-weight:500;line-height:20px;cursor:pointer}
+.cn121{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:grid;padding-top:28px;padding-bottom:28px;align-items:baseline;row-gap:32px;column-gap:32px;grid-template-rows:50.5px;cursor:pointer;grid-template-columns:100px 1fr auto}
+.cn122{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px}
+.cn123{display:block}
+.cn124{display:block;margin-bottom:6px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn125{display:block;font-size:20px;font-weight:500;line-height:28px;letter-spacing:-0.2px}
+.cn126{display:none;margin-top:4px;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn127{display:block;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn128{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:grid;padding-top:28px;padding-bottom:28px;align-items:baseline;row-gap:32px;column-gap:32px;grid-template-rows:78.5px;cursor:pointer;grid-template-columns:100px 1fr auto}
+.cn129{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px}
+.cn130{display:block}
+.cn131{display:block;margin-bottom:6px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn132{display:block;font-size:20px;font-weight:500;line-height:28px;letter-spacing:-0.2px}
+.cn133{display:none;margin-top:4px;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn134{display:block;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn135{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:grid;padding-top:28px;padding-bottom:28px;align-items:baseline;row-gap:32px;column-gap:32px;grid-template-rows:78.5px;cursor:pointer;grid-template-columns:100px 1fr auto}
+.cn136{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px}
+.cn137{display:block}
+.cn138{display:block;margin-bottom:6px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn139{display:block;font-size:20px;font-weight:500;line-height:28px;letter-spacing:-0.2px}
+.cn140{display:none;margin-top:4px;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn141{display:block;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn142{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:grid;padding-top:28px;padding-bottom:28px;align-items:baseline;row-gap:32px;column-gap:32px;grid-template-rows:78.5px;cursor:pointer;grid-template-columns:100px 1fr auto}
+.cn143{display:block;color:var(--muted-foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px}
+.cn144{display:block}
+.cn145{display:block;margin-bottom:6px;color:var(--primary);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn146{display:block;font-size:20px;font-weight:500;line-height:28px;letter-spacing:-0.2px}
+.cn147{display:none;margin-top:4px;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn148{display:block;color:var(--muted-foreground);font-size:12px;line-height:16px}
+.cn149{border-top-width:1px;border-top-style:solid;border-top-color:var(--border);display:block}
+.cn150{height:732.672px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:120px;padding-right:56px;padding-bottom:120px;padding-left:56px;overflow-x:hidden;overflow-y:hidden;color:var(--color-002);background-color:var(--primary)}
+.cn151{width:500px;height:500px;border-width:1px;border-style:solid;border-color:var(--color-003);display:block;position:absolute;bottom:-200px;left:-200px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;pointer-events:none}
+.cn152{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:720px;margin-right:auto;margin-left:auto;text-align:center}
+.cn153{display:block;margin-bottom:24px;color:var(--color-004);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:11px;line-height:16.5px;letter-spacing:1.98px;text-transform:uppercase}
+.cn154{display:block;font-size:72px;font-weight:500;line-height:72px;letter-spacing:-2.88px}
+.cn155{display:inline}
+.cn156{display:block;max-width:480px;margin-top:28px;margin-right:auto;margin-left:auto;color:var(--color-001);font-size:18px;font-weight:300;line-height:28.8px}
+.cn157{height:106.281px;display:flex;max-width:480px;margin-top:40px;margin-right:auto;margin-left:auto}
+.cn158{width:100%;height:106.281px;display:flex;flex-direction:column;align-items:center;row-gap:12px;column-gap:12px}
+.cn159{width:100%;display:flex;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;align-items:center;row-gap:8px;column-gap:8px;background-color:var(--color-002)}
+.cn160{width:329px;height:44px;display:block;min-width:0px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;color:var(--foreground);font-family:"IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;font-size:13px;line-height:19.5px;text-align:start;cursor:text}
+.cn160::placeholder{color:rgb(90, 100, 120)}
+.cn161{display:block;padding-top:12px;padding-right:20px;padding-bottom:12px;padding-left:20px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;font-size:13px;font-weight:600;line-height:19.5px;letter-spacing:0.26px;background-color:var(--primary);cursor:default}
+.cn162{height:34.7812px;display:flex;align-items:flex-start;row-gap:8px;column-gap:8px;color:var(--color-001);font-size:12px;font-weight:300;line-height:17.4px;cursor:default}
+.cn163{width:auto;height:14px;display:block;margin-top:2px;flex-shrink:0;text-align:start}
+.cn164{height:34.7812px;display:block}
+.cn165{display:inline;color:var(--color-002);text-decoration-line:underline;cursor:pointer}
+.cn166{display:flex;margin-top:28px;flex-wrap:wrap;justify-content:center;row-gap:32px;column-gap:32px;color:var(--color-001);font-size:13px;line-height:19.5px}
+.cn167{display:block}
+.cn168{display:block}
+.cn169{display:block}
+.cn170{display:block;padding-top:60px;padding-right:56px;padding-bottom:32px;padding-left:56px;color:var(--color-001);background-color:var(--color-005)}
+.cn171{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--color-003);display:grid;max-width:1100px;margin-right:auto;margin-left:auto;padding-bottom:48px;row-gap:48px;column-gap:48px;grid-template-columns:247.625px 165.094px 165.094px 165.094px 165.094px;grid-template-rows:175.5px}
+.cn172{display:block;grid-column-start:span 1;grid-column-end:span 1}
+.cn173{display:block;margin-bottom:12px;color:var(--color-002);font-size:18px;font-weight:600;line-height:28px}
+.cn174{display:inline;color:var(--color-004)}
+.cn175{width:100%;max-width:280px;display:block;font-size:14px;font-weight:300;line-height:22.4px}
+.cn176{height:175.5px;display:block}
+.cn177{display:block;margin-bottom:16px;color:var(--color-002);font-size:13px;font-weight:500;line-height:19.5px}
+.cn178{display:flex;flex-direction:column;row-gap:10px;column-gap:10px}
+.cn179{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn180{display:block;color:var(--color-006);font-size:14px;font-weight:500;line-height:20px;cursor:pointer}
+.cn181{display:block}
+.cn182{display:block;margin-bottom:16px;color:var(--color-002);font-size:13px;font-weight:500;line-height:19.5px}
+.cn183{display:flex;flex-direction:column;row-gap:10px;column-gap:10px}
+.cn184{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn185{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn186{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn187{display:block}
+.cn188{display:block;margin-bottom:16px;color:var(--color-002);font-size:13px;font-weight:500;line-height:19.5px}
+.cn189{display:flex;flex-direction:column;row-gap:10px;column-gap:10px}
+.cn190{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn191{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn192{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn193{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn194{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn195{display:block}
+.cn196{display:block;margin-bottom:16px;color:var(--color-002);font-size:13px;font-weight:500;line-height:19.5px}
+.cn197{display:flex;flex-direction:column;row-gap:10px;column-gap:10px}
+.cn198{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn199{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn200{display:block;font-size:14px;font-weight:300;line-height:20px;cursor:pointer}
+.cn201{display:flex;max-width:1100px;margin-right:auto;margin-left:auto;padding-top:24px;flex-wrap:wrap;justify-content:space-between;align-items:center;row-gap:12px;column-gap:12px;font-size:12px;line-height:16px}
+.cn202{display:block}
+.cn203{display:inline;color:var(--color-006);cursor:pointer}
+.cn204{display:inline;margin-left:12px;color:var(--color-007)}
+.cn205{display:block}
+.cn206{display:inline;cursor:pointer}
+.cn207{display:inline;cursor:pointer}
+.cn208{display:inline;cursor:pointer}
+.cn209{display:inline-block;text-align:center;cursor:default}
+.cn210{height:188.562px;display:flex;position:fixed;right:0px;bottom:0px;left:0px;z-index:50;min-width:0px;padding-right:16px;padding-bottom:16px;padding-left:16px;justify-content:center}
+.cn211{width:100%;max-width:640px;border-width:1px;border-style:solid;border-color:var(--color-003);display:block;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;color:var(--color-002);background-color:var(--color-005);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px}
+.cn212{display:block;color:var(--color-001);font-size:14px;font-weight:300;line-height:21.7px}
+.cn213{display:inline;color:var(--color-002);font-weight:500}
+.cn214{display:inline;color:var(--color-002);font-weight:500}
+.cn215{display:inline;color:var(--color-002);font-weight:500}
+.cn216{display:inline;color:var(--color-002);text-decoration-line:underline;cursor:pointer}
+.cn217{display:flex;margin-top:16px;flex-wrap:wrap;align-items:center;row-gap:8px;column-gap:8px}
+.cn218{display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;color:var(--primary);font-size:13px;font-weight:500;line-height:19.5px;text-align:center;background-color:var(--color-002);cursor:default}
+.cn219{border-width:1px;border-style:solid;border-color:var(--color-003);display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;border-top-left-radius:3.35544e+07px;border-top-right-radius:3.35544e+07px;border-bottom-right-radius:3.35544e+07px;border-bottom-left-radius:3.35544e+07px;color:var(--color-001);font-size:13px;font-weight:500;line-height:19.5px;text-align:center;cursor:default}
+.cn220{display:block;margin-left:195px;color:var(--color-001);font-size:12px;font-weight:500;line-height:18px;text-align:center;text-decoration-line:underline;cursor:default}
+
+@media (max-width: 571px) {
+.cn0{height:6784.92px}
+.cn1{height:72px;padding-top:16px;padding-right:24px;padding-bottom:16px;padding-left:24px;row-gap:24px;column-gap:24px}
+.cn5{display:none}
+.cn15{display:none}
+.cn16{display:flex;min-width:0}
+.cn19{height:990.625px;padding-top:64px;padding-right:24px;padding-bottom:80px;padding-left:24px}
+.cn20{display:none}
+.cn21{display:none}
+.cn22{row-gap:48px;column-gap:48px;grid-template-rows:451.625px 347px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn24{margin-bottom:28px}
+.cn26{height:138.562px;font-size:44px;line-height:46.2px;letter-spacing:-1.76px}
+.cn28{height:81.5625px;margin-top:24px;font-size:17px;line-height:27.2px}
+.cn30{margin-top:32px;row-gap:12px;column-gap:12px}
+.cn31{height:48px;padding-top:14px;padding-right:22px;padding-bottom:14px;padding-left:22px}
+.cn33{padding-top:14px;padding-right:22px;padding-bottom:14px;padding-left:22px}
+.cn38{padding-top:40px;padding-right:24px;padding-bottom:40px;padding-left:24px}
+.cn39{flex-direction:column;align-items:flex-start;row-gap:24px;column-gap:24px}
+.cn41{flex-wrap:wrap;justify-content:initial;flex-grow:initial;flex-basis:initial}
+.cn42{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn43{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn44{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn45{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn46{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn47{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn48{letter-spacing:-0.16px;font-size:inherit;line-height:inherit}
+.cn49{padding-top:80px;padding-right:24px;padding-bottom:80px;padding-left:24px}
+.cn50{row-gap:32px;column-gap:32px;grid-template-rows:180px 257.625px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn51{display:flex}
+.cn56{font-size:22px;line-height:29.7px;letter-spacing:-0.22px}
+.cn61{padding-right:24px;padding-bottom:80px;padding-left:24px}
+.cn63{margin-bottom:48px}
+.cn65{font-size:32px;line-height:35.2px;letter-spacing:-0.96px}
+.cn66{grid-template-rows:291.5px 291.5px 291.5px;grid-template-columns:repeat(1, minmax(0, 1fr))}
+.cn67{height:291.5px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;min-height:0}
+.cn68{width:327px}
+.cn74{height:291.5px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;min-height:0}
+.cn75{width:327px}
+.cn81{height:291.5px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;min-height:0}
+.cn82{width:327px}
+.cn88{padding-right:24px;padding-bottom:80px;padding-left:24px}
+.cn90{margin-bottom:32px}
+.cn93{font-size:28px;line-height:42px;letter-spacing:-0.56px}
+.cn95{grid-template-rows:274.5px 274.5px 274.5px 307.5px}
+.cn96{height:274.5px;min-height:160px}
+.cn101{height:274.5px;min-height:160px}
+.cn106{height:274.5px;min-height:160px}
+.cn111{height:307.5px;min-height:160px}
+.cn116{padding-right:24px;padding-bottom:80px;padding-left:24px}
+.cn118{margin-bottom:32px}
+.cn119{font-size:28px;line-height:42px;letter-spacing:-0.56px}
+.cn121{padding-top:24px;padding-bottom:24px;row-gap:16px;column-gap:16px;grid-template-columns:80px 231px;grid-template-rows:126.5px}
+.cn125{font-size:18px;letter-spacing:-0.18px}
+.cn126{display:block}
+.cn127{display:none}
+.cn128{padding-top:24px;padding-bottom:24px;row-gap:16px;column-gap:16px;grid-template-columns:80px 231px;grid-template-rows:154.5px}
+.cn132{font-size:18px;letter-spacing:-0.18px}
+.cn133{display:block}
+.cn134{display:none}
+.cn135{padding-top:24px;padding-bottom:24px;row-gap:16px;column-gap:16px;grid-template-columns:80px 231px;grid-template-rows:154.5px}
+.cn139{font-size:18px;letter-spacing:-0.18px}
+.cn140{display:block}
+.cn141{display:none}
+.cn142{padding-top:24px;padding-bottom:24px;row-gap:16px;column-gap:16px;grid-template-columns:80px 231px;grid-template-rows:126.5px}
+.cn146{font-size:18px;letter-spacing:-0.18px}
+.cn147{display:block}
+.cn148{display:none}
+.cn150{height:649.125px;padding-top:80px;padding-right:24px;padding-bottom:80px;padding-left:24px}
+.cn151{display:none}
+.cn154{font-size:44px;line-height:46.2px;letter-spacing:-1.76px}
+.cn156{margin-top:24px;line-height:25.6px;font-size:inherit}
+.cn157{margin-top:32px}
+.cn160{width:176px}
+.cn166{margin-top:24px;row-gap:8px;column-gap:24px}
+.cn170{padding-top:48px;padding-right:24px;padding-left:24px}
+.cn171{row-gap:40px;column-gap:32px;grid-template-rows:107.172px 115.5px 195.5px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn172{grid-column-start:span 2;grid-column-end:span 2}
+.cn176{height:115.5px}
+.cn210{height:293.125px}
+.cn211{padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px}
+.cn220{margin-left:60px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:5257.91px}
+.cn5{display:none}
+.cn15{display:none}
+.cn16{display:flex;min-width:0}
+.cn19{height:868.672px}
+.cn22{grid-template-columns:445.609px 130.375px;grid-template-rows:648.672px}
+.cn31{height:52px}
+.cn36{height:130px}
+.cn50{grid-template-rows:306.281px}
+.cn66{grid-template-rows:423px}
+.cn67{height:423px}
+.cn68{width:202.656px}
+.cn72{height:59px}
+.cn73{width:6px}
+.cn74{height:423px}
+.cn75{width:202.672px}
+.cn79{height:59px}
+.cn80{width:7px}
+.cn81{height:423px}
+.cn82{width:202.672px}
+.cn86{height:59px}
+.cn87{width:7px}
+.cn95{grid-template-rows:274.5px 307.5px}
+.cn96{height:274.5px}
+.cn101{height:274.5px}
+.cn106{height:307.5px}
+.cn111{height:307.5px}
+.cn121{grid-template-rows:78.5px}
+.cn171{grid-template-columns:140px 81px 81px 81px 81px;grid-template-rows:215.5px}
+.cn176{height:215.5px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <header class="cn1">
+      <a class="cn2" href="https://jens.marketing/">
+        jens
+        <span class="cn3">
+          .
+        </span>
+        marketing
+      </a>
+      <div class="cn4"></div>
+      <nav class="cn5">
+        <a class="cn6" data-ditto-id="style-nav" href="https://jens.marketing/leistungen">
+          Beratung
+        </a>
+        <a class="cn7" data-ditto-id="style-10" href="https://jens.marketing/workshops">
+          Workshops
+        </a>
+        <a class="cn8" data-ditto-id="style-11" href="https://jens.marketing/buehne">
+          Vorträge
+        </a>
+        <a class="cn9" data-ditto-id="style-14" href="https://jens.marketing/tools">
+          Tools
+        </a>
+        <a class="cn10" data-ditto-id="style-1" href="https://jens.marketing/blog">
+          Blog
+        </a>
+        <a class="cn11" data-ditto-id="style-4" href="https://jens.marketing/ueber-jens-polomski">
+          Über
+        </a>
+        <a class="cn12" data-ditto-id="style-5" href="https://jens.marketing/kontakt">
+          Kontakt
+        </a>
+      </nav>
+      <button class="cn13" data-ditto-id="style-suche-ffnen" aria-label="Suche öffnen" type="button">
+        <svg class="cn14" data-ditto-id="style-suche-ffnen-2" aria-hidden="true" fill="none" height="16" stroke="currentColor" viewBox="0 0 16 16" width="16" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3 3"></path></svg>
+      </button>
+      <a class="cn15" data-ditto-id="style-icon-30" href="https://jens.marketing/ki-newsletter">
+        Newsletter abonnieren
+      </a>
+      <button class="cn16" data-ditto-id="style-link" aria-controls="mobile-nav" aria-expanded="false" aria-label="Menü öffnen" type="button">
+        <svg class="cn17" aria-hidden="true" fill="none" height="18" stroke="currentColor" viewBox="0 0 24 24" width="18" strokeWidth="2" strokeLinecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+      </button>
+    </header>
+    <main class="cn18">
+      <section class="cn19">
+        <div class="cn20"></div>
+        <div class="cn21"></div>
+        <div class="cn22">
+          <div class="cn23">
+            <div class="cn24">
+              <span class="cn25" data-ditto-id="style-section"></span>
+              KI-Marketing · Speaker · Newsletter
+            </div>
+            <h1 class="cn26" data-ditto-id="style-link-18">
+              KI endlich
+              <br class="cn27" />
+              richtig einsetzen.
+            </h1>
+            <p class="cn28" data-ditto-id="style-span">
+              Strategien, Tools und ehrliche Tests für Marketingteams. Jede Woche im Posteingang von 
+              <b class="cn29">
+                45.000
+              </b>
+               Marketern.
+            </p>
+            <div class="cn30">
+              <a class="cn31" data-ditto-id="style-heading" href="https://jens.marketing/ki-newsletter">
+                Newsletter abonnieren 
+                <svg class="cn32" data-ditto-id="style-p-103" aria-hidden="true" fill="none" height="14" stroke="currentColor" viewBox="0 0 16 16" width="14" strokeWidth="1.5" strokeLinecap="square"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+              </a>
+              <a class="cn33" data-ditto-id="style-span-9" href="https://jens.marketing/leistungen/ki-workshop-marketing">
+                Workshop anfragen
+              </a>
+            </div>
+          </div>
+          <div class="cn34">
+            <button class="cn35" aria-label="Klick für eine kleine Überraschung" title="🥚" type="button">
+              <img class="cn36" alt="Jens Polomski" height="320" sizes="320px" src="public/assets/cloned/images/65e29a213879.jpg" srcset="public/assets/cloned/images/06026056b45b.jpg 32w, public/assets/cloned/images/2014e357474f.jpg 48w, public/assets/cloned/images/58e867afdbb8.jpg 64w, public/assets/cloned/images/eb4b29150bfd.jpg 96w, public/assets/cloned/images/ceb38d087494.jpg 128w, public/assets/cloned/images/ad0d03ceb05d.jpg 256w, public/assets/cloned/images/ee583adac012.webp 384w, public/assets/cloned/images/b1fab8f89380.jpg 640w, public/assets/cloned/images/7dd121f8f11a.jpg 750w, public/assets/cloned/images/51a54050f347.jpg 828w, public/assets/cloned/images/865c4a79e306.jpg 1080w, public/assets/cloned/images/fab502f7c7ee.jpg 1200w, public/assets/cloned/images/3d49433a1b73.jpg 1920w, public/assets/cloned/images/734460e79d86.jpg 2048w, public/assets/cloned/images/65e29a213879.jpg 3840w" width="320" />
+            </button>
+            <div class="cn37" aria-hidden="true">
+              ↑ klick mich
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cn38">
+        <div class="cn39">
+          <div class="cn40" data-ditto-id="style-div-54">
+            Vorträge &amp; Beratung für
+          </div>
+          <div class="cn41" data-ditto-id="style-link-2">
+            <span class="cn42" data-ditto-id="style-span-3">
+              OMR
+            </span>
+            <span class="cn43" data-ditto-id="style-time">
+              freenet
+            </span>
+            <span class="cn44">
+              MAN
+            </span>
+            <span class="cn45" data-ditto-id="style-span-12">
+              Utopia
+            </span>
+            <span class="cn46">
+              Handelsblatt
+            </span>
+            <span class="cn47" data-ditto-id="style-div-57">
+              Sparkasse
+            </span>
+            <span class="cn48">
+              snipKI
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="cn49">
+        <div class="cn50" data-ditto-id="style-div-90">
+          <div class="cn51">
+            <img class="cn52" alt="Jens Polomski" height="180" sizes="180px" src="public/assets/cloned/images/837e30f6082f.jpg" srcset="public/assets/cloned/images/fc76792c580b.jpg 32w, public/assets/cloned/images/2525c4142096.jpg 48w, public/assets/cloned/images/949ecba2adbf.jpg 64w, public/assets/cloned/images/7c82b93777ed.jpg 96w, public/assets/cloned/images/a9a711056c65.jpg 128w, public/assets/cloned/images/dc657895eb3b.webp 256w, public/assets/cloned/images/a5f1263d58f4.jpg 384w, public/assets/cloned/images/26c3bc273a2a.jpg 640w, public/assets/cloned/images/b7705426f7a5.jpg 750w, public/assets/cloned/images/b4297c568cec.jpg 828w, public/assets/cloned/images/568b28862f44.jpg 1080w, public/assets/cloned/images/45edb6d46403.jpg 1200w, public/assets/cloned/images/c2b67a1ba687.jpg 1920w, public/assets/cloned/images/758bdfa0584e.jpg 2048w, public/assets/cloned/images/837e30f6082f.jpg 3840w" width="180" />
+          </div>
+          <div class="cn53">
+            <h2 class="cn54" data-ditto-id="style-span-10">
+              Über Jens Polomski
+            </h2>
+            <div class="cn55" data-ditto-id="style-span-13" aria-hidden="true">
+              Hey, ich bin Jens
+            </div>
+            <p class="cn56">
+              Seit 2009 verrückt nach Online-Marketing. 
+              <span class="cn57" data-ditto-id="style-div-91">
+                LinkedIn Top Voice im Bereich KI, Speaker, und Gründer der KI-Weiterbildungsplattform 
+                <b class="cn58">
+                  snipKI
+                </b>
+                .
+              </span>
+            </p>
+            <a class="cn59" href="https://jens.marketing/ueber-jens-polomski">
+              Mehr über mich 
+              <svg class="cn60" data-ditto-id="style-p-104" aria-hidden="true" fill="none" height="12" stroke="currentColor" viewBox="0 0 16 16" width="12" strokeWidth="1.5" strokeLinecap="square"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cn61" data-ditto-id="style-ltm-2-mini-ein-quantensprung-in-der-ki">
+        <div class="cn62">
+          <div class="cn63">
+            <div class="cn64">
+              Was ich anbiete
+            </div>
+            <h2 class="cn65" data-ditto-id="style-p-65">
+              Drei Wege, KI in dein Marketing zu bringen.
+            </h2>
+          </div>
+          <div class="cn66">
+            <a class="cn67" href="https://jens.marketing/workshops">
+              <div class="cn68" data-ditto-id="style-p-55" aria-hidden="true"></div>
+              <div class="cn69" data-ditto-id="style-kontextfenster-und-ihre-bedeutung">
+                01
+              </div>
+              <h3 class="cn70" data-ditto-id="style-strong-40">
+                Workshops
+              </h3>
+              <p class="cn71">
+                Inhouse oder Remote. Halb- oder Ganztags. Hands-on an euren echten Marketing-Aufgaben.
+              </p>
+              <span class="cn72">
+                Workshop anfragen 
+                <svg class="cn73" data-ditto-id="style-wohin-f-hrt-die-reise" aria-hidden="true" fill="none" height="12" stroke="currentColor" viewBox="0 0 16 16" width="12" strokeWidth="1.5" strokeLinecap="square"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+              </span>
+            </a>
+            <a class="cn74" href="https://jens.marketing/buehne">
+              <div class="cn75" data-ditto-id="style-p-61" aria-hidden="true"></div>
+              <div class="cn76">
+                02
+              </div>
+              <h3 class="cn77">
+                Vorträge
+              </h3>
+              <p class="cn78">
+                Keynotes für OMR, DMEXCO, Zukunft Personal — und für eure Inhouse-Bühne.
+              </p>
+              <span class="cn79">
+                Vortrag anfragen 
+                <svg class="cn80" data-ditto-id="style-div-88" aria-hidden="true" fill="none" height="12" stroke="currentColor" viewBox="0 0 16 16" width="12" strokeWidth="1.5" strokeLinecap="square"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+              </span>
+            </a>
+            <a class="cn81" data-ditto-id="style-image-6" href="https://jens.marketing/leistungen">
+              <div class="cn82" data-ditto-id="style-div-61" aria-hidden="true"></div>
+              <div class="cn83" data-ditto-id="style-div-49">
+                03
+              </div>
+              <h3 class="cn84" data-ditto-id="style-author-bio-heading-3">
+                Beratung
+              </h3>
+              <p class="cn85" data-ditto-id="style-p-45">
+                Laufende Begleitung statt One-Shot. KI-Copilot für Marketing-Teams, 3–12 Monate.
+              </p>
+              <span class="cn86" data-ditto-id="style-div-24">
+                Beratung anfragen 
+                <svg class="cn87" data-ditto-id="style-button" aria-hidden="true" fill="none" height="12" stroke="currentColor" viewBox="0 0 16 16" width="12" strokeWidth="1.5" strokeLinecap="square"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cn88" data-ditto-id="style-icon">
+        <div class="cn89" data-ditto-id="style-button-2">
+          <div class="cn90" data-ditto-id="style-link-3">
+            <div class="cn91" data-ditto-id="style-icon-2">
+              <div class="cn92" data-ditto-id="style-aside-6">
+                Editor's Picks
+              </div>
+              <h2 class="cn93" data-ditto-id="style-inhaltsverzeichnis-3">
+                Diese Woche im Test
+              </h2>
+            </div>
+            <a class="cn94" data-ditto-id="style-div-71" href="https://jens.marketing/tools">
+              Alle 367+ Tools →
+            </a>
+          </div>
+          <div class="cn95" data-ditto-id="style-ol-4">
+            <a class="cn96" data-ditto-id="style-p-20" href="https://jens.marketing/tool/openai-codex">
+              <div class="cn97" data-ditto-id="style-strong">
+                KI-Tools
+              </div>
+              <h3 class="cn98" data-ditto-id="style-p-22">
+                OpenAI Codex im Test: ChatGPTs Coding-Agent als Cloud-Mitarbeiter
+              </h3>
+              <div class="cn99" data-ditto-id="style-strong-2">
+                OpenAI Codex ist 2026 zurück — als Cloud-Agent in der ChatGPT-Sidebar, als lokales CLI und als ID…
+              </div>
+              <div class="cn100" data-ditto-id="style-strong-12">
+                Öffnen →
+              </div>
+            </a>
+            <a class="cn101" data-ditto-id="style-repeat-r-mehrfachausgaben-generieren" href="https://jens.marketing/tool/sigmabrowser">
+              <div class="cn102" data-ditto-id="style-9-regeln-f-r-den-ki-einsatz-im-berblick">
+                KI-Tools
+              </div>
+              <h3 class="cn103" data-ditto-id="style-p">
+                Sigma Browser im Test: privater AI-Browser mit Agent statt Chat
+              </h3>
+              <div class="cn104" data-ditto-id="style-section-13">
+                Sigma ist ein Chromium-Browser aus Tallinn mit AI-Agent, einem lokalen LLM (Eclipse), Adblocker u…
+              </div>
+              <div class="cn105" data-ditto-id="style-div-50">
+                Öffnen →
+              </div>
+            </a>
+            <a class="cn106" data-ditto-id="style-p-69" href="https://jens.marketing/tool/chatgpt-atlas">
+              <div class="cn107" data-ditto-id="style-div-51">
+                KI-Marketing
+              </div>
+              <h3 class="cn108" data-ditto-id="style-link-4">
+                ChatGPT Atlas im Test: OpenAIs AI-Browser für Marketing-Workflows
+              </h3>
+              <div class="cn109" data-ditto-id="style-span-4">
+                OpenAIs Atlas-Browser bringt ChatGPT direkt in den Tab. Sidebar, Browser-Memory und Agent-Mode ve…
+              </div>
+              <div class="cn110" data-ditto-id="style-icon-3">
+                Öffnen →
+              </div>
+            </a>
+            <a class="cn111" data-ditto-id="style-link-5" href="https://jens.marketing/tool/chatgpt-excel-google-sheets-marketing">
+              <div class="cn112" data-ditto-id="style-span-5">
+                KI-Marketing
+              </div>
+              <h3 class="cn113" data-ditto-id="style-icon-4">
+                ChatGPT für Excel &amp; Google Sheets: Marketing-Tabellen mit KI
+              </h3>
+              <div class="cn114" data-ditto-id="style-section-6">
+                OpenAI hat ChatGPT als Sidebar in Excel und Google Sheets gepackt. Ich habe die Beta mit echten M…
+              </div>
+              <div class="cn115" data-ditto-id="style-div-66">
+                Öffnen →
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cn116" data-ditto-id="style-div-28">
+        <div class="cn117" data-ditto-id="style-badge">
+          <div class="cn118" data-ditto-id="style-ul-3">
+            <h2 class="cn119" data-ditto-id="style-tag-5-chatgpt-jetzt-nahtlos-integriert-in-apple-ge">
+              Aktuelle Beiträge
+            </h2>
+            <a class="cn120" data-ditto-id="style-ul" href="https://jens.marketing/blog">
+              Zum Blog →
+            </a>
+          </div>
+          <a class="cn121" data-ditto-id="style-beispiel-f-r-generierte-bilder-mit-dem-repeat-para" href="https://jens.marketing/ki-hacking-chronik">
+            <div class="cn122" data-ditto-id="style-p-67">
+              09.08.26
+            </div>
+            <div class="cn123" data-ditto-id="style-p-2">
+              <div class="cn124" data-ditto-id="style-link-14">
+                News
+              </div>
+              <h3 class="cn125" data-ditto-id="style-image">
+                KI-Hacking-Chronik: Alle Vorfälle bei OpenAI, Meta, Kimi &amp; Anthropic
+              </h3>
+              <div class="cn126" data-ditto-id="style-warum-ist-repeat-wichtig">
+                15 min →
+              </div>
+            </div>
+            <div class="cn127" data-ditto-id="style-p-30">
+              15 min →
+            </div>
+          </a>
+          <a class="cn128" data-ditto-id="style-strong-37" href="https://jens.marketing/chatgpt-werbung">
+            <div class="cn129" data-ditto-id="style-p-3">
+              05.07.26
+            </div>
+            <div class="cn130" data-ditto-id="style-strong-11">
+              <div class="cn131" data-ditto-id="style-section-8">
+                KI-Marketing
+              </div>
+              <h3 class="cn132" data-ditto-id="style-div-30">
+                ChatGPT Werbung: Der OpenAI Ads Manager im echten Walkthrough (2026)
+              </h3>
+              <div class="cn133" data-ditto-id="style-p-16">
+                11 min →
+              </div>
+            </div>
+            <div class="cn134" data-ditto-id="style-b">
+              11 min →
+            </div>
+          </a>
+          <a class="cn135" data-ditto-id="style-button-3" href="https://jens.marketing/remote-labor-index-marketing">
+            <div class="cn136" data-ditto-id="style-icon-5">
+              03.07.26
+            </div>
+            <div class="cn137" data-ditto-id="style-p-24">
+              <div class="cn138" data-ditto-id="style-section-7">
+                KI-Marketing
+              </div>
+              <h3 class="cn139" data-ditto-id="style-div-21">
+                KI automatisiert 16 % echter Freelance-Jobs – wie viel davon ist dein Alltag?
+              </h3>
+              <div class="cn140" data-ditto-id="style-div-25">
+                9 min →
+              </div>
+            </div>
+            <div class="cn141" data-ditto-id="style-div-26">
+              9 min →
+            </div>
+          </a>
+          <a class="cn142" data-ditto-id="style-div-29" href="https://jens.marketing/heimliche-ki-nutzung">
+            <div class="cn143" data-ditto-id="style-heading-6">
+              29.06.26
+            </div>
+            <div class="cn144" data-ditto-id="style-link-15">
+              <div class="cn145" data-ditto-id="style-div-22">
+                KI-Marketing
+              </div>
+              <h3 class="cn146" data-ditto-id="style-p-18">
+                Heimliche KI-Nutzung: 57 % verstecken sie — euer Enablement-Problem
+              </h3>
+              <div class="cn147" data-ditto-id="style-strong-15">
+                13 min →
+              </div>
+            </div>
+            <div class="cn148" data-ditto-id="style-p-32">
+              13 min →
+            </div>
+          </a>
+          <div class="cn149" data-ditto-id="style-tag-7-projekte-in-chatgpt-organisiere-deine-arbeit"></div>
+        </div>
+      </section>
+      <section class="cn150" data-ditto-id="style-ul-6" id="newsletter-cta">
+        <div class="cn151" data-ditto-id="style-image-2"></div>
+        <div class="cn152" data-ditto-id="style-warum-sind-permutation-prompts-wichtig">
+          <div class="cn153" data-ditto-id="style-p-25">
+            KI-Newsletter · seit 2023
+          </div>
+          <h2 class="cn154" data-ditto-id="style-strong-16">
+            45.000 Marketer
+            <br class="cn155" data-ditto-id="style-p-26" />
+            lesen mit.
+          </h2>
+          <p class="cn156" data-ditto-id="style-strong-18">
+            Wöchentlich eine kompakte E-Mail mit Tools, Strategien und ehrlichen Tests. Kostenlos, jederzeit kündbar.
+          </p>
+          <div class="cn157" data-ditto-id="style-tile-muster-erstellen">
+            <form class="cn158" data-ditto-id="style-p-71">
+              <div class="cn159" data-ditto-id="style-strong-3">
+                <input class="cn160" data-ditto-id="style-p-21" aria-invalid="false" aria-label="E-Mail-Adresse" name="EMAIL" placeholder="deine@email.de" type="email" value="" />
+                <button class="cn161" data-ditto-id="style-p-23" type="submit">
+                  Anmelden →
+                </button>
+              </div>
+              <label class="cn162" data-ditto-id="style-strong-13" for="nl-optin-light">
+                <input class="cn163" data-ditto-id="style-p-27" id="nl-optin-light" name="OPT_IN" type="checkbox" />
+                <span class="cn164" data-ditto-id="style-tag-8-developer-tools-f-r-ki-l-sungen">
+                  Ich akzeptiere die 
+                  <a class="cn165" data-ditto-id="style-ul-4" href="https://jens.marketing/datenschutz">
+                    Datenschutzerklärung
+                  </a>
+                   und möchte den Newsletter erhalten.
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="cn166" data-ditto-id="style-schritt-f-r-schritt-so-setzt-du-tile-ein">
+            <span class="cn167" data-ditto-id="style-section-14">
+              ✓ Kein Spam
+            </span>
+            <span class="cn168" data-ditto-id="style-div-67">
+              ✓ Wöchentlich
+            </span>
+            <span class="cn169" data-ditto-id="style-div-23">
+              ✓ 1-Klick-Kündigung
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="cn170" data-ditto-id="style-heading-10">
+      <div class="cn171" data-ditto-id="style-p-68">
+        <div class="cn172" data-ditto-id="style-button-4">
+          <div class="cn173" data-ditto-id="style-icon-6">
+            jens
+            <span class="cn174" data-ditto-id="style-4-best-tige-deine-beschreibung">
+              .
+            </span>
+            marketing
+          </div>
+          <p class="cn175" data-ditto-id="style-p-28">
+            KI-Marketing, Workshops und ein Newsletter für über 45.000 Marketer:innen.
+          </p>
+        </div>
+        <div class="cn176" data-ditto-id="style-p-19">
+          <div class="cn177" data-ditto-id="style-p-82">
+            Mit Jens arbeiten
+          </div>
+          <div class="cn178" data-ditto-id="style-tag-9-ein-fest-f-r-entwickler-und-startups">
+            <a class="cn179" data-ditto-id="style-ul-5" href="https://jens.marketing/leistungen">
+              Leistungen
+            </a>
+            <a class="cn180" data-ditto-id="style-image-4" href="https://snipki.de/">
+              Zu snipKI
+            </a>
+          </div>
+        </div>
+        <div class="cn181" data-ditto-id="style-warum-ist-tile-wichtig">
+          <div class="cn182" data-ditto-id="style-p-17">
+            Inhalte
+          </div>
+          <div class="cn183" data-ditto-id="style-strong-14">
+            <a class="cn184" data-ditto-id="style-p-66" href="https://jens.marketing/ki-newsletter">
+              Newsletter
+            </a>
+            <a class="cn185" data-ditto-id="style-strong-36" href="https://jens.marketing/tools">
+              Tools
+            </a>
+            <a class="cn186" data-ditto-id="style-prefer-suffix-parameter-automatisieren" href="https://jens.marketing/blog">
+              Blog
+            </a>
+          </div>
+        </div>
+        <div class="cn187" data-ditto-id="style-p-29">
+          <div class="cn188" data-ditto-id="style-strong-17">
+            Über
+          </div>
+          <div class="cn189" data-ditto-id="style-p-33">
+            <a class="cn190" data-ditto-id="style-p-70" href="https://jens.marketing/ueber-jens-polomski">
+              Über mich
+            </a>
+            <a class="cn191" data-ditto-id="style-p-84" href="https://jens.marketing/snipki">
+              snipKI
+            </a>
+            <a class="cn192" data-ditto-id="style-ul-14" href="https://jens.marketing/kontakt">
+              Kontakt
+            </a>
+            <a class="cn193" data-ditto-id="style-p-80" href="https://jens.marketing/uebersicht">
+              Übersicht (Sitemap)
+            </a>
+            <a class="cn194" data-ditto-id="style-1-suffix-einsetzen" href="https://jens.marketing/grounding">
+              Grounding (KI-Fakten)
+            </a>
+          </div>
+        </div>
+        <div class="cn195" data-ditto-id="style-p-35">
+          <div class="cn196" data-ditto-id="style-2-erg-nze-deine-bevorzugten-parameter">
+            Social
+          </div>
+          <div class="cn197" data-ditto-id="style-p-72">
+            <a class="cn198" data-ditto-id="style-3-erstelle-einen-prompt" href="https://linkedin.com/in/jens-polomski/">
+              LinkedIn
+            </a>
+            <a class="cn199" data-ditto-id="style-p-81" href="https://twitter.com/Jens_Polo">
+              X / Twitter
+            </a>
+            <a class="cn200" data-ditto-id="style-p-73" href="https://jens.marketing/feed.xml">
+              RSS
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="cn201" data-ditto-id="style-1-rufe-die-einstellungen-auf">
+        <span class="cn202" data-ditto-id="style-p-36">
+          © 2026 Jens Polomski · Köln · 
+          <a class="cn203" data-ditto-id="style-p-74" href="https://snipki.de/">
+            KI-Enablement by snipKI
+          </a>
+          <span class="cn204" data-ditto-id="style-tag-10-chatgpt-wird-mobil-jetzt-per-telefon-und-wh">
+            · Made mit zu viel Kaffee · Tipp meinen Namen
+          </span>
+        </span>
+        <span class="cn205" data-ditto-id="style-ul-7">
+          <a class="cn206" data-ditto-id="style-p-75" href="https://jens.marketing/datenschutz">
+            Datenschutz
+          </a>
+           · 
+          <a class="cn207" data-ditto-id="style-p-87" href="https://jens.marketing/impressum">
+            Impressum
+          </a>
+           · 
+          <a class="cn208" data-ditto-id="style-link-17" href="https://jens.marketing/uebersicht">
+            Sitemap
+          </a>
+           · 
+          <button class="cn209" data-ditto-id="style-image-3" type="button">
+            Cookie-Einstellungen
+          </button>
+        </span>
+      </div>
+    </footer>
+    <div class="cn210" data-ditto-id="style-warum-ist-prefer-wichtig" aria-label="Cookie-Einstellungen" aria-modal="true" role="dialog">
+      <div class="cn211" data-ditto-id="style-p-31">
+        <p class="cn212" data-ditto-id="style-strong-19">
+          Diese Seite nutzt optional 
+          <b class="cn213" data-ditto-id="style-p-77">
+            Vercel Analytics
+          </b>
+          , 
+          <b class="cn214" data-ditto-id="style-strong-38">
+            Speed Insights
+          </b>
+           und 
+          <b class="cn215" data-ditto-id="style-fazit-schnellere-arbeitsprozesse-in-midjourney">
+            Google Tag Manager
+          </b>
+           zur Reichweiten- und Performance-Messung. Vor deiner Zustimmung wird nichts geladen. 
+          <a class="cn216" data-ditto-id="style-p-37" href="https://jens.marketing/datenschutz">
+            Mehr in der Datenschutzerklärung
+          </a>
+          .
+        </p>
+        <div class="cn217" data-ditto-id="style-p-85">
+          <button class="cn218" data-ditto-id="style-tag-11-desktop-apps-chatgpt-als-assistent-auf-dein" type="button">
+            Alle akzeptieren
+          </button>
+          <button class="cn219" data-ditto-id="style-ul-8" type="button">
+            Nur Notwendige
+          </button>
+          <button class="cn220" data-ditto-id="style-div-73" type="button">
+            Einstellungen
+          </button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

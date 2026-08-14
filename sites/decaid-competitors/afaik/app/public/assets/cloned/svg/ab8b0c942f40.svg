@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="700" fill="#FBFCFD"></rect>
+  <text x="48" y="52" font-size="15" font-weight="700" fill="#5C6875" letter-spacing="1.6">DREI ACHSEN, KEINE RANGFOLGE</text>
+  <line x1="48" y1="70" x2="1152" y2="70" stroke="#DDE3E9" stroke-width="1"></line>
+  <text x="48" y="112" font-size="24" font-weight="700" fill="#17212E">Vier Lesesituationen im Vergleich</text>
+  <text x="48" y="140" font-size="16" fill="#5C6875">Jede Situation belegt die drei Achsen unabhängig voneinander. Ein Gesamtwert „tiefer“ oder „flacher“ existiert nicht.</text>
+  <rect x="48" y="176" width="258" height="286" rx="10" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <text x="72" y="212" font-size="17" font-weight="700" fill="#17212E">Öffnungszeit</text>
+  <text x="72" y="234" font-size="17" font-weight="700" fill="#17212E">nachschlagen</text>
+  <text x="72" y="258" font-size="13" fill="#8A93A0">gezielte Suche, Sekunden</text>
+  <text x="72" y="298" font-size="11.5" font-weight="600" fill="#C08A2E" letter-spacing="0.5">SELEKTIVITÄT / TEMPO</text>
+  <rect x="72" y="308" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="72" y="308" width="193" height="10" rx="5" fill="#C08A2E"></rect>
+  <text x="72" y="352" font-size="11.5" font-weight="600" fill="#2E4372" letter-spacing="0.5">VERARBEITUNGSTIEFE</text>
+  <rect x="72" y="362" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="72" y="362" width="32" height="10" rx="5" fill="#2E4372"></rect>
+  <text x="72" y="406" font-size="11.5" font-weight="600" fill="#1C7A6E" letter-spacing="0.5">ABSORPTION</text>
+  <rect x="72" y="416" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="72" y="416" width="21" height="10" rx="5" fill="#1C7A6E"></rect>
+  <rect x="330" y="176" width="258" height="286" rx="10" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <text x="354" y="212" font-size="17" font-weight="700" fill="#17212E">Newsfeed</text>
+  <text x="354" y="234" font-size="17" font-weight="700" fill="#17212E">am Morgen</text>
+  <text x="354" y="258" font-size="13" fill="#8A93A0">Triage, was ist relevant</text>
+  <text x="354" y="298" font-size="11.5" font-weight="600" fill="#C08A2E" letter-spacing="0.5">SELEKTIVITÄT / TEMPO</text>
+  <rect x="354" y="308" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="354" y="308" width="172" height="10" rx="5" fill="#C08A2E"></rect>
+  <text x="354" y="352" font-size="11.5" font-weight="600" fill="#2E4372" letter-spacing="0.5">VERARBEITUNGSTIEFE</text>
+  <rect x="354" y="362" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="354" y="362" width="44" height="10" rx="5" fill="#2E4372"></rect>
+  <text x="354" y="406" font-size="11.5" font-weight="600" fill="#1C7A6E" letter-spacing="0.5">ABSORPTION</text>
+  <rect x="354" y="416" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="354" y="416" width="52" height="10" rx="5" fill="#1C7A6E"></rect>
+  <rect x="612" y="176" width="258" height="286" rx="10" fill="#FFFFFF" stroke="#2E4372" stroke-width="1.8"></rect>
+  <text x="636" y="212" font-size="17" font-weight="700" fill="#17212E">Mietvertrag</text>
+  <text x="636" y="234" font-size="17" font-weight="700" fill="#17212E">prüfen</text>
+  <text x="636" y="258" font-size="13" fill="#8A93A0">langsam, kritisch, ungern</text>
+  <text x="636" y="298" font-size="11.5" font-weight="600" fill="#C08A2E" letter-spacing="0.5">SELEKTIVITÄT / TEMPO</text>
+  <rect x="636" y="308" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="636" y="308" width="42" height="10" rx="5" fill="#C08A2E"></rect>
+  <text x="636" y="352" font-size="11.5" font-weight="600" fill="#2E4372" letter-spacing="0.5">VERARBEITUNGSTIEFE</text>
+  <rect x="636" y="362" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="636" y="362" width="189" height="10" rx="5" fill="#2E4372"></rect>
+  <text x="636" y="406" font-size="11.5" font-weight="600" fill="#1C7A6E" letter-spacing="0.5">ABSORPTION</text>
+  <rect x="636" y="416" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="636" y="416" width="48" height="10" rx="5" fill="#1C7A6E"></rect>
+  <rect x="894" y="176" width="258" height="286" rx="10" fill="#FFFFFF" stroke="#1C7A6E" stroke-width="1.8"></rect>
+  <text x="918" y="212" font-size="17" font-weight="700" fill="#17212E">Krimi</text>
+  <text x="918" y="234" font-size="17" font-weight="700" fill="#17212E">im Zug</text>
+  <text x="918" y="258" font-size="13" fill="#8A93A0">versunken, aber unkritisch</text>
+  <text x="918" y="298" font-size="11.5" font-weight="600" fill="#C08A2E" letter-spacing="0.5">SELEKTIVITÄT / TEMPO</text>
+  <rect x="918" y="308" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="918" y="308" width="34" height="10" rx="5" fill="#C08A2E"></rect>
+  <text x="918" y="352" font-size="11.5" font-weight="600" fill="#2E4372" letter-spacing="0.5">VERARBEITUNGSTIEFE</text>
+  <rect x="918" y="362" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="918" y="362" width="84" height="10" rx="5" fill="#2E4372"></rect>
+  <text x="918" y="406" font-size="11.5" font-weight="600" fill="#1C7A6E" letter-spacing="0.5">ABSORPTION</text>
+  <rect x="918" y="416" width="210" height="10" rx="5" fill="#EDF0F3"></rect>
+  <rect x="918" y="416" width="191" height="10" rx="5" fill="#1C7A6E"></rect>
+  <text x="48" y="516" font-size="14" font-weight="700" fill="#17212E">Was die Achsen messen</text>
+  <rect x="48" y="532" width="12" height="12" rx="3" fill="#C08A2E"></rect>
+  <text x="70" y="543" font-size="13" fill="#3E4A58">Selektivität: wie viel Text übersprungen wird</text>
+  <rect x="48" y="554" width="12" height="12" rx="3" fill="#2E4372"></rect>
+  <text x="70" y="565" font-size="13" fill="#3E4A58">Tiefe: Inferenzen, Kohärenz, Bewertung, Integration</text>
+  <rect x="48" y="576" width="12" height="12" rx="3" fill="#1C7A6E"></rect>
+  <text x="70" y="587" font-size="13" fill="#3E4A58">Absorption: Aufmerksamkeit, Bildhaftigkeit, Emotion</text>
+  <rect x="612" y="492" width="540" height="106" rx="10" fill="#F2F5F8" stroke="#DDE3E9"></rect>
+  <text x="636" y="524" font-size="14" font-weight="700" fill="#17212E">Der entscheidende Vergleich</text>
+  <text x="636" y="550" font-size="14" fill="#3E4A58">Vertrag und Krimi werden beide langsam und vollständig</text>
+  <text x="636" y="570" font-size="14" fill="#3E4A58">gelesen – und laufen auf den beiden anderen Achsen exakt</text>
+  <text x="636" y="590" font-size="14" fill="#3E4A58">gegeneinander. Eine gemeinsame Skala kann es nicht geben.</text>
+  <line x1="48" y1="634" x2="1152" y2="634" stroke="#DDE3E9" stroke-width="1"></line>
+  <text x="48" y="662" font-size="13" fill="#8A93A0">Achsenmodell synthetisiert aus Skimming-, Transportation- und Deep-Comprehension-Forschung. Balkenwerte illustrativ, nicht gemessen.</text>
+  <text x="1152" y="662" font-size="13" fill="#C9D1DA" text-anchor="end">Abb. 2</text>
+</svg>

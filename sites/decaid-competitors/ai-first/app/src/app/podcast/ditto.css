@@ -1,0 +1,209 @@
+.cn0{height:13351.9px;display:block;color:var(--foreground);font-family:Soehne, system-ui, sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{height:14646.6px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:29112.2px}
+}
+
+@media (min-width: 1601px) {
+.cn0{height:13373.2px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-div-161"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-469"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-470"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-471"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-472"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-162"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-474"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-475"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-476"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-163"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-478"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-479"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-2"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-480"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-481"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-482"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-164"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-165"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-166"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-167"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-icon"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-3"]{transition:opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1)}
+[data-ditto-id="style-div-14"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-form"]{transition:opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1)}
+[data-ditto-id="style-login-email"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-4"]{transition:opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1)}
+[data-ditto-id="style-button-4"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-5"]{transition:opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1)}
+[data-ditto-id="style-icon-2"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-button-3"]{transition:opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1)}
+[data-ditto-id="style-div-19"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-6"]{transition:opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1)}
+[data-ditto-id="style-button-22"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-button-23"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-168"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-169"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-491"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-492"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-ai-first"]{transition:color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-from 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-via 0.15s cubic-bezier(0.4, 0, 0.2, 1), --tw-gradient-to 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-493"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-170"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-495"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-496"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-497"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-171"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-172"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-500"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-501"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-502"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-173"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-174"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-175"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-176"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-177"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-178"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-179"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-180"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-181"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-182"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-183"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-184"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-185"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-186"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-187"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-188"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-189"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-190"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-191"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-192"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-193"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-heading-6"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-194"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-195"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-196"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-528"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-529"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-530"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-531"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-197"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-198"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-199"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-200"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-201"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-202"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-203"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-204"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-205"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-206"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-207"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-208"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-544"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-545"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-546"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-547"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-209"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-210"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-div-211"]{transition:opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-ai-first"]:hover{color:lab(99.8887 -0.557393 7.65206);text-decoration-color:lab(99.8887 -0.557393 7.65206)}
+[data-ditto-id="style-div-2"]:hover{background-color:oklab(0.997999 -0.00175244 0.0199461 / 0.9)}
+[data-ditto-id="style-icon"]:hover{color:oklab(0.629999 -0.00201032 0.0229258);text-decoration-color:oklab(0.629999 -0.00201032 0.0229258)}
+[data-ditto-id="style-div-14"]:hover{color:oklab(0.629999 -0.00201032 0.0229258);text-decoration-color:oklab(0.629999 -0.00201032 0.0229258)}
+[data-ditto-id="style-login-email"]:hover{color:oklab(0.629999 -0.00201032 0.0229258);text-decoration-color:oklab(0.629999 -0.00201032 0.0229258)}
+[data-ditto-id="style-button-4"]:hover{color:oklab(0.629999 -0.00201032 0.0229258);text-decoration-color:oklab(0.629999 -0.00201032 0.0229258)}
+[data-ditto-id="style-icon-2"]:hover{color:oklab(0.629999 -0.00201032 0.0229258);text-decoration-color:oklab(0.629999 -0.00201032 0.0229258)}
+[data-ditto-id="style-div-19"]:hover{color:oklab(0.629999 -0.00201032 0.0229258);text-decoration-color:oklab(0.629999 -0.00201032 0.0229258)}
+[data-ditto-id="style-button-22"]:hover{opacity:0.8}
+[data-ditto-id="style-button-23"]:hover{opacity:0.8}
+[data-ditto-id="style-div-3"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-form"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-4"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-5"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-button-3"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-6"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-podcast-agentic-ai-im-erp-wie-blp-300-agenten-in-k"]:hover [data-ditto-id="style-div-168"]{opacity:0.965186}
+[data-ditto-id="style-podcast-ceo-von-egym-wer-glaubt-ki-ver-ndert-seine"]:hover [data-ditto-id="style-div-169"]{opacity:0.975215}
+[data-ditto-id="style-553"]:hover [data-ditto-id="style-491"]{opacity:0.965225}
+[data-ditto-id="style-554"]:hover [data-ditto-id="style-492"]{opacity:0.965162}
+[data-ditto-id="style-555"]:hover [data-ditto-id="style-493"]{opacity:0.965196}
+[data-ditto-id="style-podcast-agentische-ki-im-b2b-so-entsteht-wert-jens"]:hover [data-ditto-id="style-div-170"]{opacity:0.965193}
+[data-ditto-id="style-557"]:hover [data-ditto-id="style-495"]{opacity:0.965209}
+[data-ditto-id="style-558"]:hover [data-ditto-id="style-496"]{opacity:0.975267}
+[data-ditto-id="style-559"]:hover [data-ditto-id="style-497"]{opacity:0.965172}
+[data-ditto-id="style-podcast-ai-first-bei-finn-von-automation-dna-zu-ag"]:hover [data-ditto-id="style-div-171"]{opacity:0.965241}
+[data-ditto-id="style-podcast-agentic-engineering-wie-arbeiten-das-tech-"]:hover [data-ditto-id="style-div-172"]{opacity:0.965204}
+[data-ditto-id="style-562"]:hover [data-ditto-id="style-500"]{opacity:0.965157}
+[data-ditto-id="style-563"]:hover [data-ditto-id="style-501"]{opacity:0.97522}
+[data-ditto-id="style-564"]:hover [data-ditto-id="style-502"]{opacity:0.975233}
+[data-ditto-id="style-podcast-wie-eine-stadt-mit-40-000-einwohnern-vorma"]:hover [data-ditto-id="style-div-173"]{opacity:0.975255}
+[data-ditto-id="style-podcast-wie-ein-full-ai-studio-filme-fast-ohne-men"]:hover [data-ditto-id="style-div-174"]{opacity:0.9753}
+[data-ditto-id="style-podcast-heute-entscheiden-morgen-testen-ki-transfo"]:hover [data-ditto-id="style-div-175"]{opacity:0.983345}
+[data-ditto-id="style-link-32"]:hover [data-ditto-id="style-div-176"]{opacity:0.965172}
+[data-ditto-id="style-podcast-wie-finanzfluss-menschliche-st-rken-mit-ki"]:hover [data-ditto-id="style-div-177"]{opacity:0.975273}
+[data-ditto-id="style-podcast-die-andere-seite-der-ki-medaille-brain-fry"]:hover [data-ditto-id="style-div-178"]{opacity:0.965184}
+[data-ditto-id="style-podcast-ki-als-strategische-f-higkeit-im-bau-wie-g"]:hover [data-ditto-id="style-div-179"]{opacity:0.975245}
+[data-ditto-id="style-podcast-wie-wir-unser-ki-betriebssystem-aufgebaut-"]:hover [data-ditto-id="style-div-180"]{opacity:0.965192}
+[data-ditto-id="style-podcast-warum-ki-kein-tool-und-auch-kein-mitarbeit"]:hover [data-ditto-id="style-div-181"]{opacity:0.983346}
+[data-ditto-id="style-podcast-ki-programm-bei-basf-breitensport-und-spit"]:hover [data-ditto-id="style-div-182"]{opacity:0.975255}
+[data-ditto-id="style-podcast-von-der-gesch-ftsstelle-bis-zum-trainingsp"]:hover [data-ditto-id="style-div-183"]{opacity:0.975263}
+[data-ditto-id="style-podcast-wie-du-ein-ceo-office-aus-ki-agenten-aufba"]:hover [data-ditto-id="style-div-184"]{opacity:0.965193}
+[data-ditto-id="style-podcast-die-unbequeme-wahrheit-ber-datenprojekte-i"]:hover [data-ditto-id="style-div-185"]{opacity:0.975271}
+[data-ditto-id="style-podcast-ai-for-the-rest-of-us-wie-ki-endlich-f-r-a"]:hover [data-ditto-id="style-div-186"]{opacity:0.965182}
+[data-ditto-id="style-podcast-ki-transformation-bei-rewe-was-funktionier"]:hover [data-ditto-id="style-div-187"]{opacity:0.975277}
+[data-ditto-id="style-podcast-wie-man-ein-ai-first-startup-aufbaut"]:hover [data-ditto-id="style-div-188"]{opacity:0.965232}
+[data-ditto-id="style-podcast-wie-man-eine-daten-und-ki-organisation-als"]:hover [data-ditto-id="style-div-189"]{opacity:0.975283}
+[data-ditto-id="style-podcast-ai-governance-bei-payback-wie-legal-und-da"]:hover [data-ditto-id="style-div-190"]{opacity:0.965172}
+[data-ditto-id="style-podcast-ki-prognosen-2026"]:hover [data-ditto-id="style-div-191"]{opacity:0.965184}
+[data-ditto-id="style-podcast-venture-clienting-trifft-ki-wie-ebersp-che"]:hover [data-ditto-id="style-div-192"]{opacity:0.975245}
+[data-ditto-id="style-podcast-ai-in-der-kreativbranche-wie-justaddsugar-"]:hover [data-ditto-id="style-div-193"]{opacity:1}
+[data-ditto-id="style-podcast-unser-ki-tool-stack-f-r-maximale-produktiv"]:hover [data-ditto-id="style-heading-6"]{opacity:1}
+[data-ditto-id="style-ul-3"]:hover [data-ditto-id="style-div-194"]{opacity:1}
+[data-ditto-id="style-podcast-signal-iduna-einblicke-in-den-ki-rollout-a"]:hover [data-ditto-id="style-div-195"]{opacity:1}
+[data-ditto-id="style-podcast-wie-komme-ich-auf-platz-1-in-den-ki-sucher"]:hover [data-ditto-id="style-div-196"]{opacity:1}
+[data-ditto-id="style-590"]:hover [data-ditto-id="style-528"]{opacity:1}
+[data-ditto-id="style-591"]:hover [data-ditto-id="style-529"]{opacity:1}
+[data-ditto-id="style-592"]:hover [data-ditto-id="style-530"]{opacity:1}
+[data-ditto-id="style-593"]:hover [data-ditto-id="style-531"]{opacity:1}
+[data-ditto-id="style-podcast-wie-setzt-hornbach-ki-im-content-marketing"]:hover [data-ditto-id="style-div-197"]{opacity:1}
+[data-ditto-id="style-podcast-ki-hackathons-wie-die-otto-group-ihre-ki-r"]:hover [data-ditto-id="style-div-198"]{opacity:1}
+[data-ditto-id="style-podcast-bild-ki-wo-liegen-die-gr-ten-potenziale-un"]:hover [data-ditto-id="style-div-199"]{opacity:1}
+[data-ditto-id="style-podcast-erfolgsprinzipien-f-r-ki-integration-in-pr"]:hover [data-ditto-id="style-div-200"]{opacity:1}
+[data-ditto-id="style-podcast-wie-gelingt-unternehmensweite-ki-adoption"]:hover [data-ditto-id="style-div-201"]{opacity:1}
+[data-ditto-id="style-podcast-wie-baut-man-ein-ai-first-unternehmen-auf"]:hover [data-ditto-id="style-div-202"]{opacity:1}
+[data-ditto-id="style-podcast-wie-funktioniert-hyperpersonalisierung"]:hover [data-ditto-id="style-div-203"]{opacity:1}
+[data-ditto-id="style-podcast-was-passiert-mit-einer-kommunikationsagent"]:hover [data-ditto-id="style-div-204"]{opacity:1}
+[data-ditto-id="style-podcast-wie-balanciert-man-ki-demokratisierung-mit"]:hover [data-ditto-id="style-div-205"]{opacity:1}
+[data-ditto-id="style-podcast-wie-funktioniert-ki-governance-in-einer-ba"]:hover [data-ditto-id="style-div-206"]{opacity:1}
+[data-ditto-id="style-podcast-was-kommt-nach-ki-chatbots"]:hover [data-ditto-id="style-div-207"]{opacity:1}
+[data-ditto-id="style-podcast-welche-medienunternehmen-berleben-die-ki-d"]:hover [data-ditto-id="style-div-208"]{opacity:1}
+[data-ditto-id="style-606"]:hover [data-ditto-id="style-544"]{opacity:1}
+[data-ditto-id="style-607"]:hover [data-ditto-id="style-545"]{opacity:1}
+[data-ditto-id="style-608"]:hover [data-ditto-id="style-546"]{opacity:1}
+[data-ditto-id="style-609"]:hover [data-ditto-id="style-547"]{opacity:1}
+[data-ditto-id="style-podcast-vom-1-leuchtturmprojekt-zum-ki-kompetenzze"]:hover [data-ditto-id="style-div-209"]{opacity:1}
+[data-ditto-id="style-podcast-generative-ki-trifft-auf-automobilentwickl"]:hover [data-ditto-id="style-div-210"]{opacity:1}
+[data-ditto-id="style-link-33"]:hover [data-ditto-id="style-div-211"]{opacity:1}
+[data-ditto-id="style-podcast-zentral-bef-higen-dezentral-umsetzen-das-h"]:hover [data-ditto-id="style-div-161"]{opacity:1}
+[data-ditto-id="style-614"]:hover [data-ditto-id="style-469"]{opacity:1}
+[data-ditto-id="style-615"]:hover [data-ditto-id="style-470"]{opacity:1}
+[data-ditto-id="style-616"]:hover [data-ditto-id="style-471"]{opacity:1}
+[data-ditto-id="style-617"]:hover [data-ditto-id="style-472"]{opacity:1}
+[data-ditto-id="style-podcast-ki-transformation-bei-rwe-wie-ein-energier"]:hover [data-ditto-id="style-div-162"]{opacity:1}
+[data-ditto-id="style-619"]:hover [data-ditto-id="style-474"]{opacity:1}
+[data-ditto-id="style-620"]:hover [data-ditto-id="style-475"]{opacity:1}
+[data-ditto-id="style-621"]:hover [data-ditto-id="style-476"]{opacity:1}
+[data-ditto-id="style-podcast-schwarze-magie-in-ki-cyberangriffe-deep-fa"]:hover [data-ditto-id="style-div-163"]{opacity:1}
+[data-ditto-id="style-623"]:hover [data-ditto-id="style-478"]{opacity:1}
+[data-ditto-id="style-624"]:hover [data-ditto-id="style-479"]{opacity:1}
+[data-ditto-id="style-625"]:hover [data-ditto-id="style-480"]{opacity:1}
+[data-ditto-id="style-626"]:hover [data-ditto-id="style-481"]{opacity:1}
+[data-ditto-id="style-627"]:hover [data-ditto-id="style-482"]{opacity:1}
+[data-ditto-id="style-podcast-76-t-gliche-nutzung-so-gelingt-ki-adoption"]:hover [data-ditto-id="style-div-164"]{opacity:1}
+[data-ditto-id="style-podcast-ki-bei-otto-skalieren-wie-60-ambassadoren-"]:hover [data-ditto-id="style-div-165"]{opacity:1}
+[data-ditto-id="style-podcast-ki-gest-tzte-bedarfsplanung-bei-renfert-ei"]:hover [data-ditto-id="style-div-166"]{opacity:1}
+[data-ditto-id="style-podcast-die-agent-economy-wie-ki-teams-die-arbeits"]:hover [data-ditto-id="style-div-167"]{opacity:1}

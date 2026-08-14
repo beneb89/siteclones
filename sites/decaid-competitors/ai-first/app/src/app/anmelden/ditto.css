@@ -1,0 +1,18 @@
+.cn0{display:block;color:var(--foreground);font-family:Soehne, system-ui, sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+[data-ditto-id="style-login-email"]::placeholder{color:oklab(0.629999 -0.00201032 0.0229258 / 0.4)}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-button-2"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-button-3"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-vorheriges-ticket"]{transition:transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), translate 0.15s cubic-bezier(0.4, 0, 0.2, 1), scale 0.15s cubic-bezier(0.4, 0, 0.2, 1), rotate 0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-radix-r-0-trigger-signup"]{transition:0.15s cubic-bezier(0.4, 0, 0.2, 1)}
+[data-ditto-id="style-radix-r-0-trigger-signup"]:hover{color:lab(99.8887 -0.557393 7.65206);text-decoration-color:lab(99.8887 -0.557393 7.65206)}
+[data-ditto-id="style-button"]:hover{background-color:oklab(0.982999 -0.00175244 0.0199457 / 0.075)}
+[data-ditto-id="style-button-2"]:hover{background-color:oklab(0.982999 -0.00175244 0.0199457 / 0.075)}
+[data-ditto-id="style-button-4"]:hover{color:lab(99.8887 -0.557393 7.65206);text-decoration-color:lab(99.8887 -0.557393 7.65206)}
+[data-ditto-id="style-passwort-anzeigen"]:hover{color:lab(99.8887 -0.557393 7.65206);text-decoration-color:lab(99.8887 -0.557393 7.65206)}
+[data-ditto-id="style-button-3"]:hover{background-color:oklab(0.997999 -0.00175244 0.0199461 / 0.9)}
+[data-ditto-id="style-link"]:hover{text-decoration-line:none}
+[data-ditto-id="style-vorheriges-ticket"]:hover{background-color:rgb(21, 20, 130)}
+[data-ditto-id="style-ai-first"]:focus{outline-style:auto;outline-width:5px}
+[data-ditto-id="style-vorheriges-ticket"]:focus{background-color:rgb(21, 20, 130)}

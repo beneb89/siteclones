@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0.5" y="0.5" width="699" height="359" rx="12" fill="#ffffff" stroke="#e5e7eb"></rect>
+  <text x="30" y="40" font-size="19" font-weight="700" fill="#111827">Wirkt der eigene Content – oder ist die Marke ohnehin bekannt?</text>
+  <text x="30" y="63" font-size="13" fill="#6b7280">Herkunft neuer KI-Erwähnungen in Slots, die vorher leer waren</text>
+  <rect x="30" y="80" width="13" height="13" rx="3" fill="#0f766e"></rect>
+  <text x="49" y="91" font-size="13" fill="#374151">aus eigenen Seiten</text>
+  <rect x="190" y="80" width="13" height="13" rx="3" fill="#94a3b8"></rect>
+  <text x="209" y="91" font-size="13" fill="#374151">aus Drittinhalten</text>
+  <text x="30" y="140" font-size="14" font-weight="600" fill="#111827">Neue Konferenz (Ahrefs Evolve)</text>
+  <rect x="30" y="150" width="640" height="34" rx="6" fill="#94a3b8"></rect>
+  <rect x="30" y="150" width="524.8" height="34" rx="6" fill="#0f766e"></rect>
+  <text x="292" y="172" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">82 %</text>
+  <text x="612" y="172" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">18 %</text>
+  <text x="30" y="230" font-size="14" font-weight="600" fill="#111827">Etabliertes Tool (Ahrefs Brand Radar)</text>
+  <rect x="30" y="240" width="640" height="34" rx="6" fill="#94a3b8"></rect>
+  <rect x="30" y="240" width="38.4" height="34" rx="6" fill="#0f766e"></rect>
+  <text x="49" y="290" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">6 %</text>
+  <text x="370" y="262" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">94 %</text>
+  <text x="30" y="338" font-size="11" fill="#9ca3af">Quelle: Mateusz Makosiewicz, Ahrefs (Juli 2026) · Feb.–Mai 2026</text>
+</svg>

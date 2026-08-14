@@ -1,0 +1,45 @@
+.cn0{min-height:100vh;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;color:var(--foreground);font-family:font-body, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;font-size:20px;font-weight:300;font-style:normal;line-height:28px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+
+@media (max-width: 571px) {
+.cn0{height:5852.95px;font-size:18px;line-height:25.2px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:5573.16px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-p-17"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-p-18"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-ul"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-52"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-3"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-4"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-8"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-10"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-p-19"]{transition:0.25s ease-in-out}
+[data-ditto-id="style-link-8"]:hover{background-color:rgb(44, 52, 71)}
+[data-ditto-id="style-link-10"]:hover{background-color:rgb(44, 52, 71)}
+[data-ditto-id="style-link"]:hover{background-color:rgb(44, 52, 71)}
+[data-ditto-id="style-link-4"]:hover{background-color:rgb(44, 52, 71)}
+[data-ditto-id="style-p-19"]:hover{box-shadow:rgba(0, 0, 0, 0.576) 0px 3px 6px 0px}
+[data-ditto-id="style-p-17"]:hover{background-color:rgb(29, 41, 68);border-bottom-color:rgb(40, 55, 92);border-left-color:rgb(40, 55, 92);border-right-color:rgb(40, 55, 92);border-top-color:rgb(40, 55, 92)}
+[data-ditto-id="style-p-18"]:hover{box-shadow:rgba(0, 0, 0, 0.52) 0px 3px 6px 0px}
+[data-ditto-id="style-ul"]:hover{background-color:rgb(29, 41, 68);border-bottom-color:rgb(40, 55, 92);border-left-color:rgb(40, 55, 92);border-right-color:rgb(40, 55, 92);border-top-color:rgb(40, 55, 92)}
+[data-ditto-id="style-52"]:hover{box-shadow:rgba(0, 0, 0, 0.576) 0px 3px 6px 0px}
+[data-ditto-id="style-link-3"]:hover{background-color:rgb(29, 41, 68);border-bottom-color:rgb(40, 55, 92);border-left-color:rgb(40, 55, 92);border-right-color:rgb(40, 55, 92);border-top-color:rgb(40, 55, 92)}
+[data-ditto-id="style-link-8"]:focus{background-color:rgb(175, 155, 92)}
+[data-ditto-id="style-icon"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-10"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-ebene-1"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-icon-2"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-4"]:focus{background-color:rgb(166, 148, 91)}
+[data-ditto-id="style-social-media-icon-insta"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-19"]:focus{box-shadow:rgba(0, 0, 0, 0.208) 0px 3px 6px 0px}
+[data-ditto-id="style-p-17"]:focus{background-color:rgb(155, 140, 89);border-bottom-color:rgb(219, 221, 228);border-left-color:rgb(219, 221, 228);border-right-color:rgb(219, 221, 228);border-top-color:rgb(219, 221, 228)}
+[data-ditto-id="style-p-18"]:focus{box-shadow:rgba(0, 0, 0, 0.176) 0px 3px 6px 0px}
+[data-ditto-id="style-ul"]:focus{background-color:rgb(156, 140, 89);border-bottom-color:rgb(219, 221, 228);border-left-color:rgb(219, 221, 228);border-right-color:rgb(219, 221, 228);border-top-color:rgb(219, 221, 228)}
+[data-ditto-id="style-52"]:focus{box-shadow:rgba(0, 0, 0, 0.204) 0px 3px 6px 0px}
+[data-ditto-id="style-link-3"]:focus{background-color:rgb(180, 159, 93);border-bottom-color:rgb(254, 254, 254);border-left-color:rgb(254, 254, 254);border-right-color:rgb(254, 254, 254);border-top-color:rgb(254, 254, 254)}

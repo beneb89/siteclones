@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="100%" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="660" fill="#FBFCFD"></rect>
+  <text x="48" y="52" font-size="15" font-weight="700" fill="#5C6875" letter-spacing="1.6">DREI PERSONEN ODER DREI ZUSTÄNDE?</text>
+  <line x1="48" y1="70" x2="1152" y2="70" stroke="#DDE3E9" stroke-width="1"></line>
+  <line x1="600" y1="96" x2="600" y2="600" stroke="#DDE3E9" stroke-width="1" stroke-dasharray="3 5"></line>
+  <text x="48" y="124" font-size="24" font-weight="700" fill="#17212E">Das Konferenzmodell</text>
+  <text x="48" y="152" font-size="16" fill="#5C6875">Drei feste Typen von Leser:innen</text>
+  <circle cx="140" cy="228" r="26" fill="none" stroke="#A8322A" stroke-width="2.5"></circle>
+  <path d="M104 296 a36 40 0 0 1 72 0" fill="none" stroke="#A8322A" stroke-width="2.5" stroke-linecap="round"></path>
+  <text x="140" y="330" font-size="17" font-weight="700" fill="#17212E" text-anchor="middle">Skimmer</text>
+  <text x="140" y="352" font-size="13" fill="#8A93A0" text-anchor="middle">überfliegt immer</text>
+  <circle cx="308" cy="228" r="26" fill="none" stroke="#A8322A" stroke-width="2.5"></circle>
+  <path d="M272 296 a36 40 0 0 1 72 0" fill="none" stroke="#A8322A" stroke-width="2.5" stroke-linecap="round"></path>
+  <text x="308" y="330" font-size="17" font-weight="700" fill="#17212E" text-anchor="middle">Scanner</text>
+  <text x="308" y="352" font-size="13" fill="#8A93A0" text-anchor="middle">sucht immer</text>
+  <circle cx="476" cy="228" r="26" fill="none" stroke="#A8322A" stroke-width="2.5"></circle>
+  <path d="M440 296 a36 40 0 0 1 72 0" fill="none" stroke="#A8322A" stroke-width="2.5" stroke-linecap="round"></path>
+  <text x="476" y="330" font-size="17" font-weight="700" fill="#17212E" text-anchor="middle">Reader</text>
+  <text x="476" y="352" font-size="13" fill="#8A93A0" text-anchor="middle">liest immer ganz</text>
+  <line x1="86" y1="392" x2="530" y2="392" stroke="#A8322A" stroke-width="2" opacity="0.35"></line>
+  <text x="48" y="446" font-size="14" font-weight="700" fill="#A8322A" letter-spacing="0.8">NICHT BELEGT</text>
+  <text x="48" y="474" font-size="15" fill="#3E4A58">Keine replizierte Drei-Klassen-Lösung.</text>
+  <text x="48" y="498" font-size="15" fill="#3E4A58">Keine standardisierte Zuordnung von Personen.</text>
+  <text x="48" y="522" font-size="15" fill="#3E4A58">Keine Prävalenzwerte – „30 % sind Skimmer“</text>
+  <text x="48" y="546" font-size="15" fill="#3E4A58">ist Scheingenauigkeit.</text>
+  <text x="648" y="124" font-size="24" font-weight="700" fill="#17212E">Der Forschungsstand</text>
+  <text x="648" y="152" font-size="16" fill="#5C6875">Eine Person, drei Aufgaben, drei Muster</text>
+  <circle cx="712" cy="222" r="26" fill="none" stroke="#1C7A6E" stroke-width="2.5"></circle>
+  <path d="M676 290 a36 40 0 0 1 72 0" fill="none" stroke="#1C7A6E" stroke-width="2.5" stroke-linecap="round"></path>
+  <text x="712" y="322" font-size="15" font-weight="700" fill="#17212E" text-anchor="middle">dieselbe Person</text>
+  <path d="M756 214 C 810 214 820 202 860 202" fill="none" stroke="#C9D1DA" stroke-width="2"></path>
+  <path d="M756 236 C 810 236 820 288 860 288" fill="none" stroke="#C9D1DA" stroke-width="2"></path>
+  <path d="M756 258 C 810 258 820 374 860 374" fill="none" stroke="#C9D1DA" stroke-width="2"></path>
+  <rect x="868" y="176" width="240" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <text x="886" y="199" font-size="14" font-weight="700" fill="#17212E">Öffnungszeit suchen</text>
+  <text x="886" y="217" font-size="13" fill="#8A93A0">stark selektiv, sehr schnell</text>
+  <circle cx="1088" cy="202" r="7" fill="#C08A2E"></circle>
+  <rect x="868" y="262" width="240" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <text x="886" y="285" font-size="14" font-weight="700" fill="#17212E">Vertragsklausel prüfen</text>
+  <text x="886" y="303" font-size="13" fill="#8A93A0">langsam, viel Rücksprung</text>
+  <circle cx="1088" cy="288" r="7" fill="#2E4372"></circle>
+  <rect x="868" y="348" width="240" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <text x="886" y="371" font-size="14" font-weight="700" fill="#17212E">Roman im Zug</text>
+  <text x="886" y="389" font-size="13" fill="#8A93A0">absorbiert, wenig kritisch</text>
+  <circle cx="1088" cy="374" r="7" fill="#1C7A6E"></circle>
+  <text x="648" y="446" font-size="14" font-weight="700" fill="#1C7A6E" letter-spacing="0.8">STARK BELEGT</text>
+  <text x="648" y="474" font-size="15" fill="#3E4A58">Dieselben Personen verschieben unter geänderter</text>
+  <text x="648" y="498" font-size="15" fill="#3E4A58">Instruktion ganze Bündel von Blickparametern.</text>
+  <text x="648" y="522" font-size="15" fill="#3E4A58">Der Zustand ist aus Verhaltensdaten erkennbar –</text>
+  <text x="648" y="546" font-size="15" fill="#3E4A58">die Person ist es nicht.</text>
+  <line x1="48" y1="596" x2="1152" y2="596" stroke="#DDE3E9" stroke-width="1"></line>
+  <text x="48" y="624" font-size="13" fill="#8A93A0">Belegbasis: Strukelj &amp; Niehorster 2018 (Within-Subject, vier Leseinstruktionen) · Soltan et al. 2025 · Chen et al. 2023</text>
+  <text x="1152" y="624" font-size="13" fill="#C9D1DA" text-anchor="end">Abb. 1</text>
+</svg>

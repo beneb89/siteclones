@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 880" width="100%" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="880" fill="#FBFCFD"></rect>
+  <text x="48" y="52" font-size="15" font-weight="700" fill="#5C6875" letter-spacing="1.6">WAS BELEGT IST UND WAS NICHT</text>
+  <line x1="48" y1="70" x2="1152" y2="70" stroke="#DDE3E9" stroke-width="1"></line>
+  <text x="48" y="112" font-size="24" font-weight="700" fill="#17212E">Elf Aussagen, sortiert nach Evidenzlage</text>
+  <text x="48" y="140" font-size="16" fill="#5C6875">Die Dreiteilung ist nicht komplett falsch. Sie ist an genau den Stellen falsch, an denen sie am lautesten vorgetragen wird.</text>
+  <rect x="48" y="166" width="14" height="14" rx="4" fill="#1C7A6E"></rect>
+  <text x="70" y="178" font-size="13" fill="#3E4A58">stark belegt</text>
+  <rect x="196" y="166" width="14" height="14" rx="4" fill="#C08A2E"></rect>
+  <text x="218" y="178" font-size="13" fill="#3E4A58">teilweise belegt</text>
+  <rect x="360" y="166" width="14" height="14" rx="4" fill="#A8322A"></rect>
+  <text x="382" y="178" font-size="13" fill="#3E4A58">nicht belegt</text>
+  <g>
+    <rect x="48" y="206" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="206" width="5" height="52" rx="2.5" fill="#1C7A6E"></rect>
+    <text x="76" y="228" font-size="15" font-weight="600" fill="#17212E">Skimming ist ein empirisch unterscheidbarer Lesemodus.</text>
+    <text x="76" y="248" font-size="13" fill="#8A93A0">Experimentell induzierbar, replizierbare Blick- und Verständnisunterschiede.</text>
+    <text x="1128" y="238" font-size="12.5" font-weight="700" fill="#1C7A6E" text-anchor="end">STARK BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="266" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="266" width="5" height="52" rx="2.5" fill="#1C7A6E"></rect>
+    <text x="76" y="288" font-size="15" font-weight="600" fill="#17212E">Geübte Leser:innen wechseln die Strategie je nach Aufgabe.</text>
+    <text x="76" y="308" font-size="13" fill="#8A93A0">Within-Subject-Studien zeigen große Effekte der bloßen Instruktion.</text>
+    <text x="1128" y="298" font-size="12.5" font-weight="700" fill="#1C7A6E" text-anchor="end">STARK BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="326" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="326" width="5" height="52" rx="2.5" fill="#1C7A6E"></rect>
+    <text x="76" y="348" font-size="15" font-weight="600" fill="#17212E">Es gibt stabile individuelle Unterschiede beim Lesen.</text>
+    <text x="76" y="368" font-size="13" fill="#8A93A0">Blickprofile, literarische Orientierungen, Fähigkeit und Arbeitsgedächtnis.</text>
+    <text x="1128" y="358" font-size="12.5" font-weight="700" fill="#1C7A6E" text-anchor="end">STARK BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="386" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="386" width="5" height="52" rx="2.5" fill="#1C7A6E"></rect>
+    <text x="76" y="408" font-size="15" font-weight="600" fill="#17212E">Immersion beim Lesen ist ein reales, messbares Phänomen.</text>
+    <text x="76" y="428" font-size="13" fill="#8A93A0">Validierte mehrdimensionale Skalen, große Literaturbasis.</text>
+    <text x="1128" y="418" font-size="12.5" font-weight="700" fill="#1C7A6E" text-anchor="end">STARK BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="446" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="446" width="5" height="52" rx="2.5" fill="#C08A2E"></rect>
+    <text x="76" y="468" font-size="15" font-weight="600" fill="#17212E">Immersion ist ein diskreter Modus wie Skimming.</text>
+    <text x="76" y="488" font-size="13" fill="#8A93A0">Besser als kontinuierlicher Erlebniszustand modelliert, stark text- und personabhängig.</text>
+    <text x="1128" y="478" font-size="12.5" font-weight="700" fill="#C08A2E" text-anchor="end">TEILWEISE</text>
+  </g>
+  <g>
+    <rect x="48" y="506" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="506" width="5" height="52" rx="2.5" fill="#C08A2E"></rect>
+    <text x="76" y="528" font-size="15" font-weight="600" fill="#17212E">„Deep Reading“ ist ein einheitliches wissenschaftliches Konstrukt.</text>
+    <text x="76" y="548" font-size="13" fill="#8A93A0">Gründliches Lesen, tiefes Verstehen und kritisches Lesen werden verschieden operationalisiert.</text>
+    <text x="1128" y="538" font-size="12.5" font-weight="700" fill="#C08A2E" text-anchor="end">SCHWACH</text>
+  </g>
+  <g>
+    <rect x="48" y="566" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="566" width="5" height="52" rx="2.5" fill="#A8322A"></rect>
+    <text x="76" y="588" font-size="15" font-weight="600" fill="#17212E">Überfliegen → immersiv → tief ist eine einzige Tiefenskala.</text>
+    <text x="76" y="608" font-size="13" fill="#8A93A0">Immersion misst andere Dimensionen als analytische Tiefe. Man kann versunken und unkritisch lesen.</text>
+    <text x="1128" y="598" font-size="12.5" font-weight="700" fill="#A8322A" text-anchor="end">NICHT BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="626" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="626" width="5" height="52" rx="2.5" fill="#A8322A"></rect>
+    <text x="76" y="648" font-size="15" font-weight="600" fill="#17212E">Es gibt drei Populationen: Skimmer, Scanner, Reader.</text>
+    <text x="76" y="668" font-size="13" fill="#8A93A0">Vorhandene Typologien liefern andere und dimensionale Strukturen, keine Drei-Klassen-Lösung.</text>
+    <text x="1128" y="658" font-size="12.5" font-weight="700" fill="#A8322A" text-anchor="end">NICHT BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="686" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="686" width="5" height="52" rx="2.5" fill="#A8322A"></rect>
+    <text x="76" y="708" font-size="15" font-weight="600" fill="#17212E">Das oft zitierte „79 % der Nutzer scannen“ belegt einen Lesertyp.</text>
+    <text x="76" y="728" font-size="13" fill="#8A93A0">Die Zahl beschreibt beobachtetes Verhalten in einer kleinen Usability-Stichprobe von 1997 – kein stabiles Personenmerkmal.</text>
+    <text x="1128" y="718" font-size="12.5" font-weight="700" fill="#A8322A" text-anchor="end">NICHT BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="746" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="746" width="5" height="52" rx="2.5" fill="#A8322A"></rect>
+    <text x="76" y="768" font-size="15" font-weight="600" fill="#17212E">Jede Person kann jeden Modus gleich gut einsetzen.</text>
+    <text x="76" y="788" font-size="13" fill="#8A93A0">Fähigkeit, Arbeitsgedächtnis, Vorwissen und Motivation setzen reale Grenzen.</text>
+    <text x="1128" y="778" font-size="12.5" font-weight="700" fill="#A8322A" text-anchor="end">NICHT BELEGT</text>
+  </g>
+  <g>
+    <rect x="48" y="806" width="1104" height="52" rx="8" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+    <rect x="48" y="806" width="5" height="52" rx="2.5" fill="#A8322A"></rect>
+    <text x="76" y="828" font-size="15" font-weight="600" fill="#17212E">Bildschirm heißt automatisch oberflächlich, Papier heißt tief.</text>
+    <text x="76" y="848" font-size="13" fill="#8A93A0">Kleiner Printvorteil im Mittel, bei erzählenden Texten praktisch keiner. Textsorte und Interface moderieren.</text>
+    <text x="1128" y="838" font-size="12.5" font-weight="700" fill="#A8322A" text-anchor="end">NICHT BELEGT</text>
+  </g>
+</svg>

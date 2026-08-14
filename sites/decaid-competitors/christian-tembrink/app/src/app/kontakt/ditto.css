@@ -1,0 +1,27 @@
+.cn0{display:block;padding-bottom:130px;color:var(--foreground);font-family:"Times New Roman";font-size:16px;font-weight:400;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+[data-ditto-id="style-p-4"]::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:871px;left:0px;height:0px;background-image:linear-gradient(rgba(0, 0, 0, 0.07) 0px, rgba(0, 0, 0, 0))}
+@media (max-width: 571px) {
+[data-ditto-id="style-p-4"]::before{bottom:1344px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-p-4"]::before{bottom:804px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-p-4"]::before{}
+}
+[data-ditto-id="style-p-5"]::placeholder{color:rgb(117, 117, 117)}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-div-21"]:hover{background-color:rgba(241, 250, 241, 0.1);border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-seitenlogo"]:hover{background-color:rgba(241, 250, 241, 0.1);border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-br-2"]:hover{background-color:rgba(241, 250, 241, 0.1);border-bottom-color:rgba(241, 250, 241, 0.1);border-left-color:rgba(241, 250, 241, 0.1);border-right-color:rgba(241, 250, 241, 0.1);border-top-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-br-3"]:hover{background-color:rgba(1, 176, 246, 0.9)}
+[data-ditto-id="style-p-5"]:hover{background-color:rgba(241, 250, 241, 0.1)}
+[data-ditto-id="style-icon-3"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-21"]:focus{background-color:rgba(0, 0, 0, 0);border-bottom-color:rgb(241, 250, 241);border-left-color:rgb(241, 250, 241);border-right-color:rgb(241, 250, 241);border-top-color:rgb(241, 250, 241)}
+[data-ditto-id="style-seitenlogo"]:focus{background-color:rgba(0, 0, 0, 0);border-bottom-color:rgb(241, 250, 241);border-left-color:rgb(241, 250, 241);border-right-color:rgb(241, 250, 241);border-top-color:rgb(241, 250, 241)}
+[data-ditto-id="style-br-2"]:focus{background-color:rgba(0, 0, 0, 0);border-bottom-color:rgb(241, 250, 241);border-left-color:rgb(241, 250, 241);border-right-color:rgb(241, 250, 241);border-top-color:rgb(241, 250, 241)}
+[data-ditto-id="style-div-22"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-span-5"]:focus{box-shadow:rgb(255, 255, 255) 0px 0px 0px 2px;outline-color:rgb(0, 0, 255);outline-style:solid;outline-width:2px}
+[data-ditto-id="style-br-4"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-6"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-p-5"]:focus{background-color:rgba(0, 0, 0, 0)}

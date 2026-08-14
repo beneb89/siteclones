@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="700" fill="#FBFCFD"></rect>
+  <text x="48" y="52" font-size="15" font-weight="700" fill="#5C6875" letter-spacing="1.6">DASSELBE AUGE, ZWEI AUFGABEN</text>
+  <line x1="48" y1="70" x2="1152" y2="70" stroke="#DDE3E9" stroke-width="1"></line>
+  <text x="48" y="112" font-size="24" font-weight="700" fill="#17212E">Was die Instruktion mit dem Blick macht</text>
+  <text x="48" y="140" font-size="16" fill="#5C6875">Punkte sind Fixationen, ihre Größe steht für die Verweildauer, Linien sind Sprünge zwischen den Fixationen.</text>
+  <text x="48" y="192" font-size="19" font-weight="700" fill="#C08A2E">Überfliegen</text>
+  <text x="48" y="214" font-size="14" fill="#8A93A0">Instruktion: „Verschaff dir einen Überblick.“</text>
+  <rect x="48" y="234" width="528" height="272" rx="10" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <rect x="80" y="264" width="464" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="292" width="440" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="320" width="470" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="348" width="412" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="376" width="464" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="404" width="436" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="432" width="470" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="80" y="460" width="300" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <path d="M104 268 L 268 268 L 470 268 L 132 324 L 356 324 L 508 324 L 160 408 L 398 408 L 120 464" fill="none" stroke="#C08A2E" stroke-width="1.8" opacity="0.55"></path>
+  <circle cx="104" cy="268" r="9" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="268" cy="268" r="7" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="470" cy="268" r="6" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="132" cy="324" r="8" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="356" cy="324" r="6" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="508" cy="324" r="6" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="160" cy="408" r="8" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="398" cy="408" r="6" fill="#C08A2E" opacity="0.75"></circle>
+  <circle cx="120" cy="464" r="9" fill="#C08A2E" opacity="0.75"></circle>
+  <text x="80" y="492" font-size="12" fill="#8A93A0">9 Fixationen · 3 Zeilen vollständig übersprungen · keine Rücksprünge</text>
+  <text x="48" y="546" font-size="13" fill="#3E4A58">Gesamtlesezeit</text>
+  <text x="290" y="546" font-size="13" font-weight="700" fill="#C08A2E">kurz</text>
+  <line x1="48" y1="558" x2="576" y2="558" stroke="#EDF0F3"></line>
+  <text x="48" y="580" font-size="13" fill="#3E4A58">Sprungweite</text>
+  <text x="290" y="580" font-size="13" font-weight="700" fill="#C08A2E">groß</text>
+  <line x1="48" y1="592" x2="576" y2="592" stroke="#EDF0F3"></line>
+  <text x="48" y="614" font-size="13" fill="#3E4A58">Wiederlesen</text>
+  <text x="290" y="614" font-size="13" font-weight="700" fill="#C08A2E">selten</text>
+  <line x1="48" y1="626" x2="576" y2="626" stroke="#EDF0F3"></line>
+  <text x="48" y="648" font-size="13" fill="#3E4A58">Detailverständnis</text>
+  <text x="290" y="648" font-size="13" font-weight="700" fill="#C08A2E">geringer</text>
+  <text x="624" y="192" font-size="19" font-weight="700" fill="#2E4372">Gründlich lesen</text>
+  <text x="624" y="214" font-size="14" fill="#8A93A0">Instruktion: „Lies sorgfältig zum Verstehen.“</text>
+  <rect x="624" y="234" width="528" height="272" rx="10" fill="#FFFFFF" stroke="#DDE3E9"></rect>
+  <rect x="656" y="264" width="464" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="292" width="440" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="320" width="470" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="348" width="412" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="376" width="464" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="404" width="436" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="432" width="470" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <rect x="656" y="460" width="300" height="9" rx="4.5" fill="#EDF0F3"></rect>
+  <path d="M668 268 L 724 268 L 784 268 L 848 268 L 912 268 L 976 268 L 1040 268 L 1104 268            L 668 296 L 730 296 L 792 296 L 856 296 L 920 296 L 984 296 L 1050 296            L 668 324 L 732 324 L 796 324 L 860 324 L 926 324 L 990 324 L 1054 324 L 1112 324            L 668 352 L 730 352 L 794 352 L 858 352 L 922 352 L 986 352 L 1044 352            L 668 380 L 732 380 L 796 380 L 860 380 L 924 380 L 988 380 L 1052 380 L 1108 380" fill="none" stroke="#2E4372" stroke-width="1.5" opacity="0.45"></path>
+  <path d="M668 408 L 730 408 L 794 408 L 858 408 L 922 408 L 986 408 L 1048 408            L 668 436 L 732 436 L 796 436 L 860 436 L 924 436 L 988 436 L 1052 436 L 1110 436            L 668 464 L 730 464 L 792 464 L 850 464" fill="none" stroke="#2E4372" stroke-width="1.5" opacity="0.45"></path>
+  <path d="M920 324 C 880 300 800 300 736 296" fill="none" stroke="#A8322A" stroke-width="1.8" stroke-dasharray="4 3"></path>
+  <path d="M1044 408 C 980 384 880 380 796 380" fill="none" stroke="#A8322A" stroke-width="1.8" stroke-dasharray="4 3"></path>
+  <g fill="#2E4372" opacity="0.8">
+    <circle cx="668" cy="268" r="5"></circle>
+    <circle cx="724" cy="268" r="5"></circle>
+    <circle cx="784" cy="268" r="5"></circle>
+    <circle cx="848" cy="268" r="5"></circle>
+    <circle cx="912" cy="268" r="5"></circle>
+    <circle cx="976" cy="268" r="5"></circle>
+    <circle cx="1040" cy="268" r="5"></circle>
+    <circle cx="1104" cy="268" r="5"></circle>
+    <circle cx="668" cy="296" r="5"></circle>
+    <circle cx="730" cy="296" r="5"></circle>
+    <circle cx="792" cy="296" r="6"></circle>
+    <circle cx="856" cy="296" r="5"></circle>
+    <circle cx="920" cy="296" r="5"></circle>
+    <circle cx="984" cy="296" r="5"></circle>
+    <circle cx="1050" cy="296" r="5"></circle>
+    <circle cx="668" cy="324" r="5"></circle>
+    <circle cx="732" cy="324" r="5"></circle>
+    <circle cx="796" cy="324" r="5"></circle>
+    <circle cx="860" cy="324" r="5"></circle>
+    <circle cx="926" cy="324" r="7"></circle>
+    <circle cx="990" cy="324" r="5"></circle>
+    <circle cx="1054" cy="324" r="5"></circle>
+    <circle cx="1112" cy="324" r="5"></circle>
+    <circle cx="668" cy="352" r="5"></circle>
+    <circle cx="730" cy="352" r="5"></circle>
+    <circle cx="794" cy="352" r="5"></circle>
+    <circle cx="858" cy="352" r="5"></circle>
+    <circle cx="922" cy="352" r="5"></circle>
+    <circle cx="986" cy="352" r="5"></circle>
+    <circle cx="1044" cy="352" r="5"></circle>
+    <circle cx="668" cy="380" r="5"></circle>
+    <circle cx="732" cy="380" r="5"></circle>
+    <circle cx="796" cy="380" r="6"></circle>
+    <circle cx="860" cy="380" r="5"></circle>
+    <circle cx="924" cy="380" r="5"></circle>
+    <circle cx="988" cy="380" r="5"></circle>
+    <circle cx="1052" cy="380" r="5"></circle>
+    <circle cx="1108" cy="380" r="5"></circle>
+    <circle cx="668" cy="408" r="5"></circle>
+    <circle cx="730" cy="408" r="5"></circle>
+    <circle cx="794" cy="408" r="5"></circle>
+    <circle cx="858" cy="408" r="5"></circle>
+    <circle cx="922" cy="408" r="5"></circle>
+    <circle cx="986" cy="408" r="5"></circle>
+    <circle cx="1048" cy="408" r="7"></circle>
+    <circle cx="668" cy="436" r="5"></circle>
+    <circle cx="732" cy="436" r="5"></circle>
+    <circle cx="796" cy="436" r="5"></circle>
+    <circle cx="860" cy="436" r="5"></circle>
+    <circle cx="924" cy="436" r="5"></circle>
+    <circle cx="988" cy="436" r="5"></circle>
+    <circle cx="1052" cy="436" r="5"></circle>
+    <circle cx="1110" cy="436" r="5"></circle>
+    <circle cx="668" cy="464" r="5"></circle>
+    <circle cx="730" cy="464" r="5"></circle>
+    <circle cx="792" cy="464" r="5"></circle>
+    <circle cx="850" cy="464" r="5"></circle>
+  </g>
+  <text x="656" y="492" font-size="12" fill="#8A93A0">57 Fixationen · keine Zeile ausgelassen · rot gestrichelt: Rücksprünge</text>
+  <text x="624" y="546" font-size="13" fill="#3E4A58">Gesamtlesezeit</text>
+  <text x="866" y="546" font-size="13" font-weight="700" fill="#2E4372">lang</text>
+  <line x1="624" y1="558" x2="1152" y2="558" stroke="#EDF0F3"></line>
+  <text x="624" y="580" font-size="13" fill="#3E4A58">Sprungweite</text>
+  <text x="866" y="580" font-size="13" font-weight="700" fill="#2E4372">klein</text>
+  <line x1="624" y1="592" x2="1152" y2="592" stroke="#EDF0F3"></line>
+  <text x="624" y="614" font-size="13" fill="#3E4A58">Wiederlesen</text>
+  <text x="866" y="614" font-size="13" font-weight="700" fill="#2E4372">häufig</text>
+  <line x1="624" y1="626" x2="1152" y2="626" stroke="#EDF0F3"></line>
+  <text x="624" y="648" font-size="13" fill="#3E4A58">Detailverständnis</text>
+  <text x="866" y="648" font-size="13" font-weight="700" fill="#2E4372">höher</text>
+  <text x="1152" y="682" font-size="13" fill="#C9D1DA" text-anchor="end">Abb. 3</text>
+  <text x="48" y="682" font-size="13" fill="#8A93A0">Muster schematisch nach Strukelj &amp; Niehorster 2018 sowie Fitzsimmons et al. 2020. Keine Originaldaten.</text>
+</svg>

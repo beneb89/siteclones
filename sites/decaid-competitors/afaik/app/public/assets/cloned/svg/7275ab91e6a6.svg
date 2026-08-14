@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 610" width="100%" role="img" aria-labelledby="t3 d3" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t3">Anteil der Berufsgruppen an der weltweiten Claude-Nutzung</title>
+  <desc id="d3">Computer und Mathematik führt mit 23,8 Prozent, die drei größten Wissensberufsgruppen kommen zusammen auf gut die Hälfte. Manuelle Berufsgruppen liegen zwischen 1,04 Prozent für Produktion und 0,04 Prozent für Land- und Forstwirtschaft.</desc>
+  <style>
+.ink{fill:#1a1a1a}.mut{fill:#6b6b6b}.rule{stroke:#e2e0da}
+@media (prefers-color-scheme:dark){.ink{fill:#ededed}.mut{fill:#9a9a9a}.rule{stroke:#343431}}
+</style>
+  <text x="24" y="30" class="ink" font-size="17" font-weight="500">Breite ist nicht Verteilung</text>
+  <text x="24" y="52" class="mut" font-size="12.5">Anteil an der weltweiten Claude-Nutzung nach Berufsgruppe, Anthropic Economic Index, Mai 2026</text>
+  <g font-size="11.5">
+    <rect x="24" y="66" width="10" height="10" fill="#2a78d6"></rect>
+    <text x="40" y="75" class="mut">Wissens- und Büroberufe</text>
+    <rect x="200" y="66" width="10" height="10" fill="#eb6834"></rect>
+    <text x="216" y="75" class="mut">manuelle Berufsgruppen</text>
+  </g>
+  <g font-size="13">
+    <text x="24" y="108" class="ink">Computer und Mathematik</text>
+    <rect x="250" y="96" width="360" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="108" class="mut" text-anchor="end">23,80 %</text>
+    <text x="24" y="138" class="ink">Kunst, Design, Medien</text>
+    <rect x="250" y="126" width="205" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="138" class="mut" text-anchor="end">13,55 %</text>
+    <text x="24" y="168" class="ink">Bildung und Bibliothek</text>
+    <rect x="250" y="156" width="193" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="168" class="mut" text-anchor="end">12,79 %</text>
+    <text x="24" y="198" class="ink">Vertrieb</text>
+    <rect x="250" y="186" width="138" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="198" class="mut" text-anchor="end">9,14 %</text>
+    <text x="24" y="228" class="ink">Büro und Verwaltung</text>
+    <rect x="250" y="216" width="119" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="228" class="mut" text-anchor="end">7,89 %</text>
+    <text x="24" y="258" class="ink">Management</text>
+    <rect x="250" y="246" width="89" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="258" class="mut" text-anchor="end">5,90 %</text>
+    <text x="24" y="288" class="ink">Wirtschaft und Finanzen</text>
+    <rect x="250" y="276" width="87" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="288" class="mut" text-anchor="end">5,77 %</text>
+    <text x="24" y="318" class="ink">Wissenschaft</text>
+    <rect x="250" y="306" width="68" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="318" class="mut" text-anchor="end">4,51 %</text>
+    <text x="24" y="348" class="ink">Architektur und Ingenieurwesen</text>
+    <rect x="250" y="336" width="54" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="348" class="mut" text-anchor="end">3,56 %</text>
+    <text x="24" y="378" class="ink">Gesundheitsberufe</text>
+    <rect x="250" y="366" width="50" height="15" fill="#2a78d6"></rect>
+    <text x="696" y="378" class="mut" text-anchor="end">3,31 %</text>
+  </g>
+  <line x1="24" y1="392" x2="696" y2="392" class="rule" stroke-width="1" stroke-dasharray="3 3"></line>
+  <g font-size="13">
+    <text x="24" y="418" class="ink">Produktion</text>
+    <rect x="250" y="406" width="16" height="15" fill="#eb6834"></rect>
+    <text x="696" y="418" class="mut" text-anchor="end">1,04 %</text>
+    <text x="24" y="448" class="ink">Installation, Wartung, Reparatur</text>
+    <rect x="250" y="436" width="9" height="15" fill="#eb6834"></rect>
+    <text x="696" y="448" class="mut" text-anchor="end">0,62 %</text>
+    <text x="24" y="478" class="ink">Transport und Logistik</text>
+    <rect x="250" y="466" width="5" height="15" fill="#eb6834"></rect>
+    <text x="696" y="478" class="mut" text-anchor="end">0,34 %</text>
+    <text x="24" y="508" class="ink">Bau und Rohstoffgewinnung</text>
+    <rect x="250" y="496" width="2" height="15" fill="#eb6834"></rect>
+    <text x="696" y="508" class="mut" text-anchor="end">0,10 %</text>
+    <text x="24" y="538" class="ink">Land- und Forstwirtschaft</text>
+    <rect x="250" y="526" width="2" height="15" fill="#eb6834"></rect>
+    <text x="696" y="538" class="mut" text-anchor="end">0,04 %</text>
+  </g>
+  <line x1="24" y1="562" x2="696" y2="562" class="rule" stroke-width="1"></line>
+  <text x="24" y="582" class="mut" font-size="11.5">Die Anteile beschreiben Gespräche, die einer Tätigkeit zugeordnet wurden, die üblicherweise in dieser Berufsgruppe anfällt —</text>
+  <text x="24" y="598" class="mut" font-size="11.5">nicht Menschen aus diesem Beruf.</text>
+</svg>
