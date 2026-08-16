@@ -29,8 +29,8 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 
 ## Clone Metadata
 
-- routes: 60
-- extracted components: 541
+- routes: 160
+- extracted components: 1421
 - section modules: 0
 - SVG modules: 0
 - content module: no
@@ -98,6 +98,106 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 - /die-ki-news-der-woche-vom-11-11-2024 - Die KI-News der Woche vom 11.11.2024 – Digitale Profis
 - /die-ki-news-der-woche-vom-11-12-2025 - Die KI-News der Woche vom 11.12.2025 – Digitale Profis
 - /die-ki-news-der-woche-vom-12-02-2026 - Die KI-News der Woche vom 12.02.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-12-03-2026 - Die KI-News der Woche vom 12.03.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-12-05-2026 - Die KI-News der Woche vom 12.05.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-12-09-2024 - Die KI-News der Woche vom 12.09.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-13-02-2025 - Die KI-News der Woche vom 13.02.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-13-03-2025 - Die KI-News der Woche vom 13.03.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-13-06-2024 - Die KI-News der Woche vom 13.06.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-14-01-2025 - Die KI-News der Woche vom 14.01.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-14-03-2024 - Die KI-News der Woche vom 15.03.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-14-08-2025 - Die KI-News der Woche vom 14.08.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-15-05-2025 - Die KI-News der Woche vom 15.05.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-16-04-2026 - Die KI-News der Woche vom 16.04.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-16-05-2024 - Die KI-News der Woche vom 16.05.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-16-10-2025 - Die KI-News der Woche vom 16.10.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-17-04-2025 - Die KI-News der Woche vom 17.04.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-17-07-2025 - Die KI-News der Woche vom 17.07.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-17-12-2024 - Die KI-News der Woche vom 17.12.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-18-04-2024 - Die KI-News der Woche vom 18.04.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-18-07-2024 - Die KI-News der Woche vom 18.07.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-18-11-2024 - Die KI-News der Woche vom 18.11.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-18-12-2025 - Die KI-News der Woche vom 18.12.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-19-02-2026 - Die KI-News der Woche vom 19.02.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-19-03-2026 - Die KI-News der Woche vom 19.03.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-19-09-2024 - Die KI-News der Woche vom 19.09.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-20-02-2025 - Die KI-News der Woche vom 20.02.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-20-06-2024 - Die KI-News der Woche vom 20.06.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-20-11-2025 - Die KI-News der Woche vom 20.11.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-21-01-2025 - Die KI-News der Woche vom 21.01.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-21-03-2024 - Die KI-News der Woche vom 21.03.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-21-08-2025 - Die KI-News der Woche vom 21.08.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-21-10-2024 - Die KI-News der Woche vom 21.10.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-22-01-2026 - Die KI-News der Woche vom 22.01.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-22-05-2025 - Die KI-News der Woche vom 22.05.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-22-08-2024 - Die KI-News der Woche vom 22.08.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-23-05-2024 - Die KI-News der Woche vom 23.05.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-23-07-2026 - Die KI-News der Woche vom 23.07.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-23-10-2025 - Die KI-News der Woche vom 23.10.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-24-07-2025 - Die KI-News der Woche vom 24.07.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-25-04-2024 - Die KI-News der Woche vom 25.04.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-25-07-2024 - Die KI-News der Woche vom 25.07.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-26-02-2026 - Die KI-News der Woche vom 26.02.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-26-03-2026 - Die KI-News der Woche vom 26.03.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-26-09-2024 - Die KI-News der Woche vom 26.09.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-26-11-2024 - Die KI-News der Woche vom 26.11.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-27-02-2025 - Die KI-News der Woche vom 27.02.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-27-03-2025 - Die KI-News der Woche vom 27.03.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-27-05-2026 - Die KI-News der Woche vom 27.05.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-27-06-2024 - Die KI-News der Woche vom 27.06.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-27-11-2025 - Die KI-News der Woche vom 27.11.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-28-04-2026 - Die KI-News der Woche vom 28.04.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-28-10-2024 - Die KI-News der Woche vom 28.10.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-29-01-2025 - Die KI-News der Woche vom 29.01.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-29-01-2026 - Die KI-News der Woche vom 29.01.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-29-04-2025 - Die KI-News der Woche vom 29.04.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-29-08-2024 - Die KI-News der Woche vom 29.08.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-30-07-2024 - Die KI-News der Woche vom 30.07.2024 – Digitale Profis
+- /die-ki-news-der-woche-vom-30-07-2026 - Die KI-News der Woche vom 30.07.2026 – Digitale Profis
+- /die-ki-news-der-woche-vom-30-10-2025 - Die KI-News der Woche vom 30.10.2025 – Digitale Profis
+- /die-ki-news-der-woche-vom-31-07-2025 - Die KI-News der Woche vom 31.07.2025 – Digitale Profis
+- /die-ki-news-vom-16-07-2026 - Die KI-News vom 16.07.2026 – Digitale Profis
+- /google-i-o-neue-ki-tools-vorgestellt - Google I/O und KI: Was aus den Ankündigungen wurde – Digitale Profis
+- /grundkurs-prompt-engineering-teil-1-iterative-verbesserung - Prompt Engineering Teil 1: Iterative Verbesserung – Digitale Profis
+- /grundkurs-prompt-engineering-teil-2-kontextuelles-gedaechtnis - Prompt Engineering Teil 2: Kontextuelles Gedächtnis – Digitale Profis
+- /grundkurs-prompt-engineering-teil-3-mehrstufige-dialoge - Prompt Engineering Teil 3: Mehrstufige Dialoge – Digitale Profis
+- /impressum - Impressum – Digitale Profis
+- /ki-als-chance-wie-unternehmen-den-technologischen-wandel-aktiv-gestalten-koennen - KI als Chance: Wie Unternehmen den Wandel aktiv gestalten – Digitale Profis
+- /ki-erfolgreich-im-studium-einsetzen - KI erfolgreich im Studium einsetzen – Digitale Profis
+- /ki-generierte-inhalte-erkennen-und-einordnen - KI-generierte Inhalte erkennen und einordnen – Digitale Profis
+- /ki-hub - KI-Hub für die Verwaltung – Digitale Profis
+- /ki-in-der-verwaltung-einsatzmoeglichkeiten - KI in der Verwaltung: Einsatzmöglichkeiten und Grenzen – Digitale Profis
+- /ki-inhalte-kennzeichnen - KI-Inhalte kennzeichnen: Was seit dem 2. August 2026 gilt – Digitale Profis
+- /ki-muss-dich-erst-kennenlernen - Warum KI guten Kontext braucht – Digitale Profis
+- /ki-news - KI-News – Digitale Profis
+- /kinderbuecher-mit-chatgpt-erstellen-eine-schritt-fuer-schritt-anleitung - Kinderbücher mit ChatGPT: Ideen, Bilder und PDF – Digitale Profis
+- /kontextbewusstes-prompting-fuer-die-verwaltung - Kontextbewusstes Prompting für die Verwaltung – Digitale Profis
+- /kostenlose-unzensierte-ki-chatbots-offline-nutzen - Lokale KI-Chatbots: Tools, Datenschutz und Grenzen – Digitale Profis
+- /kostenloser-chatgpt-account-oder-plus-abo - ChatGPT kostenlos oder Plus: Was lohnt sich 2026? – Digitale Profis
+- /lm-studio-bionic-im-test - LM Studio Bionic im Test: KI-Agent mit lokalen Modellen – Digitale Profis
+- /mega-prompt-2-strukturierte-problemloesung-mit-ki - Mega-Prompt 2: Probleme mit KI strukturiert lösen – Digitale Profis
+- /mega-prompt-2026-bessere-prompts-fuer-chatgpt-claude-gemini - Mega-Prompt 2026: Bessere Prompts für ChatGPT, Claude und Gemini – Digitale Profis
+- /mit-ki-anfangen-erste-aufgabe-chatbot - KI für Anfänger: Hier startest du mit einem Chatbot – Digitale Profis
+- /newsletter - Newsletter – Digitale Profis
+- /notebooklm-das-beste-ki-tool-von-google - NotebookLM: Googles KI-Notizbuch für Quellenarbeit – Digitale Profis
+- /openai-finanzierung-2026-einordnung - OpenAI-Finanzierung 2026: Was die Milliarden bedeuten – Digitale Profis
+- /perplexity-mehr-als-eine-ki-suchmaschine - Perplexity: KI-Suche und Research-Tool erklärt – Digitale Profis
+- /prompt-engineering-fuer-textbasierte-chatbots - Prompt Engineering für textbasierte Chatbots – Digitale Profis
+- /prompt-engineering-grundlagen - Prompt Engineering Grundlagen – Digitale Profis
+- /prompt-verzeichnis-anlegen - Prompt-Verzeichnis anlegen: So baust du eine nützliche Prompt-Bibliothek – Digitale Profis
+- /seo-im-ki-zeitalter - SEO im KI-Zeitalter: Bei Google, ChatGPT & Co. gefunden werden – Digitale Profis
+- /so-schreibst-du-die-besten-prompts-fuer-chatgpt - Die Prompt-Formel für bessere ChatGPT-Ergebnisse – Digitale Profis
+- /so-schreibt-chatgpt-wie-du - So schreibt ChatGPT wie du – Digitale Profis
+- /tipps-fuer-praesentationen-mit-ki - Tipps für Präsentationen mit KI – Digitale Profis
+- /ueber-uns - Über uns – Digitale Profis
+- /unterschaetzte-gefahren-generativer-ki - Generative KI: Risiken erkennen und steuern – Digitale Profis
+- /vier-prompt-hacks-fuer-chatgpt - Vier Prompt-Techniken für ChatGPT, Claude und Gemini – Digitale Profis
+- /was-ist-upcoming-gpt-mini-neues-modell-von-openai - OpenAIs kleine KI-Modelle im Überblick – Digitale Profis
+- /welches-chatgpt-modell-sollte-man-verwenden - Welches ChatGPT-Modell sollte man 2026 verwenden? – Digitale Profis
+- /autor/johannes-hartenbauer - Johannes Hartenbauer – Autor bei Digitale Profis
+- /autor/timothy-meixner - Timothy Meixner – Autor bei Digitale Profis
+- /artikel/page/2 - Artikel – Digitale Profis
+- /artikel/page/5 - Artikel – Digitale Profis
 
 ## Tradeoffs
 

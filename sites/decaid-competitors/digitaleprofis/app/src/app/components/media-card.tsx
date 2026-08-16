@@ -26,7 +26,7 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
         {" "}
         <div className={cn("flex flex-wrap justify-start items-center gap-y-2 gap-x-3 text-muted-foreground text-[0.8125rem] [font-weight:520] leading-[1.125rem]", styles.className6)}>
           <div className="flex flex-wrap gap-1.5">
-            <a className="h-7 border border-solid border-primary flex py-1 px-[0.5625rem] rounded-[999px] items-center text-color-007 font-semibold bg-surface-7 cursor-pointer" data-component="button" href="/artikel" rel="tag">
+            <a className="h-7 border border-solid border-primary flex py-1 px-[0.5625rem] rounded-[999px] items-center text-color-007 font-semibold bg-surface-6 cursor-pointer" data-component="button" href="/artikel" rel="tag">
               Artikel
             </a>
           </div>
@@ -50,7 +50,7 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
         </div>
         {" "}
         <div className={cn("flex flex-wrap justify-between items-center gap-y-2 gap-x-3 text-muted-foreground text-[0.8125rem] [font-weight:520] leading-[1.125rem]", styles.className9)}>
-          <a className="block text-color-006 text-[0.9375rem] font-semibold leading-[1.3125rem] cursor-pointer" data-component="link" href={d.href3} target="_self">
+          <a className="block text-color-005 text-[0.9375rem] font-semibold leading-[1.3125rem] cursor-pointer" data-component="link" href={d.href3} target="_self">
             Weiterlesen
             <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap [clip-path:inset(50%)]">
               {d.label}

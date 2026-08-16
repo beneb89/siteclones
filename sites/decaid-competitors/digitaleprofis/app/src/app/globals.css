@@ -23,32 +23,32 @@
   --color-muted: var(--muted);
   --color-surface-8: var(--surface-8);
   --color-surface-5: var(--surface-5);
-  --color-color-005: var(--color-005);
-  --color-clr-2: var(--clr-2);
   --color-color-006: var(--color-006);
+  --color-clr-2: var(--clr-2);
+  --color-color-005: var(--color-005);
   --color-surface-4: var(--surface-4);
   --color-surface-2: var(--surface-2);
   --color-muted-foreground: var(--muted-foreground);
   --color-color-007: var(--color-007);
   --color-primary: var(--primary);
-  --color-surface-7: var(--surface-7);
-  --color-clr-3: var(--clr-3);
+  --color-surface-6: var(--surface-6);
+  --color-surface-15: var(--surface-15);
   --color-surface: var(--surface);
   --color-color-001: var(--color-001);
   --color-color-008: var(--color-008);
+  --color-surface-16: var(--surface-16);
+  --color-clr-3: var(--clr-3);
   --color-clr-4: var(--clr-4);
   --color-clr-5: var(--clr-5);
+  --color-color-004: var(--color-004);
+  --color-surface-11: var(--surface-11);
+  --color-color-012: var(--color-012);
   --color-clr-6: var(--clr-6);
   --color-clr-7: var(--clr-7);
-  --color-color-004: var(--color-004);
   --color-surface-10: var(--surface-10);
-  --color-color-012: var(--color-012);
-  --color-clr-8: var(--clr-8);
-  --color-clr-9: var(--clr-9);
-  --color-surface-11: var(--surface-11);
-  --color-surface-6: var(--surface-6);
+  --color-surface-7: var(--surface-7);
   --color-surface-3: var(--surface-3);
-  --color-clr-10: var(--clr-10);
+  --color-clr-8: var(--clr-8);
   --color-surface-12: var(--surface-12);
   --color-accent: var(--accent);
   --color-color-003: var(--color-003);
@@ -57,8 +57,13 @@
   --color-color-010: var(--color-010);
   --color-color-013: var(--color-013);
   --color-color-014: var(--color-014);
-  --color-clr-11: var(--clr-11);
+  --color-surface-13: var(--surface-13);
+  --color-color-016: var(--color-016);
+  --color-surface-14: var(--surface-14);
   --color-color-015: var(--color-015);
+  --color-color-017: var(--color-017);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
 }
 
 /* Design tokens (values). */
@@ -69,25 +74,29 @@
   --accent: rgb(0, 184, 132);
   --border: rgba(26, 25, 24, 0.08);
   --muted-foreground: rgb(112, 107, 103);
-  --surface: rgba(255, 255, 255, 0.16);
   --muted: rgb(90, 85, 81);
+  --surface: rgba(255, 255, 255, 0.16);
   --surface-2: rgb(233, 224, 216);
   --surface-3: rgba(255, 255, 255, 0.12);
   --surface-4: rgb(248, 244, 241);
   --surface-5: rgba(255, 255, 255, 0.92);
-  --surface-6: rgba(248, 244, 241, 0.36);
-  --surface-7: rgb(246, 238, 233);
+  --surface-6: rgb(246, 238, 233);
+  --surface-7: rgba(248, 244, 241, 0.36);
   --surface-8: rgba(248, 244, 241, 0.82);
   --surface-9: rgba(255, 255, 255, 0.86);
-  --surface-10: rgba(245, 245, 247, 0.08);
-  --surface-11: rgba(248, 244, 241, 0.9);
+  --surface-10: rgba(248, 244, 241, 0.9);
+  --surface-11: rgba(245, 245, 247, 0.08);
   --surface-12: rgb(240, 240, 240);
+  --surface-13: rgb(247, 249, 249);
+  --surface-14: rgb(219, 219, 219);
+  --surface-15: rgba(255, 255, 255, 0.72);
+  --surface-16: rgb(251, 248, 246);
   --color-001: rgb(245, 245, 247);
   --color-002: rgb(66, 66, 69);
   --color-003: rgb(0, 0, 0);
   --color-004: rgb(230, 177, 147);
-  --color-005: rgba(255, 255, 255, 0.55);
-  --color-006: rgb(63, 74, 77);
+  --color-005: rgb(63, 74, 77);
+  --color-006: rgba(255, 255, 255, 0.55);
   --color-007: rgb(141, 78, 48);
   --color-008: rgba(245, 245, 247, 0.68);
   --color-009: rgb(15, 20, 25);
@@ -96,7 +105,9 @@
   --color-012: rgba(245, 245, 247, 0.75);
   --color-013: rgb(0, 111, 214);
   --color-014: rgb(29, 155, 240);
-  --color-015: rgb(249, 24, 128);
+  --color-015: rgb(28, 30, 33);
+  --color-016: rgb(249, 24, 128);
+  --color-017: rgb(115, 115, 115);
 }
 
 :root {
@@ -177,15 +188,14 @@
   --clr-0: rgba(0, 0, 0, 0.07);
   --clr-1: rgba(0, 0, 0, 0);
   --clr-2: rgba(0, 0, 0, 0.24);
-  --clr-3: rgba(255, 255, 255, 0.72);
-  --clr-4: rgb(251, 248, 246);
-  --clr-5: rgba(182, 107, 70, 0.24);
-  --clr-6: rgb(44, 44, 46);
-  --clr-7: rgb(17, 17, 17);
-  --clr-8: rgb(255, 180, 171);
-  --clr-9: rgba(251, 248, 246, 0.74);
-  --clr-10: rgba(0, 0, 0, 0.04);
-  --clr-11: rgb(247, 249, 249);
+  --clr-3: rgba(182, 107, 70, 0.24);
+  --clr-4: rgb(44, 44, 46);
+  --clr-5: rgb(17, 17, 17);
+  --clr-6: rgb(255, 180, 171);
+  --clr-7: rgba(251, 248, 246, 0.74);
+  --clr-8: rgba(0, 0, 0, 0.04);
+  --clr-9: rgb(74, 93, 249);
+  --clr-10: rgb(179, 38, 30);
 }
 
 @layer base {

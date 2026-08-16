@@ -1,0 +1,10 @@
+.cn0{display:block;color:var(--foreground);font-family:Geist, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:25.6px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link-13"]{transition:background-color 0.16s, border-color 0.16s, color 0.16s, transform 0.16s}
+[data-ditto-id="style-dl"]{transition:background-color 0.16s, border-color 0.16s, color 0.16s, transform 0.16s}
+[data-ditto-id="style-button-10"]:hover{background-color:rgb(52, 64, 67)}
+[data-ditto-id="style-link-13"]:hover{background-color:rgb(52, 64, 67);transform:matrix(1, 0, 0, 1, 0, -1)}
+[data-ditto-id="style-dl"]:hover{background-color:rgb(52, 64, 67);transform:matrix(1, 0, 0, 1, 0, -1)}
+[data-ditto-id="style-ki-tools-aus-china-modelle-und-anbieter-im-berblic"]:hover{border-bottom-color:rgb(63, 74, 77);border-left-color:rgb(63, 74, 77);border-right-color:rgb(63, 74, 77);border-top-color:rgb(63, 74, 77);color:rgb(63, 74, 77);outline-color:rgb(63, 74, 77);text-decoration-color:rgb(63, 74, 77);text-decoration-line:underline}
+[data-ditto-id="style-p-60"]:hover{border-bottom-color:rgb(63, 74, 77);border-left-color:rgb(63, 74, 77);border-right-color:rgb(63, 74, 77);border-top-color:rgb(63, 74, 77);color:rgb(63, 74, 77);outline-color:rgb(63, 74, 77);text-decoration-color:rgb(63, 74, 77);text-decoration-line:underline}
