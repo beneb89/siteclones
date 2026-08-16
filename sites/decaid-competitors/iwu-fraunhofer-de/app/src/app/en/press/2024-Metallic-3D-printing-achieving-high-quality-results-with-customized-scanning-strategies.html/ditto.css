@@ -1,0 +1,65 @@
+.cn0{display:block;color:var(--foreground);font-family:FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:200;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 1601px) {
+.cn0{font-size:16.8px;line-height:21.6px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-42"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-38"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-45"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-div-46"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-table"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-tr-3"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-br-2"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
+[data-ditto-id="style-ul-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-6"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-8"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-71"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-ul-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-10"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-16"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-19"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-span-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-8"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-107"]:hover{text-decoration-line:none}
+[data-ditto-id="style-image-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-44"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li-15"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-80"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li-12"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-31"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-101"]:hover{text-decoration-line:none}
+[data-ditto-id="style-b-5"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-42"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-source-13"]:hover{text-decoration-line:none}
+[data-ditto-id="style-source-9"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-38"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-div-45"]:hover{background-color:rgb(59, 89, 152);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-div-46"]:hover{background-color:rgb(0, 0, 0);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-table"]:hover{background-color:rgb(2, 100, 102);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-tr-3"]:hover{background-color:rgb(179, 18, 23);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-br-2"]:hover{background-color:rgb(247, 119, 55);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-a"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-heading-17"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-45"]:focus{background-color:rgb(59, 89, 152)}
+[data-ditto-id="style-div-46"]:focus{background-color:rgb(0, 0, 0)}
+[data-ditto-id="style-tr-3"]:focus{background-color:rgb(179, 18, 23)}
+[data-ditto-id="style-br-2"]:focus{background-color:rgb(247, 119, 55)}

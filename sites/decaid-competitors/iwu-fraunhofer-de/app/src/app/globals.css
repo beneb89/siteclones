@@ -15,20 +15,21 @@
   --breakpoint-2xl: 1601px;
   --color-border: var(--border);
   --color-primary: var(--primary);
-  --color-color-001: var(--color-001);
+  --color-accent: var(--accent);
   --color-background: var(--background);
   --color-clr-0: var(--clr-0);
-  --color-accent: var(--accent);
+  --color-color-001: var(--color-001);
   --color-foreground: var(--foreground);
   --color-muted-foreground: var(--muted-foreground);
   --color-clr-1: var(--clr-1);
-  --color-color-004: var(--color-004);
-  --color-color-002: var(--color-002);
   --color-color-003: var(--color-003);
+  --color-color-002: var(--color-002);
+  --color-color-004: var(--color-004);
   --color-surface-2: var(--surface-2);
   --color-clr-2: var(--clr-2);
   --color-surface: var(--surface);
   --color-clr-3: var(--clr-3);
+  --color-color-005: var(--color-005);
 }
 
 /* Design tokens (values). */
@@ -36,15 +37,16 @@
   --background: rgb(255, 255, 255);
   --foreground: rgb(85, 85, 85);
   --primary: rgb(31, 130, 192);
-  --accent: rgb(102, 191, 172);
+  --accent: rgb(0, 147, 116);
   --border: rgb(199, 202, 204);
   --muted-foreground: rgb(153, 153, 153);
   --surface: rgb(247, 247, 247);
   --surface-2: rgb(238, 239, 241);
-  --color-001: rgb(0, 147, 116);
+  --color-001: rgb(102, 191, 172);
   --color-002: rgb(51, 184, 202);
-  --color-003: rgb(109, 191, 169);
-  --color-004: rgb(177, 200, 0);
+  --color-003: rgb(177, 200, 0);
+  --color-004: rgb(109, 191, 169);
+  --color-005: rgb(255, 0, 0);
 }
 
 :root {

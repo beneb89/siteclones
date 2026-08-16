@@ -6,9 +6,8 @@ export type Tile6Data = {
   text: string;
   text2: string;
   text3: string;
-  text4: string;
   label: string;
-  text5: string;
+  text4: string;
   ariaLabel: string;
   href: string;
 };
@@ -41,20 +40,16 @@ export default function Tile6({ d, styles }: { d: Tile6Data; styles: Tile6Styles
             {d.text}
           </div>
           {" "}
-          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className3)}>
+          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className3)}>
             {d.text2}
           </div>
           {" "}
-          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className4)}>
+          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute", styles.className4)}>
             {d.text3}
           </div>
           {" "}
-          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className5)}>
+          <div className={cn("inline-block mr-[0.9375rem] mb-2 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-color-005 before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className5)} title={d.label}>
             {d.text4}
-          </div>
-          {" "}
-          <div className={cn("inline-block mr-[0.9375rem] mb-2 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-color-005 before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className6)} title={d.label}>
-            {d.text5}
           </div>
           {" "}
         </div>

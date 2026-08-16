@@ -1,19 +1,18 @@
 import type { TextLinkStyles } from "../_styles";
 import { cn } from "../../../../lib/utils";
 export type TextLinkData = {
+  style?: string;
   href: string;
   label: string;
 };
 /** A text link. */
 export default function TextLink({ d, styles }: { d: TextLinkData; styles: TextLinkStyles }) {
   return (
-    <a className={cn("min-h-8 border-solid flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer", styles.className)} href={d.href} target="_self">
+    <a className={cn("w-full border-2 border-solid border-clr-1 block clear-both py-2 px-3 text-sm font-medium leading-5 whitespace-nowrap text-nowrap bg-clr-1 cursor-pointer", styles.className)} style={d.style} href={d.href}>
       {" "}
-      <div className="block min-w-0">
-        <div className="flex">
-          <i className={cn("min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface", styles.className2)} />
-          {" "}
-          <div className="block min-w-0 my-auto font-medium leading-5">
+      <div className="block">
+        <div className="flex items-center">
+          <div className="block min-w-0">
             {d.label}
           </div>
           {" "}

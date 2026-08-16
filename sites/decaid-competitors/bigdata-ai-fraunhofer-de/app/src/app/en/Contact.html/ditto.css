@@ -31,7 +31,7 @@
 [data-ditto-id="style-p-5"]:hover{text-decoration-line:none}
 [data-ditto-id="style-li"]:hover{text-decoration-line:none}
 [data-ditto-id="style-select"]:hover{text-decoration-line:none}
-[data-ditto-id="style-input"]:hover{background-color:rgba(31, 130, 192, 0.26);box-shadow:rgba(31, 130, 192, 0.757) 0px 0px 0px 15.151px inset;color:rgb(173, 209, 232);outline-color:rgb(173, 209, 232);text-decoration-color:rgb(173, 209, 232)}
+[data-ditto-id="style-input"]:hover{background-color:rgba(31, 130, 192, 0.976);box-shadow:rgb(31, 130, 192) 0px 0px 0px 20px inset;color:rgb(255, 255, 255);outline-color:rgb(255, 255, 255);text-decoration-color:rgb(255, 255, 255)}
 [data-ditto-id="style-input-3"]:hover{background-color:rgb(66, 100, 170)}
 [data-ditto-id="style-span-14"]:hover{background-color:rgb(25, 33, 41)}
 [data-ditto-id="style-div-34"]:hover{background-color:rgb(10, 134, 204)}
@@ -41,4 +41,3 @@
 [data-ditto-id="style-div-35"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-button-3"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-form-2"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-input"]:focus{background-color:rgba(31, 130, 192, 0.043);box-shadow:rgba(31, 130, 192, 0.145) 0px 0px 0px 2.88065px inset;color:rgb(63, 148, 201);outline-color:rgb(63, 148, 201);text-decoration-color:rgb(63, 148, 201)}

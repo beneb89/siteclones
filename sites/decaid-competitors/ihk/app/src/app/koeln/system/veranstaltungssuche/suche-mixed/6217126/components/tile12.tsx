@@ -41,7 +41,7 @@ export default function Tile12({ d, styles }: { d: Tile12Data; styles: Tile12Sty
             {d.text3}
           </div>
           {" "}
-          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5", styles.className2)}>
+          <div className="inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]">
             {d.text4}
           </div>
           {" "}

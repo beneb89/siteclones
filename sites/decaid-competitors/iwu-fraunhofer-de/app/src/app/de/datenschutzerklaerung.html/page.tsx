@@ -90,77 +90,77 @@ const ListRow_meta: string[][] = [
     ["n53", "style-link-13"]
 ];
 const Tile_meta: string[][] = [
-    ["n121", "style-ul-4"],
-    ["n123", "style-span-3"],
-    ["n125", "style-ul-5"],
-    ["style-ul-10", "style-div-6"],
-    ["style-div-62", "style-div-7"],
-    ["style-link-37", "style-div-8"],
-    ["style-div-38", "style-heading"],
-    ["n135", "style-li-2"],
-    ["style-br-2", "style-li"],
-    ["style-li-7", "style-heading-2"],
-    ["style-ul", "style-li-3"]
+    ["style-heading-19", "style-ul-5"],
+    ["n123", "style-span-4"],
+    ["n125", "style-ul-6"],
+    ["style-source-12", "style-source-6"],
+    ["style-source-14", "style-source-7"],
+    ["style-image-2", "style-figcaption"],
+    ["style-div-47", "style-div-19"],
+    ["style-div-102", "style-li-5"],
+    ["style-br-3", "style-li-3"],
+    ["style-li-9", "style-heading-4"],
+    ["style-ul-2", "style-li-6"]
 ];
 const ListRow2_meta: string[][] = [
-    ["style-div-60", "style-div-42"],
-    ["style-heading-15", "style-div-87"],
-    ["style-ul-11", "style-li-14"],
-    ["style-link-26", "style-li-8"],
-    ["style-link-27", "style-li-12"]
+    ["style-div-67", "style-div-51"],
+    ["style-heading-16", "style-div-93"],
+    ["style-ul-10", "style-li-16"],
+    ["style-link-26", "style-li-10"],
+    ["style-link-27", "style-li-14"]
 ];
 const ListRow2_meta2: string[][] = [
-    ["style-div-74", "style-nav"],
-    ["style-ul-12", "style-li-10"],
-    ["style-link-30", "style-li-11"],
-    ["style-link-31", "style-li-16"]
+    ["style-div-80", "style-nav"],
+    ["style-ul-11", "style-li-12"],
+    ["style-link-30", "style-li-13"],
+    ["style-link-31", "style-li-18"]
 ];
 const ListRow2_meta3: string[][] = [
-    ["style-div-71", "style-aside"],
-    ["style-div-91", "style-div-75"],
-    ["style-div-66", "style-div-25"]
+    ["style-div-77", "style-aside"],
+    ["style-div-105", "style-div-81"],
+    ["style-div-72", "style-div-36"]
 ];
 const ListRow2_meta4: string[][] = [
-    ["style-div-43", "style-div"],
-    ["style-heading-8", "style-div-2"],
-    ["style-div-18", "style-div-83"],
-    ["style-div-57", "style-section-3"],
-    ["style-div-26", "style-div-33"]
+    ["style-div-52", "style-div-12"],
+    ["style-heading-10", "style-div-13"],
+    ["style-div-29", "style-div-89"],
+    ["style-div-64", "style-section-3"],
+    ["style-div-37", "style-div-42"]
 ];
 const ListRow3_meta: string[][] = [
-    ["style-div-51"],
+    ["style-div-58"],
     ["style-figure-2"],
     ["style-picture"]
 ];
 const ListRow2_meta5: string[][] = [
-    ["style-div-45", "style-heading-5"],
-    ["style-p-11", "style-div-27"],
-    ["style-div-64", "style-aside-2"],
-    ["style-div-102", "style-div-61"]
+    ["style-div-54", "style-heading-7"],
+    ["style-p-11", "style-div-38"],
+    ["style-div-70", "style-aside-2"],
+    ["style-div-103", "style-div-68"]
 ];
 const ListRow2_meta6: string[][] = [
-    ["style-heading-10", "style-div-3"],
-    ["style-button-6", "style-div-4"],
-    ["style-div-47", "style-div-46"]
+    ["style-th-3", "style-th"],
+    ["style-tr-2", "style-td"],
+    ["style-td-3", "style-a"]
 ];
 const Tile2_meta: string[][] = [
-    ["style-heading-6", "style-div-11"],
-    ["style-button-7", "style-div-12"],
-    ["n301", "style-div-13"]
+    ["style-heading-8", "style-div-22"],
+    ["style-button-5", "style-div-23"],
+    ["style-div-108", "style-div-24"]
 ];
 const ListRow3_meta2: string[][] = [
-    ["style-div-67"],
-    ["style-div-95"],
-    ["n348"],
-    ["style-link-69"],
-    ["style-div-68"],
+    ["style-div-73"],
+    ["n347"],
+    ["style-div-96"],
+    ["style-link-70"],
+    ["style-div-74"],
     ["n351"],
-    ["style-heading-11"]
+    ["style-heading-12"]
 ];
 const Tile3_meta: string[][] = [
-    ["style-div-5", "style-div-69"],
-    ["style-link-40", "style-div-70"],
-    ["n360", "style-heading-12"]
+    ["style-div-14", "style-div-75"],
+    ["style-link-51", "style-div-76"],
+    ["n360", "style-heading-13"]
 ];
 
 export default function Page() {
@@ -222,7 +222,7 @@ export default function Page() {
                     <div className="w-[33.75rem] h-[2.8125rem] min-h-[2.6875rem] inline-block pr-[0.9375rem] align-top text-[0.75rem] tracking-[0.3px] max-md:w-[96.3px] max-lg:h-[2.6875rem] max-lg:border-r max-lg:border-solid max-lg:border-r-border max-lg:block max-lg:absolute max-lg:top-0 max-md:left-[188.7px] max-lg:pr-0 md:max-lg:w-[97.3px] md:max-lg:border-l md:max-lg:border-l-border md:max-lg:left-[580.7px] 2xl:w-[642.3px] 2xl:h-13.5 2xl:min-h-[3.225rem] 2xl:pr-4.5 2xl:text-[0.875rem] 2xl:tracking-[0.36px]">
                       {" "}
                       <nav className="h-full block" data-component="nav">
-                        <ul className="h-full block [list-style-type:none] list-outside" data-ditto-id="style-ul-15">
+                        <ul className="h-full block [list-style-type:none] list-outside" data-ditto-id="style-ul-13">
                           <li className="h-full inline-block relative align-top font-normal tracking-[0.9px] uppercase cursor-pointer max-lg:hidden 2xl:tracking-[1.08px]">
                             <a className="h-full block py-[0.9375rem] px-[1.5625rem] text-primary 2xl:py-4.5 2xl:px-7.5" data-ditto-id="style-link-6" data-component="link" href="/de/karriere.html">
                               Karriere
@@ -252,17 +252,17 @@ export default function Page() {
                   </div>
                   {" "}
                   <div className="block" id="nav">
-                    <div className="w-230 h-11 min-h-[2.6875rem] block -mr-20 pr-20 pb-px bg-color-001 max-lg:w-[2.8125rem] max-lg:float-right max-lg:mr-0 max-lg:pr-0 2xl:w-312 2xl:h-[3.2875rem] 2xl:min-h-[3.225rem] 2xl:-mr-24 2xl:pr-24">
+                    <div className="w-230 h-11 min-h-[2.6875rem] block -mr-20 pr-20 pb-px bg-accent max-lg:w-[2.8125rem] max-lg:float-right max-lg:mr-0 max-lg:pr-0 2xl:w-312 2xl:h-[3.2875rem] 2xl:min-h-[3.225rem] 2xl:-mr-24 2xl:pr-24">
                       <nav className="h-full block" data-component="nav">
                         <ul className="w-full h-full table relative px-[0.9375rem] [list-style-type:none] list-outside max-lg:static max-lg:inset-auto max-lg:px-0 2xl:px-4.5">
                           <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden">
                             <span className="w-full h-full table text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:text-[0.875rem] 2xl:tracking-[1.08px] after:content-[''] after:table-cell after:relative after:inset-0 after:w-3 after:h-[2.0625rem] after:pt-[0.3125rem] after:px-[0.3125rem] after:text-background after:text-xs after:leading-3 after:text-center max-lg:after:w-[15%] max-lg:after:h-full max-lg:after:inset-auto 2xl:after:w-[1.1125rem] 2xl:after:h-[2.6rem] 2xl:after:px-1.5 2xl:after:text-sm 2xl:after:leading-[0.875rem]">
-                              <a className="h-full border-b-[5px] border-solid border-b-clr-0 table-cell relative pt-[0.3125rem] px-[0.3125rem] align-middle 2xl:px-1.5" data-ditto-id="style-link-70" data-component="link" href="/de/Ueber-uns.html">
+                              <a className="h-full border-b-[5px] border-solid border-b-clr-0 table-cell relative pt-[0.3125rem] px-[0.3125rem] align-middle 2xl:px-1.5" data-ditto-id="style-link-71" data-component="link" href="/de/Ueber-uns.html">
                                 Über uns
                               </a>
                             </span>
                             {" "}
-                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-color-001 2xl:-left-96 2xl:-mx-24 2xl:px-24">
+                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-accent 2xl:-left-96 2xl:-mx-24 2xl:px-24">
                               <span className="w-12.5 h-12.5 block absolute z-1010 -ml-12.5 text-background text-xs font-normal leading-12.5 tracking-[0.9px] text-center uppercase cursor-pointer max-lg:hidden 2xl:w-15 2xl:h-15 2xl:-ml-15 2xl:text-sm 2xl:leading-15 2xl:tracking-[1.08px]" data-ditto-id="style-span">
                                 [X]
                               </span>
@@ -273,7 +273,7 @@ export default function Page() {
                                 </a>
                               </span>
                               {" "}
-                              <ul className="block pt-0.5 [list-style-type:none] list-outside" data-ditto-id="style-ul-16">
+                              <ul className="block pt-0.5 [list-style-type:none] list-outside" data-ditto-id="style-ul-14">
                                 <li className="w-[17.5rem] h-[3.3125rem] inline-block opacity-0 mb-[1.5625rem] px-[1.5625rem] align-top">
                                   {" "}
                                   <span className="w-full table relative text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:text-[0.875rem] 2xl:tracking-[1.08px] after:content-[''] after:block after:absolute after:top-0 after:-right-5 after:-bottom-0.5 after:left-[12.375rem] after:w-2.5 after:h-2.5 after:p-[1.3125rem] after:text-background after:text-xs after:leading-3 after:text-left max-lg:after:bottom-auto max-lg:after:left-auto 2xl:after:-right-6 2xl:after:-bottom-[0.15rem] 2xl:after:left-[17.85rem] 2xl:after:w-3 2xl:after:h-3 2xl:after:p-[1.575rem] 2xl:after:text-sm 2xl:after:leading-[0.875rem]">
@@ -282,7 +282,7 @@ export default function Page() {
                                     </a>
                                   </span>
                                   {" "}
-                                  <ul className="h-[0.1875rem] border-b border-solid border-b-accent block opacity-0 max-h-0 pt-0.5 overflow-hidden [list-style-type:none] list-outside">
+                                  <ul className="h-[0.1875rem] border-b border-solid border-b-color-001 block opacity-0 max-h-0 pt-0.5 overflow-hidden [list-style-type:none] list-outside">
                                     {ListRow_data.map((d, i) => <ListRow key={i} d={d} />)}
                                   </ul>
                                   {" "}
@@ -330,19 +330,19 @@ export default function Page() {
                             </span>
                             {" "}
                           </li>
-                          <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden" data-ditto-id="style-li-17">
+                          <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden" data-ditto-id="style-li-19">
                             <span className="w-full h-full table text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:text-[0.875rem] 2xl:tracking-[1.08px] after:content-[''] after:table-cell after:relative after:inset-0 after:w-[1.5375rem] after:h-[2.0625rem] after:pt-[0.3125rem] after:px-[0.3125rem] after:text-background after:text-xs after:leading-3 after:text-center max-lg:after:w-[15%] max-lg:after:h-full max-lg:after:inset-auto 2xl:after:w-[2.1875rem] 2xl:after:h-[2.6rem] 2xl:after:px-1.5 2xl:after:text-sm 2xl:after:leading-[0.875rem]">
                               <a className="h-full border-b-[5px] border-solid border-b-clr-0 table-cell relative pt-[0.3125rem] px-[0.3125rem] align-middle 2xl:px-1.5" data-component="link" href="/de/zukunftsthemen.html">
                                 Zukunftsthemen
                               </a>
                             </span>
                             {" "}
-                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-color-001 2xl:-left-96 2xl:-mx-24 2xl:px-24">
+                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-accent 2xl:-left-96 2xl:-mx-24 2xl:px-24">
                               <span className="w-12.5 h-12.5 block absolute z-1010 -ml-12.5 text-background text-xs font-normal leading-12.5 tracking-[0.9px] text-center uppercase cursor-pointer max-lg:hidden 2xl:w-15 2xl:h-15 2xl:-ml-15 2xl:text-sm 2xl:leading-15 2xl:tracking-[1.08px]" data-ditto-id="style-span-2">
                                 [X]
                               </span>
                               {" "}
-                              <span className="inline-block mt-[1.5625rem] mb-[0.3125rem] px-[1.5625rem] text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase max-lg:hidden 2xl:mt-7.5 2xl:mb-1.5 2xl:px-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-span-5">
+                              <span className="inline-block mt-[1.5625rem] mb-[0.3125rem] px-[1.5625rem] text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase max-lg:hidden 2xl:mt-7.5 2xl:mb-1.5 2xl:px-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-span-7">
                                 <a className="inline-block text-sm leading-4.5 tracking-[1.05px] cursor-pointer 2xl:text-[1.0625rem] 2xl:leading-[1.375rem] 2xl:tracking-[1.26px]" data-component="link" href="/de/zukunftsthemen.html">
                                   Zukunftsthemen
                                 </a>
@@ -385,16 +385,16 @@ export default function Page() {
                             {" "}
                           </li>
                           <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden">
-                            <span className="w-full h-full table text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-span-6">
+                            <span className="w-full h-full table text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-span-8">
                               <a className="h-full border-b-[5px] border-solid border-b-clr-0 table-cell relative pt-[0.3125rem] px-[0.3125rem] align-middle 2xl:px-1.5" data-component="link" href="/de/referenzprojekte-des-fraunhofer-iwu.html">
                                 Referenzprojekte
                               </a>
                             </span>
                             {" "}
                           </li>
-                          <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden" data-ditto-id="style-li-18">
+                          <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden" data-ditto-id="style-li-20">
                             <span className="w-full h-full table text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:text-[0.875rem] 2xl:tracking-[1.08px]">
-                              <a className="h-full border-b-[5px] border-solid border-b-clr-0 table-cell relative pt-[0.3125rem] px-[0.3125rem] align-middle 2xl:px-1.5" data-component="link" href="/de/veranstaltungen-und-messen.html">
+                              <a className="h-full border-b-[5px] border-solid border-b-clr-0 table-cell relative pt-[0.3125rem] px-[0.3125rem] align-middle 2xl:px-1.5" data-ditto-id="style-link-72" data-component="link" href="/de/veranstaltungen-und-messen.html">
                                 Termine
                               </a>
                             </span>
@@ -452,7 +452,7 @@ export default function Page() {
           {" "}
           <div className="h-34 min-h-21 border-t border-solid border-t-border border-r border-r-border border-l border-l-border block relative clear-both bg-background max-md:min-h-[8.4375rem] max-lg:-mx-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:h-[10.1875rem] 2xl:min-h-[6.3rem] before:content-[''] before:block before:absolute before:-inset-y-px before:right-279.5 before:-left-20 before:-z-1 before:h-[8.4375rem] max-md:before:right-[23.4375rem] max-lg:before:h-[8.5625rem] md:max-lg:before:right-192 2xl:before:right-383.5 2xl:before:-left-24 2xl:before:h-40.5 after:content-[''] after:block after:absolute after:-inset-y-px after:-right-20 after:left-279.5 after:-z-1 after:h-[8.4375rem] max-md:after:left-[23.4375rem] max-lg:after:h-[8.5625rem] md:max-lg:after:left-192 2xl:after:-right-24 2xl:after:left-383.5 2xl:after:h-40.5" data-ditto-id="style-link-25">
             <div className="w-3/4 h-full min-h-[8.4375rem] block py-[0.9375rem] px-[1.5625rem] align-top text-sm leading-5.5 max-lg:w-full max-lg:inline-block 2xl:min-h-40.5 2xl:py-4.5 2xl:px-7.5 2xl:text-[1.0625rem] 2xl:leading-[1.625rem]">
-              <h1 className="block mt-5 mb-2.5 text-primary text-[2rem] leading-9 tracking-[0.8px] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-6 2xl:mb-3 2xl:text-[2.375rem] 2xl:leading-[2.6875rem] 2xl:tracking-[0.96px]" data-component="heading">
+              <h1 className="block mt-5 mb-2.5 text-primary text-[2rem] leading-9 tracking-[0.8px] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-6 2xl:mb-3 2xl:text-[2.375rem] 2xl:leading-[2.6875rem] 2xl:tracking-[0.96px]" data-ditto-id="style-div" data-component="heading">
                 Datenschutz
               </h1>
               {" "}
@@ -463,37 +463,37 @@ export default function Page() {
         </header>
         {" "}
         <div className="block">
-          <div className="block">
+          <div className="block" data-ditto-id="style-heading-20">
             <div className="block">
-              <div className="border-t border-solid border-t-border border-r border-r-border border-l border-l-border block">
+              <div className="border-t border-solid border-t-border border-r border-r-border border-l border-l-border block" data-ditto-id="style-div-104">
                 <div className="block">
-                  <section className="block" data-ditto-id="style-div-77">
+                  <section className="block" data-ditto-id="style-div-83">
                     <div className="block">
                       <div className="block pb-[1.5625rem] 2xl:pb-7.5" data-ditto-id="style-section-2">
-                        <article className="block" data-ditto-id="style-div-88">
-                          <div className="block" data-ditto-id="style-div-78">
-                            <div className="inline-block mt-[1.5625rem] align-top 2xl:mt-7.5" data-ditto-id="style-article">
+                        <article className="block" data-ditto-id="style-div-94">
+                          <div className="block" data-ditto-id="style-div-84">
+                            <div className="inline-block mt-[1.5625rem] align-top 2xl:mt-7.5" data-ditto-id="style-article-3">
                               {" "}
-                              <div className="block px-[1.5625rem] text-sm leading-5.5 2xl:px-7.5 2xl:text-[1.0625rem] 2xl:leading-[1.625rem]" data-ditto-id="style-div-72">
-                                <p className="block mb-2.5 2xl:mb-3">
+                              <div className="block px-[1.5625rem] text-sm leading-5.5 2xl:px-7.5 2xl:text-[1.0625rem] 2xl:leading-[1.625rem]" data-ditto-id="style-div-78">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-107">
                                   Im Rahmen der Nutzung dieser Webseite werden personenbezogene Daten von Ihnen durch uns als den für die Datenverarbeitung Verantwortlichen verarbeitet und für die Dauer gespeichert, die zur Erfüllung der festgelegten Zwecke und gesetzlicher Verpflichtungen erforderlich ist. Im Folgenden informieren wir Sie darüber, um welche Daten es sich dabei handelt, auf welche Weise sie verarbeitet werden und welche Rechte Ihnen diesbezüglich zustehen.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-58">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-65">
                                   Personenbezogene Daten sind gemäß Art. 4 Nr. 1 Datenschutzgrundverordnung (DSGVO) alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.
                                 </p>
                                 {Tile_data.map((d, i) => <Tile key={i} d={d} />)}
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-link-38" />
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-link-49" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-li-9" data-component="heading">
-                                  <a className="inline underline" data-ditto-id="style-link-39" id="_Toc1" name="_Toc1" />
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-li-11" data-component="heading">
+                                  <a className="inline underline" data-ditto-id="style-link-50" id="_Toc1" name="_Toc1" />
                                   1. Name und Kontaktdaten des für die Verarbeitung Verantwortlichen sowie des betrieblichen Datenschutzbeauftragten
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-56">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-63">
                                   {"Diese Datenschutzinformation gilt für die Datenverarbeitung auf unserer Webseite "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-div-9" data-component="link" href="/">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-div-20" data-component="link" href="/">
                                     www.iwu.fraunhofer.de
                                   </a>
                                   {" durch den Verantwortlichen:"}
@@ -501,35 +501,35 @@ export default function Page() {
                                 {" "}
                                 <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-aside-3">
                                   Fraunhofer-Gesellschaft
-                                  <br className="inline" data-ditto-id="style-div-84" />
+                                  <br className="inline" data-ditto-id="style-div-90" />
                                   {" zur Förderung der angewandten Forschung e.V."}
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-79">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-85">
                                   Hansastraße 27 c
-                                  <br className="inline" data-ditto-id="style-div-39" />
+                                  <br className="inline" data-ditto-id="style-div-48" />
                                   {" 80686 München"}
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-80">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-86">
                                   für ihr Fraunhofer-Institut für Werkzeugmaschinen und Umformtechnik IWU
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-40">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-49">
                                   (im Folgenden „
-                                  <b className="inline font-normal" data-ditto-id="style-div-73">
+                                  <b className="inline font-normal" data-ditto-id="style-div-79">
                                     Fraunhofer IWU
                                   </b>
                                   “)
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-41">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-50">
                                   E-Mail: info@iwu.fraunhofer.de
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-heading-9">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-heading-11">
                                   {"Der Datenschutzbeauftragte von Fraunhofer ist unter der o.g. Anschrift, zu Händen des Datenschutzbeauftragten bzw. unter "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-div-10" data-component="link" href="mailto:datenschutz@zv.fraunhofer.de">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-div-21" data-component="link" href="mailto:datenschutz@zv.fraunhofer.de">
                                     datenschutz@zv.fraunhofer.de
                                   </a>
                                   {" erreichbar."}
@@ -539,15 +539,15 @@ export default function Page() {
                                   Sie können sich jederzeit bei Fragen zum Datenschutzrecht oder Ihren Betroffenenrechten direkt an unseren Datenschutzbeauftragten wenden.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-28" />
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-27" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-div-55" data-component="heading">
-                                  <a className="inline underline" data-ditto-id="style-ul-13" id="_Toc2" name="_Toc2" />
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-div-62" data-component="heading">
+                                  <a className="inline underline" data-ditto-id="style-ul-12" id="_Toc2" name="_Toc2" />
                                   2. Verarbeitung personenbezogener Daten und Zwecke der Verarbeitung
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-59">
-                                  <b className="inline font-normal" data-ditto-id="style-div-89">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-66">
+                                  <b className="inline font-normal" data-ditto-id="style-div-109">
                                     a) Beim Besuch der Webseite
                                   </b>
                                 </p>
@@ -556,7 +556,7 @@ export default function Page() {
                                   Sie können unsere Webseite aufrufen, ohne Angaben zu Ihrer Identität preisgeben zu müssen. Der auf Ihrem Endgerät eingesetzte Browser sendet lediglich automatisch Informationen an den Server unserer Webseite (z. B. Browsertyp und -version, Datum und Uhrzeit des Zugriffs), um einen Verbindungsaufbau der Webseite zu ermöglichen. Hierzu gehört auch die IP-Adresse Ihres anfragenden Endgerätes. Diese wird temporär in einem sogenannten Logfile gespeichert und nach 4 Tagen automatisch gelöscht.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-35">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-44">
                                   Die Verarbeitung der IP-Adresse erfolgt zu technischen und administrativen Zwecken des Verbindungsaufbaus und -stabilität, um die Sicherheit und Funktionsfähigkeit unserer Webseite zu gewährleisten und etwaige rechtswidrige Angriffe hierauf notfalls verfolgen zu können.
                                 </p>
                                 {" "}
@@ -564,25 +564,25 @@ export default function Page() {
                                   Die Rechtsgrundlage für die Verarbeitung der IP-Adresse ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus dem erwähnten Sicherheitsinteresse und der Erforderlichkeit einer störungsfreien Bereitstellung unserer Webseite.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-81">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-87">
                                   Aus der Verarbeitung der IP-Adresse und anderer Informationen in dem Logfile können wir keine unmittelbaren Rückschlüsse auf Ihre Identität ziehen.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-48">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-55">
                                   Darüber hinaus setzen wir beim Besuch unserer Website Cookies sowie Analysedienste ein. Nähere Erläuterungen dazu erhalten Sie in dieser Datenschutzinformation weiter unten.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-63">
-                                  <b className="inline font-normal" data-ditto-id="style-div-17">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-69">
+                                  <b className="inline font-normal" data-ditto-id="style-div-28">
                                     b) Bei Anmeldung für Veranstaltungen
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-76">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-82">
                                   Wir bieten regelmäßig Veranstaltungen verschiedenster Art über unsere Webseite an, für die Sie sich online anmelden können.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-85">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-91">
                                   Im Rahmen der Anmeldung für eine Veranstaltung müssen einige Pflichtangaben getätigt werden. Dazu gehören
                                 </p>
                                 {" "}
@@ -594,7 +594,7 @@ export default function Page() {
                                   Etwaige weitere Pflichtangaben sind als solche gekennzeichnet (z.B. mittels *). Zudem können oftmals freiwillig weitere Angaben getätigt werden.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-15">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-17">
                                   Die Verarbeitung der Pflichtangaben erfolgt, um Sie als Teilnehmer der Veranstaltung identifizieren zu können, zur Reservierung des Teilnahmeplatzes sowie um den Vertrag über die Teilnahme mit Ihnen zu begründen bzw. umzusetzen und Sie vor, während und im Anschluss an die Veranstaltung mit Informationen zu der Veranstaltung zu versorgen, die Ihnen eine optimale Teilnahme ermöglichen sollen und um uns die Planung und Gewährleistung eines reibungslosen Ablaufs zu ermöglichen. Sofern wir bei kostenpflichtigen Veranstaltungen Ihre Zahlungsdaten erheben, benötigen wir diese zur Abrechnung der Teilnahmegebühr. Die Angabe der freiwilligen Daten ermöglicht es uns, die Veranstaltung interessengerecht planen und durchführen zu können.
                                 </p>
                                 {" "}
@@ -602,19 +602,19 @@ export default function Page() {
                                   Die Datenverarbeitung erfolgt auf Ihre Anfrage hin und ist nach Art. 6 Abs. 1 S. 1 lit. b DSGVO zu den genannten Zwecken für die Erfüllung des Teilnehmervertrages und den vorvertraglichen Maßnahmen erforderlich.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-86">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-92">
                                   Die für die Veranstaltung von uns erhobenen personenbezogenen Daten werden bis zum Ablauf von 6 Monaten von uns gespeichert, soweit Sie nicht in eine darüberhinausgehende Speicherung nach Art. 6 Abs. 1 S. 1 lit. a DSGVO eingewilligt haben.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-65">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-71">
                                   Im Rahmen der Veranstaltungsanmeldung über unsere Webformulare arbeiten wir mit dem Dienstleister mailingwork GmbH, Birkenweg 7, 09569 Oederan (nachfolgend „Mailingwork“) zusammen. Zweck der Zusammenarbeit ist die professionelle Verwaltung von Online-Anmeldungen. Dazu werden die eingegebenen Daten auf den Servern von Mailingwork in Deutschland gespeichert.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-heading-14">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-heading-15">
                                   Wir haben mit Mailingwork einen Auftragsverarbeitungsvertrag abgeschlossen. Durch diesen Vertrag versichert Mailingwork, dass sie die Daten in unserem Auftrag im Einklang mit der Datenschutzgrundverordnung verarbeiten und den Schutz der Rechte der betroffenen Personen gewährleisten.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-ul-8">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-ul-9">
                                   Um die Veranstaltung bildlich zu dokumentieren werden Fotos und Videos angefertigt. Es ist dabei nicht auszuschließen, dass Sie auf den Aufnahmen direkt oder indirekt identifiziert werden können, sodass es sich dabei um personenbezogene Daten handelt.
                                 </p>
                                 {" "}
@@ -626,7 +626,7 @@ export default function Page() {
                                   Darüber hinaus werden die Aufnahmen für die Nachberichterstattung auf unseren Medienplattformen wie Facebook, Instagram, Twitter, LinkedIn usw. oder unserer Webseite veröffentlicht. Diese Verarbeitung ist insbesondere erforderlich, um unsere Veranstaltung zu dokumentieren und zukünftige Veranstaltungen zu bewerben.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-21">
                                   Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 S. 1 lit. f DSGVO. Die genannten Zwecke sind berechtigte Interessen im Sinne der genannten Vorschrift.
                                 </p>
                                 {" "}
@@ -634,13 +634,13 @@ export default function Page() {
                                   Die Aufnahmen werden für 2 Jahre gespeichert.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-4">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-7">
                                   <b className="inline font-normal" data-ditto-id="style-link-3">
                                     c) Bei Anmeldung zu unserem Newsletter
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-13">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-li-15">
                                   Sofern Sie nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrücklich eingewilligt haben, verwenden wir Ihre E-Mail-Adresse dafür, Ihnen regelmäßig ausgewählte Informationen zu übersenden, die Sie über die Arbeit an unserem Institut und/oder Veranstaltungen des Fraunhofer e.V. informieren. Die Themen und Inhalte der ausgewählten Informationen bestimmen sich nach dem Verteiler, für den Sie sich angemeldet haben.
                                 </p>
                                 {" "}
@@ -648,7 +648,7 @@ export default function Page() {
                                   Für den Empfang des Newsletters erheben wir folgende Pflichtangaben:
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-23">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-34">
                                   {ListRow2_data2.map((d, i) => <ListRow2 key={i} d={d} />)}
                                 </ul>
                                 {" "}
@@ -656,57 +656,57 @@ export default function Page() {
                                   Ihren Namen und Ihre Anrede benötigen wir, um Sie persönlich mit unserem Newsletter anzusprechen.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-90">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-101">
                                   Sie können freiwillig weitere Angaben zu Ihrer Person (z. B. Anschrift) tätigen. Wir verwenden diese Daten, um mit Ihnen postalisch Kontakt aufzunehmen (z.B. für den Versand von Veranstaltungsinformationen).
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-span-4">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-span-5">
                                   Nach Ihrer Anmeldung erhalten Sie per E-Mail eine Registrierungsbenachrichtigung, die Sie bestätigen müssen, um den Newsletter zu empfangen (sog. Double Opt-In). Dies dient uns als Nachweis darüber, dass die Registrierung tatsächlich von Ihnen initiiert wurde.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-19">
                                   {"Die Abmeldung ist jederzeit möglich, z.B. über einen Link am Ende eines jeden Newsletters. Alternativ können Sie Ihren Abmeldewunsch gerne auch jederzeit an "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-source-4" data-component="link" href="mailto:kundendatenschutz@iwu.fraunhofer.de">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-source-8" data-component="link" href="mailto:kundendatenschutz@iwu.fraunhofer.de">
                                     kundendatenschutz@iwu.fraunhofer.de
                                   </a>
                                   {" per E-Mail senden ."}
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-image">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-image-3">
                                   Ihre E-Mail-Adresse wird nach Widerruf Ihrer Einwilligung für die Zusendung des Newsletters umgehend gesperrt.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-figcaption-2">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-figcaption-3">
                                   Wir versenden unseren Newsletter mittels des Anbieters mailingwork GmbH, Birkenweg 7, 09569 Oederan (nachfolgend „Mailingwork"). Die E-Mail-Adressen unserer Newsletterempfänger werden in unserem Auftrag auf den Servern von Mailingwork in Deutschland gespeichert.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-82">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-88">
                                   Mailingwork verwendet diese Informationen zum Versand und zur Auswertung der Newsletter in unserem Auftrag. Wir haben dazu mit Mailingwork einen Auftragsverarbeitungsvertrag abgeschlossen. Durch diesen Vertrag versichert Mailingwork, dass sie die Daten im Einklang mit der Datenschutzgrundverordnung verarbeiten und den Schutz der Rechte der betroffenen Person gewährleisten.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-53">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-60">
                                   Mailingwork versichert, dass personenbezogene Daten umfassend vor unerlaubten Zugriffen geschützt sind. Mailingwork selbst nutzt die Daten unserer Newsletterempfänger nicht, um diese selbst anzuschreiben oder gibt die Daten an Dritte weiter. Als seriöser E-Mail-Versender ist Mailingwork zudem durch die Certified Senders Alliance zertifiziert.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-24">
-                                  <b className="inline font-normal" data-ditto-id="style-heading-7">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-35">
+                                  <b className="inline font-normal" data-ditto-id="style-heading-9">
                                     d) Bei Nutzung von Kontaktformularen
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-17">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-16">
                                   Wir bieten Ihnen die Möglichkeit, mit uns über ein auf der Webseite bereitgestelltes Formular Kontakt aufzunehmen. Dabei sind die folgenden Angaben als Pflichtangaben erforderlich:
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-54">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-61">
                                   {ListRow2_data3.map((d, i) => <ListRow2 key={i} d={d} />)}
                                 </ul>
                                 {" "}
-                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-div-94">
+                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-div-106">
                                   Ihre Daten benötigen wir, um festzustellen von wem die Anfrage stammt und um diese beantworten und bearbeiten zu können.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-49">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-56">
                                   Die Datenverarbeitung erfolgt auf Ihre Anfrage hin und ist im Rahmen der Beantwortung einer Kontaktanfrage auf unsere berechtigten Interessen gem. Art. 6 Abs. 1 S. 1 lit. f DSGVO gestützt.
                                 </p>
                                 {" "}
@@ -714,8 +714,8 @@ export default function Page() {
                                   Die für die Benutzung des Kontaktformulars von uns erhobenen personenbezogenen Daten werden nach Erledigung der von Ihnen gestellten Anfrage automatisch gelöscht.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-50">
-                                  <b className="inline font-normal" data-ditto-id="style-ul-6">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-57">
+                                  <b className="inline font-normal" data-ditto-id="style-ul-7">
                                     {"e) Bei Nutzung "}
                                     <b className="inline" data-ditto-id="style-b-5">
                                       des Bestellservice für kostenpflichtige Publikationen
@@ -725,85 +725,85 @@ export default function Page() {
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-18">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-17">
                                   Auf unserer Webseite bieten wir einen Bestellservice an, um etwa kostenpflichtige Publikationen z. B. aus der Reihe „Berichte aus dem IWU“ zu bestellen. Im Rahmen der Bestellung erheben wir die folgenden Pflichtangaben:
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-ul-2">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-ul-3">
                                   {ListRow2_data4.map((d, i) => <ListRow2 key={i} d={d} />)}
                                 </ul>
                                 {" "}
-                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-article-2">
+                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-article-4">
                                   Die Erhebung und weitere Verarbeitung dieser Daten erfolgt,
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-34">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-43">
                                   {ListRow3_data.map((d, i) => <ListRow3 key={i} d={d} />)}
                                 </ul>
                                 {" "}
-                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-source-7">
+                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-source-11">
                                   Zudem können Sie freiwillig weitere Daten angeben (abweichende Lieferanschrift).
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-8">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-13">
                                   Die Datenverarbeitung erfolgt auf Ihre Anfrage hin und ist nach Art. 6 Abs. 1 S. 1 lit. b DSGVO zu den genannten Zwecken für die Erfüllung Ihres Bestellauftrages an uns und den vorvertraglichen Maßnahmen erforderlich. Ihre E-Mail-Adresse verwenden wir in diesem Zusammenhang, um Ihnen eine Bestellbestätigung zu übersenden. Sämtliche Kontaktdaten werden von uns ausschließlich für etwaige erforderliche Rückfragen im Rahmen Ihrer Bestellung verarbeitet.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-9">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-15">
                                   Die für die Bestellung von uns erhobenen personenbezogenen Daten werden bis zum Ablauf der gesetzlichen Gewährleistungspflicht (2 Jahre, § 438 Abs. 1 Nr. 3 BGB) gespeichert und danach automatisch gelöscht, es sei denn, dass wir nach Artikel 6 Abs. 1 S. 1 lit. c DSGVO aufgrund von steuerlichen Aufbewahrungs- und Dokumentationspflichten (insbesondere § 147 AO) zu einer längeren Speicherung verpflichtet sind. Für diesen Zeitraum (regelmäßig zehn Jahre ab Vertragsschluss) werden die Daten allein für den Fall einer Überprüfung durch die Finanzverwaltung erneut verarbeitet. Im Übrigen werden die Daten für eine weitergehende Verarbeitung gesperrt.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-5">
-                                  <b className="inline font-normal" data-ditto-id="style-source-10">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-source-9">
+                                  <b className="inline font-normal" data-ditto-id="style-source-16">
                                     {"f) Bei Nutzung "}
-                                    <b className="inline" data-ditto-id="style-image-2">
+                                    <b className="inline" data-ditto-id="style-image-4">
                                       des Bestellservice für kostenlose Publikationen
                                     </b>
-                                    <br className="inline" data-ditto-id="style-figcaption" />
+                                    <br className="inline" data-ditto-id="style-figcaption-2" />
                                     {" "}
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-44">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-53">
                                   Auf unserer Webseite bieten wir einen Bestellservice an, um etwa Jahresberichte oder Institutsbroschüren kostenlos zu bestellen. Im Rahmen der Bestellung erheben wir die folgenden Pflichtangaben:
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-19">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-30">
                                   {ListRow2_data5.map((d, i) => <ListRow2 key={i} d={d} />)}
                                 </ul>
                                 {" "}
-                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-div-36">
+                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-div-45">
                                   Die Erhebung dieser Daten erfolgt zur Abwicklung Ihrer Bestellung.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-20">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-31">
                                   Zudem können Sie freiwillig Ihre E-Mail-Adresse angeben, damit wir Sie umgehend über eventuelle Verzögerungen in der Bearbeitung Ihrer Bestellung informieren können.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-37">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-46">
                                   Die Datenverarbeitung erfolgt auf Ihre Anfrage hin und ist nach Art. 6 Abs. 1 S. 1 lit. b DSGVO zu den genannten Zwecken für die Erfüllung Ihres Bestellauftrages an uns erforderlich. Die für die Bestellung kostenfreier Printprodukte von uns erhobenen personenbezogenen Daten werden nach Erledigung der von Ihnen getätigten Bestellung automatisch gelöscht.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-52" />
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-div-59" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-h3" data-component="heading">
-                                  <a className="inline underline" data-ditto-id="style-div-28" id="_Toc3" name="_Toc3" />
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-table" data-component="heading">
+                                  <a className="inline underline" data-ditto-id="style-tbody" id="_Toc3" name="_Toc3" />
                                   3. Weitergabe von personenbezogenen Daten
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-ul-9">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-tr-3">
                                   Sofern wir personenbezogene Daten, die wir über die Webseite erheben, an Auftragsverarbeiter weitergeben, informieren wir Sie darüber in dieser Datenschutzinformation bei dem jeweiligen Datenverarbeitungsvorgang unter Nennung des konkreten Empfängers.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-15">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-th-2">
                                   Im Übrigen geben wir Ihre personenbezogenen Daten nur weiter, wenn
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-ul-3">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-br-2">
                                   {ListRow2_data6.map((d, i) => <ListRow2 key={i} d={d} />)}
                                 </ul>
                                 {" "}
-                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-p-9">
+                                <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" data-ditto-id="style-td-2">
                                   Die weitergegebenen Daten dürfen von den Empfängern ausschließlich zu den genannten Zwecken verwendet werden.
                                 </p>
                                 {" "}
@@ -813,39 +813,39 @@ export default function Page() {
                                 {" "}
                                 <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-13" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-16" data-component="heading">
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-17" data-component="heading">
                                   <a className="inline underline" data-ditto-id="style-toc4" id="_Toc4" name="_Toc4" />
                                   4. Cookies
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-23">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-22">
                                   Außer im unter Ziffer 5 beschriebenen Fall werden keine Cookies gesetzt.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-4" />
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-5" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-13" data-component="heading">
-                                  <a className="inline underline" id="_Toc5" name="_Toc5" />
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-14" data-component="heading">
+                                  <a className="inline underline" data-ditto-id="style-toc5" id="_Toc5" name="_Toc5" />
                                   5. Webanalyse mittels Leadlab
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-24">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-23">
                                   {"Wir setzen auf unserer Webseite den Dienst Leadlab von der "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-61" data-component="link" href="https://www.wiredminds.de/">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-62" data-component="link" href="https://www.wiredminds.de/">
                                     Wiredminds GmbH
                                   </a>
                                   {" und deren Zählpixeltechnologie zur Analyse des Nutzungsverhaltens und zur darauf basierenden Optimierung unserer Seite ein. Insbesondere erlaubt uns der Dienst zu erkennen, welche Unternehmen unsere Seite besucht haben. Dabei erhalten wir keine Informationen, die Sie unmittelbar identifizieren."}
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-25">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-24">
                                   Im Zusammenhang mit dem Einsatz von Leadlab werden Cookies und Zählpixel eingesetzt, die eine statistische Analyse der Nutzung dieser Website durch Ihre Besuche ermöglichen. In dem Cookie werden Informationen – einschließlich personenbezogener Informationen – zu Ihrem Besucherverhalten abgelegt und an Wiredminds übermittelt oder direkt von Wiredminds erhoben. Die Informationen werden von Wiredminds unter Verwendung eines Pseudonyms in einem Nutzungsprofil zum Zwecke der Analyse verarbeitet und möglichst anonymisiert.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-16">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-15">
                                   Die dabei gewonnenen Daten werden ohne Ihre gesondert erteilte Zustimmung nicht benutzt, um Sie persönlich zu identifizieren und die Daten werden nicht mit personenbezogenen Daten über Sie als Träger des Pseudonyms zusammengeführt.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-29">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-28">
                                   Soweit IP-Adressen erhoben werden, werden diese unverzüglich nach Erhebung durch Löschen des letzten Nummernblocks anonymisiert.
                                 </p>
                                 {Tile2_data.map((d, i) => <Tile2 key={i} d={d} />)}
@@ -854,7 +854,7 @@ export default function Page() {
                                   Klicken Sie hier, um das Opt-Out-Cookie für WiredMinds zu setzen.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-20" />
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-19" />
                                 {" "}
                                 <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-component="heading">
                                   <b className="inline font-normal" data-ditto-id="style-b-6">
@@ -867,11 +867,11 @@ export default function Page() {
                                   Wir setzen auf unserer Webseite sogenannte Social-Media-Buttons (auch Social-Media-Plugins) ein. Hierbei handelt es sich um kleine Schaltflächen mittels derer Sie Inhalte unserer Webseite in sozialen Netzwerken unter Ihrem Profil veröffentlichen können.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-5">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-6">
                                   Sofern Sie eine solche Schaltfläche aktivieren, wird eine Verbindung zwischen unserer Webseite und dem sozialen Netzwerk hergestellt. Neben den betreffenden Inhalten, erhält der Betreiber des sozialen Netzwerkes weitere zum Teil personenbezogene Informationen. Dazu gehört etwa der Umstand, dass Sie gerade unsere Seite besuchen.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-31">
                                   Die Einbindung der Social-Media-Buttons erfolgt unter Einsatz der sogenannten Shariff-Lösung. Diese Lösung verhindert, dass bereits eine Verbindung zu einem sozialen Netzwerk aufgebaut wird, nur weil Sie eine Seite mit einem Social-Media-Button aufrufen, ohne diesen zu aktivieren. Das bedeutet, dass erst dann Informationen an das soziale Netzwerk übermittelt werden, wenn Sie die Schaltfläche aktivieren.
                                 </p>
                                 {" "}
@@ -879,39 +879,39 @@ export default function Page() {
                                   Die folgenden Social-Media-Plugins setzen wir ein:
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-26">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-25">
                                   <b className="inline font-normal" data-ditto-id="style-b-3">
                                     a) Facebook: Teilen der Facebook Ireland Limited
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-27">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-26">
                                   Teilweise werden Informationen an die Muttergesellschaft Facebook Inc. mit Sitz in den USA übermittelt. Diese beachtet die Datenschutzbestimmungen des „US-Privacy-Shield“ und ist beim „US-Privacy Shield“-Programm des US-Handelsministeriums registriert.
                                 </p>
                                 {" "}
                                 <p className="block mb-2.5 2xl:mb-3">
                                   {"Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch Facebook sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre entnehmen Sie bitte den "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-62" data-component="link" href="https://www.facebook.com/about/privacy/">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-63" data-component="link" href="https://www.facebook.com/about/privacy/">
                                     Datenschutzhinweisen von Facebook
                                   </a>
                                   .
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-2">
                                   <b className="inline font-normal" data-ditto-id="style-b">
                                     b) Xing: Teilen der Xing SE
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-2">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-3">
                                   {"Weitere Informationen zum Datenschutz bei XING finden Sie in der "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-63" data-component="link" href="https://www.xing.com/privacy">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-64" data-component="link" href="https://www.xing.com/privacy">
                                     Datenschutzerklärung von XING
                                   </a>
                                   .
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-31">
+                                <p className="block mb-2.5 2xl:mb-3">
                                   <b className="inline font-normal" data-ditto-id="style-b-4">
                                     c) LinkedIn: Teilen der LinkedIn Corporation
                                   </b>
@@ -919,25 +919,25 @@ export default function Page() {
                                 {" "}
                                 <p className="block mb-2.5 2xl:mb-3">
                                   {"Teilweise werden Informationen an die Muttergesellschaft LinkedIn Corporation mit Sitz in den USA übermittelt. Diese beachtet die Datenschutzbestimmungen des „US-Privacy-Shield“ und ist beim „US-Privacy Shield“-Programm des US-Handelsministeriums registriert. Weitere Informationen zum Datenschutz bei LinkedIn finden Sie in deren "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-64" data-component="link" href="https://www.linkedin.com/legal/privacy-policy">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-65" data-component="link" href="https://www.linkedin.com/legal/privacy-policy">
                                     Datenschutzrichtlinien
                                   </a>
                                   .
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-35">
-                                  <b className="inline font-normal">
+                                <p className="block mb-2.5 2xl:mb-3">
+                                  <b className="inline font-normal" data-ditto-id="style-b-7">
                                     d) Instagram: Teilen der Facebook Ireland Limited
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-6">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-7">
                                   Teilweise werden Informationen an die Muttergesellschaft Facebook Inc. mit Sitz in den USA übermittelt. Diese beachtet die Datenschutzbestimmungen des „US-Privacy-Shield“ und ist beim „US-Privacy Shield“-Programm des US-Handelsministeriums registriert.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-19">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-18">
                                   {"Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch Facebook sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre entnehmen Sie bitte der "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-65" data-component="link" href="https://help.instagram.com/519522125107875">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-66" data-component="link" href="https://help.instagram.com/519522125107875">
                                     Datenschutzrichtlinie von Instagram
                                   </a>
                                   .
@@ -945,7 +945,7 @@ export default function Page() {
                                 {" "}
                                 <p className="block mb-2.5 2xl:mb-3" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-4" data-component="heading">
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-6" data-component="heading">
                                   <a className="inline underline" id="_Toc7" name="_Toc7" />
                                   7. YouTube
                                 </h4>
@@ -954,15 +954,15 @@ export default function Page() {
                                   Wir setzen auf unseren Internetseiten auf der Grundlage einer Einwilligung nach Art. 6 Abs. 1 S. 1 lit. f DSGVO Komponenten (Videos) des Unternehmens YouTube, LLC 901 Cherry Ave., 94066 San Bruno, CA, USA (im Folgenden: „YouTube“), einem Unternehmen der Google Inc., Amphitheatre Parkway, Mountain View, CA 94043, USA (im Folgenden: „Google“) ein.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-32">
+                                <p className="block mb-2.5 2xl:mb-3">
                                   Hierbei nutzen wir die von YouTube zur Verfügung gestellte Option des „erweiterten Datenschutzmodus".
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-29">
                                   Wenn Sie eine Seite aufrufen, die über ein eingebettetes Video verfügt, wird eine Verbindung zu den YouTube-Servern hergestellt und dabei der Inhalt durch Mitteilung an Ihren Browser auf der Internetseite dargestellt.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-7">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-8">
                                   Laut den Angaben von YouTube werden im „erweiterten Datenschutzmodus“ nur dann Ihre Daten – insbesondere, welche unserer Internetseiten Sie besucht haben sowie gerätespezifische Informationen inklusive der IP-Adresse – an den YouTube-Server in den USA übermittelt, wenn Sie das Video anschauen. Durch den Klick auf das Video willigen Sie in diese Übermittlung ein.
                                 </p>
                                 {" "}
@@ -970,13 +970,13 @@ export default function Page() {
                                   Sind Sie gleichzeitig bei YouTube eingeloggt, werden diese Informationen Ihrem Mitgliedskonto bei YouTube zugeordnet. Dies können Sie verhindern, indem Sie sich vor dem Besuch unserer Website von Ihrem Mitgliedskonto abmelden.
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-21">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-20">
                                   Google beachtet die Datenschutzbestimmungen des „US-Privacy-Shield“ und ist beim „US-Privacy Shield“-Programm des US-Handelsministeriums registriert.
                                 </p>
                                 {" "}
                                 <p className="block mb-2.5 2xl:mb-3">
                                   {"Weitere Informationen zum Datenschutz im Zusammenhang mit YouTube finden Sie in den "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-66" data-component="link" href="https://www.google.de/intl/de/policies/privacy/">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-67" data-component="link" href="https://www.google.de/intl/de/policies/privacy/">
                                     Datenschutzbestimmungen von Google
                                   </a>
                                   .
@@ -989,17 +989,17 @@ export default function Page() {
                                   8. Betroffenenrechte
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-22">
+                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-21">
                                   Sie haben das Recht:
                                 </p>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-ul-7">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-ul-8">
                                   {ListRow3_data2.map((d, i) => <ListRow3 key={i} d={d} />)}
                                 </ul>
                                 {" "}
                                 <p className="block mt-[1.225rem] mb-2.5 2xl:mt-[23.5px] 2xl:mb-3" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-3" data-component="heading">
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-5" data-component="heading">
                                   <a className="inline underline" data-ditto-id="style-toc9" id="_Toc9" name="_Toc9" />
                                   9. Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO
                                 </h4>
@@ -1009,7 +1009,7 @@ export default function Page() {
                                   <b className="inline font-normal" data-ditto-id="style-b-2">
                                     {"Möchten Sie von Ihrem Widerspruchsrecht Gebrauch machen, genügt eine E-Mail an "}
                                     <u className="inline underline">
-                                      <a className="inline text-primary underline cursor-pointer after:content-[''] after:inline-block after:w-[0.8125rem] after:h-[13.3px] after:mx-[3.5px] after:text-primary after:text-[0.8125rem] after:leading-[0.8125rem] 2xl:after:w-4 2xl:after:h-4 2xl:after:mx-1 2xl:after:text-base 2xl:after:leading-4" data-ditto-id="style-link-67" data-component="link" href="mailto:datenschutz@zv.fraunhofer.de" target="_blank">
+                                      <a className="inline text-primary underline cursor-pointer after:content-[''] after:inline-block after:w-[0.8125rem] after:h-[13.3px] after:mx-[3.5px] after:text-primary after:text-[0.8125rem] after:leading-[0.8125rem] 2xl:after:w-4 2xl:after:h-4 2xl:after:mx-1 2xl:after:text-base 2xl:after:leading-4" data-ditto-id="style-link-68" data-component="link" href="mailto:datenschutz@zv.fraunhofer.de" target="_blank">
                                         datenschutz@zv.fraunhofer.de
                                       </a>
                                     </u>
@@ -1017,9 +1017,9 @@ export default function Page() {
                                   </b>
                                 </p>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-33" />
+                                <p className="block mb-2.5 2xl:mb-3" />
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-component="heading">
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-heading-18" data-component="heading">
                                   <a className="inline underline" id="_Toc10" name="_Toc10" />
                                   10. Datensicherheit
                                 </h4>
@@ -1039,13 +1039,13 @@ export default function Page() {
                                   11. Aktualität und Änderung dieser Datenschutzinformation
                                 </h4>
                                 {" "}
-                                <p className="block mb-2.5 2xl:mb-3" data-ditto-id="style-p-34">
+                                <p className="block mb-2.5 2xl:mb-3">
                                   Diese Datenschutzinformation ist aktuell gültig und hat den Stand April 2020.
                                 </p>
                                 {" "}
-                                <p className="block" data-ditto-id="style-p-8">
+                                <p className="block" data-ditto-id="style-p-9">
                                   {"Durch die Weiterentwicklung unserer Webseite und Angebote darüber oder aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzinformation zu ändern. Die jeweils aktuelle Datenschutzinformation kann jederzeit auf der Webseite unter "}
-                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-68" data-component="link" href="/de/datenschutzerklaerung.html">
+                                  <a className="inline text-primary underline cursor-pointer" data-ditto-id="style-link-69" data-component="link" href="/de/datenschutzerklaerung.html">
                                     https://www.iwu.fraunhofer.de/datenschutzerklaerung
                                   </a>
                                   {" von Ihnen abgerufen und ausgedruckt werden."}
@@ -1084,17 +1084,17 @@ export default function Page() {
               Navigation und Social Media
             </h2>
             {" "}
-            <div className="block" data-ditto-id="style-div-29">
+            <div className="block" data-ditto-id="style-div-39">
               <div className="border-t border-solid border-t-border border-r border-r-border border-l border-l-border block clear-both leading-0 max-lg:border max-lg:border-border max-lg:mb-[1.5625rem] max-lg:border-t-[0] max-lg:border-initial max-lg:border-t-[initial] max-lg:border-r-[0] max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial]">
-                <div className="block -mx-px" data-ditto-id="style-div-30">
+                <div className="block -mx-px" data-ditto-id="style-div-40">
                   <div className="border-r border-solid border-r-border inline-block pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5">
                     {" "}
                   </div>
                   {" "}
-                  <div className="border-l border-solid border-l-border inline-block -ml-px pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-l-[0] max-lg:border-initial max-lg:border-l-[initial] max-md:ml-0 max-lg:pt-0 md:max-lg:ml-26.5 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5" data-ditto-id="style-div-31">
+                  <div className="border-l border-solid border-l-border inline-block -ml-px pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-l-[0] max-lg:border-initial max-lg:border-l-[initial] max-md:ml-0 max-lg:pt-0 md:max-lg:ml-26.5 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5" data-ditto-id="style-div-41">
                     {" "}
-                    <div className="block" data-ditto-id="style-div-96">
-                      <button className="w-[6.875rem] block float-left mb-3 align-top text-background text-xs font-normal leading-[2.0625rem] tracking-[0.9px] text-center uppercase bg-primary cursor-pointer max-lg:w-25 max-md:mr-[4.5px] md:max-lg:mx-1.5 2xl:w-[9.6875rem] 2xl:mb-[0.9rem] 2xl:text-sm 2xl:leading-[2.5rem] 2xl:tracking-[1.08px]" data-ditto-id="style-button-5" data-component="button">
+                    <div className="block">
+                      <button className="w-[6.875rem] block float-left mb-3 align-top text-background text-xs font-normal leading-[2.0625rem] tracking-[0.9px] text-center uppercase bg-primary cursor-pointer max-lg:w-25 max-md:mr-[4.5px] md:max-lg:mx-1.5 2xl:w-[9.6875rem] 2xl:mb-[0.9rem] 2xl:text-sm 2xl:leading-[2.5rem] 2xl:tracking-[1.08px]" data-ditto-id="style-tr" data-component="button">
                         Drucken
                       </button>
                       {" "}
@@ -1105,37 +1105,37 @@ export default function Page() {
                 </div>
                 {" "}
               </div>
-              <div className="border-r border-solid border-r-border border-l border-l-border block relative bg-primary max-md:-mx-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] before:content-[''] before:block before:absolute before:inset-y-0 before:right-279.5 before:-left-20 before:-z-1 before:bg-primary max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-383.5 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-279.5 after:-z-1 after:bg-primary max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-383.5" data-ditto-id="style-div-97">
-                <div className="inline-block p-[1.5625rem] align-top max-lg:py-[2.1875rem] max-md:px-12.5 2xl:p-7.5">
+              <div className="border-r border-solid border-r-border border-l border-l-border block relative bg-primary max-md:-mx-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] before:content-[''] before:block before:absolute before:inset-y-0 before:right-279.5 before:-left-20 before:-z-1 before:bg-primary max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-383.5 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-279.5 after:-z-1 after:bg-primary max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-383.5">
+                <div className="inline-block p-[1.5625rem] align-top max-lg:py-[2.1875rem] max-md:px-12.5 2xl:p-7.5" data-ditto-id="style-td-4">
                   {" "}
-                  <h3 className="block text-background text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-heading-17" data-component="heading">
+                  <h3 className="block text-background text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-link-37" data-component="heading">
                     Schnelleinstieg
                   </h3>
                   {" "}
                 </div>
                 {" "}
-                <div className="inline-block py-[1.5625rem] align-top max-lg:-mt-2.5 max-lg:pb-[2.1875rem] max-md:px-12.5 max-lg:pt-0 md:max-lg:px-[1.5625rem] 2xl:py-7.5">
+                <div className="inline-block py-[1.5625rem] align-top max-lg:-mt-2.5 max-lg:pb-[2.1875rem] max-md:px-12.5 max-lg:pt-0 md:max-lg:px-[1.5625rem] 2xl:py-7.5" data-ditto-id="style-br-4">
                   {" "}
-                  <ul className="block text-background [list-style-type:none] list-outside" data-ditto-id="style-ul-14">
-                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-li-5">
+                  <ul className="block text-background [list-style-type:none] list-outside">
+                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-32">
                       {" "}
-                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-link-41" data-component="link" href="/de/schnelleinstieg-kunden.html">
+                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-link-52" data-component="link" href="/de/schnelleinstieg-kunden.html">
                         Kunden
                       </a>
                     </li>
-                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-li-6">
+                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-li-8">
                       {" "}
-                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-link-42" data-component="link" href="/de/schnelleinstieg-studierende.html">
+                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-link-53" data-component="link" href="/de/schnelleinstieg-studierende.html">
                         Studierende
                       </a>
                     </li>
-                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-21">
+                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-2">
                       {" "}
-                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-div-14" data-component="link" href="/de/schnelleinstieg-wissenschaftler.html">
+                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-div-25" data-component="link" href="/de/schnelleinstieg-wissenschaftler.html">
                         Wissenschaftler
                       </a>
                     </li>
-                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-22">
+                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-33">
                       {" "}
                       <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-section" data-component="link" href="/de/Ueber-uns/Kuratorium.html">
                         Blogs
@@ -1147,32 +1147,32 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block relative before:content-[''] before:block before:absolute before:inset-y-0 before:right-280 before:-left-20 before:-z-1 max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-384 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-280 after:-z-1 max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-384">
-                <div className="w-full border-r border-solid border-r-border border-b border-b-border border-l border-l-border inline-block p-[1.5625rem] align-top bg-background max-lg:border max-lg:border-border max-lg:mt-[1.5625rem] max-lg:pt-[2.1875rem] max-lg:pb-[2.8125rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-b-[0] max-lg:border-b-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5" data-ditto-id="style-div-92">
+              <div className="block relative before:content-[''] before:block before:absolute before:inset-y-0 before:right-280 before:-left-20 before:-z-1 max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-384 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-280 after:-z-1 max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-384" data-ditto-id="style-div-95">
+                <div className="w-full border-r border-solid border-r-border border-b border-b-border border-l border-l-border inline-block p-[1.5625rem] align-top bg-background max-lg:border max-lg:border-border max-lg:mt-[1.5625rem] max-lg:pt-[2.1875rem] max-lg:pb-[2.8125rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-b-[0] max-lg:border-b-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5">
                   {" "}
-                  <h3 className="w-[16.6875rem] block float-left pr-[0.3125rem] text-primary text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] max-md:w-[17.0625rem] max-md:inline-block max-md:[float:initial] md:max-lg:w-[20.8125rem] 2xl:w-[368.5px] 2xl:pr-1.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-component="heading">
+                  <h3 className="w-[16.6875rem] block float-left pr-[0.3125rem] text-primary text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] max-md:w-[17.0625rem] max-md:inline-block max-md:[float:initial] md:max-lg:w-[20.8125rem] 2xl:w-[368.5px] 2xl:pr-1.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-article-5" data-component="heading">
                     Folgen Sie uns
                   </h3>
                   {" "}
-                  <ul className="w-75 block overflow-hidden leading-0 [list-style-type:none] list-outside max-md:w-[17.0625rem] md:max-lg:w-[20.8125rem] 2xl:w-90" data-ditto-id="style-div-93">
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-div-32">
+                  <ul className="w-75 block overflow-hidden leading-0 [list-style-type:none] list-outside max-md:w-[17.0625rem] md:max-lg:w-[20.8125rem] 2xl:w-90">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-div-3">
                       {" "}
                       <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-figure" data-component="link" href="https://www.facebook.com/FraunhoferIWU/" target="_blank" title="Besuchen Sie uns bei Facebook" />
                       {" "}
                     </li>
                     <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-picture-2">
                       {" "}
-                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-source" data-component="link" href="https://www.linkedin.com/company/fraunhofer--institut-werkzeugmaschinen-und-umformtechnik-iwu?trk=ppro_cprof" target="_blank" title="Besuchen Sie uns bei LinkedIn" />
+                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-source-3" data-component="link" href="https://www.linkedin.com/company/fraunhofer--institut-werkzeugmaschinen-und-umformtechnik-iwu?trk=ppro_cprof" target="_blank" title="Besuchen Sie uns bei LinkedIn" />
                       {" "}
                     </li>
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-source-6">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-source-10">
                       {" "}
-                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-source-2" data-component="link" href="https://www.youtube.com/fraunhoferiwu" target="_blank" title="Besuchen Sie uns bei YouTube" />
+                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-source-4" data-component="link" href="https://www.youtube.com/fraunhoferiwu" target="_blank" title="Besuchen Sie uns bei YouTube" />
                       {" "}
                     </li>
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top max-md:mr-[5.5px] md:max-lg:mr-[6.7px] 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-source-17">
                       {" "}
-                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-source-3" data-component="link" href="https://www.instagram.com/fraunhofer.iwu/" target="_blank" title="Besuchen Sie uns bei Instagram" />
+                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-source-5" data-component="link" href="https://www.instagram.com/fraunhofer.iwu/" target="_blank" title="Besuchen Sie uns bei Instagram" />
                       {" "}
                     </li>
                   </ul>
@@ -1181,26 +1181,26 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-lg:mt-[1.5625rem] max-lg:-mx-20">
-                <div className="border-r border-solid border-r-border border-l border-l-border inline-block p-[1.5625rem] align-top text-xs leading-[0.9375rem] tracking-[0.3px] uppercase bg-background max-lg:border-t max-lg:border-t-border max-lg:border-b max-lg:border-b-border max-lg:px-[6.5625rem] max-lg:leading-3 max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5 2xl:text-sm 2xl:leading-4.5 2xl:tracking-[0.36px]" data-ditto-id="style-figcaption-3">
+              <div className="block max-lg:mt-[1.5625rem] max-lg:-mx-20" data-ditto-id="style-image">
+                <div className="border-r border-solid border-r-border border-l border-l-border inline-block p-[1.5625rem] align-top text-xs leading-[0.9375rem] tracking-[0.3px] uppercase bg-background max-lg:border-t max-lg:border-t-border max-lg:border-b max-lg:border-b-border max-lg:px-[6.5625rem] max-lg:leading-3 max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5 2xl:text-sm 2xl:leading-4.5 2xl:tracking-[0.36px]">
                   {" "}
-                  <nav className="h-8.5 min-h-8.5 block max-md:h-[3.6125rem] max-lg:min-h-0 md:max-lg:h-[38.5px] 2xl:h-[2.55rem] 2xl:min-h-[2.55rem]" data-component="nav">
-                    <ul className="h-full block text-[0.0625rem] leading-0 tracking-[normal] text-justify [list-style-type:none] list-outside max-lg:text-[0rem] after:content-[''] after:inline-block after:w-full after:h-0 after:[overflow:hidden]" data-ditto-id="style-div-100">
+                  <nav className="h-8.5 min-h-8.5 block max-md:h-[3.6125rem] max-lg:min-h-0 md:max-lg:h-[38.5px] 2xl:h-[2.55rem] 2xl:min-h-[2.55rem]" data-ditto-id="style-span-6" data-component="nav">
+                    <ul className="h-full block text-[0.0625rem] leading-0 tracking-[normal] text-justify [list-style-type:none] list-outside max-lg:text-[0rem] after:content-[''] after:inline-block after:w-full after:h-0 after:[overflow:hidden]" data-ditto-id="style-div-99">
                       <li className="w-[7%] inline-block align-top max-md:w-full max-md:block md:max-lg:w-1/2 2xl:w-[6%]">
                         {" "}
-                        <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-div-15" data-component="link" href="/de/sitemap.html">
+                        <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-div-26" data-component="link" href="/de/sitemap.html">
                           Sitemap
                         </a>
                       </li>
                       <li className="w-[75.1px] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[88.7px]">
                         {" "}
-                        <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-p-3" data-component="link" href="/de/impressum.html">
+                        <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-p-4" data-component="link" href="/de/impressum.html">
                           Impressum
                         </a>
                       </li>
-                      <li className="w-[10.9375rem] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[12.475rem]">
+                      <li className="w-[10.9375rem] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[12.475rem]" data-ditto-id="style-div-4">
                         {" "}
-                        <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-div-16" data-component="link" href="/de/datenschutzerklaerung.html">
+                        <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-div-27" data-component="link" href="/de/datenschutzerklaerung.html">
                           Datenschutzerklärung
                         </a>
                       </li>

@@ -1,0 +1,85 @@
+.cn0{display:block;color:var(--foreground);font-family:FrutigerLTW02, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:200;font-style:normal;line-height:18px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{padding-bottom:49px}
+}
+
+@media (min-width: 1601px) {
+.cn0{font-size:16.8px;line-height:21.6px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button-3"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-link-33"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-link-34"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-link-35"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-link-36"]{transition:background-color 0.15s linear}
+[data-ditto-id="style-button"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-5"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-6"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-8"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-9"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-10"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-11"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-13"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-14"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-15"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-16"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-17"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-18"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-2"]:hover{background-color:rgb(102, 191, 172)}
+[data-ditto-id="style-link-19"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-20"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-21"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-22"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-23"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-24"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-25"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-37"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-3"]:hover{text-decoration-line:none}
+[data-ditto-id="style-image"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-4"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-5"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li"]:hover{text-decoration-line:none}
+[data-ditto-id="style-article"]:hover{text-decoration-line:none}
+[data-ditto-id="style-source"]:hover{text-decoration-line:none}
+[data-ditto-id="style-heading"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-6"]:hover{text-decoration-line:none}
+[data-ditto-id="style-li-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-article-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-source-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-p"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-7"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-38"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-8"]:hover{text-decoration-line:none}
+[data-ditto-id="style-heading-2"]:hover{text-decoration-line:none}
+[data-ditto-id="style-div-9"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-39"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-40"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-41"]:hover{text-decoration-line:none}
+[data-ditto-id="style-button-3"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-42"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-43"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-44"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-45"]:hover{text-decoration-line:none}
+[data-ditto-id="style-link-33"]:hover{background-color:rgb(59, 89, 152);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-34"]:hover{background-color:rgb(0, 0, 0);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-35"]:hover{background-color:rgb(179, 18, 23);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-36"]:hover{background-color:rgb(247, 119, 55);outline-color:rgb(0, 147, 116)}
+[data-ditto-id="style-link-46"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-47"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-48"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-33"]:focus{background-color:rgb(59, 89, 152)}
+[data-ditto-id="style-link-34"]:focus{background-color:rgb(0, 0, 0)}
+[data-ditto-id="style-link-35"]:focus{background-color:rgb(179, 18, 23)}
+[data-ditto-id="style-link-36"]:focus{background-color:rgb(247, 119, 55)}

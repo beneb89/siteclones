@@ -50,7 +50,7 @@ export default function Tile2({ d, styles }: { d: Tile2Data; styles: Tile2Styles
             {d.text5}
           </div>
           {" "}
-          <div className={cn("inline-block mr-[0.9375rem] mb-2 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-color-005 before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className5)} title={d.label}>
+          <div className={cn("inline-block mr-[0.9375rem] mb-2 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:bottom-[0.1875rem]", styles.className5)} title={d.label}>
             {d.text6}
           </div>
           {" "}

@@ -1,7 +1,6 @@
 import type { MediaTileStyles } from "../_styles";
 import { cn } from "../../lib/utils";
 export type MediaTileData = {
-  href: string;
   sizes?: string;
   srcSet: string;
   height?: string;
@@ -15,7 +14,7 @@ export type MediaTileData = {
 export default function MediaTile({ d, styles }: { d: MediaTileData; styles: MediaTileStyles }) {
   return (
     <div className="box-content block min-w-0 overflow-x-hidden overflow-y-auto [font-family:Raleway,_sans-serif,_sans-serif]">
-      <a className={cn("h-37.5 flex mb-5 rounded-[10px] overflow-hidden text-primary cursor-pointer w-full max-md:flex-col", styles.className)} data-component="link" href={d.href} rel="noopener" target="_self">
+      <a className={cn("h-37.5 flex mb-5 rounded-[10px] overflow-hidden text-primary cursor-pointer w-full max-md:flex-col", styles.className)} data-component="link" href="/leistungsangebot-personalorganisation/change-management-training" rel="noopener" target="_self">
         <div className="block shrink-0 bg-surface w-[8.4375rem] max-md:w-full">
           <picture className="inline">
             <source className="inline" sizes={d.sizes} srcSet={d.srcSet} type="image/webp" />
@@ -29,7 +28,7 @@ export default function MediaTile({ d, styles }: { d: MediaTileData; styles: Med
             </p>
             <p className="block" />
           </div>
-          <span className="border border-solid border-color-001 flex rounded-full justify-center items-center shrink-0 text-background bg-color-001 h-12 w-12">
+          <span className="border border-solid border-color-002 flex rounded-full justify-center items-center shrink-0 text-background bg-color-002 h-12 w-12">
             {" "}
             <svg className="flex overflow-hidden h-[1.3125rem] w-[1.3125rem]" data-component="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="9 6 15 12 9 18" />

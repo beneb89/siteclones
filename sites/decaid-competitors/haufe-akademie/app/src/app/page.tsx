@@ -278,13 +278,12 @@ const MediaTile2_data = [
 ];
 const Logo_data = [
     { imgSrc: "/assets/cloned/svg/161cbb4f87d2.svg" },
-    { imgSrc: "/assets/cloned/svg/07944c613fc6.svg" },
-    { imgSrc: "/assets/cloned/svg/34beda2b2009.svg" },
-    { imgSrc: "/assets/cloned/svg/abc7560f7bbc.svg" },
-    { imgSrc: "/assets/cloned/images/be669f3ddf1e.png" },
-    { imgSrc: "/assets/cloned/svg/6102ec0c668d.svg" },
-    { imgSrc: "/assets/cloned/svg/58fa42834f74.svg" },
-    { imgSrc: "/assets/cloned/svg/aa171572a527.svg" }
+    { imgSrc: "/assets/cloned/svg/07944c613fc6.svg", kind: "image" },
+    { imgSrc: "/assets/cloned/svg/34beda2b2009.svg", kind: "image" },
+    { imgSrc: "/assets/cloned/svg/abc7560f7bbc.svg", kind: "image" },
+    { imgSrc: "/assets/cloned/images/be669f3ddf1e.png", kind: "image" },
+    { imgSrc: "/assets/cloned/svg/6102ec0c668d.svg", kind: "image" },
+    { imgSrc: "/assets/cloned/svg/58fa42834f74.svg", kind: "image" }
 ];
 const ListRow4_data = [
     { href: "/1685", label: "Über uns" },
@@ -314,290 +313,289 @@ const Logo3_data = [
     { href: "https://www.xing.com/pages/haufeakademiegmbh-co-kg", label: "XING", alt: "Logo Xing", imgSrc: "/assets/cloned/images/7cc7a984eec2.png" }
 ];
 const Tile_meta: string[][] = [
-    ["n17", "n18", "n19", "style-link", "n21"],
-    ["n22", "n23", "n24", "style-div", "n26"],
-    ["n27", "style-input", "style-button-13", "style-breadcrumbs", "n31"],
-    ["n32", "n33", "n34", "style-span", "n36"],
-    ["n37", "n38", "n39", "style-div-2", "n41"],
-    ["n42", "n43", "n44", "style-div-3", "n46"],
-    ["n47", "n48", "n49", "style-span-2", "n51"]
+    ["n17", "n18", "style-menu-item-20615", "style-link", "n21"],
+    ["style-link-38", "n23", "style-link-39", "style-div", "n26"],
+    ["style-form-3", "style-input", "style-button-13", "style-breadcrumbs", "n31"],
+    ["style-span-57", "n33", "n34", "style-span", "n36"],
+    ["n37", "style-div-541", "n39", "style-div-2", "n41"],
+    ["n42", "n43", "style-p-31", "style-div-3", "n46"],
+    ["style-heading-13", "n48", "n49", "style-span-2", "n51"]
 ];
 const TextLink_meta: string[][] = [
     ["n70", "n71", "n72", "style-li", "n74"],
-    ["style-link-26", "n76", "n77", "style-td", "n79"],
+    ["style-link-27", "n76", "n77", "style-td", "n79"],
     ["n80", "n81", "n82", "style-p", "n84"],
     ["n85", "style-tr", "n87", "style-image", "n89"],
-    ["n90", "n91", "n92", "style-li-2", "n94"],
-    ["n95", "n96", "style-div-62", "style-ul", "n99"],
-    ["n100", "n101", "n102", "style-li-3", "style-link-27"],
+    ["n90", "n91", "n92", "style-li-2", "style-td-2"],
+    ["interaction-image", "n96", "style-div-100", "style-ul", "n99"],
+    ["n100", "n101", "n102", "style-li-3", "style-link-28"],
     ["n105", "n106", "n107", "style-image-2", "n109"],
     ["n110", "n111", "n112", "style-li-4", "n114"],
-    ["n115", "n116", "n117", "style-ul-2", "style-694"],
+    ["n115", "n116", "n117", "style-ul-2", "style-697"],
     ["n120", "n121", "n122", "style-20", "n124"],
     ["n125", "n126", "n127", "style-link-2", "n129"],
-    ["style-strong-4", "n131", "n132", "style-strong", "n134"],
+    ["style-strong-4", "n131", "n132", "style-strong", "style-p-22"],
     ["n135", "n136", "n137", "style-p-2", "n139"],
-    ["n140", "style-link-24", "n142", "style-div-4", "n144"],
-    ["style-div-88", "n146", "n147", "style-heading", "n149"],
-    ["n150", "n151", "style-link-25", "style-div-5", "n154"],
+    ["n140", "style-link-25", "n142", "style-div-4", "style-div-204"],
+    ["style-div-127", "n146", "n147", "style-heading", "n149"],
+    ["n150", "n151", "style-link-26", "style-div-5", "n154"],
     ["n155", "n156", "n157", "style-p-3", "n159"],
     ["n160", "style-blockquote", "n162", "style-strong-2", "n164"],
-    ["n165", "n166", "n167", "style-link-3", "style-link-28"],
-    ["n170", "n171", "n172", "style-p-4", "style-p-8"],
-    ["n175", "n176", "style-link-29", "style-ul-3", "n179"],
+    ["n165", "n166", "n167", "style-link-3", "style-link-29"],
+    ["n170", "n171", "n172", "style-p-4", "style-p-10"],
+    ["n175", "n176", "style-link-30", "style-ul-3", "n179"],
     ["n180", "n181", "n182", "style-strong-3", "n184"],
-    ["style-p-9", "style-link-30", "n187", "style-p-5", "n189"],
-    ["style-link-31", "n191", "n192", "style-p-6", "n194"],
-    ["n195", "style-p-10", "style-ul-5", "style-p-7", "n199"]
+    ["style-p-11", "style-link-31", "n187", "style-p-5", "n189"],
+    ["style-link-32", "n191", "style-strong-9", "style-p-6", "n194"],
+    ["n195", "style-p-12", "style-ul-4", "style-p-7", "n199"]
 ];
 const TextLink2_meta: string[][] = [
-    ["n580", "style-89", "n582", "n583", "n584", "n585"],
-    ["n586", "style-90", "n588", "n589", "n590", "n591"],
-    ["n592", "style-91", "n594", "n595", "n596", "n597"],
-    ["n598", "style-92", "n600", "n601", "n602", "n603"],
-    ["n604", "style-93", "n606", "n607", "n608", "n609"]
+    ["style-productcarditem61444562", "style-div-6", "n582", "n583", "n584", "style-i-432"],
+    ["n586", "style-heading-2", "n588", "style-heart-42314", "n590", "n591"],
+    ["n592", "style-div-7", "n594", "n595", "n596", "n597"],
+    ["n598", "style-92", "n600", "style-987", "n602", "style-988"],
+    ["n604", "style-div-8", "n606", "n607", "n608", "n609"]
 ];
 const TextLink3_meta: string[][] = [
-    ["n704", "style-111", "n706", "n707", "n708", "n709"],
-    ["n710", "style-112", "n712", "n713", "n714", "n715"],
-    ["n716", "style-113", "n718", "n719", "n720", "n721"]
+    ["n704", "style-div-9", "n706", "style-i-433", "n708", "n709"],
+    ["n710", "style-heart-41119", "n712", "n713", "n714", "style-1006"],
+    ["n716", "style-113", "n718", "style-1007", "n720", "n721"]
 ];
 const TextLink4_meta: string[][] = [
-    ["n724", "style-114", "n726", "n727", "n728", "n729"],
-    ["n730", "style-115", "n732", "n733", "n734", "n735"],
-    ["n736", "style-116", "n738", "n739", "n740", "n741"]
+    ["n724", "style-span-3", "style-div-534", "style-i-434", "style-productcarditem61411585", "n729"],
+    ["n730", "style-div-10", "n732", "style-i-435", "n734", "n735"],
+    ["n736", "style-heart-41575", "n738", "n739", "n740", "n741"]
 ];
 const TextLink4_meta2: string[][] = [
-    ["n744", "style-117", "n746", "n747", "n748", "n749"],
-    ["n750", "style-118", "n752", "n753", "n754", "n755"],
-    ["n756", "style-119", "n758", "n759", "n760", "n761"],
-    ["n762", "style-120", "n764", "n765", "n766", "n767"]
+    ["n744", "style-117", "style-1010", "n747", "style-1011", "n749"],
+    ["style-1012", "style-div-11", "n752", "n753", "n754", "n755"],
+    ["n756", "style-div-12", "style-i-436", "style-productcarditem61420237", "n760", "n761"],
+    ["n762", "style-div-13", "style-i-437", "n765", "n766", "n767"]
 ];
 const TextLink5_meta: string[][] = [
-    ["n984", "n985", "n986", "style-153", "n988"],
+    ["n984", "n985", "style-1055", "style-153", "n988"],
     ["n989", "n990", "n991", "style-154", "n993"],
-    ["n994", "n995", "n996", "style-155", "n998"],
-    ["n999", "n1000", "n1001", "style-156", "n1003"],
-    ["n1004", "n1005", "n1006", "style-157", "n1008"],
-    ["n1009", "n1010", "n1011", "style-158", "n1013"],
+    ["n994", "style-1056", "n996", "style-155", "n998"],
+    ["style-1057", "n1000", "n1001", "style-156", "n1003"],
+    ["n1004", "n1005", "style-1653", "style-157", "style-1717"],
+    ["n1009", "n1010", "n1011", "style-158", "style-1058"],
     ["n1014", "n1015", "n1016", "style-159", "n1018"],
     ["n1019", "n1020", "n1021", "style-160", "n1023"],
-    ["n1024", "n1025", "n1026", "style-161", "n1028"],
-    ["n1029", "n1030", "n1031", "style-162", "n1033"],
-    ["n1034", "n1035", "n1036", "style-163", "n1038"],
-    ["n1039", "n1040", "n1041", "style-164", "n1043"]
+    ["n1024", "n1025", "style-1059", "style-161", "style-1060"],
+    ["n1029", "style-1061", "n1031", "style-162", "n1033"],
+    ["n1034", "n1035", "n1036", "style-163", "style-1062"],
+    ["style-1718", "n1040", "n1041", "style-164", "n1043"]
 ];
 const TextLink6_meta: string[][] = [
-    ["n1242", "n1243", "n1244", "style-203", "n1246"],
-    ["n1247", "n1248", "n1249", "style-204", "n1251"],
-    ["n1252", "n1253", "n1254", "style-205", "n1256"],
-    ["n1257", "n1258", "n1259", "style-206", "n1261"],
-    ["n1262", "n1263", "n1264", "style-207", "n1266"],
-    ["n1267", "n1268", "n1269", "style-208", "n1271"],
-    ["n1272", "n1273", "n1274", "style-209", "n1276"],
-    ["n1277", "n1278", "n1279", "style-210", "n1281"],
-    ["n1282", "n1283", "n1284", "style-211", "n1286"],
-    ["n1287", "n1288", "n1289", "style-212", "n1291"],
-    ["n1292", "n1293", "n1294", "style-213", "n1296"],
-    ["n1297", "n1298", "n1299", "style-214", "n1301"],
-    ["n1302", "n1303", "n1304", "style-215", "n1306"],
-    ["n1307", "n1308", "n1309", "style-216", "n1311"],
-    ["n1312", "n1313", "n1314", "style-217", "n1316"],
-    ["n1317", "n1318", "n1319", "style-218", "n1321"],
-    ["n1322", "n1323", "n1324", "style-219", "n1326"]
+    ["style-div-519", "style-i-438", "style-productcarditem61460360", "style-div-14", "n1246"],
+    ["n1247", "n1248", "style-i-439", "style-div-15", "n1251"],
+    ["n1252", "style-heart-36395", "n1254", "style-div-16", "n1256"],
+    ["style-i-440", "n1258", "style-i-441", "style-div-17", "n1261"],
+    ["n1262", "n1263", "n1264", "style-span-4", "style-div-520"],
+    ["style-i-442", "style-productcarditem61384546", "n1269", "style-div-18", "n1271"],
+    ["n1272", "style-i-443", "n1274", "style-heading-3", "n1276"],
+    ["style-heart-36137", "n1278", "n1279", "style-div-19", "n1281"],
+    ["n1282", "n1283", "n1284", "style-211", "style-1101"],
+    ["n1287", "style-1102", "n1289", "style-212", "n1291"],
+    ["n1292", "n1293", "n1294", "style-br", "n1296"],
+    ["style-div-521", "style-i-444", "style-productcarditem61345735", "style-div-20", "n1301"],
+    ["n1302", "n1303", "style-i-445", "style-div-21", "n1306"],
+    ["n1307", "style-heart-34947", "n1309", "style-div-22", "n1311"],
+    ["n1312", "n1313", "n1314", "style-image-3", "n1316"],
+    ["style-1106", "n1318", "style-1107", "style-218", "style-1108"],
+    ["n1322", "n1323", "n1324", "style-span-5", "n1326"]
 ];
 const TextLink7_meta: string[][] = [
-    ["n1598", "style-272", "n1600", "n1601", "n1602", "n1603"],
-    ["n1604", "style-273", "n1606", "n1607", "n1608", "n1609"],
-    ["n1610", "style-274", "n1612", "n1613", "n1614", "n1615"],
-    ["n1616", "style-275", "n1618", "n1619", "n1620", "n1621"]
+    ["style-i-446", "style-div-23", "n1600", "n1601", "n1602", "n1603"],
+    ["n1604", "style-div-24", "style-i-447", "style-productcarditem61403156", "n1608", "n1609"],
+    ["n1610", "style-div-25", "n1612", "n1613", "style-heart-40892", "n1615"],
+    ["n1616", "style-div-26", "n1618", "n1619", "n1620", "n1621"]
 ];
 const Tile_meta2: string[][] = [
-    ["n1689", "n1690", "n1691", "style-288", "n1693"],
-    ["n1694", "n1695", "n1696", "style-289", "n1698"],
-    ["n1699", "n1700", "n1701", "style-290", "n1703"],
-    ["n1704", "n1705", "n1706", "style-291", "n1708"],
-    ["n1709", "n1710", "n1711", "style-292", "n1713"],
-    ["n1714", "n1715", "n1716", "style-293", "n1718"]
+    ["style-i-448", "n1690", "n1691", "style-div-27", "n1693"],
+    ["n1694", "n1695", "n1696", "style-heart-34206", "n1698"],
+    ["n1699", "n1700", "style-1163", "style-290", "style-1164"],
+    ["n1704", "style-1165", "n1706", "style-div-28", "n1708"],
+    ["n1709", "n1710", "n1711", "style-div-29", "style-i-449"],
+    ["n1714", "n1715", "n1716", "style-div-30", "n1718"]
 ];
 const TextLink8_meta: string[][] = [
-    ["n1741", "n1742", "n1743", "style-297", "n1745"],
-    ["n1746", "n1747", "n1748", "style-298", "n1750"],
-    ["n1751", "n1752", "n1753", "style-299", "n1755"],
-    ["n1756", "n1757", "n1758", "style-300", "n1760"],
-    ["n1761", "n1762", "n1763", "style-301", "n1765"],
-    ["n1766", "n1767", "n1768", "style-302", "n1770"],
-    ["n1771", "n1772", "n1773", "style-303", "n1775"]
+    ["n1741", "n1742", "n1743", "style-div-31", "style-i-450"],
+    ["n1746", "n1747", "n1748", "style-div-32", "n1750"],
+    ["n1751", "n1752", "style-heart-30676", "style-div-33", "n1755"],
+    ["n1756", "style-1173", "n1758", "style-300", "n1760"],
+    ["style-1174", "n1762", "n1763", "style-div-34", "n1765"],
+    ["n1766", "n1767", "n1768", "style-i-210", "n1770"],
+    ["n1771", "n1772", "n1773", "style-div-35", "style-i-451"]
 ];
 const TextLink9_meta: string[][] = [
-    ["n1778", "n1779", "n1780", "style-304", "n1782"],
-    ["n1783", "n1784", "n1785", "style-305", "n1787"],
-    ["n1788", "n1789", "n1790", "style-306", "n1792"],
-    ["n1793", "n1794", "n1795", "style-307", "n1797"],
-    ["n1798", "n1799", "n1800", "style-308", "n1802"],
-    ["n1803", "n1804", "n1805", "style-309", "n1807"],
-    ["n1808", "n1809", "n1810", "style-310", "n1812"]
+    ["n1778", "style-heart-41389", "n1780", "style-div-36", "n1782"],
+    ["style-i-452", "n1784", "style-i-453", "style-div-37", "n1787"],
+    ["n1788", "n1789", "n1790", "style-span-6", "n1792"],
+    ["style-i-454", "n1794", "n1795", "style-div-38", "n1797"],
+    ["n1798", "style-i-455", "n1800", "style-heading-4", "n1802"],
+    ["style-heart-41455", "n1804", "n1805", "style-p-8", "style-i-456"],
+    ["n1808", "style-i-457", "n1810", "style-div-39", "n1812"]
 ];
 const TextLink10_meta: string[][] = [
-    ["n2028", "style-341", "n2030", "n2031", "n2032", "n2033"],
-    ["n2034", "style-342", "n2036", "n2037", "n2038", "n2039"],
+    ["n2028", "style-341", "n2030", "style-1222", "n2032", "n2033"],
+    ["n2034", "style-342", "n2036", "style-1223", "n2038", "n2039"],
     ["n2040", "style-343", "n2042", "n2043", "n2044", "n2045"],
-    ["n2046", "style-344", "n2048", "n2049", "n2050", "n2051"]
+    ["n2046", "style-344", "n2048", "n2049", "style-1224", "n2051"]
 ];
 const TextLink10_meta2: string[][] = [
     ["n2130", "style-359", "n2132", "n2133", "n2134", "n2135"],
-    ["n2136", "style-360", "n2138", "n2139", "n2140", "n2141"],
-    ["n2142", "style-361", "n2144", "n2145", "n2146", "n2147"],
-    ["n2148", "style-362", "n2150", "n2151", "n2152", "n2153"],
-    ["n2154", "style-363", "n2156", "n2157", "n2158", "n2159"]
+    ["n2136", "style-360", "style-1238", "n2139", "style-1239", "n2141"],
+    ["style-1240", "style-361", "n2144", "n2145", "n2146", "n2147"],
+    ["n2148", "style-362", "style-1241", "n2151", "n2152", "n2153"],
+    ["n2154", "style-363", "style-1242", "n2157", "n2158", "n2159"]
 ];
 const TextLink11_meta: string[][] = [
-    ["n2268", "style-383", "n2270", "n2271", "n2272", "n2273"],
-    ["n2274", "style-384", "n2276", "n2277", "n2278", "n2279"],
-    ["n2280", "style-385", "n2282", "n2283", "n2284", "n2285"]
+    ["n2268", "style-div-40", "n2270", "n2271", "n2272", "n2273"],
+    ["n2274", "style-384", "n2276", "style-1261", "n2278", "style-1262"],
+    ["n2280", "style-div-41", "n2282", "n2283", "n2284", "n2285"]
 ];
 const TextLink12_meta: string[][] = [
-    ["n2441", "style-415", "n2443", "n2444", "n2445", "n2446"],
-    ["n2447", "style-416", "n2449", "n2450", "n2451", "n2452"],
-    ["n2453", "style-417", "n2455", "n2456", "n2457", "n2458"]
+    ["n2441", "style-heart-41416", "n2443", "n2444", "n2445", "n2446"],
+    ["n2447", "style-nobr", "n2449", "n2450", "style-1288", "n2452"],
+    ["style-1289", "style-417", "style-1290", "n2456", "n2457", "n2458"]
 ];
 const TextLink13_meta: string[][] = [
-    ["n2533", "style-429", "n2535", "n2536", "n2537", "n2538"],
+    ["n2533", "style-429", "n2535", "style-1301", "n2537", "n2538"],
     ["n2539", "style-430", "n2541", "n2542", "n2543", "n2544"],
-    ["n2545", "style-431", "n2547", "n2548", "n2549", "n2550"],
+    ["style-1302", "style-431", "style-1303", "n2548", "style-1304", "n2550"],
     ["n2551", "style-432", "n2553", "n2554", "n2555", "n2556"],
-    ["n2557", "style-433", "n2559", "n2560", "n2561", "n2562"]
+    ["style-1305", "style-433", "n2559", "n2560", "n2561", "n2562"]
 ];
 const TextLink4_meta3: string[][] = [
-    ["n2565", "style-434", "n2567", "n2568", "n2569", "n2570"],
-    ["n2571", "style-435", "n2573", "n2574", "n2575", "n2576"],
-    ["n2577", "style-436", "n2579", "n2580", "n2581", "n2582"]
+    ["n2565", "style-434", "style-1307", "n2568", "n2569", "n2570"],
+    ["n2571", "style-435", "n2573", "n2574", "n2575", "style-1308"],
+    ["n2577", "style-436", "n2579", "style-1309", "n2581", "n2582"]
 ];
 const Tile_meta3: string[][] = [
     ["n2710", "n2711", "n2712", "style-461", "n2714"],
-    ["n2715", "n2716", "n2717", "style-462", "n2719"],
+    ["n2715", "n2716", "n2717", "style-462", "style-1328"],
     ["n2720", "n2721", "n2722", "style-463", "n2724"]
 ];
 const TextLink14_meta: string[][] = [
-    ["n2739", "style-465", "n2741", "n2742", "n2743", "n2744"],
-    ["n2745", "style-466", "n2747", "n2748", "n2749", "n2750"],
-    ["n2751", "style-467", "n2753", "n2754", "n2755", "n2756"]
+    ["n2739", "style-465", "n2741", "n2742", "n2743", "style-1332"],
+    ["n2745", "style-466", "n2747", "n2748", "n2749", "style-1333"],
+    ["n2751", "style-467", "n2753", "style-1334", "n2755", "n2756"]
 ];
 const TextLink2_meta2: string[][] = [
-    ["n2816", "style-478", "n2818", "n2819", "n2820", "n2821"],
-    ["n2822", "style-479", "n2824", "n2825", "n2826", "n2827"],
+    ["style-1344", "style-478", "n2818", "n2819", "n2820", "n2821"],
+    ["n2822", "style-479", "n2824", "style-1345", "n2826", "style-1346"],
     ["n2828", "style-480", "n2830", "n2831", "n2832", "n2833"],
-    ["n2834", "style-481", "n2836", "n2837", "n2838", "n2839"],
-    ["n2840", "style-482", "n2842", "n2843", "n2844", "n2845"],
+    ["n2834", "style-481", "n2836", "style-1347", "n2838", "n2839"],
+    ["n2840", "style-482", "n2842", "style-1348", "n2844", "n2845"],
     ["n2846", "style-483", "n2848", "n2849", "n2850", "n2851"],
-    ["n2852", "style-484", "n2854", "n2855", "n2856", "n2857"],
-    ["n2858", "style-485", "n2860", "n2861", "n2862", "n2863"],
-    ["n2864", "style-486", "n2866", "n2867", "n2868", "n2869"]
+    ["n2852", "style-484", "n2854", "n2855", "style-1349", "n2857"],
+    ["style-1350", "style-485", "style-1351", "n2861", "n2862", "n2863"],
+    ["n2864", "style-486", "n2866", "n2867", "style-1352", "n2869"]
 ];
 const TextLink2_meta3: string[][] = [
-    ["n3032", "style-518", "n3034", "n3035", "n3036", "n3037"],
-    ["n3038", "style-519", "n3040", "n3041", "n3042", "n3043"],
-    ["n3044", "style-520", "n3046", "n3047", "n3048", "n3049"],
-    ["n3050", "style-521", "n3052", "n3053", "n3054", "n3055"],
-    ["n3056", "style-522", "n3058", "n3059", "n3060", "n3061"]
+    ["n3032", "style-br-2", "n3034", "n3035", "style-i-458", "n3037"],
+    ["n3038", "style-div-42", "n3040", "n3041", "n3042", "n3043"],
+    ["style-heart-36140", "style-div-43", "n3046", "n3047", "style-1380", "n3049"],
+    ["style-1381", "style-521", "style-1382", "n3053", "n3054", "n3055"],
+    ["n3056", "style-br-3", "n3058", "n3059", "style-i-459", "n3061"]
 ];
 const ListRow_meta: string[][] = [
-    ["style-i-405", "style-a-12", "style-span-17"],
-    ["n3220", "style-i-406", "style-link-32"],
-    ["n3223", "style-i-407", "style-link-33"]
+    ["style-i-406", "style-a-11", "style-span-22"],
+    ["style-li-8", "style-i-407", "style-link-33"],
+    ["n3223", "style-i-408", "style-link-34"]
 ];
 const ListRow2_meta: string[][] = [
-    ["n3227", "style-div-135", "style-div-110"],
-    ["n3230", "style-div-136", "style-heading-2"],
-    ["n3233", "style-div-137", "style-div-111"]
+    ["n3227", "style-div-179", "style-div-149"],
+    ["style-div-443", "style-div-180", "style-heading-8"],
+    ["n3233", "style-div-181", "style-div-150"]
 ];
 const ListRow3_meta: string[][] = [
-    ["n3242", "style-i-408", "style-div-112"],
+    ["n3242", "style-i-409", "style-div-151"],
     ["style-button", "style-heart-1685", "style-button-2"],
-    ["style-span-3", "style-link-4", "style-span-4"]
+    ["style-span-7", "style-link-4", "style-span-8"]
 ];
 const ListRow_meta2: string[][] = [
-    ["n3252", "style-div-138", "style-div-113"],
+    ["n3252", "style-div-182", "style-div-152"],
     ["n3255", "style-source-2", "style-source"],
-    ["n3258", "style-sds-onsidenavi-header-breakpoint", "style-div-114"]
+    ["n3258", "style-sds-onsidenavi-header-breakpoint", "style-div-153"]
 ];
 const Tile2_meta: string[][] = [
-    ["n3276", "n3277", "style-div-139", "style-div-115"],
-    ["n3280", "n3281", "style-pdm-content-sections", "style-osn-benefit"],
-    ["n3284", "n3285", "style-heading-4", "style-button-17"],
-    ["n3288", "style-div-159", "style-div-140", "style-p-11"],
-    ["n3292", "n3293", "style-div-141", "style-div-116"],
-    ["n3296", "n3297", "style-strong-6", "style-ul-6"],
-    ["n3300", "n3301", "style-900", "style-p-12"],
-    ["n3304", "n3305", "style-li-7", "style-li-5"],
-    ["n3308", "n3309", "style-ul-9", "style-li-6"],
-    ["n3312", "n3313", "style-strong-7", "style-ul-7"],
-    ["n3316", "n3317", "style-product-portlet-sidebar-title-6139", "style-p-13"],
-    ["n3320", "n3321", "style-button-18", "style-i-426"],
-    ["n3324", "n3325", "style-heading-5", "interaction-button"],
-    ["interaction-pdm-content-accordion-panel-learning-environ", "n3329", "style-div-142", "style-p-14"],
+    ["n3276", "n3277", "style-div-183", "style-div-154"],
+    ["style-div-445", "n3281", "style-pdm-content-sections", "style-osn-benefit"],
+    ["style-pdm-content-accordion", "n3285", "style-heading-9", "style-button-17"],
+    ["n3288", "n3289", "style-div-184", "style-p-13"],
+    ["style-strong-10", "n3293", "style-div-185", "style-div-155"],
+    ["n3296", "n3297", "style-strong-6", "style-ul-5"],
+    ["style-heart-36107", "n3301", "style-div-186", "style-p-14"],
+    ["style-strong-11", "n3305", "style-li-7", "style-li-5"],
+    ["n3308", "n3309", "style-ul-8", "style-li-6"],
+    ["n3312", "n3313", "style-strong-7", "style-ul-6"],
+    ["n3316", "n3317", "style-div-187", "style-p-15"],
+    ["n3320", "n3321", "style-heart-36106", "style-div-156"],
+    ["n3324", "n3325", "style-heading-10", "interaction-button"],
+    ["interaction-pdm-content-accordion-panel-learning-environ", "n3329", "style-div-188", "style-p-16"],
     ["n3332", "n3333", "interaction-button-2", "interaction-pdm-content-accordion-panel-benefit"],
-    ["n3336", "style-div-160", "style-p-17", "style-ul-8"],
-    ["n3340", "n3341", "style-909", "style-850"],
-    ["n3344", "n3345", "style-p-18", "style-br-4"],
-    ["n3348", "n3349", "style-br-7", "style-br-5"],
-    ["n3352", "n3353", "style-heading-6", "interaction-button-3"],
-    ["interaction-pdm-content-accordion-panel-experts", "n3357", "style-a-13", "style-div-117"],
-    ["n3360", "n3361", "style-p-19", "style-854"],
-    ["n3364", "n3365", "style-915", "style-855"],
-    ["n3368", "n3369", "style-916", "style-856"],
-    ["n3372", "n3373", "style-button-19", "style-div-118"],
-    ["n3376", "interaction-button-4", "interaction-pdm-content-accordion-panel-methods", "style-div-119"]
+    ["style-div-446", "n3337", "style-p-19", "style-ul-7"],
+    ["n3340", "n3341", "style-heading-11", "style-div-157"],
+    ["style-heart-41321", "n3345", "style-p-20", "style-br-7"],
+    ["n3348", "n3349", "style-br-9", "style-br-8"],
+    ["style-div-447", "n3353", "style-heading-12", "interaction-button-3"],
+    ["interaction-pdm-content-accordion-panel-experts", "n3357", "style-a-12", "style-div-158"],
+    ["style-p-23", "n3361", "style-p-21", "style-857"],
+    ["n3364", "n3365", "style-919", "style-858"],
+    ["n3368", "n3369", "style-920", "style-859"],
+    ["n3372", "n3373", "style-921", "style-div-159"],
+    ["n3376", "interaction-button-4", "interaction-pdm-content-accordion-panel-methods", "style-div-160"]
 ];
 const MediaTile_meta: string[][] = [
-    ["n3472", "n3473", "style-link-10", "n3475", "n3476", "n3477", "n3478", "n3479", "n3480", "n3481", "n3482", "n3483", "style-div-122"],
-    ["n3485", "style-img-3", "style-strong-8", "n3488", "style-pdudetailsbuttonmastermobile", "n3490", "n3491", "n3492", "n3493", "style-i-430", "n3495", "n3496", "style-div-123"],
-    ["n3498", "n3499", "style-heading-7", "n3501", "n3502", "n3503", "n3504", "n3505", "n3506", "style-pdudetailsheaderlopmobile", "style-img-2", "n3509", "style-div-124"],
-    ["style-pdudetailsbuttonlopmobile", "n3512", "style-sup-2", "style-div-162", "n3515", "style-p-24", "style-sup-3", "n3518", "n3519", "n3520", "style-div-163", "n3522", "style-div-125"],
-    ["style-ul-10", "n3525", "style-img", "n3527", "style-div-164", "n3529", "style-a-15", "style-div-165", "n3532", "n3533", "n3534", "n3535", "style-p-15"]
+    ["style-p-26", "n3473", "style-link-11", "n3475", "style-div-453", "n3477", "n3478", "n3479", "n3480", "n3481", "n3482", "n3483", "style-div-164"],
+    ["n3485", "style-img-2", "style-strong-8", "n3488", "style-pdudetailsbuttonmastermobile", "style-pdudetailsmastermobile", "n3491", "n3492", "n3493", "style-div-454", "n3495", "n3496", "style-div-165"],
+    ["n3498", "n3499", "style-span-24", "n3501", "n3502", "style-hr", "n3504", "style-div-455", "n3506", "style-pdudetailsheaderlopmobile", "n3508", "n3509", "style-div-166"],
+    ["style-pdudetailsbuttonlopmobile", "n3512", "style-sup-2", "n3514", "style-div-456", "n3516", "n3517", "n3518", "n3519", "n3520", "style-div-457", "n3522", "style-div-167"],
+    ["n3524", "style-div-458", "style-img", "n3527", "n3528", "n3529", "n3530", "n3531", "n3532", "n3533", "style-p-27", "n3535", "style-p-17"]
 ];
 const MediaTile2_meta: string[][] = [
-    ["n3552", "n3553", "style-div-147", "n3555", "style-i-409", "n3557", "style-link-13", "n3559", "n3560", "n3561", "n3562", "n3563", "style-span-18"],
-    ["n3565", "n3566", "style-span-19", "n3568", "n3569", "style-link-14", "n3571", "n3572", "style-productportletresetfilterbuttonandpills6139", "n3574", "n3575", "n3576", "style-div-6"],
-    ["n3578", "n3579", "style-div-148", "style-productcarditem61432297", "n3582", "style-div-229", "n3584", "style-div-7", "style-i-431", "n3587", "n3588", "style-image-10", "style-div-126"],
-    ["style-i-410", "style-icontext-014663426602543528", "style-icontext-04681918095674673", "style-div-166", "style-button-3", "style-i-411", "n3597", "style-div-230", "n3599", "n3600", "style-image-11", "n3602", "style-button-4"]
+    ["n3552", "n3553", "style-div-193", "n3555", "style-i-410", "n3557", "style-link-14", "n3559", "style-div-461", "n3561", "style-span-51", "n3563", "style-span-23"],
+    ["n3565", "n3566", "style-span-25", "n3568", "n3569", "style-link-15", "n3571", "n3572", "style-div-44", "n3574", "n3575", "n3576", "style-div-45"],
+    ["style-heart-42655", "n3579", "style-div-194", "style-div-46", "n3582", "style-p-33", "style-i-461", "style-p-9", "style-i-462", "n3587", "n3588", "style-image-11", "style-div-168"],
+    ["style-i-411", "style-icontext-020548172133077913", "style-icontext-0227246396959507", "style-div-462", "style-button-3", "style-i-412", "n3597", "style-div-569", "n3599", "style-p-28", "style-image-12", "n3602", "style-button-4"]
 ];
 const Logo_meta: string[][] = [
-    ["style-image-12", "n3617"],
-    ["n3618", "style-div-233"],
-    ["style-div-169", "n3621"],
-    ["style-link-16", "n3623"],
-    ["style-div-170", "style-button-5"],
+    ["style-image-13", "n3617"],
+    ["n3618", "style-div-572"],
+    ["style-div-466", "n3621"],
+    ["style-link-17", "n3623"],
+    ["n3624", "style-button-5"],
     ["n3626", "n3627"],
-    ["style-div-234", "n3629"],
-    ["n3630", "style-link-17"]
+    ["style-div-467", "n3629"]
 ];
 const ListRow4_meta: string[][] = [
-    ["style-div-25", "style-heading-8"],
-    ["n3765", "style-div-149"],
-    ["style-button-6", "style-i-428"],
-    ["style-div-227", "style-div-150"],
-    ["n3771", "style-eventfilterswitch"],
-    ["n3773", "style-togglebookableevents"]
+    ["n3762", "style-aibubble"],
+    ["style-ffnet-den-ki-berater-in-einem-neuen-fenster-tab", "style-icon"],
+    ["n3766", "style-button-6"],
+    ["n3768", "style-div-195"],
+    ["n3770", "style-cntbrowsable"],
+    ["n3772", "style-div-196"]
 ];
 const Logo2_meta: string[][] = [
-    ["style-i-419", "style-button-20"],
-    ["n3799", "n3800"],
-    ["n3801", "n3802"]
+    ["style-i-420", "n3797"],
+    ["style-i-421", "style-div-488"],
+    ["n3800", "n3801"]
 ];
 const ListRow5_meta: string[][] = [
-    ["style-576", "style-942"],
-    ["style-div-8", "style-div-154"],
-    ["n3811", "style-span-21"],
-    ["style-br-3", "style-span-22"]
+    ["n3806", "style-label"],
+    ["style-i-422", "style-button-19"],
+    ["n3810", "style-div-200"],
+    ["n3812", "style-div-201"]
 ];
 const Logo3_meta: string[][] = [
-    ["style-div-155", "n3819"],
-    ["style-div-156", "n3821"],
-    ["style-i-429", "n3823"],
-    ["style-heading-9", "style-heart-41660"],
-    ["style-div-157", "style-div-9"],
-    ["style-div-158", "style-div-10"]
+    ["style-949", "style-578"],
+    ["style-950", "style-579"],
+    ["style-951", "style-1489"],
+    ["style-div-202", "style-div-65"],
+    ["style-div-203", "n3826"],
+    ["style-br-4", "style-span-9"]
 ];
 const TextLink_styles = [
     { className: "border-2 border-clr-1" },
@@ -783,12 +781,11 @@ const MediaTile2_styles = [
     { className: "w-[35.4375rem] opacity-0", className2: "h-54" }
 ];
 const Logo_styles = [
-    { className: "w-auto" },
+    { className: "w-[4.3125rem] max-lg:w-13" },
     { className: "w-auto" },
     { className: "w-auto" },
     { className: "w-[2.9375rem] max-lg:w-[2.1875rem]" },
     { className: "w-14.5 max-lg:w-[2.6875rem]" },
-    { className: "w-full" },
     { className: "w-full" },
     { className: "w-full" }
 ];
@@ -816,7 +813,7 @@ export default function Page() {
   return (
     <>
       <div className="h-[3.3125rem] block sticky top-0 z-995 bg-background max-lg:h-[3.35rem] 2xl:h-[4.3125rem]">
-        <div className="h-full block" data-ditto-id="style-div-63">
+        <div className="h-full block" data-ditto-id="style-div-101">
           <div className="h-full block max-w-360 px-6 mx-auto max-md:px-4 2xl:px-24">
             <nav className="h-full border-b border-solid border-b-surface-8 flex relative py-2 justify-start items-center bg-background max-lg:flex-wrap max-lg:justify-between 2xl:py-4" style={{ backgroundImage: "linear-gradient(var(--clr-0), var(--clr-1))" }} data-component="nav" aria-label="Hauptnavigation" role="navigation">
               <a className="w-42.5 block text-color-004 text-[1.25rem] whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href="/" title="Haufe Akademie Startseite">
@@ -841,7 +838,7 @@ export default function Page() {
                     <div className="hidden absolute top-[90%] inset-x-0 z-1000 min-w-40 max-h-[calc(-100%_+_800px)] -mx-3 rounded-2xl overflow-auto bg-background [background-clip:padding-box] shadow-[var(--color-020)_0px_0px_1px_1px,var(--color-020)_0px_2px_4px_-1px,var(--color-020)_0px_2px_8px_-2px] [-webkit-background-clip:padding-box]" data-ditto-id="interaction-dropdown-menu-global-nav-0" aria-labelledby="dropdown-toggle-global-nav-0" id="dropdown-menu-global-nav-0" role="menu">
                       <div className="h-full flex overflow-auto">
                         <div className="border-r border-solid border-r-border flex min-w-0 p-4 flex-col flex-wrap shrink-0 basis-[342px] gap-2">
-                          <div className="flex min-w-0 flex-col gap-2" aria-orientation="vertical" role="tablist">
+                          <div className="flex min-w-0 flex-col gap-2" data-ditto-id="style-div-540" aria-orientation="vertical" role="tablist">
                             {Tile_data.map((d, i) => <Tile key={i} d={d} />)}
                             {" "}
                           </div>
@@ -853,11 +850,11 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <div className="block min-w-0">
+                        <div className="block min-w-0" data-ditto-id="style-div-542">
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_0_0" id="tabpanel_megamenu_0_0" role="tabpanel">
-                            <div className="block" data-ditto-id="style-div-64">
+                            <div className="block" data-ditto-id="style-div-102">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                <div className="flex items-center" data-ditto-id="style-div-87">
+                                <div className="flex items-center" data-ditto-id="style-div-126">
                                   <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-2" />
                                   {" "}
                                   <span className="block min-w-0">
@@ -870,8 +867,8 @@ export default function Page() {
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
-                                    <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/b150ec74dd22.svg\")" }} data-ditto-id="style-i-425" />
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-543">
+                                    <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/b150ec74dd22.svg\")" }} data-ditto-id="style-i-430" />
                                     {" "}
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                       {" Themen"}
@@ -898,12 +895,12 @@ export default function Page() {
                                 {" "}
                                 <div className="block">
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_0" id="tabpanel__megamenu_0_0_0" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-29">
+                                    <div className="block" data-ditto-id="style-div-67">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-11" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-3" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-5">
+                                          <span className="block min-w-0" data-ditto-id="style-span-10">
                                             Themen
                                           </span>
                                           {" "}
@@ -914,7 +911,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-30">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-68">
                                               {" General Management"}
                                             </div>
                                             {" "}
@@ -922,7 +919,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-3" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" General Management"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-4" />
                                           {" "}
@@ -941,7 +938,7 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_1" id="tabpanel__megamenu_0_0_1" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-31">
+                                        <div className="flex items-center" data-ditto-id="style-div-69">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-5" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -955,7 +952,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-32">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-70">
                                               {" Digital Transformation & Change Management"}
                                             </div>
                                             {" "}
@@ -972,7 +969,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-33" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-71" />
                                         {" "}
                                       </div>
                                     </div>
@@ -980,12 +977,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-2" aria-labelledby="tab__megamenu_0_0_2" id="tabpanel__megamenu_0_0_2" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-34">
+                                    <div className="block" data-ditto-id="style-div-72">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-35">
+                                        <div className="flex items-center" data-ditto-id="style-div-73">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-7" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-6">
+                                          <span className="block min-w-0" data-ditto-id="style-span-11">
                                             Themen
                                           </span>
                                           {" "}
@@ -994,9 +991,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-36">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-74">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-37">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-75">
                                               {" Führung und Leadership"}
                                             </div>
                                             {" "}
@@ -1013,7 +1010,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-38" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-76" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1021,12 +1018,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_3" id="tabpanel__megamenu_0_0_3" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-39">
+                                    <div className="block" data-ditto-id="style-div-77">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-14" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-40">
+                                        <div className="flex items-center" data-ditto-id="style-div-78">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-9" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-7">
+                                          <span className="block min-w-0" data-ditto-id="style-span-12">
                                             Themen
                                           </span>
                                           {" "}
@@ -1035,9 +1032,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-41">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-65">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-42">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-79">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-103">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-80">
                                               {" Persönliche und Soziale Kompetenzen"}
                                             </div>
                                             {" "}
@@ -1045,7 +1042,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-7" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-6" href="/blog/berufe">
                                           {" Persönliche und Soziale Kompetenzen"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-10" />
                                           {" "}
@@ -1054,7 +1051,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-43" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-81" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1062,12 +1059,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-4" aria-labelledby="tab__megamenu_0_0_4" id="tabpanel__megamenu_0_0_4" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-44">
+                                    <div className="block" data-ditto-id="style-div-82">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-15" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-45">
+                                        <div className="flex items-center" data-ditto-id="style-div-83">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-11" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-8">
+                                          <span className="block min-w-0" data-ditto-id="style-span-13">
                                             Themen
                                           </span>
                                           {" "}
@@ -1076,9 +1073,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-46">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-84">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-47">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-85">
                                               {" Künstliche Intelligenz & Data Analytics"}
                                             </div>
                                             {" "}
@@ -1095,7 +1092,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-48" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-86" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1103,7 +1100,7 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_5" id="tabpanel__megamenu_0_0_5" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-49">
+                                    <div className="block" data-ditto-id="style-div-87">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-13" />
@@ -1116,8 +1113,8 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-50">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-51">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-88">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-89">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Projekt- und Prozessmanagement"}
@@ -1144,12 +1141,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-6" aria-labelledby="tab__megamenu_0_0_6" id="tabpanel__megamenu_0_0_6" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-52">
+                                    <div className="block" data-ditto-id="style-div-90">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-15" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-9">
+                                          <span className="block min-w-0" data-ditto-id="style-span-14">
                                             Themen
                                           </span>
                                           {" "}
@@ -1158,7 +1155,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-66">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-104">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Personalmanagement"}
@@ -1176,7 +1173,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-205">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1187,7 +1184,7 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-7" aria-labelledby="tab__megamenu_0_0_7" id="tabpanel__megamenu_0_0_7" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-67">
+                                        <div className="flex items-center" data-ditto-id="style-div-105">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-17" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -1200,8 +1197,8 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-68">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-106">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-124">
                                               {" Entgeltabrechnung"}
                                             </div>
                                             {" "}
@@ -1217,8 +1214,8 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex" data-ditto-id="style-div-69">
-                                        <div className="block min-w-0" data-ditto-id="style-div-53" />
+                                      <div className="flex" data-ditto-id="style-div-107">
+                                        <div className="block min-w-0" data-ditto-id="style-div-91" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1226,7 +1223,7 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_8" id="tabpanel__megamenu_0_0_8" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-54">
+                                    <div className="block" data-ditto-id="style-div-92">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-19" />
@@ -1239,10 +1236,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-70">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-55">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-71">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-56">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-108">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-93">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-109">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-94">
                                               {" Learning & Development"}
                                             </div>
                                             {" "}
@@ -1250,7 +1247,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-8" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-7" href="/blog/berufe">
                                           {" Learning & Development"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-20" />
                                           {" "}
@@ -1258,8 +1255,8 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex" data-ditto-id="style-div-107">
-                                        <div className="block min-w-0" data-ditto-id="style-div-57" />
+                                      <div className="flex" data-ditto-id="style-div-146">
+                                        <div className="block min-w-0" data-ditto-id="style-div-95" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1267,12 +1264,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_9" id="tabpanel__megamenu_0_0_9" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-72">
+                                    <div className="block" data-ditto-id="style-div-110">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-16" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-73">
+                                        <div className="flex items-center" data-ditto-id="style-div-111">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-21" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-10">
+                                          <span className="block min-w-0" data-ditto-id="style-span-15">
                                             Themen
                                           </span>
                                           {" "}
@@ -1281,9 +1278,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-58">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-96">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-59">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-97">
                                               {" Nachhaltigkeits­management"}
                                             </div>
                                             {" "}
@@ -1300,7 +1297,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-74" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-112" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1308,12 +1305,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_10" id="tabpanel__megamenu_0_0_10" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-75">
+                                    <div className="block" data-ditto-id="style-div-113">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-12" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-76">
+                                        <div className="flex items-center" data-ditto-id="style-div-114">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-23" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-11">
+                                          <span className="block min-w-0" data-ditto-id="style-span-16">
                                             Themen
                                           </span>
                                           {" "}
@@ -1321,9 +1318,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-60">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-98">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-61">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-99">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Gesundheits­management"}
                                             </div>
@@ -1341,7 +1338,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-89" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-128" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1363,9 +1360,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-90">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-526">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-206">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-129">
                                               {" Vertrieb und Verkauf"}
                                             </div>
                                             {" "}
@@ -1373,7 +1370,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-4" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-3" href="/blog/berufe">
                                           {" Vertrieb und Verkauf"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-26" />
                                           {" "}
@@ -1381,7 +1378,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex" data-ditto-id="style-div-77">
+                                      <div className="flex" data-ditto-id="style-div-115">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1391,11 +1388,11 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-12" aria-labelledby="tab__megamenu_0_0_12" id="tabpanel__megamenu_0_0_12" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-47" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-207">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-27" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-13">
+                                          <span className="block min-w-0" data-ditto-id="style-span-18">
                                             Themen
                                           </span>
                                           {" "}
@@ -1403,10 +1400,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-78">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-79">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-116">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-208">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-117">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-544">
                                               {" Marketing "}
                                             </div>
                                             {" "}
@@ -1414,7 +1411,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-5" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-4" href="/blog/berufe">
                                           {" Marketing "}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-28" />
                                           {" "}
@@ -1422,7 +1419,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex" data-ditto-id="style-div-80">
+                                      <div className="flex" data-ditto-id="style-div-118">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1430,10 +1427,10 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_13" id="tabpanel__megamenu_0_0_13" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-13" aria-labelledby="tab__megamenu_0_0_13" id="tabpanel__megamenu_0_0_13" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-48" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-209">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-29" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -1444,9 +1441,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-81">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-119">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-82">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-120">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Produktmanagement"}
                                             </div>
@@ -1455,7 +1452,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-6" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-5" href="/blog/berufe">
                                           {" Produktmanagement"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-30" />
                                           {" "}
@@ -1464,7 +1461,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-91" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-130" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1472,12 +1469,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_14" id="tabpanel__megamenu_0_0_14" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-83">
+                                    <div className="block" data-ditto-id="style-div-121">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-84">
+                                        <div className="flex items-center" data-ditto-id="style-div-122">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-31" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-12">
+                                          <span className="block min-w-0" data-ditto-id="style-span-17">
                                             Themen
                                           </span>
                                           {" "}
@@ -1486,9 +1483,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-85">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-123">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-92">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-131">
                                               {" Einkauf "}
                                             </div>
                                             {" "}
@@ -1505,7 +1502,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" data-ditto-id="style-div-93" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-132" />
                                         {" "}
                                       </div>
                                     </div>
@@ -1513,12 +1510,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_15" id="tabpanel__megamenu_0_0_15" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-94">
+                                    <div className="block" data-ditto-id="style-div-133">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-95">
+                                        <div className="flex items-center" data-ditto-id="style-div-134">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-33" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-14">
+                                          <span className="block min-w-0" data-ditto-id="style-span-19">
                                             Themen
                                           </span>
                                           {" "}
@@ -1527,9 +1524,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-96">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-135">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-97">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-136">
                                               {" Logistik, Supply Chain und Außenhandel"}
                                             </div>
                                             {" "}
@@ -1556,10 +1553,10 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_16" id="tabpanel__megamenu_0_0_16" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-86">
+                                        <div className="flex items-center" data-ditto-id="style-div-125">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-35" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-15">
+                                          <span className="block min-w-0" data-ditto-id="style-span-20">
                                             Themen
                                           </span>
                                           {" "}
@@ -1596,7 +1593,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_17" id="tabpanel__megamenu_0_0_17" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-20" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-37" />
                                           {" "}
@@ -1608,7 +1605,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-210">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -1619,7 +1616,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-9" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-8" href="/blog/berufe">
                                           {" Rechnungswesen, Steuern und Finanzen"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-38" />
                                           {" "}
@@ -1627,7 +1624,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex" data-ditto-id="style-div-98">
+                                      <div className="flex" data-ditto-id="style-div-137">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1641,7 +1638,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-39" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-55">
                                             Themen
                                           </span>
                                           {" "}
@@ -1649,9 +1646,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-99">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-100">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-138">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-545">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-139">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Controlling"}
                                             </div>
@@ -1660,7 +1657,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-10" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-9" href="/blog/berufe">
                                           {" Controlling"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-40" />
                                           {" "}
@@ -1668,7 +1665,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex" data-ditto-id="style-div-101">
+                                      <div className="flex" data-ditto-id="style-div-140">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1678,7 +1675,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_19" id="tabpanel__megamenu_0_0_19" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-21" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-41" />
                                           {" "}
@@ -1690,9 +1687,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-102">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-141">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-103">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-142">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Recht und Datenschutz"}
                                             </div>
@@ -1701,7 +1698,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-11" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-10" href="/blog/berufe">
                                           {" Recht und Datenschutz"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-42" />
                                           {" "}
@@ -1709,7 +1706,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-211">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1718,12 +1715,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_20" id="tabpanel__megamenu_0_0_20" role="tabpanel">
-                                    <div className="block" data-ditto-id="style-div-104">
+                                    <div className="block" data-ditto-id="style-div-143">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-105">
+                                        <div className="flex items-center" data-ditto-id="style-div-144">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-43" />
                                           {" "}
-                                          <span className="block min-w-0" data-ditto-id="style-span-16">
+                                          <span className="block min-w-0" data-ditto-id="style-span-21">
                                             Themen
                                           </span>
                                           {" "}
@@ -1731,8 +1728,8 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-106">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-212">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-145">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Compliance"}
@@ -1750,7 +1747,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-213">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1760,7 +1757,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_21" id="tabpanel__megamenu_0_0_21" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-22" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-45" />
                                           {" "}
@@ -1791,7 +1788,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-214">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -1799,10 +1796,10 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_22" id="tabpanel__megamenu_0_0_22" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-22" aria-labelledby="tab__megamenu_0_0_22" id="tabpanel__megamenu_0_0_22" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center" data-ditto-id="style-div-108">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-23" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-147">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-47" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -1816,7 +1813,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-527">
                                               {" Immobilien­wirtschaft und -management"}
                                             </div>
                                             {" "}
@@ -1824,7 +1821,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-13" href="/blog/berufe">
                                           {" Immobilien­wirtschaft und -management"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-48" />
                                           {" "}
@@ -1842,7 +1839,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_23" id="tabpanel__megamenu_0_0_23" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-24" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-49" />
                                           {" "}
@@ -1854,7 +1851,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-215">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -1883,7 +1880,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_24" id="tabpanel__megamenu_0_0_24" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-25" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-51" />
                                           {" "}
@@ -1895,7 +1892,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-216">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -1915,15 +1912,15 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-528" />
                                         {" "}
                                       </div>
                                     </div>
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_0_25" id="tabpanel__megamenu_0_0_25" role="tabpanel">
-                                    <div className="block">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-0-25" aria-labelledby="tab__megamenu_0_0_25" id="tabpanel__megamenu_0_0_25" role="tabpanel">
+                                    <div className="block" data-ditto-id="style-div-546">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-53" />
@@ -1936,7 +1933,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-217">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -1947,7 +1944,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-14" href="/1685">
                                           {" IT-Trainings"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-54" />
                                           {" "}
@@ -1972,7 +1969,7 @@ export default function Page() {
                           {" "}
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_0_1" id="tabpanel_megamenu_0_1" role="tabpanel">
                             <div className="block">
-                              <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                              <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-26" type="button">
                                 <div className="flex items-center">
                                   <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-55" />
                                   {" "}
@@ -1984,7 +1981,7 @@ export default function Page() {
                                 {" "}
                               </button>
                               {" "}
-                              <div className="flex p-4 flex-col gap-4">
+                              <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-218">
                                 <div className="flex min-w-0 flex-col gap-3">
                                   <div className="flex min-w-0 items-center">
                                     <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/b150ec74dd22.svg\")" }} />
@@ -2004,17 +2001,17 @@ export default function Page() {
                               </div>
                               {" "}
                               <div className="block">
-                                <div className="flex flex-col flex-wrap gap-2">
-                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
+                                <div className="flex flex-col flex-wrap gap-2" data-ditto-id="style-div-529">
+                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]" data-ditto-id="style-div-219">
                                     {TextLink2_data.map((d, i) => <TextLink2 key={i} d={d} styles={TextLink2_styles[i]} />)}
                                     {" "}
                                   </div>
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="block">
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_1_0" id="tabpanel__megamenu_0_1_0" role="tabpanel">
-                                    <div className="block">
+                                <div className="block" data-ditto-id="style-div-530">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-1-0" aria-labelledby="tab__megamenu_0_1_0" id="tabpanel__megamenu_0_1_0" role="tabpanel">
+                                    <div className="block" data-ditto-id="style-div-547">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-56" />
@@ -2027,12 +2024,12 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-220">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-57" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-221">
                                               {" Seminare und Online-Trainings"}
                                             </div>
                                             {" "}
@@ -2062,7 +2059,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-59" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-26">
                                             Lernformate
                                           </span>
                                           {" "}
@@ -2071,7 +2068,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-222">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-60" />
                                             {" "}
@@ -2100,9 +2097,9 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_1_2" id="tabpanel__megamenu_0_1_2" role="tabpanel">
-                                    <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                    <div className="block" data-ditto-id="style-div-531">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-27" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-548">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-62" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -2115,7 +2112,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-223">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-63" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -2145,10 +2142,10 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_1_3" id="tabpanel__megamenu_0_1_3" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-224">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-65" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-27">
                                             Lernformate
                                           </span>
                                           {" "}
@@ -2157,7 +2154,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-225">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-66" />
                                             {" "}
@@ -2178,15 +2175,15 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-532" />
                                         {" "}
                                       </div>
                                     </div>
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_1_4" id="tabpanel__megamenu_0_1_4" role="tabpanel">
-                                    <div className="block">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-1-4" aria-labelledby="tab__megamenu_0_1_4" id="tabpanel__megamenu_0_1_4" role="tabpanel">
+                                    <div className="block" data-ditto-id="style-div-549">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-68" />
@@ -2199,7 +2196,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-226">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-69" />
@@ -2238,10 +2235,10 @@ export default function Page() {
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_0_2" id="tabpanel_megamenu_0_2" role="tabpanel">
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                <div className="flex items-center">
+                                <div className="flex items-center" data-ditto-id="style-div-227">
                                   <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-71" />
                                   {" "}
-                                  <span className="block min-w-0">
+                                  <span className="block min-w-0" data-ditto-id="style-span-28">
                                     Alles in persönliche Weiterbildung
                                   </span>
                                   {" "}
@@ -2250,7 +2247,7 @@ export default function Page() {
                               </button>
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
-                                <div className="flex min-w-0 flex-col gap-3">
+                                <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-228">
                                   <div className="flex min-w-0 items-center">
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                       {" Tagungen & Events"}
@@ -2273,9 +2270,9 @@ export default function Page() {
                               </div>
                               {" "}
                               <div className="block">
-                                <div className="flex flex-col flex-wrap gap-2">
-                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
-                                    <div className="flex min-w-0 flex-col gap-4">
+                                <div className="flex flex-col flex-wrap gap-2" data-ditto-id="style-div-533">
+                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]" data-ditto-id="style-div-229">
+                                    <div className="flex min-w-0 flex-col gap-4" data-ditto-id="style-div-550">
                                       <div className="block min-w-0 px-4 text-2xl font-medium leading-7 tracking-[-0.24px]">
                                         Tagungen
                                       </div>
@@ -2303,7 +2300,7 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="block">
+                                <div className="block" data-ditto-id="style-div-230">
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_0" id="tabpanel__megamenu_0_2_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
@@ -2320,7 +2317,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-231">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Personalverwaltung & Entgeltabrechnung"}
                                             </div>
@@ -2329,7 +2326,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-15" href="/1685">
                                           {" Personalverwaltung & Entgeltabrechnung"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-74" />
                                           {" "}
@@ -2337,7 +2334,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-232">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -2351,7 +2348,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-75" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-56">
                                             {"Tagungen & Events"}
                                           </span>
                                           {" "}
@@ -2359,8 +2356,8 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-233">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-551">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Rechnungswesen"}
@@ -2378,7 +2375,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-234">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -2388,7 +2385,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_2" id="tabpanel__megamenu_0_2_2" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-28" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-77" />
                                           {" "}
@@ -2419,7 +2416,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-235">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -2427,9 +2424,9 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_3" id="tabpanel__megamenu_0_2_3" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-2-3" aria-labelledby="tab__megamenu_0_2_3" id="tabpanel__megamenu_0_2_3" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-29" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-79" />
                                           {" "}
@@ -2444,7 +2441,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-535">
                                               {" Haufe Assistenz-Kongress"}
                                             </div>
                                             {" "}
@@ -2452,7 +2449,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-16" href="/blog/berufe">
                                           {" Haufe Assistenz-Kongress"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-80" />
                                           {" "}
@@ -2470,7 +2467,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_4" id="tabpanel__megamenu_0_2_4" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-30" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-81" />
                                           {" "}
@@ -2482,7 +2479,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-236">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -2510,12 +2507,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_5" id="tabpanel__megamenu_0_2_5" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-237">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-238">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-83" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-29">
                                             {"Tagungen & Events"}
                                           </span>
                                           {" "}
@@ -2542,21 +2539,21 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
-                                        <div className="block min-w-0" />
+                                      <div className="flex" data-ditto-id="style-div-536">
+                                        <div className="block min-w-0" data-ditto-id="style-div-239" />
                                         {" "}
                                       </div>
                                     </div>
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_6" id="tabpanel__megamenu_0_2_6" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-2-6" aria-labelledby="tab__megamenu_0_2_6" id="tabpanel__megamenu_0_2_6" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-85" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-30">
                                             {"Tagungen & Events"}
                                           </span>
                                           {" "}
@@ -2567,7 +2564,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-240">
                                               {" Haufe Online Days: Jahresforum Controlling"}
                                             </div>
                                             {" "}
@@ -2605,9 +2602,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-241">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-242">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Haufe Online Day: Social Media"}
                                             </div>
@@ -2633,9 +2630,9 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_2_8" id="tabpanel__megamenu_0_2_8" role="tabpanel">
-                                    <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                    <div className="block" data-ditto-id="style-div-537">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-31" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-552">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-89" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -2648,7 +2645,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-243">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Haufe Online Day: KI im Marketing"}
                                             </div>
@@ -2665,7 +2662,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-244">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -2688,9 +2685,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-245">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-246">
                                               {" Haufe Online Day: KI im Rechnungswesen"}
                                             </div>
                                             {" "}
@@ -2727,7 +2724,7 @@ export default function Page() {
                                 <div className="flex items-center">
                                   <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-93" />
                                   {" "}
-                                  <span className="block min-w-0">
+                                  <span className="block min-w-0" data-ditto-id="style-span-31">
                                     Alles in persönliche Weiterbildung
                                   </span>
                                   {" "}
@@ -2735,7 +2732,7 @@ export default function Page() {
                                 {" "}
                               </button>
                               {" "}
-                              <div className="flex p-4 flex-col gap-4">
+                              <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-553">
                                 <div className="flex min-w-0 flex-col gap-3">
                                   <div className="flex min-w-0 items-center">
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -2750,7 +2747,7 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-17" href="/1685">
                                   {" Alle Career Lines und Expert Lines"}
                                   <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-94" />
                                   {" "}
@@ -2760,7 +2757,7 @@ export default function Page() {
                               {" "}
                               <div className="block">
                                 <div className="flex flex-col flex-wrap gap-2">
-                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
+                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]" data-ditto-id="style-div-247">
                                     <a className="min-h-8 border-2 border-solid border-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="/1685" target="_self">
                                       {" "}
                                       <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary text-[1.125rem] italic bg-clr-1" data-ditto-id="style-i-95" />
@@ -2785,9 +2782,9 @@ export default function Page() {
                                       {" "}
                                       <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary text-[1.125rem] italic bg-clr-1" data-ditto-id="style-i-96" />
                                       {" "}
-                                      <div className="block min-w-0">
+                                      <div className="block min-w-0" data-ditto-id="style-div-248">
                                         <div className="flex">
-                                          <div className="block min-w-0 my-auto font-medium leading-5">
+                                          <div className="block min-w-0 my-auto font-medium leading-5" data-ditto-id="style-div-249">
                                             {" Expert Lines"}
                                           </div>
                                           {" "}
@@ -2805,7 +2802,7 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="block">
+                                <div className="block" data-ditto-id="style-div-250">
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_3_0" id="tabpanel__megamenu_0_3_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
@@ -2820,9 +2817,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-538">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-251">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-554">
                                             <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-98" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -2841,7 +2838,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-252">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -2851,7 +2848,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_3_1" id="tabpanel__megamenu_0_3_1" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-32" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-100" />
                                           {" "}
@@ -2876,7 +2873,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-18" href="/1685">
                                           {" Expert Lines"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-102" />
                                           {" "}
@@ -2884,7 +2881,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-253">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -2899,7 +2896,7 @@ export default function Page() {
                             {" "}
                           </div>
                           {" "}
-                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_0_4" id="tabpanel_megamenu_0_4" role="tabpanel">
+                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-4" aria-labelledby="tab_megamenu_0_4" id="tabpanel_megamenu_0_4" role="tabpanel">
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
@@ -2914,9 +2911,9 @@ export default function Page() {
                               </button>
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
-                                <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
-                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-539">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-254">
+                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-555">
                                       {" IT-Trainings von skill it"}
                                     </div>
                                     {" "}
@@ -2937,7 +2934,7 @@ export default function Page() {
                               </div>
                               {" "}
                               <div className="block">
-                                <div className="flex flex-col flex-wrap gap-2">
+                                <div className="flex flex-col flex-wrap gap-2" data-ditto-id="style-div-255">
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     {TextLink5_data.map((d, i) => <TextLink5 key={i} d={d} styles={TextLink5_styles[i]} />)}
                                     {" "}
@@ -2945,11 +2942,11 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="block">
+                                <div className="block" data-ditto-id="style-div-256">
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_0" id="tabpanel__megamenu_0_4_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-257">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-105" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -2982,7 +2979,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-258" />
                                         {" "}
                                       </div>
                                     </div>
@@ -2990,7 +2987,7 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_1" id="tabpanel__megamenu_0_4_1" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-259">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-108" />
@@ -3005,10 +3002,10 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-516">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Brands'] leading-4 text-center" data-ditto-id="style-i-109" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-556">
                                               {" Atlassian Jira & Confluence"}
                                             </div>
                                             {" "}
@@ -3032,7 +3029,7 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_2" id="tabpanel__megamenu_0_4_2" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-4-2" aria-labelledby="tab__megamenu_0_4_2" id="tabpanel__megamenu_0_4_2" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
@@ -3048,10 +3045,10 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-260">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-112" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-261">
                                               {" Datenbanken"}
                                             </div>
                                             {" "}
@@ -3081,7 +3078,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-114" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-32">
                                             IT-Trainings von skill it
                                           </span>
                                           {" "}
@@ -3089,7 +3086,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-557">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-115" />
@@ -3102,7 +3099,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-19" href="/blog/berufe/verwaltungsassistenz">
                                           {" Design & Publishing"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-116" />
                                           {" "}
@@ -3118,7 +3115,7 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_4" id="tabpanel__megamenu_0_4_4" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-4-4" aria-labelledby="tab__megamenu_0_4_4" id="tabpanel__megamenu_0_4_4" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
@@ -3145,7 +3142,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-20" href="/blog/berufe/verwaltungsassistenz">
                                           {" IT-Management"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-119" />
                                           {" "}
@@ -3153,7 +3150,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-262">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -3167,7 +3164,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-120" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-53">
                                             IT-Trainings von skill it
                                           </span>
                                           {" "}
@@ -3175,8 +3172,8 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-263">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-558">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-121" />
                                             {" "}
@@ -3205,7 +3202,7 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_6" id="tabpanel__megamenu_0_4_6" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-264">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-123" />
@@ -3223,7 +3220,7 @@ export default function Page() {
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-124" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-265">
                                               {" Machine Learning & Data Analytics"}
                                             </div>
                                             {" "}
@@ -3240,7 +3237,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-266" />
                                         {" "}
                                       </div>
                                     </div>
@@ -3261,9 +3258,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-517">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-267">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-559">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Brands'] leading-4 text-center" data-ditto-id="style-i-127" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -3290,7 +3287,7 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_8" id="tabpanel__megamenu_0_4_8" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-4-8" aria-labelledby="tab__megamenu_0_4_8" id="tabpanel__megamenu_0_4_8" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
@@ -3304,9 +3301,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-268">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-269">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-130" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -3333,9 +3330,9 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_9" id="tabpanel__megamenu_0_4_9" role="tabpanel">
-                                    <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-4-9" aria-labelledby="tab__megamenu_0_4_9" id="tabpanel__megamenu_0_4_9" role="tabpanel">
+                                    <div className="block" data-ditto-id="style-div-270">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-49" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-132" />
                                           {" "}
@@ -3348,7 +3345,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-271">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-133" />
                                             {" "}
@@ -3360,7 +3357,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-21" href="/blog/berufe/verwaltungsassistenz">
                                           {" Service- und Projektmanagement "}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-134" />
                                           {" "}
@@ -3382,7 +3379,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-135" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-33">
                                             IT-Trainings von skill it
                                           </span>
                                           {" "}
@@ -3391,7 +3388,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-272">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-136" />
                                             {" "}
@@ -3420,9 +3417,9 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_4_11" id="tabpanel__megamenu_0_4_11" role="tabpanel">
-                                    <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                    <div className="block" data-ditto-id="style-div-518">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-33" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-560">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-138" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -3435,7 +3432,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-273">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-139" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -3483,12 +3480,12 @@ export default function Page() {
                                 {" "}
                               </button>
                               {" "}
-                              <div className="flex p-4 flex-col gap-4">
+                              <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-274">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-275">
                                     <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/b150ec74dd22.svg\")" }} />
                                     {" "}
-                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-276">
                                       {" Future Jobs Classes"}
                                     </div>
                                     {" "}
@@ -3518,9 +3515,9 @@ export default function Page() {
                                 </div>
                                 {" "}
                                 <div className="block">
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_0" id="tabpanel__megamenu_0_5_0" role="tabpanel">
-                                    <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-5-0" aria-labelledby="tab__megamenu_0_5_0" id="tabpanel__megamenu_0_5_0" role="tabpanel">
+                                    <div className="block" data-ditto-id="style-div-277">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-50" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-143" />
                                           {" "}
@@ -3533,7 +3530,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-278">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-144" />
                                             {" "}
@@ -3545,7 +3542,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-22" href="/blog/berufe">
                                           {" Agile Transformation Manager:in"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-145" />
                                           {" "}
@@ -3563,7 +3560,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_1" id="tabpanel__megamenu_0_5_1" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-34" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-146" />
                                           {" "}
@@ -3588,7 +3585,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-46" href="/blog/berufe">
                                           {" AI Agent Specialist "}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-148" />
                                           {" "}
@@ -3596,7 +3593,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-561">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -3610,7 +3607,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-149" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-34">
                                             Future Jobs Classes
                                           </span>
                                           {" "}
@@ -3631,7 +3628,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-23" href="/blog/berufe">
                                           {" Business Automation Manager:in"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-151" />
                                           {" "}
@@ -3639,7 +3636,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-279">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -3653,7 +3650,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-152" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-54">
                                             Future Jobs Classes
                                           </span>
                                           {" "}
@@ -3661,8 +3658,8 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-280">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-562">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-153" />
                                             {" "}
@@ -3691,7 +3688,7 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_4" id="tabpanel__megamenu_0_5_4" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-281">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-155" />
@@ -3709,7 +3706,7 @@ export default function Page() {
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-156" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-282">
                                               {" Data Expert"}
                                             </div>
                                             {" "}
@@ -3726,7 +3723,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-283" />
                                         {" "}
                                       </div>
                                     </div>
@@ -3747,9 +3744,9 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-522">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-284">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-563">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-159" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -3768,7 +3765,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-285">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -3778,7 +3775,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_6" id="tabpanel__megamenu_0_5_6" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-35" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-161" />
                                           {" "}
@@ -3803,7 +3800,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-24" href="/blog/berufe">
                                           {" Digital Product Manager:in "}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-163" />
                                           {" "}
@@ -3811,7 +3808,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-286">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -3819,7 +3816,7 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_7" id="tabpanel__megamenu_0_5_7" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-5-7" aria-labelledby="tab__megamenu_0_5_7" id="tabpanel__megamenu_0_5_7" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
@@ -3834,8 +3831,8 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-523">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-287">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-165" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -3855,7 +3852,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-288" />
                                         {" "}
                                       </div>
                                     </div>
@@ -3865,7 +3862,7 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_8" id="tabpanel__megamenu_0_5_8" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-289">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-167" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -3877,9 +3874,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-290">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-291">
                                               {" Energy Manager:in"}
                                             </div>
                                             {" "}
@@ -3905,8 +3902,8 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_9" id="tabpanel__megamenu_0_5_9" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-46" type="button">
+                                        <div className="flex items-center" data-ditto-id="style-div-292">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-169" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -3930,7 +3927,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-25" href="/blog/berufe">
                                           {" KI Manager:in"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-171" />
                                           {" "}
@@ -3948,7 +3945,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_10" id="tabpanel__megamenu_0_5_10" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-36" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-172" />
                                           {" "}
@@ -3973,7 +3970,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-47" href="/blog/berufe">
                                           {" Machine Learning Engineer "}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-174" />
                                           {" "}
@@ -3981,7 +3978,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-564">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -3992,7 +3989,7 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_11" id="tabpanel__megamenu_0_5_11" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-293">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-175" />
                                           {" "}
                                           <span className="block min-w-0">
@@ -4004,7 +4001,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-294">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-176" />
                                             {" "}
@@ -4033,12 +4030,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_12" id="tabpanel__megamenu_0_5_12" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-295">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-296">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-178" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-35">
                                             Future Jobs Classes
                                           </span>
                                           {" "}
@@ -4067,8 +4064,8 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
-                                        <div className="block min-w-0" />
+                                      <div className="flex" data-ditto-id="style-div-297">
+                                        <div className="block min-w-0" data-ditto-id="style-div-565" />
                                         {" "}
                                       </div>
                                     </div>
@@ -4091,7 +4088,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-298">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-182" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -4120,7 +4117,7 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_14" id="tabpanel__megamenu_0_5_14" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-37" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-184" />
                                           {" "}
@@ -4132,7 +4129,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-299">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-185" />
@@ -4153,21 +4150,21 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
-                                        <div className="block min-w-0" />
+                                      <div className="flex" data-ditto-id="style-div-524">
+                                        <div className="block min-w-0" data-ditto-id="style-div-300" />
                                         {" "}
                                       </div>
                                     </div>
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_15" id="tabpanel__megamenu_0_5_15" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-5-15" aria-labelledby="tab__megamenu_0_5_15" id="tabpanel__megamenu_0_5_15" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-187" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-36">
                                             Future Jobs Classes
                                           </span>
                                           {" "}
@@ -4207,10 +4204,10 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_5_16" id="tabpanel__megamenu_0_5_16" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
+                                        <div className="flex items-center" data-ditto-id="style-div-301">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-190" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-37">
                                             Future Jobs Classes
                                           </span>
                                           {" "}
@@ -4219,7 +4216,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-302">
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-191" />
                                             {" "}
@@ -4240,7 +4237,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-525" />
                                         {" "}
                                       </div>
                                     </div>
@@ -4254,8 +4251,8 @@ export default function Page() {
                             {" "}
                           </div>
                           {" "}
-                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_0_6" id="tabpanel_megamenu_0_6" role="tabpanel">
-                            <div className="block">
+                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-6" aria-labelledby="tab_megamenu_0_6" id="tabpanel_megamenu_0_6" role="tabpanel">
+                            <div className="block" data-ditto-id="style-div-566">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
                                   <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-193" />
@@ -4270,7 +4267,7 @@ export default function Page() {
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-303">
                                     <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/a21988da1afb.svg\")" }} />
                                     {" "}
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -4290,7 +4287,7 @@ export default function Page() {
                               </div>
                               {" "}
                               <div className="block">
-                                <div className="flex flex-col flex-wrap gap-2">
+                                <div className="flex flex-col flex-wrap gap-2" data-ditto-id="style-div-304">
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     {TextLink7_data.map((d, i) => <TextLink7 key={i} d={d} styles={TextLink7_styles[i]} />)}
                                     {" "}
@@ -4299,9 +4296,9 @@ export default function Page() {
                                 </div>
                                 {" "}
                                 <div className="block">
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_0_6_0" id="tabpanel__megamenu_0_6_0" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-0-6-0" aria-labelledby="tab__megamenu_0_6_0" id="tabpanel__megamenu_0_6_0" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-38" type="button">
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-195" />
                                           {" "}
@@ -4326,7 +4323,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-48" href="/blog/berufe">
                                           {" Führungskräfte Coaching"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-197" />
                                           {" "}
@@ -4348,7 +4345,7 @@ export default function Page() {
                                         <div className="flex items-center">
                                           <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-198" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-38">
                                             Business Coaching
                                           </span>
                                           {" "}
@@ -4369,7 +4366,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-26" href="/blog/berufe">
                                           {" Fachkräfte Coaching"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-200" />
                                           {" "}
@@ -4404,7 +4401,7 @@ export default function Page() {
                                           <div className="flex min-w-0 items-center">
                                             <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-202" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-305">
                                               {" Top-Management Coaching"}
                                             </div>
                                             {" "}
@@ -4421,7 +4418,7 @@ export default function Page() {
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-306" />
                                         {" "}
                                       </div>
                                     </div>
@@ -4455,7 +4452,7 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-27" href="/blog/berufe">
                                           {" Teamcoaching"}
                                           <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-206" />
                                           {" "}
@@ -4463,7 +4460,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-307">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -4498,7 +4495,7 @@ export default function Page() {
                             {" "}
                           </div>
                           {" "}
-                          <a className="border-2 border-solid border-surface block min-w-0 mt-auto py-2 px-4 rounded-full align-middle text-primary font-medium text-center whitespace-nowrap text-nowrap bg-surface cursor-pointer" href="/1685">
+                          <a className="border-2 border-solid border-surface block min-w-0 mt-auto py-2 px-4 rounded-full align-middle text-primary font-medium text-center whitespace-nowrap text-nowrap bg-surface cursor-pointer" data-ditto-id="style-a-28" href="/1685">
                             Alle Unternehmenslösungen
                             <i className="inline-block pl-2 [font-family:'Font_Awesome_Pro'] font-black leading-4" data-ditto-id="style-i-207" />
                           </a>
@@ -4507,7 +4504,7 @@ export default function Page() {
                         {" "}
                         <div className="block min-w-0">
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_1_0" id="tabpanel_megamenu_1_0" role="tabpanel">
-                            <div className="block">
+                            <div className="block" data-ditto-id="style-div-308">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
                                   <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-208" />
@@ -4531,7 +4528,7 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="block min-w-0 text-color-003">
+                                  <div className="block min-w-0 text-color-003" data-ditto-id="style-div-309">
                                     {" Das breiteste Schulungsangebot am Markt passgenau auf Ihre Bedürfnisse zugeschnitten."}
                                   </div>
                                   {" "}
@@ -4546,7 +4543,7 @@ export default function Page() {
                               </div>
                               {" "}
                               <div className="block">
-                                <div className="flex flex-col flex-wrap gap-2">
+                                <div className="flex flex-col flex-wrap gap-2" data-ditto-id="style-div-310">
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     <div className="flex min-w-0 pb-2 flex-col gap-2">
                                       <div className="block min-w-0 px-4 text-2xl font-medium leading-7 tracking-[-0.24px]">
@@ -4572,8 +4569,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_0" id="tabpanel__megamenu_1_0_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-210" />
+                                        <div className="flex items-center" data-ditto-id="style-div-311">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-211" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4586,7 +4583,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-312">
                                               {" Künstliche Intelligenz & Data Analytics"}
                                             </div>
                                             {" "}
@@ -4596,14 +4593,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Künstliche Intelligenz & Data Analytics"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-211" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-212" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-313" />
                                         {" "}
                                       </div>
                                     </div>
@@ -4614,7 +4611,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-212" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-213" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4626,7 +4623,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-314">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Führung & Leadership"}
                                             </div>
@@ -4635,15 +4632,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-29" href="/1685">
                                           {" Führung & Leadership"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-213" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-214" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-315">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -4655,7 +4652,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-214" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-215" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4665,7 +4662,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-316">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -4678,13 +4675,13 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Projektmanagement"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-215" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-216" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-317">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -4694,9 +4691,9 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_3" id="tabpanel__megamenu_1_0_3" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-39" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-216" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-217" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4719,14 +4716,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Persönliche und Soziale Kompetenz"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-217" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-218" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-318" />
                                         {" "}
                                       </div>
                                     </div>
@@ -4734,10 +4731,10 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_4" id="tabpanel__megamenu_1_0_4" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-319">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-218" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-219" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4750,7 +4747,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-320">
                                               {" Personalmanagement"}
                                             </div>
                                             {" "}
@@ -4760,7 +4757,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Personalmanagement"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-219" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-220" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -4775,12 +4772,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_5" id="tabpanel__megamenu_1_0_5" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-321">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-220" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-221" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-39">
                                             Inhouse-Schulungen
                                           </span>
                                           {" "}
@@ -4803,15 +4800,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-30" href="/blog/berufe/verwaltungsassistenz">
                                           {" Datenschutz "}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-221" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-222" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-322">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -4819,11 +4816,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_6" id="tabpanel__megamenu_1_0_6" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-0-6" aria-labelledby="tab__megamenu_1_0_6" id="tabpanel__megamenu_1_0_6" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-222" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-223" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4835,7 +4832,7 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-323">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Vertrieb & Verkauf"}
                                             </div>
@@ -4846,7 +4843,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Vertrieb & Verkauf"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-223" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-224" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -4860,11 +4857,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_7" id="tabpanel__megamenu_1_0_7" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-0-7" aria-labelledby="tab__megamenu_1_0_7" id="tabpanel__megamenu_1_0_7" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-224" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-225" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4887,14 +4884,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Digital Transformation & Change Management"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-225" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-226" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-324" />
                                         {" "}
                                       </div>
                                     </div>
@@ -4902,10 +4899,10 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_8" id="tabpanel__megamenu_1_0_8" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-325">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-226" />
+                                        <div className="flex items-center" data-ditto-id="style-div-326">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-227" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4928,7 +4925,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Social Media"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-227" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-228" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -4945,8 +4942,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_9" id="tabpanel__megamenu_1_0_9" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-228" />
+                                        <div className="flex items-center" data-ditto-id="style-div-327">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-229" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4957,7 +4954,7 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-328">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Digitales Marketing"}
@@ -4969,7 +4966,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Digitales Marketing"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-229" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-230" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -4985,9 +4982,9 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_10" id="tabpanel__megamenu_1_0_10" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-40" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-230" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-231" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -4997,7 +4994,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-329">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -5010,7 +5007,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Zeitmanagement"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-231" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-232" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5024,11 +5021,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_11" id="tabpanel__megamenu_1_0_11" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-0-11" aria-labelledby="tab__megamenu_1_0_11" id="tabpanel__megamenu_1_0_11" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-232" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-233" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -5038,7 +5035,7 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-330">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -5049,9 +5046,9 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-31" href="/blog/berufe/verwaltungsassistenz">
                                           {" Kommunikation"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-233" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-234" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5069,9 +5066,9 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-234" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-235" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-40">
                                             Inhouse-Schulungen
                                           </span>
                                           {" "}
@@ -5080,9 +5077,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-331">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-332">
                                               {" Konfliktmanagement"}
                                             </div>
                                             {" "}
@@ -5092,7 +5089,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Konfliktmanagement"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-235" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-236" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5109,8 +5106,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_0_13" id="tabpanel__megamenu_1_0_13" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-236" />
+                                        <div className="flex items-center" data-ditto-id="style-div-333">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-237" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Inhouse-Schulungen
@@ -5123,7 +5120,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-334">
                                               {" Microsoft Excel"}
                                             </div>
                                             {" "}
@@ -5133,14 +5130,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Microsoft Excel"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-237" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-238" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-335" />
                                         {" "}
                                       </div>
                                     </div>
@@ -5158,7 +5155,7 @@ export default function Page() {
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-238" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-239" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Alle Unternehmenslösungen
@@ -5170,10 +5167,10 @@ export default function Page() {
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-336">
                                     <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/ef1eb41d5947.svg\")" }} />
                                     {" "}
-                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-337">
                                       {" Entwicklungsprogramme"}
                                     </div>
                                     {" "}
@@ -5185,9 +5182,9 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-32" href="/blog/berufe">
                                   {" über Entwicklungsprogramme"}
-                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-239" />
+                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-240" />
                                   {" "}
                                 </a>
                                 {" "}
@@ -5202,12 +5199,12 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="block">
+                                <div className="block" data-ditto-id="style-div-338">
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_1_0" id="tabpanel__megamenu_1_1_0" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-339">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-240" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-241" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Entwicklungsprogramme
@@ -5220,7 +5217,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-241" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-242" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Führung & Leadership"}
@@ -5232,7 +5229,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Führung & Leadership"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-242" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-243" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5246,11 +5243,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_1_1" id="tabpanel__megamenu_1_1_1" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-1-1" aria-labelledby="tab__megamenu_1_1_1" id="tabpanel__megamenu_1_1_1" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-243" />
+                                        <div className="flex items-center" data-ditto-id="style-div-340">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-244" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Entwicklungsprogramme
@@ -5263,7 +5260,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-244" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-245" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Projektmanagement"}
@@ -5273,15 +5270,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-33" href="/blog/berufe/verwaltungsassistenz">
                                           {" Projektmanagement"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-245" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-246" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-341">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -5293,7 +5290,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-246" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-247" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Entwicklungsprogramme
@@ -5303,10 +5300,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-342">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-247" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-248" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Agile Coach"}
@@ -5318,7 +5315,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Agile Coach"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-248" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-249" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5332,11 +5329,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_1_3" id="tabpanel__megamenu_1_1_3" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-1-3" aria-labelledby="tab__megamenu_1_1_3" id="tabpanel__megamenu_1_1_3" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-249" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-250" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Entwicklungsprogramme
@@ -5349,7 +5346,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-250" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-251" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Change Management"}
@@ -5359,15 +5356,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-34" href="/blog/berufe/verwaltungsassistenz">
                                           {" Change Management"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-251" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-252" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-343">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -5386,7 +5383,7 @@ export default function Page() {
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-252" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-253" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Alle Unternehmenslösungen
@@ -5396,7 +5393,7 @@ export default function Page() {
                                 {" "}
                               </button>
                               {" "}
-                              <div className="flex p-4 flex-col gap-4">
+                              <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-344">
                                 <div className="flex min-w-0 flex-col gap-3">
                                   <div className="flex min-w-0 items-center">
                                     <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/4f069cf552f7.svg\")" }} />
@@ -5413,9 +5410,9 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 {" "}
-                                <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-35" href="/blog/berufe">
                                   {" über Consulting"}
-                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-253" />
+                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-254" />
                                   {" "}
                                 </a>
                                 {" "}
@@ -5423,19 +5420,19 @@ export default function Page() {
                               {" "}
                               <div className="block">
                                 <div className="flex flex-col flex-wrap gap-2">
-                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
+                                  <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]" data-ditto-id="style-div-345">
                                     {TextLink10_data2.map((d, i) => <TextLink10 key={i} d={d} styles={TextLink10_styles2[i]} />)}
                                     {" "}
                                   </div>
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="block">
+                                <div className="block" data-ditto-id="style-div-346">
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_2_0" id="tabpanel__megamenu_1_2_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-254" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-255" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Consulting
@@ -5447,10 +5444,10 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-255" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-347">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-256" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-348">
                                               {" Leadership"}
                                             </div>
                                             {" "}
@@ -5460,7 +5457,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Leadership"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-256" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-257" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5478,9 +5475,9 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-257" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-258" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-41">
                                             Consulting
                                           </span>
                                           {" "}
@@ -5491,7 +5488,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-258" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-259" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Learning & Development"}
@@ -5501,9 +5498,9 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-36" href="/blog/berufe/verwaltungsassistenz">
                                           {" Learning & Development"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-259" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-260" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5517,11 +5514,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_2_2" id="tabpanel__megamenu_1_2_2" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-2-2" aria-labelledby="tab__megamenu_1_2_2" id="tabpanel__megamenu_1_2_2" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-260" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-261" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Consulting
@@ -5534,7 +5531,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-261" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-262" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Management Diagnostik"}
@@ -5544,15 +5541,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-37" href="/blog/berufe/verwaltungsassistenz">
                                           {" Management Diagnostik"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-262" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-263" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-349">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -5564,7 +5561,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-263" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-264" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Consulting
@@ -5574,10 +5571,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-350">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-264" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-265" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Projektmanagement"}
@@ -5589,14 +5586,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Projektmanagement"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-265" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-266" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-351" />
                                         {" "}
                                       </div>
                                     </div>
@@ -5606,10 +5603,10 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_2_4" id="tabpanel__megamenu_1_2_4" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-266" />
+                                        <div className="flex items-center" data-ditto-id="style-div-352">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-267" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-42">
                                             Consulting
                                           </span>
                                           {" "}
@@ -5620,7 +5617,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-267" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-268" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" HR"}
@@ -5632,13 +5629,13 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" HR"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-268" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-269" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-353">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -5657,7 +5654,7 @@ export default function Page() {
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-269" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-270" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Alle Unternehmenslösungen
@@ -5667,7 +5664,7 @@ export default function Page() {
                                 {" "}
                               </button>
                               {" "}
-                              <div className="flex p-4 flex-col gap-4">
+                              <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-354">
                                 <div className="flex min-w-0 flex-col gap-3">
                                   <div className="flex min-w-0 items-center">
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -5676,7 +5673,7 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="block min-w-0 text-color-003">
+                                  <div className="block min-w-0 text-color-003" data-ditto-id="style-div-355">
                                     {" Digitales Lernen aus einer Hand: Innovative Lerntechnologie trifft auf außergewöhnlichen Content."}
                                   </div>
                                   {" "}
@@ -5684,7 +5681,7 @@ export default function Page() {
                                 {" "}
                                 <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                   {" über die Digital Suite"}
-                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-270" />
+                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-271" />
                                   {" "}
                                 </a>
                                 {" "}
@@ -5700,9 +5697,9 @@ export default function Page() {
                                       {" "}
                                       <a className="min-h-8 border-2 border-solid border-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="/blog/berufe" target="_self">
                                         {" "}
-                                        <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary text-[1.125rem] italic bg-clr-1" data-ditto-id="style-i-271" />
+                                        <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary text-[1.125rem] italic bg-clr-1" data-ditto-id="style-i-272" />
                                         {" "}
-                                        <div className="block min-w-0">
+                                        <div className="block min-w-0" data-ditto-id="style-div-356">
                                           <div className="flex">
                                             <div className="block min-w-0 my-auto font-medium leading-5">
                                               {" Learning Experience Plattform"}
@@ -5720,9 +5717,9 @@ export default function Page() {
                                       {" "}
                                       <a className="min-h-8 border-2 border-solid border-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="/blog/berufe" target="_self">
                                         {" "}
-                                        <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary text-[1.125rem] italic bg-clr-1" data-ditto-id="style-i-272" />
+                                        <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary text-[1.125rem] italic bg-clr-1" data-ditto-id="style-i-273" />
                                         {" "}
-                                        <div className="block min-w-0">
+                                        <div className="block min-w-0" data-ditto-id="style-div-357">
                                           <div className="flex">
                                             <div className="block min-w-0 my-auto font-medium leading-5">
                                               {" Learning Management System"}
@@ -5740,7 +5737,7 @@ export default function Page() {
                                       {" "}
                                     </div>
                                     {" "}
-                                    <div className="flex min-w-0 flex-col gap-4">
+                                    <div className="flex min-w-0 flex-col gap-4" data-ditto-id="style-div-358">
                                       <div className="block min-w-0 px-4 text-2xl font-medium leading-7 tracking-[-0.24px]">
                                         Lerninhalte
                                       </div>
@@ -5753,11 +5750,11 @@ export default function Page() {
                                 </div>
                                 {" "}
                                 <div className="block">
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_3_0" id="tabpanel__megamenu_1_3_0" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-3-0" aria-labelledby="tab__megamenu_1_3_0" id="tabpanel__megamenu_1_3_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-273" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-274" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Digital Suite
@@ -5767,12 +5764,12 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-359">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-274" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-275" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-360">
                                               {" Learning Experience Plattform"}
                                             </div>
                                             {" "}
@@ -5782,7 +5779,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Learning Experience Plattform"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-275" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-276" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5800,7 +5797,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-276" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-277" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Digital Suite
@@ -5810,10 +5807,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-361">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-277" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-362">
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-278" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Learning Management System"}
@@ -5825,7 +5822,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Learning Management System"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-278" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-279" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5840,10 +5837,10 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_3_2" id="tabpanel__megamenu_1_3_2" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-363">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-279" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-280" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Digital Suite
@@ -5854,9 +5851,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-364">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-280" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-281" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Content Collection"}
@@ -5866,9 +5863,9 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-38" href="/blog/berufe">
                                           {" Content Collection"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-281" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-282" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5882,11 +5879,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_3_3" id="tabpanel__megamenu_1_3_3" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-3-3" aria-labelledby="tab__megamenu_1_3_3" id="tabpanel__megamenu_1_3_3" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-41" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-282" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-283" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Digital Suite
@@ -5899,7 +5896,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-283" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-284" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Content Kit"}
@@ -5911,7 +5908,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Content Kit"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-284" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-285" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5928,8 +5925,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_3_4" id="tabpanel__megamenu_1_3_4" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-285" />
+                                        <div className="flex items-center" data-ditto-id="style-div-365">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-286" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Digital Suite
@@ -5940,9 +5937,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-366">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-286" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-287" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Compliance College"}
@@ -5954,7 +5951,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Compliance College"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-287" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-288" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -5976,12 +5973,12 @@ export default function Page() {
                           </div>
                           {" "}
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_1_4" id="tabpanel_megamenu_1_4" role="tabpanel">
-                            <div className="block">
+                            <div className="block" data-ditto-id="style-div-367">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-288" />
+                                <div className="flex items-center" data-ditto-id="style-div-368">
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-289" />
                                   {" "}
-                                  <span className="block min-w-0">
+                                  <span className="block min-w-0" data-ditto-id="style-span-43">
                                     Alle Unternehmenslösungen
                                   </span>
                                   {" "}
@@ -6008,7 +6005,7 @@ export default function Page() {
                                 {" "}
                                 <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                   {" über Procurement Plattformen"}
-                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-289" />
+                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-290" />
                                   {" "}
                                 </a>
                                 {" "}
@@ -6019,9 +6016,9 @@ export default function Page() {
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     <a className="min-h-8 border-2 border-solid border-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="https://www.semigator.de/enterprise/coaching" target="_blank">
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-290" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-291" />
                                       {" "}
-                                      <div className="block min-w-0">
+                                      <div className="block min-w-0" data-ditto-id="style-div-369">
                                         <div className="flex">
                                           <div className="block min-w-0 my-auto font-medium leading-5">
                                             {" Coaching Management Plattform"}
@@ -6035,13 +6032,13 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center" data-ditto-id="style-i-291" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center" data-ditto-id="style-i-292" />
                                       {" "}
                                     </a>
                                     {" "}
                                     <a className="min-h-8 border-t-2 border-solid border-t-clr-1 border-r-2 border-r-clr-1 border-l-2 border-l-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="https://www.semigator.de/enterprise/weiterbildung" target="_blank">
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-292" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-293" />
                                       {" "}
                                       <div className="block min-w-0">
                                         <div className="flex">
@@ -6057,7 +6054,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center" data-ditto-id="style-i-293" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center" data-ditto-id="style-i-294" />
                                       {" "}
                                     </a>
                                     {" "}
@@ -6066,11 +6063,11 @@ export default function Page() {
                                 </div>
                                 {" "}
                                 <div className="block">
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_4_0" id="tabpanel__megamenu_1_4_0" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-4-0" aria-labelledby="tab__megamenu_1_4_0" id="tabpanel__megamenu_1_4_0" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-42" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-294" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-295" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Procurement Plattformen
@@ -6083,7 +6080,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-295" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-296" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Coaching Management Plattform"}
@@ -6095,7 +6092,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="https://www.semigator.de/enterprise/coaching">
                                           {" Coaching Management Plattform"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-296" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-297" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6112,8 +6109,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_4_1" id="tabpanel__megamenu_1_4_1" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-297" />
+                                        <div className="flex items-center" data-ditto-id="style-div-370">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-298" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Procurement Plattformen
@@ -6124,9 +6121,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-371">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-298" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-299" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Learning Procurement Plattform"}
@@ -6136,15 +6133,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="https://www.semigator.de/enterprise/weiterbildung">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-39" href="https://www.semigator.de/enterprise/weiterbildung">
                                           {" Learning Procurement Plattform"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-299" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-300" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-372">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -6159,11 +6156,11 @@ export default function Page() {
                             {" "}
                           </div>
                           {" "}
-                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_1_5" id="tabpanel_megamenu_1_5" role="tabpanel">
+                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-1-5" aria-labelledby="tab_megamenu_1_5" id="tabpanel_megamenu_1_5" role="tabpanel">
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-300" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-301" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Alle Unternehmenslösungen
@@ -6175,7 +6172,7 @@ export default function Page() {
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-373">
                                     <i className="w-6 h-6 block min-w-0 mr-2 align-middle italic bg-no-repeat before:content-[''] before:inline-block before:w-9 before:h-9 before:bg-contain before:bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/5a6ddde30baf.svg\")" }} />
                                     {" "}
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
@@ -6192,13 +6189,13 @@ export default function Page() {
                                 {" "}
                                 <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                   {" über Corporate Learning Services"}
-                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-301" />
+                                  <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-302" />
                                   {" "}
                                 </a>
                                 {" "}
                               </div>
                               {" "}
-                              <div className="block">
+                              <div className="block" data-ditto-id="style-div-374">
                                 <div className="flex flex-col flex-wrap gap-2">
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     {TextLink12_data.map((d, i) => <TextLink12 key={i} d={d} styles={TextLink12_styles[i]} />)}
@@ -6211,8 +6208,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_1_5_0" id="tabpanel__megamenu_1_5_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-302" />
+                                        <div className="flex items-center" data-ditto-id="style-div-375">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-303" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Corporate Learning Services
@@ -6225,7 +6222,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-303" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-304" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" L&D Strategy Services "}
@@ -6237,13 +6234,13 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" L&D Strategy Services "}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-304" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-305" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-376">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -6255,7 +6252,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-305" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-306" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Corporate Learning Services
@@ -6266,9 +6263,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-377">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-306" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-307" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Learning Portfolio Services"}
@@ -6278,9 +6275,9 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-40" href="/blog/berufe/verwaltungsassistenz">
                                           {" Learning Portfolio Services"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-307" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-308" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6298,7 +6295,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-308" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-309" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Corporate Learning Services
@@ -6311,9 +6308,9 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-309" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-310" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-378">
                                               {" Managed Training Services"}
                                             </div>
                                             {" "}
@@ -6323,14 +6320,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
                                           {" Managed Training Services"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-310" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-311" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-379" />
                                         {" "}
                                       </div>
                                     </div>
@@ -6366,7 +6363,7 @@ export default function Page() {
                                   {" KI"}
                                 </div>
                                 {" "}
-                                <i className="block min-w-0 text-clr-1 [font-family:'Font_Awesome_Pro'] text-base font-black leading-4 text-center" data-ditto-id="style-i-311" />
+                                <i className="block min-w-0 text-clr-1 [font-family:'Font_Awesome_Pro'] text-base font-black leading-4 text-center" data-ditto-id="style-i-312" />
                                 {" "}
                               </div>
                               {" "}
@@ -6380,12 +6377,12 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <div className="block min-w-0">
+                        <div className="block min-w-0" data-ditto-id="style-div-380">
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_2_0" id="tabpanel_megamenu_2_0" role="tabpanel">
-                            <div className="block">
+                            <div className="block" data-ditto-id="style-div-381">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-312" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-313" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Zurück
@@ -6398,7 +6395,7 @@ export default function Page() {
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
                                   <div className="flex min-w-0 items-center">
-                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-382">
                                       {" KI"}
                                     </div>
                                     {" "}
@@ -6416,14 +6413,14 @@ export default function Page() {
                                 <div className="flex flex-col flex-wrap gap-2">
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     <div className="flex min-w-0 flex-col gap-4">
-                                      <div className="block min-w-0 px-4 text-2xl font-medium leading-7 tracking-[-0.24px]">
+                                      <div className="block min-w-0 px-4 text-2xl font-medium leading-7 tracking-[-0.24px]" data-ditto-id="style-div-383">
                                         KI lernen
                                       </div>
                                       {TextLink13_data.map((d, i) => <TextLink13 key={i} d={d} styles={TextLink13_styles[i]} />)}
                                       {" "}
                                     </div>
                                     {" "}
-                                    <div className="flex min-w-0 flex-col gap-4">
+                                    <div className="flex min-w-0 flex-col gap-4" data-ditto-id="style-div-384">
                                       <div className="block min-w-0 px-4 text-2xl font-medium leading-7 tracking-[-0.24px]">
                                         Ressourcen
                                       </div>
@@ -6440,7 +6437,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-313" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-314" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6453,9 +6450,9 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-314" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-315" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-385">
                                               {" KI Trainings und Seminare"}
                                             </div>
                                             {" "}
@@ -6465,14 +6462,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" KI Trainings und Seminare"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-315" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-316" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-386" />
                                         {" "}
                                       </div>
                                     </div>
@@ -6483,7 +6480,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-316" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-317" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6495,10 +6492,10 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-317" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-387">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-318" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-388">
                                               {" KI-Inhouse-Schulungen"}
                                             </div>
                                             {" "}
@@ -6508,7 +6505,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" KI-Inhouse-Schulungen"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-318" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-319" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6526,9 +6523,9 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-319" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-320" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-44">
                                             KI
                                           </span>
                                           {" "}
@@ -6539,7 +6536,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-320" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-321" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Content Collection"}
@@ -6549,9 +6546,9 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-41" href="/blog/berufe/verwaltungsassistenz">
                                           {" Content Collection"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-321" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-322" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6565,11 +6562,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_2_0_3" id="tabpanel__megamenu_2_0_3" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-2-0-3" aria-labelledby="tab__megamenu_2_0_3" id="tabpanel__megamenu_2_0_3" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-322" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-323" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6582,7 +6579,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-323" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-324" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" KI Kit"}
@@ -6592,15 +6589,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe/verwaltungsassistenz">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-42" href="/blog/berufe/verwaltungsassistenz">
                                           {" KI Kit"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-324" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-325" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-389">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -6612,7 +6609,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-325" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-326" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6622,10 +6619,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-390">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-326" />
+                                            <i className="block min-w-0 mr-2 italic" data-ditto-id="style-i-327" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Compliance College"}
@@ -6637,7 +6634,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Compliance College"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-327" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-328" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6652,10 +6649,10 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_2_0_5" id="tabpanel__megamenu_2_0_5" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-391">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-328" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-329" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6668,7 +6665,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-329" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-330" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Kostenlose Webinare"}
@@ -6678,15 +6675,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-43" href="/blog/berufe">
                                           {" Kostenlose Webinare"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-330" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-331" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-392">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -6694,11 +6691,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_2_0_6" id="tabpanel__megamenu_2_0_6" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-2-0-6" aria-labelledby="tab__megamenu_2_0_6" id="tabpanel__megamenu_2_0_6" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-331" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-332" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6710,8 +6707,8 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-332" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-393">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-333" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Blogartikel"}
@@ -6723,14 +6720,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Blogartikel"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-333" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-334" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-394" />
                                         {" "}
                                       </div>
                                     </div>
@@ -6740,8 +6737,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_2_0_7" id="tabpanel__megamenu_2_0_7" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-334" />
+                                        <div className="flex items-center" data-ditto-id="style-div-395">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-335" />
                                           {" "}
                                           <span className="block min-w-0">
                                             KI
@@ -6754,7 +6751,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-335" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-336" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Whitepaper"}
@@ -6766,14 +6763,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Whitepaper"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-336" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-337" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-396" />
                                         {" "}
                                       </div>
                                     </div>
@@ -6814,7 +6811,7 @@ export default function Page() {
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-337" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-338" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Zurück
@@ -6824,9 +6821,9 @@ export default function Page() {
                                 {" "}
                               </button>
                               {" "}
-                              <div className="flex p-4 flex-col gap-4">
+                              <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-397">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-398">
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                       {" Support"}
                                     </div>
@@ -6837,7 +6834,7 @@ export default function Page() {
                                 {" "}
                               </div>
                               {" "}
-                              <div className="block">
+                              <div className="block" data-ditto-id="style-div-399">
                                 <div className="flex flex-col flex-wrap gap-2">
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     {TextLink14_data.map((d, i) => <TextLink14 key={i} d={d} styles={TextLink14_styles[i]} />)}
@@ -6851,9 +6848,9 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-338" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-339" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-45">
                                             Support
                                           </span>
                                           {" "}
@@ -6862,9 +6859,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-400">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-339" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-340" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Kontakt"}
@@ -6876,7 +6873,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Kontakt"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-340" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-341" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6892,9 +6889,9 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_0_1" id="tabpanel__megamenu_3_0_1" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-43" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-341" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-342" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Support
@@ -6906,8 +6903,8 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-342" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-401">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-343" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Account Management"}
@@ -6919,7 +6916,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Account Management"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-343" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-344" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6937,7 +6934,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-344" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-345" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Support
@@ -6947,12 +6944,12 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-402">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-345" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-403">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-346" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-404">
                                               {" FAQs"}
                                             </div>
                                             {" "}
@@ -6962,7 +6959,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" FAQs"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-346" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-347" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -6986,8 +6983,8 @@ export default function Page() {
                           <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_3_1" id="tabpanel_megamenu_3_1" role="tabpanel">
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-347" />
+                                <div className="flex items-center" data-ditto-id="style-div-405">
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-348" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Zurück
@@ -7000,7 +6997,7 @@ export default function Page() {
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
                                   <div className="flex min-w-0 items-center">
-                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                    <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-406">
                                       {" Wissen"}
                                     </div>
                                     {" "}
@@ -7023,8 +7020,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_1_0" id="tabpanel__megamenu_3_1_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-348" />
+                                        <div className="flex items-center" data-ditto-id="style-div-407">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-349" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Wissen
@@ -7035,9 +7032,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-408">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-349" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-350" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Blog"}
@@ -7049,7 +7046,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Blog"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-350" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-351" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7064,12 +7061,12 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_1_1" id="tabpanel__megamenu_3_1_1" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-409">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-351" />
+                                        <div className="flex items-center" data-ditto-id="style-div-410">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-352" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-46">
                                             Wissen
                                           </span>
                                           {" "}
@@ -7080,7 +7077,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-352" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-353" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Studien"}
@@ -7092,13 +7089,13 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Studien"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-353" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-354" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-411">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -7110,7 +7107,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-354" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-355" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Wissen
@@ -7122,8 +7119,8 @@ export default function Page() {
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-355" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-412">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-356" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Newsletter"}
@@ -7135,7 +7132,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Newsletter"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-356" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-357" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7151,9 +7148,9 @@ export default function Page() {
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_1_3" id="tabpanel__megamenu_3_1_3" role="tabpanel">
                                     <div className="block">
-                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
+                                      <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" data-ditto-id="style-button-44" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-357" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-358" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Wissen
@@ -7163,10 +7160,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-413">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-358" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-359" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Kataloge"}
@@ -7178,14 +7175,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Kataloge"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-359" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-360" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-414" />
                                         {" "}
                                       </div>
                                     </div>
@@ -7196,9 +7193,9 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-360" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-361" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-47">
                                             Wissen
                                           </span>
                                           {" "}
@@ -7209,7 +7206,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-361" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-362" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Whitepaper"}
@@ -7221,7 +7218,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Whitepaper"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-362" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-363" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7238,10 +7235,10 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_1_5" id="tabpanel__megamenu_3_1_5" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-363" />
+                                        <div className="flex items-center" data-ditto-id="style-div-415">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-364" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-48">
                                             Wissen
                                           </span>
                                           {" "}
@@ -7250,9 +7247,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-416">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-364" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-365" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Events"}
@@ -7264,7 +7261,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Events"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-365" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-366" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7278,11 +7275,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_1_6" id="tabpanel__megamenu_3_1_6" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-3-1-6" aria-labelledby="tab__megamenu_3_1_6" id="tabpanel__megamenu_3_1_6" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-366" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-367" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Wissen
@@ -7292,12 +7289,12 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-417">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-367" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-368" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-418">
                                               {" Film: Work in Progress"}
                                             </div>
                                             {" "}
@@ -7307,7 +7304,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Film: Work in Progress"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-368" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-369" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7325,7 +7322,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-369" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-370" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Wissen
@@ -7335,10 +7332,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-419">
                                         <div className="flex min-w-0 flex-col gap-3">
-                                          <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-370" />
+                                          <div className="flex min-w-0 items-center" data-ditto-id="style-div-420">
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-371" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Buch: People in Progress"}
@@ -7350,7 +7347,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Buch: People in Progress"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-371" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-372" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7365,10 +7362,10 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_1_8" id="tabpanel__megamenu_3_1_8" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-421">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-372" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-373" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Wissen
@@ -7381,7 +7378,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-373" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-374" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Online-Magazin: WEITER."}
@@ -7393,13 +7390,13 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Online-Magazin: WEITER."}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-374" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-375" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-422">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -7414,11 +7411,11 @@ export default function Page() {
                             {" "}
                           </div>
                           {" "}
-                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab_megamenu_3_2" id="tabpanel_megamenu_3_2" role="tabpanel">
+                          <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-3-2" aria-labelledby="tab_megamenu_3_2" id="tabpanel_megamenu_3_2" role="tabpanel">
                             <div className="block">
                               <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                 <div className="flex items-center">
-                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-375" />
+                                  <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-376" />
                                   {" "}
                                   <span className="block min-w-0">
                                     Zurück
@@ -7430,7 +7427,7 @@ export default function Page() {
                               {" "}
                               <div className="flex p-4 flex-col gap-4">
                                 <div className="flex min-w-0 flex-col gap-3">
-                                  <div className="flex min-w-0 items-center">
+                                  <div className="flex min-w-0 items-center" data-ditto-id="style-div-423">
                                     <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                       {" Über uns"}
                                     </div>
@@ -7446,10 +7443,10 @@ export default function Page() {
                                   <div className="grid min-w-0 pt-4 flex-col grow gap-2 grid-cols-[1fr_1fr]">
                                     <a className="min-h-8 border-2 border-solid border-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="/1685" target="_self">
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-376" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-377" />
                                       {" "}
                                       <div className="block min-w-0">
-                                        <div className="flex">
+                                        <div className="flex" data-ditto-id="style-div-424">
                                           <div className="block min-w-0 my-auto font-medium leading-5">
                                             {" Über die Haufe Akademie"}
                                           </div>
@@ -7466,10 +7463,10 @@ export default function Page() {
                                     {" "}
                                     <a className="min-h-8 border-2 border-solid border-clr-1 flex min-w-[fit-content] p-3 rounded-lg text-sm leading-[1.0625rem] cursor-pointer" href="https://www.haufegroup.com/karriere/haufe-akademie" target="_blank">
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-377" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center bg-surface" data-ditto-id="style-i-378" />
                                       {" "}
                                       <div className="block min-w-0">
-                                        <div className="flex">
+                                        <div className="flex" data-ditto-id="style-div-425">
                                           <div className="block min-w-0 my-auto font-medium leading-5">
                                             {" Karriere"}
                                           </div>
@@ -7482,7 +7479,7 @@ export default function Page() {
                                         {" "}
                                       </div>
                                       {" "}
-                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center" data-ditto-id="style-i-378" />
+                                      <i className="min-h-9 flex min-w-9 max-w-9 max-h-9 mr-3 rounded-full justify-center items-center text-primary [font-family:'Font_Awesome_Pro'] text-lg font-black leading-4.5 text-center" data-ditto-id="style-i-379" />
                                       {" "}
                                     </a>
                                     {TextLink2_data3.map((d, i) => <TextLink2 key={i} d={d} styles={TextLink2_styles3[i]} />)}
@@ -7495,8 +7492,8 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_2_0" id="tabpanel__megamenu_3_2_0" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-379" />
+                                        <div className="flex items-center" data-ditto-id="style-div-426">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-380" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Über uns
@@ -7507,9 +7504,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-427">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-380" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-381" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Über die Haufe Akademie"}
@@ -7519,15 +7516,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-44" href="/1685">
                                           {" Über die Haufe Akademie"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-381" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-382" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-428">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -7539,7 +7536,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-382" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-383" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Über uns
@@ -7549,10 +7546,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-429">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-383" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-384" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Karriere"}
@@ -7564,7 +7561,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="https://www.haufegroup.com/karriere/haufe-akademie">
                                           {" Karriere"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-384" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-385" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7579,10 +7576,10 @@ export default function Page() {
                                   </div>
                                   {" "}
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_2_2" id="tabpanel__megamenu_3_2_2" role="tabpanel">
-                                    <div className="block">
+                                    <div className="block" data-ditto-id="style-div-430">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-385" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-386" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Über uns
@@ -7595,9 +7592,9 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-386" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-387" />
                                             {" "}
-                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
+                                            <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]" data-ditto-id="style-div-431">
                                               {" Referenzen"}
                                             </div>
                                             {" "}
@@ -7607,14 +7604,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Referenzen"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-387" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-388" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-432" />
                                         {" "}
                                       </div>
                                     </div>
@@ -7625,7 +7622,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-388" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-389" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Über uns
@@ -7636,9 +7633,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-433">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-389" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-390" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Pressebereich"}
@@ -7650,7 +7647,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/blog/berufe">
                                           {" Pressebereich"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-390" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-391" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7664,11 +7661,11 @@ export default function Page() {
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_2_4" id="tabpanel__megamenu_3_2_4" role="tabpanel">
+                                  <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" data-ditto-id="style-tabpanel-megamenu-3-2-4" aria-labelledby="tab__megamenu_3_2_4" id="tabpanel__megamenu_3_2_4" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-391" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-392" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Über uns
@@ -7681,7 +7678,7 @@ export default function Page() {
                                       <div className="flex p-4 flex-col gap-4">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-392" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-393" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Kooperationen"}
@@ -7691,15 +7688,15 @@ export default function Page() {
                                           {" "}
                                         </div>
                                         {" "}
-                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
+                                        <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" data-ditto-id="style-a-45" href="/1685">
                                           {" Kooperationen"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-393" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-394" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="flex">
+                                      <div className="flex" data-ditto-id="style-div-434">
                                         <div className="block min-w-0" />
                                         {" "}
                                       </div>
@@ -7711,7 +7708,7 @@ export default function Page() {
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
                                         <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-394" />
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-395" />
                                           {" "}
                                           <span className="block min-w-0">
                                             Über uns
@@ -7721,10 +7718,10 @@ export default function Page() {
                                         {" "}
                                       </button>
                                       {" "}
-                                      <div className="flex p-4 flex-col gap-4">
+                                      <div className="flex p-4 flex-col gap-4" data-ditto-id="style-div-435">
                                         <div className="flex min-w-0 flex-col gap-3">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-395" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-396" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Registrierung als Expert:in für die Haufe Akademie"}
@@ -7736,14 +7733,14 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Registrierung als Expert:in für die Haufe Akademie"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-396" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-397" />
                                           {" "}
                                         </a>
                                         {" "}
                                       </div>
                                       {" "}
                                       <div className="flex">
-                                        <div className="block min-w-0" />
+                                        <div className="block min-w-0" data-ditto-id="style-div-436" />
                                         {" "}
                                       </div>
                                     </div>
@@ -7753,10 +7750,10 @@ export default function Page() {
                                   <div className="hidden relative p-6 bg-clr-1 after:content-[''] after:hidden after:pb-15 max-md:after:block" aria-labelledby="tab__megamenu_3_2_6" id="tabpanel__megamenu_3_2_6" role="tabpanel">
                                     <div className="block">
                                       <button className="border-2 border-solid border-clr-1 hidden py-1 px-2 rounded-lg text-primary text-sm font-medium leading-5 bg-surface cursor-pointer" type="button">
-                                        <div className="flex items-center">
-                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-397" />
+                                        <div className="flex items-center" data-ditto-id="style-div-437">
+                                          <i className="block min-w-0 mr-2 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-398" />
                                           {" "}
-                                          <span className="block min-w-0">
+                                          <span className="block min-w-0" data-ditto-id="style-span-49">
                                             Über uns
                                           </span>
                                           {" "}
@@ -7765,9 +7762,9 @@ export default function Page() {
                                       </button>
                                       {" "}
                                       <div className="flex p-4 flex-col gap-4">
-                                        <div className="flex min-w-0 flex-col gap-3">
+                                        <div className="flex min-w-0 flex-col gap-3" data-ditto-id="style-div-438">
                                           <div className="flex min-w-0 items-center">
-                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-398" />
+                                            <i className="block min-w-0 [font-family:'Font_Awesome_Pro'] font-black leading-4 text-center" data-ditto-id="style-i-399" />
                                             {" "}
                                             <div className="block min-w-0 text-[2rem] font-medium leading-9.5 tracking-[-0.64px]">
                                               {" Soziale Verantwortung leben"}
@@ -7779,7 +7776,7 @@ export default function Page() {
                                         {" "}
                                         <a className="w-[fit-content] border-2 border-solid border-clr-1 block bottom-2.5 min-w-0 mt-auto rounded-full text-primary text-sm font-medium leading-5 bg-clr-1 cursor-pointer" href="/1685">
                                           {" Soziale Verantwortung leben"}
-                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-399" />
+                                          <i className="inline-block ml-1 [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-i-400" />
                                           {" "}
                                         </a>
                                         {" "}
@@ -7811,17 +7808,17 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="flex justify-end items-center grow gap-1 text-sm font-medium leading-5 max-lg:hidden">
+              <div className="flex justify-end items-center grow gap-1 text-sm font-medium leading-5 max-lg:hidden" data-ditto-id="style-div-439">
                 <button className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center text-color-004 font-normal bg-clr-1 cursor-pointer" data-ditto-id="style-searchicon" data-component="button" aria-label="Eingabe Suchbegriff öffnen" aria-pressed="false" id="searchIcon" name="searchIcon" type="button">
-                  <i className="block text-foreground [font-family:'Font_Awesome_Pro'] text-base leading-4 text-center" data-ditto-id="style-i-400" />
+                  <i className="block text-foreground [font-family:'Font_Awesome_Pro'] text-base leading-4 text-center" data-ditto-id="style-i-401" />
                   {" "}
                 </button>
                 {" "}
                 <div className="block relative">
                   <button className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center text-color-004 font-normal bg-clr-1 cursor-pointer" data-ditto-id="style-wishlistmenubutton" data-component="button" aria-expanded="false" id="wishlistMenuButton" type="button">
                     <div className="flex items-center gap-2">
-                      <div className="flex relative items-center">
-                        <i className="w-4 h-4 block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-401" />
+                      <div className="flex relative items-center" data-ditto-id="style-div-440">
+                        <i className="w-4 h-4 block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-402" />
                         {" "}
                       </div>
                       {" "}
@@ -7833,9 +7830,9 @@ export default function Page() {
                 {" "}
                 <div className="block relative">
                   <button className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center text-color-004 font-normal bg-clr-1 cursor-pointer" data-ditto-id="style-shoppingcartmenubutton" data-component="button" aria-expanded="false" id="shoppingcartMenuButton" type="button">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2" data-ditto-id="style-div-441">
                       <div className="flex relative items-center">
-                        <i className="w-5 h-4 block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-402" />
+                        <i className="w-5 h-4 block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-403" />
                         {" "}
                         <span className="w-4 h-4 hidden absolute -top-2 -right-2.5 min-w-4 max-w-4 rounded-[50%] justify-center items-center text-background text-[0.625rem] leading-2.5 bg-primary pointer-events-none">
                           0
@@ -7852,7 +7849,7 @@ export default function Page() {
                 <div className="block relative">
                   <button className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center text-color-004 font-normal bg-clr-1 cursor-pointer" data-ditto-id="style-myaccountmenubutton" data-component="button" aria-expanded="false" id="myaccountMenuButton" type="button">
                     <div className="flex items-center gap-2">
-                      <i className="w-3.5 h-4 block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-403" />
+                      <i className="w-3.5 h-4 block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-404" />
                       {" "}
                       <div className="block">
                         Login
@@ -7864,12 +7861,12 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block relative" id="lang-nav">
+                <div className="block relative" data-ditto-id="style-lang-nav" id="lang-nav">
                   <div className="block relative">
                     <button className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center text-color-004 font-normal bg-clr-1 cursor-pointer" data-ditto-id="style-languagemenubutton" data-component="button" aria-expanded="false" id="languageMenuButton" type="button">
                       <div className="flex items-center gap-2">
-                        <div className="block">
-                          <i className="h-4 inline-block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-404" />
+                        <div className="block" data-ditto-id="style-div-442">
+                          <i className="h-4 inline-block [font-family:'Font_Awesome_Pro'] text-base leading-4" data-ditto-id="style-i-405" />
                         </div>
                         <div className="block">
                           DE
@@ -7882,7 +7879,7 @@ export default function Page() {
                 <div className="w-px h-5 border-l border-solid border-l-foreground block" aria-hidden="true" />
                 {" "}
                 <div className="block font-normal leading-3.5">
-                  <a className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center cursor-pointer" data-ditto-id="style-div-134" data-component="button" aria-label="Zur Startseite von Haufe.de; öffnet sich in einem neuen Browserfenster" href="https://www.haufe.de/" rel="noopener" target="_blank">
+                  <a className="h-9 min-h-9 border-2 border-solid border-clr-1 flex max-h-9 py-2 px-3 rounded-lg items-center cursor-pointer" data-ditto-id="style-div-178" data-component="button" aria-label="Zur Startseite von Haufe.de; öffnet sich in einem neuen Browserfenster" href="https://www.haufe.de/" rel="noopener" target="_blank">
                     haufe.de
                   </a>
                   {" "}
@@ -7900,7 +7897,7 @@ export default function Page() {
       {" "}
       <div className="block relative min-w-80" id="main">
         <div className="block relative min-w-70 max-w-360 px-12 mx-auto max-md:px-0 md:max-lg:px-4">
-          <div className="flex relative rounded-[20px] flex-col justify-center items-center overflow-hidden aspect-[1.86/1] max-md:aspect-[2/3]" data-ditto-id="style-link-8">
+          <div className="flex relative rounded-[20px] flex-col justify-center items-center overflow-hidden aspect-[1.86/1] max-md:aspect-[2/3]" data-ditto-id="style-link-9">
             <div className="h-166.5 flex absolute bottom-0 inset-x-0 min-w-0 items-center max-md:h-[562.5px] md:max-lg:h-103.5 2xl:h-189">
               <img className="w-auto h-166.5 block overflow-clip object-cover align-middle max-md:h-[35.1875rem] max-md:aspect-[2/3] md:max-lg:h-103.5 2xl:h-189" data-component="image" alt="" src="/assets/cloned/images/820639b30f5d.jpg" />
               {" "}
@@ -7909,14 +7906,14 @@ export default function Page() {
             <div className="w-full flex -mt-10 px-12 flex-col justify-center items-center max-md:-mt-20 max-lg:px-0 md:max-lg:-mt-12">
               <div className="w-full flex max-w-205 px-4 text-center max-lg:max-w-none md:max-lg:px-6">
                 <form className="w-full block" id="suche" name="suche">
-                  <label className="w-full inline-block relative font-medium cursor-default" htmlFor="searchstage" id="suchlabel">
+                  <label className="w-full inline-block relative font-medium cursor-default" data-ditto-id="style-i-460" htmlFor="searchstage" id="suchlabel">
                     {" "}
                     <div className="block relative">
-                      <input className="w-full h-15 border border-solid border-muted-foreground inline-block relative py-3 pr-48 pl-3 rounded-lg overflow-clip text-color-003 leading-4 text-start bg-background cursor-text max-lg:pr-24" data-ditto-id="style-div-109" data-component="input" aria-label="Suchbegriff hier eingeben" id="searchstage" name="query" placeholder="Weiterbildung, Thema oder Lernlösung suchen" title="Suchbegriff hier eingeben" type="text" value="" />
+                      <input className="w-full h-15 border border-solid border-muted-foreground inline-block relative py-3 pr-48 pl-3 rounded-lg overflow-clip text-color-003 leading-4 text-start bg-background cursor-text max-lg:pr-24" data-ditto-id="style-div-148" data-component="input" aria-label="Suchbegriff hier eingeben" id="searchstage" name="query" placeholder="Weiterbildung, Thema oder Lernlösung suchen" title="Suchbegriff hier eingeben" type="text" value="" />
                       {" "}
                       <div className="h-10 flex absolute top-7.5 right-2 left-[42.0625rem] items-center transform-[matrix(1,0,0,1,0,-20)] max-lg:h-9 max-md:left-[18.6875rem] max-lg:transform-[matrix(1,0,0,1,0,-18)] md:max-lg:left-161" data-ditto-id="style-dropdown-toggle-local-navigation-desktop-0">
                         {" "}
-                        <button className="w-full h-10 border-2 border-solid border-primary block py-2 px-4 rounded-full align-middle text-background text-sm font-normal leading-5 whitespace-nowrap text-nowrap bg-primary cursor-pointer max-lg:h-9 max-lg:p-0" data-ditto-id="style-div-129" data-component="button" aria-label="Suchen" title="Suchen" type="submit">
+                        <button className="w-full h-10 border-2 border-solid border-primary block py-2 px-4 rounded-full align-middle text-background text-sm font-normal leading-5 whitespace-nowrap text-nowrap bg-primary cursor-pointer max-lg:h-9 max-lg:p-0" data-ditto-id="style-div-173" data-component="button" aria-label="Suchen" title="Suchen" type="submit">
                           <i className="inline-block pr-2 [font-family:'Font_Awesome_Pro'] leading-3.5 max-lg:pr-0" data-ditto-id="style-dropdown-toggle-local-navigation-desktop-1" />
                           <span className="inline-block max-lg:hidden">
                             Suchen
@@ -7954,32 +7951,32 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="flex pt-5 max-lg:pt-2">
-                <a className="border-2 border-solid border-background block py-3 px-6 rounded-full align-middle text-color-009 font-medium text-center whitespace-nowrap text-nowrap bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-link-34" data-component="link" aria-label={"Zur Übersicht von Persönliche Weiterbildung & Entwicklung"} href="/1685" title={"Zur Übersicht von Persönliche Weiterbildung & Entwicklung"}>
+              <div className="flex pt-5 max-lg:pt-2" data-ditto-id="style-div-444">
+                <a className="border-2 border-solid border-background block py-3 px-6 rounded-full align-middle text-color-008 font-medium text-center whitespace-nowrap text-nowrap bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-link-35" data-component="link" aria-label={"Zur Übersicht von Persönliche Weiterbildung & Entwicklung"} href="/1685" title={"Zur Übersicht von Persönliche Weiterbildung & Entwicklung"}>
                   Zur Übersicht
                 </a>
               </div>
               {" "}
             </div>
             {" "}
-            <div className="w-full flex py-8 px-4 rounded-xl flex-col text-background bg-color-009 max-md:-mt-5 2xl:px-8">
-              <h2 className="min-h-19 block max-w-[75%] text-[2rem] font-medium leading-9.5 tracking-[-0.64px] max-lg:min-h-13 max-lg:max-w-[70%] max-lg:text-[1.375rem] max-lg:leading-6.5 max-lg:tracking-[-0.22px]" data-ditto-id="style-image-9" data-component="heading">
+            <div className="w-full flex py-8 px-4 rounded-xl flex-col text-background bg-color-008 max-md:-mt-5 2xl:px-8">
+              <h2 className="min-h-19 block max-w-[75%] text-[2rem] font-medium leading-9.5 tracking-[-0.64px] max-lg:min-h-13 max-lg:max-w-[70%] max-lg:text-[1.375rem] max-lg:leading-6.5 max-lg:tracking-[-0.22px]" data-ditto-id="style-image-7" data-component="heading">
                 Lösungen für Unternehmen
               </h2>
               {" "}
-              <div className="flex pt-5 gap-5 max-lg:pt-2 max-lg:flex-col max-lg:gap-[initial]" data-ditto-id="interaction-nobr">
+              <div className="flex pt-5 gap-5 max-lg:pt-2 max-lg:flex-col max-lg:gap-[initial]">
                 <ul className="w-full flex flex-col [list-style-type:none] list-outside max-lg:text-sm max-lg:leading-5">
                   {ListRow3_data.map((d, i) => <ListRow3 key={i} d={d} styles={ListRow3_styles[i]} />)}
                 </ul>
                 {" "}
-                <ul className="w-full flex flex-col [list-style-type:none] list-outside max-lg:text-sm max-lg:leading-5">
+                <ul className="w-full flex flex-col [list-style-type:none] list-outside max-lg:text-sm max-lg:leading-5" data-ditto-id="style-span-50">
                   {ListRow_data2.map((d, i) => <ListRow key={i} d={d} styles={ListRow_styles2[i]} />)}
                 </ul>
                 {" "}
               </div>
               {" "}
-              <div className="flex pt-5 max-lg:pt-2">
-                <a className="border-2 border-solid border-background block py-3 px-6 rounded-full align-middle text-color-009 font-medium text-center whitespace-nowrap text-nowrap bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-zur-bersicht-von-l-sungen-f-r-unternehmen" data-component="link" aria-label="Zur Übersicht von Lösungen für Unternehmen" href="/1685" title="Zur Übersicht von Lösungen für Unternehmen">
+              <div className="flex pt-5 max-lg:pt-2" data-ditto-id="style-ul-9">
+                <a className="border-2 border-solid border-background block py-3 px-6 rounded-full align-middle text-color-008 font-medium text-center whitespace-nowrap text-nowrap bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-productcarditem61431236" data-component="link" aria-label="Zur Übersicht von Lösungen für Unternehmen" href="/1685" title="Zur Übersicht von Lösungen für Unternehmen">
                   Zu allen Lösungen
                 </a>
               </div>
@@ -7990,30 +7987,30 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <div className="block" data-ditto-id="style-div-18">
+        <div className="block" data-ditto-id="style-div-56">
           <div className="block">
-            <div className="block" data-ditto-id="style-div-19">
+            <div className="block" data-ditto-id="style-div-57">
               <div className="block">
-                <div className="block" data-ditto-id="style-portlet4611" id="portlet4611" />
+                <div className="block" data-ditto-id="style-i-428" id="portlet4611" />
                 {" "}
                 <div className="block pt-24 pb-6 max-lg:pt-12 max-lg:pb-0">
-                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-20">
+                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-heading-6">
                     <div className="block">
-                      <div className="block" data-ditto-id="style-div-21">
+                      <div className="block" data-ditto-id="style-heart-42078">
                         <div className="block mb-12 max-lg:mb-6">
-                          <h2 className="block text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-ditto-id="style-main" data-component="heading" id="headline4611C">
+                          <h2 className="block text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-ditto-id="style-div-58" data-component="heading" id="headline4611C">
                             Unsere Weiterbildungsthemen
                           </h2>
                           {" "}
                         </div>
                         {" "}
                         <div className="block -ml-3" id="cvtContainerItems4611C">
-                          <div className="flex -mx-3 flex-wrap" data-ditto-id="style-ul-4" aria-live="polite" id="cvtContainerItemsRow4611C">
+                          <div className="flex -mx-3 flex-wrap" data-ditto-id="style-div-59" aria-live="polite" id="cvtContainerItemsRow4611C">
                             {Tile2_data.map((d, i) => <Tile2 key={i} d={d} styles={Tile2_styles[i]} />)}
                           </div>
                           {" "}
                           <div className="hidden text-center max-md:block" aria-hidden="true" id="load-more-container4611C">
-                            <button className="border-2 border-solid border-surface inline-block mb-6 py-3 px-6 rounded-full align-middle text-primary font-medium whitespace-nowrap text-nowrap bg-surface cursor-pointer max-md:py-2 max-md:px-4 max-md:text-sm max-md:leading-5" aria-controls="cvtContainerItemsRow4611C" aria-expanded="false" aria-labelledby="headline4611C buttonInner4611C" id="load-more4611C">
+                            <button className="border-2 border-solid border-surface inline-block mb-6 py-3 px-6 rounded-full align-middle text-primary font-medium whitespace-nowrap text-nowrap bg-surface cursor-pointer max-md:py-2 max-md:px-4 max-md:text-sm max-md:leading-5" data-ditto-id="style-p-24" aria-controls="cvtContainerItemsRow4611C" aria-expanded="false" aria-labelledby="headline4611C buttonInner4611C" id="load-more4611C">
                               <span className="inline" id="buttonInner4611C">
                                 Mehr anzeigen
                               </span>
@@ -8031,7 +8028,7 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block" id="portlet7250" />
+                <div className="block" data-ditto-id="style-osn-participants" id="portlet7250" />
                 {" "}
                 <div className="block pt-24 pb-12 max-lg:pt-12 max-lg:pb-6">
                   <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="interaction-button-5">
@@ -8045,17 +8042,17 @@ export default function Page() {
                       {" "}
                       <div className="block" id="marketingStage7250">
                         <div className="flex -mx-3 flex-wrap">
-                          <div className="w-[36.9375rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-93" data-ditto-id="style-heading-15">
+                          <div className="w-[36.9375rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-93" data-ditto-id="style-heading-14">
                             <div className="block relative rounded-xl overflow-hidden aspect-[3/4] max-md:mb-6 max-md:aspect-square" data-ditto-id="interaction-button-6">
                               <a className="h-full block relative text-background cursor-pointer" data-ditto-id="interaction-pdm-content-accordion-panel-open-badge" data-component="link" href="/1685" rel="noopener" target="_blank">
                                 {" "}
-                                <div className="h-full block absolute top-0 inset-x-0 z-10 [background-size:cover,_cover] [background-position:50%_50%,_50%_50%] [background-repeat:no-repeat,_no-repeat] [background-clip:border-box,_border-box] [background-origin:padding-box,_padding-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] [-webkit-background-clip:border-box,_border-box]" style={{ backgroundImage: "linear-gradient(var(--clr-7) 0%, var(--clr-8) 100%), url(\"/assets/cloned/images/68c6d5056683.jpg\")" }} data-ditto-id="style-div-130" />
+                                <div className="h-full block absolute top-0 inset-x-0 z-10 [background-size:cover,_cover] [background-position:50%_50%,_50%_50%] [background-repeat:no-repeat,_no-repeat] [background-clip:border-box,_border-box] [background-origin:padding-box,_padding-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] [-webkit-background-clip:border-box,_border-box]" style={{ backgroundImage: "linear-gradient(var(--clr-7) 0%, var(--clr-8) 100%), url(\"/assets/cloned/images/68c6d5056683.jpg\")" }} data-ditto-id="style-div-174" />
                                 <div className="h-80.5 block absolute -bottom-30 inset-x-0 z-30 pr-20 pl-12 max-md:h-72 max-md:bottom-7.5 max-md:px-3 max-md:text-center md:max-lg:h-82 md:max-lg:bottom-8 md:max-lg:px-8 2xl:-bottom-35.5">
                                   <div className="block text-sm font-medium leading-5">
                                     Dein Skill Boost für Künstliche Intelligenz
                                   </div>
                                   {" "}
-                                  <div className="block text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]">
+                                  <div className="block text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-ditto-id="style-div-448">
                                     KI-Trainings, die dich weiterbringen
                                   </div>
                                   {" "}
@@ -8064,7 +8061,7 @@ export default function Page() {
                                       Baue die KI-Kompetenzen auf, die heute und morgen zählen. Über 200 praxisnahe Trainings helfen dir, KI souverän im Job einzusetzen – strategisch, zielgerichtet und zukunftssicher. Wähle dein Lernformat, lerne von Top-Expert:innen und mach KI zu deinem Wettbewerbsvorteil.
                                     </div>
                                     {" "}
-                                    <div className="border-2 border-solid border-primary inline-block mt-6 py-3 px-6 rounded-full align-middle font-medium text-center whitespace-nowrap text-nowrap bg-primary max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5 max-md:[text-align:inherit]" data-ditto-id="style-div-131">
+                                    <div className="border-2 border-solid border-primary inline-block mt-6 py-3 px-6 rounded-full align-middle font-medium text-center whitespace-nowrap text-nowrap bg-primary max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5 max-md:[text-align:inherit]" data-ditto-id="style-div-175">
                                       Bereit für den nächsten Schritt?
                                     </div>
                                     {" "}
@@ -8097,7 +8094,7 @@ export default function Page() {
                                       Die 15 wichtigsten Handlungsfelder bewertet nach Veränderungstempo, Impact, Stakeholder-Bedarf und Aufwand. Antworten auf die Frage, was das für Fachkräfte, Führungskräfte und Organisationen im Laufe der nächsten 5 Jahre bedeutet.
                                     </div>
                                     {" "}
-                                    <div className="border-2 border-solid border-primary inline-block mt-6 py-3 px-6 rounded-full align-middle font-medium text-center whitespace-nowrap text-nowrap bg-primary max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5 max-md:[text-align:inherit]" data-ditto-id="style-p-16">
+                                    <div className="border-2 border-solid border-primary inline-block mt-6 py-3 px-6 rounded-full align-middle font-medium text-center whitespace-nowrap text-nowrap bg-primary max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5 max-md:[text-align:inherit]" data-ditto-id="style-p-18">
                                       Jetzt downloaden
                                     </div>
                                     {" "}
@@ -8123,9 +8120,9 @@ export default function Page() {
                 {" "}
                 <div className="block" id="portlet4309" />
                 {" "}
-                <div className="block pt-24 pb-6 max-lg:pt-12 max-lg:pb-0">
+                <div className="block pt-24 pb-6 max-lg:pt-12 max-lg:pb-0" data-ditto-id="style-productsinfoboxtabs">
                   <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]">
-                    <div className="block">
+                    <div className="block" data-ditto-id="style-button-45">
                       <div className="block">
                         <div className="flex -mx-3 flex-wrap items-end">
                           <div className="w-[61.5625rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-139.5">
@@ -8138,12 +8135,12 @@ export default function Page() {
                             {" "}
                           </div>
                           {" "}
-                          <div className="w-[12.3125rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-46.5" data-ditto-id="style-div-224">
+                          <div className="w-[12.3125rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-46.5" data-ditto-id="style-div-567">
                             <div className="flex relative z-20 pt-2 pb-6 justify-end gap-4" id="customSliderNavigation4309C">
-                              <a className="w-12 h-12 flex rounded-full justify-center items-center text-background text-[1.1875rem] leading-4 bg-primary cursor-pointer" data-ditto-id="style-image-4" data-component="link" href="#">
+                              <a className="w-12 h-12 flex rounded-full justify-center items-center text-background text-[1.1875rem] leading-4 bg-primary cursor-pointer" data-ditto-id="style-image-5" data-component="link" href="#">
                                 <i className="block [font-family:'Font_Awesome_Pro'] leading-[1.1875rem] text-center" data-ditto-id="style-strong-5" />
                               </a>
-                              <a className="w-12 h-12 flex rounded-full justify-center items-center text-background text-[1.1875rem] leading-4 bg-primary cursor-pointer" data-ditto-id="style-div-143" data-component="link" href="#">
+                              <a className="w-12 h-12 flex rounded-full justify-center items-center text-background text-[1.1875rem] leading-4 bg-primary cursor-pointer" data-ditto-id="style-div-189" data-component="link" href="#">
                                 <i className="block [font-family:'Font_Awesome_Pro'] leading-[1.1875rem] text-center" data-ditto-id="style-pdudetailsbuttonmaster" />
                               </a>
                               {" "}
@@ -8155,14 +8152,14 @@ export default function Page() {
                         {" "}
                         <div className="block relative">
                           <div className="block relative -mx-3 flex-wrap" id="cvtiSlider4309C">
-                            <div className="h-[45.8rem] block relative max-w-full shrink-0 overflow-hidden max-md:h-[27.675rem] md:max-lg:h-[28.6875rem]">
+                            <div className="h-[45.8rem] block relative max-w-full shrink-0 overflow-hidden max-md:h-[27.675rem] md:max-lg:h-[28.6875rem]" data-ditto-id="style-div-449">
                               <div className="w-2068.5 h-full block relative transform-[matrix(1,0,0,1,-1182,0)] max-md:w-[291.6875rem] max-md:transform-[matrix(1,0,0,1,-359,0)] md:max-lg:w-1302 md:max-lg:transform-[matrix(1,0,0,1,-744,0)] before:content-[''] before:table before:w-0 before:h-0 after:content-[''] after:table after:w-0 after:h-0">
                                 <div className="w-[36.9375rem] h-[45.8rem] min-h-px block float-left shrink-0 max-md:w-[22.4375rem] max-md:h-[27.675rem] max-md:shrink-[initial] md:max-lg:w-93 md:max-lg:h-[28.6875rem]" aria-hidden="true">
                                   {" "}
                                 </div>
                                 <div className="w-[36.9375rem] h-[45.8rem] min-h-px block float-left shrink-0 max-md:hidden md:max-lg:w-93 md:max-lg:h-[28.6875rem]" aria-hidden="true">
-                                  <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2 max-md:hidden">
-                                    <a className="inline rounded-xl text-primary cursor-pointer max-md:hidden" data-ditto-id="style-div-144" data-component="link" aria-label="Eine Plattform. Alle Weiterbildungen." href="https://www.semigator.de/enterprise/">
+                                  <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2 max-md:hidden" data-ditto-id="style-div-450">
+                                    <a className="inline rounded-xl text-primary cursor-pointer max-md:hidden" data-ditto-id="style-div-190" data-component="link" aria-label="Eine Plattform. Alle Weiterbildungen." href="https://www.semigator.de/enterprise/">
                                       {" "}
                                       <div className="block relative z-10 rounded-xl overflow-hidden aspect-[4/5] text-center max-md:hidden">
                                         <img className="w-full h-[44.3125rem] block opacity-0 overflow-clip object-cover align-middle max-md:hidden 2xl:opacity-[initial]" alt="" src="/assets/cloned/images/88cdedcf4aa5.jpg" />
@@ -8180,14 +8177,14 @@ export default function Page() {
                                         {" "}
                                         <div className="flex justify-between items-end max-md:hidden" data-ditto-id="style-hr-2">
                                           <div className="block text-foreground max-md:hidden md:max-lg:text-sm md:max-lg:leading-5">
-                                            <p className="block text-color-003 max-md:hidden">
+                                            <p className="block text-color-003 max-md:hidden" data-ditto-id="style-div-451">
                                               Mit der Semigator Enterprise Plattform organisierst du externe Trainings und Coachings mühelos. Alles aus einer Hand, integriert in deine HR- und Einkaufssysteme.
                                             </p>
                                             {" "}
                                           </div>
                                           {" "}
-                                          <div className="block -mr-4 -mb-4 pl-5 font-medium leading-4 max-md:hidden md:max-lg:-mr-1 md:max-lg:-mb-1" data-ditto-id="style-div-161">
-                                            <i className="w-12 h-12 flex rounded-full justify-center items-center text-background [font-family:'Font_Awesome_Pro'] text-2xl font-normal leading-6 text-center bg-primary max-md:hidden" data-ditto-id="style-div-120" />
+                                          <div className="block -mr-4 -mb-4 pl-5 font-medium leading-4 max-md:hidden md:max-lg:-mr-1 md:max-lg:-mb-1">
+                                            <i className="w-12 h-12 flex rounded-full justify-center items-center text-background [font-family:'Font_Awesome_Pro'] text-2xl font-normal leading-6 text-center bg-primary max-md:hidden" data-ditto-id="style-div-161" />
                                             {" "}
                                           </div>
                                           {" "}
@@ -8201,8 +8198,8 @@ export default function Page() {
                                   {" "}
                                 </div>
                                 <div className="w-[36.9375rem] h-[45.8rem] min-h-px block float-left shrink-0 max-md:w-[22.4375rem] max-md:h-[27.675rem] max-md:shrink-[initial] md:max-lg:w-93 md:max-lg:h-[28.6875rem]" aria-hidden="false">
-                                  <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2">
-                                    <a className="inline rounded-xl text-primary cursor-pointer" data-ditto-id="style-image-5" data-component="link" aria-label={"Persönliche & Soziale Kompetenzen"} href="/blog/berufe">
+                                  <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2" data-ditto-id="style-pdudetailsheaderlop">
+                                    <a className="inline rounded-xl text-primary cursor-pointer" data-ditto-id="style-image-6" data-component="link" aria-label={"Persönliche & Soziale Kompetenzen"} href="/blog/berufe">
                                       {" "}
                                       <div className="block relative z-10 rounded-xl overflow-hidden aspect-[4/5] text-center">
                                         <img className="w-full h-[44.3125rem] block overflow-clip object-cover align-middle max-md:h-[26.1875rem] md:max-lg:h-[27.1875rem]" data-component="image" alt="" src="/assets/cloned/images/634375581917.png" />
@@ -8218,8 +8215,8 @@ export default function Page() {
                                           {" Persönliche & Soziale Kompetenzen"}
                                         </div>
                                         {" "}
-                                        <div className="flex justify-between items-end" data-ditto-id="style-div-225">
-                                          <div className="block text-foreground max-lg:text-sm max-lg:leading-5">
+                                        <div className="flex justify-between items-end" data-ditto-id="style-div-568">
+                                          <div className="block text-foreground max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-452">
                                             <p className="block text-color-003">
                                               Zeig Wirkung, wo es wirklich zählt. Deine Soft Skills sind entscheidend und lassen sich trainieren. Mit fundiertem Know-how und direktem Praxistransfer.
                                             </p>
@@ -8242,13 +8239,13 @@ export default function Page() {
                                 </div>
                                 <div className="w-[36.9375rem] h-[45.8rem] min-h-px block float-left shrink-0 max-md:hidden md:max-lg:w-93 md:max-lg:h-[28.6875rem]" aria-hidden="false">
                                   <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2 max-md:hidden">
-                                    <a className="inline rounded-xl text-primary cursor-pointer max-md:hidden" data-ditto-id="style-div-145" data-component="link" aria-label="Zukunft können" href="/1685">
+                                    <a className="inline rounded-xl text-primary cursor-pointer max-md:hidden" data-ditto-id="style-div-191" data-component="link" aria-label="Zukunft können" href="/1685">
                                       {" "}
                                       <div className="block relative z-10 rounded-xl overflow-hidden aspect-[4/5] text-center max-md:hidden">
                                         <img className="w-full h-[44.3125rem] block overflow-clip object-cover align-middle max-md:hidden md:max-lg:h-[27.1875rem]" data-component="image" alt="" src="/assets/cloned/images/e5b408679ccb.png" />
                                         {" "}
                                         <div className="w-[9.5625rem] h-7 flex absolute top-0 right-0 z-900 m-4 py-1.5 px-2.5 rounded-sm items-center gap-2 text-background text-xs font-medium leading-4 bg-color-011 [backdrop-filter:blur(2px)] max-md:hidden" aria-label="KI-generiertes Bild">
-                                          <i className="block [font-family:'Font_Awesome_Pro'] font-black leading-3 max-md:hidden" data-ditto-id="style-br-6" aria-hidden="true" />
+                                          <i className="block [font-family:'Font_Awesome_Pro'] font-black leading-3 max-md:hidden" data-ditto-id="style-div-162" aria-hidden="true" />
                                           KI-generiertes Bild
                                         </div>
                                         {" "}
@@ -8263,8 +8260,8 @@ export default function Page() {
                                           {" Zukunft können"}
                                         </div>
                                         {" "}
-                                        <div className="flex justify-between items-end max-md:hidden" data-ditto-id="style-p-26">
-                                          <div className="block text-foreground max-md:hidden md:max-lg:text-sm md:max-lg:leading-5" data-ditto-id="style-link-9">
+                                        <div className="flex justify-between items-end max-md:hidden" data-ditto-id="style-p-32">
+                                          <div className="block text-foreground max-md:hidden md:max-lg:text-sm md:max-lg:leading-5" data-ditto-id="style-link-10">
                                             <p className="block text-color-003 max-md:hidden">
                                               Mit den Future Jobs Classes baust du die Skills für deinen Job der Zukunft auf und zertifizierst dich durch Seminare, 1:1 Coachings und Selbstlernphasen für die relevanten Jobrollen der Arbeitswelt von heute und morgen.
                                             </p>
@@ -8272,7 +8269,7 @@ export default function Page() {
                                           </div>
                                           {" "}
                                           <div className="block -mr-4 -mb-4 pl-5 font-medium leading-4 max-md:hidden md:max-lg:-mr-1 md:max-lg:-mb-1">
-                                            <i className="w-12 h-12 flex rounded-full justify-center items-center text-background [font-family:'Font_Awesome_Pro'] text-2xl font-normal leading-6 text-center bg-primary max-md:hidden" data-ditto-id="style-div-121" />
+                                            <i className="w-12 h-12 flex rounded-full justify-center items-center text-background [font-family:'Font_Awesome_Pro'] text-2xl font-normal leading-6 text-center bg-primary max-md:hidden" data-ditto-id="style-div-163" />
                                             {" "}
                                           </div>
                                           {" "}
@@ -8287,25 +8284,25 @@ export default function Page() {
                                 </div>
                                 {MediaTile_data.map((d, i) => <MediaTile key={i} d={d} styles={MediaTile_styles[i]} />)}
                                 <div className="w-[36.9375rem] h-[45.8rem] min-h-px block float-left shrink-0 max-md:w-[22.4375rem] max-md:h-[27.675rem] max-md:shrink-[initial] md:max-lg:w-93 md:max-lg:h-[28.6875rem]" aria-hidden="true">
-                                  <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2">
-                                    <a className="inline rounded-xl text-primary cursor-pointer" data-ditto-id="style-div-146" data-component="link" aria-label="Zukunft können" href="/1685">
+                                  <div className="block relative mb-6 mx-3 rounded-xl bg-surface-2" data-ditto-id="style-div-459">
+                                    <a className="inline rounded-xl text-primary cursor-pointer" data-ditto-id="style-div-192" data-component="link" aria-label="Zukunft können" href="/1685">
                                       {" "}
                                       <div className="block relative z-10 rounded-xl overflow-hidden aspect-[4/5] text-center">
                                         <img className="w-full h-[44.3125rem] block overflow-clip object-cover align-middle max-md:h-[26.1875rem] md:max-lg:h-[27.1875rem] 2xl:invisible 2xl:opacity-0" data-component="image" alt="" src="/assets/cloned/images/e5b408679ccb.png" />
                                         {" "}
                                         <div className="w-[9.5625rem] h-7 flex absolute top-0 right-0 z-900 m-4 py-1.5 px-2.5 rounded-sm items-center gap-2 text-background text-xs font-medium leading-4 bg-color-011 [backdrop-filter:blur(2px)]" aria-label="KI-generiertes Bild">
-                                          <i className="block [font-family:'Font_Awesome_Pro'] font-black leading-3" data-ditto-id="style-link-11" aria-hidden="true" />
+                                          <i className="block [font-family:'Font_Awesome_Pro'] font-black leading-3" data-ditto-id="style-link-12" aria-hidden="true" />
                                           KI-generiertes Bild
                                         </div>
                                         {" "}
                                       </div>
                                       {" "}
-                                      <div className="w-[34.4375rem] h-59.5 block absolute bottom-0 z-11 m-2 p-8 rounded-lg bg-background" data-ditto-id="style-link-12">
+                                      <div className="w-[34.4375rem] h-59.5 block absolute bottom-0 z-11 m-2 p-8 rounded-lg bg-background" data-ditto-id="style-link-13">
                                         <div className="block mb-3 text-foreground text-xs font-medium leading-3">
                                           {" Future Jobs Classes"}
                                         </div>
                                         {" "}
-                                        <div className="block mb-3 text-foreground text-2xl font-medium leading-7 tracking-[-0.24px] max-lg:text-lg max-lg:tracking-[-0.18px] max-lg:leading-[inherit]">
+                                        <div className="block mb-3 text-foreground text-2xl font-medium leading-7 tracking-[-0.24px] max-lg:text-lg max-lg:tracking-[-0.18px] max-lg:leading-[inherit]" data-ditto-id="style-div-460">
                                           {" Zukunft können"}
                                         </div>
                                         {" "}
@@ -8317,8 +8314,8 @@ export default function Page() {
                                             {" "}
                                           </div>
                                           {" "}
-                                          <div className="block -mr-4 -mb-4 pl-5 font-medium leading-4 max-lg:-mr-1 max-lg:-mb-1 max-md:pl-4" data-ditto-id="style-checkboxselectpills-cities-106576007">
-                                            <i className="w-12 h-12 flex rounded-full justify-center items-center text-background [font-family:'Font_Awesome_Pro'] text-2xl font-normal leading-6 text-center bg-primary" data-ditto-id="style-checkboxselectpills-cities-106576007-2" />
+                                          <div className="block -mr-4 -mb-4 pl-5 font-medium leading-4 max-lg:-mr-1 max-lg:-mb-1 max-md:pl-4" data-ditto-id="style-div-60">
+                                            <i className="w-12 h-12 flex rounded-full justify-center items-center text-background [font-family:'Font_Awesome_Pro'] text-2xl font-normal leading-6 text-center bg-primary" data-ditto-id="style-div-61" />
                                             {" "}
                                           </div>
                                           {" "}
@@ -8346,44 +8343,52 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block" data-ditto-id="style-i-412" id="portlet4307" />
+                <div className="block" data-ditto-id="style-i-413" id="portlet4307" />
                 {" "}
-                <div className="block pt-24 max-md:mt-12 max-lg:pt-12" data-ditto-id="style-div-214">
+                <div className="block pt-24 max-md:mt-12 max-lg:pt-12">
                   <div className="block">
-                    <div className="flex flex-col gap-16" data-ditto-id="style-div-231">
-                      <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]">
+                    <div className="flex flex-col gap-16" data-ditto-id="style-div-570">
+                      <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-463">
                         <h3 className="block text-[2rem] font-medium leading-9.5 tracking-[-0.64px] text-center max-lg:text-[1.375rem] max-lg:leading-6.5 max-lg:tracking-[-0.22px]" data-component="heading">
                           Diese Unternehmen entwickeln sich mit der Haufe Akademie
                         </h3>
                         {" "}
                       </div>
                       {" "}
-                      <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-167">
-                        <div className="block relative overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-div-127">
-                          <div className="w-1150 inline-flex mr-10 gap-10 [animation-name:slides] [animation-duration:90s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-lg:w-805 max-lg:mr-2 max-lg:gap-2">
+                      <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-464">
+                        <div className="block relative overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-div-169">
+                          <div className="w-1150 inline-flex mr-10 gap-10 [animation-name:slides] [animation-duration:90s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-lg:w-805 max-lg:mr-2 max-lg:gap-2" data-ditto-id="style-div-465">
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-232">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-571">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-20 h-20 flex px-6 justify-center items-center bg-background max-lg:w-16.5 max-lg:h-16.5" data-ditto-id="style-div-168">
+                            <div className="w-20 h-20 flex px-6 justify-center items-center bg-background max-lg:w-16.5 max-lg:h-16.5">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-link-15">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-link-16">
                               {" "}
                             </div>
                             {Logo_data.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-image-6">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-215">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-link-18">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-20 h-20 flex px-6 justify-center items-center bg-background max-lg:w-16.5 max-lg:h-16.5" data-ditto-id="style-div-235">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-image-8">
+                              {" "}
+                            </div>
+                            {" "}
+                            <div className="w-20 h-20 flex px-6 justify-center items-center bg-background max-lg:w-16.5 max-lg:h-16.5">
+                              {" "}
+                            </div>
+                            {" "}
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-468">
                               {" "}
                             </div>
                             {" "}
@@ -8391,11 +8396,11 @@ export default function Page() {
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-469">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-236">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-573">
                               {" "}
                             </div>
                             {" "}
@@ -8407,35 +8412,35 @@ export default function Page() {
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-237">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-574">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-22">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-62">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-171">
-                              {" "}
-                            </div>
-                            {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-previous">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5">
                               {" "}
                             </div>
                             {" "}
                           </div>
                           {" "}
-                          <div className="w-1150 h-20 inline-flex mr-10 gap-10 [animation-name:slides] [animation-duration:90s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-lg:w-805 max-lg:h-16.5 max-lg:mr-2 max-lg:gap-2" data-ditto-id="style-i-413">
-                            {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-next">
-                              {" "}
-                            </div>
+                          <div className="w-1150 h-20 inline-flex mr-10 gap-10 [animation-name:slides] [animation-duration:90s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-lg:w-805 max-lg:h-16.5 max-lg:mr-2 max-lg:gap-2" data-ditto-id="style-previous">
                             {" "}
                             <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-i-414">
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-20 h-20 flex px-6 justify-center items-center bg-background max-lg:w-16.5 max-lg:h-16.5">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-next">
+                              {" "}
+                            </div>
+                            {" "}
+                            <div className="w-20 h-20 flex px-6 justify-center items-center bg-background max-lg:w-16.5 max-lg:h-16.5" data-ditto-id="style-i-415">
+                              {" "}
+                            </div>
+                            {" "}
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5">
                               {" "}
                             </div>
                             {" "}
@@ -8447,7 +8452,7 @@ export default function Page() {
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-li-9">
                               {" "}
                             </div>
                             {" "}
@@ -8471,10 +8476,6 @@ export default function Page() {
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-172">
-                              {" "}
-                            </div>
-                            {" "}
                             <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5">
                               {" "}
                             </div>
@@ -8503,15 +8504,7 @@ export default function Page() {
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-173">
-                              {" "}
-                            </div>
-                            {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-216">
-                              {" "}
-                            </div>
-                            {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-productcarditem61211750">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-470">
                               {" "}
                             </div>
                             {" "}
@@ -8519,7 +8512,15 @@ export default function Page() {
                               {" "}
                             </div>
                             {" "}
-                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-238">
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-471">
+                              {" "}
+                            </div>
+                            {" "}
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-productcarditem61211750">
+                              {" "}
+                            </div>
+                            {" "}
+                            <div className="w-40 h-20 flex px-6 justify-center items-center bg-background max-lg:w-33 max-lg:h-16.5" data-ditto-id="style-div-472">
                               {" "}
                             </div>
                             {" "}
@@ -8527,10 +8528,10 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <div className="block mt-1 px-12 text-right max-lg:px-4">
-                          <button className="h-7 border border-solid border-border inline-flex p-1.5 rounded-full justify-center items-center align-middle text-xs font-medium leading-3 text-center whitespace-nowrap text-nowrap bg-background cursor-pointer" data-ditto-id="style-div-132" data-component="button" aria-label="Animation pausieren" aria-pressed="false" type="button">
+                        <div className="block mt-1 px-12 text-right max-lg:px-4" data-ditto-id="style-div-575">
+                          <button className="h-7 border border-solid border-border inline-flex p-1.5 rounded-full justify-center items-center align-middle text-xs font-medium leading-3 text-center whitespace-nowrap text-nowrap bg-background cursor-pointer" data-ditto-id="style-div-176" data-component="button" aria-label="Animation pausieren" aria-pressed="false" type="button">
                             {" "}
-                            <span className="w-[0.5625rem] h-3 block absolute min-w-0 [font-family:'Font_Awesome_Pro'] font-black" data-ditto-id="style-heading-3" />
+                            <span className="w-[0.5625rem] h-3 block absolute min-w-0 [font-family:'Font_Awesome_Pro'] font-black" data-ditto-id="style-div-170" />
                             {" "}
                           </button>
                           {" "}
@@ -8544,36 +8545,36 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block" id="portlet4310" />
+                <div className="block" data-ditto-id="style-heading-19" id="portlet4310" />
                 {" "}
-                <div className="block pt-24 pb-6 max-lg:pt-12 max-lg:pb-0" data-ditto-id="style-heart-4899">
-                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-174">
+                <div className="block pt-24 pb-6 max-lg:pt-12 max-lg:pb-0">
+                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-heart-4899">
                     <div className="block">
-                      <div className="flex -mx-3 flex-wrap">
+                      <div className="flex -mx-3 flex-wrap" data-ditto-id="style-div-473">
                         <div className="w-[36.9375rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-93">
                           <div className="block">
-                            <div className="block font-medium" data-ditto-id="style-br-9">
+                            <div className="block font-medium">
                               Haufe Akademie
                             </div>
                             {" "}
-                            <h2 className="block pt-2 text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-component="heading">
+                            <h2 className="block pt-2 text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-ditto-id="style-br-11" data-component="heading">
                               Führend in der beruflichen Weiterbildung
                             </h2>
                             {" "}
                           </div>
                           {" "}
                         </div>
-                        <div className="w-[36.9375rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-93" data-ditto-id="style-div-239">
-                          <div className="h-full block" data-ditto-id="style-i-415">
-                            <p className="block mb-6 text-color-003 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-evadetails">
+                        <div className="w-[36.9375rem] block max-w-full px-3 shrink-0 max-md:w-[22.4375rem] md:max-lg:w-93">
+                          <div className="h-full block" data-ditto-id="style-div-474">
+                            <p className="block mb-6 text-color-003 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-i-416">
                               Skills entscheiden über die Zukunft. Deshalb stellt die Haufe Akademie die Qualifizierung und Entwicklung von Menschen und Organisationen in den Fokus und setzt als ein führender Anbieter Standards im Bereich Weiterbildung im deutschsprachigen Raum.
                             </p>
                             {" "}
-                            <p className="block mb-6 text-color-003 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-175">
+                            <p className="block mb-6 text-color-003 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-evadetails">
                               {"Wir bieten Fach- und Führungskräften eines der größten individuellen Qualifizierungsangebote im DACH-Raum. Gleichzeitig finden Unternehmen bei uns alle Bausteine, um ihre L&D-Herausforderungen wirksam zu lösen. In einer Arbeitswelt, die sich mit KI schneller verändert als je zuvor, ist das der entscheidende Hebel."}
                             </p>
                             {" "}
-                            <p className="block text-color-003 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-240">
+                            <p className="block text-color-003 max-lg:text-sm max-lg:leading-5">
                               Was auch immer die nächste Herausforderung ist – wir haben das passende Angebot. Mit über 3.600 Möglichkeiten in 26 Themenfeldern, einem der stärksten KI-Portfolios im deutschsprachigen Raum und allen Bausteinen für individuelle Lernökosysteme. Das Vertrauen von rund 690.000 Lernenden pro Jahr, aller DAX-40-Unternehmen und einer Weiterempfehlungsrate von über 95 % spricht für uns.
                             </p>
                             {" "}
@@ -8588,39 +8589,39 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block" data-ditto-id="style-heading-10" id="portlet4311" />
+                <div className="block" data-ditto-id="style-div-475" id="portlet4311" />
                 {" "}
-                <div className="block pt-24 pb-12 max-lg:pt-12 max-lg:pb-6" data-ditto-id="style-div-241">
-                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-176">
-                    <div className="block" data-ditto-id="style-div-242">
-                      <div className="block">
+                <div className="block pt-24 pb-12 max-lg:pt-12 max-lg:pb-6">
+                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-div-576">
+                    <div className="block">
+                      <div className="block" data-ditto-id="style-div-476">
                         <div className="block">
-                          <div className="block relative" id="quotationSlider4311C">
+                          <div className="block relative" data-ditto-id="style-div-477" id="quotationSlider4311C">
                             <div className="block relative overflow-hidden">
-                              <div className="flex relative items-end before:content-[''] before:table before:w-0 before:h-0 after:content-[''] after:table after:w-0 after:h-0" data-ditto-id="style-div-243">
-                                <div className="w-289.5 h-[40.7125rem] min-h-px block relative float-left z-999 rounded-xl aspect-video max-md:w-[20.9375rem] max-md:h-[38.525rem] max-lg:aspect-[initial] md:max-lg:w-180 md:max-lg:h-[39.8125rem]" aria-hidden="false">
-                                  <div className="block relative" data-ditto-id="style-image-7">
-                                    <img className="w-full h-[40.6875rem] block rounded-xl overflow-clip object-cover aspect-video align-middle max-md:h-47 md:max-lg:h-[25.3125rem] 2xl:invisible 2xl:opacity-0" data-ditto-id="style-div-217" data-component="image" alt="" src="/assets/cloned/images/c16c3cfc8a09.jpg" />
+                              <div className="flex relative items-end before:content-[''] before:table before:w-0 before:h-0 after:content-[''] after:table after:w-0 after:h-0" data-ditto-id="style-div-478">
+                                <div className="w-289.5 h-[40.7125rem] min-h-px block relative float-left z-999 rounded-xl aspect-video max-md:w-[20.9375rem] max-md:h-[38.525rem] max-lg:aspect-[initial] md:max-lg:w-180 md:max-lg:h-[39.8125rem]" data-ditto-id="style-div-577" aria-hidden="false">
+                                  <div className="block relative">
+                                    <img className="w-full h-[40.6875rem] block rounded-xl overflow-clip object-cover aspect-video align-middle max-md:h-47 md:max-lg:h-[25.3125rem] 2xl:invisible 2xl:opacity-0" data-ditto-id="style-image-14" data-component="image" alt="" src="/assets/cloned/images/c16c3cfc8a09.jpg" />
                                     {" "}
                                   </div>
                                   {" "}
-                                  <div className="w-120 h-[38.7125rem] flex absolute top-0 left-0 m-4 p-8 rounded-lg flex-col bg-background max-md:w-[18.9375rem] max-md:h-99 max-lg:bottom-0 max-lg:pt-4 max-lg:static max-lg:top-auto max-lg:pb-0 max-lg:px-0 md:max-lg:w-172 md:max-lg:h-50" data-ditto-id="style-span-24">
-                                    <div className="block pb-8 grow text-[1.75rem] leading-9 max-lg:text-xl max-lg:leading-7">
-                                      <span className="inline" data-ditto-id="style-i-416">
+                                  <div className="w-120 h-[38.7125rem] flex absolute top-0 left-0 m-4 p-8 rounded-lg flex-col bg-background max-md:w-[18.9375rem] max-md:h-99 max-lg:bottom-0 max-lg:pt-4 max-lg:static max-lg:top-auto max-lg:pb-0 max-lg:px-0 md:max-lg:w-172 md:max-lg:h-50">
+                                    <div className="block pb-8 grow text-[1.75rem] leading-9 max-lg:text-xl max-lg:leading-7" data-ditto-id="style-span-58">
+                                      <span className="inline">
                                         „
                                       </span>
                                       KI verändert Arbeit. Qualifizierung und Entwicklung sind deshalb mehr denn je die Voraussetzungen für die Zukunftsfähigkeit von Menschen, Unternehmen und unserer Gesellschaft. Die Anforderung an uns alle ist klar: Kompetenzen aufbauen und KI gestalten statt verwalten - jetzt.
-                                      <span className="inline">
+                                      <span className="inline" data-ditto-id="style-i-417">
                                         “
                                       </span>
                                       {" "}
                                     </div>
                                     {" "}
-                                    <div className="block max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-177">
+                                    <div className="block max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-479">
                                       Hansjörg Fetzer
                                     </div>
                                     {" "}
-                                    <div className="block text-color-003 max-lg:text-sm max-lg:leading-5">
+                                    <div className="block text-color-003 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-578">
                                       Geschäftsführer Haufe Akademie
                                     </div>
                                     {" "}
@@ -8641,24 +8642,24 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block" data-ditto-id="style-heading-16" id="portlet6644" />
+                <div className="block" id="portlet6644" />
                 {" "}
-                <div className="block pt-24 pb-12 max-lg:pt-12 max-lg:pb-6">
-                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-heart-42748">
-                    <div className="flex z-10 justify-between items-center max-lg:flex-col max-lg:[justify-content:initial] max-lg:[align-items:initial]">
-                      <div className="w-[56%] block relative max-lg:w-full">
+                <div className="block pt-24 pb-12 max-lg:pt-12 max-lg:pb-6" data-ditto-id="style-div-579">
+                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]">
+                    <div className="flex z-10 justify-between items-center max-lg:flex-col max-lg:[justify-content:initial] max-lg:[align-items:initial]" data-ditto-id="style-div-580">
+                      <div className="w-[56%] block relative max-lg:w-full" data-ditto-id="style-div-480">
                         <div className="flex">
-                          <div className="flex flex-col gap-6" data-ditto-id="style-div-244">
-                            <div className="flex flex-col gap-6 text-color-003">
-                              <div className="block text-lg leading-6 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-div-178">
-                                <h2 className="block text-foreground text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-component="heading">
+                          <div className="flex flex-col gap-6">
+                            <div className="flex flex-col gap-6 text-color-003" data-ditto-id="style-div-581">
+                              <div className="block text-lg leading-6 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-div-481">
+                                <h2 className="block text-foreground text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-ditto-id="style-heading-20" data-component="heading">
                                   WEITER. Das Online-Magazin
                                 </h2>
                                 {" "}
-                                <p className="block" data-ditto-id="style-p-20">
-                                  <br className="inline" />
+                                <p className="block">
+                                  <br className="inline" data-ditto-id="style-br-12" />
                                   {" "}
-                                  <strong className="inline font-bold" data-ditto-id="style-div-179">
+                                  <strong className="inline font-bold" data-ditto-id="style-div-482">
                                     {"Weiterbildung bewegt. "}
                                   </strong>
                                   Das neue Online-Magazin zeigt, wie Menschen lernen, wachsen und mutige Entscheidungen treffen. Mit echten Teilneh­merstories, Einblicken aus der Praxis und Themen, die Orientierung geben.
@@ -8669,7 +8670,7 @@ export default function Page() {
                             </div>
                             {" "}
                             <div className="flex mt-2 flex-wrap justify-start items-center gap-5">
-                              <a className="border-2 border-solid border-primary block py-3 px-6 rounded-full align-middle text-background font-medium text-center whitespace-nowrap text-nowrap bg-primary cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-133" data-component="link" href="/1685" rel="noopener" target="_blank">
+                              <a className="border-2 border-solid border-primary block py-3 px-6 rounded-full align-middle text-background font-medium text-center whitespace-nowrap text-nowrap bg-primary cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-div-177" data-component="link" href="/1685" rel="noopener" target="_blank">
                                 {"Online-Magazin entdecken "}
                               </a>
                               {" "}
@@ -8681,13 +8682,13 @@ export default function Page() {
                       </div>
                       {" "}
                       <div className="w-1/3 block relative z-10 rounded-xl overflow-hidden aspect-[4/3] max-lg:w-full max-lg:mt-8">
-                        <picture className="inline" data-ditto-id="style-span-25">
+                        <picture className="inline">
                           {" "}
-                          <source className="inline" media="(min-width: 1230px)" srcSet="/assets/cloned/images/6b795d224b41.png" />
+                          <source className="inline" data-ditto-id="style-link-40" media="(min-width: 1230px)" srcSet="/assets/cloned/images/6b795d224b41.png" />
                           {" "}
-                          <source className="inline" data-ditto-id="style-span-26" media="(min-width: 1024px)" srcSet="/assets/cloned/images/72aaa15d3644.png" />
+                          <source className="inline" media="(min-width: 1024px)" srcSet="/assets/cloned/images/72aaa15d3644.png" />
                           {" "}
-                          <img className="w-95.5 h-50 inline rounded-xl overflow-clip align-middle max-md:w-[20.9375rem] max-md:h-[12.8125rem] md:max-lg:w-180 md:max-lg:h-110.5 2xl:invisible 2xl:opacity-0" data-component="image" alt="" src="/assets/cloned/images/d71262fa3881.png" />
+                          <img className="w-95.5 h-50 inline rounded-xl overflow-clip align-middle max-md:w-[20.9375rem] max-md:h-[12.8125rem] md:max-lg:w-180 md:max-lg:h-110.5 2xl:invisible 2xl:opacity-0" data-ditto-id="style-link-41" data-component="image" alt="" src="/assets/cloned/images/d71262fa3881.png" />
                           {" "}
                         </picture>
                       </div>
@@ -8697,31 +8698,31 @@ export default function Page() {
                   </div>
                 </div>
                 {" "}
-                <div className="block" data-ditto-id="style-i-432" id="portlet4312" />
+                <div className="block" id="portlet4312" />
                 {" "}
-                <div className="block pt-24 pb-16 max-lg:pt-12" data-ditto-id="style-productcarditem61444562">
-                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]">
+                <div className="block pt-24 pb-16 max-lg:pt-12" data-ditto-id="style-link-42">
+                  <div className="w-307.5 block relative min-w-70 max-w-full mx-[1.5625rem] px-9 max-md:w-[23.4375rem] max-md:px-5 max-md:max-w-none max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-6 2xl:mx-[21.5625rem]" data-ditto-id="style-i-463">
                     <div className="flex p-10 rounded-xl flex-wrap bg-primary">
-                      <div className="w-269.5 block max-w-full pb-12 shrink-0 max-md:w-[15.9375rem] md:max-lg:w-160" data-ditto-id="style-div-226">
-                        <div className="block pb-2 text-background">
+                      <div className="w-269.5 block max-w-full pb-12 shrink-0 max-md:w-[15.9375rem] md:max-lg:w-160">
+                        <div className="block pb-2 text-background" data-ditto-id="style-i-489">
                           {"Kontakt & Anfragen"}
                         </div>
                         {" "}
-                        <h2 className="block text-background text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-ditto-id="style-i-433" data-component="heading">
+                        <h2 className="block text-background text-[2.5rem] font-medium leading-11 tracking-[-0.8px] max-lg:text-2xl max-lg:leading-7 max-lg:tracking-[-0.48px]" data-component="heading">
                           Du hast Fragen?
                         </h2>
                         {" "}
                       </div>
                       {" "}
                       <div className="w-[808.5px] block max-w-full shrink-0 max-md:w-[15.9375rem] md:max-lg:w-160">
-                        <p className="block mb-2 text-background max-lg:text-sm max-lg:leading-5">
+                        <p className="block mb-2 text-background max-lg:text-sm max-lg:leading-5" data-ditto-id="style-p-29">
                           {" Bei Fragen zu unseren Produkten und Leistungen oder rund um deine Anmeldung helfen wir dir gerne weiter! "}
                         </p>
                         {" "}
                       </div>
                       {" "}
                       <div className="w-[269.5px] block max-w-full content-end shrink-0 text-right max-md:w-[15.9375rem] max-lg:pt-4 max-lg:[text-align:inherit] md:max-lg:w-160">
-                        <a className="h-full border-2 border-solid border-background inline-block py-3 px-6 rounded-full align-middle text-color-009 font-medium text-center whitespace-nowrap text-nowrap bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-heart-42314" data-component="button" href="/1685">
+                        <a className="h-full border-2 border-solid border-background inline-block py-3 px-6 rounded-full align-middle text-color-008 font-medium text-center whitespace-nowrap text-nowrap bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-button-18" data-component="button" href="/1685">
                           Kontakt aufnehmen
                         </a>
                         {" "}
@@ -8740,39 +8741,39 @@ export default function Page() {
           {" "}
         </div>
         <div className="block z-301" id="contentContainerWrapper">
-          <div className="block" id="contentcontainer" />
+          <div className="block" data-ditto-id="style-contentcontainer" id="contentcontainer" />
           {" "}
         </div>
         {" "}
         <div className="block z-400 min-w-80 bg-background" id="footercontainer">
-          <div className="block relative text-background bg-color-009" id="footernaviWrapper">
+          <div className="block relative text-background bg-color-008" id="footernaviWrapper">
             <div className="flex max-w-360 p-12 flex-col gap-12 mx-auto max-md:py-6 max-md:px-4 2xl:px-24">
-              <div className="block">
-                <img className="w-[16.1875rem] h-8 inline overflow-clip align-middle 2xl:hidden" data-ditto-id="style-div-245" data-component="image" alt="" src="/assets/cloned/svg/4be6026dd274.svg" />
+              <div className="block" data-ditto-id="style-termindetails">
+                <img className="w-[16.1875rem] h-8 inline overflow-clip align-middle 2xl:hidden" data-component="image" alt="" src="/assets/cloned/svg/4be6026dd274.svg" />
               </div>
               {" "}
-              <div className="flex -mx-3 flex-wrap">
-                <div className="w-75.5 flex max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-79.5" data-ditto-id="style-div-246">
-                  <div className="basis-0 shrink-0 flex flex-col justify-between items-start self-stretch grow max-md:pb-12 max-lg:[justify-content:initial] max-lg:[align-self:initial]" data-ditto-id="style-div-180">
-                    <div className="flex flex-col" data-ditto-id="style-heading-17">
-                      <div className="block text-sm leading-5" data-ditto-id="style-event-filter">
-                        <strong className="inline font-bold" data-ditto-id="style-div-247">
+              <div className="flex -mx-3 flex-wrap" data-ditto-id="style-div-483">
+                <div className="w-75.5 flex max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-79.5">
+                  <div className="basis-0 shrink-0 flex flex-col justify-between items-start self-stretch grow max-md:pb-12 max-lg:[justify-content:initial] max-lg:[align-self:initial]" data-ditto-id="style-div-582">
+                    <div className="flex flex-col">
+                      <div className="block text-sm leading-5" data-ditto-id="style-heading-21">
+                        <strong className="inline font-bold">
                           {"Haufe Akademie GmbH & Co. KG"}
                         </strong>
-                        <br className="inline" data-ditto-id="style-div-181" />
+                        <br className="inline" data-ditto-id="style-div-583" />
                         Munzinger Str. 9
-                        <br className="inline" data-ditto-id="style-div-228" />
+                        <br className="inline" />
                         79111 Freiburg
                       </div>
                       {" "}
-                      <div className="flex pt-8 flex-col gap-2">
-                        <div className="block text-color-007 text-sm leading-3.5" data-ditto-id="style-div-248">
+                      <div className="flex pt-8 flex-col gap-2" data-ditto-id="style-div-484">
+                        <div className="block text-color-007 text-sm leading-3.5">
                           Eine Marke der
                         </div>
                         {" "}
-                        <div className="block">
-                          <a className="inline cursor-pointer" data-ditto-id="style-br-2" data-component="link" href="https://www.haufegroup.com/" rel="noopener" target="_blank">
-                            <img className="w-[7.5625rem] h-[1.3125rem] inline overflow-clip align-middle 2xl:hidden" data-component="image" alt="" src="/assets/cloned/svg/7537f5a8f2f8.svg" />
+                        <div className="block" data-ditto-id="style-div-584">
+                          <a className="inline cursor-pointer" data-ditto-id="style-link-36" data-component="link" href="https://www.haufegroup.com/" rel="noopener" target="_blank">
+                            <img className="w-[7.5625rem] h-[1.3125rem] inline overflow-clip align-middle 2xl:hidden" data-ditto-id="style-image-4" data-component="image" alt="" src="/assets/cloned/svg/7537f5a8f2f8.svg" />
                           </a>
                         </div>
                         {" "}
@@ -8780,9 +8781,9 @@ export default function Page() {
                       {" "}
                     </div>
                     {" "}
-                    <div className="block pt-12 max-lg:pt-8" data-ditto-id="style-div-249">
-                      <a className="inline cursor-pointer" data-ditto-id="style-i-427" data-component="link" href="https://rankings.statista.com/de/bildung/rankings/beste-spitzenreiter-weiterbildung-anbieter-deutschland-2025/" rel="noopener nofollow" target="_blank">
-                        <img className="w-[7.9375rem] h-25 inline overflow-clip aspect-[auto_127/100] align-middle 2xl:w-73.5 2xl:h-11 2xl:invisible 2xl:opacity-0 2xl:aspect-[initial]" data-ditto-id="style-productcarditem61462123" data-component="image" alt="Statista Siegel: Top Weiterbildungsanbieter 2025" height="100" src="/assets/cloned/svg/08e6547ab51f.svg" width="127" />
+                    <div className="block pt-12 max-lg:pt-8">
+                      <a className="inline cursor-pointer" data-ditto-id="style-link-37" data-component="link" href="https://rankings.statista.com/de/bildung/rankings/beste-spitzenreiter-weiterbildung-anbieter-deutschland-2025/" rel="noopener nofollow" target="_blank">
+                        <img className="w-[7.9375rem] h-25 inline overflow-clip aspect-[auto_127/100] align-middle 2xl:w-73.5 2xl:h-11 2xl:invisible 2xl:opacity-0 2xl:aspect-[initial]" data-component="image" alt="Statista Siegel: Top Weiterbildungsanbieter 2025" height="100" src="/assets/cloned/svg/08e6547ab51f.svg" width="127" />
                       </a>
                     </div>
                     {" "}
@@ -8790,32 +8791,32 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="w-226.5 block max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-238.5" data-ditto-id="style-div-24">
-                  <div className="h-full flex -mx-3 flex-wrap" data-ditto-id="style-div-250">
-                    <div className="w-[18.875rem] block max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-[19.875rem]">
-                      <div className="block pb-3 text-color-007 text-sm leading-3.5" data-ditto-id="style-div-251">
+                <div className="w-226.5 block max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-238.5" data-ditto-id="style-div-585">
+                  <div className="h-full flex -mx-3 flex-wrap" data-ditto-id="style-div-64">
+                    <div className="w-[18.875rem] block max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-[19.875rem]" data-ditto-id="style-div-485">
+                      <div className="block pb-3 text-color-007 text-sm leading-3.5">
                         Unternehmen
                       </div>
                       {" "}
-                      <ul className="block [list-style-type:none] list-outside max-lg:pb-8 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-i-434">
+                      <ul className="block [list-style-type:none] list-outside max-lg:pb-8 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-ul-11">
                         {ListRow4_data.map((d, i) => <ListRow4 key={i} d={d} styles={ListRow4_styles[i]} />)}
                       </ul>
                       {" "}
                     </div>
                     {" "}
-                    <div className="w-[18.875rem] block max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-[19.875rem]">
-                      <div className="block pb-3 text-color-007 text-sm leading-3.5" data-ditto-id="style-div-182">
+                    <div className="w-[18.875rem] block max-w-full px-3 shrink-0 max-md:w-[22.9375rem] md:max-lg:w-87 2xl:w-[19.875rem]" data-ditto-id="style-togglebookableevents">
+                      <div className="block pb-3 text-color-007 text-sm leading-3.5">
                         Lösungen
                       </div>
                       {" "}
                       <ul className="block [list-style-type:none] list-outside max-lg:pb-8 max-lg:text-sm max-lg:leading-5">
-                        <li className="list-item py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-event61443791">
-                          <a className="inline cursor-pointer" data-ditto-id="style-div-151" data-component="link" href="/1685">
+                        <li className="list-item py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]">
+                          <a className="inline cursor-pointer" data-ditto-id="style-div-197" data-component="link" href="/1685">
                             Persönliche Weiterbildung
                           </a>
                         </li>
-                        <li className="list-item my-1 py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-div-183">
-                          <a className="inline cursor-pointer" data-ditto-id="style-div-152" data-component="link" href="/1685">
+                        <li className="list-item my-1 py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-i-418">
+                          <a className="inline cursor-pointer" data-ditto-id="style-div-198" data-component="link" href="/1685">
                             Unternehmenslösungen
                           </a>
                         </li>
@@ -8825,25 +8826,25 @@ export default function Page() {
                     {" "}
                     <div className="w-[18.875rem] flex max-w-full px-3 flex-col justify-between self-stretch shrink-0 gap-[4.1875rem] max-md:w-[22.9375rem] max-lg:[justify-content:initial] max-lg:[align-self:initial] max-lg:gap-[initial] md:max-lg:w-87 2xl:w-[19.875rem]">
                       <div className="block">
-                        <div className="block pb-3 text-color-007 text-sm leading-3.5">
+                        <div className="block pb-3 text-color-007 text-sm leading-3.5" data-ditto-id="style-div-486">
                           {"Kontakt & Support"}
                         </div>
                         {" "}
-                        <ul className="block [list-style-type:none] list-outside max-lg:pb-8 max-lg:text-sm max-lg:leading-5" data-ditto-id="style-i-417">
-                          <li className="list-item py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]">
-                            <a className="inline cursor-pointer" data-ditto-id="style-i-418" data-component="link" href="/1685">
+                        <ul className="block [list-style-type:none] list-outside max-lg:pb-8 max-lg:text-sm max-lg:leading-5">
+                          <li className="list-item py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-link-5">
+                            <a className="inline cursor-pointer" data-ditto-id="style-i-419" data-component="link" href="/1685">
                               Kontakt
                             </a>
                           </li>
-                          <li className="list-item my-1 py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-div-184">
-                            <a className="inline cursor-pointer" data-ditto-id="style-span-20" data-component="link" href="/1685">
+                          <li className="list-item my-1 py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-div-487">
+                            <a className="inline cursor-pointer" data-ditto-id="style-eventwrapper61443791" data-component="link" href="/1685">
                               FAQ
                             </a>
                           </li>
-                          <li className="list-item my-1 py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]">
-                            <a className="inline cursor-pointer" data-ditto-id="style-div-153" data-component="link" href="tel:+49 761 595339-00">
+                          <li className="list-item my-1 py-1 text-sm font-medium leading-5 max-lg:[font-size:inherit] max-lg:leading-[inherit]" data-ditto-id="style-event61443791">
+                            <a className="inline cursor-pointer" data-ditto-id="style-div-199" data-component="link" href="tel:+49 761 595339-00">
                               {" "}
-                              <i className="inline-block [font-family:'Font_Awesome_Pro'] font-normal leading-3.5 text-center" data-ditto-id="style-div-128" />
+                              <i className="inline-block [font-family:'Font_Awesome_Pro'] font-normal leading-3.5 text-center" data-ditto-id="style-div-171" />
                               {" +49 761 595339-00"}
                             </a>
                           </li>
@@ -8851,13 +8852,13 @@ export default function Page() {
                         {" "}
                       </div>
                       {" "}
-                      <div className="flex flex-col gap-5" data-ditto-id="style-link-18">
-                        <div className="flex items-center gap-2 text-color-007 text-sm leading-5" data-ditto-id="style-div-185">
-                          <i className="block [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-form" />
+                      <div className="flex flex-col gap-5">
+                        <div className="flex items-center gap-2 text-color-007 text-sm leading-5">
+                          <i className="block [font-family:'Font_Awesome_Pro'] font-black leading-3.5 text-center" data-ditto-id="style-div-172" />
                           Zertifizierte Informationssicherheit
                         </div>
                         {" "}
-                        <div className="flex items-center gap-6" data-ditto-id="style-label">
+                        <div className="flex items-center gap-6">
                           {Logo2_data.map((d, i) => <Logo2 key={i} d={d} styles={Logo2_styles[i]} />)}
                           {" "}
                         </div>
@@ -8871,20 +8872,20 @@ export default function Page() {
               </div>
               {" "}
               <div className="flex flex-col gap-6">
-                <hr className="w-296 h-px border-t border-solid border-t-surface-7 block overflow-hidden max-md:w-[21.4375rem] md:max-lg:w-168 2xl:w-312" data-ditto-id="style-hr" />
+                <hr className="w-296 h-px border-t border-solid border-t-surface-7 block overflow-hidden max-md:w-[21.4375rem] md:max-lg:w-168 2xl:w-312" />
                 {" "}
-                <div className="flex flex-wrap justify-between items-center gap-6 max-md:flex-col max-md:[flex-wrap:initial] max-md:[justify-content:initial] max-md:[align-items:initial]">
-                  <ul className="flex items-center gap-4 [list-style-type:none] list-outside max-md:flex-col max-md:gap-1 max-lg:text-sm max-lg:leading-5 max-md:[align-items:initial]" data-ditto-id="style-ul-11">
+                <div className="flex flex-wrap justify-between items-center gap-6 max-md:flex-col max-md:[flex-wrap:initial] max-md:[justify-content:initial] max-md:[align-items:initial]" data-ditto-id="style-link-19">
+                  <ul className="flex items-center gap-4 [list-style-type:none] list-outside max-md:flex-col max-md:gap-1 max-lg:text-sm max-lg:leading-5 max-md:[align-items:initial]" data-ditto-id="style-div-489">
                     {ListRow5_data.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles[i]} />)}
                   </ul>
                   {" "}
                   <div className="flex max-md:pt-2">
-                    <a className="w-full border-2 border-solid border-background block max-w-120 py-2 px-4 rounded-full align-middle text-sm leading-5 text-center whitespace-nowrap text-nowrap bg-clr-1 cursor-pointer" data-ditto-id="style-i-424" data-component="link" href="https://www.haufe-akademie.de/form/widerruf" rel="noopener" target="_blank">
+                    <a className="w-full border-2 border-solid border-background block max-w-120 py-2 px-4 rounded-full align-middle text-sm leading-5 text-center whitespace-nowrap text-nowrap bg-clr-1 cursor-pointer" data-ditto-id="style-nobr-2" data-component="link" href="https://www.haufe-akademie.de/form/widerruf" rel="noopener" target="_blank">
                       Vertrag widerrufen
                     </a>
                   </div>
                   {" "}
-                  <div className="flex justify-start items-center gap-2 max-md:pt-2" data-ditto-id="style-productcarditem61420675">
+                  <div className="flex justify-start items-center gap-2 max-md:pt-2">
                     {Logo3_data.map((d, i) => <Logo3 key={i} d={d} />)}
                     {" "}
                   </div>
@@ -8898,7 +8899,7 @@ export default function Page() {
         </div>
         {" "}
         <div className="h-12 flex fixed right-0 bottom-44 left-300 z-998 pr-8 items-center gap-2 max-md:bottom-20 max-md:left-[19.1875rem] max-lg:pr-5 md:max-lg:left-175 2xl:h-16 2xl:bottom-28 2xl:left-456" id="aiBubble">
-          <a className="h-full border-2 border-solid border-background flex p-1.5 rounded-full justify-center items-center align-middle text-color-009 font-medium text-center whitespace-nowrap text-nowrap bg-background shadow-[var(--clr-6)_0px_0px_30px_0px] cursor-pointer max-lg:text-sm max-lg:leading-5 2xl:p-2.5" data-ditto-id="style-nobr-2" data-component="link" aria-label="Öffnet den KI-Berater in einem neuen Fenster/Tab" href="/1685">
+          <a className="h-full border-2 border-solid border-background flex p-1.5 rounded-full justify-center items-center align-middle text-color-008 font-medium text-center whitespace-nowrap text-nowrap bg-background shadow-[var(--clr-6)_0px_0px_30px_0px] cursor-pointer max-lg:text-sm max-lg:leading-5 2xl:p-2.5" data-ditto-id="style-i-431" data-component="link" aria-label="Öffnet den KI-Berater in einem neuen Fenster/Tab" href="/1685">
             {" "}
             <svg className="w-auto h-8 block overflow-hidden align-middle 2xl:h-10" data-component="icon" aria-hidden="true" aria-label="" role="img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" tabindex="0" makes="" the="" svg="" focusable="" by="" keyboard="" for="" provides="" a="" description="" screen="" readers="" fill="currentColor">
               <defs>
@@ -8952,7 +8953,7 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <div className="w-8 h-8 block fixed top-0 left-312 z-1090 max-w-full p-4 transform-[none] pointer-events-none max-md:top-195 max-md:left-[187.5px] max-md:transform-[matrix(1,0,0,1,-16,0)] md:max-lg:left-184 2xl:left-472" data-ditto-id="style-div-26">
+        <div className="w-8 h-8 block fixed top-0 left-312 z-1090 max-w-full p-4 transform-[none] pointer-events-none max-md:top-195 max-md:left-[187.5px] max-md:transform-[matrix(1,0,0,1,-16,0)] md:max-lg:left-184 2xl:left-472">
           {" "}
         </div>
         {" "}

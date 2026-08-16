@@ -87,83 +87,83 @@ const ListRow5_data = [
     { href: "https://www.youtube.com/user/HaufeAkademieTV", label: "YouTube" }
 ];
 const MediaTile_meta: string[][] = [
-    ["n46", "n47", "n48", "n49", "style-span-2", "n51", "n52", "style-i", "n54", "n55", "style-div-64"],
-    ["n57", "style-div-87", "style-i-2", "n60", "n61", "n62", "n63", "style-i-425", "n65", "n66", "n67"],
-    ["n68", "n69", "n70", "n71", "n72", "style-li", "n74", "style-link-26", "n76", "n77", "style-td"],
+    ["n46", "style-heading-13", "n48", "n49", "style-span-2", "n51", "n52", "style-i", "style-div-542", "n55", "style-div-102"],
+    ["n57", "style-div-126", "style-i-2", "n60", "n61", "n62", "style-div-543", "style-i-430", "n65", "n66", "n67"],
+    ["n68", "n69", "n70", "n71", "n72", "style-li", "n74", "style-link-27", "n76", "n77", "style-td"],
     ["n79", "n80", "n81", "n82", "style-p", "n84", "n85", "style-tr", "n87", "style-image", "n89"],
-    ["n90", "n91", "n92", "style-li-2", "n94", "n95", "n96", "style-div-62", "style-ul", "n99", "n100"],
-    ["n101", "n102", "style-li-3", "style-link-27", "n105", "n106", "n107", "style-image-2", "n109", "n110", "n111"],
-    ["n112", "style-li-4", "n114", "n115", "n116", "n117", "style-ul-2", "style-694", "n120", "n121", "n122"],
+    ["n90", "n91", "n92", "style-li-2", "style-td-2", "interaction-image", "n96", "style-div-100", "style-ul", "n99", "n100"],
+    ["n101", "n102", "style-li-3", "style-link-28", "n105", "n106", "n107", "style-image-2", "n109", "n110", "n111"],
+    ["n112", "style-li-4", "n114", "n115", "n116", "n117", "style-ul-2", "style-697", "n120", "n121", "n122"],
     ["style-20", "n124", "n125", "n126", "n127", "style-link-2", "n129", "style-strong-4", "n131", "n132", "style-strong"],
-    ["n134", "n135", "n136", "n137", "style-p-2", "n139", "n140", "style-link-24", "n142", "style-div-4", "n144"],
-    ["style-div-88", "n146", "n147", "style-heading", "n149", "n150", "n151", "style-link-25", "style-div-5", "n154", "n155"],
+    ["style-p-22", "n135", "n136", "n137", "style-p-2", "n139", "n140", "style-link-25", "n142", "style-div-4", "style-div-204"],
+    ["style-div-127", "n146", "n147", "style-heading", "n149", "n150", "n151", "style-link-26", "style-div-5", "n154", "n155"],
     ["n156", "n157", "style-p-3", "n159", "n160", "style-blockquote", "n162", "style-strong-2", "n164", "n165", "n166"],
-    ["n167", "style-link-3", "style-link-28", "n170", "n171", "n172", "style-p-4", "style-p-8", "n175", "n176", "style-link-29"],
-    ["style-ul-3", "n179", "n180", "n181", "n182", "style-strong-3", "n184", "style-p-9", "style-link-30", "n187", "style-p-5"],
-    ["n189", "style-link-31", "n191", "n192", "style-p-6", "n194", "n195", "style-p-10", "style-ul-5", "style-p-7", "n199"]
+    ["n167", "style-link-3", "style-link-29", "n170", "n171", "n172", "style-p-4", "style-p-10", "n175", "n176", "style-link-30"],
+    ["style-ul-3", "n179", "n180", "n181", "n182", "style-strong-3", "n184", "style-p-11", "style-link-31", "n187", "style-p-5"],
+    ["n189", "style-link-32", "n191", "style-strong-9", "style-p-6", "n194", "n195", "style-p-12", "style-ul-4", "style-p-7", "n199"]
 ];
 const ListRow_meta: string[][] = [
-    ["n223", "style-div-32"],
+    ["n223", "style-div-70"],
     ["n225", "style-i-6"],
-    ["n227", "style-div-33"],
-    ["style-tabpanel-megamenu-0-0-2", "style-div-34"],
-    ["n231", "style-div-35"],
-    ["style-i-7", "style-span-6"],
-    ["n235", "style-div-36"],
-    ["n237", "style-div-37"],
+    ["n227", "style-div-71"],
+    ["style-tabpanel-megamenu-0-0-2", "style-div-72"],
+    ["n231", "style-div-73"],
+    ["style-i-7", "style-span-11"],
+    ["n235", "style-div-74"],
+    ["n237", "style-div-75"],
     ["n239", "style-i-8"],
-    ["n241", "style-div-38"],
-    ["n243", "style-div-39"],
-    ["style-button-14", "style-div-40"],
-    ["style-i-9", "style-span-7"],
-    ["n249", "style-div-41"],
-    ["style-div-65", "style-div-42"],
-    ["style-a-7", "style-i-10"],
-    ["n255", "style-div-43"],
-    ["style-tabpanel-megamenu-0-0-4", "style-div-44"],
-    ["style-button-15", "style-div-45"],
-    ["style-i-11", "style-span-8"],
-    ["n263", "style-div-46"],
-    ["n265", "style-div-47"],
+    ["n241", "style-div-76"],
+    ["n243", "style-div-77"],
+    ["style-button-14", "style-div-78"],
+    ["style-i-9", "style-span-12"],
+    ["n249", "style-div-79"],
+    ["style-div-103", "style-div-80"],
+    ["style-a-6", "style-i-10"],
+    ["n255", "style-div-81"],
+    ["style-tabpanel-megamenu-0-0-4", "style-div-82"],
+    ["style-button-15", "style-div-83"],
+    ["style-i-11", "style-span-13"],
+    ["n263", "style-div-84"],
+    ["n265", "style-div-85"],
     ["n267", "style-i-12"],
-    ["n269", "style-div-48"],
-    ["n271", "style-div-49"]
+    ["n269", "style-div-86"],
+    ["n271", "style-div-87"]
 ];
 const MediaTile2_meta: string[][] = [
-    ["n276", "style-div-50", "style-div-51", "n279"],
+    ["n276", "style-div-88", "style-div-89", "n279"],
     ["n280", "style-a-2", "style-i-14", "n283"],
-    ["n284", "style-tabpanel-megamenu-0-0-6", "style-div-52", "n287"],
-    ["n288", "style-i-15", "style-span-9", "n291"]
+    ["n284", "style-tabpanel-megamenu-0-0-6", "style-div-90", "n287"],
+    ["n288", "style-i-15", "style-span-14", "n291"]
 ];
 const ListRow2_meta: string[][] = [
     ["n309", "style-i-18"],
-    ["style-div-69", "style-div-53"],
-    ["n313", "style-div-54"]
+    ["style-div-107", "style-div-91"],
+    ["n313", "style-div-92"]
 ];
 const ListRow2_meta2: string[][] = [
-    ["style-div-70", "style-div-55"],
-    ["style-div-71", "style-div-56"],
-    ["style-a-8", "style-i-20"],
-    ["style-div-107", "style-div-57"]
+    ["style-div-108", "style-div-93"],
+    ["style-div-109", "style-div-94"],
+    ["style-a-7", "style-i-20"],
+    ["style-div-146", "style-div-95"]
 ];
 const ListRow3_meta: string[][] = [
-    ["style-i-21", "style-span-10"],
-    ["n333", "style-div-58"],
-    ["n335", "style-div-59"],
+    ["style-i-21", "style-span-15"],
+    ["n333", "style-div-96"],
+    ["n335", "style-div-97"],
     ["n337", "style-i-22"]
 ];
 const ListRow4_meta: string[][] = [
-    ["style-div-75", "style-button-12"],
-    ["style-div-76", "style-i-23"],
-    ["style-span-11", "style-div-60"],
-    ["n348", "style-div-61"]
+    ["style-div-113", "style-button-12"],
+    ["style-div-114", "style-i-23"],
+    ["style-span-16", "style-div-98"],
+    ["n348", "style-div-99"]
 ];
 const ListRow5_meta: string[][] = [
-    ["n351", "style-i-24", "n353", "style-div-89"],
+    ["n351", "style-i-24", "n353", "style-div-128"],
     ["n355", "n356", "n357", "n358"],
-    ["style-i-25", "n360", "n361", "n362"],
-    ["n363", "style-div-90", "style-a-4", "style-i-26"],
-    ["style-div-77", "n368", "style-tabpanel-megamenu-0-0-12", "n370"]
+    ["style-i-25", "n360", "n361", "style-div-526"],
+    ["style-div-206", "style-div-129", "style-a-3", "style-i-26"],
+    ["style-div-115", "n368", "style-tabpanel-megamenu-0-0-12", "n370"]
 ];
 const MediaTile_styles = [
     { className: "h-[30.875rem] clear-both max-md:h-[490.5px] md:max-lg:h-[494.7px] 2xl:h-[30.9rem]", className2: "after:h-[29.125rem] max-md:after:h-[462.5px] md:max-lg:after:h-[466.7px] 2xl:after:h-[29.15rem]" },
@@ -226,7 +226,7 @@ export default function Page() {
   return (
     <>
       <div className="box-content h-full block">
-        <a className="box-content w-px h-px block absolute top-0 left-0 -m-px overflow-hidden text-color-001 whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-div-63" href="#main">
+        <a className="box-content w-px h-px block absolute top-0 left-0 -m-px overflow-hidden text-color-001 whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-div-101" href="#main">
           Zum Inhalt springen
         </a>
         {" "}
@@ -255,25 +255,25 @@ export default function Page() {
                   </div>
                   {" "}
                   <div className="box-content block">
-                    <ul className="block mt-1 leading-7 [list-style-type:none] list-outside max-lg:hidden" id="menu-hauptnavigation">
+                    <ul className="block mt-1 leading-7 [list-style-type:none] list-outside max-lg:hidden" data-ditto-id="style-div-540" id="menu-hauptnavigation">
                       <li className="box-content block float-left" id="menu-item-470">
                         <a className="box-content border-l border-solid border-l-color-005 block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 pl-6.5 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/1685">
                           Blog
                         </a>
                       </li>
-                      <li className="box-content inline-block" id="menu-item-20615">
+                      <li className="box-content inline-block" data-ditto-id="style-menu-item-20615" id="menu-item-20615">
                         <a className="box-content block relative float-left mr-5 pt-px pr-5 pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link" data-component="link" href="/blog/berufe">
                           Themen
                         </a>
                         {" "}
                       </li>
                       <li className="box-content inline-block" id="menu-item-19584">
-                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/blog/berufe">
+                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link-38" data-component="link" href="/blog/berufe">
                           Berufe
                         </a>
                       </li>
                       <li className="box-content inline-block" id="menu-item-45633">
-                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/blog/berufe" target="_blank">
+                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link-39" data-component="link" href="/blog/berufe" target="_blank">
                           Digitales Lernen
                         </a>
                       </li>
@@ -286,7 +286,7 @@ export default function Page() {
               </div>
               {" "}
               <div className="box-content block text-right max-lg:hidden">
-                <form className="box-content w-70 block relative min-w-70" role="search">
+                <form className="box-content w-70 block relative min-w-70" data-ditto-id="style-form-3" role="search">
                   <input className="w-full h-[1.9375rem] border border-solid border-surface-3 inline-block relative -top-px bottom-px py-1.5 pr-2.5 pl-10 rounded-lg overflow-clip text-muted-foreground leading-[1.0625rem] text-start cursor-text" data-ditto-id="style-input" data-component="input" name="s" placeholder="Suchbegriff … " title="Suche nach:" type="search" value="" />
                   {" "}
                   <input className="box-content w-[0.9375rem] h-3.5 block absolute bottom-[1.4375rem] left-2 mr-[1.5625rem] p-[0.4375rem] rounded-lg overflow-clip text-foreground [font-family:FontAwesome] text-base leading-4 text-center whitespace-pre text-nowrap cursor-pointer before:content-[''] before:text-foreground before:text-base before:leading-4 before:text-center" data-ditto-id="style-button-13" data-component="button" type="submit" value="" />
@@ -303,7 +303,7 @@ export default function Page() {
         {" "}
         <div className="box-content w-311.5 block relative z-5 max-w-[calc(100%_-_34px)] px-[1.0625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none md:max-lg:w-192 2xl:w-312 2xl:mx-[19.9375rem]" data-ditto-id="style-breadcrumbs" id="breadcrumbs">
           <div className="box-content block pt-[1.0625rem] pr-2 pb-[0.9375rem] pl-2.5 text-color-013 text-xs leading-[1.1875rem] max-md:hidden md:max-lg:pl-2">
-            <span className="box-content inline">
+            <span className="box-content inline" data-ditto-id="style-span-57">
               <span className="box-content inline">
                 <a className="box-content inline text-color-015 font-medium underline cursor-pointer" data-component="link" href="/1685">
                   Home
@@ -320,7 +320,7 @@ export default function Page() {
         </div>
         {" "}
         <div className="box-content w-311.5 block max-w-[calc(100%_-_34px)] mb-5.5 px-[1.0625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none md:max-lg:w-192 2xl:w-312 2xl:mx-[19.9375rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left 2xl:before:inset-x-[-300.5px] 2xl:before:w-480 after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left" id="main">
-          <div className="min-h-px block relative -mx-[1.0625rem]">
+          <div className="min-h-px block relative -mx-[1.0625rem]" data-ditto-id="style-div-541">
             <div className="w-[853.3px] h-[3490.3px] min-h-px block relative float-left z-10 px-[1.5625rem] max-md:w-[23.4375rem] max-md:h-[7536.7px] max-md:mb-7 max-lg:z-[initial] md:max-lg:w-192 md:max-lg:h-[225.65rem] 2xl:w-[854.7px] 2xl:h-[218.2875rem]">
               <div className="box-content block relative z-5 mb-25 max-md:mb-12.5 max-md:pt-10 md:max-lg:pt-12.5" data-ditto-id="style-div-2">
                 <h1 className="box-content block mb-7.5 text-primary text-[2.5rem] font-medium leading-12 tracking-[0.6px] max-lg:max-w-full max-md:text-2xl max-md:leading-8.5 max-lg:[overflow-wrap:break-word]" data-component="heading">
@@ -331,7 +331,7 @@ export default function Page() {
                 </h1>
                 {" "}
                 <div className="box-content block" id="post-description">
-                  <p className="box-content block mb-[1.3125rem] text-color-001 text-base leading-6">
+                  <p className="box-content block mb-[1.3125rem] text-color-001 text-base leading-6" data-ditto-id="style-p-31">
                     In unserer Berufe-Übersicht finden Absolventen, Young Professionals und Berufstätige Informationen zu zahlreichen Berufen. Vom Projektmanager über den Online Marketing Manager bis zum Geschäftsführer. Informiere dich jetzt!
                   </p>
                   {" "}
@@ -349,7 +349,7 @@ export default function Page() {
                   1
                 </span>
                 {" "}
-                <a className="box-content w-14 border-2 border-solid border-primary block float-left mr-[0.3125rem] rounded-[50%] text-primary text-lg leading-14 text-center bg-background cursor-pointer" data-ditto-id="style-div-29" data-component="link" href={"https://www.haufe-akademie.de/blog/berufe/page/2/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
+                <a className="box-content w-14 border-2 border-solid border-primary block float-left mr-[0.3125rem] rounded-[50%] text-primary text-lg leading-14 text-center bg-background cursor-pointer" data-ditto-id="style-div-67" data-component="link" href={"https://www.haufe-akademie.de/blog/berufe/page/2/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
                   2
                 </a>
                 {" "}
@@ -365,7 +365,7 @@ export default function Page() {
                   7
                 </a>
                 {" "}
-                <a className="box-content w-14 border-2 border-solid border-primary block float-left mr-[0.3125rem] rounded-[50%] text-primary text-lg leading-14 text-center bg-background cursor-pointer" data-ditto-id="style-span-5" data-component="link" href={"https://www.haufe-akademie.de/blog/berufe/page/2/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
+                <a className="box-content w-14 border-2 border-solid border-primary block float-left mr-[0.3125rem] rounded-[50%] text-primary text-lg leading-14 text-center bg-background cursor-pointer" data-ditto-id="style-span-10" data-component="link" href={"https://www.haufe-akademie.de/blog/berufe/page/2/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
                   »
                 </a>
                 {" "}
@@ -376,9 +376,9 @@ export default function Page() {
             <aside className="w-[426.7px] h-[115.1875rem] min-h-px border-l border-solid border-l-clr-7 block relative float-left z-5 pr-[1.5625rem] pl-[2.1875rem] max-md:w-[23.4375rem] max-md:h-464.5 max-lg:mt-[2.1875rem] max-md:mb-7 max-lg:pl-[1.5625rem] md:max-lg:w-192 md:max-lg:h-[113.6875rem] 2xl:w-[427.3px] before:content-['_'] before:block before:absolute before:top-0 before:right-[390.7px] before:bottom-[115.1875rem] before:left-[2.1875rem] before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left max-lg:before:hidden max-lg:before:inset-auto max-lg:before:w-auto max-lg:before:h-auto 2xl:before:right-[391.3px]">
               <ul className="block [list-style-type:none] list-outside">
                 <li className="box-content list-item mb-5.5">
-                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-div-30" data-component="link" href="/1685" target="_blank">
+                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-div-68" data-component="link" href="/1685" target="_blank">
                     {"Zum "}
-                    <strong className="box-content inline font-medium" data-ditto-id="style-a-3">
+                    <strong className="box-content inline font-medium">
                       Seminarangebot
                     </strong>
                     {" von"}
@@ -396,7 +396,7 @@ export default function Page() {
                     </p>
                     {" "}
                     <div className="box-content block mb-7.5 max-md:mb-12.5">
-                      <a className="box-content block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer" data-ditto-id="style-div-31" data-component="link" href="/1685" target="_blank">
+                      <a className="box-content block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer" data-ditto-id="style-div-69" data-component="link" href="/1685" target="_blank">
                         Newsletter kostenlos abonnieren
                       </a>
                     </div>
@@ -430,7 +430,7 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="box-content border-t border-solid border-t-color-005 block relative mt-32.5 text-background bg-color-009 max-md:mt-10 before:content-[''] before:block before:absolute before:-top-30 before:right-0 before:bottom-124 before:left-176 before:[background-size:18px_14px] max-md:before:-top-20 max-md:before:bottom-[69.0625rem] max-md:before:left-[206.3px] md:max-lg:before:bottom-159 md:max-lg:before:left-[26.4rem] 2xl:before:left-264" data-ditto-id="style-div-66">
+        <footer className="box-content border-t border-solid border-t-color-005 block relative mt-32.5 text-background bg-color-008 max-md:mt-10 before:content-[''] before:block before:absolute before:-top-30 before:right-0 before:bottom-124 before:left-176 before:[background-size:18px_14px] max-md:before:-top-20 max-md:before:bottom-[69.0625rem] max-md:before:left-[206.3px] md:max-lg:before:bottom-159 md:max-lg:before:left-[26.4rem] 2xl:before:left-264" data-ditto-id="style-div-104">
           <div className="box-content w-311.5 block max-w-[calc(100%_-_34px)] -mr-4 pt-12 px-[1.5625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]">
             <div className="box-content flex pb-10 justify-between items-end max-md:block max-md:pb-0 max-md:[justify-content:initial] max-md:[align-items:initial]">
               <img className="box-content w-62.5 h-[1.9375rem] block mb-8 overflow-clip aspect-[auto_250/31] max-md:inline" data-component="image" alt="Haufe Akademie" height="31" src="/assets/cloned/svg/b5d862826e6a.svg" width="250" />
@@ -438,7 +438,7 @@ export default function Page() {
             </div>
             {" "}
             <ul className="h-[12.9375rem] min-h-px block -mx-[1.5625rem] [list-style-type:none] list-outside max-md:h-173.5 md:max-lg:h-[21.6875rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-background before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-background after:text-sm after:leading-[1.3125rem] after:text-left" data-ditto-id="style-i-16">
-              <li className="w-81 h-[8.5625rem] min-h-px list-item float-left px-[1.5625rem] max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-39.5 2xl:w-[324.5px]">
+              <li className="w-81 h-[8.5625rem] min-h-px list-item float-left px-[1.5625rem] max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-39.5 2xl:w-[324.5px]" data-ditto-id="style-div-205">
                 <address className="box-content block">
                   <strong className="box-content inline font-medium" data-ditto-id="style-tabpanel-megamenu-0-0-7">
                     {"Haufe Akademie GmbH & Co. KG"}
@@ -450,7 +450,7 @@ export default function Page() {
                   79111 Freiburg
                 </address>
                 {" "}
-                <p className="box-content block mt-5 mb-1.5 text-color-007 font-medium" data-ditto-id="style-div-67">
+                <p className="box-content block mt-5 mb-1.5 text-color-007 font-medium" data-ditto-id="style-div-105">
                   <strong className="box-content inline" data-ditto-id="style-i-17">
                     Eine Marke der
                   </strong>
@@ -461,11 +461,11 @@ export default function Page() {
               </li>
               <li className="w-81 h-29.5 min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-[9.9375rem] 2xl:w-[324.5px]">
                 <div className="box-content h-full block">
-                  <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]" data-ditto-id="style-div-68">
+                  <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]" data-ditto-id="style-div-106">
                     Unsere Angebotsfelder
                   </p>
                   {" "}
-                  <ul className="block [list-style-type:none] list-outside" id="menu-links-footer-left">
+                  <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-div-124" id="menu-links-footer-left">
                     {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} />)}
                   </ul>
                 </div>
@@ -485,12 +485,12 @@ export default function Page() {
                 </div>
                 {" "}
               </li>
-              <li className="w-81 h-[12.9375rem] min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:h-[11.6875rem] md:max-lg:w-48 md:max-lg:h-[21.6875rem] 2xl:w-[324.5px]" data-ditto-id="style-div-72">
+              <li className="w-81 h-[12.9375rem] min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:h-[11.6875rem] md:max-lg:w-48 md:max-lg:h-[21.6875rem] 2xl:w-[324.5px]" data-ditto-id="style-div-110">
                 <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]" data-ditto-id="style-button-16">
                   Die letzten Artikel
                 </p>
                 {" "}
-                <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-div-73">
+                <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-div-111">
                   {ListRow3_data.map((d, i) => <ListRow3 key={i} d={d} />)}
                 </ul>
                 {" "}
@@ -501,19 +501,19 @@ export default function Page() {
             {" "}
           </div>
           {" "}
-          <div className="box-content w-311.5 flex max-w-[calc(100%_-_34px)] -mr-4 pt-6 pb-12 px-[1.5625rem] flex-wrap justify-between items-end gap-7.5 text-left max-md:w-[23.4375rem] max-md:pt-10.5 max-md:pb-[3.0625rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 max-md:[justify-content:initial] max-md:[align-items:initial] md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]" data-ditto-id="style-div-74">
+          <div className="box-content w-311.5 flex max-w-[calc(100%_-_34px)] -mr-4 pt-6 pb-12 px-[1.5625rem] flex-wrap justify-between items-end gap-7.5 text-left max-md:w-[23.4375rem] max-md:pt-10.5 max-md:pb-[3.0625rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 max-md:[justify-content:initial] max-md:[align-items:initial] md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]" data-ditto-id="style-div-112">
             <ul className="flex flex-wrap gap-y-2 gap-x-2.5 [list-style-type:none] list-outside">
               {ListRow4_data.map((d, i) => <ListRow4 key={i} d={d} styles={ListRow4_styles[i]} />)}
             </ul>
             {" "}
             <ul className="w-46 flex gap-2 [list-style-type:none] list-outside max-md:w-[20.3125rem]">
               {ListRow5_data.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles[i]} />)}
-              <li className="box-content list-item">
-                <a className="box-content w-6 h-6 flex justify-center items-center text-lg font-medium leading-[1.6875rem] cursor-pointer" data-component="link" href="https://www.tiktok.com/@haufe.akademie" target="_blank">
+              <li className="box-content list-item" data-ditto-id="style-button-47">
+                <a className="box-content w-6 h-6 flex justify-center items-center text-lg font-medium leading-[1.6875rem] cursor-pointer" data-ditto-id="style-div-207" data-component="link" href="https://www.tiktok.com/@haufe.akademie" target="_blank">
                   <svg className="box-content w-auto h-4 block overflow-hidden" data-ditto-id="style-i-27" data-component="icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="#ffffff" />
                   </svg>
-                  <span className="box-content w-px h-px block absolute min-w-0 -m-px overflow-hidden" data-ditto-id="style-span-13">
+                  <span className="box-content w-px h-px block absolute min-w-0 -m-px overflow-hidden" data-ditto-id="style-span-18">
                     TikTok
                   </span>
                 </a>
@@ -526,11 +526,11 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="box-content block" data-ditto-id="style-div-78">
+      <div className="box-content block" data-ditto-id="style-div-116">
         {" "}
       </div>
       {" "}
-      <div className="box-content block" aria-label="Tooltip content" id="tt" role="tooltip" />
+      <div className="box-content block" data-ditto-id="style-div-208" aria-label="Tooltip content" id="tt" role="tooltip" />
       {" "}
     </>
   );

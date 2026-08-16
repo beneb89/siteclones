@@ -30,7 +30,7 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 ## Clone Metadata
 
 - routes: 7
-- extracted components: 155
+- extracted components: 141
 - section modules: 0
 - SVG modules: 0
 - content module: no

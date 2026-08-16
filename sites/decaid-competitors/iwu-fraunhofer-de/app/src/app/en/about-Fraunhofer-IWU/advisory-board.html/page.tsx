@@ -20,20 +20,20 @@ const ListRow_data2 = [
 ];
 const ListRow_meta: string[][] = [
     ["n111"],
-    ["style-div-77"],
+    ["style-div-83"],
     ["n113"],
     ["style-section-2"],
-    ["style-div-88"],
+    ["style-div-94"],
+    ["style-div-84"],
+    ["style-article-3"],
     ["style-div-78"],
-    ["style-article"],
-    ["style-div-72"],
-    ["n119"]
+    ["style-div-107"]
 ];
 const ListRow_meta2: string[][] = [
-    ["style-ul-5"],
-    ["style-ul-10"],
-    ["style-div-6"],
-    ["style-div-62"]
+    ["style-ul-6"],
+    ["style-source-12"],
+    ["style-source-6"],
+    ["style-source-14"]
 ];
 
 export default function Page() {
@@ -91,7 +91,7 @@ export default function Page() {
                       <nav className="h-full block" data-ditto-id="style-link-5" data-component="nav">
                         <ul className="h-full block [list-style-type:none] list-outside">
                           <li className="h-full inline-block relative align-top font-normal tracking-[0.9px] uppercase cursor-pointer max-lg:hidden 2xl:tracking-[1.08px]">
-                            <a className="h-full block py-[0.9375rem] px-[1.5625rem] text-primary 2xl:py-4.5 2xl:px-7.5" data-ditto-id="style-ul-15" data-component="link" href="/en/about-Fraunhofer-IWU.html">
+                            <a className="h-full block py-[0.9375rem] px-[1.5625rem] text-primary 2xl:py-4.5 2xl:px-7.5" data-ditto-id="style-ul-13" data-component="link" href="/en/about-Fraunhofer-IWU.html">
                               Career
                             </a>
                           </li>
@@ -119,7 +119,7 @@ export default function Page() {
                   </div>
                   {" "}
                   <div className="block" id="nav">
-                    <div className="w-230 h-11 min-h-[2.6875rem] block -mr-20 pr-20 pb-px bg-color-001 max-lg:w-[2.8125rem] max-lg:float-right max-lg:mr-0 max-lg:pr-0 2xl:w-312 2xl:h-[3.2875rem] 2xl:min-h-[3.225rem] 2xl:-mr-24 2xl:pr-24" data-ditto-id="style-link-9">
+                    <div className="w-230 h-11 min-h-[2.6875rem] block -mr-20 pr-20 pb-px bg-accent max-lg:w-[2.8125rem] max-lg:float-right max-lg:mr-0 max-lg:pr-0 2xl:w-312 2xl:h-[3.2875rem] 2xl:min-h-[3.225rem] 2xl:-mr-24 2xl:pr-24" data-ditto-id="style-link-9">
                       <nav className="h-full block" data-component="nav">
                         <ul className="w-full h-full table relative px-[0.9375rem] [list-style-type:none] list-outside max-lg:static max-lg:inset-auto max-lg:px-0 2xl:px-4.5">
                           <li className="h-full table-cell align-middle text-center whitespace-nowrap text-nowrap max-lg:hidden">
@@ -129,8 +129,8 @@ export default function Page() {
                               </a>
                             </span>
                             {" "}
-                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-color-001 2xl:-left-96 2xl:-mx-24 2xl:px-24">
-                              <span className="w-12.5 h-12.5 block absolute z-1010 -ml-12.5 text-background text-xs font-normal leading-12.5 tracking-[0.9px] text-center uppercase cursor-pointer max-lg:hidden 2xl:w-15 2xl:h-15 2xl:-ml-15 2xl:text-sm 2xl:leading-15 2xl:tracking-[1.08px]" data-ditto-id="style-link-70">
+                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-accent 2xl:-left-96 2xl:-mx-24 2xl:px-24">
+                              <span className="w-12.5 h-12.5 block absolute z-1010 -ml-12.5 text-background text-xs font-normal leading-12.5 tracking-[0.9px] text-center uppercase cursor-pointer max-lg:hidden 2xl:w-15 2xl:h-15 2xl:-ml-15 2xl:text-sm 2xl:leading-15 2xl:tracking-[1.08px]" data-ditto-id="style-link-71">
                                 [X]
                               </span>
                               {" "}
@@ -143,7 +143,7 @@ export default function Page() {
                               <ul className="block pt-0.5 [list-style-type:none] list-outside">
                                 <li className="w-[17.5rem] h-12.5 inline-block opacity-0 mb-[1.5625rem] px-[1.5625rem] align-top">
                                   {" "}
-                                  <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-ul-16" data-component="link" href="/en/about-Fraunhofer-IWU/management.html">
+                                  <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-ul-14" data-component="link" href="/en/about-Fraunhofer-IWU/management.html">
                                     {"Management "}
                                   </a>
                                 </li>
@@ -155,14 +155,14 @@ export default function Page() {
                                     </a>
                                   </span>
                                   {" "}
-                                  <ul className="h-[0.1875rem] border-b border-solid border-b-accent block opacity-0 max-h-0 pt-0.5 overflow-hidden [list-style-type:none] list-outside">
-                                    <li className="w-full border-t border-solid border-t-accent table relative align-top [word-break:break-word] [overflow-wrap:break-word]">
-                                      <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.3px] cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[0.36px]" data-ditto-id="style-link-11" data-component="link" href="https://www.iwu.fraunhofer.de/en/about-Fraunhofer-IWU/locations/zittau.html">
+                                  <ul className="h-[0.1875rem] border-b border-solid border-b-color-001 block opacity-0 max-h-0 pt-0.5 overflow-hidden [list-style-type:none] list-outside">
+                                    <li className="w-full border-t border-solid border-t-color-001 table relative align-top [word-break:break-word] [overflow-wrap:break-word]">
+                                      <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.3px] cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[0.36px]" data-ditto-id="style-link-11" data-component="link" href="/en/about-Fraunhofer-IWU/locations/zittau.html">
                                         Fraunhofer IWU in Zittau
                                       </a>
                                     </li>
-                                    <li className="w-full border-t border-solid border-t-accent table relative align-top [word-break:break-word] [overflow-wrap:break-word]">
-                                      <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.3px] cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[0.36px]" data-ditto-id="style-link-12" data-component="link" href="https://www.iwu.fraunhofer.de/en/about-Fraunhofer-IWU/locations/wolfsburg.html">
+                                    <li className="w-full border-t border-solid border-t-color-001 table relative align-top [word-break:break-word] [overflow-wrap:break-word]">
+                                      <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.3px] cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[0.36px]" data-ditto-id="style-link-12" data-component="link" href="/en/about-Fraunhofer-IWU/locations/wolfsburg.html">
                                         Wolfsburg
                                       </a>
                                     </li>
@@ -171,7 +171,7 @@ export default function Page() {
                                 </li>
                                 <li className="w-[17.5rem] h-12.5 inline-block opacity-0 mb-[1.5625rem] px-[1.5625rem] align-top">
                                   {" "}
-                                  <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-link-13" data-component="link" href="https://www.iwu.fraunhofer.de/en/about-Fraunhofer-IWU/quality-management.html">
+                                  <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-link-13" data-component="link" href="/en/about-Fraunhofer-IWU/quality-management.html">
                                     Quality Management
                                   </a>
                                 </li>
@@ -213,8 +213,8 @@ export default function Page() {
                               </a>
                             </span>
                             {" "}
-                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-color-001 2xl:-left-96 2xl:-mx-24 2xl:px-24">
-                              <span className="w-12.5 h-12.5 block absolute z-1010 -ml-12.5 text-background text-xs font-normal leading-12.5 tracking-[0.9px] text-center uppercase cursor-pointer max-lg:hidden 2xl:w-15 2xl:h-15 2xl:-ml-15 2xl:text-sm 2xl:leading-15 2xl:tracking-[1.08px]" data-ditto-id="style-li-17">
+                            <div className="h-0 block absolute right-0 -left-[17.5rem] z-1010 max-h-0 -mx-20 px-20 overflow-hidden text-left whitespace-normal bg-accent 2xl:-left-96 2xl:-mx-24 2xl:px-24">
+                              <span className="w-12.5 h-12.5 block absolute z-1010 -ml-12.5 text-background text-xs font-normal leading-12.5 tracking-[0.9px] text-center uppercase cursor-pointer max-lg:hidden 2xl:w-15 2xl:h-15 2xl:-ml-15 2xl:text-sm 2xl:leading-15 2xl:tracking-[1.08px]" data-ditto-id="style-li-19">
                                 [X]
                               </span>
                               {" "}
@@ -227,7 +227,7 @@ export default function Page() {
                               <ul className="block pt-0.5 [list-style-type:none] list-outside">
                                 <li className="w-[17.5rem] h-12.5 inline-block opacity-0 mb-[1.5625rem] px-[1.5625rem] align-top" data-ditto-id="style-span-2">
                                   {" "}
-                                  <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-span-5" data-component="link" href="https://www.iwu.fraunhofer.de/en/trade-fairs-and-events/first-european-spatial-computing-healthcare-summit.html">
+                                  <a className="h-12.5 table-cell pr-[1.5625rem] overflow-hidden align-middle text-background text-[0.75rem] font-normal tracking-[0.9px] uppercase cursor-pointer 2xl:h-15 2xl:pr-7.5 2xl:text-[0.875rem] 2xl:tracking-[1.08px]" data-ditto-id="style-span-7" data-component="link" href="/en/trade-fairs-and-events/first-european-spatial-computing-healthcare-summit.html">
                                     First European Spatial Computing Healthcare Summit
                                   </a>
                                 </li>
@@ -281,12 +281,12 @@ export default function Page() {
             <div className="w-534 block overflow-hidden max-md:opacity-0 md:max-lg:w-359 2xl:w-737">
               <ul className="block float-left [list-style-type:disc] list-outside max-md:-mt-[0.1875rem] max-md:mb-[0.9375rem] max-md:text-primary max-md:[list-style-type:none]" data-ditto-id="style-link-23">
                 <li className="list-item float-left pr-[0.3125rem] [list-style-type:none] max-md:relative max-md:-right-[0.9375rem] max-md:left-[0.9375rem] max-md:ml-[0.9375rem] max-md:pt-[0.3125rem] max-md:align-top max-md:text-sm max-md:leading-4.5 max-md:[float:initial] max-md:[list-style-type:inherit] 2xl:pr-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:mr-[0.3125rem] before:-ml-[0.9375rem] before:text-primary before:text-xs before:leading-3 md:max-lg:before:hidden 2xl:before:hidden">
-                  <a className="inline text-primary font-normal underline cursor-pointer max-md:text-[0.75rem] max-md:[word-break:break-word] max-md:[overflow-wrap:break-word] max-md:text-[color:inherit]" data-ditto-id="style-span-6" data-component="link" href="/en.html">
+                  <a className="inline text-primary font-normal underline cursor-pointer max-md:text-[0.75rem] max-md:[word-break:break-word] max-md:[overflow-wrap:break-word] max-md:text-[color:inherit]" data-ditto-id="style-span-8" data-component="link" href="/en.html">
                     Homepage
                   </a>
                 </li>
                 <li className="list-item float-left pr-[0.3125rem] [list-style-type:none] max-md:relative max-md:-right-[0.9375rem] max-md:left-[0.9375rem] max-md:ml-7.5 max-md:pt-[0.3125rem] max-md:align-top max-md:text-sm max-md:leading-4.5 max-md:[float:initial] max-md:[list-style-type:inherit] 2xl:pr-1.5 before:content-['.'] before:mr-[0.3125rem] before:text-foreground before:text-xs before:font-extralight before:leading-[0.9375rem] before:tracking-[0.3px] max-md:before:content-[''] max-md:before:inline-block max-md:before:w-[0.9375rem] max-md:before:h-3 max-md:before:-ml-[0.9375rem] max-md:before:text-primary max-md:before:leading-3 max-md:before:[font-weight:inherit] max-md:before:tracking-[inherit] 2xl:before:mr-1.5 2xl:before:text-sm 2xl:before:leading-4.5 2xl:before:tracking-[0.36px]">
-                  <a className="inline text-primary font-normal underline cursor-pointer max-md:text-[0.75rem] max-md:[word-break:break-word] max-md:[overflow-wrap:break-word] max-md:text-[color:inherit]" data-ditto-id="style-li-18" data-component="link" href="/en/about-Fraunhofer-IWU.html">
+                  <a className="inline text-primary font-normal underline cursor-pointer max-md:text-[0.75rem] max-md:[word-break:break-word] max-md:[overflow-wrap:break-word] max-md:text-[color:inherit]" data-ditto-id="style-li-20" data-component="link" href="/en/about-Fraunhofer-IWU.html">
                     About Us
                   </a>
                 </li>
@@ -299,7 +299,7 @@ export default function Page() {
             {" "}
           </nav>
           {" "}
-          <div className="h-34 min-h-21 border-t border-solid border-t-border border-r border-r-border border-l border-l-border block relative clear-both bg-background max-md:min-h-[8.4375rem] max-lg:-mx-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:h-[10.1875rem] 2xl:min-h-[6.3rem] before:content-[''] before:block before:absolute before:-inset-y-px before:right-279.5 before:-left-20 before:-z-1 before:h-[8.4375rem] max-md:before:right-[23.4375rem] max-lg:before:h-[8.5625rem] md:max-lg:before:right-192 2xl:before:right-383.5 2xl:before:-left-24 2xl:before:h-40.5 after:content-[''] after:block after:absolute after:-inset-y-px after:-right-20 after:left-279.5 after:-z-1 after:h-[8.4375rem] max-md:after:left-[23.4375rem] max-lg:after:h-[8.5625rem] md:max-lg:after:left-192 2xl:after:-right-24 2xl:after:left-383.5 2xl:after:h-40.5">
+          <div className="h-34 min-h-21 border-t border-solid border-t-border border-r border-r-border border-l border-l-border block relative clear-both bg-background max-md:min-h-[8.4375rem] max-lg:-mx-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:h-[10.1875rem] 2xl:min-h-[6.3rem] before:content-[''] before:block before:absolute before:-inset-y-px before:right-279.5 before:-left-20 before:-z-1 before:h-[8.4375rem] max-md:before:right-[23.4375rem] max-lg:before:h-[8.5625rem] md:max-lg:before:right-192 2xl:before:right-383.5 2xl:before:-left-24 2xl:before:h-40.5 after:content-[''] after:block after:absolute after:-inset-y-px after:-right-20 after:left-279.5 after:-z-1 after:h-[8.4375rem] max-md:after:left-[23.4375rem] max-lg:after:h-[8.5625rem] md:max-lg:after:left-192 2xl:after:-right-24 2xl:after:left-383.5 2xl:after:h-40.5" data-ditto-id="style-link-72">
             <div className="w-3/4 h-full min-h-[8.4375rem] block py-[0.9375rem] px-[1.5625rem] align-top text-sm leading-5.5 max-lg:w-full max-lg:inline-block 2xl:min-h-40.5 2xl:py-4.5 2xl:px-7.5 2xl:text-[1.0625rem] 2xl:leading-[1.625rem]">
               <h1 className="block mt-5 mb-2.5 text-primary text-[2rem] leading-9 tracking-[0.8px] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-6 2xl:mb-3 2xl:text-[2.375rem] 2xl:leading-[2.6875rem] 2xl:tracking-[0.96px]" data-component="heading">
                 Advisory Board
@@ -325,12 +325,12 @@ export default function Page() {
                             <div className="w-full inline-block mt-[1.5625rem] align-top 2xl:mt-7.5" data-ditto-id="style-link-25">
                               {" "}
                               <div className="block px-[1.5625rem] text-sm leading-5.5 2xl:px-7.5 2xl:text-[1.0625rem] 2xl:leading-[1.625rem]">
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-component="heading">
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-div" data-component="heading">
                                   Chairman
                                 </h4>
                                 {" "}
                                 <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]">
-                                  <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]">
+                                  <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]" data-ditto-id="style-heading-20">
                                     Dr. Siegfried Schmidtner, AUDI AG
                                   </li>
                                 </ul>
@@ -339,14 +339,14 @@ export default function Page() {
                                   Members of the Board
                                 </h4>
                                 {" "}
-                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]">
+                                <ul className="block -mt-[0.1875rem] leading-4.5 [list-style-type:none] list-outside 2xl:-mt-[0.225rem] 2xl:leading-[1.375rem]" data-ditto-id="style-div-104">
                                   {ListRow_data.map((d, i) => <ListRow key={i} d={d} />)}
-                                  <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]" data-ditto-id="style-div-58">
+                                  <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]" data-ditto-id="style-div-65">
                                     Prof. Konrad Wegener, Inspire AG, Switzerland
-                                    <br className="inline" />
+                                    <br className="inline" data-ditto-id="style-heading-19" />
                                     {" "}
                                   </li>
-                                  <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]" data-ditto-id="style-ul-4">
+                                  <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]" data-ditto-id="style-ul-5">
                                     Susanne Witt, METROM Mechatronische Maschinen GmbH
                                   </li>
                                   <li className="list-item left-[0.9375rem] ml-[0.9375rem] pt-[0.3125rem] align-top 2xl:left-4.5 2xl:ml-4.5 2xl:pt-1.5 before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3.5 before:-ml-[0.9375rem] before:text-foreground before:text-sm before:leading-3.5 2xl:before:w-4.5 2xl:before:h-[1.05rem] 2xl:before:-ml-4.5 2xl:before:text-[1.0625rem] 2xl:before:leading-[1.0625rem]">
@@ -354,7 +354,7 @@ export default function Page() {
                                   </li>
                                 </ul>
                                 {" "}
-                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-span-3" data-component="heading">
+                                <h4 className="block mt-[0.5625rem] mb-[4.5px] text-primary text-[1.125rem] [word-break:break-word] [overflow-wrap:break-word] 2xl:mt-[0.675rem] 2xl:mb-[0.3375rem] 2xl:text-[1.375rem]" data-ditto-id="style-span-4" data-component="heading">
                                   Honourary members
                                 </h4>
                                 {" "}
@@ -376,36 +376,36 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="border-b border-solid border-b-border inline-block -mb-px align-top max-lg:-ml-px" data-ditto-id="style-div-7">
+                <div className="border-b border-solid border-b-border inline-block -mb-px align-top max-lg:-ml-px" data-ditto-id="style-source-7">
                   {" "}
-                  <div className="w-1/4 block max-md:w-full md:max-lg:w-1/2" data-ditto-id="style-link-37" />
+                  <div className="w-1/4 block max-md:w-full md:max-lg:w-1/2" data-ditto-id="style-image-2" />
                   {" "}
-                  <aside className="block" data-ditto-id="style-div-8">
-                    <div className="block" data-ditto-id="style-div-38">
-                      <div className="block" data-ditto-id="style-heading">
-                        <div className="h-128 border border-solid border-border inline-block relative align-top bg-primary 2xl:h-[38.4rem]">
+                  <aside className="block" data-ditto-id="style-figcaption">
+                    <div className="block" data-ditto-id="style-div-47">
+                      <div className="block" data-ditto-id="style-div-19">
+                        <div className="h-128 border border-solid border-border inline-block relative align-top bg-primary 2xl:h-[38.4rem]" data-ditto-id="style-div-102">
                           {" "}
-                          <div className="h-full block relative overflow-hidden" data-ditto-id="style-li-2">
-                            <div className="h-34.5 block bg-cover [background-position:51%_43%] 2xl:h-[10.35rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/5c4038bad6fa.jpg\")" }} data-ditto-id="style-br-2" />
+                          <div className="h-full block relative overflow-hidden" data-ditto-id="style-li-5">
+                            <div className="h-34.5 block bg-cover [background-position:51%_43%] 2xl:h-[10.35rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/5c4038bad6fa.jpg\")" }} data-ditto-id="style-br-3" />
                             {" "}
-                            <div className="h-93.5 block relative pt-[0.9375rem] pb-[1.5625rem] px-[1.5625rem] text-background [word-break:break-word] [overflow-wrap:break-word] bg-primary 2xl:h-[28.05rem] 2xl:pt-4.5 2xl:pb-7.5 2xl:px-7.5 before:content-[''] before:block before:absolute before:-top-2.5 before:right-[242.5px] before:bottom-93.5 before:left-0 before:w-[2.1875rem] before:h-2.5 max-md:before:right-71.5 md:max-lg:before:right-[20.0625rem] 2xl:before:-top-3 2xl:before:right-[339.5px] 2xl:before:bottom-[28.05rem] 2xl:before:w-10.5 2xl:before:h-3 after:content-[''] after:block after:absolute after:-top-2.5 after:-right-[2.1875rem] after:bottom-93.5 after:left-[2.1875rem] after:h-2.5 2xl:after:-top-3 2xl:after:-right-10.5 2xl:after:bottom-[28.05rem] 2xl:after:left-10.5 2xl:after:h-3" data-ditto-id="style-li">
-                              <div className="block relative" data-ditto-id="style-li-7">
-                                <h3 className="block mb-[0.525rem] text-2xl leading-7 tracking-[0.6px] 2xl:mb-2.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-heading-2" data-component="heading">
+                            <div className="h-93.5 block relative pt-[0.9375rem] pb-[1.5625rem] px-[1.5625rem] text-background [word-break:break-word] [overflow-wrap:break-word] bg-primary 2xl:h-[28.05rem] 2xl:pt-4.5 2xl:pb-7.5 2xl:px-7.5 before:content-[''] before:block before:absolute before:-top-2.5 before:right-[242.5px] before:bottom-93.5 before:left-0 before:w-[2.1875rem] before:h-2.5 max-md:before:right-71.5 md:max-lg:before:right-[20.0625rem] 2xl:before:-top-3 2xl:before:right-[339.5px] 2xl:before:bottom-[28.05rem] 2xl:before:w-10.5 2xl:before:h-3 after:content-[''] after:block after:absolute after:-top-2.5 after:-right-[2.1875rem] after:bottom-93.5 after:left-[2.1875rem] after:h-2.5 2xl:after:-top-3 2xl:after:-right-10.5 2xl:after:bottom-[28.05rem] 2xl:after:left-10.5 2xl:after:h-3" data-ditto-id="style-li-3">
+                              <div className="block relative" data-ditto-id="style-li-9">
+                                <h3 className="block mb-[0.525rem] text-2xl leading-7 tracking-[0.6px] 2xl:mb-2.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-heading-4" data-component="heading">
                                   Members
                                 </h3>
                                 {" "}
-                                <div className="block text-[0.875rem] 2xl:text-[1.0625rem]" data-ditto-id="style-ul">
-                                  <p className="block mb-[0.3125rem] 2xl:mb-1.5" data-ditto-id="style-li-3" />
+                                <div className="block text-[0.875rem] 2xl:text-[1.0625rem]" data-ditto-id="style-ul-2">
+                                  <p className="block mb-[0.3125rem] 2xl:mb-1.5" data-ditto-id="style-li-6" />
                                   {" "}
-                                  <p className="block mb-[0.3125rem] 2xl:mb-1.5" data-ditto-id="style-link-38">
+                                  <p className="block mb-[0.3125rem] 2xl:mb-1.5" data-ditto-id="style-link-49">
                                     The Advisory Board of the Fraunhofer IWU is made up of external experts from industry, science and public life. The Board provides professional guidance to the Management.
                                   </p>
                                 </div>
                                 {" "}
                               </div>
                               {" "}
-                              <div className="w-[275.5px] h-10 block absolute bottom-0 left-px pt-[0.9375rem] pb-[1.5625rem] px-[1.5625rem] bg-primary max-md:w-79.5 max-md:mr-px md:max-lg:w-88.5 2xl:w-[379.5px] 2xl:h-12 2xl:pt-4.5 2xl:pb-7.5 2xl:px-7.5" data-ditto-id="style-li-9">
-                                <ul className="block -mt-[0.1875rem] [list-style-type:none] list-outside 2xl:-mt-[0.225rem]" data-ditto-id="style-link-39" />
+                              <div className="w-[275.5px] h-10 block absolute bottom-0 left-px pt-[0.9375rem] pb-[1.5625rem] px-[1.5625rem] bg-primary max-md:w-79.5 max-md:mr-px md:max-lg:w-88.5 2xl:w-[379.5px] 2xl:h-12 2xl:pt-4.5 2xl:pb-7.5 2xl:px-7.5" data-ditto-id="style-li-11">
+                                <ul className="block -mt-[0.1875rem] [list-style-type:none] list-outside 2xl:-mt-[0.225rem]" data-ditto-id="style-link-50" />
                                 {" "}
                               </div>
                               {" "}
@@ -430,28 +430,28 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <div className="block" data-ditto-id="style-div-56">
-          <div className="h-21 min-h-21 border-t border-solid border-t-border border-r border-r-border border-l border-l-border block relative clear-both bg-background max-md:h-[1.5625rem] max-md:min-h-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:h-[6.3rem] 2xl:min-h-[6.3rem] before:content-[''] before:block before:absolute before:-inset-y-px before:right-279.5 before:-left-20 before:-z-1 before:h-[5.1875rem] max-md:before:right-[20.3125rem] max-md:before:h-6.5 md:max-lg:before:right-179.5 md:max-lg:before:h-[5.3125rem] 2xl:before:right-383.5 2xl:before:-left-24 2xl:before:h-[6.2375rem] after:content-[''] after:block after:absolute after:-inset-y-px after:-right-20 after:left-279.5 after:-z-1 after:h-[5.1875rem] max-md:after:left-[20.3125rem] max-md:after:h-6.5 md:max-lg:after:left-179.5 md:max-lg:after:h-[5.3125rem] 2xl:after:-right-24 2xl:after:left-383.5 2xl:after:h-[6.2375rem]" data-ditto-id="style-div-9" />
+        <div className="block" data-ditto-id="style-div-63">
+          <div className="h-21 min-h-21 border-t border-solid border-t-border border-r border-r-border border-l border-l-border block relative clear-both bg-background max-md:h-[1.5625rem] max-md:min-h-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:h-[6.3rem] 2xl:min-h-[6.3rem] before:content-[''] before:block before:absolute before:-inset-y-px before:right-279.5 before:-left-20 before:-z-1 before:h-[5.1875rem] max-md:before:right-[20.3125rem] max-md:before:h-6.5 md:max-lg:before:right-179.5 md:max-lg:before:h-[5.3125rem] 2xl:before:right-383.5 2xl:before:-left-24 2xl:before:h-[6.2375rem] after:content-[''] after:block after:absolute after:-inset-y-px after:-right-20 after:left-279.5 after:-z-1 after:h-[5.1875rem] max-md:after:left-[20.3125rem] max-md:after:h-6.5 md:max-lg:after:left-179.5 md:max-lg:after:h-[5.3125rem] 2xl:after:-right-24 2xl:after:left-383.5 2xl:after:h-[6.2375rem]" data-ditto-id="style-div-20" />
           {" "}
         </div>
         {" "}
         <footer className="block" data-ditto-id="style-aside-3">
-          <div className="block clear-both" data-ditto-id="style-div-84">
-            <h2 className="hidden invisible text-primary text-[1.75rem] leading-8 tracking-[0.7px] [word-break:break-word] [overflow-wrap:break-word]" data-ditto-id="style-div-79" id="Navigation-and-Social-Media">
+          <div className="block clear-both" data-ditto-id="style-div-90">
+            <h2 className="hidden invisible text-primary text-[1.75rem] leading-8 tracking-[0.7px] [word-break:break-word] [overflow-wrap:break-word]" data-ditto-id="style-div-85" id="Navigation-and-Social-Media">
               Navigation and Social Media
             </h2>
             {" "}
-            <div className="block" data-ditto-id="style-div-39">
-              <div className="border-t border-solid border-t-border border-r border-r-border border-l border-l-border block clear-both leading-0 max-lg:border max-lg:border-border max-lg:mb-[1.5625rem] max-lg:border-t-[0] max-lg:border-initial max-lg:border-t-[initial] max-lg:border-r-[0] max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial]" data-ditto-id="style-div-80">
-                <div className="block -mx-px" data-ditto-id="style-div-40">
-                  <div className="border-r border-solid border-r-border inline-block pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5" data-ditto-id="style-div-73">
+            <div className="block" data-ditto-id="style-div-48">
+              <div className="border-t border-solid border-t-border border-r border-r-border border-l border-l-border block clear-both leading-0 max-lg:border max-lg:border-border max-lg:mb-[1.5625rem] max-lg:border-t-[0] max-lg:border-initial max-lg:border-t-[initial] max-lg:border-r-[0] max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial]" data-ditto-id="style-div-86">
+                <div className="block -mx-px" data-ditto-id="style-div-49">
+                  <div className="border-r border-solid border-r-border inline-block pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5" data-ditto-id="style-div-79">
                     {" "}
                   </div>
                   {" "}
-                  <div className="border-l border-solid border-l-border inline-block -ml-px pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-l-[0] max-lg:border-initial max-lg:border-l-[initial] max-md:ml-0 max-lg:pt-0 md:max-lg:ml-26.5 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5" data-ditto-id="style-div-41">
+                  <div className="border-l border-solid border-l-border inline-block -ml-px pt-[1.5625rem] pb-[0.8125rem] px-[1.5625rem] align-top max-lg:border-l-[0] max-lg:border-initial max-lg:border-l-[initial] max-md:ml-0 max-lg:pt-0 md:max-lg:ml-26.5 2xl:pt-7.5 2xl:pb-[0.975rem] 2xl:px-7.5" data-ditto-id="style-div-50">
                     {" "}
-                    <div className="block" data-ditto-id="style-heading-9">
-                      <button className="w-[6.875rem] block float-left mb-3 align-top text-background text-xs font-normal leading-[2.0625rem] tracking-[0.9px] text-center uppercase bg-primary cursor-pointer max-lg:w-25 max-md:mr-[4.5px] md:max-lg:mx-1.5 2xl:w-[9.6875rem] 2xl:mb-[0.9rem] 2xl:text-sm 2xl:leading-[2.5rem] 2xl:tracking-[1.08px]" data-ditto-id="style-div-10" data-component="button">
+                    <div className="block" data-ditto-id="style-heading-11">
+                      <button className="w-[6.875rem] block float-left mb-3 align-top text-background text-xs font-normal leading-[2.0625rem] tracking-[0.9px] text-center uppercase bg-primary cursor-pointer max-lg:w-25 max-md:mr-[4.5px] md:max-lg:mx-1.5 2xl:w-[9.6875rem] 2xl:mb-[0.9rem] 2xl:text-sm 2xl:leading-[2.5rem] 2xl:tracking-[1.08px]" data-ditto-id="style-div-21" data-component="button">
                         Print
                       </button>
                       {" "}
@@ -463,26 +463,26 @@ export default function Page() {
                 {" "}
               </div>
               <div className="border-r border-solid border-r-border border-l border-l-border block relative bg-primary max-md:-mx-[1.5625rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] before:content-[''] before:block before:absolute before:inset-y-0 before:right-279.5 before:-left-20 before:-z-1 before:bg-primary max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-383.5 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-279.5 after:-z-1 after:bg-primary max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-383.5" data-ditto-id="style-p-14">
-                <div className="inline-block p-[1.5625rem] align-top max-lg:py-[2.1875rem] max-md:px-12.5 2xl:p-7.5" data-ditto-id="style-p-28">
+                <div className="inline-block p-[1.5625rem] align-top max-lg:py-[2.1875rem] max-md:px-12.5 2xl:p-7.5" data-ditto-id="style-p-27">
                   {" "}
-                  <h3 className="block text-background text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-div-55" data-component="heading">
+                  <h3 className="block text-background text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-div-62" data-component="heading">
                     Quick Links
                   </h3>
                   {" "}
                 </div>
                 {" "}
-                <div className="inline-block py-[1.5625rem] align-top max-lg:-mt-2.5 max-lg:pb-[2.1875rem] max-md:px-12.5 max-lg:pt-0 md:max-lg:px-[1.5625rem] 2xl:py-7.5" data-ditto-id="style-ul-13">
+                <div className="inline-block py-[1.5625rem] align-top max-lg:-mt-2.5 max-lg:pb-[2.1875rem] max-md:px-12.5 max-lg:pt-0 md:max-lg:px-[1.5625rem] 2xl:py-7.5" data-ditto-id="style-ul-12">
                   {" "}
-                  <ul className="block text-background [list-style-type:none] list-outside" data-ditto-id="style-div-59">
-                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-89">
+                  <ul className="block text-background [list-style-type:none] list-outside" data-ditto-id="style-div-66">
+                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-109">
                       {" "}
-                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-footer" data-component="link" href="https://www.iwu.fraunhofer.de/en/quick-links/companies.html">
+                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-footer" data-component="link" href="/en/quick-links/companies.html">
                         Companies
                       </a>
                     </li>
-                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-35">
+                    <li className="w-[17.45rem] inline-block relative -right-[0.9375rem] left-[0.9375rem] pr-[1.5625rem] pl-[0.6875rem] align-top text-xs font-normal leading-5 tracking-[0.3px] whitespace-nowrap text-nowrap max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 md:max-lg:pr-2.5 2xl:w-[383.1px] 2xl:-right-4.5 2xl:left-4.5 2xl:pr-7.5 2xl:pl-[0.825rem] 2xl:text-sm 2xl:leading-6 2xl:tracking-[0.36px] before:content-[''] before:inline-block before:w-[0.9375rem] before:h-3 before:-ml-[0.9375rem] before:text-background before:text-xs before:leading-3 2xl:before:w-4.5 2xl:before:h-[0.9rem] 2xl:before:-ml-4.5 2xl:before:text-sm 2xl:before:leading-[0.875rem]" data-ditto-id="style-div-44">
                       {" "}
-                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-navigation-und-social-media" data-component="link" href="https://www.iwu.fraunhofer.de/en/quick-links/scientists.html">
+                      <a className="inline leading-4.5 underline whitespace-normal [word-break:break-word] [overflow-wrap:break-word] cursor-pointer 2xl:leading-[1.375rem]" data-ditto-id="style-navigation-und-social-media" data-component="link" href="/en/quick-links/scientists.html">
                         Scientists
                       </a>
                     </li>
@@ -492,27 +492,27 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block relative before:content-[''] before:block before:absolute before:inset-y-0 before:right-280 before:-left-20 before:-z-1 max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-384 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-280 after:-z-1 max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-384" data-ditto-id="style-div-81">
-                <div className="border-r border-solid border-r-border border-b border-b-border border-l border-l-border inline-block p-[1.5625rem] align-top bg-background max-lg:border max-lg:border-border max-lg:mt-[1.5625rem] max-lg:pt-[2.1875rem] max-lg:pb-[2.8125rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-b-[0] max-lg:border-b-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5" data-ditto-id="style-div-48">
+              <div className="block relative before:content-[''] before:block before:absolute before:inset-y-0 before:right-280 before:-left-20 before:-z-1 max-md:before:hidden md:max-lg:before:right-179.5 2xl:before:right-384 2xl:before:-left-24 after:content-[''] after:block after:absolute after:inset-y-0 after:-right-20 after:left-280 after:-z-1 max-md:after:hidden md:max-lg:after:left-179.5 2xl:after:-right-24 2xl:after:left-384" data-ditto-id="style-div-87">
+                <div className="border-r border-solid border-r-border border-b border-b-border border-l border-l-border inline-block p-[1.5625rem] align-top bg-background max-lg:border max-lg:border-border max-lg:mt-[1.5625rem] max-lg:pt-[2.1875rem] max-lg:pb-[2.8125rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-b-[0] max-lg:border-b-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5" data-ditto-id="style-div-55">
                   {" "}
-                  <h3 className="block float-left min-w-1/3 pr-[0.3125rem] text-primary text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:pr-1.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-div-63" data-component="heading">
+                  <h3 className="block float-left min-w-1/3 pr-[0.3125rem] text-primary text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:pr-1.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-div-69" data-component="heading">
                     Related Links
                   </h3>
                   {" "}
-                  <form className="w-75 block relative float-left max-w-[66.66%] align-middle text-xs leading-5 tracking-[0.9px] uppercase max-md:w-[17.0625rem] max-lg:max-w-full 2xl:w-90 2xl:text-sm 2xl:leading-6 2xl:tracking-[1.08px]" data-ditto-id="style-div-17">
-                    <div className="block mr-[2.8125rem] 2xl:mr-13.5" data-ditto-id="style-div-76">
-                      <select className="w-full h-[2.0625rem] inline-block items-center align-top leading-3.5 text-left whitespace-pre indent-[25px] text-nowrap bg-background cursor-default 2xl:h-10 2xl:leading-[1.0625rem] 2xl:indent-7.5" data-ditto-id="style-div-85" data-component="select" id="relatedLinks" name="cooperation">
+                  <form className="w-75 block relative float-left max-w-[66.66%] align-middle text-xs leading-5 tracking-[0.9px] uppercase max-md:w-[17.0625rem] max-lg:max-w-full 2xl:w-90 2xl:text-sm 2xl:leading-6 2xl:tracking-[1.08px]" data-ditto-id="style-div-28">
+                    <div className="block mr-[2.8125rem] 2xl:mr-13.5" data-ditto-id="style-div-82">
+                      <select className="w-full h-[2.0625rem] inline-block items-center align-top leading-3.5 text-left whitespace-pre indent-[25px] text-nowrap bg-background cursor-default 2xl:h-10 2xl:leading-[1.0625rem] 2xl:indent-7.5" data-ditto-id="style-div-91" data-component="select" id="relatedLinks" name="cooperation">
                         <option className="min-h-6 block min-w-6 pb-px px-0.5 items-center gap-1.5 font-normal whitespace-nowrap" data-ditto-id="style-button-2" value="https://www.automobil.fraunhofer.de/en.html">
                           Fraunhofer AutoMOBILE Production Alliance
                         </option>
-                        <option className="min-h-6 block min-w-6 pb-px px-0.5 items-center gap-1.5 font-normal whitespace-nowrap" data-ditto-id="style-div-60" value="http://www.generativ.fraunhofer.de/en.html">
+                        <option className="min-h-6 block min-w-6 pb-px px-0.5 items-center gap-1.5 font-normal whitespace-nowrap" data-ditto-id="style-div-67" value="http://www.generativ.fraunhofer.de/en.html">
                           Fraunhofer Additive Manufacturing Alliance
                         </option>
                       </select>
                       {" "}
                     </div>
                     {" "}
-                    <button className="w-8 h-full block absolute top-0 right-0 align-top text-background text-[0rem] font-normal leading-[2.0625rem] tracking-[normal] text-center bg-primary cursor-pointer 2xl:w-[2.4rem] 2xl:leading-[2.5rem] after:content-[''] after:inline-block after:w-3 after:h-[2.0625rem] after:text-background after:text-xs after:leading-[2.0625rem] after:text-center 2xl:after:w-3.5 2xl:after:h-[2.475rem] 2xl:after:text-sm 2xl:after:leading-[2.5rem]" data-ditto-id="style-div-42" data-component="button" type="submit">
+                    <button className="w-8 h-full block absolute top-0 right-0 align-top text-background text-[0rem] font-normal leading-[2.0625rem] tracking-[normal] text-center bg-primary cursor-pointer 2xl:w-[2.4rem] 2xl:leading-[2.5rem] after:content-[''] after:inline-block after:w-3 after:h-[2.0625rem] after:text-background after:text-xs after:leading-[2.0625rem] after:text-center 2xl:after:w-3.5 2xl:after:h-[2.475rem] 2xl:after:text-sm 2xl:after:leading-[2.5rem]" data-ditto-id="style-div-51" data-component="button" type="submit">
                       Choose
                     </button>
                     {" "}
@@ -520,36 +520,36 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="border-r border-solid border-r-border border-b border-b-border inline-block p-[1.5625rem] align-top bg-background max-lg:border max-lg:border-border max-lg:mt-[1.5625rem] max-lg:pt-[2.1875rem] max-lg:pb-[2.8125rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-b-[0] max-lg:border-b-[initial] 2xl:p-7.5" data-ditto-id="style-heading-15">
+                <div className="border-r border-solid border-r-border border-b border-b-border inline-block p-[1.5625rem] align-top bg-background max-lg:border max-lg:border-border max-lg:mt-[1.5625rem] max-lg:pt-[2.1875rem] max-lg:pb-[2.8125rem] max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-b-[0] max-lg:border-b-[initial] 2xl:p-7.5" data-ditto-id="style-heading-16">
                   {" "}
-                  <h3 className="block float-left min-w-1/3 pr-[0.3125rem] text-primary text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:pr-1.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-div-87" data-component="heading">
+                  <h3 className="block float-left min-w-1/3 pr-[0.3125rem] text-primary text-2xl leading-7 tracking-[0.6px] [word-break:break-word] [overflow-wrap:break-word] 2xl:pr-1.5 2xl:text-[1.8125rem] 2xl:leading-[2.125rem] 2xl:tracking-[0.72px]" data-ditto-id="style-div-93" data-component="heading">
                     Follow us
                   </h3>
                   {" "}
-                  <ul className="w-75 block overflow-hidden leading-0 [list-style-type:none] list-outside 2xl:w-90" data-ditto-id="style-ul-11">
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-14">
+                  <ul className="w-75 block overflow-hidden leading-0 [list-style-type:none] list-outside 2xl:w-90" data-ditto-id="style-ul-10">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-16">
                       {" "}
                       <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-link-26" data-component="link" href="https://www.facebook.com/FraunhoferIWU/" target="_blank" />
                       {" "}
                     </li>
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-8">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-10">
                       {" "}
                       <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-link-27" data-component="link" href="https://www.linkedin.com/company/fraunhofer--institut-werkzeugmaschinen-und-umformtechnik-iwu?trk=ppro_cprof" target="_blank" />
                       {" "}
                     </li>
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-12">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-14">
                       {" "}
                       <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-link-28" data-component="link" href="https://www.xing.com/companies/fraunhofer-institutf%C3%BCrwerkzeugmaschinenundumformtechnikiwu" target="_blank" />
                       {" "}
                     </li>
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-15">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-li-17">
                       {" "}
                       <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-link-29" data-component="link" href="https://www.youtube.com/fraunhoferiwu" target="_blank" />
                       {" "}
                     </li>
-                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-div-86">
+                    <li className="h-[2.0625rem] inline-block max-w-8 mr-1.5 align-top 2xl:h-[2.475rem] 2xl:max-w-[2.4rem] 2xl:mr-[0.45rem]" data-ditto-id="style-div-92">
                       {" "}
-                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-div-65" data-component="link" href="https://www.instagram.com/fraunhofer.iwu/" target="_blank" title="Visit us on Instagram" />
+                      <a className="h-full block align-top text-background text-[1.6875rem] font-normal leading-[2.0625rem] tracking-[2.03px] text-center uppercase bg-primary cursor-pointer 2xl:text-[2rem] 2xl:leading-[2.5rem] 2xl:tracking-[2.43px] after:content-[''] after:inline-block after:w-6.5 after:h-[2.0625rem] after:mx-[3.5px] after:text-background after:text-[1.625rem] after:leading-[2.0625rem] after:text-center 2xl:after:w-[1.9375rem] 2xl:after:h-[2.475rem] 2xl:after:mx-1 2xl:after:text-[1.9375rem] 2xl:after:leading-[2.5rem]" data-ditto-id="style-div-71" data-component="link" href="https://www.instagram.com/fraunhofer.iwu/" target="_blank" title="Visit us on Instagram" />
                       {" "}
                     </li>
                   </ul>
@@ -558,24 +558,24 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-lg:mt-[1.5625rem] max-lg:-mx-20" data-ditto-id="style-heading-14">
-                <div className="border-r border-solid border-r-border border-l border-l-border inline-block p-[1.5625rem] align-top text-xs leading-[0.9375rem] tracking-[0.3px] uppercase bg-background max-lg:border-t max-lg:border-t-border max-lg:border-b max-lg:border-b-border max-lg:px-[6.5625rem] max-lg:leading-3 max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5 2xl:text-sm 2xl:leading-4.5 2xl:tracking-[0.36px]" data-ditto-id="style-ul-8">
+              <div className="block max-lg:mt-[1.5625rem] max-lg:-mx-20" data-ditto-id="style-heading-15">
+                <div className="border-r border-solid border-r-border border-l border-l-border inline-block p-[1.5625rem] align-top text-xs leading-[0.9375rem] tracking-[0.3px] uppercase bg-background max-lg:border-t max-lg:border-t-border max-lg:border-b max-lg:border-b-border max-lg:px-[6.5625rem] max-lg:leading-3 max-lg:border-r-[0] max-lg:border-initial max-lg:border-r-[initial] max-lg:border-l-[0] max-lg:border-l-[initial] 2xl:p-7.5 2xl:text-sm 2xl:leading-4.5 2xl:tracking-[0.36px]" data-ditto-id="style-ul-9">
                   {" "}
                   <nav className="h-8.5 min-h-8.5 block max-md:h-[3.6125rem] max-lg:min-h-0 md:max-lg:h-[38.5px] 2xl:h-[2.55rem] 2xl:min-h-[2.55rem]" data-component="nav">
                     <ul className="h-full block text-[0.0625rem] leading-0 tracking-[normal] text-justify [list-style-type:none] list-outside max-lg:text-[0rem] after:content-[''] after:inline-block after:w-full after:h-0 after:[overflow:hidden]" data-ditto-id="style-link">
-                      <li className="w-[7%] inline-block align-top max-md:w-full max-md:block md:max-lg:w-1/2 2xl:w-[6%]">
+                      <li className="w-[7%] inline-block align-top max-md:w-full max-md:block md:max-lg:w-1/2 2xl:w-[6%]" data-ditto-id="style-li-21">
                         {" "}
                         <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-link-2" data-component="link" href="/en/about-Fraunhofer-IWU.html">
                           Sitemap
                         </a>
                       </li>
-                      <li className="w-[53.3px] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[3.975rem]" data-ditto-id="style-li-4">
+                      <li className="w-[53.3px] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[3.975rem]" data-ditto-id="style-li-7">
                         {" "}
                         <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-link-3" data-component="link" href="/en/about-Fraunhofer-IWU.html">
                           Imprint
                         </a>
                       </li>
-                      <li className="w-[121.5px] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[8.8875rem]" data-ditto-id="style-li-13">
+                      <li className="w-[121.5px] inline-block align-top max-md:w-[17.1875rem] max-md:block md:max-lg:w-83.5 2xl:w-[8.8875rem]" data-ditto-id="style-li-15">
                         {" "}
                         <a className="inline-block text-primary text-xs font-normal leading-8.5 tracking-[0.9px] cursor-pointer max-lg:text-[0.6875rem] max-lg:leading-[1.1875rem] max-lg:tracking-[0.28px] 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[1.08px]" data-ditto-id="style-link-4" data-component="link" href="/en/about-Fraunhofer-IWU.html">
                           Data Protection
@@ -587,8 +587,8 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="w-70 border-l border-solid border-l-border block float-left p-[1.5625rem] align-top text-xs leading-8.5 tracking-[0.3px] bg-background max-md:w-[30.3125rem] max-lg:px-[6.5625rem] max-lg:leading-[0.6875rem] max-lg:border-l-[0] max-lg:border-initial max-lg:border-l-[initial] md:max-lg:w-219.5 2xl:w-96 2xl:p-7.5 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[0.36px]" data-ditto-id="style-div-23">
-                  <span className="inline" data-ditto-id="style-div-74">
+                <div className="w-70 border-l border-solid border-l-border block float-left p-[1.5625rem] align-top text-xs leading-8.5 tracking-[0.3px] bg-background max-md:w-[30.3125rem] max-lg:px-[6.5625rem] max-lg:leading-[0.6875rem] max-lg:border-l-[0] max-lg:border-initial max-lg:border-l-[initial] md:max-lg:w-219.5 2xl:w-96 2xl:p-7.5 2xl:text-sm 2xl:leading-[2.5625rem] 2xl:tracking-[0.36px]" data-ditto-id="style-div-34">
+                  <span className="inline" data-ditto-id="style-div-80">
                     {"© 2026 "}
                   </span>
                   {" "}

@@ -846,7 +846,7 @@ export default function Page() {
                             </div>
                             {" "}
                             <div className="block float-left mt-2" id="cq_captchatimer">
-                              <div className="w-[3.0625rem] h-2 block float-left bg-clr-1 max-md:w-14.5 md:max-lg:w-[3.3125rem] 2xl:w-11" data-ditto-id="style-div-26" />
+                              <div className="w-[2.9375rem] h-2 block float-left bg-clr-1 max-md:w-14.5 md:max-lg:w-[3.3125rem] 2xl:w-[2.6875rem]" data-ditto-id="style-div-26" />
                             </div>
                             {" "}
                             <br className="inline clear-both" />

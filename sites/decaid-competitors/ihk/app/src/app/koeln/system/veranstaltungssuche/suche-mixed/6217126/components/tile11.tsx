@@ -17,7 +17,7 @@ export default function Tile11({ d, styles }: { d: Tile11Data; styles: Tile11Sty
   return (
     <div className="block relative my-2.5 max-md:overflow-hidden">
       <div className="flex relative rounded-lg overflow-hidden bg-background" id={d.id}>
-        <div className={cn("w-20 min-h-20 flex min-w-20 mr-4.5 pt-[0.4375rem] pb-2 px-3 flex-col justify-end text-background [font-family:Korb,_sans-serif] text-sm leading-3.5 uppercase bg-foreground max-md:mr-3 max-md:pt-2.5 max-md:justify-start 2xl:h-[5.9625rem]", styles.className)}>
+        <div className={cn("w-20 min-h-20 flex min-w-20 mr-4.5 pt-[0.4375rem] pb-2 px-3 flex-col justify-end text-background [font-family:Korb,_sans-serif] text-sm leading-3.5 uppercase bg-foreground max-md:mr-3 max-md:pt-2.5 max-md:justify-start", styles.className)}>
           <span className="block whitespace-nowrap text-nowrap">
             {d.text}
           </span>
@@ -41,7 +41,7 @@ export default function Tile11({ d, styles }: { d: Tile11Data; styles: Tile11Sty
             {d.text3}
           </div>
           {" "}
-          <div className="inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]">
+          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5", styles.className2)}>
             {d.text4}
           </div>
           {" "}

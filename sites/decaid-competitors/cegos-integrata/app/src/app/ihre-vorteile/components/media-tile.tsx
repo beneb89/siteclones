@@ -22,7 +22,7 @@ export default function MediaTile({ d }: { d: MediaTileData }) {
             </p>
             <p className="block" />
           </div>
-          <span className="border border-solid border-color-002 flex rounded-full justify-center items-center shrink-0 text-background bg-color-002 h-12 w-12">
+          <span className="border border-solid border-color-005 flex rounded-full justify-center items-center shrink-0 text-background bg-color-005 h-12 w-12">
             {" "}
             <svg className="flex overflow-hidden h-[1.3125rem] w-[1.3125rem]" data-component="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="9 6 15 12 9 18" />

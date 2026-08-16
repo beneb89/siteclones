@@ -122,7 +122,7 @@ const ListRow2_meta: string[][] = [
     ["n102"]
 ];
 const ListRow_meta2: string[][] = [
-    ["style-694"],
+    ["style-697"],
     ["n120"],
     ["n121"],
     ["n122"],
@@ -138,64 +138,64 @@ const ListRow3_meta2: string[][] = [
     ["n199"],
     ["n200"],
     ["n201"],
-    ["style-div-29"],
+    ["style-div-67"],
     ["style-button-11"],
     ["n204"],
     ["style-i-3"],
-    ["style-span-5"]
+    ["style-span-10"]
 ];
 const Logo_meta: string[][] = [
-    ["style-div-65", "style-div-42", "style-a-7"],
-    ["style-i-10", "n255", "style-div-43"],
-    ["style-tabpanel-megamenu-0-0-4", "style-div-44", "style-button-15"],
-    ["style-div-45", "style-i-11", "style-span-8"]
+    ["style-div-103", "style-div-80", "style-a-6"],
+    ["style-i-10", "n255", "style-div-81"],
+    ["style-tabpanel-megamenu-0-0-4", "style-div-82", "style-button-15"],
+    ["style-div-83", "style-i-11", "style-span-13"]
 ];
 const MediaTile_meta: string[][] = [
-    ["n274", "style-i-13", "n276", "style-div-50", "style-div-51", "n279", "n280", "style-a-2", "style-i-14", "n283"],
-    ["n284", "style-tabpanel-megamenu-0-0-6", "style-div-52", "n287", "n288", "style-i-15", "style-span-9", "n291", "style-div-66", "n293"],
-    ["n294", "n295", "style-i-16", "n297", "n298", "style-tabpanel-megamenu-0-0-7", "n300", "n301", "style-div-67", "style-i-17"]
+    ["n274", "style-i-13", "n276", "style-div-88", "style-div-89", "n279", "n280", "style-a-2", "style-i-14", "n283"],
+    ["n284", "style-tabpanel-megamenu-0-0-6", "style-div-90", "n287", "n288", "style-i-15", "style-span-14", "n291", "style-div-104", "n293"],
+    ["n294", "n295", "style-i-16", "style-div-205", "n298", "style-tabpanel-megamenu-0-0-7", "n300", "n301", "style-div-105", "style-i-17"]
 ];
 const ListRow4_meta: string[][] = [
-    ["style-div-107", "style-div-57"],
-    ["n327", "style-div-72"],
-    ["style-button-16", "style-div-73"],
-    ["style-i-21", "style-span-10"],
-    ["n333", "style-div-58"],
-    ["n335", "style-div-59"],
+    ["style-div-146", "style-div-95"],
+    ["n327", "style-div-110"],
+    ["style-button-16", "style-div-111"],
+    ["style-i-21", "style-span-15"],
+    ["n333", "style-div-96"],
+    ["n335", "style-div-97"],
     ["n337", "style-i-22"],
-    ["n339", "style-div-74"],
-    ["n341", "style-div-75"],
-    ["style-button-12", "style-div-76"],
-    ["style-i-23", "style-span-11"]
+    ["n339", "style-div-112"],
+    ["n341", "style-div-113"],
+    ["style-button-12", "style-div-114"],
+    ["style-i-23", "style-span-16"]
 ];
 const ListRow5_meta: string[][] = [
-    ["style-div-90", "style-a-4"],
-    ["style-i-26", "style-div-77"],
+    ["style-div-129", "style-a-3"],
+    ["style-i-26", "style-div-115"],
     ["n368", "style-tabpanel-megamenu-0-0-12"]
 ];
 const ListRow5_meta2: string[][] = [
-    ["style-span-13", "style-div-78"],
-    ["n376", "style-div-79"],
-    ["n378", "style-a-5"],
-    ["style-i-28", "style-div-80"]
+    ["style-span-18", "style-div-116"],
+    ["style-div-208", "style-div-117"],
+    ["style-div-544", "style-a-4"],
+    ["style-i-28", "style-div-118"]
 ];
 const ListRow6_meta: string[][] = [
-    ["n386", "style-i-29"],
-    ["n388", "style-div-81"],
-    ["n390", "style-div-82"],
-    ["n392", "style-a-6"]
+    ["style-div-209", "style-i-29"],
+    ["n388", "style-div-119"],
+    ["n390", "style-div-120"],
+    ["n392", "style-a-5"]
 ];
 const ListRow7_meta: string[][] = [
-    ["n397", "style-div-83"],
-    ["n399", "style-div-84"],
-    ["style-i-31", "style-span-12"],
-    ["n403", "style-div-85"]
+    ["n397", "style-div-121"],
+    ["n399", "style-div-122"],
+    ["style-i-31", "style-span-17"],
+    ["n403", "style-div-123"]
 ];
 const ListRow8_meta: string[][] = [
-    ["style-div-92", "n407", "style-i-32", "n409"],
-    ["style-div-93", "n411", "style-div-94", "n413"],
-    ["style-div-95", "style-i-33", "style-span-14", "n417"],
-    ["style-div-96", "n419", "style-div-97", "n421"],
+    ["style-div-131", "n407", "style-i-32", "n409"],
+    ["style-div-132", "n411", "style-div-133", "n413"],
+    ["style-div-134", "style-i-33", "style-span-19", "n417"],
+    ["style-div-135", "n419", "style-div-136", "n421"],
     ["style-i-34", "n423", "n424", "n425"]
 ];
 const ListRow_styles = [
@@ -264,7 +264,7 @@ export default function Page() {
   return (
     <>
       <div className="box-content h-full block">
-        <a className="box-content w-px h-px block absolute top-0 left-0 -m-px overflow-hidden text-color-001 whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-div-63" href="#main">
+        <a className="box-content w-px h-px block absolute top-0 left-0 -m-px overflow-hidden text-color-001 whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-div-101" href="#main">
           Zum Inhalt springen
         </a>
         {" "}
@@ -293,25 +293,25 @@ export default function Page() {
                   </div>
                   {" "}
                   <div className="box-content block">
-                    <ul className="block mt-1 leading-7 [list-style-type:none] list-outside max-lg:hidden" id="menu-hauptnavigation">
+                    <ul className="block mt-1 leading-7 [list-style-type:none] list-outside max-lg:hidden" data-ditto-id="style-div-540" id="menu-hauptnavigation">
                       <li className="box-content block float-left" id="menu-item-470">
                         <a className="box-content border-l border-solid border-l-color-005 block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 pl-6.5 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/1685">
                           Blog
                         </a>
                       </li>
-                      <li className="box-content inline-block" id="menu-item-20615">
+                      <li className="box-content inline-block" data-ditto-id="style-menu-item-20615" id="menu-item-20615">
                         <a className="box-content block relative float-left mr-5 pt-px pr-5 pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link" data-component="link" href="/blog/berufe">
                           Themen
                         </a>
                         {" "}
                       </li>
                       <li className="box-content inline-block" id="menu-item-19584">
-                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/blog/berufe">
+                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link-38" data-component="link" href="/blog/berufe">
                           Berufe
                         </a>
                       </li>
                       <li className="box-content inline-block" id="menu-item-45633">
-                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/blog/berufe" target="_blank">
+                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link-39" data-component="link" href="/blog/berufe" target="_blank">
                           Digitales Lernen
                         </a>
                       </li>
@@ -324,7 +324,7 @@ export default function Page() {
               </div>
               {" "}
               <div className="box-content block text-right max-lg:hidden">
-                <form className="box-content w-70 block relative min-w-70" role="search">
+                <form className="box-content w-70 block relative min-w-70" data-ditto-id="style-form-3" role="search">
                   <input className="w-full h-[1.9375rem] border border-solid border-surface-3 inline-block relative -top-px bottom-px py-1.5 pr-2.5 pl-10 rounded-lg overflow-clip text-muted-foreground leading-[1.0625rem] text-start cursor-text" data-ditto-id="style-input" data-component="input" name="s" placeholder="Suchbegriff … " title="Suche nach:" type="search" value="" />
                   {" "}
                   <input className="box-content w-[0.9375rem] h-3.5 block absolute bottom-[1.4375rem] left-2 mr-[1.5625rem] p-[0.4375rem] rounded-lg overflow-clip text-foreground [font-family:FontAwesome] text-base leading-4 text-center whitespace-pre text-nowrap cursor-pointer before:content-[''] before:text-foreground before:text-base before:leading-4 before:text-center" data-ditto-id="style-button-13" data-component="button" type="submit" value="" />
@@ -341,7 +341,7 @@ export default function Page() {
         {" "}
         <div className="box-content w-311.5 block relative z-5 max-w-[calc(100%_-_34px)] px-[1.0625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none md:max-lg:w-192 2xl:w-312 2xl:mx-[19.9375rem]" data-ditto-id="style-breadcrumbs" id="breadcrumbs">
           <div className="box-content block pt-[1.0625rem] pr-2 pb-[0.9375rem] pl-2.5 text-color-013 text-xs leading-[1.1875rem] max-md:hidden md:max-lg:pl-2">
-            <span className="box-content inline">
+            <span className="box-content inline" data-ditto-id="style-span-57">
               <span className="box-content inline">
                 <a className="box-content inline text-color-015 font-medium underline cursor-pointer" data-component="link" href="/1685">
                   Home
@@ -355,7 +355,7 @@ export default function Page() {
               </span>
               {" "}
               <span className="box-content inline before:content-['/'] before:mr-2 before:ml-1.5 before:text-color-015 before:text-sm before:leading-[1.375rem] before:text-left" aria-current="page">
-                <strong className="box-content inline text-color-015 font-medium before:content-['/'] before:hidden before:mr-2 before:ml-1.5 before:text-color-015 before:text-sm before:leading-[1.375rem] before:text-left">
+                <strong className="box-content inline text-color-015 font-medium before:content-['/'] before:hidden before:mr-2 before:ml-1.5 before:text-color-015 before:text-sm before:leading-[1.375rem] before:text-left" data-ditto-id="style-div-541">
                   Verwaltungsassistenz: Definition, Aufgaben und Gehalt
                 </strong>
               </span>
@@ -368,13 +368,13 @@ export default function Page() {
             <div className="w-[853.3px] h-[485.7625rem] min-h-px block relative float-left z-10 px-[1.5625rem] max-md:w-[23.4375rem] max-md:h-[788.3375rem] max-md:mb-7 max-lg:z-[initial] md:max-lg:w-192 md:max-lg:h-[8679.3px] 2xl:w-[854.7px] 2xl:h-[487.7rem]">
               <article className="box-content block relative z-5" id="post-46923">
                 <header className="box-content block relative mb-12.5 max-lg:mb-[1.3125rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left">
-                  <div className="box-content block rounded-xl overflow-hidden leading-[0.4375rem]">
+                  <div className="box-content block rounded-xl overflow-hidden leading-[0.4375rem]" data-ditto-id="style-p-31">
                     <img className="box-content w-[50.1875rem] h-96.5 inline max-w-full overflow-clip aspect-[auto_800/384] max-md:w-[20.3125rem] max-md:h-39 md:max-lg:w-179.5 md:max-lg:h-[21.5625rem] 2xl:w-[50.3125rem]" data-ditto-id="style-div-3" data-component="image" alt="" height="384" sizes="(max-width: 800px) 100vw, 800px" src="/assets/cloned/images/3b00e706b56a.jpg" srcSet="/assets/cloned/images/3b00e706b56a.jpg 800w, /assets/cloned/images/f6824f5bb8b0.jpg 300w, /assets/cloned/images/359e6bb55eeb.jpg 150w, /assets/cloned/images/53f233be288f.jpg 702w, /assets/cloned/images/d27d63298272.jpg 600w" width="800" />
                     {" "}
                   </div>
                   {" "}
                   <div className="box-content block relative z-10 -mt-25 mx-12.5 pt-10 pb-8 px-10 rounded-xl bg-primary max-lg:-mt-7.5 max-lg:mx-[0.9375rem] max-lg:pt-7.5 max-lg:pb-[0.9375rem] max-md:px-[0.9375rem] md:max-lg:px-7.5">
-                    <h1 className="box-content block relative mb-7.5 pt-0.5 text-background text-[2.625rem] font-medium leading-[3.125rem] tracking-[0.6px] max-lg:max-w-full max-lg:mb-5 max-md:text-3xl max-md:leading-9 max-lg:[overflow-wrap:break-word] before:content-['_'] before:block before:absolute before:top-1.5 before:right-[623.3px] before:bottom-[7.95rem] before:left-0 before:w-0 before:h-5 before:text-background before:text-[2.625rem] before:font-medium before:leading-[3.125rem] before:tracking-[0.6px] before:text-left max-md:before:right-[16.5625rem] max-md:before:bottom-30 max-md:before:text-3xl max-md:before:leading-9 md:max-lg:before:right-157 2xl:before:right-[624.7px]" data-component="heading">
+                    <h1 className="box-content block relative mb-7.5 pt-0.5 text-background text-[2.625rem] font-medium leading-[3.125rem] tracking-[0.6px] max-lg:max-w-full max-lg:mb-5 max-md:text-3xl max-md:leading-9 max-lg:[overflow-wrap:break-word] before:content-['_'] before:block before:absolute before:top-1.5 before:right-[623.3px] before:bottom-[7.95rem] before:left-0 before:w-0 before:h-5 before:text-background before:text-[2.625rem] before:font-medium before:leading-[3.125rem] before:tracking-[0.6px] before:text-left max-md:before:right-[16.5625rem] max-md:before:bottom-30 max-md:before:text-3xl max-md:before:leading-9 md:max-lg:before:right-157 2xl:before:right-[624.7px]" data-ditto-id="style-heading-13" data-component="heading">
                       {" Verwaltungsassistenz: Definition, Aufgaben und Gehalt "}
                     </h1>
                     {" "}
@@ -403,7 +403,7 @@ export default function Page() {
                     {" "}
                   </span>
                   {" "}
-                  <span className="box-content inline">
+                  <span className="box-content inline" data-ditto-id="style-div-542">
                     {"von "}
                     <span className="box-content inline">
                       Online-Redaktion
@@ -411,7 +411,7 @@ export default function Page() {
                     {" "}
                   </span>
                   {" "}
-                  <span className="box-content border-l border-solid border-l-color-019 inline ml-2 pl-2 whitespace-nowrap text-nowrap" data-ditto-id="style-div-64">
+                  <span className="box-content border-l border-solid border-l-color-019 inline ml-2 pl-2 whitespace-nowrap text-nowrap" data-ditto-id="style-div-102">
                     <span className="box-content inline" id="readingTime">
                       8 Minuten
                     </span>
@@ -419,7 +419,7 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="box-content block before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left" data-ditto-id="style-div-87">
+                <div className="box-content block before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left" data-ditto-id="style-div-126">
                   <div className="box-content block max-md:clear-both" data-ditto-id="style-i-2">
                     <div className="box-content block relative -mb-[1.625rem] text-color-001">
                       <p className="box-content block mb-[0.9375rem] text-clr-13 text-base leading-6">
@@ -430,8 +430,8 @@ export default function Page() {
                         Verwaltungsassistenz: Key Facts
                       </h2>
                       {" "}
-                      <div className="box-content block relative mb-[1.625rem]">
-                        <div className="box-content min-h-0 block overflow-auto" data-ditto-id="style-i-425">
+                      <div className="box-content block relative mb-[1.625rem]" data-ditto-id="style-div-543">
+                        <div className="box-content min-h-0 block overflow-auto" data-ditto-id="style-i-430">
                           <table className="table max-w-full mb-10 [border-collapse:collapse]">
                             <tbody className="box-content table-row-group [border-collapse:collapse]">
                               <tr className="box-content table-row [border-collapse:collapse]">
@@ -449,7 +449,7 @@ export default function Page() {
                                     </li>
                                     <li className="box-content list-item relative mb-[0.3125rem] pl-4.5 text-base leading-6 [border-collapse:collapse] before:content-['•'] before:block before:absolute before:-top-0.5 before:right-[265.5px] before:bottom-[1.4375rem] before:left-0 before:w-2 before:h-[1.6875rem] before:text-color-001 before:text-lg before:leading-[1.6875rem] before:text-left max-md:before:right-44 max-md:before:bottom-[2.9375rem] md:max-lg:before:right-[206.5px] 2xl:before:right-[266.5px]">
                                       {"z. B. "}
-                                      <a className="box-content inline underline cursor-pointer [border-collapse:collapse]" data-ditto-id="style-link-26" data-component="link" href={"https://www.haufe-akademie.de/blog/berufe/kauffrau-bueromanagement?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
+                                      <a className="box-content inline underline cursor-pointer [border-collapse:collapse]" data-ditto-id="style-link-27" data-component="link" href={"https://www.haufe-akademie.de/blog/berufe/kauffrau-bueromanagement?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
                                         Kauffrau/-mann für Büromanagement
                                       </a>
                                     </li>
@@ -490,18 +490,18 @@ export default function Page() {
                                   </ul>
                                   {" "}
                                 </td>
-                                <td className="box-content w-22.5 border border-solid border-surface-3 table-cell min-w-22.5 align-middle text-center bg-background [border-collapse:collapse]">
-                                  <img className="box-content w-12.5 h-10 inline max-w-full overflow-clip aspect-[auto_50/50] [border-collapse:collapse]" data-component="image" height="50px" src="/assets/cloned/svg/5b7663fce831.svg" width="50px" />
+                                <td className="box-content w-22.5 border border-solid border-surface-3 table-cell min-w-22.5 align-middle text-center bg-background [border-collapse:collapse]" data-ditto-id="style-td-2">
+                                  <img className="box-content w-12.5 h-10 inline max-w-full overflow-clip aspect-[auto_50/50] [border-collapse:collapse]" data-ditto-id="interaction-image" data-component="image" height="50px" src="/assets/cloned/svg/5b7663fce831.svg" width="50px" />
                                 </td>
                                 <td className="box-content border border-solid border-surface-3 table-cell py-[0.9375rem] px-5 bg-background [border-collapse:collapse]">
-                                  <div className="box-content block mb-[0.3125rem] text-base font-semibold leading-6 [border-collapse:collapse]" data-ditto-id="style-div-62">
+                                  <div className="box-content block mb-[0.3125rem] text-base font-semibold leading-6 [border-collapse:collapse]" data-ditto-id="style-div-100">
                                     Soft Skills
                                   </div>
                                   {" "}
                                   <ul className="block [list-style-type:none] list-outside [border-collapse:collapse]" data-ditto-id="style-ul">
                                     {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} />)}
                                     <li className="box-content list-item relative mb-[0.3125rem] pl-4.5 text-base leading-6 [border-collapse:collapse] before:content-['•'] before:block before:absolute before:-top-0.5 before:right-[16.05rem] before:-bottom-px before:left-0 before:w-2 before:h-[1.6875rem] before:text-color-001 before:text-lg before:leading-[1.6875rem] before:text-left max-md:before:right-[13.5625rem] md:max-lg:before:right-[230.5px] 2xl:before:right-[16.075rem]" data-ditto-id="style-li-3">
-                                      <a className="box-content inline underline cursor-pointer [border-collapse:collapse]" data-ditto-id="style-link-27" data-component="link" href={"https://www.haufe-akademie.de/blog/themen/persoenliche-kompetenz/resilienz?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
+                                      <a className="box-content inline underline cursor-pointer [border-collapse:collapse]" data-ditto-id="style-link-28" data-component="link" href={"https://www.haufe-akademie.de/blog/themen/persoenliche-kompetenz/resilienz?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"}>
                                         Stressresilienz
                                       </a>
                                     </li>
@@ -592,7 +592,7 @@ export default function Page() {
                         . Dieses reicht von administrativen Tätigkeiten bis hin zur organisatorischen Unterstützung von Teams und Führungskräften. Die wichtigsten Aufgaben im Überblick:
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-22">
                         <strong className="box-content inline font-medium">
                           1. Dokumentations- und Ablageorganisation
                         </strong>
@@ -614,7 +614,7 @@ export default function Page() {
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
                         {"Die Verwaltungsassistenz plant die Termine von Führungskräften, organisiert Videokonferenzen und unterstützt in manchen Unternehmen auch die interne sowie externe Kommunikation. Da Führungskräfte in der Regel zahlreiche Termine haben, muss die Verwaltungsassistenz diese nach Dringlichkeit und Wichtigkeit im Namen der "}
-                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-link-24" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/fuehrungskraft/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
+                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-link-25" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/fuehrungskraft/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
                           Führungskraft
                         </a>
                         {" priorisieren."}
@@ -622,8 +622,8 @@ export default function Page() {
                       {" "}
                       <p className="box-content block text-[0.9375rem] leading-5.5" />
                       <div className="box-content block relative mt-7.5 mb-12.5 p-7.5 rounded-xl bg-surface-9 max-md:px-[0.9375rem] 2xl:mb-15" data-ditto-id="style-div-4">
-                        <div className="box-content flex max-md:block">
-                          <div className="box-content w-[9.5625rem] h-[9.5625rem] block float-left max-w-[9.5625rem] max-h-[9.5625rem] mr-5 mb-2.5 rounded-[10px] shrink-0 overflow-hidden max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]" data-ditto-id="style-div-88">
+                        <div className="box-content flex max-md:block" data-ditto-id="style-div-204">
+                          <div className="box-content w-[9.5625rem] h-[9.5625rem] block float-left max-w-[9.5625rem] max-h-[9.5625rem] mr-5 mb-2.5 rounded-[10px] shrink-0 overflow-hidden max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]" data-ditto-id="style-div-127">
                             <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/8b2f34bda460.jpg" />
                             {" "}
                           </div>
@@ -643,7 +643,7 @@ export default function Page() {
                             {" "}
                             <br className="box-content inline" />
                             {" "}
-                            <a className="box-content inline-block min-w-40 max-w-[80%] pt-4.5 pb-[1.0625rem] px-7.5 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer after:content-[''] after:block after:absolute after:inset-0 after:w-[803.3px] after:h-[22.3rem] max-md:after:w-[20.3125rem] max-md:after:h-[40.85rem] md:max-lg:after:w-179.5 md:max-lg:after:h-[25.1125rem] 2xl:after:w-[804.7px]" data-ditto-id="style-link-25" data-component="link" href="/1685" target="_blank">
+                            <a className="box-content inline-block min-w-40 max-w-[80%] pt-4.5 pb-[1.0625rem] px-7.5 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer after:content-[''] after:block after:absolute after:inset-0 after:w-[803.3px] after:h-[22.3rem] max-md:after:w-[20.3125rem] max-md:after:h-[40.85rem] md:max-lg:after:w-179.5 md:max-lg:after:h-[25.1125rem] 2xl:after:w-[804.7px]" data-ditto-id="style-link-26" data-component="link" href="/1685" target="_blank">
                               {" Seminar: Kompetent führen in der Assistenz "}
                             </a>
                             {" "}
@@ -700,7 +700,7 @@ export default function Page() {
                           Projektmanagement
                         </a>
                         {" unterstützt die Verwaltungsassistenz das Projektteam bei administrativen und organisatorischen Aufgaben. Das kann zum Beispiel die Vorbereitung wichtiger Dokumente sein oder die Protokollierung des letzten Projektmeetings. Dazu gehört die "}
-                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-link-28" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/planung/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
+                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-link-29" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/planung/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
                           Planung
                         </a>
                         {" von Terminen, Buchung von Konferenzräumen und Einladung der Teilnehmenden."}
@@ -720,7 +720,7 @@ export default function Page() {
                         Bei Kontaktanfragen von Kunden oder Geschäftspartnern sind Verwaltungsassistenten oft die ersten Ansprechpersonen. Ein freundliches und professionelles Auftreten ist daher entscheidend. Ihr Aufgabenbereich reicht von der Weiterleitung von Anfragen an die zuständigen Fachbereiche bis hin zur Beantwortung grundlegender Fragen. Die Verwaltungsassistenz bildet damit das Bindeglied zwischen externen Stakeholdern und dem Unternehmen.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-8">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-10">
                         <strong className="box-content inline font-medium">
                           5. Verwaltung und Abrechnung
                         </strong>
@@ -728,7 +728,7 @@ export default function Page() {
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
                         {"Eine Verwaltungsassistenz benötigt grundlegende Kenntnisse in der Finanzverwaltung. Sie unterstützt die "}
-                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-link-29" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/buchhaltung/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
+                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-link-30" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/buchhaltung/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
                           Buchhaltung
                         </a>
                         {" dabei, administrative Finanzprozesse reibungslos abzuwickeln. Zu ihren Aufgaben gehören u. a.:"}
@@ -748,9 +748,9 @@ export default function Page() {
                         Damit Geschäftsreisen reibungslos verlaufen, ist eine gute Vorbereitung und Organisation entscheidend. Die Verwaltungsassistenz erstellt eine detaillierte Reiseroute und bucht Flüge, Hotels sowie Transferleistungen. Da Geschäftsreisen meist eng getaktet sind, müssen Termine und Meetings sorgfältig geplant werden. Dafür koordiniert die Verwaltungsassistenz alle Termine mit den Geschäftspartnern, sorgt für pünktliche An- und Abreisen und stellt sicher, dass alle notwendigen Unterlagen bereitstehen.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-9">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-11">
                         {"Bei eigenen "}
-                        <a className="box-content inline underline cursor-pointer" data-ditto-id="style-link-30" data-component="link" href="/1685">
+                        <a className="box-content inline underline cursor-pointer" data-ditto-id="style-link-31" data-component="link" href="/1685">
                           Events
                         </a>
                         {" ist der Planungsaufwand besonders groß: Es gilt, einen passenden Veranstaltungsort und Zeitpunkt zu finden, Einladungen an Teilnehmer zu verschicken und Dienstleister wie Caterer zu beauftragen."}
@@ -766,14 +766,14 @@ export default function Page() {
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
                         {"Gerade als "}
-                        <a className="box-content inline underline cursor-pointer" data-ditto-id="style-link-31" data-component="link" href="/1685">
+                        <a className="box-content inline underline cursor-pointer" data-ditto-id="style-link-32" data-component="link" href="/1685">
                           Quereinsteiger
                         </a>
                         {" kannst du punkten, wenn du bereits Erfahrung in den Bereichen Büroorganisation, Auftragsbearbeitung und Kundenkommunikation mitbringst. Weiterbildungen, wie beispielsweise zum „geprüften Betriebswirt für Büromanagement “ öffnen dir zusätzliche Türen und verbessern deine Karriereaussichten."}
                       </p>
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
-                        <strong className="box-content inline font-medium">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-strong-9">
                           Hard Skills – Fachliche Qualifikationen
                         </strong>
                       </p>
@@ -788,11 +788,11 @@ export default function Page() {
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-10">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-12">
                         Neben den fachlichen Qualifikationen spielen insbesondere Soft Skills eine zentrale Rolle:
                       </p>
                       {" "}
-                      <ul className="block mb-[0.9375rem] [list-style-type:none] list-outside" data-ditto-id="style-ul-5">
+                      <ul className="block mb-[0.9375rem] [list-style-type:none] list-outside" data-ditto-id="style-ul-4">
                         {ListRow3_data2.map((d, i) => <ListRow3 key={i} d={d} styles={ListRow3_styles2[i]} />)}
                       </ul>
                       {" "}
@@ -808,11 +808,11 @@ export default function Page() {
                         Karriere und Zukunftsperspektiven
                       </h2>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-30">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-68">
                         Als Verwaltungsassistenz hast du unterschiedliche Entwicklungsmöglichkeiten. Hier ein kurzer Überblick:
                       </p>
                       {" "}
-                      <ol className="block mb-[0.9375rem] ml-4.5 [list-style-type:decimal] list-outside" data-ditto-id="style-a-3">
+                      <ol className="block mb-[0.9375rem] ml-4.5 [list-style-type:decimal] list-outside">
                         <li className="box-content list-item mb-2.5 text-base leading-6" data-ditto-id="style-i-4">
                           <strong className="box-content inline font-medium">
                             Spezialisierung
@@ -827,7 +827,7 @@ export default function Page() {
                         <li className="box-content list-item mb-2.5 text-base leading-6">
                           <strong className="box-content inline font-medium">
                             Studium
-                            <br className="box-content inline" data-ditto-id="style-div-31" />
+                            <br className="box-content inline" data-ditto-id="style-div-69" />
                             {" "}
                           </strong>
                           {"Mit einem Studium, beispielsweise in Betriebswirtschaftslehre, eröffnen sich neue Perspektiven: Du kannst eine Führungsposition übernehmen und dein eigenes Team leiten oder als "}
@@ -849,7 +849,7 @@ export default function Page() {
                         </li>
                       </ol>
                       {" "}
-                      <ul className="block mb-[0.9375rem] [list-style-type:none] list-outside" data-ditto-id="style-div-32">
+                      <ul className="block mb-[0.9375rem] [list-style-type:none] list-outside" data-ditto-id="style-div-70">
                         <li className="box-content list-item relative mb-[0.3125rem] pl-4.5 text-base leading-6 before:content-['•'] before:block before:absolute before:-top-0.5 before:right-[795.3px] before:-bottom-px before:left-0 before:w-2 before:h-[1.6875rem] before:text-color-001 before:text-lg before:leading-[1.6875rem] before:text-left max-md:before:right-[19.8125rem] max-md:before:bottom-[1.4375rem] md:max-lg:before:right-177.5 2xl:before:right-[796.7px]">
                           Geprüfter Fachwirt für Büro– und Projektorganisation
                         </li>
@@ -862,7 +862,7 @@ export default function Page() {
                         Wie verändern Digitalisierung und Künstliche Intelligenz den Beruf?
                       </h2>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-33">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-71">
                         {"Digitalisierung und "}
                         <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-tabpanel-megamenu-0-0-2" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/kuenstliche-intelligenz/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
                           Künstliche Intelligenz
@@ -870,14 +870,14 @@ export default function Page() {
                         {" (KI) verändern bereits heute den Arbeitsalltag einer Verwaltungsassistenz spürbar. Routinetätigkeiten wie E-Mail-Sortierung oder Dokumentenablage lassen sich zunehmend automatisieren. Dieser Trend wird sich auch in den nächsten Jahren fortsetzen und das Anforderungsprofil weiter verändern. Kenntnisse im Umgang mit digitalen Tools und KI-gestützten Anwendungen werden daher immer wichtiger."}
                       </p>
                       {" "}
-                      <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-div-34">
+                      <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-div-72">
                         <p className="box-content block mb-[0.9375rem] text-base leading-6">
-                          <strong className="box-content block mb-3 font-medium" data-ditto-id="style-div-35">
+                          <strong className="box-content block mb-3 font-medium" data-ditto-id="style-div-73">
                             Tipp : So setzt du KI effizient im Meetingmanagement ein
                           </strong>
                           <br className="box-content inline" data-ditto-id="style-i-7" />
                           {" In unserer kostenlosen Webinar-Aufzeichnung zum Thema “"}
-                          <a className="box-content inline mt-7.5 underline cursor-pointer" data-ditto-id="style-span-6" data-component="link" href={"https://www.haufe-akademie.de/events/anmelden/meetings-smarter-managen?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} rel="noopener" target="_blank">
+                          <a className="box-content inline mt-7.5 underline cursor-pointer" data-ditto-id="style-span-11" data-component="link" href={"https://www.haufe-akademie.de/events/anmelden/meetings-smarter-managen?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} rel="noopener" target="_blank">
                             {"Meetingmanagement” "}
                           </a>
                           zeigt dir Expertin Enisa Romanic, wie du mit KI-Unterstützung Meetings klar strukturierst, effizient organisierst und professionell protokollierst.
@@ -886,7 +886,7 @@ export default function Page() {
                       {" "}
                       <hr className="box-content w-[50.1875rem] h-px block my-[2.5625rem] overflow-hidden text-color-018 bg-border max-md:w-[20.3125rem] md:max-lg:w-179.5 2xl:w-[50.3125rem]" />
                       {" "}
-                      <h2 className="box-content block mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-div-36" data-component="heading" id="section-8">
+                      <h2 className="box-content block mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-div-74" data-component="heading" id="section-8">
                         FAQs
                       </h2>
                       {" "}
@@ -894,7 +894,7 @@ export default function Page() {
                         Was macht eine Verwaltungsassistenz?
                       </h3>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-37">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-75">
                         Eine Verwaltungsassistenz übernimmt organisatorische und administrative Aufgaben wie Terminplanung, Korrespondenz, Dokumentenverwaltung und Projektunterstützung. Sie sorgt dafür, dass Arbeitsabläufe im Unternehmen effizient funktionieren.
                       </p>
                       {" "}
@@ -910,13 +910,13 @@ export default function Page() {
                         Wie viel verdient eine Verwaltungsassistenz?
                       </h3>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-38">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-76">
                         Das Gehalt einer Verwaltungsassistenz liegt durchschnittlich bei rund 38.500 Euro brutto pro Jahr.¹ Die tatsächliche Vergütung hängt von Berufserfahrung, Branche, Unternehmensgröße und Standort ab.
                       </p>
                       {" "}
                       <hr className="box-content w-[50.1875rem] h-px block my-[2.5625rem] overflow-hidden text-color-018 bg-border max-md:w-[20.3125rem] md:max-lg:w-179.5 2xl:w-[50.3125rem]" />
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-39">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-77">
                         {"¹Kununu, "}
                         <a className="box-content inline underline cursor-pointer" data-ditto-id="style-button-14" data-component="link" href="https://www.kununu.com/de/gehalt/verwaltungsassistent-in-45762">
                           Verwaltungsassistent:in Gehalt Deutschland 2026 im Detail,
@@ -924,14 +924,14 @@ export default function Page() {
                         {" aufgerufen am 3.6.2026"}
                       </p>
                       {" "}
-                      <div className="box-content block relative mb-[1.625rem] before:content-[''] before:block before:absolute before:top-6 before:-bottom-[1.5625rem] before:inset-x-0 before:-z-1 before:h-px before:bg-border" data-ditto-id="style-div-40">
+                      <div className="box-content block relative mb-[1.625rem] before:content-[''] before:block before:absolute before:top-6 before:-bottom-[1.5625rem] before:inset-x-0 before:-z-1 before:h-px before:bg-border" data-ditto-id="style-div-78">
                         <div className="box-content w-[22.9375rem] flex relative float-right pl-3.5 items-center bg-background max-md:w-[20.3125rem] max-md:mt-4 max-md:flex-wrap max-md:justify-between" data-ditto-id="style-i-9">
-                          <span className="box-content block mr-7.5 text-color-002" data-ditto-id="style-span-7">
+                          <span className="box-content block mr-7.5 text-color-002" data-ditto-id="style-span-12">
                             Lust, den Beitrag zu teilen?
                           </span>
                           {" "}
                           <div className="box-content block">
-                            <div className="box-content block my-px" data-ditto-id="style-div-41">
+                            <div className="box-content block my-px" data-ditto-id="style-div-79">
                               {Logo_data.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
                             </div>
                             <div className="box-content block clear-both" />
@@ -949,9 +949,9 @@ export default function Page() {
                 {" "}
               </article>
               {" "}
-              <section className="box-content flex relative z-5 py-10 px-5 items-center overflow-hidden max-md:block max-md:p-0 max-md:[align-items:initial]" data-ditto-id="style-div-46">
+              <section className="box-content flex relative z-5 py-10 px-5 items-center overflow-hidden max-md:block max-md:p-0 max-md:[align-items:initial]" data-ditto-id="style-div-84">
                 <div className="box-content w-37.5 h-37.5 block float-left max-w-37.5 max-h-37.5 mr-7.5 mb-2.5 rounded-[50%] shrink-0 overflow-hidden leading-3.5 max-md:w-[9.5625rem] max-md:h-[9.5625rem] max-md:mb-5 max-md:[float:initial] max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]">
-                  <img className="box-content w-full h-37.5 inline shrink-0 overflow-clip object-cover aspect-[auto_150/150] max-md:h-[9.5625rem] max-md:shrink-[initial]" data-ditto-id="style-div-47" data-component="image" alt="" height="150" sizes="(max-width: 150px) 100vw, 150px" src="/assets/cloned/images/9620380149a5.png" srcSet="/assets/cloned/images/9620380149a5.png 150w, /assets/cloned/images/fee7f195d947.png 300w, /assets/cloned/images/3eb96a08aaa4.png 1024w, /assets/cloned/images/6c60d0d0b9ea.png 1536w, /assets/cloned/images/9e1f20a9cbcb.png 2048w, /assets/cloned/images/55475eae8b23.png 100w, /assets/cloned/images/3d11dd209948.png 600w" width="150" />
+                  <img className="box-content w-full h-37.5 inline shrink-0 overflow-clip object-cover aspect-[auto_150/150] max-md:h-[9.5625rem] max-md:shrink-[initial]" data-ditto-id="style-div-85" data-component="image" alt="" height="150" sizes="(max-width: 150px) 100vw, 150px" src="/assets/cloned/images/9620380149a5.png" srcSet="/assets/cloned/images/9620380149a5.png 150w, /assets/cloned/images/fee7f195d947.png 300w, /assets/cloned/images/3eb96a08aaa4.png 1024w, /assets/cloned/images/6c60d0d0b9ea.png 1536w, /assets/cloned/images/9e1f20a9cbcb.png 2048w, /assets/cloned/images/55475eae8b23.png 100w, /assets/cloned/images/3d11dd209948.png 600w" width="150" />
                   {" "}
                 </div>
                 {" "}
@@ -964,14 +964,14 @@ export default function Page() {
                     Online-Redaktion
                   </div>
                   {" "}
-                  <div className="box-content block mt-3.5" data-ditto-id="style-div-48" />
+                  <div className="box-content block mt-3.5" data-ditto-id="style-div-86" />
                   {" "}
                 </div>
                 {" "}
               </section>
               {" "}
               <section className="box-content block relative mt-5 mr-[-431.7px] mb-7 pt-2.5 max-lg:mr-0 2xl:mr-[-432.3px]">
-                <h2 className="box-content block mb-12.5 text-color-001 text-4xl font-medium leading-[1.5625rem] max-md:text-[1.25rem]" data-ditto-id="style-div-49" data-component="heading">
+                <h2 className="box-content block mb-12.5 text-color-001 text-4xl font-medium leading-[1.5625rem] max-md:text-[1.25rem]" data-ditto-id="style-div-87" data-component="heading">
                   Weitere Beiträge
                 </h2>
                 {" "}
@@ -986,9 +986,9 @@ export default function Page() {
             <aside className="h-[103.5625rem] min-h-px border-l border-solid border-l-clr-7 block sticky -top-90 z-5 pr-[1.5625rem] pl-[2.1875rem] max-md:h-116 max-lg:relative max-lg:inset-0 max-lg:float-left max-lg:mt-[2.1875rem] max-md:mb-7 max-lg:pl-[1.5625rem] md:max-lg:h-[26.5625rem] 2xl:h-[1657.3px] before:content-['_'] before:block before:absolute before:top-0 before:right-[390.7px] before:bottom-[103.5625rem] before:left-[2.1875rem] before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left max-lg:before:hidden max-lg:before:inset-auto max-lg:before:w-auto max-lg:before:h-auto 2xl:before:right-[391.3px] 2xl:before:bottom-[1657.3px]">
               <ul className="block [list-style-type:none] list-outside">
                 <li className="box-content list-item mb-5.5">
-                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-div-68" data-component="link" href="/1685" target="_blank">
+                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-div-106" data-component="link" href="/1685" target="_blank">
                     {"Zum "}
-                    <strong className="box-content inline font-medium">
+                    <strong className="box-content inline font-medium" data-ditto-id="style-div-124">
                       Seminarangebot
                     </strong>
                     {" von"}
@@ -997,9 +997,9 @@ export default function Page() {
                   </a>
                 </li>
                 <li className="box-content list-item mb-5.5" data-ditto-id="style-i-18">
-                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-div-69" data-component="link" href="/blog/berufe" target="_blank">
+                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-div-107" data-component="link" href="/blog/berufe" target="_blank">
                     {"Zum "}
-                    <strong className="box-content inline font-medium" data-ditto-id="style-div-53">
+                    <strong className="box-content inline font-medium" data-ditto-id="style-div-91">
                       Seminarangebot
                     </strong>
                     {" von"}
@@ -1007,7 +1007,7 @@ export default function Page() {
                     Assistenz und Office-Management
                   </a>
                 </li>
-                <li className="box-content list-item mb-[2.1875rem]" data-ditto-id="style-div-54">
+                <li className="box-content list-item mb-[2.1875rem]" data-ditto-id="style-div-92">
                   <p className="box-content block mb-2.5 text-color-001 text-2xl font-medium leading-8.5">
                     Newsletter
                   </p>
@@ -1017,20 +1017,20 @@ export default function Page() {
                     </p>
                     {" "}
                     <div className="box-content block mb-7.5 max-md:mb-12.5">
-                      <a className="box-content block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer" data-ditto-id="style-div-70" data-component="link" href="/1685" target="_blank">
+                      <a className="box-content block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer" data-ditto-id="style-div-108" data-component="link" href="/1685" target="_blank">
                         Newsletter kostenlos abonnieren
                       </a>
                     </div>
                   </div>
                 </li>
-                <li className="box-content w-[365.7px] list-item bottom-0 inset-x-0 z-200 mb-[50.625rem] text-base leading-6 max-md:w-[23.4375rem] max-lg:h-14 max-lg:fixed max-md:top-189 max-lg:right-auto max-lg:bottom-auto max-lg:mb-0 md:max-lg:w-192 md:max-lg:top-242 2xl:w-[366.3px] 2xl:mb-[50.65rem]" data-ditto-id="style-div-55">
-                  <button className="box-content w-[59%] inline-block mb-2.5 text-color-004 text-2xl font-medium leading-[1.8125rem] text-center cursor-pointer pointer-events-none max-lg:w-full max-lg:flex max-lg:py-4 max-lg:px-5 max-lg:justify-between max-lg:text-background max-lg:leading-[1.1875rem] max-lg:bg-primary max-lg:mb-0 max-lg:[font-size:inherit] max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] 2xl:w-[58.5%]" data-ditto-id="style-div-71" data-component="button" aria-expanded="true">
+                <li className="box-content w-[365.7px] list-item bottom-0 inset-x-0 z-200 mb-[50.625rem] text-base leading-6 max-md:w-[23.4375rem] max-lg:h-14 max-lg:fixed max-md:top-189 max-lg:right-auto max-lg:bottom-auto max-lg:mb-0 md:max-lg:w-192 md:max-lg:top-242 2xl:w-[366.3px] 2xl:mb-[50.65rem]" data-ditto-id="style-div-93">
+                  <button className="box-content w-[59%] inline-block mb-2.5 text-color-004 text-2xl font-medium leading-[1.8125rem] text-center cursor-pointer pointer-events-none max-lg:w-full max-lg:flex max-lg:py-4 max-lg:px-5 max-lg:justify-between max-lg:text-background max-lg:leading-[1.1875rem] max-lg:bg-primary max-lg:mb-0 max-lg:[font-size:inherit] max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] 2xl:w-[58.5%]" data-ditto-id="style-div-109" data-component="button" aria-expanded="true">
                     {" Inhaltsverzeichnis "}
-                    <span className="box-content hidden ml-2 [font-family:FontAwesome] text-xl font-normal leading-5 pointer-events-none max-lg:block max-lg:text-2xl max-lg:leading-6 max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] before:content-[''] before:text-color-004 before:text-xl before:leading-5 before:text-center max-lg:before:text-background max-lg:before:text-2xl max-lg:before:leading-6" data-ditto-id="style-div-56" aria-hidden="true" />
+                    <span className="box-content hidden ml-2 [font-family:FontAwesome] text-xl font-normal leading-5 pointer-events-none max-lg:block max-lg:text-2xl max-lg:leading-6 max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] before:content-[''] before:text-color-004 before:text-xl before:leading-5 before:text-center max-lg:before:text-background max-lg:before:text-2xl max-lg:before:leading-6" data-ditto-id="style-div-94" aria-hidden="true" />
                     {" "}
                   </button>
                   {" "}
-                  <div className="box-content flex max-h-173.5 overflow-auto bg-background max-lg:max-h-0 max-lg:px-5 2xl:max-h-243.5" data-ditto-id="style-a-8" aria-hidden="false">
+                  <div className="box-content flex max-h-173.5 overflow-auto bg-background max-lg:max-h-0 max-lg:px-5 2xl:max-h-243.5" data-ditto-id="style-a-7" aria-hidden="false">
                     <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-i-20">
                       {ListRow4_data.map((d, i) => <ListRow4 key={i} d={d} styles={ListRow4_styles[i]} />)}
                     </ul>
@@ -1046,9 +1046,9 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="box-content border-t border-solid border-t-color-005 block relative mt-32.5 text-background bg-color-009 max-md:mt-10 before:content-[''] before:block before:absolute before:-top-30 before:right-0 before:bottom-124 before:left-176 before:[background-size:18px_14px] max-md:before:-top-20 max-md:before:bottom-[69.0625rem] max-md:before:left-[206.3px] md:max-lg:before:bottom-159 md:max-lg:before:left-[26.4rem] 2xl:before:left-264" data-ditto-id="style-div-60">
+        <footer className="box-content border-t border-solid border-t-color-005 block relative mt-32.5 text-background bg-color-008 max-md:mt-10 before:content-[''] before:block before:absolute before:-top-30 before:right-0 before:bottom-124 before:left-176 before:[background-size:18px_14px] max-md:before:-top-20 max-md:before:bottom-[69.0625rem] max-md:before:left-[206.3px] md:max-lg:before:bottom-159 md:max-lg:before:left-[26.4rem] 2xl:before:left-264" data-ditto-id="style-div-98">
           <div className="box-content w-311.5 block max-w-[calc(100%_-_34px)] -mr-4 pt-12 px-[1.5625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]">
-            <div className="box-content flex pb-10 justify-between items-end max-md:block max-md:pb-0 max-md:[justify-content:initial] max-md:[align-items:initial]" data-ditto-id="style-div-61">
+            <div className="box-content flex pb-10 justify-between items-end max-md:block max-md:pb-0 max-md:[justify-content:initial] max-md:[align-items:initial]" data-ditto-id="style-div-99">
               <img className="box-content w-62.5 h-[1.9375rem] block mb-8 overflow-clip aspect-[auto_250/31] max-md:inline" data-component="image" alt="Haufe Akademie" height="31" src="/assets/cloned/svg/b5d862826e6a.svg" width="250" />
               {" "}
             </div>
@@ -1056,7 +1056,7 @@ export default function Page() {
             <ul className="h-[12.9375rem] min-h-px block -mx-[1.5625rem] [list-style-type:none] list-outside max-md:h-173.5 md:max-lg:h-[21.6875rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-background before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-background after:text-sm after:leading-[1.3125rem] after:text-left">
               <li className="w-81 h-[8.5625rem] min-h-px list-item float-left px-[1.5625rem] max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-39.5 2xl:w-[324.5px]" data-ditto-id="style-i-24">
                 <address className="box-content block">
-                  <strong className="box-content inline font-medium" data-ditto-id="style-div-89">
+                  <strong className="box-content inline font-medium" data-ditto-id="style-div-128">
                     {"Haufe Akademie GmbH & Co. KG"}
                   </strong>
                   {" "}
@@ -1077,19 +1077,19 @@ export default function Page() {
               </li>
               <li className="w-81 h-29.5 min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-[9.9375rem] 2xl:w-[324.5px]">
                 <div className="box-content h-full block">
-                  <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]">
+                  <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]" data-ditto-id="style-div-526">
                     Unsere Angebotsfelder
                   </p>
                   {" "}
-                  <ul className="block [list-style-type:none] list-outside" id="menu-links-footer-left">
+                  <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-div-206" id="menu-links-footer-left">
                     {ListRow5_data.map((d, i) => <ListRow5 key={i} d={d} />)}
                   </ul>
                 </div>
                 {" "}
               </li>
               <li className="w-81 h-42 min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-[15.5625rem] 2xl:w-[324.5px]">
-                <div className="box-content block">
-                  <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]">
+                <div className="box-content block" data-ditto-id="style-button-47">
+                  <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]" data-ditto-id="style-div-207">
                     Besondere Angebote
                   </p>
                   {" "}
@@ -1101,12 +1101,12 @@ export default function Page() {
                 </div>
                 {" "}
               </li>
-              <li className="w-81 h-[12.9375rem] min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:h-[11.6875rem] md:max-lg:w-48 md:max-lg:h-[21.6875rem] 2xl:w-[324.5px]">
+              <li className="w-81 h-[12.9375rem] min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:h-[11.6875rem] md:max-lg:w-48 md:max-lg:h-[21.6875rem] 2xl:w-[324.5px]" data-ditto-id="style-tabpanel-megamenu-0-0-13">
                 <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]">
                   Die letzten Artikel
                 </p>
                 {" "}
-                <ul className="block [list-style-type:none] list-outside">
+                <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-button-48">
                   {ListRow6_data.map((d, i) => <ListRow6 key={i} d={d} />)}
                 </ul>
                 {" "}
@@ -1118,7 +1118,7 @@ export default function Page() {
           </div>
           {" "}
           <div className="box-content w-311.5 flex max-w-[calc(100%_-_34px)] -mr-4 pt-6 pb-12 px-[1.5625rem] flex-wrap justify-between items-end gap-7.5 text-left max-md:w-[23.4375rem] max-md:pt-10.5 max-md:pb-[3.0625rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 max-md:[justify-content:initial] max-md:[align-items:initial] md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]">
-            <ul className="flex flex-wrap gap-y-2 gap-x-2.5 [list-style-type:none] list-outside" data-ditto-id="style-div-91">
+            <ul className="flex flex-wrap gap-y-2 gap-x-2.5 [list-style-type:none] list-outside" data-ditto-id="style-div-130">
               {ListRow7_data.map((d, i) => <ListRow7 key={i} d={d} styles={ListRow7_styles[i]} />)}
             </ul>
             {" "}
@@ -1126,7 +1126,7 @@ export default function Page() {
               {ListRow8_data.map((d, i) => <ListRow8 key={i} d={d} styles={ListRow8_styles[i]} />)}
               <li className="box-content list-item">
                 <a className="box-content w-6 h-6 flex justify-center items-center text-lg font-medium leading-[1.6875rem] cursor-pointer" data-component="link" href="https://www.tiktok.com/@haufe.akademie" target="_blank">
-                  <svg className="box-content w-auto h-4 block overflow-hidden" data-ditto-id="style-div-86" data-component="icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <svg className="box-content w-auto h-4 block overflow-hidden" data-ditto-id="style-div-125" data-component="icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="#ffffff" />
                   </svg>
                   <span className="box-content w-px h-px block absolute min-w-0 -m-px overflow-hidden" data-ditto-id="style-i-35">
@@ -1142,7 +1142,7 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="box-content block" data-ditto-id="style-span-15">
+      <div className="box-content block" data-ditto-id="style-span-20">
         {" "}
       </div>
       {" "}

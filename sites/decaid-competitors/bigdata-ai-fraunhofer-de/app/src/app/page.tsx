@@ -403,7 +403,7 @@ export default function Page() {
             <div className="block -mx-20 bg-primary max-lg:-mx-[1.5625rem] 2xl:-mx-24">
               <div className="block relative z-1">
                 <div className="block relative overflow-hidden">
-                  <div className="w-2560 block relative max-md:w-750 md:max-lg:w-1536 2xl:w-3456 2xl:leading-5 2xl:transform-[matrix(1,0,0,1,-5184,0)] after:content-['.'] after:block after:w-full after:h-0 after:text-foreground after:text-[0rem] after:font-extralight after:leading-0">
+                  <div className="w-2560 block relative max-md:w-750 md:max-lg:w-1536 2xl:w-3456 2xl:leading-[1.3125rem] 2xl:transform-[matrix(1,0,0,1,-5184,0)] after:content-['.'] after:block after:w-full after:h-0 after:text-foreground after:text-[0rem] after:font-extralight after:leading-0">
                     <div className="w-320 h-112 min-h-px block relative float-left max-md:w-[23.4375rem] max-md:h-[22.225rem] md:max-lg:w-192 2xl:hidden">
                       <div className="h-full block relative overflow-hidden text-center 2xl:hidden">
                         <figure className="block relative overflow-hidden leading-0 2xl:hidden" data-ditto-id="style-link-26">

@@ -44,42 +44,42 @@ const ListRow5_data = [
     { href: "https://www.ihk.de/blueprint/servlet/resource/blob/6218774/4d688a48242fd652ffb05ad6de2fc2b4/stellungnahme-240726-energiewaermestrategie-data.pdf", rel: "noopener", target: "_blank", label: "nicht barrierefrei, PDF-Datei", label2: "Stellungnahme der IHK Köln zum Entwurf einer Energie- und Wärmestrategie NRW (26. Juli 2024)", text: "(Nr. 6218774)" }
 ];
 const ListRow_meta: string[][] = [
-    ["style-div-6", "style-figure"],
-    ["style-div-7", "style-iframe"],
-    ["style-figcaption", "style-span-18"],
-    ["style-span-8", "style-div-70"]
+    ["style-div-9", "style-figure"],
+    ["style-div-10", "style-iframe"],
+    ["style-figcaption", "style-span-10"],
+    ["style-span-3", "style-div-74"]
 ];
 const ListRow2_meta: string[][] = [
     ["style-image-7"],
-    ["style-span-38"],
+    ["style-span-34"],
     ["n65"],
     ["n66"]
 ];
 const ListRow3_meta: string[][] = [
-    ["style-link-12"],
-    ["style-image-2"],
+    ["style-link-14"],
+    ["style-image-3"],
     ["n120"],
-    ["style-span-24"],
+    ["style-span-17"],
     ["n122"]
 ];
 const ListRow3_meta2: string[][] = [
-    ["style-div-29"],
-    ["style-link-13"],
-    ["style-image-3"],
-    ["style-span-31"],
-    ["style-span-26"],
+    ["style-div-26"],
+    ["style-link-8"],
+    ["style-image"],
+    ["style-span-24"],
+    ["style-span-5"],
     ["n138"],
-    ["style-div-38"]
+    ["style-div-35"]
 ];
 const ListRow4_meta: string[][] = [
     ["n174", "n175"],
-    ["style-link-17", "style-span-16"],
-    ["style-strong-2", "style-span-14"]
+    ["style-link-2", "style-span-8"],
+    ["n178", "style-span-32"]
 ];
 const ListRow5_meta: string[][] = [
-    ["n184", "style-li-24", "style-teilen"],
-    ["style-li-27", "style-link-18", "style-div-63"],
-    ["style-ul-7", "style-li-11", "n192"]
+    ["style-ul-8", "style-li-28", "style-teilen"],
+    ["style-li-31", "style-link-18", "style-div-66"],
+    ["style-ul-5", "style-li-14", "n192"]
 ];
 const ListRow2_styles = [
     { className: "max-md:after:bottom-9.5" },
@@ -129,13 +129,13 @@ export default function Page() {
           {" "}
           <ul className="flex my-5 items-center [list-style-type:none] list-outside max-md:invisible max-md:opacity-0 max-lg:my-4.5 max-md:pointer-events-none 2xl:my-5.5">
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-8" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-7" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
                 Login
               </a>
               {" "}
             </li>
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                 Kontakt
               </a>
               {" "}
@@ -184,7 +184,7 @@ export default function Page() {
                   </a>
                   {" "}
                 </li>
-                <li className="inline-block before:content-[''] before:inline-block before:relative before:inset-0 before:w-5 before:h-7.5 before:-mt-px before:mr-1.5 before:ml-[0.1875rem] before:text-foreground before:text-xl before:leading-7.5 max-md:before:w-4.5 max-md:before:h-[1.6875rem] max-md:before:text-lg max-md:before:leading-[1.6875rem]" data-ditto-id="style-li-14">
+                <li className="inline-block before:content-[''] before:inline-block before:relative before:inset-0 before:w-5 before:h-7.5 before:-mt-px before:mr-1.5 before:ml-[0.1875rem] before:text-foreground before:text-xl before:leading-7.5 max-md:before:w-4.5 max-md:before:h-[1.6875rem] max-md:before:text-lg max-md:before:leading-[1.6875rem]" data-ditto-id="style-li-17">
                   {" "}
                   <a className="inline -mx-0.5 py-0.5 px-1 rounded-sm underline cursor-pointer" data-ditto-id="style-breadcrumb-item2" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/energie" id="breadcrumb-item2">
                     {" Energie "}
@@ -203,9 +203,9 @@ export default function Page() {
             </section>
             {" "}
           </div>
-          <div className="block" data-ditto-id="style-div-18">
+          <div className="block" data-ditto-id="style-div-15">
             <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-              <div className="flex -mx-5 flex-wrap items-start max-lg:-mx-2.5" data-ditto-id="style-div-35">
+              <div className="flex -mx-5 flex-wrap items-start max-lg:-mx-2.5" data-ditto-id="style-div-32">
                 <main className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" id="main" role="main">
                   <div className="block">
                     <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem]" data-ditto-id="style-heading">
@@ -217,27 +217,27 @@ export default function Page() {
                     </h1>
                     {" "}
                     <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
-                      <div className="min-h-19 block mt-3 mb-5 font-semibold max-lg:min-h-[4.275rem] max-md:my-6 md:max-lg:mb-4.5 2xl:min-h-[5.225rem] 2xl:mb-5.5 after:content-[''] after:table after:w-0 after:h-0" data-ditto-id="style-div-78">
+                      <div className="min-h-19 block mt-3 mb-5 font-semibold max-lg:min-h-[4.275rem] max-md:my-6 md:max-lg:mb-4.5 2xl:min-h-[5.225rem] 2xl:mb-5.5 after:content-[''] after:table after:w-0 after:h-0" data-ditto-id="style-div-84">
                         {" Bei den Unternehmen in der Region schrillen längst die Alarmglocken: Der vorgezogene Ausstieg aus der Kohle bis zum Jahr 2030 ist nicht mehr zu schaffen. Die Versorgungssicherheit in NRW ist gefährdet. Die IHK Köln hat dies seit 2021 immer wieder angemahnt. Wir bleiben dran! "}
                       </div>
                       {" "}
                     </div>
                     {" "}
-                    <div className="block relative my-12" data-ditto-id="style-div-4">
+                    <div className="block relative my-12" data-ditto-id="style-div-8">
                       <ul className="border-b border-solid border-b-primary block [list-style-type:none] list-outside">
                         {ListRow_data.map((d, i) => <ListRow key={i} d={d} />)}
                       </ul>
                       {" "}
                     </div>
                     {" "}
-                    <div className="block" data-ditto-id="style-span-9">
+                    <div className="block" data-ditto-id="style-span-4">
                       <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
                         {" Im März 2024 "}
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-section" data-component="link" href="https://www.bundesrechnungshof.de/SharedDocs/Kurzmeldungen/DE/2024/energiewende/kurzmeldung.html" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-section-3" data-component="link" href="https://www.bundesrechnungshof.de/SharedDocs/Kurzmeldungen/DE/2024/energiewende/kurzmeldung.html" rel="noopener" target="_blank" title="externer Link">
                           bestätigte der Bundesrechnungshof unsere Prognose
                         </a>
                         {" und erteilte der Bundesregierung eine deutliche Rüge. Der Ausbau der erneuerbaren Energien hinkt weit hinter den ambitionierten Zielen her. Von den notwendigen, wasserstofffähigen Gaskraftwerken: Keine Spur. Dies war spätestens mit der Vorstellung der "}
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-40" data-component="link" href="https://www.bmwk.de/Redaktion/DE/Pressemitteilungen/2023/08/20230801-rahmen-fuer-die-kraftwerksstrategie-steht.html" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-37" data-component="link" href="https://www.bmwk.de/Redaktion/DE/Pressemitteilungen/2023/08/20230801-rahmen-fuer-die-kraftwerksstrategie-steht.html" rel="noopener" target="_blank" title="externer Link">
                           Eckpunkte der Kraftwerksstrategie der Bundesregierung
                         </a>
                         {" klar. "}
@@ -255,8 +255,8 @@ export default function Page() {
                         {" Und was tut die Landesregierung? Außer sich über erwartbare Entscheidungen zu beschweren: recht wenig. Es fehlt nach wie vor eine belastbare Strategie für den Ausbau eines regenerativen, sicheren Stromangebots. Wir brauchen einen realistischen Zeitplan für den Ausbau der regenerativen Energien und einen zeitlich daran angepassten Ausstieg aus der Kohleverstromung. Das eine geht nicht ohne das andere. "}
                       </div>
                       {" "}
-                      <div className="block relative my-12 p-10.5 rounded-2xl overflow-hidden bg-surface max-md:my-9 max-md:py-8 max-md:px-4 max-md:rounded-lg md:max-lg:my-[2.95rem] 2xl:my-[3.275rem] after:content-[''] after:block after:absolute after:top-34.5 after:bottom-0 after:inset-x-0 after:h-2 after:bg-accent max-md:after:top-41.5 max-md:after:h-1.5 md:max-lg:after:top-32.5 2xl:after:top-36" data-ditto-id="style-span-19">
-                        <a className="inline -mt-2 -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer max-lg:-mt-[0.45rem] 2xl:-mt-[0.55rem]" data-ditto-id="style-div-71" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/presse/pressemeldungen2025/pm-ein-jahr-windrad-schuldenuhr-6496720" rel="noopener" target="_blank">
+                      <div className="block relative my-12 p-10.5 rounded-2xl overflow-hidden bg-surface max-md:my-9 max-md:py-8 max-md:px-4 max-md:rounded-lg md:max-lg:my-[2.95rem] 2xl:my-[3.275rem] after:content-[''] after:block after:absolute after:top-34.5 after:bottom-0 after:inset-x-0 after:h-2 after:bg-accent max-md:after:top-41.5 max-md:after:h-1.5 md:max-lg:after:top-32.5 2xl:after:top-36" data-ditto-id="style-span-11">
+                        <a className="inline -mt-2 -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer max-lg:-mt-[0.45rem] 2xl:-mt-[0.55rem]" data-ditto-id="style-div-75" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/presse/pressemeldungen2025/pm-ein-jahr-windrad-schuldenuhr-6496720" rel="noopener" target="_blank">
                           <strong className="inline font-bold">
                             Ein Jahr Windrad-Schuldenuhr:
                           </strong>
@@ -271,9 +271,9 @@ export default function Page() {
                         Wie viel erneuerbare Energie fehlt?
                       </h2>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-45">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-43">
                         {" Das Energiewirtschaftliche Institut an der Universität zu Köln hat in der von uns beauftragten Studie "}
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:inline-block after:w-4.5 after:h-4.5 after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-0" data-ditto-id="style-div-46" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6091490/67191cc33d1785f4ed092a3a0f976e4d/studie-versorgungssicherheit-in-nrw-2030-data.pdf" rel="noopener" target="_blank" title="pdf-Datei">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:inline-block after:w-4.5 after:h-4.5 after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-0" data-ditto-id="style-div-44" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6091490/67191cc33d1785f4ed092a3a0f976e4d/studie-versorgungssicherheit-in-nrw-2030-data.pdf" rel="noopener" target="_blank" title="pdf-Datei">
                           Versorgungssicherheit für NRW 2030 (nicht barrierefrei, PDF-Datei · 1591 KB)
                         </a>
                         {" gezeigt, wie viel regenerative Energieanlagen realistischerweise notwendig sind. "}
@@ -292,7 +292,7 @@ export default function Page() {
                           <div className="flex -m-1 p-[0.3125rem] flex-wrap">
                             <div className="block relative p-1 grow basis-full">
                               <a className="h-full block relative -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface [background-size:80px] [background-position:50%_50%] bg-no-repeat cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-[708.7px] before:h-[29.525rem] before:pt-[29.525rem] max-md:before:w-[19.8125rem] max-md:before:h-[211.3px] max-md:before:pt-[211.3px] md:max-lg:before:w-172.5 md:max-lg:before:h-115 md:max-lg:before:pt-115 2xl:before:w-215.5 2xl:before:h-[574.7px] 2xl:before:pt-[574.7px] after:content-[''] after:hidden after:absolute after:inset-0 after:opacity-0" style={{ backgroundImage: "url(data:image/svg+xml" }} data-ditto-id="style-div" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6111560/e2af6a2e5aaef5f587d0eef8ee8d2546/windschuldenuhr-data.jpg">
-                                <img className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover" data-ditto-id="style-span-42" data-component="image" alt="NRW Windrad-Schuldenuhr: 1.019 fehlen von 1.500" src="/assets/cloned/images/c69750557f16.jpg" />
+                                <img className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover" data-ditto-id="style-span-38" data-component="image" alt="NRW Windrad-Schuldenuhr: 1.019 fehlen von 1.500" src="/assets/cloned/images/c69750557f16.jpg" />
                               </a>
                             </div>
                             {" "}
@@ -302,7 +302,7 @@ export default function Page() {
                         {" "}
                       </div>
                       {" "}
-                      <h3 className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem] 2xl:mt-[3.15rem] 2xl:mb-[1.35rem] 2xl:-mx-0.5 2xl:text-4xl 2xl:leading-[2.6875rem]" data-ditto-id="style-section-2" data-component="heading">
+                      <h3 className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem] 2xl:mt-[3.15rem] 2xl:mb-[1.35rem] 2xl:-mx-0.5 2xl:text-4xl 2xl:leading-[2.6875rem]" data-ditto-id="style-section-4" data-component="heading">
                         Hintergrund Windenergie:
                       </h3>
                       {" "}
@@ -310,16 +310,16 @@ export default function Page() {
                         {" Für den noch notwendigen Ausbau bis zur Zielerreichung werden Windräder mit einer Leistung von 6 MW als Standard angenommen. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-80">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
                         {" Laut der EWI-Studie beträgt das Ziel bei der Windenergie 16 GW in NRW. (Bestand 01/2023 ca. 7 GW). Bei einer angenommenen Leistung von 6 MW pro Windrad müssten somit noch 1.500 Windräder zusätzlich in Betrieb genommen werden. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-11">
                         <section className="block max-w-220 my-[50.9px] max-md:my-[2.5625rem] md:max-lg:my-[2.9125rem] 2xl:my-[3.575rem]" data-ditto-id="style-image-8">
-                          <div className="flex -m-1 p-[0.3125rem] flex-wrap" data-ditto-id="style-span-20">
+                          <div className="flex -m-1 p-[0.3125rem] flex-wrap" data-ditto-id="style-span-12">
                             <div className="block relative p-1 grow basis-full">
-                              <a className="h-full block relative -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface [background-size:80px] [background-position:50%_50%] bg-no-repeat cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-[708.7px] before:h-[29.525rem] before:pt-[29.525rem] max-md:before:w-[19.8125rem] max-md:before:h-[211.3px] max-md:before:pt-[211.3px] md:max-lg:before:w-172.5 md:max-lg:before:h-115 md:max-lg:before:pt-115 2xl:before:w-215.5 2xl:before:h-[574.7px] 2xl:before:pt-[574.7px] after:content-[''] after:hidden after:absolute after:inset-0 after:opacity-0" style={{ backgroundImage: "url(data:image/svg+xml" }} data-ditto-id="style-span-43" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6091508/75acf72c925c2e3c747a3bd694512699/versorgungsssicherheit-nrw-zahlen-solar-data.png">
-                                <img className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover" data-ditto-id="style-div-19" data-component="image" alt="Es fehlen 10.771 PV-Freiflächen-Anlagen in Fußballfeld-Größe." src="/assets/cloned/images/ffd2ff996db6.png" />
+                              <a className="h-full block relative -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface [background-size:80px] [background-position:50%_50%] bg-no-repeat cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-[708.7px] before:h-[29.525rem] before:pt-[29.525rem] max-md:before:w-[19.8125rem] max-md:before:h-[211.3px] max-md:before:pt-[211.3px] md:max-lg:before:w-172.5 md:max-lg:before:h-115 md:max-lg:before:pt-115 2xl:before:w-215.5 2xl:before:h-[574.7px] 2xl:before:pt-[574.7px] after:content-[''] after:hidden after:absolute after:inset-0 after:opacity-0" style={{ backgroundImage: "url(data:image/svg+xml" }} data-ditto-id="style-span-39" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6091508/75acf72c925c2e3c747a3bd694512699/versorgungsssicherheit-nrw-zahlen-solar-data.png">
+                                <img className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover" data-ditto-id="style-div-16" data-component="image" alt="Es fehlen 10.771 PV-Freiflächen-Anlagen in Fußballfeld-Größe." src="/assets/cloned/images/ffd2ff996db6.png" />
                               </a>
                             </div>
                             {" "}
@@ -333,7 +333,7 @@ export default function Page() {
                         Hintergrund Photovoltaik:
                       </h3>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-21">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-13">
                         {" Der weit überwiegende Ausbau der Photovoltaik passiert in NRW auf Dachflächen. "}
                       </div>
                       {" "}
@@ -345,16 +345,16 @@ export default function Page() {
                         {" Zum Gelingen der Energiewende ist jedoch auch der Ausbau der Photovoltaik auf Freiflächen absolut notwendig. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-20">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-17">
                         {" Für Photovoltaik gilt, dass in NRW ungefähr 40 Prozent des Zubaus durch Freiflächen-Anlagen erfolgen müsste. Ausbauziel für Photovoltaik ist 37,2 GW Leistung (Bestand 01/2023 ca. 7,5 GW). Das bedeutet: jedes siebte Dach in NRW müsste zusätzlich zu den bestehenden PV-Dachanlagen mit entsprechenden Modulen belegt werden, wenn 60 Quadratmeter pro Dach für Sonnenenergie genutzt werden. Der restliche Ausbau soll auf Freiflächen erfolgen, was einen Flächenbedarf von ca. 15.000 Fußballfeldern entspricht. "}
-                        <br className="inline" data-ditto-id="style-div-41" />
+                        <br className="inline" data-ditto-id="style-div-38" />
                         {" "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-10">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-12">
                         <div className="block" data-ditto-id="style-image-9">
-                          <figure className="block max-w-full my-[30.9px] max-md:my-[1.5625rem] md:max-lg:my-[1.9125rem] 2xl:my-[2.075rem]" data-ditto-id="style-span-2">
-                            <div className="block" data-ditto-id="style-span-17">
+                          <figure className="block max-w-full my-[30.9px] max-md:my-[1.5625rem] md:max-lg:my-[1.9125rem] 2xl:my-[2.075rem]" data-ditto-id="style-span-42">
+                            <div className="block" data-ditto-id="style-span-9">
                               <img className="w-[45.4375rem] h-97.5 block max-w-full overflow-clip max-md:w-[20.9375rem] max-md:h-45 md:max-lg:w-177 md:max-lg:h-95 2xl:w-220 2xl:h-118" data-component="image" alt="Versorgungsssicherheit NRW_Zahlen_Gas" src="/assets/cloned/images/67de4bd02c0c.png" />
                               {" "}
                             </div>
@@ -365,11 +365,11 @@ export default function Page() {
                         {" "}
                       </div>
                       {" "}
-                      <h3 className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem] 2xl:mt-[3.15rem] 2xl:mb-[1.35rem] 2xl:-mx-0.5 2xl:text-4xl 2xl:leading-[2.6875rem]" data-ditto-id="style-div-21" data-component="heading">
+                      <h3 className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem] 2xl:mt-[3.15rem] 2xl:mb-[1.35rem] 2xl:-mx-0.5 2xl:text-4xl 2xl:leading-[2.6875rem]" data-ditto-id="style-div-18" data-component="heading">
                         Hintergrund Gaskraftwerke:
                       </h3>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-78">
                         {" Versorgungssicherheit in NRW bei einem Kohleausstieg 2030 in Deutschland erfordert den Zubau von wasserstofffähigen Gaskraftwerken mit einer zusätzlichen Kapazität von bis zu 7,6 Gigawatt (GW) bis ins Jahr 2030. Das sind je nach Größe 8 bis 16 Kraftwerke. Falls dieser Zubau nicht gelingt, ist eine für die Absicherung der Stromversorgung der Weiterbetrieb der Kohlekraftwerke notwendig – ansonsten drohen Versorgungslücken. "}
                       </div>
                       {" "}
@@ -381,52 +381,52 @@ export default function Page() {
                         Warum die Schuldenuhr justiert wird
                       </h2>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-29">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-22">
                         {" Die Zahl auf der Windradschuldenuhr am Eingang des Hauptgebäudes der IHK Köln ist gestiegen. Wie kann das sein? "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-22">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-19">
                         {" Jede Uhr muss hin und wieder nachgestellt – eben justiert – werden. Im Falle der Windradschuldenuhr der IHK Köln ist das schnell erklärt: "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-22">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-15">
                         {" Mehr als die Hälfte der Windenergieanlagen in NRW sind älter als 15 Jahre und nähern sich somit dem Ende ihrer Betriebszeit. Ältere Windenergieanlagen werden abgebaut und in der Regel durch neue Windräder ersetzt. Die liefern natürlich auch irgendwann Strom. Das Ganze nennt sich „Repowering“ und ist wichtig, um die Ausbauziele in NRW zu erreichen. Das Problem: Es braucht seine Zeit. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-36">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-33">
                         {" Seit Beginn unseres Monitorings wurden mehr als 150 Windräder stillgelegt. Diese alten Anlagen lieferten deutlich weniger Strom als das neue moderne Windräder können. Um die fehlende Leistung dieser Windräder auszugleichen, müssten zum Beispiel nur 27 neue moderne Windräder gebaut werden. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-section">
                         {" Zukünftig wird die angezeigte Anzahl der Windräder auch die stillgelegten Anlagen direkt berücksichtigen. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-13">
                         {" In einer Kategorie ist NRW übrigens im Ländervergleich sogar mit Abstand Spitzenreiter: Bei den Genehmigungen für neue Anlagen! Allerdings sind das erst die Genehmigungen. Gebaut sind die Anlagen noch nicht. Daher zählt unsere Windschuldenuhr lediglich Anlagen, die auch wirklich Strom liefern. Denn mit genehmigtem Strom kann man ja auch kein Licht machen. "}
                       </div>
                       {" "}
-                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-27" data-component="heading">
+                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-24" data-component="heading">
                         Politischer Rahmen
                       </h2>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-11">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-13">
                         {" Damit die notwendige gesicherte Leistung neu ausgebaut wird, müssen die Rahmenbedingungen für Investitionen angepasst werden. Die Bundesregierung erstellt dazu eine Kraftwerksstrategie. Das Land NRW erarbeitet eine Energie- und Wärmestrategie NRW. "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-image">
-                        <strong className="inline font-bold" data-ditto-id="style-span-37">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-image-2">
+                        <strong className="inline font-bold" data-ditto-id="style-span-31">
                           So ist der aktuelle Stand:
                         </strong>
                         {" "}
                       </div>
                       {" "}
-                      <h3 className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem] 2xl:mt-[3.15rem] 2xl:mb-[1.35rem] 2xl:-mx-0.5 2xl:text-4xl 2xl:leading-[2.6875rem]" data-ditto-id="style-span-39" data-component="heading">
+                      <h3 className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem] 2xl:mt-[3.15rem] 2xl:mb-[1.35rem] 2xl:-mx-0.5 2xl:text-4xl 2xl:leading-[2.6875rem]" data-ditto-id="style-span-35" data-component="heading">
                         Kraftwerksstrategie des Bundes
                       </h3>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-23">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-16">
                         {" Am 5. Juli 2024 hat sich die Bundesregierung auf "}
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-47" data-component="link" href="https://www.bmwk.de/Redaktion/DE/Pressemitteilungen/2024/07/20240705-klimaneutrale-stromerzeugung-kraftwerkssicherheitsgesetz.html" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-71" data-component="link" href="https://www.bmwk.de/Redaktion/DE/Pressemitteilungen/2024/07/20240705-klimaneutrale-stromerzeugung-kraftwerkssicherheitsgesetz.html" rel="noopener" target="_blank" title="externer Link">
                           Eckpunkte
                         </a>
                         {" geeinigt, die einem Kraftwerkssicherheitsgesetz münden sollen. Vorgesehen sind 12,5 GW an Kraftwerksleistung sowie 0,5 GW Stromlangzeitspeicher, die in zwei Säulen realisiert werden: "}
@@ -436,7 +436,7 @@ export default function Page() {
                         <li className="block relative mb-2 pl-8 max-lg:mb-[0.45rem] max-md:pl-6 2xl:mb-[0.55rem] after:content-[''] after:block after:absolute after:top-3 after:right-[718.7px] after:bottom-25 after:left-0 after:w-2 after:h-2 after:bg-accent after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:right-[20.5625rem] max-md:after:bottom-[10.8125rem] max-md:after:w-1.5 max-md:after:h-1.5 md:max-lg:after:right-175 md:max-lg:after:bottom-[3.8125rem] 2xl:after:right-218 2xl:after:bottom-[4.9375rem]">
                           In Säule 1 werden Kapazitäten gebündelt, die zur Dekarbonisierung beitragen (insgesamt 8 GW, aufgeteilt in 0,5 GW H2-Kraftwerke, 5 GW H2-Ready Kraftwerke und 2 GW H2-Repowering bestehender Kraftwerke und zusätzlich 0,5 GW für Stromlangzeitspeicher )
                         </li>
-                        <li className="block relative mb-2 pl-8 max-lg:mb-[0.45rem] max-md:pl-6 2xl:mb-[0.55rem] after:content-[''] after:block after:absolute after:top-3 after:right-[718.7px] after:bottom-17.5 after:left-0 after:w-2 after:h-2 after:bg-accent after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:right-[20.5625rem] max-md:after:bottom-[10.8125rem] max-md:after:w-1.5 max-md:after:h-1.5 md:max-lg:after:right-175 md:max-lg:after:bottom-[3.8125rem] 2xl:after:right-218 2xl:after:bottom-[4.9375rem]" data-ditto-id="style-br-3">
+                        <li className="block relative mb-2 pl-8 max-lg:mb-[0.45rem] max-md:pl-6 2xl:mb-[0.55rem] after:content-[''] after:block after:absolute after:top-3 after:right-[718.7px] after:bottom-17.5 after:left-0 after:w-2 after:h-2 after:bg-accent after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:right-[20.5625rem] max-md:after:bottom-[10.8125rem] max-md:after:w-1.5 max-md:after:h-1.5 md:max-lg:after:right-175 md:max-lg:after:bottom-[3.8125rem] 2xl:after:right-218 2xl:after:bottom-[4.9375rem]" data-ditto-id="style-br-6">
                           In Säule 2 sollen zusätzliche Kapazitäten konventioneller Gaskraftwerke ausgeschrieben werden, die im Vorgriff auf die Ausgestaltung des Kapazitätsmechanismus der Versorgungssicherheit dienen sollen (insgesamt 5 GW)
                         </li>
                       </ul>
@@ -453,11 +453,11 @@ export default function Page() {
                         {" Bewertung: "}
                       </div>
                       {" "}
-                      <ul className="block mt-5 mb-7.5 [list-style-type:disc] list-outside max-lg:mt-4.5 max-lg:mb-[1.6875rem] 2xl:mt-5.5 2xl:mb-[2.0625rem]" data-ditto-id="style-div-28">
+                      <ul className="block mt-5 mb-7.5 [list-style-type:disc] list-outside max-lg:mt-4.5 max-lg:mb-[1.6875rem] 2xl:mt-5.5 2xl:mb-[2.0625rem]" data-ditto-id="style-div-25">
                         {ListRow3_data.map((d, i) => <ListRow3 key={i} d={d} styles={ListRow3_styles[i]} />)}
                       </ul>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-37">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-34">
                         {" Ein im Juli 2024 veröffentlichtes Gutachten zur Kraftwerksstrategie der BET Büro für Energiewirtschaft und technische Planung GmbH im Auftrag von NRW.Energy4Climate bestätigt, dass der bisher geplante Zubau an Kraftwerkskapazität in NRW nicht ausreichen wird, um auch nach 2030 Versorgungssicherheit zu gewährleisten. "}
                       </div>
                       {" "}
@@ -465,31 +465,31 @@ export default function Page() {
                         Energie- und Wärmestrategie NRW
                       </h3>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-11">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-18">
                         {" Am 9. September 2024 hat das Ministerium für Wirtschaft, Industrie, Klimaschutz und Energie die "}
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-heading-4" data-component="link" href="https://www.wirtschaft.nrw/jetzt-fuer-die-zukunft-land-legt-energie-und-waermestrategie-nordrhein-westfalen-vor" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-heading-4" data-component="link" href="https://www.wirtschaft.nrw/jetzt-fuer-die-zukunft-land-legt-energie-und-waermestrategie-nordrhein-westfalen-vor" rel="noopener" target="_blank" title="externer Link">
                           {"Energie- und Wärmestrategie "}
                         </a>
                         {"veröffentlicht. Darin ersichtlich: "}
-                        <strong className="inline font-bold" data-ditto-id="style-span-30">
+                        <strong className="inline font-bold" data-ditto-id="style-span-23">
                           NRW steht vor einer massiven Versorgungslücke!
                         </strong>
                         {" "}
                       </div>
                       {" "}
-                      <div className="block mt-[2.1rem] mb-[1.2rem] -mx-[0.075rem] [font-family:Korb,_sans-serif] text-2xl leading-[1.8125rem] max-md:mt-7 max-md:mb-4 max-md:-mx-px max-md:text-xl max-md:leading-6 md:max-lg:mt-[1.925rem] md:max-lg:mb-[1.1rem] md:max-lg:mx-[-1.1px] md:max-lg:text-[1.375rem] md:max-lg:leading-[1.625rem] 2xl:mt-[2.45rem] 2xl:mb-[1.4rem] 2xl:-mx-[0.0875rem] 2xl:text-[1.75rem] 2xl:leading-[2.125rem]">
+                      <div className="block mt-[2.1rem] mb-[1.2rem] -mx-[0.075rem] [font-family:Korb,_sans-serif] text-2xl leading-[1.8125rem] max-md:mt-7 max-md:mb-4 max-md:-mx-px max-md:text-xl max-md:leading-6 md:max-lg:mt-[1.925rem] md:max-lg:mb-[1.1rem] md:max-lg:mx-[-1.1px] md:max-lg:text-[1.375rem] md:max-lg:leading-[1.625rem] 2xl:mt-[2.45rem] 2xl:mb-[1.4rem] 2xl:-mx-[0.0875rem] 2xl:text-[1.75rem] 2xl:leading-[2.125rem]" data-ditto-id="style-div-45">
                         {" Bewertung "}
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-25">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-19">
                         {" Die Energie- und Wärmestrategie ist keine wirkliche Strategie: Ein bloßes Auflisten von Zielen ist kein Konzept und macht noch keine Strategie aus. Die vom Land NRW vorgelegten Maßnahmen sind viel zu unkonkret und unzureichend. Mit diesen Maßnahmen wird es nicht gelingen, die massiv steigenden Energiebedarfe in 2030 und 2045 decken zu können. Der vom Land NRW geplante Zubau von Kapazitäten zur Energieerzeugung reicht nicht aus. Versorgungssicherheit steht weiterhin auf dem Spiel. Auch fehlen konkrete Schritte für eine verlässlichen Netzausbau sowie für den Wasserstoff-Hochlauf. Eklatant ist zudem, dass das Land nicht darlegt, wir die Maßnahmen finanziert werden sollen. Die IHK Köln hat bereits frühzeitig auf die Defizite der Strategie aufmerksam gemacht und ihre Positionen in einer umfangreichen "}
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-67" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6218774/4d688a48242fd652ffb05ad6de2fc2b4/stellungnahme-240726-energiewaermestrategie-data.pdf" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-72" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/6218774/4d688a48242fd652ffb05ad6de2fc2b4/stellungnahme-240726-energiewaermestrategie-data.pdf" rel="noopener" target="_blank" title="externer Link">
                           Stellungnahme
                         </a>
                         {" dargelegt. "}
                       </div>
                       {" "}
-                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-component="heading">
+                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-section-2" data-component="heading">
                         Was jetzt zu tun ist
                       </h2>
                       {" "}
@@ -498,7 +498,7 @@ export default function Page() {
                       </ul>
                       {" "}
                       <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
-                        <br className="inline" data-ditto-id="style-section-3" />
+                        <br className="inline" data-ditto-id="style-section-5" />
                         {" "}
                       </div>
                       {" "}
@@ -507,45 +507,45 @@ export default function Page() {
                   </div>
                   {" "}
                   <div className="block my-[50.9px] max-lg:hidden 2xl:my-[3.575rem]">
-                    <ul className="border-t border-solid border-t-primary block relative py-5 [list-style-type:none] list-outside" data-ditto-id="style-div-39">
-                      <li className="inline-block mr-5" data-ditto-id="style-link-14">
+                    <ul className="border-t border-solid border-t-primary block relative py-5 [list-style-type:none] list-outside" data-ditto-id="style-div-36">
+                      <li className="inline-block mr-5" data-ditto-id="style-link-15">
                         {" "}
                         <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-image-4" data-component="link" href="#" id="teilen">
                           {"teilen "}
                         </a>
                         {" "}
                       </li>
-                      <li className="inline-block mr-5" data-ditto-id="style-span-34">
+                      <li className="inline-block mr-5" data-ditto-id="style-span-28">
                         {" "}
-                        <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-28" data-component="link" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/energie/versorgungssicherheit-in-nrw-6085918" title="Dokument drucken">
+                        <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-21" data-component="link" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/energie/versorgungssicherheit-in-nrw-6085918" title="Dokument drucken">
                           {"drucken "}
                         </a>
                         {" "}
                       </li>
                     </ul>
                     {" "}
-                    <div className="block relative mt-4 -mb-13.5 2xl:mt-[1.1rem]" data-ditto-id="style-span-44">
+                    <div className="block relative mt-4 -mb-13.5 2xl:mt-[1.1rem]" data-ditto-id="style-span-40">
                       <ul className="h-[4.0625rem] inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[matrix(0.8,0,0,0.8,0,0)] origin-[227.5px_32.5px] pointer-events-none max-lg:hidden">
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-30">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-27">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
                         </li>
                         <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-heading-3">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-40" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-36" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
                         </li>
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-31">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-35" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-28">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-29" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
                         </li>
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-74">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-79">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
                         </li>
                         <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-div-32" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-div-29" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
                         </li>
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-link-15">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-image-5" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-link-16">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-image-5" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
                         </li>
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-span-41">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-27" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-span-37">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-27 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-20" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
                         </li>
                       </ul>
                       {" "}
@@ -555,23 +555,23 @@ export default function Page() {
                   {" "}
                 </main>
                 {" "}
-                <aside className="h-[46rem] block sticky top-25 max-w-[33.3333%] mb-4.5 py-5 pr-5 pl-10 self-start grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:h-[665.7px] max-lg:max-w-full max-lg:-mt-5 max-lg:p-2.5 max-lg:basis-full max-lg:static max-lg:top-auto max-lg:mb-0 max-lg:[align-self:initial] max-lg:[font-size:inherit] max-lg:leading-[inherit] md:max-lg:h-[40.8375rem] 2xl:h-[46.65rem] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-36" aria-label="Zusatzinformationen" id="sidebar" role="complementary">
+                <aside className="h-[46rem] block sticky top-25 max-w-[33.3333%] mb-4.5 py-5 pr-5 pl-10 self-start grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:h-[665.7px] max-lg:max-w-full max-lg:-mt-5 max-lg:p-2.5 max-lg:basis-full max-lg:static max-lg:top-auto max-lg:mb-0 max-lg:[align-self:initial] max-lg:[font-size:inherit] max-lg:leading-[inherit] md:max-lg:h-[40.8375rem] 2xl:h-[46.65rem] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-6" aria-label="Zusatzinformationen" id="sidebar" role="complementary">
                   <div className="block">
-                    <div className="border-b-8 border-solid border-b-accent block relative my-[3.6875rem] pt-5 pb-2.5 px-5 overflow-hidden text-lg leading-[1.6875rem] bg-border max-md:border-b-[6px] max-md:my-[2.425rem] max-md:text-base max-md:leading-6 md:max-lg:my-[3.1125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit] 2xl:my-[4.4125rem] 2xl:[font-size:inherit] 2xl:leading-[inherit]" data-ditto-id="style-div-11">
-                      <div className="block mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]" data-ditto-id="style-span-15">
+                    <div className="border-b-8 border-solid border-b-accent block relative my-[3.6875rem] pt-5 pb-2.5 px-5 overflow-hidden text-lg leading-[1.6875rem] bg-border max-md:border-b-[6px] max-md:my-[2.425rem] max-md:text-base max-md:leading-6 md:max-lg:my-[3.1125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit] 2xl:my-[4.4125rem] 2xl:[font-size:inherit] 2xl:leading-[inherit]">
+                      <div className="block mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]" data-ditto-id="style-span-7">
                         Kontakt
                       </div>
                       {" "}
-                      <div className="flex relative flex-col">
-                        <div className="block relative z-1 pb-[1.5625rem] flex-col order-[1] [pointer-events:all]" data-ditto-id="style-span-12" id="contact-6626972">
+                      <div className="flex relative flex-col" data-ditto-id="style-div-3">
+                        <div className="block relative z-1 pb-[1.5625rem] flex-col order-[1] [pointer-events:all]" id="contact-6626972">
                           <div className="block max-w-full pb-2.5 grow basis-full [pointer-events:all] md:max-lg:min-w-[calc(100%_-_444px)]" data-ditto-id="style-strong">
-                            <div className="block -mt-1.5 mb-2.5 [font-family:Korb,_sans-serif] text-xl font-semibold leading-7 [pointer-events:all] max-lg:-mt-[0.3375rem] max-lg:mb-[0.5625rem] max-md:text-lg max-lg:leading-[1.5625rem] md:max-lg:[font-size:inherit] 2xl:-mt-[0.4125rem] 2xl:mb-[0.6875rem] 2xl:text-[1.375rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-link-16">
+                            <div className="block -mt-1.5 mb-2.5 [font-family:Korb,_sans-serif] text-xl font-semibold leading-7 [pointer-events:all] max-lg:-mt-[0.3375rem] max-lg:mb-[0.5625rem] max-md:text-lg max-lg:leading-[1.5625rem] md:max-lg:[font-size:inherit] 2xl:-mt-[0.4125rem] 2xl:mb-[0.6875rem] 2xl:text-[1.375rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-link-17">
                               Julia Heidkamp
                             </div>
                             {" Wirtschaft und Politik "}
-                            <br className="inline [pointer-events:all]" data-ditto-id="style-span-13" />
+                            <br className="inline [pointer-events:all]" data-ditto-id="style-span-14" />
                             {" "}
-                            <ul className="block mt-5 -mx-[0.3375rem] [list-style-type:none] list-outside [pointer-events:all] max-md:mt-[1.1rem] max-md:-mx-[0.3rem]" data-ditto-id="style-strong-4">
+                            <ul className="block mt-5 -mx-[0.3375rem] [list-style-type:none] list-outside [pointer-events:all] max-md:mt-[1.1rem] max-md:-mx-[0.3rem]" data-ditto-id="style-strong-3">
                               {ListRow4_data.map((d, i) => <ListRow4 key={i} d={d} styles={ListRow4_styles[i]} />)}
                             </ul>
                             {" "}
@@ -583,13 +583,13 @@ export default function Page() {
                       {" "}
                     </div>
                     {" "}
-                    <article className="block mt-12" data-ditto-id="style-strong-3">
-                      <div className="block" data-ditto-id="style-div-42">
-                        <div className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]" data-ditto-id="style-br-5">
+                    <article className="block mt-12" data-ditto-id="style-strong-2">
+                      <div className="block" data-ditto-id="style-div-39">
+                        <div className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]">
                           Weitere Informationen
                         </div>
                         {" "}
-                        <ul className="block my-[1.0625rem] [list-style-type:none] list-outside max-lg:my-4.5 2xl:my-4.5" data-ditto-id="style-div-75">
+                        <ul className="block my-[1.0625rem] [list-style-type:none] list-outside max-lg:my-4.5 2xl:my-4.5">
                           {ListRow5_data.map((d, i) => <ListRow5 key={i} d={d} styles={ListRow5_styles[i]} />)}
                         </ul>
                         {" "}
@@ -608,27 +608,27 @@ export default function Page() {
                     {"teilen "}
                   </a>
                   <div className="block relative -mb-13.5">
-                    <ul className="inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[none] pointer-events-none max-md:h-10.5 max-md:-mb-2.5 max-md:-ml-2.5 max-lg:transform-[matrix(0.8,0,0,0.8,0,0)] max-md:origin-[147px_21px] md:max-lg:h-[4.0625rem] md:max-lg:origin-[227.5px_32.5px] 2xl:hidden" data-ditto-id="style-li-17">
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-13">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-li-7" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
+                    <ul className="inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[none] pointer-events-none max-md:h-10.5 max-md:-mb-2.5 max-md:-ml-2.5 max-lg:transform-[matrix(0.8,0,0,0.8,0,0)] max-md:origin-[147px_21px] md:max-lg:h-[4.0625rem] md:max-lg:origin-[227.5px_32.5px] 2xl:hidden" data-ditto-id="style-li-9">
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-10">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-li-15" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
                       </li>
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-5">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-li-12" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-2">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-li-2" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
                       </li>
                       <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-3">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-li-2" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-li-10" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
                       </li>
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-6">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-sidebar" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-a-4">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
                       </li>
                       <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-div-55">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-div-64" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-div-2" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
                       </li>
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-div-43">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-div-40">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
                       </li>
                       <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-contact-6786902">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-27 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
                       </li>
                     </ul>
                     {" "}
@@ -643,17 +643,17 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-image-11">
-          <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-            <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-div-72">
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-br-7">
+        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-image-12">
+          <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-80">
+            <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-div-76">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-br-9">
                 <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]">
                   Wie können wir Ihnen helfen?
                 </p>
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-li-13">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-li-16">
                 <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-footer-imprint-item0">
                   Unsere Anschrift:
                 </div>
@@ -663,11 +663,11 @@ export default function Page() {
                     {" Industrie- und Handelskammer zu Köln "}
                     <br className="inline" />
                     {" Unter Sachsenhausen 5–7"}
-                    <br className="inline" data-ditto-id="style-link-9" />
+                    <br className="inline" data-ditto-id="style-link-10" />
                     {"(Eingang: Komödienstraße 18–24) "}
-                    <br className="inline" data-ditto-id="style-article" />
+                    <br className="inline" data-ditto-id="style-article-2" />
                     {" 50667 Köln "}
-                    <br className="inline" data-ditto-id="style-div-33" />
+                    <br className="inline" data-ditto-id="style-div-30" />
                     {" "}
                   </a>
                   {" "}
@@ -675,28 +675,28 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-div-65">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-div-67">
                 <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-ul-4">
                   So erreichen Sie uns:
                 </div>
                 {" "}
-                <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]">
-                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-div-23">
+                <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]" data-ditto-id="style-image-10">
+                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-div-20">
                     <span className="w-0 h-0 block absolute top-[567.5875rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" id="desc-mail-footer">
                       Email
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-div-68" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-div-73" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
                       service@koeln.ihk.de
                     </a>
                     {" "}
                   </li>
-                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-div-24">
-                    <span className="w-0 h-0 block absolute top-[569.8375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-73" id="desc-tel">
+                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-div-21">
+                    <span className="w-0 h-0 block absolute top-[569.8375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-77" id="desc-tel">
                       Telefonnummer
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-button-7" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-button-4" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
                       0221 1640-0
                     </a>
                     {" "}
@@ -707,12 +707,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-div-25">
-              <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5" data-ditto-id="style-br-2">
-                <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5" data-ditto-id="style-partners-2">
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-div-26">
+            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-div-22">
+              <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5" data-ditto-id="style-br-7">
+                <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5" data-ditto-id="style-partners">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-div-23">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-div-12" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-div-4" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Facebook
                       </span>
@@ -720,10 +720,10 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul-5">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul-3">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-18 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-8" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-34">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-21" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-31">
                         Youtube
                       </span>
                       {" "}
@@ -732,18 +732,18 @@ export default function Page() {
                   </li>
                   <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-gfi-document-id-mobil">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-mobile-teilen" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-2">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-21 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-mobile-teilen" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Instagram
                       </span>
                       {" "}
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul-6">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-3" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-a-4">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-11" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Linkedin
                       </span>
                       {" "}
@@ -757,25 +757,25 @@ export default function Page() {
             </div>
             {" "}
             <div className="flex -mx-5 flex-wrap text-right max-lg:-mx-2.5">
-              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-a-7">
-                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-li-22">
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-a-8">
+              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-a-5">
+                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-li-26">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-a-6">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-li-15" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-li-18" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
                       Gebärdensprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-a-12">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-li-25" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-li-29" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
                       Leichte Sprache
                     </a>
                     {" "}
                   </li>
                   <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-li-26" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-li-30" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
                       Erklärung zur Barrierefreiheit
                     </a>
                     {" "}
@@ -787,14 +787,14 @@ export default function Page() {
             </div>
             {" "}
             <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]">
-              <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" data-ditto-id="style-li-18">
-                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-a-12">
+              <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" data-ditto-id="style-li-22">
+                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-a-11">
                   © 2026 Industrie- und Handelskammer zu Köln
                 </div>
                 <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-footer" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                   Vertrag widerrufen
                 </a>
-                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-46" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                   Vertrag kündigen
                 </a>
                 {" "}
@@ -811,12 +811,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-76">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]">
               <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-ditto-id="style-p" data-component="nav" aria-label="Navigation Fußzeile">
                 <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden" data-ditto-id="style-link-19">
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-br-4">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-br-8">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-br-6" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-br-4" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
                       Impressum
                     </a>
                     {" "}
@@ -828,9 +828,9 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-div-14">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-69" data-component="link" href="#">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-5" data-component="link" href="#">
                       Erneuern oder ändern Sie Ihre Cookie-Einwilligung
                     </a>
                     {" "}
@@ -847,23 +847,23 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-ul-9" id="gfiUserlikeCustomButton" />
+      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-ul-7" id="gfiUserlikeCustomButton" />
       {" "}
-      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-li-9">
+      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-li-12">
         {" "}
-        <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" data-ditto-id="style-desc-mail-footer" aria-label="Zustimmung ändern" role="complementary">
-          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-12)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-link-20" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
-            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-li-10" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
+        <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" aria-label="Zustimmung ändern" role="complementary">
+          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-14)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-link-20" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
+            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-li-19" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
             {" "}
           </button>
           {" "}
         </div>
         {" "}
       </div>
-      <div className="block" data-ditto-id="style-desc-tel">
-        <aside className="block" data-ditto-id="style-link-3" aria-label="Chat">
+      <div className="block">
+        <aside className="block" data-ditto-id="style-link-21" aria-label="Chat">
           <div className="block" />
-          <div className="block" data-ditto-id="style-div-13" />
+          <div className="block" />
         </aside>
         <div className="block" />
       </div>

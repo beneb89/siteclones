@@ -31,22 +31,22 @@
   --color-clr-9: var(--clr-9);
   --color-clr-10: var(--clr-10);
   --color-clr-11: var(--clr-11);
-  --color-color-002: var(--color-002);
   --color-color-003: var(--color-003);
   --color-clr-12: var(--clr-12);
   --color-clr-13: var(--clr-13);
-  --color-color-004: var(--color-004);
+  --color-color-002: var(--color-002);
   --color-clr-14: var(--clr-14);
   --color-clr-15: var(--clr-15);
+  --color-color-004: var(--color-004);
   --color-clr-16: var(--clr-16);
   --color-clr-17: var(--clr-17);
   --color-clr-18: var(--clr-18);
   --color-clr-19: var(--clr-19);
   --color-clr-20: var(--clr-20);
-  --color-primary: var(--primary);
   --color-clr-21: var(--clr-21);
-  --color-surface: var(--surface);
   --color-clr-22: var(--clr-22);
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
   --color-clr-23: var(--clr-23);
   --color-clr-24: var(--clr-24);
   --color-clr-25: var(--clr-25);
@@ -54,8 +54,9 @@
   --color-clr-27: var(--clr-27);
   --color-clr-28: var(--clr-28);
   --color-clr-29: var(--clr-29);
-  --color-color-005: var(--color-005);
   --color-clr-30: var(--clr-30);
+  --color-color-005: var(--color-005);
+  --color-clr-31: var(--clr-31);
 }
 
 /* Design tokens (values). */
@@ -104,14 +105,15 @@
   --line-height-005: 14.4px;
   --line-height-006: 0px;
   --line-height-007: 14px;
-  --line-height-008: 18.2px;
-  --line-height-009: 28px;
+  --line-height-008: 28px;
+  --line-height-009: 18.2px;
   --line-height-010: 20px;
   --line-height-011: 43.2px;
   --line-height-012: 36px;
   --line-height-013: 19.2px;
-  --line-height-014: 27px;
-  --line-height-015: 28.8px;
+  --line-height-014: 23.8px;
+  --line-height-015: 27px;
+  --line-height-016: 28.8px;
   /* spacing */
   --space-001: -7px;
   --space-002: -5px;
@@ -170,28 +172,29 @@
   --clr-6: rgba(0, 0, 0, 0);
   --clr-7: rgba(0, 0, 0, 0.024);
   --clr-8: rgba(0, 0, 0, 0.1);
-  --clr-9: rgba(128, 128, 128, 0.05);
-  --clr-10: rgba(0, 0, 0, 0.2);
-  --clr-11: rgba(255, 255, 255, 0.7);
-  --clr-12: rgba(0, 0, 0, 0.5);
-  --clr-13: rgba(0, 0, 0, 0.15);
-  --clr-14: rgba(255, 255, 255, 0.75);
-  --clr-15: rgb(75, 164, 144);
-  --clr-16: rgb(175, 204, 122);
-  --clr-17: rgb(24, 119, 242);
-  --clr-18: rgb(255, 0, 0);
-  --clr-19: rgb(221, 48, 118);
-  --clr-20: rgb(40, 103, 178);
-  --clr-21: rgba(0, 51, 102, 0);
-  --clr-22: rgb(16, 20, 25);
-  --clr-23: rgb(18, 101, 103);
-  --clr-24: rgb(37, 211, 102);
-  --clr-25: rgb(5, 166, 63);
-  --clr-26: rgb(0, 136, 204);
-  --clr-27: rgb(46, 133, 51);
-  --clr-28: rgb(176, 196, 214);
-  --clr-29: rgb(220, 68, 21);
-  --clr-30: rgb(213, 64, 72);
+  --clr-9: rgba(0, 0, 0, 0.2);
+  --clr-10: rgb(3, 151, 223);
+  --clr-11: rgb(2, 117, 173);
+  --clr-12: rgba(128, 128, 128, 0.05);
+  --clr-13: rgba(255, 255, 255, 0.7);
+  --clr-14: rgba(0, 0, 0, 0.5);
+  --clr-15: rgba(0, 0, 0, 0.15);
+  --clr-16: rgba(255, 255, 255, 0.75);
+  --clr-17: rgb(75, 164, 144);
+  --clr-18: rgb(175, 204, 122);
+  --clr-19: rgb(24, 119, 242);
+  --clr-20: rgb(255, 0, 0);
+  --clr-21: rgb(221, 48, 118);
+  --clr-22: rgb(40, 103, 178);
+  --clr-23: rgb(16, 20, 25);
+  --clr-24: rgb(18, 101, 103);
+  --clr-25: rgb(37, 211, 102);
+  --clr-26: rgb(5, 166, 63);
+  --clr-27: rgb(0, 136, 204);
+  --clr-28: rgb(46, 133, 51);
+  --clr-29: rgb(176, 196, 214);
+  --clr-30: rgb(220, 68, 21);
+  --clr-31: rgb(213, 64, 72);
 }
 
 @layer base {

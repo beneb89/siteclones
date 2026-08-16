@@ -45,70 +45,70 @@ const ListRow3_data = [
     { href: "https://www.ihk.de/blueprint/vcard/?contentId=5116530", label: " ", label2: "Kontakt speichern" }
 ];
 const ListRow_meta: string[][] = [
-    ["n49", "style-section"],
-    ["style-div-40", "n52"],
+    ["n49", "style-section-3"],
+    ["style-div-37", "n52"],
     ["style-zoom", "style-image-6"],
-    ["style-span-19", "style-div-71"],
+    ["style-span-11", "style-div-75"],
     ["n57", "style-span"],
-    ["n59", "style-div-45"],
-    ["style-div-46", "style-link-24"],
-    ["style-image-7", "style-span-38"],
+    ["n59", "style-div-43"],
+    ["style-div-44", "style-link-24"],
+    ["style-image-7", "style-span-34"],
     ["n65", "n66"],
     ["n67", "n68"],
     ["n69", "n70"],
     ["n71", "style-div"],
-    ["style-span-42", "style-section-2"],
-    ["n75", "style-div-80"],
-    ["style-link", "style-image-8"],
-    ["style-span-20", "n80"],
-    ["style-span-43", "style-div-19"],
-    ["n83", "style-span-21"],
+    ["style-span-38", "style-section-4"],
+    ["n75", "n76"],
+    ["style-link-11", "style-image-8"],
+    ["style-span-12", "n80"],
+    ["style-span-39", "style-div-16"],
+    ["n83", "style-span-13"],
     ["n85", "n86"],
-    ["style-div-20", "style-div-41"],
-    ["style-link-10", "style-image-9"],
-    ["style-span-2", "style-span-17"],
-    ["n93", "style-div-21"]
+    ["style-div-17", "style-div-38"],
+    ["style-link-12", "style-image-9"],
+    ["style-span-42", "style-span-9"],
+    ["n93", "style-div-18"]
 ];
 const ListRow2_meta: string[][] = [
-    ["style-span-39", "style-span-23", "style-div-47", "n111"],
-    ["n112", "style-br-3", "n114", "n115"],
-    ["style-div-54", "style-div-28", "style-link-12", "style-image-2"],
-    ["n120", "style-span-24", "n122", "style-div-37"],
-    ["n124", "style-span-11", "style-heading-4", "style-span-30"],
-    ["n128", "style-span-25", "style-div-67", "n131"],
-    ["n132", "style-div-29", "style-link-13", "style-image-3"],
-    ["style-span-31", "style-span-26", "n138", "style-div-38"],
-    ["n140", "style-section-3", "n142", "style-div-39"]
+    ["style-span-35", "style-span-16", "style-div-71", "n111"],
+    ["n112", "style-br-6", "n114", "n115"],
+    ["style-div-54", "style-div-25", "style-link-14", "style-image-3"],
+    ["n120", "style-span-17", "n122", "style-div-34"],
+    ["n124", "style-span-18", "style-heading-4", "style-span-23"],
+    ["style-div-45", "style-span-19", "style-div-72", "style-section-2"],
+    ["n132", "style-div-26", "style-link-8", "style-image"],
+    ["style-span-24", "style-span-5", "n138", "style-div-35"],
+    ["n140", "style-section-5", "n142", "style-div-36"]
 ];
 const ListRow3_meta: string[][] = [
-    ["n175", "style-link-17"],
-    ["style-span-16", "style-strong-2"],
-    ["style-span-14", "style-strong-3"]
+    ["n175", "style-link-2"],
+    ["style-span-8", "n178"],
+    ["style-span-32", "style-strong-2"]
 ];
 const ListRow_styles = [
     { className2: "text-background before:inset-0 before:h-10.5 before:bg-foreground" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" },
-    { className: "before:content-[''] before:block before:absolute before:top-10 before:-right-250 before:bottom-0 before:left-7 before:w-250 before:h-0.5 before:bg-clr-28 max-md:before:left-[33.7px]", className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-28" }
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" },
+    { className: "before:content-[''] before:block before:absolute before:top-10 before:-right-250 before:bottom-0 before:left-7 before:w-250 before:h-0.5 before:bg-clr-29 max-md:before:left-[33.7px]", className2: "before:top-10 before:bottom-0 before:inset-x-0 before:h-0.5 before:bg-clr-29" }
 ];
 const ListRow2_styles = [
     { className: "before:inset-y-0.5 before:right-52 max-md:before:inset-y-[3.7px] max-md:before:right-[11.8125rem] md:max-lg:before:right-[11.6875rem] 2xl:before:right-[14.0625rem]" },
@@ -142,13 +142,13 @@ export default function Page() {
           {" "}
           <ul className="flex my-5 items-center [list-style-type:none] list-outside max-md:invisible max-md:opacity-0 max-lg:my-4.5 max-md:pointer-events-none 2xl:my-5.5">
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-8" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-7" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
                 Login
               </a>
               {" "}
             </li>
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                 Kontakt
               </a>
               {" "}
@@ -197,7 +197,7 @@ export default function Page() {
                   </a>
                   {" "}
                 </li>
-                <li className="inline-block before:content-[''] before:inline-block before:relative before:inset-0 before:w-5 before:h-7.5 before:-mt-px before:mr-1.5 before:ml-[0.1875rem] before:text-foreground before:text-xl before:leading-7.5 max-md:before:w-4.5 max-md:before:h-[1.6875rem] max-md:before:text-lg max-md:before:leading-[1.6875rem]" data-ditto-id="style-li-14">
+                <li className="inline-block before:content-[''] before:inline-block before:relative before:inset-0 before:w-5 before:h-7.5 before:-mt-px before:mr-1.5 before:ml-[0.1875rem] before:text-foreground before:text-xl before:leading-7.5 max-md:before:w-4.5 max-md:before:h-[1.6875rem] max-md:before:text-lg max-md:before:leading-[1.6875rem]" data-ditto-id="style-li-17">
                   {" "}
                   <a className="inline -mx-0.5 py-0.5 px-1 rounded-sm underline cursor-pointer" data-ditto-id="style-breadcrumb-item2" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/beratung-und-services/digitale-services" id="breadcrumb-item2">
                     {" Digitale Services "}
@@ -216,9 +216,9 @@ export default function Page() {
             </section>
             {" "}
           </div>
-          <div className="block" data-ditto-id="style-div-18">
+          <div className="block" data-ditto-id="style-div-15">
             <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-              <div className="flex -mx-5 flex-wrap items-start max-lg:-mx-2.5" data-ditto-id="style-div-35">
+              <div className="flex -mx-5 flex-wrap items-start max-lg:-mx-2.5" data-ditto-id="style-div-32">
                 <main className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" id="main" role="main">
                   <div className="block mb-[50.9px] max-md:mb-[2.5625rem] md:max-lg:mb-[2.9125rem] 2xl:mb-[3.575rem]">
                     <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem]" data-ditto-id="style-heading">
@@ -230,66 +230,66 @@ export default function Page() {
                     </h1>
                     {" "}
                     <div className="block mt-[2.85rem] mb-[3.475rem] overflow-hidden max-md:mt-[27.5px] max-md:mb-[37.5px] md:max-lg:mt-[2.2125rem] md:max-lg:mb-[2.8375rem] 2xl:mt-[3.65rem] 2xl:mb-[4.275rem]">
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-78">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-84">
                         Sie benötigen eine Bescheinigung Ihrer IHK-Mitgliedschaft? Sie möchten Ihren gesetzlichen IHK-Beitrag neu berechnen lassen, weil sich die Voraussetzungen geändert haben? Sie möchten für Ihre Mitarbeitenden oder Ihre Firma eine Jubiläumsurkunde bestellen? Hier f
-                        <span className="inline" data-ditto-id="style-div-4">
+                        <span className="inline" data-ditto-id="style-div-8">
                           inden Sie digitale Anträge zu Leistungen und Services der IHK Köln. Einfach online ausfüllen und abschicken.
                         </span>
                       </div>
                       {" "}
                       <div className="block relative my-12 p-10.5 rounded-2xl overflow-hidden bg-surface max-md:my-9 max-md:py-8 max-md:px-4 max-md:rounded-lg md:max-lg:my-[2.95rem] 2xl:my-[3.275rem] after:content-[''] after:block after:absolute after:top-41.5 after:bottom-0 after:inset-x-0 after:h-2 after:bg-accent max-md:after:top-[12.0625rem] max-md:after:h-1.5 md:max-lg:after:top-32.5 2xl:after:top-35.5">
                         {"Weitere Unterlagen und Formulare zu Aus-, Weiter- und Fortbildungsprüfungen finden Sie auf unserem "}
-                        <a className="inline relative -my-2 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer max-lg:-my-[0.45rem] 2xl:-my-[0.55rem] after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-6" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -my-2 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer max-lg:-my-[0.45rem] 2xl:-my-[0.55rem] after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-div-9" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" rel="noopener" target="_blank" title="externer Link">
                           Onlineportal Bildung (Tibros)
                         </a>
                       </div>
                       {" "}
                       <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-figure">
-                        <strong className="inline font-bold" data-ditto-id="style-div-7">
+                        <strong className="inline font-bold" data-ditto-id="style-div-10">
                           {"Bei Fragen wenden Sie sich gerne an unser Kundendialog-Center: +49 221 1640-0, "}
                         </strong>
-                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-27 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-iframe" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="externer Link">
+                        <a className="inline relative -mb-0.5 -mx-px pr-[0.3125rem] pb-0.5 pl-[0.4375rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface cursor-pointer after:content-[''] after:ml-[0.1875rem] after:text-clr-28 after:text-lg after:leading-[1.6875rem]" data-ditto-id="style-iframe" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="externer Link">
                           <strong className="inline font-bold" data-ditto-id="style-figcaption">
                             service@koeln.ihk.de
                           </strong>
                         </a>
                       </div>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-18">
-                        <br className="inline" data-ditto-id="style-span-8" />
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-span-10">
+                        <br className="inline" data-ditto-id="style-span-3" />
                       </div>
                       {" "}
                     </div>
                     {" "}
-                    <article className="block" data-ditto-id="style-div-70">
-                      <ul className="w-[728.7px] h-14.5 flex sticky top-[6.3125rem] z-2 -ml-0.5 pt-2.5 flex-wrap items-end overflow-hidden [list-style-type:disc] list-outside bg-background shadow-[var(--background)_0px_-2px_0px_0px] max-md:w-[21.0625rem] max-md:h-38.5 max-md:top-20 md:max-lg:w-177.5 md:max-lg:top-25 2xl:w-220.5" data-ditto-id="style-span-9" id="list_letters">
+                    <article className="block" data-ditto-id="style-div-74">
+                      <ul className="w-[728.7px] h-14.5 flex sticky top-[6.3125rem] z-2 -ml-0.5 pt-2.5 flex-wrap items-end overflow-hidden [list-style-type:disc] list-outside bg-background shadow-[var(--background)_0px_-2px_0px_0px] max-md:w-[21.0625rem] max-md:h-38.5 max-md:top-20 md:max-lg:w-177.5 md:max-lg:top-25 2xl:w-220.5" data-ditto-id="style-span-4" id="list_letters">
                         {ListRow_data.map((d, i) => <ListRow key={i} d={d} styles={ListRow_styles[i]} />)}
                       </ul>
-                      <div className="flex relative flex-col">
+                      <div className="flex relative flex-col" data-ditto-id="style-div-78">
                         <div className="block relative top-2.5 -bottom-2.5 z-1 order-[1] [pointer-events:all] max-lg:top-[0.5625rem] max-lg:-bottom-[0.5625rem] 2xl:top-[0.6875rem] 2xl:-bottom-[0.6875rem]">
                           <div className="block mt-0.5 mb-[50.9px] [pointer-events:all] max-md:mb-[2.5625rem] md:max-lg:mb-[2.9125rem] 2xl:mb-[3.575rem]" data-ditto-id="style-heading-2">
-                            <ul className="border-b border-solid border-b-clr-28 block relative [list-style-type:none] list-outside [pointer-events:all]" data-ditto-id="style-span-29">
-                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-div-22">
-                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-50 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:inset-y-[3.7px] max-md:before:right-[11.1875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[11.0625rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-54" data-ditto-id="style-span-22" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/ihre-ihk/online-antraege-beitrag/beitragsabgrenzung-6156208">
+                            <ul className="border-b border-solid border-b-clr-29 block relative [list-style-type:none] list-outside [pointer-events:all]" data-ditto-id="style-span-22">
+                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-div-19">
+                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-50 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:inset-y-[3.7px] max-md:before:right-[11.1875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[11.0625rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-54" data-ditto-id="style-span-15" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/ihre-ihk/online-antraege-beitrag/beitragsabgrenzung-6156208">
                                   Abgrenzung IHK/HWK
                                 </a>
                                 {" "}
-                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-36">
-                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]">
+                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-33">
+                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-section">
                                     Sie sind Mitglied bei der Handwerkskammer? Nutzen Sie den Antrag für gemischt-gewerbliche Firmen und Kleingewerbebetriebe.
                                   </div>
                                   {" "}
                                 </div>
                                 {" "}
                               </li>
-                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5">
-                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-[30.8125rem] before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-112 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-135" data-ditto-id="style-div-27" data-component="link" href="https://outlook.office365.com/book/AnerkennungauslndischerBerufsabschlsse@koelnihkde.onmicrosoft.com/" rel="noopener" target="_blank" title="externer Link">
+                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-div-13">
+                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-[30.8125rem] before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-112 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-135" data-ditto-id="style-div-24" data-component="link" href="https://outlook.office365.com/book/AnerkennungauslndischerBerufsabschlsse@koelnihkde.onmicrosoft.com/" rel="noopener" target="_blank" title="externer Link">
                                   Anerkennung ausländischer Berufsabschlüsse (Bookings)
                                 </a>
                                 {" "}
-                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-link-11">
-                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-image">
-                                    <span className="inline [pointer-events:all]" data-ditto-id="style-span-37">
+                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-link-13">
+                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-image-2">
+                                    <span className="inline [pointer-events:all]" data-ditto-id="style-span-31">
                                       Wir unterstützen und beraten Sie bei der Anerkennung Ihrer Berufsabschlüsse. Wir bieten Ihnen auch einen Erst-Check der Qualifikationen geflüchteter Menschen.
                                     </span>
                                   </div>
@@ -298,14 +298,14 @@ export default function Page() {
                                 {" "}
                               </li>
                               {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} styles={ListRow2_styles[i]} />)}
-                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-link-14">
+                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-link-15">
                                 <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-[23.9375rem] before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-86 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-103" data-ditto-id="style-image-4" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/weiterbildung/zweitschrift-ausbildungszeugnis-5482560">
                                   Ausbildungszeugnis: Antrag auf Zweitschrift
                                 </a>
                                 {" "}
-                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-34">
-                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-span-28">
-                                    <span className="inline [pointer-events:all]" data-ditto-id="style-span-44">
+                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-28">
+                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-span-21">
+                                    <span className="inline [pointer-events:all]" data-ditto-id="style-span-40">
                                       Ihr Prüfungszeugnis ist abhanden gekommen und Sie benötigen eine Zweitschrift? Nutzen Sie unseren Service und beantragen Sie eine Zweitschrift Ihres Ausbildungszeugnisses.
                                     </span>
                                   </div>
@@ -314,7 +314,7 @@ export default function Page() {
                                 {" "}
                               </li>
                               <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5">
-                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-160.5 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-143.5 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-[43.4375rem]" data-ditto-id="style-div-30" data-component="link" href="https://outlook.office.com/book/InformationenzurBeschftigungauslndischerArbeitnehmer@koelnihkde.onmicrosoft.com/" rel="noopener" target="_blank" title="externer Link">
+                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-160.5 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-143.5 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-[43.4375rem]" data-ditto-id="style-div-27" data-component="link" href="https://outlook.office.com/book/InformationenzurBeschftigungauslndischerArbeitnehmer@koelnihkde.onmicrosoft.com/" rel="noopener" target="_blank" title="externer Link">
                                   Ausländische Arbeitnehmer/innen: Vereinbaren Sie einen Beratungstermin
                                 </a>
                                 {" "}
@@ -326,13 +326,13 @@ export default function Page() {
                                 </div>
                                 {" "}
                               </li>
-                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-span-40">
-                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-123 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[27.9375rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-134.5" data-ditto-id="style-div-31" data-component="link" href="https://outlook.office365.com/book/AnerkennungauslndischerBerufsabschlsse@koelnihkde.onmicrosoft.com/" rel="noopener" target="_blank" title="externer Link">
+                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-span-36">
+                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-123 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[27.9375rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-134.5" data-ditto-id="style-div-28" data-component="link" href="https://outlook.office365.com/book/AnerkennungauslndischerBerufsabschlsse@koelnihkde.onmicrosoft.com/" rel="noopener" target="_blank" title="externer Link">
                                   Ausländische Berufsabschlüsse: Anerkennung (Bookings)
                                 </a>
                                 {" "}
-                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-35">
-                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-74">
+                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-29">
+                                  <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-79">
                                     <span className="inline [pointer-events:all]">
                                       Wir unterstützen und beraten Sie bei der Anerkennung Ihrer Berufsabschlüsse. Wir bieten Ihnen auch einen Erst-Check der Qualifikationen geflüchteter Menschen.
                                     </span>
@@ -342,11 +342,11 @@ export default function Page() {
                                 {" "}
                               </li>
                               <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5">
-                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-86.5 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:inset-y-[3.7px] max-md:before:right-[19.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[19.5625rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-[23.4375rem]" data-ditto-id="style-div-32" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/auszubildende/auslandsaufenthalte-fuer-auszubildende-5065258">
+                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-86.5 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:inset-y-[3.7px] max-md:before:right-[19.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[19.5625rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-[23.4375rem]" data-ditto-id="style-div-29" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/auszubildende/auslandsaufenthalte-fuer-auszubildende-5065258">
                                   Auslands­aufenthalte für Auszubildende
                                 </a>
                                 {" "}
-                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-link-15">
+                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-link-16">
                                   <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-image-5">
                                     Die Mobilitätsberatung der IHK Köln berät rund um das Thema „Auslandsaufenthalte für Auszubildende und junge Fachkräfte“
                                   </div>
@@ -354,12 +354,12 @@ export default function Page() {
                                 </div>
                                 {" "}
                               </li>
-                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-span-41">
-                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-98.5 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[22.1875rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-[26.8125rem]" data-ditto-id="style-span-27" data-component="link" href="https://tibros.ihk-koeln.de/tibrosBB/BB_auszubildende.jsp" rel="noopener" target="_blank" title="externer Link">
+                              <li className="block relative mb-2 pl-9.5 [pointer-events:all] max-md:mb-1 max-lg:pl-7.5 after:content-[''] after:hidden after:absolute after:top-3 after:left-0 after:w-2 after:h-2 after:rounded-tl-[3px] max-md:after:top-2.5 max-md:after:w-1.5 max-md:after:h-1.5" data-ditto-id="style-span-37">
+                                <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-11 rounded-[3px] leading-6.5 underline cursor-pointer [pointer-events:all] max-lg:-ml-9 max-lg:pl-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.8125rem] before:content-[''] before:block before:absolute before:inset-y-0.5 before:right-98.5 before:left-[0.1875rem] before:w-7.5 before:h-7.5 before:text-foreground before:text-3xl before:leading-7.5 before: before:origin-[15px_15px] max-md:before:top-[3.7px] max-md:before:right-79.5 max-md:before:bottom-[1.6875rem] max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-md:before:origin-[12px_12px] md:max-lg:before:inset-y-[2.7px] md:max-lg:before:right-[22.1875rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 md:max-lg:before:origin-[13px_13px] 2xl:before:inset-y-[3.3px] 2xl:before:right-[26.8125rem]" data-ditto-id="style-span-20" data-component="link" href="https://tibros.ihk-koeln.de/tibrosBB/BB_auszubildende.jsp" rel="noopener" target="_blank" title="externer Link">
                                   Auszubildende: Onlineportal Bildung (Tibros)
                                 </a>
                                 {" "}
-                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-36">
+                                <div className="block mt-1.5 mb-3.5 text-[1.0625rem] leading-[1.625rem] [pointer-events:all] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-span-6">
                                   <div className="block mb-[0.85rem] [pointer-events:all] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]">
                                     In unserem Onlineportal Bildung finden Sie Unterlagen und Formulare zu allen Aspekten Ihrer Ausbildung.
                                   </div>
@@ -378,17 +378,17 @@ export default function Page() {
                   {" "}
                 </main>
                 {" "}
-                <aside className="h-[29.875rem] block sticky top-25 max-w-[33.3333%] mb-4.5 py-5 pr-5 pl-10 self-start grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:h-[382.3px] max-lg:max-w-full max-lg:-mt-5 max-lg:p-2.5 max-lg:basis-full max-lg:static max-lg:top-auto max-lg:mb-0 max-lg:[align-self:initial] max-lg:[font-size:inherit] max-lg:leading-[inherit] md:max-lg:h-[26.1375rem] 2xl:h-[503.3px] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-11" aria-label="Zusatzinformationen" id="sidebar" role="complementary">
-                  <div className="block" data-ditto-id="style-span-15">
-                    <div className="border-b-8 border-solid border-b-accent block relative my-[3.6875rem] pt-5 pb-2.5 px-5 overflow-hidden text-lg leading-[1.6875rem] bg-border max-md:border-b-[6px] max-md:my-[2.425rem] max-md:text-base max-md:leading-6 md:max-lg:my-[3.1125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit] 2xl:my-[4.4125rem] 2xl:[font-size:inherit] 2xl:leading-[inherit]">
-                      <div className="block mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]" data-ditto-id="style-span-12">
+                <aside className="h-[29.875rem] block sticky top-25 max-w-[33.3333%] mb-4.5 py-5 pr-5 pl-10 self-start grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:h-[382.3px] max-lg:max-w-full max-lg:-mt-5 max-lg:p-2.5 max-lg:basis-full max-lg:static max-lg:top-auto max-lg:mb-0 max-lg:[align-self:initial] max-lg:[font-size:inherit] max-lg:leading-[inherit] md:max-lg:h-[26.1375rem] 2xl:h-[503.3px] 2xl:text-lg 2xl:leading-[1.6875rem]" aria-label="Zusatzinformationen" id="sidebar" role="complementary">
+                  <div className="block" data-ditto-id="style-span-7">
+                    <div className="border-b-8 border-solid border-b-accent block relative my-[3.6875rem] pt-5 pb-2.5 px-5 overflow-hidden text-lg leading-[1.6875rem] bg-border max-md:border-b-[6px] max-md:my-[2.425rem] max-md:text-base max-md:leading-6 md:max-lg:my-[3.1125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit] 2xl:my-[4.4125rem] 2xl:[font-size:inherit] 2xl:leading-[inherit]" data-ditto-id="style-div-3">
+                      <div className="block mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]">
                         Kontakt
                       </div>
                       {" "}
                       <div className="flex relative flex-col" data-ditto-id="style-strong">
-                        <div className="block relative z-1 pb-[1.5625rem] flex-col order-[1] [pointer-events:all]" data-ditto-id="style-link-16" id="contact-5116530">
-                          <div className="block max-w-full pb-2.5 grow basis-full [pointer-events:all] md:max-lg:min-w-[calc(100%_-_444px)]" data-ditto-id="style-span-13">
-                            <div className="block -mt-1.5 mb-2.5 [font-family:Korb,_sans-serif] text-xl font-semibold leading-7 [pointer-events:all] max-lg:-mt-[0.3375rem] max-lg:mb-[0.5625rem] max-md:text-lg max-lg:leading-[1.5625rem] md:max-lg:[font-size:inherit] 2xl:-mt-[0.4125rem] 2xl:mb-[0.6875rem] 2xl:text-[1.375rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-strong-4">
+                        <div className="block relative z-1 pb-[1.5625rem] flex-col order-[1] [pointer-events:all]" data-ditto-id="style-link-17" id="contact-5116530">
+                          <div className="block max-w-full pb-2.5 grow basis-full [pointer-events:all] md:max-lg:min-w-[calc(100%_-_444px)]" data-ditto-id="style-span-14">
+                            <div className="block -mt-1.5 mb-2.5 [font-family:Korb,_sans-serif] text-xl font-semibold leading-7 [pointer-events:all] max-lg:-mt-[0.3375rem] max-lg:mb-[0.5625rem] max-md:text-lg max-lg:leading-[1.5625rem] md:max-lg:[font-size:inherit] 2xl:-mt-[0.4125rem] 2xl:mb-[0.6875rem] 2xl:text-[1.375rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-strong-3">
                               Kundendialog-Center
                             </div>
                             {" "}
@@ -412,8 +412,8 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="hidden pt-2.5 px-2.5 grow basis-full max-lg:block after:content-[''] after:block after:relative after:w-full max-lg:after:inset-0 max-lg:after:h-0" data-ditto-id="style-div-42">
-              <section className="border border-solid border-primary block float-right mt-[0.9375rem] mr-2 -ml-1 pt-1.5 pb-[0.3125rem] px-3 rounded-[50px] text-lg leading-5 tracking-[0.27px] max-lg:[font-size:inherit]" data-ditto-id="style-br-5" aria-label="Dokumentennummer" id="gfi-document-id-mobil">
+            <div className="hidden pt-2.5 px-2.5 grow basis-full max-lg:block after:content-[''] after:block after:relative after:w-full max-lg:after:inset-0 max-lg:after:h-0" data-ditto-id="style-div-39">
+              <section className="border border-solid border-primary block float-right mt-[0.9375rem] mr-2 -ml-1 pt-1.5 pb-[0.3125rem] px-3 rounded-[50px] text-lg leading-5 tracking-[0.27px] max-lg:[font-size:inherit]" aria-label="Dokumentennummer" id="gfi-document-id-mobil">
                 Nr. 6308924
               </section>
             </div>
@@ -421,23 +421,23 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-div-75">
-          <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-            <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-li-24">
+        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]">
+          <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-ul-8">
+            <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-li-28">
               <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-teilen">
-                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-li-27">
+                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-li-31">
                   Wie können wir Ihnen helfen?
                 </p>
                 {" "}
               </div>
               {" "}
               <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-link-18">
-                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-div-63">
+                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-div-66">
                   Unsere Anschrift:
                 </div>
                 {" "}
-                <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-ul-7">
-                  <a className="inline underline cursor-pointer" data-ditto-id="style-li-11" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
+                <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-ul-5">
+                  <a className="inline underline cursor-pointer" data-ditto-id="style-li-14" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
                     {" Industrie- und Handelskammer zu Köln "}
                     <br className="inline" />
                     {" Unter Sachsenhausen 5–7"}
@@ -454,27 +454,27 @@ export default function Page() {
               </div>
               {" "}
               <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5">
-                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-li-17">
+                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-li-9">
                   So erreichen Sie uns:
                 </div>
                 {" "}
-                <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]" data-ditto-id="style-a-13">
-                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-li-7">
-                    <span className="w-0 h-0 block absolute top-[184.5875rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-a-5" id="desc-mail-footer">
+                <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]" data-ditto-id="style-a-10">
+                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-li-15">
+                    <span className="w-0 h-0 block absolute top-[184.5875rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-a-2" id="desc-mail-footer">
                       Email
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-li-12" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-li-2" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
                       service@koeln.ihk.de
                     </a>
                     {" "}
                   </li>
                   <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-a-3">
-                    <span className="w-0 h-0 block absolute top-[186.8375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-li-2" id="desc-tel">
+                    <span className="w-0 h-0 block absolute top-[186.8375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-li-10" id="desc-tel">
                       Telefonnummer
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-a-6" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-a-4" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
                       0221 1640-0
                     </a>
                     {" "}
@@ -485,12 +485,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-sidebar">
+            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5">
               <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5" data-ditto-id="style-div-55">
-                <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5" data-ditto-id="style-div-64">
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-div-43">
+                <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5" data-ditto-id="style-div-2">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-div-40">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-contact-6786902">
                         Facebook
                       </span>
@@ -500,17 +500,17 @@ export default function Page() {
                   </li>
                   <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-18 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-image-11" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-image-12" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-80">
                         Youtube
                       </span>
                       {" "}
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-div-72">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-div-76">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-br-7" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-21 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-br-9" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Instagram
                       </span>
@@ -518,9 +518,9 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-13">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-16">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-footer-imprint-item0" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-footer-imprint-item0" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Linkedin
                       </span>
@@ -536,24 +536,24 @@ export default function Page() {
             {" "}
             <div className="flex -mx-5 flex-wrap text-right max-lg:-mx-2.5" data-ditto-id="style-footer-imprint-item1">
               <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5">
-                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-link-9">
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-article">
+                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-link-10">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-article-2">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-div-33" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-div-30" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
                       Gebärdensprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-div-65">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-div-67">
                     {" "}
                     <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-ul-4" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
                       Leichte Sprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-image-10">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-div-23" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-div-20" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
                       Erklärung zur Barrierefreiheit
                     </a>
                     {" "}
@@ -565,36 +565,36 @@ export default function Page() {
             </div>
             {" "}
             <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]">
-              <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" data-ditto-id="style-div-68">
-                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-24">
+              <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" data-ditto-id="style-div-73">
+                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-21">
                   © 2026 Industrie- und Handelskammer zu Köln
                 </div>
-                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-73" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-77" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                   Vertrag widerrufen
                 </a>
-                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-button-7" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-button-4" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                   Vertrag kündigen
                 </a>
                 {" "}
-                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-25">
-                  <br className="inline" data-ditto-id="style-br-2" />
+                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-22">
+                  <br className="inline" data-ditto-id="style-br-7" />
                 </div>
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-partners-2" id="partners">
-                <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" data-ditto-id="style-div-26" />
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-partners" id="partners">
+                <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" data-ditto-id="style-div-23" />
                 {" "}
               </div>
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-12">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-4">
               <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-component="nav" aria-label="Navigation Fußzeile">
-                <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden" data-ditto-id="style-ul-5">
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-li-8">
+                <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden" data-ditto-id="style-ul-3">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-li-21">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-34" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-31" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
                       Impressum
                     </a>
                     {" "}
@@ -606,9 +606,9 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-div-2">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-ul-6" data-component="link" href="#">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-ul" data-component="link" href="#">
                       Erneuern oder ändern Sie Ihre Cookie-Einwilligung
                     </a>
                     {" "}
@@ -625,23 +625,23 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-li-3" id="gfiUserlikeCustomButton" />
+      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-li-11" id="gfiUserlikeCustomButton" />
       {" "}
-      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-a-4">
+      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left">
         {" "}
         <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" aria-label="Zustimmung ändern" role="complementary">
-          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-12)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-a-7" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
-            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-li-22" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
+          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-14)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-a-5" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
+            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-li-26" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
             {" "}
           </button>
           {" "}
         </div>
         {" "}
       </div>
-      <div className="block" data-ditto-id="style-a-8">
-        <aside className="block" data-ditto-id="style-li-15" aria-label="Chat">
-          <div className="block" />
-          <div className="block" data-ditto-id="style-li-25" />
+      <div className="block" data-ditto-id="style-a-6">
+        <aside className="block" data-ditto-id="style-li-18" aria-label="Chat">
+          <div className="block" data-ditto-id="style-a-12" />
+          <div className="block" data-ditto-id="style-li-29" />
         </aside>
         <div className="block" />
       </div>

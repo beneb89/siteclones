@@ -28,27 +28,27 @@ const ListRow3_data = [
     { href: "https://www.ihk.de/blueprint/vcard/?contentId=6626972", label: " ", label2: "Kontakt speichern" }
 ];
 const ListRow_meta: string[][] = [
-    ["style-figure", "style-div-7"],
+    ["style-figure", "style-div-10"],
     ["style-iframe", "style-figcaption"],
-    ["style-span-18", "style-span-8"],
-    ["style-div-70", "style-span-9"]
+    ["style-span-10", "style-span-3"],
+    ["style-div-74", "style-span-4"]
 ];
 const ListRow2_meta: string[][] = [
-    ["style-link", "style-image-8"],
-    ["style-span-20", "n80"],
-    ["style-span-43", "style-div-19"],
-    ["n83", "style-span-21"],
+    ["style-link-11", "style-image-8"],
+    ["style-span-12", "n80"],
+    ["style-span-39", "style-div-16"],
+    ["n83", "style-span-13"],
     ["n85", "n86"]
 ];
 const Tile_meta: string[][] = [
-    ["n93", "style-div-21", "n95"],
-    ["n96", "style-heading-2", "style-span-29"],
-    ["style-div-22", "style-span-22", "style-div-36"]
+    ["n93", "style-div-18", "style-div-78"],
+    ["n96", "style-heading-2", "style-span-22"],
+    ["style-div-19", "style-span-15", "style-div-33"]
 ];
 const ListRow3_meta: string[][] = [
-    ["style-link-13", "style-image-3"],
-    ["style-span-31", "style-span-26"],
-    ["n138", "style-div-38"]
+    ["style-link-8", "style-image"],
+    ["style-span-24", "style-span-5"],
+    ["n138", "style-div-35"]
 ];
 const ListRow_styles = [
     { className2: "before:h-[3.4375rem]" },
@@ -84,13 +84,13 @@ export default function Page() {
           {" "}
           <ul className="flex my-5 items-center [list-style-type:none] list-outside max-md:invisible max-md:opacity-0 max-lg:my-4.5 max-md:pointer-events-none 2xl:my-5.5">
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-8" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-7" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
                 Login
               </a>
               {" "}
             </li>
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                 Kontakt
               </a>
               {" "}
@@ -139,7 +139,7 @@ export default function Page() {
                   </a>
                   {" "}
                 </li>
-                <li className="inline-block before:content-[''] before:inline-block before:relative before:inset-0 before:w-5 before:h-7.5 before:-mt-px before:mr-1.5 before:ml-[0.1875rem] before:text-foreground before:text-xl before:leading-7.5 max-md:before:w-4.5 max-md:before:h-[1.6875rem] max-md:before:text-lg max-md:before:leading-[1.6875rem]" data-ditto-id="style-li-14">
+                <li className="inline-block before:content-[''] before:inline-block before:relative before:inset-0 before:w-5 before:h-7.5 before:-mt-px before:mr-1.5 before:ml-[0.1875rem] before:text-foreground before:text-xl before:leading-7.5 max-md:before:w-4.5 max-md:before:h-[1.6875rem] max-md:before:text-lg max-md:before:leading-[1.6875rem]" data-ditto-id="style-li-17">
                   {" "}
                   <a className="inline -mx-0.5 py-0.5 px-1 rounded-sm underline cursor-pointer" data-ditto-id="style-breadcrumb-item2" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt" id="breadcrumb-item2">
                     {" Umwelt "}
@@ -158,9 +158,9 @@ export default function Page() {
             </section>
             {" "}
           </div>
-          <div className="block" data-ditto-id="style-div-18">
+          <div className="block" data-ditto-id="style-div-15">
             <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-              <div className="flex -mx-5 flex-wrap items-start max-lg:-mx-2.5" data-ditto-id="style-div-35">
+              <div className="flex -mx-5 flex-wrap items-start max-lg:-mx-2.5" data-ditto-id="style-div-32">
                 <main className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" id="main" role="main">
                   <div className="block">
                     <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem]" data-ditto-id="style-heading">
@@ -172,8 +172,8 @@ export default function Page() {
                     </h1>
                     {" "}
                     <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
-                      <div className="h-45 min-h-19 block mt-3 mb-5 font-semibold max-md:h-81 max-lg:min-h-[4.275rem] max-md:my-6 md:max-lg:h-40.5 md:max-lg:mb-4.5 2xl:h-[10.3125rem] 2xl:min-h-[5.225rem] 2xl:mb-5.5 after:content-[''] after:table after:w-0 after:h-0" data-ditto-id="style-div-78">
-                        <span className="inline" data-ditto-id="style-div-4">
+                      <div className="h-45 min-h-19 block mt-3 mb-5 font-semibold max-md:h-81 max-lg:min-h-[4.275rem] max-md:my-6 md:max-lg:h-40.5 md:max-lg:mb-4.5 2xl:h-[10.3125rem] 2xl:min-h-[5.225rem] 2xl:mb-5.5 after:content-[''] after:table after:w-0 after:h-0" data-ditto-id="style-div-84">
+                        <span className="inline" data-ditto-id="style-div-8">
                           {"Mit der EU-Verpackungsverordnung (Packaging and Packaging Waste Regulation, PPWR) gelten ab dem 12. August 2026 die ersten unmittelbar anwendbaren Vorschriften für Unternehmen, die Verpackungen oder verpackte Produkte in der EU in Verkehr bringen. Auch wenn viele Anforderungen erst schrittweise bis 2030 in Kraft treten, besteht bereits jetzt Handlungsbedarf. Wir haben die wichtigsten Punkte für Unternehmen zusammengestellt. "}
                         </span>
                         {" "}
@@ -182,21 +182,21 @@ export default function Page() {
                     </div>
                     {" "}
                     <div className="block relative my-12">
-                      <ul className="border-b border-solid border-b-primary block [list-style-type:none] list-outside" data-ditto-id="style-div-6">
+                      <ul className="border-b border-solid border-b-primary block [list-style-type:none] list-outside" data-ditto-id="style-div-9">
                         {ListRow_data.map((d, i) => <ListRow key={i} d={d} styles={ListRow_styles[i]} />)}
                       </ul>
                       {" "}
                     </div>
                     {" "}
                     <div className="block">
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-section">
-                        <span className="inline" data-ditto-id="style-div-40">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-section-3">
+                        <span className="inline" data-ditto-id="style-div-37">
                           {" "}
                           <section className="block max-w-220 my-[50.9px] max-md:my-[2.5625rem] md:max-lg:my-[2.9125rem] 2xl:my-[3.575rem]">
                             <div className="flex -m-1 p-[0.3125rem] flex-wrap" data-ditto-id="style-zoom">
                               <div className="block relative p-1 grow basis-full" data-ditto-id="style-image-6" title={"Auf Unternehmen, die mit Verpackungen zu tun haben, kommen einige Änderungen zu.\n"}>
-                                <a className="h-full block relative -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface [background-size:80px] [background-position:50%_50%] bg-no-repeat cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-[708.7px] before:h-[29.525rem] before:pt-[29.525rem] max-md:before:w-[19.8125rem] max-md:before:h-[211.3px] max-md:before:pt-[211.3px] md:max-lg:before:w-172.5 md:max-lg:before:h-115 md:max-lg:before:pt-115 2xl:before:w-215.5 2xl:before:h-[574.7px] 2xl:before:pt-[574.7px] after:content-[''] after:hidden after:absolute after:inset-0 after:opacity-0" style={{ backgroundImage: "url(data:image/svg+xml" }} data-ditto-id="style-span-19" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/7128780/2a8dc61c341fd47319f54c087be01a02/verpackungsverordnung-data.jpg">
-                                  <img className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover" data-ditto-id="style-div-71" data-component="image" alt="Eine Plastikflasche auf einer EU-Flagge. " src="/assets/cloned/images/349f39909b9e.jpg" />
+                                <a className="h-full block relative -mb-0.5 -mx-px pb-0.5 px-[0.3125rem] underline [word-break:break-word] [overflow-wrap:break-word] bg-surface [background-size:80px] [background-position:50%_50%] bg-no-repeat cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-[708.7px] before:h-[29.525rem] before:pt-[29.525rem] max-md:before:w-[19.8125rem] max-md:before:h-[211.3px] max-md:before:pt-[211.3px] md:max-lg:before:w-172.5 md:max-lg:before:h-115 md:max-lg:before:pt-115 2xl:before:w-215.5 2xl:before:h-[574.7px] 2xl:before:pt-[574.7px] after:content-[''] after:hidden after:absolute after:inset-0 after:opacity-0" style={{ backgroundImage: "url(data:image/svg+xml" }} data-ditto-id="style-span-11" data-component="link" href="https://www.ihk.de/blueprint/servlet/resource/blob/7128780/2a8dc61c341fd47319f54c087be01a02/verpackungsverordnung-data.jpg">
+                                  <img className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover" data-ditto-id="style-div-75" data-component="image" alt="Eine Plastikflasche auf einer EU-Flagge. " src="/assets/cloned/images/349f39909b9e.jpg" />
                                   <span className="w-[30.35rem] h-[1.9rem] block absolute bottom-0 left-[718.7px] z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] max-md:w-[14.05rem] max-md:left-[20.4375rem] md:max-lg:w-[29.575rem] md:max-lg:left-175 2xl:w-[36.7375rem] 2xl:left-218" aria-hidden="true">
                                     © Adobe Stock/ Cevahir
                                   </span>
@@ -208,7 +208,7 @@ export default function Page() {
                               {" "}
                               <span className="block mt-3 text-lg leading-[1.375rem] max-lg:[font-size:inherit]">
                                 {" "}
-                                <div className="block mb-[0.9rem]" data-ditto-id="style-div-45">
+                                <div className="block mb-[0.9rem]" data-ditto-id="style-div-43">
                                   {" Auf Unternehmen, die mit Verpackungen zu tun haben, kommen einige Änderungen zu. "}
                                 </div>
                                 {" "}
@@ -221,14 +221,14 @@ export default function Page() {
                         {" "}
                       </div>
                       {" "}
-                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-46" data-component="heading">
+                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-44" data-component="heading">
                         <span className="inline" data-ditto-id="style-link-24">
                           Was gilt ab dem 12. August 2026?
                         </span>
                       </h2>
                       {" "}
                       <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-image-7">
-                        <span className="inline" data-ditto-id="style-span-38">
+                        <span className="inline" data-ditto-id="style-span-34">
                           Ab diesem Zeitpunkt müssen Unternehmen insbesondere die unmittelbar geltenden Anforderungen der PPWR beachten:
                         </span>
                         {" "}
@@ -255,37 +255,37 @@ export default function Page() {
                       </ul>
                       {" "}
                       <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div" data-component="heading">
-                        <span className="inline" data-ditto-id="style-span-42">
+                        <span className="inline" data-ditto-id="style-span-38">
                           Erste Hilfe: Das sollten Unternehmen jetzt tun
                         </span>
                       </h2>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-section-2">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-section-4">
                         <span className="inline">
                           Die IHK empfiehlt, bereits heute die Weichen für eine rechtssichere Umsetzung zu stellen:
                         </span>
                         {" "}
                       </div>
                       {" "}
-                      <ul className="block mt-5 mb-7.5 [list-style-type:disc] list-outside max-lg:mt-4.5 max-lg:mb-[1.6875rem] 2xl:mt-5.5 2xl:mb-[2.0625rem]" data-ditto-id="style-div-80">
+                      <ul className="block mt-5 mb-7.5 [list-style-type:disc] list-outside max-lg:mt-4.5 max-lg:mb-[1.6875rem] 2xl:mt-5.5 2xl:mb-[2.0625rem]">
                         {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} styles={ListRow2_styles[i]} />)}
                       </ul>
                       {" "}
-                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-20" data-component="heading">
-                        <span className="inline" data-ditto-id="style-div-41">
+                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-17" data-component="heading">
+                        <span className="inline" data-ditto-id="style-div-38">
                           Ausblick
                         </span>
                       </h2>
                       {" "}
-                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-10">
+                      <div className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-12">
                         <span className="inline" data-ditto-id="style-image-9">
                           Viele weitere Anforderungen – etwa zur Recyclingfähigkeit, zu Mindestrezyklatanteilen, Kennzeichnungspflichten oder Verpackungsreduzierung – werden erst in den kommenden Jahren schrittweise wirksam. Unternehmen sollten die Übergangszeit nutzen, um Verpackungen und Prozesse frühzeitig anzupassen und ihre Lieferketten auf die neuen Anforderungen vorzubereiten.
                         </span>
                         {" "}
                       </div>
                       {" "}
-                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-2" data-component="heading">
-                        <span className="inline" data-ditto-id="style-span-17">
+                      <h2 className="block relative mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-42" data-component="heading">
+                        <span className="inline" data-ditto-id="style-span-9">
                           Weitere Informationen erhalten Sie hier:
                         </span>
                       </h2>
@@ -295,46 +295,46 @@ export default function Page() {
                     {" "}
                   </div>
                   {" "}
-                  <div className="block my-[50.9px] max-lg:hidden 2xl:my-[3.575rem]">
-                    <ul className="border-t border-solid border-t-primary block relative py-5 [list-style-type:none] list-outside">
-                      <li className="inline-block mr-5" data-ditto-id="style-div-27">
+                  <div className="block my-[50.9px] max-lg:hidden 2xl:my-[3.575rem]" data-ditto-id="style-section">
+                    <ul className="border-t border-solid border-t-primary block relative py-5 [list-style-type:none] list-outside" data-ditto-id="style-div-13">
+                      <li className="inline-block mr-5" data-ditto-id="style-div-24">
                         {" "}
-                        <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-link-11" data-component="link" href="#" id="teilen">
+                        <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-link-13" data-component="link" href="#" id="teilen">
                           {"teilen "}
                         </a>
                         {" "}
                       </li>
-                      <li className="inline-block mr-5" data-ditto-id="style-image">
+                      <li className="inline-block mr-5" data-ditto-id="style-image-2">
                         {" "}
-                        <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-37" data-component="link" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/ppwr-7128494" title="Dokument drucken">
+                        <a className="inline py-1 rounded-sm underline cursor-pointer 2xl:py-[0.275rem] before:content-[''] before:inline-block before:w-7.5 before:h-7.5 before:mr-[0.4375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-31" data-component="link" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/ppwr-7128494" title="Dokument drucken">
                           {"drucken "}
                         </a>
                         {" "}
                       </li>
                     </ul>
                     {" "}
-                    <div className="block relative mt-4 -mb-13.5 2xl:mt-[1.1rem]" data-ditto-id="style-span-39">
-                      <ul className="h-[4.0625rem] inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[matrix(0.8,0,0,0.8,0,0)] origin-[227.5px_32.5px] pointer-events-none max-lg:hidden" data-ditto-id="style-span-23">
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-47">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
+                    <div className="block relative mt-4 -mb-13.5 2xl:mt-[1.1rem]" data-ditto-id="style-span-35">
+                      <ul className="h-[4.0625rem] inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[matrix(0.8,0,0,0.8,0,0)] origin-[227.5px_32.5px] pointer-events-none max-lg:hidden" data-ditto-id="style-span-16">
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-71">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
                         </li>
                         <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-br-3" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-br-6" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
                         </li>
                         <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
                         </li>
                         <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-div-54">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-div-28" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-div-25" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
                         </li>
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-link-12">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-image-2" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
-                        </li>
-                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-24" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden" data-ditto-id="style-link-14">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-image-3" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
                         </li>
                         <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden">
-                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-div-37" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-span-17" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
+                        </li>
+                        <li className="h-12.5 inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-lg:hidden">
+                          <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-lg:hidden before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-27 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:text-[2rem] max-md:before:leading-8 max-lg:before:w-auto max-lg:before:h-auto" data-ditto-id="style-div-34" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
                         </li>
                       </ul>
                       {" "}
@@ -345,22 +345,22 @@ export default function Page() {
                 </main>
                 {" "}
                 <aside className="h-[677.9px] block sticky top-25 max-w-[33.3333%] mb-4.5 py-5 pr-5 pl-10 self-start grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:h-[581.5px] max-lg:max-w-full max-lg:-mt-5 max-lg:p-2.5 max-lg:basis-full max-lg:static max-lg:top-auto max-lg:mb-0 max-lg:[align-self:initial] max-lg:[font-size:inherit] max-lg:leading-[inherit] md:max-lg:h-[37.0375rem] 2xl:h-[44.3125rem] 2xl:text-lg 2xl:leading-[1.6875rem]" aria-label="Zusatzinformationen" id="sidebar" role="complementary">
-                  <div className="block" data-ditto-id="style-span-11">
+                  <div className="block" data-ditto-id="style-span-18">
                     <div className="border-b-8 border-solid border-b-accent block relative my-[3.6875rem] pt-5 pb-2.5 px-5 overflow-hidden text-lg leading-[1.6875rem] bg-border max-md:border-b-[6px] max-md:my-[2.425rem] max-md:text-base max-md:leading-6 md:max-lg:my-[3.1125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit] 2xl:my-[4.4125rem] 2xl:[font-size:inherit] 2xl:leading-[inherit]" data-ditto-id="style-heading-4">
-                      <div className="block mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]" data-ditto-id="style-span-30">
+                      <div className="block mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]" data-ditto-id="style-span-23">
                         Kontakt
                       </div>
                       {" "}
-                      <div className="flex relative flex-col">
-                        <div className="block relative z-1 pb-[1.5625rem] flex-col order-[1] [pointer-events:all]" data-ditto-id="style-span-25" id="contact-6626972">
-                          <div className="block max-w-full pb-2.5 grow basis-full [pointer-events:all] md:max-lg:min-w-[calc(100%_-_444px)]" data-ditto-id="style-div-67">
-                            <div className="block -mt-1.5 mb-2.5 [font-family:Korb,_sans-serif] text-xl font-semibold leading-7 [pointer-events:all] max-lg:-mt-[0.3375rem] max-lg:mb-[0.5625rem] max-md:text-lg max-lg:leading-[1.5625rem] md:max-lg:[font-size:inherit] 2xl:-mt-[0.4125rem] 2xl:mb-[0.6875rem] 2xl:text-[1.375rem] 2xl:leading-[1.9375rem]">
+                      <div className="flex relative flex-col" data-ditto-id="style-div-45">
+                        <div className="block relative z-1 pb-[1.5625rem] flex-col order-[1] [pointer-events:all]" data-ditto-id="style-span-19" id="contact-6626972">
+                          <div className="block max-w-full pb-2.5 grow basis-full [pointer-events:all] md:max-lg:min-w-[calc(100%_-_444px)]" data-ditto-id="style-div-72">
+                            <div className="block -mt-1.5 mb-2.5 [font-family:Korb,_sans-serif] text-xl font-semibold leading-7 [pointer-events:all] max-lg:-mt-[0.3375rem] max-lg:mb-[0.5625rem] max-md:text-lg max-lg:leading-[1.5625rem] md:max-lg:[font-size:inherit] 2xl:-mt-[0.4125rem] 2xl:mb-[0.6875rem] 2xl:text-[1.375rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-section-2">
                               Julia Heidkamp
                             </div>
                             {" Wirtschaft und Politik "}
                             <br className="inline [pointer-events:all]" />
                             {" "}
-                            <ul className="block mt-5 -mx-[0.3375rem] [list-style-type:none] list-outside [pointer-events:all] max-md:mt-[1.1rem] max-md:-mx-[0.3rem]" data-ditto-id="style-div-29">
+                            <ul className="block mt-5 -mx-[0.3375rem] [list-style-type:none] list-outside [pointer-events:all] max-md:mt-[1.1rem] max-md:-mx-[0.3rem]" data-ditto-id="style-div-26">
                               {ListRow3_data.map((d, i) => <ListRow3 key={i} d={d} styles={ListRow3_styles[i]} />)}
                             </ul>
                             {" "}
@@ -373,24 +373,24 @@ export default function Page() {
                     </div>
                     {" "}
                     <article className="block mt-12">
-                      <div className="block" data-ditto-id="style-section-3">
+                      <div className="block" data-ditto-id="style-section-5">
                         <div className="block mt-[2.8rem] mb-[1.2rem] -mx-[0.1rem] [font-family:Korb,_sans-serif] text-[2rem] leading-[2.375rem] max-md:mt-[2.1rem] max-md:mb-[0.9rem] max-md:-mx-[0.075rem] max-md:text-2xl max-md:leading-[1.8125rem] md:max-lg:mt-[2.45rem] md:max-lg:mb-[1.05rem] md:max-lg:-mx-[0.0875rem] md:max-lg:text-[1.75rem] md:max-lg:leading-[2.125rem]">
                           Weitere Informationen
                         </div>
                         {" "}
-                        <ul className="block my-[1.0625rem] [list-style-type:none] list-outside max-lg:my-4.5 2xl:my-4.5" data-ditto-id="style-div-39">
-                          <li className="list-item relative mb-1.5 pl-9.5 leading-[1.5rem] max-lg:pl-7.5 max-lg:leading-[1.5625rem] 2xl:leading-[1.5625rem]" data-ditto-id="style-link-14">
+                        <ul className="block my-[1.0625rem] [list-style-type:none] list-outside max-lg:my-4.5 2xl:my-4.5" data-ditto-id="style-div-36">
+                          <li className="list-item relative mb-1.5 pl-9.5 leading-[1.5rem] max-lg:pl-7.5 max-lg:leading-[1.5625rem] 2xl:leading-[1.5625rem]" data-ditto-id="style-link-15">
                             <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-8.5 rounded-[3px] leading-[1.375rem] underline cursor-pointer max-lg:-ml-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.4375rem] before:content-[''] before:block before:absolute before:top-0.5 before:right-[9.3125rem] before:bottom-1 before:left-[0.1875rem] before:w-6 before:h-6 before:text-foreground before:text-2xl before:leading-6 before: before:origin-[12px_12px] max-lg:before:right-[9.9375rem] max-lg:before:bottom-[0.3375rem] 2xl:before:right-[9.9375rem] 2xl:before:bottom-[0.3375rem]" data-ditto-id="style-image-4" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/verpackungsgesetz-5041018">
                               Verpackungs­gesetz
                             </a>
                             {" "}
-                            <span className="hidden" data-ditto-id="style-span-34">
+                            <span className="hidden" data-ditto-id="style-span-28">
                               (Nr. 5041018)
                             </span>
                             {" "}
                           </li>
-                          <li className="list-item relative mb-1.5 pl-9.5 leading-[1.5rem] max-lg:pl-7.5 max-lg:leading-[1.5625rem] 2xl:leading-[1.5625rem]" data-ditto-id="style-span-28">
-                            <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-8.5 rounded-[3px] leading-[1.375rem] underline cursor-pointer max-lg:-ml-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.4375rem] before:content-[''] before:block before:absolute before:top-0.5 before:right-[306.3px] before:bottom-[1.6375rem] before:left-[0.1875rem] before:w-6 before:h-6 before:text-foreground before:text-2xl before:leading-6 before: before:origin-[12px_12px] max-md:before:right-79.5 max-md:before:bottom-[1.8rem] md:max-lg:before:right-[31.3125rem] md:max-lg:before:bottom-[0.3375rem] 2xl:before:right-[23.9375rem] 2xl:before:bottom-[1.8rem]" data-ditto-id="style-span-44" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/regelungen-verpackungsg-ausland-5506080">
+                          <li className="list-item relative mb-1.5 pl-9.5 leading-[1.5rem] max-lg:pl-7.5 max-lg:leading-[1.5625rem] 2xl:leading-[1.5625rem]" data-ditto-id="style-span-21">
+                            <a className="inline-block relative -mr-1 -ml-11 py-1 pr-1.5 pl-8.5 rounded-[3px] leading-[1.375rem] underline cursor-pointer max-lg:-ml-9 max-lg:leading-[1.4375rem] 2xl:leading-[1.4375rem] before:content-[''] before:block before:absolute before:top-0.5 before:right-[306.3px] before:bottom-[1.6375rem] before:left-[0.1875rem] before:w-6 before:h-6 before:text-foreground before:text-2xl before:leading-6 before: before:origin-[12px_12px] max-md:before:right-79.5 max-md:before:bottom-[1.8rem] md:max-lg:before:right-[31.3125rem] md:max-lg:before:bottom-[0.3375rem] 2xl:before:right-[23.9375rem] 2xl:before:bottom-[1.8rem]" data-ditto-id="style-span-40" data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/regelungen-verpackungsg-ausland-5506080">
                               Regelungen rund um das Verpackungsgesetz in anderen Staaten
                             </a>
                             {" "}
@@ -408,35 +408,35 @@ export default function Page() {
                   </div>
                   {" "}
                 </aside>
-                <div className="hidden min-w-0 pt-2.5 px-2.5 grow basis-full max-lg:block after:content-[''] after:block after:relative after:w-full max-lg:after:inset-0 max-lg:after:h-0" data-ditto-id="style-div-30">
+                <div className="hidden min-w-0 pt-2.5 px-2.5 grow basis-full max-lg:block after:content-[''] after:block after:relative after:w-full max-lg:after:inset-0 max-lg:after:h-0" data-ditto-id="style-div-27">
                   <section className="border border-solid border-primary block float-right my-[0.9375rem] -mx-1 pt-1.5 pb-[0.3125rem] px-3 rounded-[50px] text-lg leading-5 tracking-[0.27px] max-lg:[font-size:inherit]" aria-label="Dokumentennummer" id="gfi-document-id-mobil">
                     Nr. 7128494
                   </section>
                   <a className="inline underline cursor-pointer" data-ditto-id="style-heading-3" href="#" id="mobile-teilen">
                     {"teilen "}
                   </a>
-                  <div className="block relative -mb-13.5" data-ditto-id="style-span-40">
-                    <ul className="inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[none] pointer-events-none max-md:h-10.5 max-md:-mb-2.5 max-md:-ml-2.5 max-lg:transform-[matrix(0.8,0,0,0.8,0,0)] max-md:origin-[147px_21px] md:max-lg:h-[4.0625rem] md:max-lg:origin-[227.5px_32.5px] 2xl:hidden" data-ditto-id="style-div-31">
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-span-35">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-div-74" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
+                  <div className="block relative -mb-13.5" data-ditto-id="style-span-36">
+                    <ul className="inline-block invisible opacity-0 -mb-[0.9375rem] -ml-[0.9375rem] align-top text-[0rem] leading-0 [list-style-type:disc] list-outside transform-[none] pointer-events-none max-md:h-10.5 max-md:-mb-2.5 max-md:-ml-2.5 max-lg:transform-[matrix(0.8,0,0,0.8,0,0)] max-md:origin-[147px_21px] md:max-lg:h-[4.0625rem] md:max-lg:origin-[227.5px_32.5px] 2xl:hidden" data-ditto-id="style-div-28">
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-span-29">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-div-79" href="https://twitter.com/" title="Bookmark setzen bei: Twitter" />
                       </li>
                       <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://www.facebook.com/" title="Bookmark setzen bei: Facebook" />
                       </li>
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-div-32">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-23 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-link-15" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-div-29">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-link-16" href="https://www.xing.com/" title="Bookmark setzen bei: XING" />
                       </li>
                       <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-image-5">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-24 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-span-41" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-span-37" href="https://www.whatsapp.com/" title="Bookmark setzen bei: WhatsApp" />
                       </li>
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-span-27">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-span-36" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-span-20">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-span-6" href="https://www.linkedin.com/" title="Bookmark setzen bei: LinkedIn" />
                       </li>
                       <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-25 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-div-11" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://threema.ch/de/" title="Bookmark setzen bei: Threema" />
                       </li>
-                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-span-15">
-                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-26 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
+                      <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top pointer-events-none max-md:h-8 max-md:mb-2.5 max-md:ml-2.5 md:max-lg:h-12.5 2xl:hidden" data-ditto-id="style-span-7">
+                        <a className="w-12.5 h-12.5 block relative z-1 overflow-hidden text-background text-center cursor-pointer pointer-events-none max-md:w-8 max-md:h-8 max-md:text-[2rem] 2xl:hidden before:content-[''] before:block before:-m-px before:text-clr-27 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-8.5 max-md:before:h-8 max-md:before:text-[2rem] max-md:before:leading-8 md:max-lg:before:w-13 md:max-lg:before:h-13" data-ditto-id="style-div-3" href="https://telegram.org/" title="Bookmark setzen bei: Telegram" />
                       </li>
                     </ul>
                     {" "}
@@ -451,11 +451,11 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-span-12">
+        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]">
           <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-strong">
-            <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-link-16">
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-13">
-                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-strong-4">
+            <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-link-17">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-14">
+                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-strong-3">
                   Wie können wir Ihnen helfen?
                 </p>
                 {" "}
@@ -466,16 +466,16 @@ export default function Page() {
                   Unsere Anschrift:
                 </div>
                 {" "}
-                <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-17">
-                  <a className="inline underline cursor-pointer" data-ditto-id="style-span-16" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
+                <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-link-2">
+                  <a className="inline underline cursor-pointer" data-ditto-id="style-span-8" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
                     {" Industrie- und Handelskammer zu Köln "}
-                    <br className="inline" data-ditto-id="style-strong-2" />
+                    <br className="inline" />
                     {" Unter Sachsenhausen 5–7"}
-                    <br className="inline" data-ditto-id="style-span-14" />
+                    <br className="inline" data-ditto-id="style-span-32" />
                     {"(Eingang: Komödienstraße 18–24) "}
-                    <br className="inline" data-ditto-id="style-strong-3" />
+                    <br className="inline" data-ditto-id="style-strong-2" />
                     {" 50667 Köln "}
-                    <br className="inline" data-ditto-id="style-div-42" />
+                    <br className="inline" data-ditto-id="style-div-39" />
                     {" "}
                   </a>
                   {" "}
@@ -483,28 +483,28 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-br-5">
-                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-div-75">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5">
+                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]">
                   So erreichen Sie uns:
                 </div>
                 {" "}
-                <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]">
-                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-li-24">
+                <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]" data-ditto-id="style-ul-8">
+                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-li-28">
                     <span className="w-0 h-0 block absolute top-[221.375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-teilen" id="desc-mail-footer">
                       Email
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-li-27" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-li-31" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
                       service@koeln.ihk.de
                     </a>
                     {" "}
                   </li>
                   <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-link-18">
-                    <span className="w-0 h-0 block absolute top-[223.625rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-63" id="desc-tel">
+                    <span className="w-0 h-0 block absolute top-[223.625rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-66" id="desc-tel">
                       Telefonnummer
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-ul-7" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-ul-5" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
                       0221 1640-0
                     </a>
                     {" "}
@@ -515,12 +515,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-li-11">
+            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-li-14">
               <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5">
                 <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5">
                   <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Facebook
                       </span>
@@ -528,19 +528,19 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-17">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-9">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-18 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-a-13" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-li-7">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-a-10" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-li-15">
                         Youtube
                       </span>
                       {" "}
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-a-5">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-a-2">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-12" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-21 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-2" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-a-3">
                         Instagram
                       </span>
@@ -548,10 +548,10 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-2">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-10">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-a-6" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-sidebar">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-a-4" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Linkedin
                       </span>
                       {" "}
@@ -565,8 +565,8 @@ export default function Page() {
             </div>
             {" "}
             <div className="flex -mx-5 flex-wrap text-right max-lg:-mx-2.5" data-ditto-id="style-div-55">
-              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-div-64">
-                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-div-43">
+              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-div-2">
+                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-div-40">
                   <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
                     {" "}
                     <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-contact-6786902" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
@@ -576,14 +576,14 @@ export default function Page() {
                   </li>
                   <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-image-11" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-image-12" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
                       Leichte Sprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-div-80">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-div-72" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-div-76" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
                       Erklärung zur Barrierefreiheit
                     </a>
                     {" "}
@@ -594,9 +594,9 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-br-7">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-br-9">
               <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full">
-                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-li-13">
+                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-li-16">
                   © 2026 Industrie- und Handelskammer zu Köln
                 </div>
                 <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-footer-imprint-item0" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
@@ -612,33 +612,33 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-link-9" id="partners">
-                <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" data-ditto-id="style-article" />
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-link-10" id="partners">
+                <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" data-ditto-id="style-article-2" />
                 {" "}
               </div>
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-33">
-              <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-ditto-id="style-div-65" data-component="nav" aria-label="Navigation Fußzeile">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-30">
+              <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-ditto-id="style-div-67" data-component="nav" aria-label="Navigation Fußzeile">
                 <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden" data-ditto-id="style-ul-4">
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-image-10">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-23" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-20" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
                       Impressum
                     </a>
                     {" "}
                   </li>
                   <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-68" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item1">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-73" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item1">
                       Datenschutzerklärung
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-div-24">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-div-21">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-73" data-component="link" href="#">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-77" data-component="link" href="#">
                       Erneuern oder ändern Sie Ihre Cookie-Einwilligung
                     </a>
                     {" "}
@@ -655,25 +655,25 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-button-7" id="gfiUserlikeCustomButton" />
+      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-button-4" id="gfiUserlikeCustomButton" />
       {" "}
-      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-div-25">
+      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-div-22">
         {" "}
-        <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" data-ditto-id="style-br-2" aria-label="Zustimmung ändern" role="complementary">
-          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-12)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-partners-2" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
-            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-div-26" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
+        <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" data-ditto-id="style-br-7" aria-label="Zustimmung ändern" role="complementary">
+          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-14)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-partners" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
+            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-div-23" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
             {" "}
           </button>
           {" "}
         </div>
         {" "}
       </div>
-      <div className="block" data-ditto-id="style-div-12">
+      <div className="block" data-ditto-id="style-div-4">
         <aside className="block" aria-label="Chat">
-          <div className="block" data-ditto-id="style-ul-5" />
-          <div className="block" data-ditto-id="style-li-8" />
+          <div className="block" data-ditto-id="style-ul-3" />
+          <div className="block" data-ditto-id="style-li-21" />
         </aside>
-        <div className="block" data-ditto-id="style-div-34" />
+        <div className="block" data-ditto-id="style-div-31" />
       </div>
     </>
   );

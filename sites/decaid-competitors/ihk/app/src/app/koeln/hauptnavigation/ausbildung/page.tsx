@@ -23,23 +23,23 @@ const ListRow_data = [
     { label: "3" }
 ];
 const Tile_meta: string[][] = [
-    ["style-div-78", "style-div-4", "n39", "style-div-6", "style-figure"],
-    ["style-div-7", "style-iframe", "style-figcaption", "style-span-18", "style-span-8"],
-    ["style-div-70", "style-span-9", "n49", "style-section", "style-div-40"],
-    ["n52", "style-zoom", "style-image-6", "style-span-19", "style-div-71"]
+    ["style-div-84", "style-div-8", "n39", "style-div-9", "style-figure"],
+    ["style-div-10", "style-iframe", "style-figcaption", "style-span-10", "style-span-3"],
+    ["style-div-74", "style-span-4", "n49", "style-section-3", "style-div-37"],
+    ["n52", "style-zoom", "style-image-6", "style-span-11", "style-div-75"]
 ];
 const Tile2_meta: string[][] = [
-    ["n71", "style-div", "style-span-42", "style-section-2", "n75"],
-    ["style-div-80", "style-link", "style-image-8", "style-span-20", "n80"],
-    ["style-span-43", "style-div-19", "n83", "style-span-21", "n85"],
-    ["n86", "style-div-20", "style-div-41", "style-link-10", "style-image-9"],
-    ["style-span-2", "style-span-17", "n93", "style-div-21", "n95"],
-    ["n96", "style-heading-2", "style-span-29", "style-div-22", "style-span-22"]
+    ["n71", "style-div", "style-span-38", "style-section-4", "n75"],
+    ["n76", "style-link-11", "style-image-8", "style-span-12", "n80"],
+    ["style-span-39", "style-div-16", "n83", "style-span-13", "n85"],
+    ["n86", "style-div-17", "style-div-38", "style-link-12", "style-image-9"],
+    ["style-span-42", "style-span-9", "n93", "style-div-18", "style-div-78"],
+    ["n96", "style-heading-2", "style-span-22", "style-div-19", "style-span-15"]
 ];
 const ListRow_meta: string[][] = [
-    ["style-div-39", "style-link-14", "style-image-4"],
-    ["style-span-34", "style-span-28", "style-span-44"],
-    ["n149", "style-div-30", "n151"]
+    ["style-div-36", "style-link-15", "style-image-4"],
+    ["style-span-28", "style-span-21", "style-span-40"],
+    ["n149", "style-div-27", "n151"]
 ];
 const Tile2_styles = [
     { className: "h-[10.275rem] max-md:h-33 md:max-lg:h-[8.075rem] 2xl:h-[11.175rem] before:top-[9.775rem] max-md:before:top-31.5 md:max-lg:before:top-[7.575rem] 2xl:before:top-[10.675rem]" },
@@ -70,13 +70,13 @@ export default function Page() {
           {" "}
           <ul className="flex my-5 items-center [list-style-type:none] list-outside max-md:invisible max-md:opacity-0 max-lg:my-4.5 max-md:pointer-events-none 2xl:my-5.5">
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-8" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-7" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
                 Login
               </a>
               {" "}
             </li>
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                 Kontakt
               </a>
               {" "}
@@ -131,19 +131,19 @@ export default function Page() {
             {" "}
           </div>
           {" "}
-          <main className="block" data-ditto-id="style-li-14" id="main">
+          <main className="block" data-ditto-id="style-li-17" id="main">
             <section className="block mt-[2.85rem] mb-[3.475rem] overflow-hidden max-md:mt-[27.5px] max-md:mb-[37.5px] md:max-lg:mt-[2.2125rem] md:max-lg:mb-[2.8375rem] 2xl:mt-[3.65rem] 2xl:mb-[4.275rem]" data-ditto-id="style-breadcrumb-item2">
               <div className="w-250 block max-w-[90%] mx-auto px-15 max-md:w-[23.4375rem] max-lg:max-w-full max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5" data-ditto-id="style-li">
                 <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem]">
                   IHK Köln
                 </span>
                 {" "}
-                <h1 className="block relative mt-[0.3375rem] mb-[1.6875rem] mx-[-2.7px] pb-[2.3625rem] [font-family:Korb,_sans-serif] text-[3.375rem] leading-[3.6875rem] max-md:mt-[0.225rem] max-md:mb-4.5 max-md:-mx-0.5 max-md:pb-[1.575rem] max-md:text-4xl max-md:leading-[2.5rem] md:max-lg:mt-[0.2875rem] md:max-lg:mb-[1.4375rem] md:max-lg:mx-[-2.3px] md:max-lg:pb-8 md:max-lg:text-[2.875rem] md:max-lg:leading-[3.1875rem] 2xl:mt-[0.4rem] 2xl:mb-8 2xl:-mx-[0.2rem] 2xl:pb-[2.8rem] 2xl:text-[4rem] 2xl:leading-[4.375rem]" data-ditto-id="style-div-18" data-component="heading">
+                <h1 className="block relative mt-[0.3375rem] mb-[1.6875rem] mx-[-2.7px] pb-[2.3625rem] [font-family:Korb,_sans-serif] text-[3.375rem] leading-[3.6875rem] max-md:mt-[0.225rem] max-md:mb-4.5 max-md:-mx-0.5 max-md:pb-[1.575rem] max-md:text-4xl max-md:leading-[2.5rem] md:max-lg:mt-[0.2875rem] md:max-lg:mb-[1.4375rem] md:max-lg:mx-[-2.3px] md:max-lg:pb-8 md:max-lg:text-[2.875rem] md:max-lg:leading-[3.1875rem] 2xl:mt-[0.4rem] 2xl:mb-8 2xl:-mx-[0.2rem] 2xl:pb-[2.8rem] 2xl:text-[4rem] 2xl:leading-[4.375rem]" data-ditto-id="style-div-15" data-component="heading">
                   Ausbildung
                 </h1>
                 {" "}
                 <div className="block">
-                  <div className="block" data-ditto-id="style-div-35">
+                  <div className="block" data-ditto-id="style-div-32">
                     <div className="min-h-19 block mt-3 font-semibold max-lg:min-h-[4.275rem] max-md:mt-6 2xl:min-h-[5.225rem] after:content-[''] after:table after:w-0 after:h-0">
                       {" Eine betriebliche Ausbildung ist der ideale Start in die Karriere. Für Unternehmen ist es die Garantie für gut ausgebildete Fachkräfte. Ob es um Stellensuche und freie Ausbildungsplätze, Azubi-Marketing oder die Ausbildungsordnung geht – wir unterstützen Unternehmen wie Ausbildungssuchende. "}
                     </div>
@@ -170,19 +170,19 @@ export default function Page() {
               {" "}
               <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]">
                 <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-span">
-                  <a className="flex relative rounded-sm text-background cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-0 before:h-[187.1px] before:pt-[8.575rem] max-md:before:h-[18.25rem] max-md:before:pt-[223.3px] md:max-lg:before:h-[161.5px] md:max-lg:before:pt-[87.5px] 2xl:before:h-[12.875rem] 2xl:before:pt-[10.35rem]" style={{ backgroundImage: "linear-gradient(130deg, var(--foreground) 40%, var(--clr-15) 80%, var(--clr-16) 120%)" }} data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/ausbildungsthemen-von-a-bis-z/musteraufgaben-abschlusspruefung-kaufleute-bueromanagement-5234240">
+                  <a className="flex relative rounded-sm text-background cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-0 before:h-[187.1px] before:pt-[8.575rem] max-md:before:h-[18.25rem] max-md:before:pt-[223.3px] md:max-lg:before:h-[161.5px] md:max-lg:before:pt-[87.5px] 2xl:before:h-[12.875rem] 2xl:before:pt-[10.35rem]" style={{ backgroundImage: "linear-gradient(130deg, var(--foreground) 40%, var(--clr-17) 80%, var(--clr-18) 120%)" }} data-component="link" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/ausbildungsthemen-von-a-bis-z/musteraufgaben-abschlusspruefung-kaufleute-bueromanagement-5234240">
                     {" "}
-                    <span className="w-px h-px block absolute min-w-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-div-45">
+                    <span className="w-px h-px block absolute min-w-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-div-43">
                       Infobanner: Abschlussprüfung der Kaufleute für Büromanagement
                     </span>
                     {" "}
-                    <div className="flex relative rounded-sm justify-between grow basis-full max-md:flex-col" style={{ backgroundImage: "linear-gradient(120deg, var(--foreground) 0px, var(--clr-1) 100%)" }} data-ditto-id="style-div-46" aria-hidden="true">
+                    <div className="flex relative rounded-sm justify-between grow basis-full max-md:flex-col" style={{ backgroundImage: "linear-gradient(120deg, var(--foreground) 0px, var(--clr-1) 100%)" }} data-ditto-id="style-div-44" aria-hidden="true">
                       <div className="h-[187.1px] min-h-37.5 flex max-w-192 py-4.5 px-6 flex-col justify-center leading-7 mx-auto max-md:h-[11.625rem] max-md:my-4 max-md:py-2 max-lg:leading-[1.5625rem] max-lg:min-h-0 max-md:px-0 md:max-lg:h-[161.5px] md:max-lg:py-3 md:max-lg:px-5 2xl:h-[12.875rem] 2xl:min-h-45 2xl:leading-[1.9375rem]" data-ditto-id="style-link-24" aria-hidden="true">
                         <span className="block my-[0.1rem] text-base leading-[1.375rem] tracking-[0.3px] max-md:my-[0.0875rem] max-md:text-sm max-md:leading-[1.25rem]" data-ditto-id="style-image-7">
                           Prüfungen
                         </span>
                         {" "}
-                        <div className="block my-[0.225rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-2 max-md:mb-2.5 max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:my-[0.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:my-1 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-38" aria-hidden="true">
+                        <div className="block my-[0.225rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-2 max-md:mb-2.5 max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:my-[0.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:my-1 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-34" aria-hidden="true">
                           Abschlussprüfung der Kaufleute für Büromanagement
                         </div>
                         {" "}
@@ -218,17 +218,17 @@ export default function Page() {
                 {" "}
               </section>
               {" "}
-              <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]" data-ditto-id="style-div-36">
-                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-                  <div className="border-b-8 border-solid border-b-accent block relative bg-foreground max-md:border-b-[6px] max-md:my-[2.675rem] max-md:-mx-5">
-                    <div className="block overflow-hidden" data-ditto-id="style-div-27">
-                      <div className="w-27750 flex relative items-start max-md:w-9375 md:max-lg:w-17700 2xl:w-33500" data-ditto-id="style-link-11">
-                        <div className="block relative min-w-[1%] max-w-[1%]" data-ditto-id="style-image">
-                          <div className="flex -mx-5 max-lg:flex-col max-lg:overflow-hidden max-lg:mx-0" data-ditto-id="style-span-37">
-                            <div className="block relative max-w-[66.6667%] pr-5 grow basis-2/3 order-[1] max-lg:basis-full max-lg:max-w-none max-lg:pr-0 before:content-[''] before:block before:relative before:inset-0 before:w-[746.7px] before:h-[31.1125rem] before:pt-[31.1125rem] max-md:before:w-[23.4375rem] max-md:before:h-62.5 max-md:before:pt-62.5 md:max-lg:before:w-177 md:max-lg:before:h-118 md:max-lg:before:pt-118 2xl:before:w-225 2xl:before:h-150 2xl:before:pt-150" data-ditto-id="style-span-39">
-                              <img className="w-full h-124.5 block absolute top-0 left-px max-w-full overflow-clip object-cover max-md:h-62.5 max-lg:left-0 md:max-lg:h-118 2xl:h-150" data-ditto-id="style-span-23" data-component="image" alt="IHK-Köln Ausbildungsscout Tilman Liebert (rechts) mit einem Teilnehmer am Flipchart. " src="/assets/cloned/images/deb59eaf7cee.jpg" title={"Tilman Liebert (rechts) mit einem Teilnehmer am Flipchart.\n"} />
+              <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]" data-ditto-id="style-div-33">
+                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-section">
+                  <div className="border-b-8 border-solid border-b-accent block relative bg-foreground max-md:border-b-[6px] max-md:my-[2.675rem] max-md:-mx-5" data-ditto-id="style-div-13">
+                    <div className="block overflow-hidden" data-ditto-id="style-div-24">
+                      <div className="w-27750 flex relative items-start max-md:w-9375 md:max-lg:w-17700 2xl:w-33500" data-ditto-id="style-link-13">
+                        <div className="block relative min-w-[1%] max-w-[1%]" data-ditto-id="style-image-2">
+                          <div className="flex -mx-5 max-lg:flex-col max-lg:overflow-hidden max-lg:mx-0" data-ditto-id="style-span-31">
+                            <div className="block relative max-w-[66.6667%] pr-5 grow basis-2/3 order-[1] max-lg:basis-full max-lg:max-w-none max-lg:pr-0 before:content-[''] before:block before:relative before:inset-0 before:w-[746.7px] before:h-[31.1125rem] before:pt-[31.1125rem] max-md:before:w-[23.4375rem] max-md:before:h-62.5 max-md:before:pt-62.5 md:max-lg:before:w-177 md:max-lg:before:h-118 md:max-lg:before:pt-118 2xl:before:w-225 2xl:before:h-150 2xl:before:pt-150" data-ditto-id="style-span-35">
+                              <img className="w-full h-124.5 block absolute top-0 left-px max-w-full overflow-clip object-cover max-md:h-62.5 max-lg:left-0 md:max-lg:h-118 2xl:h-150" data-ditto-id="style-span-16" data-component="image" alt="IHK-Köln Ausbildungsscout Tilman Liebert (rechts) mit einem Teilnehmer am Flipchart. " src="/assets/cloned/images/deb59eaf7cee.jpg" title={"Tilman Liebert (rechts) mit einem Teilnehmer am Flipchart.\n"} />
                               {" "}
-                              <span className="w-[32.35rem] h-[1.9rem] block absolute bottom-0 left-[746.7px] z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] max-md:w-[16.05rem] max-md:left-[23.4375rem] md:max-lg:w-[478.5px] md:max-lg:left-177 2xl:w-[619.7px] 2xl:left-225" data-ditto-id="style-div-47" aria-hidden="true">
+                              <span className="w-[32.35rem] h-[1.9rem] block absolute bottom-0 left-[746.7px] z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] max-md:w-[16.05rem] max-md:left-[23.4375rem] md:max-lg:w-[478.5px] md:max-lg:left-177 2xl:w-[619.7px] 2xl:left-225" data-ditto-id="style-div-71" aria-hidden="true">
                                 © IHK Köln / Wessendorf
                               </span>
                               {" "}
@@ -239,7 +239,7 @@ export default function Page() {
                             </div>
                             {" "}
                             <div className="w-1/3 h-[31.1125rem] flex relative z-2 min-w-90 max-w-[33.3333%] py-7.5 pr-2.5 pl-15 flex-col justify-center grow basis-1/3 text-background text-[1.0625rem] leading-[1.625rem] max-lg:w-full max-md:h-[16.5125rem] max-lg:min-w-0 max-md:pt-7 max-lg:pb-2.5 max-md:px-5 max-lg:text-base max-lg:leading-6 max-lg:max-w-none md:max-lg:h-[16.425rem] md:max-lg:pt-10 md:max-lg:px-10 2xl:h-150 2xl:min-w-100 2xl:py-10 2xl:pr-5 2xl:pl-20 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:-z-1 before:my-[-57.5px] before:mr-[-53.7px] before:ml-5 before:bg-foreground max-md:before:top-[31.7px] max-md:before:-mb-7.5 max-md:before:-mx-14 max-md:before:pt-[262.5px] max-lg:before:mt-0 md:max-lg:before:-top-44 md:max-lg:before:-mb-[3.5375rem] md:max-lg:before:-mx-[6.6375rem] md:max-lg:before:pt-[30.975rem] 2xl:before:-my-[4.3125rem] 2xl:before:-mr-[4.025rem]">
-                              <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-br-3">
+                              <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-br-6">
                                 Ausbildungsmarketing
                               </span>
                               {" "}
@@ -252,7 +252,7 @@ export default function Page() {
                               </p>
                               {" "}
                               <p className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-54">
-                                <a className="min-h-10.5 inline-flex relative min-w-10.5 mt-4 py-2.5 pr-12 pl-4.5 rounded-[18px] justify-center items-center text-foreground [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-background cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-lg:mt-[0.9rem] max-lg:pr-11.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:mt-[1.1rem] 2xl:text-[1.375rem] 2xl:leading-5.5 before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-33 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:top-[1.1875rem] max-md:before:bottom-[0.4375rem] max-md:before:left-[7.9375rem] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:left-[7.8125rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:left-[8.9375rem] after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-28" data-component="button" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/ausbildungsmarketing/ki-werkstatt-ausbildung-6728956">
+                                <a className="min-h-10.5 inline-flex relative min-w-10.5 mt-4 py-2.5 pr-12 pl-4.5 rounded-[18px] justify-center items-center text-foreground [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-background cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-lg:mt-[0.9rem] max-lg:pr-11.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:mt-[1.1rem] 2xl:text-[1.375rem] 2xl:leading-5.5 before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-33 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:top-[1.1875rem] max-md:before:bottom-[0.4375rem] max-md:before:left-[7.9375rem] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:left-[7.8125rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:left-[8.9375rem] after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-25" data-component="button" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/ausbildungsmarketing/ki-werkstatt-ausbildung-6728956">
                                   Mehr erfahren
                                 </a>
                                 {" "}
@@ -263,23 +263,23 @@ export default function Page() {
                           </div>
                           {" "}
                         </div>
-                        <div className="h-0 block relative min-w-[1%] max-w-[1%]" data-ditto-id="style-link-12">
-                          <div className="flex -mx-5 max-lg:flex-col max-lg:overflow-hidden max-lg:mx-0" data-ditto-id="style-image-2">
+                        <div className="h-0 block relative min-w-[1%] max-w-[1%]" data-ditto-id="style-link-14">
+                          <div className="flex -mx-5 max-lg:flex-col max-lg:overflow-hidden max-lg:mx-0" data-ditto-id="style-image-3">
                             <div className="block relative max-w-[66.6667%] pr-5 grow basis-2/3 order-[1] max-lg:basis-full max-lg:max-w-none max-lg:pr-0 before:content-[''] before:block before:relative before:inset-0 before:w-[746.7px] before:h-[31.1125rem] before:pt-[31.1125rem] max-md:before:w-[23.4375rem] max-md:before:h-62.5 max-md:before:pt-62.5 md:max-lg:before:w-177 md:max-lg:before:h-118 md:max-lg:before:pt-118 2xl:before:w-225 2xl:before:h-150 2xl:before:pt-150">
-                              <img className="w-full h-full block absolute top-0 left-px max-w-full overflow-clip object-cover md:max-lg:left-0" data-ditto-id="style-span-24" alt="Ein Mann und eine Frau schauen in einem Büro auf eine Laptop. Beide lächeln." src="/assets/cloned/images/0344d5bf236a.jpg" />
+                              <img className="w-full h-full block absolute top-0 left-px max-w-full overflow-clip object-cover md:max-lg:left-0" data-ditto-id="style-span-17" alt="Ein Mann und eine Frau schauen in einem Büro auf eine Laptop. Beide lächeln." src="/assets/cloned/images/0344d5bf236a.jpg" />
                               {" "}
                               <span className="w-[32.35rem] h-[1.9rem] block absolute top-[29.2125rem] left-[746.7px] z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px]" aria-hidden="true">
                                 © stock.adobe.com/insta_photos
                               </span>
                               {" "}
-                              <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-div-37">
+                              <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-div-34">
                                 © stock.adobe.com/insta_photos
                               </span>
                               {" "}
                             </div>
                             {" "}
                             <div className="w-1/3 h-[31.1125rem] flex relative z-2 min-w-90 max-w-[33.3333%] py-7.5 pr-2.5 pl-15 flex-col justify-center grow basis-1/3 text-background text-[1.0625rem] leading-[1.625rem] max-md:h-[17.1125rem] max-lg:min-w-0 max-md:pt-7 max-lg:pb-2.5 max-md:px-5 max-lg:text-base max-lg:leading-6 max-md:w-auto max-lg:max-w-none md:max-lg:w-full md:max-lg:h-[17.325rem] md:max-lg:pt-10 md:max-lg:px-10 2xl:h-150 2xl:min-w-100 2xl:py-10 2xl:pr-5 2xl:pl-20 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:-z-1 before:my-[-57.5px] before:mr-[-53.7px] before:ml-5 before:bg-foreground max-md:before:top-[41.3px] max-md:before:-mb-7.5 max-md:before:-mx-14 max-md:before:pt-[262.5px] max-lg:before:mt-0 md:max-lg:before:-top-[10.1125rem] md:max-lg:before:-mb-[3.5375rem] md:max-lg:before:-mx-[6.6375rem] md:max-lg:before:pt-[30.975rem] 2xl:before:-my-[4.3125rem] 2xl:before:-mr-[4.025rem]">
-                              <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-span-11">
+                              <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-span-18">
                                 Ausbildung
                               </span>
                               {" "}
@@ -287,12 +287,12 @@ export default function Page() {
                                 {" Ausbildungsmarketing: Infowebinare für Ausbildu…"}
                               </div>
                               {" "}
-                              <p className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-span-30">
+                              <p className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-span-23">
                                 {" Wir informieren Sie online zu unterschiedlichen Themen des Ausbildungsmarketings "}
                               </p>
                               {" "}
-                              <p className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]">
-                                <a className="h-10.5 min-h-10.5 inline-flex relative min-w-10.5 mt-4 py-2.5 pr-12 pl-4.5 rounded-[18px] justify-center items-center text-foreground [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-background cursor-pointer max-lg:h-9.5 max-lg:min-h-9.5 max-lg:min-w-9.5 max-lg:mt-[0.9rem] max-lg:pr-11.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:mt-[1.1rem] 2xl:text-[1.375rem] 2xl:leading-5.5 before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-33 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:top-[1.1875rem] max-md:before:bottom-[0.4375rem] max-md:before:left-[7.9375rem] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:left-[7.8125rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:left-[8.9375rem] after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-span-25" data-component="button" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/ausbildungsmarketing/azubimarketing-5869874">
+                              <p className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-45">
+                                <a className="h-10.5 min-h-10.5 inline-flex relative min-w-10.5 mt-4 py-2.5 pr-12 pl-4.5 rounded-[18px] justify-center items-center text-foreground [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-background cursor-pointer max-lg:h-9.5 max-lg:min-h-9.5 max-lg:min-w-9.5 max-lg:mt-[0.9rem] max-lg:pr-11.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:mt-[1.1rem] 2xl:text-[1.375rem] 2xl:leading-5.5 before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-33 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:top-[1.1875rem] max-md:before:bottom-[0.4375rem] max-md:before:left-[7.9375rem] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:left-[7.8125rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:left-[8.9375rem] after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-span-19" data-component="button" href="https://www.ihk.de/koeln/hauptnavigation/ausbildung/ausbildungsmarketing/azubimarketing-5869874">
                                   Mehr erfahren
                                 </a>
                                 {" "}
@@ -303,28 +303,28 @@ export default function Page() {
                           </div>
                           {" "}
                         </div>
-                        <div className="h-full flex absolute top-0 right-27750 -left-27750 min-w-0 justify-end md:max-lg:right-17700 md:max-lg:-left-17700 2xl:right-33500 2xl:-left-33500" data-ditto-id="style-div-67">
-                          <div className="h-0 block relative min-w-[1%] max-w-[1%]">
+                        <div className="h-full flex absolute top-0 right-27750 -left-27750 min-w-0 justify-end md:max-lg:right-17700 md:max-lg:-left-17700 2xl:right-33500 2xl:-left-33500" data-ditto-id="style-div-72">
+                          <div className="h-0 block relative min-w-[1%] max-w-[1%]" data-ditto-id="style-section-2">
                             <div className="flex -mx-5 max-lg:flex-col max-lg:overflow-hidden max-lg:mx-0">
-                              <div className="block relative max-w-[66.6667%] pr-5 grow basis-2/3 order-[1] max-lg:basis-full max-lg:max-w-none max-lg:pr-0 before:content-[''] before:block before:relative before:inset-0 before:w-[746.7px] before:h-[31.1125rem] before:pt-[31.1125rem] max-md:before:w-[23.4375rem] max-md:before:h-62.5 max-md:before:pt-62.5 md:max-lg:before:w-177 md:max-lg:before:h-118 md:max-lg:before:pt-118 2xl:before:w-225 2xl:before:h-150 2xl:before:pt-150" data-ditto-id="style-div-29">
-                                <img className="w-full h-124.5 block absolute top-0 left-px max-w-full overflow-clip object-cover md:max-lg:h-118 md:max-lg:left-0 2xl:h-150" data-ditto-id="style-link-13" data-component="image" alt="Symbolbild" src="/assets/cloned/images/b1b0fdcb5221.jpg" />
+                              <div className="block relative max-w-[66.6667%] pr-5 grow basis-2/3 order-[1] max-lg:basis-full max-lg:max-w-none max-lg:pr-0 before:content-[''] before:block before:relative before:inset-0 before:w-[746.7px] before:h-[31.1125rem] before:pt-[31.1125rem] max-md:before:w-[23.4375rem] max-md:before:h-62.5 max-md:before:pt-62.5 md:max-lg:before:w-177 md:max-lg:before:h-118 md:max-lg:before:pt-118 2xl:before:w-225 2xl:before:h-150 2xl:before:pt-150" data-ditto-id="style-div-26">
+                                <img className="w-full h-124.5 block absolute top-0 left-px max-w-full overflow-clip object-cover md:max-lg:h-118 md:max-lg:left-0 2xl:h-150" data-ditto-id="style-link-8" data-component="image" alt="Symbolbild" src="/assets/cloned/images/b1b0fdcb5221.jpg" />
                                 {" "}
-                                <span className="w-[32.35rem] h-[1.9rem] block absolute bottom-0 left-[746.7px] z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] md:max-lg:w-[478.5px] md:max-lg:left-177 2xl:w-[619.7px] 2xl:left-225" data-ditto-id="style-image-3" aria-hidden="true">
+                                <span className="w-[32.35rem] h-[1.9rem] block absolute bottom-0 left-[746.7px] z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] md:max-lg:w-[478.5px] md:max-lg:left-177 2xl:w-[619.7px] 2xl:left-225" data-ditto-id="style-image" aria-hidden="true">
                                   © IHK Köln / Oliver Güth
                                 </span>
                                 {" "}
-                                <span className="w-px h-px block absolute top-[31.1125rem] left-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-span-31">
+                                <span className="w-px h-px block absolute top-[31.1125rem] left-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-span-24">
                                   © IHK Köln / Oliver Güth
                                 </span>
                                 {" "}
                               </div>
                               {" "}
-                              <div className="w-[383.3px] h-[31.1125rem] flex relative z-2 min-w-90 max-w-[33.3333%] py-7.5 pr-2.5 pl-15 flex-col justify-center grow basis-1/3 text-background text-[1.0625rem] leading-[1.625rem] max-md:w-[23.4375rem] max-md:h-60 max-lg:min-w-0 max-md:pt-7 max-lg:pb-2.5 max-md:px-5 max-lg:text-base max-lg:leading-6 max-lg:max-w-none md:max-lg:w-177 md:max-lg:h-[14.925rem] md:max-lg:pt-10 md:max-lg:px-10 2xl:w-[28.75rem] 2xl:h-150 2xl:min-w-100 2xl:py-10 2xl:pr-5 2xl:pl-20 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:-z-1 before:my-[-57.5px] before:mr-[-53.7px] before:ml-5 before:bg-foreground max-md:before:top-[7.7px] max-md:before:-mb-7.5 max-md:before:-mx-14 max-md:before:pt-[262.5px] max-lg:before:mt-0 md:max-lg:before:-top-[12.5125rem] md:max-lg:before:-mb-[3.5375rem] md:max-lg:before:-mx-[6.6375rem] md:max-lg:before:pt-[30.975rem] 2xl:before:-my-[4.3125rem] 2xl:before:-mr-[4.025rem]" data-ditto-id="style-span-26">
+                              <div className="w-[383.3px] h-[31.1125rem] flex relative z-2 min-w-90 max-w-[33.3333%] py-7.5 pr-2.5 pl-15 flex-col justify-center grow basis-1/3 text-background text-[1.0625rem] leading-[1.625rem] max-md:w-[23.4375rem] max-md:h-60 max-lg:min-w-0 max-md:pt-7 max-lg:pb-2.5 max-md:px-5 max-lg:text-base max-lg:leading-6 max-lg:max-w-none md:max-lg:w-177 md:max-lg:h-[14.925rem] md:max-lg:pt-10 md:max-lg:px-10 2xl:w-[28.75rem] 2xl:h-150 2xl:min-w-100 2xl:py-10 2xl:pr-5 2xl:pl-20 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:-z-1 before:my-[-57.5px] before:mr-[-53.7px] before:ml-5 before:bg-foreground max-md:before:top-[7.7px] max-md:before:-mb-7.5 max-md:before:-mx-14 max-md:before:pt-[262.5px] max-lg:before:mt-0 md:max-lg:before:-top-[12.5125rem] md:max-lg:before:-mb-[3.5375rem] md:max-lg:before:-mx-[6.6375rem] md:max-lg:before:pt-[30.975rem] 2xl:before:-my-[4.3125rem] 2xl:before:-mr-[4.025rem]" data-ditto-id="style-span-5">
                                 <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]">
                                   Ausbildung
                                 </span>
                                 {" "}
-                                <div className="block mt-[0.675rem] mb-[0.9rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[0.525rem] max-md:mb-[0.7rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[0.6rem] md:max-lg:mb-[0.8rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[0.7875rem] 2xl:mb-[1.05rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-38">
+                                <div className="block mt-[0.675rem] mb-[0.9rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[0.525rem] max-md:mb-[0.7rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[0.6rem] md:max-lg:mb-[0.8rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[0.7875rem] 2xl:mb-[1.05rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-35">
                                   {" Azubi-Speed-Dating 2027 "}
                                 </div>
                                 {" "}
@@ -340,16 +340,16 @@ export default function Page() {
                         </div>
                       </div>
                     </div>
-                    <div className="block" data-ditto-id="style-section-3">
+                    <div className="block" data-ditto-id="style-section-5">
                       <ul className="h-17.5 flex absolute right-0 bottom-0 left-215 m-5 [list-style-type:none] list-outside max-md:h-13 max-md:left-[11.1875rem] md:max-lg:h-15.5 md:max-lg:left-120.5 2xl:left-271.5">
                         {ListRow_data.map((d, i) => <ListRow key={i} d={d} styles={ListRow_styles[i]} />)}
                       </ul>
                       <span className="hidden" data-ditto-id="style-heading-3">
-                        <span className="inline" data-ditto-id="style-span-40">
+                        <span className="inline" data-ditto-id="style-span-36">
                           1
                         </span>
                         /
-                        <span className="inline" data-ditto-id="style-div-31">
+                        <span className="inline" data-ditto-id="style-div-28">
                           3
                         </span>
                       </span>
@@ -362,8 +362,8 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]" data-ditto-id="style-span-35">
-              <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-74" />
+            <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]" data-ditto-id="style-span-29">
+              <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-79" />
               {" "}
             </section>
             {" "}
@@ -376,31 +376,31 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-div-32">
-          <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-link-15">
+        <footer className="border-b-8 border-solid border-b-foreground block z-10 py-[3.9375rem] bg-border max-md:border-b-[6px] max-md:py-[2.675rem] md:max-lg:py-[3.1125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-div-29">
+          <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-link-16">
             <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5" data-ditto-id="style-image-5">
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-41">
-                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-27">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-37">
+                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-20">
                   Wie können wir Ihnen helfen?
                 </p>
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-36">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-6">
                 <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]">
                   Unsere Anschrift:
                 </div>
                 {" "}
-                <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]" data-ditto-id="style-div-11">
-                  <a className="inline underline cursor-pointer" data-ditto-id="style-span-15" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
+                <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
+                  <a className="inline underline cursor-pointer" data-ditto-id="style-span-7" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
                     {" Industrie- und Handelskammer zu Köln "}
-                    <br className="inline" />
+                    <br className="inline" data-ditto-id="style-div-3" />
                     {" Unter Sachsenhausen 5–7"}
-                    <br className="inline" data-ditto-id="style-span-12" />
+                    <br className="inline" />
                     {"(Eingang: Komödienstraße 18–24) "}
                     <br className="inline" data-ditto-id="style-strong" />
                     {" 50667 Köln "}
-                    <br className="inline" data-ditto-id="style-link-16" />
+                    <br className="inline" data-ditto-id="style-link-17" />
                     {" "}
                   </a>
                   {" "}
@@ -408,28 +408,28 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-13">
-                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-strong-4">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-span-14">
+                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-strong-3">
                   So erreichen Sie uns:
                 </div>
                 {" "}
                 <ul className="block mb-3.5 -mx-px [list-style-type:none] list-outside max-lg:mb-[0.7875rem] 2xl:mb-[0.9625rem] 2xl:mx-[-1.1px]">
                   <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]">
-                    <span className="w-0 h-0 block absolute top-[155.125rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-link-17" id="desc-mail-footer">
+                    <span className="w-0 h-0 block absolute top-[155.125rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-link-2" id="desc-mail-footer">
                       Email
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-span-16" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-span-8" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
                       service@koeln.ihk.de
                     </a>
                     {" "}
                   </li>
-                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-strong-2">
-                    <span className="w-0 h-0 block absolute top-[157.375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-span-14" id="desc-tel">
+                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]">
+                    <span className="w-0 h-0 block absolute top-[157.375rem] left-[850.7px] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-span-32" id="desc-tel">
                       Telefonnummer
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-strong-3" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-strong-2" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
                       0221 1640-0
                     </a>
                     {" "}
@@ -440,12 +440,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-div-42">
-              <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5" data-ditto-id="style-br-5">
-                <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5" data-ditto-id="style-div-75">
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
+            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-div-39">
+              <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5">
+                <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul-8">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-24" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-28" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-teilen">
                         Facebook
                       </span>
@@ -453,19 +453,19 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-27">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-li-31">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-18 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-link-18" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-63">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-link-18" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none" data-ditto-id="style-div-66">
                         Youtube
                       </span>
                       {" "}
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul-7">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-ul-5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-11" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-21 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-14" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Instagram
                       </span>
@@ -475,7 +475,7 @@ export default function Page() {
                   </li>
                   <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 pointer-events-none">
                         Linkedin
                       </span>
@@ -490,25 +490,25 @@ export default function Page() {
             </div>
             {" "}
             <div className="flex -mx-5 flex-wrap text-right max-lg:-mx-2.5">
-              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-li-17">
-                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-a-13">
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-7">
+              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-li-9">
+                <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]" data-ditto-id="style-a-10">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-15">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-a-5" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-a-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
                       Gebärdensprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-12">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-2">
                     {" "}
                     <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-a-3" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
                       Leichte Sprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-2">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-10">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-a-6" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-a-4" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
                       Erklärung zur Barrierefreiheit
                     </a>
                     {" "}
@@ -519,12 +519,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-sidebar">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]">
               <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full" data-ditto-id="style-div-55">
-                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-64">
+                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-div-2">
                   © 2026 Industrie- und Handelskammer zu Köln
                 </div>
-                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-43" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+                <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-ditto-id="style-div-40" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                   Vertrag widerrufen
                 </a>
                 <a className="min-h-10.5 inline-flex relative min-w-10.5 py-2.5 px-4.5 rounded-[18px] justify-center items-center text-background [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-foreground cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-md:rounded-[14px] max-lg:text-lg max-lg:leading-4.5 md:max-lg:rounded-2xl 2xl:text-[1.375rem] 2xl:leading-5.5 after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-component="button" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
@@ -537,17 +537,17 @@ export default function Page() {
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-image-11" id="partners">
-                <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" />
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-image-12" id="partners">
+                <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" data-ditto-id="style-div-80" />
                 {" "}
               </div>
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-72">
-              <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-ditto-id="style-br-7" data-component="nav" aria-label="Navigation Fußzeile">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-div-76">
+              <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-ditto-id="style-br-9" data-component="nav" aria-label="Navigation Fußzeile">
                 <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden">
-                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-li-13">
+                  <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]" data-ditto-id="style-li-16">
                     {" "}
                     <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-footer-imprint-item0" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
                       Impressum
@@ -563,7 +563,7 @@ export default function Page() {
                   </li>
                   <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-link-9" data-component="link" href="#">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-link-10" data-component="link" href="#">
                       Erneuern oder ändern Sie Ihre Cookie-Einwilligung
                     </a>
                     {" "}
@@ -580,25 +580,25 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-article" id="gfiUserlikeCustomButton" />
+      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-article-2" id="gfiUserlikeCustomButton" />
       {" "}
-      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-div-33">
+      <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left" data-ditto-id="style-div-30">
         {" "}
-        <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" data-ditto-id="style-div-65" aria-label="Zustimmung ändern" role="complementary">
-          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-12)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-ul-4" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
-            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
+        <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" data-ditto-id="style-div-67" aria-label="Zustimmung ändern" role="complementary">
+          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-14)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-ul-4" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
+            <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-ditto-id="style-image-10" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
             {" "}
           </button>
           {" "}
         </div>
         {" "}
       </div>
-      <div className="block" data-ditto-id="style-div-23">
+      <div className="block" data-ditto-id="style-div-20">
         <aside className="block" aria-label="Chat">
-          <div className="block" data-ditto-id="style-div-68" />
-          <div className="block" data-ditto-id="style-div-24" />
+          <div className="block" data-ditto-id="style-div-73" />
+          <div className="block" data-ditto-id="style-div-21" />
         </aside>
-        <div className="block" data-ditto-id="style-div-73" />
+        <div className="block" data-ditto-id="style-div-77" />
       </div>
     </>
   );

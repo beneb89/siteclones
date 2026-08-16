@@ -3,7 +3,6 @@ import { cn } from "../../../lib/utils";
 export type FeatureCardData = {
   title: string;
   description: string;
-  href: string;
 };
 /** A feature card. */
 export default function FeatureCard({ d, styles }: { d: FeatureCardData; styles: FeatureCardStyles }) {
@@ -19,7 +18,7 @@ export default function FeatureCard({ d, styles }: { d: FeatureCardData; styles:
           </p>
         </div>
         <div className="w-[22.5625rem] h-[22.5625rem] flex absolute top-0 left-0 z-4 opacity-0 p-4 flex-col justify-center items-start gap-2 bg-surface">
-          <a className="border border-solid border-clr-0 flex py-[0.5625rem] px-4.5 rounded-[40px] justify-center items-center text-background font-semibold leading-[1.125rem] bg-foreground cursor-pointer max-md:leading-[1rem] md:max-lg:leading-[1.0625rem]" data-component="button" href={d.href} rel="noopener" target="_self">
+          <a className="border border-solid border-clr-0 flex py-[0.5625rem] px-4.5 rounded-[40px] justify-center items-center text-background font-semibold leading-[1.125rem] bg-foreground cursor-pointer max-md:leading-[1rem] md:max-lg:leading-[1.0625rem]" data-component="button" href="/leistungsangebot-personalorganisation/change-management-training" rel="noopener" target="_self">
             Lesen Sie mehr
           </a>
         </div>

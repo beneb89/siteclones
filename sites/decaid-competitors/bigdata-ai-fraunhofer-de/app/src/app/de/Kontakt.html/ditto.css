@@ -45,7 +45,7 @@
 [data-ditto-id="style-button-2"]:hover{background-color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116)}
 [data-ditto-id="style-button-3"]:hover{border-bottom-color:rgb(0, 147, 116);border-left-color:rgb(0, 147, 116);border-right-color:rgb(0, 147, 116);border-top-color:rgb(0, 147, 116);color:rgb(0, 147, 116);outline-color:rgb(0, 147, 116);text-decoration-color:rgb(0, 147, 116)}
 [data-ditto-id="style-link-28"]:hover{text-decoration-line:none}
-[data-ditto-id="style-button-4"]:hover{background-color:rgba(31, 130, 192, 0.22);box-shadow:rgba(31, 130, 192, 0.706) 0px 0px 0px 14.1077px inset;color:rgb(160, 202, 228);outline-color:rgb(160, 202, 228);text-decoration-color:rgb(160, 202, 228)}
+[data-ditto-id="style-button-4"]:hover{background-color:rgba(31, 130, 192, 0.22);box-shadow:rgba(31, 130, 192, 0.706) 0px 0px 0px 14.1212px inset;color:rgb(160, 202, 228);outline-color:rgb(160, 202, 228);text-decoration-color:rgb(160, 202, 228)}
 [data-ditto-id="style-bei-facebook-teilen"]:hover{background-color:rgb(66, 100, 170)}
 [data-ditto-id="style-bei-x-teilen"]:hover{background-color:rgb(25, 33, 41)}
 [data-ditto-id="style-bei-linkedin-teilen"]:hover{background-color:rgb(10, 134, 204)}
@@ -56,4 +56,4 @@
 [data-ditto-id="style-link-30"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-link-31"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-link-32"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-button-4"]:focus{background-color:rgba(31, 130, 192, 0.024);box-shadow:rgba(31, 130, 192, 0.114) 0px 0px 0px 2.30512px inset;color:rgb(55, 144, 199);outline-color:rgb(55, 144, 199);text-decoration-color:rgb(55, 144, 199)}
+[data-ditto-id="style-button-4"]:focus{background-color:rgba(31, 130, 192, 0.024);box-shadow:rgba(31, 130, 192, 0.114) 0px 0px 0px 2.31275px inset;color:rgb(55, 144, 199);outline-color:rgb(55, 144, 199);text-decoration-color:rgb(55, 144, 199)}

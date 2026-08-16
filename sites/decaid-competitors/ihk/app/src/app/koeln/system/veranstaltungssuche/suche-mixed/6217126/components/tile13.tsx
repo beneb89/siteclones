@@ -8,6 +8,7 @@ export type Tile13Data = {
   text3: string;
   text4: string;
   text5: string;
+  label: string;
   text6: string;
   ariaLabel: string;
   href: string;
@@ -41,20 +42,16 @@ export default function Tile13({ d, styles }: { d: Tile13Data; styles: Tile13Sty
             {d.text3}
           </div>
           {" "}
-          <div className="inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]">
+          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]", styles.className2)}>
             {d.text4}
           </div>
           {" "}
-          <div className="inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]">
+          <div className={cn("inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5", styles.className3)}>
             {d.text5}
           </div>
           {" "}
-          <div className="inline-block mr-[0.9375rem] mb-0.5 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-foreground before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]">
+          <div className="inline-block mr-[0.9375rem] mb-2 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-color-005 before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]" title={d.label}>
             {d.text6}
-          </div>
-          {" "}
-          <div className="inline-block mr-[0.9375rem] mb-2 leading-5.5 max-md:block max-md:relative max-md:pl-6 before:content-[''] before:inline-block before:relative before:-top-px before:bottom-px before:inset-x-0 before:w-[0.9375rem] before:h-5 before:mr-[0.3125rem] before:text-color-005 before:text-base before:leading-5 max-md:before:block max-md:before:absolute max-md:before:right-47.5 max-md:before:bottom-[0.1875rem]" title="Freie Plätze">
-            Freie Plätze
           </div>
           {" "}
         </div>

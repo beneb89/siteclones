@@ -28,7 +28,7 @@ export default function MediaTile2({ d, styles }: { d: MediaTile2Data; styles: M
           {" "}
         </div>
         {" "}
-        <div className="h-[12.3125rem] block relative px-[1.5625rem] rounded-br-2xl rounded-bl-2xl text-background max-md:h-32.5 before:content-[''] before:block before:absolute before:-top-8.5 before:bottom-[12.3125rem] before:inset-x-0 before:h-8.5 before:bg-foreground max-md:before:bottom-32.5" style={{ backgroundImage: "linear-gradient(162deg, var(--foreground) 50%, var(--clr-15) 98%, var(--clr-16) 100%)" }}>
+        <div className="h-[12.3125rem] block relative px-[1.5625rem] rounded-br-2xl rounded-bl-2xl text-background max-md:h-32.5 before:content-[''] before:block before:absolute before:-top-8.5 before:bottom-[12.3125rem] before:inset-x-0 before:h-8.5 before:bg-foreground max-md:before:bottom-32.5" style={{ backgroundImage: "linear-gradient(162deg, var(--foreground) 50%, var(--clr-17) 98%, var(--clr-18) 100%)" }}>
           <span className="block mb-0.5 text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem]">
             {d.label3}
           </span>

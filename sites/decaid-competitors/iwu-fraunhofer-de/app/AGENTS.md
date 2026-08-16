@@ -59,6 +59,21 @@ This is a generated ditto.site clone app for https://www.iwu.fraunhofer.de/. It 
 - /en/about-Fraunhofer-IWU/locations.html - Locations - Fraunhofer IWU
 - /en/about-Fraunhofer-IWU/management.html - Management - Fraunhofer IWU
 - /en/about-Fraunhofer-IWU/participation-in-networks.html - Participation in networks - Fraunhofer IWU
+- /en/about-Fraunhofer-IWU/quality-management.html - Quality Management - Fraunhofer IWU
+- /en/career/excellent-thesis.html - Excellent Thesis - Fraunhofer IWU
+- /en/contact/access-chemnitz.html - Access Chemnitz - Fraunhofer IWU
+- /en/contact/access-dresden.html - Access Dresden - Fraunhofer IWU
+- /en/contact/access-zittau.html - Access Zittau - Fraunhofer IWU
+- /en/press/2024-Custom-Print-Heads-for-3D-Printing-Achieving-Individual-and-Highly-Efficient-Functional-Integration.html - 2024 I Custom Print Heads for 3D Printing - Achieving Individual and Highly Efficient Functional Integration - Fraunhofer IWU
+- /en/press/2024-Energy-Management-in-Trains-a-Closer-Look-is-Worth-It.html - 2024 I Energy Management in Trains a Closer Look is Worth It - Fraunhofer IWU
+- /en/press/2024-Metallic-3D-printing-achieving-high-quality-results-with-customized-scanning-strategies.html - 2024 I Metallic 3D printing achieving high-quality results with customized scanning strategies - Fraunhofer IWU
+- /en/press/2024-Three-high-performance-machines-one-SEAM-team-Granulate-based-3D-printing-revolutionizes-facade-construction.html - 2024 I Three high-performance machines, one SEAM team - Granulate-based 3D printing revolutionizes facade construction - Fraunhofer IWU
+- /en/quick-links/companies.html - Companies - Fraunhofer IWU
+- /en/quick-links/scientists.html - Scientists - Fraunhofer IWU
+- /en/trade-fairs-and-events/first-european-spatial-computing-healthcare-summit.html - First European Spatial Computing Healthcare Summit - Fraunhofer IWU
+- /de/Ueber-uns/institutsleitung/MartinDix.html - MartinDix - Fraunhofer IWU
+- /en/about-Fraunhofer-IWU/locations/wolfsburg.html - Wolfsburg - Fraunhofer IWU
+- /en/about-Fraunhofer-IWU/locations/zittau.html - Access Zittau - Fraunhofer IWU
 
 ## Do Not Edit Casually
 

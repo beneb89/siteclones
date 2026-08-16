@@ -127,12 +127,12 @@ const ListRow_meta: string[][] = [
     ["n80"]
 ];
 const Tile_meta: string[][] = [
-    ["n102", "style-li-3", "style-link-27"],
+    ["n102", "style-li-3", "style-link-28"],
     ["n105", "n106", "n107"],
     ["style-image-2", "n109", "n110"],
     ["n111", "n112", "style-li-4"],
     ["n114", "n115", "n116"],
-    ["n117", "style-ul-2", "style-694"],
+    ["n117", "style-ul-2", "style-697"],
     ["n120", "n121", "n122"],
     ["style-20", "n124", "n125"],
     ["n126", "n127", "style-link-2"],
@@ -145,13 +145,13 @@ const ListRow_meta2: string[][] = [
 ];
 const ListRow2_meta: string[][] = [
     ["n271"],
-    ["style-div-49"],
+    ["style-div-87"],
     ["n273"],
     ["n274"],
     ["style-i-13"]
 ];
 const ListRow_meta3: string[][] = [
-    ["style-div-51"],
+    ["style-div-89"],
     ["n279"],
     ["n280"],
     ["style-a-2"],
@@ -159,66 +159,66 @@ const ListRow_meta3: string[][] = [
     ["n283"],
     ["n284"],
     ["style-tabpanel-megamenu-0-0-6"],
-    ["style-div-52"],
+    ["style-div-90"],
     ["n287"],
     ["n288"]
 ];
 const Logo_meta: string[][] = [
-    ["style-a-8", "style-i-20", "style-div-107"],
-    ["style-div-57", "n327", "style-div-72"],
-    ["style-button-16", "style-div-73", "style-i-21"],
-    ["style-span-10", "n333", "style-div-58"]
+    ["style-a-7", "style-i-20", "style-div-146"],
+    ["style-div-95", "n327", "style-div-110"],
+    ["style-button-16", "style-div-111", "style-i-21"],
+    ["style-span-15", "n333", "style-div-96"]
 ];
 const MediaTile_meta: string[][] = [
-    ["style-span-11", "style-div-60", "n348", "style-div-61", "n350", "n351", "style-i-24", "n353", "style-div-89", "n355"],
-    ["n356", "n357", "n358", "style-i-25", "n360", "n361", "n362", "n363", "style-div-90", "style-a-4"],
-    ["style-i-26", "style-div-77", "n368", "style-tabpanel-megamenu-0-0-12", "n370", "n371", "n372", "style-i-27", "style-span-13", "style-div-78"]
+    ["style-span-16", "style-div-98", "n348", "style-div-99", "n350", "n351", "style-i-24", "n353", "style-div-128", "n355"],
+    ["n356", "n357", "n358", "style-i-25", "n360", "n361", "style-div-526", "style-div-206", "style-div-129", "style-a-3"],
+    ["style-i-26", "style-div-115", "n368", "style-tabpanel-megamenu-0-0-12", "n370", "style-button-47", "style-div-207", "style-i-27", "style-span-18", "style-div-116"]
 ];
 const ListRow3_meta: string[][] = [
-    ["style-a-6", "style-i-30"],
-    ["n395", "style-div-91"],
-    ["n397", "style-div-83"],
-    ["n399", "style-div-84"],
-    ["style-i-31", "style-span-12"],
-    ["n403", "style-div-85"],
-    ["n405", "style-div-92"],
+    ["style-a-5", "style-i-30"],
+    ["n395", "style-div-130"],
+    ["n397", "style-div-121"],
+    ["n399", "style-div-122"],
+    ["style-i-31", "style-span-17"],
+    ["n403", "style-div-123"],
+    ["n405", "style-div-131"],
     ["n407", "style-i-32"],
-    ["n409", "style-div-93"],
-    ["n411", "style-div-94"],
-    ["n413", "style-div-95"],
-    ["style-i-33", "style-span-14"],
-    ["n417", "style-div-96"],
-    ["n419", "style-div-97"]
+    ["n409", "style-div-132"],
+    ["n411", "style-div-133"],
+    ["n413", "style-div-134"],
+    ["style-i-33", "style-span-19"],
+    ["n417", "style-div-135"],
+    ["n419", "style-div-136"]
 ];
 const ListRow4_meta: string[][] = [
-    ["n448", "style-a-9"],
-    ["style-i-38", "style-div-98"],
+    ["n448", "style-a-8"],
+    ["style-i-38", "style-div-137"],
     ["n452", "style-tabpanel-megamenu-0-0-18"]
 ];
 const ListRow4_meta2: string[][] = [
-    ["n458", "style-div-99"],
-    ["n460", "style-div-100"],
-    ["n462", "style-a-10"],
-    ["style-i-40", "style-div-101"]
+    ["style-span-55", "style-div-138"],
+    ["style-div-545", "style-div-139"],
+    ["n462", "style-a-9"],
+    ["style-i-40", "style-div-140"]
 ];
 const ListRow5_meta: string[][] = [
     ["n470", "style-i-41"],
-    ["n472", "style-div-102"],
-    ["n474", "style-div-103"],
-    ["n476", "style-a-11"]
+    ["n472", "style-div-141"],
+    ["n474", "style-div-142"],
+    ["n476", "style-a-10"]
 ];
 const ListRow6_meta: string[][] = [
-    ["n481", "style-div-104"],
-    ["n483", "style-div-105"],
-    ["style-i-43", "style-span-16"],
-    ["n487", "style-div-106"]
+    ["n481", "style-div-143"],
+    ["n483", "style-div-144"],
+    ["style-i-43", "style-span-21"],
+    ["style-div-212", "style-div-145"]
 ];
 const ListRow7_meta: string[][] = [
-    ["n490", "n491", "style-i-44", "n493"],
-    ["n494", "n495", "n496", "n497"],
+    ["n490", "n491", "style-i-44", "style-div-213"],
+    ["n494", "n495", "n496", "style-button-22"],
     ["n498", "style-i-45", "n500", "n501"],
     ["n502", "n503", "n504", "n505"],
-    ["style-i-46", "n507", "n508", "n509"]
+    ["style-i-46", "style-div-214", "n508", "style-tabpanel-megamenu-0-0-22"]
 ];
 const ListRow_styles = [
     {  },
@@ -296,7 +296,7 @@ export default function Page() {
   return (
     <>
       <div className="box-content h-full block">
-        <a className="box-content w-px h-px block absolute top-0 left-0 -m-px overflow-hidden text-color-001 whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-div-63" href="#main">
+        <a className="box-content w-px h-px block absolute top-0 left-0 -m-px overflow-hidden text-color-001 whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-div-101" href="#main">
           Zum Inhalt springen
         </a>
         {" "}
@@ -325,25 +325,25 @@ export default function Page() {
                   </div>
                   {" "}
                   <div className="box-content block">
-                    <ul className="block mt-1 leading-7 [list-style-type:none] list-outside max-lg:hidden" id="menu-hauptnavigation">
+                    <ul className="block mt-1 leading-7 [list-style-type:none] list-outside max-lg:hidden" data-ditto-id="style-div-540" id="menu-hauptnavigation">
                       <li className="box-content block float-left" id="menu-item-470">
                         <a className="box-content border-l border-solid border-l-color-005 block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 pl-6.5 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/1685">
                           Blog
                         </a>
                       </li>
-                      <li className="box-content inline-block" id="menu-item-20615">
+                      <li className="box-content inline-block" data-ditto-id="style-menu-item-20615" id="menu-item-20615">
                         <a className="box-content block relative float-left mr-5 pt-px pr-5 pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link" data-component="link" href="/blog/berufe">
                           Themen
                         </a>
                         {" "}
                       </li>
                       <li className="box-content inline-block" id="menu-item-19584">
-                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/blog/berufe">
+                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link-38" data-component="link" href="/blog/berufe">
                           Berufe
                         </a>
                       </li>
                       <li className="box-content inline-block" id="menu-item-45633">
-                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-component="link" href="/blog/berufe" target="_blank">
+                        <a className="box-content block relative float-left mr-5 pt-px pr-[0.6875rem] pb-1 text-foreground font-medium leading-3.5 tracking-[0.3px] cursor-pointer after:content-[''] after:hidden after:ml-2.5 after:text-foreground after:text-[0.9375rem] after:leading-[0.875rem] after:tracking-[0.3px] after:text-right max-lg:after:text-color-016 max-lg:after:text-left" data-ditto-id="style-link-39" data-component="link" href="/blog/berufe" target="_blank">
                           Digitales Lernen
                         </a>
                       </li>
@@ -356,7 +356,7 @@ export default function Page() {
               </div>
               {" "}
               <div className="box-content block text-right max-lg:hidden">
-                <form className="box-content w-70 block relative min-w-70" role="search">
+                <form className="box-content w-70 block relative min-w-70" data-ditto-id="style-form-3" role="search">
                   <input className="w-full h-[1.9375rem] border border-solid border-surface-3 inline-block relative -top-px bottom-px py-1.5 pr-2.5 pl-10 rounded-lg overflow-clip text-muted-foreground leading-[1.0625rem] text-start cursor-text" data-ditto-id="style-input" data-component="input" name="s" placeholder="Suchbegriff … " title="Suche nach:" type="search" value="" />
                   {" "}
                   <input className="box-content w-[0.9375rem] h-3.5 block absolute bottom-[1.4375rem] left-2 mr-[1.5625rem] p-[0.4375rem] rounded-lg overflow-clip text-foreground [font-family:FontAwesome] text-base leading-4 text-center whitespace-pre text-nowrap cursor-pointer before:content-[''] before:text-foreground before:text-base before:leading-4 before:text-center" data-ditto-id="style-button-13" data-component="button" type="submit" value="" />
@@ -373,7 +373,7 @@ export default function Page() {
         {" "}
         <div className="box-content w-311.5 block relative z-5 max-w-[calc(100%_-_34px)] px-[1.0625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none md:max-lg:w-192 2xl:w-312 2xl:mx-[19.9375rem]" data-ditto-id="style-breadcrumbs" id="breadcrumbs">
           <div className="box-content block pt-[1.0625rem] pr-2 pb-[0.9375rem] pl-2.5 text-color-013 text-xs leading-[1.1875rem] max-md:hidden md:max-lg:pl-2">
-            <span className="box-content inline">
+            <span className="box-content inline" data-ditto-id="style-span-57">
               <span className="box-content inline">
                 <a className="box-content inline text-color-015 font-medium underline cursor-pointer" data-component="link" href="/1685">
                   Home
@@ -387,7 +387,7 @@ export default function Page() {
               </span>
               {" "}
               <span className="box-content inline before:content-['/'] before:mr-2 before:ml-1.5 before:text-color-015 before:text-sm before:leading-[1.375rem] before:text-left">
-                <a className="box-content inline text-color-015 font-medium underline cursor-pointer" data-component="link" href="/blog/berufe/verwaltungsassistenz">
+                <a className="box-content inline text-color-015 font-medium underline cursor-pointer" data-ditto-id="style-div-541" data-component="link" href="/blog/berufe/verwaltungsassistenz">
                   Assistenz und Office-Management
                 </a>
               </span>
@@ -404,10 +404,10 @@ export default function Page() {
         <div className="box-content w-311.5 block max-w-[calc(100%_-_34px)] mb-5.5 px-[1.0625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none md:max-lg:w-192 2xl:w-312 2xl:mx-[19.9375rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left 2xl:before:inset-x-[-300.5px] 2xl:before:w-480 after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left" id="main">
           <div className="h-[12131.7px] min-h-px flex relative -mx-[1.0625rem] flex-wrap items-start max-md:h-[1121.75rem] md:max-lg:h-[827.525rem] 2xl:h-[12232.7px]">
             <div className="w-[853.3px] h-[12131.7px] min-h-px block relative float-left z-10 px-[1.5625rem] max-md:w-[23.4375rem] max-md:h-[1093.875rem] max-md:mb-7 max-lg:z-[initial] md:max-lg:w-192 md:max-lg:h-[805.5875rem] 2xl:w-[854.7px] 2xl:h-[12232.7px]">
-              <article className="box-content block relative z-5" id="post-46901">
+              <article className="box-content block relative z-5" data-ditto-id="style-p-31" id="post-46901">
                 <header className="box-content block relative mb-12.5 max-lg:mb-[1.3125rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left" data-ditto-id="style-div-3">
                   <div className="box-content block rounded-xl overflow-hidden leading-[0.4375rem]">
-                    <img className="box-content w-[50.1875rem] h-96.5 inline max-w-full overflow-clip aspect-[auto_800/384] max-md:w-[20.3125rem] max-md:h-39 md:max-lg:w-179.5 md:max-lg:h-[21.5625rem] 2xl:w-[50.3125rem]" data-component="image" alt="" height="384" sizes="(max-width: 800px) 100vw, 800px" src="/assets/cloned/images/db27d8053e5c.jpg" srcSet="/assets/cloned/images/db27d8053e5c.jpg 800w, /assets/cloned/images/8c4e70049840.jpg 300w, /assets/cloned/images/7611a617bc8b.jpg 150w, /assets/cloned/images/8d6677db9e64.jpg 702w, /assets/cloned/images/6c07562c2f87.jpg 600w" width="800" />
+                    <img className="box-content w-[50.1875rem] h-96.5 inline max-w-full overflow-clip aspect-[auto_800/384] max-md:w-[20.3125rem] max-md:h-39 md:max-lg:w-179.5 md:max-lg:h-[21.5625rem] 2xl:w-[50.3125rem]" data-ditto-id="style-heading-13" data-component="image" alt="" height="384" sizes="(max-width: 800px) 100vw, 800px" src="/assets/cloned/images/db27d8053e5c.jpg" srcSet="/assets/cloned/images/db27d8053e5c.jpg 800w, /assets/cloned/images/8c4e70049840.jpg 300w, /assets/cloned/images/7611a617bc8b.jpg 150w, /assets/cloned/images/8d6677db9e64.jpg 702w, /assets/cloned/images/6c07562c2f87.jpg 600w" width="800" />
                     {" "}
                   </div>
                   {" "}
@@ -431,7 +431,7 @@ export default function Page() {
                   {" "}
                   <span className="box-content inline" data-ditto-id="style-i">
                     {"Am "}
-                    <span className="box-content inline">
+                    <span className="box-content inline" data-ditto-id="style-div-542">
                       {" "}
                       <time className="box-content inline" dateTime="2026-07-27T10:48:00+02:00">
                         27. Juli 2026
@@ -441,7 +441,7 @@ export default function Page() {
                     {" "}
                   </span>
                   {" "}
-                  <span className="box-content inline" data-ditto-id="style-div-64">
+                  <span className="box-content inline" data-ditto-id="style-div-102">
                     {"von "}
                     <span className="box-content inline">
                       Online-Redaktion
@@ -449,7 +449,7 @@ export default function Page() {
                     {" "}
                   </span>
                   {" "}
-                  <span className="box-content border-l border-solid border-l-color-019 inline ml-2 pl-2 whitespace-nowrap text-nowrap" data-ditto-id="style-div-87">
+                  <span className="box-content border-l border-solid border-l-color-019 inline ml-2 pl-2 whitespace-nowrap text-nowrap" data-ditto-id="style-div-126">
                     <span className="box-content inline" data-ditto-id="style-i-2" id="readingTime">
                       10 Minuten
                     </span>
@@ -460,11 +460,11 @@ export default function Page() {
                 <div className="box-content block before:content-['_'] before:table before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left after:content-['_'] after:table after:w-0 after:h-0 after:text-color-002 after:text-sm after:leading-[1.3125rem] after:text-left">
                   <div className="box-content block max-md:clear-both">
                     <div className="box-content block relative -mb-[1.625rem] text-color-001">
-                      <p className="box-content block mb-[0.9375rem] text-clr-13 text-base leading-6">
+                      <p className="box-content block mb-[0.9375rem] text-clr-13 text-base leading-6" data-ditto-id="style-div-543">
                         Folgendes Szenario kommt den meisten bekannt vor: Am Morgen liegen zahlreiche Geschäftsbriefe auf dem Tisch, die geprüft, bearbeitet und beantwortet werden müssen. Jede unklare Betreffzeile oder unleserliche Schriftart kostet dann wertvolle Zeit. Genau hier zeigt sich, wie wichtig ein einheitliches Format für professionelle Geschäftskorrespondenz ist. Mit DIN 5008 hast du ein ideales Werkzeug, um Dokumente seriöser und gut lesbar zu gestalten – ohne großen Aufwand. Wir zeigen dir, worauf du achten musst.
                       </p>
                       {" "}
-                      <h2 className="box-content block mt-7.5 mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-i-425" data-component="heading" id="section-1">
+                      <h2 className="box-content block mt-7.5 mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-i-430" data-component="heading" id="section-1">
                         Was ist die DIN 5008?
                       </h2>
                       {" "}
@@ -503,7 +503,7 @@ export default function Page() {
                       </p>
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
-                        <strong className="box-content inline font-medium" data-ditto-id="style-link-26">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-link-27">
                           {"Format B "}
                         </strong>
                         ist das gängige Format in der Praxis und wird als Basis für die meisten Geschäftsbriefe verwendet:
@@ -545,16 +545,16 @@ export default function Page() {
                           {" Musterstr. 12"}
                           <br className="box-content inline" data-ditto-id="style-li-2" />
                           {" 12345 Musterstadt"}
-                          <br className="box-content inline" />
+                          <br className="box-content inline" data-ditto-id="style-td-2" />
                           {" Deutschland"}
                         </p>
                       </blockquote>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="interaction-image">
                         <strong className="box-content inline font-medium">
                           Informationsblock
                         </strong>
-                        <br className="box-content inline" data-ditto-id="style-div-62" />
+                        <br className="box-content inline" data-ditto-id="style-div-100" />
                         {" Mit einem Informationsblock stellst du alle wichtigen Informationen übersichtlich dar. Er wird rechts neben der Empfängeradresse positioniert. Typische Inhalte sind:"}
                       </p>
                       {" "}
@@ -576,7 +576,7 @@ export default function Page() {
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-22">
                         Der Betreff sollte kurz und klar formuliert sein und den Inhalt des Schreibens präzise zusammenfassen. Er wird zwei Zeilen unter der Anschrift eingefügt, damit er im Sichtfenster des Briefumschlags nicht sichtbar ist.
                       </p>
                       {" "}
@@ -600,7 +600,7 @@ export default function Page() {
                         {" "}
                       </blockquote>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-link-24">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-link-25">
                         <strong className="box-content inline font-medium">
                           {" "}
                         </strong>
@@ -609,9 +609,9 @@ export default function Page() {
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-204">
                         {"DIN 5008 enthält keine konkreten Vorgaben zur Formulierung der Anrede. Welche Anrede du verwendest, richtet sich nach dem Anlass, der "}
-                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-div-88" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/zielgruppe/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
+                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-div-127" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/zielgruppe/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
                           Zielgruppe
                         </a>
                         {" sowie den Vorgaben deines Unternehmens oder der Organisation. Häufig verwendete Anreden sind:"}
@@ -626,10 +626,10 @@ export default function Page() {
                       </p>
                       {" "}
                       <p className="box-content block text-[0.9375rem] leading-5.5" />
-                      <div className="box-content block relative mt-7.5 mb-12.5 p-7.5 rounded-xl bg-surface-9 max-md:px-[0.9375rem] 2xl:mb-15" data-ditto-id="style-link-25">
+                      <div className="box-content block relative mt-7.5 mb-12.5 p-7.5 rounded-xl bg-surface-9 max-md:px-[0.9375rem] 2xl:mb-15" data-ditto-id="style-link-26">
                         <div className="box-content flex max-md:block" data-ditto-id="style-div-5">
                           <div className="box-content w-[9.5625rem] h-[9.5625rem] block float-left max-w-[9.5625rem] max-h-[9.5625rem] mr-5 mb-2.5 rounded-[10px] shrink-0 overflow-hidden max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]">
-                            <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/a5506eadf4bc.jpg" />
+                            <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/e09cad3bb6e5.jpg" />
                             {" "}
                           </div>
                           {" "}
@@ -679,7 +679,7 @@ export default function Page() {
                         .
                       </p>
                       {" "}
-                      <h2 className="box-content block mt-7.5 mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-link-28" data-component="heading" id="section-4">
+                      <h2 className="box-content block mt-7.5 mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-link-29" data-component="heading" id="section-4">
                         DIN 5008 für E-Mails
                       </h2>
                       {" "}
@@ -697,7 +697,7 @@ export default function Page() {
                         Wie bei einem klassischen Geschäftsbrief dient auch hier die Betreffzeile als kurze Zusammenfassung deiner E-Mail. Schreibe präzise und aussagekräftig, was dein Anliegen ist und um was es in der Mail geht.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-8">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-10">
                         <strong className="box-content inline font-medium">
                           Anrede
                         </strong>
@@ -707,7 +707,7 @@ export default function Page() {
                         Beginne die E-Mail mit einer höflichen Anrede, wie z. B. „Sehr geehrte Frau/Herr [Name]”. Die Anrede sollte dem Anlass und der Beziehung zum Empfänger angemessen sein.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-link-29">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-link-30">
                         <strong className="box-content inline font-medium" data-ditto-id="style-ul-3">
                           Absätze
                         </strong>
@@ -733,8 +733,8 @@ export default function Page() {
                         Beispiel:
                       </p>
                       {" "}
-                      <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-p-9">
-                        <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-link-30">
+                      <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-p-11">
+                        <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-link-31">
                           Mit freundlichen Grüßen
                         </p>
                         {" "}
@@ -744,11 +744,11 @@ export default function Page() {
                           {" Position im Unternehmen"}
                           <br className="box-content inline" />
                           {" Firmenname"}
-                          <br className="box-content inline" data-ditto-id="style-link-31" />
+                          <br className="box-content inline" data-ditto-id="style-link-32" />
                           {" Straße, Hausnummer, Postleitzahl und Ort"}
                           <br className="box-content inline" />
                           {" Telefonnummer"}
-                          <br className="box-content inline" />
+                          <br className="box-content inline" data-ditto-id="style-strong-9" />
                           {" E-Mail-Adresse"}
                           <br className="box-content inline" data-ditto-id="style-p-6" />
                           {" Website"}
@@ -761,9 +761,9 @@ export default function Page() {
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-10">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-p-12">
                         {"Wenn du einen "}
-                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-ul-5" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/anhang/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
+                        <a className="box-content border-b border-solid border-b-color-004 inline text-color-004 cursor-pointer" data-ditto-id="style-ul-4" data-component="link" href={"https://www.haufe-akademie.de/blog/glossar/anhang/?utm_source=direkt&utm_id=84834%2F04393689&akttyp=direkt&aktnr=84834&wnr=04393689"} role="link" target="_blank">
                           Anhang
                         </a>
                         {" verschickst, solltest du im Text der E-Mail kurz darauf hinweisen, dass es einen Anhang gibt und was darin enthalten ist, z. B.:"}
@@ -779,14 +779,14 @@ export default function Page() {
                       {" "}
                       <p className="box-content block text-[0.9375rem] leading-5.5" />
                       <div className="box-content block relative mt-7.5 mb-12.5 p-7.5 rounded-xl bg-surface-9 max-md:px-[0.9375rem] 2xl:mb-15">
-                        <div className="box-content flex max-md:block" data-ditto-id="style-div-29">
+                        <div className="box-content flex max-md:block" data-ditto-id="style-div-67">
                           <div className="box-content w-[9.5625rem] h-[9.5625rem] block float-left max-w-[9.5625rem] max-h-[9.5625rem] mr-5 mb-2.5 rounded-[10px] shrink-0 overflow-hidden max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]" data-ditto-id="style-button-11">
-                            <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/e7240f7c507c.jpg" />
+                            <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/39ebd915425a.jpg" />
                             {" "}
                           </div>
                           {" "}
                           <div className="box-content block float-left grow basis-[400px]" data-ditto-id="style-i-3">
-                            <h2 className="box-content inline-block mb-5 pr-17.5 text-primary text-2xl font-medium leading-[1.8125rem] max-lg:max-w-full max-lg:[overflow-wrap:break-word] max-md:pr-0" data-ditto-id="style-span-5" data-component="heading">
+                            <h2 className="box-content inline-block mb-5 pr-17.5 text-primary text-2xl font-medium leading-[1.8125rem] max-lg:max-w-full max-lg:[overflow-wrap:break-word] max-md:pr-0" data-ditto-id="style-span-10" data-component="heading">
                               Unsere Seminarempfehlung
                             </h2>
                             {" "}
@@ -800,7 +800,7 @@ export default function Page() {
                             {" "}
                             <br className="box-content inline" />
                             {" "}
-                            <a className="box-content inline-block min-w-40 max-w-[80%] pt-4.5 pb-[1.0625rem] px-7.5 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer after:content-[''] after:block after:absolute after:inset-0 after:w-[803.3px] after:h-[26.6125rem] max-md:after:w-[20.3125rem] max-md:after:h-[43.85rem] md:max-lg:after:w-179.5 md:max-lg:after:h-[28.1125rem] 2xl:after:w-[804.7px]" data-ditto-id="style-div-30" data-component="link" href="/1685" target="_blank">
+                            <a className="box-content inline-block min-w-40 max-w-[80%] pt-4.5 pb-[1.0625rem] px-7.5 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer after:content-[''] after:block after:absolute after:inset-0 after:w-[803.3px] after:h-[26.6125rem] max-md:after:w-[20.3125rem] max-md:after:h-[43.85rem] md:max-lg:after:w-179.5 md:max-lg:after:h-[28.1125rem] 2xl:after:w-[804.7px]" data-ditto-id="style-div-68" data-component="link" href="/1685" target="_blank">
                               {" Seminar: Professionelle Korrespondenz mit E-Mail und Brief "}
                             </a>
                             {" "}
@@ -808,7 +808,7 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <div className="box-content block clear-both" data-ditto-id="style-a-3" />
+                        <div className="box-content block clear-both" />
                         {" "}
                       </div>
                       {" "}
@@ -828,7 +828,7 @@ export default function Page() {
                       </p>
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
-                        <strong className="box-content inline font-medium" data-ditto-id="style-div-31">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-div-69">
                           2. Datum
                         </strong>
                       </p>
@@ -849,7 +849,7 @@ export default function Page() {
                         </li>
                       </ul>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-32">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-70">
                         Beispiel: 22.01.2026
                       </p>
                       {" "}
@@ -863,13 +863,13 @@ export default function Page() {
                         Beispiel: 22. Januar 2026 oder 22. Jan. 2026
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-33">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-71">
                         <strong className="box-content inline font-medium" data-ditto-id="style-tabpanel-megamenu-0-0-2">
                           3. Uhrzeit
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-34">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-72">
                         Gemäß DIN 5008 wird die Uhrzeit in Doppelziffern geschrieben, mit einem Doppelpunkt zwischen Stunde und Minute (HH:MM). Sekunden können ergänzt werden, sind im Geschäftsalltag aber meist nicht erforderlich. Bei vollen Uhrzeiten kannst du die Minutenangabe weglassen.
                       </p>
                       {" "}
@@ -877,16 +877,16 @@ export default function Page() {
                         Beispiele:
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-35">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-73">
                         15 Uhr oder 15:00 Uhr
                         <br className="box-content inline" data-ditto-id="style-i-7" />
                         {" 15:45 Uhr"}
-                        <br className="box-content inline" data-ditto-id="style-span-6" />
+                        <br className="box-content inline" data-ditto-id="style-span-11" />
                         {" 15:45:10 Uhr"}
                       </p>
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6">
-                        <strong className="box-content inline font-medium" data-ditto-id="style-div-36">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-div-74">
                           {"4. Telefonnummern "}
                         </strong>
                       </p>
@@ -895,7 +895,7 @@ export default function Page() {
                         Telefonnummern werden in sinnvolle Blöcke gegliedert und durch Leerzeichen getrennt. Die Vorwahl ist durch ein Leerzeichen von der restlichen Zahlenfolge zu trennen. Bei Durchwahlen wird hingegen ein Bindestrich verwendet. Die Ländervorwahl wird mit einem Pluszeichen eingeleitet.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-37">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-75">
                         Beispiele:
                       </p>
                       {" "}
@@ -904,20 +904,20 @@ export default function Page() {
                           Mit Vorwahl: 030 1234567
                           <br className="box-content inline" />
                           {" Durchwahl: 030 1234567-12"}
-                          <br className="box-content inline" data-ditto-id="style-div-38" />
+                          <br className="box-content inline" data-ditto-id="style-div-76" />
                           {" Mobil: 0171 1234567"}
                           <br className="box-content inline" />
                           {" Ländervorwahl: +49 30 1234567"}
                         </p>
                       </blockquote>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-39">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-77">
                         <strong className="box-content inline font-medium" data-ditto-id="style-button-14">
                           5. IBAN
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-40">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-78">
                         Damit die IBAN trotz der langen Zeichenfolge gut lesbar ist und sich keine Fehler beim Abtippen einschleichen, wird sie in Vierergruppen mit Leerzeichen gegliedert. Die IBAN beginnt immer mit dem Ländercode (in Deutschland „DE“).
                       </p>
                       {" "}
@@ -925,36 +925,36 @@ export default function Page() {
                         Beispiel:
                       </p>
                       {" "}
-                      <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-span-7">
+                      <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-span-12">
                         <p className="box-content block mb-[0.9375rem] text-base leading-6">
                           DE12 3456 7890 1234 5678 90
                         </p>
                       </blockquote>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-41">
-                        <strong className="box-content inline font-medium" data-ditto-id="style-div-65">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-79">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-div-103">
                           {"6. Postleitzahl "}
                         </strong>
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-42">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-80">
                         Postleitzahlen schreibt man ohne Leerzeichen.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-a-7">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-a-6">
                         Beispiele:
                       </p>
                       {" "}
                       <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-i-10">
                         <p className="box-content block mb-[0.9375rem] text-base leading-6">
                           79098 Freiburg
-                          <br className="box-content inline" data-ditto-id="style-div-43" />
+                          <br className="box-content inline" data-ditto-id="style-div-81" />
                           {" 80799 München"}
                         </p>
                       </blockquote>
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-tabpanel-megamenu-0-0-4">
-                        <strong className="box-content inline font-medium" data-ditto-id="style-div-44">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-div-82">
                           7. Geldbeträge
                         </strong>
                       </p>
@@ -963,19 +963,19 @@ export default function Page() {
                         Zur besseren Lesbarkeit werden Tausenderstellen durch ein Leerzeichen getrennt, Euro und Cent hingegen durch ein Komma. Zwischen dem Betrag und der Währungseinheit ist außerdem ein Leerzeichen zu setzen.
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-45">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-83">
                         Beispiele:
                       </p>
                       {" "}
                       <blockquote className="box-content border-b border-solid border-b-clr-7 block relative mt-7.5 mb-12.5 pt-[1.625rem] px-[1.625rem] rounded-xl bg-surface-6 2xl:mb-15" data-ditto-id="style-i-11">
-                        <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-span-8">
+                        <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-span-13">
                           1 234,56 EUR
                           <br className="box-content inline" />
                           {" 10 234,56 EUR"}
                         </p>
                       </blockquote>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-46">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-84">
                         Die Währung kann entweder als Währungscode (EUR), ausgeschrieben (Euro) oder als Zeichen (€) geschrieben werden.
                       </p>
                       {" "}
@@ -983,7 +983,7 @@ export default function Page() {
                         Tipps für Word und Outlook
                       </h2>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-47">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-85">
                         In Word kannst du die DIN-5008-Regeln am einfachsten über eine passende Vorlage umsetzen. Achte dabei nicht nur auf die Seitenränder, sondern vor allem auf eine saubere Struktur mit korrekt angelegten Absatzformaten, zum Beispiel für die Anschrift, den Betreff, den Text und die Grußformel. Wenn du eine PDF-Datei exportierst, solltest du darauf achten, dass die Datei nicht verschlüsselt ist und problemlos geöffnet werden kann.
                       </p>
                       {" "}
@@ -999,7 +999,7 @@ export default function Page() {
                         Vermeide diese 5 typischen Fehler
                       </h2>
                       {" "}
-                      <ol className="block mb-[0.9375rem] ml-4.5 [list-style-type:decimal] list-outside" data-ditto-id="style-div-48">
+                      <ol className="block mb-[0.9375rem] ml-4.5 [list-style-type:decimal] list-outside" data-ditto-id="style-div-86">
                         {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} />)}
                       </ol>
                       {" "}
@@ -1007,15 +1007,15 @@ export default function Page() {
                         Prüfliste für den Versand
                       </h2>
                       {" "}
-                      <ul className="block mb-[0.9375rem] [list-style-type:none] list-outside" data-ditto-id="style-div-50">
+                      <ul className="block mb-[0.9375rem] [list-style-type:none] list-outside" data-ditto-id="style-div-88">
                         {ListRow_data3.map((d, i) => <ListRow key={i} d={d} styles={ListRow_styles3[i]} />)}
                       </ul>
                       {" "}
                       <p className="box-content block text-[0.9375rem] leading-5.5" data-ditto-id="style-i-15" />
-                      <div className="box-content block relative mt-7.5 mb-12.5 p-7.5 rounded-xl bg-surface-9 max-md:px-[0.9375rem] 2xl:mb-15" data-ditto-id="style-span-9">
+                      <div className="box-content block relative mt-7.5 mb-12.5 p-7.5 rounded-xl bg-surface-9 max-md:px-[0.9375rem] 2xl:mb-15" data-ditto-id="style-span-14">
                         <div className="box-content flex max-md:block">
-                          <div className="box-content w-[9.5625rem] h-[9.5625rem] block float-left max-w-[9.5625rem] max-h-[9.5625rem] mr-5 mb-2.5 rounded-[10px] shrink-0 overflow-hidden max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]" data-ditto-id="style-div-66">
-                            <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/e09cad3bb6e5.jpg" />
+                          <div className="box-content w-[9.5625rem] h-[9.5625rem] block float-left max-w-[9.5625rem] max-h-[9.5625rem] mr-5 mb-2.5 rounded-[10px] shrink-0 overflow-hidden max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]" data-ditto-id="style-div-104">
+                            <img className="box-content w-full h-[9.5625rem] inline overflow-clip object-cover" data-component="image" src="/assets/cloned/images/5cede9b5427f.jpg" />
                             {" "}
                           </div>
                           {" "}
@@ -1028,7 +1028,7 @@ export default function Page() {
                               Protokolle - professionell, korrekt und schnell
                             </p>
                             {" "}
-                            <p className="box-content block mb-[0.9375rem] text-base leading-6">
+                            <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-205">
                               Lerne, wie du mit klaren Formulierungen und übersichtlicher Struktur Besprechungsprotokolle erstellst, die Entscheidungen sicher festhalten und Aufgaben einfach nachverfolgbar machen. So werden deine Protokolle zum praktischen Werkzeug, mit dem du Vereinbarungen zuverlässig umsetzt.
                             </p>
                             {" "}
@@ -1047,7 +1047,7 @@ export default function Page() {
                       </div>
                       {" "}
                       <p className="box-content block mb-[0.9375rem] text-base leading-6" />
-                      <h2 className="box-content block mt-7.5 mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-div-67" data-component="heading" id="section-9">
+                      <h2 className="box-content block mt-7.5 mb-6 text-4xl font-medium leading-[2.6875rem] max-lg:max-w-full max-md:text-[1.375rem] max-md:leading-[1.625rem] max-lg:[overflow-wrap:break-word]" data-ditto-id="style-div-105" data-component="heading" id="section-9">
                         FAQ
                       </h2>
                       {" "}
@@ -1067,9 +1067,9 @@ export default function Page() {
                         Wofür gilt DIN 5008?
                       </h3>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-68">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-106">
                         {"DIN 5008 sind Schreib- und Gestaltungsregeln für die geschäftliche Kommunikationen – also z. B. für Geschäftsbriefe, E-Mails oder Protokolle. Die Norm regelt das "}
-                        <strong className="box-content inline font-medium">
+                        <strong className="box-content inline font-medium" data-ditto-id="style-div-124">
                           {"Wie "}
                         </strong>
                         der Darstellung (Layout, Zeilenabstände), nicht den Inhalt.
@@ -1083,11 +1083,11 @@ export default function Page() {
                         Es wird empfohlen, die internationale Form JJJJ‑MM‑TT (2026‑06‑30) zu nutzen; in Deutschland sind aber auch Schreibweisen wie „30. Juni 2026“ oder “30.06.2026” üblich.
                       </p>
                       {" "}
-                      <h3 className="box-content block mt-7.5 mb-6 text-2xl leading-8.5 max-md:text-lg max-md:leading-6" data-ditto-id="style-div-69" data-component="heading" id="section-13">
+                      <h3 className="box-content block mt-7.5 mb-6 text-2xl leading-8.5 max-md:text-lg max-md:leading-6" data-ditto-id="style-div-107" data-component="heading" id="section-13">
                         Kommt nach „Mit freundlichen Grüßen“ ein Komma?
                       </h3>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-53">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-91">
                         Nein, nach der Grußformel steht kein Komma. Also:
                       </p>
                       {" "}
@@ -1095,7 +1095,7 @@ export default function Page() {
                         Mit freundlichen Grüßen
                       </p>
                       {" "}
-                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-54">
+                      <p className="box-content block mb-[0.9375rem] text-base leading-6" data-ditto-id="style-div-92">
                         Max Mustermann
                       </p>
                       {" "}
@@ -1112,13 +1112,13 @@ export default function Page() {
                       </p>
                       {" "}
                       <div className="box-content block relative mb-[1.625rem] before:content-[''] before:block before:absolute before:top-6 before:-bottom-[1.5625rem] before:inset-x-0 before:-z-1 before:h-px before:bg-border">
-                        <div className="box-content w-[22.9375rem] flex relative float-right pl-3.5 items-center bg-background max-md:w-[20.3125rem] max-md:mt-4 max-md:flex-wrap max-md:justify-between" data-ditto-id="style-div-70">
-                          <span className="box-content block mr-7.5 text-color-002" data-ditto-id="style-div-55">
+                        <div className="box-content w-[22.9375rem] flex relative float-right pl-3.5 items-center bg-background max-md:w-[20.3125rem] max-md:mt-4 max-md:flex-wrap max-md:justify-between" data-ditto-id="style-div-108">
+                          <span className="box-content block mr-7.5 text-color-002" data-ditto-id="style-div-93">
                             Lust, den Beitrag zu teilen?
                           </span>
                           {" "}
-                          <div className="box-content block" data-ditto-id="style-div-71">
-                            <div className="box-content block my-px" data-ditto-id="style-div-56">
+                          <div className="box-content block" data-ditto-id="style-div-109">
+                            <div className="box-content block my-px" data-ditto-id="style-div-94">
                               {Logo_data.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
                             </div>
                             <div className="box-content block clear-both" />
@@ -1136,14 +1136,14 @@ export default function Page() {
                 {" "}
               </article>
               {" "}
-              <section className="box-content flex relative z-5 py-10 px-5 items-center overflow-hidden max-md:block max-md:p-0 max-md:[align-items:initial]" data-ditto-id="style-div-59">
+              <section className="box-content flex relative z-5 py-10 px-5 items-center overflow-hidden max-md:block max-md:p-0 max-md:[align-items:initial]" data-ditto-id="style-div-97">
                 <div className="box-content w-37.5 h-37.5 block float-left max-w-37.5 max-h-37.5 mr-7.5 mb-2.5 rounded-[50%] shrink-0 overflow-hidden leading-3.5 max-md:w-[9.5625rem] max-md:h-[9.5625rem] max-md:mb-5 max-md:[float:initial] max-md:max-w-none max-md:max-h-none max-md:mr-0 max-md:shrink-[initial]">
                   <img className="box-content w-full h-37.5 inline shrink-0 overflow-clip object-cover aspect-[auto_150/150] max-md:h-[9.5625rem] max-md:shrink-[initial]" data-ditto-id="style-i-22" data-component="image" alt="" height="150" sizes="auto, (max-width: 150px) 100vw, 150px" src="/assets/cloned/images/9620380149a5.png" srcSet="/assets/cloned/images/9620380149a5.png 150w, /assets/cloned/images/fee7f195d947.png 300w, /assets/cloned/images/3eb96a08aaa4.png 1024w, /assets/cloned/images/6c60d0d0b9ea.png 1536w, /assets/cloned/images/9e1f20a9cbcb.png 2048w, /assets/cloned/images/55475eae8b23.png 100w, /assets/cloned/images/3d11dd209948.png 600w" width="150" />
                   {" "}
                 </div>
                 {" "}
                 <div className="box-content block leading-6">
-                  <h2 className="box-content inline-block mb-5 text-primary text-2xl font-medium leading-[1.8125rem] max-lg:max-w-full max-lg:[overflow-wrap:break-word]" data-ditto-id="style-div-74" data-component="heading">
+                  <h2 className="box-content inline-block mb-5 text-primary text-2xl font-medium leading-[1.8125rem] max-lg:max-w-full max-lg:[overflow-wrap:break-word]" data-ditto-id="style-div-112" data-component="heading">
                     Über den:die Autor:in
                   </h2>
                   {" "}
@@ -1151,14 +1151,14 @@ export default function Page() {
                     Online-Redaktion
                   </div>
                   {" "}
-                  <div className="box-content block mt-3.5" data-ditto-id="style-div-75" />
+                  <div className="box-content block mt-3.5" data-ditto-id="style-div-113" />
                   {" "}
                 </div>
                 {" "}
               </section>
               {" "}
               <section className="box-content block relative mt-5 mr-[-431.7px] mb-7 pt-2.5 max-lg:mr-0 2xl:mr-[-432.3px]" data-ditto-id="style-button-12">
-                <h2 className="box-content block mb-12.5 text-color-001 text-4xl font-medium leading-[1.5625rem] max-md:text-[1.25rem]" data-ditto-id="style-div-76" data-component="heading">
+                <h2 className="box-content block mb-12.5 text-color-001 text-4xl font-medium leading-[1.5625rem] max-md:text-[1.25rem]" data-ditto-id="style-div-114" data-component="heading">
                   Weitere Beiträge
                 </h2>
                 {" "}
@@ -1170,29 +1170,29 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <aside className="h-[100.3125rem] min-h-px border-l border-solid border-l-clr-7 block sticky -top-[15.6875rem] z-5 pr-[1.5625rem] pl-[2.1875rem] max-md:h-[22.1875rem] max-lg:relative max-lg:inset-0 max-lg:float-left max-lg:mt-[2.1875rem] max-md:mb-7 max-lg:pl-[1.5625rem] md:max-lg:h-79 2xl:h-[1605.3px] before:content-['_'] before:block before:absolute before:top-0 before:right-[390.7px] before:bottom-[100.3125rem] before:left-[2.1875rem] before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left max-lg:before:hidden max-lg:before:inset-auto max-lg:before:w-auto max-lg:before:h-auto 2xl:before:right-[391.3px] 2xl:before:bottom-[1605.3px]">
-              <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-div-79">
-                <li className="box-content list-item mb-5.5">
-                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-a-5" data-component="link" href="/blog/berufe" target="_blank">
+            <aside className="h-[100.3125rem] min-h-px border-l border-solid border-l-clr-7 block sticky -top-[15.6875rem] z-5 pr-[1.5625rem] pl-[2.1875rem] max-md:h-[22.1875rem] max-lg:relative max-lg:inset-0 max-lg:float-left max-lg:mt-[2.1875rem] max-md:mb-7 max-lg:pl-[1.5625rem] md:max-lg:h-79 2xl:h-[1605.3px] before:content-['_'] before:block before:absolute before:top-0 before:right-[390.7px] before:bottom-[100.3125rem] before:left-[2.1875rem] before:w-0 before:h-0 before:text-color-002 before:text-sm before:leading-[1.3125rem] before:text-left max-lg:before:hidden max-lg:before:inset-auto max-lg:before:w-auto max-lg:before:h-auto 2xl:before:right-[391.3px] 2xl:before:bottom-[1605.3px]" data-ditto-id="style-div-208">
+              <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-div-117">
+                <li className="box-content list-item mb-5.5" data-ditto-id="style-div-544">
+                  <a className="box-content h-12 border-2 border-solid border-primary block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-primary text-base leading-6 text-center cursor-pointer" data-ditto-id="style-a-4" data-component="link" href="/blog/berufe" target="_blank">
                     {"Zum "}
                     <strong className="box-content inline font-medium" data-ditto-id="style-i-28">
                       Seminarangebot
                     </strong>
                     {" von"}
-                    <br className="box-content inline" data-ditto-id="style-div-80" />
+                    <br className="box-content inline" data-ditto-id="style-div-118" />
                     Assistenz und Office-Management
                   </a>
                 </li>
                 <li className="box-content list-item mb-[2.1875rem]">
-                  <p className="box-content block mb-2.5 text-color-001 text-2xl font-medium leading-8.5">
+                  <p className="box-content block mb-2.5 text-color-001 text-2xl font-medium leading-8.5" data-ditto-id="style-tabpanel-megamenu-0-0-13">
                     Newsletter
                   </p>
                   <div className="box-content block">
-                    <p className="box-content block mb-[1.3125rem] text-color-001 text-base leading-6">
+                    <p className="box-content block mb-[1.3125rem] text-color-001 text-base leading-6" data-ditto-id="style-button-48">
                       Hol dir regelmäßig frische Impulse rund um Weiterbildung – kostenlos und direkt in dein Postfach.
                     </p>
                     {" "}
-                    <div className="box-content block mb-7.5 max-md:mb-12.5">
+                    <div className="box-content block mb-7.5 max-md:mb-12.5" data-ditto-id="style-div-209">
                       <a className="box-content block pt-[1.0625rem] pb-4.5 px-3 rounded-[28px] text-background text-base leading-6 text-center bg-primary cursor-pointer" data-ditto-id="style-i-29" data-component="link" href="/1685" target="_blank">
                         Newsletter kostenlos abonnieren
                       </a>
@@ -1200,13 +1200,13 @@ export default function Page() {
                   </div>
                 </li>
                 <li className="box-content w-[365.7px] list-item bottom-0 inset-x-0 z-200 mb-[48.75rem] text-base leading-6 max-md:w-[23.4375rem] max-lg:h-14 max-lg:fixed max-md:top-189 max-lg:right-auto max-lg:bottom-auto max-lg:mb-0 md:max-lg:w-192 md:max-lg:top-242 2xl:w-[366.3px] 2xl:mb-[48.775rem]">
-                  <button className="box-content w-[59%] inline-block mb-2.5 text-color-004 text-2xl font-medium leading-[1.8125rem] text-center cursor-pointer pointer-events-none max-lg:w-full max-lg:flex max-lg:py-4 max-lg:px-5 max-lg:justify-between max-lg:text-background max-lg:leading-[1.1875rem] max-lg:bg-primary max-lg:mb-0 max-lg:[font-size:inherit] max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] 2xl:w-[58.5%]" data-ditto-id="style-div-81" data-component="button" aria-expanded="true">
+                  <button className="box-content w-[59%] inline-block mb-2.5 text-color-004 text-2xl font-medium leading-[1.8125rem] text-center cursor-pointer pointer-events-none max-lg:w-full max-lg:flex max-lg:py-4 max-lg:px-5 max-lg:justify-between max-lg:text-background max-lg:leading-[1.1875rem] max-lg:bg-primary max-lg:mb-0 max-lg:[font-size:inherit] max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] 2xl:w-[58.5%]" data-ditto-id="style-div-119" data-component="button" aria-expanded="true">
                     {" Inhaltsverzeichnis "}
                     <span className="box-content hidden ml-2 [font-family:FontAwesome] text-xl font-normal leading-5 pointer-events-none max-lg:block max-lg:text-2xl max-lg:leading-6 max-lg:[font-weight:inherit] max-lg:[pointer-events:initial] before:content-[''] before:text-color-004 before:text-xl before:leading-5 before:text-center max-lg:before:text-background max-lg:before:text-2xl max-lg:before:leading-6" aria-hidden="true" />
                     {" "}
                   </button>
                   {" "}
-                  <div className="box-content flex max-h-173.5 overflow-auto bg-background max-lg:max-h-0 max-lg:px-5 2xl:max-h-243.5" data-ditto-id="style-div-82" aria-hidden="false">
+                  <div className="box-content flex max-h-173.5 overflow-auto bg-background max-lg:max-h-0 max-lg:px-5 2xl:max-h-243.5" data-ditto-id="style-div-120" aria-hidden="false">
                     <ul className="block [list-style-type:none] list-outside">
                       {ListRow3_data.map((d, i) => <ListRow3 key={i} d={d} styles={ListRow3_styles[i]} />)}
                     </ul>
@@ -1218,8 +1218,8 @@ export default function Page() {
               {" "}
             </aside>
             {" "}
-            <div className="box-content w-208 h-111 flex fixed top-[clamp(400px,_50%,_calc(100%_-_400px))] right-0 z-9999 min-w-0 rounded-tl-xl rounded-bl-xl overflow-hidden text-background text-base leading-6 bg-color-009 transform-[matrix(1,0,0,1,772,-222)] max-md:w-[23.4375rem] max-md:h-93 max-md:transform-[matrix(1,0,0,1,353,-186)] md:max-lg:w-192 md:max-lg:h-81.5 md:max-lg:transform-[matrix(1,0,0,1,746,-163)] 2xl:w-312 2xl:transform-[matrix(1,0,0,1,1188,-222)]">
-              <button className="box-content block py-3 px-5 font-medium leading-[1.1875rem] text-center [writing-mode:vertical-rl] bg-color-009 transform-[matrix(-1,0,0,-1,0,0)] origin-[31px_222px] cursor-pointer max-lg:pr-px max-lg:pl-[0.3125rem] max-md:origin-[14px_186px] md:max-lg:origin-[14px_163px]" data-ditto-id="style-i-34" data-component="button" aria-controls="infoFlyerPanel" aria-expanded="false" aria-label="Info Flyer öffnen">
+            <div className="box-content w-208 h-111 flex fixed top-[clamp(400px,_50%,_calc(100%_-_400px))] right-0 z-9999 min-w-0 rounded-tl-xl rounded-bl-xl overflow-hidden text-background text-base leading-6 bg-color-008 transform-[matrix(1,0,0,1,772,-222)] max-md:w-[23.4375rem] max-md:h-93 max-md:transform-[matrix(1,0,0,1,353,-186)] md:max-lg:w-192 md:max-lg:h-81.5 md:max-lg:transform-[matrix(1,0,0,1,746,-163)] 2xl:w-312 2xl:transform-[matrix(1,0,0,1,1188,-222)]">
+              <button className="box-content block py-3 px-5 font-medium leading-[1.1875rem] text-center [writing-mode:vertical-rl] bg-color-008 transform-[matrix(-1,0,0,-1,0,0)] origin-[31px_222px] cursor-pointer max-lg:pr-px max-lg:pl-[0.3125rem] max-md:origin-[14px_186px] md:max-lg:origin-[14px_163px]" data-ditto-id="style-i-34" data-component="button" aria-controls="infoFlyerPanel" aria-expanded="false" aria-label="Info Flyer öffnen">
                 <i className="box-content inline-block [font-family:FontAwesome] text-[1.375rem] font-normal leading-5.5 transform-[matrix(-1,0,0,-1,0,0)] origin-[11px_11px] pointer-events-none before:content-[''] before:text-background before:text-[1.375rem] before:leading-5.5 before:text-center" aria-hidden="true" />
                 {" Persönlich weiterentwickeln "}
               </button>
@@ -1234,7 +1234,7 @@ export default function Page() {
                   {" "}
                 </button>
                 {" "}
-                <h2 className="box-content block mb-5 text-xl font-medium leading-[1.5625rem]" data-ditto-id="style-div-86" data-component="heading">
+                <h2 className="box-content block mb-5 text-xl font-medium leading-[1.5625rem]" data-ditto-id="style-div-125" data-component="heading">
                   Wirksamer kommunizieren. Souveräner handeln. Klarer führen.
                 </h2>
                 {" "}
@@ -1242,7 +1242,7 @@ export default function Page() {
                   Ob im Gespräch, im Konflikt oder unter Druck: Persönliche und Soziale Kompetenzen machen den Unterschied, wenn es darauf ankommt. Entdecke Impulse, Seminare und praxisnahe Lösungen, mit denen du deine Wirkung persönlich und beruflich gezielt stärkst.
                 </p>
                 {" "}
-                <a className="box-content inline-block min-w-40 max-w-[80%] mt-7.5 pt-4.5 pb-[1.0625rem] px-7.5 rounded-[28px] text-color-009 text-center bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-base max-lg:leading-6" data-ditto-id="style-span-15" data-component="button" href="/blog/berufe" target="_blank">
+                <a className="box-content inline-block min-w-40 max-w-[80%] mt-7.5 pt-4.5 pb-[1.0625rem] px-7.5 rounded-[28px] text-color-008 text-center bg-background cursor-pointer max-lg:py-2 max-lg:px-4 max-lg:text-base max-lg:leading-6" data-ditto-id="style-span-20" data-component="button" href="/blog/berufe" target="_blank">
                   Zum Seminarangebot
                 </a>
                 {" "}
@@ -1254,7 +1254,7 @@ export default function Page() {
           {" "}
         </div>
         {" "}
-        <footer className="box-content border-t border-solid border-t-color-005 block relative mt-32.5 text-background bg-color-009 max-md:mt-10 before:content-[''] before:block before:absolute before:-top-30 before:right-0 before:bottom-124 before:left-176 before:[background-size:18px_14px] max-md:before:-top-20 max-md:before:bottom-[69.0625rem] max-md:before:left-[206.3px] md:max-lg:before:bottom-159 md:max-lg:before:left-[26.4rem] 2xl:before:left-264">
+        <footer className="box-content border-t border-solid border-t-color-005 block relative mt-32.5 text-background bg-color-008 max-md:mt-10 before:content-[''] before:block before:absolute before:-top-30 before:right-0 before:bottom-124 before:left-176 before:[background-size:18px_14px] max-md:before:-top-20 max-md:before:bottom-[69.0625rem] max-md:before:left-[206.3px] md:max-lg:before:bottom-159 md:max-lg:before:left-[26.4rem] 2xl:before:left-264">
           <div className="box-content w-311.5 block max-w-[calc(100%_-_34px)] -mr-4 pt-12 px-[1.5625rem] text-left max-md:w-[23.4375rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]">
             <div className="box-content flex pb-10 justify-between items-end max-md:block max-md:pb-0 max-md:[justify-content:initial] max-md:[align-items:initial]">
               <img className="box-content w-62.5 h-[1.9375rem] block mb-8 overflow-clip aspect-[auto_250/31] max-md:inline" data-component="image" alt="Haufe Akademie" height="31" src="/assets/cloned/svg/b5d862826e6a.svg" width="250" />
@@ -1274,7 +1274,7 @@ export default function Page() {
                   79111 Freiburg
                 </address>
                 {" "}
-                <p className="box-content block mt-5 mb-1.5 text-color-007 font-medium">
+                <p className="box-content block mt-5 mb-1.5 text-color-007 font-medium" data-ditto-id="style-button-20">
                   <strong className="box-content inline">
                     Eine Marke der
                   </strong>
@@ -1284,7 +1284,7 @@ export default function Page() {
                 {" "}
               </li>
               <li className="w-81 h-29.5 min-h-px list-item float-left pr-[1.5625rem] pl-[1.0625rem] text-xs leading-4.5 max-md:w-[23.4375rem] max-md:mb-7 md:max-lg:w-48 md:max-lg:h-[9.9375rem] 2xl:w-[324.5px]">
-                <div className="box-content h-full block">
+                <div className="box-content h-full block" data-ditto-id="style-div-210">
                   <p className="box-content block mb-2.5 text-color-007 text-sm font-medium leading-[1.3125rem]">
                     Unsere Angebotsfelder
                   </p>
@@ -1314,7 +1314,7 @@ export default function Page() {
                   Die letzten Artikel
                 </p>
                 {" "}
-                <ul className="block [list-style-type:none] list-outside">
+                <ul className="block [list-style-type:none] list-outside" data-ditto-id="style-button-21">
                   {ListRow5_data.map((d, i) => <ListRow5 key={i} d={d} />)}
                 </ul>
                 {" "}
@@ -1325,7 +1325,7 @@ export default function Page() {
             {" "}
           </div>
           {" "}
-          <div className="box-content w-311.5 flex max-w-[calc(100%_-_34px)] -mr-4 pt-6 pb-12 px-[1.5625rem] flex-wrap justify-between items-end gap-7.5 text-left max-md:w-[23.4375rem] max-md:pt-10.5 max-md:pb-[3.0625rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 max-md:[justify-content:initial] max-md:[align-items:initial] md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]">
+          <div className="box-content w-311.5 flex max-w-[calc(100%_-_34px)] -mr-4 pt-6 pb-12 px-[1.5625rem] flex-wrap justify-between items-end gap-7.5 text-left max-md:w-[23.4375rem] max-md:pt-10.5 max-md:pb-[3.0625rem] max-lg:[box-sizing:initial] max-lg:max-w-none max-lg:mr-0 max-md:[justify-content:initial] max-md:[align-items:initial] md:max-lg:w-192 2xl:w-312 2xl:mx-[19.4375rem]" data-ditto-id="style-div-211">
             <ul className="flex flex-wrap gap-y-2 gap-x-2.5 [list-style-type:none] list-outside">
               {ListRow6_data.map((d, i) => <ListRow6 key={i} d={d} styles={ListRow6_styles[i]} />)}
             </ul>
@@ -1333,8 +1333,8 @@ export default function Page() {
             <ul className="w-46 flex gap-2 [list-style-type:none] list-outside max-md:w-[20.3125rem]">
               {ListRow7_data.map((d, i) => <ListRow7 key={i} d={d} styles={ListRow7_styles[i]} />)}
               <li className="box-content list-item">
-                <a className="box-content w-6 h-6 flex justify-center items-center text-lg font-medium leading-[1.6875rem] cursor-pointer" data-component="link" href="https://www.tiktok.com/@haufe.akademie" target="_blank">
-                  <svg className="box-content w-auto h-4 block overflow-hidden" data-ditto-id="style-div-108" data-component="icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <a className="box-content w-6 h-6 flex justify-center items-center text-lg font-medium leading-[1.6875rem] cursor-pointer" data-ditto-id="style-button-23" data-component="link" href="https://www.tiktok.com/@haufe.akademie" target="_blank">
+                  <svg className="box-content w-auto h-4 block overflow-hidden" data-ditto-id="style-div-147" data-component="icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="#ffffff" />
                   </svg>
                   <span className="box-content w-px h-px block absolute min-w-0 -m-px overflow-hidden" data-ditto-id="style-i-47">

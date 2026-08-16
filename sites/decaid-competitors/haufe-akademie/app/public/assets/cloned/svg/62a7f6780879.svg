@@ -1,0 +1,27 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" data-name="The PMI Talent Triangle" viewBox="0 0 226.68 189.85" width="226.68"  height="189.85" >
+    <defs>
+        <style type="text/css">
+            .alignments-cls-1 {
+                fill: #91949b;
+            }
+
+            .alignments-cls-2 {
+                fill: #bdbfc3;
+            }
+
+            .alignments-cls-3 {
+                fill: #656a72;
+            }
+
+            .alignments-cls-4 {
+                fill: #91949b;
+            }
+        </style>
+    </defs>
+    <title>pmi_talent-triangle_alignments_rgb</title>
+    <path class="alignments-cls-1" d="M406,487.19l-12.5-21.78c-.25-.43-.5-.84-.76-1.23l-49.89-86.57c-14.05-10-23.39-1.51-26.61,2.33l-12.8,22.44,31.27,54.28,12.59,21.88s9.12,17.24-10.47,26.22h59C406.93,504.76,411.51,496.86,406,487.19Z" transform="translate(-197.75 -320.17)" fill="#91949b"></path>
+    <path class="alignments-cls-2" d="M334.78,363.31l-4-7.12-.11-.19h0l-14-24.37-2.45-4.18c-5.55-9.67-14.7-9.72-20.35-.11,0,0-.72,1.12-.83,1.26L230,436.16c-1.69,17.14,10.27,21.07,15.2,22H271l31.68-54.05,12.76-21.78s10.32-16.37,27.83-3.8l.05,0Z" transform="translate(-197.75 -320.17)" fill="#bdbfc3"></path>
+    <path class="alignments-cls-3" d="M348.4,480.41l-12.89-22.29h-88s-19.35-.63-17.35-22.08V436l-8.8,15.09-4.11,7.07-.12.19h0l-4.92,8.62-12,20.38c-5.65,9.6-1.16,17.46,10,17.46h25.61l.79,0H337.14C352.79,497.56,350.13,485.11,348.4,480.41Z" transform="translate(-197.75 -320.17)" fill="#656a72"></path>
+    <path class="alignments-cls-4" d="M411.77,503.15h-2.29v-1h6l-.33,1H413V510h-1.26Z" transform="translate(-197.75 -320.17)" fill="#ABABAB"></path>
+    <path class="alignments-cls-4" d="M416.67,502.12h1.15l2.12,3.09c.29.44.49.74.68,1.07h0c.17-.32.38-.67.66-1.12l1.95-3h1.16V510h-1.26v-4.67c0-.34,0-.79,0-1.14h0a10.16,10.16,0,0,1-.55.92l-1.69,2.64h-.6l-1.85-2.7a6.75,6.75,0,0,1-.54-.84h0c0,.33,0,.79,0,1.1V510h-1.26Z" transform="translate(-197.75 -320.17)" fill="#91949b"></path>
+</svg>

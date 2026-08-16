@@ -19,7 +19,6 @@ const ListRow_data = [
     { kind: "button", label: "4" },
     { kind: "button", label: "5" },
     { kind: "button", label: "6" },
-    { label: "6" },
     { kind: "button", label: "7" },
     { label: "7" }
 ];
@@ -31,31 +30,30 @@ const ListRow2_data = [
     { text: "Mi", text2: "16", description: "Webinar: Recht praktisch – Green Claims, UWG-Novelle und Garantieetikett – Was Unternehmen jetzt wissen müssen", ariaLabel: "Webinar: Recht praktisch – Green Claims, UWG-Novelle und Garantieetikett – Was Unternehmen jetzt wissen müssen", href: "https://eventanmeldung.ihk-koeln.de/webinarrechtpraktischgreenwashinguwgnovelleundgarantieetikettwasunternehmenjetztwissenmssen" }
 ];
 const Tile_meta: string[][] = [
-    ["style-div-78", "style-div-4"],
-    ["n39", "style-div-6"],
-    ["style-figure", "style-div-7"],
+    ["style-div-84", "style-div-8"],
+    ["n39", "style-div-9"],
+    ["style-figure", "style-div-10"],
     ["style-iframe", "style-figcaption"],
-    ["style-span-18", "style-span-8"],
-    ["style-div-70", "style-span-9"]
+    ["style-span-10", "style-span-3"],
+    ["style-div-74", "style-span-4"]
 ];
 const ListRow_meta: string[][] = [
-    ["n96", "style-heading-2", "style-span-29"],
-    ["style-div-22", "style-span-22", "style-div-36"],
-    ["n102", "n103", "style-div-27"],
-    ["style-link-11", "style-image", "style-span-37"],
-    ["style-span-39", "style-span-23", "style-div-47"],
-    ["n111", "n112", "style-br-3"],
-    ["n114", "n115", "style-div-54"],
-    ["style-div-28", "style-link-12", "style-image-2"],
-    ["n120", "style-span-24", "n122"],
-    ["style-div-37", "n124", "style-span-11"]
+    ["style-link-11", "style-image-8", "style-span-12"],
+    ["n80", "style-span-39", "style-div-16"],
+    ["n83", "style-span-13", "n85"],
+    ["n86", "style-div-17", "style-div-38"],
+    ["style-link-12", "style-image-9", "style-span-42"],
+    ["style-span-9", "n93", "style-div-18"],
+    ["style-div-78", "n96", "style-heading-2"],
+    ["style-span-22", "style-div-19", "style-span-15"],
+    ["style-div-33", "style-section", "style-div-13"]
 ];
 const ListRow2_meta: string[][] = [
-    ["n410", "n411", "n412", "n413", "n414", "n415", "n416", "n417", "style-span-3"],
-    ["n419", "style-button-9", "n421", "n422", "n423", "n424", "n425", "n426", "style-span-4"],
-    ["n428", "n429", "n430", "n431", "n432", "n433", "style-li-28", "n435", "style-span-5"],
-    ["n437", "n438", "n439", "n440", "n441", "n442", "n443", "n444", "style-span-6"],
-    ["n446", "n447", "style-span-47", "n449", "n450", "n451", "n452", "n453", "style-span-7"]
+    ["style-179", "n370", "n371", "n372", "n373", "n374", "n375", "style-a-8", "style-div-7"],
+    ["style-a-7", "style-div-51", "n380", "n381", "n382", "n383", "style-div-58", "style-div-69", "style-a"],
+    ["style-div-52", "n388", "n389", "n390", "n391", "n392", "style-div-59", "style-div-70", "style-link-4"],
+    ["style-div-53", "n397", "n398", "n399", "n400", "n401", "n402", "n403", "style-li-3"],
+    ["n405", "n406", "style-li-32", "n408", "n409", "n410", "n411", "n412", "style-li-4"]
 ];
 const Tile_styles = [
     { className2: "before:top-25 max-md:before:top-25.5" },
@@ -66,14 +64,13 @@ const Tile_styles = [
     { className: "z-1", className2: "before:top-11 max-md:before:top-19.5 md:max-lg:before:top-[3.95rem] 2xl:before:top-[4.55rem]" }
 ];
 const ListRow_styles = [
-    { className: "hidden max-md:list-item", className2: "hidden max-md:min-h-11 max-md:inline-flex max-md:relative max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:justify-center max-md:items-center max-md:overflow-hidden max-md:[font-family:Korb,_sans-serif] max-md:text-xl max-md:leading-5 max-md:text-left max-md:bg-background max-md:[background-blend-mode:overlay] max-md:cursor-pointer before:w-11 before:h-11 md:max-lg:before:hidden 2xl:before:hidden after:w-11 after:h-11 after:shadow-[var(--background)_0px_0px_0px_2px] after:rounded-tl-[18px] md:max-lg:after:hidden 2xl:after:hidden", className3: "hidden max-md:block max-md:relative max-md:z-2" },
+    { className: "hidden max-md:list-item 2xl:list-item", className2: "hidden max-md:min-h-11 max-md:inline-flex max-md:relative max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:justify-center max-md:items-center max-md:overflow-hidden max-md:[font-family:Korb,_sans-serif] max-md:text-xl max-md:leading-5 max-md:text-left max-md:bg-background max-md:[background-blend-mode:overlay] max-md:cursor-pointer 2xl:min-h-15 2xl:inline-flex 2xl:relative 2xl:min-w-15 2xl:mt-[0.7rem] 2xl:mb-[0.3125rem] 2xl:mx-[0.3125rem] 2xl:py-4 2xl:px-6 2xl:rounded-3xl 2xl:justify-center 2xl:items-center 2xl:overflow-hidden 2xl:[font-family:Korb,_sans-serif] 2xl:text-[1.75rem] 2xl:leading-7 2xl:text-left 2xl:bg-background 2xl:[background-blend-mode:overlay] 2xl:cursor-pointer before:w-11 before:h-11 md:max-lg:before:hidden 2xl:before:w-[17.3px] 2xl:before:h-15 after:w-11 after:h-11 after:shadow-[var(--background)_0px_0px_0px_2px] after:rounded-tl-[18px] md:max-lg:after:hidden 2xl:after:w-15 2xl:after:h-15 2xl:after:rounded-tl-3xl", className3: "hidden max-md:block max-md:relative max-md:z-2 2xl:block 2xl:relative 2xl:z-2" },
     { className: "list-item", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center text-background [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-foreground cursor-pointer max-md:min-h-11 max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:text-xl max-md:leading-5 max-lg:mt-0 md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 2xl:mt-[0.7rem] 2xl:text-[1.75rem] 2xl:leading-7 before:w-0 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:rounded-tl-[18px] md:max-lg:after:rounded-tl-[20px]", className3: "block relative z-2" },
     { className: "list-item md:max-lg:hidden", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center text-background [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-foreground cursor-pointer max-md:min-h-11 max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:text-xl max-md:leading-5 max-md:mt-0 md:max-lg:hidden 2xl:mt-[0.7rem] 2xl:text-[1.75rem] 2xl:leading-7 before:w-0 md:max-lg:before:hidden after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:rounded-tl-[18px] md:max-lg:after:hidden", className3: "block relative z-2 md:max-lg:hidden" },
-    { className: "list-item max-md:hidden 2xl:hidden", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center overflow-hidden [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-background [background-blend-mode:overlay] cursor-pointer max-md:hidden md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 md:max-lg:mt-0 2xl:hidden before:w-[2.7875rem] before:h-15 max-md:before:hidden md:max-lg:before:w-[2.55rem] md:max-lg:before:h-13 2xl:before:hidden after:w-15 after:h-15 after:shadow-[var(--background)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:hidden md:max-lg:after:w-13 md:max-lg:after:h-13 md:max-lg:after:rounded-tl-[20px] 2xl:after:hidden", className3: "block relative z-2 max-md:hidden 2xl:hidden" },
+    { className: "list-item max-md:hidden 2xl:hidden", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center overflow-hidden [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-background [background-blend-mode:overlay] cursor-pointer max-md:hidden md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 md:max-lg:mt-0 2xl:hidden before:w-[2.8rem] before:h-15 max-md:before:hidden md:max-lg:before:w-[2.625rem] md:max-lg:before:h-13 2xl:before:hidden after:w-15 after:h-15 after:shadow-[var(--background)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:hidden md:max-lg:after:w-13 md:max-lg:after:h-13 md:max-lg:after:rounded-tl-[20px] 2xl:after:hidden", className3: "block relative z-2 max-md:hidden 2xl:hidden" },
     { className: "list-item", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center text-background [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-foreground cursor-pointer max-md:min-h-11 max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:text-xl max-md:leading-5 max-lg:mt-0 md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 2xl:mt-[0.7rem] 2xl:text-[1.75rem] 2xl:leading-7 before:w-0 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:rounded-tl-[18px] md:max-lg:after:rounded-tl-[20px]", className3: "block relative z-2" },
     { className: "list-item", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center text-background [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-foreground cursor-pointer max-md:min-h-11 max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:text-xl max-md:leading-5 max-lg:mt-0 md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 2xl:mt-[0.7rem] 2xl:text-[1.75rem] 2xl:leading-7 before:w-0 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:rounded-tl-[18px] md:max-lg:after:rounded-tl-[20px]", className3: "block relative z-2" },
     { className: "list-item", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center text-background [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-foreground cursor-pointer max-md:min-h-11 max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:text-xl max-md:leading-5 max-lg:mt-0 md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 2xl:mt-[0.7rem] 2xl:text-[1.75rem] 2xl:leading-7 before:w-0 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:rounded-tl-[18px] md:max-lg:after:rounded-tl-[20px]", className3: "block relative z-2" },
-    { className: "hidden 2xl:list-item", className2: "hidden 2xl:min-h-15 2xl:inline-flex 2xl:relative 2xl:min-w-15 2xl:mt-[0.7rem] 2xl:mb-[0.3125rem] 2xl:mx-[0.3125rem] 2xl:py-4 2xl:px-6 2xl:rounded-3xl 2xl:justify-center 2xl:items-center 2xl:overflow-hidden 2xl:[font-family:Korb,_sans-serif] 2xl:text-[1.75rem] 2xl:leading-7 2xl:text-left 2xl:bg-background 2xl:[background-blend-mode:overlay] 2xl:cursor-pointer before:w-15.5 before:h-15 max-lg:before:hidden after:w-15.5 after:h-15 after:shadow-[var(--background)_0px_0px_0px_2px] after:rounded-tl-3xl max-lg:after:hidden", className3: "hidden 2xl:block 2xl:relative 2xl:z-2" },
     { className: "list-item", className2: "min-h-15 inline-flex relative min-w-15 mt-[0.6rem] mb-[0.3125rem] mx-[0.3125rem] py-4 px-6 rounded-3xl justify-center items-center text-background [font-family:Korb,_sans-serif] text-2xl leading-6 text-left bg-foreground cursor-pointer max-md:min-h-11 max-md:min-w-11 max-md:mb-1 max-md:mx-1 max-md:py-3 max-md:px-4 max-md:rounded-[18px] max-md:text-xl max-md:leading-5 max-lg:mt-0 md:max-lg:min-h-13 md:max-lg:min-w-13 md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 2xl:mt-[0.7rem] 2xl:text-[1.75rem] 2xl:leading-7 before:w-0 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-3xl max-md:after:rounded-tl-[18px] md:max-lg:after:rounded-tl-[20px]", className3: "block relative z-2" },
     { className: "hidden md:max-lg:list-item", className2: "hidden md:max-lg:min-h-13 md:max-lg:inline-flex md:max-lg:relative md:max-lg:min-w-13 md:max-lg:mb-[0.3125rem] md:max-lg:mx-[0.3125rem] md:max-lg:py-3.5 md:max-lg:px-5 md:max-lg:rounded-[20px] md:max-lg:justify-center md:max-lg:items-center md:max-lg:text-background md:max-lg:[font-family:Korb,_sans-serif] md:max-lg:text-[1.375rem] md:max-lg:leading-5.5 md:max-lg:text-left md:max-lg:bg-foreground md:max-lg:cursor-pointer before:w-0 before:h-13 max-md:before:hidden 2xl:before:hidden after:w-13 after:h-13 after:shadow-[var(--foreground)_0px_0px_0px_2px] after:rounded-tl-[20px] max-md:after:hidden 2xl:after:hidden", className3: "hidden md:max-lg:block md:max-lg:relative md:max-lg:z-2" }
 ];
@@ -100,13 +97,13 @@ export default function Page() {
           {" "}
           <ul className="flex my-5 items-center [list-style-type:none] list-outside max-md:invisible max-md:opacity-0 max-lg:my-4.5 max-md:pointer-events-none 2xl:my-5.5">
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-8" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-[4.8125rem] before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-7" data-component="link" href="https://tibros.ihk-koeln.de/tibrosOA/index.jsp" title="Login">
                 Login
               </a>
               {" "}
             </li>
             <li className="list-item max-md:invisible">
-              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+              <a className="block relative mx-0.5 py-5 pr-5 pl-13.5 rounded-sm font-semibold cursor-pointer max-md:invisible md:max-lg:mr-[0.3125rem] md:max-lg:p-[0.3125rem] md:max-lg:text-[0rem] md:max-lg:leading-0 2xl:text-xl 2xl:leading-7.5 before:content-[''] before:block before:absolute before:inset-y-[2.1875rem] before:right-24.5 before:left-3.5 before:w-7.5 before:h-7.5 before:-my-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:[background-size:100%] before:[background-position:50%_50%] before:bg-no-repeat max-lg:before:relative max-lg:before:inset-0 max-md:before:w-6 max-md:before:h-6 max-md:before:text-2xl max-md:before:leading-6 max-lg:before:my-0 md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5" data-ditto-id="style-link" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                 Kontakt
               </a>
               {" "}
@@ -146,7 +143,7 @@ export default function Page() {
                   <div className="h-87 block absolute inset-x-0 overflow-hidden max-md:h-19.5 before:content-[''] before:block before:w-320 before:h-144 before:pt-144 max-md:before:w-[23.4375rem] max-md:before:h-[12.1875rem] max-md:before:pt-[12.1875rem] md:max-lg:before:w-192 md:max-lg:before:h-[24.9625rem] md:max-lg:before:pt-[24.9625rem] 2xl:before:w-480 2xl:before:h-216 2xl:before:pt-216" data-ditto-id="style-breadcrumb-item0">
                     <div className="h-full block absolute top-0 right-[78.4375rem] left-0 2xl:right-422.5">
                       <span className="h-[27.3125rem] min-h-[27.3125rem] block absolute right-0 -left-120.5 -mr-15 overflow-hidden md:max-lg:mt-[0.3125rem] md:max-lg:-mr-[2.8125rem]" data-ditto-id="style-breadcrumb-item1" />
-                      <span className="h-[27.3125rem] min-h-[27.3125rem] block absolute inset-x-0 overflow-hidden before:content-[''] before:block before:absolute before:inset-0 before:-my-1 before:bg-foreground max-lg:before:my-0 2xl:before:-my-[2.3rem]" data-ditto-id="style-li-14" />
+                      <span className="h-[27.3125rem] min-h-[27.3125rem] block absolute inset-x-0 overflow-hidden before:content-[''] before:block before:absolute before:inset-0 before:-my-1 before:bg-foreground max-lg:before:my-0 2xl:before:-my-[2.3rem]" data-ditto-id="style-li-17" />
                     </div>
                     {" "}
                     <div className="h-full block absolute top-0 right-0 left-[78.4375rem] 2xl:left-422.5" data-ditto-id="style-breadcrumb-item2">
@@ -156,9 +153,9 @@ export default function Page() {
                     {" "}
                   </div>
                   {" "}
-                  <div className="w-250 block relative z-1 max-w-[90%] mx-auto px-15 max-md:w-[23.4375rem] max-lg:max-w-full max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5" data-ditto-id="style-div-18">
+                  <div className="w-250 block relative z-1 max-w-[90%] mx-auto px-15 max-md:w-[23.4375rem] max-lg:max-w-full max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5" data-ditto-id="style-div-15">
                     <div className="flex -mx-5 flex-wrap max-lg:-mx-2.5">
-                      <div className="block max-w-full px-5 grow basis-full max-lg:px-2.5" data-ditto-id="style-div-35">
+                      <div className="block max-w-full px-5 grow basis-full max-lg:px-2.5" data-ditto-id="style-div-32">
                         <form className="block relative max-w-90 my-5 mx-auto rounded-3xl overflow-hidden text-[1.375rem] leading-[2.0625rem] shadow-[var(--clr-3)_0px_4px_20px_-5px] max-md:max-w-62.5 max-md:my-[0.9375rem] max-md:rounded-[18px] max-md:[font-size:inherit] max-md:leading-[inherit] 2xl:[font-size:inherit] 2xl:leading-[inherit]">
                           <label className="w-0 h-0 block absolute top-0 left-0 opacity-0 max-w-0 max-h-0 -m-px overflow-hidden text-[1.0625rem] leading-[1.625rem] cursor-default pointer-events-none" htmlFor="search-term">
                             IHK durchsuchen
@@ -187,48 +184,48 @@ export default function Page() {
                   {" "}
                 </div>
                 {" "}
-                <div className="block max-w-full pt-7.5 max-md:pt-5" data-ditto-id="style-section">
-                  <div className="flex flex-wrap" data-ditto-id="style-div-40">
+                <div className="block max-w-full pt-7.5 max-md:pt-5" data-ditto-id="style-section-3">
+                  <div className="flex flex-wrap" data-ditto-id="style-div-37">
                     <div className="block max-w-full grow basis-full">
                       <div className="block relative max-md:mb-2 md:max-lg:mb-5" data-ditto-id="style-zoom">
                         <div className="block overflow-hidden" data-ditto-id="style-image-6">
-                          <div className="w-32000 flex relative items-start max-md:w-9375 max-md:transform-[none] md:max-lg:w-19200 2xl:w-48000 2xl:transform-[matrix(1,0,0,1,-7680,0)]" data-ditto-id="style-span-19">
-                            <div className="block relative min-w-[1%] max-w-[1%] 2xl:hidden" data-ditto-id="style-div-71">
-                              <div className="flex relative max-h-141.5 justify-center max-lg:flex-col max-lg:overflow-hidden max-lg:max-h-none 2xl:hidden">
-                                <div className="block relative max-w-full max-h-141.5 grow basis-full order-[1] max-md:mx-5 max-lg:max-h-none max-lg:order-[initial] md:max-lg:mx-7.5 2xl:hidden before:content-[''] before:hidden before:relative before:pt-[66.6667%] 2xl:before:hidden" data-ditto-id="style-span">
-                                  <picture className="w-full h-full inline left-px object-cover max-lg:top-auto max-lg:left-auto 2xl:hidden">
+                          <div className="w-32000 flex relative items-start max-md:w-9375 max-md:transform-[none] md:max-lg:w-19200 2xl:w-48000 2xl:transform-[none]" data-ditto-id="style-span-11">
+                            <div className="block relative min-w-[1%] max-w-[1%]" data-ditto-id="style-div-75">
+                              <div className="flex relative max-h-141.5 justify-center max-lg:flex-col max-lg:overflow-hidden max-lg:max-h-none">
+                                <div className="block relative max-w-full max-h-141.5 grow basis-full order-[1] max-md:mx-5 max-lg:max-h-none max-lg:order-[initial] md:max-lg:mx-7.5 before:content-[''] before:hidden before:relative before:pt-[66.6667%]" data-ditto-id="style-span">
+                                  <picture className="w-full h-full inline left-px object-cover max-lg:top-auto max-lg:left-auto">
                                     {" "}
-                                    <source className="inline 2xl:hidden" data-ditto-id="style-div-45" media="(min-width: 1000px)" srcSet="/assets/cloned/images/bc39b1a5784c.jpg" />
+                                    <source className="inline" data-ditto-id="style-div-43" media="(min-width: 1000px)" srcSet="/assets/cloned/images/bc39b1a5784c.jpg" />
                                     {" "}
-                                    <img className="w-full h-141.5 block -z-1 max-w-full overflow-clip object-cover max-md:h-[13.9375rem] max-lg:rounded-sm max-lg:aspect-[3/2] md:max-lg:h-118 2xl:hidden" data-ditto-id="style-div-46" data-component="image" alt="Eine Plastikflasche auf einer EU-Flagge. " src="/assets/cloned/images/bc39b1a5784c.jpg" title={"Auf Unternehmen, die mit Verpackungen zu tun haben, kommen einige Änderungen zu.\n"} />
+                                    <img className="w-full h-141.5 block -z-1 max-w-full overflow-clip object-cover max-md:h-[13.9375rem] max-lg:rounded-sm max-lg:aspect-[3/2] md:max-lg:h-118" data-ditto-id="style-div-44" data-component="image" alt="Eine Plastikflasche auf einer EU-Flagge. " src="/assets/cloned/images/bc39b1a5784c.jpg" title={"Auf Unternehmen, die mit Verpackungen zu tun haben, kommen einige Änderungen zu.\n"} />
                                     {" "}
                                   </picture>
                                   {" "}
-                                  <span className="w-[859.5px] h-[1.9rem] block absolute bottom-0 left-320 z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] max-md:w-[230.1px] max-md:left-[20.9375rem] md:max-lg:w-[478.5px] md:max-lg:left-177 2xl:hidden" data-ditto-id="style-link-24" aria-hidden="true">
+                                  <span className="w-[859.5px] h-[1.9rem] block absolute bottom-0 left-320 z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] max-md:w-[230.1px] max-md:left-[20.9375rem] md:max-lg:w-[478.5px] md:max-lg:left-177 2xl:w-[1285.7px] 2xl:left-480" data-ditto-id="style-link-24" aria-hidden="true">
                                     © Adobe Stock/ Cevahir
                                   </span>
                                   {" "}
-                                  <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap 2xl:hidden" data-ditto-id="style-image-7">
+                                  <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-image-7">
                                     © Adobe Stock/ Cevahir
                                   </span>
                                   {" "}
                                 </div>
                                 {" "}
-                                <div className="w-307.5 h-141.5 flex absolute top-0 left-[1.5625rem] z-2 min-w-81 max-w-full pt-7.5 pb-6 px-9 flex-col justify-center grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:w-[23.4375rem] max-md:h-[18.0375rem] max-lg:relative max-lg:bottom-0 max-lg:inset-x-0 max-lg:pt-4 max-md:px-5 max-lg:text-base max-lg:leading-6 md:max-lg:w-192 md:max-lg:h-[12.075rem] md:max-lg:px-7.5 2xl:hidden before:content-[''] before:hidden before:absolute before:inset-0 before:-z-1 before:my-[-15%] before:mr-[-8%] before:ml-5 before:bg-border max-lg:before:mb-[-8%] max-lg:before:mx-[-15%] max-lg:before:pt-[70%] max-lg:before:top-auto max-lg:before:mt-0 2xl:before:hidden" data-ditto-id="style-span-38">
-                                  <span className="w-full max-w-145 block text-background text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] max-md:text-[color:inherit] md:max-lg:hidden 2xl:hidden">
+                                <div className="w-307.5 h-141.5 flex absolute top-0 left-[1.5625rem] z-2 min-w-81 max-w-full pt-7.5 pb-6 px-9 flex-col justify-center grow basis-1/3 text-[1.0625rem] leading-[1.625rem] max-md:w-[23.4375rem] max-md:h-[18.0375rem] max-lg:relative max-lg:bottom-0 max-lg:inset-x-0 max-lg:pt-4 max-md:px-5 max-lg:text-base max-lg:leading-6 md:max-lg:w-192 md:max-lg:h-[12.075rem] md:max-lg:px-7.5 2xl:w-365 2xl:left-57.5 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:hidden before:absolute before:inset-0 before:-z-1 before:my-[-15%] before:mr-[-8%] before:ml-5 before:bg-border max-lg:before:mb-[-8%] max-lg:before:mx-[-15%] max-lg:before:pt-[70%] max-lg:before:top-auto max-lg:before:mt-0" data-ditto-id="style-span-34">
+                                  <span className="w-full max-w-145 block text-background text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] max-md:text-[color:inherit] md:max-lg:hidden">
                                     EU-Verpackungsverordnung
                                   </span>
                                   {" "}
-                                  <div className="block max-w-145 mt-1 mb-2 -mx-0.5 text-background [font-family:Korb,_sans-serif] text-4xl leading-[2.5rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[1.9375rem] max-lg:text-[color:inherit] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.1875rem] 2xl:hidden">
+                                  <div className="block max-w-145 mt-1 mb-2 -mx-0.5 text-background [font-family:Korb,_sans-serif] text-4xl leading-[2.5rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[1.9375rem] max-lg:text-[color:inherit] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.1875rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[2.875rem]">
                                     {" PPWR: Erste Pflichten ab dem 12. August 2026 "}
                                   </div>
                                   {" "}
-                                  <p className="w-full max-w-145 block mb-[0.425rem] text-background max-lg:mb-[0.4rem] max-lg:text-[color:inherit] 2xl:hidden">
+                                  <p className="w-full max-w-145 block mb-[0.425rem] text-background max-lg:mb-[0.4rem] max-lg:text-[color:inherit] 2xl:mb-[0.45rem]">
                                     {" Mit der EU-Verpackungsverordnung (PPWR) gelten bald die ersten unmittelbar anwendbaren Vorschriften für Unternehmen. Was jetzt zu tun ist "}
                                   </p>
                                   {" "}
-                                  <p className="w-full max-w-145 block mb-[0.425rem] text-background max-lg:mb-[0.4rem] max-lg:text-[color:inherit] 2xl:hidden">
-                                    <a className="min-h-10.5 inline-flex relative min-w-10.5 max-w-145 mt-2 py-2.5 pr-12 pl-4.5 rounded-[18px] justify-center items-center text-foreground [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-background cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-lg:mt-[0.45rem] max-lg:pr-11.5 max-md:rounded-[14px] max-lg:text-background max-lg:text-lg max-lg:leading-4.5 max-lg:bg-foreground md:max-lg:rounded-2xl 2xl:hidden before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-33 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:top-[1.1875rem] max-md:before:bottom-[0.4375rem] max-md:before:left-[7.9375rem] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-lg:before:text-background max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:left-[7.8125rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:hidden after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl 2xl:after:hidden" data-component="button" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/ppwr-7128494">
+                                  <p className="w-full max-w-145 block mb-[0.425rem] text-background max-lg:mb-[0.4rem] max-lg:text-[color:inherit] 2xl:mb-[0.45rem]">
+                                    <a className="min-h-10.5 inline-flex relative min-w-10.5 max-w-145 mt-2 py-2.5 pr-12 pl-4.5 rounded-[18px] justify-center items-center text-foreground [font-family:Korb,_sans-serif] text-xl leading-5 text-left bg-background cursor-pointer max-lg:min-h-9.5 max-lg:min-w-9.5 max-lg:mt-[0.45rem] max-lg:pr-11.5 max-md:rounded-[14px] max-lg:text-background max-lg:text-lg max-lg:leading-4.5 max-lg:bg-foreground md:max-lg:rounded-2xl 2xl:mt-[0.55rem] 2xl:text-[1.375rem] 2xl:leading-5.5 before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-33 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:top-[1.1875rem] max-md:before:bottom-[0.4375rem] max-md:before:left-[7.9375rem] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-lg:before:text-background max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:left-[7.8125rem] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:left-[8.9375rem] after:content-[''] after:block after:absolute after:inset-0 after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:h-9.5 max-md:after:rounded-tl-[14px] md:max-lg:after:rounded-tl-2xl" data-component="button" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/umwelt/ppwr-7128494">
                                       Mehr erfahren
                                     </a>
                                     {" "}
@@ -239,79 +236,16 @@ export default function Page() {
                               </div>
                               {" "}
                             </div>
-                            <div className="h-141.5 block relative min-w-[1%] max-w-[1%] max-md:h-[490.9px] md:max-lg:h-[43.075rem] 2xl:hidden">
-                              <div className="h-141.5 flex relative max-h-141.5 justify-center max-md:h-[490.9px] max-lg:flex-col max-lg:overflow-hidden max-lg:max-h-none md:max-lg:h-[43.075rem] 2xl:hidden">
-                                <div className="h-141.5 block relative max-w-full max-h-141.5 grow basis-full order-[1] max-md:h-[223.3px] max-md:mx-5 max-lg:max-h-none max-lg:order-[initial] md:max-lg:h-118 md:max-lg:mx-7.5 2xl:hidden before:content-[''] before:hidden before:relative before:pt-[66.6667%] 2xl:before:hidden" data-ditto-id="style-div">
+                            <div className="h-141.5 block relative min-w-[1%] max-w-[1%] max-md:h-[490.9px] md:max-lg:h-[43.075rem]">
+                              <div className="h-141.5 flex relative max-h-141.5 justify-center max-md:h-[490.9px] max-lg:flex-col max-lg:overflow-hidden max-lg:max-h-none md:max-lg:h-[43.075rem]">
+                                <div className="h-141.5 block relative max-w-full max-h-141.5 grow basis-full order-[1] max-md:h-[223.3px] max-md:mx-5 max-lg:max-h-none max-lg:order-[initial] md:max-lg:h-118 md:max-lg:mx-7.5 before:content-[''] before:hidden before:relative before:pt-[66.6667%]" data-ditto-id="style-div">
                                   {" "}
-                                  <span className="w-[859.5px] h-[1.9rem] block absolute top-[33.475rem] left-320 z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px] 2xl:hidden" data-ditto-id="style-span-42" aria-hidden="true">
+                                  <span className="w-[859.5px] h-[1.9rem] block absolute top-[33.475rem] left-320 z-2 py-2 px-4.5 text-background text-xs leading-[0.875rem] text-left [text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] transform-[matrix(0,-1,1,0,0,0)] origin-[0px_30.3906px]" data-ditto-id="style-span-38" aria-hidden="true">
                                     © IHK Köln / Hüttermann
                                   </span>
                                   {" "}
-                                  <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap 2xl:hidden" data-ditto-id="style-section-2">
+                                  <span className="w-px h-px block absolute -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-section-4">
                                     © IHK Köln / Hüttermann
-                                  </span>
-                                  {" "}
-                                </div>
-                                {" "}
-                              </div>
-                              {" "}
-                            </div>
-                            <div className="hidden 2xl:block 2xl:relative 2xl:min-w-[1%] 2xl:max-w-[1%]">
-                              <div className="hidden 2xl:flex 2xl:relative 2xl:max-h-141.5 2xl:justify-center" data-ditto-id="style-div-80">
-                                <div className="hidden 2xl:block 2xl:relative 2xl:max-w-full 2xl:max-h-141.5 2xl:grow 2xl:basis-full 2xl:order-[1] before:content-[''] before:hidden before:relative before:pt-[66.6667%] max-lg:before:hidden" data-ditto-id="style-link">
-                                  <picture className="hidden 2xl:w-full 2xl:h-full 2xl:inline 2xl:left-px 2xl:object-cover" data-ditto-id="style-image-8">
-                                    {" "}
-                                    <source className="hidden" data-ditto-id="style-span-20" media="(min-width: 1000px)" srcSet="/assets/cloned/images/0bf0f2ede9b0.jpg" />
-                                    {" "}
-                                    <img className="hidden 2xl:w-full 2xl:h-141.5 2xl:block 2xl:-z-1 2xl:max-w-full 2xl:overflow-clip 2xl:object-cover" alt="Rudolf Scharping Podcast (1)" src="/assets/cloned/images/0bf0f2ede9b0.jpg" />
-                                    {" "}
-                                  </picture>
-                                  {" "}
-                                  <span className="hidden 2xl:w-[1285.7px] 2xl:h-[1.9rem] 2xl:block 2xl:absolute 2xl:bottom-0 2xl:left-480 2xl:z-2 2xl:py-2 2xl:px-4.5 2xl:text-background 2xl:text-xs 2xl:leading-[0.875rem] 2xl:text-left 2xl:[text-shadow:var(--clr-4)_0px_0px_3px,_var(--clr-4)_0px_0px_8px] 2xl:transform-[matrix(0,-1,1,0,0,0)] 2xl:origin-[0px_30.3906px]" data-ditto-id="style-span-43" aria-hidden="true">
-                                    © IHK Köln / Kaever
-                                  </span>
-                                  {" "}
-                                  <span className="hidden" data-ditto-id="style-div-19">
-                                    © IHK Köln / Kaever
-                                  </span>
-                                  {" "}
-                                </div>
-                                {" "}
-                                <div className="hidden 2xl:w-365 2xl:h-full 2xl:flex 2xl:absolute 2xl:top-0 2xl:z-2 2xl:min-w-81 2xl:max-w-full 2xl:pt-7.5 2xl:pb-6 2xl:px-9 2xl:flex-col 2xl:justify-center 2xl:grow 2xl:basis-1/3 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:hidden before:absolute before:inset-0 before:-z-1 before:my-[-15%] before:mr-[-8%] before:ml-5 before:bg-border max-lg:before:hidden">
-                                  <span className="hidden 2xl:block 2xl:max-w-145 2xl:text-background 2xl:text-base 2xl:leading-6 2xl:tracking-[0.3px]" data-ditto-id="style-span-21">
-                                    Stimme der Wirtschaft 30, 23. Juli 2026
-                                  </span>
-                                  {" "}
-                                  <div className="hidden 2xl:block 2xl:max-w-145 2xl:mt-1 2xl:mb-2 2xl:mx-[-2.1px] 2xl:text-background 2xl:[font-family:Korb,_sans-serif] 2xl:text-[2.625rem] 2xl:leading-[2.875rem]">
-                                    {" China und die deutsche Wirtschaft "}
-                                  </div>
-                                  {" "}
-                                  <p className="hidden 2xl:block 2xl:max-w-145 2xl:mb-[0.45rem] 2xl:text-background">
-                                    {" Ist China für die deutsche Wirtschaft Chance oder Risiko? Oder beides zugleich? Das beantwortet Rudolf Scharping. "}
-                                  </p>
-                                  {" "}
-                                  <p className="hidden 2xl:block 2xl:max-w-145 2xl:mb-[0.45rem] 2xl:text-background" data-ditto-id="style-div-20">
-                                    <a className="hidden 2xl:min-h-10.5 2xl:inline-flex 2xl:relative 2xl:min-w-10.5 2xl:max-w-145 2xl:mt-[0.55rem] 2xl:py-2.5 2xl:pr-12 2xl:pl-4.5 2xl:rounded-[18px] 2xl:justify-center 2xl:items-center 2xl:text-foreground 2xl:[font-family:Korb,_sans-serif] 2xl:text-[1.375rem] 2xl:leading-5.5 2xl:text-left 2xl:bg-background 2xl:cursor-pointer before:content-[''] before:block before:absolute before:top-[1.3125rem] before:right-3 before:bottom-1.5 before:left-[8.9375rem] before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 before:text-left max-lg:before:hidden after:content-[''] after:block after:absolute after:inset-0 after:w-[11.5625rem] after:h-10.5 after:shadow-[var(--background)_0px_0px_0px_2px] after:opacity-0 after:rounded-tl-[18px] max-lg:after:hidden" data-ditto-id="style-div-41" href="/koeln/hauptnavigation/news/video-podcast-stimme-der-wirtschaft/stimme-der-wirtschaft-30-rudolf-scharping-7124020">
-                                      Mehr erfahren
-                                    </a>
-                                    {" "}
-                                  </p>
-                                  {" "}
-                                </div>
-                                {" "}
-                              </div>
-                              {" "}
-                            </div>
-                            <div className="hidden 2xl:h-141.5 2xl:block 2xl:relative 2xl:min-w-[1%] 2xl:max-w-[1%]" data-ditto-id="style-link-10">
-                              <div className="hidden 2xl:h-141.5 2xl:flex 2xl:relative 2xl:max-h-141.5 2xl:justify-center" data-ditto-id="style-image-9">
-                                <div className="hidden 2xl:h-141.5 2xl:block 2xl:relative 2xl:max-w-full 2xl:max-h-141.5 2xl:grow 2xl:basis-full 2xl:order-[1] before:content-[''] before:hidden before:relative before:pt-[66.6667%] max-lg:before:hidden" data-ditto-id="style-span-2">
-                                  {" "}
-                                  <span className="hidden" data-ditto-id="style-span-17" aria-hidden="true">
-                                    © IHK Köln / Kura
-                                  </span>
-                                  {" "}
-                                  <span className="hidden 2xl:w-px 2xl:h-px 2xl:block 2xl:absolute 2xl:-m-px 2xl:overflow-hidden 2xl:whitespace-nowrap 2xl:text-nowrap">
-                                    © IHK Köln / Kura
                                   </span>
                                   {" "}
                                 </div>
@@ -321,16 +255,16 @@ export default function Page() {
                             </div>
                           </div>
                         </div>
-                        <div className="w-307.5 block relative inset-y-0 right-[2.1875rem] -left-[2.1875rem] max-w-full mx-[1.5625rem] px-15 max-md:w-91 max-md:h-12 max-lg:absolute max-lg:top-2.5 max-md:-left-6 max-lg:right-auto max-lg:bottom-auto max-lg:mx-0 max-lg:px-0 md:max-lg:w-108.5 md:max-lg:h-[3.5625rem] md:max-lg:left-[18.6875rem] 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-21">
+                        <div className="w-307.5 block relative inset-y-0 right-[2.1875rem] -left-[2.1875rem] max-w-full mx-[1.5625rem] px-15 max-md:w-91 max-md:h-12 max-lg:absolute max-lg:top-2.5 max-md:-left-6 max-lg:right-auto max-lg:bottom-auto max-lg:mx-0 max-lg:px-0 md:max-lg:w-108.5 md:max-lg:h-[3.5625rem] md:max-lg:left-[18.6875rem] 2xl:w-365 2xl:mx-57.5">
                           <ul className="w-122.5 h-[4.6625rem] flex absolute -top-[7.1625rem] left-177.5 m-5 [list-style-type:none] list-outside max-md:w-91 max-md:h-12 max-lg:relative max-lg:inset-0 max-lg:m-0 md:max-lg:w-108.5 md:max-lg:h-[3.5625rem] 2xl:w-[31.3125rem] 2xl:h-[4.7625rem] 2xl:-top-[7.2625rem] 2xl:left-[58.0625rem]">
                             {ListRow_data.map((d, i) => <ListRow key={i} d={d} styles={ListRow_styles[i]} />)}
                           </ul>
-                          <span className="hidden" data-ditto-id="style-heading-4">
-                            <span className="inline" data-ditto-id="style-span-30">
+                          <span className="hidden" data-ditto-id="style-div-24">
+                            <span className="inline" data-ditto-id="style-link-13">
                               3
                             </span>
                             /
-                            <span className="inline">
+                            <span className="inline" data-ditto-id="style-image-2">
                               7
                             </span>
                           </span>
@@ -345,31 +279,81 @@ export default function Page() {
                 {" "}
               </section>
               {" "}
-              <div className="block mb-[3.9375rem] py-[3.9375rem] bg-border max-md:mb-[2.675rem] max-md:py-[2.675rem] md:max-lg:mb-[3.1125rem] md:max-lg:py-[3.1125rem] 2xl:mb-[4.9125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-span-25">
-                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-67">
-                  <div className="block mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]">
+              <div className="block mb-[3.9375rem] py-[3.9375rem] bg-border max-md:mb-[2.675rem] max-md:py-[2.675rem] md:max-lg:mb-[3.1125rem] md:max-lg:py-[3.1125rem] 2xl:mb-[4.9125rem] 2xl:py-[4.9125rem]" data-ditto-id="style-span-31">
+                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-span-35">
+                  <div className="block mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-span-16">
                     Alle News der IHK Köln bei LinkedIn!
                   </div>
                   {" "}
-                  <div className="block">
-                    <div className="block" data-ditto-id="style-div-29" id="flockler-embed-1958e8fd1d0059e818f7833f8a70b27d">
-                      <div className="block" data-ditto-id="style-link-13" aria-label="Carousel #1" role="region">
-                        <div className="h-0 block relative z-1" data-ditto-id="style-image-3">
-                          <a className="h-full inline-flex justify-center items-center overflow-hidden underline cursor-pointer" data-ditto-id="style-span-31" data-component="link" href="#flockler-end-1958e8fd1d0059e818f7833f8a70b27d">
+                  <div className="block" data-ditto-id="style-div-71">
+                    <div className="block" id="flockler-embed-1958e8fd1d0059e818f7833f8a70b27d">
+                      <div className="block" aria-label="Carousel #1" role="region">
+                        <div className="h-0 block relative z-1" data-ditto-id="style-br-6">
+                          <a className="h-full inline-flex justify-center items-center overflow-hidden underline cursor-pointer" data-component="link" href="#flockler-end-1958e8fd1d0059e818f7833f8a70b27d">
                             Carousel #1 überspringen
                           </a>
                         </div>
-                        <div className="block relative overflow-hidden text-color-001 text-[0rem] leading-0 text-center whitespace-nowrap text-nowrap" data-ditto-id="style-span-26" role="group">
-                          <div className="h-[26.3125rem] border-r border-solid border-r-clr-6 border-l border-l-clr-6 block relative overflow-hidden [word-break:break-word] [overflow-wrap:break-word]">
-                            <div className="w-277 h-full block absolute top-0 transform-[matrix(1,0,0,1,105,0)] max-md:w-[20.8125rem] max-md:transform-[matrix(1,0,0,1,18,0)] md:max-lg:w-176.5 md:max-lg:transform-[matrix(1,0,0,1,54,0)] 2xl:w-334.5 2xl:transform-[matrix(1,0,0,1,70,0)]" data-ditto-id="style-div-38">
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" aria-label="Ein LinkedIn-Beitrag. Keine Fotobeschreibung verfügbar.">
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-section-3">
+                        <div className="block relative overflow-hidden text-color-001 text-[0rem] leading-0 text-center whitespace-nowrap text-nowrap" role="group">
+                          <div className="h-[26.3125rem] border-r border-solid border-r-clr-6 border-l border-l-clr-6 block relative overflow-hidden [word-break:break-word] [overflow-wrap:break-word]" data-ditto-id="style-div-54">
+                            <div className="w-277 h-full block absolute top-0 transform-[matrix(1,0,0,1,105,0)] max-md:w-[20.8125rem] max-md:transform-[matrix(1,0,0,1,18,0)] md:max-lg:w-176.5 md:max-lg:transform-[matrix(1,0,0,1,54,0)] 2xl:w-334.5 2xl:transform-[matrix(1,0,0,1,70,0)]" data-ditto-id="style-div-25">
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" data-ditto-id="style-link-14" aria-label="Ein LinkedIn-Beitrag">
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-image-3">
                                   <div className="block relative order-[1] overflow-hidden aspect-square">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden" style={{ backgroundImage: "linear-gradient(120deg, var(--clr-9), var(--muted-foreground))" }} data-ditto-id="style-div-39" role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-ditto-id="style-link-14" data-component="image" alt="Keine Fotobeschreibung verfügbar." src="/assets/cloned/images/d7fbdcf0ea87.jpg" />
-                                      <a className="w-70 h-70 block absolute top-0 left-0 z-1 min-w-0 underline cursor-pointer" data-ditto-id="style-image-4" data-component="link" aria-hidden="true" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7493986214656577538/" rel="noopener noreferrer" target="_blank" />
-                                      <div className="w-7 h-7 block absolute right-2 bottom-2 z-1 min-w-0 rounded-[3px] bg-clr-10" data-ditto-id="style-span-34" aria-hidden="true">
-                                        <svg className="w-auto h-7 inline overflow-hidden text-clr-11" data-ditto-id="style-span-28" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                    <div className="w-70 h-full block absolute top-0 z-4 overflow-hidden text-background text-[1.0625rem] leading-[1.375rem] [text-shadow:var(--clr-9)_0px_1px_1px]" style={{ backgroundImage: "radial-gradient(at 50% 20%, var(--clr-10) 0%, var(--clr-11) 100%)" }} data-ditto-id="style-span-17" aria-live="polite">
+                                      <svg className="hidden overflow-hidden" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                        <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
+                                      </svg>
+                                      <div className="block py-5 px-3" data-ditto-id="style-div-34">
+                                        <div className="flex max-h-full flex-col leading-[1.5rem] text-center">
+                                          <p className="block" data-ditto-id="style-span-18">
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-heading-4" data-component="link" aria-label="Hashtag Hiring" href="https://www.linkedin.com/feed/hashtag/?keywords=Hiring" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Hiring
+                                            </a>
+                                            {" – Wir suchen eine:n neue:n Manager / Referent Social Media Wirtschaft & Politik (m/w/d) in Cologne, North Rhine-Westphalia. Bewerben Sie sich noch heute oder teilen Sie diese Stellenanzeige mit Ihrem Netzwerk."}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="h-16 flex px-4 justify-between items-center" data-ditto-id="style-span-23">
+                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" data-ditto-id="style-div-45" data-component="link" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
+                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" data-ditto-id="style-span-19" role="presentation">
+                                      <a className="block cursor-pointer" data-ditto-id="style-div-72" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:share:7494356140135243776/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
+                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-section-2" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                          <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
+                                        </svg>
+                                      </a>
+                                    </figure>
+                                  </div>
+                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap">
+                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer" data-ditto-id="style-div-26" data-component="link" aria-labelledby="post-time-170884699 link-desc-170884699" href="https://www.linkedin.com/feed/update/urn:li:share:7494356140135243776/" rel="noopener noreferrer nofollow" target="_blank" title="15. August 2026 um 11:35">
+                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-link-8" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
+                                        <g fill="currentColor">
+                                          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
+                                          <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
+                                        </g>
+                                      </svg>
+                                      <time className="block opacity-60 py-[0.3125rem]" data-ditto-id="style-image" dateTime="2026-08-15T11:35:42.000Z" id="post-time-170884699">
+                                        Vor 1 Min.
+                                      </time>
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" data-ditto-id="style-span-24" id="link-desc-170884699">
+                                        Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
+                                      </span>
+                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-span-5" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
+                                        <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </article>
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,300,0)] max-md:hidden before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm max-md:before:hidden after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm max-md:after:hidden" aria-label="Ein LinkedIn-Beitrag. Keine Fotobeschreibung verfügbar.">
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background max-md:hidden" data-ditto-id="style-div-35">
+                                  <div className="block relative order-[1] overflow-hidden aspect-square max-md:hidden">
+                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden max-md:hidden" style={{ backgroundImage: "linear-gradient(120deg, var(--clr-12), var(--muted-foreground))" }} data-ditto-id="style-section-5" role="presentation">
+                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover max-md:hidden" data-component="image" alt="Keine Fotobeschreibung verfügbar." src="/assets/cloned/images/d7fbdcf0ea87.jpg" />
+                                      <a className="w-70 h-70 block absolute top-0 left-0 z-1 min-w-0 underline cursor-pointer max-md:hidden" data-ditto-id="style-div-36" data-component="link" aria-hidden="true" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7493986214656577538/" rel="noopener noreferrer" target="_blank" />
+                                      <div className="w-7 h-7 block absolute right-2 bottom-2 z-1 min-w-0 rounded-[3px] bg-clr-9 max-md:hidden" data-ditto-id="style-link-15" aria-hidden="true">
+                                        <svg className="w-auto h-7 inline overflow-hidden text-clr-13 max-md:hidden" data-ditto-id="style-image-4" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                           <g fill="currentColor">
                                             <path d="M28.847 17.148a3.937 3.937 0 1 1-5.569 5.568 3.937 3.937 0 0 1 5.569-5.568m9.756 7.095A1.797 1.797 0 0 0 37 23.276a1.762 1.762 0 0 0-1.561 1.026l-2.727 6.01a.436.436 0 0 1-.738.092l-1.435-1.792a1.75 1.75 0 0 0-2.8.088l-5.456 7.793A.875.875 0 0 0 23 37.875h21a.875.875 0 0 0 .782-1.265z" />
                                             <path d="M47.5 9H18.625a3.5 3.5 0 0 0-3.5 3.5v28.875a3.5 3.5 0 0 0 3.5 3.5H47.5a3.5 3.5 0 0 0 3.5-3.5V12.5A3.5 3.5 0 0 0 47.5 9zm-.254 32.12a.875.875 0 0 1-.62.255H19.5a.875.875 0 0 1-.875-.875V13.375c0-.483.392-.875.875-.875h27.125c.483 0 .875.392.875.875V40.5c0 .23-.092.45-.254.614z" />
@@ -378,46 +362,46 @@ export default function Page() {
                                         </svg>
                                       </div>
                                     </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)]" data-ditto-id="style-span-44" aria-live="polite">
-                                      <svg className="hidden min-w-0 overflow-hidden" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-9)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] max-md:hidden" data-ditto-id="style-span-28" aria-live="polite">
+                                      <svg className="hidden min-w-0 overflow-hidden" data-ditto-id="style-span-21" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                         <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
                                       </svg>
-                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-div-30">
-                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center">
-                                          <p className="block" data-ditto-id="style-heading-3">
+                                      <div className="h-full block py-5 px-3 max-md:hidden" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-span-40">
+                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center max-md:hidden">
+                                          <p className="block max-md:hidden" data-ditto-id="style-div-27">
                                             Wir gratulieren Betten Frowein zum 150-jährigen Firmenjubiläum! 🎉
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-span-40">
+                                          <p className="block mt-3.5 max-md:hidden">
                                             {"Ein besonderes Jubiläum für ein traditionsreiches Familienunternehmen im IHK Bezirk: Betten Frowein feiert in diesem Jahr sein 150-jähriges Bestehen. Aus diesem Anlass überreichte unser Leiter der IHK-Geschäftsstelle Leverkusen/Rhein-Berg, @Alexander Felsch, die Jubiläumsurkunde an die Inhaberin Elvira Frowein. "}
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-div-31">
+                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-heading-3">
                                             {"Seit der Gründung im Jahr 1876 steht Betten Frowein für Kompetenz rund um guten Schlaf. Das Unternehmen hat sich auf Matratzen, Lattenroste und Bettgestelle spezialisiert und bietet darüber hinaus eine eigene Bettfedernreinigung an. "}
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-span-35">
+                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-span-36">
                                             150 Jahre Unternehmensgeschichte sind zugleich 150 Jahre Verbundenheit mit dem Standort Wermelskirchen und der Region. Dazu gratulieren wir herzlich!
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-div-74">
-                                            <a className="inline underline cursor-pointer" data-component="link" aria-label="Hashtag 150jahre" href="https://www.linkedin.com/feed/hashtag/?keywords=150jahre" rel="nofollow noopener noreferrer" target="_blank">
+                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-div-28">
+                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-span-29" data-component="link" aria-label="Hashtag 150jahre" href="https://www.linkedin.com/feed/hashtag/?keywords=150jahre" rel="nofollow noopener noreferrer" target="_blank">
                                               #150jahre
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer" data-component="link" aria-label="Hashtag firmenjubiläum" href="https://www.linkedin.com/feed/hashtag/?keywords=firmenjubil%C3%A4um" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-div-79" data-component="link" aria-label="Hashtag firmenjubiläum" href="https://www.linkedin.com/feed/hashtag/?keywords=firmenjubil%C3%A4um" rel="nofollow noopener noreferrer" target="_blank">
                                               #firmenjubiläum
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-div-32" data-component="link" aria-label="Hashtag wermelskirchen" href="https://www.linkedin.com/feed/hashtag/?keywords=wermelskirchen" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-md:hidden" data-component="link" aria-label="Hashtag wermelskirchen" href="https://www.linkedin.com/feed/hashtag/?keywords=wermelskirchen" rel="nofollow noopener noreferrer" target="_blank">
                                               #wermelskirchen
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-link-15" data-component="link" aria-label="Hashtag ihk" href="https://www.linkedin.com/feed/hashtag/?keywords=ihk" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-md:hidden" data-component="link" aria-label="Hashtag ihk" href="https://www.linkedin.com/feed/hashtag/?keywords=ihk" rel="nofollow noopener noreferrer" target="_blank">
                                               #ihk
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-image-5" data-component="link" aria-label="Hashtag ihkkoeln" href="https://www.linkedin.com/feed/hashtag/?keywords=ihkkoeln" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-div-29" data-component="link" aria-label="Hashtag ihkkoeln" href="https://www.linkedin.com/feed/hashtag/?keywords=ihkkoeln" rel="nofollow noopener noreferrer" target="_blank">
                                               #ihkkoeln
                                             </a>
                                           </p>
@@ -425,182 +409,89 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="h-16 flex px-4 justify-between items-center" data-ditto-id="style-span-41">
-                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" data-ditto-id="style-span-27" data-component="link" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
-                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" data-ditto-id="style-span-36" role="presentation">
-                                      <a className="block cursor-pointer" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7493986214656577538/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
-                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-div-11" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                  <div className="h-16 flex px-4 justify-between items-center max-md:hidden" data-ditto-id="style-link-16">
+                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer max-md:hidden" data-ditto-id="style-image-5" data-component="link" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
+                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background max-md:hidden" data-ditto-id="style-span-37" role="presentation">
+                                      <a className="block cursor-pointer max-md:hidden" data-ditto-id="style-span-20" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7493986214656577538/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
+                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-span-6" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                           <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
                                         </svg>
                                       </a>
                                     </figure>
                                   </div>
-                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap" data-ditto-id="style-span-15">
-                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer" data-component="link" aria-labelledby="post-time-170857495 link-desc-170857495" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7493986214656577538/" rel="noopener noreferrer nofollow" target="_blank" title="14. August 2026 um 11:05">
-                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-span-12" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
+                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap max-md:hidden">
+                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer max-md:hidden" data-component="link" aria-labelledby="post-time-170857495 link-desc-170857495" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7493986214656577538/" rel="noopener noreferrer nofollow" target="_blank" title="14. August 2026 um 11:05">
+                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-span-7" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
                                         <g fill="currentColor">
                                           <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
                                           <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
                                         </g>
                                       </svg>
-                                      <time className="block opacity-60 py-[0.3125rem]" data-ditto-id="style-strong" dateTime="2026-08-14T11:05:45.000Z" id="post-time-170857495">
+                                      <time className="block opacity-60 py-[0.3125rem] max-md:hidden" data-ditto-id="style-div-3" dateTime="2026-08-14T11:05:45.000Z" id="post-time-170857495">
                                         Vor 1 Min.
                                       </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" data-ditto-id="style-link-16" id="link-desc-170857495">
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-md:hidden" id="link-desc-170857495">
                                         Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
                                       </span>
-                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-span-13" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
+                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-strong" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
                                         <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
                                       </svg>
                                     </a>
                                   </div>
                                 </div>
                               </article>
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,300,0)] max-md:hidden before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm max-md:before:hidden after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm max-md:after:hidden" data-ditto-id="style-strong-4" aria-label="Ein LinkedIn-Beitrag">
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background max-md:hidden">
-                                  <div className="block relative order-[1] overflow-hidden aspect-square max-md:hidden">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden bg-color-002 max-md:hidden" data-ditto-id="style-link-17" role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover max-md:hidden" data-ditto-id="style-span-16" data-component="image" alt="A man with glasses and a beard stands in an office wearing a dark suit and a bright pink tie." src="/assets/cloned/images/e39537565681.jpg" />
-                                      <a className="w-70 h-70 block absolute top-0 z-3 opacity-60 min-w-0 text-background underline cursor-pointer max-md:hidden" data-ditto-id="style-strong-2" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet). A man with glasses and a beard stands in an office wearing a dark suit and a bright pink tie." href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7492566391791788032/" rel="noopener noreferrer" target="_blank">
-                                        <svg className="w-auto h-15 block absolute top-0 left-0 m-27.5 overflow-hidden [filter:drop-shadow(var(--clr-12)_0px_8px_32px)] pointer-events-none max-md:hidden" data-ditto-id="style-span-14" data-component="image" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,600,0)] max-lg:hidden before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm max-lg:before:hidden after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm max-lg:after:hidden" data-ditto-id="style-link-17" aria-label="Ein LinkedIn-Beitrag">
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background max-lg:hidden" data-ditto-id="style-span-14">
+                                  <div className="block relative order-[1] overflow-hidden aspect-square max-lg:hidden" data-ditto-id="style-strong-3">
+                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden bg-color-002 max-lg:hidden" role="presentation">
+                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover max-lg:hidden" data-component="image" alt="A man with glasses and a beard stands in an office wearing a dark suit and a bright pink tie." src="/assets/cloned/images/e39537565681.jpg" />
+                                      <a className="w-70 h-70 block absolute top-0 z-3 opacity-60 min-w-0 text-background underline cursor-pointer max-lg:hidden" data-ditto-id="style-link-2" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet). A man with glasses and a beard stands in an office wearing a dark suit and a bright pink tie." href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7492566391791788032/" rel="noopener noreferrer" target="_blank">
+                                        <svg className="w-auto h-15 block absolute top-0 left-0 m-27.5 overflow-hidden [filter:drop-shadow(var(--clr-14)_0px_8px_32px)] pointer-events-none max-lg:hidden" data-ditto-id="style-span-8" data-component="image" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                           <path fill="currentColor" d="M30 6C16.74 6 6 16.74 6 30s10.74 24 24 24 24-10.74 24-24S43.26 6 30 6zm-4.8 34.8V19.2L39.6 30z" />
                                         </svg>
                                       </a>
                                     </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 pt-2.5 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)] max-md:hidden" data-ditto-id="style-strong-3" aria-live="polite">
-                                      <svg className="w-auto h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)] max-md:hidden" data-ditto-id="style-div-42" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 pt-2.5 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-9)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)] max-lg:hidden" aria-live="polite">
+                                      <svg className="w-auto h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)] max-lg:hidden" data-ditto-id="style-span-32" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                         <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
                                       </svg>
-                                      <div className="h-full block py-5 px-3 max-md:hidden" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-br-5">
-                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center max-md:hidden" data-ditto-id="style-div-75">
-                                          <p className="block max-md:hidden">
+                                      <div className="h-full block py-5 px-3 max-lg:hidden" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-strong-2">
+                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center max-lg:hidden" data-ditto-id="style-div-39">
+                                          <p className="block max-lg:hidden">
                                             Herzlich willkommen! Heute hatte @Philipp Koecke seinen ersten Arbeitstag bei der IHK Köln!
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-li-24">
+                                          <p className="block mt-3.5 max-lg:hidden">
                                             Er übernimmt die Leitung der Geschäftsstelle Rhein-Erft und verantwortet darüber hinaus als Geschäftsbereichsleiter gemeinsam mit @Alexander Felsch den Bereich „Interessenvertretung“. In diesem Video stellt er sich kurz vor.
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-teilen">
+                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-ul-8">
                                             Philipp Koecke verfügt nach beruflichen Stationen als Vorstand und CFO beim Solar-Konzern SolarWorld AG und seit 2022 beim Energiespeicher-Spezialisten Tesvolt AG über eine große Expertise in den Themenfeldern Energie, Klima, Umwelt, Finance, Startups und KI. Er ist außerdem Lehrbeauftragter an der TH Rosenheim für den Masterstudiengang „Finance and Investment“.
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-li-27">
+                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-li-28">
                                             Wir freuen uns, dass Du da bist, lieber Philipp!
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5 max-md:hidden" data-ditto-id="style-link-18">
-                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-div-63" data-component="link" aria-label="Hashtag RheinischesRevier" href="https://www.linkedin.com/feed/hashtag/?keywords=RheinischesRevier" rel="nofollow noopener noreferrer" target="_blank">
+                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-teilen">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-li-31" data-component="link" aria-label="Hashtag RheinischesRevier" href="https://www.linkedin.com/feed/hashtag/?keywords=RheinischesRevier" rel="nofollow noopener noreferrer" target="_blank">
                                               #RheinischesRevier
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-ul-7" data-component="link" aria-label="Hashtag RheinErft" href="https://www.linkedin.com/feed/hashtag/?keywords=RheinErft" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-link-18" data-component="link" aria-label="Hashtag RheinErft" href="https://www.linkedin.com/feed/hashtag/?keywords=RheinErft" rel="nofollow noopener noreferrer" target="_blank">
                                               #RheinErft
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-li-11" data-component="link" aria-label="Hashtag Region" href="https://www.linkedin.com/feed/hashtag/?keywords=Region" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-div-66" data-component="link" aria-label="Hashtag Region" href="https://www.linkedin.com/feed/hashtag/?keywords=Region" rel="nofollow noopener noreferrer" target="_blank">
                                               #Region
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer max-md:hidden" data-component="link" aria-label="Hashtag Interessenvertretung" href="https://www.linkedin.com/feed/hashtag/?keywords=Interessenvertretung" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-ul-5" data-component="link" aria-label="Hashtag Interessenvertretung" href="https://www.linkedin.com/feed/hashtag/?keywords=Interessenvertretung" rel="nofollow noopener noreferrer" target="_blank">
                                               #Interessenvertretung
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer max-md:hidden" data-component="link" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-li-14" data-component="link" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
                                               #IHK
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-md:hidden" data-component="link" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
-                                              #IHKKöln
-                                            </a>
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="h-16 flex px-4 justify-between items-center max-md:hidden">
-                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer max-md:hidden" data-component="link" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
-                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background max-md:hidden" data-ditto-id="style-li-17" role="presentation">
-                                      <a className="block cursor-pointer max-md:hidden" data-ditto-id="style-a-13" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7492566391791788032/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
-                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-li-7" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                          <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
-                                        </svg>
-                                      </a>
-                                    </figure>
-                                  </div>
-                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap max-md:hidden" data-ditto-id="style-a-5">
-                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer max-md:hidden" data-ditto-id="style-li-12" data-component="link" aria-labelledby="post-time-170750451 link-desc-170750451" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7492566391791788032/" rel="noopener noreferrer nofollow" target="_blank" title="10. August 2026 um 13:04">
-                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-a-3" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
-                                        <g fill="currentColor">
-                                          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
-                                          <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
-                                        </g>
-                                      </svg>
-                                      <time className="block opacity-60 py-[0.3125rem] max-md:hidden" data-ditto-id="style-li-2" dateTime="2026-08-10T13:04:05.000Z" id="post-time-170750451">
-                                        Vor 1 Min.
-                                      </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-a-6" id="link-desc-170750451">
-                                        Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
-                                      </span>
-                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none max-md:hidden" data-ditto-id="style-sidebar" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
-                                        <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
-                                      </svg>
-                                    </a>
-                                  </div>
-                                </div>
-                              </article>
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,600,0)] max-lg:hidden before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm max-lg:before:hidden after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm max-lg:after:hidden" data-ditto-id="style-div-55" aria-label={"Ein LinkedIn-Beitrag. A man with a beard speaks into a microphone against a blue background. text identifies him as andreas kunsmann for \"stimme der wirtschaft\" by ihk köln."}>
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background max-lg:hidden" data-ditto-id="style-div-64">
-                                  <div className="block relative order-[1] overflow-hidden aspect-square max-lg:hidden" data-ditto-id="style-div-43">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden max-lg:hidden" style={{ backgroundImage: "linear-gradient(120deg, var(--clr-9), var(--muted-foreground))" }} role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover max-lg:hidden" data-ditto-id="style-contact-6786902" data-component="image" alt={"A man with a beard speaks into a microphone against a blue background. text identifies him as andreas kunsmann for \"stimme der wirtschaft\" by ihk köln."} src="/assets/cloned/images/77e1a29a1cbf.jpg" />
-                                      <a className="w-70 h-70 block absolute top-0 left-0 z-1 min-w-0 underline cursor-pointer max-lg:hidden" data-component="link" aria-hidden="true" href="https://www.linkedin.com/feed/update/urn:li:share:7491085027657629696/" rel="noopener noreferrer" target="_blank" />
-                                    </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)] max-lg:hidden" data-ditto-id="style-image-11" aria-live="polite">
-                                      <svg className="w-auto h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)] max-lg:hidden" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                        <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
-                                      </svg>
-                                      <div className="h-full block py-5 px-3 max-lg:hidden" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-div-72">
-                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center max-lg:hidden" data-ditto-id="style-br-7">
-                                          <p className="block max-lg:hidden">
-                                            Wie wird ausgerechnet die Baubranche kreislauffähig?
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-li-13">
-                                            Andreas Kunsmann, CEO der Polycare Research Technology GmbH und Gewinner unseres Wettbewerbs „Going Circular“, hat darauf eine überzeugende Antwort: zementfreier Beton und ein Wandsystem, das sich zerstörungsfrei zurückbauen und wiederverwenden lässt.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-footer-imprint-item0">
-                                            {"Wie platziert man eine solche Innovation auf dem Markt? Wie hartnäckig ist die Gründungsarbeit? Und wie fühlt es sich an, wenn die erste \"eigene Wand\" auf einer Baustelle am Kran schwebt? Über diese und andere Fragen spricht Kunsmann in dieser neuen Folge von „Stimme der Wirtschaft“ mit IHK-Hauptgeschäftsführer Uwe Vetterlein und Moderator Konstantin Klostermann. "}
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5 max-lg:hidden">
-                                            Jetzt anschauen!
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-footer-imprint-item1">
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-component="link" aria-label="Hashtag CircularEconomy" href="https://www.linkedin.com/feed/hashtag/?keywords=CircularEconomy" rel="nofollow noopener noreferrer" target="_blank">
-                                              #CircularEconomy
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-link-9" data-component="link" aria-label="Hashtag Kreislaufwirtschaft" href="https://www.linkedin.com/feed/hashtag/?keywords=Kreislaufwirtschaft" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Kreislaufwirtschaft
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-article" data-component="link" aria-label="Hashtag Bauen" href="https://www.linkedin.com/feed/hashtag/?keywords=Bauen" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Bauen
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-div-33" data-component="link" aria-label="Hashtag Innovation" href="https://www.linkedin.com/feed/hashtag/?keywords=Innovation" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Innovation
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-div-65" data-component="link" aria-label="Hashtag GoingCircular" href="https://www.linkedin.com/feed/hashtag/?keywords=GoingCircular" rel="nofollow noopener noreferrer" target="_blank">
-                                              #GoingCircular
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-ul-4" data-component="link" aria-label="Hashtag StimmederWirtschaft" href="https://www.linkedin.com/feed/hashtag/?keywords=StimmederWirtschaft" rel="nofollow noopener noreferrer" target="_blank">
-                                              #StimmederWirtschaft
                                             </a>
                                             {" "}
                                             <a className="inline underline cursor-pointer max-lg:hidden" data-component="link" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
@@ -610,195 +501,265 @@ export default function Page() {
                                         </div>
                                       </div>
                                     </div>
-                                    <a className="w-[15.0625rem] h-[81.3px] block absolute bottom-[19.5px] left-[19.5px] z-1 py-2.5 px-[0.9375rem] rounded-sm text-[0.8125rem] font-medium leading-[1.25rem] bg-background shadow-[var(--clr-13)_0px_1px_2px_0px,var(--clr-8)_0px_4px_10px_0px] cursor-pointer max-lg:hidden" data-ditto-id="style-div-23" data-component="link" href="https://youtu.be/KlY_hccTXd0" rel="noopener noreferrer nofollow" target="_blank">
-                                      <div className="block max-lg:hidden">
-                                        Going Circular: and the Winner 2026 is... | Stimme der Wirtschaft, 06.08.2026
-                                      </div>
-                                      <div className="block opacity-75 mt-[0.5625rem] text-[0.5625rem] leading-[0.8125rem] tracking-[0.18px] uppercase max-lg:hidden" data-ditto-id="style-div-68">
-                                        youtu.be
-                                      </div>
-                                    </a>
                                   </div>
-                                  <div className="h-16 flex px-4 justify-between items-center max-lg:hidden" data-ditto-id="style-div-24">
-                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer max-lg:hidden" data-ditto-id="style-div-73" data-component="link" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
-                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background max-lg:hidden" data-ditto-id="style-button-7" role="presentation">
-                                      <a className="block cursor-pointer max-lg:hidden" data-ditto-id="style-div-25" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:share:7491085027657629696/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
-                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-br-2" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                  <div className="h-16 flex px-4 justify-between items-center max-lg:hidden">
+                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer max-lg:hidden" data-component="link" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
+                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background max-lg:hidden" role="presentation">
+                                      <a className="block cursor-pointer max-lg:hidden" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7492566391791788032/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
+                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-li-9" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                           <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
                                         </svg>
                                       </a>
                                     </figure>
                                   </div>
-                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap max-lg:hidden" data-ditto-id="style-partners-2">
-                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer max-lg:hidden" data-ditto-id="style-div-26" data-component="link" aria-labelledby="post-time-170645655 link-desc-170645655" href="https://www.linkedin.com/feed/update/urn:li:share:7491085027657629696/" rel="noopener noreferrer nofollow" target="_blank" title="6. August 2026 um 10:57">
-                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-div-12" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
+                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap max-lg:hidden" data-ditto-id="style-a-10">
+                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer max-lg:hidden" data-ditto-id="style-li-15" data-component="link" aria-labelledby="post-time-170750451 link-desc-170750451" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7492566391791788032/" rel="noopener noreferrer nofollow" target="_blank" title="10. August 2026 um 13:04">
+                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-a-2" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
                                         <g fill="currentColor">
                                           <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
                                           <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
                                         </g>
                                       </svg>
-                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" dateTime="2026-08-06T10:57:28.000Z" id="post-time-170645655">
+                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-li-2" dateTime="2026-08-10T13:04:05.000Z" id="post-time-170750451">
                                         Vor 1 Min.
                                       </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-ul-5" id="link-desc-170645655">
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-a-3" id="link-desc-170750451">
                                         Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
                                       </span>
-                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-li-8" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
+                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-li-10" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
                                         <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
                                       </svg>
                                     </a>
                                   </div>
                                 </div>
                               </article>
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,900,0)] max-md:transform-[matrix(1,0,0,1,300,0)] md:max-lg:transform-[matrix(1,0,0,1,600,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" data-ditto-id="style-div-34" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag">
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-gfi-document-id-mobil">
-                                  <div className="block relative order-[1] overflow-hidden aspect-square" data-ditto-id="style-mobile-teilen">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden bg-color-002 md:max-lg:bg-[initial]" data-ditto-id="style-div-2" role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-ditto-id="style-ul-6" data-component="image" alt="A man in a dark suit and glasses stands in front of a branded backdrop, adjusting his jacket button." src="/assets/cloned/images/4e6e73dbf552.jpg" />
-                                      <a className="w-70 h-70 block absolute top-0 left-0 z-3 opacity-60 min-w-0 text-background underline cursor-pointer md:max-lg:z-1 md:max-lg:opacity-[initial] md:max-lg:text-[color:inherit]" data-ditto-id="style-li-3" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet). A man in a dark suit and glasses stands in front of a branded backdrop, adjusting his jacket button." href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7491018817398149121/" rel="noopener noreferrer" target="_blank">
-                                        <svg className="w-auto h-15 block absolute top-0 left-0 m-27.5 overflow-hidden [filter:drop-shadow(var(--clr-12)_0px_8px_32px)] pointer-events-none md:max-lg:hidden" data-ditto-id="style-a-4" data-component="image" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,900,0)] max-md:transform-[matrix(1,0,0,1,300,0)] md:max-lg:transform-[matrix(1,0,0,1,600,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" data-ditto-id="style-a-4" aria-hidden="true" aria-label={"Ein LinkedIn-Beitrag. A man with a beard speaks into a microphone against a blue background. text identifies him as andreas kunsmann for \"stimme der wirtschaft\" by ihk köln."}>
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background">
+                                  <div className="block relative order-[1] overflow-hidden aspect-square" data-ditto-id="style-div-55">
+                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden md:max-lg:bg-color-002 md:max-lg:bg-[none]" data-ditto-id="style-div-2" role="presentation">
+                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-ditto-id="style-div-40" data-component="image" alt={"A man with a beard speaks into a microphone against a blue background. text identifies him as andreas kunsmann for \"stimme der wirtschaft\" by ihk köln."} src="/assets/cloned/images/77e1a29a1cbf.jpg" />
+                                      <a className="w-70 h-70 block absolute top-0 left-0 z-1 min-w-0 underline cursor-pointer md:max-lg:z-3 md:max-lg:opacity-60 md:max-lg:text-background" data-component="link" aria-hidden="true" href="https://www.linkedin.com/feed/update/urn:li:share:7491085027657629696/" rel="noopener noreferrer" target="_blank" />
+                                    </figure>
+                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-9)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)]" data-ditto-id="style-contact-6786902" aria-live="polite">
+                                      <svg className="w-auto h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)] max-md:hidden" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                        <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
+                                      </svg>
+                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-image-12">
+                                        <div className="h-full flex max-h-full flex-col leading-[1.25rem] text-center" data-ditto-id="style-div-80">
+                                          <p className="block" data-ditto-id="style-div-76">
+                                            Wie wird ausgerechnet die Baubranche kreislauffähig?
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5" data-ditto-id="style-br-9">
+                                            Andreas Kunsmann, CEO der Polycare Research Technology GmbH und Gewinner unseres Wettbewerbs „Going Circular“, hat darauf eine überzeugende Antwort: zementfreier Beton und ein Wandsystem, das sich zerstörungsfrei zurückbauen und wiederverwenden lässt.
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5">
+                                            {"Wie platziert man eine solche Innovation auf dem Markt? Wie hartnäckig ist die Gründungsarbeit? Und wie fühlt es sich an, wenn die erste \"eigene Wand\" auf einer Baustelle am Kran schwebt? Über diese und andere Fragen spricht Kunsmann in dieser neuen Folge von „Stimme der Wirtschaft“ mit IHK-Hauptgeschäftsführer Uwe Vetterlein und Moderator Konstantin Klostermann. "}
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5" data-ditto-id="style-li-16">
+                                            Jetzt anschauen!
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5" data-ditto-id="style-footer-imprint-item0">
+                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag CircularEconomy" href="https://www.linkedin.com/feed/hashtag/?keywords=CircularEconomy" rel="nofollow noopener noreferrer" target="_blank">
+                                              #CircularEconomy
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-footer-imprint-item1" data-component="link" aria-hidden="true" aria-label="Hashtag Kreislaufwirtschaft" href="https://www.linkedin.com/feed/hashtag/?keywords=Kreislaufwirtschaft" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Kreislaufwirtschaft
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag Bauen" href="https://www.linkedin.com/feed/hashtag/?keywords=Bauen" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Bauen
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-link-10" data-component="link" aria-hidden="true" aria-label="Hashtag Innovation" href="https://www.linkedin.com/feed/hashtag/?keywords=Innovation" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Innovation
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-article-2" data-component="link" aria-hidden="true" aria-label="Hashtag GoingCircular" href="https://www.linkedin.com/feed/hashtag/?keywords=GoingCircular" rel="nofollow noopener noreferrer" target="_blank">
+                                              #GoingCircular
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer max-md:hidden" data-ditto-id="style-div-30" data-component="link" aria-hidden="true" aria-label="Hashtag StimmederWirtschaft" href="https://www.linkedin.com/feed/hashtag/?keywords=StimmederWirtschaft" rel="nofollow noopener noreferrer" target="_blank">
+                                              #StimmederWirtschaft
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-div-67" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
+                                              #IHKKöln
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <a className="w-[15.0625rem] h-[81.3px] block absolute bottom-[19.5px] left-[19.5px] z-1 py-2.5 px-[0.9375rem] rounded-sm text-[0.8125rem] font-medium leading-[1.25rem] bg-background shadow-[var(--clr-15)_0px_1px_2px_0px,var(--clr-8)_0px_4px_10px_0px] cursor-pointer max-lg:hidden" data-ditto-id="style-ul-4" data-component="link" aria-hidden="true" href="https://youtu.be/KlY_hccTXd0" rel="noopener noreferrer nofollow" target="_blank">
+                                      <div className="block max-lg:hidden" data-ditto-id="style-image-10">
+                                        Going Circular: and the Winner 2026 is... | Stimme der Wirtschaft, 06.08.2026
+                                      </div>
+                                      <div className="block opacity-75 mt-[0.5625rem] text-[0.5625rem] leading-[0.8125rem] tracking-[0.18px] uppercase max-lg:hidden" data-ditto-id="style-div-20">
+                                        youtu.be
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div className="h-16 flex px-4 justify-between items-center">
+                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" data-ditto-id="style-div-73" data-component="link" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
+                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" data-ditto-id="style-div-21" role="presentation">
+                                      <a className="h-full block cursor-pointer" data-ditto-id="style-div-77" aria-hidden="true" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:share:7491085027657629696/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
+                                        <svg className="w-8 h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-button-4" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                          <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
+                                        </svg>
+                                      </a>
+                                    </figure>
+                                  </div>
+                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap" data-ditto-id="style-div-22">
+                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer" data-ditto-id="style-br-7" data-component="link" aria-hidden="true" aria-labelledby="post-time-170645655 link-desc-170645655" href="https://www.linkedin.com/feed/update/urn:li:share:7491085027657629696/" rel="noopener noreferrer nofollow" target="_blank" title="6. August 2026 um 10:57">
+                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-partners" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
+                                        <g fill="currentColor">
+                                          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
+                                          <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
+                                        </g>
+                                      </svg>
+                                      <time className="hidden md:max-lg:block md:max-lg:opacity-60 md:max-lg:py-[0.3125rem]" data-ditto-id="style-div-23" dateTime="2026-08-10T13:04:05.000Z" id="post-time-170750451">
+                                        Vor 1 Min.
+                                      </time>
+                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-div-4" dateTime="2026-08-06T10:57:28.000Z" id="post-time-170645655">
+                                        Vor 1 Min.
+                                      </time>
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" id="link-desc-170645655">
+                                        Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
+                                      </span>
+                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-ul-3" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
+                                        <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </article>
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,1200,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" data-ditto-id="style-li-21" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag">
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-div-31">
+                                  <div className="block relative order-[1] overflow-hidden aspect-square" data-ditto-id="style-gfi-document-id-mobil">
+                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden bg-color-002" data-ditto-id="style-mobile-teilen" role="presentation">
+                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" alt="A man in a dark suit and glasses stands in front of a branded backdrop, adjusting his jacket button." src="/assets/cloned/images/4e6e73dbf552.jpg" />
+                                      <a className="w-70 h-full block absolute top-0 z-3 opacity-60 min-w-0 text-background underline cursor-pointer" data-ditto-id="style-ul" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet). A man in a dark suit and glasses stands in front of a branded backdrop, adjusting his jacket button." href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7491018817398149121/" rel="noopener noreferrer" target="_blank">
+                                        <svg className="w-15 h-15 block absolute top-0 left-0 m-27.5 overflow-hidden [filter:drop-shadow(var(--clr-14)_0px_8px_32px)] pointer-events-none md:max-lg:hidden" data-ditto-id="style-li-11" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                           <path fill="currentColor" d="M30 6C16.74 6 6 16.74 6 30s10.74 24 24 24 24-10.74 24-24S43.26 6 30 6zm-4.8 34.8V19.2L39.6 30z" />
                                         </svg>
                                       </a>
                                     </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 pt-2.5 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)]" aria-live="polite">
-                                      <svg className="w-auto h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)]" data-ditto-id="style-a-7" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 pt-2.5 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-9)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)]" aria-live="polite">
+                                      <svg className="w-5 h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)]" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                         <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
                                       </svg>
-                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-li-22">
-                                        <div className="h-full flex max-h-full flex-col leading-[1.25rem] text-center" data-ditto-id="style-a-8">
-                                          <p className="block" data-ditto-id="style-li-15">
+                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-a-5">
+                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center" data-ditto-id="style-li-26">
+                                          <p className="block" data-ditto-id="style-a-6">
                                             {"Die "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-component="link" aria-hidden="true" aria-label="Hashtag Brückenkrise" href="https://www.linkedin.com/feed/hashtag/?keywords=Br%C3%BCckenkrise" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-li-18" aria-hidden="true" aria-label="Hashtag Brückenkrise" href="https://www.linkedin.com/feed/hashtag/?keywords=Br%C3%BCckenkrise" rel="nofollow noopener noreferrer" target="_blank">
                                               #Brückenkrise
                                             </a>
                                             {" in Köln und der ganzen Region ist im Betriebsalltag angekommen."}
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-li-25">
+                                          <p className="block mt-3.5" data-ditto-id="style-a-12">
                                             {"Aus einzelnen Brückenproblemen ist längst ein regionales "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-component="link" aria-hidden="true" aria-label="Hashtag Standortproblem" href="https://www.linkedin.com/feed/hashtag/?keywords=Standortproblem" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-li-29" aria-hidden="true" aria-label="Hashtag Standortproblem" href="https://www.linkedin.com/feed/hashtag/?keywords=Standortproblem" rel="nofollow noopener noreferrer" target="_blank">
                                               #Standortproblem
                                             </a>
                                             {" geworden. Das zeigen die Ergebnisse unserer Umfrage, die unser Geschäftsbereichsleiter Interessenvertretung, @Alexander Felsch, im Video zusammenfasst. Insgesamt haben sich über 1.000 Unternehmen beteiligt."}
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-li-26">
+                                          <p className="block mt-3.5">
                                             67 Prozent der Unternehmen sind von der Sperrung der Bonner Nordbrücke direkt oder indirekt betroffen. Am Eifeltor liegt dieser Anteil bei 57 Prozent. Rund sechs von zehn Unternehmen verlieren mindestens 15 Minuten pro Fahrt und sehen ihre Beschäftigten betroffen.
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5">
+                                          <p className="block mt-3.5" data-ditto-id="style-li-30">
                                             {"Was auf der Verkehrskarte wie ein einzelner "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-li-18" data-component="link" aria-hidden="true" aria-label="Hashtag Engpass" href="https://www.linkedin.com/feed/hashtag/?keywords=Engpass" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" aria-hidden="true" aria-label="Hashtag Engpass" href="https://www.linkedin.com/feed/hashtag/?keywords=Engpass" rel="nofollow noopener noreferrer" target="_blank">
                                               #Engpass
                                             </a>
                                             {" aussieht, wirkt sich unmittelbar auf Dienstfahrten, Handwerkseinsätze, Kundentermine, Lieferketten und die Arbeitswege der Beschäftigten aus. Verkehrsinfrastruktur endet nicht an Stadt-, Kreis- oder IHK-Bezirksgrenzen."}
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-a-12">
+                                          <p className="block mt-3.5" data-ditto-id="style-li-22">
                                             {"Unsere "}
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-footer" data-component="link" aria-hidden="true" aria-label="Hashtag Forderungen" href="https://www.linkedin.com/feed/hashtag/?keywords=Forderungen" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-a-11" aria-hidden="true" aria-label="Hashtag Forderungen" href="https://www.linkedin.com/feed/hashtag/?keywords=Forderungen" rel="nofollow noopener noreferrer" target="_blank">
                                               #Forderungen
                                             </a>
-                                            <a className="hidden max-lg:inline max-lg:underline max-lg:cursor-pointer" aria-hidden="true" aria-label="Hashtag Region" href="https://www.linkedin.com/feed/hashtag/?keywords=Region" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Region
-                                            </a>
-                                            <a className="hidden max-lg:inline max-lg:underline max-lg:cursor-pointer" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
-                                              #IHKKöln
-                                            </a>
                                             {" sind deshalb klar: "}
-                                            <br className="inline max-lg:hidden" />
+                                            <br className="inline max-lg:hidden" data-ditto-id="style-footer" />
                                             {"• Eifeltor und Bonner Nordbrücke müssen als wirtschaftlich relevante Notfallprojekte behandelt werden. "}
-                                            <br className="inline max-lg:hidden" />
+                                            <br className="inline max-lg:hidden" data-ditto-id="style-div-46" />
                                             {"• Baustellen, Umleitungsstrecken und Verkehrsinformationen müssen regional koordiniert werden. "}
                                             <br className="inline max-lg:hidden" />
                                             • Die Kölner Rheinbrücken müssen parallel geplant und bis spätestens 2040 saniert werden. Dafür sollte auch das ÖPP-Szenario „Rheinbrücken 2040“ intensiv geprüft werden, ausdrücklich ohne Brückenmaut oder Nutzerfinanzierung.
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-div-76">
+                                          <p className="block mt-3.5 max-lg:hidden">
                                             {"Leistungsfähige Brücken sind keine Komfortfrage. Sie sind eine Grundvoraussetzung für funktionierende "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-p" data-component="link" aria-hidden="true" aria-label="Hashtag Wertschöpfung" href="https://www.linkedin.com/feed/hashtag/?keywords=Wertsch%C3%B6pfung" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer max-lg:hidden" aria-hidden="true" aria-label="Hashtag Wertschöpfung" href="https://www.linkedin.com/feed/hashtag/?keywords=Wertsch%C3%B6pfung" rel="nofollow noopener noreferrer" target="_blank">
                                               #Wertschöpfung
                                             </a>
                                             , erreichbare Arbeitsplätze und einen wettbewerbsfähigen Standort.
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5 max-lg:hidden" data-ditto-id="style-link-19">
+                                          <p className="block mt-3.5 max-lg:hidden">
                                             Welche Auswirkungen erleben Sie in Ihrem betrieblichen Alltag? Schreiben Sie uns gerne in den Kommentaren oder per Nachricht.
                                           </p>
                                         </div>
                                       </div>
                                     </div>
-                                    <a className="hidden md:max-lg:w-[15.0625rem] md:max-lg:h-[81.3px] md:max-lg:block md:max-lg:absolute md:max-lg:bottom-[19.5px] md:max-lg:left-[19.5px] md:max-lg:z-1 md:max-lg:py-2.5 md:max-lg:px-[0.9375rem] md:max-lg:rounded-sm md:max-lg:text-[0.8125rem] md:max-lg:font-medium md:max-lg:leading-[1.25rem] md:max-lg:bg-background md:max-lg:shadow-[var(--clr-13)_0px_1px_2px_0px,var(--clr-8)_0px_4px_10px_0px] md:max-lg:cursor-pointer" data-ditto-id="style-br-4" aria-hidden="true" href="https://youtu.be/KlY_hccTXd0" rel="noopener noreferrer nofollow" target="_blank">
-                                      <div className="hidden md:max-lg:block" data-ditto-id="style-br-6">
-                                        Going Circular: and the Winner 2026 is... | Stimme der Wirtschaft, 06.08.2026
-                                      </div>
-                                      <div className="hidden md:max-lg:block md:max-lg:opacity-75 md:max-lg:mt-[0.5625rem] md:max-lg:text-[0.5625rem] md:max-lg:leading-[0.8125rem] md:max-lg:tracking-[0.18px] md:max-lg:uppercase">
-                                        youtu.be
-                                      </div>
-                                    </a>
                                   </div>
-                                  <div className="h-16 flex px-4 justify-between items-center" data-ditto-id="style-br-10">
-                                    <a className="h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" data-component="link" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
-                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" data-ditto-id="style-div-69" role="presentation">
-                                      <a className="h-full block cursor-pointer" data-ditto-id="style-ul-9" aria-hidden="true" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7491018817398149121/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
-                                        <svg className="w-8 h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-li-9" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                  <div className="h-16 flex px-4 justify-between items-center">
+                                    <a className="w-0 h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" data-ditto-id="style-p" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
+                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" data-ditto-id="style-link-19" role="presentation">
+                                      <a className="h-full block cursor-pointer" data-ditto-id="style-br-8" aria-hidden="true" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7491018817398149121/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
+                                        <svg className="w-8 h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-br-4" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                           <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
                                         </svg>
                                       </a>
                                     </figure>
                                   </div>
-                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap" data-ditto-id="style-desc-mail-footer">
-                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer" data-ditto-id="style-link-20" data-component="link" aria-hidden="true" aria-labelledby="post-time-170639877 link-desc-170639877" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7491018817398149121/" rel="noopener noreferrer nofollow" target="_blank" title="6. August 2026 um 06:34">
-                                      <svg className="w-auto h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-li-10" data-component="icon" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
+                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap">
+                                    <a className="flex pr-0.5 items-center overflow-hidden cursor-pointer" data-ditto-id="style-br-10" aria-hidden="true" aria-labelledby="post-time-170639877 link-desc-170639877" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7491018817398149121/" rel="noopener noreferrer nofollow" target="_blank" title="6. August 2026 um 06:34">
+                                      <svg className="w-4.5 h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-div-14" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
                                         <g fill="currentColor">
                                           <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
                                           <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
                                         </g>
                                       </svg>
-                                      <time className="hidden md:max-lg:block md:max-lg:opacity-60 md:max-lg:py-[0.3125rem]" data-ditto-id="style-desc-tel" dateTime="2026-08-06T10:57:28.000Z" id="post-time-170645655">
+                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-div-5" dateTime="2026-08-06T06:34:36.000Z" id="post-time-170639877">
                                         Vor 1 Min.
                                       </time>
-                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-link-3" dateTime="2026-08-06T06:34:36.000Z" id="post-time-170639877">
-                                        Vor 1 Min.
-                                      </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" id="link-desc-170639877">
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-ul-7" id="link-desc-170639877">
                                         Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
                                       </span>
-                                      <svg className="w-auto h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-div-13" data-component="icon" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
+                                      <svg className="w-2.5 h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-li-12" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
                                         <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
                                       </svg>
                                     </a>
                                   </div>
                                 </div>
                               </article>
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,1200,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag. Keine Fotobeschreibung verfügbar.">
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-li-19">
-                                  <div className="block relative order-[1] overflow-hidden aspect-square">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden" style={{ backgroundImage: "linear-gradient(120deg, var(--clr-9), var(--muted-foreground))" }} data-ditto-id="style-span-32" role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-ditto-id="style-li-16" alt="Keine Fotobeschreibung verfügbar." src="/assets/cloned/images/7ba9fabb8122.jpg" />
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,1500,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag. Keine Fotobeschreibung verfügbar.">
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-link-20">
+                                  <div className="block relative order-[1] overflow-hidden aspect-square" data-ditto-id="style-li-19">
+                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden" style={{ backgroundImage: "linear-gradient(120deg, var(--clr-12), var(--muted-foreground))" }} role="presentation">
+                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-ditto-id="style-link-21" alt="Keine Fotobeschreibung verfügbar." src="/assets/cloned/images/7ba9fabb8122.jpg" />
                                       <a className="w-70 h-full block absolute top-0 left-0 z-1 min-w-0 underline cursor-pointer" aria-hidden="true" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7488813238927699968/" rel="noopener noreferrer" target="_blank" />
-                                      <div className="w-7 h-7 block absolute right-2 bottom-2 z-1 min-w-0 rounded-[3px] bg-clr-10 max-lg:hidden" aria-hidden="true">
-                                        <svg className="w-7 h-7 inline overflow-hidden text-clr-11 max-lg:hidden" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                          <g fill="currentColor">
-                                            <path d="M28.847 17.148a3.937 3.937 0 1 1-5.569 5.568 3.937 3.937 0 0 1 5.569-5.568m9.756 7.095A1.797 1.797 0 0 0 37 23.276a1.762 1.762 0 0 0-1.561 1.026l-2.727 6.01a.436.436 0 0 1-.738.092l-1.435-1.792a1.75 1.75 0 0 0-2.8.088l-5.456 7.793A.875.875 0 0 0 23 37.875h21a.875.875 0 0 0 .782-1.265z" />
-                                            <path d="M47.5 9H18.625a3.5 3.5 0 0 0-3.5 3.5v28.875a3.5 3.5 0 0 0 3.5 3.5H47.5a3.5 3.5 0 0 0 3.5-3.5V12.5A3.5 3.5 0 0 0 47.5 9zm-.254 32.12a.875.875 0 0 1-.62.255H19.5a.875.875 0 0 1-.875-.875V13.375c0-.483.392-.875.875-.875h27.125c.483 0 .875.392.875.875V40.5c0 .23-.092.45-.254.614z" />
-                                            <path d="M43.125 47.5h-29.75a.875.875 0 0 1-.875-.875v-29.75a1.75 1.75 0 1 0-3.5 0V47.5a3.5 3.5 0 0 0 3.5 3.5h30.625a1.75 1.75 0 1 0 0-3.5z" />
-                                          </g>
-                                        </svg>
-                                      </div>
                                     </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[none]" aria-live="polite">
+                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-9)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[none]" aria-live="polite">
                                       <svg className="hidden min-w-0 overflow-hidden transform-[none]" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
                                         <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
                                       </svg>
-                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-li-20">
-                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center" data-ditto-id="style-link-35">
-                                          <p className="block" data-ditto-id="style-span-33">
+                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-li-23">
+                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center" data-ditto-id="style-link-33">
+                                          <p className="block" data-ditto-id="style-span-25">
                                             Hoher Besuch bei uns in der Kammer: Muhammad Zulqar Nain, der Botschafter aus Bangladesch, war zu Gast!
                                           </p>
                                           {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-div-48">
+                                          <p className="block mt-3.5" data-ditto-id="style-li-20">
                                             Nain tauschte sich mit Gudrun Grosse, Leiterin International, und Frank Hemig, Leiter Beratung und Service, aus. Viele deutsche Firmen nutzen Bangladesch als Produktionsstandort, insbesondere in der Bekleidungs- und Lederindustrie. Aber auch Unternehmen wie Siemens, der Fahrradhersteller Cube Bikes oder Heidelberg Materials haben im Land eine Niederlassung.
                                           </p>
                                           {" "}
@@ -811,7 +772,7 @@ export default function Page() {
                                           </p>
                                           {" "}
                                           <p className="block mt-3.5">
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-link-21" aria-hidden="true" aria-label="Hashtag Bangladesch" href="https://www.linkedin.com/feed/hashtag/?keywords=Bangladesch" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer" aria-hidden="true" aria-label="Hashtag Bangladesch" href="https://www.linkedin.com/feed/hashtag/?keywords=Bangladesch" rel="nofollow noopener noreferrer" target="_blank">
                                               #Bangladesch
                                             </a>
                                             {" "}
@@ -819,7 +780,7 @@ export default function Page() {
                                               #Botschafter
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer md:max-lg:hidden" data-ditto-id="style-link-22" aria-hidden="true" aria-label="Hashtag Wirtschaft" href="https://www.linkedin.com/feed/hashtag/?keywords=Wirtschaft" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer md:max-lg:hidden" data-ditto-id="style-li-24" aria-hidden="true" aria-label="Hashtag Wirtschaft" href="https://www.linkedin.com/feed/hashtag/?keywords=Wirtschaft" rel="nofollow noopener noreferrer" target="_blank">
                                               #Wirtschaft
                                             </a>
                                             {" "}
@@ -827,120 +788,11 @@ export default function Page() {
                                               #Austausch
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer md:max-lg:hidden" data-ditto-id="style-link-23" aria-hidden="true" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer md:max-lg:hidden" data-ditto-id="style-span-26" aria-hidden="true" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
                                               #IHK
                                             </a>
                                             {" "}
-                                            <a className="inline underline cursor-pointer md:max-lg:hidden" data-ditto-id="style-div-49" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
-                                              #IHKKöln
-                                            </a>
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="h-16 flex px-4 justify-between items-center" data-ditto-id="style-div-77">
-                                    <a className="w-0 h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
-                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" role="presentation">
-                                      <a className="h-full block cursor-pointer" aria-hidden="true" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7488813238927699968/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
-                                        <svg className="w-8 h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-div-14" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                          <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
-                                        </svg>
-                                      </a>
-                                    </figure>
-                                  </div>
-                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap" data-ditto-id="style-br-8">
-                                    <a className="flex pr-0.5 items-center overflow-hidden cursor-pointer" aria-hidden="true" aria-labelledby="post-time-170477341 link-desc-170477341" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7488813238927699968/" rel="noopener noreferrer nofollow" target="_blank" title="31. Juli 2026 um 04:30">
-                                      <svg className="w-4.5 h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-div-15" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
-                                        <g fill="currentColor">
-                                          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
-                                          <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
-                                        </g>
-                                      </svg>
-                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-div-3" dateTime="2026-07-31T04:30:11.000Z" id="post-time-170477341">
-                                        Vor 1 Min.
-                                      </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" id="link-desc-170477341">
-                                        Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
-                                      </span>
-                                      <svg className="w-2.5 h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-ul-3" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
-                                        <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
-                                      </svg>
-                                    </a>
-                                  </div>
-                                </div>
-                              </article>
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,1500,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag">
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background" data-ditto-id="style-footer-imprint-item0-2">
-                                  <div className="block relative order-[1] overflow-hidden aspect-square">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden bg-color-002" data-ditto-id="style-footer-imprint-item1-2" role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-ditto-id="style-li-23" alt={"A white car with \"ihk köln\" branding parked in an underground garage."} src="/assets/cloned/images/1a7091db31a8.jpg" />
-                                      <a className="w-70 h-full block absolute top-0 z-3 opacity-60 min-w-0 text-background underline cursor-pointer" data-ditto-id="style-link-4" aria-label={"Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet). A white car with \"ihk köln\" branding parked in an underground garage."} href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7487726581226983425/" rel="noopener noreferrer" target="_blank">
-                                        <svg className="w-15 h-15 block absolute top-0 left-0 m-27.5 overflow-hidden [filter:drop-shadow(var(--clr-12)_0px_8px_32px)] pointer-events-none md:max-lg:hidden" data-ditto-id="style-gfiuserlikecustombutton" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                          <path fill="currentColor" d="M30 6C16.74 6 6 16.74 6 30s10.74 24 24 24 24-10.74 24-24S43.26 6 30 6zm-4.8 34.8V19.2L39.6 30z" />
-                                        </svg>
-                                      </a>
-                                    </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 pt-2.5 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)]" aria-live="polite">
-                                      <svg className="w-5 h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)] md:max-lg:hidden" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                        <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
-                                      </svg>
-                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-button-4">
-                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center">
-                                          <p className="block">
-                                            Welches ist das beste Parkhaus in Köln?
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-chat">
-                                            Gemeinsam mit der Polizei Köln, der Verkehrswacht Köln, dem ADAC Nordrhein, dem Amt für Verkehrsmanagement sowie den Gleichstellungs- und Behindertenbeauftragten der Stadt Köln nehmen wir als IHK Köln in diesem Jahr insgesamt 13 Parkhäuser in der Innenstadt und in Deutz unter die Lupe.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-div-66">
-                                            Wie sicher und sauber sind sie? Finden sich Menschen darin gut zurecht? Wie steht es um Beleuchtung, Komfort, Service und baulichen Zustand? Sind die Parkhäuser barrierefrei, familienfreundlich und für die Mobilität der Zukunft gerüstet?
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-div-44">
-                                            Ein besonderes Augenmerk liegt auf dem subjektiven Sicherheitsgefühl. Helle, übersichtliche Bereiche, eine klare Wegeführung, Notrufmöglichkeiten und ein gepflegtes Erscheinungsbild sind dabei ebenso wichtig wie stufenfreie Zugänge, funktionsfähige Aufzüge und ausreichend breite Stellplätze.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-div-50">
-                                            Denn eine gut erreichbare Innenstadt ist ein entscheidender Standortfaktor. Wer Köln besucht, soll bereits bei der Ankunft einen positiven Eindruck gewinnen.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5 md:max-lg:hidden">
-                                            Welches Parkhaus überzeugt die Fachjury am meisten? Das verkünden wir im September. Unser Film zeigt die Arbeit der Jury bei der Bewertung von Parkhäusern direkt vor Ort.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5 md:max-lg:hidden">
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-hashtag-k-ln" aria-hidden="true" aria-label="Hashtag Köln" href="https://www.linkedin.com/feed/hashtag/?keywords=K%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Köln
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" aria-hidden="true" aria-label="Hashtag ParkhausTest" href="https://www.linkedin.com/feed/hashtag/?keywords=ParkhausTest" rel="nofollow noopener noreferrer" target="_blank">
-                                              #ParkhausTest
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" aria-hidden="true" aria-label="Hashtag Mobilität" href="https://www.linkedin.com/feed/hashtag/?keywords=Mobilit%C3%A4t" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Mobilität
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-hashtag-innenstadt" aria-hidden="true" aria-label="Hashtag Innenstadt" href="https://www.linkedin.com/feed/hashtag/?keywords=Innenstadt" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Innenstadt
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" aria-hidden="true" aria-label="Hashtag Standortqualität" href="https://www.linkedin.com/feed/hashtag/?keywords=Standortqualit%C3%A4t" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Standortqualität
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-hashtag-barrierefreiheit" aria-hidden="true" aria-label="Hashtag Barrierefreiheit" href="https://www.linkedin.com/feed/hashtag/?keywords=Barrierefreiheit" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Barrierefreiheit
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" data-ditto-id="style-hashtag-ihk" aria-hidden="true" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
-                                              #IHK
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer max-lg:hidden" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
+                                            <a className="inline underline cursor-pointer md:max-lg:hidden" data-ditto-id="style-div-47" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
                                               #IHKKöln
                                             </a>
                                           </p>
@@ -952,17 +804,122 @@ export default function Page() {
                                     <a className="w-0 h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
                                   </div>
                                   <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap">
-                                    <a className="flex pr-0.5 items-center overflow-hidden cursor-pointer" aria-hidden="true" aria-labelledby="post-time-170394825 link-desc-170394825" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7487726581226983425/" rel="noopener noreferrer nofollow" target="_blank" title="28. Juli 2026 um 04:32">
+                                    <a className="flex pr-0.5 items-center overflow-hidden cursor-pointer" data-ditto-id="style-link-22" aria-hidden="true" aria-labelledby="post-time-170477341 link-desc-170477341" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7488813238927699968/" rel="noopener noreferrer nofollow" target="_blank" title="31. Juli 2026 um 04:30">
+                                      <svg className="w-4.5 h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-li-13" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
+                                        <g fill="currentColor">
+                                          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
+                                          <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
+                                        </g>
+                                      </svg>
+                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-link-3" dateTime="2026-07-31T04:30:11.000Z" id="post-time-170477341">
+                                        Vor 1 Min.
+                                      </time>
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" id="link-desc-170477341">
+                                        Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
+                                      </span>
+                                      <svg className="w-2.5 h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-link-9" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
+                                        <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </article>
+                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,-300,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag">
+                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background">
+                                  <div className="block relative order-[1] overflow-hidden aspect-square" data-ditto-id="style-div-81">
+                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden bg-color-002" role="presentation">
+                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-component="image" alt="A smiling woman with long brown hair wears a navy zip-up hoodie over a purple shirt and holds a small object. behind her is a yellow banner with text and a red tent." src="/assets/cloned/images/2f77e3c3ddfc.jpg" />
+                                      <a className="w-70 h-70 block absolute top-0 z-3 opacity-60 min-w-0 text-background underline cursor-pointer" data-ditto-id="style-div-6" data-component="link" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet). A smiling woman with long brown hair wears a navy zip-up hoodie over a purple shirt and holds a small object. behind her is a yellow banner with text and a red tent." href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7485250967140130816/" rel="noopener noreferrer" target="_blank">
+                                        <svg className="w-auto h-15 block absolute top-0 left-0 m-27.5 overflow-hidden [filter:drop-shadow(var(--clr-14)_0px_8px_32px)] pointer-events-none" data-ditto-id="style-br-5" data-component="image" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                          <path fill="currentColor" d="M30 6C16.74 6 6 16.74 6 30s10.74 24 24 24 24-10.74 24-24S43.26 6 30 6zm-4.8 34.8V19.2L39.6 30z" />
+                                        </svg>
+                                      </a>
+                                    </figure>
+                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 pt-2.5 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-9)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)] transform-[matrix(1,0,0,1,0,280)]" data-ditto-id="style-partners-2" aria-live="polite">
+                                      <svg className="w-auto h-5 block absolute top-1 left-35 min-w-0 overflow-hidden transform-[matrix(1,0,0,1,-10,0)]" data-ditto-id="style-div-41" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                        <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
+                                      </svg>
+                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-div-48">
+                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center">
+                                          <p className="block">
+                                            Rund 1.100 junge Menschen sind gekommen, um auf der Galopprennbahn in Köln-Weidenpesch zum Frühstarter zu werden!
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5">
+                                            50 Unternehmen aus der Region hatten freie Ausbildungsplätze in mehr als 60 verschiedenen Berufen im Angebot. Und für die jungen Menschen gab es erste Gespräche mit den Betrieben, vereinbarte Vorstellungsgespräche oder teilweise sogar direkt vor Ort abgeschlossene Ausbildungsverträge!
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5" data-ditto-id="style-footer-imprint-item0-2">
+                                            {"Gemeinsam mit der "}
+                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" href="https://linkedin.com/organization/6255407" rel="nofollow noopener noreferrer" target="_blank">
+                                              {"@Cölner Hofbräu FRÜH | Familienbrauerei & Gastronomie"}
+                                            </a>
+                                            {", der "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-footer-imprint-item1-2" data-component="link" aria-hidden="true" href="https://linkedin.com/organization/7454202" rel="nofollow noopener noreferrer" target="_blank">
+                                              @Kreishandwerkerschaft Köln
+                                            </a>
+                                            {", der "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-li-27" data-component="link" aria-hidden="true" href="https://linkedin.com/organization/7990289" rel="nofollow noopener noreferrer" target="_blank">
+                                              @Handwerkskammer zu Köln
+                                            </a>
+                                            {"@ und der "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-link-23" data-component="link" aria-hidden="true" href="https://linkedin.com/organization/2842585" rel="nofollow noopener noreferrer" target="_blank">
+                                              @Bundesagentur für Arbeit
+                                            </a>
+                                            {" haben wir als IHK Köln diese Veranstaltung auch in diesem Jahr wieder organisiert – traditionell am ersten Tag der Sommerferien! Unter dem Motto „Vom Spätzünder zum FRÜHstarter“ war der Besuch für viele der erste Schritt ins Berufsleben!"}
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5" data-ditto-id="style-gfiuserlikecustombutton">
+                                            Die große Resonanz zeigt: Junge Menschen interessieren sich für Ausbildung, wenn Unternehmen und Institutionen ihnen unkompliziert, persönlich und auf Augenhöhe begegnen. Genau solche Formate bringen Ausbildungsbetriebe und potenzielle Nachwuchskräfte zusammen.
+                                          </p>
+                                          {" "}
+                                          <p className="block mt-3.5">
+                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag Ausbildung" href="https://www.linkedin.com/feed/hashtag/?keywords=Ausbildung" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Ausbildung
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-button-5" data-component="link" aria-hidden="true" aria-label="Hashtag Frühstarter" href="https://www.linkedin.com/feed/hashtag/?keywords=Fr%C3%BChstarter" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Frühstarter
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag Galopprennbahn" href="https://www.linkedin.com/feed/hashtag/?keywords=Galopprennbahn" rel="nofollow noopener noreferrer" target="_blank">
+                                              #Galopprennbahn
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
+                                              #IHK
+                                            </a>
+                                            {" "}
+                                            <a className="inline underline cursor-pointer" data-ditto-id="style-chat" data-component="link" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
+                                              #IHKKöln
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="h-16 flex px-4 justify-between items-center">
+                                    <a className="w-0 h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" data-ditto-id="style-div-42" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
+                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" data-ditto-id="style-div-49" role="presentation">
+                                      <a className="block cursor-pointer" data-component="link" aria-hidden="true" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7485250967140130816/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
+                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-icon" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
+                                          <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
+                                        </svg>
+                                      </a>
+                                    </figure>
+                                  </div>
+                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap" data-ditto-id="style-div-82">
+                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer" data-component="link" aria-hidden="true" aria-labelledby="post-time-170227098 link-desc-170227098" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7485250967140130816/" rel="noopener noreferrer nofollow" target="_blank" title="21. Juli 2026 um 08:35">
                                       <svg className="w-4.5 h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-svg" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
                                         <g fill="currentColor">
                                           <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
                                           <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
                                         </g>
                                       </svg>
-                                      <time className="block opacity-60 py-[0.3125rem] max-lg:hidden" data-ditto-id="style-post-time-170394825" dateTime="2026-07-28T04:32:34.000Z" id="post-time-170394825">
+                                      <time className="block opacity-60 py-[0.3125rem]" data-ditto-id="style-post-time-170227098" dateTime="2026-07-21T08:35:22.000Z" id="post-time-170227098">
                                         Vor 1 Min.
                                       </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none max-lg:hidden" data-ditto-id="style-link-desc-170394825" id="link-desc-170394825">
+                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" id="link-desc-170227098">
                                         Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
                                       </span>
                                       <svg className="w-2.5 h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-svg-2" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
@@ -972,99 +929,15 @@ export default function Page() {
                                   </div>
                                 </div>
                               </article>
-                              <article className="w-75 h-full block absolute top-0 left-0 max-w-full py-5 px-2.5 text-base leading-6 text-left whitespace-normal transform-[matrix(1,0,0,1,-300,0)] before:content-[''] before:block before:absolute before:inset-y-5 before:inset-x-2.5 before:-z-1 before:w-70 before:h-[23.8125rem] before:shadow-[var(--clr-7)_0px_1px_1px_0px,var(--clr-7)_0px_2px_2px_0px,var(--clr-7)_0px_4px_4px_0px,var(--clr-7)_0px_8px_8px_0px,var(--clr-7)_0px_16px_16px_0px] before:rounded-tl-sm after:content-[''] after:block after:absolute after:inset-y-5 after:inset-x-2.5 after:-z-1 after:w-70 after:h-[23.8125rem] after:shadow-[var(--clr-8)_0px_1px_1px_0px,var(--clr-8)_0px_2px_2px_0px,var(--clr-8)_0px_4px_4px_0px,var(--clr-8)_0px_8px_8px_0px,var(--clr-8)_0px_16px_16px_0px] after:opacity-0 after:rounded-tl-sm" aria-hidden="true" aria-label="Ein LinkedIn-Beitrag. Keine Fotobeschreibung verfügbar.">
-                                <div className="border-t border-solid border-t-muted-foreground flex rounded-sm flex-col overflow-hidden bg-background">
-                                  <div className="block relative order-[1] overflow-hidden aspect-square">
-                                    <figure className="w-70 h-full flex absolute top-0 max-w-full items-center overflow-hidden" style={{ backgroundImage: "linear-gradient(120deg, var(--clr-9), var(--muted-foreground))" }} role="presentation">
-                                      <img className="w-full h-full block absolute top-0 left-0 z-1 min-w-0 max-w-full overflow-clip object-cover" data-component="image" alt="Keine Fotobeschreibung verfügbar." src="/assets/cloned/images/c6bd36215f71.jpg" />
-                                      <a className="w-70 h-70 block absolute top-0 left-0 z-1 min-w-0 underline cursor-pointer" data-ditto-id="style-link-33" data-component="link" aria-hidden="true" href="https://www.linkedin.com/feed/update/urn:li:share:7484826956065214465/" rel="noopener noreferrer" target="_blank" />
-                                    </figure>
-                                    <div className="w-70 h-70 flex absolute top-0 left-0 z-4 opacity-0 flex-col justify-center overflow-hidden text-background text-sm leading-[1.125rem] [text-shadow:var(--clr-10)_0px_1px_1px] bg-clr-4 [backdrop-filter:blur(20px)]" aria-live="polite">
-                                      <svg className="hidden min-w-0 overflow-hidden" data-ditto-id="style-svg-3" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                        <path fill="currentColor" fillRule="evenodd" d="m32.739 20.889-2.693-2.693L8.493 39.75l2.693 2.693 18.86-18.861 18.772 18.772 2.693-2.693L40.75 28.9z" />
-                                      </svg>
-                                      <div className="h-full block py-5 px-3" style={{ maskImage: "linear-gradient(var(--color-002) calc(100% - 84px), var(--clr-6))" }} data-ditto-id="style-div-51">
-                                        <div className="flex max-h-full flex-col leading-[1.25rem] text-center">
-                                          <p className="block">
-                                            Erst seit drei Jahren gibt es den Ausbildungsberuf „Gestalterin/Gestalter für immersive Medien“ (GIM), jetzt haben bundesweit die ersten acht „GIMs“ am Georg-Simon-Ohm-Berufskolleg in Köln ihr Abschlusszeugnis von unserer Vizepräsidentin Mariska Hoffmann erhalten.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-p-3">
-                                            Immersive Medien sind digitale Formate wie Virtual Reality (VR), Augmented Reality (AR) und 360-Grad-Anwendungen. Sie lassen Nutzerinnen und Nutzer so tief in künstliche Welten eintauchen, dass die reale Umgebung in den Hintergrund tritt. Das ermöglicht ein hochgradiges Gefühl der Präsenz und des interaktiven Erlebens. Menschen, die diese Welten gestalten können, sind als Fachkräfte längst nicht nur für klassische VR-Unternehmen interessant, sondern überall dort, wo digitale Inhalte interaktiv und räumlich gedacht werden.
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5">
-                                            {"Alle Infos zu diesem Beruf gibts hier: "}
-                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" href="https://lnkd.in/eSHUWAJz" rel="nofollow noopener noreferrer" target="_blank">
-                                              lnkd.in/eSHUWAJz
-                                            </a>
-                                          </p>
-                                          {" "}
-                                          <p className="block mt-3.5" data-ditto-id="style-p-2">
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-hashtag-ausbildung" aria-hidden="true" aria-label="Hashtag Ausbildung" href="https://www.linkedin.com/feed/hashtag/?keywords=Ausbildung" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Ausbildung
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-hashtag-immersivemedien" data-component="link" aria-hidden="true" aria-label="Hashtag ImmersiveMedien" href="https://www.linkedin.com/feed/hashtag/?keywords=ImmersiveMedien" rel="nofollow noopener noreferrer" target="_blank">
-                                              #ImmersiveMedien
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer" data-ditto-id="style-hashtag-beratung" data-component="link" aria-hidden="true" aria-label="Hashtag Beratung" href="https://www.linkedin.com/feed/hashtag/?keywords=Beratung" rel="nofollow noopener noreferrer" target="_blank">
-                                              #Beratung
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag IHK" href="https://www.linkedin.com/feed/hashtag/?keywords=IHK" rel="nofollow noopener noreferrer" target="_blank">
-                                              #IHK
-                                            </a>
-                                            {" "}
-                                            <a className="inline underline cursor-pointer" data-component="link" aria-hidden="true" aria-label="Hashtag IHKKöln" href="https://www.linkedin.com/feed/hashtag/?keywords=IHKK%C3%B6ln" rel="nofollow noopener noreferrer" target="_blank">
-                                              #IHKKöln
-                                            </a>
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="h-16 flex px-4 justify-between items-center">
-                                    <a className="w-0 h-6 min-h-6 flex items-center leading-[1.1875rem] cursor-pointer" aria-hidden="true" href="https://linkedin.com/organization/11680698/" rel="noopener noreferrer nofollow" target="_blank" />
-                                    <figure className="w-11 h-11 block min-w-11 max-w-full ml-4 p-1.5 rounded-[50%] text-color-003 bg-background" role="presentation">
-                                      <a className="block cursor-pointer" data-ditto-id="style-a-10" data-component="link" aria-hidden="true" aria-label="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)" href="https://www.linkedin.com/feed/update/urn:li:share:7484826956065214465/" rel="noopener noreferrer nofollow" target="_blank" title="Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)">
-                                        <svg className="w-auto h-8 inline overflow-hidden pointer-events-none" data-ditto-id="style-div-16" data-component="icon" aria-hidden="true" viewBox="0 0 60 60" fill="currentColor">
-                                          <path fill="currentColor" d="M52 50h-9.725V35.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V50h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C47.211 22.566 52 26.474 52 34.89zM13.18 19.428h-.063c-3.104 0-5.117-2.077-5.117-4.71C8 12.034 10.072 10 13.239 10c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V50H9.11z" />
-                                        </svg>
-                                      </a>
-                                    </figure>
-                                  </div>
-                                  <div className="h-9 flex px-3 justify-between items-center order-[2] text-xs leading-[0.875rem] whitespace-nowrap text-nowrap" data-ditto-id="style-a-9">
-                                    <a className="h-[1.525rem] flex pr-0.5 items-center overflow-hidden cursor-pointer" data-ditto-id="style-div-52" data-component="link" aria-hidden="true" aria-labelledby="post-time-170197386 link-desc-170197386" href="https://www.linkedin.com/feed/update/urn:li:share:7484826956065214465/" rel="noopener noreferrer nofollow" target="_blank" title="20. Juli 2026 um 04:30">
-                                      <svg className="w-4.5 h-4.5 block opacity-50 mr-[0.1875rem] overflow-hidden pointer-events-none" data-ditto-id="style-img" aria-hidden="true" role="presentation" viewBox="0 0 60 60" fill="currentColor">
-                                        <g fill="currentColor">
-                                          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c-.013-11.04-8.96-19.987-20-20zm0 36.667c-9.205 0-16.667-7.462-16.667-16.667S20.795 13.333 30 13.333 46.667 20.795 46.667 30C46.657 39.2 39.2 46.657 30 46.667z" />
-                                          <path d="m38.557 36.35-7.724-7.082v-8.435a1.667 1.667 0 1 0-3.333 0V30c0 .468.195.914.54 1.23l8.265 7.575a1.683 1.683 0 0 0 2.355-.102 1.667 1.667 0 0 0-.103-2.353z" />
-                                        </g>
-                                      </svg>
-                                      <time className="block opacity-60 py-[0.3125rem]" data-ditto-id="style-div-5" dateTime="2026-07-20T04:30:14.000Z" id="post-time-170197386">
-                                        Vor 1 Min.
-                                      </time>
-                                      <span className="w-0 h-0 block absolute top-96 left-5.5 opacity-0 min-w-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" id="link-desc-170197386">
-                                        Originalbeitrag ansehen auf Linkedin (Wird in einem neuen Fenster geöffnet)
-                                      </span>
-                                      <svg className="w-2.5 h-2.5 block opacity-50 ml-1.5 overflow-hidden pointer-events-none" data-ditto-id="style-div-17" aria-hidden="true" viewBox="0 0 14 14" fill="currentColor">
-                                        <path fill="currentColor" d="M10.5 8.75a.875.875 0 0 0-.875.875v2.625H1.75V4.375h2.625a.875.875 0 1 0 0-1.75H1.75A1.75 1.75 0 0 0 0 4.375v7.875C0 13.216.783 14 1.75 14h7.875a1.75 1.75 0 0 0 1.75-1.75V9.625a.874.874 0 0 0-.875-.875ZM13.743.256A.873.873 0 0 0 13.125 0H8.75a.849.849 0 0 0-.85.85c0 .484.391.85.874.85h2.263L4.887 7.95a.875.875 0 1 0 1.238 1.239l6.125-6.202V5.25c0 .483.392.85.85.85.459 0 .9-.366.9-.85V.85a.859.859 0 0 0-.257-.594Z" />
-                                      </svg>
-                                    </a>
-                                  </div>
-                                </div>
-                              </article>
                             </div>
                           </div>
-                          <button className="w-11 h-11 block absolute top-[210.5px] left-2.5 py-px px-1.5 rounded-[50%] text-color-004 [word-break:break-word] [overflow-wrap:break-word] bg-clr-14 transform-[matrix(1,0,0,1,0,-22)] cursor-default" data-ditto-id="style-div-10" data-component="button" aria-label="Previous" type="button">
+                          <button className="w-11 h-11 block absolute top-[210.5px] left-2.5 py-px px-1.5 rounded-[50%] text-color-004 [word-break:break-word] [overflow-wrap:break-word] bg-clr-16 transform-[matrix(1,0,0,1,0,-22)] cursor-default" data-ditto-id="style-previous" data-component="button" aria-label="Previous" type="button">
                             <svg className="w-auto h-6.5 block absolute top-[0.55rem] left-[0.55rem] overflow-hidden" data-component="icon" viewBox="0 0 100 100" fill="currentColor">
                               <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" className="arrow" />
                             </svg>
                           </button>
-                          <button className="w-11 h-11 block absolute top-[210.5px] right-2.5 py-px px-1.5 rounded-[50%] text-color-004 [word-break:break-word] [overflow-wrap:break-word] bg-clr-14 transform-[matrix(1,0,0,1,0,-22)] cursor-default" data-ditto-id="style-a-2" data-component="button" aria-label="Next" type="button">
-                            <svg className="w-auto h-6.5 block absolute top-[0.55rem] left-[0.55rem] overflow-hidden" data-ditto-id="style-div-53" data-component="icon" viewBox="0 0 100 100" fill="currentColor">
+                          <button className="w-11 h-11 block absolute top-[210.5px] right-2.5 py-px px-1.5 rounded-[50%] text-color-004 [word-break:break-word] [overflow-wrap:break-word] bg-clr-16 transform-[matrix(1,0,0,1,0,-22)] cursor-default" data-ditto-id="style-next" data-component="button" aria-label="Next" type="button">
+                            <svg className="w-auto h-6.5 block absolute top-[0.55rem] left-[0.55rem] overflow-hidden" data-component="icon" viewBox="0 0 100 100" fill="currentColor">
                               <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" className="arrow" transform="translate(100, 100) rotate(180) " />
                             </svg>
                           </button>
@@ -1080,14 +953,14 @@ export default function Page() {
               </div>
               {" "}
               <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]">
-                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-                  <a className="flex relative rounded-sm text-background cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-0 before:h-[10.75rem] before:pt-[8.575rem] max-md:before:h-[22.4375rem] max-md:before:pt-[223.3px] md:max-lg:before:h-[211.9px] md:max-lg:before:pt-[87.5px] 2xl:before:h-[186.3px] 2xl:before:pt-[10.35rem]" style={{ backgroundImage: "linear-gradient(130deg, var(--foreground) 40%, var(--clr-15) 80%, var(--clr-16) 120%)" }} data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
+                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-56">
+                  <a className="flex relative rounded-sm text-background cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-0 before:h-[10.75rem] before:pt-[8.575rem] max-md:before:h-[22.4375rem] max-md:before:pt-[223.3px] md:max-lg:before:h-[211.9px] md:max-lg:before:pt-[87.5px] 2xl:before:h-[186.3px] 2xl:before:pt-[10.35rem]" style={{ backgroundImage: "linear-gradient(130deg, var(--foreground) 40%, var(--clr-17) 80%, var(--clr-18) 120%)" }} data-ditto-id="style-link-34" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung">
                     {" "}
-                    <span className="w-px h-px block absolute min-w-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-span-45">
+                    <span className="w-px h-px block absolute min-w-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-span-27">
                       Infobanner: Sicherheit und Resilienz für Unternehmen
                     </span>
                     {" "}
-                    <div className="h-full block absolute top-0 inset-x-0 min-w-0 bg-cover [background-position:50%_50%]" data-ditto-id="style-div-56" aria-hidden="true">
+                    <div className="h-full block absolute top-0 inset-x-0 min-w-0 bg-cover [background-position:50%_50%]" data-ditto-id="style-div-50" aria-hidden="true">
                       <picture className="inline">
                         {" "}
                         <img className="w-full h-43 block relative max-w-full rounded-sm overflow-clip object-cover max-md:h-[22.4375rem] md:max-lg:h-53 2xl:h-46.5" data-component="image" alt="Akten mit der Beschriftung Notfallplan" src="/assets/cloned/images/4c3418861a7c.jpg" />
@@ -1098,16 +971,16 @@ export default function Page() {
                     {" "}
                     <div className="flex relative rounded-sm justify-between grow basis-full max-md:flex-col" style={{ backgroundImage: "linear-gradient(120deg, var(--foreground) 0px, var(--clr-1) 100%)" }} aria-hidden="true">
                       <div className="h-[10.75rem] min-h-37.5 flex max-w-192 py-4.5 px-6 flex-col justify-center leading-7 mx-auto max-md:h-[15.8125rem] max-md:my-4 max-md:py-2 max-lg:leading-[1.5625rem] max-lg:min-h-0 max-md:px-0 md:max-lg:h-[211.9px] md:max-lg:py-3 md:max-lg:px-5 2xl:h-[186.3px] 2xl:min-h-45 2xl:leading-[1.9375rem]" aria-hidden="true">
-                        <span className="block my-[0.1rem] text-base leading-[1.375rem] tracking-[0.3px] max-md:my-[0.0875rem] max-md:text-sm max-md:leading-[1.25rem]">
+                        <span className="block my-[0.1rem] text-base leading-[1.375rem] tracking-[0.3px] max-md:my-[0.0875rem] max-md:text-sm max-md:leading-[1.25rem]" data-ditto-id="style-span-33">
                           Beratung und Service
                         </span>
                         {" "}
-                        <div className="block my-[0.225rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-2 max-md:mb-2.5 max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:my-[0.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:my-1 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" aria-hidden="true">
+                        <div className="block my-[0.225rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-2 max-md:mb-2.5 max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:my-[0.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:my-1 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-div-68" aria-hidden="true">
                           Sicherheit und Resilienz für Unternehmen
                         </div>
                         {" "}
-                        <p className="block my-0.5" id="desc-6643872">
-                          <span className="inline">
+                        <p className="block my-0.5" data-ditto-id="style-desc-6643872" id="desc-6643872">
+                          <span className="inline" data-ditto-id="style-span-30">
                             Zentrale Informationen, praktische Tools und aktuelle Vorgaben rund um Sicherheit, Resilienz, Katastrophenschutz und Gesamtverteidigung.
                           </span>
                           {" "}
@@ -1131,12 +1004,12 @@ export default function Page() {
               </section>
               {" "}
               <section className="block my-[3.9375rem] py-[3.9375rem] bg-border max-md:my-[2.675rem] max-md:py-[2.675rem] md:max-lg:my-[3.1125rem] md:max-lg:py-[3.1125rem] 2xl:my-[4.9125rem] 2xl:py-[4.9125rem]">
-                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-span-46">
+                <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5" data-ditto-id="style-div-83">
                   <div className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]">
                     {" Veranstaltungen und Weiterbildungsangebote"}
                   </div>
                   {" "}
-                  <div className="block my-[1.5625rem] -mx-2.5 px-2.5 overflow-hidden">
+                  <div className="block my-[1.5625rem] -mx-2.5 px-2.5 overflow-hidden" data-ditto-id="style-div-57">
                     <ul className="block relative [list-style-type:none] list-outside">
                       {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} styles={ListRow2_styles[i]} />)}
                     </ul>
@@ -1158,15 +1031,15 @@ export default function Page() {
               {" "}
               <section className="block my-[3.9375rem] max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:my-[4.9125rem]">
                 <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
-                  <a className="flex relative rounded-sm text-background cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-0 before:h-37.5 before:pt-[8.575rem] max-md:before:h-[15.625rem] max-md:before:pt-[223.3px] md:max-lg:before:h-[123.1px] md:max-lg:before:pt-[87.5px] 2xl:before:h-45 2xl:before:pt-[10.35rem]" style={{ backgroundImage: "linear-gradient(130deg, var(--foreground) 40%, var(--clr-15) 80%, var(--clr-16) 120%)" }} data-component="link" href="https://news.koeln.ihk.de/anmeldung.jsp" target="_blank">
+                  <a className="flex relative rounded-sm text-background cursor-pointer before:content-[''] before:block before:relative before:inset-0 before:w-0 before:h-37.5 before:pt-[8.575rem] max-md:before:h-[15.625rem] max-md:before:pt-[223.3px] md:max-lg:before:h-[123.1px] md:max-lg:before:pt-[87.5px] 2xl:before:h-45 2xl:before:pt-[10.35rem]" style={{ backgroundImage: "linear-gradient(130deg, var(--foreground) 40%, var(--clr-17) 80%, var(--clr-18) 120%)" }} data-component="link" href="https://news.koeln.ihk.de/anmeldung.jsp" target="_blank">
                     {" "}
-                    <span className="w-px h-px block absolute min-w-0 -m-px overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-br-11">
+                    <span className="w-px h-px block absolute min-w-0 -m-px overflow-hidden whitespace-nowrap text-nowrap">
                       Infobanner: Die Newsletter der IHK Köln
                     </span>
                     {" "}
-                    <div className="flex relative rounded-sm justify-between grow basis-full max-md:flex-col" style={{ backgroundImage: "linear-gradient(120deg, var(--foreground) 0px, var(--clr-1) 100%)" }} aria-hidden="true">
+                    <div className="flex relative rounded-sm justify-between grow basis-full max-md:flex-col" style={{ backgroundImage: "linear-gradient(120deg, var(--foreground) 0px, var(--clr-1) 100%)" }} data-ditto-id="style-span-41" aria-hidden="true">
                       <div className="h-37.5 min-h-37.5 flex max-w-192 py-4.5 px-6 flex-col justify-center leading-7 mx-auto max-md:h-36 max-md:my-4 max-md:py-2 max-lg:leading-[1.5625rem] max-lg:min-h-0 max-md:px-0 md:max-lg:h-[123.1px] md:max-lg:py-3 md:max-lg:px-5 2xl:h-45 2xl:min-h-45 2xl:leading-[1.9375rem]" aria-hidden="true">
-                        <span className="block my-[0.1rem] text-base leading-[1.375rem] tracking-[0.3px] max-md:my-[0.0875rem] max-md:text-sm max-md:leading-[1.25rem]" data-ditto-id="style-div-57">
+                        <span className="block my-[0.1rem] text-base leading-[1.375rem] tracking-[0.3px] max-md:my-[0.0875rem] max-md:text-sm max-md:leading-[1.25rem]">
                           Unternehmensservice
                         </span>
                         {" "}
@@ -1198,7 +1071,7 @@ export default function Page() {
                 {" "}
               </section>
               {" "}
-              <section className="block relative mt-[3.9375rem] -mb-2.5 max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:mt-[4.9125rem]" data-ditto-id="style-button-5">
+              <section className="block relative mt-[3.9375rem] -mb-2.5 max-md:my-[2.675rem] md:max-lg:my-[3.1125rem] 2xl:mt-[4.9125rem]">
                 <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:px-5 max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
                   <h2 className="block mt-[3.15rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:mt-[2.45rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:mt-[2.8rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:mt-[3.675rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-component="heading">
                     Weitere Themen
@@ -1207,7 +1080,7 @@ export default function Page() {
                   <div className="flex -mx-5 flex-wrap max-lg:-mx-2.5">
                     <div className="block max-w-[33.3333%] p-5 grow basis-full max-md:max-w-full max-lg:p-2.5">
                       <div className="h-[512.3px] flex relative -mt-[0.4375rem] -mb-[0.3125rem] -mx-2 pt-[0.4375rem] pb-[0.3125rem] px-2 rounded-lg flex-col text-[1.0625rem] leading-[1.625rem] max-md:h-[349.3px] max-lg:text-base max-lg:leading-6 md:max-lg:h-[524.9px] 2xl:h-[564.3px] 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:h-[524.3px] before:-m-1.5 before:rounded-tl-sm max-md:before:h-[381.3px] md:max-lg:before:h-[556.9px] 2xl:before:h-[576.3px]">
-                        <span className="block mb-2 ml-px order-[-1] text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-div-79">
+                        <span className="block mb-2 ml-px order-[-1] text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-button-10">
                           Video-Podcast und Newsletter
                         </span>
                         {" "}
@@ -1227,20 +1100,20 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <a className="w-[359.3px] h-[512.3px] block absolute top-0 left-0 z-10 min-w-0 underline cursor-pointer max-md:w-[21.9375rem] max-md:h-[369.3px] md:max-lg:w-[238.7px] md:max-lg:h-[544.9px] 2xl:w-109 2xl:h-[564.3px]" data-ditto-id="style-ul" data-component="link" aria-label="Stimme der Wirtschaft" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" />
+                        <a className="w-[359.3px] h-[512.3px] block absolute top-0 left-0 z-10 min-w-0 underline cursor-pointer max-md:w-[21.9375rem] max-md:h-[369.3px] md:max-lg:w-[238.7px] md:max-lg:h-[544.9px] 2xl:w-109 2xl:h-[564.3px]" data-ditto-id="style-button-3" data-component="link" aria-label="Stimme der Wirtschaft" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" />
                         {" "}
                       </div>
                       {" "}
                     </div>
                     {" "}
                     <div className="block max-w-[33.3333%] p-5 grow basis-full max-md:max-w-full max-lg:p-2.5">
-                      <div className="h-[512.3px] flex relative -mt-[0.4375rem] -mb-[0.3125rem] -mx-2 pt-[0.4375rem] pb-[0.3125rem] px-2 rounded-lg flex-col text-[1.0625rem] leading-[1.625rem] max-md:h-[10.1875rem] max-lg:text-base max-lg:leading-6 md:max-lg:h-[524.9px] 2xl:h-[564.3px] 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:h-[524.3px] before:-m-1.5 before:rounded-tl-sm max-md:before:h-[12.1875rem] md:max-lg:before:h-[556.9px] 2xl:before:h-[576.3px]" data-ditto-id="style-link-34">
+                      <div className="h-[512.3px] flex relative -mt-[0.4375rem] -mb-[0.3125rem] -mx-2 pt-[0.4375rem] pb-[0.3125rem] px-2 rounded-lg flex-col text-[1.0625rem] leading-[1.625rem] max-md:h-[10.1875rem] max-lg:text-base max-lg:leading-6 md:max-lg:h-[524.9px] 2xl:h-[564.3px] 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:h-[524.3px] before:-m-1.5 before:rounded-tl-sm max-md:before:h-[12.1875rem] md:max-lg:before:h-[556.9px] 2xl:before:h-[576.3px]">
                         <span className="block mb-2 ml-px order-[-1] text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]">
                           Ausgabe 2.2026
                         </span>
                         {" "}
                         <div className="border-t-8 border-solid border-t-accent block relative pb-5">
-                          <div className="block mt-4 mb-3.5 [font-family:Korb,_sans-serif] text-2xl leading-[1.8125rem] underline max-md:text-xl max-md:leading-[inherit] md:max-lg:text-[1.375rem] md:max-lg:leading-[1.625rem] 2xl:text-[1.75rem] 2xl:leading-[2.125rem]" data-ditto-id="style-div-58">
+                          <div className="block mt-4 mb-3.5 [font-family:Korb,_sans-serif] text-2xl leading-[1.8125rem] underline max-md:text-xl max-md:leading-[inherit] md:max-lg:text-[1.375rem] md:max-lg:leading-[1.625rem] 2xl:text-[1.75rem] 2xl:leading-[2.125rem]">
                             IHKplus. Das Magazin
                           </div>
                           {" "}
@@ -1250,25 +1123,25 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <a className="w-[359.3px] h-[512.3px] block absolute top-0 left-0 z-10 min-w-0 underline cursor-pointer max-md:w-[21.9375rem] max-md:h-[11.4375rem] md:max-lg:w-[238.7px] md:max-lg:h-[544.9px] 2xl:w-109 2xl:h-[564.3px]" data-ditto-id="style-li-4" data-component="link" aria-label="IHKplus. Das Magazin" href="/koeln/hauptnavigation/ausbildung" />
+                        <a className="w-[359.3px] h-[512.3px] block absolute top-0 left-0 z-10 min-w-0 underline cursor-pointer max-md:w-[21.9375rem] max-md:h-[11.4375rem] md:max-lg:w-[238.7px] md:max-lg:h-[544.9px] 2xl:w-109 2xl:h-[564.3px]" data-ditto-id="style-span-2" data-component="link" aria-label="IHKplus. Das Magazin" href="/koeln/hauptnavigation/ausbildung" />
                         {" "}
                       </div>
                       {" "}
                     </div>
                     {" "}
-                    <div className="block max-w-[33.3333%] p-5 grow basis-full max-md:max-w-full max-lg:p-2.5" data-ditto-id="style-teilen-2">
+                    <div className="block max-w-[33.3333%] p-5 grow basis-full max-md:max-w-full max-lg:p-2.5">
                       <div className="h-[512.3px] flex relative -mt-[0.4375rem] -mb-[0.3125rem] -mx-2 pt-[0.4375rem] pb-[0.3125rem] px-2 rounded-lg flex-col text-[1.0625rem] leading-[1.625rem] max-md:h-[445.3px] max-lg:text-base max-lg:leading-6 md:max-lg:h-[524.9px] 2xl:h-[564.3px] 2xl:text-lg 2xl:leading-[1.6875rem] before:content-[''] before:block before:absolute before:inset-0 before:h-[524.3px] before:-m-1.5 before:rounded-tl-sm max-md:before:h-[477.3px] md:max-lg:before:h-[556.9px] 2xl:before:h-[576.3px]">
-                        <span className="block mb-2 ml-px order-[-1] text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]" data-ditto-id="style-link-26">
+                        <span className="block mb-2 ml-px order-[-1] text-base leading-6 tracking-[0.3px] max-md:text-sm max-md:leading-[1.3125rem] md:max-lg:[font-size:inherit] md:max-lg:leading-[inherit]">
                           Energie
                         </span>
                         {" "}
                         <div className="block relative rounded-sm shrink-0 overflow-hidden bg-border before:content-[''] before:block before:relative before:inset-0 before:w-[343.3px] before:h-[228.9px] before:mb-[0.4375rem] before:pt-[228.9px] max-md:before:w-[20.9375rem] max-md:before:h-[223.3px] max-md:before:pt-[223.3px] md:max-lg:before:w-[222.7px] md:max-lg:before:h-[9.275rem] md:max-lg:before:pt-[9.275rem] 2xl:before:w-105 2xl:before:h-70 2xl:before:pt-70 after:content-[''] after:block after:absolute after:top-[227.9px] after:bottom-0 after:inset-x-0 after:z-1 after:h-2 after:bg-accent max-md:after:top-[222.3px] md:max-lg:after:top-[9.2125rem] 2xl:after:top-[17.4375rem]">
-                          <img className="w-full h-[14.3125rem] block absolute top-0 max-w-full rounded-tl-sm rounded-tr-sm overflow-clip object-cover [filter:saturate(1)] max-md:h-[13.9375rem] md:max-lg:h-37 2xl:h-70" data-ditto-id="style-ul-8" data-component="image" alt="NRW Windrad-Schuldenuhr: 1.019 fehlen von 1.500" src="/assets/cloned/images/d29eea1b3ddc.jpg" title="Unsichere Stromversorgung – fehlende Strategien zum Ausbau der erneuerbaren Energie" />
+                          <img className="w-full h-[14.3125rem] block absolute top-0 max-w-full rounded-tl-sm rounded-tr-sm overflow-clip object-cover [filter:saturate(1)] max-md:h-[13.9375rem] md:max-lg:h-37 2xl:h-70" data-component="image" alt="NRW Windrad-Schuldenuhr: 1.019 fehlen von 1.500" src="/assets/cloned/images/d29eea1b3ddc.jpg" title="Unsichere Stromversorgung – fehlende Strategien zum Ausbau der erneuerbaren Energie" />
                           {" "}
                         </div>
                         {" "}
                         <div className="block relative pb-5">
-                          <div className="block relative mt-4 mb-3.5 [font-family:Korb,_sans-serif] text-2xl leading-[1.8125rem] underline max-md:text-xl max-md:leading-[inherit] md:max-lg:text-[1.375rem] md:max-lg:leading-[1.625rem] 2xl:text-[1.75rem] 2xl:leading-[2.125rem]" data-ditto-id="style-a-11">
+                          <div className="block relative mt-4 mb-3.5 [font-family:Korb,_sans-serif] text-2xl leading-[1.8125rem] underline max-md:text-xl max-md:leading-[inherit] md:max-lg:text-[1.375rem] md:max-lg:leading-[1.625rem] 2xl:text-[1.75rem] 2xl:leading-[2.125rem]">
                             Unsichere Stromversorgung – fehlende Strategien zum Ausbau der erneuerbaren Energie
                           </div>
                           {" "}
@@ -1278,7 +1151,7 @@ export default function Page() {
                           {" "}
                         </div>
                         {" "}
-                        <a className="w-[359.3px] h-[512.3px] block absolute top-0 left-0 z-10 min-w-0 underline cursor-pointer max-md:w-[21.9375rem] max-md:h-[465.3px] md:max-lg:w-[238.7px] md:max-lg:h-[544.9px] 2xl:w-109 2xl:h-[564.3px]" data-ditto-id="style-a" data-component="link" aria-label="Unsichere Stromversorgung – fehlende Strategien zum Ausbau der erneuerbaren Energie" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/energie/versorgungssicherheit-in-nrw-6085918" />
+                        <a className="w-[359.3px] h-[512.3px] block absolute top-0 left-0 z-10 min-w-0 underline cursor-pointer max-md:w-[21.9375rem] max-md:h-[465.3px] md:max-lg:w-[238.7px] md:max-lg:h-[544.9px] 2xl:w-109 2xl:h-[564.3px]" data-ditto-id="style-br" data-component="link" aria-label="Unsichere Stromversorgung – fehlende Strategien zum Ausbau der erneuerbaren Energie" href="/koeln/hauptnavigation/umwelt-energie-nachhaltigkeit/energie/versorgungssicherheit-in-nrw-6085918" />
                         {" "}
                       </div>
                       {" "}
@@ -1300,19 +1173,19 @@ export default function Page() {
           <div className="w-307.5 block max-w-full mx-[1.5625rem] px-15 max-md:w-[23.4375rem] max-md:flex max-md:px-5 max-md:flex-col max-lg:mx-0 md:max-lg:w-192 md:max-lg:px-7.5 2xl:w-365 2xl:mx-57.5">
             <div className="flex -mt-2.5 -mx-5 flex-wrap max-lg:-mt-[0.3125rem] max-lg:-mx-2.5">
               <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5">
-                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]">
+                <p className="block -mt-[0.675rem] mb-[1.35rem] -mx-0.5 [font-family:Korb,_sans-serif] text-4xl leading-[2.6875rem] max-md:-mt-[0.525rem] max-md:mb-[1.05rem] max-md:-mx-[0.0875rem] max-md:text-[1.75rem] max-md:leading-[2.125rem] md:max-lg:-mt-[0.6rem] md:max-lg:mb-[1.2rem] md:max-lg:-mx-[0.1rem] md:max-lg:text-[2rem] md:max-lg:leading-[2.375rem] 2xl:-mt-[0.7875rem] 2xl:mb-[1.575rem] 2xl:mx-[-2.1px] 2xl:text-[2.625rem] 2xl:leading-[3.125rem]" data-ditto-id="style-section-6">
                   Wie können wir Ihnen helfen?
                 </p>
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5" data-ditto-id="style-a-14">
-                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-md:max-w-full max-md:px-2.5 max-md:basis-full max-md:py-0 md:max-lg:p-2.5">
+                <div className="block mb-2.5 font-semibold leading-7 max-lg:mb-[0.5625rem] max-lg:leading-[1.5625rem] 2xl:mb-[0.6875rem] 2xl:leading-[1.9375rem]" data-ditto-id="style-div-60">
                   Unsere Anschrift:
                 </div>
                 {" "}
                 <p className="block mb-4 max-lg:mb-[0.9rem] 2xl:mb-[1.1rem]">
-                  <a className="inline underline cursor-pointer" data-ditto-id="style-li-5" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
+                  <a className="inline underline cursor-pointer" data-ditto-id="style-ul-2" data-component="link" href="https://maps.app.goo.gl/gWJLHrKQ2N9nLPLLA" rel="noopener" target="_blank" title="externer Link">
                     {" Industrie- und Handelskammer zu Köln "}
                     <br className="inline" />
                     {" Unter Sachsenhausen 5–7"}
@@ -1320,7 +1193,7 @@ export default function Page() {
                     {"(Eingang: Komödienstraße 18–24) "}
                     <br className="inline" />
                     {" 50667 Köln "}
-                    <br className="inline" />
+                    <br className="inline" data-ditto-id="style-button-6" />
                     {" "}
                   </a>
                   {" "}
@@ -1339,17 +1212,17 @@ export default function Page() {
                       Email
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-link-6" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-[11.9375rem] before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[10.6rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[10.65rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-52 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-div-11" data-component="link" href="mailto:service@koeln.ihk.de" rel="noopener" target="_blank" title="service@koeln.ihk.de">
                       service@koeln.ihk.de
                     </a>
                     {" "}
                   </li>
-                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]">
+                  <li className="list-item mb-1.5 max-lg:mb-[0.3375rem] 2xl:mb-[0.4125rem]" data-ditto-id="style-br-11">
                     <span className="w-0 h-0 block absolute top-[3763.9px] left-[850.7px] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" id="desc-tel">
                       Telefonnummer
                     </span>
                     {" "}
-                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-br" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
+                    <a className="inline relative pl-10.5 underline whitespace-nowrap text-nowrap cursor-pointer max-md:pl-[2.1rem] md:max-lg:pl-[2.275rem] before:content-[''] before:block before:absolute before:top-[0.8125rem] before:right-28 before:-bottom-0.5 before:left-0 before:w-7.5 before:h-7.5 before:-mt-[0.9375rem] before:text-foreground before:text-3xl before:leading-7.5 max-lg:before:top-[11.5px] max-md:before:right-[6.2875rem] max-md:before:bottom-[-0.5px] max-md:before:w-6 max-md:before:h-6 max-md:before:-mt-3 max-md:before:text-2xl max-md:before:leading-6 md:max-lg:before:right-[6.3375rem] md:max-lg:before:bottom-[-1.5px] md:max-lg:before:w-6.5 md:max-lg:before:h-6.5 md:max-lg:before:-mt-[0.8125rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-6.5 2xl:before:top-[14.5px] 2xl:before:right-30.5 2xl:before:bottom-[-0.5px] after:content-[''] after:block after:absolute after:inset-0 after:h-8.5 after:-my-1 after:-mx-1.5 after:rounded-tl-sm max-lg:after:h-[1.8875rem] max-lg:after:-my-[0.225rem] max-lg:after:-mx-[0.3375rem] 2xl:after:h-[2.3625rem] 2xl:after:-my-[0.275rem] 2xl:after:-mx-[0.4125rem]" data-ditto-id="style-article" data-component="link" href="tel:02211640-0" rel="noopener" target="_blank" title="0221 1640-0">
                       0221 1640-0
                     </a>
                     {" "}
@@ -1360,12 +1233,12 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5" data-ditto-id="style-br-9">
+            <div className="flex -mx-5 flex-wrap max-md:my-[0.5625rem] max-lg:-mx-2.5">
               <div className="block max-w-full pb-2.5 px-5 grow basis-full max-lg:px-2.5">
                 <ul className="block -mb-[0.9375rem] -ml-[0.9375rem] text-[0rem] leading-0 [list-style-type:disc] list-outside max-md:-mb-2.5 max-md:-ml-2.5">
                   <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-17 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-link-32" data-component="link" href="https://www.facebook.com/ihkkoeln" rel="noopener" target="_blank" title="Facebook">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none">
                         Facebook
                       </span>
@@ -1373,9 +1246,9 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-link-27">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-18 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-div-61" data-component="link" href="https://www.youtube.com/user/IHKKOELN" rel="noopener" target="_blank" title="Youtube">
                       <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none">
                         Youtube
                       </span>
@@ -1383,20 +1256,20 @@ export default function Page() {
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-link-28">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-19 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-div-59" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-21 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-teilen-2" data-component="link" href="https://www.instagram.com/ihkkoeln/" rel="noopener" target="_blank" title="Instagram">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" data-ditto-id="style-li-33">
                         Instagram
                       </span>
                       {" "}
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5">
+                  <li className="inline-block mb-[0.9375rem] ml-[0.9375rem] align-top max-md:mb-2.5 max-md:ml-2.5" data-ditto-id="style-link-25">
                     {" "}
-                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-20 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-ditto-id="style-li-21" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
-                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none">
+                    <a className="block relative z-1 overflow-hidden text-background text-center cursor-pointer before:content-[''] before:block before:w-13 before:h-13 before:-m-px before:text-clr-22 before:text-[3.25rem] before:leading-13 before:text-center before:bg-background max-md:before:w-11.5 max-md:before:h-11.5 max-md:before:text-[2.875rem] max-md:before:leading-11.5" data-component="link" href="https://de.linkedin.com/company/industrie-und-handelskammer-zu-koeln" rel="noopener" target="_blank" title="Linkedin">
+                      <span className="w-0 h-0 block absolute top-12.5 left-[1.5625rem] opacity-0 max-w-0 max-h-0 -m-px overflow-hidden pointer-events-none" data-ditto-id="style-ul-6">
                         Linkedin
                       </span>
                       {" "}
@@ -1410,25 +1283,25 @@ export default function Page() {
             </div>
             {" "}
             <div className="flex -mx-5 flex-wrap text-right max-lg:-mx-2.5">
-              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5">
+              <div className="block max-w-full p-5 grow basis-full max-lg:p-2.5" data-ditto-id="style-a-9">
                 <ul className="h-full block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.5625rem] 2xl:-mx-[0.6875rem] after:content-[''] after:block after:relative after:inset-0 after:w-277.5 after:h-px after:mt-5 after:mx-2.5 max-md:after:w-[20.9375rem] max-lg:after:mt-4.5 max-lg:after:mx-[0.5625rem] md:max-lg:after:w-177 2xl:after:w-335 2xl:after:mt-5.5 2xl:after:mx-[0.6875rem]">
                   <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-li-6" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-50 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[11.075rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[11.225rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[13.5375rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-46 after:h-[2.8125rem] max-md:after:w-[10.175rem] max-md:after:h-9 md:max-lg:after:w-[10.325rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-[12.4375rem]" data-ditto-id="style-li-5" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Gebärdensprache">
                       Gebärdensprache
                     </a>
                     {" "}
                   </li>
                   <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-span-10" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-[11.6875rem] before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[10.2625rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[10.4125rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[12.475rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-[10.6875rem] after:h-[2.8125rem] max-md:after:w-[9.3625rem] max-md:after:h-9 md:max-lg:after:w-[9.5125rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-45.5" data-ditto-id="style-li-6" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Leichte Sprache">
                       Leichte Sprache
                     </a>
                     {" "}
                   </li>
-                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]" data-ditto-id="style-li-29">
+                  <li className="inline-flex relative mx-2.5 items-center max-lg:mx-[0.5625rem] 2xl:mx-[0.6875rem] before:content-[''] before:block before:w-7.5 before:h-[2.8125rem] before:ml-1.5 before:text-foreground before:text-3xl before:leading-[2.8125rem] before:text-right max-md:before:w-6 max-md:before:h-9 max-md:before:ml-[0.3rem] max-md:before:text-2xl max-md:before:leading-9 md:max-lg:before:w-6.5 md:max-lg:before:h-[2.4375rem] md:max-lg:before:ml-[0.325rem] md:max-lg:before:text-[1.625rem] md:max-lg:before:leading-[2.4375rem]">
                     {" "}
-                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-link-7" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
+                    <a className="block underline cursor-pointer before:content-[''] before:block before:absolute before:inset-0 before:w-74.5 before:h-[2.8125rem] before:-mx-2 before:rounded-tl-sm max-md:before:w-[16.325rem] max-md:before:h-9 max-lg:before:-mx-[0.45rem] md:max-lg:before:w-[16.475rem] md:max-lg:before:h-[2.4375rem] 2xl:before:w-[20.1rem] 2xl:before:-mx-[0.55rem] after:content-[''] after:block after:absolute after:inset-0 after:w-70.5 after:h-[2.8125rem] max-md:after:w-[15.425rem] max-md:after:h-9 md:max-lg:after:w-[15.575rem] md:max-lg:after:h-[2.4375rem] 2xl:after:w-76" data-ditto-id="style-li-7" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" title="Erklärung zur Barrierefreiheit">
                       Erklärung zur Barrierefreiheit
                     </a>
                     {" "}
@@ -1439,7 +1312,7 @@ export default function Page() {
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] max-lg:-mx-2.5 max-lg:pr-20 max-lg:order-[1] max-lg:text-base max-lg:leading-6 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-a-13">
               <div className="block max-w-[66.6667%] p-5 grow basis-2/3 max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full">
                 <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]">
                   © 2026 Industrie- und Handelskammer zu Köln
@@ -1451,39 +1324,39 @@ export default function Page() {
                   Vertrag kündigen
                 </a>
                 {" "}
-                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]" data-ditto-id="style-link-29">
+                <div className="block mb-[0.85rem] max-lg:mb-[0.8rem] 2xl:mb-[0.9rem]">
                   <br className="inline" />
                 </div>
                 {" "}
               </div>
               {" "}
-              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" data-ditto-id="style-link-30" id="partners">
+              <div className="block max-w-[33.3333%] p-5 grow basis-1/3 max-lg:min-w-full max-lg:max-w-full max-lg:p-2.5 max-lg:basis-full max-lg:order-[-1]" id="partners">
                 <div className="block -mx-2.5 text-right max-lg:[text-align:inherit]" />
                 {" "}
               </div>
               {" "}
             </div>
             {" "}
-            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]" data-ditto-id="style-link-31">
+            <div className="flex -mx-5 flex-wrap text-[1.0625rem] leading-[1.625rem] text-right max-lg:-mx-2.5 max-lg:text-base max-lg:leading-6 max-md:[text-align:inherit] 2xl:text-lg 2xl:leading-[1.6875rem]">
               <nav className="block max-w-full pt-5 px-5 grow basis-full max-lg:pt-2.5 max-lg:px-2.5" data-component="nav" aria-label="Navigation Fußzeile">
-                <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden" data-ditto-id="style-div-60">
+                <ul className="block -mx-2.5 [list-style-type:none] list-outside max-lg:-mx-[0.6rem] 2xl:-mx-[0.675rem] after:content-[''] after:block after:relative after:inset-0 after:w-[21.1375rem] after:h-px after:mt-6.5 after:mb-5 after:mx-2 md:max-lg:after:hidden 2xl:after:hidden">
                   <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-button-3" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-link-6" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item0">
                       Impressum
                     </a>
                     {" "}
                   </li>
                   <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-div-8" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item1">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-br-2" data-component="link" href="/koeln/hauptnavigation/beratung-und-services/newsletter-anmeldung" id="footer_imprint_item1">
                       Datenschutzerklärung
                     </a>
                     {" "}
                   </li>
                   <li className="inline-block mx-[0.3125rem] max-lg:mx-[0.3rem] 2xl:mx-[0.3375rem]">
                     {" "}
-                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-partners" data-component="link" href="#">
+                    <a className="block px-[0.2125rem] rounded-sm cursor-pointer max-lg:px-[0.2rem] 2xl:px-[0.225rem]" data-ditto-id="style-br-3" data-component="link" href="#">
                       Erneuern oder ändern Sie Ihre Cookie-Einwilligung
                     </a>
                     {" "}
@@ -1500,12 +1373,12 @@ export default function Page() {
         {" "}
       </div>
       {" "}
-      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-div-9" id="gfiUserlikeCustomButton" />
+      <div className="h-17.5 flex fixed right-5 bottom-5 left-297.5 z-5 pt-px rounded-[100px] justify-center items-center text-background text-[2.375rem] leading-[3.5625rem] bg-accent shadow-[var(--clr-2)_0px_0px_0px_1px] cursor-pointer max-md:h-12 max-md:right-1.5 max-md:bottom-1.5 max-md:left-[20.0625rem] max-md:text-[1.375rem] max-md:leading-[2.0625rem] md:max-lg:left-169.5 2xl:left-457.5 before:content-[''] before:block before:w-9.5 before:h-[3.5625rem] before:text-background before:text-[2.375rem] before:leading-[3.5625rem] max-md:before:w-5.5 max-md:before:h-[2.0625rem] max-md:before:text-[1.375rem] max-md:before:leading-[2.0625rem]" data-ditto-id="style-div-12" id="gfiUserlikeCustomButton" />
       {" "}
       <div className="block [font-family:sans-serif] text-[0.9375rem] font-light leading-[1.3125rem] text-left">
         {" "}
         <div className="w-12 h-12 block fixed bottom-10 left-10 z-99999999 pointer-events-none max-lg:left-[0.9375rem] 2xl:[pointer-events:initial]" aria-label="Zustimmung ändern" role="complementary">
-          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-12)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-ul-2" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
+          <button className="w-12 h-full min-h-[2.5625rem] block absolute top-0 left-0 opacity-0 max-w-full justify-center items-center leading-[0.9375rem] text-center shadow-[var(--clr-14)_0px_0px_6px_1px] cursor-pointer pointer-events-none 2xl:rounded-[0%] 2xl:[animation-name:ccm-icon-show--link] 2xl:[animation-duration:1s] 2xl:[animation-timing-function:cubic-bezier(0.5,_0,_0.5,_1.5)] 2xl:[animation-fill-mode:forwards] 2xl:opacity-[initial] 2xl:[pointer-events:initial]" data-ditto-id="style-li-8" aria-haspopup="dialog" title="Zustimmung ändern" type="button">
             <img className="w-12 h-12 block overflow-clip aspect-[auto_48/48] pointer-events-none 2xl:[pointer-events:initial]" data-component="image" alt="Zustimmung ändern" height="48" src="/assets/cloned/svg/676be948ef30.svg" width="48" />
             {" "}
           </button>
@@ -1513,12 +1386,12 @@ export default function Page() {
         </div>
         {" "}
       </div>
-      <div className="block" data-ditto-id="style-footer-imprint-item0-3">
+      <div className="block" data-ditto-id="style-link-26">
         <aside className="block" aria-label="Chat">
-          <div className="block" data-ditto-id="style-footer-imprint-item1-3" />
           <div className="block" />
+          <div className="block" data-ditto-id="style-link-27" />
         </aside>
-        <div className="block" data-ditto-id="style-link-32" />
+        <div className="block" data-ditto-id="style-div-62" />
       </div>
     </>
   );

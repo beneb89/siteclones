@@ -128,7 +128,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </div>
               </div>
             </form>
-            <button className="w-6 h-6 block absolute -top-[2.1875rem] left-[76.5625rem] p-3 text-color-003 text-lg leading-[1.3125rem] text-center cursor-pointer" aria-label="Schließen" type="submit" />
+            <button className="w-6 h-6 block absolute -top-[2.1875rem] left-[76.5625rem] p-3 text-color-001 text-lg leading-[1.3125rem] text-center cursor-pointer" aria-label="Schließen" type="submit" />
           </div>
         </div>
         <a className="box-content hidden text-primary cursor-pointer" href="#popupCustom" id="btnPopupCustom">
