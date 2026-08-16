@@ -20,6 +20,7 @@ on:
           - targets-full.txt
           - targets-deep.txt
           - targets-competitors.txt
+          - targets-competitors-more.txt
           - targets-competitors-portals.txt
           - targets-seo.txt
         default: all
@@ -59,16 +60,18 @@ jobs:
           deep='{"list":"targets-deep.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=200"}'
           competitors='{"list":"targets-competitors.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=60 --depth=2"}'
           seo='{"list":"targets-seo.txt","dest":"seo-reference","flags":""}'
-          portals='{"list":"targets-competitors-portals.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=25 --depth=1"}'
+          more='{"list":"targets-competitors-more.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=200 --depth=2"}'
+          portals='{"list":"targets-competitors-portals.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=80 --depth=1"}'
           case "$WANTED" in
             targets-competitors.txt)         lists="[$competitors]" ;;
+            targets-competitors-more.txt)    lists="[$more]" ;;
             targets-competitors-portals.txt) lists="[$portals]" ;;
             targets.txt)           lists="[$brands]" ;;
             targets-galleries.txt) lists="[$galleries]" ;;
             targets-full.txt)      lists="[$full]" ;;
             targets-deep.txt)      lists="[$deep]" ;;
             targets-seo.txt)       lists="[$seo]" ;;
-            *) lists="[$brands,$galleries,$full,$deep,$competitors,$portals,$seo]" ;;
+            *) lists="[$brands,$galleries,$full,$deep,$competitors,$more,$portals,$seo]" ;;
           esac
           echo "lists=$lists" >>"$GITHUB_OUTPUT"
           echo "cloning: $lists"

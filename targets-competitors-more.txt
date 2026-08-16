@@ -1,0 +1,16 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# The personal-brand competitors whose crawl stopped exactly on the 60-route
+# cap, meaning it was cut short rather than finished. They get a list of their
+# own at 200 routes so the rest of their pages come through, and they are out
+# of targets-competitors.txt so a full run cannot clone them twice into the
+# same folder. Their slugs are unchanged either way, so the existing folders
+# are replaced rather than duplicated.
+#
+# Depth stays at 2, as it was: these are small sites, breadth was the limit.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-competitors-more.txt \
+#             --dest=decaid-competitors --mode=multi --max-routes=200 --depth=2 --force
+
+https://jens.marketing/                   # Jens Polomski (7.5) — was 60/60
+https://digitaleprofis.de/                # Digitale Profis (8) — was 60/60

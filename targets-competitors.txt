@@ -5,7 +5,9 @@
 # multi-page so navigation and subpages come through.
 #
 # The league-A entries are large corporate portals and live in
-# targets-competitors-portals.txt, where they are captured shallower. Both
+# targets-competitors-portals.txt, where they are captured shallower.
+# jens.marketing and digitaleprofis.de hit this list's route cap and moved to
+# targets-competitors-more.txt, which gives them a higher one. All of these
 # lists land in the same folder.
 #
 # Run with: ./scripts/clone-batch.sh --file=targets-competitors.txt \
@@ -21,8 +23,4 @@ https://afaik.de/                         # Kai Spriestersbach — AFAIK (9)
 https://christian-tembrink.com/           # Christian Tembrink (8.5)
 https://profski.com/                      # Prof. Klemens Skibicki — PROFSKI (8)
 https://ai-first.ai/                      # AI FIRST / Felix Schlenther (7.5)
-https://jens.marketing/                   # Jens Polomski (7.5)
 https://hubertusporschen.com/             # Dr. Hubertus Porschen (7.5)
-
-# --- league C -------------------------------------------------------------
-https://digitaleprofis.de/                # Digitale Profis (8)
