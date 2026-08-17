@@ -12,9 +12,18 @@
 # the one that previously exhausted the Node heap. It is listed last so a
 # failure there cannot cost the other one's result.
 #
-# Status: a run at --max-routes=200 failed for both, and the 60-route clones
-# in sites/top20-personal-brands/ are still the current ones. Two things stand
-# in the way, and neither is solved by a bigger number:
+# Status: runs at --max-routes=200 have failed for both, and the 60-route
+# clones in sites/top20-personal-brands/ are still the current ones. Note what
+# that means for QA: the committed lexfridman clone stopped at 60 because that
+# was the cap at the time, so it IS cut short even though 60 sits well under
+# the 200 this list now declares.
+#
+# lexfridman.com fails on one page rather than on the site: capturing
+# /andrew-callaghan-transcript ends in "collectPage timeout vp1920" — a very
+# long transcript that does not finish rendering — and ditto abandons the
+# whole clone over it. Same shape as the tonyrobbins failure below.
+#
+# Two things stand in the way, and neither is solved by a bigger number:
 #
 #   1. Depth reaches protected pages. tonyrobbins.com/help answers HTTP 403 to
 #      automated access, and ditto abandons the whole clone over one such
