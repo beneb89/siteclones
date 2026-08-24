@@ -1,0 +1,19 @@
+export type TileData = {
+  description: string;
+  href: string;
+  rel: string;
+  description2: string;
+  description3: string;
+};
+/** A content tile. */
+export default function Tile({ d }: { d: TileData }) {
+  return (
+    <p className="block mb-[33.3px] max-md:mb-[26.7px]">
+      {d.description}
+      <a className="inline text-primary cursor-pointer" data-component="link" href={d.href} rel={d.rel} target="_blank">
+        {d.description2}
+      </a>
+      {d.description3}
+    </p>
+  );
+}

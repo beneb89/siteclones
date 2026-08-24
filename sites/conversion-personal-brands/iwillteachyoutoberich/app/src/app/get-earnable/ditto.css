@@ -1,0 +1,26 @@
+.cn0{height:98575.9px;display:block;overflow-x:hidden;overflow-y:auto;color:var(--foreground);font-family:"PP Mori", "PP Mori";font-size:18px;font-weight:400;font-style:normal;line-height:31.194px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{height:169525px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:105639px}
+}
+
+@media (min-width: 1601px) {
+.cn0{height:98827.7px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:all, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-button-2"]{transition:all, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-button-3"]{transition:all, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-button-4"]{transition:all, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-div-84"]{transition:0.3s}
+[data-ditto-id="style-div-84"]:hover{background-color:rgb(46, 51, 47)}
+[data-ditto-id="style-button"]:hover{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255);color:rgb(255, 255, 255);outline-color:rgb(255, 255, 255);text-decoration-color:rgb(255, 255, 255)}
+[data-ditto-id="style-button-2"]:hover{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255);color:rgb(255, 255, 255);outline-color:rgb(255, 255, 255);text-decoration-color:rgb(255, 255, 255)}
+[data-ditto-id="style-button-3"]:hover{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255);color:rgb(255, 255, 255);outline-color:rgb(255, 255, 255);text-decoration-color:rgb(255, 255, 255)}
+[data-ditto-id="style-button-4"]:hover{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255);color:rgb(255, 255, 255);outline-color:rgb(255, 255, 255);text-decoration-color:rgb(255, 255, 255)}
+[data-ditto-id="style-div-84"]:focus{background-color:rgb(21, 48, 47)}

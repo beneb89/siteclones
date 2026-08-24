@@ -1,0 +1,1729 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-color-014: var(--color-014);
+  --color-surface-2: var(--surface-2);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-clr-0: var(--clr-0);
+  --color-color-001: var(--color-001);
+  --color-color-002: var(--color-002);
+  --color-color-010: var(--color-010);
+  --color-color-008: var(--color-008);
+  --color-surface: var(--surface);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-clr-3: var(--clr-3);
+  --color-color-015: var(--color-015);
+  --color-color-013: var(--color-013);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-surface-3: var(--surface-3);
+  --color-color-006: var(--color-006);
+  --color-color-004: var(--color-004);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-color-016: var(--color-016);
+  --color-clr-13: var(--clr-13);
+  --color-color-012: var(--color-012);
+  --color-color-011: var(--color-011);
+  --color-surface-4: var(--surface-4);
+  --color-clr-14: var(--clr-14);
+  --color-clr-15: var(--clr-15);
+  --color-clr-16: var(--clr-16);
+  --color-clr-17: var(--clr-17);
+  --color-color-007: var(--color-007);
+  --color-color-003: var(--color-003);
+  --color-color-009: var(--color-009);
+  --color-muted: var(--muted);
+  --color-clr-18: var(--clr-18);
+  --color-color-017: var(--color-017);
+  --color-clr-19: var(--clr-19);
+  --color-color-005: var(--color-005);
+  --color-clr-20: var(--clr-20);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+  --primary: rgb(251, 77, 48);
+  --accent: rgb(255, 0, 0);
+  --border: rgba(255, 255, 255, 0.5);
+  --surface: rgb(245, 238, 228);
+  --surface-2: rgb(247, 247, 247);
+  --muted-foreground: rgb(128, 128, 128);
+  --muted: rgb(82, 80, 76);
+  --surface-3: rgba(255, 255, 255, 0.1);
+  --surface-4: rgba(255, 255, 255, 0.05);
+  --color-001: rgb(204, 204, 204);
+  --color-002: rgba(0, 0, 0, 0.4);
+  --color-003: rgba(0, 0, 0, 0.1);
+  --color-004: rgb(152, 162, 179);
+  --color-005: rgb(23, 23, 35);
+  --color-006: rgb(232, 232, 232);
+  --color-007: rgb(23, 23, 23);
+  --color-008: rgb(42, 48, 48);
+  --color-009: rgb(138, 135, 130);
+  --color-010: rgba(0, 0, 0, 0.6);
+  --color-011: rgba(255, 255, 255, 0.74);
+  --color-012: rgb(255, 122, 92);
+  --color-013: rgb(0, 170, 251);
+  --color-014: rgba(0, 0, 0, 0.2);
+  --color-015: rgb(21, 48, 47);
+  --color-016: rgb(10, 10, 10);
+  --color-017: rgba(255, 255, 255, 0.7);
+}
+
+:root {
+  /* fonts */
+  --font-body: "PP Mori", sans-serif;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 15.9744px;
+  --font-size-004: 16px;
+  --font-size-005: 23.9616px;
+  --font-size-006: 46.592px;
+  --font-size-007: 66.56px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 700;
+  /* lineHeights */
+  --line-height-001: 18.2px;
+  --line-height-002: 44.2624px;
+  --line-height-003: 15.6px;
+  --line-height-004: 0px;
+  --line-height-005: 22.3642px;
+  --line-height-006: 26.3578px;
+  --line-height-007: 63.232px;
+  --line-height-008: 16.8px;
+  --line-height-009: 20.8px;
+  --line-height-010: 15.4px;
+  --line-height-011: 19.6px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 2.1px;
+  --space-003: 3.328px;
+  --space-004: 6.656px;
+  --space-005: 7px;
+  --space-006: 10px;
+  --space-007: 13.312px;
+  --space-008: 16px;
+  --space-009: 19.968px;
+  --space-010: 26.624px;
+  --space-011: 33.28px;
+  --space-012: 39.936px;
+  --space-013: 46.592px;
+  --space-014: 53.248px;
+  --space-015: 66.56px;
+  --space-016: 73.216px;
+  --space-017: 106.496px;
+  /* radii */
+  --radius-001: 2.6624px;
+  --radius-002: 6.656px;
+  --radius-003: 50%;
+  /* zIndices */
+  --z-001: 1;
+  --z-002: 2;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0.8);
+  --clr-1: rgba(0, 0, 0, 0.25);
+  --clr-2: rgb(249, 239, 223);
+  --clr-3: rgba(0, 0, 0, 0.5);
+  --clr-4: rgb(162, 162, 162);
+  --clr-5: rgb(111, 135, 255);
+  --clr-6: rgba(0, 0, 0, 0.15);
+  --clr-7: rgb(201, 200, 205);
+  --clr-8: rgba(0, 0, 0, 0.7);
+  --clr-9: rgb(51, 51, 51);
+  --clr-10: rgba(255, 255, 255, 0);
+  --clr-11: rgba(18, 18, 23, 0.05);
+  --clr-12: rgb(36, 23, 18);
+  --clr-13: rgb(7, 7, 7);
+  --clr-14: rgba(255, 255, 255, 0.9);
+  --clr-15: rgba(251, 77, 48, 0.5);
+  --clr-16: rgba(255, 255, 255, 0.16);
+  --clr-17: rgba(255, 255, 255, 0.55);
+  --clr-18: rgb(246, 244, 240);
+  --clr-19: rgb(251, 243, 234);
+  --clr-20: rgb(68, 68, 68);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/149e0d8bccf4.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3b7892f9ef1a.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/949425538f03.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/799ce6fbdb7b.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d0ed0d94bcf.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/149e0d8bccf4.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3b7892f9ef1a.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/949425538f03.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/799ce6fbdb7b.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d0ed0d94bcf.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6e83386ba8a4.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/22496b277a80.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a53368e6229d.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/893ce80782d9.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/320f3ad95888.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/149e0d8bccf4.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3b7892f9ef1a.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/949425538f03.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/799ce6fbdb7b.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d0ed0d94bcf.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/149e0d8bccf4.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3b7892f9ef1a.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/949425538f03.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/799ce6fbdb7b.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d0ed0d94bcf.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/149e0d8bccf4.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/3b7892f9ef1a.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/949425538f03.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/799ce6fbdb7b.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d0ed0d94bcf.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/42eee500db62.woff2") format("woff2"), url("/assets/cloned/fonts/41c0236e91e9.woff") format("woff"), url("/assets/cloned/fonts/aa6f32a469ef.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/7d5d83023da2.woff2") format("woff2"), url("/assets/cloned/fonts/953ad105f8b6.woff") format("woff"), url("/assets/cloned/fonts/9146bc18bf7a.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/a3ab61ef4967.woff2") format("woff2"), url("/assets/cloned/fonts/d17f1cef6740.woff") format("woff"), url("/assets/cloned/fonts/9ac03cbcbfc1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1cf500b20817.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("OpenType");
+}
+
+@font-face {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5219e442f6cf.otf") format("woff");
+}
+
+@font-face {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b6f0bff3efa6.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cd401e89ce46.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "swiper-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:application/font-woff;charset=utf-8;base64, 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);
+}
+
+@font-face {
+  font-family: "WistiaPlayerInterNumbersSemiBold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:application/x-font-woff;charset=utf-8;base64,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);
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d6cdb0d0955.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0462894415ec.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cea7c2e86153.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d6cdb0d0955.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0462894415ec.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cea7c2e86153.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5241b4352bd3.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b64f0000c71e.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1d47d0b37239.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d6cdb0d0955.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0462894415ec.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cea7c2e86153.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d6cdb0d0955.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0462894415ec.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cea7c2e86153.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/5d6cdb0d0955.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0462894415ec.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cea7c2e86153.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "CircularSp-Arab";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1ad54dade629.woff2") format("woff2"), url("/assets/cloned/fonts/773031c04da3.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+0600-0603,u+060b-060c,u+0610,u+061b,u+061f,u+0621-063a,u+0640-0659,u+0660-0671,u+0679-0681,u+0683-068a,u+068c-068d,u+068f,u+0691,u+0693,u+0696,u+0698-069a,u+06a1,u+06a4,u+06a6,u+06a9-06ab,u+06af,u+06b1,u+06b3,u+06ba-06bc,u+06be,u+06c0-06c3,u+06cc-06cd,u+06d0,u+06d2-06d5,u+06f0-06f9,u+06fd-06fe,u+2002-2003,u+2009,u+200c-200f,u+25cc,u+fb50-fb85,u+fb88-fbbb,u+fbbd-fbc1,u+fbe4-fbe9,u+fbfc-fbff,u+fc48,u+fc5e-fc63,u+fd3e-fd3f,u+fdf2,u+fdfc,u+fe80-fefc,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Arab";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9ba8f977cea2.woff2") format("woff2"), url("/assets/cloned/fonts/cf56093f48a3.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+0600-0603,u+060b-060c,u+0610,u+061b,u+061f,u+0621-063a,u+0640-0659,u+0660-0671,u+0679-0681,u+0683-068a,u+068c-068d,u+068f,u+0691,u+0693,u+0696,u+0698-069a,u+06a1,u+06a4,u+06a6,u+06a9-06ab,u+06af,u+06b1,u+06b3,u+06ba-06bc,u+06be,u+06c0-06c3,u+06cc-06cd,u+06d0,u+06d2-06d5,u+06f0-06f9,u+06fd-06fe,u+2002-2003,u+2009,u+200c-200f,u+25cc,u+fb50-fb85,u+fb88-fbbb,u+fbbd-fbc1,u+fbe4-fbe9,u+fbfc-fbff,u+fc48,u+fc5e-fc63,u+fd3e-fd3f,u+fdf2,u+fdfc,u+fe80-fefc,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Arab";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e5f1b484ec58.woff2") format("woff2"), url("/assets/cloned/fonts/6ef4b6bf673b.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+0600-0603,u+060b-060c,u+0610,u+061b,u+061f,u+0621-063a,u+0640-0659,u+0660-0671,u+0679-0681,u+0683-068a,u+068c-068d,u+068f,u+0691,u+0693,u+0696,u+0698-069a,u+06a1,u+06a4,u+06a6,u+06a9-06ab,u+06af,u+06b1,u+06b3,u+06ba-06bc,u+06be,u+06c0-06c3,u+06cc-06cd,u+06d0,u+06d2-06d5,u+06f0-06f9,u+06fd-06fe,u+2002-2003,u+2009,u+200c-200f,u+25cc,u+fb50-fb85,u+fb88-fbbb,u+fbbd-fbc1,u+fbe4-fbe9,u+fbfc-fbff,u+fc48,u+fc5e-fc63,u+fd3e-fd3f,u+fdf2,u+fdfc,u+fe80-fefc,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/e5611109eb22.woff2") format("woff2"), url("/assets/cloned/fonts/a0cc4694ecb8.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0400-045f,u+0462-0463,u+0472-0475,u+0490-0493,u+049a-049b,u+04a2-04a3,u+04ae-04b3,u+04ba-04bb,u+04d8-04d9,u+04e8-04e9,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a0e016043628.woff2") format("woff2"), url("/assets/cloned/fonts/e7741dfe6d23.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0400-045f,u+0462-0463,u+0472-0475,u+0490-0493,u+049a-049b,u+04a2-04a3,u+04ae-04b3,u+04ba-04bb,u+04d8-04d9,u+04e8-04e9,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Cyrl";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/662193365a1f.woff2") format("woff2"), url("/assets/cloned/fonts/c2fa90308be3.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0400-045f,u+0462-0463,u+0472-0475,u+0490-0493,u+049a-049b,u+04a2-04a3,u+04ae-04b3,u+04ba-04bb,u+04d8-04d9,u+04e8-04e9,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Deva";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0bd34ae3e0fd.woff2") format("woff2"), url("/assets/cloned/fonts/fc4b17a91b1e.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0901-097f,u+200c-200e,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Deva";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c561f78597d7.woff2") format("woff2"), url("/assets/cloned/fonts/a6d3c19a5876.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0901-097f,u+200c-200e,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Deva";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bde8b20bcd59.woff2") format("woff2"), url("/assets/cloned/fonts/af6db15c80f3.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0901-097f,u+200c-200e,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Grek";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6e4ffe67a7b1.woff2") format("woff2"), url("/assets/cloned/fonts/5b59bf147b87.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0375,u+037a,u+0384,u+0386,u+0388-038a,u+038c,u+038e-03a1,u+03a3-03cf,u+03d7,u+2126,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Grek";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/83cd276c157b.woff2") format("woff2"), url("/assets/cloned/fonts/370db9cc9f78.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0375,u+037a,u+0384,u+0386,u+0388-038a,u+038c,u+038e-03a1,u+03a3-03cf,u+03d7,u+2126,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Grek";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0cb481db1fe8.woff2") format("woff2"), url("/assets/cloned/fonts/d265623ce5f5.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0375,u+037a,u+0384,u+0386,u+0388-038a,u+038c,u+038e-03a1,u+03a3-03cf,u+03d7,u+2126,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Hebr";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7a76b1415e72.woff2") format("woff2"), url("/assets/cloned/fonts/ac0cfd37221a.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+0030-0039,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+05b0-05c4,u+05d0-05ea,u+05f0-05f4,u+200e-200f,u+20aa,u+fb2a-fb36,u+fb38-fb3c,u+fb3e,u+fb40-fb41,u+fb43-fb44,u+fb46-fb4f,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Hebr";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6cca5aedbdbc.woff2") format("woff2"), url("/assets/cloned/fonts/d4a56153be1a.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+0030-0039,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+05b0-05c4,u+05d0-05ea,u+05f0-05f4,u+200e-200f,u+20aa,u+fb2a-fb36,u+fb38-fb3c,u+fb3e,u+fb40-fb41,u+fb43-fb44,u+fb46-fb4f,u+ffff;
+}
+
+@font-face {
+  font-family: "CircularSp-Hebr";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0ca8f09bd946.woff2") format("woff2"), url("/assets/cloned/fonts/4032537e7d6d.woff") format("woff");
+  unicode-range: u+0000,u+000d,u+0020,u+0030-0039,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+05b0-05c4,u+05d0-05ea,u+05f0-05f4,u+200e-200f,u+20aa,u+fb2a-fb36,u+fb38-fb3c,u+fb3e,u+fb40-fb41,u+fb43-fb44,u+fb46-fb4f,u+ffff;
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/42eee500db62.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ElegantIcons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b5f64693a71a.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/66a836735d28.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/d3aa143d90f6.woff2") format("woff2"), url("/assets/cloned/fonts/f65a6bb0c1b0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-arrows-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cedb5c9fff41.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-basic-elaboration-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2322d776dedd.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "linea-music-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c2ca11a46f5e.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-software-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1f5c206b3633.woff") format("woff"), url("/assets/cloned/fonts/64fc3deeec9e.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/dacede3d2ce6.woff2") format("woff2"), url("/assets/cloned/fonts/dd2ecf4434ab.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d6245a64c099.woff2") format("woff2"), url("/assets/cloned/fonts/97568065c5fe.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SpotifyMixMono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f4b42844c321.woff2") format("woff2"), url("/assets/cloned/fonts/7445d3f9db9a.woff") format("woff");
+  unicode-range: u+0020-007e,u+00a0-0131,u+0134-0137,u+0139-0148,u+014a-017e,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+03bc,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20ac,u+2117,u+2122,u+2126,u+2190-2199,u+2202,u+2206,u+2212,u+2215,u+2248,u+2260,u+2264-2265,u+2500-259f,u+ffff;
+}
+
+@font-face {
+  font-family: "SpotifyMixUI";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c122496d6aca.woff2") format("woff2"), url("/assets/cloned/fonts/4304d99aa546.woff") format("woff");
+  unicode-range: u+0020-007e,u+00a0-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff;
+}
+
+@font-face {
+  font-family: "SpotifyMixUI";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4477c0b3a5fa.woff2") format("woff2"), url("/assets/cloned/fonts/4b424b15049f.woff") format("woff");
+  unicode-range: u+0020-007e,u+00a0-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff;
+}
+
+@font-face {
+  font-family: "SpotifyMixUITitle";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ef028a6649b1.woff2") format("woff2"), url("/assets/cloned/fonts/bb5861f7fa92.woff") format("woff");
+  unicode-range: u+0020-007e,u+00a0-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff;
+}
+
+@font-face {
+  font-family: "SpotifyMixUITitle";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7cbbf2633ccb.woff2") format("woff2"), url("/assets/cloned/fonts/ee6baa9da84c.woff") format("woff");
+  unicode-range: u+0020-007e,u+00a0-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff;
+}
+
+@font-face {
+  font-family: "SpotifyMixUITitleVariable";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/9ca98955b95e.woff2") format("woff2 supports variations"), url("/assets/cloned/fonts/9ca98955b95e.woff2") format("woff2-variations");
+  unicode-range: u+0020-007e,u+00a0-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff;
+}
+
+@font-face {
+  font-family: "dripicons-v2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ae63bb189816.woff") format("woff"), url("/assets/cloned/fonts/7a98bc4d533d.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/41c0236e91e9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ElegantIcons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b5f64693a71a.woff") format("woff"), url("/assets/cloned/fonts/4f35677c687b.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/66a836735d28.woff2") format("woff2"), url("/assets/cloned/fonts/3a7431108e72.woff") format("woff"), url("/assets/cloned/fonts/2713a86b5fcf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/1295c76d78ca.woff2") format("woff2"), url("/assets/cloned/fonts/4c6037c9c7d3.woff") format("woff"), url("/assets/cloned/fonts/09ce3da8a3b2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/d3aa143d90f6.woff2") format("woff2"), url("/assets/cloned/fonts/b3d095a2c399.woff") format("woff"), url("/assets/cloned/fonts/f65a6bb0c1b0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a1abb5536845.woff2") format("woff2"), url("/assets/cloned/fonts/bf2775100e63.woff") format("woff"), url("/assets/cloned/fonts/cc61e6271d35.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-arrows-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b1173f3bc637.woff") format("woff"), url("/assets/cloned/fonts/cedb5c9fff41.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-basic-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8c02a34edfbf.woff") format("woff"), url("/assets/cloned/fonts/ef6c72929dbb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-basic-elaboration-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7690094420a1.woff") format("woff"), url("/assets/cloned/fonts/237e497d7729.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-ecommerce-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fcd75cffa190.woff") format("woff"), url("/assets/cloned/fonts/920413b53d0d.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-music-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/aec99a06fdb9.woff") format("woff"), url("/assets/cloned/fonts/c2ca11a46f5e.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-weather-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6de519bafd52.woff") format("woff"), url("/assets/cloned/fonts/4a56123a0414.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/dd2ecf4434ab.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("OpenType"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("woff"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype"), url("/assets/cloned/fonts/eff7d0202bbe.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/41c0236e91e9.woff") format("woff"), url("/assets/cloned/fonts/aa6f32a469ef.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/2713a86b5fcf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/1295c76d78ca.woff2") format("woff2"), url("/assets/cloned/fonts/4c6037c9c7d3.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bf2775100e63.woff") format("woff"), url("/assets/cloned/fonts/cc61e6271d35.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-basic-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ef6c72929dbb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-basic-elaboration-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7690094420a1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "linea-ecommerce-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/920413b53d0d.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("OpenType"), url("/assets/cloned/fonts/0f5c3b4e9a92.woff") format("woff");
+}
+
+@font-face {
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d6245a64c099.woff2") format("woff2"), url("/assets/cloned/fonts/bf301ca31349.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ac49b3f68503.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/f55392b6cfc9.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/312948203ce2.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "linea-basic-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8c02a34edfbf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "linea-software-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/03c150ad7a22.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "linea-weather-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d4d1963c55cd.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "dripicons-v2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ae63bb189816.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/3a7431108e72.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/09ce3da8a3b2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/b3d095a2c399.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/cc61e6271d35.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-software-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/64fc3deeec9e.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/49ca4754e0a1.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/d3898daf5c11.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bf2775100e63.woff") format("woff");
+}
+
+@font-face {
+  font-family: "linea-arrows-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/b1173f3bc637.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/4c6037c9c7d3.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a1abb5536845.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "linea-music-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/35804d9e4f60.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0f5c3b4e9a92.woff") format("woff");
+}
+
+@font-face {
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/bf301ca31349.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/42eee500db62.woff2") format("woff2"), url("/assets/cloned/fonts/aa6f32a469ef.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/4c6037c9c7d3.woff") format("woff"), url("/assets/cloned/fonts/09ce3da8a3b2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/b3d095a2c399.woff") format("woff"), url("/assets/cloned/fonts/f65a6bb0c1b0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-ecommerce-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fcd75cffa190.woff") format("woff");
+}
+
+@font-face {
+  font-family: "linea-music-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/aec99a06fdb9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "linea-weather-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6de519bafd52.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("OpenType"), url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/0f5c3b4e9a92.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/d3aa143d90f6.woff2") format("woff2"), url("/assets/cloned/fonts/b3d095a2c399.woff") format("woff");
+}
+
+@font-face {
+  font-family: "linea-weather-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4a56123a0414.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1f72f3948125.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("OpenType"), url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/eff7d0202bbe.otf") format("woff"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype"), url("/assets/cloned/fonts/eff7d0202bbe.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ElegantIcons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/4f35677c687b.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-arrows-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/748ecc111297.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "linea-basic-elaboration-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/237e497d7729.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "linea-ecommerce-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/c36264756024.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/aa6f32a469ef.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/3a7431108e72.woff") format("woff"), url("/assets/cloned/fonts/2713a86b5fcf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a1abb5536845.woff2") format("woff2"), url("/assets/cloned/fonts/bf2775100e63.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/dacede3d2ce6.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/0f5c3b4e9a92.woff") format("woff");
+}
+
+@font-face {
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/97568065c5fe.woff") format("woff"), url("/assets/cloned/fonts/bf301ca31349.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/c731e5a76bcb.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6ee26720107b.woff2") format("woff2"), url("/assets/cloned/fonts/b56abbfbcce2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Linearicons-Free";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1f72f3948125.woff") format("woff"), url("/assets/cloned/fonts/dd2ecf4434ab.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/d6245a64c099.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dripicons-v2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/7a98bc4d533d.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/66a836735d28.woff2") format("woff2"), url("/assets/cloned/fonts/3a7431108e72.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/cloned/fonts/1295c76d78ca.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "linea-software-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/1f5c206b3633.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/eff7d0202bbe.otf") format("OpenType"), url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2"), url("/assets/cloned/fonts/eff7d0202bbe.otf") format("woff"), url("/assets/cloned/fonts/eff7d0202bbe.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/42eee500db62.woff2") format("woff2"), url("/assets/cloned/fonts/41c0236e91e9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/f65a6bb0c1b0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/d0223b716e00.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/a1abb5536845.woff2") format("woff2"), url("/assets/cloned/fonts/cc61e6271d35.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0f5c3b4e9a92.woff") format("woff"), url("/assets/cloned/fonts/71a2d2bda7dd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/cloned/fonts/d3aa143d90f6.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "linea-basic-10";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f79671cb71ef.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/97568065c5fe.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/ebdcf98a5a38.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/8479f1066cac.woff2") format("woff2");
+}
+html { background: rgb(255, 255, 255); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

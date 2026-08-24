@@ -1,0 +1,29 @@
+.cn0{display:block;color:var(--foreground);font-family:geo-wf, Helvetica, Arial;font-size:18px;font-weight:300;font-style:normal;line-height:30px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+[data-ditto-id="style-div-15"]::after{content:"";display:none;position:absolute;bottom:-4px;left:0px;width:100%;height:10px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 200 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='2.5' d='M2 12q98-10 196-1'/%3E%3C/svg%3E");background-size:100% 100%;background-repeat:no-repeat}
+[data-ditto-id="style-li-2"]::placeholder{color:rgb(130, 130, 130);opacity:0.5}
+[data-ditto-id="style-td-10"]::before{content:"";display:block;position:absolute;top:13.9844px;right:354px;bottom:20.6719px;left:0px;width:24px;height:24px;margin-top:-12px;background-image:url("/assets/cloned/svg/1ed85632b305.svg");background-position:50% 50%;background-repeat:no-repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-td-10"]::before{top:27.9844px;right:304.25px;bottom:53.3281px}
+}
+[data-ditto-id="style-td-2"]::placeholder{color:rgb(130, 130, 130);opacity:0.5}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-span-37"]{transition:opacity 0.2s}
+[data-ditto-id="style-div-75"]{transition:opacity 0.2s}
+[data-ditto-id="style-thead"]{transition:opacity 0.2s}
+[data-ditto-id="style-th"]{transition:opacity 0.2s}
+[data-ditto-id="style-span-71"]{transition:opacity 0.2s}
+[data-ditto-id="style-th-2"]{transition:color 0.2s}
+[data-ditto-id="style-div-15"]:hover{background-color:rgb(76, 141, 245)}
+[data-ditto-id="style-heading"]:hover{opacity:0.9}
+[data-ditto-id="style-span-37"]:hover{opacity:0.7}
+[data-ditto-id="style-div-75"]:hover{opacity:0.7}
+[data-ditto-id="style-thead"]:hover{opacity:0.7}
+[data-ditto-id="style-th"]:hover{opacity:0.7}
+[data-ditto-id="style-span-71"]:hover{opacity:0.7}
+[data-ditto-id="style-th-2"]:hover{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255);color:rgb(255, 255, 255);outline-color:rgb(255, 255, 255);text-decoration-color:rgb(255, 255, 255)}
+[data-ditto-id="style-tr-4"]:hover{opacity:0.9}
+[data-ditto-id="style-span-37"]:focus{opacity:0.7}
+[data-ditto-id="style-div-75"]:focus{opacity:0.7}
+[data-ditto-id="style-thead"]:focus{opacity:0.7}
+[data-ditto-id="style-th"]:focus{opacity:0.7}
+[data-ditto-id="style-span-71"]:focus{opacity:0.7}

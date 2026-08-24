@@ -1,0 +1,1776 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neil Patel: Helping You Succeed Through Digital Marketing!</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "geo-wf";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/1f1eba729447.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d07e3747dd7c.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/eb117926bf9e.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/603d929f7f1f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/4583034e4c8f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/43c4d05e4cda.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "handlee-wf";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c8a20e1bf267.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "entypo-fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3358e10bdb23.woff2") format("woff2"), url("public/assets/cloned/fonts/1d2d1127a711.woff") format("woff"), url("public/assets/cloned/fonts/9e055419c378.ttf") format("truetype"), url("public/assets/cloned/fonts/66f7c09c806a.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/98eccf4d18d5.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bc64b46d8576.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/50463eed734d.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c3f4a92b7859.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ad8359cbaf6e.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/e610c4b89b75.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "geo-wf";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/9358282d53fa.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6ba691249538.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d310180faca6.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/210e0792d785.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f6655444b182.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0249f65a2d22.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b5151e8569c4.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ba5507f28f7c.woff2") format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/da69b94eb878.woff2") format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bbbbbd37d619.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f0106b441311.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0f7fcdc8ea1a.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/210e0792d785.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f6655444b182.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0249f65a2d22.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b5151e8569c4.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ba5507f28f7c.woff2") format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/da69b94eb878.woff2") format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bbbbbd37d619.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f0106b441311.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0f7fcdc8ea1a.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/210e0792d785.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f6655444b182.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0249f65a2d22.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b5151e8569c4.woff2") format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ba5507f28f7c.woff2") format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/da69b94eb878.woff2") format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bbbbbd37d619.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f0106b441311.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0f7fcdc8ea1a.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "tiktok-display-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f192daf44740.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tiktok-display-medium";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/aced05d54064.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tiktok-display-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/cd2126d4f434.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tiktok-text-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bbaa28e12b29.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tiktok-text-medium";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/35d52ef2a67e.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tiktok-text-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7d4d9831b7e2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TikTokDisplayFont";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("public/assets/cloned/fonts/e05fa344989e.woff2") format("woff2"), url("public/assets/cloned/fonts/1c4b685c0c52.woff") format("woff"), url("public/assets/cloned/fonts/195a168aa08f.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TikTokDisplayFont";
+  font-style: normal;
+  font-weight: bold;
+  font-display: fallback;
+  src: url("public/assets/cloned/fonts/150bc78ddde5.woff2") format("woff2"), url("public/assets/cloned/fonts/c6cce5807fa0.woff") format("woff"), url("public/assets/cloned/fonts/9bc104f07d29.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TikTokDisplayFont";
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src: url("public/assets/cloned/fonts/a0839b5c1f2d.woff2") format("woff2"), url("public/assets/cloned/fonts/29adf5873141.woff") format("woff"), url("public/assets/cloned/fonts/a44ace2ce2ba.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TikTokFont";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("public/assets/cloned/fonts/7aae815961ea.woff2") format("woff2"), url("public/assets/cloned/fonts/ab44092e0eca.woff") format("woff"), url("public/assets/cloned/fonts/7f10d526e751.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TikTokFont";
+  font-style: normal;
+  font-weight: bold;
+  font-display: fallback;
+  src: url("public/assets/cloned/fonts/47cef08d98e4.woff2") format("woff2"), url("public/assets/cloned/fonts/0a973c0ae8b0.woff") format("woff"), url("public/assets/cloned/fonts/8a18d4125cd3.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TikTokFont";
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src: url("public/assets/cloned/fonts/462d164fcb41.woff2") format("woff2"), url("public/assets/cloned/fonts/7013ef23424a.woff") format("woff"), url("public/assets/cloned/fonts/8d2bccdb11d5.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/bd7a3f0ba00c.woff2") format("woff2"), url("public/assets/cloned/fonts/d7e08702cdbf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/36e59b632804.woff2") format("woff2"), url("public/assets/cloned/fonts/61097ac70449.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/af6ae65ef395.woff2") format("woff2"), url("public/assets/cloned/fonts/32e5bfdac02c.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/c87e593312b6.woff2") format("woff2"), url("public/assets/cloned/fonts/50604cc618cd.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3fda5730669f.woff2") format("woff2"), url("public/assets/cloned/fonts/2aab2fa152e0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TwitterChirpExtendedHeavy";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/831133395446.woff2") format("woff2"), url("public/assets/cloned/fonts/3a8921493daa.woff") format("woff");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(38, 39, 44);
+  --primary: rgb(241, 98, 50);
+  --accent: rgb(67, 135, 244);
+  --border: rgb(229, 231, 235);
+  --muted-foreground: rgb(128, 128, 128);
+  --surface: rgb(236, 235, 231);
+  --surface-2: rgb(235, 235, 235);
+  --muted: rgb(103, 105, 107);
+  --surface-3: rgb(245, 245, 245);
+  --surface-4: rgb(235, 238, 240);
+  --surface-5: rgb(229, 229, 229);
+  --surface-6: rgba(255, 255, 255, 0.1);
+  --surface-7: rgb(255, 243, 240);
+  --surface-8: rgb(236, 253, 245);
+  --surface-9: rgb(249, 251, 253);
+  --surface-10: rgb(247, 248, 249);
+  --surface-11: rgb(245, 248, 254);
+  --surface-12: rgb(255, 251, 235);
+  --surface-13: rgba(255, 255, 255, 0.2);
+  --color-001: rgb(0, 0, 0);
+  --color-002: rgb(26, 26, 26);
+  --color-003: rgb(34, 36, 41);
+  --color-004: rgb(112, 115, 120);
+  --color-005: rgb(107, 114, 128);
+  --color-006: rgb(190, 191, 192);
+  --color-007: rgb(51, 51, 51);
+  --color-008: rgb(29, 78, 216);
+  --color-009: rgba(0, 0, 0, 0.8);
+  --color-010: rgba(0, 0, 0, 0.6);
+  --color-011: rgb(32, 32, 32);
+  --color-012: rgb(153, 153, 153);
+  --color-013: rgb(67, 70, 75);
+  --color-014: rgb(249, 115, 22);
+  --color-015: rgba(0, 0, 0, 0.1);
+  --color-016: rgb(83, 100, 113);
+  --color-017: rgb(194, 65, 0);
+  --color-018: rgb(187, 187, 187);
+  --color-019: rgba(0, 0, 0, 0.95);
+  --color-020: rgb(15, 20, 25);
+  --color-021: rgb(6, 78, 59);
+  --color-022: rgb(207, 217, 222);
+  --color-023: rgb(146, 150, 151);
+  --color-024: rgba(194, 65, 0, 0.5);
+  --color-025: rgb(159, 159, 159);
+  --color-026: rgb(143, 48, 0);
+  --color-027: rgb(82, 82, 91);
+  --color-028: rgb(0, 111, 214);
+  --color-029: rgb(243, 123, 83);
+  --color-030: rgb(25, 26, 32);
+  --color-031: rgb(58, 79, 84);
+  --color-032: rgb(34, 108, 224);
+  --color-033: rgba(0, 0, 0, 0.06);
+  --color-034: rgb(147, 147, 149);
+  --color-035: rgb(22, 24, 35);
+  --color-036: rgb(29, 155, 240);
+  --color-037: rgb(99, 99, 99);
+  --color-038: rgb(138, 141, 145);
+  --color-039: rgb(170, 170, 170);
+  --color-040: rgb(55, 65, 81);
+  --color-041: rgba(0, 0, 0, 0.5);
+  --color-042: rgba(0, 0, 0, 0.7);
+  --color-043: rgba(22, 24, 35, 0.12);
+  --color-044: rgb(254, 44, 85);
+  --color-045: rgb(204, 204, 204);
+  --color-046: rgb(244, 207, 195);
+  --color-047: rgb(68, 68, 68);
+  --color-048: rgb(163, 176, 179);
+}
+
+:root {
+  /* fonts */
+  --font-body: geo-wf, Helvetica, Arial;
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 16px;
+  --font-size-003: 18px;
+  --font-size-004: 20px;
+  --font-size-005: 22px;
+  --font-size-006: 24px;
+  --font-size-007: 32px;
+  --font-size-008: 46px;
+  --font-size-009: 48px;
+  --font-size-010: 77px;
+  /* fontWeights */
+  --font-weight-001: 300;
+  --font-weight-002: 400;
+  --font-weight-003: 500;
+  /* lineHeights */
+  --line-height-001: 30px;
+  --line-height-002: 20px;
+  --line-height-003: 26.4px;
+  --line-height-004: 28px;
+  --line-height-005: 34px;
+  --line-height-006: 26.6667px;
+  --line-height-007: 36px;
+  --line-height-008: 43.84px;
+  --line-height-009: 62.0571px;
+  --line-height-010: 100.1px;
+  --line-height-011: 55.2px;
+  /* spacing */
+  --space-001: 5px;
+  --space-002: 8px;
+  --space-003: 10px;
+  --space-004: 15px;
+  --space-005: 20px;
+  --space-006: 27px;
+  --space-007: 30px;
+  --space-008: 32px;
+  --space-009: 35px;
+  --space-010: 50px;
+  --space-011: 60px;
+  --space-012: 90px;
+  --space-013: 100px;
+  /* radii */
+  --radius-001: 5px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(217, 217, 217, 0);
+  --clr-1: rgb(241, 241, 241);
+  --clr-2: rgb(255, 142, 105);
+  --clr-3: rgba(209, 215, 217, 0.2);
+  --clr-4: rgb(255, 107, 53);
+  --clr-5: rgba(32, 32, 32, 0.08);
+  --clr-6: rgb(102, 102, 102);
+  --clr-7: rgba(0, 0, 0, 0.3);
+  --clr-8: rgb(239, 239, 239);
+  --clr-9: rgba(249, 115, 22, 0.2);
+  --clr-10: rgba(5, 5, 5, 0.08);
+  --clr-11: rgb(59, 130, 246);
+  --clr-12: rgba(0, 0, 0, 0);
+  --clr-13: rgba(255, 255, 255, 0.055);
+  --clr-14: rgba(54, 57, 73, 0.09);
+  --clr-15: rgba(41, 72, 152, 0.03);
+  --clr-16: rgba(209, 215, 217, 0.1);
+  --clr-17: rgb(255, 145, 44);
+  --clr-18: rgba(38, 40, 45, 0.25);
+  --clr-19: rgba(0, 0, 0, 0.16);
+  --clr-20: rgb(167, 167, 167);
+  --clr-21: rgb(136, 136, 136);
+  --clr-22: rgb(85, 85, 85);
+  --clr-23: rgba(0, 0, 0, 0.2);
+  --clr-24: rgba(32, 32, 32, 0.05);
+  --clr-25: rgb(153, 50, 6);
+  --clr-26: rgba(41, 72, 152, 0.05);
+  --clr-27: rgb(212, 212, 213);
+  --clr-28: rgb(240, 240, 240);
+  --clr-29: rgb(20, 20, 21);
+  --clr-30: rgb(255, 94, 41);
+  --clr-31: rgb(255, 246, 244);
+  --clr-32: rgba(255, 94, 41, 0.25);
+  --clr-33: rgba(255, 94, 41, 0.5);
+  --clr-34: rgb(255, 157, 0);
+  --clr-35: rgb(37, 99, 235);
+  --clr-36: rgb(204, 133, 255);
+  --clr-37: rgb(249, 24, 128);
+  --clr-38: rgba(0, 0, 0, 0.9);
+  --clr-39: rgba(22, 24, 35, 0.6);
+  --clr-40: rgba(22, 24, 35, 0.2);
+  --clr-41: rgb(241, 242, 242);
+  --clr-42: rgba(19, 23, 35, 0.12);
+  --clr-43: rgb(35, 40, 45);
+  --clr-44: rgb(0, 160, 210);
+}
+
+
+/* page base */
+html { background: rgb(255, 255, 255); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{display:block;color:var(--foreground);font-family:geo-wf, Helvetica, Arial;font-size:18px;font-weight:300;font-style:normal;line-height:30px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{display:block}
+.cn2{display:block;background-image:linear-gradient(rgba(217, 217, 217, 0) 8.69%, rgb(241, 241, 241)), url("public/assets/cloned/svg/953e61cb791a.svg");background-size:auto, auto;background-position:0% 0%, 0px 0px;background-repeat:repeat, no-repeat;background-clip:border-box, border-box;background-origin:padding-box, padding-box;background-attachment:scroll, scroll;background-blend-mode:normal, normal;-webkit-background-clip:border-box, border-box}
+.cn3{display:block;padding-top:60px;padding-bottom:95px}
+.cn4{display:flex;max-width:1300px;padding-right:10px;padding-left:10px;justify-content:space-between;row-gap:10px;column-gap:10px;margin-left:auto;margin-right:auto}
+.cn5{display:block}
+.cn6{display:flex;align-items:center}
+.cn7{height:41.0781px;display:block;color:var(--primary);cursor:pointer}
+.cn8{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:16px;padding-right:16px;flex-direction:column;align-items:flex-end;row-gap:10px;column-gap:10px}
+.cn8::after{content:"";display:block;position:absolute;top:20.5312px;right:0px;bottom:-20.5312px;left:141px;width:1px;height:41.0781px;background-color:rgb(230, 230, 230);transform:matrix(1, 0, 0, 1, 0, -20.5391);transform-origin:0.5px 20.5391px}
+.cn9{width:126px;height:13.9531px;display:block}
+.cn10{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn11{width:52px;height:15.125px;display:block;margin-top:2px}
+.cn12{width:auto;height:15px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn13{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn14{height:25px;display:flex;align-items:center;color:var(--muted-foreground);font-size:15px;font-weight:500;line-height:25px;letter-spacing:0.3px;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn14::after{content:"";display:block;width:8px;height:8px;margin-top:-3px;margin-left:6px;transform:matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0);transform-origin:4px 4px}
+.cn15{width:40px;height:40px;border-width:1px;border-style:solid;border-color:var(--color-006);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;justify-content:right;align-items:center;background-color:var(--background);cursor:pointer}
+.cn15::before{content:"";display:block;position:absolute;top:10px;right:8px;bottom:25px;left:8px;width:22px;height:3px;background-color:rgb(38, 39, 44)}
+.cn15::after{content:"";display:block;position:absolute;top:28px;right:8px;bottom:7px;left:8px;width:22px;height:3px;background-color:rgb(38, 39, 44)}
+.cn16{width:15px;display:block;text-indent:-3840px;background-color:var(--foreground)}
+.cn17{display:block;padding-bottom:60px;text-align:center}
+.cn18{display:block;max-width:1300px;padding-right:10px;padding-left:10px;margin-left:auto;margin-right:auto}
+.cn19{display:block;margin-bottom:60px;font-size:77px;font-weight:500;line-height:100.1px;letter-spacing:-1.54px}
+.cn20{display:inline;background-image:linear-gradient(rgba(0, 0, 0, 0) calc(100% - 35px), rgb(249, 115, 22) calc(100% - 35px), rgb(249, 115, 22) calc(100% - 20px), rgba(0, 0, 0, 0) calc(100% - 20px));background-size:100% 100%;background-repeat:no-repeat}
+.cn21{display:block;color:var(--color-023)}
+.cn22{display:block;margin-bottom:30px;color:var(--color-023);font-size:32px;line-height:48px}
+.cn23{display:block}
+.cn24{display:block;margin-bottom:20px}
+.cn25{display:block}
+.cn26{border-width:1px;border-style:solid;border-color:var(--color-006);display:flex;max-width:650px;margin-right:305px;margin-left:305px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;justify-content:space-between;row-gap:20px;column-gap:20px;background-color:var(--background)}
+.cn27{display:block;flex-grow:2}
+.cn28{display:inline;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn29{width:100%;height:48px;display:block;max-height:48px;padding-right:30px;padding-left:30px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;overflow-x:clip;overflow-y:clip;color:var(--color-004);font-size:16px;font-weight:400;line-height:16px;text-align:start;background-color:var(--background);cursor:text}
+.cn29::placeholder{color:rgb(130, 130, 130);opacity:0.5}
+.cn30{display:block}
+.cn31{width:100%;height:48px;display:block;min-width:250px;max-height:48px;padding-right:35px;padding-left:35px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;overflow-x:clip;overflow-y:clip;color:var(--background);font-size:14px;font-weight:600;line-height:14px;letter-spacing:1.12px;text-transform:uppercase;white-space:pre;text-wrap:nowrap;background-color:var(--primary);cursor:pointer}
+.cn32{display:block;font-size:20px;line-height:36px}
+.cn33{display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-left:34px;color:var(--muted);line-height:32px}
+.cn33::before{content:"";display:block;position:absolute;top:16px;right:239px;bottom:4px;left:0px;width:24px;height:24px;margin-top:-12px;background-image:url("public/assets/cloned/svg/1ed85632b305.svg");background-position:50% 50%;background-repeat:no-repeat}
+.cn34{height:852px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:90px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn34::after{content:"";display:block;position:absolute;top:852px;right:-310px;bottom:-1618.41px;left:640px;z-index:1;width:1900px;height:1900px;margin-top:-281.594px;margin-left:-950px;background-image:linear-gradient(rgba(25, 26, 32, 0.2), rgba(25, 26, 32, 0) 29.82%);box-shadow:rgb(0, 0, 0) 0px 0px 184px 0px;opacity:0.1;border-top-left-radius:1900px}
+.cn35{height:100%;display:block;max-width:1300px;padding-right:10px;padding-left:10px;margin-left:auto;margin-right:auto}
+.cn36{display:block;color:var(--primary);font-size:24px;font-weight:400;line-height:34px;letter-spacing:2.4px}
+.cn37{display:block;margin-bottom:50px;color:var(--color-031);font-size:46px;font-weight:500;line-height:55.2px}
+.cn38{height:67.8125px;display:flex;margin-bottom:30px;flex-wrap:wrap;justify-content:center;align-items:center;row-gap:15px;column-gap:30px;color:var(--muted);font-size:22px;font-weight:400;line-height:26.4px;list-style-type:none;list-style-position:outside}
+.cn39{height:26.4062px;display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn39::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:136px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn40{height:100%;display:inline;cursor:pointer}
+.cn41{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn41::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:84px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn42{display:inline;cursor:pointer}
+.cn43{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn43::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:62px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn44{display:inline;cursor:pointer}
+.cn45{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn45::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:58px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn46{display:inline;cursor:pointer}
+.cn47{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn47::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:92px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn48{display:inline;cursor:pointer}
+.cn49{height:26.4062px;display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn49::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:168px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn50{height:100%;display:inline;cursor:pointer}
+.cn51{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn51::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:67px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn52{display:inline;cursor:pointer}
+.cn53{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn53::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:94px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn54{display:inline;cursor:pointer}
+.cn55{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn55::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:100px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn56{display:inline;cursor:pointer}
+.cn57{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn57::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:121px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn58{display:inline;cursor:pointer}
+.cn59{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn59::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:109px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn60{display:inline;cursor:pointer}
+.cn61{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn61::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:75px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn62{display:inline;cursor:pointer}
+.cn63{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn63::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:50px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn64{display:inline;cursor:pointer}
+.cn65{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn65::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:126px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn66{display:inline;cursor:pointer}
+.cn67{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn67::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:64px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn68{display:inline;cursor:pointer}
+.cn69{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn69::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:104px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn70{display:inline;cursor:pointer}
+.cn71{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn71::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:60px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn72{display:inline;cursor:pointer}
+.cn73{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn73::after{content:"";display:block;position:absolute;top:13.2031px;right:-20px;bottom:8.20312px;left:105px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn74{display:inline;cursor:pointer}
+.cn75{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn75::after{content:"";display:none;position:absolute;top:50%;right:-20px;width:8px;height:8px;margin-top:-3px;background-color:rgb(189, 189, 189);border-top-left-radius:50%}
+.cn76{display:inline;cursor:pointer}
+.cn77{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:2}
+.cn78{display:inline;color:var(--primary);cursor:pointer}
+.cn79{width:1115px;height:525px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1115 / 525}
+.cn80{height:994.188px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:90px;padding-bottom:120px;overflow-x:hidden;overflow-y:hidden;color:var(--background);text-align:center;background-color:var(--color-030);background-image:url("public/assets/cloned/images/d2690669ba30.png");background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn80::after{content:"";display:block;position:absolute;top:739.188px;right:593px;bottom:-432px;left:0px;width:687px;height:687px;background-color:rgb(241, 98, 50);opacity:0.2;filter:blur(204.149px);border-top-left-radius:100%}
+.cn81{height:100%;display:block;max-width:1300px;padding-right:10px;padding-left:10px;margin-left:auto;margin-right:auto}
+.cn82{display:block;font-size:24px;font-weight:400;line-height:34px}
+.cn83{display:block;margin-bottom:100px;font-size:46px;font-weight:500;line-height:55.2px}
+.cn84{display:grid;padding-top:30px;padding-bottom:30px;row-gap:75px;column-gap:5px;grid-template-rows:104px 49px 95px 62px;list-style-type:none;list-style-position:outside;grid-template-columns:repeat(4, minmax(0, 1fr))}
+.cn85{display:flex;align-items:center}
+.cn86{width:88px;height:88px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 88 / 88}
+.cn87{display:flex;align-items:center}
+.cn88{width:156px;height:42px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 156 / 42}
+.cn89{display:flex;align-items:center}
+.cn90{width:97px;height:104px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 97 / 104}
+.cn91{display:flex;align-items:center}
+.cn92{width:242px;height:67px;display:block;max-width:100%;margin-right:34.625px;margin-left:34.625px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 242 / 67}
+.cn93{display:flex;align-items:center}
+.cn94{width:156px;height:39px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 156 / 39}
+.cn95{display:flex;align-items:center}
+.cn96{width:182px;height:47px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 182 / 47}
+.cn97{display:flex;align-items:center}
+.cn98{width:226px;height:22px;display:block;max-width:100%;margin-right:42.625px;margin-left:42.625px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 226 / 22}
+.cn99{display:flex;align-items:center}
+.cn100{width:194px;height:49px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 194 / 49}
+.cn101{display:flex;align-items:center}
+.cn102{width:136px;height:66px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 136 / 66}
+.cn103{display:flex;align-items:center}
+.cn104{width:126px;height:95px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 126 / 95}
+.cn105{display:flex;align-items:center}
+.cn106{width:187px;height:37px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 187 / 37}
+.cn107{display:flex;align-items:center}
+.cn108{width:186px;height:50px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 186 / 50}
+.cn109{display:flex;align-items:center}
+.cn110{width:160px;height:30px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 160 / 30}
+.cn111{display:flex;align-items:center}
+.cn112{width:70px;height:62px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 70 / 62}
+.cn113{display:flex;align-items:center}
+.cn114{width:192px;height:35px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 192 / 35}
+.cn115{display:flex;align-items:center}
+.cn116{width:165px;height:33px;display:block;max-width:100%;margin-right:auto;margin-left:auto;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 165 / 33}
+.cn117{display:block;padding-top:90px;padding-bottom:90px;color:var(--background);background-color:var(--primary)}
+.cn118{display:block;max-width:1300px;padding-right:10px;padding-left:10px;margin-left:auto;margin-right:auto}
+.cn119{display:block;font-size:24px;font-weight:400;line-height:34px;text-align:center}
+.cn120{display:block;margin-bottom:41.8182px;font-size:46px;font-weight:500;line-height:55.2px;text-align:center}
+.cn121{display:block;max-width:820px;margin-right:auto;margin-bottom:75px;margin-left:auto;font-size:24px;line-height:34px;text-align:center}
+.cn122{height:511px;display:grid;max-width:925px;margin-right:auto;margin-left:auto;row-gap:95px;column-gap:125px;grid-template-rows:194px 222px;font-size:20px;line-height:28px;list-style-type:none;list-style-position:outside;grid-template-columns:repeat(auto-fit, minmax(311px, 1fr))}
+.cn123{display:list-item}
+.cn124{height:100%;display:block;cursor:pointer}
+.cn125{height:68px;min-height:68px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:15px;padding-right:50px;align-items:center;font-size:24px;font-weight:500;line-height:34px;background-image:url("public/assets/cloned/svg/88cb92125fad.svg");background-position:100% 50%;background-repeat:no-repeat}
+.cn126{height:68px;display:block}
+.cn127{height:0px;display:block}
+.cn128{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:27px}
+.cn128::before{content:"";display:block;position:absolute;top:0px;right:173.453px;bottom:109px;left:0px;z-index:2;height:2px;background-color:rgb(255, 255, 255);opacity:0}
+.cn128::after{content:"";display:block;position:absolute;top:0px;right:0px;bottom:109px;left:0px;z-index:1;height:2px;background-color:rgb(255, 142, 105)}
+.cn129{display:list-item}
+.cn130{height:100%;display:block;cursor:pointer}
+.cn131{height:68px;min-height:68px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:15px;padding-right:50px;align-items:center;background-image:url("public/assets/cloned/svg/88cb92125fad.svg");background-position:100% 50%;background-repeat:no-repeat}
+.cn132{width:auto;height:53px;display:block;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 189 / 53}
+.cn133{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:27px}
+.cn133::before{content:"";display:block;position:absolute;top:0px;right:173.453px;bottom:81px;left:0px;z-index:2;height:2px;background-color:rgb(255, 255, 255);opacity:0}
+.cn133::after{content:"";display:block;position:absolute;top:0px;right:0px;bottom:81px;left:0px;z-index:1;height:2px;background-color:rgb(255, 142, 105)}
+.cn134{display:list-item}
+.cn135{height:68px;min-height:68px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:15px;padding-right:50px;align-items:center;background-image:url("public/assets/cloned/svg/88cb92125fad.svg");background-position:100% 50%;background-repeat:no-repeat}
+.cn136{width:auto;height:51px;display:block;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 212 / 51}
+.cn137{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:27px}
+.cn137::before{content:"";display:block;position:absolute;top:0px;right:173.453px;bottom:137px;left:0px;z-index:2;height:2px;background-color:rgb(255, 255, 255);opacity:0}
+.cn137::after{content:"";display:block;position:absolute;top:0px;right:0px;bottom:137px;left:0px;z-index:1;height:2px;background-color:rgb(255, 142, 105)}
+.cn138{display:list-item}
+.cn139{height:100%;display:block;cursor:pointer}
+.cn140{height:68px;min-height:68px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:15px;padding-right:50px;align-items:center;background-image:url("public/assets/cloned/svg/88cb92125fad.svg");background-position:100% 50%;background-repeat:no-repeat}
+.cn141{width:auto;height:29px;display:block;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 179 / 29}
+.cn142{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:27px}
+.cn142::before{content:"";display:block;position:absolute;top:0px;right:173.453px;bottom:81px;left:0px;z-index:2;height:2px;background-color:rgb(255, 255, 255);opacity:0}
+.cn142::after{content:"";display:block;position:absolute;top:0px;right:0px;bottom:81px;left:0px;z-index:1;height:2px;background-color:rgb(255, 142, 105)}
+.cn143{display:block;padding-top:100px;padding-bottom:100px;background-color:var(--surface-9)}
+.cn144{display:grid;max-width:1300px;padding-right:10px;padding-left:10px;align-items:center;row-gap:60px;column-gap:60px;grid-template-rows:504.875px;margin-left:auto;margin-right:auto;grid-template-columns:1fr 505px}
+.cn145{width:695px;height:433px;display:block;font-size:24px;font-weight:400;line-height:34px}
+.cn146{display:block;margin-bottom:40px;font-size:48px;line-height:62.0571px}
+.cn147{display:inline;color:var(--primary);font-weight:500}
+.cn148{height:0px;display:block}
+.cn149{display:inline;color:var(--primary);font-weight:500}
+.cn150{display:block;max-width:610px;margin-bottom:40px}
+.cn151{display:block;margin-bottom:24px;line-height:38.4px}
+.cn152{display:block;line-height:38.4px}
+.cn153{width:315px;height:87.6875px;display:block;max-width:315px;font-size:32px;line-height:43.84px}
+.cn154{display:inline;cursor:pointer}
+.cn155{display:inline}
+.cn155::after{content:url("https://neilpatel.com/wp-content/themes/neilpatel/images/homepage-v2/bg-arrow-r.svg");display:inline-block;width:42px;height:16px;margin-left:20px;color:rgb(38, 39, 44);font-size:32px;line-height:43.84px}
+.cn156{display:inline;color:var(--primary)}
+.cn157{width:505px;height:504.875px;display:block;padding-top:32px;padding-right:32px;padding-bottom:32px;padding-left:32px;font-size:24px;line-height:34px;background-color:var(--background);filter:drop-shadow(rgba(209, 215, 217, 0.2) -3px 4px 54px)}
+.cn158{display:block;margin-bottom:32px}
+.cn159{width:100px;height:40px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 100 / 40}
+.cn160{height:180px;display:block;margin-bottom:28.8px;font-weight:400;line-height:36px}
+.cn161{height:0px;display:block}
+.cn162{display:block;margin-bottom:28.8px;font-weight:500;line-height:36px}
+.cn163{display:block}
+.cn164{display:inline-block;min-width:240px;padding-top:20px;padding-right:20px;padding-bottom:18px;padding-left:20px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;color:var(--background);font-size:14px;font-weight:500;line-height:21px;letter-spacing:0.98px;text-align:center;text-transform:uppercase;background-color:var(--color-032);cursor:pointer}
+.cn165{border-top-width:1px;border-top-style:solid;border-top-color:var(--color-029);display:block;padding-top:35px;padding-bottom:43px;color:var(--background);font-size:12px;line-height:20px;text-align:left;background-color:var(--primary)}
+.cn166{display:block;max-width:1300px;padding-right:10px;padding-left:10px;background-color:var(--primary);margin-left:auto;margin-right:auto}
+.cn167{height:66.6562px;min-height:36.36px;display:flex;justify-content:space-between;align-items:center}
+.cn168{display:flex;align-items:center}
+.cn169{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:16px;padding-right:16px}
+.cn169::after{content:"";display:block;position:absolute;top:11.8594px;right:0px;bottom:-12.1406px;left:175px;width:1px;height:24px;background-color:rgb(255, 107, 53);transform:matrix(1, 0, 0, 1, 0, -12);transform-origin:0.5px 12px}
+.cn170{display:inline;cursor:pointer}
+.cn171{width:auto;height:18px;display:inline;overflow-x:hidden;overflow-y:hidden}
+.cn172{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn173{display:inline;cursor:pointer}
+.cn174{width:28px;height:21px;border-top-width:3px;border-top-style:solid;border-top-color:var(--background);display:none;position:relative;z-index:1;min-width:0px;margin-top:2px;margin-bottom:3px;text-indent:-3840px;cursor:pointer}
+.cn174::before{content:"";display:block;position:absolute;top:5px;left:0px;width:100%;height:3px;background-color:rgb(255, 255, 255)}
+.cn174::after{content:"";display:block;position:absolute;top:13px;left:0px;width:100%;height:3px;background-color:rgb(255, 255, 255)}
+.cn175{height:66.6562px;display:block}
+.cn176{height:66.6562px;display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;letter-spacing:0.3px;list-style-type:none;list-style-position:outside}
+.cn177{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn178{display:inline-block;padding-top:20px;padding-bottom:20px;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer}
+.cn179{height:66.6562px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn180{display:inline-block;padding-top:20px;padding-bottom:20px;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer;white-space:nowrap}
+.cn181{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn182{display:inline-block;padding-top:20px;padding-bottom:20px;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer}
+.cn183{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn184{display:inline-block;padding-top:20px;padding-bottom:20px;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer}
+.cn185{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn186{display:inline-block;padding-top:20px;padding-bottom:20px;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer}
+.cn187{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn188{display:inline-block;padding-top:20px;padding-bottom:20px;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer}
+.cn189{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:30px}
+.cn190{display:inline-block;font-size:16px;font-weight:500;line-height:26.6667px;cursor:pointer;white-space:nowrap}
+.cn191{display:flex;flex-direction:column;row-gap:20px;column-gap:20px}
+.cn192{display:block}
+.cn193{display:flex;row-gap:20px;column-gap:20px;list-style-type:none;list-style-position:outside}
+.cn194{display:list-item}
+.cn195{display:inline;cursor:pointer}
+.cn196{height:20px;display:list-item}
+.cn197{display:inline;cursor:pointer}
+.cn198{height:20px;display:list-item}
+.cn199{display:inline;cursor:pointer}
+.cn200{height:20px;display:list-item}
+.cn201{display:inline;cursor:pointer}
+.cn202{display:inline}
+.cn203{height:20px;display:list-item}
+.cn204{height:20px;display:flex;justify-content:center;align-items:center;cursor:pointer}
+.cn205{width:13px;height:13px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.75;margin-right:10px;color:var(--color-004);font-size:15px;font-weight:400;line-height:25px;text-align:start;background-color:var(--background)}
+.cn206{display:block}
+.cn207{height:22.3438px;display:flex;justify-content:space-between;align-items:center;row-gap:20px;column-gap:20px}
+.cn208{display:block}
+.cn209{display:inline;cursor:pointer}
+.cn210{height:22.3438px;display:flex;align-items:center;row-gap:20px;column-gap:20px}
+.cn211{display:block}
+.cn212{display:flex;align-items:center;row-gap:20px;column-gap:20px;list-style-type:none;list-style-position:outside}
+.cn213{display:list-item}
+.cn214{display:inline;cursor:pointer}
+.cn215{width:19px;height:17px;display:block;opacity:0.7;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 19 / 19}
+.cn216{display:list-item}
+.cn217{display:inline;cursor:pointer}
+.cn218{width:19px;height:22px;display:block;opacity:0.7;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 17 / 19}
+.cn219{display:list-item}
+.cn220{display:inline;cursor:pointer}
+.cn221{width:19px;height:17px;display:block;opacity:0.7;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 23 / 20}
+.cn222{display:list-item}
+.cn223{display:inline;cursor:pointer}
+.cn224{width:19px;height:22px;display:block;opacity:0.7;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 17 / 19}
+.cn225{display:list-item}
+.cn226{display:inline;cursor:pointer}
+.cn227{width:19px;height:22px;display:block;opacity:0.7;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 17 / 19}
+
+@media (max-width: 571px) {
+.cn3{padding-top:30px;padding-bottom:35px}
+.cn16{text-indent:-1125px}
+.cn17{padding-bottom:30px}
+.cn19{height:93.3125px;margin-bottom:21.8182px;font-size:28px;line-height:46.6667px;letter-spacing:-0.56px}
+.cn20{background-image:linear-gradient(rgba(0, 0, 0, 0) calc(100% - 13px), rgb(249, 115, 22) calc(100% - 13px), rgb(249, 115, 22) calc(100% - 7px), rgba(0, 0, 0, 0) calc(100% - 7px))}
+.cn21{display:inline}
+.cn22{margin-bottom:18.75px;font-size:20px;line-height:36px}
+.cn24{margin-bottom:15px}
+.cn26{display:block;border-width:0;border-style:initial;border-color:initial;max-width:none;margin-right:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;border-top-left-radius:initial;border-top-right-radius:initial;border-bottom-right-radius:initial;border-bottom-left-radius:initial;justify-content:initial;row-gap:initial;column-gap:initial;background-color:initial}
+.cn29{border-width:1px;border-style:solid;border-color:var(--color-006);margin-bottom:10px}
+.cn31{padding-right:15px;padding-left:15px;min-width:0}
+.cn32{font-size:inherit;line-height:inherit}
+.cn33{line-height:28.8px}
+.cn33::before{top:14.3906px;right:220px;bottom:2.40625px}
+.cn34{height:472.438px;padding-top:45px}
+.cn34::after{top:472.438px;right:-762.5px;bottom:-1817.5px;left:187.5px;margin-top:-82.5px}
+.cn36{letter-spacing:1.8px;font-size:inherit;line-height:inherit}
+.cn37{margin-bottom:26.087px;font-size:24px;line-height:34px}
+.cn38{height:150.219px;margin-bottom:20px;row-gap:7px;font-size:16px;line-height:19.2px;font-weight:inherit}
+.cn39{height:19.2031px}
+.cn39::after{top:9.59375px;right:-17px;bottom:7.60938px;left:103px;width:4px;height:4px;margin-top:-2px}
+.cn41::after{top:9.59375px;right:-17px;bottom:7.60938px;left:67px;width:4px;height:4px;margin-top:-2px}
+.cn43::after{top:9.59375px;right:-17px;bottom:7.60938px;left:47px;width:4px;height:4px;margin-top:-2px}
+.cn45::after{top:9.59375px;right:-17px;bottom:7.60938px;left:47px;width:4px;height:4px;margin-top:-2px}
+.cn47::after{top:9.59375px;right:-17px;bottom:7.60938px;left:70px;width:4px;height:4px;margin-top:-2px}
+.cn49{height:19.2031px}
+.cn49::after{top:9.59375px;right:-17px;bottom:7.60938px;left:128px;width:4px;height:4px;margin-top:-2px}
+.cn51::after{top:9.59375px;right:-17px;bottom:7.60938px;left:53px;width:4px;height:4px;margin-top:-2px}
+.cn53::after{top:9.59375px;right:-17px;bottom:7.60938px;left:72px;width:4px;height:4px;margin-top:-2px}
+.cn55::after{top:9.59375px;right:-17px;bottom:7.60938px;left:78px;width:4px;height:4px;margin-top:-2px}
+.cn57::after{top:9.59375px;right:-17px;bottom:7.60938px;left:95px;width:4px;height:4px;margin-top:-2px}
+.cn59::after{top:9.59375px;right:-17px;bottom:7.60938px;left:85px;width:4px;height:4px;margin-top:-2px}
+.cn61::after{top:9.59375px;right:-17px;bottom:7.60938px;left:59px;width:4px;height:4px;margin-top:-2px}
+.cn63::after{top:9.59375px;right:-17px;bottom:7.60938px;left:40px;width:4px;height:4px;margin-top:-2px}
+.cn65::after{top:9.59375px;right:-17px;bottom:7.60938px;left:97px;width:4px;height:4px;margin-top:-2px}
+.cn67::after{top:9.59375px;right:-17px;bottom:7.60938px;left:51px;width:4px;height:4px;margin-top:-2px}
+.cn69::after{top:9.59375px;right:-17px;bottom:7.60938px;left:80px;width:4px;height:4px;margin-top:-2px}
+.cn71::after{top:9.59375px;right:-17px;bottom:7.60938px;left:48px;width:4px;height:4px;margin-top:-2px}
+.cn73::after{top:9.59375px;right:-17px;bottom:7.60938px;left:82px;width:4px;height:4px;margin-top:-2px}
+.cn75::after{right:-17px;width:4px;height:4px;margin-top:-2px}
+.cn79{width:355px;height:167px}
+.cn80{height:780.594px;padding-top:45px;padding-bottom:45px}
+.cn80::after{top:525.594px;right:-312px}
+.cn82{font-size:inherit;line-height:inherit}
+.cn83{margin-bottom:52.1739px;font-size:24px;line-height:34px}
+.cn84{padding-top:10px;padding-bottom:10px;row-gap:30px;column-gap:10px;grid-template-rows:57.1875px 67.5938px 30.5469px 31.8438px 61.7344px 32.4844px 40.2969px 22.7344px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn88{height:41.9952px}
+.cn90{width:96.9952px}
+.cn92{width:241.995px;height:66.9952px;margin-right:11.6827px;margin-left:11.6827px}
+.cn94{height:38.9904px}
+.cn96{width:181.995px;height:46.9952px}
+.cn98{height:21.9952px;margin-right:19.6875px;margin-left:19.6875px}
+.cn100{width:193.99px;height:48.9904px}
+.cn106{width:186.995px;height:36.9952px}
+.cn112{height:61.9952px}
+.cn114{width:191.995px}
+.cn117{padding-top:45px;padding-bottom:45px}
+.cn119{font-size:inherit;line-height:inherit}
+.cn120{margin-bottom:21.8182px;font-size:24px;line-height:34px}
+.cn121{margin-bottom:56.25px;font-size:inherit;line-height:inherit}
+.cn122{height:780.547px;row-gap:65px;grid-template-rows:151.562px 130.859px 176.75px 126.375px;line-height:25.2px;font-size:inherit}
+.cn125{height:34px;min-height:34px;line-height:30px;font-size:inherit}
+.cn126{height:30px}
+.cn127{display:inline;height:auto}
+.cn128::before{right:153.938px;bottom:100.562px}
+.cn128::after{bottom:100.562px}
+.cn131{height:38.4844px;min-height:34px}
+.cn132{height:38px;max-width:45%}
+.cn133::before{right:153.938px;bottom:75.375px}
+.cn133::after{bottom:75.375px}
+.cn135{height:34px;min-height:34px}
+.cn136{height:33px;max-width:45%}
+.cn137::before{right:153.938px;bottom:125.75px}
+.cn137::after{bottom:125.75px}
+.cn140{height:34px;min-height:34px}
+.cn141{height:22px;max-width:45%}
+.cn142::before{right:153.938px;bottom:75.375px}
+.cn142::after{bottom:75.375px}
+.cn143{padding-top:45px;padding-bottom:45px}
+.cn144{row-gap:30px;column-gap:30px;grid-template-rows:309.391px 403.469px;grid-template-columns:repeat(1, minmax(0, 1fr));align-items:initial}
+.cn145{width:355px;height:309.391px;font-size:inherit;line-height:inherit}
+.cn146{margin-bottom:20px;font-size:24px;line-height:34px}
+.cn148{display:inline;height:auto}
+.cn150{margin-bottom:30px;max-width:none}
+.cn151{margin-bottom:18px;line-height:28.8px}
+.cn152{line-height:28.8px}
+.cn153{width:355px;font-size:20px;line-height:27.4px;height:auto;max-width:none}
+.cn155::after{font-size:20px;line-height:27.4px}
+.cn157{width:355px;height:403.469px;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px;font-size:inherit;line-height:inherit}
+.cn160{height:135px;margin-bottom:21.6px;line-height:27px}
+.cn161{display:inline;height:auto}
+.cn162{margin-bottom:21.6px;line-height:27px}
+.cn164{padding-right:10px;padding-left:10px}
+.cn165{text-align:center}
+.cn167{height:26px;margin-bottom:25px;min-height:0}
+.cn174{display:block;top:0px;right:0px;bottom:0px;left:0px;margin-left:121px;text-indent:-1125px;height:auto;min-width:0}
+.cn174::before{right:0px;bottom:10px;width:28px}
+.cn174::after{right:0px;bottom:2px;width:28px}
+.cn176{display:none}
+.cn191{align-items:center}
+.cn193{flex-wrap:wrap;justify-content:center}
+.cn207{height:62.3438px;flex-direction:column}
+.cn210{flex-direction:column}
+.cn211{display:none}
+.cn212{justify-content:center}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn3{padding-bottom:60px}
+.cn16{text-indent:-2304px}
+.cn19{margin-bottom:31.1688px;font-size:40px;line-height:48px;letter-spacing:-0.8px}
+.cn20{background-image:linear-gradient(rgba(0, 0, 0, 0) calc(100% - 18px), rgb(249, 115, 22) calc(100% - 18px), rgb(249, 115, 22) calc(100% - 10px), rgba(0, 0, 0, 0) calc(100% - 10px))}
+.cn21{display:inline}
+.cn22{margin-bottom:18.75px;font-size:20px;line-height:36px}
+.cn26{margin-right:49px;margin-left:49px}
+.cn34{height:683.281px}
+.cn34::after{top:683.281px;right:-566px;bottom:-1731.05px;left:384px;margin-top:-168.953px}
+.cn37{margin-bottom:39.1304px;font-size:36px;line-height:43.2px}
+.cn38{height:94.7812px;line-height:21.6px;font-size:inherit}
+.cn39{height:21.5938px}
+.cn39::after{top:10.7969px;bottom:5.79688px;left:115px}
+.cn41::after{top:10.7969px;bottom:5.79688px;left:72px}
+.cn43::after{top:10.7969px;bottom:5.79688px;left:53px}
+.cn45::after{top:10.7969px;bottom:5.79688px;left:50px}
+.cn47::after{top:10.7969px;bottom:5.79688px;left:78px}
+.cn49{height:21.5938px}
+.cn49::after{top:10.7969px;bottom:5.79688px;left:141px}
+.cn51::after{top:10.7969px;bottom:5.79688px;left:57px}
+.cn53::after{top:10.7969px;bottom:5.79688px;left:80px}
+.cn55::after{top:10.7969px;bottom:5.79688px;left:84px}
+.cn57::after{top:10.7969px;bottom:5.79688px;left:103px}
+.cn59::after{top:10.7969px;bottom:5.79688px;left:93px}
+.cn61::after{top:10.7969px;bottom:5.79688px;left:64px}
+.cn63::after{top:10.7969px;bottom:5.79688px;left:43px}
+.cn65::after{top:10.7969px;bottom:5.79688px;left:108px}
+.cn67::after{top:10.7969px;bottom:5.79688px;left:55px}
+.cn69::after{top:10.7969px;bottom:5.79688px;left:88px}
+.cn71::after{top:10.7969px;bottom:5.79688px;left:52px}
+.cn73::after{top:10.7969px;bottom:5.79688px;left:89px}
+.cn79{width:748px;height:352px}
+.cn80{height:1120.69px}
+.cn80::after{top:865.688px;right:81px}
+.cn83{margin-bottom:78.2609px;font-size:36px;line-height:43.2px}
+.cn84{grid-template-rows:78px 50.25px 49.5px 71.25px 46.5px 24.75px;grid-template-columns:repeat(3, minmax(0, 1fr))}
+.cn92{margin-right:43px;margin-left:43px}
+.cn98{margin-right:51px;margin-left:51px}
+.cn120{margin-bottom:32.7273px;font-size:36px;line-height:43.2px}
+.cn122{height:567px;grid-template-rows:222px 250px}
+.cn127{display:inline;height:auto}
+.cn128::before{right:135.078px;bottom:137px}
+.cn128::after{bottom:137px}
+.cn133::before{right:135.078px;bottom:109px}
+.cn133::after{bottom:109px}
+.cn137::before{right:135.078px;bottom:165px}
+.cn137::after{bottom:165px}
+.cn142::before{right:135.078px;bottom:109px}
+.cn142::after{bottom:109px}
+.cn144{grid-template-columns:216px 505px;grid-template-rows:778.203px}
+.cn145{width:216px;height:778.203px}
+.cn146{margin-bottom:33.3333px;font-size:40px;line-height:48px}
+.cn148{display:inline;height:auto}
+.cn153{width:216px;font-size:20px;line-height:27.4px;height:auto}
+.cn155::after{font-size:20px;line-height:27.4px}
+.cn161{display:inline;height:auto}
+.cn167{height:36.3594px}
+.cn174{display:block;top:0px;right:0px;bottom:0px;left:0px;margin-left:514px;text-indent:-2304px;height:auto;min-width:0}
+.cn174::before{right:0px;bottom:10px;width:28px}
+.cn174::after{right:0px;bottom:2px;width:28px}
+.cn176{display:none}
+.cn191{align-items:center;text-align:center}
+.cn193{flex-wrap:wrap;justify-content:center}
+.cn207{height:62.3438px;flex-direction:column}
+.cn210{flex-direction:column}
+.cn211{display:none}
+.cn212{justify-content:center}
+}
+
+@media (min-width: 1601px) {
+.cn16{text-indent:-5760px}
+.cn26{margin-right:315px;margin-left:315px}
+.cn34::after{right:10px;bottom:-1477.61px;left:960px;margin-top:-422.391px}
+.cn80::after{right:1233px}
+.cn92{margin-right:37.125px;margin-left:37.125px}
+.cn98{margin-right:45.125px;margin-left:45.125px}
+.cn145{width:715px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <article class="cn1" data-ditto-id="style-topbar" id="article" role="main">
+      <div class="cn2">
+        <div class="cn3">
+          <div class="cn4">
+            <div class="cn5">
+              <div class="cn6" data-ditto-id="style-link">
+                <a class="cn7" data-ditto-id="style-span-20" href="https://npdigital.com/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                   
+                  <div class="cn8">
+                    <span class="cn9">
+                       
+                      <svg class="cn10" alt="Neil Patel Logo" viewBox="0 0 364.6 40.4" xmlns="https://www.w3.org/2000/svg" fill="currentColor"><path class="svg-path" fill="#fff" d="M36.4 40.4h-1.8L6.7 13.3v27.1H0V0h1.8l27.9 26.7V0h6.7v40.4zm40.8-17.2H56.9v11.2h24v5.9H50.2V0h30.6v5.9h-24v11.6h20.3v5.7zM102 40.4h-6.7V0h6.7v40.4zm16 0V0h6.7v34.5h22.4v5.9H118zM159.9 0h17.6c10.1 0 16.3 4.9 16.3 13.7 0 9.3-6.7 14.3-16.7 14.3h-10.5v12.5h-6.7V0zm17.3 5.9h-10.6v16.2h10.6c6 0 9.8-2.4 9.8-8.1-.1-5.4-3.9-8.1-9.8-8.1zM218.8 0h1.3l20.5 40.4H233l-3-6.1h-21l-3 6.1h-7.5L218.8 0zm.9 12.3h-.4L212 28.1l-.4.7h15.7l-.4-.7-7.2-15.8zM243.6 0h33.9v5.9h-13.6v34.5h-6.7V5.9h-13.6V0zm73.8 23.2h-20.3v11.2h24v5.9h-30.6V0h30.6v5.9h-24v11.6h20.3v5.7zm18.1 17.2V0h6.7v34.5h22.4v5.9h-29.1z"></path></svg>
+                       
+                    </span>
+                     
+                    <span class="cn11" data-ditto-id="style-div-15">
+                       
+                      <svg class="cn12" alt="NP Digital Logo" fill="none" viewBox="0 0 55 16" xmlns="https://www.w3.org/2000/svg"><path class="svg-path" fill="#fff" d="M1.21 10.515h.553V9.92c.094.138.494.69 1.315.69 1.075 0 1.846-.82 1.846-1.976 0-1.162-.734-1.99-1.802-1.99-.792 0-1.221.508-1.337.704V5.262H1.21v5.253Zm.553-1.875c0-.937.581-1.475 1.293-1.475.741 0 1.28.61 1.28 1.475 0 .88-.568 1.454-1.294 1.454-.785 0-1.28-.662-1.28-1.454Zm5.09 3.176 2.027-5.08h-.61L7.107 9.775 5.908 6.737h-.624l1.54 3.742-.545 1.337h.574ZM33.677 10.636c.629 0 1.025-.32 1.316-.709v.63h.873v-5.22h-.873v2.025c-.28-.355-.676-.663-1.316-.663-.908 0-1.782.71-1.782 1.957v.023c0 1.248.885 1.957 1.782 1.957Zm.21-.755c-.594 0-1.107-.48-1.107-1.202v-.022c0-.744.513-1.202 1.107-1.202s1.118.47 1.118 1.202v.022c0 .721-.524 1.202-1.118 1.202Zm3.063-3.685h.944v-.824h-.944v.824Zm.035 4.36h.885V6.78h-.885v3.776Zm3.716 1.157c.687 0 1.223-.16 1.572-.504.327-.321.49-.79.49-1.43v-3h-.873v.562c-.303-.344-.71-.641-1.351-.641-.897 0-1.748.652-1.748 1.774v.011c0 1.11.839 1.774 1.748 1.774.629 0 1.037-.285 1.35-.698v.297c0 .756-.43 1.156-1.21 1.156-.525 0-.968-.148-1.375-.4l-.326.652c.5.287 1.082.447 1.723.447Zm.07-2.187c-.606 0-1.096-.424-1.096-1.042v-.023c0-.618.478-1.03 1.095-1.03.606 0 1.13.424 1.13 1.042v.011c0 .608-.524 1.042-1.13 1.042Zm3.074-3.33h.944v-.824h-.944v.824Zm.035 4.36h.885V6.78h-.885v3.776Zm3.284.069c.327 0 .571-.08.792-.194v-.71a1.28 1.28 0 0 1-.547.126c-.291 0-.466-.137-.466-.47V7.523h1.025V6.78h-1.026V5.738h-.884V6.78h-.49v.743h.49v1.992c0 .824.454 1.11 1.106 1.11Zm4.892-.069V8.313c0-1.008-.559-1.591-1.689-1.591-.629 0-1.048.125-1.467.309l.244.698c.35-.148.664-.24 1.095-.24.606 0 .944.286.944.812v.069a3.305 3.305 0 0 0-1.06-.149c-.896 0-1.561.401-1.561 1.236v.012c0 .755.64 1.167 1.374 1.167.582 0 .979-.24 1.246-.549v.47h.874Zm-.85-1.361c0 .47-.442.79-1.025.79-.42 0-.745-.207-.745-.562v-.011c0-.367.327-.584.885-.584a2.5 2.5 0 0 1 .885.149v.218Zm1.91 1.361h.885v-5.22h-.884v5.22Z"></path><path class="svg-path" fill="#fff" fill-rule="evenodd" d="M14.168.278h15.934v15.658H14.168V.278Zm3.04 10.336h.885v-3.56l2.807 3.56h.745V5.6h-.873v3.468l-2.736-3.468h-.827v5.013h-.001Zm5.916 0h.897V8.999h1.013c1.119 0 2.038-.583 2.038-1.705v-.012c0-1.007-.756-1.682-1.945-1.682h-2.003v5.014Zm.898-2.404V6.413h1.037c.675 0 1.095.297 1.095.892v.012c0 .526-.42.892-1.095.892h-1.037v.001Zm-8.97-7.061h14.176v13.929H15.053V1.148Z" clip-rule="evenodd"></path></svg>
+                       
+                    </span>
+                     
+                  </div>
+                   
+                </a>
+                 
+                <div class="cn13" data-ditto-id="style-div-87">
+                  <a class="cn14" data-ditto-id="style-neil-patel-4" href="#">
+                    EN
+                  </a>
+                </div>
+                 
+              </div>
+               
+            </div>
+             
+            <span class="cn15" data-ditto-id="style-image-13">
+              <span class="cn16">
+                Open menu
+              </span>
+            </span>
+             
+          </div>
+           
+        </div>
+         
+        <div class="cn17">
+          <div class="cn18">
+            <h1 class="cn19" data-ditto-id="style-div-88">
+              <span class="cn20" data-ditto-id="style-link-2">
+                Let’s Grow Your Business
+              </span>
+               
+              <span class="cn21" data-ditto-id="style-div-89">
+                Through Digital Marketing.
+              </span>
+            </h1>
+             
+            <p class="cn22" data-ditto-id="style-label-4">
+              Step 1: Get your free SEO + AI Visibility Audit
+            </p>
+             
+            <div class="cn23" data-ditto-id="style-nav-3" dir="ltr" id="wpcf7-f216540-p9563-o2" lang="en">
+               
+              <form class="cn24" data-ditto-id="style-ul-29" aria-label="Contact form">
+                 
+                <div class="cn25" data-ditto-id="style-li-3">
+                  <div class="cn26" data-ditto-id="style-link-3">
+                    <p class="cn27" data-ditto-id="style-li-11">
+                      <span class="cn28" data-ditto-id="style-link-4" aria-label="%text%">
+                        <input class="cn29" data-ditto-id="style-li-9" aria-invalid="false" aria-label="%text%" aria-required="true" name="cf-url" placeholder="Your Website URL" type="text" value="" />
+                      </span>
+                    </p>
+                     
+                    <p class="cn30" data-ditto-id="style-link-5">
+                      <input class="cn31" data-ditto-id="style-link-8" type="submit" value="Start my analysis" />
+                    </p>
+                     
+                  </div>
+                </div>
+                 
+              </form>
+               
+            </div>
+             
+            <p class="cn32" data-ditto-id="style-li">
+              <span class="cn33" data-ditto-id="style-link-9">
+                Get the answer in minutes.
+              </span>
+            </p>
+             
+          </div>
+           
+        </div>
+         
+        <div class="cn34" data-ditto-id="style-li-2">
+          <div class="cn35" data-ditto-id="style-link-10">
+            <h3 class="cn36" data-ditto-id="style-heading">
+              Meet My Award-Winning
+            </h3>
+             
+            <h2 class="cn37" data-ditto-id="style-heading-2">
+              Global Ad Agency
+            </h2>
+             
+            <ul class="cn38" data-ditto-id="style-ul-3">
+              <li class="cn39" data-ditto-id="style-avatar-2">
+                <a class="cn40" data-ditto-id="style-div-14" href="https://npdigital.com/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  United States
+                </a>
+              </li>
+              <li class="cn41" data-ditto-id="style-li-4">
+                <a class="cn42" data-ditto-id="style-link-57" href="https://npdigital.com/ca/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Canada
+                </a>
+              </li>
+              <li class="cn43" data-ditto-id="style-icon">
+                <a class="cn44" data-ditto-id="style-li-10" href="https://npdigital.com/br/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Brazil
+                </a>
+              </li>
+              <li class="cn45" data-ditto-id="style-button">
+                <a class="cn46" data-ditto-id="style-avatar-6" href="https://npdigital.com/in/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  India
+                </a>
+              </li>
+              <li class="cn47" data-ditto-id="style-div-90">
+                <a class="cn48" data-ditto-id="style-p-33" href="https://npdigital.com/au/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Australia
+                </a>
+              </li>
+              <li class="cn49" data-ditto-id="style-span-39">
+                <a class="cn50" data-ditto-id="style-ul-5" href="https://npdigital.com/uk/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  United Kingdom
+                </a>
+              </li>
+              <li class="cn51" data-ditto-id="style-avatar">
+                <a class="cn52" data-ditto-id="style-div" href="https://npdigital.com/jp/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Japan
+                </a>
+              </li>
+              <li class="cn53" data-ditto-id="style-p">
+                <a class="cn54" data-ditto-id="style-span" href="https://npdigital.com/my/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Malaysia
+                </a>
+              </li>
+              <li class="cn55" data-ditto-id="style-ul">
+                <a class="cn56" data-ditto-id="style-image" href="https://npdigital.com/de/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Germany
+                </a>
+              </li>
+              <li class="cn57" data-ditto-id="style-article">
+                <a class="cn58" data-ditto-id="style-div-2" href="https://npdigital.com/hk/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Hong Kong
+                </a>
+              </li>
+              <li class="cn59" data-ditto-id="style-p-2">
+                <a class="cn60" data-ditto-id="style-link-7" href="https://npdigital.com/sg/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Singapore
+                </a>
+              </li>
+              <li class="cn61" data-ditto-id="style-p-3">
+                <a class="cn62" data-ditto-id="style-p-4" href="https://npdigital.com/fr/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  France
+                </a>
+              </li>
+              <li class="cn63" data-ditto-id="style-image-2">
+                <a class="cn64" data-ditto-id="style-article-2" href="https://npdigital.com/it/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Italy
+                </a>
+              </li>
+              <li class="cn65" data-ditto-id="style-div-17">
+                <a class="cn66" data-ditto-id="style-div-84" href="https://npdigital.com/nl/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Netherlands
+                </a>
+              </li>
+              <li class="cn67" data-ditto-id="style-heading-11">
+                <a class="cn68" data-ditto-id="style-span-36" href="https://npdigital.com/es/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Spain
+                </a>
+              </li>
+              <li class="cn69">
+                <a class="cn70" data-ditto-id="style-span-37" href="https://npdigital.com/latam/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Argentina
+                </a>
+              </li>
+              <li class="cn71" data-ditto-id="style-span-94">
+                <a class="cn72" data-ditto-id="style-div-85" href="https://npdigital.com/latam/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Chile
+                </a>
+              </li>
+              <li class="cn73" data-ditto-id="style-div-75">
+                <a class="cn74" data-ditto-id="style-div-86" href="https://npdigital.com/latam/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Colombia
+                </a>
+              </li>
+              <li class="cn75" data-ditto-id="style-table">
+                <a class="cn76" data-ditto-id="style-thead" href="https://npdigital.com/latam/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                  Mexico
+                </a>
+              </li>
+            </ul>
+             
+            <p class="cn77" data-ditto-id="style-tr">
+              <a class="cn78" data-ditto-id="style-test-id" href="https://npdigital.com/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                <img class="cn79" data-ditto-id="style-th" alt="NP Digital: Global award-winning digital marketing agency" height="525" src="public/assets/cloned/images/b7266b5d9b79.png" width="1115" />
+              </a>
+            </p>
+             
+          </div>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn80" data-ditto-id="style-span-5">
+        <div class="cn81" data-ditto-id="style-th-3">
+          <h3 class="cn82" data-ditto-id="style-span-71">
+            Globally Recognized
+          </h3>
+           
+          <h2 class="cn83" data-ditto-id="style-th-4">
+            Working With Renowned Brands
+          </h2>
+           
+          <ul class="cn84" data-ditto-id="style-th-2">
+            <li class="cn85" data-ditto-id="style-span-6">
+              <img class="cn86" data-ditto-id="style-tbody" alt="HP" height="88" src="public/assets/cloned/images/f63cd5c90f58.png" width="88" />
+            </li>
+            <li class="cn87" data-ditto-id="style-tr-2">
+              <img class="cn88" data-ditto-id="style-td-10" alt="SoFi" height="42" src="public/assets/cloned/images/028640fd9989.png" width="156" />
+            </li>
+            <li class="cn89" data-ditto-id="style-span-24">
+              <img class="cn90" data-ditto-id="style-td-3" alt="Mitsubishi Motors" height="104" src="public/assets/cloned/images/e636f49756db.png" width="97" />
+            </li>
+            <li class="cn91" data-ditto-id="style-div-3">
+              <img class="cn92" data-ditto-id="style-the-number-of-visitors-on-this-page-was" alt="Champion" height="67" src="public/assets/cloned/images/c4be19203d31.png" width="242" />
+            </li>
+            <li class="cn93" data-ditto-id="style-td-4">
+              <img class="cn94" data-ditto-id="style-div-4" alt="ESPN" height="39" src="public/assets/cloned/images/584f7f4c94bf.png" width="156" />
+            </li>
+            <li class="cn95" data-ditto-id="style-the-number-of-overall-conversions-was">
+              <img class="cn96" data-ditto-id="style-td-6" alt="Adobe" height="47" src="public/assets/cloned/images/b7173f05ac3b.png" width="182" />
+            </li>
+            <li class="cn97" data-ditto-id="style-span-25">
+              <img class="cn98" data-ditto-id="style-td-2" alt="Western Union" height="22" src="public/assets/cloned/images/32ac5b8cd6c1.png" width="226" />
+            </li>
+            <li class="cn99" data-ditto-id="style-span-26">
+              <img class="cn100" data-ditto-id="style-tr-4" alt="Accor" height="49" src="public/assets/cloned/images/9ff5c439d77c.png" width="194" />
+            </li>
+            <li class="cn101" data-ditto-id="style-td-7">
+              <img class="cn102" data-ditto-id="style-td-8" alt="CNN" height="66" src="public/assets/cloned/images/db3860fc0801.png" width="136" />
+            </li>
+            <li class="cn103" data-ditto-id="style-div-5">
+              <img class="cn104" data-ditto-id="style-the-number-of-visitors-on-this-page-was-2" alt="PWC" height="95" src="public/assets/cloned/images/fc67ab3c0f1b.png" width="126" />
+            </li>
+            <li class="cn105" data-ditto-id="interaction-td">
+              <img class="cn106" data-ditto-id="style-div-6" alt="DIRECTV" height="37" src="public/assets/cloned/images/61a0946531a3.png" width="187" />
+            </li>
+            <li class="cn107" data-ditto-id="interaction-the-number-of-overall-conversions-was">
+              <img class="cn108" data-ditto-id="interaction-td-2" alt="LinkedIn" height="50" src="public/assets/cloned/images/7592a5c6c619.png" width="186" />
+            </li>
+            <li class="cn109" data-ditto-id="style-span-50">
+              <img class="cn110" data-ditto-id="style-td-11" alt="Ricoh" height="30" src="public/assets/cloned/images/68c4e6ca23f0.png" width="160" />
+            </li>
+            <li class="cn111" data-ditto-id="style-span-59">
+              <img class="cn112" data-ditto-id="style-tr-5" alt="Tata" height="62" src="public/assets/cloned/images/671170cbc08b.png" width="70" />
+            </li>
+            <li class="cn113" data-ditto-id="style-td-14">
+              <img class="cn114" data-ditto-id="style-td-9" alt="Tektronix" height="35" src="public/assets/cloned/images/6a562cec443a.png" width="192" />
+            </li>
+            <li class="cn115" data-ditto-id="style-div-7">
+              <img class="cn116" data-ditto-id="style-input-4" alt="Intuit" height="33" src="public/assets/cloned/images/09e7c3ca3c39.png" width="165" />
+            </li>
+          </ul>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn117" data-ditto-id="style-td-12">
+        <div class="cn118" data-ditto-id="style-div-8">
+          <h3 class="cn119" data-ditto-id="style-input-2">
+            We Believe In
+          </h3>
+           
+          <h2 class="cn120" data-ditto-id="style-td-13">
+            Giving Back
+          </h2>
+           
+          <p class="cn121" data-ditto-id="style-span-48">
+            Our greatest satisfaction comes from seeing businesses succeed. That’s why we offer a variety of resources to help you unlock your potential.
+          </p>
+           
+          <ul class="cn122" data-ditto-id="interaction-td-3">
+            <li class="cn123" data-ditto-id="style-tr-3">
+              <a class="cn124" data-ditto-id="style-td-5" href="https://neilpatel.com/blog/">
+                 
+                <p class="cn125" data-ditto-id="style-td-15">
+                  <span class="cn126" data-ditto-id="style-div-9">
+                    Neil Patel’s Digital 
+                    <span class="cn127" data-ditto-id="style-input-3"></span>
+                     Marketing Blog
+                  </span>
+                </p>
+                 
+                <p class="cn128" data-ditto-id="style-td-17">
+                  Your #1 resource for digital marketing tips, trends, and strategy to help you build a successful online business.
+                </p>
+                 
+              </a>
+               
+            </li>
+            <li class="cn129" data-ditto-id="style-div-10">
+              <a class="cn130" data-ditto-id="interaction-input" href="https://answerthepublic.com/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                 
+                <p class="cn131" data-ditto-id="style-td">
+                  <img class="cn132" data-ditto-id="style-span-27" alt="AnswerThePublic" height="53" src="public/assets/cloned/svg/77eca8478201.svg" width="189" />
+                </p>
+                 
+                <p class="cn133" data-ditto-id="style-td-16">
+                  Find out what your audience is searching for online with our free search insights tool.
+                </p>
+                 
+              </a>
+               
+            </li>
+            <li class="cn134" data-ditto-id="style-div-41">
+              <p class="cn135" data-ditto-id="style-p-47">
+                <img class="cn136" data-ditto-id="style-p-7" alt="AdsGrader" height="51" src="public/assets/cloned/images/1c7968893a3c.png" width="212" />
+              </p>
+               
+              <p class="cn137" data-ditto-id="style-span-12">
+                Get in-depth campaign analysis now so you can optimize ad spend, increase ROI, and reach your target audience more effectively than ever before.
+              </p>
+               
+            </li>
+            <li class="cn138" data-ditto-id="style-strong-2">
+              <a class="cn139" data-ditto-id="style-span-72" href="https://neilpatel.com/ubersuggest/">
+                 
+                <p class="cn140" data-ditto-id="style-strong">
+                  <img class="cn141" data-ditto-id="style-p-14" alt="Ubersuggest" height="29" src="public/assets/cloned/svg/9d8607b6bc8b.svg" width="179" />
+                </p>
+                 
+                <p class="cn142" data-ditto-id="style-div-42">
+                  Our proprietary technology that helps drive innovation and efficiencies for our team.
+                </p>
+                 
+              </a>
+               
+            </li>
+          </ul>
+           
+        </div>
+         
+      </div>
+       
+      <div class="cn143" data-ditto-id="style-p-75">
+        <div class="cn144" data-ditto-id="style-p-8">
+          <div class="cn145" data-ditto-id="style-span-2">
+            <h2 class="cn146" data-ditto-id="style-footer">
+              Outstanding 
+              <span class="cn147" data-ditto-id="style-div-169">
+                results
+              </span>
+              <span class="cn148" data-ditto-id="style-div-76"></span>
+               require outstanding 
+              <span class="cn149" data-ditto-id="style-div-149">
+                people.
+              </span>
+            </h2>
+             
+            <div class="cn150" data-ditto-id="style-div-99">
+              <p class="cn151" data-ditto-id="style-neil-patel-2">
+                Are you down with data, crazy about conversion rates, and passionate about performance metrics?
+              </p>
+               
+              <p class="cn152" data-ditto-id="style-image-4">
+                Do you enjoy a good mix of nerdiness and creativity?
+              </p>
+               
+            </div>
+             
+            <p class="cn153" data-ditto-id="style-div-153">
+              <a class="cn154" data-ditto-id="style-link-58" href="https://npdigital.com/careers/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                <span class="cn155" data-ditto-id="style-label">
+                  Then you’ll 
+                  <span class="cn156" data-ditto-id="style-nav-2">
+                    fit right
+                  </span>
+                   in with us!
+                </span>
+              </a>
+            </p>
+             
+          </div>
+           
+          <div class="cn157" data-ditto-id="style-ul-19">
+            <p class="cn158" data-ditto-id="style-span-51">
+              <img class="cn159" data-ditto-id="style-p-23" alt="NP Digital" height="40" src="public/assets/cloned/svg/296c211e91b6.svg" width="100" />
+            </p>
+             
+            <p class="cn160" data-ditto-id="style-div-147">
+              NP Digital is a 100% remote workplace with industry-leading benefits. We put work-life balance first, so our team members are always on top of 
+              <span class="cn161" data-ditto-id="style-image-14"></span>
+               their game.
+            </p>
+             
+            <p class="cn162" data-ditto-id="style-div-199">
+              Are you ready for a game-changing career move?
+            </p>
+             
+            <p class="cn163" data-ditto-id="style-div-26">
+              <a class="cn164" data-ditto-id="style-span-38" href="https://npdigital.com/careers/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                Geek out with us!
+              </a>
+            </p>
+             
+          </div>
+           
+        </div>
+         
+      </div>
+       
+    </article>
+     
+    <footer class="cn165" data-ditto-id="style-p-41" id="footer" role="contentinfo">
+      <div class="cn166" data-ditto-id="style-heading-16">
+        <div class="cn167" data-ditto-id="style-span-7">
+          <div class="cn168" data-ditto-id="style-p-28">
+            <div class="cn169" data-ditto-id="style-div-104">
+              <a class="cn170" data-ditto-id="style-image-20" aria-label="Neil Patel" href="https://neilpatel.com/">
+                <svg class="cn171" data-ditto-id="style-div-27" alt="Neil Patel Logo" viewBox="0 0 364.6 40.4" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path class="svg-path" fill="#fff" d="M36.4 40.4h-1.8L6.7 13.3v27.1H0V0h1.8l27.9 26.7V0h6.7v40.4zm40.8-17.2H56.9v11.2h24v5.9H50.2V0h30.6v5.9h-24v11.6h20.3v5.7zM102 40.4h-6.7V0h6.7v40.4zm16 0V0h6.7v34.5h22.4v5.9H118zM159.9 0h17.6c10.1 0 16.3 4.9 16.3 13.7 0 9.3-6.7 14.3-16.7 14.3h-10.5v12.5h-6.7V0zm17.3 5.9h-10.6v16.2h10.6c6 0 9.8-2.4 9.8-8.1-.1-5.4-3.9-8.1-9.8-8.1zM218.8 0h1.3l20.5 40.4H233l-3-6.1h-21l-3 6.1h-7.5L218.8 0zm.9 12.3h-.4L212 28.1l-.4.7h15.7l-.4-.7-7.2-15.8zM243.6 0h33.9v5.9h-13.6v34.5h-6.7V5.9h-13.6V0zm73.8 23.2h-20.3v11.2h24v5.9h-30.6V0h30.6v5.9h-24v11.6h20.3v5.7zm18.1 17.2V0h6.7v34.5h22.4v5.9h-29.1z"></path></svg>
+              </a>
+            </div>
+            <div class="cn172" data-ditto-id="style-div-43">
+              <a class="cn173" data-ditto-id="style-div-150" href="#">
+                EN
+              </a>
+            </div>
+          </div>
+           
+          <label class="cn174" data-ditto-id="style-ul-18" for="nav-toggle-footer">
+            Open the menu
+          </label>
+          <nav class="cn175" data-ditto-id="style-heading-13" id="nav" role="navigation">
+            <ul class="cn176" data-ditto-id="style-span-28">
+              <li class="cn177" data-ditto-id="style-span-47">
+                <a class="cn178" data-ditto-id="interaction-p-3" href="https://neilpatel.com/blog/">
+                  Blog
+                </a>
+              </li>
+              <li class="cn179" data-ditto-id="style-div-28">
+                <a class="cn180" data-ditto-id="interaction-image-2" href="https://neilpatel.com/marketing-stats/">
+                  Marketing stats
+                </a>
+              </li>
+              <li class="cn181" data-ditto-id="style-li-17">
+                <a class="cn182" data-ditto-id="style-link-11" href="https://npdigital.com/work/?utm_medium=ref&amp;utm_source=blog&amp;utm_campaign=referral-blog-menu&amp;utm_content=menu-blog&amp;utm_term=neil-patel-blog-menu&amp;__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a#results" rel="noopener" target="_blank">
+                  Results
+                </a>
+              </li>
+              <li class="cn183" data-ditto-id="style-csconsentlink-3">
+                <a class="cn184" data-ditto-id="style-li-7" href="https://neilpatel.com/training/">
+                  Training
+                </a>
+              </li>
+              <li class="cn185" data-ditto-id="style-link-59">
+                <a class="cn186" data-ditto-id="style-high-contrast-2" href="https://neilpatel.com/consulting/?utm_button=neilpatel-header-footer">
+                  Consulting
+                </a>
+              </li>
+              <li class="cn187" data-ditto-id="style-span-21">
+                <a class="cn188" data-ditto-id="style-div-154" href="https://neilpatel.com/contact/">
+                  Contact
+                </a>
+              </li>
+              <li class="cn189" data-ditto-id="interaction-p-4">
+                <a class="cn190" data-ditto-id="style-link-14" href="https://app.neilpatel.com/en/login" rel="noopener" target="_blank">
+                  Sign In
+                </a>
+              </li>
+            </ul>
+          </nav>
+           
+        </div>
+         
+        <div class="cn191" data-ditto-id="style-div-91">
+          <div class="cn192" data-ditto-id="style-span-40">
+            <ul class="cn193" data-ditto-id="style-ul-14">
+              <li class="cn194" data-ditto-id="style-nav">
+                <a class="cn195" data-ditto-id="style-ul-11" href="https://neilpatel.com/privacy/" rel="privacy-policy">
+                  Privacy
+                </a>
+              </li>
+              <li class="cn196" data-ditto-id="style-div-12">
+                <a class="cn197" data-ditto-id="style-div-128" href="https://neilpatel.com/do-not-track/">
+                  Do Not Sell My Info
+                </a>
+              </li>
+              <li class="cn198" data-ditto-id="style-div-29">
+                <a class="cn199" data-ditto-id="style-neil-patel" href="https://neilpatel.com/terms/">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="cn200" data-ditto-id="style-image-21">
+                <a class="cn201" data-ditto-id="style-div-129" href="#">
+                  <span class="cn202" data-ditto-id="style-link-6" id="csconsentlink">
+                    Cookie Settings
+                  </span>
+                </a>
+              </li>
+              <li class="cn203" data-ditto-id="style-label-2">
+                <a class="cn204" data-ditto-id="style-nav-6" href="#a11y-hc">
+                  <input class="cn205" data-ditto-id="style-ul-2" aria-label="High Contrast" type="checkbox" />
+                  <span class="cn206" data-ditto-id="style-li-6">
+                    High Contrast
+                  </span>
+                </a>
+              </li>
+            </ul>
+             
+          </div>
+           
+          <div class="cn207" data-ditto-id="style-div-264">
+            <p class="cn208" data-ditto-id="style-div-13">
+              © 2026, by 
+              <a class="cn209" data-ditto-id="style-popup-cta-2" href="https://npdigital.com/?__hstc=240018588.a5347a8f049b4ccd16129904fef0d1d2.1767225604562.1767225604562.1767225604562.1&amp;__hssc=240018588.1.1767225604562&amp;__hsfp=94ef76e50aa552668c1276dec3915e7a" rel="noopener" target="_blank">
+                NP Digital
+              </a>
+              , LLC
+            </p>
+             
+            <div class="cn210" data-ditto-id="style-close">
+              <span class="cn211" data-ditto-id="style-div-77">
+                Follow me around the web
+              </span>
+               
+              <ul class="cn212" data-ditto-id="style-image-6">
+                <li class="cn213" data-ditto-id="style-div-148">
+                  <a class="cn214" data-ditto-id="style-div-11" href="https://twitter.com/neilpatel" rel="noopener" target="_blank">
+                    <img class="cn215" data-ditto-id="style-heading-5" alt="Twitter" height="19" src="public/assets/cloned/svg/105d2f21971b.svg" width="19" />
+                  </a>
+                </li>
+                <li class="cn216" data-ditto-id="style-p-64">
+                  <a class="cn217" data-ditto-id="style-div-30" href="https://www.facebook.com/neilkpatel" rel="noopener" target="_blank">
+                    <img class="cn218" data-ditto-id="style-wpcf7-f216540-o2" alt="Facebook" height="19" src="public/assets/cloned/svg/5a003ad7b0f8.svg" width="17" />
+                  </a>
+                </li>
+                <li class="cn219" data-ditto-id="style-contact-form-5">
+                  <a class="cn220" data-ditto-id="style-div-155" href="https://www.youtube.com/neilpatel" rel="noopener" target="_blank">
+                    <img class="cn221" data-ditto-id="style-div-24" alt="YouTube" height="20" src="public/assets/cloned/svg/db40db861ce5.svg" width="23" />
+                  </a>
+                </li>
+                <li class="cn222" data-ditto-id="style-p-29">
+                  <a class="cn223" data-ditto-id="style-text-13" href="https://www.linkedin.com/in/neilkpatel" rel="noopener" target="_blank">
+                    <img class="cn224" data-ditto-id="style-text" alt="LinkedIn" height="19" src="public/assets/cloned/svg/212b770b4f3d.svg" width="17" />
+                  </a>
+                </li>
+                <li class="cn225" data-ditto-id="style-p-9">
+                  <a class="cn226" data-ditto-id="style-button-2" href="https://www.instagram.com/neilpatel/" rel="noopener" target="_blank">
+                    <img class="cn227" data-ditto-id="style-span-35" alt="Instagram" height="19" src="public/assets/cloned/svg/4585ae4d9470.svg" width="17" />
+                  </a>
+                </li>
+              </ul>
+               
+            </div>
+             
+          </div>
+           
+        </div>
+         
+      </div>
+       
+    </footer>
+     
+</body>
+</html>

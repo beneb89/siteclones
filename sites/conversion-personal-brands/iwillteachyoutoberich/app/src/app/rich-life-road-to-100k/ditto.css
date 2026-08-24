@@ -1,0 +1,47 @@
+.cn0{height:7271.75px;display:block;overflow-x:hidden;overflow-y:auto;color:var(--foreground);font-family:"PP Mori", "PP Mori";font-size:18px;font-weight:400;font-style:normal;line-height:31.194px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--surface)}
+
+@media (max-width: 571px) {
+.cn0{height:9363.25px}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:7000.44px}
+}
+
+@media (min-width: 1601px) {
+.cn0{height:7136.19px}
+}
+[data-ditto-id="style-top"]::after{content:"";display:block;position:absolute;top:-161.094px;right:-153.594px;bottom:296.062px;left:673.594px;background-image:radial-gradient(circle, rgba(251, 77, 48, 0.16), rgba(0, 0, 0, 0) 62%)}
+@media (max-width: 571px) {
+[data-ditto-id="style-top"]::after{top:-164.984px;right:-45px;bottom:856.594px;left:195px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-top"]::after{top:-136.266px;right:-92.1562px;bottom:432.531px;left:399.359px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-top"]::after{right:-230.391px;left:1390.39px}
+}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-div-9"]{transition:color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-div-25"]{transition:color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-div-63"]{transition:0.3s}
+[data-ditto-id="style-span-59"]{transition:all, background-color 0.2s ease-out, border-color 0.2s ease-out}
+[data-ditto-id="style-heading-22"]{transition:0.3s}
+[data-ditto-id="style-div-20"]{transition:background 0.15s, border-color 0.15s, color 0.15s}
+[data-ditto-id="style-p-13"]{transition:background 0.15s, border-color 0.15s, color 0.15s}
+[data-ditto-id="style-ul-2"]{transition:transform 0.2s, box-shadow 0.2s}
+[data-ditto-id="style-div-41"]{transition:transform 0.2s, box-shadow 0.2s}
+[data-ditto-id="style-heading-22"]:hover{background-color:rgb(229, 64, 35);box-shadow:rgba(251, 77, 48, 0.224) 0px 8.02403px 24.0721px 0px;transform:matrix(1, 0, 0, 1, 0, -0.802403)}
+[data-ditto-id="style-div-20"]:hover{border-bottom-color:rgb(251, 77, 48);border-left-color:rgb(251, 77, 48);border-right-color:rgb(251, 77, 48);border-top-color:rgb(251, 77, 48)}
+[data-ditto-id="style-p-13"]:hover{border-bottom-color:rgb(251, 77, 48);border-left-color:rgb(251, 77, 48);border-right-color:rgb(251, 77, 48);border-top-color:rgb(251, 77, 48)}
+[data-ditto-id="style-ul-2"]:hover{box-shadow:rgba(0, 0, 0, 0.08) 0px 15.735px 37.3706px 0px;transform:matrix(1, 0, 0, 1, 0, -2.95031)}
+[data-ditto-id="style-div-41"]:hover{box-shadow:rgba(0, 0, 0, 0.075) 0px 15.3668px 36.4963px 0px;transform:matrix(1, 0, 0, 1, 0, -2.88128)}
+[data-ditto-id="style-div-63"]:hover{background-color:rgb(228, 63, 34);box-shadow:rgba(251, 77, 48, 0.24) 0px 8.52372px 25.5712px 0px;transform:matrix(1, 0, 0, 1, 0, -0.852372)}
+[data-ditto-id="style-span-59"]:hover{background-color:rgb(3, 1, 1)}
+[data-ditto-id="style-div-9"]:focus{border-bottom-color:rgba(251, 77, 48, 0.976)}
+[data-ditto-id="style-div-25"]:focus{border-bottom-color:rgba(251, 77, 48, 0.976)}
+[data-ditto-id="style-heading-22"]:focus{background-color:rgb(224, 61, 32);box-shadow:rgba(251, 77, 48, 0.28) 0px 10px 30px 0px;transform:matrix(1, 0, 0, 1, 0, -0.0893464)}
+[data-ditto-id="style-ul-2"]:focus{box-shadow:rgba(0, 0, 0, 0.004) 0px 0.629886px 1.49598px 0px;transform:matrix(1, 0, 0, 1, 0, -0.118104)}
+[data-ditto-id="style-div-41"]:focus{box-shadow:rgba(0, 0, 0, 0) 0px 0.215294px 0.511323px 0px;transform:matrix(1, 0, 0, 1, 0, -0.0403676)}
+[data-ditto-id="style-div-63"]:focus{background-color:rgb(224, 61, 32);box-shadow:rgba(251, 77, 48, 0.28) 0px 10px 30px 0px;transform:matrix(1, 0, 0, 1, 0, -0.0894332)}
+[data-ditto-id="style-span-59"]:focus{background-color:rgb(228, 70, 44)}

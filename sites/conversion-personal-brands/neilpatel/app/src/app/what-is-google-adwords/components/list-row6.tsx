@@ -1,0 +1,13 @@
+import type { ListRow6Styles } from "../_styles";
+import { cn } from "../../../lib/utils";
+export type ListRow6Data = {
+  text: string;
+};
+/** A list row. */
+export default function ListRow6({ d, styles }: { d: ListRow6Data; styles: ListRow6Styles }) {
+  return (
+    <li className={cn("list-item relative pl-[2.0625rem] before:content-[''] before:block before:absolute before:top-[16.7px] before:right-[39.3875rem] before:bottom-11.5 before:left-0 before:w-2 before:h-2 before:-mt-1 before:bg-primary max-md:before:top-[13.3px] max-md:before:right-[18.55rem] max-md:before:bottom-[66.7px] md:max-lg:before:right-[42.7625rem] 2xl:before:right-[39.7rem]", styles.className)}>
+      {d.text}
+    </li>
+  );
+}
