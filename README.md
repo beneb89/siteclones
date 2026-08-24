@@ -71,6 +71,7 @@ Each list has a folder under `sites/` that its output is grouped into:
 | `targets-competitors.txt` | `sites/decaid-competitors/` | decaid.academy and the personal-brand competitors, multi-page |
 | `targets-competitors-more.txt` | `sites/decaid-competitors/` | the two that hit that list's route cap, at a higher one |
 | `targets-competitors-portals.txt` | `sites/decaid-competitors/` | the corporate-portal competitors, captured shallower |
+| `targets-conversion.txt` | `sites/conversion-personal-brands/` | personal brands picked for their funnel craft, multi-page |
 | `targets-seo.txt` | `sites/seo-reference/` | 57 reference pages from the SEO/GEO/paid-media note |
 
 Everything in `sites/top20-personal-brands/` itself is captured in full

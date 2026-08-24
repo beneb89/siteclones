@@ -22,6 +22,7 @@ on:
           - targets-competitors.txt
           - targets-competitors-more.txt
           - targets-competitors-portals.txt
+          - targets-conversion.txt
           - targets-seo.txt
         default: all
       force:
@@ -59,6 +60,7 @@ jobs:
           full='{"list":"targets-full.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=60"}'
           deep='{"list":"targets-deep.txt","dest":"top20-personal-brands","flags":"--mode=multi --max-routes=200"}'
           competitors='{"list":"targets-competitors.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=60 --depth=2"}'
+          conversion='{"list":"targets-conversion.txt","dest":"conversion-personal-brands","flags":"--mode=multi --max-routes=60 --depth=2"}'
           seo='{"list":"targets-seo.txt","dest":"seo-reference","flags":""}'
           more='{"list":"targets-competitors-more.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=200 --depth=2"}'
           portals='{"list":"targets-competitors-portals.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=80 --depth=1"}'
@@ -70,8 +72,9 @@ jobs:
             targets-galleries.txt) lists="[$galleries]" ;;
             targets-full.txt)      lists="[$full]" ;;
             targets-deep.txt)      lists="[$deep]" ;;
+            targets-conversion.txt)  lists="[$conversion]" ;;
             targets-seo.txt)       lists="[$seo]" ;;
-            *) lists="[$brands,$galleries,$full,$deep,$competitors,$more,$portals,$seo]" ;;
+            *) lists="[$brands,$galleries,$full,$deep,$competitors,$more,$portals,$conversion,$seo]" ;;
           esac
           echo "lists=$lists" >>"$GITHUB_OUTPUT"
           echo "cloning: $lists"

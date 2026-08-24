@@ -1,0 +1,22 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# Personal brands picked for conversion craft rather than for a niche: each
+# one runs a legible funnel, and the capture is meant to show that machinery
+# — lead magnets, opt-in pages, sales pages, product ladders — not just a
+# home page. Hence multi-page.
+#
+# The note after each URL is the funnel pattern the source table recorded, so
+# the reason a site is here stays with the site.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-conversion.txt \
+#             --dest=conversion-personal-brands --mode=multi --max-routes=60 --depth=2
+
+https://neilpatel.com/                    # content -> free tools -> email -> SaaS
+https://www.amyporterfield.com/           # podcast -> lead magnets -> webinar -> courses
+https://www.iwillteachyoutoberich.com/    # content -> email courses -> high-ticket programs
+https://tim.blog/                         # content-first -> newsletter -> books/courses
+https://seths.blog/                       # daily posts -> permission-based list -> books
+https://www.garyvaynerchuk.com/           # content hub -> speaking, books, agency leads
+https://markmanson.net/                   # essays -> newsletter -> membership
+https://melrobbins.com/                   # video -> email -> events, courses, books
+https://sparktoro.com/                    # founder-led content -> freemium SaaS -> trial
