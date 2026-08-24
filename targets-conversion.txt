@@ -20,3 +20,15 @@ https://www.garyvaynerchuk.com/           # content hub -> speaking, books, agen
 https://markmanson.net/                   # essays -> newsletter -> membership
 https://melrobbins.com/                   # video -> email -> events, courses, books
 https://sparktoro.com/                    # founder-led content -> freemium SaaS -> trial
+
+# --- resolved by research, not given in the source table --------------------
+# The table's tenth row named only a "Dunn" site with no URL, described as an
+# email-course-driven expert whose homepage leads with a free email course
+# instead of a contact form. That is Brennan Dunn's Double Your Freelancing:
+# the email course is its documented primary lead magnet, feeding a segmented
+# evergreen funnel. Two other "Dunn" marketing outfits exist (Dunn Creative,
+# dunnmarketing.com) and neither matches the email-course description, but the
+# identification is inference from public write-ups — the egress proxy blocks
+# fetching any of these sites from here, so it could not be checked directly.
+# Treat this entry as unconfirmed until someone opens it.
+https://doubleyourfreelancing.com/        # homepage -> free email course -> product
