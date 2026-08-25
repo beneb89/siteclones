@@ -167,10 +167,17 @@ jobs:
           # Matrix jobs push to the same branch, so rebase onto whatever the
           # other job landed first instead of failing the run.
           for attempt in 1 2 3 4 5; do
-            git pull --rebase origin "$GITHUB_REF_NAME" && \
+            if git pull --rebase origin "$GITHUB_REF_NAME"; then
               git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
-            echo "push attempt $attempt failed, retrying in $((attempt * 5))s"
-            sleep $((attempt * 5))
+            else
+              # A conflicted rebase leaves the tree mid-rebase, and every later
+              # attempt then fails the same way. Put it back first. Our side is
+              # additive — whole new site folders — so replaying it on top of
+              # whatever landed meanwhile is what we want.
+              git rebase --abort || true
+            fi
+            echo "push attempt $attempt failed, retrying in $((attempt * 15))s"
+            sleep $((attempt * 15))
           done
           echo "could not push results after 5 attempts" >&2
           exit 1
