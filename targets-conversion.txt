@@ -1,15 +1,25 @@
 # Clone targets — one URL per line, "#" starts a comment.
 #
-# Personal brands picked for conversion craft rather than for a niche: each
-# one runs a legible funnel, and the capture is meant to show that machinery
-# — lead magnets, opt-in pages, sales pages, product ladders — not just a
-# home page. Hence multi-page.
+# Personal brands picked for conversion craft rather than for a niche. What
+# is wanted from these is the funnel: how a visitor is moved from free to
+# paid, and which offers sit where.
+#
+# That lives one click from the home page — nav targets, opt-in and lead
+# magnet landing pages, pricing, product and course pages. So the capture is
+# deliberately shallow: --depth=1 --max-routes=15. A depth-2 crawl spends its
+# budget on blog archives instead, which is the opposite of what is needed
+# here; neilpatel.com came back with 53 routes and 226 MB, mostly articles.
+#
+# --no-screenshots is safe: the compiler never reads pixels, only the
+# validator does. --no-motion skips animation evidence, which a funnel map
+# does not need.
 #
 # The note after each URL is the funnel pattern the source table recorded, so
 # the reason a site is here stays with the site.
 #
 # Run with: ./scripts/clone-batch.sh --file=targets-conversion.txt \
-#             --dest=conversion-personal-brands --mode=multi --max-routes=60 --depth=2
+#             --dest=conversion-personal-brands \
+#             --mode=multi --max-routes=15 --depth=1 --no-screenshots --no-motion
 
 https://neilpatel.com/                    # content -> free tools -> email -> SaaS
 https://www.amyporterfield.com/           # podcast -> lead magnets -> webinar -> courses
