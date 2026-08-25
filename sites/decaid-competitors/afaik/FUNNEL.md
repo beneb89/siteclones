@@ -106,3 +106,5 @@ Email is collected on: `/ (offer wording)`, `/agenten-sind-keine-kolleg-innen (e
 
 Prices visible on captured pages: 10.000 USD, $0,50, $2,00, $0,25, 15 EUR, $ 243,25, $ 150.00, $ 2.35, $ 3.57, $ 0,41, $ 0,23, 2.4 $, 249 USD, 89 USD, 80$, 224$, 69 USD, 169 USD, 299 USD, 899 USD, 59 USD, 149 USD, 259 USD, 119 USD, 30 EUR, 80 EUR, 400 EUR, 39 USD, 1 USD, 29 USD, 595 €, 1.295 €, 6.495 €, 24,90 €.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

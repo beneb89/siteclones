@@ -111,3 +111,5 @@ Email is collected on: `/ (email field)`, `/100-millionen-token-kontextfenster-r
 
 Prices visible on captured pages: $9, $20, $8, $30, $10, $95, $29, $5, $15, $9.99, $700.000, $0.00, 25 $, 30 $, 1.500 USD, 6,14 USD, 2,50 USD, 5 USD, 500 USD, 300 USD, 20 USD, 100 USD, 90 USD, $4, 10 $, 8 $, $0,014, 15 $, 4,99 €, 10,98 €, 7,99 $, 12 $, 42 €, 39 €, 5,99 $, 11,99 €, 17 $, 20 $, 3 $, 19 $, 40 $, 100 $, 39 $, 200 $, 1000 $, 26 $, 97 $, 197 $, 45 $, 35 $, 6 $, 50 $, 300 $, $3,50.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

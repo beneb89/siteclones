@@ -104,3 +104,5 @@ Email is collected on: `/blog (email field)`, `/datenschutz (offer wording)`, `/
 
 Prices visible on captured pages: 897 €, 497 €, 1.067,43 EUR, 897 EUR, 697 €.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

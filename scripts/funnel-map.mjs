@@ -183,7 +183,11 @@ for (const slug of sites) {
   lines.push("");
   lines.push(
     allPrices.size
-      ? `Prices visible on captured pages: ${[...allPrices].join(", ")}.`
+      ? `Prices visible on captured pages: ${[...allPrices].join(", ")}.\n\n` +
+        `Read literally: every currency amount printed on a captured page is ` +
+        `listed, whatever it refers to. A careers page contributes salaries, ` +
+        `a terms page the price of the product it governs. Check the route ` +
+        `column above before treating a number as an offer.`
       : "No price appears on any captured page. For this kind of site that is the norm rather than a gap: the number usually sits behind a webinar, an application or a checkout the crawler does not enter.",
   );
   lines.push("");

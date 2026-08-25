@@ -220,3 +220,5 @@ Email is collected on: `/ (email field)`, `/5-prompt-techniken-fuer-ki-chatbots 
 
 Prices visible on captured pages: 1.000.000$, 2000$.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

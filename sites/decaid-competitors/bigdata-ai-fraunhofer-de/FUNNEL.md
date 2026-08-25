@@ -45,3 +45,5 @@ No email capture on any captured route — the opt-in sits deeper than this craw
 
 Prices visible on captured pages: 5000€, 2500€.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

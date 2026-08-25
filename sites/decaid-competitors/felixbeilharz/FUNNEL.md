@@ -87,3 +87,5 @@ Email is collected on: `/ (email field)`, `/1-wege-um-die-konkurrenz-auszuspioni
 
 Prices visible on captured pages: € 999,00, 10.000€, € 294.9, 3.893 €, € 0.53, 7 €, € 17.82, 235 €, € 269.53, 3.558 €, € 227.99, 3.009 €, 24.486 €, € 2.26, 5€, 240€, 390.000€, €99, 667€, €299.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

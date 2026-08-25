@@ -38,3 +38,5 @@ Email is collected on: `/blog/berufe (offer wording)`, `/blog/berufe/verwaltungs
 
 Prices visible on captured pages: € 1.890, 234,56 EUR, € 3.670, € 2.990, € 440, € 1.540, € 840, € 890, € 390, € 740, € 290, € 39, € 1.590, € 1.240.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+

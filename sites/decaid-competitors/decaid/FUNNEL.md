@@ -38,3 +38,5 @@ Email is collected on: `/datenschutz (offer wording)`.
 
 Prices visible on captured pages: 0€.
 
+Read literally: every currency amount printed on a captured page is listed, whatever it refers to. A careers page contributes salaries, a terms page the price of the product it governs. Check the route column above before treating a number as an offer.
+
