@@ -12,6 +12,8 @@ This repo is a workspace for cloning websites into runnable apps with
 - `scripts/slugs.mjs <list>` — prints the `<slug>` folder each URL maps to
 - `scripts/qa-clones.mjs` — reports per target whether the capture is complete,
   capped, thin or missing; reads list/dest/flags out of the workflow
+- `scripts/funnel-map.mjs [dest]` — writes a `FUNNEL.md` per site from its
+  capture: routes, CTAs and their targets, email capture, visible prices
 - `targets.txt`, `targets-full.txt` and `targets-deep.txt`
   (→ `top20-personal-brands`, multi-page; `deep` carries a higher route cap),
   `targets-galleries.txt` (→ `top20-personal-brands/galleries`, single page),

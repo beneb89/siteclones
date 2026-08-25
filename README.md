@@ -124,6 +124,25 @@ cannot drop out of the audit unnoticed.
 The pairing of list, folder and flags is read out of the workflow, so the
 report cannot drift from what the runs actually do.
 
+## Reading the funnel out of a capture
+
+```bash
+node scripts/funnel-map.mjs                     # conversion-personal-brands
+node scripts/funnel-map.mjs decaid-competitors  # any other folder
+```
+
+A clone reproduces what the browser painted; it does not say where a visitor
+is moved from free to paid. This reads the captured pages back and writes a
+`FUNNEL.md` per site — routes, calls to action and where each points, where
+email is actually collected, and any price shown on a captured page — plus an
+index for the folder.
+
+Two things it deliberately does not do. It does not call a page "the tripwire"
+or "the upsell": it reports the link, the label and the target, and the naming
+is yours. And it never fills in a price it did not see — for brands like these
+the number usually sits behind a webinar, an application or a checkout, and
+the crawl stops at the door, which the report states outright.
+
 ## Network access
 
 Capture needs outbound HTTPS to the target host. In a locked-down environment
