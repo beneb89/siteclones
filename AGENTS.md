@@ -47,6 +47,10 @@ This repo is a workspace for cloning websites into runnable apps with
 - A route count that lands exactly on `--max-routes` means the crawl was cut
   short, not that the site ended there. Move such a site to a list with a
   higher cap rather than raising the cap for everything.
+- One run per list at a time (the workflow sets `concurrency` per list). Two
+  runs cloning the same list into the same folder raced: the second finished
+  minutes after the first, could not rebase onto it, and lost four hours of
+  capture. Pushing a list twice in quick succession is what started it.
 - The workflow stops the batch at 240 minutes on purpose. A job GitHub cancels
   at its own timeout skips every remaining step, so the commit never runs and
   finished captures are lost — a run over sixteen sites was cancelled that way

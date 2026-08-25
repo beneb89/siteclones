@@ -88,6 +88,14 @@ jobs:
       matrix:
         target: ${{ fromJSON(needs.plan.outputs.lists) }}
     name: clone (${{ matrix.target.list }})
+    # One capture per list at a time. Two runs cloning the same list into the
+    # same folder raced here: both finished near each other and the second
+    # could not rebase onto what the first had just committed, so four hours
+    # of capture were thrown away. Queue instead of cancel — a run that is
+    # already hours in should be allowed to finish and commit.
+    concurrency:
+      group: clone-${{ matrix.target.list }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
@@ -167,10 +175,17 @@ jobs:
           # Matrix jobs push to the same branch, so rebase onto whatever the
           # other job landed first instead of failing the run.
           for attempt in 1 2 3 4 5; do
-            git pull --rebase origin "$GITHUB_REF_NAME" && \
+            if git pull --rebase origin "$GITHUB_REF_NAME"; then
               git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
-            echo "push attempt $attempt failed, retrying in $((attempt * 5))s"
-            sleep $((attempt * 5))
+            else
+              # A conflicted rebase leaves the tree mid-rebase, and every later
+              # attempt then fails the same way. Put it back first. Our side is
+              # additive — whole new site folders — so replaying it on top of
+              # whatever landed meanwhile is what we want.
+              git rebase --abort || true
+            fi
+            echo "push attempt $attempt failed, retrying in $((attempt * 15))s"
+            sleep $((attempt * 15))
           done
           echo "could not push results after 5 attempts" >&2
           exit 1
