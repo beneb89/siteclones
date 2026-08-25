@@ -93,7 +93,6 @@ const Tile_data = [
     {  },
     {  },
     {  },
-    {  },
     {  }
 ];
 const Tile2_data = [
@@ -142,7 +141,7 @@ const TextLink_meta: string[][] = [
     ["style-7"],
     ["style-8"],
     ["style-9"],
-    ["style-10"],
+    ["style-11"],
     ["style-12"]
 ];
 const TextLink2_meta: string[][] = [
@@ -161,64 +160,63 @@ const TextLink2_meta2: string[][] = [
     ["style-25"]
 ];
 const Logo_meta: string[][] = [
-    ["style-28", "style-39", "n52", "style-52", "style-53"],
-    ["style-29", "style-78", "n57", "style-54", "style-55"],
-    ["style-30", "style-40", "n62", "style-56", "style-57"],
-    ["style-31", "style-41", "n67", "style-58", "style-59"],
-    ["style-32", "style-42", "n72", "style-60", "style-61"],
-    ["style-33", "style-43", "n77", "style-62", "style-63"],
-    ["style-34", "style-44", "n82", "style-64", "style-65"],
-    ["style-35", "style-45", "n87", "style-66", "style-67"],
-    ["style-36", "style-46", "n92", "style-68", "style-69"],
-    ["style-37", "style-47", "n97", "style-70", "style-71"],
-    ["style-2", "style-79", "n102", "style-72", "style-73"]
+    ["style-28", "style-39", "n52", "style-54", "style-55"],
+    ["style-29", "style-40", "n57", "style-56", "style-57"],
+    ["style-30", "style-41", "n62", "style-58", "style-59"],
+    ["style-31", "style-42", "n67", "style-60", "style-61"],
+    ["style-32", "style-43", "n72", "style-62", "style-63"],
+    ["style-33", "style-44", "n77", "style-64", "style-65"],
+    ["style-34", "style-45", "n82", "style-66", "style-67"],
+    ["style-35", "style-46", "n87", "style-68", "style-69"],
+    ["style-36", "style-47", "n92", "style-70", "style-71"],
+    ["style-37", "style-48", "n97", "style-72", "style-73"],
+    ["style-2", "style-49", "n102", "style-74", "style-75"]
 ];
 const Tile_meta: string[][] = [
     ["n109", "n110", "n111"],
     ["n112", "n113", "n114"],
     ["n115", "n116", "n117"],
-    ["n118", "n119", "n120"],
-    ["n121", "n122", "n123"]
+    ["n118", "n119", "n120"]
 ];
 const Tile2_meta: string[][] = [
+    ["n122", "n123", "n124"],
     ["n125", "n126", "n127"],
     ["n128", "n129", "n130"],
-    ["n131", "n132", "n133"],
-    ["style-span-3", "n135", "style-main-content"]
+    ["n131", "n132", "n133"]
 ];
 const Tile3_meta: string[][] = [
-    ["style-heading-3", "style-span-21"],
-    ["style-p-7", "style-span-11"],
-    ["style-p", "n164"],
-    ["style-p-21", "n166"]
+    ["n156", "n157"],
+    ["n158", "n159"],
+    ["n160", "n161"],
+    ["n162", "n163"]
 ];
 const Tile3_meta2: string[][] = [
-    ["style-p-16", "style-p-22"],
-    ["style-heading-5", "style-p-3"],
-    ["style-link-9", "style-p-28"],
-    ["style-heading-9", "style-p-24"]
+    ["style-p-5", "n172"],
+    ["style-span-13", "style-p-6"],
+    ["style-p-3", "n176"],
+    ["style-p-7", "n178"]
 ];
 const Tile3_meta3: string[][] = [
-    ["style-image-3", "style-p-2"],
-    ["style-link-15", "style-br-2"],
-    ["style-br", "style-p-25"],
-    ["style-span-16", "style-i-2"]
+    ["n184", "n185"],
+    ["style-figure", "style-image-2"],
+    ["style-p-9", "n189"],
+    ["n190", "n191"]
 ];
 const Tile3_meta4: string[][] = [
-    ["style-p-13", "style-span-5"],
-    ["style-p-5", "style-image-4"],
-    ["style-heading", "style-span-20"]
+    ["n194", "style-span-9"],
+    ["style-span-14", "n197"],
+    ["n198", "n199"]
 ];
 const Logo2_meta: string[][] = [
-    ["style-div-6", "style-div-9"],
-    ["style-article", "style-visit-this-post-on-x"],
-    ["style-div-10", "style-div-16"],
-    ["style-div-8", "style-div-31"],
-    ["style-div-20", "style-div-7"],
-    ["n243", "style-heading-7"],
-    ["style-iframe", "style-heading-4"],
-    ["style-span-19", "style-button-9"],
-    ["style-div-17", "n250"]
+    ["style-span-11", "n231"],
+    ["style-div-12", "style-div-10"],
+    ["n234", "style-div-11"],
+    ["style-div-4", "style-div-8"],
+    ["n238", "style-div-6"],
+    ["n240", "style-div-13"],
+    ["style-div-5", "style-footer-2"],
+    ["style-heading", "style-iframe"],
+    ["n246", "n247"]
 ];
 const TextLink_styles = [
     { className: "w-38 max-lg:w-40" },
@@ -259,7 +257,6 @@ const Logo_styles = [
 ];
 const Tile_styles = [
     {  },
-    {  },
     { className: "h-full" },
     { className: "h-full" },
     { className: "h-full" }
@@ -269,10 +266,10 @@ export default function Page() {
   return (
     <>
       <div className="min-h-screen block">
-        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-007 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
+        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-008 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
           Skip to main content
         </a>
-        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-002 max-lg:flex max-lg:z-1000 max-lg:isolate">
+        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-001 max-lg:flex max-lg:z-1000 max-lg:isolate">
           <button className="w-6 h-[2.1875rem] flex items-center gap-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_sans-serif] text-lg font-bold leading-[1.6875rem] text-center uppercase cursor-pointer max-lg:z-1" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" type="button">
             <span className="w-6 h-0.5 block relative min-w-0 bg-foreground before:content-[''] before:block before:absolute before:-top-[0.4375rem] before:w-6 before:h-0.5 before:bg-foreground max-lg:before:bottom-[0.4375rem] max-lg:before:inset-x-0 after:content-[''] after:block after:absolute after:top-[0.4375rem] after:w-6 after:h-0.5 after:bg-foreground max-lg:after:-bottom-[0.4375rem] max-lg:after:inset-x-0" aria-hidden="true" />
           </button>
@@ -283,13 +280,13 @@ export default function Page() {
             <span className="w-4 h-4 border-[3px] border-solid border-foreground block relative min-w-0 rounded-[50%] max-lg:border-muted-foreground after:content-[''] after:block after:absolute after:top-[0.6875rem] after:-right-[0.4375rem] after:w-2 after:h-[0.1875rem] after:bg-foreground max-lg:after:-bottom-1 max-lg:after:left-[0.5625rem] max-lg:after:bg-muted-foreground max-lg:after:transform-[matrix(0.707107,0.707107,-0.707107,0.707107,0,0)] max-lg:after:origin-[4px_1.5px]" aria-hidden="true" />
           </button>
         </header>
-        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-002 max-lg:opacity-0">
+        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-001 max-lg:opacity-0">
           <a className="w-[9.0625rem] block cursor-pointer max-lg:hidden" data-component="link" aria-label="Gary Vaynerchuk home" href="/">
             <img className="w-full h-[4.6875rem] block max-w-full overflow-clip object-contain object-[0%_50%] aspect-[auto_526/272] align-middle text-clr-1" data-component="image" alt="Gary Vaynerchuk" height="272" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="526" />
           </a>
           <nav className="w-[14.0625rem] h-60.5 block absolute top-[9.0625rem] left-7.5 gap-2 max-md:w-[20.4375rem] max-lg:pointer-events-none max-lg:h-auto max-lg:static max-lg:top-auto max-lg:left-auto md:max-lg:w-180" data-component="nav" aria-label="Main navigation" id="site-navigation">
             <div className="block relative max-lg:pointer-events-none">
-              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
+              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button-2" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
                 <span className="h-full block relative whitespace-nowrap max-lg:pointer-events-none after:content-[''] after:hidden after:absolute after:-bottom-[0.1875rem] after:left-0 after:w-full after:h-0.5 after:bg-clr-2">
                   Gary Vaynerchuk
                 </span>
@@ -334,14 +331,14 @@ export default function Page() {
           </div>
         </aside>
         <div className="h-full min-h-screen block ml-[17.1875rem] overflow-hidden max-lg:pt-18.5 max-lg:ml-0">
-          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-001 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
+          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-002 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
             <span className="h-6.5 flex shrink-0 [animation-name:announcement-scroll-right] [animation-duration:24s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-md:h-[2.0625rem] max-md:[animation-duration:18s]" data-ditto-id="style-span-2" aria-hidden="true">
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
               </span>
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile2_data.map((d, i) => <Tile2 key={i} d={d} />)}
-                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-10">
+                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-4">
                   <span className="block">
                     Check out VeeFriends Cartoons!
                   </span>
@@ -349,42 +346,42 @@ export default function Page() {
               </span>
             </span>
           </a>
-          <main className="block" data-ditto-id="style-main-content-2" id="main-content">
+          <main className="block" data-ditto-id="style-main-content" id="main-content">
             <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-breadcrumb" data-component="nav" aria-label="Breadcrumb">
               <ol className="flex flex-wrap gap-[0.4375rem] [list-style-type:none] list-outside">
-                <li className="flex min-w-0 items-center" data-ditto-id="style-li">
+                <li className="flex min-w-0 items-center" data-ditto-id="style-li-2">
                   <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-2" data-component="link" href="/">
                     Home
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-li-2">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5">
                   <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-3" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
                     Blog
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-li-3">
-                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-span-18" aria-current="page">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-li">
+                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" aria-current="page">
                     Why 1 View Can Change Everything
                   </span>
                 </li>
               </ol>
             </nav>
-            <div className="h-787.5 min-h-screen block overflow-hidden bg-background max-md:h-[4759.5px]" data-ditto-id="style-div-24">
-              <header className="h-137.5 block relative overflow-hidden bg-color-007 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-color-023 after:opacity-40" data-ditto-id="style-header">
-                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-ditto-id="style-image-6" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-2">
-                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-5 max-md:bg-clr-6" data-ditto-id="style-button-2" data-component="button" href="https://www.garyvaynerchuk.com/topics/life-lessons/">
+            <div className="h-787.5 min-h-screen block overflow-hidden bg-background max-md:h-[4759.5px]" data-ditto-id="style-div">
+              <header className="h-137.5 block relative overflow-hidden bg-color-008 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-clr-4 after:opacity-40" data-ditto-id="style-header">
+                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-7">
+                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-6 max-md:bg-clr-7" data-ditto-id="style-button" data-component="button" href="https://www.garyvaynerchuk.com/topics/life-lessons/">
                     Life Lessons
                   </a>
                 </div>
-                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-ditto-id="style-heading-2" data-component="heading">
+                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-component="heading">
                   Why 1 View Can Change Everything
                 </h1>
                 <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]">
-                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]">
+                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-span-3">
                     By Gary Vaynerchuk
                   </span>
-                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[9.0625rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-32.5" data-ditto-id="style-span-22">
+                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[9.0625rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-32.5">
                     June 9, 2017
                   </span>
                   <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] max-md:text-center before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[7.9375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-[7.0625rem]">
@@ -392,118 +389,118 @@ export default function Page() {
                   </span>
                 </div>
               </header>
-              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0">
+              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0" data-ditto-id="style-article">
                 {Tile3_data.map((d, i) => <Tile3 key={i} d={d} />)}
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-9" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-14">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-2">
                   <span className="inline font-normal">
                     The time it takes to get your foot in the door at the biggest companies in the world is often years and years of hard work. It’s all the little things that you do along the way that add up to something more. So before you get a meeting with Mark Zuckerberg or Mark Cuban or me, you’re going to have to take 100 meetings with your friend, and your uncle and your neighbor. You need to put in the work.
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-10">
-                  <span className="inline font-normal" data-ditto-id="style-span-14">
+                <p className="block pb-[25.5px]">
+                  <span className="inline font-normal">
                     {" People are always messaging me like “Man, you’ve been on Conan, and Ellen, and the Today Show, and CNN, and FOX. How do I do that?” and I’m like, “Well, I also did 2 thousand interviews on videos, and blogs and podcasts that got one or 19 or 137 views.” "}
                   </span>
                 </p>
                 {" "}
-                <blockquote className="border-l-[5px] border-solid border-l-accent block my-9 py-2.5 pl-[1.5625rem]" data-ditto-id="style-blockquote-2">
-                  <p className="block pb-[25.5px]" data-ditto-id="style-p-27">
+                <blockquote className="border-l-[5px] border-solid border-l-accent block my-9 py-2.5 pl-[1.5625rem]">
+                  <p className="block pb-[25.5px]">
                     Remember, I started with zero followers too!
                   </p>
                 </blockquote>
                 {Tile3_data2.map((d, i) => <Tile3 key={i} d={d} />)}
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-23">
-                  <span className="inline font-normal" data-ditto-id="style-span-12">
+                <p className="block pb-[25.5px]">
+                  <span className="inline font-normal">
                     {"Honestly, I am often "}
                   </span>
-                  <i className="inline italic" data-ditto-id="style-i-3">
-                    <span className="inline font-normal" data-ditto-id="style-span-17">
+                  <i className="inline italic">
+                    <span className="inline font-normal">
                       even more excited
                     </span>
                   </i>
-                  <span className="inline font-normal" data-ditto-id="style-span-13">
+                  <span className="inline font-normal" data-ditto-id="style-span-12">
                     {" about being on a podcast or a video blog that’s only going to reach 100 people because I’m in love with being different. I love to give back to people starting with 100 views and understand the struggle and the hustle of people just trying to make their dream real. I’ve been there. I know what it’s like. "}
                   </span>
                 </p>
                 {Tile3_data3.map((d, i) => <Tile3 key={i} d={d} />)}
                 {" "}
-                <blockquote className="border-l-[5px] border-solid border-l-accent block my-9 py-2.5 pl-[1.5625rem]" data-ditto-id="style-blockquote">
-                  <p className="block pb-[25.5px]" data-ditto-id="style-p-8">
+                <blockquote className="border-l-[5px] border-solid border-l-accent block my-9 py-2.5 pl-[1.5625rem]">
+                  <p className="block pb-[25.5px]">
                     Are you willing to take 10 minutes to get 195 views? I am.
                   </p>
                 </blockquote>
                 {Tile3_data4.map((d, i) => <Tile3 key={i} d={d} />)}
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-15">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-4">
                   <em className="inline italic" data-ditto-id="style-em">
-                    <span className="inline font-normal" data-ditto-id="style-span-9">
+                    <span className="inline font-normal">
                       {"So undervaluing just that one view is an enormous mistake. "}
                     </span>
                   </em>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-26">
-                  <span className="inline font-normal" data-ditto-id="style-span-7">
+                <p className="block pb-[25.5px]">
+                  <span className="inline font-normal" data-ditto-id="style-span-8">
                     {"It’s about having the humility, it’s about not saying no, even when you’ve made it. "}
                   </span>
-                  <span className="inline font-normal" data-ditto-id="style-span-6">
+                  <span className="inline font-normal" data-ditto-id="style-span-10">
                     {"The “one is better than zero” concept is something I’m really proud that I continue to execute on. "}
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-6">
-                  <span className="inline font-normal" data-ditto-id="style-span-8">
+                <p className="block pb-[25.5px]">
+                  <span className="inline font-normal" data-ditto-id="style-span-7">
                     Do you have the humility and patience in you?
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-11">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-8">
                   THANKS FOR READING! IF YOU ENJOYED THIS ARTICLE–SAY HELLO ON:
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-4">
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-4" data-component="link" href="https://www.instagram.com/garyvee" rel="noopener noreferrer" target="_blank">
+                <p className="block pb-[25.5px]">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-7" data-component="link" href="https://www.instagram.com/garyvee" rel="noopener noreferrer" target="_blank">
                     INSTAGRAM
                   </a>
                   {" | "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-8" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-6" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer" target="_blank">
                     TWITTER
                   </a>
                   {" | "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-14" data-component="link" href="https://www.facebook.com/gary" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-10" data-component="link" href="https://www.facebook.com/gary" rel="noopener noreferrer" target="_blank">
                     FACEBOOK
                   </a>
                   {" | "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-7" data-component="link" href="https://www.snapchat.com/add/garyvee" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-4" data-component="link" href="https://www.snapchat.com/add/garyvee" rel="noopener noreferrer" target="_blank">
                     SNAPCHAT
                   </a>
                   {" | "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-6" data-component="link" href="https://itunes.apple.com/us/podcast/the-garyvee-audio-experience/id928159684?mt=2" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-9" data-component="link" href="https://itunes.apple.com/us/podcast/the-garyvee-audio-experience/id928159684?mt=2" rel="noopener noreferrer" target="_blank">
                     ITUNES
                   </a>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-29">
+                <p className="block pb-[25.5px]">
                   {"SUBSCRIBE TO MY NEWSLETTER "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-5" data-component="link" href="/" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-8" data-component="link" href="/" rel="noopener noreferrer" target="_blank">
                     HERE
                   </a>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-12">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p">
                   I would love to hear from you 😉
                 </p>
                 {" "}
               </article>
             </div>
           </main>
-          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-007 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter" aria-labelledby="newsletter-title" id="newsletter">
-            <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto" data-ditto-id="style-div">
-              <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-ditto-id="style-image" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
+          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-008 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter" aria-labelledby="newsletter-title" id="newsletter">
+            <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto" data-ditto-id="style-div-2">
+              <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
               <h2 className="block mb-[2.1875rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.375rem] leading-[2.6875rem] uppercase max-md:mb-[35.5px] max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-ditto-id="style-newsletter-title" data-component="heading" id="newsletter-title">
                 Sign up for my weekly newsletter
               </h2>
@@ -515,22 +512,22 @@ export default function Page() {
                 <label className="block [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase cursor-default max-md:mb-1.5 max-md:text-[1.1875rem]" data-ditto-id="style-label-2" htmlFor="newsletter-email">
                   Email
                 </label>
-                <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]" data-ditto-id="style-div-15">
+                <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]">
                   <input className="w-[19.8125rem] h-11 min-h-11 border border-solid border-border block p-2 overflow-clip text-[0.9375rem] leading-[1.4375rem] text-start bg-border cursor-text max-md:w-82.5 max-md:h-12.5 max-md:min-h-12.5" data-ditto-id="style-newsletter-email" data-component="input" id="newsletter-email" name="email" type="email" />
                   <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-button-3" data-component="button" type="submit">
                     Subscribe
                   </button>
                 </div>
               </form>
-              <div className="w-[51%] grid mt-[108.5px] gap-2.5 transform-[matrix(1,0,0,1,23.6094,0)] grid-cols-[repeat(auto-fit,_minmax(41px,_1fr))] max-md:w-full max-md:mt-22 max-md:pl-[0.6875rem] max-md:justify-start max-md:gap-[8.3px] max-lg:transform-[none] md:max-lg:w-[69.5%] md:max-lg:mt-[7.1875rem] 2xl:w-[45.5%]" data-ditto-id="style-social-media" aria-label="Social media">
+              <div className="w-[51%] grid mt-[108.5px] gap-2.5 transform-[matrix(1,0,0,1,23.6094,0)] grid-cols-[repeat(auto-fit,_minmax(41px,_1fr))] max-md:w-full max-md:mt-22 max-md:pl-[0.6875rem] max-md:justify-start max-md:gap-[8.3px] max-lg:transform-[none] md:max-lg:w-[69.5%] md:max-lg:mt-[7.1875rem] 2xl:w-[45.5%]" aria-label="Social media">
                 {Logo2_data.map((d, i) => <Logo2 key={i} d={d} />)}
               </div>
-              <footer className="flex mt-[1.775rem] flex-col justify-center items-center text-[0.875rem] max-md:mt-[0.925rem]">
-                <span className="block" data-ditto-id="style-span-23">
+              <footer className="flex mt-[1.775rem] flex-col justify-center items-center text-[0.875rem] max-md:mt-[0.925rem]" data-ditto-id="style-footer">
+                <span className="block">
                   ©Gary Vee IP, LLC 2024
                 </span>
-                <span className="block text-color-006" data-ditto-id="style-span-24">
-                  <a className="inline cursor-pointer" data-ditto-id="style-link-13" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
+                <span className="block text-color-005">
+                  <a className="inline cursor-pointer" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
                     Privacy Policy
                   </a>
                   {" | "}
@@ -547,7 +544,7 @@ export default function Page() {
           </section>
         </div>
       </div>
-      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.99418px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996093","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88915px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996125","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88941px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
+      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button-2","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.99418px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996097","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88918px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996093","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88915px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
     </>
   );
 }

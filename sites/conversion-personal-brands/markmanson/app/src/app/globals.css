@@ -1,0 +1,218 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-color-001: var(--color-001);
+  --color-color-002: var(--color-002);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-clr-0: var(--clr-0);
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
+  --color-color-003: var(--color-003);
+  --color-background: var(--background);
+  --color-muted: var(--muted);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-clr-3: var(--clr-3);
+  --color-clr-4: var(--clr-4);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(245, 245, 245);
+  --foreground: rgb(37, 33, 33);
+  --primary: rgb(242, 104, 34);
+  --accent: rgb(234, 20, 20);
+  --border: rgb(218, 229, 230);
+  --surface: rgba(255, 255, 255, 0.2);
+  --muted-foreground: rgb(73, 90, 95);
+  --muted: rgb(116, 127, 128);
+  --color-001: rgb(255, 255, 255);
+  --color-002: rgb(33, 34, 35);
+  --color-003: rgba(255, 255, 255, 0.5);
+}
+
+:root {
+  /* fonts */
+  --font-body: Montserrat, sans-serif;
+  --font-001: "Source Serif Pro", serif;
+  /* fontSizes */
+  --font-size-001: 10.4px;
+  --font-size-002: 12px;
+  --font-size-003: 13px;
+  --font-size-004: 14px;
+  --font-size-005: 16px;
+  --font-size-006: 18px;
+  --font-size-007: 20px;
+  --font-size-008: 24px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 600;
+  --font-weight-003: 700;
+  --font-weight-004: 800;
+  /* lineHeights */
+  --line-height-001: 26.4px;
+  --line-height-002: 16px;
+  --line-height-003: 14px;
+  --line-height-004: 15px;
+  --line-height-005: 27px;
+  --line-height-006: 23.1px;
+  --line-height-007: 28px;
+  --line-height-008: 0px;
+  --line-height-009: 29.7px;
+  --line-height-010: 36px;
+  --line-height-011: 43.2px;
+  /* spacing */
+  --space-001: 1px;
+  --space-002: 6px;
+  --space-003: 10px;
+  --space-004: 11px;
+  --space-005: 12px;
+  --space-006: 15px;
+  --space-007: 17px;
+  --space-008: 18px;
+  --space-009: 20px;
+  --space-010: 24px;
+  --space-011: 26.6px;
+  --space-012: 30px;
+  --space-013: 35px;
+  --space-014: 40px;
+  --space-015: 50px;
+  --space-016: 70px;
+  --space-017: 100px;
+  /* radii */
+  --radius-001: 25px;
+  /* zIndices */
+  --z-001: -1;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgb(48, 44, 44);
+  --clr-2: rgb(249, 249, 249);
+  --clr-3: rgb(51, 51, 51);
+  --clr-4: rgb(128, 128, 128);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/6a2076951e68.woff2") format("woff2"), url("/assets/cloned/fonts/c9531a20a6a5.woff") format("woff"), url("/assets/cloned/fonts/4363ac76d804.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/f27b9c9fd7ea.woff2") format("woff2"), url("/assets/cloned/fonts/2748405d354d.woff") format("woff"), url("/assets/cloned/fonts/51f9256c7544.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/94896cce905d.woff2") format("woff2"), url("/assets/cloned/fonts/91ff21f97b3b.woff") format("woff"), url("/assets/cloned/fonts/4e20bdebe071.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/83dd31c89c57.woff2") format("woff2"), url("/assets/cloned/fonts/05ccbb68bc2d.woff") format("woff"), url("/assets/cloned/fonts/0d6c2a257092.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/11efb79b582b.woff2") format("woff2"), url("/assets/cloned/fonts/ca8d9e0e1fed.woff") format("woff"), url("/assets/cloned/fonts/67f27bf12f20.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/62367ff183f3.woff2") format("woff2"), url("/assets/cloned/fonts/044c3cff9039.woff") format("woff"), url("/assets/cloned/fonts/383b40b1f88a.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/fbc702b6bbbf.woff2") format("woff2"), url("/assets/cloned/fonts/662238b2401d.woff") format("woff"), url("/assets/cloned/fonts/62f941d6bce7.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/2cc83e4bbd15.woff2") format("woff2"), url("/assets/cloned/fonts/7164809fde09.woff") format("woff"), url("/assets/cloned/fonts/e573c9f88d0f.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/418ec56a1301.woff2") format("woff2"), url("/assets/cloned/fonts/9b818560303c.woff") format("woff"), url("/assets/cloned/fonts/912d62e59768.ttf") format("truetype");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}

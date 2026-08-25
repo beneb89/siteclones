@@ -93,6 +93,8 @@ const Tile_data = [
     {  },
     {  },
     {  },
+    {  },
+    {  },
     {  }
 ];
 const Logo2_data = [
@@ -123,7 +125,7 @@ const TextLink_meta: string[][] = [
     ["style-7"],
     ["style-8"],
     ["style-9"],
-    ["style-10"],
+    ["style-11"],
     ["style-12"]
 ];
 const TextLink2_meta: string[][] = [
@@ -142,45 +144,47 @@ const TextLink2_meta2: string[][] = [
     ["style-25"]
 ];
 const Logo_meta: string[][] = [
-    ["style-28", "style-39", "n52", "style-52", "style-53"],
-    ["style-29", "style-78", "n57", "style-54", "style-55"],
-    ["style-30", "style-40", "n62", "style-56", "style-57"],
-    ["style-31", "style-41", "n67", "style-58", "style-59"],
-    ["style-32", "style-42", "n72", "style-60", "style-61"],
-    ["style-33", "style-43", "n77", "style-62", "style-63"],
-    ["style-34", "style-44", "n82", "style-64", "style-65"],
-    ["style-35", "style-45", "n87", "style-66", "style-67"],
-    ["style-36", "style-46", "n92", "style-68", "style-69"],
-    ["style-37", "style-47", "n97", "style-70", "style-71"],
-    ["style-2", "style-79", "n102", "style-72", "style-73"]
+    ["style-28", "style-39", "n52", "style-54", "style-55"],
+    ["style-29", "style-40", "n57", "style-56", "style-57"],
+    ["style-30", "style-41", "n62", "style-58", "style-59"],
+    ["style-31", "style-42", "n67", "style-60", "style-61"],
+    ["style-32", "style-43", "n72", "style-62", "style-63"],
+    ["style-33", "style-44", "n77", "style-64", "style-65"],
+    ["style-34", "style-45", "n82", "style-66", "style-67"],
+    ["style-35", "style-46", "n87", "style-68", "style-69"],
+    ["style-36", "style-47", "n92", "style-70", "style-71"],
+    ["style-37", "style-48", "n97", "style-72", "style-73"],
+    ["style-2", "style-49", "n102", "style-74", "style-75"]
 ];
 const Tile_meta: string[][] = [
-    ["n124", "n125", "n126"],
-    ["n127", "n128", "n129"],
-    ["n130", "n131", "n132"],
-    ["n133", "style-span-3", "n135"]
+    ["n109", "n110", "n111"],
+    ["n112", "n113", "n114"],
+    ["n115", "n116", "n117"],
+    ["n118", "n119", "n120"],
+    ["n121", "n122", "n123"],
+    ["n124", "n125", "n126"]
 ];
 const Logo2_meta: string[][] = [
-    ["n332", "n333"],
-    ["n334", "n335"],
-    ["n336", "n337"]
+    ["n324", "n325"],
+    ["n326", "n327"],
+    ["n328", "n329"]
 ];
 const ListRow_meta: string[][] = [
-    ["n470"],
-    ["n471"],
-    ["n472"],
-    ["n473"]
+    ["n462"],
+    ["n463"],
+    ["n464"],
+    ["n465"]
 ];
 const Logo3_meta: string[][] = [
+    ["n480", "n481"],
+    ["n482", "n483"],
+    ["n484", "n485"],
+    ["n486", "n487"],
     ["n488", "n489"],
-    ["n490", "style-div-12"],
+    ["n490", "n491"],
     ["n492", "n493"],
     ["n494", "n495"],
-    ["n496", "n497"],
-    ["n498", "n499"],
-    ["n500", "n501"],
-    ["n502", "n503"],
-    ["n504", "n505"]
+    ["n496", "n497"]
 ];
 const TextLink_styles = [
     { className: "w-38 max-lg:w-40" },
@@ -219,6 +223,14 @@ const Logo_styles = [
     { className: "w-4.5", className2: "w-4.5" },
     { className: "w-4.5", className2: "w-4.5" }
 ];
+const Tile_styles = [
+    {  },
+    { className: "h-full" },
+    { className: "h-full" },
+    {  },
+    {  },
+    {  }
+];
 const Logo2_styles = [
     { className: "h-376.5 aspect-[auto_1082/2037] max-md:h-[38.8125rem]" },
     { className: "h-376.5 aspect-[auto_1082/2037] max-md:h-[38.8125rem]" },
@@ -229,10 +241,10 @@ export default function Page() {
   return (
     <>
       <div className="min-h-screen block">
-        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-007 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
+        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-008 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
           Skip to main content
         </a>
-        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-002 max-lg:flex max-lg:z-1000 max-lg:isolate">
+        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-001 max-lg:flex max-lg:z-1000 max-lg:isolate">
           <button className="w-6 h-[2.1875rem] flex items-center gap-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_sans-serif] text-lg font-bold leading-[1.6875rem] text-center uppercase cursor-pointer max-lg:z-1" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" type="button">
             <span className="w-6 h-0.5 block relative min-w-0 bg-foreground before:content-[''] before:block before:absolute before:-top-[0.4375rem] before:w-6 before:h-0.5 before:bg-foreground max-lg:before:bottom-[0.4375rem] max-lg:before:inset-x-0 after:content-[''] after:block after:absolute after:top-[0.4375rem] after:w-6 after:h-0.5 after:bg-foreground max-lg:after:-bottom-[0.4375rem] max-lg:after:inset-x-0" aria-hidden="true" />
           </button>
@@ -243,13 +255,13 @@ export default function Page() {
             <span className="w-4 h-4 border-[3px] border-solid border-foreground block relative min-w-0 rounded-[50%] max-lg:border-muted-foreground after:content-[''] after:block after:absolute after:top-[0.6875rem] after:-right-[0.4375rem] after:w-2 after:h-[0.1875rem] after:bg-foreground max-lg:after:-bottom-1 max-lg:after:left-[0.5625rem] max-lg:after:bg-muted-foreground max-lg:after:transform-[matrix(0.707107,0.707107,-0.707107,0.707107,0,0)] max-lg:after:origin-[4px_1.5px]" aria-hidden="true" />
           </button>
         </header>
-        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-002 max-lg:opacity-0">
+        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-001 max-lg:opacity-0">
           <a className="w-[9.0625rem] block cursor-pointer max-lg:hidden" data-component="link" aria-label="Gary Vaynerchuk home" href="/">
             <img className="w-full h-[4.6875rem] block max-w-full overflow-clip object-contain object-[0%_50%] aspect-[auto_526/272] align-middle text-clr-1" data-component="image" alt="Gary Vaynerchuk" height="272" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="526" />
           </a>
           <nav className="w-[14.0625rem] h-60.5 block absolute top-[9.0625rem] left-7.5 gap-2 max-md:w-[20.4375rem] max-lg:pointer-events-none max-lg:h-auto max-lg:static max-lg:top-auto max-lg:left-auto md:max-lg:w-180" data-component="nav" aria-label="Main navigation" id="site-navigation">
             <div className="block relative max-lg:pointer-events-none">
-              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
+              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button-2" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
                 <span className="h-full block relative whitespace-nowrap max-lg:pointer-events-none after:content-[''] after:hidden after:absolute after:-bottom-[0.1875rem] after:left-0 after:w-full after:h-0.5 after:bg-clr-2">
                   Gary Vaynerchuk
                 </span>
@@ -294,43 +306,14 @@ export default function Page() {
           </div>
         </aside>
         <div className="h-full min-h-screen block ml-[17.1875rem] overflow-hidden max-lg:pt-18.5 max-lg:ml-0">
-          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-001 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
+          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-002 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
             <span className="h-6.5 flex shrink-0 [animation-name:announcement-scroll-right] [animation-duration:24s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-md:h-[2.0625rem] max-md:[animation-duration:18s]" data-ditto-id="style-span-2" aria-hidden="true">
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
-                <span className="flex pl-7 items-center shrink-0 gap-7 max-md:pl-5 max-md:gap-5">
-                  <span className="h-full block">
-                    Check out VeeFriends Cartoons!
-                  </span>
-                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
-                </span>
-                <span className="flex pl-7 items-center shrink-0 gap-7 max-md:pl-5 max-md:gap-5">
-                  <span className="h-full block">
-                    Check out VeeFriends Cartoons!
-                  </span>
-                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
-                </span>
-                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5">
-                  <span className="h-full block">
-                    Check out VeeFriends Cartoons!
-                  </span>
-                </span>
-                <span className="flex pl-7 items-center shrink-0 gap-7 max-md:pl-5 max-md:gap-5">
-                  <span className="block">
-                    Check out VeeFriends Cartoons!
-                  </span>
-                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
-                </span>
-                <span className="flex pl-7 items-center shrink-0 gap-7 max-md:pl-5 max-md:gap-5">
-                  <span className="block">
-                    Check out VeeFriends Cartoons!
-                  </span>
-                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
-                </span>
+                {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
               </span>
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
-                {Tile_data.map((d, i) => <Tile key={i} d={d} />)}
-                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-main-content">
-                  <span className="block" data-ditto-id="style-span-10">
+                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5">
+                  <span className="block">
                     Check out VeeFriends Cartoons!
                   </span>
                 </span>
@@ -338,67 +321,67 @@ export default function Page() {
             </span>
           </a>
           <main className="block" id="main-content">
-            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-main-content-2" data-component="nav" aria-label="Breadcrumb">
-              <ol className="flex flex-wrap gap-[0.4375rem] [list-style-type:none] list-outside" data-ditto-id="style-breadcrumb">
+            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-component="nav" aria-label="Breadcrumb">
+              <ol className="flex flex-wrap gap-[0.4375rem] [list-style-type:none] list-outside">
                 <li className="flex min-w-0 items-center">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-li" data-component="link" href="/">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-span-4" data-component="link" href="/">
                     Home
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-link-2">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-li-2" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-main-content" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
                     Blog
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-link-3">
-                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-li-3" aria-current="page">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-breadcrumb">
+                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" aria-current="page">
                     10 Ways to Protect Yourself from Scams
                   </span>
                 </li>
               </ol>
             </nav>
-            <div className="h-[10453.9px] min-h-screen block overflow-hidden bg-background max-md:h-[665.8625rem]" data-ditto-id="style-span-18">
-              <header className="h-137.5 block relative overflow-hidden bg-color-007 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-color-023 after:opacity-40" data-ditto-id="style-div-24">
-                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-ditto-id="style-header" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-image-6">
-                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-5 max-md:bg-clr-6" data-ditto-id="style-div-2" data-component="button" href="https://www.garyvaynerchuk.com/topics/guide/">
+            <div className="h-[10453.9px] min-h-screen block overflow-hidden bg-background max-md:h-[665.8625rem]" data-ditto-id="style-li-2">
+              <header className="h-137.5 block relative overflow-hidden bg-color-008 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-clr-4 after:opacity-40" data-ditto-id="style-link-2">
+                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-link-3">
+                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-6 max-md:bg-clr-7" data-ditto-id="style-li" data-component="button" href="https://www.garyvaynerchuk.com/topics/guide/">
                     Guide
                   </a>
                 </div>
-                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-ditto-id="style-button-2" data-component="heading">
+                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-component="heading">
                   10 Ways to Protect Yourself from Scams
                 </h1>
-                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]" data-ditto-id="style-heading-2">
-                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]">
+                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]" data-ditto-id="style-div">
+                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-header">
                     By Gary Vaynerchuk
                   </span>
                   <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[8.4375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-[7.5625rem]">
                     May 1, 2021
                   </span>
-                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] max-md:text-center before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[7.9375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-28.5" data-ditto-id="style-span-22">
+                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] max-md:text-center before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[7.9375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-28.5" data-ditto-id="style-div-7">
                     7 min read
                   </span>
                 </div>
               </header>
-              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0">
+              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0" data-ditto-id="style-button">
                 <p className="block pb-[25.5px]">
                   {"Hey everybody. Before we jump into the article, I invite you all to check out my NFT project, "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-heading-3" data-component="link" href="https://www.veefriends.com/">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.veefriends.com/">
                     VEEFRIENDS
                   </a>
                   {", which launched on Tuesday May 11th! My article, "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-21" data-component="link" href="https://www.garyvaynerchuk.com/how-to-buy-your-first-veefriends/">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-3" data-component="link" href="https://www.garyvaynerchuk.com/how-to-buy-your-first-veefriends/">
                     How to Buy Your First VeeFriends
                   </a>
                   {", will walk you through the concept behind the project as well as how to make a purchase. I also encourage you to join the "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-7" data-component="link" href="https://www.discord.gg/veefriends">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.discord.gg/veefriends">
                     Discord community
                   </a>
                   {" – just a fun place to connect, hang out and ask your questions on all things VeeFriends. Hope to meet you there!"}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-11">
-                  <strong className="inline font-bold" data-ditto-id="style-p">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold" data-ditto-id="style-article">
                     Team GaryVee here! 👋
                   </strong>
                 </p>
@@ -407,44 +390,44 @@ export default function Page() {
                   With the launch of Gary’s NFT project quickly approaching, Gary really wants to ensure that his community is set up the RIGHT way. While we’re excited for 5/5, nothing is more important than making sure you are well informed and prepared to set up your wallets and accounts with maximum protection. Unfortunately, there are a number of shady characters on Discord and other social media platforms with malicious intent. These people impersonate Gary with fake but believable usernames and photos in an attempt to scam Gary’s community out of their personal info and money.
                 </p>
                 {" "}
-                <div className="w-full max-w-137.5 flex my-2.5" data-ditto-id="style-p-21">
+                <div className="w-full max-w-137.5 flex my-2.5">
                   <div className="w-137.5 h-[42.1875rem] block relative grow overflow-hidden aspect-[25/14] align-middle" id="twitter-widget-0" title="X Post">
-                    <div className="box-content block text-color-002 [font-family:'Times_New_Roman'] text-base font-normal leading-4.5" data-ditto-id="style-p-9">
-                      <div className="box-content block" data-ditto-id="style-p-14" id="f0-app">
+                    <div className="box-content block text-color-001 [font-family:'Times_New_Roman'] text-base font-normal leading-4.5">
+                      <div className="box-content block" id="f0-app">
                         <div className="flex relative z-0 flex-col items-stretch flex-1 pointer-events-none">
-                          <div className="flex relative z-0 min-w-0 flex-col items-stretch flex-1 pointer-events-none" data-ditto-id="style-p-10">
-                            <div className="w-137.5 border border-solid border-color-005 flex relative z-0 min-w-62.5 max-w-137.5 rounded-xl flex-col items-stretch shrink-0 overflow-hidden cursor-pointer" data-ditto-id="style-span-14">
-                              <div className="box-content block" data-ditto-id="style-blockquote-2" />
-                              <article className="w-137 flex relative z-0 min-w-0 pt-3 pb-1 px-4 flex-col items-stretch shrink-0 bg-foreground" data-ditto-id="style-p-27" role="article">
-                                <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-p-16" data-component="link" aria-label="Visit this post on X" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
-                                <div className="flex relative z-0 min-w-0 pb-3 items-stretch shrink-0" data-ditto-id="style-p-22">
-                                  <div className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-heading-5">
-                                    <div className="w-12 h-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-p-3">
-                                      <div className="box-content block pb-12" data-ditto-id="style-link-9" />
-                                      <div className="box-content w-12 h-full block absolute top-0" data-ditto-id="style-p-28">
-                                        <div className="w-12 h-12 block absolute top-6 left-6 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-24,-24)]" data-ditto-id="style-heading-9">
-                                          <div className="box-content block pb-12" data-ditto-id="style-p-24" />
-                                          <div className="box-content w-12 h-full block absolute top-0" data-ditto-id="style-p-23">
-                                            <div className="w-13 h-13 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-span-12">
-                                              <a className="h-13 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-i-3" data-component="link" aria-hidden="true" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-span-17">
-                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 pointer-events-none" data-ditto-id="style-span-13" />
+                          <div className="flex relative z-0 min-w-0 flex-col items-stretch flex-1 pointer-events-none">
+                            <div className="w-137.5 border border-solid border-color-007 flex relative z-0 min-w-62.5 max-w-137.5 rounded-xl flex-col items-stretch shrink-0 overflow-hidden cursor-pointer">
+                              <div className="box-content block" />
+                              <article className="w-137 flex relative z-0 min-w-0 pt-3 pb-1 px-4 flex-col items-stretch shrink-0 bg-foreground" data-ditto-id="style-p-2" role="article">
+                                <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-label="Visit this post on X" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
+                                <div className="flex relative z-0 min-w-0 pb-3 items-stretch shrink-0">
+                                  <div className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
+                                    <div className="w-12 h-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0">
+                                      <div className="box-content block pb-12" />
+                                      <div className="box-content w-12 h-full block absolute top-0" data-ditto-id="style-p-5">
+                                        <div className="w-12 h-12 block absolute top-6 left-6 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-24,-24)]">
+                                          <div className="box-content block pb-12" data-ditto-id="style-span-13" />
+                                          <div className="box-content w-12 h-full block absolute top-0" data-ditto-id="style-p-6">
+                                            <div className="w-13 h-13 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-p-3">
+                                              <a className="h-13 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-hidden="true" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-p-7">
+                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 pointer-events-none" />
                                                 </div>
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-image-3">
-                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" data-ditto-id="style-p-2" />
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
+                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" />
                                                 </div>
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-link-15">
-                                                  <div className="w-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" data-ditto-id="style-br-2">
-                                                    <div className="box-content block pb-12 pointer-events-none" data-ditto-id="style-br" />
-                                                    <div className="box-content w-12 h-full block absolute top-0 pointer-events-none" data-ditto-id="style-p-25">
-                                                      <div className="w-12 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" data-ditto-id="style-span-16" aria-label="">
-                                                        <div className="w-12 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" style={{ backgroundImage: "url(\"/assets/cloned/images/e45c989f442d.jpg\")" }} data-ditto-id="style-i-2" />
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
+                                                  <div className="w-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none">
+                                                    <div className="box-content block pb-12 pointer-events-none" data-ditto-id="style-span-12" />
+                                                    <div className="box-content w-12 h-full block absolute top-0 pointer-events-none">
+                                                      <div className="w-12 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" aria-label="">
+                                                        <div className="w-12 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" style={{ backgroundImage: "url(\"/assets/cloned/images/e45c989f442d.jpg\")" }} data-ditto-id="style-figure" />
                                                       </div>
                                                     </div>
                                                   </div>
                                                 </div>
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)]" data-ditto-id="style-blockquote">
-                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-7)_0px_0px_2px_0px_inset]" data-ditto-id="style-p-8" />
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)]" data-ditto-id="style-image-2">
+                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-8)_0px_0px_2px_0px_inset]" data-ditto-id="style-p-9" />
                                                 </div>
                                               </a>
                                             </div>
@@ -453,34 +436,34 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="w-[165.3px] flex relative z-0 min-w-0 max-w-[calc(100%_-_84px)] mx-1 flex-col justify-center items-stretch shrink-0" data-ditto-id="style-p-13">
-                                    <div className="w-[165.3px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-span-5">
-                                      <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-p-5">
-                                        <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-image-4">
-                                          <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-heading" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                            <div className="flex relative z-0 min-w-0 max-w-full items-center shrink-0" data-ditto-id="style-span-20">
-                                              <div className="flex min-w-0 items-center overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" data-ditto-id="style-p-15" dir="auto">
-                                                <span className="block min-w-0 max-w-full overflow-hidden" data-ditto-id="style-em">
-                                                  <span className="inline" data-ditto-id="style-span-9">
+                                  <div className="w-[165.3px] flex relative z-0 min-w-0 max-w-[calc(100%_-_84px)] mx-1 flex-col justify-center items-stretch shrink-0">
+                                    <div className="w-[165.3px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
+                                      <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
+                                        <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
+                                          <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                            <div className="flex relative z-0 min-w-0 max-w-full items-center shrink-0">
+                                              <div className="flex min-w-0 items-center overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" data-ditto-id="style-span-9" dir="auto">
+                                                <span className="block min-w-0 max-w-full overflow-hidden" data-ditto-id="style-span-14">
+                                                  <span className="inline">
                                                     Gary Vaynerchuk
                                                   </span>
-                                                  <span className="inline align-middle" data-ditto-id="style-p-26" />
+                                                  <span className="inline align-middle" />
                                                 </span>
                                               </div>
-                                              <div className="w-[42.7px] flex min-w-0 shrink-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-ditto-id="style-span-7" dir="auto">
-                                                <span className="flex min-w-0 items-center" data-ditto-id="style-span-6">
-                                                  <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-010" data-ditto-id="style-p-6" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
+                                              <div className="w-[42.7px] flex min-w-0 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
+                                                <span className="flex min-w-0 items-center" data-ditto-id="style-p-4">
+                                                  <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-011" data-ditto-id="style-em" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
                                                     <g>
                                                       <path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
                                                     </g>
                                                   </svg>
-                                                  <div className="flex relative z-0 min-w-0 mr-0.5 ml-1 flex-col justify-center items-stretch shrink-0" data-ditto-id="style-span-8" role="link">
-                                                    <div className="w-4 h-4 block relative z-0 min-w-0 max-w-[1.0625rem] max-h-[1.0625rem] flex-col items-stretch shrink-0" data-ditto-id="style-p-11">
-                                                      <div className="block relative z-0 flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-p-4">
-                                                        <div className="box-content block pb-4" data-ditto-id="style-link-4" />
-                                                        <div className="box-content w-4 h-full block absolute top-0" data-ditto-id="style-link-8">
-                                                          <div className="h-full border border-solid border-color-005 flex relative z-0 rounded-xs flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-link-14">
-                                                            <div className="w-3.5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/8b271bf95261.jpg\")" }} data-ditto-id="style-link-7" />
+                                                  <div className="flex relative z-0 min-w-0 mr-0.5 ml-1 flex-col justify-center items-stretch shrink-0" role="link">
+                                                    <div className="w-4 h-4 block relative z-0 min-w-0 max-w-[1.0625rem] max-h-[1.0625rem] flex-col items-stretch shrink-0">
+                                                      <div className="block relative z-0 flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-span-8">
+                                                        <div className="box-content block pb-4" data-ditto-id="style-span-10" />
+                                                        <div className="box-content w-4 h-full block absolute top-0">
+                                                          <div className="h-full border border-solid border-color-007 flex relative z-0 rounded-xs flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-span-7">
+                                                            <div className="w-3.5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/8b271bf95261.jpg\")" }} data-ditto-id="style-p-8" />
                                                           </div>
                                                         </div>
                                                       </div>
@@ -490,24 +473,24 @@ export default function Page() {
                                               </div>
                                             </div>
                                           </a>
-                                          <div className="flex relative z-0 min-w-0 items-center" data-ditto-id="style-link-6">
-                                            <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-p-29" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                              <div className="w-[4.2875rem] flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-link-5">
-                                                <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" data-ditto-id="style-p-12" dir="ltr">
-                                                  <span className="inline" data-ditto-id="style-newsletter">
+                                          <div className="flex relative z-0 min-w-0 items-center">
+                                            <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-link-7" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                              <div className="w-[4.2875rem] flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-link-6">
+                                                <div className="block min-w-0 max-w-full overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" data-ditto-id="style-link-10" dir="ltr">
+                                                  <span className="inline" data-ditto-id="style-link-4">
                                                     @garyvee
                                                   </span>
                                                 </div>
                                               </div>
                                             </a>
-                                            <div className="flex relative z-0 min-w-0 items-stretch shrink-0" data-ditto-id="style-div">
-                                              <div className="block min-w-0 px-1 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-ditto-id="style-image" aria-hidden="true" dir="auto">
-                                                <span className="inline" data-ditto-id="style-newsletter-title">
+                                            <div className="flex relative z-0 min-w-0 items-stretch shrink-0" data-ditto-id="style-link-9">
+                                              <div className="block min-w-0 px-1 shrink-0 text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" aria-hidden="true" dir="auto">
+                                                <span className="inline" data-ditto-id="style-link-8">
                                                   ·
                                                 </span>
                                               </div>
-                                              <a className="block min-w-0 text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-ditto-id="style-form" data-component="link" dir="auto" href={"https://x.com/intent/follow?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&screen_name=garyvee"} rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                                <span className="inline" data-ditto-id="style-label">
+                                              <a className="block min-w-0 text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-ditto-id="style-p" data-component="link" dir="auto" href={"https://x.com/intent/follow?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&screen_name=garyvee"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                                <span className="inline" data-ditto-id="style-newsletter">
                                                   Follow
                                                 </span>
                                               </a>
@@ -517,58 +500,58 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <a className="h-12 flex relative z-0 min-w-0 ml-[269.7px] rounded-full flex-col items-stretch shrink-0" data-ditto-id="style-newsletter-website" data-component="link" aria-label="View on X" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <svg className="box-content w-auto h-[1.5625rem] block relative max-w-full overflow-hidden align-text-bottom text-color-003" data-ditto-id="style-label-2" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                  <a className="h-12 flex relative z-0 min-w-0 ml-[269.7px] rounded-full flex-col items-stretch shrink-0" data-ditto-id="style-div-2" data-component="link" aria-label="View on X" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                    <svg className="box-content w-auto h-[1.5625rem] block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                       <g>
                                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                                       </g>
                                     </svg>
                                   </a>
                                 </div>
-                                <div className="w-129 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-div-15">
-                                  <div className="block relative min-w-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-xl leading-6 whitespace-pre-wrap [overflow-wrap:break-word] cursor-text" data-ditto-id="style-newsletter-email" dir="auto" lang="en">
-                                    <span className="inline" data-ditto-id="style-button-3">
+                                <div className="w-129 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-newsletter-title">
+                                  <div className="block relative min-w-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-xl leading-6 whitespace-pre-wrap [overflow-wrap:break-word] cursor-text" data-ditto-id="style-form" dir="auto" lang="en">
+                                    <span className="inline" data-ditto-id="style-label">
                                       NEVER!
                                     </span>
                                   </div>
                                 </div>
-                                <div className="w-129 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-social-media">
-                                  <div className="w-129 border border-solid border-color-005 flex relative z-0 min-w-0 mt-3 rounded-xl flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-div-6">
-                                    <div className="box-content block" data-ditto-id="style-div-9" />
-                                    <article className="w-128.5 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-article" role="article">
-                                      <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-visit-this-post-on-x" data-component="link" aria-label="Visit this post on X" href={"https://x.com/Liron_Segev/status/1387811719263703047?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es3_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
-                                      <div className="w-128.5 flex relative z-0 min-w-0 pt-3 px-3 flex-col items-stretch shrink-0" data-ditto-id="style-div-10">
-                                        <div className="flex relative z-0 min-w-0 items-stretch shrink-0" data-ditto-id="style-div-16">
-                                          <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-div-8">
-                                            <div className="flex relative z-0 min-w-0 max-w-full items-center grow" data-ditto-id="style-div-31">
-                                              <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-div-20">
-                                                <div className="flex relative z-0 min-w-0 max-w-full items-center shrink-0" data-ditto-id="style-div-7">
-                                                  <div className="w-5 h-5 block relative z-0 min-w-0 mr-1 flex-col items-stretch shrink-0">
-                                                    <div className="box-content block pb-5" data-ditto-id="style-heading-7" />
-                                                    <div className="box-content w-5 h-full block absolute top-0" data-ditto-id="style-iframe">
-                                                      <div className="w-5 h-5 block absolute top-2.5 left-2.5 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-10,-10)]" data-ditto-id="style-heading-4">
-                                                        <div className="box-content block pb-5" data-ditto-id="style-span-19" />
-                                                        <div className="box-content w-5 h-full block absolute top-0" data-ditto-id="style-button-9">
-                                                          <div className="w-6 h-6 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-div-17">
-                                                            <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0" aria-hidden="true" role="presentation">
-                                                              <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-10,-10)] pointer-events-none">
-                                                                <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 pointer-events-none" data-ditto-id="style-span-23" />
+                                <div className="w-129 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-newsletter-website">
+                                  <div className="w-129 border border-solid border-color-007 flex relative z-0 min-w-0 mt-3 rounded-xl flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-label-2">
+                                    <div className="box-content block" />
+                                    <article className="w-128.5 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-newsletter-email" role="article">
+                                      <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-button-3" data-component="link" aria-label="Visit this post on X" href={"https://x.com/Liron_Segev/status/1387811719263703047?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es3_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
+                                      <div className="w-128.5 flex relative z-0 min-w-0 pt-3 px-3 flex-col items-stretch shrink-0">
+                                        <div className="flex relative z-0 min-w-0 items-stretch shrink-0" data-ditto-id="style-span-11">
+                                          <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
+                                            <div className="flex relative z-0 min-w-0 max-w-full items-center grow" data-ditto-id="style-div-12">
+                                              <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-div-10">
+                                                <div className="flex relative z-0 min-w-0 max-w-full items-center shrink-0">
+                                                  <div className="w-5 h-5 block relative z-0 min-w-0 mr-1 flex-col items-stretch shrink-0" data-ditto-id="style-div-11">
+                                                    <div className="box-content block pb-5" data-ditto-id="style-div-4" />
+                                                    <div className="box-content w-5 h-full block absolute top-0" data-ditto-id="style-div-8">
+                                                      <div className="w-5 h-5 block absolute top-2.5 left-2.5 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-10,-10)]">
+                                                        <div className="box-content block pb-5" data-ditto-id="style-div-6" />
+                                                        <div className="box-content w-5 h-full block absolute top-0">
+                                                          <div className="w-6 h-6 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-div-13">
+                                                            <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-div-5" aria-hidden="true" role="presentation">
+                                                              <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-10,-10)] pointer-events-none" data-ditto-id="style-footer-2">
+                                                                <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 pointer-events-none" data-ditto-id="style-heading" />
                                                               </div>
-                                                              <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-10,-10)] pointer-events-none" data-ditto-id="style-span-24">
-                                                                <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" data-ditto-id="style-link-13" />
+                                                              <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-10,-10)] pointer-events-none" data-ditto-id="style-iframe">
+                                                                <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" />
                                                               </div>
                                                               <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-10,-10)] pointer-events-none">
-                                                                <div className="w-5 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" data-ditto-id="style-button-6">
-                                                                  <div className="box-content block pb-5 pointer-events-none" data-ditto-id="style-div-19" />
-                                                                  <div className="box-content w-5 h-full block absolute top-0 pointer-events-none" data-ditto-id="style-div-18">
+                                                                <div className="w-5 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" data-ditto-id="style-footer">
+                                                                  <div className="box-content block pb-5 pointer-events-none" />
+                                                                  <div className="box-content w-5 h-full block absolute top-0 pointer-events-none">
                                                                     <div className="w-5 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" aria-label="">
-                                                                      <div className="w-5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" style={{ backgroundImage: "url(\"/assets/cloned/images/9ff92b878d40.jpg\")" }} data-ditto-id="style-div-25" />
+                                                                      <div className="w-5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" style={{ backgroundImage: "url(\"/assets/cloned/images/9ff92b878d40.jpg\")" }} />
                                                                     </div>
                                                                   </div>
                                                                 </div>
                                                               </div>
-                                                              <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-10,-10)]">
-                                                                <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-7)_0px_0px_2px_0px_inset]" data-ditto-id="style-div-11" />
+                                                              <div className="w-5 h-5 flex absolute top-3 left-3 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-10,-10)]" data-ditto-id="style-button-6">
+                                                                <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-8)_0px_0px_2px_0px_inset]" />
                                                               </div>
                                                             </div>
                                                           </div>
@@ -576,17 +559,17 @@ export default function Page() {
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div className="flex min-w-0 items-center overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
-                                                    <span className="block min-w-0 max-w-full overflow-hidden" data-ditto-id="style-p-20">
-                                                      <span className="inline" data-ditto-id="style-image-2">
+                                                  <div className="flex min-w-0 items-center overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                                    <span className="block min-w-0 max-w-full overflow-hidden">
+                                                      <span className="inline">
                                                         Liron Segev is TheTechieGuy
                                                       </span>
-                                                      <span className="inline align-middle" data-ditto-id="style-heading-6" />
+                                                      <span className="inline align-middle" />
                                                     </span>
                                                   </div>
-                                                  <div className="w-[1.3rem] flex min-w-0 shrink-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
+                                                  <div className="w-[1.3rem] flex min-w-0 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                                     <span className="flex min-w-0 items-center">
-                                                      <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-010" data-ditto-id="style-verified-account" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
+                                                      <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-011" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
                                                         <g>
                                                           <path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
                                                         </g>
@@ -595,11 +578,11 @@ export default function Page() {
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div className="flex relative z-0 min-w-0 ml-1 items-center" data-ditto-id="style-div-23">
-                                                <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-div-5">
-                                                  <div className="w-[99.5px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-div-22">
-                                                    <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" dir="ltr">
-                                                      <span className="inline" data-ditto-id="style-span-4">
+                                              <div className="flex relative z-0 min-w-0 ml-1 items-center" data-ditto-id="style-div-9">
+                                                <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
+                                                  <div className="w-[99.5px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
+                                                    <div className="block min-w-0 max-w-full overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" data-ditto-id="style-image" dir="ltr">
+                                                      <span className="inline">
                                                         @Liron_Segev
                                                       </span>
                                                     </div>
@@ -610,13 +593,13 @@ export default function Page() {
                                           </div>
                                         </div>
                                       </div>
-                                      <div className="w-128.5 flex relative z-0 min-w-0 mt-1 mb-3 px-3 flex-col items-stretch shrink-0" data-ditto-id="style-div-3">
-                                        <div className="block relative min-w-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-ditto-id="style-div-21" dir="auto" lang="en">
+                                      <div className="w-128.5 flex relative z-0 min-w-0 mt-1 mb-3 px-3 flex-col items-stretch shrink-0">
+                                        <div className="block relative min-w-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto" lang="en">
                                           <span className="inline">
                                             {"Heads up people signing up for MetaMask ahead of "}
                                           </span>
-                                          <span className="box-content inline">
-                                            <span className="inline" dir="ltr">
+                                          <span className="box-content inline" data-ditto-id="style-span-15">
+                                            <span className="inline" data-ditto-id="style-span-6" dir="ltr">
                                               @garyvee
                                             </span>
                                           </span>
@@ -626,11 +609,11 @@ export default function Page() {
                                         </div>
                                       </div>
                                       <div className="w-128.5 flex relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden">
-                                        <div className="w-128.5 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-div-33">
-                                          <a className="w-128.5 h-[346.7px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-link-12" data-component="link" href={"https://x.com/Liron_Segev/status/1387811719263703047/photo/1?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es3_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                        <div className="w-128.5 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-div-3">
+                                          <a className="w-128.5 h-[346.7px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-link-5" data-component="link" href={"https://x.com/Liron_Segev/status/1387811719263703047/photo/1?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es3_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                             <div className="w-128.5 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden">
                                               <div className="box-content block pb-[346.7px]" />
-                                              <div className="box-content w-128.5 h-full block absolute top-0" data-ditto-id="style-div-32">
+                                              <div className="box-content w-128.5 h-full block absolute top-0">
                                                 <div className="w-128.5 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 overflow-hidden" aria-label="Image">
                                                   <div className="w-128.5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/6f534c4a9983.png\")" }} />
                                                 </div>
@@ -642,13 +625,13 @@ export default function Page() {
                                     </article>
                                   </div>
                                 </div>
-                                <div className="flex relative z-0 min-w-0 mt-0.5 items-center shrink-0" data-ditto-id="style-div-13">
-                                  <div className="block min-w-0 max-w-full overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                <div className="flex relative z-0 min-w-0 mt-0.5 items-center shrink-0">
+                                  <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                     <div className="inline-flex relative z-0 flex-col items-stretch shrink-0">
-                                      <div className="block relative z-0 min-w-0 items-baseline" data-ditto-id="style-div-14">
-                                        <span className="inline text-color-004" data-ditto-id="style-span-15">
-                                          <a className="inline-flex flex-wrap shrink-0 gap-1" data-component="link" aria-label="5:13 PM · Apr 29, 2021" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                            <time className="box-content block" data-ditto-id="style-time" dateTime="2021-04-29T17:13:22.000Z">
+                                      <div className="block relative z-0 min-w-0 items-baseline">
+                                        <span className="inline text-color-006">
+                                          <a className="inline-flex flex-wrap shrink-0 gap-1" data-component="link" aria-label="5:13 PM · Apr 29, 2021" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                            <time className="box-content block" dateTime="2021-04-29T17:13:22.000Z">
                                               5:13 PM · Apr 29, 2021
                                             </time>
                                           </a>
@@ -656,52 +639,52 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <a className="w-8 h-8 flex relative z-0 min-w-0 -mr-1 ml-[333.7px] rounded-full flex-col justify-center items-stretch shrink-0" data-ditto-id="style-x-ads-info-and-privacy" data-component="link" aria-label="X Ads info and privacy" href="https://help.x.com/x-for-websites-ads-info-and-privacy" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                  <a className="w-8 h-8 flex relative z-0 min-w-0 -mr-1 ml-[333.7px] rounded-full flex-col justify-center items-stretch shrink-0" data-component="link" aria-label="X Ads info and privacy" href="https://help.x.com/x-for-websites-ads-info-and-privacy" rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                    <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-006" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                       <g>
                                         <path d="M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" />
                                       </g>
                                     </svg>
                                   </a>
                                 </div>
-                                <div className="border-t border-solid border-t-color-005 flex relative z-0 min-w-0 mt-1 pt-1 items-start shrink-0">
-                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Like. This post has 178 likes" href={"https://x.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&tweet_id=1387817294324191235"} rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0" data-ditto-id="style-div-4">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-014" data-ditto-id="style-icon" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                <div className="border-t border-solid border-t-color-007 flex relative z-0 min-w-0 mt-1 pt-1 items-start shrink-0">
+                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Like. This post has 178 likes" href={"https://x.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&tweet_id=1387817294324191235"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                    <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-013" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         178
                                       </span>
                                     </div>
                                   </a>
-                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Reply to this post on X" href={"https://x.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&in_reply_to=1387817294324191235"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Reply to this post on X" href={"https://x.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&in_reply_to=1387817294324191235"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-010" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-011" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
-                                      <span className="inline">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                      <span className="inline" data-ditto-id="style-span-5">
                                         Reply
                                       </span>
                                     </div>
                                   </a>
                                   <div className="flex relative z-0 min-w-0 items-center" data-component="button" role="button">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-006" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M18.36 5.64c-1.95-1.96-5.11-1.96-7.07 0L9.88 7.05 8.46 5.64l1.42-1.42c2.73-2.73 7.16-2.73 9.9 0 2.73 2.74 2.73 7.17 0 9.9l-1.42 1.42-1.41-1.42 1.41-1.41c1.96-1.96 1.96-5.12 0-7.07zm-2.12 3.53l-7.07 7.07-1.41-1.41 7.07-7.07 1.41 1.41zm-12.02.71l1.42-1.42 1.41 1.42-1.41 1.41c-1.96 1.96-1.96 5.12 0 7.07 1.95 1.96 5.11 1.96 7.07 0l1.41-1.41 1.42 1.41-1.42 1.42c-2.73 2.73-7.16 2.73-9.9 0-2.73-2.74-2.73-7.17 0-9.9z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" data-ditto-id="style-heading-8" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         Copy link
                                       </span>
@@ -709,10 +692,10 @@ export default function Page() {
                                   </div>
                                 </div>
                                 <div className="flex relative z-0 min-w-0 pt-1 pb-3 flex-col items-stretch shrink-0">
-                                  <a className="w-129 h-8 min-h-8 border border-solid border-color-005 flex relative z-0 min-w-8 px-4 rounded-full flex-col items-stretch shrink-0" data-component="link" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                  <a className="w-129 h-8 min-h-8 border border-solid border-color-007 flex relative z-0 min-w-8 px-4 rounded-full flex-col items-stretch shrink-0" data-component="link" href={"https://x.com/garyvee/status/1387817294324191235?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1387817294324191235%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="flex min-w-0 justify-center items-center grow text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 text-center whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                       <span className="block min-w-0 max-w-full overflow-hidden text-sm leading-4 whitespace-nowrap text-nowrap">
-                                        <span className="inline" data-ditto-id="style-i">
+                                        <span className="inline">
                                           Read 16 replies
                                         </span>
                                       </span>
@@ -734,18 +717,18 @@ export default function Page() {
                 {" "}
                 <p className="block pb-[25.5px]">
                   {"Check out these resources on avoiding cryptocurrency scams from the "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-17" data-component="link" href="https://www.consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams">
                     FTC
                   </a>
                   {" and "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-16" data-component="link" href="https://help.coinbase.com/en/coinbase/privacy-and-security/avoiding-phishing-and-scams/avoiding-cryptocurrency-scams">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://help.coinbase.com/en/coinbase/privacy-and-security/avoiding-phishing-and-scams/avoiding-cryptocurrency-scams">
                     Coinbase
                   </a>
                   {". For now, let’s jump into 10 tips to help protect yourself against scams, frauds and phishing attempts. "}
                 </p>
                 {" "}
                 <h2 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.8125rem] font-normal leading-12.5 uppercase max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-component="heading" id="h-1-never-send-money-to-someone-you-don-t-know">
-                  <strong className="inline font-bold" data-ditto-id="style-strong">
+                  <strong className="inline font-bold">
                     1. Never Send Money to Someone You Don’t Know
                   </strong>
                 </h2>
@@ -755,12 +738,12 @@ export default function Page() {
                 </p>
                 {" "}
                 <h2 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.8125rem] font-normal leading-12.5 uppercase max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-component="heading" id="h-2-never-share-personal-information-with-someone-you-don-t-know">
-                  <strong className="inline font-bold" data-ditto-id="style-strong-2">
+                  <strong className="inline font-bold">
                     2. Never Share Personal Information with Someone You Don’t Know
                   </strong>
                 </h2>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-19">
+                <p className="block pb-[25.5px]">
                   {"Some scammers won’t ask for money outright, but will instead request sensitive private information such as your address, phone number, bank account or credit card numbers or social security number. This information can be used to commit identity theft and should never be freely shared. "}
                 </p>
                 {" "}
@@ -807,7 +790,7 @@ export default function Page() {
                   {" to learn how to identify fake sites masquerading as the real cryptocurrency exchange. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-30">
+                <p className="block pb-[25.5px]">
                   {"In regards to getting set up for Gary’s NFT project, be sure that you only access the official "}
                   <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.coinbase.com/">
                     Coinbase
@@ -825,9 +808,9 @@ export default function Page() {
                   </strong>
                 </h2>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-heading-10">
+                <p className="block pb-[25.5px]">
                   {"As covered in our article, "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-image-5" data-component="link" href="https://www.garyvaynerchuk.com/how-to-make-a-cryptocurrency-or-nft-wallet/">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.garyvaynerchuk.com/how-to-make-a-cryptocurrency-or-nft-wallet/">
                     How to Make a Cryptocurrency or NFT Wallet
                   </a>
                   {", private keys and seed phrases are like the golden keys to your crypto. They must never — ever — be shared, lost or left susceptible to discovery or theft. Sharing your public address is fine, but remember, if someone has access to your private key or seed phrase, they can steal your funds with ease. "}
@@ -847,7 +830,7 @@ export default function Page() {
                   </strong>
                 </h2>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-32">
+                <p className="block pb-[25.5px]">
                   <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.fbi.gov/scams-and-safety/common-scams-and-crimes/advance-fee-schemes">
                     Advance-fee schemes
                   </a>
@@ -855,53 +838,53 @@ export default function Page() {
                 </p>
                 {" "}
                 <h2 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.8125rem] font-normal leading-12.5 uppercase max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-component="heading" id="h-8-beware-of-get-rich-quick-schemes">
-                  <strong className="inline font-bold" data-ditto-id="style-strong-3">
+                  <strong className="inline font-bold">
                     8. Beware of Get Rich Quick Schemes
                   </strong>
                 </h2>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-31">
+                <p className="block pb-[25.5px]">
                   Generally, you want to be wary of any “opportunities” claiming to be able to get you a large sum of money quickly or overnight. As Gary often cautions, making investments in search of a quick buck is short-sighted and will often lead to disappointment. Be careful of falling prey to human greed — especially in the NFT world, where many early projects will fizzle out.
                 </p>
                 {" "}
                 <div className="w-full max-w-137.5 flex my-2.5">
                   <div className="w-137.5 h-[20.0625rem] block relative grow overflow-hidden aspect-[25/14] align-middle" id="twitter-widget-1" title="X Post">
-                    <div className="box-content block text-color-002 [font-family:'Times_New_Roman'] text-base font-normal leading-4.5">
+                    <div className="box-content block text-color-001 [font-family:'Times_New_Roman'] text-base font-normal leading-4.5">
                       <div className="box-content block" id="f1-app">
                         <div className="flex relative z-0 flex-col items-stretch flex-1 pointer-events-none">
                           <div className="flex relative z-0 min-w-0 flex-col items-stretch flex-1 pointer-events-none">
-                            <div className="w-137.5 border border-solid border-color-005 flex relative z-0 min-w-62.5 max-w-137.5 rounded-xl flex-col items-stretch shrink-0 overflow-hidden cursor-pointer">
+                            <div className="w-137.5 border border-solid border-color-007 flex relative z-0 min-w-62.5 max-w-137.5 rounded-xl flex-col items-stretch shrink-0 overflow-hidden cursor-pointer">
                               <div className="box-content block" />
                               <article className="w-137 flex relative z-0 min-w-0 pt-3 pb-1 px-4 flex-col items-stretch shrink-0 bg-foreground" role="article">
-                                <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-label="Visit this post on X" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
+                                <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-label="Visit this post on X" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
                                 <div className="flex relative z-0 min-w-0 pb-3 items-stretch shrink-0">
                                   <div className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
                                     <div className="w-12 h-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0">
                                       <div className="box-content block pb-12" />
-                                      <div className="box-content w-12 h-full block absolute top-0" data-ditto-id="style-newsletter-2">
+                                      <div className="box-content w-12 h-full block absolute top-0">
                                         <div className="w-12 h-12 block absolute top-6 left-6 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-24,-24)]">
                                           <div className="box-content block pb-12" />
                                           <div className="box-content w-12 h-full block absolute top-0">
                                             <div className="w-13 h-13 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden">
                                               <a className="h-13 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-hidden="true" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-newsletter-website-2">
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
                                                   <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 pointer-events-none" />
                                                 </div>
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
-                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" data-ditto-id="style-newsletter-email-2" />
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-newsletter-2">
+                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" />
                                                 </div>
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-button-7">
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
                                                   <div className="w-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none">
                                                     <div className="box-content block pb-12 pointer-events-none" />
                                                     <div className="box-content w-12 h-full block absolute top-0 pointer-events-none">
-                                                      <div className="w-12 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" aria-label="">
+                                                      <div className="w-12 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none" data-ditto-id="style-newsletter-website-2" aria-label="">
                                                         <div className="w-12 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" style={{ backgroundImage: "url(\"/assets/cloned/images/e45c989f442d.jpg\")" }} />
                                                       </div>
                                                     </div>
                                                   </div>
                                                 </div>
                                                 <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)]">
-                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-7)_0px_0px_2px_0px_inset]" />
+                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-8)_0px_0px_2px_0px_inset]" data-ditto-id="style-newsletter-email-2" />
                                                 </div>
                                               </a>
                                             </div>
@@ -910,13 +893,13 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="w-[165.3px] flex relative z-0 min-w-0 max-w-[calc(100%_-_84px)] mx-1 flex-col justify-center items-stretch shrink-0">
+                                  <div className="w-[165.3px] flex relative z-0 min-w-0 max-w-[calc(100%_-_84px)] mx-1 flex-col justify-center items-stretch shrink-0" data-ditto-id="style-button-7">
                                     <div className="w-[165.3px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
                                       <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
                                         <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
                                           <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
                                             <div className="flex relative z-0 min-w-0 max-w-full items-center shrink-0">
-                                              <div className="flex min-w-0 items-center overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                              <div className="flex min-w-0 items-center overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                                 <span className="block min-w-0 max-w-full overflow-hidden">
                                                   <span className="inline">
                                                     Gary Vaynerchuk
@@ -924,9 +907,9 @@ export default function Page() {
                                                   <span className="inline align-middle" />
                                                 </span>
                                               </div>
-                                              <div className="w-[42.7px] flex min-w-0 shrink-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
+                                              <div className="w-[42.7px] flex min-w-0 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                                 <span className="flex min-w-0 items-center">
-                                                  <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-010" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
+                                                  <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-011" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
                                                     <g>
                                                       <path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
                                                     </g>
@@ -935,8 +918,8 @@ export default function Page() {
                                                     <div className="w-4 h-4 block relative z-0 min-w-0 max-w-[1.0625rem] max-h-[1.0625rem] flex-col items-stretch shrink-0">
                                                       <div className="block relative z-0 flex-col items-stretch shrink-0 overflow-hidden">
                                                         <div className="box-content block pb-4" />
-                                                        <div className="box-content w-4 h-full block absolute top-0" data-ditto-id="style-button-8">
-                                                          <div className="h-full border border-solid border-color-005 flex relative z-0 rounded-xs flex-col items-stretch shrink-0 overflow-hidden">
+                                                        <div className="box-content w-4 h-full block absolute top-0">
+                                                          <div className="h-full border border-solid border-color-007 flex relative z-0 rounded-xs flex-col items-stretch shrink-0 overflow-hidden">
                                                             <div className="w-3.5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/8b271bf95261.jpg\")" }} />
                                                           </div>
                                                         </div>
@@ -950,20 +933,20 @@ export default function Page() {
                                           <div className="flex relative z-0 min-w-0 items-center">
                                             <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
                                               <div className="w-[4.2875rem] flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
-                                                <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" dir="ltr">
+                                                <div className="block min-w-0 max-w-full overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" dir="ltr">
                                                   <span className="inline">
                                                     @garyvee
                                                   </span>
                                                 </div>
                                               </div>
                                             </a>
-                                            <div className="flex relative z-0 min-w-0 items-stretch shrink-0">
-                                              <div className="block min-w-0 px-1 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" aria-hidden="true" dir="auto">
+                                            <div className="flex relative z-0 min-w-0 items-stretch shrink-0" data-ditto-id="style-button-8">
+                                              <div className="block min-w-0 px-1 shrink-0 text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" aria-hidden="true" dir="auto">
                                                 <span className="inline">
                                                   ·
                                                 </span>
                                               </div>
-                                              <a className="block min-w-0 text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-component="link" dir="auto" href={"https://x.com/intent/follow?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&screen_name=garyvee"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                              <a className="block min-w-0 text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-component="link" dir="auto" href={"https://x.com/intent/follow?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&screen_name=garyvee"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                                 <span className="inline">
                                                   Follow
                                                 </span>
@@ -974,8 +957,8 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <a className="h-12 flex relative z-0 min-w-0 ml-[269.7px] rounded-full flex-col items-stretch shrink-0" data-component="link" aria-label="View on X" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <svg className="box-content w-auto h-[1.5625rem] block relative max-w-full overflow-hidden align-text-bottom text-color-003" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                  <a className="h-12 flex relative z-0 min-w-0 ml-[269.7px] rounded-full flex-col items-stretch shrink-0" data-component="link" aria-label="View on X" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                    <svg className="box-content w-auto h-[1.5625rem] block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                       <g>
                                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                                       </g>
@@ -983,18 +966,18 @@ export default function Page() {
                                   </a>
                                 </div>
                                 <div className="w-129 flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
-                                  <div className="block relative min-w-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-xl leading-6 whitespace-pre-wrap [overflow-wrap:break-word] cursor-text" dir="auto" lang="en">
+                                  <div className="block relative min-w-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-xl leading-6 whitespace-pre-wrap [overflow-wrap:break-word] cursor-text" dir="auto" lang="en">
                                     <span className="inline">
                                       99% of NFT’s won’t be good investments and there will be some massive crashes in the next 12 to 24 months .. many will get confused and think it was a fad.. that’s when it gets really good .. this will be an interesting decade ... oh and that 1% will be all-time returns
                                     </span>
                                   </div>
                                 </div>
                                 <div className="flex relative z-0 min-w-0 mt-0.5 items-center shrink-0">
-                                  <div className="block min-w-0 max-w-full overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                  <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                     <div className="inline-flex relative z-0 flex-col items-stretch shrink-0">
                                       <div className="block relative z-0 min-w-0 items-baseline">
-                                        <span className="inline text-color-004">
-                                          <a className="inline-flex flex-wrap shrink-0 gap-1" data-component="link" aria-label="4:35 AM · Feb 28, 2021" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                        <span className="inline text-color-006">
+                                          <a className="inline-flex flex-wrap shrink-0 gap-1" data-component="link" aria-label="4:35 AM · Feb 28, 2021" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                             <time className="box-content block" dateTime="2021-02-28T04:35:29.000Z">
                                               4:35 AM · Feb 28, 2021
                                             </time>
@@ -1004,37 +987,37 @@ export default function Page() {
                                     </div>
                                   </div>
                                   <a className="w-8 h-8 flex relative z-0 min-w-0 -mr-1 ml-[20.7rem] rounded-full flex-col justify-center items-stretch shrink-0" data-component="link" aria-label="X Ads info and privacy" href="https://help.x.com/x-for-websites-ads-info-and-privacy" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-006" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                       <g>
                                         <path d="M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" />
                                       </g>
                                     </svg>
                                   </a>
                                 </div>
-                                <div className="border-t border-solid border-t-color-005 flex relative z-0 min-w-0 mt-1 pt-1 items-start shrink-0">
-                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Like. This post has 4.4K likes" href={"https://x.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&tweet_id=1365883296064954370"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                <div className="border-t border-solid border-t-color-007 flex relative z-0 min-w-0 mt-1 pt-1 items-start shrink-0">
+                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Like. This post has 4.4K likes" href={"https://x.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&tweet_id=1365883296064954370"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-014" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-013" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         4.4K
                                       </span>
                                     </div>
                                   </a>
-                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Reply to this post on X" href={"https://x.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&in_reply_to=1365883296064954370"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Reply to this post on X" href={"https://x.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F&in_reply_to=1365883296064954370"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-010" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-011" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         Reply
                                       </span>
@@ -1042,13 +1025,13 @@ export default function Page() {
                                   </a>
                                   <div className="flex relative z-0 min-w-0 items-center" data-component="button" role="button">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-006" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M18.36 5.64c-1.95-1.96-5.11-1.96-7.07 0L9.88 7.05 8.46 5.64l1.42-1.42c2.73-2.73 7.16-2.73 9.9 0 2.73 2.74 2.73 7.17 0 9.9l-1.42 1.42-1.41-1.42 1.41-1.41c1.96-1.96 1.96-5.12 0-7.07zm-2.12 3.53l-7.07 7.07-1.41-1.41 7.07-7.07 1.41 1.41zm-12.02.71l1.42-1.42 1.41 1.42-1.41 1.41c-1.96 1.96-1.96 5.12 0 7.07 1.95 1.96 5.11 1.96 7.07 0l1.41-1.41 1.42 1.41-1.42 1.42c-2.73 2.73-7.16 2.73-9.9 0-2.73-2.74-2.73-7.17 0-9.9z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         Copy link
                                       </span>
@@ -1056,7 +1039,7 @@ export default function Page() {
                                   </div>
                                 </div>
                                 <div className="flex relative z-0 min-w-0 pt-1 pb-3 flex-col items-stretch shrink-0">
-                                  <a className="w-129 h-8 min-h-8 border border-solid border-color-005 flex relative z-0 min-w-8 px-4 rounded-full flex-col items-stretch shrink-0" data-ditto-id="style-link-10" data-component="link" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ef3bdef3d7f10f702cea7413bc5d2a7cb4ed9e3fd%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                  <a className="w-129 h-8 min-h-8 border border-solid border-color-007 flex relative z-0 min-w-8 px-4 rounded-full flex-col items-stretch shrink-0" data-component="link" href={"https://x.com/garyvee/status/1365883296064954370?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1365883296064954370%7Ctwgr%5Ed1421455a98495fa4450fbce1767eeded2e07b80%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F10-ways-to-protect-yourself-from-scams%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="flex min-w-0 justify-center items-center grow text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 text-center whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                       <span className="block min-w-0 max-w-full overflow-hidden text-sm leading-4 whitespace-nowrap text-nowrap">
                                         <span className="inline">
@@ -1081,7 +1064,7 @@ export default function Page() {
                   </strong>
                 </h2>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-17">
+                <p className="block pb-[25.5px]">
                   {"Scammers will commonly offer enticing opportunities and require that you pay them in crypto, money transfers or gift cards. This is often an indication of a scam because these funds are almost always non-recoverable. Remember, stolen crypto is gone forever. There is no bank, government or other authority that can help you recover your funds, and scammers know that. If you receive this kind of request, don’t respond. "}
                 </p>
                 {" "}
@@ -1091,9 +1074,9 @@ export default function Page() {
                   </strong>
                 </h2>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-18">
+                <p className="block pb-[25.5px]">
                   {"As of March, "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-11" data-component="link" href="https://www.cnbc.com/2021/03/24/covid-fraud-costs-americans-382-million-dollars.html">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.cnbc.com/2021/03/24/covid-fraud-costs-americans-382-million-dollars.html">
                     Americans had lost $382 million in Covid-related scams
                   </a>
                   . These scams were tied to everything from vaccines to stimulus checks and unemployment benefits. Sadly, many scammers are preying on the vulnerability of people who are scared and looking for relief and answers during this difficult time. Stay vigilant and look out for scams using pandemic buzzwords as a way to extract money or information.
@@ -1120,7 +1103,7 @@ export default function Page() {
               </article>
             </div>
           </main>
-          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-007 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter-3" aria-labelledby="newsletter-title" id="newsletter">
+          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-008 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter-3" aria-labelledby="newsletter-title" id="newsletter">
             <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto">
               <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
               <h2 className="block mb-[2.1875rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.375rem] leading-[2.6875rem] uppercase max-md:mb-[35.5px] max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-component="heading" id="newsletter-title">
@@ -1136,7 +1119,7 @@ export default function Page() {
                 </label>
                 <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]">
                   <input className="w-[19.8125rem] h-11 min-h-11 border border-solid border-border block p-2 overflow-clip text-[0.9375rem] leading-[1.4375rem] text-start bg-border cursor-text max-md:w-82.5 max-md:h-12.5 max-md:min-h-12.5" data-ditto-id="style-newsletter-email-3" data-component="input" id="newsletter-email" name="email" type="email" />
-                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-button-10" data-component="button" type="submit">
+                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-button-9" data-component="button" type="submit">
                     Subscribe
                   </button>
                 </div>
@@ -1148,7 +1131,7 @@ export default function Page() {
                 <span className="block">
                   ©Gary Vee IP, LLC 2024
                 </span>
-                <span className="block text-color-006">
+                <span className="block text-color-005">
                   <a className="inline cursor-pointer" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
                     Privacy Policy
                   </a>
@@ -1157,7 +1140,7 @@ export default function Page() {
                     Terms of Use
                   </a>
                   {" | "}
-                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-button-11" data-component="button" type="button">
+                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-button-10" data-component="button" type="button">
                     Cookie Settings
                   </button>
                 </span>
@@ -1166,7 +1149,7 @@ export default function Page() {
           </section>
         </div>
       </div>
-      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.9754px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.94123px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996098","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88919px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
+      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button-2","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.97545px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996096","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88918px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996096","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88918px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
     </>
   );
 }

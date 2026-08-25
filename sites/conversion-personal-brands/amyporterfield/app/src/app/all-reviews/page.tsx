@@ -20,8 +20,8 @@ const MediaTile_data = [
     { href: "https://www.amyporterfield.com/reviews/hayley-winter/", height: "1250", sizes: "(max-width: 1250px) 100vw, 1250px", imgSrc: "/assets/cloned/images/636c91e52de8.jpg", srcSet: "/assets/cloned/images/636c91e52de8.jpg 1250w, /assets/cloned/images/6c39ece54fc9.jpg 700w, /assets/cloned/images/8ca3b824302c.jpg 550w, /assets/cloned/images/51c316d28d19.jpg 768w, /assets/cloned/images/72e4d801eb5e.jpg 300w, /assets/cloned/images/008b76cdc98f.jpg 600w, /assets/cloned/images/fd33ff1e4ce1.jpg 100w", width: "1250", text: "I needed a game-changer in the digital course-space who could help me take my life’s work to the next level. And that’s why I signed up for DCA!", href2: "https://www.amyporterfield.com/reviews/hayley-winter/", label: "Hayley Winter", text2: "Founder, The Institue of Yoga Sports Science", href3: "https://www.amyporterfield.com/reviews/hayley-winter/" }
 ];
 const TextLink_data = [
-    { href: "/online-marketing-tools", target: "_self", text: "Resources" },
-    { href: "https://twoweeksnoticebook.com/?__hstc=164447072.a723f7e9a902f812ed5b0ed4e6cc26e2.1767225602184.1767225602184.1767225602184.1&__hssc=164447072.1.1767225602184&__hsfp=94ef76e50aa552668c1276dec3915e7a", target: "_blank", text: "two weeks notice" },
+    { href: "https://www.amyporterfield.com/online-marketing-tools/", target: "_self", text: "Resources" },
+    { href: "https://twoweeksnoticebook.com/?__hstc=164447072.3d7bcab88ef5485242cdfe6dfaf97502.1767225602705.1767225602705.1767225602705.1&__hssc=164447072.1.1767225602706&__hsfp=94ef76e50aa552668c1276dec3915e7a", target: "_blank", text: "two weeks notice" },
     { href: "/", target: "_self", text: "home" }
 ];
 const Logo_data = [
@@ -48,45 +48,45 @@ const Tile_data = [
     { text: "My NYT Bestselling Book" }
 ];
 const TextLink2_data = [
-    { href: "/terms-and-conditions", text: "terms and conditions" },
+    { href: "https://www.amyporterfield.com/terms-and-conditions", text: "terms and conditions" },
     { href: "/contact", text: "contact" },
     { href: "/careers", text: "careers" }
 ];
 const MediaTile_meta: string[][] = [
-    ["style-br-35", "style-heading-12", "style-p-54", "style-br-13", "style-br-44", "style-heading-30", "style-p-15", "style-link", "style-link-2", "style-link-3", "style-heading-31", "style-p-52", "style-p-9", "style-ul", "style-li-2", "style-li", "style-p-27", "style-heading-21", "style-p-16"],
-    ["style-br-31", "style-br-19", "style-br-14", "style-br-37", "style-heading-37", "style-p-55", "style-p-17", "n81", "style-p-53", "style-p-56", "style-p-30", "style-link-4", "style-strong-2", "style-heading-36", "style-p-39", "style-br-5", "style-br-50", "style-br-38", "style-br-6"],
-    ["n93", "style-br-15", "style-br-29", "style-br-23", "style-br-30", "style-br-16", "style-br-7", "style-br-41", "style-br-40", "style-br-27", "style-br-17", "style-br-28", "style-br-8", "style-br-20", "style-heading-6", "style-p-18", "style-p-59", "style-p-60", "style-p-19"],
-    ["style-p-40", "style-strong-3", "style-ul-2", "style-p-61", "style-heading-17", "style-p-28", "style-link-8", "style-p-42", "style-strong-6", "style-p-26", "style-p-57", "style-p-43", "style-p-20", "style-p-35", "style-p-65", "style-p-21", "style-heading-13", "style-p-45", "style-link-5"],
-    ["style-heading-11", "style-p", "style-heading-22", "style-p-2", "style-heading-18", "style-p-50", "style-p-3", "style-p-31", "style-p-4", "style-p-32", "style-p-5", "style-heading-9", "style-p-6", "style-p-29", "style-p-33", "style-p-22", "style-p-10", "style-heading-24", "style-p-23"],
-    ["style-heading-20", "style-p-34", "style-heading-14", "style-p-7", "style-heading-19", "style-p-36", "style-heading-2", "style-p-47", "style-p-49", "style-p-11", "style-heading-15", "style-strong-4", "style-p-12", "style-heading-23", "style-strong-5", "style-p-13", "style-p-44", "style-heading-8", "style-p-14"],
-    ["style-p-48", "style-p-37", "style-link-6", "style-strong", "style-p-38", "style-strong-8", "style-br-9", "style-br-21", "style-p-63", "style-strong-7", "style-link-7", "style-p-8", "style-em", "style-p-46", "style-footer-2", "style-div-5", "style-div-52", "style-link-43", "style-div-12"],
-    ["style-link-34", "style-nav-4", "style-link-31", "style-nav-5", "style-link-32", "style-nav-6", "style-br-10", "style-icon-8", "style-div", "style-div-32", "style-heading", "style-div-33", "style-div-2", "style-link-33", "style-nav-7", "style-br-11", "style-link-50", "style-div-47", "style-icon"],
-    ["style-div-34", "style-p-64", "style-link-44", "style-div-65", "style-link-49", "style-nav-8", "style-heading-3", "style-i-4", "style-i", "style-i-3", "style-i-5", "style-about-amy", "style-div-13", "style-div-69", "style-div-3", "style-div-14", "style-heading-28", "style-div-4", "style-div-15"],
-    ["style-heading-5", "style-br", "style-div-25", "style-heading-25", "style-link-16", "style-nav-10", "style-b", "style-br-25", "style-br-18", "style-br-26", "style-br-36", "style-b-2", "style-link-15", "style-nav-11", "style-div-26", "style-nav-19", "style-link-42", "style-nav-13", "style-instagram-feed"],
-    ["style-div-53", "style-div-67", "style-div-36", "style-instagram-feed-0", "style-div-42", "style-div-68", "style-div-16", "style-link-37", "style-nav-21", "style-br-48", "style-div-43", "style-div-37", "style-div-17", "style-div-40", "style-div-38", "style-div-18", "style-link-38", "style-heading-16", "style-div-19"],
-    ["style-div-44", "style-button-3", "style-nav-26", "style-hs-web-interactives-top-anchor-4", "style-hs-web-interactives-floating-container-2", "style-reviews", "style-div-20", "style-div-78", "style-reviews-review-1", "style-div-41", "style-div-70", "style-div-114", "style-p-24", "style-i-6", "style-reviews-review-1-3", "style-div-21", "style-div-35", "n281", "style-i-2"]
+    ["n55", "style-heading-7", "n57", "style-br-13", "n59", "n60", "style-p-15", "style-link", "style-link-2", "style-link-3", "style-heading-22", "n66", "style-p-9", "style-ul-2", "n69", "style-li", "style-p-27", "style-heading-20", "style-p-16"],
+    ["style-br-26", "style-br-19", "style-br-14", "style-br-29", "style-heading-16", "n79", "style-p-17", "n81", "n82", "n83", "n84", "style-link-4", "style-strong-2", "n87", "style-p-30", "style-br-2", "n90", "n91", "style-br-6"],
+    ["n93", "style-br-15", "n95", "style-br-21", "n97", "style-br-16", "style-br-7", "n100", "style-br-24", "n102", "style-br-17", "n104", "style-br-8", "style-br-25", "style-heading-5", "style-p-18", "n109", "style-p-39", "style-p-19"],
+    ["style-p-31", "style-strong-3", "style-ul", "n115", "style-heading-12", "style-p-28", "style-link-8", "style-p-33", "style-strong-4", "style-p-26", "style-p-40", "style-p-34", "style-p-20", "style-p-35", "n126", "style-p-21", "style-heading-8", "style-p-37", "style-link-5"],
+    ["style-heading-17", "style-p", "n133", "style-p-2", "style-heading-13", "n136", "style-p-3", "style-p-38", "style-p-4", "style-p-41", "style-p-5", "style-heading-18", "style-p-6", "style-p-29", "n145", "style-p-22", "style-p-10", "style-heading-21", "style-p-23"],
+    ["style-heading-15", "style-p-42", "style-heading-9", "style-p-7", "style-heading-14", "style-p-46", "style-heading", "style-p-44", "n158", "style-p-11", "style-heading-10", "n161", "style-p-12", "style-heading-19", "n164", "style-p-13", "style-p-36", "n167", "style-p-14"],
+    ["style-p-45", "n170", "style-link-6", "style-strong", "n173", "style-strong-6", "style-br-9", "n176", "style-p-47", "style-strong-5", "style-link-7", "style-p-8", "style-em", "style-p-43", "n183", "style-div-6", "n185", "n186", "style-div-12"],
+    ["style-link-36", "style-nav-4", "style-link-35", "style-nav-5", "n192", "style-nav-6", "style-br-10", "n195", "style-div", "n197", "style-div-2", "n199", "style-div-3", "n201", "style-nav-7", "style-br-11", "n204", "n205", "style-icon"],
+    ["n207", "n208", "n209", "n210", "n211", "style-nav-8", "style-heading-2", "n214", "style-i", "n216", "n217", "style-about-amy", "style-div-13", "n220", "style-div-4", "style-div-14", "n223", "style-div-5", "style-div-15"],
+    ["style-heading-4", "style-br", "style-div-25", "n229", "style-link-17", "style-nav-10", "style-b", "style-br-22", "style-br-18", "style-br-23", "n236", "style-b-2", "style-link-16", "style-nav-11", "style-div-26", "style-nav-18", "n242", "style-nav-13", "style-instagram-feed"],
+    ["n245", "n246", "style-div-33", "style-instagram-feed-0", "style-div-39", "n250", "style-div-16", "style-link-33", "style-nav-20", "n254", "style-div-40", "style-div-34", "style-div-17", "style-div-37", "style-div-35", "style-div-18", "style-link-34", "style-heading-11", "style-div-19"],
+    ["style-div-41", "style-button-2", "n266", "style-hs-web-interactives-top-anchor-2", "style-hs-web-interactives-floating-container-4", "style-reviews", "style-div-20", "style-div-43", "style-reviews-review-1", "style-div-38", "n274", "n275", "style-p-24", "n277", "n278", "style-div-21", "style-div-32", "n281", "style-i-2"]
 ];
 const TextLink_meta: string[][] = [
-    ["style-div-102", "style-link-13"],
+    ["n297", "style-link-13"],
     ["n299", "style-link-14"],
-    ["style-div-30", "style-icon-3"]
+    ["style-div-29", "style-icon-3"]
 ];
 const Logo_meta: string[][] = [
-    ["style-link-47", "style-heading-29", "style-div-22"],
-    ["style-div-46", "style-button-5", "style-nav-20"],
-    ["style-div-95", "style-div-58", "style-hs-web-interactives-top-anchor"],
-    ["style-hs-web-interactives-floating-container", "style-div-104", "style-div-23"],
-    ["n327", "style-hs-web-interactives-floating-container-3", "style-div-24"]
+    ["n315", "n316", "style-div-22"],
+    ["style-div-45", "n319", "style-nav-19"],
+    ["n321", "n322", "style-hs-web-interactives-top-anchor"],
+    ["style-hs-web-interactives-floating-container-2", "style-div-48", "style-div-23"],
+    ["style-button-3", "n328", "style-div-24"]
 ];
 const Tile_meta: string[][] = [
-    ["n334", "style-div-27"],
-    ["style-div-96", "style-div-49"],
-    ["style-div-113", "style-featured-episodes-1-view-1-1"]
+    ["style-featured-episodes-1-1", "style-div-27"],
+    ["n336", "n337"],
+    ["n338", "n339"]
 ];
 const TextLink2_meta: string[][] = [
-    ["n352", "n353"],
-    ["style-br-33", "style-link-53"],
-    ["n356", "style-link-39"]
+    ["style-div-52", "n353"],
+    ["n354", "style-link-39"],
+    ["n356", "n357"]
 ];
 const MediaTile_styles = [
     { className: "h-full", className2: "h-[17.6875rem] aspect-[auto_2560/2560] max-md:h-70" },
@@ -133,58 +133,58 @@ export default function Page() {
       </span>
       <access-widget-ui class="box-content w-0 h-0 block absolute top-0 left-0 leading-4.5">
         <div className="w-0 block">
-          <button className="w-50 h-0.5 block absolute -z-1 -mt-px py-px px-1.5 overflow-hidden [font-family:Arial] text-[0.8125rem] leading-[0.9375rem] text-center bg-surface-2 cursor-default" data-component="button" aria-pressed="false">
+          <button className="w-50 h-0.5 block absolute -z-1 -mt-px py-px px-1.5 overflow-hidden [font-family:Arial] text-[0.8125rem] leading-[0.9375rem] text-center bg-surface cursor-default" data-component="button" aria-pressed="false">
             Use Website In a Screen-Reader Mode
           </button>
         </div>
       </access-widget-ui>
-      <a className="box-content w-50 h-px block absolute -z-1 -mt-px overflow-hidden cursor-pointer" data-ditto-id="style-si-sp" data-component="link" href="https://accessibe.com/blog/knowledgebase/screen-reader-guide" rel="noopener" target="_blank">
+      <a className="box-content w-50 h-px block absolute -z-1 -mt-px overflow-hidden cursor-pointer" data-component="link" href="https://accessibe.com/blog/knowledgebase/screen-reader-guide" rel="noopener" target="_blank">
         Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window
       </a>
       {" "}
       <div className="box-content block relative min-w-80 overflow-hidden" id="si-sp">
-        <div className="box-content h-20 block fixed inset-x-0 z-15 pointer-events-none max-md:h-[4.6875rem] md:max-lg:h-[3.2rem]" data-ditto-id="style-div-66" id="header">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-div-7">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-link-46">
-              <a className="w-[5.8125rem] h-full block absolute top-0 left-164.5 transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-253.62,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav" data-component="link" href="/online-marketing-tools" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-10" data-component="nav">
+        <div className="box-content h-20 block fixed inset-x-0 z-15 pointer-events-none max-md:h-[4.6875rem] md:max-lg:h-[3.2rem]" id="header">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
+              <a className="w-[5.8125rem] h-full block absolute top-0 left-164.5 transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-253.62,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav" data-component="link" href="https://www.amyporterfield.com/online-marketing-tools/" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-10" data-component="nav">
                   Resources
                 </nav>
               </a>
-              <a className="w-22 h-full block absolute top-0 left-[34.4375rem] transform-[matrix(1,0,0,1,40,0)] origin-[44px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-214.2,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-2" data-component="link" href="/online-business-programs" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-11" data-component="nav">
+              <a className="w-22 h-full block absolute top-0 left-[34.4375rem] transform-[matrix(1,0,0,1,40,0)] origin-[44px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-214.2,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-2" data-component="link" href="https://www.amyporterfield.com/online-business-programs" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-11" data-component="nav">
                   programs
                 </nav>
               </a>
               <a className="w-23 h-full block absolute top-0 left-[27.4375rem] transform-[matrix(1,0,0,1,40,0)] origin-[46px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-174.6,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-3" data-component="link" href="/about" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-3" data-component="nav">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-3" data-component="nav">
                   About amy
-                  <br className="box-content inline" data-ditto-id="style-div-72" />
+                  <br className="box-content inline" data-ditto-id="style-div-7" />
                 </nav>
               </a>
-              <div className="w-[2.1875rem] h-[2.1875rem] hidden absolute top-[2.3125rem] left-[72.5625rem] transform-[none] cursor-pointer max-md:w-[2.3125rem] max-md:h-[2.3125rem] max-md:block max-md:top-3 max-md:left-[16.5625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,48.7266,5.24219)] max-md:origin-[18.5px_18.5px]" data-ditto-id="style-div-74">
+              <div className="w-[2.1875rem] h-[2.1875rem] hidden absolute top-[2.3125rem] left-[72.5625rem] transform-[none] cursor-pointer max-md:w-[2.3125rem] max-md:h-[2.3125rem] max-md:block max-md:top-3 max-md:left-[16.5625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,48.7266,5.24219)] max-md:origin-[18.5px_18.5px]">
                 <div className="box-content block">
-                  <svg className="box-content w-full h-full inline overflow-hidden align-top max-md:w-[2.3125rem] max-md:h-[2.3125rem]" data-ditto-id="style-link-17" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <svg className="box-content w-full h-full inline overflow-hidden align-top max-md:w-[2.3125rem] max-md:h-[2.3125rem]" data-ditto-id="style-link-18" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M96 241h320v32H96zM96 145h320v32H96zM96 337h320v32H96z" />
                   </svg>
                 </div>
               </div>
-              <a className="w-52.5 h-[0.8125rem] block absolute top-8.5 left-12.5 transform-[matrix(1,0,0,1,-40,0)] origin-[105px_6.5px] cursor-pointer max-md:w-56 max-md:top-6 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,5.24219)] max-md:origin-[112px_6.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-55.8,-14.58)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-ditto-id="style-div-6" data-component="link" href="/" target="_self">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/7355ffe2e393.svg\")" }} data-ditto-id="style-link-18" src="/assets/cloned/svg/7355ffe2e393.svg" />
+              <a className="w-52.5 h-[0.8125rem] block absolute top-8.5 left-12.5 transform-[matrix(1,0,0,1,-40,0)] origin-[105px_6.5px] cursor-pointer max-md:w-56 max-md:top-6 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,5.24219)] max-md:origin-[112px_6.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-55.8,-14.58)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-component="link" href="/" target="_self">
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/7355ffe2e393.svg\")" }} data-ditto-id="style-link-19" src="/assets/cloned/svg/7355ffe2e393.svg" />
               </a>
-              <a className="w-[4.4375rem] h-full block absolute top-0 left-[48.1875rem] transform-[matrix(1,0,0,1,40,0)] origin-[35.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-290.34,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-9" data-component="link" href="/marketing-strategy-podcast" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-12" data-component="nav">
+              <a className="w-[4.4375rem] h-full block absolute top-0 left-[48.1875rem] transform-[matrix(1,0,0,1,40,0)] origin-[35.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-290.34,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-9" data-component="link" href="https://www.amyporterfield.com/marketing-strategy-podcast" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-12" data-component="nav">
                   Podcast
                 </nav>
               </a>
               <a className="w-13 h-full block absolute top-0 left-[22.9375rem] transform-[matrix(1,0,0,1,40,0)] origin-[26px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-141.48,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-12" data-component="link" href="/" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-2" data-component="nav">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-4" data-component="nav">
                   HOME
-                  <br className="box-content inline" data-ditto-id="style-link-41" />
+                  <br className="box-content inline" data-ditto-id="style-link-9" />
                 </nav>
               </a>
-              <a className="w-[6.5625rem] h-full block absolute top-0 left-215.5 transform-[matrix(1,0,0,1,40,0)] origin-[52.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-329.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-14" data-component="link" href="/newsletter" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-div-8" data-component="nav">
+              <a className="w-[6.5625rem] h-full block absolute top-0 left-215.5 transform-[matrix(1,0,0,1,40,0)] origin-[52.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-329.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-14" data-component="link" href="https://www.amyporterfield.com/newsletter" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-div-8" data-component="nav">
                   NEWSLETTER
                 </nav>
               </a>
@@ -194,58 +194,58 @@ export default function Page() {
         <div className="box-content h-20 block z-15 max-md:h-[4.6875rem] md:max-lg:h-[3.2rem]" data-ditto-id="style-postloopcontainer" />
         <div className="box-content h-[19.6875rem] block relative pointer-events-none max-md:h-[14.65rem] md:max-lg:h-[12.6rem]" data-ditto-id="style-hero-1" id="hero">
           <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
-            <div className="box-content h-full block absolute top-0 inset-x-0 opacity-40 max-w-full overflow-hidden bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" data-ditto-id="style-div-57">
+            <div className="box-content h-full block absolute top-0 inset-x-0 opacity-40 max-w-full overflow-hidden bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" data-ditto-id="style-div-47">
               <img className="box-content w-320 h-[45.0625rem] block absolute left-0 overflow-clip aspect-[auto_1200/1200] transform-[matrix(1,0,0,1,0,-121.836)] pointer-events-none max-md:w-104 max-md:h-58.5 max-md:left-[-20.5px] max-md:aspect-[auto_320/320] max-md:transform-[none] md:max-lg:w-272 md:max-lg:h-[38.3125rem] md:max-lg:-left-40 md:max-lg:transform-[matrix(1,0,0,1,0,-25.5)] 2xl:w-480 2xl:h-270.5 2xl:transform-[matrix(1,0,0,1,0,-232.129)]" data-component="image" alt="" height="1200" src="/assets/cloned/images/44087350418f.png" width="1200" />
             </div>
-            <div className="box-content w-300 h-[19.6875rem] block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-md:h-50 max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-59">
+            <div className="box-content w-300 h-[19.6875rem] block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-md:h-50 max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-50">
               <div className="w-[47.8125rem] h-18 block absolute top-[7.4375rem] left-54.5 transform-[none] max-md:w-61.5 max-md:h-[2.7rem] max-md:top-15 max-md:left-[2.3125rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,14.0239)] max-md:origin-[123px_21.5938px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-55.8)] md:max-lg:origin-[382.5px_36px]">
-                <h1 className="box-content h-full block relative text-color-001 [font-family:'Ivy_Presto'] text-6xl leading-18 text-center max-md:text-4xl max-md:leading-[2.6875rem]" data-ditto-id="style-div-92" data-component="heading">
+                <h1 className="box-content h-full block relative text-border [font-family:'Ivy_Presto'] text-6xl leading-18 text-center max-md:text-4xl max-md:leading-[2.6875rem]" data-component="heading">
                   All DCA Stories
                 </h1>
               </div>
-              <div className="w-31 h-30 block absolute left-[4.9375rem] transform-[matrix(-1,0,0,-1,0,0)] origin-[62px_60px] max-md:w-[3.6875rem] max-md:h-14.5 max-md:left-[1.1875rem] max-md:transform-[matrix(-1.17188,0,0,-1.17188,8.33594,4.98438)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(-0.64,0,0,-0.64,-50.76,-21.6)]" data-ditto-id="style-div-60">
+              <div className="w-31 h-30 block absolute left-[4.9375rem] transform-[matrix(-1,0,0,-1,0,0)] origin-[62px_60px] max-md:w-[3.6875rem] max-md:h-14.5 max-md:left-[1.1875rem] max-md:transform-[matrix(-1.17188,0,0,-1.17188,8.33594,4.98438)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(-0.64,0,0,-0.64,-50.76,-21.6)]" data-ditto-id="style-div-51">
                 <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/c1076d3f2ac7.svg\")" }} src="/assets/cloned/svg/c1076d3f2ac7.svg" />
               </div>
-              <div className="w-31 h-30 block absolute top-[12.1875rem] left-249.5 transform-[none] max-md:w-[3.6875rem] max-md:h-14.5 max-md:top-35.5 max-md:left-60.5 max-md:transform-[matrix(1.17188,0,0,1.17188,46.6641,29.3906)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-381.6,-91.8)] md:max-lg:origin-[62px_60px]" data-ditto-id="style-div-73">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/1f121bbfbcad.svg\")" }} data-ditto-id="style-heading-10" src="/assets/cloned/svg/1f121bbfbcad.svg" />
+              <div className="w-31 h-30 block absolute top-[12.1875rem] left-249.5 transform-[none] max-md:w-[3.6875rem] max-md:h-14.5 max-md:top-35.5 max-md:left-60.5 max-md:transform-[matrix(1.17188,0,0,1.17188,46.6641,29.3906)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-381.6,-91.8)] md:max-lg:origin-[62px_60px]">
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/1f121bbfbcad.svg\")" }} src="/assets/cloned/svg/1f121bbfbcad.svg" />
               </div>
             </div>
           </div>
         </div>
         <div className="box-content block" id="postloopcontainer">
-          <div className="box-content h-755.5 block relative pointer-events-none max-md:h-[537.525rem] md:max-lg:h-[120.875rem]" data-ditto-id="style-div-90" id="post-meta(1)">
+          <div className="box-content h-755.5 block relative pointer-events-none max-md:h-[537.525rem] md:max-lg:h-[120.875rem]" id="post-meta(1)">
             <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
-              <div className="box-content w-300 h-51 block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-md:h-[21.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-75">
-                <div className="w-225 h-[182.3125rem] block absolute top-[2.4375rem] left-37.5 transform-[none] max-md:w-70 max-md:h-[454.7875rem] max-md:top-[1.6875rem] max-md:left-5 max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,629.973)] max-md:origin-[140px_3638.3px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216,-539.096)] md:max-lg:origin-[450px_1458.49px]" data-ditto-id="style-div-76">
-                  <div className="box-content h-full block relative text-color-001 [font-family:Montserrat] text-lg leading-[1.8125rem] text-left max-md:text-[0.9375rem] max-md:leading-[1.6875rem] after:content-[''] after:table after:w-0 after:h-0">
-                    <div className="box-content block" data-ditto-id="style-p-58">
-                      <p className="box-content block mb-4" data-ditto-id="style-br-22">
-                        <span className="box-content inline" data-ditto-id="style-heading-4">
+              <div className="box-content w-300 h-51 block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-md:h-[21.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
+                <div className="w-225 h-[182.3125rem] block absolute top-[2.4375rem] left-37.5 transform-[none] max-md:w-70 max-md:h-[454.7875rem] max-md:top-[1.6875rem] max-md:left-5 max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,629.973)] max-md:origin-[140px_3638.3px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216,-539.096)] md:max-lg:origin-[450px_1458.49px]" data-ditto-id="style-div-54">
+                  <div className="box-content h-full block relative text-border [font-family:Montserrat] text-lg leading-[1.8125rem] text-left max-md:text-[0.9375rem] max-md:leading-[1.6875rem] after:content-[''] after:table after:w-0 after:h-0">
+                    <div className="box-content block">
+                      <p className="box-content block mb-4" data-ditto-id="style-br-20">
+                        <span className="box-content inline" data-ditto-id="style-heading-3">
                           232
                         </span>
                         {" Results"}
                         <i className="box-content inline italic" data-ditto-id="style-p-25">
                           {" in "}
                         </i>
-                        <span className="box-content inline" data-ditto-id="style-br-24">
+                        <span className="box-content inline" data-ditto-id="style-br-28">
                           ALL STORIES
                         </span>
                       </p>
                     </div>
                     {" "}
-                    <div className="box-content block mb-10" data-ditto-id="style-br-39">
+                    <div className="box-content block mb-10">
                       232 results
                     </div>
                     {" "}
-                    <div className="box-content block" data-ditto-id="style-p-51">
-                      <div className="box-content grid gap-[1.5625rem] grid-cols-[283.328px_283.328px_283.344px] max-md:grid-cols-[280px]" data-ditto-id="style-br-34">
+                    <div className="box-content block">
+                      <div className="box-content grid gap-[1.5625rem] grid-cols-[283.328px_283.328px_283.344px] max-md:grid-cols-[280px]">
                         {MediaTile_data.map((d, i) => <MediaTile key={i} d={d} styles={MediaTile_styles[i]} />)}
                       </div>
                       {" "}
                     </div>
                     {" "}
-                    <div className="box-content block mb-10" data-ditto-id="style-div-79">
-                      <button className="border-2 border-outset border-foreground inline-block py-px px-1.5 text-foreground [font-family:Arial] text-[0.8125rem] leading-[0.9375rem] text-center bg-surface-2 cursor-default" data-ditto-id="style-button-2" data-component="button">
+                    <div className="box-content block mb-10">
+                      <button className="border-2 border-outset border-foreground inline-block py-px px-1.5 text-foreground [font-family:Arial] text-[0.8125rem] leading-[0.9375rem] text-center bg-surface cursor-default" data-ditto-id="style-button" data-component="button">
                         Load more
                       </button>
                     </div>
@@ -257,104 +257,104 @@ export default function Page() {
           </div>
         </div>
         <div className="box-content h-87.5 block relative pointer-events-none max-md:h-[64.525rem] md:max-lg:h-56" data-ditto-id="style-footer" id="footer">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-color-003 pointer-events-none" data-ditto-id="style-div-80">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-116">
-              <a className="w-60 h-30 block absolute top-22 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-68.5 max-md:h-[9.5625rem] max-md:top-160 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,27.6719,123.148)] max-md:origin-[137px_76.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-53.28)] md:max-lg:origin-[120px_60px]" data-ditto-id="style-link-36" data-component="link" href="/side-hustle-ideas-guide-ap" target="_self">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-cover [background-position:10%_10%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/be1a66f154c7.gif\")" }} data-ditto-id="style-div-81" src="/assets/cloned/images/be1a66f154c7.gif" />
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-color-002 pointer-events-none">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
+              <a className="w-60 h-30 block absolute top-22 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-68.5 max-md:h-[9.5625rem] max-md:top-160 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,27.6719,123.148)] max-md:origin-[137px_76.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-53.28)] md:max-lg:origin-[120px_60px]" data-ditto-id="style-link-32" data-component="link" href="https://www.amyporterfield.com/side-hustle-ideas-guide-ap" target="_self">
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-cover [background-position:10%_10%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/be1a66f154c7.gif\")" }} src="/assets/cloned/images/be1a66f154c7.gif" />
               </a>
-              <a className="w-[7.3125rem] h-4.5 block absolute top-47.5 left-115 transform-[none] cursor-pointer max-md:w-28 max-md:h-[1.3125rem] max-md:top-69 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,37.8125,49.2422)] max-md:origin-[56px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-71.64)] md:max-lg:origin-[58.5px_9px]" data-component="link" href="/online-business-courses" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-9" data-component="nav">
+              <a className="w-[7.3125rem] h-4.5 block absolute top-47.5 left-115 transform-[none] cursor-pointer max-md:w-28 max-md:h-[1.3125rem] max-md:top-69 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,37.8125,49.2422)] max-md:origin-[56px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-71.64)] md:max-lg:origin-[58.5px_9px]" data-component="link" href="https://www.amyporterfield.com/online-business-courses" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-9" data-component="nav">
                   Courses
                 </nav>
               </a>
-              <a className="w-[8.1875rem] h-4.5 block absolute top-[7.8125rem] left-115 transform-[none] cursor-pointer max-md:w-[7.9375rem] max-md:h-[1.3125rem] max-md:top-77.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.8672,55.0859)] max-md:origin-[63.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.18,-48.24)] md:max-lg:origin-[65.5px_9px]" data-ditto-id="style-div-82" data-component="link" href="/about" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-10" data-component="nav">
+              <a className="w-[8.1875rem] h-4.5 block absolute top-[7.8125rem] left-115 transform-[none] cursor-pointer max-md:w-[7.9375rem] max-md:h-[1.3125rem] max-md:top-77.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.8672,55.0859)] max-md:origin-[63.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.18,-48.24)] md:max-lg:origin-[65.5px_9px]" data-component="link" href="/about" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-10" data-component="nav">
                   About Amy
                 </nav>
               </a>
-              <a className="w-30 h-4.5 block absolute top-39.5 left-115 transform-[none] cursor-pointer max-md:w-30.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.4375,60.9297)] max-md:origin-[61px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-187.2,-60.12)] md:max-lg:origin-[60px_9px]" data-ditto-id="style-p-41" data-component="link" href="/marketing-strategy-podcast" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-br-4" data-component="nav">
+              <a className="w-30 h-4.5 block absolute top-39.5 left-115 transform-[none] cursor-pointer max-md:w-30.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.4375,60.9297)] max-md:origin-[61px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-187.2,-60.12)] md:max-lg:origin-[60px_9px]" data-ditto-id="style-p-32" data-component="link" href="https://www.amyporterfield.com/marketing-strategy-podcast" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-br-5" data-component="nav">
                   Podcast
                   <br className="box-content inline" />
                 </nav>
               </a>
               {TextLink_data.map((d, i) => <TextLink key={i} d={d} styles={TextLink_styles[i]} />)}
-              <a className="w-60 h-10.5 block absolute top-55.5 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-56.5 max-md:h-[1.3125rem] max-md:top-201.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,140.336)] max-md:origin-[113px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-87.48)] md:max-lg:origin-[120px_21px]" data-ditto-id="style-footer-legal-accessibility-2" data-component="link" href="/side-hustle-ideas-guide-ap" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-div-11" data-component="nav">
+              <a className="w-60 h-10.5 block absolute top-55.5 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-56.5 max-md:h-[1.3125rem] max-md:top-201.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,140.336)] max-md:origin-[113px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-87.48)] md:max-lg:origin-[120px_21px]" data-component="link" href="https://www.amyporterfield.com/side-hustle-ideas-guide-ap" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-div-11" data-component="nav">
                   Map Out Your Side Hustle Idea Profit Potential
-                  <br className="box-content inline" data-ditto-id="style-div-54" />
+                  <br className="box-content inline" data-ditto-id="style-div-53" />
                 </nav>
               </a>
-              <a className="w-5.5 h-7.5 block absolute top-54.5 left-280.5 transform-[none] cursor-pointer max-md:h-[1.5625rem] max-md:top-201 max-md:left-[15.6875rem] max-md:transform-[matrix(1.17188,0,0,1.17188,45.0312,140.336)] max-md:origin-[11px_12.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-407.88,-83.88)] md:max-lg:origin-[11px_15px]" data-ditto-id="style-link-9" data-component="link" href="/side-hustle-ideas-guide-ap" target="_self">
-                <div className="box-content h-full block" data-ditto-id="style-nav-23">
+              <a className="w-5.5 h-7.5 block absolute top-54.5 left-280.5 transform-[none] cursor-pointer max-md:h-[1.5625rem] max-md:top-201 max-md:left-[15.6875rem] max-md:transform-[matrix(1.17188,0,0,1.17188,45.0312,140.336)] max-md:origin-[11px_12.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-407.88,-83.88)] md:max-lg:origin-[11px_15px]" data-ditto-id="style-link-31" data-component="link" href="https://www.amyporterfield.com/side-hustle-ideas-guide-ap" target="_self">
+                <div className="box-content h-full block">
                   <svg className="box-content w-5.5 h-7.5 inline overflow-hidden align-top max-md:h-[1.5625rem]" data-ditto-id="style-br-12" data-component="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z" />
                   </svg>
                 </div>
               </a>
-              <div className="w-[19.1875rem] h-[7.3125rem] block absolute top-[5.6875rem] left-15 transform-[none] max-md:w-[14.0625rem] max-md:h-[8.9375rem] max-md:top-[4.4375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.2891,24.4922)] max-md:origin-[112.5px_71.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-76.86,-53.82)] md:max-lg:origin-[153.5px_58.5px]" data-ditto-id="style-div-77">
-                <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] text-left max-md:leading-[1.4375rem]" data-ditto-id="style-link-35">
+              <div className="w-[19.1875rem] h-[7.3125rem] block absolute top-[5.6875rem] left-15 transform-[none] max-md:w-[14.0625rem] max-md:h-[8.9375rem] max-md:top-[4.4375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.2891,24.4922)] max-md:origin-[112.5px_71.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-76.86,-53.82)] md:max-lg:origin-[153.5px_58.5px]" data-ditto-id="style-div-46">
+                <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] text-left max-md:leading-[1.4375rem]" data-ditto-id="style-icon-4">
                   I’m an ex-corporate girl, author, online marketing expert and the host of the top-ranked podcast, The Amy Porterfield Show. Welcome to my virtual living room! Stay a while, won’t you?
                 </p>
               </div>
-              <a className="w-52.5 h-[1.5625rem] block absolute top-[3.0625rem] left-14 transform-[none] cursor-pointer max-md:w-[13.3125rem] max-md:h-[2.1875rem] max-md:top-6 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,22.2578,7.13281)] max-md:origin-[106.5px_17.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-57.96,-22.14)] md:max-lg:origin-[105px_12.5px]" data-ditto-id="style-nav-27" data-component="link" href="/" target="_self">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/1e9e95f91617.png\")" }} data-ditto-id="style-br-32" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+              <a className="w-52.5 h-[1.5625rem] block absolute top-[3.0625rem] left-14 transform-[none] cursor-pointer max-md:w-[13.3125rem] max-md:h-[2.1875rem] max-md:top-6 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,22.2578,7.13281)] max-md:origin-[106.5px_17.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-57.96,-22.14)] md:max-lg:origin-[105px_12.5px]" data-ditto-id="style-footer-legal-accessibility-2" data-component="link" href="/" target="_self">
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/1e9e95f91617.png\")" }} data-ditto-id="style-div-44" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
               </a>
               <a className="w-47.5 h-4.5 block absolute top-[17.5625rem] left-231.5 transform-[matrix(1,0,0,1,40,0)] origin-[95px_9px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-367.56,-104.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-component="link" href="#si-sp" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] tracking-[0.65px] text-right uppercase" data-ditto-id="style-nav-15" data-component="nav">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] tracking-[0.65px] text-right uppercase" data-ditto-id="style-link-15" data-component="nav">
                   back to top
                 </nav>
               </a>
               {Logo_data.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
-              <div className="w-58.5 h-[1.3125rem] block absolute top-[15.1875rem] left-15 transform-[none] max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-63.72,-91.26)] md:max-lg:origin-[117px_10.5px]" data-ditto-id="style-div-48">
-                <h3 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:Montserrat] font-semibold leading-[1.1875rem] tracking-[1.6px] text-left uppercase" data-ditto-id="style-heading-26" data-component="heading">
+              <div className="w-58.5 h-[1.3125rem] block absolute top-[15.1875rem] left-15 transform-[none] max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-63.72,-91.26)] md:max-lg:origin-[117px_10.5px]" data-ditto-id="style-div-49">
+                <h3 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:Montserrat] font-semibold leading-[1.1875rem] tracking-[1.6px] text-left uppercase" data-component="heading">
                   Let's be friends
                 </h3>
               </div>
-              <a className="w-49.5 h-4.5 block absolute top-[5.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[26.9375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,75.8828)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-36.72)] md:max-lg:origin-[99px_9px]" data-ditto-id="style-link-29" data-component="link" href="/mylogin" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-nav-16" data-component="nav">
+              <a className="w-49.5 h-4.5 block absolute top-[5.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[26.9375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,75.8828)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-36.72)] md:max-lg:origin-[99px_9px]" data-ditto-id="style-hs-web-interactives-floating-container-3" data-component="link" href="https://www.amyporterfield.com/mylogin" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-nav-15" data-component="nav">
                   student login
                 </nav>
               </a>
               {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
-              <a className="w-49.5 h-4.5 block absolute top-[7.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[28.8125rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,81.0391)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-48.24)] md:max-lg:origin-[99px_9px]" data-component="link" href="/reviews" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-nav-17" data-component="nav">
+              <a className="w-49.5 h-4.5 block absolute top-[7.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[28.8125rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,81.0391)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-48.24)] md:max-lg:origin-[99px_9px]" data-component="link" href="https://www.amyporterfield.com/reviews" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-nav-16" data-component="nav">
                   student stories
                 </nav>
               </a>
-              <div className="w-[13.9375rem] h-[1.4375rem] block absolute top-12.5 left-[56.1875rem] transform-[none] max-md:w-62.5 max-md:h-7 max-md:top-149.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,25.4375,105.188)] max-md:origin-[125px_14px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-363.78,-22.14)] md:max-lg:origin-[111.5px_11.5px]" data-ditto-id="style-div-61">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'IvyPresto_Headline_Regular'] text-lg leading-[1.8125rem] text-left max-md:leading-[2rem]" data-ditto-id="style-nav-24" data-component="nav">
+              <div className="w-[13.9375rem] h-[1.4375rem] block absolute top-12.5 left-[56.1875rem] transform-[none] max-md:w-62.5 max-md:h-7 max-md:top-149.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,25.4375,105.188)] max-md:origin-[125px_14px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-363.78,-22.14)] md:max-lg:origin-[111.5px_11.5px]">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'IvyPresto_Headline_Regular'] text-lg leading-[1.8125rem] text-left max-md:leading-[2rem]" data-ditto-id="style-nav-22" data-component="nav">
                   Get Started For Free
                 </nav>
               </div>
-              <a className="w-[7.3125rem] h-4.5 block absolute top-[15.9375rem] left-115 transform-[none] cursor-pointer max-md:w-33.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,39.7031,60.9297)] max-md:origin-[67px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-95.04)] md:max-lg:origin-[58.5px_9px]" data-component="link" href="/newsletter" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-nav-18" data-component="nav">
+              <a className="w-[7.3125rem] h-4.5 block absolute top-[15.9375rem] left-115 transform-[none] cursor-pointer max-md:w-33.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,39.7031,60.9297)] max-md:origin-[67px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-95.04)] md:max-lg:origin-[58.5px_9px]" data-component="link" href="https://www.amyporterfield.com/newsletter" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-nav-17" data-component="nav">
                   NEWSLETTER
                 </nav>
               </a>
             </div>
           </div>
         </div>
-        <div className="box-content h-20 block relative z-4 pointer-events-none max-md:h-[263.7px] md:max-lg:h-[3.2rem]" id="footer-legal-accessibility">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-color-001 pointer-events-none" data-ditto-id="style-div-103">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-62">
-              <a className="w-26.5 h-4.5 block absolute top-[1.9375rem] left-[29.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[53px_9px] cursor-pointer max-md:w-23.5 max-md:h-[1.3125rem] max-md:top-21.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,12.2031,16.5859)] max-md:origin-[47px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.36,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-component="link" href="/privacy" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:tracking-[0.5px] max-md:text-left" data-ditto-id="style-div-115" data-component="nav">
+        <div className="box-content h-20 block relative z-4 pointer-events-none max-md:h-[263.7px] md:max-lg:h-[3.2rem]" data-ditto-id="style-footer-legal-accessibility" id="footer-legal-accessibility">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-border pointer-events-none">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
+              <a className="w-26.5 h-4.5 block absolute top-[1.9375rem] left-[29.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[53px_9px] cursor-pointer max-md:w-23.5 max-md:h-[1.3125rem] max-md:top-21.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,12.2031,16.5859)] max-md:origin-[47px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.36,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-link-38" data-component="link" href="https://www.amyporterfield.com/privacy" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:tracking-[0.5px] max-md:text-left" data-component="nav">
                   privacy policy
-                  <br className="box-content inline" data-ditto-id="style-div-31" />
+                  <br className="box-content inline" data-ditto-id="style-div-30" />
                 </nav>
               </a>
               {TextLink2_data.map((d, i) => <TextLink2 key={i} d={d} styles={TextLink2_styles[i]} />)}
-              <a className="w-[21.1875rem] h-4.5 block absolute top-[1.9375rem] left-5 transform-[matrix(1,0,0,1,-40,0)] origin-[169.5px_9px] cursor-pointer max-md:w-68.5 max-md:h-[1.4375rem] max-md:top-6 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,27.6719,6.10156)] max-md:origin-[137px_11.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-68.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-ditto-id="style-heading-7" data-component="link" href="/" target="_self">
-                <h2 className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-light leading-[1.125rem] tracking-[0.55px] text-left uppercase max-md:leading-[1.25rem] max-md:tracking-[inherit]" data-component="heading">
+              <a className="w-[21.1875rem] h-4.5 block absolute top-[1.9375rem] left-5 transform-[matrix(1,0,0,1,-40,0)] origin-[169.5px_9px] cursor-pointer max-md:w-68.5 max-md:h-[1.4375rem] max-md:top-6 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,27.6719,6.10156)] max-md:origin-[137px_11.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-68.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-ditto-id="style-heading-6" data-component="link" href="/" target="_self">
+                <h2 className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-light leading-[1.125rem] tracking-[0.55px] text-left uppercase max-md:leading-[1.25rem] max-md:tracking-[inherit]" data-ditto-id="style-link-37" data-component="heading">
                   © 2026 Amy Porterfield LLC. All Rights Reserved.
                 </h2>
               </a>
-              <div className="w-120 h-8 block absolute top-22.5 left-[43.9375rem] transform-[none] max-md:w-56 max-md:h-22.5 max-md:top-[8.4375rem] max-md:left-[5.9375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,35.5781,30.9375)] max-md:origin-[112px_45px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-339.48,-38.16)] md:max-lg:origin-[240px_16px]" data-ditto-id="style-div-55">
+              <div className="w-120 h-8 block absolute top-22.5 left-[43.9375rem] transform-[none] max-md:w-56 max-md:h-22.5 max-md:top-[8.4375rem] max-md:left-[5.9375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,35.5781,30.9375)] max-md:origin-[112px_45px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-339.48,-38.16)] md:max-lg:origin-[240px_16px]">
                 <div className="box-content h-full block" data-ditto-id="style-icon-2" />
               </div>
-              <a className="w-[5.8125rem] h-4.5 block absolute top-[1.9375rem] left-[49.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_9px] cursor-pointer max-md:w-22 max-md:top-28.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,11.6875,21.1406)] max-md:origin-[44px_9px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-302.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-footer-legal-accessibility" data-component="button" href="#" role="button" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:text-left max-md:tracking-[inherit]" data-ditto-id="style-div-56" data-component="nav">
+              <a className="w-[5.8125rem] h-4.5 block absolute top-[1.9375rem] left-[49.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_9px] cursor-pointer max-md:w-22 max-md:top-28.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,11.6875,21.1406)] max-md:origin-[44px_9px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-302.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-component="button" href="#" role="button" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:text-left max-md:tracking-[inherit]" data-component="nav">
                   Accessibility
                 </nav>
               </a>
@@ -363,15 +363,16 @@ export default function Page() {
         </div>
       </div>
       {" "}
+      <div className="box-content block">
+        <div className="box-content block" data-ditto-id="style-link-30" />
+      </div>
+      {" "}
       <div className="box-content h-full block fixed top-0 inset-x-0 z-9999 pointer-events-none" id="hs-web-interactives-top-anchor" />
       {" "}
-      <div className="box-content block" data-ditto-id="style-link-30" id="hs-web-interactives-floating-container">
+      <div className="box-content block" data-ditto-id="style-br-27" id="hs-web-interactives-floating-container">
         {" "}
       </div>
       {" "}
-      <div className="box-content block" data-ditto-id="style-nav-22">
-        <div className="box-content block" data-ditto-id="style-br-49" />
-      </div>
     </>
   );
 }

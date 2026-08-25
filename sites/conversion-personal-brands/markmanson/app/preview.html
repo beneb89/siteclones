@@ -1,0 +1,1124 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mark Manson - Life Advice that Doesn't Suck</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6a2076951e68.woff2") format("woff2"), url("public/assets/cloned/fonts/c9531a20a6a5.woff") format("woff"), url("public/assets/cloned/fonts/4363ac76d804.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f27b9c9fd7ea.woff2") format("woff2"), url("public/assets/cloned/fonts/2748405d354d.woff") format("woff"), url("public/assets/cloned/fonts/51f9256c7544.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/94896cce905d.woff2") format("woff2"), url("public/assets/cloned/fonts/91ff21f97b3b.woff") format("woff"), url("public/assets/cloned/fonts/4e20bdebe071.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/83dd31c89c57.woff2") format("woff2"), url("public/assets/cloned/fonts/05ccbb68bc2d.woff") format("woff"), url("public/assets/cloned/fonts/0d6c2a257092.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/11efb79b582b.woff2") format("woff2"), url("public/assets/cloned/fonts/ca8d9e0e1fed.woff") format("woff"), url("public/assets/cloned/fonts/67f27bf12f20.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/62367ff183f3.woff2") format("woff2"), url("public/assets/cloned/fonts/044c3cff9039.woff") format("woff"), url("public/assets/cloned/fonts/383b40b1f88a.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/fbc702b6bbbf.woff2") format("woff2"), url("public/assets/cloned/fonts/662238b2401d.woff") format("woff"), url("public/assets/cloned/fonts/62f941d6bce7.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/2cc83e4bbd15.woff2") format("woff2"), url("public/assets/cloned/fonts/7164809fde09.woff") format("woff"), url("public/assets/cloned/fonts/e573c9f88d0f.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/418ec56a1301.woff2") format("woff2"), url("public/assets/cloned/fonts/9b818560303c.woff") format("woff"), url("public/assets/cloned/fonts/912d62e59768.ttf") format("truetype");
+}
+
+/* tokens */
+:root {
+  --background: rgb(245, 245, 245);
+  --foreground: rgb(37, 33, 33);
+  --primary: rgb(242, 104, 34);
+  --accent: rgb(234, 20, 20);
+  --border: rgb(218, 229, 230);
+  --surface: rgba(255, 255, 255, 0.2);
+  --muted-foreground: rgb(73, 90, 95);
+  --muted: rgb(116, 127, 128);
+  --color-001: rgb(255, 255, 255);
+  --color-002: rgb(33, 34, 35);
+  --color-003: rgba(255, 255, 255, 0.5);
+}
+
+:root {
+  /* fonts */
+  --font-body: Montserrat, sans-serif;
+  --font-001: "Source Serif Pro", serif;
+  /* fontSizes */
+  --font-size-001: 10.4px;
+  --font-size-002: 12px;
+  --font-size-003: 13px;
+  --font-size-004: 14px;
+  --font-size-005: 16px;
+  --font-size-006: 18px;
+  --font-size-007: 20px;
+  --font-size-008: 24px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 600;
+  --font-weight-003: 700;
+  --font-weight-004: 800;
+  /* lineHeights */
+  --line-height-001: 26.4px;
+  --line-height-002: 16px;
+  --line-height-003: 14px;
+  --line-height-004: 15px;
+  --line-height-005: 27px;
+  --line-height-006: 23.1px;
+  --line-height-007: 28px;
+  --line-height-008: 0px;
+  --line-height-009: 29.7px;
+  --line-height-010: 36px;
+  --line-height-011: 43.2px;
+  /* spacing */
+  --space-001: 1px;
+  --space-002: 6px;
+  --space-003: 10px;
+  --space-004: 11px;
+  --space-005: 12px;
+  --space-006: 15px;
+  --space-007: 17px;
+  --space-008: 18px;
+  --space-009: 20px;
+  --space-010: 24px;
+  --space-011: 26.6px;
+  --space-012: 30px;
+  --space-013: 35px;
+  --space-014: 40px;
+  --space-015: 50px;
+  --space-016: 70px;
+  --space-017: 100px;
+  /* radii */
+  --radius-001: 25px;
+  /* zIndices */
+  --z-001: -1;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: rgba(0, 0, 0, 0);
+  --clr-1: rgb(48, 44, 44);
+  --clr-2: rgb(249, 249, 249);
+  --clr-3: rgb(51, 51, 51);
+  --clr-4: rgb(128, 128, 128);
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{display:block;color:var(--foreground);font-family:"Source Serif Pro", serif;font-size:16px;font-weight:400;font-style:normal;line-height:26.4px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{display:block}
+.cn2{width:1px;height:1px;display:block;position:absolute;top:0px;left:0px;margin-top:-1px;margin-right:-1px;margin-bottom:-1px;margin-left:-1px;overflow-x:hidden;overflow-y:hidden;clip-path:inset(50%);cursor:pointer}
+.cn3{height:66.6875px;display:block;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px;color:var(--color-001);font-size:18px;line-height:29.7px;text-align:center;background-color:var(--color-002)}
+.cn4{display:inline;font-weight:600;cursor:pointer}
+.cn5{display:inline;text-decoration-line:underline}
+.cn6{height:80px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:block;background-color:var(--border)}
+.cn7{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:1200px;margin-right:auto;margin-left:auto;padding-top:30px;padding-bottom:30px;justify-content:space-between;align-items:center}
+.cn8{display:block}
+.cn9{display:block;line-height:0px;cursor:pointer}
+.cn10{width:165px;height:14px;display:inline;max-width:100%;max-height:14px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 329 / 28}
+.cn11{display:block;flex-grow:1;flex-basis:0%}
+.cn12{display:none;margin-bottom:24px;font-family:Montserrat, sans-serif;font-size:14px;font-weight:500;line-height:16px;text-transform:uppercase}
+.cn13{width:24px;height:24px;display:none;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-align:center;text-transform:uppercase;background-image:url("data:image/svg+xml,%3Csvg width='24' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 1.5H0v-1h24v1zm0 6H0v-1h24v1zm-24 6h24v-1H0v1z' fill='%23252121'/%3E%3C/svg%3E");background-size:contain;background-position:100% 50%;background-repeat:no-repeat;cursor:pointer}
+.cn14{display:flex;justify-content:space-between;align-items:center}
+.cn15{display:flex;justify-content:center;flex-grow:1;flex-basis:0%}
+.cn16{display:flex;align-items:center;font-family:Montserrat, sans-serif;font-size:14px;line-height:16px;list-style-type:none;list-style-position:outside}
+.cn17{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn18{display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;text-transform:uppercase;cursor:pointer}
+.cn19{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn20{display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;text-transform:uppercase;cursor:pointer}
+.cn21{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn22{display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;text-transform:uppercase;cursor:pointer}
+.cn23{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn24{display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;text-transform:uppercase;cursor:pointer}
+.cn25{display:list-item;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn26{display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;text-transform:uppercase;cursor:pointer}
+.cn27{display:flex;align-items:center;font-family:Montserrat, sans-serif;font-size:14px;line-height:16px}
+.cn28{display:flex;align-items:center;text-transform:uppercase;cursor:pointer}
+.cn29{height:40px;display:block;text-transform:uppercase;cursor:pointer}
+.cn30{height:40px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;margin-left:20px;padding-top:12px;padding-right:30px;padding-bottom:12px;padding-left:30px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;justify-content:center;align-items:center;font-size:13px;font-weight:600;line-height:14px;text-align:center}
+.cn30::before{content:"";display:block;width:11px;height:13px;margin-right:9px;background-image:url("data:image/svg+xml,%3Csvg width='12' height='14' fill='%23252121' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.928 10.026a5.333 5.333 0 1 1 6.147 0l1.389 3.173a.333.333 0 0 1-.306.467H1.844a.333.333 0 0 1-.306-.466l1.389-3.174zm.486-3.713a2.668 2.668 0 0 0 5.174 0L7.295 5.99a1.333 1.333 0 0 1-2.588 0l-1.293.323z' /%3E%3C/svg%3E");background-size:contain;background-repeat:no-repeat}
+.cn31{height:36px;border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:16px;padding-right:8px;padding-left:8px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;justify-content:center;align-items:center;font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn32{width:14px;height:14px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;justify-content:center;align-items:center}
+.cn33{width:14px;height:14px;border-width:2px;border-style:solid;border-color:var(--border);display:block;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;background-color:var(--foreground)}
+.cn34{width:2px;height:19.0312px;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:matrix(-0.707107, 0.707107, -0.707107, -0.707107, 0, 0);transform-origin:1px 9.51562px}
+.cn35{width:2px;height:19.0312px;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:matrix(-1, 0, 0, -1, 0, 0);transform-origin:1px 9.51562px}
+.cn36{width:2px;height:19.0312px;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0);transform-origin:1px 9.51562px}
+.cn37{width:2px;height:19.0312px;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:matrix(0, -1, 1, 0, 0, 0);transform-origin:1px 9.51562px}
+.cn38{border-width:1px;border-style:solid;border-color:rgba(0, 0, 0, 0);display:none;position:relative;top:0px;right:0px;margin-left:16px;padding-right:8px;padding-left:8px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;justify-content:center;align-items:center;font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-align:center;text-transform:uppercase;cursor:pointer}
+.cn39{width:14px;height:14px;display:flex;position:relative;justify-content:center;align-items:center}
+.cn40{width:14px;height:14px;border-width:2px;border-style:solid;border-color:var(--border);display:block;min-width:0px;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;background-color:var(--foreground)}
+.cn41{width:2px;height:136%;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:none}
+.cn42{width:2px;height:136%;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:none}
+.cn43{width:2px;height:136%;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:none}
+.cn44{width:2px;height:136%;display:block;position:absolute;z-index:-1;min-width:0px;font-size:10.4px;background-color:var(--foreground);transform:none}
+.cn45{display:block}
+.cn46{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:block;padding-top:70px;padding-bottom:70px;text-align:center;background-color:var(--border)}
+.cn47{display:block;max-width:1200px;margin-right:auto;margin-bottom:60px;margin-left:auto;font-family:Montserrat, sans-serif;font-size:80px;font-weight:700;line-height:96px}
+.cn48{display:flex;justify-content:center;align-items:center;row-gap:84px;column-gap:84px;text-align:left}
+.cn49{display:block;flex-basis:520px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn50{display:inline}
+.cn51{width:414px;display:inline}
+.cn52{width:414px;display:inline}
+.cn53{width:414px;height:414px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 828 / 828}
+.cn54{width:37%;display:block;min-width:290px;flex-basis:471px}
+.cn55{height:108px;display:block;margin-bottom:24px;font-family:Montserrat, sans-serif;font-size:24px;font-weight:800;line-height:36px;text-transform:uppercase}
+.cn56{display:inline-block}
+.cn57{display:inline;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-bottom:-10px;margin-left:-20px;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:25px;color:var(--primary);font-weight:700}
+.cn57::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:0px;left:0px;width:233px;height:69px;background-image:url("public/assets/cloned/svg/5a1362030a7f.svg");background-size:100% 100%;background-position:50% 50%;background-repeat:no-repeat}
+.cn58{display:block;max-width:620px;margin-bottom:30px;font-size:18px;line-height:29.7px}
+.cn59{display:block;margin-top:30px;margin-bottom:30px}
+.cn60{display:block}
+.cn61{display:block;margin-bottom:24px;margin-left:48px;padding-left:40px;list-style-type:disc;list-style-position:outside}
+.cn62{height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);display:flex;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;background-color:var(--color-001)}
+.cn63{display:block;flex-grow:1;flex-basis:0%}
+.cn64{width:100%;height:48px;display:inline-block;padding-top:1px;padding-right:2px;padding-bottom:1px;padding-left:20px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;font-family:Montserrat, sans-serif;font-size:13px;line-height:19.5px;text-align:start;background-color:var(--color-001);cursor:text}
+.cn64::placeholder{color:rgb(117, 117, 117)}
+.cn65{width:118px;height:48px;border-width:1px;border-style:solid;border-color:var(--foreground);display:block;margin-right:-0.5px;padding-top:17px;padding-right:30px;padding-bottom:17px;padding-left:30px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-align:center;text-transform:uppercase;background-color:var(--foreground);cursor:pointer}
+.cn66{display:block}
+.cn67{display:block}
+.cn68{display:block}
+.cn69{display:block}
+.cn70{display:inline}
+.cn71{height:46.1875px;display:block;max-width:620px;font-size:14px;font-style:italic;line-height:23.1px}
+.cn72{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn73{display:block;max-width:992px;margin-right:144px;margin-left:144px;padding-top:100px;padding-bottom:100px;text-align:center}
+.cn74{display:block;font-family:Montserrat, sans-serif;font-size:56px;font-weight:700;line-height:72.8px}
+.cn75{display:inline}
+.cn76{width:364px;display:none;max-width:100%}
+.cn77{width:364px;display:none;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 251 / 296}
+.cn78{display:flex;margin-bottom:50px;justify-content:space-between;align-items:center;row-gap:16px;column-gap:16px}
+.cn79{height:305.312px;display:block;max-width:542px;font-size:24px;line-height:43.2px;text-align:left}
+.cn80{display:inline;font-weight:600;font-style:italic;text-decoration-line:underline;cursor:pointer}
+.cn81{display:inline;font-weight:600;font-style:italic;text-decoration-line:underline;cursor:pointer}
+.cn82{width:364px;height:429px;display:block}
+.cn83{display:block;max-width:100%}
+.cn84{width:364px;height:429px;display:block;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 364 / 429}
+.cn85{height:62px;display:flex;justify-content:center;row-gap:20px;column-gap:20px}
+.cn86{height:62px;display:block;cursor:pointer}
+.cn87{width:100%;height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);display:flex;margin-bottom:12px;padding-top:17px;padding-right:50px;padding-bottom:17px;padding-left:50px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;justify-content:center;align-items:center;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-transform:uppercase;background-color:var(--foreground)}
+.cn88{height:62px;display:block;cursor:pointer}
+.cn89{width:100%;height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);display:flex;margin-bottom:12px;padding-top:17px;padding-right:50px;padding-bottom:17px;padding-left:50px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;justify-content:center;align-items:center;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-transform:uppercase;background-color:var(--foreground)}
+.cn90{display:block;cursor:pointer}
+.cn91{width:100%;height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);display:flex;padding-top:17px;padding-right:50px;padding-bottom:17px;padding-left:50px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;justify-content:center;align-items:center;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-transform:uppercase;background-color:var(--foreground)}
+.cn92{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:1200px;margin-right:40px;margin-left:40px;padding-top:100px;padding-bottom:100px;flex-wrap:wrap;row-gap:4%;column-gap:4%}
+.cn92::before{content:"";display:block;position:absolute;top:0px;right:0px;bottom:1071.38px;left:0px;height:1px}
+.cn93{height:538.188px;display:block;flex-basis:48%}
+.cn94{display:block;margin-top:26.6px;margin-bottom:26.6px;font-family:Montserrat, sans-serif;font-size:20px;font-weight:800;line-height:28px;text-transform:uppercase}
+.cn95{border-top-width:1px;border-top-style:solid;border-top-color:var(--foreground);display:block;list-style-type:none;list-style-position:outside}
+.cn96{display:inline;cursor:pointer}
+.cn97{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:flex;padding-top:20px;padding-bottom:20px}
+.cn98{display:block;margin-right:30px;flex-shrink:0;flex-basis:94px}
+.cn99{width:100%;height:61px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn100{display:flex;flex-direction:column;justify-content:space-between;flex-grow:1;flex-basis:0%}
+.cn101{display:block;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:27px}
+.cn102{display:inline;cursor:pointer}
+.cn103{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:flex;padding-top:20px;padding-bottom:20px}
+.cn104{display:block;margin-right:30px;flex-shrink:0;flex-basis:94px}
+.cn105{width:100%;height:61px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn106{height:61.2656px;display:flex;flex-direction:column;justify-content:space-between;flex-grow:1;flex-basis:0%}
+.cn107{display:block;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:27px}
+.cn108{display:inline;cursor:pointer}
+.cn109{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:flex;padding-top:20px;padding-bottom:20px}
+.cn110{display:block;margin-right:30px;flex-shrink:0;flex-basis:94px}
+.cn111{width:100%;height:61px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn112{height:61.2656px;display:flex;flex-direction:column;justify-content:space-between;flex-grow:1;flex-basis:0%}
+.cn113{display:block;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:27px}
+.cn114{display:inline;cursor:pointer}
+.cn115{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:flex;padding-top:20px;padding-bottom:20px}
+.cn116{display:block;margin-right:30px;flex-shrink:0;flex-basis:94px}
+.cn117{width:100%;height:61px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn118{height:61.2656px;display:flex;flex-direction:column;justify-content:space-between;flex-grow:1;flex-basis:0%}
+.cn119{display:block;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:27px}
+.cn120{display:block;margin-bottom:48px;flex-basis:48%}
+.cn121{display:block;margin-top:26.6px;margin-bottom:26.6px;font-family:Montserrat, sans-serif;font-size:20px;font-weight:800;line-height:28px;text-transform:uppercase}
+.cn122{border-top-width:1px;border-top-style:solid;border-top-color:var(--foreground);display:block;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:27px;list-style-type:none;list-style-position:outside}
+.cn123{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn124{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn125{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn126{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn127{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn128{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn129{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn130{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn131{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn132{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn133{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn134{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn135{height:286.188px;display:block;margin-bottom:48px;flex-basis:48%}
+.cn136{display:block;margin-top:26.6px;margin-bottom:26.6px;font-family:Montserrat, sans-serif;font-size:20px;font-weight:800;line-height:28px;text-transform:uppercase}
+.cn137{border-top-width:1px;border-top-style:solid;border-top-color:var(--foreground);display:block;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:27px;list-style-type:none;list-style-position:outside}
+.cn138{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn139{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn140{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn141{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn142{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--foreground);display:list-item}
+.cn143{display:block;padding-top:20px;padding-bottom:20px;cursor:pointer}
+.cn144{height:334.188px;display:block;flex-basis:48%}
+.cn145{display:block;margin-top:26.6px;margin-bottom:26.6px;font-family:Montserrat, sans-serif;font-size:20px;font-weight:800;line-height:28px;text-transform:uppercase}
+.cn146{display:block;margin-bottom:27px;font-family:Montserrat, sans-serif;font-size:18px;font-weight:700;line-height:28.8px}
+.cn147{display:inline;cursor:pointer}
+.cn148{border-width:1px;border-style:solid;border-color:var(--foreground);display:inline-block;padding-top:17px;padding-right:30px;padding-bottom:17px;padding-left:30px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-align:center;text-transform:uppercase;background-color:var(--foreground);white-space:nowrap}
+.cn149{border-top-width:1px;border-top-style:solid;border-top-color:var(--foreground);display:block;background-color:var(--primary)}
+.cn150{display:block;max-width:1200px;margin-right:40px;margin-left:40px;padding-top:70px;padding-bottom:70px}
+.cn151{display:flex;justify-content:center;align-items:center;row-gap:96px;column-gap:96px;text-align:left}
+.cn152{width:50%;height:320.656px;display:block;min-width:290px;flex-basis:600px;overflow-x:hidden;overflow-y:hidden}
+.cn153{display:block;margin-bottom:24px;font-family:Montserrat, sans-serif;font-size:20px;font-weight:800;line-height:28px;text-transform:uppercase}
+.cn154{height:107.562px;display:block;margin-bottom:30px}
+.cn155{display:inline;font-weight:600;font-style:italic;text-decoration-line:underline;cursor:pointer}
+.cn156{display:block;margin-top:30px;margin-bottom:30px}
+.cn157{display:block}
+.cn158{display:block;margin-bottom:24px;margin-left:48px;padding-left:40px;list-style-type:disc;list-style-position:outside}
+.cn159{height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);display:flex;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;background-color:var(--color-001)}
+.cn160{display:block;flex-grow:1;flex-basis:0%}
+.cn161{width:100%;height:48px;display:inline-block;padding-top:1px;padding-right:2px;padding-bottom:1px;padding-left:20px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;font-family:Montserrat, sans-serif;font-size:13px;line-height:19.5px;text-align:start;background-color:var(--color-001);cursor:text}
+.cn161::placeholder{color:rgb(117, 117, 117)}
+.cn162{width:118px;height:48px;border-width:1px;border-style:solid;border-color:var(--foreground);display:block;margin-right:-0.5px;padding-top:17px;padding-right:30px;padding-bottom:17px;padding-left:30px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-align:center;text-transform:uppercase;background-color:var(--foreground);cursor:pointer}
+.cn163{display:block}
+.cn164{display:block}
+.cn165{display:block}
+.cn166{display:block}
+.cn167{display:inline}
+.cn168{height:23.0938px;display:block;font-size:14px;font-style:italic;line-height:23.1px}
+.cn169{display:inline;font-weight:600;text-decoration-line:underline;cursor:pointer}
+.cn170{width:25%;display:block;min-width:220px;flex-basis:300px;overflow-x:hidden;overflow-y:hidden;text-align:center}
+.cn171{width:220px;height:344px;display:inline;max-width:220px;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 1074 / 1677}
+.cn172{display:flex;color:var(--color-001);background-color:var(--foreground)}
+.cn173{height:539px;border-right-width:1px;border-right-style:solid;border-right-color:var(--surface);display:flex;padding-top:70px;padding-right:40px;padding-bottom:35px;padding-left:40px;flex-direction:column;justify-content:space-between;flex-shrink:0;flex-basis:50%;order:1;text-align:left}
+.cn174{display:block}
+.cn175{height:14px;display:block;margin-bottom:20px;line-height:0px}
+.cn176{width:165px;height:14px;display:inline;max-width:100%;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 376 / 32}
+.cn177{height:202.562px;display:block}
+.cn178{height:139.562px;display:block;max-width:389px;margin-bottom:13px;font-size:14px;line-height:23.1px}
+.cn179{display:inline;font-style:italic}
+.cn180{display:inline;color:var(--foreground);cursor:pointer}
+.cn181{display:inline-block;padding-top:5px;padding-bottom:5px;padding-left:39px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;color:var(--color-001);font-family:Montserrat, sans-serif;font-size:13px;font-weight:600;line-height:14px;text-transform:uppercase;background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.5' fill='%23464242' stroke='%23464242'/%3E%3Cpath d='M6 11.5a.5.5 0 0 0 0 1v-1zm12.354.854a.5.5 0 0 0 0-.708l-3.182-3.182a.5.5 0 1 0-.708.708L17.293 12l-2.829 2.828a.5.5 0 1 0 .708.708l3.182-3.182zM6 12.5h12v-1H6v1z' fill='%23FFF'/%3E%3C/svg%3E");background-size:24px 24px;background-position:0% 50%;background-repeat:no-repeat}
+.cn182{display:block;color:var(--color-003);font-size:11px;line-height:14px}
+.cn183{display:block;padding-top:55px;padding-bottom:35px;flex-shrink:0;flex-basis:50%;order:2}
+.cn184{display:block;padding-right:40px;padding-bottom:55px}
+.cn185{display:grid;padding-left:113px;grid-template-rows:46px 46px 46px 46px 46px;font-family:Montserrat, sans-serif;font-size:14px;line-height:16px;list-style-type:none;list-style-position:outside;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn186{display:list-item}
+.cn187{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn188{display:list-item}
+.cn189{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn190{display:list-item}
+.cn191{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn192{display:list-item}
+.cn193{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn194{display:list-item}
+.cn195{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn196{display:list-item}
+.cn197{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn198{display:list-item}
+.cn199{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn200{display:list-item}
+.cn201{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn202{display:list-item}
+.cn203{display:block;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;text-transform:uppercase;cursor:pointer}
+.cn204{border-top-width:1px;border-top-style:solid;border-top-color:var(--surface);display:flex;padding-top:35px;padding-right:40px;padding-bottom:20px;padding-left:128px;justify-content:space-between;align-items:center;font-family:Montserrat, sans-serif;font-size:12px;line-height:15px;text-align:left}
+.cn205{display:block}
+.cn206{display:block;padding-top:6px;padding-bottom:6px;cursor:pointer}
+.cn207{width:100%;display:block;padding-top:6px;padding-bottom:6px;border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;cursor:pointer}
+.cn208{height:27px;display:flex;padding-top:6px;padding-bottom:6px;justify-content:flex-start;align-items:center;row-gap:6px;column-gap:6px;cursor:pointer}
+.cn209{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden}
+.cn210{display:block;padding-top:6px;padding-bottom:6px;cursor:pointer}
+.cn211{display:block}
+.cn212{display:inline;color:var(--foreground);cursor:pointer}
+.cn213{width:15px;height:13px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn214{display:inline;color:var(--foreground);cursor:pointer}
+.cn215{width:15px;height:15px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn216{display:inline;color:var(--foreground);cursor:pointer}
+.cn217{width:17px;height:13px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn218{display:inline;color:var(--foreground);cursor:pointer}
+.cn219{width:auto;height:15px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn220{display:inline;color:var(--foreground);cursor:pointer}
+.cn221{width:15px;height:15px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn222{display:inline;color:var(--foreground);cursor:pointer}
+.cn223{width:15px;height:15px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn224{display:inline;color:var(--foreground);cursor:pointer}
+.cn225{width:14px;height:13px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn226{display:inline;color:var(--foreground);cursor:pointer}
+.cn227{width:13px;height:15px;display:inline;margin-right:10px;margin-bottom:11px;margin-left:10px;overflow-x:hidden;overflow-y:hidden}
+.cn228{display:none;min-width:0px;padding-top:20px;padding-bottom:40px;color:var(--color-003);font-size:11px;line-height:14px;text-align:center}
+
+@media (max-width: 571px) {
+.cn3{padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;height:auto;font-size:inherit;line-height:inherit}
+.cn4{display:block}
+.cn6{height:68px}
+.cn7{padding-right:24px;padding-left:24px}
+.cn10{width:141px;height:12px;max-height:12px}
+.cn13{display:block;position:absolute;top:24px;right:24px}
+.cn14{display:none}
+.cn16{display:none}
+.cn28{display:none}
+.cn29{display:none}
+.cn31{display:none}
+.cn38{width:32px;height:36px;display:flex;position:absolute;top:18px;right:69px;margin-left:0}
+.cn39{top:0px;right:0px;bottom:0px;left:0px}
+.cn40{min-width:0}
+.cn41{height:19.0312px;transform:matrix(-0.707107, 0.707107, -0.707107, -0.707107, 0, 0);transform-origin:1px 9.51562px}
+.cn42{height:19.0312px;transform:matrix(-1, 0, 0, -1, 0, 0);transform-origin:1px 9.51562px}
+.cn43{height:19.0312px;transform:matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0);transform-origin:1px 9.51562px}
+.cn44{height:19.0312px;transform:matrix(0, -1, 1, 0, 0, 0);transform-origin:1px 9.51562px}
+.cn46{padding-top:50px;padding-right:24px;padding-bottom:50px;padding-left:24px}
+.cn47{margin-bottom:40px;font-size:40px;line-height:48px}
+.cn48{display:block;row-gap:48px;column-gap:48px;justify-content:initial;align-items:initial;text-align:inherit}
+.cn49{margin-bottom:24px;flex-basis:initial;overflow-x:initial;overflow-y:initial;text-align:inherit}
+.cn51{width:100%;max-width:350px}
+.cn52{width:100%;max-width:350px}
+.cn53{width:327px;height:327px;max-width:350px}
+.cn54{width:100%;min-width:0;flex-basis:initial}
+.cn55{height:180px;margin-bottom:16px}
+.cn58{margin-bottom:24px;font-size:inherit;line-height:inherit}
+.cn59{margin-top:24px;margin-bottom:24px}
+.cn62{height:112px;display:block;border-width:0;border-style:initial;border-color:initial;border-top-left-radius:initial;border-top-right-radius:initial;border-bottom-right-radius:initial;border-bottom-left-radius:initial;background-color:initial}
+.cn64{height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);margin-bottom:12px;flex-grow:initial;flex-basis:initial}
+.cn65{width:327px;height:50px;display:inline-block;margin-right:0;text-align:inherit}
+.cn73{padding-top:60px;padding-right:24px;padding-bottom:48px;padding-left:24px;max-width:none;margin-right:0;margin-left:0}
+.cn74{margin-bottom:24px;font-size:32px;line-height:41.6px}
+.cn76{width:251px;display:inline;margin-bottom:20px}
+.cn77{width:251px;height:296px;display:inline;margin-bottom:20px}
+.cn78{display:block;margin-bottom:0;justify-content:initial;align-items:initial;row-gap:initial;column-gap:initial}
+.cn79{height:293.516px;margin-bottom:24px;font-size:18px;line-height:32.4px;max-width:none}
+.cn83{display:none}
+.cn84{display:none}
+.cn85{height:174px;flex-direction:column;row-gap:initial;column-gap:initial}
+.cn87{padding-right:30px;padding-left:30px}
+.cn89{padding-right:30px;padding-left:30px}
+.cn91{padding-right:30px;padding-left:30px}
+.cn92{display:block;padding-top:48px;padding-right:24px;padding-bottom:60px;padding-left:24px;max-width:none;margin-right:0;margin-left:0;flex-wrap:initial;row-gap:initial;column-gap:initial}
+.cn92::before{right:24px;bottom:1585.61px;left:24px}
+.cn93{margin-bottom:48px;height:auto;flex-basis:initial}
+.cn94{margin-top:21.28px;margin-bottom:21.28px;line-height:22.4px;font-size:inherit}
+.cn97{padding-top:16px;padding-bottom:16px}
+.cn98{margin-right:16px;flex-basis:80px}
+.cn99{height:53px}
+.cn101{line-height:24px;font-size:inherit}
+.cn103{padding-top:16px;padding-bottom:16px}
+.cn104{margin-right:16px;flex-basis:80px}
+.cn105{height:53px}
+.cn106{height:53.3906px}
+.cn107{line-height:24px;font-size:inherit}
+.cn109{padding-top:16px;padding-bottom:16px}
+.cn110{margin-right:16px;flex-basis:80px}
+.cn111{height:53px}
+.cn112{height:53.3906px}
+.cn113{line-height:24px;font-size:inherit}
+.cn115{padding-top:16px;padding-bottom:16px}
+.cn116{margin-right:16px;flex-basis:80px}
+.cn117{height:53px}
+.cn118{height:53.3906px}
+.cn119{line-height:24px;font-size:inherit}
+.cn120{flex-basis:initial}
+.cn121{margin-top:21.28px;margin-bottom:21.28px;line-height:22.4px;font-size:inherit}
+.cn122{line-height:24px;font-size:inherit}
+.cn124{padding-top:16px;padding-bottom:16px}
+.cn126{padding-top:16px;padding-bottom:16px}
+.cn128{padding-top:16px;padding-bottom:16px}
+.cn130{padding-top:16px;padding-bottom:16px}
+.cn132{padding-top:16px;padding-bottom:16px}
+.cn134{padding-top:16px;padding-bottom:16px}
+.cn135{height:auto;flex-basis:initial}
+.cn136{margin-top:21.28px;margin-bottom:21.28px;line-height:22.4px;font-size:inherit}
+.cn137{line-height:24px;font-size:inherit}
+.cn139{padding-top:16px;padding-bottom:16px}
+.cn141{padding-top:16px;padding-bottom:16px}
+.cn143{padding-top:16px;padding-bottom:16px}
+.cn144{height:296.812px;flex-basis:initial}
+.cn145{margin-top:21.28px;margin-bottom:21.28px;line-height:22.4px;font-size:inherit}
+.cn146{margin-bottom:24px;line-height:25.6px;font-size:inherit}
+.cn150{padding-top:50px;padding-right:24px;padding-bottom:50px;padding-left:24px;max-width:none;margin-right:0;margin-left:0}
+.cn151{flex-direction:column;text-align:center;justify-content:initial;align-items:initial;row-gap:initial;column-gap:initial}
+.cn152{width:100%;height:452.703px;order:2;min-width:0;flex-basis:initial;overflow-x:initial;overflow-y:initial}
+.cn153{margin-bottom:16px;line-height:22.4px;font-size:inherit}
+.cn154{height:185.734px;margin-bottom:24px}
+.cn156{margin-top:24px;margin-bottom:24px}
+.cn159{height:112px;display:block;border-width:0;border-style:initial;border-color:initial;border-top-left-radius:initial;border-top-right-radius:initial;border-bottom-right-radius:initial;border-bottom-left-radius:initial;background-color:initial}
+.cn161{height:50px;border-width:1px;border-style:solid;border-color:var(--foreground);margin-bottom:12px;flex-grow:initial;flex-basis:initial}
+.cn162{width:327px;height:50px;display:inline-block;margin-right:0;text-align:inherit}
+.cn168{height:46.1875px}
+.cn170{width:100%;margin-bottom:24px;min-width:0;flex-basis:initial;overflow-x:initial;overflow-y:initial;text-align:inherit}
+.cn171{width:160px;height:250px;max-width:160px}
+.cn172{display:block}
+.cn173{display:block;height:auto;border-right-width:0;border-right-style:initial;border-right-color:initial;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-direction:initial;justify-content:initial;flex-shrink:initial;flex-basis:initial;order:initial;text-align:inherit}
+.cn175{height:97px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface);padding-top:40px;padding-bottom:40px;text-align:center;margin-bottom:0}
+.cn176{width:188px;height:16px}
+.cn177{height:324.75px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface);padding-top:40px;padding-right:24px;padding-bottom:40px;padding-left:24px;text-align:center}
+.cn178{height:186.75px;margin-bottom:7px;max-width:none}
+.cn181{text-align:left}
+.cn182{display:none}
+.cn183{padding-top:0;padding-bottom:0;flex-shrink:initial;flex-basis:initial;order:initial}
+.cn184{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface);padding-top:25px;padding-bottom:25px;padding-left:40px}
+.cn185{padding-left:0}
+.cn204{padding-top:40px;flex-direction:column;text-align:center;border-top-width:0;border-top-style:initial;border-top-color:initial;padding-right:0;padding-left:0;justify-content:initial;align-items:initial}
+.cn205{margin-top:40px;order:2}
+.cn206{padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn207{padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn208{height:39px;padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px;justify-content:center}
+.cn210{padding-top:12px;padding-right:12px;padding-bottom:12px;padding-left:12px}
+.cn213{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn215{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn217{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn219{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn221{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn223{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn225{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn227{margin-right:11px;margin-left:11px;margin-bottom:0}
+.cn228{display:block;min-width:0}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn3{padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;height:auto;font-size:inherit;line-height:inherit}
+.cn4{display:block}
+.cn6{height:68px}
+.cn7{padding-right:40px;padding-left:40px}
+.cn10{width:141px;height:12px;max-height:12px}
+.cn13{display:block;position:absolute;top:24px;right:24px}
+.cn14{display:none}
+.cn16{display:none}
+.cn28{display:none}
+.cn29{display:none}
+.cn31{display:none}
+.cn38{width:32px;height:36px;display:flex;position:absolute;top:18px;right:69px;margin-left:0}
+.cn39{top:0px;right:0px;bottom:0px;left:0px}
+.cn40{min-width:0}
+.cn41{height:19.0312px;transform:matrix(-0.707107, 0.707107, -0.707107, -0.707107, 0, 0);transform-origin:1px 9.51562px}
+.cn42{height:19.0312px;transform:matrix(-1, 0, 0, -1, 0, 0);transform-origin:1px 9.51562px}
+.cn43{height:19.0312px;transform:matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0);transform-origin:1px 9.51562px}
+.cn44{height:19.0312px;transform:matrix(0, -1, 1, 0, 0, 0);transform-origin:1px 9.51562px}
+.cn46{padding-right:40px;padding-left:40px}
+.cn47{font-size:60px;line-height:72px}
+.cn48{row-gap:48px;column-gap:48px}
+.cn53{width:336px;height:336px}
+.cn54{width:44%}
+.cn55{height:180px}
+.cn73{padding-right:40px;padding-left:40px;margin-right:0;margin-left:0}
+.cn74{margin-bottom:30px}
+.cn78{row-gap:32px;column-gap:32px}
+.cn79{height:288px;font-size:20px;line-height:36px}
+.cn82{width:270px;height:318px}
+.cn84{width:270px;height:318px}
+.cn92{padding-right:40px;padding-left:40px;max-width:none;margin-right:0;margin-left:0}
+.cn92::before{right:40px;bottom:1179.75px;left:40px}
+.cn93{height:592.188px}
+.cn135{height:340.562px}
+.cn144{height:388.562px}
+.cn150{padding-right:40px;padding-left:40px;max-width:none;margin-right:0;margin-left:0}
+.cn151{row-gap:48px;column-gap:48px}
+.cn152{width:61%;height:369.141px}
+.cn154{height:132.953px}
+.cn168{height:46.1875px}
+.cn170{width:32%}
+.cn173{height:584px}
+.cn177{height:249.75px}
+.cn178{height:186.75px}
+.cn185{padding-left:49px}
+.cn204{padding-left:64px}
+.cn208{height:42px}
+}
+
+@media (min-width: 1601px) {
+.cn54{width:24.5%}
+.cn73{margin-right:464px;margin-left:464px}
+.cn92{margin-right:360px;margin-left:360px}
+.cn150{margin-right:360px;margin-left:360px}
+.cn173{padding-left:360px}
+.cn184{padding-right:360px}
+.cn204{padding-right:360px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1" id="page">
+      <a class="cn2" data-ditto-id="style-link-3" href="#primary">
+        Skip to content
+      </a>
+      <div class="cn3">
+        Meet Purpose, my AI-powered growth mentoring app. 
+        <a class="cn4" data-ditto-id="style-page" href="https://purposeapp.onelink.me/WHy0/qjcqzg0z" target="_blank" title="Try the Purpose app for free">
+          <span class="cn5" data-ditto-id="style-a">
+            Try It Free
+          </span>
+           →
+        </a>
+      </div>
+      <header class="cn6" id="masthead">
+        <div class="cn7">
+          <div class="cn8">
+            <a class="cn9" data-ditto-id="style-link-4" href="https://markmanson.net/" rel="home">
+              <img class="cn10" alt="MARK MANSON" height="28" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="329" />
+               
+            </a>
+          </div>
+          <nav class="cn11" id="site-navigation">
+            <h5 class="cn12">
+              Menu
+            </h5>
+            <button class="cn13" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation menu"></button>
+            <div class="cn14">
+              <div class="cn15">
+                <ul class="cn16" id="primary-menu">
+                  <li class="cn17">
+                    <a class="cn18" data-ditto-id="style-20" href="https://markmanson.net/articles">
+                      Articles
+                    </a>
+                  </li>
+                  <li class="cn19">
+                    <a class="cn20" data-ditto-id="style-21" href="https://markmanson.net/books">
+                      Books
+                    </a>
+                  </li>
+                  <li class="cn21">
+                    <a class="cn22" data-ditto-id="style-22" href="https://markmanson.net/breakthrough">
+                      Newsletter
+                    </a>
+                  </li>
+                  <li class="cn23">
+                    <a class="cn24" data-ditto-id="style-23" href="https://solvedpodcast.com/" target="_blank">
+                      Podcast
+                    </a>
+                  </li>
+                  <li class="cn25">
+                    <a class="cn26" data-ditto-id="style-24" href="https://purposeapp.onelink.me/WHy0/4ub3y0gk" target="_blank">
+                      App
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cn27">
+                <a class="cn28" data-ditto-id="style-link-5" href="https://markmanson.net/log-in?redirect_to=https%3A%2F%2Fmarkmanson.net%2F">
+                  Log In
+                </a>
+                 
+                <a class="cn29" data-ditto-id="style-link-23" href="https://markmanson.net/subscribe?from=main-nav&amp;from-path=homepage">
+                  <div class="cn30" data-ditto-id="style-button">
+                    Sign Up
+                  </div>
+                </a>
+              </div>
+              <button class="cn31">
+                <div class="cn32">
+                  <div class="cn33"></div>
+                  <small class="cn34"></small>
+                   
+                  <small class="cn35"></small>
+                   
+                  <small class="cn36"></small>
+                   
+                  <small class="cn37"></small>
+                </div>
+              </button>
+            </div>
+            <button class="cn38">
+              <div class="cn39">
+                <div class="cn40"></div>
+                <small class="cn41"></small>
+                 
+                <small class="cn42"></small>
+                 
+                <small class="cn43"></small>
+                 
+                <small class="cn44"></small>
+              </div>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <main class="cn45" id="primary">
+        <div class="cn46">
+          <h1 class="cn47">
+            5 Minutes That Might Change Your Life
+          </h1>
+          <div class="cn48" data-ditto-id="style-div-32">
+            <div class="cn49" data-ditto-id="style-header">
+              <picture class="cn50" data-ditto-id="style-heading-26">
+                <source class="cn51" srcset="public/assets/cloned/images/3869943d1126.webp" type="image/webp" />
+                <source class="cn52" data-ditto-id="style-div-33" srcset="public/assets/cloned/images/ddce9ed79a9f.png" type="image/png" />
+                <img class="cn53" data-ditto-id="style-span-12" alt="Your Next Breakthrough newsletter" height="828" src="public/assets/cloned/images/ddce9ed79a9f.png" width="828" />
+              </picture>
+            </div>
+            <div class="cn54" data-ditto-id="style-span-9">
+              <div class="cn55" data-ditto-id="style-link-6">
+                <div class="cn56" data-ditto-id="style-div-26">
+                  <span class="cn57" data-ditto-id="style-span-11">
+                    22844 people
+                  </span>
+                </div>
+                have shared breakthroughs so far. Will the next one be you?
+              </div>
+              <p class="cn58" data-ditto-id="style-span-10">
+                Receive ideas shared with millions of people each week directly to your inbox.
+              </p>
+              <form class="cn59" data-ditto-id="style-link-7">
+                <div class="cn60" data-ditto-id="style-div-7">
+                  <ul class="cn61" data-ditto-id="style-div-27"></ul>
+                  <div class="cn62" data-ditto-id="style-section">
+                    <div class="cn63" data-ditto-id="style-p-25">
+                      <input class="cn64" data-ditto-id="style-span-2" aria-label="Email Address" name="email_address" placeholder="Your Email Address" type="email" />
+                    </div>
+                    <button class="cn65" data-ditto-id="style-p-41">
+                      <div class="cn66" data-ditto-id="style-p-40">
+                        <div class="cn67" data-ditto-id="style-p-19"></div>
+                        <div class="cn68" data-ditto-id="style-p-20"></div>
+                        <div class="cn69" data-ditto-id="style-p-42"></div>
+                      </div>
+                      <span class="cn70" data-ditto-id="style-p-9">
+                        SIGN UP
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                 
+              </form>
+              <p class="cn71" data-ditto-id="style-div">
+                Your information is protected and I never spam, ever. You can view my privacy policy 
+                <a class="cn72" data-ditto-id="style-heading-11" href="https://markmanson.net/privacy-policy">
+                  here
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cn73" data-ditto-id="style-p-26">
+          <h2 class="cn74" data-ditto-id="style-p-14">
+            Hi, I’m Mark
+          </h2>
+          <picture class="cn75" data-ditto-id="style-link-8">
+            <source class="cn76" data-ditto-id="style-p-27" srcset="public/assets/cloned/images/44ad840903b0.webp" type="image/webp" />
+            <img class="cn77" data-ditto-id="style-p-43" alt="Mark Manson" height="296" src="public/assets/cloned/images/02b7f78e9802.png" width="251" />
+          </picture>
+          <div class="cn78" data-ditto-id="style-p-21">
+            <p class="cn79" data-ditto-id="style-b-4">
+              I am the #1 NY Times Bestselling author of 
+              <a class="cn80" data-ditto-id="style-ul" href="https://markmanson.net/books/subtle-art">
+                The Subtle Art of Not Giving a F*ck
+              </a>
+               and 
+              <a class="cn81" data-ditto-id="style-li" href="https://markmanson.net/books/everything-is-fucked">
+                Everything Is F*cked: A Book About Hope
+              </a>
+              . I write life advice that is science-based, pragmatic, and non-bullshitty—a.k.a., life advice that doesn’t suck. Some people say I’m an idiot. Other people say I saved their life. Read on and decide for yourself.
+            </p>
+            <picture class="cn82" data-ditto-id="style-b">
+              <source class="cn83" data-ditto-id="style-li-2" srcset="public/assets/cloned/images/44ad840903b0.webp" type="image/webp" />
+              <img class="cn84" data-ditto-id="style-b-5" alt="Mark Manson" height="429" src="public/assets/cloned/images/02b7f78e9802.png" width="364" />
+            </picture>
+          </div>
+          <div class="cn85" data-ditto-id="style-ul-2">
+            <a class="cn86" data-ditto-id="style-p" href="https://markmanson.net/articles" title="The archive of all articles">
+              <div class="cn87" data-ditto-id="style-span">
+                Read my articles
+              </div>
+            </a>
+             
+            <a class="cn88" data-ditto-id="style-link" href="https://markmanson.net/podcast" title="The podcast archive">
+              <div class="cn89" data-ditto-id="style-p-10">
+                Listen to my podcast
+              </div>
+            </a>
+             
+            <a class="cn90" data-ditto-id="style-link-2" href="https://www.youtube.com/@IAmMarkManson" title="My YouTube channel">
+              <div class="cn91" data-ditto-id="style-hr">
+                Watch my videos
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cn92" data-ditto-id="style-p-2">
+          <div class="cn93" data-ditto-id="style-p-11">
+            <h4 class="cn94" data-ditto-id="style-p-3">
+              Latest Podcasts
+            </h4>
+            <div class="cn95" data-ditto-id="style-p-12">
+              <a class="cn96" data-ditto-id="style-heading" href="https://solvedpodcast.com/podcast/luck">
+                <li class="cn97" data-ditto-id="style-blockquote-3">
+                  <div class="cn98" data-ditto-id="style-p-4">
+                    <img class="cn99" data-ditto-id="style-footer-3" src="public/assets/cloned/images/f2d7f3f943f9.jpg" />
+                  </div>
+                  <div class="cn100" data-ditto-id="style-cite">
+                    <h6 class="cn101" data-ditto-id="style-p-13">
+                      Luck, Solved
+                    </h6>
+                  </div>
+                </li>
+              </a>
+              <a class="cn102" data-ditto-id="style-em" href="https://solvedpodcast.com/podcast/confidence">
+                <li class="cn103" data-ditto-id="style-li-6">
+                  <div class="cn104" data-ditto-id="style-li-3">
+                    <img class="cn105" data-ditto-id="style-b-2" src="public/assets/cloned/images/348f43b1647e.jpg" />
+                  </div>
+                  <div class="cn106" data-ditto-id="style-li-4">
+                    <h6 class="cn107" data-ditto-id="style-b-3">
+                      Confidence, Solved
+                    </h6>
+                  </div>
+                </li>
+              </a>
+              <a class="cn108" data-ditto-id="style-em-5" href="https://solvedpodcast.com/podcast/change">
+                <li class="cn109" data-ditto-id="style-em-2">
+                  <div class="cn110" data-ditto-id="style-li-5">
+                    <img class="cn111" data-ditto-id="style-b-6" src="public/assets/cloned/images/66b59a22b630.jpg" />
+                  </div>
+                  <div class="cn112" data-ditto-id="style-p-22">
+                    <h6 class="cn113" data-ditto-id="style-div-28">
+                      How to Change Your Life, Solved
+                    </h6>
+                  </div>
+                </li>
+              </a>
+              <a class="cn114" data-ditto-id="style-p-15" href="https://solvedpodcast.com/podcast/bad-relationships">
+                <li class="cn115" data-ditto-id="style-link-9">
+                  <div class="cn116" data-ditto-id="style-p-16">
+                    <img class="cn117" data-ditto-id="style-link-10" src="public/assets/cloned/images/f96b556e9cf0.jpg" />
+                  </div>
+                  <div class="cn118" data-ditto-id="style-button-2">
+                    <h6 class="cn119" data-ditto-id="style-aside">
+                      Why We Stay in Bad Relationships, Solved
+                    </h6>
+                  </div>
+                </li>
+              </a>
+            </div>
+          </div>
+          <div class="cn120" data-ditto-id="style-div-17">
+            <h4 class="cn121" data-ditto-id="style-heading-12">
+              Latest Newsletters
+            </h4>
+            <ul class="cn122" data-ditto-id="style-p-23">
+              <li class="cn123" data-ditto-id="style-em-3">
+                <a class="cn124" data-ditto-id="style-link-11" href="https://markmanson.net/breakthrough/240-survive" title="You Are Stronger Than You Know">
+                  You Are Stronger Than You Know
+                </a>
+              </li>
+              <li class="cn125" data-ditto-id="style-button-3">
+                <a class="cn126" data-ditto-id="style-div-3" href="https://markmanson.net/breakthrough/239-procrastination" title="Your Procrastination Just Got Smarter">
+                  Your Procrastination Just Got Smarter
+                </a>
+              </li>
+              <li class="cn127" data-ditto-id="style-link-12">
+                <a class="cn128" data-ditto-id="style-icon" href="https://markmanson.net/breakthrough/238-saying-no" title="Your Yes’s Are Cheap">
+                  Your Yes’s Are Cheap
+                </a>
+              </li>
+              <li class="cn129" data-ditto-id="style-link-13">
+                <a class="cn130" data-ditto-id="style-icon-2" href="https://markmanson.net/breakthrough/237-meaning" title="Meaning Won’t Find You">
+                  Meaning Won’t Find You
+                </a>
+              </li>
+              <li class="cn131" data-ditto-id="style-link-14">
+                <a class="cn132" data-ditto-id="style-icon-3" href="https://markmanson.net/breakthrough/236-hide" title="You’re Hiding the Best Part of Yourself">
+                  You’re Hiding the Best Part of Yourself
+                </a>
+              </li>
+              <li class="cn133" data-ditto-id="style-link-15">
+                <a class="cn134" data-ditto-id="style-icon-4" href="https://markmanson.net/breakthrough/235-luck" title="How to Make Your Own Luck">
+                  How to Make Your Own Luck
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cn135" data-ditto-id="style-link-16">
+            <h4 class="cn136" data-ditto-id="style-icon-5">
+              Popular Articles
+            </h4>
+            <ul class="cn137" data-ditto-id="style-div-18">
+              <li class="cn138" data-ditto-id="style-heading-13">
+                <a class="cn139" data-ditto-id="style-ul-3" href="https://markmanson.net/not-giving-a-fuck" title="The Subtle Art of Not Giving a Fuck">
+                  The Subtle Art of Not Giving a Fuck
+                </a>
+              </li>
+              <li class="cn140" data-ditto-id="style-div-4">
+                <a class="cn141" data-ditto-id="style-image" href="https://markmanson.net/life-purpose" title="7 Strange Questions That Help You Find Your Life Purpose">
+                  7 Strange Questions That Help You Find Your Life Purpose
+                </a>
+              </li>
+              <li class="cn142" data-ditto-id="style-heading-2">
+                <a class="cn143" data-ditto-id="style-blockquote" href="https://markmanson.net/screw-finding-your-passion" title="Screw Finding Your Passion">
+                  Screw Finding Your Passion
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cn144" data-ditto-id="style-p-17">
+            <h4 class="cn145" data-ditto-id="style-footer">
+              Join Me On Purpose
+            </h4>
+            <p class="cn146" data-ditto-id="style-cite-3">
+              Purpose is the only app where you'll figure out what actually matters, get a personalized plan to go after it, and take daily action toward the life you want. Get 24/7 AI coaching, custom advice, and practical steps — all inside one simple app.
+            </p>
+            <a class="cn147" data-ditto-id="style-p-5" href="https://purposeapp.onelink.me/WHy0/jxieyx3b" target="_blank" title="Try the Purpose app for free">
+              <div class="cn148" data-ditto-id="style-link-24">
+                Try It Free
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cn149" data-ditto-id="style-refmark-2">
+          <div class="cn150" data-ditto-id="style-sup-2">
+            <div class="cn151" data-ditto-id="style-link-17">
+              <div class="cn152" data-ditto-id="style-link-18">
+                <h4 class="cn153" data-ditto-id="style-button-4">
+                  5 Minutes Each Week That Might Change Your Life
+                </h4>
+                <p class="cn154" data-ditto-id="style-colophon-2">
+                  Enter your email address below to sign up for my free newsletter, 
+                  <a class="cn155" data-ditto-id="style-div-19" href="https://markmanson.net/breakthrough">
+                    Your Next Breakthrough
+                  </a>
+                  . Each week, you’ll receive a few prompts and exercises designed to create your next breakthrough. No fluff, no filler, no BS. Just five minutes each week that might change your life.
+                </p>
+                <form class="cn156" data-ditto-id="style-div-11">
+                  <div class="cn157" data-ditto-id="style-div-20">
+                    <ul class="cn158" data-ditto-id="style-image-5"></ul>
+                    <div class="cn159" data-ditto-id="style-div-8">
+                      <div class="cn160" data-ditto-id="style-p-24">
+                        <input class="cn161" data-ditto-id="style-em-4" aria-label="Email Address" name="email_address" placeholder="Your Email Address" type="email" />
+                      </div>
+                      <button class="cn162" data-ditto-id="style-link-19">
+                        <div class="cn163" data-ditto-id="style-button-5">
+                          <div class="cn164" data-ditto-id="style-div-12"></div>
+                          <div class="cn165" data-ditto-id="style-div-30"></div>
+                          <div class="cn166" data-ditto-id="style-div-9"></div>
+                        </div>
+                        <span class="cn167" data-ditto-id="style-footer-menu">
+                          Sign Up
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                   
+                </form>
+                <p class="cn168" data-ditto-id="style-refmark-4">
+                  Your information is protected and I never spam, ever. You can view my privacy policy 
+                  <a class="cn169" data-ditto-id="style-sup" href="https://markmanson.net/privacy-policy">
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+              <div class="cn170" data-ditto-id="style-attachment-15239-2">
+                <img class="cn171" data-ditto-id="style-image-2" alt="Breakthrough newsletter" height="1677" src="public/assets/cloned/images/ab8652a0ec78.png" width="1074" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="cn172" data-ditto-id="style-caption-attachment-15239-2" id="colophon">
+        <div class="cn173" data-ditto-id="style-blockquote-2">
+          <div class="cn174" data-ditto-id="style-p-18">
+            <div class="cn175" data-ditto-id="style-footer-2">
+              <img class="cn176" data-ditto-id="style-cite-4" alt="MARK MANSON" height="32" src="public/assets/cloned/images/1b070c113a32.png" width="376" />
+            </div>
+            <div class="cn177" data-ditto-id="style-p-6">
+              <p class="cn178" data-ditto-id="style-blockquote-4">
+                Mark is the three-time #1 New York Times bestselling author of 
+                <em class="cn179" data-ditto-id="style-p-7">
+                  The Subtle Art of Not Giving a F*ck
+                </em>
+                , as well as other titles. His books have sold around 20 million copies, been translated into more than 65 languages, and reached number one in more than a dozen countries. In 2023, a feature film about his life and ideas was released worldwide by Universal Pictures.
+              </p>
+              <a class="cn180" data-ditto-id="style-footer-4" href="https://markmanson.net/about">
+                <div class="cn181" data-ditto-id="style-cite-2">
+                  Learn More About Mark
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="cn182" data-ditto-id="style-blockquote-5">
+            © 2026 Infinity Squared Media LLC
+          </div>
+        </div>
+        <div class="cn183" data-ditto-id="style-p-8">
+          <div class="cn184" data-ditto-id="style-footer-5">
+            <ul class="cn185" data-ditto-id="style-div-2" id="footer-menu">
+              <li class="cn186" data-ditto-id="style-div-10">
+                <a class="cn187" data-ditto-id="style-div-5" href="https://markmanson.net/articles">
+                  Articles
+                </a>
+              </li>
+              <li class="cn188" data-ditto-id="style-link-20">
+                <a class="cn189" data-ditto-id="style-button-6" href="https://markmanson.net/books">
+                  Books
+                </a>
+              </li>
+              <li class="cn190" data-ditto-id="style-link-21">
+                <a class="cn191" data-ditto-id="style-icon-6" href="https://markmanson.net/breakthrough">
+                  Newsletter
+                </a>
+              </li>
+              <li class="cn192" data-ditto-id="style-link-22">
+                <a class="cn193" data-ditto-id="style-div-6" href="https://solvedpodcast.com/" target="_blank">
+                  Podcast
+                </a>
+              </li>
+              <li class="cn194" data-ditto-id="style-x">
+                <a class="cn195" data-ditto-id="style-icon-7" href="https://markmanson.net/about">
+                  About Mark
+                </a>
+              </li>
+              <li class="cn196" data-ditto-id="style-instagram">
+                <a class="cn197" data-ditto-id="style-icon-8" href="https://markmanson.net/subscribe?from=footer-nav&amp;from-path=homepage">
+                  Sign Up
+                </a>
+              </li>
+              <li class="cn198" data-ditto-id="style-youtube">
+                <a class="cn199" data-ditto-id="style-icon-9" href="https://markmanson.net/contact">
+                  Contact
+                </a>
+              </li>
+              <li class="cn200" data-ditto-id="style-spotify">
+                <a class="cn201" data-ditto-id="style-icon-10" href="https://markmanson.net/sponsor">
+                  Sponsorships
+                </a>
+              </li>
+              <li class="cn202" data-ditto-id="style-facebook">
+                <a class="cn203" data-ditto-id="style-icon-11" href="https://purposeapp.onelink.me/WHy0/4ub3y0gk" target="_blank" title="Try the Purpose App for free">
+                  Purpose App
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cn204" data-ditto-id="style-threads">
+            <div class="cn205" data-ditto-id="style-icon-12">
+              <a class="cn206" data-ditto-id="style-linkedin" href="https://markmanson.net/privacy-policy">
+                Privacy Policy
+              </a>
+               
+              <button class="cn207" data-ditto-id="style-icon-13" aria-haspopup="dialog" type="button">
+                Manage Cookie Settings
+              </button>
+               
+              <a class="cn208" data-ditto-id="style-tiktok" href="https://markmanson.net/your-privacy-choices">
+                <svg class="cn209" data-ditto-id="style-icon-14" viewBox="0 0 30 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path><path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path><path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path><path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path></svg>
+                 Your Privacy Choices
+              </a>
+               
+              <a class="cn210" data-ditto-id="style-div-29" href="https://markmanson.net/terms-and-conditions">
+                Terms and Conditions
+              </a>
+            </div>
+            <div class="cn211" data-ditto-id="style-p-71">
+              <a class="cn212" data-ditto-id="style-heading-17" aria-label="X" href="https://x.com/markmanson">
+                <svg class="cn213" data-ditto-id="style-link-61" fill="#fff" height="13" viewBox="0 0 512 512" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+              </a>
+              <a class="cn214" data-ditto-id="style-i-17" aria-label="Instagram" href="https://www.instagram.com/markmanson">
+                <svg class="cn215" data-ditto-id="style-heading-25" fill="#fff" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M7.505.416c1.925 0 2.165.007 2.92.043.754.035 1.268.153 1.72.329.467.18.861.423 1.255.817.36.354.639.782.817 1.255.175.451.294.965.329 1.72.033.755.043.995.043 2.92 0 1.924-.008 2.164-.043 2.92-.035.754-.154 1.267-.33 1.719a3.459 3.459 0 0 1-.816 1.255c-.354.36-.783.639-1.255.817-.451.175-.966.294-1.72.33-.755.032-.995.042-2.92.042-1.924 0-2.164-.007-2.92-.043-.754-.035-1.267-.154-1.72-.33a3.463 3.463 0 0 1-1.255-.816 3.473 3.473 0 0 1-.816-1.255c-.176-.451-.294-.965-.33-1.72C.431 9.664.422 9.424.422 7.5c0-1.924.007-2.164.042-2.92.036-.754.154-1.267.33-1.72.177-.472.456-.9.816-1.254.354-.36.783-.64 1.256-.817.452-.176.964-.294 1.72-.33.755-.033.995-.042 2.92-.042zm0 3.542a3.542 3.542 0 1 0 0 7.083 3.542 3.542 0 0 0 0-7.083zm4.604-.177a.885.885 0 1 0-1.77 0 .885.885 0 0 0 1.77 0zM7.505 5.374a2.125 2.125 0 1 1 0 4.25 2.125 2.125 0 0 1 0-4.25z"></path></svg>
+              </a>
+              <a class="cn216" data-ditto-id="style-blockquote-17" aria-label="YouTube" href="https://www.youtube.com/@IAmMarkManson">
+                <svg class="cn217" data-ditto-id="style-p-28" fill="#fff" height="13" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M16.05 2.144c.361 1.41.361 4.355.361 4.355s0 2.945-.361 4.356c-.201.78-.79 1.393-1.535 1.6-1.353.378-6.02.378-6.02.378s-4.665 0-6.02-.377a2.225 2.225 0 0 1-1.535-1.6C.578 9.443.578 6.498.578 6.498s0-2.945.362-4.355C1.14 1.364 1.73.75 2.474.543 3.83.166 8.494.166 8.494.166s4.668 0 6.021.377c.748.21 1.336.823 1.535 1.6zM6.91 9.27l4.75-2.77-4.75-2.771V9.27z"></path></svg>
+              </a>
+              <a class="cn218" data-ditto-id="style-footer-17" aria-label="Spotify" href="https://open.spotify.com/show/11VjrLJfoiNvgjjqov4RWh">
+                <svg class="cn219" data-ditto-id="style-cite-9" fill="#fff" height="15" viewBox="0 0 496 512" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"></path></svg>
+              </a>
+              <a class="cn220" data-ditto-id="style-p-72" aria-label="Facebook" href="https://www.facebook.com/Markmansonnet/">
+                <svg class="cn221" data-ditto-id="style-link-25" fill="#fff" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M10.193 14.625V9.11h1.847l.277-2.144h-2.124V5.598c0-.62.173-1.044 1.063-1.044h1.135V2.637a15.192 15.192 0 0 0-1.655-.085c-1.636 0-2.756 1-2.756 2.834v1.58H6.129V9.11h1.85v5.515H1.168a.792.792 0 0 1-.792-.792V1.167a.792.792 0 0 1 .792-.792h12.666a.792.792 0 0 1 .792.792v12.666a.791.791 0 0 1-.792.792h-3.64z"></path></svg>
+              </a>
+              <a class="cn222" data-ditto-id="style-blockquote-6" aria-label="Threads" href="https://www.threads.net/@markmanson">
+                <svg class="cn223" data-ditto-id="style-p-55" fill="#fff" height="15" viewBox="0 0 448 512" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"></path></svg>
+              </a>
+              <a class="cn224" data-ditto-id="style-footer-18" aria-label="LinkedIn" href="https://www.linkedin.com/in/markmanson">
+                <svg class="cn225" data-ditto-id="style-cite-18" fill="#fff" height="13" width="14" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M3.255 4.182H.445c-.125 0-.226.094-.226.21v8.383c0 .116.1.21.226.21h2.81c.125 0 .226-.094.226-.21V4.391c0-.115-.101-.21-.226-.21zM1.855.014C.832.014 0 .785 0 1.734s.832 1.72 1.855 1.72c1.021 0 1.853-.771 1.853-1.72S2.876.014 1.855.014zM10.41 3.973c-1.13 0-1.964.45-2.47.962v-.544c0-.116-.101-.21-.226-.21H5.023c-.125 0-.226.094-.226.21v8.384c0 .116.101.21.226.21h2.804c.125 0 .226-.094.226-.21V8.627c0-1.398.409-1.943 1.458-1.943 1.143 0 1.234.873 1.234 2.015v4.076c0 .116.1.21.226.21h2.805c.125 0 .226-.094.226-.21V8.176c0-2.079-.427-4.203-3.593-4.203z"></path></g><defs><clipPath id="a"><path d="M0 0h14v13H0z"></path></clipPath></defs></svg>
+              </a>
+              <a class="cn226" data-ditto-id="style-p-29" aria-label="TikTok" href="https://www.tiktok.com/@iammarkmanson">
+                <svg class="cn227" data-ditto-id="style-link-26" fill="#fff" height="15" width="13" xmlns="http://www.w3.org/2000/svg"><path d="M11.871 3.735A3.395 3.395 0 0 1 9.201.728V.416H6.76V10.1a2.051 2.051 0 0 1-3.684 1.235h-.002.002A2.05 2.05 0 0 1 5.33 8.14V5.661a4.483 4.483 0 1 0 3.87 4.44V5.153a5.795 5.795 0 0 0 3.38 1.08V3.81c-.238 0-.476-.024-.71-.074z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cn228" data-ditto-id="style-link-27">
+          © 2026 Infinity Squared Media LLC
+        </div>
+      </footer>
+    </div>
+     
+</body>
+</html>

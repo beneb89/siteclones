@@ -12,7 +12,7 @@ export default function MediaTile({ d, styles }: { d: MediaTileData; styles: Med
   return (
     <div className="block">
       <div className="h-full min-h-full flex relative flex-col overflow-hidden">
-        <div className="block relative mb-[13.3px] p-[5.2rem] rounded-[6.7px] overflow-hidden bg-surface-2 max-lg:mb-[0.9375rem] max-lg:py-12.5 max-lg:px-17.5 max-lg:rounded-[10px] 2xl:mb-5 2xl:p-[7.8125rem] 2xl:rounded-[10px]">
+        <div className="block relative mb-[13.3px] p-[5.2rem] rounded-[6.7px] overflow-hidden bg-surface max-lg:mb-[0.9375rem] max-lg:py-12.5 max-lg:px-17.5 max-lg:rounded-[10px] 2xl:mb-5 2xl:p-[7.8125rem] 2xl:rounded-[10px]">
           <div className="flex relative transform-[matrix(0.95,0,0,0.95,0,0)] origin-[114.625px_137.547px] mx-auto max-lg:transform-[none] max-lg:origin-[initial] max-lg:mx-0 2xl:origin-[171.664px_205.992px] before:content-[''] before:block before:w-0 before:h-[17.1875rem] before:pt-[17.1875rem] max-md:before:h-[15.225rem] max-md:before:pt-[15.225rem] md:max-lg:before:h-[38.1rem] md:max-lg:before:pt-[38.1rem] 2xl:before:h-[25.75rem] 2xl:before:pt-[25.75rem]">
             <img className="w-full h-full block absolute top-0 left-0 min-w-0 max-w-full overflow-clip object-contain pointer-events-none" data-component="image" alt={d.alt} src={d.imgSrc} />
             {" "}

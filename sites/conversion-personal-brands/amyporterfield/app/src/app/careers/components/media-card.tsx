@@ -14,10 +14,10 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
       <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
         <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
           <div className={cn("w-42.5 h-10 block absolute top-12.5 left-231 transform-[none] max-md:w-60.5 max-md:h-12.5 max-md:left-[2.4375rem] max-md:origin-[121px_25px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-363.24,-25.2)] md:max-lg:origin-[85px_20px]", styles.className2)}>
-            <div className="h-full block bg-color-004" />
+            <div className="h-full block bg-color-003" />
           </div>
           <a className={cn("w-42.5 h-10 block absolute top-12.5 left-231 transform-[none] cursor-pointer max-md:w-60.5 max-md:h-12.5 max-md:left-[2.4375rem] max-md:origin-[121px_25px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-363.24,-25.2)] md:max-lg:origin-[85px_20px]", styles.className3)} data-component="link" href={d.href} target="_blank">
-            <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[2.375rem] tracking-[0.65px] text-center uppercase max-md:text-[0.9375rem] max-md:leading-12 max-md:tracking-[0.75px]">
+            <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[2.375rem] tracking-[0.65px] text-center uppercase max-md:text-[0.9375rem] max-md:leading-12 max-md:tracking-[0.75px]">
               learn more
               <br className="box-content inline" />
             </p>
@@ -37,7 +37,7 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
             </h2>
           </div>
           <div className={cn("w-[29.3125rem] block absolute left-[28.4375rem] transform-[none] max-md:w-71.5 max-md:left-[1.0625rem]", styles.className5)}>
-            <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left">
+            <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left">
               {d.description}
               <br className="box-content inline" />
             </p>

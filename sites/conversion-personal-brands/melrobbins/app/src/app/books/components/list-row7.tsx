@@ -1,0 +1,15 @@
+export type ListRow7Data = {
+  href: string;
+  label: string;
+};
+/** A list row. */
+export default function ListRow7({ d }: { d: ListRow7Data }) {
+  return (
+    <li className="list-item py-1">
+      <a className="inline-block text-muted-foreground text-[0.9375rem] leading-[1.125rem] cursor-pointer 2xl:leading-[1.1875rem] 2xl:[font-size:inherit]" data-component="link" href={d.href}>
+        {d.label}
+      </a>
+      {" "}
+    </li>
+  );
+}

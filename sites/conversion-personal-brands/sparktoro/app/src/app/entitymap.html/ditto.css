@@ -1,0 +1,17 @@
+.cn0{display:block;max-width:820px;margin-right:auto;margin-left:auto;padding-top:40px;padding-right:24px;padding-bottom:64px;padding-left:24px;color:var(--color-012);font-family:Georgia, "Times New Roman", serif;font-size:15px;font-weight:400;font-style:normal;line-height:27px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+
+@media (max-width: 571px) {
+.cn0{padding-top:20px;padding-right:16px;padding-bottom:48px;padding-left:16px}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link-21"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-div-31"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-image-2"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-div-6"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-link-10"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-icon-10"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-link-19"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-div-32"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-div-33"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}
+[data-ditto-id="style-li-6"]:hover{border-bottom-color:rgb(46, 49, 146);border-left-color:rgb(46, 49, 146);border-right-color:rgb(46, 49, 146);border-top-color:rgb(46, 49, 146);color:rgb(46, 49, 146);outline-color:rgb(46, 49, 146);text-decoration-color:rgb(46, 49, 146)}

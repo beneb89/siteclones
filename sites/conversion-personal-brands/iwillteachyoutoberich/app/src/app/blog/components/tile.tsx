@@ -11,7 +11,7 @@ export type TileData = {
 export default function Tile({ d, styles }: { d: TileData; styles: TileStyles }) {
   return (
     <div className="flex">
-      <div className="h-[17.4125rem] min-h-[10.4rem] flex relative p-[1.6625rem] rounded-[6.7px] flex-col overflow-hidden shadow-[var(--color-002)_0px_0px_0px_1px_inset] max-md:h-[305.7px] max-lg:min-h-full max-lg:p-5 max-lg:rounded-[10px] md:max-lg:h-[17.3875rem] 2xl:h-[25.45rem] 2xl:min-h-62.5 2xl:p-10 2xl:rounded-[10px]">
+      <div className="h-[17.4125rem] min-h-[10.4rem] flex relative p-[1.6625rem] rounded-[6.7px] flex-col overflow-hidden shadow-[var(--color-003)_0px_0px_0px_1px_inset] max-md:h-[305.7px] max-lg:min-h-full max-lg:p-5 max-lg:rounded-[10px] md:max-lg:h-[17.3875rem] 2xl:h-[25.45rem] 2xl:min-h-62.5 2xl:p-10 2xl:rounded-[10px]">
         <div className={cn("grid mb-[4.1625rem] gap-[33.3px] max-lg:grid-cols-1 max-lg:mb-0 max-lg:gap-[initial] 2xl:mb-25 2xl:gap-12.5", styles.className)}>
           <div className="block max-lg:mb-7.5">
             <div className="h-full inline-flex relative max-w-full pt-0.5 px-[0.7rem] rounded-[665px] justify-center items-center overflow-hidden text-primary tracking-[-0.56px] whitespace-nowrap text-nowrap max-lg:pt-[0.15rem] max-lg:px-[0.8rem] max-lg:rounded-[999px] max-lg:tracking-[-0.64px] 2xl:pt-[2.7px] 2xl:px-[0.9rem] 2xl:rounded-[999px] 2xl:text-lg 2xl:leading-[1.4375rem] 2xl:tracking-[-0.72px] before:content-[''] before:block before:absolute before:inset-0 before:h-[1.5625rem] before:bg-primary before:opacity-10 max-lg:before:h-7.5 2xl:before:h-7.5">

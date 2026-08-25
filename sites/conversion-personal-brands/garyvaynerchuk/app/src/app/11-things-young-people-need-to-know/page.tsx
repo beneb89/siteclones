@@ -130,7 +130,7 @@ const TextLink_meta: string[][] = [
     ["style-7"],
     ["style-8"],
     ["style-9"],
-    ["style-10"],
+    ["style-11"],
     ["style-12"]
 ];
 const TextLink2_meta: string[][] = [
@@ -149,17 +149,17 @@ const TextLink2_meta2: string[][] = [
     ["style-25"]
 ];
 const Logo_meta: string[][] = [
-    ["style-28", "style-39", "n52", "style-52", "style-53"],
-    ["style-29", "style-78", "n57", "style-54", "style-55"],
-    ["style-30", "style-40", "n62", "style-56", "style-57"],
-    ["style-31", "style-41", "n67", "style-58", "style-59"],
-    ["style-32", "style-42", "n72", "style-60", "style-61"],
-    ["style-33", "style-43", "n77", "style-62", "style-63"],
-    ["style-34", "style-44", "n82", "style-64", "style-65"],
-    ["style-35", "style-45", "n87", "style-66", "style-67"],
-    ["style-36", "style-46", "n92", "style-68", "style-69"],
-    ["style-37", "style-47", "n97", "style-70", "style-71"],
-    ["style-2", "style-79", "n102", "style-72", "style-73"]
+    ["style-28", "style-39", "n52", "style-54", "style-55"],
+    ["style-29", "style-40", "n57", "style-56", "style-57"],
+    ["style-30", "style-41", "n62", "style-58", "style-59"],
+    ["style-31", "style-42", "n67", "style-60", "style-61"],
+    ["style-32", "style-43", "n72", "style-62", "style-63"],
+    ["style-33", "style-44", "n77", "style-64", "style-65"],
+    ["style-34", "style-45", "n82", "style-66", "style-67"],
+    ["style-35", "style-46", "n87", "style-68", "style-69"],
+    ["style-36", "style-47", "n92", "style-70", "style-71"],
+    ["style-37", "style-48", "n97", "style-72", "style-73"],
+    ["style-2", "style-49", "n102", "style-74", "style-75"]
 ];
 const Tile_meta: string[][] = [
     ["n109", "n110", "n111"],
@@ -170,9 +170,9 @@ const Tile_meta: string[][] = [
     ["n124", "n125", "n126"]
 ];
 const TextLink3_meta: string[][] = [
-    ["style-p-26", "style-span-7", "style-span-6"],
-    ["style-p-6", "style-span-8", "style-p-11"],
-    ["style-p-4", "style-link-4", "style-link-8"]
+    ["n206", "style-span-7", "style-p-8"],
+    ["n209", "style-link-7", "style-link-6"],
+    ["style-link-10", "style-link-4", "style-link-9"]
 ];
 const TextLink4_meta: string[][] = [
     ["n332", "n333", "n334"],
@@ -260,10 +260,10 @@ export default function Page() {
   return (
     <>
       <div className="min-h-screen block">
-        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-007 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
+        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-008 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
           Skip to main content
         </a>
-        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-002 max-lg:flex max-lg:z-1000 max-lg:isolate">
+        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-001 max-lg:flex max-lg:z-1000 max-lg:isolate">
           <button className="w-6 h-[2.1875rem] flex items-center gap-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_sans-serif] text-lg font-bold leading-[1.6875rem] text-center uppercase cursor-pointer max-lg:z-1" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" type="button">
             <span className="w-6 h-0.5 block relative min-w-0 bg-foreground before:content-[''] before:block before:absolute before:-top-[0.4375rem] before:w-6 before:h-0.5 before:bg-foreground max-lg:before:bottom-[0.4375rem] max-lg:before:inset-x-0 after:content-[''] after:block after:absolute after:top-[0.4375rem] after:w-6 after:h-0.5 after:bg-foreground max-lg:after:-bottom-[0.4375rem] max-lg:after:inset-x-0" aria-hidden="true" />
           </button>
@@ -274,13 +274,13 @@ export default function Page() {
             <span className="w-4 h-4 border-[3px] border-solid border-foreground block relative min-w-0 rounded-[50%] max-lg:border-muted-foreground after:content-[''] after:block after:absolute after:top-[0.6875rem] after:-right-[0.4375rem] after:w-2 after:h-[0.1875rem] after:bg-foreground max-lg:after:-bottom-1 max-lg:after:left-[0.5625rem] max-lg:after:bg-muted-foreground max-lg:after:transform-[matrix(0.707107,0.707107,-0.707107,0.707107,0,0)] max-lg:after:origin-[4px_1.5px]" aria-hidden="true" />
           </button>
         </header>
-        <aside className="w-[17.1875rem] h-200 block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-002 max-lg:opacity-0 2xl:h-270">
+        <aside className="w-[17.1875rem] h-200 block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-001 max-lg:opacity-0 2xl:h-270">
           <a className="w-[9.0625rem] block cursor-pointer max-lg:hidden" data-component="link" aria-label="Gary Vaynerchuk home" href="/">
             <img className="w-full h-[4.6875rem] block max-w-full overflow-clip object-contain object-[0%_50%] aspect-[auto_526/272] align-middle text-clr-1" data-component="image" alt="Gary Vaynerchuk" height="272" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="526" />
           </a>
           <nav className="w-[14.0625rem] h-60.5 block absolute top-[9.0625rem] left-7.5 gap-2 max-md:w-[20.4375rem] max-lg:pointer-events-none max-lg:h-auto max-lg:static max-lg:top-auto max-lg:left-auto md:max-lg:w-180" data-component="nav" aria-label="Main navigation" id="site-navigation">
             <div className="block relative max-lg:pointer-events-none">
-              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
+              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button-2" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
                 <span className="h-full block relative whitespace-nowrap max-lg:pointer-events-none after:content-[''] after:hidden after:absolute after:-bottom-[0.1875rem] after:left-0 after:w-full after:h-0.5 after:bg-clr-2">
                   Gary Vaynerchuk
                 </span>
@@ -325,7 +325,7 @@ export default function Page() {
           </div>
         </aside>
         <div className="h-full min-h-screen block ml-[17.1875rem] overflow-hidden max-lg:pt-18.5 max-lg:ml-0">
-          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-001 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
+          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-002 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
             <span className="h-6.5 flex shrink-0 [animation-name:announcement-scroll-right] [animation-duration:24s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-md:h-[2.0625rem] max-md:[animation-duration:18s]" data-ditto-id="style-span-2" aria-hidden="true">
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
@@ -335,15 +335,15 @@ export default function Page() {
                   <span className="h-full block">
                     Check out VeeFriends Cartoons!
                   </span>
-                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
+                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-002" />
                 </span>
                 <span className="flex pl-7 items-center shrink-0 gap-7 max-md:pl-5 max-md:gap-5">
-                  <span className="h-full block">
+                  <span className="block">
                     Check out VeeFriends Cartoons!
                   </span>
-                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
+                  <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-002" />
                 </span>
-                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-3">
+                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-4">
                   <span className="block">
                     Check out VeeFriends Cartoons!
                   </span>
@@ -352,41 +352,41 @@ export default function Page() {
             </span>
           </a>
           <main className="block" data-ditto-id="style-main-content" id="main-content">
-            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-span-10" data-component="nav" aria-label="Breadcrumb">
+            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-breadcrumb" data-component="nav" aria-label="Breadcrumb">
               <ol className="flex flex-wrap gap-[0.4375rem] [list-style-type:none] list-outside">
-                <li className="flex min-w-0 items-center" data-ditto-id="style-main-content-2">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-breadcrumb" data-component="link" href="/">
+                <li className="flex min-w-0 items-center" data-ditto-id="style-li-2">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-2" data-component="link" href="/">
                     Home
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-li" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-3" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
                     Blog
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-link-2">
-                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-li-2" aria-current="page">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-li">
+                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" aria-current="page">
                     11 things young people need to know
                   </span>
                 </li>
               </ol>
             </nav>
-            <div className="h-[8127.7px] min-h-screen block overflow-hidden bg-background max-md:h-[508.9125rem]" data-ditto-id="style-link-3">
-              <header className="h-137.5 block relative overflow-hidden bg-color-007 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-color-023 after:opacity-40" data-ditto-id="style-li-3">
-                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-ditto-id="style-span-18" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-24">
-                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-5 max-md:bg-clr-6" data-ditto-id="style-header" data-component="button" href="https://www.garyvaynerchuk.com/topics/general/">
+            <div className="h-[8127.7px] min-h-screen block overflow-hidden bg-background max-md:h-[508.9125rem]" data-ditto-id="style-div">
+              <header className="h-137.5 block relative overflow-hidden bg-color-008 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-clr-4 after:opacity-40" data-ditto-id="style-header">
+                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-7">
+                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-6 max-md:bg-clr-7" data-ditto-id="style-button" data-component="button" href="https://www.garyvaynerchuk.com/topics/general/">
                     General
                   </a>
                 </div>
-                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-ditto-id="style-image-6" data-component="heading">
+                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-component="heading">
                   11 things young people need to know
                 </h1>
-                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]" data-ditto-id="style-div-2">
-                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-button-2">
+                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]">
+                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-span-3">
                     By Gary Vaynerchuk
                   </span>
-                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[9.0625rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-[8.0625rem]" data-ditto-id="style-heading-2">
+                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[9.0625rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-[8.0625rem]">
                     April 4, 2023
                   </span>
                   <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] max-md:text-center before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[7.9375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-[7.0625rem]">
@@ -394,126 +394,126 @@ export default function Page() {
                   </span>
                 </div>
               </header>
-              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0">
-                <div className="w-135 h-75.5 border border-solid border-surface-2 block relative min-w-81.5 max-w-135 mb-3 rounded-[3px] overflow-hidden aspect-[25/14] align-middle bg-foreground max-md:w-82.5 max-md:h-[11.5625rem]" data-ditto-id="style-span-22" id="instagram-embed-0">
-                  <div className="box-content block overflow-x-auto overflow-y-scroll text-color-008 [font-family:Helvetica,_Arial,_sans-serif] text-xs font-normal leading-4 bg-foreground" dir="ltr">
+              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0" data-ditto-id="style-article">
+                <div className="w-135 h-75.5 border border-solid border-surface-2 block relative min-w-81.5 max-w-135 mb-3 rounded-[3px] overflow-hidden aspect-[25/14] align-middle bg-foreground max-md:w-82.5 max-md:h-[11.5625rem]" id="instagram-embed-0">
+                  <div className="box-content block overflow-x-auto overflow-y-scroll text-color-003 [font-family:Helvetica,_Arial,_sans-serif] text-xs font-normal leading-4 bg-foreground" dir="ltr">
                     <div className="box-content block">
-                      <div className="box-content block" data-ditto-id="style-heading-3">
-                        <div className="box-content block [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm leading-4.5 text-left" data-ditto-id="style-span-21">
-                          <div className="box-content block" data-ditto-id="style-p-7">
-                            <div className="h-13.5 flex p-2.5 items-center" data-ditto-id="style-span-11">
-                              <div className="box-content flex p-0.5 rounded-[50%] flex-col justify-center items-center bg-foreground" data-ditto-id="style-p">
+                      <div className="box-content block">
+                        <div className="box-content block [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm leading-4.5 text-left">
+                          <div className="box-content block">
+                            <div className="h-13.5 flex p-2.5 items-center">
+                              <div className="box-content flex p-0.5 rounded-[50%] flex-col justify-center items-center bg-foreground">
                                 <i className="box-content w-9 h-9 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:0px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} />
-                                <a className="box-content w-7.5 h-7.5 block absolute min-w-0 text-color-002 cursor-pointer" data-ditto-id="style-p-21" data-component="link" href={"https://www.instagram.com/stories/garyvee/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
-                                  <img className="box-content w-7.5 h-7.5 inline rounded-[50%] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/d668aded585b.jpg" />
+                                <a className="box-content w-7.5 h-7.5 block absolute min-w-0 text-color-001 cursor-pointer" data-ditto-id="style-p-2" data-component="link" href={"https://www.instagram.com/stories/garyvee/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
+                                  <img className="box-content w-7.5 h-7.5 inline rounded-[50%] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/1a8bb8ec07b0.jpg" />
                                 </a>
                               </div>
-                              <div className="box-content block mx-2.5 items-start grow overflow-hidden" data-ditto-id="style-p-9">
-                                <a className="box-content flex items-center text-color-002 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-p-14" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                              <div className="box-content block mx-2.5 items-start grow overflow-hidden">
+                                <a className="box-content flex items-center text-color-001 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                   <span className="box-content block max-w-[calc(100%_-_21px)] overflow-hidden">
                                     garyvee
                                   </span>
-                                  <i className="box-content w-3 h-3 block ml-[0.3125rem] overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-p-10">
-                                    <u className="box-content w-px h-px block absolute top-3.5 left-[-1.39987e+06px] overflow-hidden underline" data-ditto-id="style-span-14">
+                                  <i className="box-content w-3 h-3 block ml-[0.3125rem] overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
+                                    <u className="box-content w-px h-px block absolute top-3.5 left-[-1.39987e+06px] overflow-hidden underline" data-ditto-id="style-p-5">
                                       Verified
                                     </u>
                                   </i>
                                 </a>
-                                <div className="box-content block text-color-011 text-xs leading-3.5" data-ditto-id="style-blockquote-2">
-                                  <span className="box-content inline before:content-['_·'] before:hidden before:mx-1 before:text-color-011 before:text-xs before:leading-3.5 before:text-left" data-ditto-id="style-p-27">
+                                <div className="box-content block text-color-010 text-xs leading-3.5">
+                                  <span className="box-content inline before:content-['_·'] before:hidden before:mx-1 before:text-color-010 before:text-xs before:leading-3.5 before:text-left" data-ditto-id="style-span-13">
                                     Original audio
                                   </span>
                                 </div>
                               </div>
-                              <div className="box-content flex ml-[0.9375rem] justify-end grow" data-ditto-id="style-p-16">
-                                <a className="box-content block ml-2.5 py-[0.3125rem] px-3 rounded-[3px] shrink-0 text-foreground font-semibold bg-color-015 cursor-pointer" data-ditto-id="style-p-22" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                              <div className="box-content flex ml-[0.9375rem] justify-end grow" data-ditto-id="style-p-6">
+                                <a className="box-content block ml-2.5 py-[0.3125rem] px-3 rounded-[3px] shrink-0 text-foreground font-semibold bg-color-012 cursor-pointer" data-ditto-id="style-p-3" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                   View profile
                                 </a>
                               </div>
                             </div>
-                            <div className="box-content block relative pb-[672.5px] max-md:pb-102.5" data-ditto-id="style-heading-5">
-                              <a className="box-content h-full block absolute top-0 inset-x-0 text-color-002 bg-surface-4 cursor-pointer" data-ditto-id="style-p-3" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
-                                <img className="box-content w-134.5 h-[42.0625rem] inline overflow-clip pointer-events-none max-md:w-82 max-md:h-102.5" data-ditto-id="style-link-9" data-component="image" alt="Instagram post shared by @garyvee" src="/assets/cloned/images/6e7da34b6156.jpg" srcSet="/assets/cloned/images/6e7da34b6156.jpg 720w, /assets/cloned/images/a1d8fdad0c1c.jpg 640w, /assets/cloned/images/c236ea5b40cb.jpg 480w, /assets/cloned/images/b57cbd20e3a7.jpg 320w, /assets/cloned/images/81c2da783e14.jpg 240w, /assets/cloned/images/ccbf164b6fd2.jpg 720w, /assets/cloned/images/ccbf164b6fd2.jpg 720w, /assets/cloned/images/acd1b5292eda.jpg 640w, /assets/cloned/images/10969f1fb250.jpg 480w, /assets/cloned/images/a884460f9e37.jpg 320w, /assets/cloned/images/4a1a625e7103.jpg 240w, /assets/cloned/images/2ac30a37d318.jpg 150w" />
+                            <div className="box-content block relative pb-[672.5px] max-md:pb-102.5">
+                              <a className="box-content h-full block absolute top-0 inset-x-0 text-color-001 bg-surface-3 cursor-pointer" data-ditto-id="style-p-7" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
+                                <img className="box-content w-134.5 h-[42.0625rem] inline overflow-clip pointer-events-none max-md:w-82 max-md:h-102.5" data-component="image" alt="Instagram post shared by @garyvee" src="/assets/cloned/images/86e959288295.jpg" srcSet="/assets/cloned/images/86e959288295.jpg 720w, /assets/cloned/images/69b9f3091ee6.jpg 640w, /assets/cloned/images/75ba1b59024d.jpg 480w, /assets/cloned/images/7e6b6a7a5813.jpg 320w, /assets/cloned/images/bedca96a2b1a.jpg 240w, /assets/cloned/images/0f9ea9abbc6b.jpg 720w, /assets/cloned/images/0f9ea9abbc6b.jpg 720w, /assets/cloned/images/4aadd955101c.jpg 640w, /assets/cloned/images/f17cc7c3f18a.jpg 480w, /assets/cloned/images/b6425762ca68.jpg 320w, /assets/cloned/images/c91adacfda1f.jpg 240w, /assets/cloned/images/186285f34f1a.jpg 150w" />
                               </a>
-                              <div className="box-content h-full block absolute top-0 inset-x-0" data-ditto-id="style-p-28">
-                                <div className="box-content h-full block relative pb-[671.5px] overflow-hidden max-md:pb-[25.5625rem]" data-ditto-id="style-heading-9">
-                                  <div className="box-content h-full block absolute top-0 inset-x-0" data-ditto-id="style-p-24">
-                                    <video className="box-content w-full h-full min-h-full block absolute top-0 left-0 min-w-full overflow-clip object-contain bg-color-002" data-ditto-id="style-p-23" playsInline poster="/assets/cloned/images/6e7da34b6156.jpg" preload="none" src="/assets/cloned/videos/b0aa9ced6d06.mp4" />
+                              <div className="box-content h-full block absolute top-0 inset-x-0">
+                                <div className="box-content h-full block relative pb-[671.5px] overflow-hidden max-md:pb-[25.5625rem]">
+                                  <div className="box-content h-full block absolute top-0 inset-x-0">
+                                    <video className="box-content w-full h-full min-h-full block absolute top-0 left-0 min-w-full overflow-clip object-contain bg-color-001" playsInline poster="/assets/cloned/images/86e959288295.jpg" preload="none" src="/assets/cloned/videos/03abd1b13204.mp4" />
                                   </div>
                                   <div className="box-content h-full block absolute top-0 inset-x-0" data-ditto-id="style-span-12">
-                                    <span className="box-content w-[8.4375rem] h-[8.4375rem] block absolute top-[20.9875rem] left-[16.8125rem] -mt-[4.1875rem] -ml-[4.1875rem] [background-size:271px_149px] bg-no-repeat max-md:top-[204.5px] max-md:left-41" style={{ backgroundImage: "url(\"/assets/cloned/images/9df5578ecbf8.png\")" }} data-ditto-id="style-i-3" data-component="button" aria-label="Play" role="button" />
+                                    <span className="box-content w-[8.4375rem] h-[8.4375rem] block absolute top-[20.9875rem] left-[16.8125rem] -mt-[4.1875rem] -ml-[4.1875rem] [background-size:271px_149px] bg-no-repeat max-md:top-[204.5px] max-md:left-41" style={{ backgroundImage: "url(\"/assets/cloned/images/9df5578ecbf8.png\")" }} data-component="button" aria-label="Play" role="button" />
                                   </div>
-                                  <div className="h-full block absolute top-0 inset-x-0 flex-col items-stretch shrink-0 cursor-pointer" data-ditto-id="style-span-17" data-component="button" aria-label="Control" role="button" />
+                                  <div className="h-full block absolute top-0 inset-x-0 flex-col items-stretch shrink-0 cursor-pointer" data-component="button" aria-label="Control" role="button" />
                                 </div>
                               </div>
                             </div>
-                            <div className="box-content block relative" data-ditto-id="style-span-13">
-                              <a className="box-content w-[13.0625rem] h-0 block absolute left-3 pt-3 px-3 rounded-tl-[3px] rounded-tr-[3px] overflow-hidden text-color-002 bg-foreground cursor-pointer" data-ditto-id="style-image-3" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
-                                <div className="box-content flex items-center" data-ditto-id="style-p-2">
-                                  <img className="box-content w-8.5 h-8.5 block mr-3 rounded-[17px] overflow-clip" data-ditto-id="style-link-15" data-component="avatar" alt="garyvee" src="/assets/cloned/images/d668aded585b.jpg" />
-                                  <div className="box-content w-[10.1875rem] block" data-ditto-id="style-br-2">
-                                    <div className="box-content flex items-center" data-ditto-id="style-br">
-                                      <span className="box-content block overflow-hidden font-semibold whitespace-nowrap text-nowrap" data-ditto-id="style-p-25">
+                            <div className="box-content block relative" data-ditto-id="style-figure">
+                              <a className="box-content w-[13.0625rem] h-0 block absolute left-3 pt-3 px-3 rounded-tl-[3px] rounded-tr-[3px] overflow-hidden text-color-001 bg-foreground cursor-pointer" data-ditto-id="style-image-2" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
+                                <div className="box-content flex items-center" data-ditto-id="style-p-9">
+                                  <img className="box-content w-8.5 h-8.5 block mr-3 rounded-[17px] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/1a8bb8ec07b0.jpg" />
+                                  <div className="box-content w-[10.1875rem] block">
+                                    <div className="box-content flex items-center">
+                                      <span className="box-content block overflow-hidden font-semibold whitespace-nowrap text-nowrap">
                                         garyvee
                                       </span>
-                                      <i className="box-content w-3 h-3 block ml-[0.3125rem] shrink-0 overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-span-16">
-                                        <u className="box-content w-px h-px block absolute top-[0.9375rem] left-[-1.39987e+06px] overflow-hidden underline whitespace-nowrap text-nowrap" data-ditto-id="style-i-2">
+                                      <i className="box-content w-3 h-3 block ml-[0.3125rem] shrink-0 overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
+                                        <u className="box-content w-px h-px block absolute top-[0.9375rem] left-[-1.39987e+06px] overflow-hidden underline whitespace-nowrap text-nowrap">
                                           Verified
                                         </u>
                                       </i>
                                     </div>
-                                    <div className="box-content flex items-center" data-ditto-id="style-blockquote">
-                                      <span className="box-content block overflow-hidden text-color-011 text-[0.75rem] whitespace-nowrap text-nowrap" data-ditto-id="style-p-8">
-                                        10,890 posts · 12M followers
+                                    <div className="box-content flex items-center" data-ditto-id="style-span-9">
+                                      <span className="box-content block overflow-hidden text-color-010 text-[0.75rem] whitespace-nowrap text-nowrap" data-ditto-id="style-span-14">
+                                        10,891 posts · 12M followers
                                       </span>
                                     </div>
                                   </div>
                                 </div>
-                                <div className="box-content flex mt-3 items-center" data-ditto-id="style-p-13">
-                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-ditto-id="style-span-5" data-component="image" src="/assets/cloned/images/8823f038017c.jpg" srcSet="/assets/cloned/images/207efba2dd76.jpg, /assets/cloned/images/8823f038017c.jpg 2x" />
-                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-ditto-id="style-p-5" data-component="image" src="/assets/cloned/images/0d13b6d74873.jpg" srcSet="/assets/cloned/images/9c3ac8293a11.jpg, /assets/cloned/images/0d13b6d74873.jpg 2x" />
+                                <div className="box-content flex mt-3 items-center">
+                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/2ffc0151552b.jpg" srcSet="/assets/cloned/images/80f4570eb3a2.jpg, /assets/cloned/images/2ffc0151552b.jpg 2x" />
+                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/8be564c03e5a.jpg" srcSet="/assets/cloned/images/aec85a460aa1.jpg, /assets/cloned/images/8be564c03e5a.jpg 2x" />
                                 </div>
                               </a>
-                              <div className="box-content h-11 flex relative mx-3 flex-col justify-center items-stretch bg-foreground" data-ditto-id="style-image-4">
-                                <a className="box-content block overflow-hidden text-color-015 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-heading" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                              <div className="box-content h-11 flex relative mx-3 flex-col justify-center items-stretch bg-foreground" data-ditto-id="style-p-4">
+                                <a className="box-content block overflow-hidden text-color-012 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-em" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                   View more on Instagram
                                 </a>
                               </div>
                             </div>
-                            <div className="box-content border-t border-solid border-t-surface-2 flex mx-2.5 py-2" data-ditto-id="style-span-20">
-                              <a className="box-content h-6 flex mr-3 items-center text-color-002 text-[0.6875rem] cursor-pointer" data-ditto-id="style-p-15" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
-                                <i className="box-content w-6 h-6 block italic [background-position:-87px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-em" />
-                                <span className="box-content w-0 h-0 block overflow-hidden indent-[-1.11999e+06px]" data-ditto-id="style-span-9">
+                            <div className="box-content border-t border-solid border-t-surface-2 flex mx-2.5 py-2">
+                              <a className="box-content h-6 flex mr-3 items-center text-color-001 text-[0.6875rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
+                                <i className="box-content w-6 h-6 block italic [background-position:-87px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-span-8" />
+                                <span className="box-content w-0 h-0 block overflow-hidden indent-[-1.11999e+06px]" data-ditto-id="style-span-10">
                                   Like
                                 </span>
                               </a>
                               {TextLink3_data.map((d, i) => <TextLink3 key={i} d={d} styles={TextLink3_styles[i]} />)}
                             </div>
-                            <div className="box-content flex pb-1.5 px-2.5 items-start" data-ditto-id="style-link-14">
-                              <a className="box-content block text-color-002 font-semibold cursor-pointer" data-ditto-id="style-link-7" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                            <div className="box-content flex pb-1.5 px-2.5 items-start">
+                              <a className="box-content block text-color-001 font-semibold cursor-pointer" data-ditto-id="style-link-8" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                 27,139 likes
                               </a>
                             </div>
-                            <div className="box-content block pb-2.5 px-2.5" data-ditto-id="style-link-6">
-                              <a className="box-content inline -my-[0.3125rem] -ml-[0.3125rem] p-[0.3125rem] text-color-002 font-semibold cursor-pointer" data-ditto-id="style-p-29" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                            <div className="box-content block pb-2.5 px-2.5" data-ditto-id="style-p">
+                              <a className="box-content inline -my-[0.3125rem] -ml-[0.3125rem] p-[0.3125rem] text-color-001 font-semibold cursor-pointer" data-ditto-id="style-newsletter" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                 garyvee
                               </a>
-                              <br className="box-content inline" data-ditto-id="style-link-5" />
-                              <br className="box-content inline" data-ditto-id="style-p-12" />
+                              <br className="box-content inline" data-ditto-id="style-div-2" />
+                              <br className="box-content inline" />
                               Some Friday night thoughts for the youngsters that I adore so much …. And maybe for a few of the parents of these future leaders ❤️❤️❤️❣️❣️♥️
-                              <div className="box-content block pt-1.5" data-ditto-id="style-newsletter">
-                                <a className="box-content inline text-color-011 cursor-pointer" data-ditto-id="style-div" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                              <div className="box-content block pt-1.5" data-ditto-id="style-newsletter-title">
+                                <a className="box-content inline text-color-010 cursor-pointer" data-ditto-id="style-form" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                   View all 475 comments
                                 </a>
                               </div>
                             </div>
-                            <div className="box-content h-11 border-t border-solid border-t-surface-2 flex px-2.5 items-center" data-ditto-id="style-image">
-                              <a className="box-content block text-color-011 leading-[1.0625rem] cursor-pointer" data-ditto-id="style-newsletter-title" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
+                            <div className="box-content h-11 border-t border-solid border-t-surface-2 flex px-2.5 items-center" data-ditto-id="style-label">
+                              <a className="box-content block text-color-010 leading-[1.0625rem] cursor-pointer" data-ditto-id="style-newsletter-website" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
                                 Add a comment...
                               </a>
-                              <a className="box-content h-6 flex ml-[384.3px] text-color-002 cursor-pointer max-md:ml-[174.3px]" data-ditto-id="style-form" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=A1VKlUmAp4OmeTZIgCkuzit"} target="_blank">
-                                <i className="box-content w-6 h-6 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:-62px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-label">
-                                  <u className="box-content w-px h-px block absolute top-[952.5px] left-[-1.39948e+06px] overflow-hidden underline whitespace-nowrap text-nowrap" data-ditto-id="style-newsletter-website">
+                              <a className="box-content h-6 flex ml-[384.3px] text-color-001 cursor-pointer max-md:ml-[174.3px]" data-ditto-id="style-label-2" data-component="link" href={"https://www.instagram.com/reel/CoOHcu4gSx8/?utm_source=ig_embed&ig_rid=AZ_OQ5L554QsJSuNTuAEF04"} target="_blank">
+                                <i className="box-content w-6 h-6 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:-62px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
+                                  <u className="box-content w-px h-px block absolute top-[952.5px] left-[-1.39948e+06px] overflow-hidden underline whitespace-nowrap text-nowrap" data-ditto-id="style-newsletter-email">
                                     Instagram
                                   </u>
                                 </i>
@@ -527,45 +527,45 @@ export default function Page() {
                   </div>
                 </div>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-label-2" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-button-3" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-15" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-newsletter-email">
-                  <span className="inline font-normal" data-ditto-id="style-button-3">
+                <p className="block pb-[25.5px]" data-ditto-id="style-span-11">
+                  <span className="inline font-normal">
                     I get so many questions in my DMs and in the comments of my socials from youngsters trying to “figure it out.”
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-social-media" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-div-12" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-6">
-                  <span className="inline font-normal" data-ditto-id="style-div-9">
+                <p className="block pb-[25.5px]" data-ditto-id="style-div-10">
+                  <span className="inline font-normal">
                     I believe there’s some confusion in the world about what young people should do within the context of society in 2023 – whether it’s kids rushing to try and be a millionaire by 30, or overvaluing the success one has at 22 right out of school, or any number of things, I’m really passionate about putting out content that shares a different perspective.
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-article" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-div-11" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-visit-this-post-on-x">
-                  <span className="inline font-normal" data-ditto-id="style-div-10">
+                <p className="block pb-[25.5px]" data-ditto-id="style-div-4">
+                  <span className="inline font-normal" data-ditto-id="style-div-8">
                     The points below are concepts I wish more people considered – hope this brings you value, share this link with someone who needs to read it!
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-16" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-8" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-div-6" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-31">
-                  <b className="inline font-bold" data-ditto-id="style-div-20">
+                <p className="block pb-[25.5px]">
+                  <b className="inline font-bold" data-ditto-id="style-div-13">
                     #1. Dream and Execute:
                   </b>
                 </p>
                 {" "}
-                <blockquote className="w-full max-w-[37.8125rem] border-l-[5px] border-solid border-l-accent block min-w-[20.3125rem] my-9 py-2.5 pl-[1.5625rem]" data-ditto-id="style-div-7">
-                  <section className="block">
-                    <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-heading-7" data-component="link" href="https://www.tiktok.com/@garyvee?refer=embed" rel="noopener noreferrer" target="_blank" title="@garyvee">
+                <blockquote className="w-full max-w-[37.8125rem] border-l-[5px] border-solid border-l-accent block min-w-[20.3125rem] my-9 py-2.5 pl-[1.5625rem]" data-ditto-id="style-div-5">
+                  <section className="block" data-ditto-id="style-footer-2">
+                    <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-heading" data-component="link" href="https://www.tiktok.com/@garyvee?refer=embed" rel="noopener noreferrer" target="_blank" title="@garyvee">
                       @garyvee
                     </a>
                     {" Guess what I’ll say after I ask, “how old are you?” "}
@@ -573,22 +573,22 @@ export default function Page() {
                       #GaryVee
                     </a>
                     {" "}
-                    <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-heading-4" data-component="link" href="https://www.tiktok.com/tag/fyp?refer=embed" rel="noopener noreferrer" target="_blank" title="fyp">
+                    <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.tiktok.com/tag/fyp?refer=embed" rel="noopener noreferrer" target="_blank" title="fyp">
                       #fyp
                     </a>
                     {" "}
-                    <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-19" data-component="link" href="https://www.tiktok.com/tag/perspective?refer=embed" rel="noopener noreferrer" target="_blank" title="perspective">
+                    <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.tiktok.com/tag/perspective?refer=embed" rel="noopener noreferrer" target="_blank" title="perspective">
                       #perspective
                     </a>
                     {" "}
-                    <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-button-9" data-component="link" href="https://www.tiktok.com/music/original-sound-6850938422018804485?refer=embed" rel="noopener noreferrer" target="_blank" title="♬ original sound - Gary Vaynerchuk">
+                    <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-footer" data-component="link" href="https://www.tiktok.com/music/original-sound-6850938422018804485?refer=embed" rel="noopener noreferrer" target="_blank" title="♬ original sound - Gary Vaynerchuk">
                       ♬ original sound – Gary Vaynerchuk
                     </a>
                   </section>
                   {" "}
                 </blockquote>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-17" />
+                <p className="block pb-[25.5px]" />
                 {" "}
                 <p className="block pb-[25.5px]">
                   <span className="inline font-normal">
@@ -596,38 +596,38 @@ export default function Page() {
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-23">
-                  <span className="inline font-normal" data-ditto-id="style-span-24">
+                <p className="block pb-[25.5px]">
+                  <span className="inline font-normal" data-ditto-id="style-button-6">
                     {"Look around you, you have so much potential and so much time to figure out the dream and the execution plan. "}
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-link-13" />
+                <p className="block pb-[25.5px]" />
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <picture className="inline" data-ditto-id="style-button-6">
-                    <img className="w-59 h-75 block max-w-full overflow-clip aspect-[auto_236/300] align-middle text-clr-1" data-ditto-id="style-div-18" data-component="image" alt="" height="300" sizes="(max-width: 700px) calc(100vw - 45px), 800px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="236" />
+                  <picture className="inline">
+                    <img className="w-59 h-75 block max-w-full overflow-clip aspect-[auto_236/300] align-middle text-clr-1" data-component="image" alt="" height="300" sizes="(max-width: 700px) calc(100vw - 45px), 800px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="236" />
                     {" "}
                   </picture>
                 </p>
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <b className="inline font-bold" data-ditto-id="style-div-25">
+                  <b className="inline font-bold">
                     #2. Patience
                   </b>
                 </p>
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <span className="inline font-normal" data-ditto-id="style-div-11">
+                  <span className="inline font-normal" data-ditto-id="style-div-9">
                     {"Most important of all. You have more time on your hands than you think. I would give up anything to be 15 again and try all the amazing technology that we could only wish we had back in the day. Make use of that and figure out a path for yourself by giving yourself the self love, support, and patience. "}
                   </span>
                 </p>
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <iframe className="w-200 h-112 block overflow-clip aspect-[25/14] align-middle [background-size:100%_100%] bg-no-repeat max-md:w-82.5 max-md:h-[11.5625rem] max-lg:[background-size:initial] max-lg:[background-repeat:initial]" style={{ backgroundImage: "url(\"/assets/cloned/images/f911df1ab974.jpg\")" }} data-ditto-id="style-p-20" height="315" title="YouTube video player" width="560" />
-                  <br className="inline" data-ditto-id="style-image-2" />
+                  <iframe className="w-200 h-112 block overflow-clip aspect-[25/14] align-middle [background-size:100%_100%] bg-no-repeat max-md:w-82.5 max-md:h-[11.5625rem] max-lg:[background-size:initial] max-lg:[background-repeat:initial]" style={{ backgroundImage: "url(\"/assets/cloned/images/f911df1ab974.jpg\")" }} height="315" title="YouTube video player" width="560" />
+                  <br className="inline" data-ditto-id="style-image" />
                   {" "}
-                  <b className="inline font-bold" data-ditto-id="style-heading-6">
+                  <b className="inline font-bold">
                     #3. Save Money and Learn
                   </b>
                 </p>
@@ -638,27 +638,27 @@ export default function Page() {
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-verified-account">
-                  <span className="inline font-normal" data-ditto-id="style-div-23">
+                <p className="block pb-[25.5px]">
+                  <span className="inline font-normal" data-ditto-id="style-span-15">
                     {" "}
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-5" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-span-6" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-22">
+                <p className="block pb-[25.5px]">
                   <b className="inline font-bold">
                     #4. Be Compassionate
                   </b>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-4">
-                  <span className="inline font-normal" data-ditto-id="style-div-3">
+                <p className="block pb-[25.5px]" data-ditto-id="style-div-3">
+                  <span className="inline font-normal" data-ditto-id="style-link-5">
                     {"If someone in school is taking the time to tell you ‘you’re ugly, you’re stupid, you suck’, they’re in a very bad place…the best way to deal with that is by deploying compassion…I dispense compassion in impossible scenarios. That’s the test, hard situations expose who you really are. If you make it a point to be empathetic to your bullies and haters, you win the game. "}
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-div-21">
+                <p className="block pb-[25.5px]">
                   <iframe className="w-200 h-112 block overflow-clip aspect-[25/14] align-middle [background-size:100%_100%] bg-no-repeat max-md:w-82.5 max-md:h-[11.5625rem] max-lg:[background-size:initial] max-lg:[background-repeat:initial]" style={{ backgroundImage: "url(\"/assets/cloned/images/63049c4efca2.jpg\")" }} height="315" title="YouTube video player" width="560" />
                   <br className="inline" />
                   {" "}
@@ -673,50 +673,50 @@ export default function Page() {
                   </span>
                 </p>
                 {" "}
-                <div className="w-135 h-75.5 border border-solid border-surface-2 block relative min-w-81.5 max-w-135 mb-3 rounded-[3px] overflow-hidden aspect-[25/14] align-middle bg-foreground max-md:w-82.5 max-md:h-[11.5625rem]" data-ditto-id="style-div-33" id="instagram-embed-1">
-                  <div className="box-content block overflow-x-auto overflow-y-scroll text-color-008 [font-family:Helvetica,_Arial,_sans-serif] text-xs font-normal leading-4 bg-foreground" data-ditto-id="style-link-12" dir="ltr">
+                <div className="w-135 h-75.5 border border-solid border-surface-2 block relative min-w-81.5 max-w-135 mb-3 rounded-[3px] overflow-hidden aspect-[25/14] align-middle bg-foreground max-md:w-82.5 max-md:h-[11.5625rem]" id="instagram-embed-1">
+                  <div className="box-content block overflow-x-auto overflow-y-scroll text-color-003 [font-family:Helvetica,_Arial,_sans-serif] text-xs font-normal leading-4 bg-foreground" dir="ltr">
                     <div className="box-content block">
                       <div className="box-content block">
-                        <div className="box-content block [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm leading-4.5 text-left" data-ditto-id="style-div-32">
+                        <div className="box-content block [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm leading-4.5 text-left">
                           <div className="box-content block">
                             <div className="h-13.5 flex p-2.5 items-center">
-                              <div className="box-content flex p-0.5 rounded-[50%] flex-col justify-center items-center bg-foreground" data-ditto-id="style-div-13">
+                              <div className="box-content flex p-0.5 rounded-[50%] flex-col justify-center items-center bg-foreground">
                                 <i className="box-content w-9 h-9 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:0px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} />
-                                <a className="box-content w-7.5 h-7.5 block absolute min-w-0 text-color-002 cursor-pointer" data-component="link" href={"https://www.instagram.com/stories/garyvee/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
-                                  <img className="box-content w-7.5 h-7.5 inline rounded-[50%] overflow-clip" data-ditto-id="style-div-14" data-component="avatar" alt="garyvee" src="/assets/cloned/images/d668aded585b.jpg" />
+                                <a className="box-content w-7.5 h-7.5 block absolute min-w-0 text-color-001 cursor-pointer" data-component="link" href={"https://www.instagram.com/stories/garyvee/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
+                                  <img className="box-content w-7.5 h-7.5 inline rounded-[50%] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/a237492b6277.jpg" />
                                 </a>
                               </div>
-                              <div className="box-content block mx-2.5 items-start grow overflow-hidden" data-ditto-id="style-span-15">
-                                <a className="box-content flex items-center text-color-002 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
-                                  <span className="box-content block max-w-[calc(100%_-_21px)] overflow-hidden" data-ditto-id="style-time">
+                              <div className="box-content block mx-2.5 items-start grow overflow-hidden">
+                                <a className="box-content flex items-center text-color-001 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
+                                  <span className="box-content block max-w-[calc(100%_-_21px)] overflow-hidden">
                                     garyvee
                                   </span>
-                                  <i className="box-content w-3 h-3 block ml-[0.3125rem] overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-x-ads-info-and-privacy">
+                                  <i className="box-content w-3 h-3 block ml-[0.3125rem] overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
                                     <u className="box-content w-px h-px block absolute top-3.5 left-[-1.39987e+06px] overflow-hidden underline">
                                       Verified
                                     </u>
                                   </i>
                                 </a>
-                                <div className="box-content block text-color-011 text-xs leading-3.5">
-                                  <span className="box-content inline before:content-['_·'] before:hidden before:mx-1 before:text-color-011 before:text-xs before:leading-3.5 before:text-left">
+                                <div className="box-content block text-color-010 text-xs leading-3.5">
+                                  <span className="box-content inline before:content-['_·'] before:hidden before:mx-1 before:text-color-010 before:text-xs before:leading-3.5 before:text-left">
                                     Original audio
                                   </span>
                                 </div>
                               </div>
-                              <div className="box-content flex ml-[0.9375rem] justify-end grow" data-ditto-id="style-div-4">
-                                <a className="box-content block ml-2.5 py-[0.3125rem] px-3 rounded-[3px] shrink-0 text-foreground font-semibold bg-color-015 cursor-pointer" data-ditto-id="style-icon" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                              <div className="box-content flex ml-[0.9375rem] justify-end grow" data-ditto-id="style-span-5">
+                                <a className="box-content block ml-2.5 py-[0.3125rem] px-3 rounded-[3px] shrink-0 text-foreground font-semibold bg-color-012 cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                   View profile
                                 </a>
                               </div>
                             </div>
                             <div className="box-content block relative pb-[672.5px] max-md:pb-102.5">
-                              <a className="box-content h-full block absolute top-0 inset-x-0 text-color-002 bg-surface-4 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
-                                <img className="box-content w-134.5 h-[42.0625rem] inline overflow-clip pointer-events-none max-md:w-82 max-md:h-102.5" data-component="image" alt="Instagram post shared by @garyvee" src="/assets/cloned/images/bac9b9214224.jpg" srcSet="/assets/cloned/images/bac9b9214224.jpg 1080w, /assets/cloned/images/b24c110b95b8.jpg 720w, /assets/cloned/images/776cc8dacad5.jpg 640w, /assets/cloned/images/de6369cebb91.jpg 480w, /assets/cloned/images/dc996dc77e75.jpg 320w, /assets/cloned/images/84eb9854a7ed.jpg 240w, /assets/cloned/images/846cabaf635a.jpg 1080w, /assets/cloned/images/169407187ea6.jpg 750w, /assets/cloned/images/d7ddd01eba64.jpg 640w, /assets/cloned/images/e7869b2327b6.jpg 480w, /assets/cloned/images/dc54d2ab5029.jpg 320w, /assets/cloned/images/75e5971ce951.jpg 240w, /assets/cloned/images/784616bdd749.jpg 150w" />
+                              <a className="box-content h-full block absolute top-0 inset-x-0 text-color-001 bg-surface-3 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
+                                <img className="box-content w-134.5 h-[42.0625rem] inline overflow-clip pointer-events-none max-md:w-82 max-md:h-102.5" data-component="image" alt="Instagram post shared by @garyvee" src="/assets/cloned/images/df0fb8d95af3.jpg" srcSet="/assets/cloned/images/df0fb8d95af3.jpg 1080w, /assets/cloned/images/3985838f3bd4.jpg 720w, /assets/cloned/images/6612280e651d.jpg 640w, /assets/cloned/images/aa31ebd5faf1.jpg 480w, /assets/cloned/images/ec0554ad388e.jpg 320w, /assets/cloned/images/9e5fc648fc0f.jpg 240w, /assets/cloned/images/bc4da63dda53.jpg 1080w, /assets/cloned/images/e11b37fbc376.jpg 750w, /assets/cloned/images/6e6b89eaa406.jpg 640w, /assets/cloned/images/4f0bd735752f.jpg 480w, /assets/cloned/images/acb52adc61d9.jpg 320w, /assets/cloned/images/aeed6fe6c4cc.jpg 240w, /assets/cloned/images/a71760cdd8ca.jpg 150w" />
                               </a>
                               <div className="box-content h-full block absolute top-0 inset-x-0">
                                 <div className="box-content h-full block relative pb-[671.5px] overflow-hidden max-md:pb-[25.5625rem]">
                                   <div className="box-content h-full block absolute top-0 inset-x-0">
-                                    <video className="box-content w-full h-full min-h-full block absolute top-0 left-0 min-w-full overflow-clip object-contain bg-color-002" playsInline poster="/assets/cloned/images/bac9b9214224.jpg" preload="none" src="/assets/cloned/videos/1970ae6f9930.mp4" />
+                                    <video className="box-content w-full h-full min-h-full block absolute top-0 left-0 min-w-full overflow-clip object-contain bg-color-001" playsInline poster="/assets/cloned/images/df0fb8d95af3.jpg" preload="none" src="/assets/cloned/videos/5ce9b62857f1.mp4" />
                                   </div>
                                   <div className="box-content h-full block absolute top-0 inset-x-0">
                                     <span className="box-content w-[8.4375rem] h-[8.4375rem] block absolute top-[20.9875rem] left-[16.8125rem] -mt-[4.1875rem] -ml-[4.1875rem] [background-size:271px_149px] bg-no-repeat max-md:top-[204.5px] max-md:left-41" style={{ backgroundImage: "url(\"/assets/cloned/images/9df5578ecbf8.png\")" }} data-component="button" aria-label="Play" role="button" />
@@ -725,13 +725,13 @@ export default function Page() {
                                 </div>
                               </div>
                             </div>
-                            <div className="box-content block relative" data-ditto-id="style-heading-8">
-                              <a className="box-content w-[13.0625rem] h-0 block absolute left-3 pt-3 px-3 rounded-tl-[3px] rounded-tr-[3px] overflow-hidden text-color-002 bg-foreground cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                            <div className="box-content block relative">
+                              <a className="box-content w-[13.0625rem] h-0 block absolute left-3 pt-3 px-3 rounded-tl-[3px] rounded-tr-[3px] overflow-hidden text-color-001 bg-foreground cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                 <div className="box-content flex items-center">
-                                  <img className="box-content w-8.5 h-8.5 block mr-3 rounded-[17px] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/d668aded585b.jpg" />
+                                  <img className="box-content w-8.5 h-8.5 block mr-3 rounded-[17px] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/a237492b6277.jpg" />
                                   <div className="box-content w-[10.1875rem] block">
                                     <div className="box-content flex items-center">
-                                      <span className="box-content block overflow-hidden font-semibold whitespace-nowrap text-nowrap" data-ditto-id="style-i">
+                                      <span className="box-content block overflow-hidden font-semibold whitespace-nowrap text-nowrap">
                                         garyvee
                                       </span>
                                       <i className="box-content w-3 h-3 block ml-[0.3125rem] shrink-0 overflow-hidden italic indent-[-1.39999e+06px] [background-position:-112px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
@@ -740,26 +740,26 @@ export default function Page() {
                                         </u>
                                       </i>
                                     </div>
-                                    <div className="box-content flex items-center" data-ditto-id="style-link-17">
-                                      <span className="box-content block overflow-hidden text-color-011 text-[0.75rem] whitespace-nowrap text-nowrap" data-ditto-id="style-link-16">
-                                        10,890 posts · 12M followers
+                                    <div className="box-content flex items-center">
+                                      <span className="box-content block overflow-hidden text-color-010 text-[0.75rem] whitespace-nowrap text-nowrap">
+                                        10,891 posts · 12M followers
                                       </span>
                                     </div>
                                   </div>
                                 </div>
                                 <div className="box-content flex mt-3 items-center">
-                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-ditto-id="style-strong" data-component="image" src="/assets/cloned/images/054e4e8471bf.jpg" srcSet="/assets/cloned/images/a3345eff77d0.jpg, /assets/cloned/images/054e4e8471bf.jpg 2x" />
-                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/309114b6a604.jpg" srcSet="/assets/cloned/images/d9d442259501.jpg, /assets/cloned/images/309114b6a604.jpg 2x" />
+                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/436818df4e05.jpg" srcSet="/assets/cloned/images/c0c51882cce3.jpg, /assets/cloned/images/436818df4e05.jpg 2x" />
+                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/d9c94cf40c93.jpg" srcSet="/assets/cloned/images/c052d0b700f2.jpg, /assets/cloned/images/d9c94cf40c93.jpg 2x" />
                                 </div>
                               </a>
                               <div className="box-content h-11 flex relative mx-3 flex-col justify-center items-stretch bg-foreground">
-                                <a className="box-content block overflow-hidden text-color-015 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-ditto-id="style-strong-2" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                                <a className="box-content block overflow-hidden text-color-012 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                   View more on Instagram
                                 </a>
                               </div>
                             </div>
-                            <div className="box-content border-t border-solid border-t-surface-2 flex mx-2.5 py-2" data-ditto-id="style-p-19">
-                              <a className="box-content h-6 flex mr-3 items-center text-color-002 text-[0.6875rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                            <div className="box-content border-t border-solid border-t-surface-2 flex mx-2.5 py-2">
+                              <a className="box-content h-6 flex mr-3 items-center text-color-001 text-[0.6875rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                 <i className="box-content w-6 h-6 block italic [background-position:-87px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} />
                                 <span className="box-content w-0 h-0 block overflow-hidden indent-[-1.11999e+06px]">
                                   Like
@@ -768,30 +768,30 @@ export default function Page() {
                               {TextLink4_data.map((d, i) => <TextLink4 key={i} d={d} styles={TextLink4_styles[i]} />)}
                             </div>
                             <div className="box-content flex pb-1.5 px-2.5 items-start">
-                              <a className="box-content block text-color-002 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                              <a className="box-content block text-color-001 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                 29,852 likes
                               </a>
                             </div>
                             <div className="box-content block pb-2.5 px-2.5">
-                              <a className="box-content inline -my-[0.3125rem] -ml-[0.3125rem] p-[0.3125rem] text-color-002 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                              <a className="box-content inline -my-[0.3125rem] -ml-[0.3125rem] p-[0.3125rem] text-color-001 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                 garyvee
                               </a>
                               <br className="box-content inline" />
                               <br className="box-content inline" />
                               Tired of society making kids think they need to know what they want to do at 18,22,25,30 .. 12-30 should be the era of “testing” and “tasting” ideas, concepts, hypotheses, way too much pressure on the youngsters to “have it figured out” ..kids aka people under 35 years old, try shit, get new jobs, meet new people, live in new places, try side businesses and ideas and art .. live humbly to do this but do this .. it’s leads to a higher % chance of happiness ♥️♥️❤️❤️❤️❤️
-                              <div className="box-content block pt-1.5" data-ditto-id="style-p-30">
-                                <a className="box-content inline text-color-011 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                              <div className="box-content block pt-1.5">
+                                <a className="box-content inline text-color-010 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                   View all 332 comments
                                 </a>
                               </div>
                             </div>
                             <div className="box-content h-11 border-t border-solid border-t-surface-2 flex px-2.5 items-center">
-                              <a className="box-content block text-color-011 leading-[1.0625rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
+                              <a className="box-content block text-color-010 leading-[1.0625rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
                                 Add a comment...
                               </a>
-                              <a className="box-content h-6 flex ml-[384.3px] text-color-002 cursor-pointer max-md:ml-[174.3px]" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=AypErnd7_2jIMBlMJPg8suy"} target="_blank">
-                                <i className="box-content w-6 h-6 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:-62px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} data-ditto-id="style-heading-10">
-                                  <u className="box-content w-px h-px block absolute top-[1024.5px] left-[-1.39948e+06px] overflow-hidden underline whitespace-nowrap text-nowrap" data-ditto-id="style-image-5">
+                              <a className="box-content h-6 flex ml-[384.3px] text-color-001 cursor-pointer max-md:ml-[174.3px]" data-component="link" href={"https://www.instagram.com/reel/CmAziAygjGY/?utm_source=ig_embed&ig_rid=Ae46hevK8zqFVwnPpZiHRLj"} target="_blank">
+                                <i className="box-content w-6 h-6 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:-62px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
+                                  <u className="box-content w-px h-px block absolute top-[1024.5px] left-[-1.39948e+06px] overflow-hidden underline whitespace-nowrap text-nowrap">
                                     Instagram
                                   </u>
                                 </i>
@@ -814,7 +814,7 @@ export default function Page() {
                 </p>
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <span className="inline font-normal" data-ditto-id="style-p-32">
+                  <span className="inline font-normal">
                     {"Fall in love with losing because 99% people are afraid of it. The key to success is having a lot of failures, listening to a lot of ‘NO’s…and when you lead with that, a lot of things will seem a lot more easy. "}
                   </span>
                 </p>
@@ -822,10 +822,10 @@ export default function Page() {
                 <p className="block pb-[25.5px]" />
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <iframe className="w-200 h-112 block overflow-clip aspect-[25/14] align-middle [background-size:100%_100%] bg-no-repeat max-md:w-82.5 max-md:h-[11.5625rem] max-lg:[background-size:initial] max-lg:[background-repeat:initial]" style={{ backgroundImage: "url(\"/assets/cloned/images/3469713f2c6a.jpg\")" }} data-ditto-id="style-strong-3" height="608" title="Ambition needs to be balanced with patience or it will eat you up!" width="1080" />
+                  <iframe className="w-200 h-112 block overflow-clip aspect-[25/14] align-middle [background-size:100%_100%] bg-no-repeat max-md:w-82.5 max-md:h-[11.5625rem] max-lg:[background-size:initial] max-lg:[background-repeat:initial]" style={{ backgroundImage: "url(\"/assets/cloned/images/3469713f2c6a.jpg\")" }} height="608" title="Ambition needs to be balanced with patience or it will eat you up!" width="1080" />
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-31" />
+                <p className="block pb-[25.5px]" />
                 {" "}
                 <p className="block pb-[25.5px]">
                   <b className="inline font-bold">
@@ -855,7 +855,7 @@ export default function Page() {
                 </p>
                 {" "}
                 <div className="w-135 h-75.5 border border-solid border-surface-2 block relative min-w-81.5 max-w-135 mb-3 rounded-[3px] overflow-hidden aspect-[25/14] align-middle bg-foreground max-md:w-82.5 max-md:h-[11.5625rem]" id="instagram-embed-2">
-                  <div className="box-content block overflow-x-auto overflow-y-scroll text-color-008 [font-family:Helvetica,_Arial,_sans-serif] text-xs font-normal leading-4 bg-foreground" dir="ltr">
+                  <div className="box-content block overflow-x-auto overflow-y-scroll text-color-003 [font-family:Helvetica,_Arial,_sans-serif] text-xs font-normal leading-4 bg-foreground" dir="ltr">
                     <div className="box-content block">
                       <div className="box-content block">
                         <div className="box-content block [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm leading-4.5 text-left" data-ditto-id="style-newsletter-2">
@@ -863,12 +863,12 @@ export default function Page() {
                             <div className="h-13.5 flex p-2.5 items-center">
                               <div className="box-content flex p-0.5 rounded-[50%] flex-col justify-center items-center bg-foreground">
                                 <i className="box-content w-9 h-9 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:0px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} />
-                                <a className="box-content w-7.5 h-7.5 block absolute min-w-0 text-color-002 cursor-pointer" data-component="link" href={"https://www.instagram.com/stories/garyvee/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
-                                  <img className="box-content w-7.5 h-7.5 inline rounded-[50%] overflow-clip" data-ditto-id="style-newsletter-website-2" data-component="avatar" alt="garyvee" src="/assets/cloned/images/20242677caa9.jpg" />
+                                <a className="box-content w-7.5 h-7.5 block absolute min-w-0 text-color-001 cursor-pointer" data-component="link" href={"https://www.instagram.com/stories/garyvee/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
+                                  <img className="box-content w-7.5 h-7.5 inline rounded-[50%] overflow-clip" data-ditto-id="style-newsletter-website-2" data-component="avatar" alt="garyvee" src="/assets/cloned/images/a237492b6277.jpg" />
                                 </a>
                               </div>
                               <div className="box-content block mx-2.5 items-start grow overflow-hidden">
-                                <a className="box-content flex items-center text-color-002 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                                <a className="box-content flex items-center text-color-001 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                   <span className="box-content block max-w-[calc(100%_-_21px)] overflow-hidden" data-ditto-id="style-newsletter-email-2">
                                     garyvee
                                   </span>
@@ -878,26 +878,26 @@ export default function Page() {
                                     </u>
                                   </i>
                                 </a>
-                                <div className="box-content block text-color-011 text-xs leading-3.5">
-                                  <span className="box-content inline before:content-['_·'] before:hidden before:mx-1 before:text-color-011 before:text-xs before:leading-3.5 before:text-left">
+                                <div className="box-content block text-color-010 text-xs leading-3.5">
+                                  <span className="box-content inline before:content-['_·'] before:hidden before:mx-1 before:text-color-010 before:text-xs before:leading-3.5 before:text-left">
                                     Original audio
                                   </span>
                                 </div>
                               </div>
                               <div className="box-content flex ml-[0.9375rem] justify-end grow">
-                                <a className="box-content block ml-2.5 py-[0.3125rem] px-3 rounded-[3px] shrink-0 text-foreground font-semibold bg-color-015 cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                                <a className="box-content block ml-2.5 py-[0.3125rem] px-3 rounded-[3px] shrink-0 text-foreground font-semibold bg-color-012 cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                   View profile
                                 </a>
                               </div>
                             </div>
                             <div className="box-content block relative pb-[672.5px] max-md:pb-102.5">
-                              <a className="box-content h-full block absolute top-0 inset-x-0 text-color-002 bg-surface-4 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
-                                <img className="box-content w-134.5 h-[42.0625rem] inline overflow-clip pointer-events-none max-md:w-82 max-md:h-102.5" data-component="image" alt="Instagram post shared by @garyvee" src="/assets/cloned/images/6749d6b98fcf.jpg" srcSet="/assets/cloned/images/6749d6b98fcf.jpg 720w, /assets/cloned/images/db280475726c.jpg 640w, /assets/cloned/images/341e5a854b83.jpg 480w, /assets/cloned/images/500426bc0ea9.jpg 320w, /assets/cloned/images/3d2bc4bdcaf2.jpg 240w, /assets/cloned/images/14a5a14c4e5c.jpg 720w, /assets/cloned/images/14a5a14c4e5c.jpg 720w, /assets/cloned/images/ae4a95e772e8.jpg 640w, /assets/cloned/images/766446da713b.jpg 480w, /assets/cloned/images/81ae734c3578.jpg 320w, /assets/cloned/images/e4e950adcf5a.jpg 240w, /assets/cloned/images/33c8ce7c1d96.jpg 150w" />
+                              <a className="box-content h-full block absolute top-0 inset-x-0 text-color-001 bg-surface-3 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
+                                <img className="box-content w-134.5 h-[42.0625rem] inline overflow-clip pointer-events-none max-md:w-82 max-md:h-102.5" data-component="image" alt="Instagram post shared by @garyvee" src="/assets/cloned/images/d8443630d026.jpg" srcSet="/assets/cloned/images/d8443630d026.jpg 720w, /assets/cloned/images/6f7b9777f37c.jpg 640w, /assets/cloned/images/fc1d3ab26121.jpg 480w, /assets/cloned/images/7b6587457cdf.jpg 320w, /assets/cloned/images/d5c9db125988.jpg 240w, /assets/cloned/images/115965ae0f6f.jpg 720w, /assets/cloned/images/115965ae0f6f.jpg 720w, /assets/cloned/images/b37dccb2efca.jpg 640w, /assets/cloned/images/70f3377f71ff.jpg 480w, /assets/cloned/images/1ab664bc827d.jpg 320w, /assets/cloned/images/4b47d9ff3939.jpg 240w, /assets/cloned/images/f12254646321.jpg 150w" />
                               </a>
                               <div className="box-content h-full block absolute top-0 inset-x-0">
                                 <div className="box-content h-full block relative pb-[671.5px] overflow-hidden max-md:pb-[25.5625rem]">
                                   <div className="box-content h-full block absolute top-0 inset-x-0">
-                                    <video className="box-content w-full h-full min-h-full block absolute top-0 left-0 min-w-full overflow-clip object-contain bg-color-002" playsInline poster="/assets/cloned/images/6749d6b98fcf.jpg" preload="none" src="/assets/cloned/videos/5f21fe9c670a.mp4" />
+                                    <video className="box-content w-full h-full min-h-full block absolute top-0 left-0 min-w-full overflow-clip object-contain bg-color-001" playsInline poster="/assets/cloned/images/d8443630d026.jpg" preload="none" src="/assets/cloned/videos/9ffb68586dcb.mp4" />
                                   </div>
                                   <div className="box-content h-full block absolute top-0 inset-x-0">
                                     <span className="box-content w-[8.4375rem] h-[8.4375rem] block absolute top-[20.9875rem] left-[16.8125rem] -mt-[4.1875rem] -ml-[4.1875rem] [background-size:271px_149px] bg-no-repeat max-md:top-[204.5px] max-md:left-41" style={{ backgroundImage: "url(\"/assets/cloned/images/9df5578ecbf8.png\")" }} data-component="button" aria-label="Play" role="button" />
@@ -907,9 +907,9 @@ export default function Page() {
                               </div>
                             </div>
                             <div className="box-content block relative">
-                              <a className="box-content w-[13.0625rem] h-0 block absolute left-3 pt-3 px-3 rounded-tl-[3px] rounded-tr-[3px] overflow-hidden text-color-002 bg-foreground cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                              <a className="box-content w-[13.0625rem] h-0 block absolute left-3 pt-3 px-3 rounded-tl-[3px] rounded-tr-[3px] overflow-hidden text-color-001 bg-foreground cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                 <div className="box-content flex items-center">
-                                  <img className="box-content w-8.5 h-8.5 block mr-3 rounded-[17px] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/20242677caa9.jpg" />
+                                  <img className="box-content w-8.5 h-8.5 block mr-3 rounded-[17px] overflow-clip" data-component="avatar" alt="garyvee" src="/assets/cloned/images/a237492b6277.jpg" />
                                   <div className="box-content w-[10.1875rem] block">
                                     <div className="box-content flex items-center">
                                       <span className="box-content block overflow-hidden font-semibold whitespace-nowrap text-nowrap">
@@ -922,25 +922,25 @@ export default function Page() {
                                       </i>
                                     </div>
                                     <div className="box-content flex items-center" data-ditto-id="style-button-8">
-                                      <span className="box-content block overflow-hidden text-color-011 text-[0.75rem] whitespace-nowrap text-nowrap">
-                                        10,890 posts · 12M followers
+                                      <span className="box-content block overflow-hidden text-color-010 text-[0.75rem] whitespace-nowrap text-nowrap">
+                                        10,891 posts · 12M followers
                                       </span>
                                     </div>
                                   </div>
                                 </div>
                                 <div className="box-content flex mt-3 items-center">
-                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/160d454b155e.jpg" srcSet="/assets/cloned/images/f4adb4b07a88.jpg, /assets/cloned/images/160d454b155e.jpg 2x" />
-                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/bdc854518024.jpg" srcSet="/assets/cloned/images/ade60e16c13c.jpg, /assets/cloned/images/bdc854518024.jpg 2x" />
+                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/b20eec0a8c53.jpg" srcSet="/assets/cloned/images/4910c356aa07.jpg, /assets/cloned/images/b20eec0a8c53.jpg 2x" />
+                                  <img className="box-content w-26 h-26 block mr-px overflow-clip" data-component="image" src="/assets/cloned/images/b7dfba754692.jpg" srcSet="/assets/cloned/images/a2d7b0daeef8.jpg, /assets/cloned/images/b7dfba754692.jpg 2x" />
                                 </div>
                               </a>
                               <div className="box-content h-11 flex relative mx-3 flex-col justify-center items-stretch bg-foreground">
-                                <a className="box-content block overflow-hidden text-color-015 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                                <a className="box-content block overflow-hidden text-color-012 font-semibold whitespace-nowrap text-nowrap cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                   View more on Instagram
                                 </a>
                               </div>
                             </div>
                             <div className="box-content border-t border-solid border-t-surface-2 flex mx-2.5 py-2">
-                              <a className="box-content h-6 flex mr-3 items-center text-color-002 text-[0.6875rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                              <a className="box-content h-6 flex mr-3 items-center text-color-001 text-[0.6875rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                 <i className="box-content w-6 h-6 block italic [background-position:-87px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }} />
                                 <span className="box-content w-0 h-0 block overflow-hidden indent-[-1.11999e+06px]">
                                   Like
@@ -949,36 +949,36 @@ export default function Page() {
                               {TextLink5_data.map((d, i) => <TextLink5 key={i} d={d} styles={TextLink5_styles[i]} />)}
                             </div>
                             <div className="box-content flex pb-1.5 px-2.5 items-start">
-                              <a className="box-content block text-color-002 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
-                                21,882 likes
+                              <a className="box-content block text-color-001 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
+                                21,883 likes
                               </a>
                             </div>
                             <div className="box-content block pb-2.5 px-2.5">
-                              <a className="box-content inline -my-[0.3125rem] -ml-[0.3125rem] p-[0.3125rem] text-color-002 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                              <a className="box-content inline -my-[0.3125rem] -ml-[0.3125rem] p-[0.3125rem] text-color-001 font-semibold cursor-pointer" data-component="link" href={"https://www.instagram.com/garyvee/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                 garyvee
                               </a>
                               <br className="box-content inline" />
                               <br className="box-content inline" />
                               {"A fun convo w/ "}
-                              <a className="box-content inline text-clr-8 cursor-pointer" data-component="link" href="https://www.instagram.com/kreaturesofhabit/?utm_source=ig_embed">
+                              <a className="box-content inline text-clr-9 cursor-pointer" data-component="link" href="https://www.instagram.com/kreaturesofhabit/?utm_source=ig_embed">
                                 @kreaturesofhabit
                               </a>
                               {" around the idea of who you spend time with dictates your mindset and perspective and the concept of limiting time with the negative and finding more time for the positive … PS "}
-                              <a className="box-content inline text-clr-8 cursor-pointer" data-component="link" href="https://www.instagram.com/kreaturesofhabit/?utm_source=ig_embed">
+                              <a className="box-content inline text-clr-9 cursor-pointer" data-component="link" href="https://www.instagram.com/kreaturesofhabit/?utm_source=ig_embed">
                                 @kreaturesofhabit
                               </a>
                               {" is something all of you should look into ♥️"}
                               <div className="box-content block pt-1.5">
-                                <a className="box-content inline text-color-011 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                                <a className="box-content inline text-color-010 cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                   View all 292 comments
                                 </a>
                               </div>
                             </div>
                             <div className="box-content h-11 border-t border-solid border-t-surface-2 flex px-2.5 items-center">
-                              <a className="box-content block text-color-011 leading-[1.0625rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                              <a className="box-content block text-color-010 leading-[1.0625rem] cursor-pointer" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                 Add a comment...
                               </a>
-                              <a className="box-content h-6 flex ml-[384.3px] text-color-002 cursor-pointer max-md:ml-[174.3px]" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=APMURqEqh1jgplsKj8Adp6f"} target="_blank">
+                              <a className="box-content h-6 flex ml-[384.3px] text-color-001 cursor-pointer max-md:ml-[174.3px]" data-component="link" href={"https://www.instagram.com/reel/CmCA0Tqg8sq/?utm_source=ig_embed&ig_rid=A81nWDuuACe1rANYECz1XRq"} target="_blank">
                                 <i className="box-content w-6 h-6 block overflow-hidden italic indent-[-1.39999e+06px] [background-position:-62px_-136px] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/5de20771a30a.png\")" }}>
                                   <u className="box-content w-px h-px block absolute top-[988.5px] left-[-1.39948e+06px] overflow-hidden underline whitespace-nowrap text-nowrap">
                                     Instagram
@@ -1017,7 +1017,7 @@ export default function Page() {
                 <p className="block pb-[25.5px]" />
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <b className="inline font-bold" data-ditto-id="style-link-10">
+                  <b className="inline font-bold">
                     #10. Take Advantage of the Resources Around You
                   </b>
                 </p>
@@ -1036,47 +1036,47 @@ export default function Page() {
                   </b>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-17">
+                <p className="block pb-[25.5px]">
                   <span className="inline font-normal">
                     {"Boy, do I love to push this. Accountability and self awareness is going to pull you out of sadness like no other quality. It wouldn’t let you dwell on things, instead it would make you take action. "}
                   </span>
                 </p>
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <span className="inline font-normal" data-ditto-id="style-p-18">
+                  <span className="inline font-normal">
                     {"The hardest thing in this age is to be you and authentically you… do not let other people’s voices into your head. If I could wish all of you one thing besides health, I would wish you self awareness. "}
                   </span>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-link-11" />
+                <p className="block pb-[25.5px]" />
                 {" "}
                 <div className="w-full max-w-137.5 flex my-2.5">
-                  <div className="w-137.5 h-[50.0625rem] block relative grow overflow-hidden aspect-[25/14] align-middle" id="twitter-widget-0" title="X Post">
-                    <div className="box-content block text-color-002 [font-family:'Times_New_Roman'] text-base font-normal leading-4.5">
+                  <div className="w-137.5 h-[50.0625rem] block relative grow overflow-hidden aspect-[25/14] align-middle" data-ditto-id="style-newsletter-3" id="twitter-widget-0" title="X Post">
+                    <div className="box-content block text-color-001 [font-family:'Times_New_Roman'] text-base font-normal leading-4.5">
                       <div className="box-content block" id="f7-app">
                         <div className="flex relative z-0 flex-col items-stretch flex-1 pointer-events-none">
                           <div className="flex relative z-0 min-w-0 flex-col items-stretch flex-1 pointer-events-none">
-                            <div className="w-137.5 border border-solid border-color-005 flex relative z-0 min-w-62.5 max-w-137.5 rounded-xl flex-col items-stretch shrink-0 overflow-hidden cursor-pointer">
-                              <div className="box-content block" />
+                            <div className="w-137.5 border border-solid border-color-007 flex relative z-0 min-w-62.5 max-w-137.5 rounded-xl flex-col items-stretch shrink-0 overflow-hidden cursor-pointer">
+                              <div className="box-content block" data-ditto-id="style-newsletter-website-3" />
                               <article className="w-137 flex relative z-0 min-w-0 pt-3 pb-1 px-4 flex-col items-stretch shrink-0 bg-foreground" role="article">
-                                <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-newsletter-3" data-component="link" aria-label="Visit this post on X" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
-                                <div className="flex relative z-0 min-w-0 pb-3 items-stretch shrink-0">
-                                  <div className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
+                                <a className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-label="Visit this post on X" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank" />
+                                <div className="flex relative z-0 min-w-0 pb-3 items-stretch shrink-0" data-ditto-id="style-newsletter-email-3">
+                                  <div className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-button-9">
                                     <div className="w-12 h-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0">
                                       <div className="box-content block pb-12" />
                                       <div className="box-content w-12 h-full block absolute top-0">
-                                        <div className="w-12 h-12 block absolute top-6 left-6 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-24,-24)]" data-ditto-id="style-newsletter-website-3">
+                                        <div className="w-12 h-12 block absolute top-6 left-6 z-0 flex-col items-stretch shrink-0 transform-[matrix(1,0,0,1,-24,-24)]">
                                           <div className="box-content block pb-12" />
                                           <div className="box-content w-12 h-full block absolute top-0">
-                                            <div className="w-13 h-13 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden" data-ditto-id="style-newsletter-email-3">
-                                              <a className="h-13 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-ditto-id="style-button-10" data-component="link" aria-hidden="true" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                            <div className="w-13 h-13 flex absolute -top-0.5 -left-0.5 z-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden">
+                                              <a className="h-13 flex relative z-0 min-w-0 flex-col items-stretch shrink-0" data-component="link" aria-hidden="true" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
                                                 <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
                                                   <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 pointer-events-none" />
                                                 </div>
                                                 <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
                                                   <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 bg-foreground pointer-events-none" />
                                                 </div>
-                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none" data-ditto-id="style-div-12">
+                                                <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden bg-foreground transform-[matrix(1,0,0,1,-24,-24)] pointer-events-none">
                                                   <div className="w-12 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden pointer-events-none">
                                                     <div className="box-content block pb-12 pointer-events-none" />
                                                     <div className="box-content w-12 h-full block absolute top-0 pointer-events-none">
@@ -1087,7 +1087,7 @@ export default function Page() {
                                                   </div>
                                                 </div>
                                                 <div className="w-12 h-12 flex absolute top-6.5 left-6.5 z-0 min-w-0 rounded-full flex-col items-stretch shrink-0 overflow-hidden transform-[matrix(1,0,0,1,-24,-24)]">
-                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-7)_0px_0px_2px_0px_inset]" />
+                                                  <div className="h-full flex relative z-0 min-w-0 flex-col items-stretch shrink-0 shadow-[var(--clr-8)_0px_0px_2px_0px_inset]" />
                                                 </div>
                                               </a>
                                             </div>
@@ -1100,9 +1100,9 @@ export default function Page() {
                                     <div className="w-[165.3px] flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
                                       <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
                                         <div className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch">
-                                          <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                          <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-ditto-id="style-button-10" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
                                             <div className="flex relative z-0 min-w-0 max-w-full items-center shrink-0">
-                                              <div className="flex min-w-0 items-center overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                              <div className="flex min-w-0 items-center overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                                 <span className="block min-w-0 max-w-full overflow-hidden">
                                                   <span className="inline">
                                                     Gary Vaynerchuk
@@ -1110,9 +1110,9 @@ export default function Page() {
                                                   <span className="inline align-middle" />
                                                 </span>
                                               </div>
-                                              <div className="w-[42.7px] flex min-w-0 shrink-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
+                                              <div className="w-[42.7px] flex min-w-0 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                                 <span className="flex min-w-0 items-center">
-                                                  <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-010" data-ditto-id="style-button-11" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
+                                                  <svg className="box-content w-auto h-[1.1875rem] block relative max-w-5 max-h-5 ml-0.5 overflow-hidden align-text-bottom text-color-011" data-component="icon" aria-label="Verified account" role="img" viewBox="0 0 22 22" data-testid="icon-verified" fill="currentColor">
                                                     <g>
                                                       <path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
                                                     </g>
@@ -1122,7 +1122,7 @@ export default function Page() {
                                                       <div className="block relative z-0 flex-col items-stretch shrink-0 overflow-hidden">
                                                         <div className="box-content block pb-4" />
                                                         <div className="box-content w-4 h-full block absolute top-0">
-                                                          <div className="h-full border border-solid border-color-005 flex relative z-0 rounded-xs flex-col items-stretch shrink-0 overflow-hidden">
+                                                          <div className="h-full border border-solid border-color-007 flex relative z-0 rounded-xs flex-col items-stretch shrink-0 overflow-hidden">
                                                             <div className="w-3.5 h-full flex absolute top-0 -z-1 min-w-0 flex-col items-stretch shrink-0 bg-cover [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/8b271bf95261.jpg\")" }} />
                                                           </div>
                                                         </div>
@@ -1136,7 +1136,7 @@ export default function Page() {
                                           <div className="flex relative z-0 min-w-0 items-center">
                                             <a className="flex relative z-0 min-w-0 max-w-full flex-col items-stretch" data-component="link" href="https://twitter.com/garyvee" rel="noopener noreferrer nofollow" role="link" target="_blank">
                                               <div className="w-[4.2875rem] flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
-                                                <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" dir="ltr">
+                                                <div className="block min-w-0 max-w-full overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap [font-feature-settings:'ss01']" dir="ltr">
                                                   <span className="inline">
                                                     @garyvee
                                                   </span>
@@ -1144,12 +1144,12 @@ export default function Page() {
                                               </div>
                                             </a>
                                             <div className="flex relative z-0 min-w-0 items-stretch shrink-0">
-                                              <div className="block min-w-0 px-1 shrink-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" aria-hidden="true" dir="auto">
+                                              <div className="block min-w-0 px-1 shrink-0 text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" aria-hidden="true" dir="auto">
                                                 <span className="inline">
                                                   ·
                                                 </span>
                                               </div>
-                                              <a className="block min-w-0 text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-component="link" dir="auto" href={"https://x.com/intent/follow?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F&screen_name=garyvee"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                              <a className="block min-w-0 text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 whitespace-pre-wrap [overflow-wrap:break-word]" data-component="link" dir="auto" href={"https://x.com/intent/follow?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F&screen_name=garyvee"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                                 <span className="inline">
                                                   Follow
                                                 </span>
@@ -1160,8 +1160,8 @@ export default function Page() {
                                       </div>
                                     </div>
                                   </div>
-                                  <a className="h-12 flex relative z-0 min-w-0 ml-[269.7px] rounded-full flex-col items-stretch shrink-0" data-component="link" aria-label="View on X" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <svg className="box-content w-auto h-[1.5625rem] block relative max-w-full overflow-hidden align-text-bottom text-color-003" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                  <a className="h-12 flex relative z-0 min-w-0 ml-[269.7px] rounded-full flex-col items-stretch shrink-0" data-component="link" aria-label="View on X" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                    <svg className="box-content w-auto h-[1.5625rem] block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                       <g>
                                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                                       </g>
@@ -1169,7 +1169,7 @@ export default function Page() {
                                   </a>
                                 </div>
                                 <div className="w-129 flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
-                                  <div className="block relative min-w-0 text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-xl leading-6 whitespace-pre-wrap [overflow-wrap:break-word] cursor-text" dir="auto" lang="en">
+                                  <div className="block relative min-w-0 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-xl leading-6 whitespace-pre-wrap [overflow-wrap:break-word] cursor-text" dir="auto" lang="en">
                                     <a className="inline text-color-009 cursor-pointer" data-component="link" dir="ltr" href="https://t.co/eULW1rmdDp" rel="noopener noreferrer nofollow" role="link" target="_blank">
                                       <span className="inline text-[0rem] leading-0" aria-hidden="true">
                                         http://
@@ -1181,7 +1181,7 @@ export default function Page() {
                                     </span>
                                   </div>
                                 </div>
-                                <div className="w-129 border border-solid border-color-005 flex relative z-0 min-w-0 mt-3 rounded-xl flex-col items-stretch shrink-0 overflow-hidden">
+                                <div className="w-129 border border-solid border-color-007 flex relative z-0 min-w-0 mt-3 rounded-xl flex-col items-stretch shrink-0 overflow-hidden">
                                   <div className="w-px h-px flex absolute z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden" />
                                   <div className="w-128.5 block relative z-0 min-w-0 flex-col items-stretch shrink-0 overflow-hidden">
                                     <div className="box-content block pb-128.5" />
@@ -1193,17 +1193,17 @@ export default function Page() {
                                         <div className="w-128.5 h-full flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0">
                                           <div className="box-content block">
                                             <div className="box-content block">
-                                              <div className="w-128.5 h-128.5 flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 bg-surface-3">
+                                              <div className="w-128.5 h-128.5 flex absolute top-0 left-0 z-0 flex-col items-stretch shrink-0 bg-clr-10">
                                                 <div className="h-full flex relative z-0 min-w-0 mx-8 flex-col justify-center items-stretch shrink-0">
                                                   <div className="flex relative z-0 min-w-0 flex-col items-stretch shrink-0" />
                                                   <div className="w-112.5 flex relative z-0 min-w-0 flex-col items-stretch shrink-0">
-                                                    <div className="block min-w-0 mb-5 text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 text-center whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
+                                                    <div className="block min-w-0 mb-5 text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 text-center whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                                       <span className="inline">
                                                         The media could not be played.
                                                       </span>
                                                     </div>
                                                   </div>
-                                                  <div className="w-[5.25rem] h-9 min-h-9 border border-solid border-clr-1 flex relative z-0 min-w-9 px-4 rounded-full flex-col justify-center items-stretch self-center shrink-0 bg-color-010" data-component="button" role="button">
+                                                  <div className="w-[5.25rem] h-9 min-h-9 border border-solid border-clr-1 flex relative z-0 min-w-9 px-4 rounded-full flex-col justify-center items-stretch self-center shrink-0 bg-color-011" data-component="button" role="button">
                                                     <div className="flex min-w-0 justify-center items-center grow text-foreground [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 text-center whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                                       <span className="block min-w-0 max-w-full overflow-hidden whitespace-nowrap text-nowrap">
                                                         <span className="inline">
@@ -1222,11 +1222,11 @@ export default function Page() {
                                   </div>
                                 </div>
                                 <div className="flex relative z-0 min-w-0 mt-0.5 items-center shrink-0">
-                                  <div className="block min-w-0 max-w-full overflow-hidden text-color-003 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                  <div className="block min-w-0 max-w-full overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] leading-5 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                     <div className="inline-flex relative z-0 flex-col items-stretch shrink-0">
                                       <div className="block relative z-0 min-w-0 items-baseline">
-                                        <span className="inline text-color-004">
-                                          <a className="inline-flex flex-wrap shrink-0 gap-1" data-component="link" aria-label="5:08 PM · Jan 2, 2018" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                        <span className="inline text-color-006">
+                                          <a className="inline-flex flex-wrap shrink-0 gap-1" data-component="link" aria-label="5:08 PM · Jan 2, 2018" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                             <time className="box-content block" dateTime="2018-01-02T17:08:19.000Z">
                                               5:08 PM · Jan 2, 2018
                                             </time>
@@ -1236,37 +1236,37 @@ export default function Page() {
                                     </div>
                                   </div>
                                   <a className="w-8 h-8 flex relative z-0 min-w-0 -mr-1 ml-[21.275rem] rounded-full flex-col justify-center items-stretch shrink-0" data-component="link" aria-label="X Ads info and privacy" href="https://help.x.com/x-for-websites-ads-info-and-privacy" rel="noopener noreferrer nofollow" role="link" target="_blank">
-                                    <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-006" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                       <g>
                                         <path d="M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" />
                                       </g>
                                     </svg>
                                   </a>
                                 </div>
-                                <div className="border-t border-solid border-t-color-005 flex relative z-0 min-w-0 mt-1 pt-1 items-start shrink-0">
-                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Like. This post has 354 likes" href={"https://x.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F&tweet_id=948239543408451584"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                <div className="border-t border-solid border-t-color-007 flex relative z-0 min-w-0 mt-1 pt-1 items-start shrink-0">
+                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Like. This post has 354 likes" href={"https://x.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F&tweet_id=948239543408451584"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-014" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-013" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         354
                                       </span>
                                     </div>
                                   </a>
-                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Reply to this post on X" href={"https://x.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F&in_reply_to=948239543408451584"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                  <a className="h-8 flex relative z-0 min-w-0 mr-5 items-center shrink-0" data-component="link" aria-label="Reply to this post on X" href={"https://x.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F&in_reply_to=948239543408451584"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-010" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-011" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         Reply
                                       </span>
@@ -1274,13 +1274,13 @@ export default function Page() {
                                   </a>
                                   <div className="flex relative z-0 min-w-0 items-center" data-component="button" role="button">
                                     <div className="w-8 h-8 flex relative z-0 min-w-0 -ml-1 rounded-full flex-col justify-center items-stretch shrink-0">
-                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-004" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                                      <svg className="box-content w-8 h-5 block relative max-w-full overflow-hidden align-text-bottom text-color-006" data-component="icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                                         <g>
                                           <path d="M18.36 5.64c-1.95-1.96-5.11-1.96-7.07 0L9.88 7.05 8.46 5.64l1.42-1.42c2.73-2.73 7.16-2.73 9.9 0 2.73 2.74 2.73 7.17 0 9.9l-1.42 1.42-1.41-1.42 1.41-1.41c1.96-1.96 1.96-5.12 0-7.07zm-2.12 3.53l-7.07 7.07-1.41-1.41 7.07-7.07 1.41 1.41zm-12.02.71l1.42-1.42 1.41 1.42-1.41 1.41c-1.96 1.96-1.96 5.12 0 7.07 1.95 1.96 5.11 1.96 7.07 0l1.41-1.41 1.42 1.41-1.42 1.42c-2.73 2.73-7.16 2.73-9.9 0-2.73-2.74-2.73-7.17 0-9.9z" />
                                         </g>
                                       </svg>
                                     </div>
-                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-004 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
+                                    <div className="block min-w-0 max-w-full ml-1 overflow-hidden text-color-006 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-sm font-bold leading-4 whitespace-nowrap [overflow-wrap:break-word] text-nowrap" dir="auto">
                                       <span className="inline">
                                         Copy link
                                       </span>
@@ -1288,7 +1288,7 @@ export default function Page() {
                                   </div>
                                 </div>
                                 <div className="flex relative z-0 min-w-0 pt-1 pb-3 flex-col items-stretch shrink-0">
-                                  <a className="w-129 h-8 min-h-8 border border-solid border-color-005 flex relative z-0 min-w-8 px-4 rounded-full flex-col items-stretch shrink-0" data-component="link" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5Ed37850e1b1d524f34cc543db59ec8321283f95e3%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
+                                  <a className="w-129 h-8 min-h-8 border border-solid border-color-007 flex relative z-0 min-w-8 px-4 rounded-full flex-col items-stretch shrink-0" data-component="link" href={"https://x.com/garyvee/status/948239543408451584?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E948239543408451584%7Ctwgr%5E058001abda140b5c79e5d58aad95a7557f4c438b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgaryvaynerchuk.com%2F11-things-young-people-need-to-know%2F"} rel="noopener noreferrer nofollow" role="link" target="_blank">
                                     <div className="flex min-w-0 justify-center items-center grow text-color-009 [font-family:-apple-system,_BlinkMacSystemFont,_'Segoe_UI',_Roboto,_Helvetica,_Arial,_sans-serif] text-[0.9375rem] font-bold leading-5 text-center whitespace-pre-wrap [overflow-wrap:break-word]" dir="auto">
                                       <span className="block min-w-0 max-w-full overflow-hidden text-sm leading-4 whitespace-nowrap text-nowrap">
                                         <span className="inline">
@@ -1328,7 +1328,7 @@ export default function Page() {
               </article>
             </div>
           </main>
-          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-007 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter-4" aria-labelledby="newsletter-title" id="newsletter">
+          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-008 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter-4" aria-labelledby="newsletter-title" id="newsletter">
             <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto">
               <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
               <h2 className="block mb-[2.1875rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.375rem] leading-[2.6875rem] uppercase max-md:mb-[35.5px] max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-component="heading" id="newsletter-title">
@@ -1344,7 +1344,7 @@ export default function Page() {
                 </label>
                 <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]">
                   <input className="w-[19.8125rem] h-11 min-h-11 border border-solid border-border block p-2 overflow-clip text-[0.9375rem] leading-[1.4375rem] text-start bg-border cursor-text max-md:w-82.5 max-md:h-12.5 max-md:min-h-12.5" data-ditto-id="style-newsletter-email-4" data-component="input" id="newsletter-email" name="email" type="email" />
-                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-button-12" data-component="button" type="submit">
+                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-button-11" data-component="button" type="submit">
                     Subscribe
                   </button>
                 </div>
@@ -1356,7 +1356,7 @@ export default function Page() {
                 <span className="block">
                   ©Gary Vee IP, LLC 2024
                 </span>
-                <span className="block text-color-006">
+                <span className="block text-color-005">
                   <a className="inline cursor-pointer" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
                     Privacy Policy
                   </a>
@@ -1365,7 +1365,7 @@ export default function Page() {
                     Terms of Use
                   </a>
                   {" | "}
-                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-button-13" data-component="button" type="button">
+                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-button-12" data-component="button" type="button">
                     Cookie Settings
                   </button>
                 </span>
@@ -1374,7 +1374,7 @@ export default function Page() {
           </section>
         </div>
       </div>
-      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.99421px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.94139px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996093","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88915px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
+      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button-2","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.97551px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.9413px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996065","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88894px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
     </>
   );
 }

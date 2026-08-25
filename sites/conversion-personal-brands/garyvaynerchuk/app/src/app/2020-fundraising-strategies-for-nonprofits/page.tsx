@@ -92,10 +92,10 @@ const Tile_data = [
     {  },
     {  },
     {  },
+    {  },
     {  }
 ];
 const Tile2_data = [
-    {  },
     {  },
     {  },
     {  }
@@ -117,7 +117,7 @@ const TextLink_meta: string[][] = [
     ["style-7"],
     ["style-8"],
     ["style-9"],
-    ["style-10"],
+    ["style-11"],
     ["style-12"]
 ];
 const TextLink2_meta: string[][] = [
@@ -136,40 +136,40 @@ const TextLink2_meta2: string[][] = [
     ["style-25"]
 ];
 const Logo_meta: string[][] = [
-    ["style-28", "style-39", "n52", "style-52", "style-53"],
-    ["style-29", "style-78", "n57", "style-54", "style-55"],
-    ["style-30", "style-40", "n62", "style-56", "style-57"],
-    ["style-31", "style-41", "n67", "style-58", "style-59"],
-    ["style-32", "style-42", "n72", "style-60", "style-61"],
-    ["style-33", "style-43", "n77", "style-62", "style-63"],
-    ["style-34", "style-44", "n82", "style-64", "style-65"],
-    ["style-35", "style-45", "n87", "style-66", "style-67"],
-    ["style-36", "style-46", "n92", "style-68", "style-69"],
-    ["style-37", "style-47", "n97", "style-70", "style-71"],
-    ["style-2", "style-79", "n102", "style-72", "style-73"]
+    ["style-28", "style-39", "n52", "style-54", "style-55"],
+    ["style-29", "style-40", "n57", "style-56", "style-57"],
+    ["style-30", "style-41", "n62", "style-58", "style-59"],
+    ["style-31", "style-42", "n67", "style-60", "style-61"],
+    ["style-32", "style-43", "n72", "style-62", "style-63"],
+    ["style-33", "style-44", "n77", "style-64", "style-65"],
+    ["style-34", "style-45", "n82", "style-66", "style-67"],
+    ["style-35", "style-46", "n87", "style-68", "style-69"],
+    ["style-36", "style-47", "n92", "style-70", "style-71"],
+    ["style-37", "style-48", "n97", "style-72", "style-73"],
+    ["style-2", "style-49", "n102", "style-74", "style-75"]
 ];
 const Tile_meta: string[][] = [
     ["n109", "n110", "n111"],
     ["n112", "n113", "n114"],
     ["n115", "n116", "n117"],
-    ["n118", "n119", "n120"]
+    ["n118", "n119", "n120"],
+    ["n121", "n122", "n123"]
 ];
 const Tile2_meta: string[][] = [
-    ["n122", "n123", "n124"],
     ["n125", "n126", "n127"],
     ["n128", "n129", "n130"],
     ["n131", "n132", "n133"]
 ];
 const Logo2_meta: string[][] = [
-    ["style-div-8", "style-div-31"],
-    ["style-div-20", "style-div-7"],
-    ["n243", "style-heading-7"],
-    ["style-iframe", "style-heading-4"],
-    ["style-span-19", "style-button-9"],
-    ["style-div-17", "n250"],
-    ["n251", "style-span-23"],
-    ["style-span-24", "style-link-13"],
-    ["n255", "style-button-6"]
+    ["style-div-6", "n240"],
+    ["style-div-13", "style-div-5"],
+    ["style-footer-2", "style-heading"],
+    ["style-iframe", "n246"],
+    ["n247", "style-footer"],
+    ["n249", "n250"],
+    ["n251", "n252"],
+    ["style-button-6", "n254"],
+    ["n255", "n256"]
 ];
 const TextLink_styles = [
     { className: "w-38 max-lg:w-40" },
@@ -210,19 +210,20 @@ const Logo_styles = [
 ];
 const Tile_styles = [
     {  },
+    {  },
     { className: "h-full" },
     { className: "h-full" },
-    { className: "h-full" }
+    {  }
 ];
 
 export default function Page() {
   return (
     <>
       <div className="min-h-screen block">
-        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-007 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
+        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-008 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
           Skip to main content
         </a>
-        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-002 max-lg:flex max-lg:z-1000 max-lg:isolate">
+        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-001 max-lg:flex max-lg:z-1000 max-lg:isolate">
           <button className="w-6 h-[2.1875rem] flex items-center gap-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_sans-serif] text-lg font-bold leading-[1.6875rem] text-center uppercase cursor-pointer max-lg:z-1" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" type="button">
             <span className="w-6 h-0.5 block relative min-w-0 bg-foreground before:content-[''] before:block before:absolute before:-top-[0.4375rem] before:w-6 before:h-0.5 before:bg-foreground max-lg:before:bottom-[0.4375rem] max-lg:before:inset-x-0 after:content-[''] after:block after:absolute after:top-[0.4375rem] after:w-6 after:h-0.5 after:bg-foreground max-lg:after:-bottom-[0.4375rem] max-lg:after:inset-x-0" aria-hidden="true" />
           </button>
@@ -233,13 +234,13 @@ export default function Page() {
             <span className="w-4 h-4 border-[3px] border-solid border-foreground block relative min-w-0 rounded-[50%] max-lg:border-muted-foreground after:content-[''] after:block after:absolute after:top-[0.6875rem] after:-right-[0.4375rem] after:w-2 after:h-[0.1875rem] after:bg-foreground max-lg:after:-bottom-1 max-lg:after:left-[0.5625rem] max-lg:after:bg-muted-foreground max-lg:after:transform-[matrix(0.707107,0.707107,-0.707107,0.707107,0,0)] max-lg:after:origin-[4px_1.5px]" aria-hidden="true" />
           </button>
         </header>
-        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-002 max-lg:opacity-0">
+        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-001 max-lg:opacity-0">
           <a className="w-[9.0625rem] block cursor-pointer max-lg:hidden" data-component="link" aria-label="Gary Vaynerchuk home" href="/">
             <img className="w-full h-[4.6875rem] block max-w-full overflow-clip object-contain object-[0%_50%] aspect-[auto_526/272] align-middle text-clr-1" data-component="image" alt="Gary Vaynerchuk" height="272" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="526" />
           </a>
           <nav className="w-[14.0625rem] h-60.5 block absolute top-[9.0625rem] left-7.5 gap-2 max-md:w-[20.4375rem] max-lg:pointer-events-none max-lg:h-auto max-lg:static max-lg:top-auto max-lg:left-auto md:max-lg:w-180" data-component="nav" aria-label="Main navigation" id="site-navigation">
             <div className="block relative max-lg:pointer-events-none">
-              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
+              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button-2" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
                 <span className="h-full block relative whitespace-nowrap max-lg:pointer-events-none after:content-[''] after:hidden after:absolute after:-bottom-[0.1875rem] after:left-0 after:w-full after:h-0.5 after:bg-clr-2">
                   Gary Vaynerchuk
                 </span>
@@ -284,14 +285,14 @@ export default function Page() {
           </div>
         </aside>
         <div className="h-full min-h-screen block ml-[17.1875rem] overflow-hidden max-lg:pt-18.5 max-lg:ml-0">
-          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-001 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
+          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-002 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
             <span className="h-6.5 flex shrink-0 [animation-name:announcement-scroll-right] [animation-duration:24s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-md:h-[2.0625rem] max-md:[animation-duration:18s]" data-ditto-id="style-span-2" aria-hidden="true">
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
               </span>
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile2_data.map((d, i) => <Tile2 key={i} d={d} />)}
-                <span className="flex pl-7 items-center shrink-0 gap-7 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-3">
+                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-4">
                   <span className="block">
                     Check out VeeFriends Cartoons!
                   </span>
@@ -300,41 +301,41 @@ export default function Page() {
             </span>
           </a>
           <main className="block" data-ditto-id="style-main-content" id="main-content">
-            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-span-10" data-component="nav" aria-label="Breadcrumb">
+            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-breadcrumb" data-component="nav" aria-label="Breadcrumb">
               <ol className="flex flex-wrap gap-[0.4375rem] [list-style-type:none] list-outside">
-                <li className="flex min-w-0 items-center" data-ditto-id="style-main-content-2">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-breadcrumb" data-component="link" href="/">
+                <li className="flex min-w-0 items-center" data-ditto-id="style-li-2">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-2" data-component="link" href="/">
                     Home
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-li" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-3" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
                     Blog
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-link-2">
-                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-li-2" aria-current="page">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-li">
+                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" aria-current="page">
                     2020 Fundraising Strategies For Nonprofits
                   </span>
                 </li>
               </ol>
             </nav>
-            <div className="h-[268.8125rem] min-h-screen block overflow-hidden bg-background max-md:h-[7278.5px]" data-ditto-id="style-link-3">
-              <header className="h-137.5 block relative overflow-hidden bg-color-007 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-color-023 after:opacity-40" data-ditto-id="style-li-3">
-                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-ditto-id="style-span-18" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-24">
-                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-5 max-md:bg-clr-6" data-ditto-id="style-header" data-component="button" href="https://www.garyvaynerchuk.com/topics/business-leadership/">
+            <div className="h-[268.8125rem] min-h-screen block overflow-hidden bg-background max-md:h-[7278.5px]" data-ditto-id="style-div">
+              <header className="h-137.5 block relative overflow-hidden bg-color-008 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-clr-4 after:opacity-40" data-ditto-id="style-header">
+                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-component="image" alt="" aria-hidden="true" sizes="100vw" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-7">
+                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-6 max-md:bg-clr-7" data-ditto-id="style-button" data-component="button" href="https://www.garyvaynerchuk.com/topics/business-leadership/">
                     {"Business & Leadership"}
                   </a>
                 </div>
-                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-ditto-id="style-image-6" data-component="heading">
+                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-component="heading">
                   2020 Fundraising Strategies For Nonprofits
                 </h1>
-                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]" data-ditto-id="style-div-2">
-                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-button-2">
+                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]">
+                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-span-3">
                     By Team GaryVee
                   </span>
-                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[10.8125rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-38" data-ditto-id="style-heading-2">
+                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[10.8125rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-38">
                     August 10, 2020
                   </span>
                   <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] max-md:text-center before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[7.9375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-28.5">
@@ -342,8 +343,8 @@ export default function Page() {
                   </span>
                 </div>
               </header>
-              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0">
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-22">
+              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0" data-ditto-id="style-article">
+                <p className="block pb-[25.5px]">
                   Those who undertake the noble effort to work within a charitable organization often feel trapped between the group’s greater mission and the need to raise cold hard cash so they can actually do the good work. How are the rules the same and how are they different from the for-profit world?
                 </p>
                 {" "}
@@ -353,20 +354,20 @@ export default function Page() {
                 {" "}
                 <p className="block pb-[25.5px]">
                   {"These questions are not new. They’ve resurfaced time and time again, "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-heading-3" data-component="link" href="https://youtu.be/c0whC1IoMdE">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://youtu.be/c0whC1IoMdE">
                     most recently at VaynerX’s Marketing for the Now series
                   </a>
                   , with no legitimate “quick” answers. Below are approaches from Gary and his guests to the most common question … “How do nonprofits make money?”
                 </p>
                 {" "}
-                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-ditto-id="style-span-21" data-component="heading">
-                  <strong className="inline font-bold" data-ditto-id="style-p-7">
+                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-component="heading">
+                  <strong className="inline font-bold">
                     Question: What should an up-and-coming charity focus on to be successful?
                   </strong>
                 </h3>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-11">
-                  <strong className="inline font-bold" data-ditto-id="style-p">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Scott Harrison (Charity Water):
                   </strong>
                   {" Two things come to mind. One, get your business model around money. You don’t need to adopt the"}
@@ -376,66 +377,66 @@ export default function Page() {
                   {" because that’s incredibly difficult. What you need is to tell people where their money goes. [Charity Water] is completely transparent with where our money is going. If [your nonprofit] needs money for a lawyer, there are people that will help you pay those legal fees, but you’ve got to tell them."}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-21">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-2">
                   Number two is storytelling. You have to be telling stories about why your solution is the best one out of the gate.
                 </p>
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <strong className="inline font-bold" data-ditto-id="style-p-9">
+                  <strong className="inline font-bold">
                     {"Gary Vaynerchuk: "}
                   </strong>
                   {"Storytelling is it. What’s amazing about the internet is that you could be like Scott and I. You could put out a lot of great content that makes a collective dent. Or, you could be like Dollar Shave Club. The stories matter so much. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-14">
+                <p className="block pb-[25.5px]">
                   {"The reason why Scott is so successful is because he leaned into self-awareness at a personal scale. When you have a certain level of charisma and authenticity and a way to communicate it in a way that touches someone, you have a way to recreate [Charity Water]’s kind of model. Lean into your self-awareness and strengths. "}
                 </p>
                 {" "}
                 <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-component="heading">
-                  <strong className="inline font-bold" data-ditto-id="style-p-10">
+                  <strong className="inline font-bold">
                     {"How can nonprofits make heavy topics dynamic? "}
                   </strong>
                 </h3>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-14">
-                  <strong className="inline font-bold" data-ditto-id="style-blockquote-2">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-5">
+                  <strong className="inline font-bold">
                     {"Gary: "}
                   </strong>
                   {"The first thing you need to do is make sure you realize "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-27" data-component="link" href={"https://www.youtube.com/watch?v=9xKmstg969Y&feature=youtu.be"}>
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-13" data-component="link" href={"https://www.youtube.com/watch?v=9xKmstg969Y&feature=youtu.be"}>
                     the content doesn’t have to be dynamic
                   </a>
                   {". "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-16">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-6">
                   Everybody thinks, “
-                  <em className="inline italic" data-ditto-id="style-p-22">
+                  <em className="inline italic" data-ditto-id="style-p-3">
                     Oh how do we make it social?
                   </em>
                   {" "}
-                  <em className="inline italic" data-ditto-id="style-heading-5">
+                  <em className="inline italic">
                     How do we make it fun?”
                   </em>
                   {" Certain content has to be done a certain way. It’s contextual. [If] this is really hardcore stuff that you’re dealing with, I actually think the content needs to be educational without being too complicated. I mean, [if] it’s a depressing matter you’re not going to be able to lighten it up, right? "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-3">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-7">
                   {"You need to focus on what it is. So, I would educate and create narratives through: white papers, infographics, slideshares, videos, pictures, quote cards, [anything] that actually educates the market. I don’t think it has to be dynamic, I think it needs to be truthfully and contextual to the platform. Is that a 45-second video on Youtube with the right tone music behind it? Is that an infographic with the right color tones? "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-link-9">
+                <p className="block pb-[25.5px]">
                   I think subject matter and making it contextual for the platform are way more important than pigeonholing yourself. In a world where you see other people having the option to be dynamic in the social media world, I think the best way to respect the content is to respect the content. I think that matters.
                 </p>
                 {" "}
-                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-ditto-id="style-p-28" data-component="heading">
-                  <strong className="inline font-bold" data-ditto-id="style-heading-9">
+                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-component="heading">
+                  <strong className="inline font-bold">
                     {"Question: How can a nonprofit with very (very) limited resources, quickly gain momentum and build revenue? "}
                   </strong>
                 </h3>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-24">
-                  <strong className="inline font-bold" data-ditto-id="style-p-23">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Bob Wright (The Suzanne Wright Foundation):
                   </strong>
                   {" My sense is if you have a venture, and it’s got some complexity, you have to have someone that’s full time. Whether that person is paid or not paid is really irrelevant, if everybody’s a part-timer I don’t see how you get it done. "}
@@ -445,83 +446,83 @@ export default function Page() {
                   Somebody’s always going to be looking at their watch, in terms of “I gotta go” … and it’s going to be hard to raise money that way. The other side of it is just as bad, where you take the money you raise and you pay two people that are average to be there all the time, now your energy level for the others [who work there] goes down.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-i-3">
+                <p className="block pb-[25.5px]">
                   {"You need somebody that’s going to be full-time on that issue, not part-time. We were able to pull together "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-17" data-component="link" href="https://www.suzannewrightfoundation.org/">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.suzannewrightfoundation.org/">
                     three different organizations
                   </a>
                   {" with very little full-time people, but every time we got to scale. I had to have somebody that was full time."}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-13">
-                  <strong className="inline font-bold" data-ditto-id="style-image-3">
+                <p className="block pb-[25.5px]" data-ditto-id="style-figure">
+                  <strong className="inline font-bold" data-ditto-id="style-image-2">
                     Gary:
                   </strong>
                   {" Listen, we’re not confused or tone deaf. [Where you are financially] is always quite important. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-2">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-9">
                   {"I think the thing to really think about is to get the word “quickly” out of the equation. Unless you have a miracle situation, where [your organization] becomes so culturally relevant that it goes viral, and everybody becomes aware and wants to donate (aka the ice bucket challenge, which people want to be cynical about, but the data’s very real)–that’s a virality that comes around once in a generation. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-link-15">
+                <p className="block pb-[25.5px]">
                   {" So we need to be more practical. Those people who work at your nonprofit, I’m sure they’re incredible. I would like to think anybody who devotes their careers or all their time to a nonprofit is so passionate about that [cause] they can be patient during a five- to seven- to 12-year window. "}
                 </p>
                 {" "}
-                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-ditto-id="style-br-2" data-component="heading">
-                  <strong className="inline font-bold" data-ditto-id="style-br">
+                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-component="heading">
+                  <strong className="inline font-bold">
                     {"What about platform growth and building a relationship with your donors? What platform is best for new nonprofits to utilize? "}
                   </strong>
                 </h3>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-25">
-                  <strong className="inline font-bold" data-ditto-id="style-span-16">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     {"Gary: "}
                   </strong>
                   It depends on your audience. If your donors skew older, try Facebook groups. I would search Facebook and look for groups [that relate to your cause], and email the admin. See if those groups can bring some awareness to your nonprofit.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-i-2">
+                <p className="block pb-[25.5px]">
                   In the beginning, you have to ask. When you have nothing else, when you don’t have dollars, you have your creativity and your grit.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-blockquote">
+                <p className="block pb-[25.5px]" data-ditto-id="style-span-9">
                   So, you have to
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-8" data-component="link" href={"https://www.youtube.com/watch?v=HW9Mc3uV6NI&feature=youtu.be"}>
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-14" data-component="link" href={"https://www.youtube.com/watch?v=HW9Mc3uV6NI&feature=youtu.be"}>
                     {" ask"}
                   </a>
                   {", whether it’s influencers or Facebook group admins. "}
                 </p>
                 {" "}
-                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-ditto-id="style-p-13" data-component="heading">
-                  <strong className="inline font-bold" data-ditto-id="style-span-5">
+                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-component="heading">
+                  <strong className="inline font-bold">
                     Is there a difference between fundraising and sales? Do all or any for-profit rules apply in a non-profit setting?
                   </strong>
                 </h3>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-5">
-                  <strong className="inline font-bold" data-ditto-id="style-image-4">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold" data-ditto-id="style-p-4">
                     {"Gary: "}
                   </strong>
                   {"The ironic thing is, they do map. If I ever get into a chapter of my life where that is the driving force I promise you my execution in that world will look exactly the same as everything I’m doing here. I do think the rules apply and I think there’s a nuance to address: the absolute respect to the customer. I believe that many people who operate in the NGO world have the audacity to think there’s an obligation from the wealthy or people they know, to support them. They come across as arrogant, I would say, as they go in for the ask. They’re less tactful, it’s all right hook city in NGO/nonprofit world. Then, when somebody doesn’t do something, they look down on that person even though the way they approached was completely unacceptable. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-heading">
+                <p className="block pb-[25.5px]" data-ditto-id="style-em">
                   {"The rules [of business] apply. You have to bring a value prop, way too many NGOs and nonprofits mail it in, they’re not thinking of that [potential donor]’s life, they’re just looking for dollars when life is about value exchange–even when you’re doing good things. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-20">
+                <p className="block pb-[25.5px]">
                   Use bionic ears. Listen; and jab within the listening.
                 </p>
                 {" "}
-                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-ditto-id="style-p-15" data-component="heading">
-                  <strong className="inline font-bold" data-ditto-id="style-em">
+                <h3 className="block mt-2.5 mb-[0.4375rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.1875rem] font-normal leading-10.5 uppercase max-md:text-3xl max-md:leading-[2.1875rem]" data-component="heading">
+                  <strong className="inline font-bold" data-ditto-id="style-span-8">
                     How do I “just start” to advocate for others and build the brand?
                   </strong>
                 </h3>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-9">
-                  <strong className="inline font-bold" data-ditto-id="style-p-26">
+                <p className="block pb-[25.5px]" data-ditto-id="style-span-10">
+                  <strong className="inline font-bold">
                     Jon Taffer (Bar Rescue)
                   </strong>
                   {": Advocacy and money don’t always travel hand in hand together. I know from one end, just my view, "}
@@ -531,55 +532,55 @@ export default function Page() {
                   {" for charity. No money, no charity. So, you start with monetization and then build to advocacy. I don’t think it’s the other way around, wouldn’t you agree Gary?"}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-6">
-                  <strong className="inline font-bold" data-ditto-id="style-p-6">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-8">
+                  <strong className="inline font-bold">
                     Gary
                   </strong>
                   {": I think you should look under the hood. Do the thing before you talk about the thing … I’m a big fan of working for somebody who’s doing the thing you want to do. Pay your bills and learn the do’s and the don’ts of the industry, then use that platform to build yourself up. "}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-8">
-                  <em className="inline italic" data-ditto-id="style-p-11">
+                <p className="block pb-[25.5px]" data-ditto-id="style-link-7">
+                  <em className="inline italic" data-ditto-id="style-link-6">
                     {"For more information about how nonprofits can grow in the area of Covid, check out "}
                   </em>
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-4" data-component="link" href={"https://www.youtube.com/watch?v=8N0NESCSpjQ&t=1215s"}>
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-10" data-component="link" href={"https://www.youtube.com/watch?v=8N0NESCSpjQ&t=1215s"}>
                     <em className="inline italic" data-ditto-id="style-link-4">
                       these
                     </em>
                   </a>
-                  <em className="inline italic" data-ditto-id="style-link-8">
+                  <em className="inline italic" data-ditto-id="style-link-9">
                     {" "}
                   </em>
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-link-14" data-component="link" href="https://www.youtube.com/watch?v=IC93tB_7uJE">
-                    <em className="inline italic" data-ditto-id="style-link-7">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.youtube.com/watch?v=IC93tB_7uJE">
+                    <em className="inline italic" data-ditto-id="style-link-8">
                       videos
                     </em>
                   </a>
-                  <em className="inline italic" data-ditto-id="style-link-6">
+                  <em className="inline italic" data-ditto-id="style-p">
                     {" on "}
                   </em>
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-29" data-component="link" href="https://www.youtube.com/watch?v=Q7EgFdbPEHc">
-                    <em className="inline italic" data-ditto-id="style-link-5">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-newsletter" data-component="link" href="https://www.youtube.com/watch?v=Q7EgFdbPEHc">
+                    <em className="inline italic" data-ditto-id="style-div-2">
                       fundraising
                     </em>
                   </a>
-                  <em className="inline italic" data-ditto-id="style-p-12">
+                  <em className="inline italic">
                     {" and "}
                   </em>
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-newsletter" data-component="link" href="https://www.youtube.com/watch?v=oR92bpgSkxo">
-                    <em className="inline italic" data-ditto-id="style-div">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-newsletter-title" data-component="link" href="https://www.youtube.com/watch?v=oR92bpgSkxo">
+                    <em className="inline italic" data-ditto-id="style-form">
                       business
                     </em>
                   </a>
-                  <em className="inline italic" data-ditto-id="style-image">
+                  <em className="inline italic" data-ditto-id="style-label">
                     {" "}
                   </em>
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-newsletter-title" data-component="link" href="https://www.youtube.com/watch?v=9xKmstg969Y">
-                    <em className="inline italic" data-ditto-id="style-form">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-newsletter-website" data-component="link" href="https://www.youtube.com/watch?v=9xKmstg969Y">
+                    <em className="inline italic" data-ditto-id="style-label-2">
                       growth
                     </em>
                   </a>
-                  <em className="inline italic" data-ditto-id="style-label">
+                  <em className="inline italic">
                     .
                   </em>
                 </p>
@@ -587,36 +588,36 @@ export default function Page() {
               </article>
             </div>
           </main>
-          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-007 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter-website" aria-labelledby="newsletter-title" id="newsletter">
-            <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto" data-ditto-id="style-label-2">
-              <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-ditto-id="style-div-15" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
-              <h2 className="block mb-[2.1875rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.375rem] leading-[2.6875rem] uppercase max-md:mb-[35.5px] max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-ditto-id="style-newsletter-email" data-component="heading" id="newsletter-title">
+          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-008 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-newsletter-email" aria-labelledby="newsletter-title" id="newsletter">
+            <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto" data-ditto-id="style-button-3">
+              <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
+              <h2 className="block mb-[2.1875rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.375rem] leading-[2.6875rem] uppercase max-md:mb-[35.5px] max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-ditto-id="style-span-11" data-component="heading" id="newsletter-title">
                 Sign up for my weekly newsletter
               </h2>
-              <form className="w-full max-w-106.5 block gap-2.5 text-left max-md:flex-col max-md:items-stretch" data-ditto-id="style-button-3">
-                <label className="w-px h-px block absolute -m-px overflow-hidden [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase whitespace-nowrap text-nowrap [clip-path:inset(50%)] cursor-default max-md:text-[1.1875rem]" data-ditto-id="style-social-media" aria-hidden="true" htmlFor="newsletter-website">
+              <form className="w-full max-w-106.5 block gap-2.5 text-left max-md:flex-col max-md:items-stretch">
+                <label className="w-px h-px block absolute -m-px overflow-hidden [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase whitespace-nowrap text-nowrap [clip-path:inset(50%)] cursor-default max-md:text-[1.1875rem]" data-ditto-id="style-div-12" aria-hidden="true" htmlFor="newsletter-website">
                   Website
-                  <input className="w-4.5 h-11 min-h-11 border border-solid border-border inline-block p-2 overflow-clip text-[0.9375rem] text-start normal-case bg-border cursor-text max-md:h-12.5 max-md:min-h-12.5 max-md:block" data-ditto-id="style-div-6" data-component="input" id="newsletter-website" name="website" type="text" />
+                  <input className="w-4.5 h-11 min-h-11 border border-solid border-border inline-block p-2 overflow-clip text-[0.9375rem] text-start normal-case bg-border cursor-text max-md:h-12.5 max-md:min-h-12.5 max-md:block" data-ditto-id="style-div-10" data-component="input" id="newsletter-website" name="website" type="text" />
                 </label>
-                <label className="block [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase cursor-default max-md:mb-1.5 max-md:text-[1.1875rem]" data-ditto-id="style-div-9" htmlFor="newsletter-email">
+                <label className="block [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase cursor-default max-md:mb-1.5 max-md:text-[1.1875rem]" htmlFor="newsletter-email">
                   Email
                 </label>
-                <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]" data-ditto-id="style-article">
-                  <input className="w-[19.8125rem] h-11 min-h-11 border border-solid border-border block p-2 overflow-clip text-[0.9375rem] leading-[1.4375rem] text-start bg-border cursor-text max-md:w-82.5 max-md:h-12.5 max-md:min-h-12.5" data-ditto-id="style-visit-this-post-on-x" data-component="input" id="newsletter-email" name="email" type="email" />
-                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-div-10" data-component="button" type="submit">
+                <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]" data-ditto-id="style-div-11">
+                  <input className="w-[19.8125rem] h-11 min-h-11 border border-solid border-border block p-2 overflow-clip text-[0.9375rem] leading-[1.4375rem] text-start bg-border cursor-text max-md:w-82.5 max-md:h-12.5 max-md:min-h-12.5" data-ditto-id="style-div-4" data-component="input" id="newsletter-email" name="email" type="email" />
+                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-div-8" data-component="button" type="submit">
                     Subscribe
                   </button>
                 </div>
               </form>
-              <div className="w-[51%] grid mt-[108.5px] gap-2.5 transform-[matrix(1,0,0,1,23.6094,0)] grid-cols-[repeat(auto-fit,_minmax(41px,_1fr))] max-md:w-full max-md:mt-22 max-md:pl-[0.6875rem] max-md:justify-start max-md:gap-[8.3px] max-lg:transform-[none] md:max-lg:w-[69.5%] md:max-lg:mt-[7.1875rem] 2xl:w-[45.5%]" data-ditto-id="style-div-16" aria-label="Social media">
+              <div className="w-[51%] grid mt-[108.5px] gap-2.5 transform-[matrix(1,0,0,1,23.6094,0)] grid-cols-[repeat(auto-fit,_minmax(41px,_1fr))] max-md:w-full max-md:mt-22 max-md:pl-[0.6875rem] max-md:justify-start max-md:gap-[8.3px] max-lg:transform-[none] md:max-lg:w-[69.5%] md:max-lg:mt-[7.1875rem] 2xl:w-[45.5%]" aria-label="Social media">
                 {Logo2_data.map((d, i) => <Logo2 key={i} d={d} />)}
               </div>
-              <footer className="flex mt-[1.775rem] flex-col justify-center items-center text-[0.875rem] max-md:mt-[0.925rem]" data-ditto-id="style-div-19">
-                <span className="block" data-ditto-id="style-div-18">
+              <footer className="flex mt-[1.775rem] flex-col justify-center items-center text-[0.875rem] max-md:mt-[0.925rem]">
+                <span className="block">
                   ©Gary Vee IP, LLC 2024
                 </span>
-                <span className="block text-color-006">
-                  <a className="inline cursor-pointer" data-ditto-id="style-div-25" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
+                <span className="block text-color-005">
+                  <a className="inline cursor-pointer" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
                     Privacy Policy
                   </a>
                   {" | "}
@@ -624,7 +625,7 @@ export default function Page() {
                     Terms of Use
                   </a>
                   {" | "}
-                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-div-11" data-component="button" type="button">
+                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-div-9" data-component="button" type="button">
                     Cookie Settings
                   </button>
                 </span>
@@ -633,7 +634,7 @@ export default function Page() {
           </section>
         </div>
       </div>
-      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.97551px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.94131px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996093","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88915px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
+      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button-2","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.9754px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 0.992)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.983469","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.81526px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996096","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88918px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
     </>
   );
 }

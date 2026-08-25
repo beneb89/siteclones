@@ -117,7 +117,7 @@ const TextLink_meta: string[][] = [
     ["style-7"],
     ["style-8"],
     ["style-9"],
-    ["style-10"],
+    ["style-11"],
     ["style-12"]
 ];
 const TextLink2_meta: string[][] = [
@@ -136,17 +136,17 @@ const TextLink2_meta2: string[][] = [
     ["style-25"]
 ];
 const Logo_meta: string[][] = [
-    ["style-28", "style-39", "n52", "style-52", "style-53"],
-    ["style-29", "style-78", "n57", "style-54", "style-55"],
-    ["style-30", "style-40", "n62", "style-56", "style-57"],
-    ["style-31", "style-41", "n67", "style-58", "style-59"],
-    ["style-32", "style-42", "n72", "style-60", "style-61"],
-    ["style-33", "style-43", "n77", "style-62", "style-63"],
-    ["style-34", "style-44", "n82", "style-64", "style-65"],
-    ["style-35", "style-45", "n87", "style-66", "style-67"],
-    ["style-36", "style-46", "n92", "style-68", "style-69"],
-    ["style-37", "style-47", "n97", "style-70", "style-71"],
-    ["style-2", "style-79", "n102", "style-72", "style-73"]
+    ["style-28", "style-39", "n52", "style-54", "style-55"],
+    ["style-29", "style-40", "n57", "style-56", "style-57"],
+    ["style-30", "style-41", "n62", "style-58", "style-59"],
+    ["style-31", "style-42", "n67", "style-60", "style-61"],
+    ["style-32", "style-43", "n72", "style-62", "style-63"],
+    ["style-33", "style-44", "n77", "style-64", "style-65"],
+    ["style-34", "style-45", "n82", "style-66", "style-67"],
+    ["style-35", "style-46", "n87", "style-68", "style-69"],
+    ["style-36", "style-47", "n92", "style-70", "style-71"],
+    ["style-37", "style-48", "n97", "style-72", "style-73"],
+    ["style-2", "style-49", "n102", "style-74", "style-75"]
 ];
 const Tile_meta: string[][] = [
     ["n109", "n110", "n111"],
@@ -161,15 +161,15 @@ const Tile2_meta: string[][] = [
     ["n131", "n132", "n133"]
 ];
 const Logo2_meta: string[][] = [
-    ["style-link-7", "style-link-6"],
-    ["style-p-29", "style-link-5"],
-    ["style-p-12", "style-newsletter"],
-    ["style-div", "style-image"],
-    ["style-newsletter-title", "style-form"],
-    ["style-label", "style-newsletter-website"],
-    ["style-label-2", "style-div-15"],
-    ["style-newsletter-email", "style-button-3"],
-    ["style-social-media", "style-div-6"]
+    ["style-link-8", "style-p"],
+    ["style-newsletter", "style-div-2"],
+    ["n220", "style-newsletter-title"],
+    ["style-form", "style-label"],
+    ["style-newsletter-website", "style-label-2"],
+    ["n226", "style-newsletter-email"],
+    ["style-button-3", "n229"],
+    ["style-span-11", "n231"],
+    ["style-div-12", "style-div-10"]
 ];
 const TextLink_styles = [
     { className: "w-38 max-lg:w-40" },
@@ -220,10 +220,10 @@ export default function Page() {
   return (
     <>
       <div className="min-h-screen block">
-        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-007 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
+        <a className="w-[12.3125rem] h-12 block fixed top-4 left-4 z-10000 py-3 px-4 text-color-008 font-bold bg-clr-0 transform-[matrix(1,0,0,1,0,-96)] cursor-pointer" href="#main-content">
           Skip to main content
         </a>
-        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-002 max-lg:flex max-lg:z-1000 max-lg:isolate">
+        <header className="h-18.5 hidden fixed inset-x-0 z-50 py-3 px-[1.4375rem] justify-between items-center bg-color-001 max-lg:flex max-lg:z-1000 max-lg:isolate">
           <button className="w-6 h-[2.1875rem] flex items-center gap-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_sans-serif] text-lg font-bold leading-[1.6875rem] text-center uppercase cursor-pointer max-lg:z-1" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" type="button">
             <span className="w-6 h-0.5 block relative min-w-0 bg-foreground before:content-[''] before:block before:absolute before:-top-[0.4375rem] before:w-6 before:h-0.5 before:bg-foreground max-lg:before:bottom-[0.4375rem] max-lg:before:inset-x-0 after:content-[''] after:block after:absolute after:top-[0.4375rem] after:w-6 after:h-0.5 after:bg-foreground max-lg:after:-bottom-[0.4375rem] max-lg:after:inset-x-0" aria-hidden="true" />
           </button>
@@ -234,13 +234,13 @@ export default function Page() {
             <span className="w-4 h-4 border-[3px] border-solid border-foreground block relative min-w-0 rounded-[50%] max-lg:border-muted-foreground after:content-[''] after:block after:absolute after:top-[0.6875rem] after:-right-[0.4375rem] after:w-2 after:h-[0.1875rem] after:bg-foreground max-lg:after:-bottom-1 max-lg:after:left-[0.5625rem] max-lg:after:bg-muted-foreground max-lg:after:transform-[matrix(0.707107,0.707107,-0.707107,0.707107,0,0)] max-lg:after:origin-[4px_1.5px]" aria-hidden="true" />
           </button>
         </header>
-        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-002 max-lg:opacity-0">
+        <aside className="w-[17.1875rem] h-full block fixed top-0 z-40 p-7.5 flex-col justify-between items-start bg-color-001 max-lg:opacity-0">
           <a className="w-[9.0625rem] block cursor-pointer max-lg:hidden" data-component="link" aria-label="Gary Vaynerchuk home" href="/">
             <img className="w-full h-[4.6875rem] block max-w-full overflow-clip object-contain object-[0%_50%] aspect-[auto_526/272] align-middle text-clr-1" data-component="image" alt="Gary Vaynerchuk" height="272" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="526" />
           </a>
           <nav className="w-[14.0625rem] h-60.5 block absolute top-[9.0625rem] left-7.5 gap-2 max-md:w-[20.4375rem] max-lg:pointer-events-none max-lg:h-auto max-lg:static max-lg:top-auto max-lg:left-auto md:max-lg:w-180" data-component="nav" aria-label="Main navigation" id="site-navigation">
             <div className="block relative max-lg:pointer-events-none">
-              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
+              <button className="h-[2.9375rem] min-h-[2.9375rem] block py-[0.6875rem] px-2.5 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.4375rem] leading-[1.5625rem] text-left cursor-pointer max-lg:h-[3.3125rem] max-lg:text-[1.75rem] max-lg:leading-[1.9375rem] max-lg:pointer-events-none" data-ditto-id="style-button-2" data-component="button" aria-controls="nav-submenu-gary-vaynerchuk" aria-expanded="false" type="button">
                 <span className="h-full block relative whitespace-nowrap max-lg:pointer-events-none after:content-[''] after:hidden after:absolute after:-bottom-[0.1875rem] after:left-0 after:w-full after:h-0.5 after:bg-clr-2">
                   Gary Vaynerchuk
                 </span>
@@ -285,14 +285,14 @@ export default function Page() {
           </div>
         </aside>
         <div className="h-full min-h-screen block ml-[17.1875rem] overflow-hidden max-lg:pt-18.5 max-lg:ml-0">
-          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-001 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
+          <a className="h-8.5 flex relative z-30 items-center overflow-hidden text-color-002 [font-family:'Open_Sans',_'Open_Sans_Fallback',_Arial,_sans-serif] font-semibold leading-6.5 text-center whitespace-nowrap text-nowrap bg-accent cursor-pointer max-md:h-[2.0625rem] max-md:text-xs max-md:leading-[2.0625rem]" data-component="link" aria-label="Check out VeeFriends Cartoons!" href="https://garyvee.com/cartoons" rel="noreferrer" target="_blank">
             <span className="h-6.5 flex shrink-0 [animation-name:announcement-scroll-right] [animation-duration:24s] [animation-timing-function:linear] [animation-iteration-count:infinite] max-md:h-[2.0625rem] max-md:[animation-duration:18s]" data-ditto-id="style-span-2" aria-hidden="true">
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
               </span>
               <span className="w-466.5 flex min-w-320 shrink-0 max-md:w-339 max-md:min-w-[23.4375rem] md:max-lg:min-w-192 2xl:w-480 2xl:min-w-480">
                 {Tile2_data.map((d, i) => <Tile2 key={i} d={d} />)}
-                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-3">
+                <span className="w-[19.4375rem] flex pl-7 items-center shrink-0 gap-7 max-md:w-56.5 max-md:pl-5 max-md:gap-5" data-ditto-id="style-span-4">
                   <span className="block">
                     Check out VeeFriends Cartoons!
                   </span>
@@ -301,41 +301,41 @@ export default function Page() {
             </span>
           </a>
           <main className="block" data-ditto-id="style-main-content" id="main-content">
-            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-span-10" data-component="nav" aria-label="Breadcrumb">
+            <nav className="block pt-3.5 pb-3 px-15 text-muted text-[0.8125rem] leading-5 bg-background max-md:pt-[0.6875rem] max-md:pb-[0.5625rem] max-md:px-[22.5px]" data-ditto-id="style-breadcrumb" data-component="nav" aria-label="Breadcrumb">
               <ol className="flex flex-wrap gap-[0.4375rem] [list-style-type:none] list-outside">
-                <li className="flex min-w-0 items-center" data-ditto-id="style-main-content-2">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-breadcrumb" data-component="link" href="/">
+                <li className="flex min-w-0 items-center" data-ditto-id="style-li-2">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-2" data-component="link" href="/">
                     Home
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5">
-                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-li" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5">
+                  <a className="block text-foreground cursor-pointer" data-ditto-id="style-link-3" data-component="link" href="https://www.garyvaynerchuk.com/blog/">
                     Blog
                   </a>
                 </li>
-                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-4 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-link-2">
-                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" data-ditto-id="style-li-2" aria-current="page">
+                <li className="flex min-w-0 items-center before:content-['/'] before:block before:w-[0.3125rem] before:h-5 before:mr-[0.4375rem] before:text-clr-5 before:text-[0.8125rem] before:leading-5" data-ditto-id="style-li">
+                  <span className="block overflow-hidden whitespace-nowrap text-nowrap" aria-current="page">
                     19 People You Should Be Following On Twitter But Aren’t (Pt. 1 of 2)
                   </span>
                 </li>
               </ol>
             </nav>
-            <div className="h-[3864.5px] min-h-screen block overflow-hidden bg-background max-md:h-[418.0625rem]" data-ditto-id="style-link-3">
-              <header className="h-137.5 block relative overflow-hidden bg-color-007 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-color-023 after:opacity-40" data-ditto-id="style-li-3">
-                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-ditto-id="style-span-18" data-component="image" alt="" aria-hidden="true" />
-                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-24">
-                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-5 max-md:bg-clr-6" data-ditto-id="style-header" data-component="button" href="https://www.garyvaynerchuk.com/topics/general/">
+            <div className="h-[3864.5px] min-h-screen block overflow-hidden bg-background max-md:h-[418.0625rem]" data-ditto-id="style-div">
+              <header className="h-137.5 block relative overflow-hidden bg-color-008 max-md:h-[339.5px] after:content-[''] after:block after:absolute after:inset-0 after:bg-clr-4 after:opacity-40" data-ditto-id="style-header">
+                <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle text-clr-1 pointer-events-none" data-component="image" alt="" aria-hidden="true" />
+                <div className="h-7.5 flex absolute top-[186.5px] inset-x-0 z-1 justify-center max-md:top-[3.4375rem]" data-ditto-id="style-div-7">
+                  <a className="h-7.5 border-2 border-solid border-surface flex py-1 px-2.5 rounded-[100px] justify-center items-center [font-family:Oswald,_'Oswald_Fallback',_Arial,_sans-serif] text-[1.0625rem] font-medium leading-4.5 uppercase cursor-pointer max-md:border-clr-6 max-md:bg-clr-7" data-ditto-id="style-button" data-component="button" href="https://www.garyvaynerchuk.com/topics/general/">
                     General
                   </a>
                 </div>
-                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-ditto-id="style-image-6" data-component="heading">
+                <h1 className="h-[7.8125rem] block absolute top-[216.5px] inset-x-[102.5px] z-1 [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[4.6875rem] leading-[5.3125rem] text-center max-md:h-[150.5px] max-md:top-[5.3125rem] max-md:inset-x-[22.5px] max-md:py-5 max-md:text-[3.0625rem] max-md:leading-[3.4375rem] md:max-lg:-inset-x-4 2xl:inset-x-[422.5px]" data-component="heading">
                   19 People You Should Be Following On Twitter But Aren’t (Pt. 1 of 2)
                 </h1>
-                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]" data-ditto-id="style-div-2">
-                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-button-2">
+                <div className="h-3.5 flex absolute top-[347.5px] inset-x-0 z-1 justify-center max-md:h-[2.5625rem] max-md:top-[242.5px] max-md:flex-wrap max-md:gap-y-[0.8125rem]">
+                  <span className="block relative px-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem]" data-ditto-id="style-span-3">
                     By Gary Vaynerchuk
                   </span>
-                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[9.3125rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-32.5" data-ditto-id="style-heading-2">
+                  <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[9.3125rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-32.5">
                     April 15, 2013
                   </span>
                   <span className="block relative pr-[1.3125rem] pl-5 text-[1.0625rem] font-medium leading-3.5 whitespace-nowrap text-nowrap max-md:text-[0.875rem] max-md:text-center before:content-[''] before:block before:absolute before:-inset-y-[0.1875rem] before:right-[7.9375rem] before:left-0 before:w-px before:h-5 before:bg-surface max-md:before:right-28.5">
@@ -343,8 +343,8 @@ export default function Page() {
                   </span>
                 </div>
               </header>
-              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0">
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-22">
+              <article className="box-content w-200 block mx-auto pt-20 pb-27.5 text-[1.0625rem] font-medium leading-[1.6875rem] max-md:w-82.5 max-md:pt-10 max-md:pb-20 md:max-lg:-mr-8 md:max-lg:ml-0" data-ditto-id="style-article">
+                <p className="block pb-[25.5px]">
                   Lately I’ve been on stage and I’m talking more and more about value. Whether you have a product or a service, whether you use all the gadgets or the new toys or not, at the end of the day if you bring value, you have a real chance at winning in the consumer market. So I’ve been thinking a lot, and putting pressure on myself to be creating quality posts on this LinkedIn forum, and taking the fact that I’m one of these couple of hundred contributors very seriously.
                 </p>
                 {" "}
@@ -354,19 +354,19 @@ export default function Page() {
                 {" "}
                 <p className="block pb-[25.5px]">
                   This list always going to be made up of people who aren’t necessarily the most famous or the most known, usually under 10,000 followers for sure… so here we go. The inaugural list.
-                  <em className="inline italic" data-ditto-id="style-heading-3">
+                  <em className="inline italic">
                     (Note: by the time I finished this list it was WAY too long for a single post, so I decided to split it up. This is the first 10. The last 9 are coming tomorrow.)
                   </em>
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-21" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-7">
-                  <strong className="inline font-bold" data-ditto-id="style-span-11">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Ryan Harwood
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p" data-component="link" href="https://twitter.com/RyanHarwood27" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://twitter.com/RyanHarwood27" rel="noopener noreferrer" target="_blank">
                     @RyanHarwood27
                   </a>
                   {") is the CEO of "}
@@ -376,14 +376,14 @@ export default function Page() {
                   {" (think of it as an older DailyCandy for the female set). Really interesting guy. Ryan is a good friend and a huge Knicks fan, but most of all is a head-down entrepreneur, and someone that I think really, really has a bright future ahead of him. If you’re into email marketing, or the New York Knicks, he’s a must follow."}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-21" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-2" />
                 {" "}
                 <p className="block pb-[25.5px]">
-                  <strong className="inline font-bold" data-ditto-id="style-p-9">
+                  <strong className="inline font-bold">
                     Ryan Graves
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-14" data-component="link" href="https://twitter.com/ryangraves" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://twitter.com/ryangraves" rel="noopener noreferrer" target="_blank">
                     @ryangraves
                   </a>
                   {") is the head of operations at "}
@@ -393,44 +393,44 @@ export default function Page() {
                   . Uber is an extremely hot company and most people surely know the charismatic, brilliant Travis Kalanick who’s the CEO, however Ryan is an unbelievable #2 man. I’ve gotten to spend some time with Ryan recently (playing beach volleyball for 40 hrs in a 44 hr window), but most of all, I’ve watched him for a long time and I’m impressed with his maturity. I think he continues to grow, and I think he’s a worthwhile follow, especially as I believe in this “real-world meets the tech-world”, Ryan will be an interesting character to follow.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-10" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-14">
-                  <strong className="inline font-bold" data-ditto-id="style-blockquote-2">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-5">
+                  <strong className="inline font-bold">
                     Danny Trinh
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-27" data-component="link" href="https://twitter.com/dtrinh" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-13" data-component="link" href="https://twitter.com/dtrinh" rel="noopener noreferrer" target="_blank">
                     @dtrinh
                   </a>
                   ) is probably the most ridiculous person on this list. If you’ve ever spent any time with him in the real world, you will realize that there is a very good chance that he will get drunk and get completely ridiculous. However, I see Danny continue to grow as an entrepreneur and as a designer. I think he’s got so much raw talent that I felt like I had to put him on this list. If you enjoy some laughs, or, more importantly, if you enjoy the future of design in the digital world, I think Danny is a must-follow.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-16" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-6" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-22">
-                  <strong className="inline font-bold" data-ditto-id="style-heading-5">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-3">
+                  <strong className="inline font-bold">
                     Colin Devroe
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-3" data-component="link" href="https://twitter.com/cdevroe" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-7" data-component="link" href="https://twitter.com/cdevroe" rel="noopener noreferrer" target="_blank">
                     @cdevroe
                   </a>
                   ) is one of the people on this list that I’ve known the longest. Colin convinced me to switch from YouTube to Viddler (thanks a lot, Colin), but I’ve always respected Colin as a technologist, and his new project is something that I think has the real chance of blowing up in 2014. Keep an eye on him. I think he’s a great follow and someone who’s always been quite smart as a product guy.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-link-9" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-28">
-                  <strong className="inline font-bold" data-ditto-id="style-heading-9">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Ingrid Sanders
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-24" data-component="link" href="https://twitter.com/ingridsan" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://twitter.com/ingridsan" rel="noopener noreferrer" target="_blank">
                     @ingridsan
                   </a>
                   {") is somebody that I just met. She’s the founder and CEO of an interesting "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-23" data-component="link" href="https://www.popexpert.com/" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.popexpert.com/" rel="noopener noreferrer" target="_blank">
                     site
                   </a>
                   , and more importantly just really blew me away. I meet with a lot of young entrepreneurs and start-ups constantly, and I would say that out of the last 400, Ingrid really stood out in the top one or two. I think she’d got her head on straight, I think she’s got a bright future, and I think that she’s a worthwhile follow as being a big prospect for having a successful startup.
@@ -438,68 +438,68 @@ export default function Page() {
                 {" "}
                 <p className="block pb-[25.5px]" data-ditto-id="style-span-12" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-i-3">
-                  <strong className="inline font-bold" data-ditto-id="style-span-17">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Sam Rosen
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-13" data-component="link" href="https://twitter.com/sir" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-figure" data-component="link" href="https://twitter.com/sir" rel="noopener noreferrer" target="_blank">
                     @sir
                   </a>
                   ) is an interesting one for me. He’s an entrepreneur in residence at GPR Partners, and he’s a hustler. This dude chased me down at SXSW constantly a few years ago, trying to get me to invest in his company. I ultimately passed (and I was super right, because it didn’t work), however there was something in his eye that almost made me invest in an idea that I hated. That alone make him a worthwhile follow, and I believe that he will bring value for people that follow him, especially for anybody into entrepreneurship and venture capital from a young person’s perspective.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-image-3" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-image-2" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-2">
-                  <strong className="inline font-bold" data-ditto-id="style-link-15">
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-9">
+                  <strong className="inline font-bold">
                     Dan Shipper
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-br-2" data-component="link" href="https://twitter.com/danshipper" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://twitter.com/danshipper" rel="noopener noreferrer" target="_blank">
                     @danshipper
                   </a>
                   {") is a college junior. He clearly has to be on this list because if you go to his profile, one of the things it says is “Jets fan”. My brother "}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-br" data-component="link" href="https://www.twitter.com/ajv" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://www.twitter.com/ajv" rel="noopener noreferrer" target="_blank">
                     @AJV
                   </a>
                   {" actually turned me onto him, and I’ve just been following and paying attention to him for a little bit now. He’s a young buck that I’ve had my eye on as somebody that I want to work with/have work for me/work along side with. There is just something about this kid that pops in my gut and intuition, and I think he’s an absolute must-follow."}
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-25" />
+                <p className="block pb-[25.5px]" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-span-16">
-                  <strong className="inline font-bold" data-ditto-id="style-i-2">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Henrik Werdelin
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-blockquote" data-component="link" href="https://twitter.com/werdelin" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-span-9" data-component="link" href="https://twitter.com/werdelin" rel="noopener noreferrer" target="_blank">
                     @werdelin
                   </a>
                   ) Is massively underrated. Period. End of story. The fact that he’s only got 3800 followers is a shocking indication of a diamond in the rough. Henrik is not a kid. He’s a mature entrepreneur who’s had a lot of success in his career and he’s doing some amazing stuff right now. I believe in this guy tremendously. I think that he has enormous long-term potential, and if you ask me which of the 30-40 friends I have has the potential to build a billion-dollar company, Henrik would be on that shortlist. I think he’s an amazing visionary when it comes to product, and I also think that that European humility he has is quite attractive. If there is one person on this list that you want to follow in order to be successful with product, it’s Henrik.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-8" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-span-14" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-p-13">
-                  <strong className="inline font-bold" data-ditto-id="style-span-5">
+                <p className="block pb-[25.5px]">
+                  <strong className="inline font-bold">
                     Erik F. Kastner
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-5" data-component="link" href="https://twitter.com/kastner" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://twitter.com/kastner" rel="noopener noreferrer" target="_blank">
                     @kastner
                   </a>
                   ) is probably the one that I’m post emotional about on this list. Erik is the individual that turned me onto technology. He was the lead developer at Wine Library in 2002, and he started my path to why I’m ultimately even able to write this article. I have enormous love for him, and he has gone on to leave Wine Library and work for places like Kickstarter and Etsy. I have nothing but respect for him and if you’re a developer or coder I promise you that you will get tremendous value out of following this guy. He is, by far in my opinion, one of the most underrated technologists on the east coast. I am a big fan. Also, make sure you look at his profile on a desktop. On the left side, you’ll see tagmy.com. Ask him about it.
                 </p>
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-image-4" />
+                <p className="block pb-[25.5px]" data-ditto-id="style-p-4" />
                 {" "}
-                <p className="block pb-[25.5px]" data-ditto-id="style-heading">
-                  <strong className="inline font-bold" data-ditto-id="style-span-20">
+                <p className="block pb-[25.5px]" data-ditto-id="style-em">
+                  <strong className="inline font-bold">
                     Kevin Colleran
                   </strong>
                   {" ("}
-                  <a className="inline text-primary font-bold cursor-pointer" data-ditto-id="style-p-15" data-component="link" href="https://twitter.com/KevinColleran" rel="noopener noreferrer" target="_blank">
+                  <a className="inline text-primary font-bold cursor-pointer" data-component="link" href="https://twitter.com/KevinColleran" rel="noopener noreferrer" target="_blank">
                     @KevinColleran
                   </a>
                   ). This one’s interesting to me, because Kevin Colleran is probably the most successful person on this list, but he’s only got 759 follower because he’s just jumped on Twitter. One look at his profile will make you understand why, since the last line is an unbelievable humblebrag: Employee #7 at Facebook. If you are interested in how to monetize your business, sales, or “Fortune 500 company thinking”, Kevin is your guy. Kevin is now a venture capitalist at General Catalyst, and writing for the Wall Street Journal. He’s not only a tremendously bright guy, be he’s one of the nicest people I know. I’m an enormous fan of his, and I highly recommend the follow.
@@ -508,44 +508,44 @@ export default function Page() {
               </article>
             </div>
           </main>
-          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-007 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-em" aria-labelledby="newsletter-title" id="newsletter">
-            <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto" data-ditto-id="style-span-9">
-              <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-ditto-id="style-p-26" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
+          <section className="h-[30.4375rem] min-h-[30.4375rem] block relative pt-[1.0875rem] pb-[1.0625rem] px-[3.5625rem] overflow-hidden bg-color-008 bg-cover [background-position:50%_100%] bg-no-repeat max-md:h-[622.7px] max-md:min-h-[622.7px] max-md:mx-[5.5px] max-md:pt-[0.4125rem] max-md:px-[1.0625rem] max-md:pb-0 md:max-lg:h-152 md:max-lg:min-h-152 md:max-lg:pt-[6.7125rem]" style={{ backgroundImage: "url(\"/assets/cloned/images/70cdd4bc96ea.jpg\")" }} data-ditto-id="style-span-8" aria-labelledby="newsletter-title" id="newsletter">
+            <div className="flex relative z-1 max-w-250 flex-col items-center text-center mx-auto" data-ditto-id="style-span-10">
+              <img className="w-69.5 h-18 block mb-[8.5px] overflow-clip aspect-[auto_902/234] align-middle text-clr-1 max-md:w-82.5 max-md:h-21.5 max-md:max-w-full" data-component="image" alt="GaryVee Weekly" height="234" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="902" />
               <h2 className="block mb-[2.1875rem] [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[2.375rem] leading-[2.6875rem] uppercase max-md:mb-[35.5px] max-md:text-[2.125rem] max-md:leading-[2.375rem]" data-ditto-id="style-span-7" data-component="heading" id="newsletter-title">
                 Sign up for my weekly newsletter
               </h2>
-              <form className="w-full max-w-106.5 block gap-2.5 text-left max-md:flex-col max-md:items-stretch" data-ditto-id="style-span-6">
-                <label className="w-px h-px block absolute -m-px overflow-hidden [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase whitespace-nowrap text-nowrap [clip-path:inset(50%)] cursor-default max-md:text-[1.1875rem]" data-ditto-id="style-p-6" aria-hidden="true" htmlFor="newsletter-website">
+              <form className="w-full max-w-106.5 block gap-2.5 text-left max-md:flex-col max-md:items-stretch" data-ditto-id="style-p-8">
+                <label className="w-px h-px block absolute -m-px overflow-hidden [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase whitespace-nowrap text-nowrap [clip-path:inset(50%)] cursor-default max-md:text-[1.1875rem]" aria-hidden="true" htmlFor="newsletter-website">
                   Website
-                  <input className="w-4.5 h-11 min-h-11 border border-solid border-border inline-block p-2 overflow-clip text-[0.9375rem] text-start normal-case bg-border cursor-text max-md:h-12.5 max-md:min-h-12.5 max-md:block" data-ditto-id="style-span-8" data-component="input" id="newsletter-website" name="website" type="text" />
+                  <input className="w-4.5 h-11 min-h-11 border border-solid border-border inline-block p-2 overflow-clip text-[0.9375rem] text-start normal-case bg-border cursor-text max-md:h-12.5 max-md:min-h-12.5 max-md:block" data-ditto-id="style-link-7" data-component="input" id="newsletter-website" name="website" type="text" />
                 </label>
-                <label className="block [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase cursor-default max-md:mb-1.5 max-md:text-[1.1875rem]" data-ditto-id="style-p-11" htmlFor="newsletter-email">
+                <label className="block [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-lg leading-7 uppercase cursor-default max-md:mb-1.5 max-md:text-[1.1875rem]" data-ditto-id="style-link-6" htmlFor="newsletter-email">
                   Email
                 </label>
-                <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]" data-ditto-id="style-p-4">
+                <div className="grid items-center gap-[0.5375rem] grid-cols-[317.328px_100.109px] max-md:block max-md:grid-cols-[317.34px_100.11px]" data-ditto-id="style-link-10">
                   <input className="w-[19.8125rem] h-11 min-h-11 border border-solid border-border block p-2 overflow-clip text-[0.9375rem] leading-[1.4375rem] text-start bg-border cursor-text max-md:w-82.5 max-md:h-12.5 max-md:min-h-12.5" data-ditto-id="style-link-4" data-component="input" id="newsletter-email" name="email" type="email" />
-                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-link-8" data-component="button" type="submit">
+                  <button className="w-full h-[3.5625rem] flex rounded-[999px] justify-center items-center [font-family:'Bebas_Neue',_'Bebas_Neue_Fallback',_Impact,_sans-serif] text-[1.0625rem] leading-[1.0625rem] text-center uppercase bg-primary transform-[matrix(1,0,0,1,0,-6.5)] cursor-default max-md:block max-md:mt-4 max-lg:transform-[none] max-md:h-auto" data-ditto-id="style-link-9" data-component="button" type="submit">
                     Subscribe
                   </button>
                 </div>
               </form>
-              <div className="w-[51%] grid mt-[108.5px] gap-2.5 transform-[matrix(1,0,0,1,23.6094,0)] grid-cols-[repeat(auto-fit,_minmax(41px,_1fr))] max-md:w-full max-md:mt-22 max-md:pl-[0.6875rem] max-md:justify-start max-md:gap-[8.3px] max-lg:transform-[none] md:max-lg:w-[69.5%] md:max-lg:mt-[7.1875rem] 2xl:w-[45.5%]" data-ditto-id="style-link-14" aria-label="Social media">
+              <div className="w-[51%] grid mt-[108.5px] gap-2.5 transform-[matrix(1,0,0,1,23.6094,0)] grid-cols-[repeat(auto-fit,_minmax(41px,_1fr))] max-md:w-full max-md:mt-22 max-md:pl-[0.6875rem] max-md:justify-start max-md:gap-[8.3px] max-lg:transform-[none] md:max-lg:w-[69.5%] md:max-lg:mt-[7.1875rem] 2xl:w-[45.5%]" aria-label="Social media">
                 {Logo2_data.map((d, i) => <Logo2 key={i} d={d} />)}
               </div>
-              <footer className="flex mt-[1.775rem] flex-col justify-center items-center text-[0.875rem] max-md:mt-[0.925rem]" data-ditto-id="style-div-9">
-                <span className="block" data-ditto-id="style-article">
+              <footer className="flex mt-[1.775rem] flex-col justify-center items-center text-[0.875rem] max-md:mt-[0.925rem]">
+                <span className="block" data-ditto-id="style-div-11">
                   ©Gary Vee IP, LLC 2024
                 </span>
-                <span className="block text-color-006" data-ditto-id="style-visit-this-post-on-x">
-                  <a className="inline cursor-pointer" data-ditto-id="style-div-10" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
+                <span className="block text-color-005" data-ditto-id="style-div-4">
+                  <a className="inline cursor-pointer" data-ditto-id="style-div-8" data-component="link" href="https://www.garyvaynerchuk.com/privacy-policy/">
                     Privacy Policy
                   </a>
                   {" | "}
-                  <a className="inline cursor-pointer" data-ditto-id="style-div-16" data-component="link" href="https://www.garyvaynerchuk.com/terms-of-use/">
+                  <a className="inline cursor-pointer" data-component="link" href="https://www.garyvaynerchuk.com/terms-of-use/">
                     Terms of Use
                   </a>
                   {" | "}
-                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-div-8" data-component="button" type="button">
+                  <button className="inline-block underline cursor-pointer" data-ditto-id="style-div-6" data-component="button" type="button">
                     Cookie Settings
                   </button>
                 </span>
@@ -554,7 +554,7 @@ export default function Page() {
           </section>
         </div>
       </div>
-      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.97556px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996093","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88915px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996082","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88907px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
+      <DittoWire spec={{"kind":"accordion","items":[{"trigger":"style-button-2","region":"interaction-nav-submenu-gary-vaynerchuk","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgb(2, 182, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"151px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.9754px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-4","region":"interaction-nav-submenu-garyvee","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 1)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"83px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.996096","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.88918px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}},{"trigger":"style-button-5","region":"interaction-nav-submenu-veefriends","expanded":false,"triggerOn":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(2, 182, 0, 0.992)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"triggerOff":{"display":"block","visibility":"visible","opacity":"1","position":"static","height":"47px","maxHeight":"none","minHeight":"47px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"105px","zIndex":"auto","paddingTop":"11px","paddingBottom":"11px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionShown":{"display":"block","visibility":"visible","opacity":"0.983467","position":"static","height":"auto","maxHeight":"none","minHeight":"0px","overflow":"visible","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"3.81525px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"},"regionHidden":{"display":"block","visibility":"visible","opacity":"0","position":"static","height":"0px","maxHeight":"0px","minHeight":"0px","overflow":"hidden","top":"auto","right":"auto","bottom":"auto","left":"auto","width":"225px","zIndex":"auto","paddingTop":"0px","paddingBottom":"0px","marginTop":"0px","marginBottom":"0px","color":"rgb(255, 255, 255)","backgroundColor":"rgba(0, 0, 0, 0)","backgroundImage":"none","borderTopColor":"rgb(255, 255, 255)","borderRightColor":"rgb(255, 255, 255)","borderBottomColor":"rgb(255, 255, 255)","borderLeftColor":"rgb(255, 255, 255)","borderTopWidth":"0px","borderRightWidth":"0px","borderBottomWidth":"0px","borderLeftWidth":"0px","boxShadow":"none","transform":"none","fontWeight":"400","textDecorationLine":"none"}}]}} />
     </>
   );
 }

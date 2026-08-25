@@ -1,0 +1,12 @@
+.cn0{height:100%;display:block;color:var(--border);font-family:Jost, sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--surface-3)}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-div-11"]{transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+[data-ditto-id="style-button"]{transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+[data-ditto-id="style-button-2"]{transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+[data-ditto-id="style-button"]:hover{background-color:rgb(68, 104, 232)}
+[data-ditto-id="style-button-2"]:hover{background-color:rgb(68, 104, 232)}
+[data-ditto-id="style-div-11"]:hover{background-color:rgb(68, 104, 232)}
+[data-ditto-id="style-heading"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-21"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}

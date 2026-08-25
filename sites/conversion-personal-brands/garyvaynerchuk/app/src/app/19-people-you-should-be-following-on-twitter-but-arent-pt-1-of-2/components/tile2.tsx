@@ -6,7 +6,7 @@ export default function Tile2({ d }: { d: Tile2Data }) {
       <span className="block">
         Check out VeeFriends Cartoons!
       </span>
-      <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-001" />
+      <span className="w-[0.3125rem] h-[0.3125rem] block rounded-[50%] shrink-0 bg-color-002" />
     </span>
   );
 }

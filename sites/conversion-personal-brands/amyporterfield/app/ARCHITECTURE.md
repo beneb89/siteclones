@@ -29,8 +29,8 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 
 ## Clone Metadata
 
-- routes: 60
-- extracted components: 324
+- routes: 15
+- extracted components: 87
 - section modules: 0
 - SVG modules: 0
 - content module: no
@@ -53,51 +53,6 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 - /contact - Get In Touch With Amy | Amy Porterfield
 - /course-confident-2024-terms - Course ConfidentTerms & Conditions - Amy Porterfield | Online Marketing Expert
 - /course-confident-2025-terms - Course Confident Terms & Conditions - 2025 - Amy Porterfield | Online Marketing Expert
-- /dca - Moving Forward
-- /digital-marketing-podcast - Digital Marketing Podcast - Amy Porterfield | Online Marketing Expert
-- /fast-funnel-terms - The Fast Funnel Template Pack - Terms and Conditions - Amy Porterfield | Online Marketing Expert
-- /growth-advisor - Growth Advisor (Contracted)| Amy Porterfield
-- /lbs-terms - List Builders Society®️ - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /marketing-strategy-podcast - Marketing Strategy Podcast - Amy Porterfield | Online Marketing Expert
-- /master-your-year-terms-conditions - Master Your Year Planning Session - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /mastermind-waitlist - Page not found - Amy Porterfield | Online Marketing Expert
-- /momentum - File Not Found
-- /mts-terms - Made To Scale - Terms and Conditions - Amy Porterfield | Online Marketing Expert
-- /mts-terms-2 - Made To Scale - Terms and Conditions - Amy Porterfield | Online Marketing Expert
-- /mylogin - Amy Porterfield Login Page | Amy Porterfield
-- /newsletter - Newsletter
-- /newsletter_archive - Newsletters Archive - Amy Porterfield | Online Marketing Expert
-- /newsletter-archive-all - Newsletter Archive All - Amy Porterfield | Online Marketing Expert
-- /online-business-courses - Online Marketing Tools and Resources | Amy Porterfield
-- /online-business-programs - Online Marketing Tools and Resources | Amy Porterfield
-- /online-marketing-tools - Online Marketing Tools - Amy Porterfield | Online Marketing Expert
-- /podcast-test - Podcast Test - Amy Porterfield | Online Marketing Expert
-- /porter-terms - Porter™️ - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /privacy - Privacy
-- /reset-terms - Reset Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /reviews - reviews
-- /side-hustle-ideas-guide-ap - Moving Forward
-- /sts-terms - Systems That Scale®️ - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /subscribed-2024-terms - Subscribed - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /subscribed-2025-terms - Subscribed - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /t1ho-terms - The 1 Hour Offer ™️ - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tcc-terms - The Calibrae Collective - Terms and Conditions - Amy Porterfield | Online Marketing Expert
-- /terms-and-conditions - Terms and Conditions | Amy Porterfield
-- /tmc-terms - The Milly Club Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tmc-terms-3a - The Milly Club Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tmc-terms-3nm - The Milly Club Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tmc-terms-4 - The Milly Club Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tmc-terms-5 - The Milly Club Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tme-terms - The Membership Experience Bonus Package by Amy Porterfield Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tobss-terms-conditions - The Online Business Starter Suite - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /tocs-terms - The Offer Conversion Scorecard™️ - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /torc-terms - The Offer Refinement Coach™️ - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /training - Free Training with Amy Porterfield
-- /ultimate-guide-terms - Digital Course Academy's Ultimate Guide Workbook - Terms & Conditions - Amy Porterfield | Online Marketing Expert
-- /ydcc-terms - Your Digital Course Coach Terms and Conditions - Amy Porterfield | Online Marketing Expert
-- /ap_show_categories/business-tips - Business Tips Archives - Amy Porterfield | Online Marketing Expert
-- /blog-category/engagement-and-community - Engagement & Community Archives - Amy Porterfield | Online Marketing Expert
-- /blog/10-signs-its-time-to-create-your-9-to-5-exit-strategy - 10 Signs It’s Time to Create Your 9-to-5 Exit Strategy - Amy Porterfield | Online Marketing Expert
 
 ## Tradeoffs
 

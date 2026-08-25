@@ -1,0 +1,38 @@
+.cn0{height:100%;display:block;color:var(--border);font-family:Jost, sans-serif;font-size:16px;font-weight:400;font-style:normal;line-height:24px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--surface-9)}
+[data-ditto-id="style-div-4"]::placeholder{color:rgb(139, 147, 161)}
+[data-ditto-id="style-div-9"]::placeholder{color:rgb(139, 147, 161)}
+[data-ditto-id="style-icon-7"]::before{content:"";display:block;position:absolute;top:2px;right:456px;bottom:3px;left:0px;width:22px;height:22px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23fe6c45'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10.5 8.6 13 14 7'/%3E%3C/svg%3E");background-size:contain;background-position:50% 50%;background-repeat:no-repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-icon-7"]::before{right:329px;bottom:30px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-icon-7"]::before{right:304px;bottom:30px}
+}
+[data-ditto-id="style-li"]::before{content:"";display:block;position:absolute;top:2px;right:456px;bottom:30px;left:0px;width:22px;height:22px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23fe6c45'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10.5 8.6 13 14 7'/%3E%3C/svg%3E");background-size:contain;background-position:50% 50%;background-repeat:no-repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-li"]::before{right:329px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-li"]::before{right:304px}
+}
+[data-ditto-id="style-div-10"]::before{content:"";display:block;position:absolute;top:2px;right:456px;bottom:3px;left:0px;width:22px;height:22px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23fe6c45'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10.5 8.6 13 14 7'/%3E%3C/svg%3E");background-size:contain;background-position:50% 50%;background-repeat:no-repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-div-10"]::before{right:329px;bottom:30px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-div-10"]::before{right:304px;bottom:30px}
+}
+[data-ditto-id="style-link-15"]::placeholder{color:rgb(139, 147, 161)}
+[data-ditto-id="style-div-11"]::placeholder{color:rgb(139, 147, 161)}
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-button"]{transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+[data-ditto-id="style-button-2"]{transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+[data-ditto-id="style-button"]:hover{background-color:rgb(224, 197, 0)}
+[data-ditto-id="style-button-2"]:hover{background-color:rgb(246, 246, 246)}
+[data-ditto-id="style-div-12"]:hover{background-color:rgb(46, 91, 255)}
+[data-ditto-id="style-div-13"]:hover{background-color:rgb(254, 76, 28)}
+[data-ditto-id="style-heading"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-21"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-div-12"]:focus{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255)}
+[data-ditto-id="style-div-13"]:focus{border-bottom-color:rgb(255, 255, 255);border-left-color:rgb(255, 255, 255);border-right-color:rgb(255, 255, 255);border-top-color:rgb(255, 255, 255)}

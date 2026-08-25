@@ -1,0 +1,11 @@
+[data-ditto-id="style-em-5"]::before{content:"";display:block;position:absolute;top:38px;right:-43.125px;bottom:-29px;left:-54.875px;height:50px;background-image:url("/assets/cloned/svg/da8f0fc9d55b.svg");background-size:contain;background-position:50% 0%;background-repeat:no-repeat}
+@media (max-width: 571px) {
+[data-ditto-id="style-em-5"]::before{top:15px;right:-25.75px;left:-32.75px}
+}
+@media (min-width: 572px) and (max-width: 1024px) {
+[data-ditto-id="style-em-5"]::before{top:19px;right:-29.9219px;left:-38.0781px}
+}
+@media (min-width: 1601px) {
+[data-ditto-id="style-em-5"]::before{display:none}
+}
+[data-ditto-id="style-input"]::placeholder{color:rgb(0, 0, 0);opacity:0.7}

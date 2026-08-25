@@ -6,7 +6,7 @@
 @media (min-width: 572px) and (max-width: 1024px) {
 [data-ditto-id="style-link-2"]{background-image:linear-gradient(rgba(0, 0, 0, 0) calc(100% - 18px), rgb(249, 115, 22) calc(100% - 18px), rgb(249, 115, 22) calc(100% - 10px), rgba(0, 0, 0, 0) calc(100% - 10px))}
 }
-[data-ditto-id="style-li-9"]::placeholder{color:rgb(130, 130, 130);opacity:0.5}
+[data-ditto-id="style-li-6"]::placeholder{color:rgb(130, 130, 130);opacity:0.5}
 [data-ditto-id="style-link-9"]::before{content:"";display:block;position:absolute;top:16px;right:239px;bottom:4px;left:0px;width:24px;height:24px;margin-top:-12px;background-image:url("/assets/cloned/svg/1ed85632b305.svg");background-position:50% 50%;background-repeat:no-repeat}
 @media (max-width: 571px) {
 [data-ditto-id="style-link-9"]::before{top:14.3906px;right:220px;bottom:2.40625px}
@@ -29,44 +29,41 @@
 [data-ditto-id="style-label"]::after{font-size:20px;line-height:27.4px}
 }
 /* Stage 4 — interaction states (hover/focus + eased transitions) */
-[data-ditto-id="style-heading-5"]{transition:opacity 0.2s}
+[data-ditto-id="style-heading-6"]{transition:opacity 0.2s}
 [data-ditto-id="style-wpcf7-f216540-o2"]{transition:opacity 0.2s}
-[data-ditto-id="style-div-24"]{transition:opacity 0.2s}
+[data-ditto-id="style-div-21"]{transition:opacity 0.2s}
 [data-ditto-id="style-text"]{transition:opacity 0.2s}
-[data-ditto-id="style-span-35"]{transition:opacity 0.2s}
-[data-ditto-id="style-span-20"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-neil-patel-4"]:hover{border-bottom-color:rgb(241, 98, 50);border-left-color:rgb(241, 98, 50);border-right-color:rgb(241, 98, 50);border-top-color:rgb(241, 98, 50);color:rgb(241, 98, 50);outline-color:rgb(241, 98, 50);text-decoration-color:rgb(241, 98, 50)}
-[data-ditto-id="style-image-13"]:hover{background-color:rgb(241, 98, 50);border-bottom-color:rgb(241, 98, 50);border-left-color:rgb(241, 98, 50);border-right-color:rgb(241, 98, 50);border-top-color:rgb(241, 98, 50)}
+[data-ditto-id="style-span-22"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-neil-patel-2"]:hover{border-bottom-color:rgb(241, 98, 50);border-left-color:rgb(241, 98, 50);border-right-color:rgb(241, 98, 50);border-top-color:rgb(241, 98, 50);color:rgb(241, 98, 50);outline-color:rgb(241, 98, 50);text-decoration-color:rgb(241, 98, 50)}
+[data-ditto-id="style-image-4"]:hover{background-color:rgb(241, 98, 50);border-bottom-color:rgb(241, 98, 50);border-left-color:rgb(241, 98, 50);border-right-color:rgb(241, 98, 50);border-top-color:rgb(241, 98, 50)}
 [data-ditto-id="style-link-8"]:hover{opacity:0.9}
-[data-ditto-id="style-div-14"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-link-57"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-li-10"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-avatar-6"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-p-33"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-34"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-56"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-li-7"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-avatar-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-p-13"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-ul-5"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-div"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-span"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-image"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-div-2"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-12"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-14"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-link-7"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-p-4"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-article-2"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-div-84"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-span-36"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-span-37"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-div-85"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-div-86"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-article"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-39"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-23"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-span-24"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-40"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-div-41"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-thead"]:hover{text-decoration-line:underline}
 [data-ditto-id="style-test-id"]:hover{text-decoration-line:underline}
-[data-ditto-id="style-link-58"]:hover{border-bottom-width:1px}
-[data-ditto-id="style-span-38"]:hover{opacity:0.9}
-[data-ditto-id="style-heading-5"]:hover{opacity:0.7}
+[data-ditto-id="style-link-57"]:hover{border-bottom-width:1px}
+[data-ditto-id="style-span-25"]:hover{opacity:0.9}
+[data-ditto-id="style-heading-6"]:hover{opacity:0.7}
 [data-ditto-id="style-wpcf7-f216540-o2"]:hover{opacity:0.7}
-[data-ditto-id="style-div-24"]:hover{opacity:0.7}
+[data-ditto-id="style-div-21"]:hover{opacity:0.7}
 [data-ditto-id="style-text"]:hover{opacity:0.7}
-[data-ditto-id="style-span-35"]:hover{opacity:0.7}
-[data-ditto-id="style-heading-5"]:focus{opacity:0.7}
+[data-ditto-id="style-heading-6"]:focus{opacity:0.7}
 [data-ditto-id="style-wpcf7-f216540-o2"]:focus{opacity:0.7}
-[data-ditto-id="style-div-24"]:focus{opacity:0.7}
+[data-ditto-id="style-div-21"]:focus{opacity:0.7}
 [data-ditto-id="style-text"]:focus{opacity:0.7}
-[data-ditto-id="style-span-35"]:focus{opacity:0.7}

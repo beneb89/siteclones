@@ -29,8 +29,8 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 
 ## Clone Metadata
 
-- routes: 53
-- extracted components: 521
+- routes: 15
+- extracted components: 94
 - section modules: 0
 - SVG modules: 0
 - content module: no
@@ -53,44 +53,6 @@ Recipes identify higher-level patterns such as repeated cards, logo clouds, navi
 - /ai-social - AIW Social -- Create Engaging Social Media Posts & Caption In Seconds | Social Media Post Writer by Neil Patel
 - /ai-writer - AI Writer - Ubersuggest’s Free AI Content Generator by Neil Patel
 - /backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /cn - Neil Patel: Helping You Succeed Through Digital Marketing!
-- /consulting - NP Digital - Digital Marketing Consulting Services
-- /contact - Contact
-- /copyright - Copyright or Intellectual Property Infringement Notice
-- /digital-marketing - What Is Digital Marketing? Your Ultimate Guide
-- /do-not-track - Do Not Track
-- /how-to-start-a-blog - How To Start a Highly Profitable Blog - Neil Patel
-- /jp - Neil Patel: Helping You Succeed Through Digital Marketing!
-- /paid-ads - Paid Ads Create Ads for Google, Facebook, LinkedIn Fast - AI-Powered Ad Creator
-- /privacy - NP Digital: Privacy notice.
-- /privacy-notice-us-addendum - Page not found - Neil Patel
-- /privacy-policy - Page not found - Neil Patel
-- /seo-analyzer - Free SEO Checker: Website SEO Analysis Tool & Audit Report
-- /terms - Terms of Service
-- /ubersuggest - Ubersuggest: Free Keyword Research Tool - Neil Patel
-- /website-traffic-checker - Free Website Traffic Checker
-- /what-is-conversion-optimization - Conversion Rate Optimization: Complete Guide + 20 CRO Tips
-- /what-is-facebook-advertising - What Is Facebook Advertising & How Does it Work?
-- /what-is-google-adwords - Google Ads Made Simple: A Step-by-Step Guide
-- /what-is-online-marketing - Online Marketing Made Simple: Your Complete Guide - Neil Patel
-- /what-is-social-media-marketing - Complete Guide to Social Media Marketing (SMM)
-- /blog/ab-testing-introduction - What is A/B Testing? A Beginner's Guide - Neil Patel
-- /br/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /de/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /es/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /fr/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /it/backlink - Free Backlink Checker With Historical and New/Lost Link Data
-- /marketing-stats/ab-testing-funnel-stage-gains - Where A/B Testing Drives the Most Gains: B2B vs B2C by Funnel Stage - Neil Patel
-- /training/content-marketing-unlocked - Content Marketing Unlocked Archive - Neil Patel
-- /cn/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /cn/ubersuggest - Ubersuggest: Free Keyword Research Tool - Neil Patel
-- /jp/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /jp/ubersuggest - Ubersuggest: Free Keyword Research Tool - Neil Patel
-- /nl/advies - NP Digital - Digital Marketing Consulting Services
-- /nl/backlinks - Free Backlink Checker With Historical and New/Lost Link Data
-- /nl/ubersuggest - Ubersuggest: Free Keyword Research Tool - Neil Patel
-- /blog/author/brittany-werdowatz - Brittany Werdowatz | SEO Author
-- /marketing-stats/category/ad-spend-budgets - Ad Spend Statistics, Budget Trends & ROI Insights
 
 ## Tradeoffs
 

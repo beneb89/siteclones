@@ -14,15 +14,15 @@ export default function MediaCard2({ d, styles }: { d: MediaCard2Data; styles: M
   return (
     <div className={cn("flex justify-between items-center gap-x-30 text-start max-md:flex-col max-lg:gap-x-15 max-md:[text-align:inherit]", styles.className)}>
       <div className="w-[44%] flex flex-col gap-y-2 max-md:w-full md:max-lg:w-[45.5%]">
-        <span className="block rounded-[50%] text-background text-2xl font-bold leading-10 text-center max-md:mx-auto max-md:[text-align:inherit]" style={{ backgroundImage: "linear-gradient(to right, var(--primary), var(--clr-17))" }}>
+        <span className="block rounded-[50%] text-background text-2xl font-bold leading-10 text-center max-md:mx-auto max-md:[text-align:inherit]" style={{ backgroundImage: "linear-gradient(to right, var(--primary), var(--clr-25))" }}>
           {d.text}
         </span>
         {" "}
-        <p className="block text-color-018 [font-family:'Geomanist_Book',_Arial,_sans-serif] text-base leading-[1.6875rem] uppercase">
+        <p className="block text-color-010 [font-family:'Geomanist_Book',_Arial,_sans-serif] text-base leading-[1.6875rem] uppercase">
           {d.description}
         </p>
         {" "}
-        <h2 className="block text-color-011 text-2xl font-medium leading-[1.8125rem] max-md:text-xl max-md:leading-6" data-component="heading">
+        <h2 className="block text-color-004 text-2xl font-medium leading-[1.8125rem] max-md:text-xl max-md:leading-6" data-component="heading">
           {d.title}
         </h2>
         {" "}

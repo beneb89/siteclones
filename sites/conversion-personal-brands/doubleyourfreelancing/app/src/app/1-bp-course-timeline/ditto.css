@@ -1,0 +1,51 @@
+.cn0{height:100%;display:block;min-width:320px;max-height:1e+06px;color:var(--foreground);font-family:"Cera Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;font-size:18px;font-weight:400;font-style:normal;line-height:28.8px;letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr}
+
+@media (max-width: 571px) {
+.cn0{max-width:375px}
+}
+
+@media (min-width: 1601px) {
+.cn0{background-color:var(--surface-2)}
+}
+
+/* Stage 4 — interaction states (hover/focus + eased transitions) */
+[data-ditto-id="style-link"]{transition:0.3s}
+[data-ditto-id="style-link-2"]{transition:0.3s}
+[data-ditto-id="style-link-3"]{transition:0.3s}
+[data-ditto-id="style-sm-1767225600768106-1"]{transition:0.3s}
+[data-ditto-id="style-sm-1767225600768106-3"]{transition:0.3s}
+[data-ditto-id="style-6"]{transition:0.3s}
+[data-ditto-id="style-7"]{transition:0.3s}
+[data-ditto-id="style-8"]{transition:0.3s}
+[data-ditto-id="style-9"]{transition:0.3s}
+[data-ditto-id="style-a"]{transition:0.3s}
+[data-ditto-id="style-link-4"]{transition:0.3s}
+[data-ditto-id="style-link-5"]{transition:0.3s}
+[data-ditto-id="style-link-6"]{transition:0.3s}
+[data-ditto-id="style-link-5"]:hover{border-bottom-color:rgb(105, 68, 155);border-left-color:rgb(105, 68, 155);border-right-color:rgb(105, 68, 155);border-top-color:rgb(105, 68, 155);color:rgb(105, 68, 155);outline-color:rgb(105, 68, 155);text-decoration-color:rgb(105, 68, 155)}
+[data-ditto-id="style-image"]:hover{border-bottom-color:rgb(210, 80, 0);border-left-color:rgb(210, 80, 0);border-right-color:rgb(210, 80, 0);border-top-color:rgb(210, 80, 0);color:rgb(210, 80, 0);outline-color:rgb(210, 80, 0);text-decoration-color:rgb(210, 80, 0)}
+[data-ditto-id="style-sm-1767225600768106-1"]:hover{border-bottom-color:rgb(190, 75, 4);border-left-color:rgb(190, 75, 4);border-right-color:rgb(190, 75, 4);border-top-color:rgb(190, 75, 4);color:rgb(190, 75, 4);outline-color:rgb(190, 75, 4);text-decoration-color:rgb(190, 75, 4)}
+[data-ditto-id="style-sm-1767225600768106-3"]:hover{border-bottom-color:rgb(182, 73, 5);border-left-color:rgb(182, 73, 5);border-right-color:rgb(182, 73, 5);border-top-color:rgb(182, 73, 5);color:rgb(182, 73, 5);outline-color:rgb(182, 73, 5);text-decoration-color:rgb(182, 73, 5)}
+[data-ditto-id="style-6"]:hover{border-bottom-color:rgb(182, 73, 5);border-left-color:rgb(182, 73, 5);border-right-color:rgb(182, 73, 5);border-top-color:rgb(182, 73, 5);color:rgb(182, 73, 5);outline-color:rgb(182, 73, 5);text-decoration-color:rgb(182, 73, 5)}
+[data-ditto-id="style-7"]:hover{border-bottom-color:rgb(182, 73, 5);border-left-color:rgb(182, 73, 5);border-right-color:rgb(182, 73, 5);border-top-color:rgb(182, 73, 5);color:rgb(182, 73, 5);outline-color:rgb(182, 73, 5);text-decoration-color:rgb(182, 73, 5)}
+[data-ditto-id="style-8"]:hover{border-bottom-color:rgb(182, 73, 5);border-left-color:rgb(182, 73, 5);border-right-color:rgb(182, 73, 5);border-top-color:rgb(182, 73, 5);color:rgb(182, 73, 5);outline-color:rgb(182, 73, 5);text-decoration-color:rgb(182, 73, 5)}
+[data-ditto-id="style-9"]:hover{border-bottom-color:rgb(182, 73, 5);border-left-color:rgb(182, 73, 5);border-right-color:rgb(182, 73, 5);border-top-color:rgb(182, 73, 5);color:rgb(182, 73, 5);outline-color:rgb(182, 73, 5);text-decoration-color:rgb(182, 73, 5)}
+[data-ditto-id="style-a"]:hover{border-bottom-color:rgb(183, 73, 5);border-left-color:rgb(183, 73, 5);border-right-color:rgb(183, 73, 5);border-top-color:rgb(183, 73, 5);color:rgb(183, 73, 5);outline-color:rgb(183, 73, 5);text-decoration-color:rgb(183, 73, 5)}
+[data-ditto-id="style-link-4"]:hover{border-bottom-color:rgb(190, 75, 4);border-left-color:rgb(190, 75, 4);border-right-color:rgb(190, 75, 4);border-top-color:rgb(190, 75, 4);color:rgb(190, 75, 4);outline-color:rgb(190, 75, 4);text-decoration-color:rgb(190, 75, 4)}
+[data-ditto-id="style-link-6"]:hover{border-bottom-color:rgb(109, 69, 148);border-left-color:rgb(109, 69, 148);border-right-color:rgb(109, 69, 148);border-top-color:rgb(109, 69, 148);color:rgb(109, 69, 148);outline-color:rgb(109, 69, 148);text-decoration-color:rgb(109, 69, 148)}
+[data-ditto-id="style-link"]:hover{border-bottom-color:rgb(109, 69, 148);border-left-color:rgb(109, 69, 148);border-right-color:rgb(109, 69, 148);border-top-color:rgb(109, 69, 148);color:rgb(109, 69, 148);outline-color:rgb(109, 69, 148);text-decoration-color:rgb(109, 69, 148)}
+[data-ditto-id="style-link-2"]:hover{border-bottom-color:rgb(109, 69, 148);border-left-color:rgb(109, 69, 148);border-right-color:rgb(109, 69, 148);border-top-color:rgb(109, 69, 148);color:rgb(109, 69, 148);outline-color:rgb(109, 69, 148);text-decoration-color:rgb(109, 69, 148)}
+[data-ditto-id="style-link-3"]:hover{text-decoration-line:underline}
+[data-ditto-id="style-link-5"]:focus{border-bottom-color:rgb(196, 78, 21);border-left-color:rgb(196, 78, 21);border-right-color:rgb(196, 78, 21);border-top-color:rgb(196, 78, 21);color:rgb(196, 78, 21);outline-color:rgb(196, 78, 21);text-decoration-color:rgb(196, 78, 21)}
+[data-ditto-id="style-image"]:focus{border-bottom-color:rgb(210, 80, 0);border-left-color:rgb(210, 80, 0);border-right-color:rgb(210, 80, 0);border-top-color:rgb(210, 80, 0);color:rgb(210, 80, 0);outline-color:rgb(210, 80, 0);text-decoration-color:rgb(210, 80, 0)}
+[data-ditto-id="style-sm-1767225600768106-1"]:focus{border-bottom-color:rgb(38, 34, 31);border-left-color:rgb(38, 34, 31);border-right-color:rgb(38, 34, 31);border-top-color:rgb(38, 34, 31);color:rgb(38, 34, 31);outline-color:rgb(38, 34, 31);text-decoration-color:rgb(38, 34, 31)}
+[data-ditto-id="style-sm-1767225600768106-3"]:focus{border-bottom-color:rgb(33, 32, 32);border-left-color:rgb(33, 32, 32);border-right-color:rgb(33, 32, 32);border-top-color:rgb(33, 32, 32);color:rgb(33, 32, 32);outline-color:rgb(33, 32, 32);text-decoration-color:rgb(33, 32, 32)}
+[data-ditto-id="style-6"]:focus{border-bottom-color:rgb(44, 35, 30);border-left-color:rgb(44, 35, 30);border-right-color:rgb(44, 35, 30);border-top-color:rgb(44, 35, 30);color:rgb(44, 35, 30);outline-color:rgb(44, 35, 30);text-decoration-color:rgb(44, 35, 30)}
+[data-ditto-id="style-7"]:focus{border-bottom-color:rgb(44, 35, 30);border-left-color:rgb(44, 35, 30);border-right-color:rgb(44, 35, 30);border-top-color:rgb(44, 35, 30);color:rgb(44, 35, 30);outline-color:rgb(44, 35, 30);text-decoration-color:rgb(44, 35, 30)}
+[data-ditto-id="style-8"]:focus{border-bottom-color:rgb(44, 35, 30);border-left-color:rgb(44, 35, 30);border-right-color:rgb(44, 35, 30);border-top-color:rgb(44, 35, 30);color:rgb(44, 35, 30);outline-color:rgb(44, 35, 30);text-decoration-color:rgb(44, 35, 30)}
+[data-ditto-id="style-a"]:focus{border-bottom-color:rgb(41, 34, 31);border-left-color:rgb(41, 34, 31);border-right-color:rgb(41, 34, 31);border-top-color:rgb(41, 34, 31);color:rgb(41, 34, 31);outline-color:rgb(41, 34, 31);text-decoration-color:rgb(41, 34, 31)}
+[data-ditto-id="style-icon"]:focus{outline-color:rgb(16, 16, 16);outline-style:auto;outline-width:5px}
+[data-ditto-id="style-link-4"]:focus{border-bottom-color:rgb(44, 35, 30);border-left-color:rgb(44, 35, 30);border-right-color:rgb(44, 35, 30);border-top-color:rgb(44, 35, 30);color:rgb(44, 35, 30);outline-color:rgb(44, 35, 30);text-decoration-color:rgb(44, 35, 30)}
+[data-ditto-id="style-link-6"]:focus{border-bottom-color:rgb(199, 79, 16);border-left-color:rgb(199, 79, 16);border-right-color:rgb(199, 79, 16);border-top-color:rgb(199, 79, 16);color:rgb(199, 79, 16);outline-color:rgb(199, 79, 16);text-decoration-color:rgb(199, 79, 16)}
+[data-ditto-id="style-link"]:focus{border-bottom-color:rgb(199, 79, 16);border-left-color:rgb(199, 79, 16);border-right-color:rgb(199, 79, 16);border-top-color:rgb(199, 79, 16);color:rgb(199, 79, 16);outline-color:rgb(199, 79, 16);text-decoration-color:rgb(199, 79, 16)}
+[data-ditto-id="style-link-2"]:focus{border-bottom-color:rgb(199, 79, 16);border-left-color:rgb(199, 79, 16);border-right-color:rgb(199, 79, 16);border-top-color:rgb(199, 79, 16);color:rgb(199, 79, 16);outline-color:rgb(199, 79, 16);text-decoration-color:rgb(199, 79, 16)}

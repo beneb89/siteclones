@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   },
   {
+    url: SITE_ORIGIN + "/275-we-escaped-debt-so-why-are-we-still-spending-like-this",
+    changeFrequency: "weekly",
+    priority: 0.7,
+  },
+  {
     url: SITE_ORIGIN + "/best-sales-pages",
     changeFrequency: "weekly",
     priority: 0.7,
@@ -27,11 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   },
   {
     url: SITE_ORIGIN + "/books",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/budget-help",
     changeFrequency: "weekly",
     priority: 0.7,
   },
@@ -62,111 +62,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   },
   {
     url: SITE_ORIGIN + "/disclosure-terms-and-conditions",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/events",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/get-earnable",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/getting-traffic-for-your-blog",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/how-much-do-influencers-make",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/how-to-get-rich",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/i-will-teach-you-to-be-rich-second-edition",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/i-will-teach-you-to-be-rich-the-journal",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/income-producing-assets",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/investment-calculator",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/iwt-about-us",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/jobs-that-make-a-lot-of-money",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/money-for-couples",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/netflix",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/podcast",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/programs-page",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/retirement-calculator",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/review-of-the-4-hour-workweek",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/rich-life-quiz",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/rich-life-road-to-100k",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/sponsors",
-    changeFrequency: "weekly",
-    priority: 0.7,
-  },
-  {
-    url: SITE_ORIGIN + "/category/blog",
     changeFrequency: "weekly",
     priority: 0.7,
   },

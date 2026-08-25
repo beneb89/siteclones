@@ -6,10 +6,10 @@ export type MediaCardData = {
 /** A card with media + heading. */
 export default function MediaCard({ d }: { d: MediaCardData }) {
   return (
-    <div className="box-content border-t border-solid border-t-border flex my-4 pt-8 pb-4 justify-between items-center max-md:flex-wrap">
+    <div className="box-content border-t border-solid border-t-accent flex my-4 pt-8 pb-4 justify-between items-center max-md:flex-wrap">
       <div className="box-content w-[65%] block max-md:w-3/4 max-md:order-[2]">
         <h3 className="box-content block" data-component="heading">
-          <a className="box-content inline text-border [font-family:'Ivy_Presto_Display_Regular'] text-[1.75rem] leading-[1.9375rem] text-left cursor-pointer max-md:text-[1.375rem] max-md:leading-[1.5rem]" data-component="link" href={d.href}>
+          <a className="box-content inline text-accent [font-family:'Ivy_Presto_Display_Regular'] text-[1.75rem] leading-[1.9375rem] text-left cursor-pointer max-md:text-[1.375rem] max-md:leading-[1.5rem]" data-component="link" href={d.href}>
             {d.title}
           </a>
         </h3>

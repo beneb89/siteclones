@@ -63,8 +63,8 @@ const ListRow_data7 = [
     { text: "Amy Porterfield’s brand is rooted in sustainable business growth. How do you help clients achieve meaningful results while maintaining balance, boundaries, and overall well-being?" }
 ];
 const TextLink_data = [
-    { href: "/online-marketing-tools", target: "_self", text: "Resources" },
-    { href: "https://twoweeksnoticebook.com/?__hstc=164447072.c996fecb0f66d21b0717e91878aafd69.1767225601426.1767225601426.1767225601426.1&__hssc=164447072.1.1767225601427&__hsfp=94ef76e50aa552668c1276dec3915e7a", target: "_blank", text: "two weeks notice" },
+    { href: "https://www.amyporterfield.com/online-marketing-tools/", target: "_self", text: "Resources" },
+    { href: "https://twoweeksnoticebook.com/?__hstc=164447072.f729be30c9647c74e670283996c03bb3.1767225601314.1767225601314.1767225601314.1&__hssc=164447072.1.1767225601314&__hsfp=94ef76e50aa552668c1276dec3915e7a", target: "_blank", text: "two weeks notice" },
     { href: "/", target: "_self", text: "home" }
 ];
 const Logo_data = [
@@ -91,189 +91,189 @@ const Tile_data = [
     { text: "My NYT Bestselling Book" }
 ];
 const Logo2_data = [
-    { href: "https://www.instagram.com/reel/DcbR9GshjWm/", alt: "video shared on Mon Aug 24 2026 | Me and my close personal friend @wisprflow 🤫 \n\nIf you’re not holding your laptop like t...", imgSrc: "/assets/cloned/images/c986cf4c2e26.jpg", label: "Me and my close personal friend @wisprflow 🤫 \n\nIf you’re not holding your laptop like this when you use it, you’re lying 😂\n\n(it’s a voice-to-text tool, you talk, it types.) \n\nThanks to @callanfaulkner i basically never type anymore 💬 👏" },
-    { href: "https://www.instagram.com/reel/DcazFjbBcpW/", alt: "video shared on Mon Aug 24 2026 | My client didn’t come in needing a million new ideas.\n\nShe needed to know what would tak...", imgSrc: "/assets/cloned/images/b842b1a86283.jpg", label: "My client didn’t come in needing a million new ideas.\n\nShe needed to know what would take her to MILLIONS, from a coach who has built a $139M company and could tell her what was holding her back.\n\nAn honest conversation and some coaching along the way. Then she went and did it 🥲 \n\nThat is why I do this. I want to see more women get rich.\n\n👇🏻Comment TRAINING for my exclusive training for multi six figure female founders growing toward their first million." },
-    { href: "https://www.instagram.com/reel/DcZ_jAJuW1g/", alt: "video shared on Sun Aug 23 2026 | Hot take: the most powerful thing a woman can do is make millions. And it’s fun.\n\nNot be...", imgSrc: "/assets/cloned/images/212f14ded0aa.jpg", label: "Hot take: the most powerful thing a woman can do is make millions. And it’s fun.\n\nNot because money fixes everything. Because it’s leverage.\n\nI believed I’d hit a million before I did. Then 50 million. Now I am at 139 million. \n\nThe belief came first every time.\n\nBut belief alone doesn’t move you. \n\nThere’s a bottleneck between where you are and where you’re going, and naming it is the unlock.\n\n👇🏻Comment TRAINING and I’ll walk you through how to find yours." },
-    { href: "https://www.instagram.com/p/DcXGOgbFviM/", alt: "carousel album shared on Sat Aug 22 2026 | I know what it’s like to hit half a million as a female founder. But I wouldn’t...", imgSrc: "/assets/cloned/images/4da556328e5b.jpg", label: "I know what it’s like to hit half a million as a female founder. But I wouldn’t have grown my business to $139M in 17 years if I wasn’t in rooms with women who just got it. Women who had gone before me, and women who grew alongside me.\n\nThat’s why I created The Milly Club, for female founders growing toward their first million and beyond.\n\nApplication-only, for women selling digital products, programs, or coaching at $500k+.\n\n👇 Comment MILLY to apply" },
-    { href: "https://www.instagram.com/p/DcOkV9YljOb/", alt: "carousel album shared on Fri Aug 21 2026 | Just a girl who built a life she actually loves.\n\nLake days with Hobie, Scout a...", imgSrc: "/assets/cloned/images/7105e084dfea.jpg", label: "Just a girl who built a life she actually loves.\n\nLake days with Hobie, Scout as chief vibes officer, oatmilk latte in hand (extra hot, don’t @ me), fresh blowout because self care matters.\n\nCurrently building our dream home in Leiper’s Fork, one design decision at a time.\n\nJust a girl. Living her (very specific) dream." },
-    { href: "https://www.instagram.com/reel/DcSYIpZMZVl/", alt: "video shared on Fri Aug 21 2026 | Hot take: the most powerful thing a woman can do is make millions. \n\nAND it’s fun ✨\n\nNot...", imgSrc: "/assets/cloned/images/2d9dca0f0d01.jpg", label: "Hot take: the most powerful thing a woman can do is make millions. \n\nAND it’s fun ✨\n\nNot because money fixes everything. Because it’s leverage.\n\nI believed I’d hit a million before I did. Then 50 million. Now we’re at $139 million. The belief came first every time. 🙂\n\nBut belief alone doesn’t move you. There’s a bottleneck between where you are and where you’re going, and naming it is the game changer.\n\n👇🏻Comment TRAINING and I’ll walk you through how to find yours." },
-    { href: "https://www.instagram.com/reel/DcSAsv5sH-J/", alt: "video shared on Fri Aug 21 2026 | You may think that the next stage of growth means doing more. \n\nMore content, more offer...", imgSrc: "/assets/cloned/images/700d4cf05e8f.jpg", label: "You may think that the next stage of growth means doing more. \n\nMore content, more offers, more hours. 😩\n\nIt’s 3 specific shifts, and they have NOTHING to do with working harder.\n\nI’ve coached female founders through this exact stage, and the ones who break through aren’t doing the most. \n\nThey’re the ones who fix the right bottleneck first.\n\n👇🏻Comment TRAINING and I’ll teach you how I identified the bottleneck that took my business from half a million to a million, and even from $1 million to $139 million today." },
-    { href: "https://www.instagram.com/reel/DcQyweDhoLD/", alt: "video shared on Thu Aug 20 2026 | The fastest win is still a real one 💯\n\nYou don’t need to water down your program to mak...", imgSrc: "/assets/cloned/images/b7db6e873dc3.jpg", label: "The fastest win is still a real one 💯\n\nYou don’t need to water down your program to make it convert 🙅‍♀️\n\nYou can be the deepest, most strategic voice in your space and still lose the sale 😩\n\nChoose the one specific result they can expect in the first week. That’s what gets them to say yes. The depth comes after.\n\n👇Sound familiar? Comment “RESULTS” and I’ll send you this week’s coaching video." },
-    { href: "https://www.instagram.com/reel/DcRK1DoB9St/", alt: "video shared on Thu Aug 20 2026 | If you’re a multi six-figure female founder that’s ready to start growing toward seven \ud83d", imgSrc: "/assets/cloned/images/5bf2f69ae576.jpg", label: "If you’re a multi six-figure female founder that’s ready to start growing toward seven 💰✨\n\n👇 Comment TRAINING" },
-    { href: "https://www.instagram.com/p/DcPevHcm_nW/", alt: "carousel album shared on Thu Aug 20 2026 | I spent 17 years building this business to $139M, and the decisions never got e...", imgSrc: "/assets/cloned/images/5bff4156dbfd.jpg", label: "I spent 17 years building this business to $139M, and the decisions never got easier.\n\nThey just got bigger.\n\nSo I built the room I wanted at that stage: a small group of female founders at $500k+, making their biggest calls with women a few steps ahead and women right beside them.\n\nThat’s The Milly Club. Curated with intention.\n\n👇 Comment MILLY to apply." },
-    { href: "https://www.instagram.com/p/Db_s6btsibq/", alt: "image shared on Wed Aug 19 2026 | Studies on mindset and financial success consistently show that belief in your own poten...", imgSrc: "/assets/cloned/images/a83ab5576a34.jpg", label: "Studies on mindset and financial success consistently show that belief in your own potential is one of the strongest predictors of outcome.\n\nResearch on self-efficacy, coined by psychologist Albert Bandura, found that people who believe they can achieve a goal are significantly more likely to take the actions that get them there.\n\nIn other words, the belief comes first. The results follow." },
-    { href: "https://www.instagram.com/p/DcOCDB9m8_A/", alt: "carousel album shared on Wed Aug 19 2026 | Tell me your answer truthfully: could you step away from your business for two ", imgSrc: "/assets/cloned/images/a87e4982ba20.jpg", label: "Tell me your answer truthfully: could you step away from your business for two weeks, or would everything fall apart without you?\n\nIf you hesitated, pay attention to that. It means there’s a hire you haven’t made yet, the one that would hand you your time back and let the business run without you glued to it.\n\nIn this episode, I’m breaking down who that hire is and how to know when you’re ready to bring them on.\n\n👇Comment POD73 and I’ll send you the link, my friend" },
-    { href: "https://www.instagram.com/p/DcMQsqpG9nx/", alt: "carousel album shared on Tue Aug 18 2026 | She had 70 people on her email list.\n\nNot 7,000. Not 700. Seventy.\n\nAnd she tho...", imgSrc: "/assets/cloned/images/1c3fb426b085.jpg", label: "She had 70 people on her email list.\n\nNot 7,000. Not 700. Seventy.\n\nAnd she thought that was the problem. It wasn’t.\n\nThe offer sitting on top of that list was. Once we fixed that, she sold 10 spots and made $7,500 on her next launch. Then we moved it to evergreen, and now she consistently hits $10K months.\n\nSame 70 people. Different offer. Different result.\n\n👇🏻If you’re a multi six-figure female founder blaming your list size, comment TRAINING and I’ll send you the link to my live training.\n\nMy friend, it’s probably not the list." },
-    { href: "https://www.instagram.com/reel/DcL_hp6BRp8/", alt: "video shared on Tue Aug 18 2026 | I built a $139M business and I still don’t feel ready some days. I show up anyway.\n\nYou ", imgSrc: "/assets/cloned/images/28d19033e481.jpg", label: "I built a $139M business and I still don’t feel ready some days. I show up anyway.\n\nYou have to do it scared, sore, tired, and unsure. \n\nThen do it again the next day." },
-    { href: "https://www.instagram.com/reel/DcMt69Dul3e/", alt: "video shared on Tue Aug 18 2026 | You’re the ceiling on your own business. And deep down, you already know it.\n\nYou feel i...", imgSrc: "/assets/cloned/images/38ab38f8c423.jpg", label: "You’re the ceiling on your own business. And deep down, you already know it.\n\nYou feel it every week, in the tasks you’re still doing that someone else could be doing.\n\nHiring feels impossible because the work is one giant pile living in your head, and you can’t hand off a pile.\n\nI used to edit every one of my own training videos. Hours I should’ve spent on strategy, on sales, on the parts of my business only I could do. I just couldn’t let it go.\n\nYou start by getting honest about what you’d hand off first.\n\n👇Comment POD73 and I’ll send this episode your way.\n\nMy friend, get some of that pile off your plate." },
-    { href: "https://www.instagram.com/reel/DcKGXESMBcv/", alt: "video shared on Mon Aug 17 2026 | I made a free training exclusively for multi six-figure female founders who are ready to...", imgSrc: "/assets/cloned/images/35230cb5e73d.jpg", label: "I made a free training exclusively for multi six-figure female founders who are ready to grow toward their first million ✨\n\n👇🏻Comment TRAINING below if that’s you." },
-    { href: "https://www.instagram.com/reel/DcJj3JBsZ51/", alt: "video shared on Mon Aug 17 2026 | Monday loading... please wait 🪫🔋", imgSrc: "/assets/cloned/images/95d95d8f2ce0.jpg", label: "Monday loading... please wait 🪫🔋" },
-    { href: "https://www.instagram.com/reel/DcJT19zhbm7/", alt: "video shared on Mon Aug 17 2026 | I made a free training exclusively for multi six-figure female founders who are ready to...", imgSrc: "/assets/cloned/images/48a1514ae9ea.jpg", label: "I made a free training exclusively for multi six-figure female founders who are ready to grow toward their first million ✨\n\n👇🏻Comment TRAINING below if that’s you." },
-    { href: "https://www.instagram.com/p/DcIv30_m9Z-/", alt: "carousel album shared on Sun Aug 16 2026 | Running a half-million-dollar+ business means the decisions never stop. 🫠\n\nRet...", imgSrc: "/assets/cloned/images/4eee76a0968a.jpg", label: "Running a half-million-dollar+ business means the decisions never stop. 🫠\n\nRetire the offer? Put it on Evergreen? Launch the new channel?\n\nI built The Milly Club, exclusively for female founders generating $500k+ in revenue, so you don’t have to make those calls alone.\n\nInside this small-group Mastermind, you get my guidance (and my team’s) from building a $139M business, plus a room full of high-earning women who’ve been where you are.\n\n👇Comment MILLY to apply" },
-    { href: "https://www.instagram.com/reel/DcEhJ28M6C6/", alt: "video shared on Sat Aug 15 2026 | Hi, it’s me 😂", imgSrc: "/assets/cloned/images/be4f927b2fc6.jpg", label: "Hi, it’s me 😂" },
-    { href: "https://www.instagram.com/reel/DcDxBWUsJcB/", alt: "video shared on Sat Aug 15 2026 | $139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’r...", imgSrc: "/assets/cloned/images/7c92912df93c.jpg", label: "$139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’re new here, I’m Amy. 👋 \n\nRight now I’m building my dream house outside Nashville, living in a lake house until the build is done, with my husband Hobie and our dog Scout. 🐶 ✨\n\n17 years in business. $139M built along the way. \n\nAnd after all of it, I know where I want to spend this next season: with female founders working toward becoming millionaires. \n\nIt takes a specific kind of coach to help you identify the bottleneck that is holding your revenue back. Not someone theorizing from the outside. A woman who has stood exactly where you’re standing and knows the road to the next level.\n\nI’m hosting a training on it. Exclusively for multi six-figure female founders. If that’s not you yet, no hard feelings. This specific one just isn’t built for you.\n\nIf it is you: comment TRAINING below. 🤍" },
-    { href: "https://www.instagram.com/reel/DcFBL6XOiH4/", alt: "video shared on Sat Aug 15 2026 | $139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’r...", imgSrc: "/assets/cloned/images/d45239959225.jpg", label: "$139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’re new here, I’m Amy. 👋 \n\nRight now I’m building my dream house outside Nashville, living in a lake house until the build is done, with my husband Hobie and our dog Scout. 🐶 ✨\n\n17 years in business. $139M built along the way. \n\nAnd after all of it, I know where I want to spend this next season: with female founders working toward becoming millionaires. \n\nIt takes a specific kind of coach to help you identify the bottleneck that is holding your revenue back. Not someone theorizing from the outside. A woman who has stood exactly where you’re standing and knows the road to the next level.\n\nI’m hosting a training on it. Exclusively for multi six-figure female founders. If that’s not you yet, no hard feelings. This specific one just isn’t built for you.\n\nIf it is you: comment TRAINING below. 🤍" },
-    { href: "https://www.instagram.com/p/DcBnPqpG6bO/", alt: "carousel album shared on Fri Aug 14 2026 | I still think about this client’s numbers. Genuinely, they live in my head 🥹 \n", imgSrc: "/assets/cloned/images/84a8cb8a496e.jpg", label: "I still think about this client’s numbers. Genuinely, they live in my head 🥹 \n\nFirst course launch: 5 sales.\n\nNext launch. Same offer. Same audience.\n\n697 sales.\n\nOne lever had been holding the other two back, finally fixed.\n\nThis is the story I watch play out with multi six-figure female founders over and over.\n\nI’m breaking down all three, live and free.\n\n👇🏻Comment TRAINING if you’re a multi six-figure female founder who wants to identify which lever isn’t working with the other two." },
-    { href: "https://www.instagram.com/reel/DcBNaOghLZH/", alt: "video shared on Fri Aug 14 2026 | You guys, I have to brag on @nancy_levin for a second. 🥹\n\nShe walked into The Milly Clu...", imgSrc: "/assets/cloned/images/f8c7661709ef.jpg", label: "You guys, I have to brag on @nancy_levin for a second. 🥹\n\nShe walked into The Milly Club offering life and leadership coaching for high achievers, people pleasers, and perfectionists, plus coach training and certification for individuals.\n\nNow in her 3rd cohort, she has gone all in on that certification piece: partnering with founders who have certification programs to ensure their students are not only certified, but confidently client-ready.\n\nHere’s what gets me. We didn’t hand her a new idea. We just got clear on how to position her coach-certification offer, and that one shift showed her where the real bottleneck was hiding. The opportunity was in her business the whole time, she just couldn’t see it yet.\n\nThis is why I love this room so much.\n\nThe Milly Club is for female founders already generating $500K+ who are building toward $1M, surrounded by other women in that same growth season, cheering each other on and calling out what’s possible for each other.\n\nNancy, I am so proud of you, my friend. 🤍\n\n👇If this sounds like the room for you, comment “MILLY” and I’ll send you the details." },
-    { href: "https://www.instagram.com/reel/Db_wPCcsmEy/", alt: "video shared on Thu Aug 13 2026 | Showed up for the mission 🫡 \n\nGot distracted by dogs 🐶 \n\nEnded the night around a camp...", imgSrc: "/assets/cloned/images/9a27581e1a01.jpg", label: "Showed up for the mission 🫡 \n\nGot distracted by dogs 🐶 \n\nEnded the night around a campfire with the people I was supposed to be securing 🎶 🏕️ 😗 \n\nHobie is NOT wrong 😂" },
-    { href: "https://www.instagram.com/reel/Db_XA9wBI2E/", alt: "video shared on Thu Aug 13 2026 | This is why this work means so much to me 🫶🏻\n\nMy client tripled her revenue. 😳 \n\nThat...", imgSrc: "/assets/cloned/images/84641089afc8.jpg", label: "This is why this work means so much to me 🫶🏻\n\nMy client tripled her revenue. 😳 \n\nThat’s not even the part I think about most. 🤔 \n\nThe part I think about is our first coaching session. She showed up holding a newborn. Living with roommates. A business that had already proven it worked, but wasn’t yet making enough for her to hire, delegate, or hand off any of the things that were keeping her the bottleneck.\n\nSo she was doing ALL of it. Which meant SHE was the ceiling. 😥 \n\nShe just needed someone to help her see what she couldn’t see on her own, because she was buried in so much overwhelm. 🥲\n\nWe sat down and found ONE lever. ☝🏻 \n \nThen, she went from a $5K launch to an $18K launch.\n\nAnd more importantly, she felt she got her life back. 🥰\n\nNow, that’s a goldmine!! 😌\n\nThat’s my WHY🙂\n\nI’m teaching how to find that bottleneck holding you back from your very own goldmine. \n\n✨It’s for multi six-figure female founders with an online offer, women who’ve already proven the thing works and are now the bottleneck in their own business.✨\n\nIf that’s you, comment TRAINING and I’ll send you the details. 🤍" },
-    { href: "https://www.instagram.com/reel/Db-y55JBmAt/", alt: "video shared on Thu Aug 13 2026 | A little BTS of a normal day. And yes, Scout still calls the shots. 🐾", imgSrc: "/assets/cloned/images/cc31e16a9c2d.jpg", label: "A little BTS of a normal day. And yes, Scout still calls the shots. 🐾" },
-    { href: "https://www.instagram.com/reel/Db_zk-JhOr4/", alt: "video shared on Thu Aug 13 2026 | Every business you’re watching win right now is paying to be found.\n\nI’ve paid for ads e...", imgSrc: "/assets/cloned/images/551b001eb422.jpg", label: "Every business you’re watching win right now is paying to be found.\n\nI’ve paid for ads every single year of my 17 years in business. And I’ve watched so many women wear “I’ve never paid for ads” like it’s some kind of badge of honor, meanwhile the money’s just sitting there on the table.\n\nAshley Brock has managed over $200 million in ad spend, and she’s so dialed in that she’s had the same ad running for a full year now.\n\nIn this episode, we get into how to write a specific ad even if you’re not a copywriter, the two places she lets AI do the heavy lifting, which Advantage settings you can actually still turn off, and the one column that tells you whether an ad you’re about to kill is actually one step from converting.\n\n👇Comment POD72 and I’ll send you the episode." },
-    { href: "https://www.instagram.com/p/Db9uT34lo07/", alt: "carousel album shared on Wed Aug 12 2026 | I’ve generated over $130M in revenue in my business.\n\nAnd I’ve coached a handfu...", imgSrc: "/assets/cloned/images/f37f81818d2f.jpg", label: "I’ve generated over $130M in revenue in my business.\n\nAnd I’ve coached a handful of women who fell for the same story: that the reason they’re not further along is a confidence problem. It’s not.\n\nWomen owned businesses generate 78 cents in revenue for every dollar invested. Men’s businesses generate 31 cents. These women aren’t underperforming. \n\nMost female founders never learn how to find what’s capping their revenue to reach their full potential, so they just work harder around it instead of fixing it.\n\nIf you’re a multi six-figure founder and you know you’re capable of more, but you can’t quite name what’s actually in your way... that’s a bottleneck problem.\n\n👇Comment TRAINING and I’ll help you find yours.\n\nMy friend, you’ve earned the chance to see this clearly." },
-    { href: "https://www.instagram.com/p/Db9NpyIlmo9/", alt: "carousel album shared on Wed Aug 12 2026 | @ads.with.ashley has a saying that’s stuck with me: “Specificity creates the ne...", imgSrc: "/assets/cloned/images/32a17106c577.jpg", label: "@ads.with.ashley has a saying that’s stuck with me: “Specificity creates the necessity.”\n\nA testimonial that says “saved you six figures on taxes” is forgettable. One that says “saved us $763,422” is impossible to ignore. That’s the whole shift we discuss in this episode. \n\n👇🏻Comment POD72 and I’ll send it your way 🎧" },
-    { href: "https://www.instagram.com/p/Db6o9njm4n2/", alt: "carousel album shared on Tue Aug 11 2026 | Becoming a millionaire isn’t about working harder. \n\nIt’s about 3 things aligni...", imgSrc: "/assets/cloned/images/9b82c41f4179.jpg", label: "Becoming a millionaire isn’t about working harder. \n\nIt’s about 3 things aligning.\n\nMost multi six-figure founders are doing everything right and still feel stuck, because they’re missing one of these:\n\n→ Knowing exactly who you’re talking to\n→ Letting your offer do the heavy lifting\n→ Building marketing that runs whether you show up or not\n\nSwipe to see which one might be your bottleneck.\n\nIf you’re a multi six-figure female founder ready to find out which shift is missing for you, comment TRAINING and I’ll send you the link. 👆" },
-    { href: "https://www.instagram.com/p/Db10clZsh2Z/", alt: "image shared on Tue Aug 11 2026 | If you’re new here, hiiii! ✨\n\nMy weekly newsletter is a great place to get to know what ", imgSrc: "/assets/cloned/images/af24e6d59f48.jpg", label: "If you’re new here, hiiii! ✨\n\nMy weekly newsletter is a great place to get to know what I’m all about 🫶🏻🙂\n\nHere’s a taste of what you can expect:\n\n🧴 Skincare faves (yes, really)\n📈 Behind-the-scenes on bringing our ads in-house\n🎙️ Highlights from the Amy Porterfield Show\n🍿 My favorite Netflix binge every once in a while\n\nWant in? Comment NEWSLETTER below. 👇" },
-    { href: "https://www.instagram.com/reel/Db5bllXh7WH/", alt: "video shared on Tue Aug 11 2026 | Okay, real talk. Your cold audience does not care about you yet. They are scrolling past...", imgSrc: "/assets/cloned/images/bca2ada9dcc3.jpg", label: "Okay, real talk. Your cold audience does not care about you yet. They are scrolling past a hundred other things and deciding, in about a week, whether you’re even worth a second look.\n\nThat is not a lot of time. And most people running ads never give the algorithm long enough to actually learn who’s buying.\n\nI sat down with @ads.with.ashley , who has managed over $200 million in ad spend. In this episode, she walks through how she takes someone from total stranger to ready to buy, why those first few days tell you basically nothing, and the one number in ads manager that’ll tell you if you’re about to kill a campaign that was one step from converting.\n\nIf you’ve ever panicked and shut something down too soon, my friend, this one’s for you.\n\n👇🏻Comment POD72 and I’ll send you the episode." },
-    { href: "https://www.instagram.com/reel/Db4CVbTBE1w/", alt: "video shared on Mon Aug 10 2026 | CEOs by day, mahjong menaces by night 😂\n\nShoutout to @alliebridge for teaching us such ", imgSrc: "/assets/cloned/images/282d251c57b2.jpg", label: "CEOs by day, mahjong menaces by night 😂\n\nShoutout to @alliebridge for teaching us such a fun game!!" },
-    { href: "https://www.instagram.com/p/Db3SVQBG_5_/", alt: "carousel album shared on Mon Aug 10 2026 | You don’t need a bigger list 👀 \n\nMost multi six-figure female founders think t...", imgSrc: "/assets/cloned/images/93759bae65b1.jpg", label: "You don’t need a bigger list 👀 \n\nMost multi six-figure female founders think their next level of revenue is hiding behind a bigger audience.\n\nIt’s not. It’s hiding behind a clear offer and a funnel that works for the list you already have.\n\n👇Comment TRAINING and I’ll send you the link to my free live training, where I’ll show how to fix what’s holding your revenue back." },
-    { href: "https://www.instagram.com/p/Db4TlNCG5bX/", alt: "carousel album shared on Mon Aug 10 2026 | Can we be honest for a second?\n\nYou hit $500K. You built that. With your own ha...", imgSrc: "/assets/cloned/images/217f92d1dbc1.jpg", label: "Can we be honest for a second?\n\nYou hit $500K. You built that. With your own hands, your own late nights, your own gut calls when nobody else could make them for you.\n\nAnd still, some days, it feels like you’re duct taping the plane together while you’re flying it.\n\nProud of what you built. Tired in a way that’s hard to explain to anyone who hasn’t done this.\n\nI remember that season so clearly. It’s why I started The Milly Club, a home for female founders selling digital products, programs, or online coaching, already past $500K, on their way to their first million.\n\nI built it after crossing $130mm myself, because I know what that stretch actually asks of you. \n\nWhat changes everything is the room you’re in. The systems underneath you. People who are exactly where you are.\n\nInside, we sit with your numbers so you’re not guessing anymore. We look at your team so it holds you up instead of needing to be held up. We build the backbone that lets your business take the pressure of growing. And we get specific about what moves revenue, instead of trying a little of everything and hoping something sticks.\n\nYou’re not too far in to need support. You’re exactly far enough to know you shouldn’t have to do this alone.\n\nIf you’re a Million Dollar Woman in the Making, I’d love to have you here.\n\n👇 Comment MILLY to apply." },
-    { href: "https://www.instagram.com/reel/Dbx0KieBAwR/", alt: "video shared on Sun Aug 09 2026 | The gap between you and half a million? One bottleneck.\n\nYou probably already have what ", imgSrc: "/assets/cloned/images/f58f8f026b0b.jpg", label: "The gap between you and half a million? One bottleneck.\n\nYou probably already have what you need sitting in your DMs, your email list, your warm audience who’s been watching, waiting, ready.\n\nThe real question is what you’re doing with what’s already working.\n\nMost female founders keep chasing new instead of nurturing what’s already there. But your warm audience is your fastest path to your premium offer, if you know how to bring them in.\n\nIf you’re a multi six-figure female founder ready to fix what’s holding you back…\n\n👇🏻comment TRAINING and I’ll send you the details." },
-    { href: "https://www.instagram.com/reel/Dbx1x4LhH-m/", alt: "video shared on Sat Aug 08 2026 | Real transformation has a price tag. Free content should open the door. It shouldn’t do ", imgSrc: "/assets/cloned/images/851e52002240.jpg", label: "Real transformation has a price tag. Free content should open the door. It shouldn’t do the job the offer is supposed to do.\n\nGive away the “here’s what’s broken.”\n\nKeep the transformation, the systems, the how, behind the door where it belongs.\n\nI’m running a free live training for multi six-figure female founders who are ready to stop overexplaining their offer for free and start charging for the transformation it actually creates.\n\n👇Comment “TRAINING” and I’ll send you the link." },
-    { href: "https://www.instagram.com/reel/Dbv30zmswOj/", alt: "video shared on Fri Aug 07 2026 | The real boss of the business? Right here 🐕", imgSrc: "/assets/cloned/images/6eaffae0b8d5.jpg", label: "The real boss of the business? Right here 🐕" },
-    { href: "https://www.instagram.com/p/Dbwy7XKloqi/", alt: "carousel album shared on Fri Aug 07 2026 | 👇If you’re a six-figure female founder ready to find what’s actually holding y...", imgSrc: "/assets/cloned/images/f098ecf01d4f.jpg", label: "👇If you’re a six-figure female founder ready to find what’s actually holding you back, comment TRAINING below to save your spot." },
-    { href: "https://www.instagram.com/reel/DbtuQhlszYP/", alt: "video shared on Thu Aug 06 2026 | And that’s a wrap on our Made to Scale Mastermind 🤍 \n\nTwo days in a room full of 7-figu...", imgSrc: "/assets/cloned/images/5c71aa806696.jpg", label: "And that’s a wrap on our Made to Scale Mastermind 🤍 \n\nTwo days in a room full of 7-figure female founders and my heart is full 🙂\n\nI am so proud of them 🥲" },
-    { href: "https://www.instagram.com/reel/Dbqwo7YhoCM/", alt: "video shared on Thu Aug 06 2026 | This entire store is basically my cart 🛋️", imgSrc: "/assets/cloned/images/30da26e5194a.jpg", label: "This entire store is basically my cart 🛋️" },
-    { href: "https://www.instagram.com/reel/Dbs2uowMTSy/", alt: "video shared on Thu Aug 06 2026 | Made to Scale, my heart is full 🫶🏻\n\nI just can’t wait to see these women grow and hear...", imgSrc: "/assets/cloned/images/af100b733f65.jpg", label: "Made to Scale, my heart is full 🫶🏻\n\nI just can’t wait to see these women grow and hear about their Q4 wins 🙂" },
-    { href: "https://www.instagram.com/reel/Dbsjn_QhVHA/", alt: "video shared on Thu Aug 06 2026 | The second you charge for something, your audience shows up differently. \n\nThey open the...", imgSrc: "/assets/cloned/images/6f0d39244b43.jpg", label: "The second you charge for something, your audience shows up differently. \n\nThey open the email. They do the homework. They actually implement.\n\nCharging isn’t you being difficult. It’s you knowing what you built is worth something, and giving your audience a reason to treat it that way.\n\nIf you’ve ever felt weird about raising your price, this one’s for you.\n\nGo to amyporterfield.com/freetraining or comment TRAINING below." },
-    { href: "https://www.instagram.com/reel/DbrzoQ3BAx4/", alt: "video shared on Thu Aug 06 2026 | You’re allowed to want more money.\n\nYou’re allowed to want more time.\n\nYou’re allowed to...", imgSrc: "/assets/cloned/images/90663a9a84b7.jpg", label: "You’re allowed to want more money.\n\nYou’re allowed to want more time.\n\nYou’re allowed to want both, at the same time, without feeling guilty about it.\n\nSo many multi six-figure female founders think they have to choose. Grow the business or get their life back. Make more money or work less.\n\nYou don’t have to choose, my friend.\n\nMost of the time there’s one bottleneck standing between you and both. Find it, fix it, and everything else starts to move.\n\nThat’s what we’re covering in the free training. \n\n👇🏻Comment TRAINING and I’ll send it your way." },
-    { href: "https://www.instagram.com/reel/DbqqRWMCcXF/", alt: "video shared on Wed Aug 05 2026 | This is my favoriteeee thing that happens in a mastermind 🥲 \n\nTwo women walk in as stra...", imgSrc: "/assets/cloned/images/c69ac3ada387.jpg", label: "This is my favoriteeee thing that happens in a mastermind 🥲 \n\nTwo women walk in as strangers and walk out with someone who gets it.\n\nSomeone who understands the launch stress, the content creation burn out, the 2am “is this working?” thoughts.\n\nYou weren’t meant to build alone 🫶🏻" },
-    { href: "https://www.instagram.com/p/Dbraa3YFgWe/", alt: "carousel album shared on Wed Aug 05 2026 | You justttt need one ☝🏻 \n\nOne thing that gets 80% of your focus between now an...", imgSrc: "/assets/cloned/images/c0825c3f8704.jpg", label: "You justttt need one ☝🏻 \n\nOne thing that gets 80% of your focus between now and December.\n\nEveryone I coach goes through this same exercise. \n\nSet the timeframe.\n\nPick the ONE lever that moves everything else. \n\nThen protect it like it’s the only thing that matters.\n\nBecause right now, it is.\n\n👇Comment POD71 to tune into this week’s episode!" },
-    { href: "https://www.instagram.com/reel/DbocXytsKah/", alt: "video shared on Tue Aug 04 2026 | I brought my ads in-house last month, so now I’m in the numbers every week instead of wa...", imgSrc: "/assets/cloned/images/aca132f96e40.jpg", label: "I brought my ads in-house last month, so now I’m in the numbers every week instead of waiting for a report. \n\nWhen you run an ad set across FB and Instagram together, Meta gives you one “blended” cost per result. \n\nBut your customer doesn’t scroll the same way in both places, so that number could be hiding a placement that isn’t earning its spot.\n\n👇🏻Comment NEWSLETTER and I’ll show you how I am testing this." },
-    { href: "https://www.instagram.com/reel/DboNlROB50g/", alt: "video shared on Tue Aug 04 2026 | Honestly nothing makes me happier than hearing a woman say she finally has more time AND...", imgSrc: "/assets/cloned/images/111ce2e56be6.jpg", label: "Honestly nothing makes me happier than hearing a woman say she finally has more time AND more money because she found the bottleneck that was costing her both 🤗\n\nIf that’s you, if you’re a multi six-figure female founder and you want me teach you how...\n\n👇Comment TRAINING and I’ll send it your way" },
-    { href: "https://www.instagram.com/reel/Dbnuo2jht-z/", alt: "video shared on Tue Aug 04 2026 | Yes, it’s August.\n\nAnd yes, I’m talking about Black Friday 😂\n\nWhy I’m bringing it up no...", imgSrc: "/assets/cloned/images/7cc9c9767dde.jpg", label: "Yes, it’s August.\n\nAnd yes, I’m talking about Black Friday 😂\n\nWhy I’m bringing it up now?\n\n 70% of Black Friday searches happen in October. \n\nIf you wait to plan, you’re already behind.\n\nStart now, and you free up space in Q4 to focus on walking into the next fiscal year prepared instead of scrambling.\n\n👇Comment POD71 to tune in" }
+    { href: "https://www.instagram.com/reel/DccFbxdM_g4/", alt: "video shared on Mon Aug 24 2026 | 👇Comment TRAINING for the one framework that took me from half a million to my first mi...", imgSrc: "/assets/cloned/images/c816fe94503b.jpg", label: "👇Comment TRAINING for the one framework that took me from half a million to my first million, and now, $139M in revenue." },
+    { href: "https://www.instagram.com/reel/DcbR9GshjWm/", alt: "video shared on Mon Aug 24 2026 | Me and my close personal friend @wisprflow 🤫 \n\nIf you’re not holding your laptop like t...", imgSrc: "/assets/cloned/images/548db343167b.jpg", label: "Me and my close personal friend @wisprflow 🤫 \n\nIf you’re not holding your laptop like this when you use it, you’re lying 😂\n\n(it’s a voice-to-text tool, you talk, it types.) \n\nThanks to @callanfaulkner i basically never type anymore 💬 👏" },
+    { href: "https://www.instagram.com/reel/DcazFjbBcpW/", alt: "video shared on Mon Aug 24 2026 | My client didn’t come in needing a million new ideas.\n\nShe needed to know what would tak...", imgSrc: "/assets/cloned/images/0c784399e9b0.jpg", label: "My client didn’t come in needing a million new ideas.\n\nShe needed to know what would take her to MILLIONS, from a coach who has built a $139M company and could tell her what was holding her back.\n\nAn honest conversation and some coaching along the way. Then she went and did it 🥲 \n\nThat is why I do this. I want to see more women get rich.\n\n👇🏻Comment TRAINING for my exclusive training for multi six figure female founders growing toward their first million." },
+    { href: "https://www.instagram.com/reel/DcZ_jAJuW1g/", alt: "video shared on Sun Aug 23 2026 | Hot take: the most powerful thing a woman can do is make millions. And it’s fun.\n\nNot be...", imgSrc: "/assets/cloned/images/5e51e53c34a5.jpg", label: "Hot take: the most powerful thing a woman can do is make millions. And it’s fun.\n\nNot because money fixes everything. Because it’s leverage.\n\nI believed I’d hit a million before I did. Then 50 million. Now I am at 139 million. \n\nThe belief came first every time.\n\nBut belief alone doesn’t move you. \n\nThere’s a bottleneck between where you are and where you’re going, and naming it is the unlock.\n\n👇🏻Comment TRAINING and I’ll walk you through how to find yours." },
+    { href: "https://www.instagram.com/p/DcXGOgbFviM/", alt: "carousel album shared on Sat Aug 22 2026 | I know what it’s like to hit half a million as a female founder. But I wouldn’t...", imgSrc: "/assets/cloned/images/18d1a51da255.jpg", label: "I know what it’s like to hit half a million as a female founder. But I wouldn’t have grown my business to $139M in 17 years if I wasn’t in rooms with women who just got it. Women who had gone before me, and women who grew alongside me.\n\nThat’s why I created The Milly Club, for female founders growing toward their first million and beyond.\n\nApplication-only, for women selling digital products, programs, or coaching at $500k+.\n\n👇 Comment MILLY to apply" },
+    { href: "https://www.instagram.com/p/DcOkV9YljOb/", alt: "carousel album shared on Fri Aug 21 2026 | Just a girl who built a life she actually loves.\n\nLake days with Hobie, Scout a...", imgSrc: "/assets/cloned/images/e31bbda3d320.jpg", label: "Just a girl who built a life she actually loves.\n\nLake days with Hobie, Scout as chief vibes officer, oatmilk latte in hand (extra hot, don’t @ me), fresh blowout because self care matters.\n\nCurrently building our dream home in Leiper’s Fork, one design decision at a time.\n\nJust a girl. Living her (very specific) dream." },
+    { href: "https://www.instagram.com/reel/DcSYIpZMZVl/", alt: "video shared on Fri Aug 21 2026 | Hot take: the most powerful thing a woman can do is make millions. \n\nAND it’s fun ✨\n\nNot...", imgSrc: "/assets/cloned/images/785d7e02d955.jpg", label: "Hot take: the most powerful thing a woman can do is make millions. \n\nAND it’s fun ✨\n\nNot because money fixes everything. Because it’s leverage.\n\nI believed I’d hit a million before I did. Then 50 million. Now we’re at $139 million. The belief came first every time. 🙂\n\nBut belief alone doesn’t move you. There’s a bottleneck between where you are and where you’re going, and naming it is the game changer.\n\n👇🏻Comment TRAINING and I’ll walk you through how to find yours." },
+    { href: "https://www.instagram.com/reel/DcSAsv5sH-J/", alt: "video shared on Fri Aug 21 2026 | You may think that the next stage of growth means doing more. \n\nMore content, more offer...", imgSrc: "/assets/cloned/images/e4ad95277e2c.jpg", label: "You may think that the next stage of growth means doing more. \n\nMore content, more offers, more hours. 😩\n\nIt’s 3 specific shifts, and they have NOTHING to do with working harder.\n\nI’ve coached female founders through this exact stage, and the ones who break through aren’t doing the most. \n\nThey’re the ones who fix the right bottleneck first.\n\n👇🏻Comment TRAINING and I’ll teach you how I identified the bottleneck that took my business from half a million to a million, and even from $1 million to $139 million today." },
+    { href: "https://www.instagram.com/reel/DcQyweDhoLD/", alt: "video shared on Thu Aug 20 2026 | The fastest win is still a real one 💯\n\nYou don’t need to water down your program to mak...", imgSrc: "/assets/cloned/images/168727eae30d.jpg", label: "The fastest win is still a real one 💯\n\nYou don’t need to water down your program to make it convert 🙅‍♀️\n\nYou can be the deepest, most strategic voice in your space and still lose the sale 😩\n\nChoose the one specific result they can expect in the first week. That’s what gets them to say yes. The depth comes after.\n\n👇Sound familiar? Comment “RESULTS” and I’ll send you this week’s coaching video." },
+    { href: "https://www.instagram.com/reel/DcRK1DoB9St/", alt: "video shared on Thu Aug 20 2026 | If you’re a multi six-figure female founder that’s ready to start growing toward seven \ud83d", imgSrc: "/assets/cloned/images/91cf4289fed6.jpg", label: "If you’re a multi six-figure female founder that’s ready to start growing toward seven 💰✨\n\n👇 Comment TRAINING" },
+    { href: "https://www.instagram.com/p/DcPevHcm_nW/", alt: "carousel album shared on Thu Aug 20 2026 | I spent 17 years building this business to $139M, and the decisions never got e...", imgSrc: "/assets/cloned/images/7a9e1cc4ea2c.jpg", label: "I spent 17 years building this business to $139M, and the decisions never got easier.\n\nThey just got bigger.\n\nSo I built the room I wanted at that stage: a small group of female founders at $500k+, making their biggest calls with women a few steps ahead and women right beside them.\n\nThat’s The Milly Club. Curated with intention.\n\n👇 Comment MILLY to apply." },
+    { href: "https://www.instagram.com/p/Db_s6btsibq/", alt: "image shared on Wed Aug 19 2026 | Studies on mindset and financial success consistently show that belief in your own poten...", imgSrc: "/assets/cloned/images/2633c0db66d8.jpg", label: "Studies on mindset and financial success consistently show that belief in your own potential is one of the strongest predictors of outcome.\n\nResearch on self-efficacy, coined by psychologist Albert Bandura, found that people who believe they can achieve a goal are significantly more likely to take the actions that get them there.\n\nIn other words, the belief comes first. The results follow." },
+    { href: "https://www.instagram.com/p/DcOCDB9m8_A/", alt: "carousel album shared on Wed Aug 19 2026 | Tell me your answer truthfully: could you step away from your business for two ", imgSrc: "/assets/cloned/images/5c954a4611d1.jpg", label: "Tell me your answer truthfully: could you step away from your business for two weeks, or would everything fall apart without you?\n\nIf you hesitated, pay attention to that. It means there’s a hire you haven’t made yet, the one that would hand you your time back and let the business run without you glued to it.\n\nIn this episode, I’m breaking down who that hire is and how to know when you’re ready to bring them on.\n\n👇Comment POD73 and I’ll send you the link, my friend" },
+    { href: "https://www.instagram.com/p/DcMQsqpG9nx/", alt: "carousel album shared on Tue Aug 18 2026 | She had 70 people on her email list.\n\nNot 7,000. Not 700. Seventy.\n\nAnd she tho...", imgSrc: "/assets/cloned/images/127d7262c4ca.jpg", label: "She had 70 people on her email list.\n\nNot 7,000. Not 700. Seventy.\n\nAnd she thought that was the problem. It wasn’t.\n\nThe offer sitting on top of that list was. Once we fixed that, she sold 10 spots and made $7,500 on her next launch. Then we moved it to evergreen, and now she consistently hits $10K months.\n\nSame 70 people. Different offer. Different result.\n\n👇🏻If you’re a multi six-figure female founder blaming your list size, comment TRAINING and I’ll send you the link to my live training.\n\nMy friend, it’s probably not the list." },
+    { href: "https://www.instagram.com/reel/DcL_hp6BRp8/", alt: "video shared on Tue Aug 18 2026 | I built a $139M business and I still don’t feel ready some days. I show up anyway.\n\nYou ", imgSrc: "/assets/cloned/images/fc66f40c1879.jpg", label: "I built a $139M business and I still don’t feel ready some days. I show up anyway.\n\nYou have to do it scared, sore, tired, and unsure. \n\nThen do it again the next day." },
+    { href: "https://www.instagram.com/reel/DcMt69Dul3e/", alt: "video shared on Tue Aug 18 2026 | You’re the ceiling on your own business. And deep down, you already know it.\n\nYou feel i...", imgSrc: "/assets/cloned/images/c5584997bb60.jpg", label: "You’re the ceiling on your own business. And deep down, you already know it.\n\nYou feel it every week, in the tasks you’re still doing that someone else could be doing.\n\nHiring feels impossible because the work is one giant pile living in your head, and you can’t hand off a pile.\n\nI used to edit every one of my own training videos. Hours I should’ve spent on strategy, on sales, on the parts of my business only I could do. I just couldn’t let it go.\n\nYou start by getting honest about what you’d hand off first.\n\n👇Comment POD73 and I’ll send this episode your way.\n\nMy friend, get some of that pile off your plate." },
+    { href: "https://www.instagram.com/reel/DcKGXESMBcv/", alt: "video shared on Mon Aug 17 2026 | I made a free training exclusively for multi six-figure female founders who are ready to...", imgSrc: "/assets/cloned/images/d0f53db23f32.jpg", label: "I made a free training exclusively for multi six-figure female founders who are ready to grow toward their first million ✨\n\n👇🏻Comment TRAINING below if that’s you." },
+    { href: "https://www.instagram.com/reel/DcJj3JBsZ51/", alt: "video shared on Mon Aug 17 2026 | Monday loading... please wait 🪫🔋", imgSrc: "/assets/cloned/images/beb798216fe7.jpg", label: "Monday loading... please wait 🪫🔋" },
+    { href: "https://www.instagram.com/reel/DcJT19zhbm7/", alt: "video shared on Mon Aug 17 2026 | I made a free training exclusively for multi six-figure female founders who are ready to...", imgSrc: "/assets/cloned/images/00784851fa66.jpg", label: "I made a free training exclusively for multi six-figure female founders who are ready to grow toward their first million ✨\n\n👇🏻Comment TRAINING below if that’s you." },
+    { href: "https://www.instagram.com/p/DcIv30_m9Z-/", alt: "carousel album shared on Sun Aug 16 2026 | Running a half-million-dollar+ business means the decisions never stop. 🫠\n\nRet...", imgSrc: "/assets/cloned/images/865a5d81e27e.jpg", label: "Running a half-million-dollar+ business means the decisions never stop. 🫠\n\nRetire the offer? Put it on Evergreen? Launch the new channel?\n\nI built The Milly Club, exclusively for female founders generating $500k+ in revenue, so you don’t have to make those calls alone.\n\nInside this small-group Mastermind, you get my guidance (and my team’s) from building a $139M business, plus a room full of high-earning women who’ve been where you are.\n\n👇Comment MILLY to apply" },
+    { href: "https://www.instagram.com/reel/DcEhJ28M6C6/", alt: "video shared on Sat Aug 15 2026 | Hi, it’s me 😂", imgSrc: "/assets/cloned/images/5807f70a6fc7.jpg", label: "Hi, it’s me 😂" },
+    { href: "https://www.instagram.com/reel/DcDxBWUsJcB/", alt: "video shared on Sat Aug 15 2026 | $139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’r...", imgSrc: "/assets/cloned/images/6faf30e42fed.jpg", label: "$139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’re new here, I’m Amy. 👋 \n\nRight now I’m building my dream house outside Nashville, living in a lake house until the build is done, with my husband Hobie and our dog Scout. 🐶 ✨\n\n17 years in business. $139M built along the way. \n\nAnd after all of it, I know where I want to spend this next season: with female founders working toward becoming millionaires. \n\nIt takes a specific kind of coach to help you identify the bottleneck that is holding your revenue back. Not someone theorizing from the outside. A woman who has stood exactly where you’re standing and knows the road to the next level.\n\nI’m hosting a training on it. Exclusively for multi six-figure female founders. If that’s not you yet, no hard feelings. This specific one just isn’t built for you.\n\nIf it is you: comment TRAINING below. 🤍" },
+    { href: "https://www.instagram.com/reel/DcFBL6XOiH4/", alt: "video shared on Sat Aug 15 2026 | $139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’r...", imgSrc: "/assets/cloned/images/8659bacb9657.jpg", label: "$139M in revenue taught me this: the hardest jump in business is $500K to $1M.\n\nIf you’re new here, I’m Amy. 👋 \n\nRight now I’m building my dream house outside Nashville, living in a lake house until the build is done, with my husband Hobie and our dog Scout. 🐶 ✨\n\n17 years in business. $139M built along the way. \n\nAnd after all of it, I know where I want to spend this next season: with female founders working toward becoming millionaires. \n\nIt takes a specific kind of coach to help you identify the bottleneck that is holding your revenue back. Not someone theorizing from the outside. A woman who has stood exactly where you’re standing and knows the road to the next level.\n\nI’m hosting a training on it. Exclusively for multi six-figure female founders. If that’s not you yet, no hard feelings. This specific one just isn’t built for you.\n\nIf it is you: comment TRAINING below. 🤍" },
+    { href: "https://www.instagram.com/p/DcBnPqpG6bO/", alt: "carousel album shared on Fri Aug 14 2026 | I still think about this client’s numbers. Genuinely, they live in my head 🥹 \n", imgSrc: "/assets/cloned/images/979fec8e18eb.jpg", label: "I still think about this client’s numbers. Genuinely, they live in my head 🥹 \n\nFirst course launch: 5 sales.\n\nNext launch. Same offer. Same audience.\n\n697 sales.\n\nOne lever had been holding the other two back, finally fixed.\n\nThis is the story I watch play out with multi six-figure female founders over and over.\n\nI’m breaking down all three, live and free.\n\n👇🏻Comment TRAINING if you’re a multi six-figure female founder who wants to identify which lever isn’t working with the other two." },
+    { href: "https://www.instagram.com/reel/DcBNaOghLZH/", alt: "video shared on Fri Aug 14 2026 | You guys, I have to brag on @nancy_levin for a second. 🥹\n\nShe walked into The Milly Clu...", imgSrc: "/assets/cloned/images/d7cbbc4f4b10.jpg", label: "You guys, I have to brag on @nancy_levin for a second. 🥹\n\nShe walked into The Milly Club offering life and leadership coaching for high achievers, people pleasers, and perfectionists, plus coach training and certification for individuals.\n\nNow in her 3rd cohort, she has gone all in on that certification piece: partnering with founders who have certification programs to ensure their students are not only certified, but confidently client-ready.\n\nHere’s what gets me. We didn’t hand her a new idea. We just got clear on how to position her coach-certification offer, and that one shift showed her where the real bottleneck was hiding. The opportunity was in her business the whole time, she just couldn’t see it yet.\n\nThis is why I love this room so much.\n\nThe Milly Club is for female founders already generating $500K+ who are building toward $1M, surrounded by other women in that same growth season, cheering each other on and calling out what’s possible for each other.\n\nNancy, I am so proud of you, my friend. 🤍\n\n👇If this sounds like the room for you, comment “MILLY” and I’ll send you the details." },
+    { href: "https://www.instagram.com/reel/Db_wPCcsmEy/", alt: "video shared on Thu Aug 13 2026 | Showed up for the mission 🫡 \n\nGot distracted by dogs 🐶 \n\nEnded the night around a camp...", imgSrc: "/assets/cloned/images/3d4dfc2c6170.jpg", label: "Showed up for the mission 🫡 \n\nGot distracted by dogs 🐶 \n\nEnded the night around a campfire with the people I was supposed to be securing 🎶 🏕️ 😗 \n\nHobie is NOT wrong 😂" },
+    { href: "https://www.instagram.com/reel/Db_XA9wBI2E/", alt: "video shared on Thu Aug 13 2026 | This is why this work means so much to me 🫶🏻\n\nMy client tripled her revenue. 😳 \n\nThat...", imgSrc: "/assets/cloned/images/7136fe8fa90e.jpg", label: "This is why this work means so much to me 🫶🏻\n\nMy client tripled her revenue. 😳 \n\nThat’s not even the part I think about most. 🤔 \n\nThe part I think about is our first coaching session. She showed up holding a newborn. Living with roommates. A business that had already proven it worked, but wasn’t yet making enough for her to hire, delegate, or hand off any of the things that were keeping her the bottleneck.\n\nSo she was doing ALL of it. Which meant SHE was the ceiling. 😥 \n\nShe just needed someone to help her see what she couldn’t see on her own, because she was buried in so much overwhelm. 🥲\n\nWe sat down and found ONE lever. ☝🏻 \n \nThen, she went from a $5K launch to an $18K launch.\n\nAnd more importantly, she felt she got her life back. 🥰\n\nNow, that’s a goldmine!! 😌\n\nThat’s my WHY🙂\n\nI’m teaching how to find that bottleneck holding you back from your very own goldmine. \n\n✨It’s for multi six-figure female founders with an online offer, women who’ve already proven the thing works and are now the bottleneck in their own business.✨\n\nIf that’s you, comment TRAINING and I’ll send you the details. 🤍" },
+    { href: "https://www.instagram.com/reel/Db-y55JBmAt/", alt: "video shared on Thu Aug 13 2026 | A little BTS of a normal day. And yes, Scout still calls the shots. 🐾", imgSrc: "/assets/cloned/images/308761d26731.jpg", label: "A little BTS of a normal day. And yes, Scout still calls the shots. 🐾" },
+    { href: "https://www.instagram.com/reel/Db_zk-JhOr4/", alt: "video shared on Thu Aug 13 2026 | Every business you’re watching win right now is paying to be found.\n\nI’ve paid for ads e...", imgSrc: "/assets/cloned/images/8ff3fc544b1b.jpg", label: "Every business you’re watching win right now is paying to be found.\n\nI’ve paid for ads every single year of my 17 years in business. And I’ve watched so many women wear “I’ve never paid for ads” like it’s some kind of badge of honor, meanwhile the money’s just sitting there on the table.\n\nAshley Brock has managed over $200 million in ad spend, and she’s so dialed in that she’s had the same ad running for a full year now.\n\nIn this episode, we get into how to write a specific ad even if you’re not a copywriter, the two places she lets AI do the heavy lifting, which Advantage settings you can actually still turn off, and the one column that tells you whether an ad you’re about to kill is actually one step from converting.\n\n👇Comment POD72 and I’ll send you the episode." },
+    { href: "https://www.instagram.com/p/Db9uT34lo07/", alt: "carousel album shared on Wed Aug 12 2026 | I’ve generated over $130M in revenue in my business.\n\nAnd I’ve coached a handfu...", imgSrc: "/assets/cloned/images/fb43bc2ff911.jpg", label: "I’ve generated over $130M in revenue in my business.\n\nAnd I’ve coached a handful of women who fell for the same story: that the reason they’re not further along is a confidence problem. It’s not.\n\nWomen owned businesses generate 78 cents in revenue for every dollar invested. Men’s businesses generate 31 cents. These women aren’t underperforming. \n\nMost female founders never learn how to find what’s capping their revenue to reach their full potential, so they just work harder around it instead of fixing it.\n\nIf you’re a multi six-figure founder and you know you’re capable of more, but you can’t quite name what’s actually in your way... that’s a bottleneck problem.\n\n👇Comment TRAINING and I’ll help you find yours.\n\nMy friend, you’ve earned the chance to see this clearly." },
+    { href: "https://www.instagram.com/p/Db9NpyIlmo9/", alt: "carousel album shared on Wed Aug 12 2026 | @ads.with.ashley has a saying that’s stuck with me: “Specificity creates the ne...", imgSrc: "/assets/cloned/images/cdc262142e91.jpg", label: "@ads.with.ashley has a saying that’s stuck with me: “Specificity creates the necessity.”\n\nA testimonial that says “saved you six figures on taxes” is forgettable. One that says “saved us $763,422” is impossible to ignore. That’s the whole shift we discuss in this episode. \n\n👇🏻Comment POD72 and I’ll send it your way 🎧" },
+    { href: "https://www.instagram.com/p/Db6o9njm4n2/", alt: "carousel album shared on Tue Aug 11 2026 | Becoming a millionaire isn’t about working harder. \n\nIt’s about 3 things aligni...", imgSrc: "/assets/cloned/images/8d57112c747c.jpg", label: "Becoming a millionaire isn’t about working harder. \n\nIt’s about 3 things aligning.\n\nMost multi six-figure founders are doing everything right and still feel stuck, because they’re missing one of these:\n\n→ Knowing exactly who you’re talking to\n→ Letting your offer do the heavy lifting\n→ Building marketing that runs whether you show up or not\n\nSwipe to see which one might be your bottleneck.\n\nIf you’re a multi six-figure female founder ready to find out which shift is missing for you, comment TRAINING and I’ll send you the link. 👆" },
+    { href: "https://www.instagram.com/p/Db10clZsh2Z/", alt: "image shared on Tue Aug 11 2026 | If you’re new here, hiiii! ✨\n\nMy weekly newsletter is a great place to get to know what ", imgSrc: "/assets/cloned/images/736cb17d369e.jpg", label: "If you’re new here, hiiii! ✨\n\nMy weekly newsletter is a great place to get to know what I’m all about 🫶🏻🙂\n\nHere’s a taste of what you can expect:\n\n🧴 Skincare faves (yes, really)\n📈 Behind-the-scenes on bringing our ads in-house\n🎙️ Highlights from the Amy Porterfield Show\n🍿 My favorite Netflix binge every once in a while\n\nWant in? Comment NEWSLETTER below. 👇" },
+    { href: "https://www.instagram.com/reel/Db5bllXh7WH/", alt: "video shared on Tue Aug 11 2026 | Okay, real talk. Your cold audience does not care about you yet. They are scrolling past...", imgSrc: "/assets/cloned/images/94cbb8d4a7b2.jpg", label: "Okay, real talk. Your cold audience does not care about you yet. They are scrolling past a hundred other things and deciding, in about a week, whether you’re even worth a second look.\n\nThat is not a lot of time. And most people running ads never give the algorithm long enough to actually learn who’s buying.\n\nI sat down with @ads.with.ashley , who has managed over $200 million in ad spend. In this episode, she walks through how she takes someone from total stranger to ready to buy, why those first few days tell you basically nothing, and the one number in ads manager that’ll tell you if you’re about to kill a campaign that was one step from converting.\n\nIf you’ve ever panicked and shut something down too soon, my friend, this one’s for you.\n\n👇🏻Comment POD72 and I’ll send you the episode." },
+    { href: "https://www.instagram.com/reel/Db4CVbTBE1w/", alt: "video shared on Mon Aug 10 2026 | CEOs by day, mahjong menaces by night 😂\n\nShoutout to @alliebridge for teaching us such ", imgSrc: "/assets/cloned/images/e0571057cbdb.jpg", label: "CEOs by day, mahjong menaces by night 😂\n\nShoutout to @alliebridge for teaching us such a fun game!!" },
+    { href: "https://www.instagram.com/p/Db3SVQBG_5_/", alt: "carousel album shared on Mon Aug 10 2026 | You don’t need a bigger list 👀 \n\nMost multi six-figure female founders think t...", imgSrc: "/assets/cloned/images/10e68f089083.jpg", label: "You don’t need a bigger list 👀 \n\nMost multi six-figure female founders think their next level of revenue is hiding behind a bigger audience.\n\nIt’s not. It’s hiding behind a clear offer and a funnel that works for the list you already have.\n\n👇Comment TRAINING and I’ll send you the link to my free live training, where I’ll show how to fix what’s holding your revenue back." },
+    { href: "https://www.instagram.com/p/Db4TlNCG5bX/", alt: "carousel album shared on Mon Aug 10 2026 | Can we be honest for a second?\n\nYou hit $500K. You built that. With your own ha...", imgSrc: "/assets/cloned/images/c74085c075e8.jpg", label: "Can we be honest for a second?\n\nYou hit $500K. You built that. With your own hands, your own late nights, your own gut calls when nobody else could make them for you.\n\nAnd still, some days, it feels like you’re duct taping the plane together while you’re flying it.\n\nProud of what you built. Tired in a way that’s hard to explain to anyone who hasn’t done this.\n\nI remember that season so clearly. It’s why I started The Milly Club, a home for female founders selling digital products, programs, or online coaching, already past $500K, on their way to their first million.\n\nI built it after crossing $130mm myself, because I know what that stretch actually asks of you. \n\nWhat changes everything is the room you’re in. The systems underneath you. People who are exactly where you are.\n\nInside, we sit with your numbers so you’re not guessing anymore. We look at your team so it holds you up instead of needing to be held up. We build the backbone that lets your business take the pressure of growing. And we get specific about what moves revenue, instead of trying a little of everything and hoping something sticks.\n\nYou’re not too far in to need support. You’re exactly far enough to know you shouldn’t have to do this alone.\n\nIf you’re a Million Dollar Woman in the Making, I’d love to have you here.\n\n👇 Comment MILLY to apply." },
+    { href: "https://www.instagram.com/reel/Dbx0KieBAwR/", alt: "video shared on Sun Aug 09 2026 | The gap between you and half a million? One bottleneck.\n\nYou probably already have what ", imgSrc: "/assets/cloned/images/757d6b4fb159.jpg", label: "The gap between you and half a million? One bottleneck.\n\nYou probably already have what you need sitting in your DMs, your email list, your warm audience who’s been watching, waiting, ready.\n\nThe real question is what you’re doing with what’s already working.\n\nMost female founders keep chasing new instead of nurturing what’s already there. But your warm audience is your fastest path to your premium offer, if you know how to bring them in.\n\nIf you’re a multi six-figure female founder ready to fix what’s holding you back…\n\n👇🏻comment TRAINING and I’ll send you the details." },
+    { href: "https://www.instagram.com/reel/Dbx1x4LhH-m/", alt: "video shared on Sat Aug 08 2026 | Real transformation has a price tag. Free content should open the door. It shouldn’t do ", imgSrc: "/assets/cloned/images/a01491793a85.jpg", label: "Real transformation has a price tag. Free content should open the door. It shouldn’t do the job the offer is supposed to do.\n\nGive away the “here’s what’s broken.”\n\nKeep the transformation, the systems, the how, behind the door where it belongs.\n\nI’m running a free live training for multi six-figure female founders who are ready to stop overexplaining their offer for free and start charging for the transformation it actually creates.\n\n👇Comment “TRAINING” and I’ll send you the link." },
+    { href: "https://www.instagram.com/reel/Dbv30zmswOj/", alt: "video shared on Fri Aug 07 2026 | The real boss of the business? Right here 🐕", imgSrc: "/assets/cloned/images/f7a268bffe9d.jpg", label: "The real boss of the business? Right here 🐕" },
+    { href: "https://www.instagram.com/p/Dbwy7XKloqi/", alt: "carousel album shared on Fri Aug 07 2026 | 👇If you’re a six-figure female founder ready to find what’s actually holding y...", imgSrc: "/assets/cloned/images/dd7fe6f9f3e4.jpg", label: "👇If you’re a six-figure female founder ready to find what’s actually holding you back, comment TRAINING below to save your spot." },
+    { href: "https://www.instagram.com/reel/DbtuQhlszYP/", alt: "video shared on Thu Aug 06 2026 | And that’s a wrap on our Made to Scale Mastermind 🤍 \n\nTwo days in a room full of 7-figu...", imgSrc: "/assets/cloned/images/6311416c24dc.jpg", label: "And that’s a wrap on our Made to Scale Mastermind 🤍 \n\nTwo days in a room full of 7-figure female founders and my heart is full 🙂\n\nI am so proud of them 🥲" },
+    { href: "https://www.instagram.com/reel/Dbqwo7YhoCM/", alt: "video shared on Thu Aug 06 2026 | This entire store is basically my cart 🛋️", imgSrc: "/assets/cloned/images/f6babe20706a.jpg", label: "This entire store is basically my cart 🛋️" },
+    { href: "https://www.instagram.com/reel/Dbs2uowMTSy/", alt: "video shared on Thu Aug 06 2026 | Made to Scale, my heart is full 🫶🏻\n\nI just can’t wait to see these women grow and hear...", imgSrc: "/assets/cloned/images/ef32f338be81.jpg", label: "Made to Scale, my heart is full 🫶🏻\n\nI just can’t wait to see these women grow and hear about their Q4 wins 🙂" },
+    { href: "https://www.instagram.com/reel/Dbsjn_QhVHA/", alt: "video shared on Thu Aug 06 2026 | The second you charge for something, your audience shows up differently. \n\nThey open the...", imgSrc: "/assets/cloned/images/b56c2da7b40b.jpg", label: "The second you charge for something, your audience shows up differently. \n\nThey open the email. They do the homework. They actually implement.\n\nCharging isn’t you being difficult. It’s you knowing what you built is worth something, and giving your audience a reason to treat it that way.\n\nIf you’ve ever felt weird about raising your price, this one’s for you.\n\nGo to amyporterfield.com/freetraining or comment TRAINING below." },
+    { href: "https://www.instagram.com/reel/DbrzoQ3BAx4/", alt: "video shared on Thu Aug 06 2026 | You’re allowed to want more money.\n\nYou’re allowed to want more time.\n\nYou’re allowed to...", imgSrc: "/assets/cloned/images/f240f100be5b.jpg", label: "You’re allowed to want more money.\n\nYou’re allowed to want more time.\n\nYou’re allowed to want both, at the same time, without feeling guilty about it.\n\nSo many multi six-figure female founders think they have to choose. Grow the business or get their life back. Make more money or work less.\n\nYou don’t have to choose, my friend.\n\nMost of the time there’s one bottleneck standing between you and both. Find it, fix it, and everything else starts to move.\n\nThat’s what we’re covering in the free training. \n\n👇🏻Comment TRAINING and I’ll send it your way." },
+    { href: "https://www.instagram.com/reel/DbqqRWMCcXF/", alt: "video shared on Wed Aug 05 2026 | This is my favoriteeee thing that happens in a mastermind 🥲 \n\nTwo women walk in as stra...", imgSrc: "/assets/cloned/images/8dd98d71fbd8.jpg", label: "This is my favoriteeee thing that happens in a mastermind 🥲 \n\nTwo women walk in as strangers and walk out with someone who gets it.\n\nSomeone who understands the launch stress, the content creation burn out, the 2am “is this working?” thoughts.\n\nYou weren’t meant to build alone 🫶🏻" },
+    { href: "https://www.instagram.com/p/Dbraa3YFgWe/", alt: "carousel album shared on Wed Aug 05 2026 | You justttt need one ☝🏻 \n\nOne thing that gets 80% of your focus between now an...", imgSrc: "/assets/cloned/images/044103f9531a.jpg", label: "You justttt need one ☝🏻 \n\nOne thing that gets 80% of your focus between now and December.\n\nEveryone I coach goes through this same exercise. \n\nSet the timeframe.\n\nPick the ONE lever that moves everything else. \n\nThen protect it like it’s the only thing that matters.\n\nBecause right now, it is.\n\n👇Comment POD71 to tune into this week’s episode!" },
+    { href: "https://www.instagram.com/reel/DbocXytsKah/", alt: "video shared on Tue Aug 04 2026 | I brought my ads in-house last month, so now I’m in the numbers every week instead of wa...", imgSrc: "/assets/cloned/images/b07f28c08f05.jpg", label: "I brought my ads in-house last month, so now I’m in the numbers every week instead of waiting for a report. \n\nWhen you run an ad set across FB and Instagram together, Meta gives you one “blended” cost per result. \n\nBut your customer doesn’t scroll the same way in both places, so that number could be hiding a placement that isn’t earning its spot.\n\n👇🏻Comment NEWSLETTER and I’ll show you how I am testing this." },
+    { href: "https://www.instagram.com/reel/DboNlROB50g/", alt: "video shared on Tue Aug 04 2026 | Honestly nothing makes me happier than hearing a woman say she finally has more time AND...", imgSrc: "/assets/cloned/images/04c4a7dd3e94.jpg", label: "Honestly nothing makes me happier than hearing a woman say she finally has more time AND more money because she found the bottleneck that was costing her both 🤗\n\nIf that’s you, if you’re a multi six-figure female founder and you want me teach you how...\n\n👇Comment TRAINING and I’ll send it your way" }
 ];
 const TextLink2_data = [
-    { href: "/terms-and-conditions", text: "terms and conditions" },
+    { href: "https://www.amyporterfield.com/terms-and-conditions", text: "terms and conditions" },
     { href: "/contact", text: "contact" },
     { href: "/careers", text: "careers" }
 ];
 const ListRow_meta: string[][] = [
     ["style-p-9"],
-    ["style-ul"],
-    ["style-li-2"]
+    ["style-ul-2"],
+    ["n69"]
 ];
 const ListRow_meta2: string[][] = [
     ["style-p-16"],
-    ["style-br-31"],
+    ["style-br-26"],
     ["style-br-19"]
 ];
 const ListRow_meta3: string[][] = [
-    ["style-p-55"],
+    ["n79"],
     ["style-p-17"],
     ["n81"]
 ];
 const ListRow_meta4: string[][] = [
-    ["style-br-50"],
-    ["style-br-38"],
+    ["n90"],
+    ["n91"],
     ["style-br-6"]
 ];
 const ListRow_meta5: string[][] = [
-    ["style-heading-6"],
+    ["style-heading-5"],
     ["style-p-18"],
-    ["style-p-59"],
-    ["style-p-60"],
+    ["n109"],
+    ["style-p-39"],
     ["style-p-19"],
-    ["style-p-40"]
+    ["style-p-31"]
 ];
 const ListRow_meta6: string[][] = [
-    ["style-heading-17"],
+    ["style-heading-12"],
     ["style-p-28"],
     ["style-link-8"],
-    ["style-p-42"],
-    ["style-strong-6"]
+    ["style-p-33"],
+    ["style-strong-4"]
 ];
 const ListRow2_meta: string[][] = [
-    ["style-heading-22", "style-p-2"],
-    ["style-heading-18", "style-p-50"],
-    ["style-p-3", "style-p-31"],
-    ["style-p-4", "style-p-32"],
-    ["style-p-5", "style-heading-9"],
+    ["n133", "style-p-2"],
+    ["style-heading-13", "n136"],
+    ["style-p-3", "style-p-38"],
+    ["style-p-4", "style-p-41"],
+    ["style-p-5", "style-heading-18"],
     ["style-p-6", "style-p-29"],
-    ["style-p-33", "style-p-22"],
-    ["style-p-10", "style-heading-24"],
-    ["style-p-23", "style-heading-20"],
-    ["style-p-34", "style-heading-14"],
-    ["style-p-7", "style-heading-19"],
-    ["style-p-36", "style-heading-2"],
-    ["style-p-47", "style-p-49"]
+    ["n145", "style-p-22"],
+    ["style-p-10", "style-heading-21"],
+    ["style-p-23", "style-heading-15"],
+    ["style-p-42", "style-heading-9"],
+    ["style-p-7", "style-heading-14"],
+    ["style-p-46", "style-heading"],
+    ["style-p-44", "n158"]
 ];
 const ListRow_meta7: string[][] = [
     ["style-br-10"],
-    ["style-icon-8"],
+    ["n195"],
     ["style-div"]
 ];
 const TextLink_meta: string[][] = [
-    ["style-heading-16", "style-div-19"],
-    ["style-div-44", "style-button-3"],
-    ["style-nav-26", "style-hs-web-interactives-top-anchor-4"]
+    ["style-heading-11", "style-div-19"],
+    ["style-div-41", "style-button-2"],
+    ["n266", "style-hs-web-interactives-top-anchor-2"]
 ];
 const Logo_meta: string[][] = [
-    ["style-div-35", "n281", "style-i-2"],
-    ["style-div-79", "style-button-2", "style-footer"],
-    ["style-div-80", "style-div-116", "style-link-36"],
-    ["style-div-81", "n290", "style-div-9"],
-    ["style-div-82", "style-div-10", "style-p-41"]
+    ["style-div-32", "n281", "style-i-2"],
+    ["n283", "style-button", "style-footer"],
+    ["n286", "n287", "style-link-32"],
+    ["n289", "n290", "style-div-9"],
+    ["n292", "style-div-10", "style-p-32"]
 ];
 const Tile_meta: string[][] = [
     ["n299", "style-link-14"],
-    ["style-div-30", "style-icon-3"],
-    ["style-footer-legal-accessibility-2", "style-div-11"]
+    ["style-div-29", "style-icon-3"],
+    ["n303", "style-div-11"]
 ];
 const Logo2_meta: string[][] = [
-    ["style-div-22", "style-div-46"],
-    ["style-button-5", "style-nav-20"],
-    ["style-div-95", "style-div-58"],
-    ["style-hs-web-interactives-top-anchor", "style-hs-web-interactives-floating-container"],
-    ["style-div-104", "style-div-23"],
-    ["n327", "style-hs-web-interactives-floating-container-3"],
-    ["style-div-24", "style-div-48"],
-    ["style-heading-26", "style-link-29"],
-    ["style-nav-16", "n334"],
-    ["style-div-27", "style-div-96"],
-    ["style-div-49", "style-div-113"],
-    ["style-featured-episodes-1-view-1-1", "n340"],
-    ["style-nav-17", "style-div-61"],
-    ["style-nav-24", "n344"],
-    ["style-nav-18", "n346"],
-    ["style-div-103", "style-div-62"],
-    ["n349", "style-div-115"],
-    ["style-div-31", "n352"],
-    ["n353", "style-br-33"],
-    ["style-link-53", "n356"],
-    ["style-link-39", "style-heading-7"],
-    ["n359", "style-div-55"],
-    ["style-icon-2", "style-footer-legal-accessibility"],
-    ["style-div-56", "n364"],
-    ["style-link-30", "style-nav-22"],
-    ["style-br-49", "style-heading-27"],
-    ["n369", "style-div-50"],
-    ["style-div-63", "style-link-52"],
-    ["style-image", "style-link-51"],
+    ["style-div-22", "style-div-45"],
+    ["n319", "style-nav-19"],
+    ["n321", "n322"],
+    ["style-hs-web-interactives-top-anchor", "style-hs-web-interactives-floating-container-2"],
+    ["style-div-48", "style-div-23"],
+    ["style-button-3", "n328"],
+    ["style-div-24", "style-div-49"],
+    ["n331", "style-hs-web-interactives-floating-container-3"],
+    ["style-nav-15", "style-featured-episodes-1-1"],
+    ["style-div-27", "n336"],
+    ["n337", "n338"],
+    ["n339", "n340"],
+    ["style-nav-16", "n342"],
+    ["style-nav-22", "n344"],
+    ["style-nav-17", "style-footer-legal-accessibility"],
+    ["n347", "n348"],
+    ["style-link-38", "n350"],
+    ["style-div-30", "style-div-52"],
+    ["n353", "n354"],
+    ["style-link-39", "n356"],
+    ["n357", "style-heading-6"],
+    ["style-link-37", "n360"],
+    ["style-icon-2", "n362"],
+    ["n363", "n364"],
+    ["style-link-30", "n366"],
+    ["style-br-27", "n368"],
+    ["style-nav-21", "n370"],
+    ["n371", "style-icon-8"],
+    ["n373", "n374"],
     ["n375", "n376"],
-    ["n377", "style-button-4"],
-    ["style-nav-25", "style-hs-web-interactives-top-anchor-3"],
-    ["style-hs-web-interactives-floating-container-4", "style-div-51"],
-    ["style-div-28", "style-div-29"],
+    ["n377", "n378"],
+    ["n379", "style-div-31"],
+    ["n381", "n382"],
+    ["style-hs-web-interactives-floating-container", "style-div-28"],
     ["n385", "n386"],
-    ["style-heading-32", "style-i-7"],
-    ["style-recent-episodes-1", "n390"],
-    ["style-div-84", "style-div-71"],
-    ["style-div-85", "n394"],
-    ["n395", "style-div-97"],
-    ["style-heading-33", "style-div-45"],
+    ["n387", "n388"],
+    ["n389", "n390"],
+    ["n391", "n392"],
+    ["n393", "n394"],
+    ["n395", "n396"],
+    ["n397", "style-div-42"],
     ["n399", "n400"],
-    ["n401", "style-div-39"],
-    ["style-div-86", "n404"],
-    ["n405", "style-image-2"],
+    ["n401", "style-div-36"],
+    ["n403", "n404"],
+    ["n405", "n406"],
     ["n407", "n408"],
-    ["style-heading-34", "style-link-19"],
-    ["style-icon-4", "style-the-latest-1-1"],
+    ["n409", "style-link-20"],
+    ["style-icon-5", "n412"],
     ["n413", "n414"],
-    ["style-the-latest-1-view-1-1", "n416"]
+    ["n415", "n416"]
 ];
 const TextLink2_meta: string[][] = [
-    ["style-link-21", "style-icon-6"],
-    ["n437", "style-div-98"],
+    ["style-link-22", "style-icon-7"],
+    ["n437", "n438"],
     ["n439", "n440"]
 ];
 const TextLink_styles = [
@@ -307,58 +307,58 @@ export default function Page() {
       </span>
       <access-widget-ui class="box-content w-0 h-0 block absolute top-0 left-0 leading-4.5">
         <div className="w-0 block">
-          <button className="w-50 h-0.5 block absolute -z-1 -mt-px py-px px-1.5 overflow-hidden [font-family:Arial] text-[0.8125rem] leading-[0.9375rem] text-center bg-surface-2 cursor-default" data-component="button" aria-pressed="false">
+          <button className="w-50 h-0.5 block absolute -z-1 -mt-px py-px px-1.5 overflow-hidden [font-family:Arial] text-[0.8125rem] leading-[0.9375rem] text-center bg-surface cursor-default" data-component="button" aria-pressed="false">
             Use Website In a Screen-Reader Mode
           </button>
         </div>
       </access-widget-ui>
-      <a className="box-content w-50 h-px block absolute -z-1 -mt-px overflow-hidden cursor-pointer" data-ditto-id="style-si-sp" data-component="link" href="https://accessibe.com/blog/knowledgebase/screen-reader-guide" rel="noopener" target="_blank">
+      <a className="box-content w-50 h-px block absolute -z-1 -mt-px overflow-hidden cursor-pointer" data-component="link" href="https://accessibe.com/blog/knowledgebase/screen-reader-guide" rel="noopener" target="_blank">
         Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window
       </a>
       {" "}
       <div className="box-content block relative min-w-80 overflow-hidden" id="si-sp">
-        <div className="box-content h-20 block fixed inset-x-0 z-5 pointer-events-none max-md:h-[4.6875rem] md:max-lg:h-[3.2rem]" data-ditto-id="style-div-66" id="header">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-div-7">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-link-46">
-              <a className="w-[5.8125rem] h-full block absolute top-0 left-164.5 transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-253.62,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav" data-component="link" href="/online-marketing-tools" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-10" data-component="nav">
+        <div className="box-content h-20 block fixed inset-x-0 z-5 pointer-events-none max-md:h-[4.6875rem] md:max-lg:h-[3.2rem]" id="header">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
+              <a className="w-[5.8125rem] h-full block absolute top-0 left-164.5 transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-253.62,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav" data-component="link" href="https://www.amyporterfield.com/online-marketing-tools/" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-10" data-component="nav">
                   Resources
                 </nav>
               </a>
-              <a className="w-22 h-full block absolute top-0 left-[34.4375rem] transform-[matrix(1,0,0,1,40,0)] origin-[44px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-214.2,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-2" data-component="link" href="/online-business-programs" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-11" data-component="nav">
+              <a className="w-22 h-full block absolute top-0 left-[34.4375rem] transform-[matrix(1,0,0,1,40,0)] origin-[44px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-214.2,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-2" data-component="link" href="https://www.amyporterfield.com/online-business-programs" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-11" data-component="nav">
                   programs
                 </nav>
               </a>
               <a className="w-23 h-full block absolute top-0 left-[27.4375rem] transform-[matrix(1,0,0,1,40,0)] origin-[46px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-174.6,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-3" data-component="link" href="/about" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-3" data-component="nav">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-3" data-component="nav">
                   About amy
-                  <br className="box-content inline" data-ditto-id="style-div-72" />
+                  <br className="box-content inline" data-ditto-id="style-div-7" />
                 </nav>
               </a>
-              <div className="w-[2.1875rem] h-[2.1875rem] hidden absolute top-[2.3125rem] left-[72.5625rem] transform-[none] cursor-pointer max-md:w-[2.3125rem] max-md:h-[2.3125rem] max-md:block max-md:top-3 max-md:left-[16.5625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,48.7266,5.24219)] max-md:origin-[18.5px_18.5px]" data-ditto-id="style-div-74">
+              <div className="w-[2.1875rem] h-[2.1875rem] hidden absolute top-[2.3125rem] left-[72.5625rem] transform-[none] cursor-pointer max-md:w-[2.3125rem] max-md:h-[2.3125rem] max-md:block max-md:top-3 max-md:left-[16.5625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,48.7266,5.24219)] max-md:origin-[18.5px_18.5px]">
                 <div className="box-content block">
-                  <svg className="box-content w-full h-full inline overflow-hidden align-top max-md:w-[2.3125rem] max-md:h-[2.3125rem]" data-ditto-id="style-link-17" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <svg className="box-content w-full h-full inline overflow-hidden align-top max-md:w-[2.3125rem] max-md:h-[2.3125rem]" data-ditto-id="style-link-18" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M96 241h320v32H96zM96 145h320v32H96zM96 337h320v32H96z" />
                   </svg>
                 </div>
               </div>
-              <a className="w-52.5 h-[0.8125rem] block absolute top-8.5 left-12.5 transform-[matrix(1,0,0,1,-40,0)] origin-[105px_6.5px] cursor-pointer max-md:w-56 max-md:top-6 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,5.24219)] max-md:origin-[112px_6.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-55.8,-14.58)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-ditto-id="style-div-6" data-component="link" href="/" target="_self">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/7355ffe2e393.svg\")" }} data-ditto-id="style-link-18" src="/assets/cloned/svg/7355ffe2e393.svg" />
+              <a className="w-52.5 h-[0.8125rem] block absolute top-8.5 left-12.5 transform-[matrix(1,0,0,1,-40,0)] origin-[105px_6.5px] cursor-pointer max-md:w-56 max-md:top-6 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,5.24219)] max-md:origin-[112px_6.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-55.8,-14.58)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-component="link" href="/" target="_self">
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/7355ffe2e393.svg\")" }} data-ditto-id="style-link-19" src="/assets/cloned/svg/7355ffe2e393.svg" />
               </a>
-              <a className="w-[4.4375rem] h-full block absolute top-0 left-[48.1875rem] transform-[matrix(1,0,0,1,40,0)] origin-[35.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-290.34,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-9" data-component="link" href="/marketing-strategy-podcast" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-12" data-component="nav">
+              <a className="w-[4.4375rem] h-full block absolute top-0 left-[48.1875rem] transform-[matrix(1,0,0,1,40,0)] origin-[35.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-290.34,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-9" data-component="link" href="https://www.amyporterfield.com/marketing-strategy-podcast" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-link-12" data-component="nav">
                   Podcast
                 </nav>
               </a>
               <a className="w-13 h-full block absolute top-0 left-[22.9375rem] transform-[matrix(1,0,0,1,40,0)] origin-[26px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-141.48,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-12" data-component="link" href="/" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-2" data-component="nav">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-br-4" data-component="nav">
                   HOME
-                  <br className="box-content inline" data-ditto-id="style-link-41" />
+                  <br className="box-content inline" data-ditto-id="style-link-9" />
                 </nav>
               </a>
-              <a className="w-[6.5625rem] h-full block absolute top-0 left-215.5 transform-[matrix(1,0,0,1,40,0)] origin-[52.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-329.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-14" data-component="link" href="/newsletter" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-div-8" data-component="nav">
+              <a className="w-[6.5625rem] h-full block absolute top-0 left-215.5 transform-[matrix(1,0,0,1,40,0)] origin-[52.5px_40px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-329.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-nav-14" data-component="link" href="https://www.amyporterfield.com/newsletter" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-19.5 tracking-[0.65px] text-center uppercase" data-ditto-id="style-div-8" data-component="nav">
                   NEWSLETTER
                 </nav>
               </a>
@@ -368,85 +368,85 @@ export default function Page() {
         <div className="box-content h-20 block z-5 max-md:h-[4.6875rem] md:max-lg:h-[3.2rem]" data-ditto-id="style-postloopcontainer" />
         <div className="box-content h-63.5 block relative pointer-events-none max-md:h-[15.0875rem] md:max-lg:h-[162.5px]" data-ditto-id="style-hero-1" id="hero">
           <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
-            <div className="box-content h-full block absolute top-0 inset-x-0 opacity-40 max-w-full overflow-hidden bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" data-ditto-id="style-div-57">
+            <div className="box-content h-full block absolute top-0 inset-x-0 opacity-40 max-w-full overflow-hidden bg-cover [background-position:50%_50%] bg-no-repeat pointer-events-none" data-ditto-id="style-div-47">
               <img className="box-content w-320 h-[45.0625rem] block absolute left-0 overflow-clip aspect-[auto_1200/1200] transform-[matrix(1,0,0,1,0,-137.086)] pointer-events-none max-md:w-107 max-md:h-[15.0625rem] max-md:left-[-26.7px] max-md:aspect-[auto_320/320] max-md:transform-[none] md:max-lg:w-[65.8125rem] md:max-lg:h-[37.0625rem] md:max-lg:left-[-142.5px] md:max-lg:transform-[matrix(1,0,0,1,0,-25.5)] 2xl:w-480 2xl:h-270.5 2xl:transform-[matrix(1,0,0,1,0,-247.379)]" data-component="image" alt="" height="1200" src="/assets/cloned/images/44087350418f.png" width="1200" />
             </div>
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-59">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-50">
               <div className="w-[47.8125rem] h-[4.8125rem] block absolute top-14 left-54.5 transform-[none] max-md:w-61.5 max-md:h-[5.4375rem] max-md:top-[2.1875rem] max-md:left-[2.3125rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,13.4922)] max-md:origin-[123px_43.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-34.02)] md:max-lg:origin-[382.5px_38.5px]">
-                <h1 className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:'Ivy_Presto'] text-6xl leading-18 text-center max-md:text-4xl max-md:leading-[2.6875rem]" data-ditto-id="style-div-92" data-component="heading">
+                <h1 className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:'Ivy_Presto'] text-6xl leading-18 text-center max-md:text-4xl max-md:leading-[2.6875rem]" data-component="heading">
                   {"Business Success Coach "}
-                  <br className="box-content inline" data-ditto-id="style-div-60" />
+                  <br className="box-content inline" data-ditto-id="style-div-51" />
                   (Full-Time)
                 </h1>
               </div>
               <div className="w-31 h-30 block absolute left-[4.9375rem] transform-[matrix(-1,0,0,-1,0,0)] origin-[62px_60px] max-md:w-[3.6875rem] max-md:h-14.5 max-md:left-[1.1875rem] max-md:transform-[matrix(-1.17188,0,0,-1.17188,8.33594,4.98438)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(-0.64,0,0,-0.64,-50.76,-21.6)]">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/c1076d3f2ac7.svg\")" }} data-ditto-id="style-div-73" src="/assets/cloned/svg/c1076d3f2ac7.svg" />
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/c1076d3f2ac7.svg\")" }} src="/assets/cloned/svg/c1076d3f2ac7.svg" />
               </div>
-              <div className="w-31 h-30 block absolute top-33.5 left-249.5 transform-[none] max-md:w-[3.6875rem] max-md:h-14.5 max-md:top-37 max-md:left-[15.1875rem] max-md:transform-[matrix(1.17188,0,0,1.17188,46.8359,30.4219)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-381.6,-69.84)] md:max-lg:origin-[62px_60px]" data-ditto-id="style-heading-10">
+              <div className="w-31 h-30 block absolute top-33.5 left-249.5 transform-[none] max-md:w-[3.6875rem] max-md:h-14.5 max-md:top-37 max-md:left-[15.1875rem] max-md:transform-[matrix(1.17188,0,0,1.17188,46.8359,30.4219)] max-md:origin-[29.5px_29px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-381.6,-69.84)] md:max-lg:origin-[62px_60px]">
                 <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/svg/1f121bbfbcad.svg\")" }} src="/assets/cloned/svg/1f121bbfbcad.svg" />
               </div>
             </div>
           </div>
         </div>
-        <div className="box-content h-[43.0625rem] block relative pointer-events-none max-md:h-[830.9px] md:max-lg:h-[27.5625rem]" data-ditto-id="style-div-90" id="position-overview">
+        <div className="box-content h-[43.0625rem] block relative pointer-events-none max-md:h-[830.9px] md:max-lg:h-[27.5625rem]" id="position-overview">
           <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-75">
-              <div className="w-[49.1875rem] h-[21.4375rem] block absolute top-[3.6875rem] left-[12.9375rem] transform-[none] max-md:w-[15.4375rem] max-md:h-269.5 max-md:top-5 max-md:left-5 max-md:transform-[matrix(1.17188,0,0,1.17188,24.6641,96.0781)] max-md:origin-[123.5px_539px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-82.98)] md:max-lg:origin-[393.5px_171.5px]" data-ditto-id="style-div-76">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
+              <div className="w-[49.1875rem] h-[21.4375rem] block absolute top-[3.6875rem] left-[12.9375rem] transform-[none] max-md:w-[15.4375rem] max-md:h-269.5 max-md:top-5 max-md:left-5 max-md:transform-[matrix(1.17188,0,0,1.17188,24.6641,96.0781)] max-md:origin-[123.5px_539px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-82.98)] md:max-lg:origin-[393.5px_171.5px]" data-ditto-id="style-div-54">
                 <div className="w-[28.3125rem] h-12 block absolute max-md:w-[15.4375rem] max-md:h-9">
-                  <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-p-58" data-component="heading">
+                  <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-component="heading">
                     Position Overview:
-                    <br className="box-content inline" data-ditto-id="style-br-22" />
+                    <br className="box-content inline" data-ditto-id="style-br-20" />
                   </h2>
                 </div>
-                <div className="h-[16.9375rem] block absolute top-18 right-0 left-[2.6875rem] max-md:h-[63.9375rem] max-md:top-[3.4375rem] max-md:left-0" data-ditto-id="style-heading-4">
-                  <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-p-25">
+                <div className="h-[16.9375rem] block absolute top-18 right-0 left-[2.6875rem] max-md:h-[63.9375rem] max-md:top-[3.4375rem] max-md:left-0" data-ditto-id="style-heading-3">
+                  <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-p-25">
                     As a Business Success Coach, you’ll be the front line of transformation inside The Calibrae Collective (our newest coaching experience designed for women founders ready to grow profitable and sustainable businesses with modern online marketing strategies), guiding up to 50 clients through their next phase of business growth.
-                    <br className="box-content inline" data-ditto-id="style-br-24" />
-                    <br className="box-content inline" data-ditto-id="style-br-39" />
+                    <br className="box-content inline" data-ditto-id="style-br-28" />
+                    <br className="box-content inline" />
                     Your job? To help each client feel seen, supported, and strategically led as they set goals, build momentum, and implement our frameworks to strengthen their business so that it runs with more ease and profit.
-                    <br className="box-content inline" data-ditto-id="style-p-51" />
-                    <br className="box-content inline" data-ditto-id="style-br-34" />
+                    <br className="box-content inline" />
+                    <br className="box-content inline" />
                     This role blends heart and strategy: part accountability coach, part business consultant, part trusted and expert mentor.
-                    <br className="box-content inline" data-ditto-id="style-br-35" />
+                    <br className="box-content inline" />
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="box-content h-177 block relative pointer-events-none max-md:h-[1878.5px] md:max-lg:h-[453.1px]" data-ditto-id="style-heading-12" id="duties-and-responsibilities">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-p-54">
+        <div className="box-content h-177 block relative pointer-events-none max-md:h-[1878.5px] md:max-lg:h-[453.1px]" data-ditto-id="style-heading-7" id="duties-and-responsibilities">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
             <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-br-13">
-              <div className="w-[49.1875rem] h-192.5 block absolute -top-65 left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-[94.9375rem] max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,137.07)] max-md:origin-[143px_759.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-45)] md:max-lg:origin-[393.5px_385px]" data-ditto-id="style-br-44">
-                <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-17.5" data-ditto-id="style-heading-30">
+              <div className="w-[49.1875rem] h-192.5 block absolute -top-65 left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-[94.9375rem] max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,137.07)] max-md:origin-[143px_759.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-45)] md:max-lg:origin-[393.5px_385px]">
+                <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-17.5">
                   <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-p-15" data-component="heading">
                     Duties and Responsibilities:
                     <br className="box-content inline" data-ditto-id="style-link" />
                   </h2>
                 </div>
                 <div className="h-174.5 block absolute top-18 right-0 left-[2.6875rem] max-md:h-[88.8125rem] max-md:top-24.5 max-md:left-0" data-ditto-id="style-link-2">
-                  <div className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-link-3">
+                  <div className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-link-3">
                     1. Onboard + Strategize
-                    <br className="box-content inline" data-ditto-id="style-heading-31" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-p-52">
+                    <br className="box-content inline" data-ditto-id="style-heading-22" />
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside">
                       {ListRow_data.map((d, i) => <ListRow key={i} d={d} />)}
                     </ul>
                     <br className="box-content inline" data-ditto-id="style-li" />
                     2. Coach + Hold Accountable
                     <br className="box-content inline" data-ditto-id="style-p-27" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-heading-21">
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-heading-20">
                       {ListRow_data2.map((d, i) => <ListRow key={i} d={d} />)}
                     </ul>
                     <br className="box-content inline" data-ditto-id="style-br-14" />
                     3. Support + Engage in Community
-                    <br className="box-content inline" data-ditto-id="style-br-37" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-heading-37">
+                    <br className="box-content inline" data-ditto-id="style-br-29" />
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-heading-16">
                       {ListRow_data3.map((d, i) => <ListRow key={i} d={d} />)}
                     </ul>
-                    <br className="box-content inline" data-ditto-id="style-p-53" />
+                    <br className="box-content inline" />
                     4. Renew + Retain
-                    <br className="box-content inline" data-ditto-id="style-p-56" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-p-30">
+                    <br className="box-content inline" />
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside">
                       <li className="box-content list-item ml-[0.9375rem] pl-[1.5px]" data-ditto-id="style-link-4">
                         Build strong, lasting relationships with your clients that naturally lead to renewals.
                       </li>
@@ -454,10 +454,10 @@ export default function Page() {
                         Hit 30% renewal target for all coaching clients.
                       </li>
                     </ul>
-                    <br className="box-content inline" data-ditto-id="style-heading-36" />
+                    <br className="box-content inline" />
                     5. Learn + Lead the Framework
-                    <br className="box-content inline" data-ditto-id="style-p-39" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-br-5">
+                    <br className="box-content inline" data-ditto-id="style-p-30" />
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-br-2">
                       {ListRow_data4.map((d, i) => <ListRow key={i} d={d} />)}
                     </ul>
                     <br className="box-content inline" />
@@ -468,29 +468,29 @@ export default function Page() {
           </div>
         </div>
         <div className="box-content h-126.5 block relative pointer-events-none max-md:h-[1579.7px] md:max-lg:h-[20.2375rem]" data-ditto-id="style-br-15" id="skills-and-experience">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-br-29">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-br-23">
-              <div className="w-[49.1875rem] h-157 block absolute -top-[10.9375rem] left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-231.5 max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,86.1094)] max-md:origin-[143px_463px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-50.04)] md:max-lg:origin-[393.5px_314px]" data-ditto-id="style-br-30">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-br-21">
+              <div className="w-[49.1875rem] h-157 block absolute -top-[10.9375rem] left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-231.5 max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,86.1094)] max-md:origin-[143px_463px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-50.04)] md:max-lg:origin-[393.5px_314px]">
                 <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-16" data-ditto-id="style-br-16">
                   <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-br-7" data-component="heading">
                     Skills, Abilities and Experience:
-                    <br className="box-content inline" data-ditto-id="style-br-41" />
+                    <br className="box-content inline" />
                   </h2>
                 </div>
-                <div className="h-139 block absolute top-18 right-0 left-[2.6875rem] max-md:h-204.5 max-md:top-27 max-md:left-0" data-ditto-id="style-br-40">
-                  <div className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-br-27">
+                <div className="h-139 block absolute top-18 right-0 left-[2.6875rem] max-md:h-204.5 max-md:top-27 max-md:left-0" data-ditto-id="style-br-24">
+                  <div className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left">
                     You’re not just a coach, you’re a grounded, strategic guide. You blend warmth with results, compassion with accountability, and big-picture vision with tactical clarity.
                     <br className="box-content inline" data-ditto-id="style-br-17" />
-                    <br className="box-content inline" data-ditto-id="style-br-28" />
+                    <br className="box-content inline" />
                     You are:
                     <br className="box-content inline" data-ditto-id="style-br-8" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-br-20">
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-br-25">
                       {ListRow_data5.map((d, i) => <ListRow key={i} d={d} />)}
                     </ul>
                     <br className="box-content inline" data-ditto-id="style-strong-3" />
                     What Success Looks Like:
-                    <br className="box-content inline" data-ditto-id="style-ul-2" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-p-61">
+                    <br className="box-content inline" data-ditto-id="style-ul" />
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside">
                       {ListRow_data6.map((d, i) => <ListRow key={i} d={d} />)}
                     </ul>
                     <br className="box-content inline" data-ditto-id="style-p-26" />
@@ -500,64 +500,64 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="box-content h-249.5 block relative pointer-events-none max-md:h-[3154.7px] md:max-lg:h-[638.7px]" data-ditto-id="style-p-57" id="pay-and-perks">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-p-43">
+        <div className="box-content h-249.5 block relative pointer-events-none max-md:h-[3154.7px] md:max-lg:h-[638.7px]" data-ditto-id="style-p-40" id="pay-and-perks">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-p-34">
             <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-p-20">
               <div className="w-[28.3125rem] h-12 block absolute -top-13.5 left-[13.3125rem] transform-[none] max-md:w-71.5 max-md:h-16 max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,12.0312)] max-md:origin-[143px_32px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-158.22,10.8)] md:max-lg:origin-[226.5px_24px]" data-ditto-id="style-p-35">
-                <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-p-65" data-component="heading">
+                <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-component="heading">
                   Perks and Pay:
                   <br className="box-content inline" data-ditto-id="style-p-21" />
                 </h2>
               </div>
-              <div className="w-186 h-[60.9375rem] block absolute top-2 left-[15.1875rem] transform-[none] max-md:w-71.5 max-md:h-204.5 max-md:top-23.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,86.4531)] max-md:origin-[143px_409px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-221.4,-178.38)] md:max-lg:origin-[372px_487.5px]" data-ditto-id="style-heading-13">
-                <div className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-p-45">
+              <div className="w-186 h-[60.9375rem] block absolute top-2 left-[15.1875rem] transform-[none] max-md:w-71.5 max-md:h-204.5 max-md:top-23.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,86.4531)] max-md:origin-[143px_409px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-221.4,-178.38)] md:max-lg:origin-[372px_487.5px]" data-ditto-id="style-heading-8">
+                <div className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-p-37">
                   Did we forget to mention all of the Team Porterfield perks after 90 days of employment? We're fast-paced and rapidly growing. Our small but mighty team is full of talented and motivated individuals who enjoy coming into work. But these awesome perks help just a little too:
                   <br className="box-content inline" data-ditto-id="style-link-5" />
-                  <br className="box-content inline" data-ditto-id="style-heading-11" />
+                  <br className="box-content inline" data-ditto-id="style-heading-17" />
                   <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-p">
                     {ListRow2_data.map((d, i) => <ListRow2 key={i} d={d} />)}
                     <li className="box-content list-item ml-[0.9375rem] pl-[1.5px]" data-ditto-id="style-p-11">
-                      <b className="box-content inline font-bold" data-ditto-id="style-heading-15">
+                      <b className="box-content inline font-bold" data-ditto-id="style-heading-10">
                         {"Total On-Track Earnings (OTE) "}
                       </b>
                       –
-                      <b className="box-content inline font-bold" data-ditto-id="style-strong-4">
+                      <b className="box-content inline font-bold">
                         {" ~"}
                       </b>
                       $72,500 - ~$84,500 per year*
                     </li>
                   </ul>
                   <br className="box-content inline" data-ditto-id="style-p-12" />
-                  <i className="box-content inline italic" data-ditto-id="style-heading-23">
+                  <i className="box-content inline italic" data-ditto-id="style-heading-19">
                     *Higher earnings are driven by exceeding renewal targets and contributing to upsell and individual performance bonuses.
                   </i>
-                  <br className="box-content inline" data-ditto-id="style-strong-5" />
+                  <br className="box-content inline" />
                   <br className="box-content inline" data-ditto-id="style-p-13" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="box-content h-294.5 block relative pointer-events-none max-md:h-[170.95rem] md:max-lg:h-[47.125rem]" data-ditto-id="style-p-44" id="application-instructions">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-heading-8">
+        <div className="box-content h-294.5 block relative pointer-events-none max-md:h-[170.95rem] md:max-lg:h-[47.125rem]" data-ditto-id="style-p-36" id="application-instructions">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
             <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-p-14">
-              <div className="w-[49.1875rem] h-275 block absolute top-6.5 left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-290 max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,106.219)] max-md:origin-[143px_580px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-207.36)] md:max-lg:origin-[393.5px_550px]" data-ditto-id="style-p-48">
-                <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-[4.5625rem]" data-ditto-id="style-p-37">
+              <div className="w-[49.1875rem] h-275 block absolute top-6.5 left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-290 max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,106.219)] max-md:origin-[143px_580px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-207.36)] md:max-lg:origin-[393.5px_550px]" data-ditto-id="style-p-45">
+                <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-[4.5625rem]">
                   <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-link-6" data-component="heading">
                     Application Instructions:
                     <br className="box-content inline" data-ditto-id="style-strong" />
                   </h2>
                 </div>
-                <div className="h-257 block absolute top-18 right-0 left-[2.6875rem] max-md:h-[65.9375rem] max-md:top-[6.5625rem] max-md:left-0" data-ditto-id="style-p-38">
-                  <div className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-strong-8">
+                <div className="h-257 block absolute top-18 right-0 left-[2.6875rem] max-md:h-[65.9375rem] max-md:top-[6.5625rem] max-md:left-0">
+                  <div className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-strong-6">
                     {"If you’d like to be considered for this role, please submit the following via email to "}
-                    <a className="box-content inline text-accent underline cursor-pointer" data-ditto-id="style-br-9" data-component="link" href="mailto:careers@amyporterfield.com" target="_self">
+                    <a className="box-content inline text-color-001 underline cursor-pointer" data-ditto-id="style-br-9" data-component="link" href="mailto:careers@amyporterfield.com" target="_self">
                       careers@amyporterfield.com
                     </a>
                     :
-                    <br className="box-content inline" data-ditto-id="style-br-21" />
-                    <br className="box-content inline" data-ditto-id="style-p-63" />
-                    <b className="box-content inline font-bold" data-ditto-id="style-strong-7">
+                    <br className="box-content inline" />
+                    <br className="box-content inline" data-ditto-id="style-p-47" />
+                    <b className="box-content inline font-bold" data-ditto-id="style-strong-5">
                       Subject Line:
                       <br className="box-content inline" data-ditto-id="style-link-7" />
                     </b>
@@ -565,63 +565,63 @@ export default function Page() {
                     <br className="box-content inline" data-ditto-id="style-p-8" />
                     “Full-Time,” “Part-Time,” or “Open to FT or PT” if you’d like to be considered for both.
                     <br className="box-content inline" data-ditto-id="style-em" />
-                    <br className="box-content inline" data-ditto-id="style-p-46" />
-                    <b className="box-content inline font-bold" data-ditto-id="style-footer-2">
+                    <br className="box-content inline" data-ditto-id="style-p-43" />
+                    <b className="box-content inline font-bold">
                       Application Materials:
-                      <br className="box-content inline" data-ditto-id="style-div-5" />
+                      <br className="box-content inline" data-ditto-id="style-div-6" />
                     </b>
                     • A cover letter and PDF of your resume
-                    <br className="box-content inline" data-ditto-id="style-div-52" />
+                    <br className="box-content inline" />
                     • A 3-minute video introducing yourself and sharing how you heard about this position
-                    <br className="box-content inline" data-ditto-id="style-link-43" />
+                    <br className="box-content inline" />
                     (Please note: we will not review videos longer than 3 minutes, and your video must be accessible via link)
                     <br className="box-content inline" data-ditto-id="style-div-12" />
-                    <br className="box-content inline" data-ditto-id="style-link-34" />
+                    <br className="box-content inline" data-ditto-id="style-link-36" />
                     <b className="box-content inline font-bold" data-ditto-id="style-nav-4">
                       Written Responses:
-                      <br className="box-content inline" data-ditto-id="style-link-31" />
+                      <br className="box-content inline" data-ditto-id="style-link-35" />
                     </b>
                     Please include your answers to the following questions
                     <b className="box-content inline font-bold" data-ditto-id="style-nav-5">
                       {" in your email"}
                     </b>
                     :
-                    <br className="box-content inline" data-ditto-id="style-link-32" />
+                    <br className="box-content inline" />
                     <ol className="box-content block ml-[1.3125rem] [list-style-type:decimal] list-outside" data-ditto-id="style-nav-6">
                       {ListRow_data7.map((d, i) => <ListRow key={i} d={d} />)}
                     </ol>
-                    <br className="box-content inline" data-ditto-id="style-div-32" />
-                    <b className="box-content inline font-bold" data-ditto-id="style-heading">
+                    <br className="box-content inline" />
+                    <b className="box-content inline font-bold" data-ditto-id="style-div-2">
                       {"Employment Type & Outside Work Policy"}
-                      <br className="box-content inline" data-ditto-id="style-div-33" />
+                      <br className="box-content inline" />
                     </b>
                     We welcome candidates at both full-time and part-time levels. If you currently run a business, please answer the following in your application email:
-                    <br className="box-content inline" data-ditto-id="style-div-2" />
-                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside" data-ditto-id="style-link-33">
+                    <br className="box-content inline" data-ditto-id="style-div-3" />
+                    <ul className="box-content block ml-[1.3125rem] [list-style-type:disc] list-outside">
                       <li className="box-content list-item ml-[0.9375rem] pl-[1.5px]" data-ditto-id="style-nav-7">
                         Are you looking to transition fully out of your business and join us in a full-time capacity? Or are you looking to join on a part-time basis while continuing to run your business?
                       </li>
                     </ul>
                     There is no wrong answer. We simply want to ensure alignment from the start.
                     <br className="box-content inline" data-ditto-id="style-br-11" />
-                    <br className="box-content inline" data-ditto-id="style-link-50" />
-                    <b className="box-content inline font-bold" data-ditto-id="style-div-47">
+                    <br className="box-content inline" />
+                    <b className="box-content inline font-bold">
                       {"Outside Work & Side Gigs"}
                       <br className="box-content inline" data-ditto-id="style-icon" />
                     </b>
                     At Amy Porterfield LLC, we permit outside work and side gigs for full-time employees - as long as it does not compete, overlap, or interfere with the work we do here or your responsibilities on the team.
-                    <br className="box-content inline" data-ditto-id="style-div-34" />
-                    <br className="box-content inline" data-ditto-id="style-p-64" />
+                    <br className="box-content inline" />
+                    <br className="box-content inline" />
                     Coaching or consulting side gigs may be considered on a case-by-case basis at the time of hire, provided they have no connection to marketing, business building, or entrepreneurship, do not involve taking on new clients, and do not involve marketing services or soliciting business from Amy Porterfield, LLC's clients, affiliates, or audience.
-                    <br className="box-content inline" data-ditto-id="style-link-44" />
-                    <br className="box-content inline" data-ditto-id="style-div-65" />
+                    <br className="box-content inline" />
+                    <br className="box-content inline" />
                     We are looking for people who are all in with us, and we will be all in with you in return.
-                    <br className="box-content inline" data-ditto-id="style-link-49" />
+                    <br className="box-content inline" />
                     <br className="box-content inline" data-ditto-id="style-nav-8" />
-                    <b className="box-content inline font-bold" data-ditto-id="style-heading-3">
+                    <b className="box-content inline font-bold" data-ditto-id="style-heading-2">
                       *Please note, applicants must reside within the US to be considered.
                     </b>
-                    <br className="box-content inline" data-ditto-id="style-i-4" />
+                    <br className="box-content inline" />
                   </div>
                 </div>
               </div>
@@ -629,19 +629,19 @@ export default function Page() {
           </div>
         </div>
         <div className="box-content h-63 block relative pointer-events-none max-md:h-[34.35rem] md:max-lg:h-[161.3px]" data-ditto-id="style-i" id="please-note">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-i-3">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-i-5">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
               <div className="w-[49.1875rem] h-[13.9375rem] block absolute top-6.5 left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-104 max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,42.2813)] max-md:origin-[143px_208px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-49.5)] md:max-lg:origin-[393.5px_111.5px]" data-ditto-id="style-about-amy">
                 <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-[4.5625rem]" data-ditto-id="style-div-13">
-                  <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-div-69" data-component="heading">
+                  <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-component="heading">
                     {"Please Note: "}
-                    <br className="box-content inline" data-ditto-id="style-div-3" />
+                    <br className="box-content inline" data-ditto-id="style-div-4" />
                   </h2>
                 </div>
                 <div className="h-[9.4375rem] block absolute top-18 right-0 left-[2.6875rem] max-md:h-[22.3125rem] max-md:top-[3.6875rem] max-md:left-0" data-ditto-id="style-div-14">
-                  <div className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-heading-28">
+                  <div className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left">
                     At Amy Porterfield LLC, we’re always excited to connect with talented individuals who are eager to do meaningful work and grow alongside a supportive, values-driven team. We’re continuing to collect and review applications using an evergreen hiring approach, and we strongly encourage you to apply if this role feels aligned. We’ll begin reaching out in late Q3 / early Q4 2026 as we continue hiring for additional Business Success Coaches, and we’d love for you to be considered when that time comes.
-                    <br className="box-content inline" data-ditto-id="style-div-4" />
+                    <br className="box-content inline" data-ditto-id="style-div-5" />
                     <br className="box-content inline" data-ditto-id="style-div-15" />
                   </div>
                 </div>
@@ -649,24 +649,24 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="box-content h-104 block relative pointer-events-none max-md:h-[49.5875rem] md:max-lg:h-[16.6375rem]" data-ditto-id="style-heading-5" id="what-we-do">
+        <div className="box-content h-104 block relative pointer-events-none max-md:h-[49.5875rem] md:max-lg:h-[16.6375rem]" data-ditto-id="style-heading-4" id="what-we-do">
           <div className="box-content h-full block absolute top-0 inset-x-0 bg-background pointer-events-none" data-ditto-id="style-br">
             <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-div-25">
-              <div className="w-[49.1875rem] h-[21.4375rem] block absolute top-[1.6875rem] left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-[39.0625rem] max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,60.2422)] max-md:origin-[143px_312.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-71.46)] md:max-lg:origin-[393.5px_171.5px]" data-ditto-id="style-heading-25">
-                <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-10.5" data-ditto-id="style-link-16">
+              <div className="w-[49.1875rem] h-[21.4375rem] block absolute top-[1.6875rem] left-[12.9375rem] transform-[none] max-md:w-71.5 max-md:h-[39.0625rem] max-md:top-9.5 max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,60.2422)] max-md:origin-[143px_312.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216.18,-71.46)] md:max-lg:origin-[393.5px_171.5px]">
+                <div className="w-[28.3125rem] h-12 block absolute max-md:w-71.5 max-md:h-10.5" data-ditto-id="style-link-17">
                   <h2 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'Ivy_Presto_Italic'] text-[2.1875rem] leading-10.5 text-left max-md:text-3xl max-md:leading-9" data-ditto-id="style-nav-10" data-component="heading">
                     What We Do:
                     <br className="box-content inline" data-ditto-id="style-b" />
                   </h2>
                 </div>
-                <div className="h-[16.9375rem] block absolute top-18 right-0 left-[2.6875rem] max-md:h-[35.0625rem] max-md:top-16 max-md:left-0" data-ditto-id="style-br-25">
-                  <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-br-18">
+                <div className="h-[16.9375rem] block absolute top-18 right-0 left-[2.6875rem] max-md:h-[35.0625rem] max-md:top-16 max-md:left-0" data-ditto-id="style-br-22">
+                  <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-br-18">
                     We empower entrepreneurs to build profitable online businesses that bring creative, professional and personal freedom.
-                    <br className="box-content inline" data-ditto-id="style-br-26" />
-                    <br className="box-content inline" data-ditto-id="style-br-36" />
+                    <br className="box-content inline" data-ditto-id="style-br-23" />
+                    <br className="box-content inline" />
                     In everything we do, we aim to inspire confidence and action. Our signature service is helping budding entrepreneurs break free in the areas of business that were once holding them back into new levels of joy and fulfillment. We give these entrepreneurs tangible proof that small actions every day will ultimately build a business worth creating and a life guided by their own design.
                     <br className="box-content inline" data-ditto-id="style-b-2" />
-                    <br className="box-content inline" data-ditto-id="style-link-15" />
+                    <br className="box-content inline" data-ditto-id="style-link-16" />
                     {"We lead a fun-loving culture and a dedicated team that is committed to excellence. We always find the upside to any situation and maintain the strength and flexibility to change course as our business evolves. "}
                     <br className="box-content inline" data-ditto-id="style-nav-11" />
                   </p>
@@ -676,134 +676,134 @@ export default function Page() {
           </div>
         </div>
         <div className="box-content h-[22.6875rem] block relative pointer-events-none max-md:h-[72.3625rem] md:max-lg:h-[232.3px]" data-ditto-id="style-div-26" id="disclaimer">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-surface pointer-events-none" data-ditto-id="style-nav-19">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-link-42">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-surface-2 pointer-events-none" data-ditto-id="style-nav-18">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
               <div className="w-213.5 h-[18.3125rem] block absolute top-[2.1875rem] left-[10.8125rem] transform-[none] max-md:w-71.5 max-md:h-222.5 max-md:top-[3.0625rem] max-md:left-[1.0625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,84.9062)] max-md:origin-[143px_445px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-216,-65.34)] md:max-lg:origin-[427px_146.5px]" data-ditto-id="style-nav-13">
-                <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-instagram-feed">
-                  <i className="box-content inline italic" data-ditto-id="style-div-53">
+                <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.9375rem] leading-6 text-left" data-ditto-id="style-instagram-feed">
+                  <i className="box-content inline italic">
                     {"While performing the duties of this job, the employee is regularly required to effectively communicate via chat/messaging systems and email. The employee is frequently required to remain in a stationary position and occasionally required to move from one location to another. The employee is required to constantly use computer and office productivity equipment such as a desktop computer, laptop, and printer, as well as computer software such as Google Workspace. The employee may frequently move up to 10 pounds. "}
-                    <br className="box-content inline" data-ditto-id="style-div-67" />
-                    <br className="box-content inline" data-ditto-id="style-div-36" />
+                    <br className="box-content inline" />
+                    <br className="box-content inline" data-ditto-id="style-div-33" />
                     <b className="box-content inline font-bold" data-ditto-id="style-instagram-feed-0">
                       Disclaimer:
                     </b>
                     {" All job requirements are subject to possible revision to reflect changes in the position requirements or to reasonably accommodate individuals with disabilities. Some requirements may exclude individuals who pose a threat or risk to the health and safety of themselves or other employees. This job description in no way states or implies that these are the only duties to which will be required in this position. Employees will be required to follow other job-related duties as requested by their supervisor/manager (within guidelines and compliance with Federal and State Laws). Continued employment remains on an “at-will” basis."}
                   </i>
-                  <br className="box-content inline" data-ditto-id="style-div-42" />
+                  <br className="box-content inline" data-ditto-id="style-div-39" />
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="box-content h-87.5 block relative pointer-events-none max-md:h-[64.525rem] md:max-lg:h-56" data-ditto-id="style-div-68" id="footer">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-color-003 pointer-events-none" data-ditto-id="style-div-16">
-            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-link-37">
-              <a className="w-60 h-30 block absolute top-22 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-68.5 max-md:h-[9.5625rem] max-md:top-160 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,27.6719,123.148)] max-md:origin-[137px_76.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-53.28)] md:max-lg:origin-[120px_60px]" data-ditto-id="style-nav-21" data-component="link" href="/side-hustle-ideas-guide-ap" target="_self">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-cover [background-position:10%_10%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/be1a66f154c7.gif\")" }} data-ditto-id="style-br-48" src="/assets/cloned/images/be1a66f154c7.gif" />
+        <div className="box-content h-87.5 block relative pointer-events-none max-md:h-[64.525rem] md:max-lg:h-56" id="footer">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-color-002 pointer-events-none" data-ditto-id="style-div-16">
+            <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90" data-ditto-id="style-link-33">
+              <a className="w-60 h-30 block absolute top-22 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-68.5 max-md:h-[9.5625rem] max-md:top-160 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,27.6719,123.148)] max-md:origin-[137px_76.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-53.28)] md:max-lg:origin-[120px_60px]" data-ditto-id="style-nav-20" data-component="link" href="https://www.amyporterfield.com/side-hustle-ideas-guide-ap" target="_self">
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-cover [background-position:10%_10%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/be1a66f154c7.gif\")" }} src="/assets/cloned/images/be1a66f154c7.gif" />
               </a>
-              <a className="w-[7.3125rem] h-4.5 block absolute top-47.5 left-115 transform-[none] cursor-pointer max-md:w-28 max-md:h-[1.3125rem] max-md:top-69 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,37.8125,49.2422)] max-md:origin-[56px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-71.64)] md:max-lg:origin-[58.5px_9px]" data-ditto-id="style-div-43" data-component="link" href="/online-business-courses" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-37" data-component="nav">
+              <a className="w-[7.3125rem] h-4.5 block absolute top-47.5 left-115 transform-[none] cursor-pointer max-md:w-28 max-md:h-[1.3125rem] max-md:top-69 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,37.8125,49.2422)] max-md:origin-[56px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-71.64)] md:max-lg:origin-[58.5px_9px]" data-ditto-id="style-div-40" data-component="link" href="https://www.amyporterfield.com/online-business-courses" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-34" data-component="nav">
                   Courses
                 </nav>
               </a>
               <a className="w-[8.1875rem] h-4.5 block absolute top-[7.8125rem] left-115 transform-[none] cursor-pointer max-md:w-[7.9375rem] max-md:h-[1.3125rem] max-md:top-77.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.8672,55.0859)] max-md:origin-[63.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.18,-48.24)] md:max-lg:origin-[65.5px_9px]" data-ditto-id="style-div-17" data-component="link" href="/about" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-40" data-component="nav">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-div-37" data-component="nav">
                   About Amy
                 </nav>
               </a>
-              <a className="w-30 h-4.5 block absolute top-39.5 left-115 transform-[none] cursor-pointer max-md:w-30.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.4375,60.9297)] max-md:origin-[61px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-187.2,-60.12)] md:max-lg:origin-[60px_9px]" data-ditto-id="style-div-38" data-component="link" href="/marketing-strategy-podcast" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-div-18" data-component="nav">
+              <a className="w-30 h-4.5 block absolute top-39.5 left-115 transform-[none] cursor-pointer max-md:w-30.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,14.4375,60.9297)] max-md:origin-[61px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-187.2,-60.12)] md:max-lg:origin-[60px_9px]" data-ditto-id="style-div-35" data-component="link" href="https://www.amyporterfield.com/marketing-strategy-podcast" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-div-18" data-component="nav">
                   Podcast
-                  <br className="box-content inline" data-ditto-id="style-link-38" />
+                  <br className="box-content inline" data-ditto-id="style-link-34" />
                 </nav>
               </a>
               {TextLink_data.map((d, i) => <TextLink key={i} d={d} styles={TextLink_styles[i]} />)}
-              <a className="w-60 h-10.5 block absolute top-55.5 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-56.5 max-md:h-[1.3125rem] max-md:top-201.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,140.336)] max-md:origin-[113px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-87.48)] md:max-lg:origin-[120px_21px]" data-ditto-id="style-hs-web-interactives-floating-container-2" data-component="link" href="/side-hustle-ideas-guide-ap" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-reviews" data-component="nav">
+              <a className="w-60 h-10.5 block absolute top-55.5 left-[56.1875rem] transform-[none] cursor-pointer max-md:w-56.5 max-md:h-[1.3125rem] max-md:top-201.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.375,140.336)] max-md:origin-[113px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-366.84,-87.48)] md:max-lg:origin-[120px_21px]" data-ditto-id="style-hs-web-interactives-floating-container-4" data-component="link" href="https://www.amyporterfield.com/side-hustle-ideas-guide-ap" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem]" data-ditto-id="style-reviews" data-component="nav">
                   Map Out Your Side Hustle Idea Profit Potential
                   <br className="box-content inline" data-ditto-id="style-div-20" />
                 </nav>
               </a>
-              <a className="w-5.5 h-7.5 block absolute top-54.5 left-280.5 transform-[none] cursor-pointer max-md:h-[1.5625rem] max-md:top-201 max-md:left-[15.6875rem] max-md:transform-[matrix(1.17188,0,0,1.17188,45.0312,140.336)] max-md:origin-[11px_12.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-407.88,-83.88)] md:max-lg:origin-[11px_15px]" data-ditto-id="style-div-78" data-component="link" href="/side-hustle-ideas-guide-ap" target="_self">
+              <a className="w-5.5 h-7.5 block absolute top-54.5 left-280.5 transform-[none] cursor-pointer max-md:h-[1.5625rem] max-md:top-201 max-md:left-[15.6875rem] max-md:transform-[matrix(1.17188,0,0,1.17188,45.0312,140.336)] max-md:origin-[11px_12.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-407.88,-83.88)] md:max-lg:origin-[11px_15px]" data-ditto-id="style-div-43" data-component="link" href="https://www.amyporterfield.com/side-hustle-ideas-guide-ap" target="_self">
                 <div className="box-content h-full block" data-ditto-id="style-reviews-review-1">
-                  <svg className="box-content w-5.5 h-7.5 inline overflow-hidden align-top max-md:h-[1.5625rem]" data-ditto-id="style-div-41" data-component="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <svg className="box-content w-5.5 h-7.5 inline overflow-hidden align-top max-md:h-[1.5625rem]" data-ditto-id="style-div-38" data-component="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z" />
                   </svg>
                 </div>
               </a>
-              <div className="w-[19.1875rem] h-[7.3125rem] block absolute top-[5.6875rem] left-15 transform-[none] max-md:w-[14.0625rem] max-md:h-[8.9375rem] max-md:top-[4.4375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.2891,24.4922)] max-md:origin-[112.5px_71.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-76.86,-53.82)] md:max-lg:origin-[153.5px_58.5px]" data-ditto-id="style-div-70">
-                <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] text-left max-md:leading-[1.4375rem]" data-ditto-id="style-div-114">
+              <div className="w-[19.1875rem] h-[7.3125rem] block absolute top-[5.6875rem] left-15 transform-[none] max-md:w-[14.0625rem] max-md:h-[8.9375rem] max-md:top-[4.4375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,23.2891,24.4922)] max-md:origin-[112.5px_71.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-76.86,-53.82)] md:max-lg:origin-[153.5px_58.5px]">
+                <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] text-left max-md:leading-[1.4375rem]">
                   I’m an ex-corporate girl, author, online marketing expert and the host of the top-ranked podcast, The Amy Porterfield Show. Welcome to my virtual living room! Stay a while, won’t you?
                 </p>
               </div>
               <a className="w-52.5 h-[1.5625rem] block absolute top-[3.0625rem] left-14 transform-[none] cursor-pointer max-md:w-[13.3125rem] max-md:h-[2.1875rem] max-md:top-6 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,22.2578,7.13281)] max-md:origin-[106.5px_17.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-57.96,-22.14)] md:max-lg:origin-[105px_12.5px]" data-ditto-id="style-p-24" data-component="link" href="/" target="_self">
-                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/1e9e95f91617.png\")" }} data-ditto-id="style-i-6" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                <div className="box-content h-full block absolute top-0 inset-x-0 bg-contain [background-position:50%_50%] bg-no-repeat" style={{ backgroundImage: "url(\"/assets/cloned/images/1e9e95f91617.png\")" }} src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
               </a>
-              <a className="w-47.5 h-4.5 block absolute top-[17.5625rem] left-231.5 transform-[matrix(1,0,0,1,40,0)] origin-[95px_9px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-367.56,-104.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-reviews-review-1-3" data-component="link" href="#si-sp" target="_self">
+              <a className="w-47.5 h-4.5 block absolute top-[17.5625rem] left-231.5 transform-[matrix(1,0,0,1,40,0)] origin-[95px_9px] cursor-pointer max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-367.56,-104.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-component="link" href="#si-sp" target="_self">
                 <nav className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:Montserrat] text-[0.8125rem] leading-[1.3125rem] tracking-[0.65px] text-right uppercase" data-ditto-id="style-div-21" data-component="nav">
                   back to top
                 </nav>
               </a>
               {Logo_data.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
-              <div className="w-58.5 h-[1.3125rem] block absolute top-[15.1875rem] left-15 transform-[none] max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-63.72,-91.26)] md:max-lg:origin-[117px_10.5px]" data-ditto-id="style-br-4">
+              <div className="w-58.5 h-[1.3125rem] block absolute top-[15.1875rem] left-15 transform-[none] max-md:hidden md:max-lg:transform-[matrix(0.64,0,0,0.64,-63.72,-91.26)] md:max-lg:origin-[117px_10.5px]" data-ditto-id="style-br-5">
                 <h3 className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:Montserrat] font-semibold leading-[1.1875rem] tracking-[1.6px] text-left uppercase" data-component="heading">
                   Let's be friends
                 </h3>
               </div>
-              <a className="w-49.5 h-4.5 block absolute top-[5.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[26.9375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,75.8828)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-36.72)] md:max-lg:origin-[99px_9px]" data-ditto-id="style-div-102" data-component="link" href="/mylogin" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-link-13" data-component="nav">
+              <a className="w-49.5 h-4.5 block absolute top-[5.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[26.9375rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,75.8828)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-36.72)] md:max-lg:origin-[99px_9px]" data-component="link" href="https://www.amyporterfield.com/mylogin" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-link-13" data-component="nav">
                   student login
                 </nav>
               </a>
               {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
-              <a className="w-49.5 h-4.5 block absolute top-[7.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[28.8125rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,81.0391)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-48.24)] md:max-lg:origin-[99px_9px]" data-ditto-id="style-div-54" data-component="link" href="/reviews" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-link-9" data-component="nav">
+              <a className="w-49.5 h-4.5 block absolute top-[7.8125rem] left-158 transform-[none] cursor-pointer max-md:w-[12.1875rem] max-md:h-[1.3125rem] max-md:top-[28.8125rem] max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,20.7109,81.0391)] max-md:origin-[97.5px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-263.16,-48.24)] md:max-lg:origin-[99px_9px]" data-ditto-id="style-div-53" data-component="link" href="https://www.amyporterfield.com/reviews" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-link-31" data-component="nav">
                   student stories
                 </nav>
               </a>
-              <div className="w-[13.9375rem] h-[1.4375rem] block absolute top-12.5 left-[56.1875rem] transform-[none] max-md:w-62.5 max-md:h-7 max-md:top-149.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,25.4375,105.188)] max-md:origin-[125px_14px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-363.78,-22.14)] md:max-lg:origin-[111.5px_11.5px]" data-ditto-id="style-nav-23">
+              <div className="w-[13.9375rem] h-[1.4375rem] block absolute top-12.5 left-[56.1875rem] transform-[none] max-md:w-62.5 max-md:h-7 max-md:top-149.5 max-md:left-[1.4375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,25.4375,105.188)] max-md:origin-[125px_14px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-363.78,-22.14)] md:max-lg:origin-[111.5px_11.5px]">
                 <nav className="box-content h-full block absolute top-0 inset-x-0 text-primary [font-family:'IvyPresto_Headline_Regular'] text-lg leading-[1.8125rem] text-left max-md:leading-[2rem]" data-ditto-id="style-br-12" data-component="nav">
                   Get Started For Free
                 </nav>
               </div>
-              <a className="w-[7.3125rem] h-4.5 block absolute top-[15.9375rem] left-115 transform-[none] cursor-pointer max-md:w-33.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,39.7031,60.9297)] max-md:origin-[67px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-95.04)] md:max-lg:origin-[58.5px_9px]" data-ditto-id="style-div-77" data-component="link" href="/newsletter" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-link-35" data-component="nav">
+              <a className="w-[7.3125rem] h-4.5 block absolute top-[15.9375rem] left-115 transform-[none] cursor-pointer max-md:w-33.5 max-md:h-[1.3125rem] max-md:top-86 max-md:left-41 max-md:transform-[matrix(1.17188,0,0,1.17188,39.7031,60.9297)] max-md:origin-[67px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-186.66,-95.04)] md:max-lg:origin-[58.5px_9px]" data-ditto-id="style-div-46" data-component="link" href="https://www.amyporterfield.com/newsletter" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1.3125rem] tracking-[0.65px] text-left uppercase max-md:leading-[1.4375rem] max-md:tracking-[inherit]" data-ditto-id="style-icon-4" data-component="nav">
                   NEWSLETTER
                 </nav>
               </a>
             </div>
           </div>
         </div>
-        <div className="box-content h-[12.0625rem] block relative pointer-events-none max-md:h-[372.7px] md:max-lg:h-[123.5px]" data-ditto-id="style-nav-27" id="instagram-feed">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-surface-4 pointer-events-none" data-ditto-id="style-br-32">
+        <div className="box-content h-[12.0625rem] block relative pointer-events-none max-md:h-[372.7px] md:max-lg:h-[123.5px]" data-ditto-id="style-footer-legal-accessibility-2" id="instagram-feed">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-surface-3 pointer-events-none" data-ditto-id="style-div-44">
             <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
-              <div className="w-261.5 h-45.5 block absolute top-[0.3125rem] left-[16.3125rem] overflow-hidden transform-[matrix(1,0,0,1,-40,0)] origin-[523px_91px] max-md:w-80 max-md:h-36 max-md:top-42 max-md:left-0 max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,41.25)] max-md:origin-[160px_72px] md:max-lg:w-241.5 md:max-lg:transform-[matrix(0.64,0,0,0.64,-267.84,-34.56)] md:max-lg:origin-[483px_91px] 2xl:w-421.5 2xl:transform-[matrix(1,0,0,1,-360,0)] 2xl:origin-[843px_91px]" data-ditto-id="style-nav-15">
-                <div className="box-content block overflow-hidden" data-ditto-id="style-link-47" id="instagram-feed_0">
-                  <div className="box-content grid justify-center gap-[0.3125rem] grid-cols-[182px_182px_182px_182px_182px] grid-rows-10 max-md:grid-cols-[144px_144px] max-md:grid-rows-[144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px] md:max-lg:grid-rows-[182px_182px_182px_182px_182px_182px_182px_182px_182px_182px] 2xl:grid-cols-9 2xl:grid-rows-6" data-ditto-id="style-heading-29">
+              <div className="w-261.5 h-45.5 block absolute top-[0.3125rem] left-[16.3125rem] overflow-hidden transform-[matrix(1,0,0,1,-40,0)] origin-[523px_91px] max-md:w-80 max-md:h-36 max-md:top-42 max-md:left-0 max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,41.25)] max-md:origin-[160px_72px] md:max-lg:w-241.5 md:max-lg:transform-[matrix(0.64,0,0,0.64,-267.84,-34.56)] md:max-lg:origin-[483px_91px] 2xl:w-421.5 2xl:transform-[matrix(1,0,0,1,-360,0)] 2xl:origin-[843px_91px]" data-ditto-id="style-link-15">
+                <div className="box-content block overflow-hidden" id="instagram-feed_0">
+                  <div className="box-content grid justify-center gap-[0.3125rem] grid-cols-[182px_182px_182px_182px_182px] grid-rows-10 max-md:grid-cols-[144px_144px] max-md:grid-rows-[144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px_144px] md:max-lg:grid-rows-[182px_182px_182px_182px_182px_182px_182px_182px_182px_182px] 2xl:grid-cols-9 2xl:grid-rows-6">
                     {Logo2_data.map((d, i) => <Logo2 key={i} d={d} />)}
                   </div>
                 </div>
               </div>
               <div className="w-[16.3125rem] h-48.5 block absolute top-0 transform-[matrix(1,0,0,1,-40,0)] origin-[130.5px_97px] max-md:w-80 max-md:h-40 max-md:-top-px max-md:transform-[matrix(1.17188,0,0,1.17188,27.5,13.5781)] max-md:origin-[160px_80px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-46.98,-34.92)] 2xl:transform-[matrix(1,0,0,1,-360,0)]">
-                <div className="h-full block bg-surface" data-ditto-id="style-div-91" />
+                <div className="h-full block bg-surface-2" />
               </div>
               <div className="w-46.5 h-18.5 block absolute top-8.5 left-9.5 transform-[matrix(1,0,0,1,-40,0)] origin-[93px_37px] max-md:w-[18.9375rem] max-md:h-9.5 max-md:top-7 max-md:left-[0.5625rem] max-md:transform-[matrix(1.17188,0,0,1.17188,27.5859,8.07812)] max-md:origin-[151.5px_19px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-47.16,-25.56)] 2xl:transform-[matrix(1,0,0,1,-360,0)]">
-                <p className="box-content h-full block absolute top-0 inset-x-0 text-color-001 [font-family:'Ivy_Presto'] text-[1.6875rem] leading-[2rem] text-center max-md:text-[1.625rem] max-md:leading-[1.9375rem]">
+                <p className="box-content h-full block absolute top-0 inset-x-0 text-border [font-family:'Ivy_Presto'] text-[1.6875rem] leading-[2rem] text-center max-md:text-[1.625rem] max-md:leading-[1.9375rem]">
                   Follow Me On The Gram
-                  <br className="box-content inline" data-ditto-id="style-div-93" />
+                  <br className="box-content inline" />
                 </p>
               </div>
-              <a className="w-56 h-10.5 block absolute top-29.5 left-5.5 transform-[matrix(1,0,0,1,-40,0)] origin-[112px_21px] cursor-pointer max-md:w-[15.8125rem] max-md:h-[2.8125rem] max-md:top-[4.9375rem] max-md:left-8.5 max-md:transform-[matrix(1.17188,0,0,1.17188,27.5859,17.4453)] max-md:origin-[126.5px_22.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-48.24,-50.04)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-ditto-id="style-div-87" data-component="link" href="https://www.instagram.com/amyporterfield" target="_blank">
-                <div className="h-full block bg-accent" data-ditto-id="style-avatar" />
+              <a className="w-56 h-10.5 block absolute top-29.5 left-5.5 transform-[matrix(1,0,0,1,-40,0)] origin-[112px_21px] cursor-pointer max-md:w-[15.8125rem] max-md:h-[2.8125rem] max-md:top-[4.9375rem] max-md:left-8.5 max-md:transform-[matrix(1.17188,0,0,1.17188,27.5859,17.4453)] max-md:origin-[126.5px_22.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-48.24,-50.04)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-component="link" href="https://www.instagram.com/amyporterfield" target="_blank">
+                <div className="h-full block bg-color-001" />
               </a>
               <a className="w-46.5 h-4.5 block absolute top-32.5 left-[3.4375rem] transform-[matrix(1,0,0,1,-40,0)] origin-[93px_9px] cursor-pointer max-md:w-[14.9375rem] max-md:h-5 max-md:top-23 max-md:left-13.5 max-md:transform-[matrix(1.17188,0,0,1.17188,29.8203,17.5312)] max-md:origin-[119.5px_10px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-53.28,-50.04)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-component="link" href="https://www.instagram.com/amyporterfield" target="_blank">
-                <h3 className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1rem] tracking-[1.3px] text-center uppercase max-md:text-[0.9375rem] max-md:leading-[1.3125rem] max-md:tracking-[1.5px]" data-ditto-id="style-heading-35" data-component="heading">
+                <h3 className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.8125rem] font-semibold leading-[1rem] tracking-[1.3px] text-center uppercase max-md:text-[0.9375rem] max-md:leading-[1.3125rem] max-md:tracking-[1.5px]" data-component="heading">
                   @amyporterfield
                 </h3>
               </a>
               <a className="w-7 h-[1.5625rem] block absolute top-31.5 left-[2.0625rem] transform-[matrix(1,0,0,1,-40,0)] origin-[14px_12.5px] cursor-pointer max-md:w-[1.6875rem] max-md:h-[1.6875rem] max-md:top-22 max-md:left-12 max-md:transform-[matrix(1.17188,0,0,1.17188,10.5703,17.4453)] max-md:origin-[13.5px_13.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-16.92,-49.86)] 2xl:transform-[matrix(1,0,0,1,-360,0)]" data-component="link" href="https://www.instagram.com/amyporterfield" target="_self">
-                <div className="box-content h-full block" data-ditto-id="style-link-20">
-                  <svg className="box-content w-7 h-[1.5625rem] inline overflow-hidden align-top max-md:w-[1.6875rem] max-md:h-[1.6875rem]" data-ditto-id="style-icon-5" data-component="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <div className="box-content h-full block" data-ditto-id="style-link-21">
+                  <svg className="box-content w-7 h-[1.5625rem] inline overflow-hidden align-top max-md:w-[1.6875rem] max-md:h-[1.6875rem]" data-ditto-id="style-icon-6" data-component="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <circle cx="255.25" cy="256.21" r="70.68" />
                     <path d="M338,54.63H174c-62.72,0-114,51.31-114,114V343.33c0,62.73,51.32,114,114,114H338c62.72,0,114-51.31,114-114V168.67C452,105.94,400.68,54.63,338,54.63ZM255.77,364.07A107.95,107.95,0,1,1,363.71,256.13,107.95,107.95,0,0,1,255.77,364.07Zm109.67-192A25.56,25.56,0,1,1,391,146.5,25.56,25.56,0,0,1,365.44,172.06Z" />
                   </svg>
@@ -813,12 +813,12 @@ export default function Page() {
           </div>
         </div>
         <div className="box-content h-20 block relative z-4 pointer-events-none max-md:h-[263.7px] md:max-lg:h-[3.2rem]" id="footer-legal-accessibility">
-          <div className="box-content h-full block absolute top-0 inset-x-0 bg-color-001 pointer-events-none" data-ditto-id="style-div-88">
+          <div className="box-content h-full block absolute top-0 inset-x-0 bg-border pointer-events-none">
             <div className="box-content w-300 h-full block relative max-h-20000 mx-10 pointer-events-none max-md:w-[23.4375rem] max-lg:mx-0 md:max-lg:w-192 2xl:mx-90">
-              <a className="w-26.5 h-4.5 block absolute top-[1.9375rem] left-[29.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[53px_9px] cursor-pointer max-md:w-23.5 max-md:h-[1.3125rem] max-md:top-21.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,12.2031,16.5859)] max-md:origin-[47px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.36,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-div-83" data-component="link" href="/privacy" target="_self">
+              <a className="w-26.5 h-4.5 block absolute top-[1.9375rem] left-[29.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[53px_9px] cursor-pointer max-md:w-23.5 max-md:h-[1.3125rem] max-md:top-21.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,12.2031,16.5859)] max-md:origin-[47px_10.5px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-189.36,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-component="link" href="https://www.amyporterfield.com/privacy" target="_self">
                 <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:tracking-[0.5px] max-md:text-left" data-component="nav">
                   privacy policy
-                  <br className="box-content inline" data-ditto-id="style-div-89" />
+                  <br className="box-content inline" />
                 </nav>
               </a>
               {TextLink2_data.map((d, i) => <TextLink2 key={i} d={d} styles={TextLink2_styles[i]} />)}
@@ -828,10 +828,10 @@ export default function Page() {
                 </h2>
               </a>
               <div className="w-120 h-8 block absolute top-22.5 left-[43.9375rem] transform-[none] max-md:w-56 max-md:h-22.5 max-md:top-[8.4375rem] max-md:left-[5.9375rem] max-md:transform-[matrix(1.17188,0,0,1.17188,35.5781,30.9375)] max-md:origin-[112px_45px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-339.48,-38.16)] md:max-lg:origin-[240px_16px]">
-                <div className="box-content h-full block" data-ditto-id="style-link-45" />
+                <div className="box-content h-full block" />
               </div>
-              <a className="w-[5.8125rem] h-4.5 block absolute top-[1.9375rem] left-[49.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_9px] cursor-pointer max-md:w-22 max-md:top-28.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,11.6875,21.1406)] max-md:origin-[44px_9px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-302.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-ditto-id="style-div-109" data-component="button" href="#" role="button" target="_self">
-                <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:text-left max-md:tracking-[inherit]" data-ditto-id="style-link-22" data-component="nav">
+              <a className="w-[5.8125rem] h-4.5 block absolute top-[1.9375rem] left-[49.5625rem] transform-[matrix(1,0,0,1,40,0)] origin-[46.5px_9px] cursor-pointer max-md:w-22 max-md:top-28.5 max-md:left-6 max-md:transform-[matrix(1.17188,0,0,1.17188,11.6875,21.1406)] max-md:origin-[44px_9px] md:max-lg:transform-[matrix(0.64,0,0,0.64,-302.22,-14.4)] 2xl:transform-[matrix(1,0,0,1,360,0)]" data-component="button" href="#" role="button" target="_self">
+                <nav className="box-content h-full block absolute top-0 inset-x-0 text-background [font-family:Montserrat] text-[0.6875rem] font-medium leading-[1.125rem] tracking-[0.55px] text-right uppercase max-md:text-[0.625rem] max-md:leading-4.5 max-md:text-left max-md:tracking-[inherit]" data-ditto-id="style-link-23" data-component="nav">
                   Accessibility
                 </nav>
               </a>
@@ -840,7 +840,7 @@ export default function Page() {
         </div>
       </div>
       {" "}
-      <div className="box-content h-full block fixed top-0 inset-x-0 z-9999 pointer-events-none" data-ditto-id="style-div-99" id="hs-web-interactives-top-anchor" />
+      <div className="box-content h-full block fixed top-0 inset-x-0 z-9999 pointer-events-none" id="hs-web-interactives-top-anchor" />
       {" "}
       <div className="box-content block" id="hs-web-interactives-floating-container">
         {" "}

@@ -12,7 +12,7 @@ export type MediaTileData = {
 export default function MediaTile({ d, styles }: { d: MediaTileData; styles: MediaTileStyles }) {
   return (
     <div className={cn("w-[404.3px] flex relative pr-[13.3px] shrink-0 max-md:w-[114.3px] max-lg:pr-0 md:max-lg:w-54 2xl:w-[606.7px] 2xl:pr-5", styles.className)} aria-label={d.ariaLabel} role="group">
-      <div className={cn("h-[21.9875rem] min-h-[21.8375rem] flex relative p-[13.3px] flex-col overflow-hidden bg-surface-2 max-lg:min-h-full max-lg:p-5 2xl:h-[32.8125rem] 2xl:min-h-[32.8125rem] 2xl:p-5", styles.className2)}>
+      <div className={cn("h-[21.9875rem] min-h-[21.8375rem] flex relative p-[13.3px] flex-col overflow-hidden bg-surface max-lg:min-h-full max-lg:p-5 2xl:h-[32.8125rem] 2xl:min-h-[32.8125rem] 2xl:p-5", styles.className2)}>
         <div className="block pr-[1.6625rem] grow max-lg:pr-0 2xl:pr-10 2xl:text-lg 2xl:leading-[1.4375rem]">
           <p className={cn("block", styles.className3)}>
             {d.description}

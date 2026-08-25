@@ -18,7 +18,7 @@ export default function MediaTile({ d, styles }: { d: MediaTileData; styles: Med
               <img className="box-content w-83.5 h-100 inline max-w-full overflow-clip object-cover aspect-[auto_550/550] max-md:w-67.5 max-md:h-82.5" data-component="image" alt="" height="550" src={d.imgSrc} width="550" />
             </a>
           </div>
-          <div className="box-content block mb-[0.4375rem] text-border [font-family:'Public_Sans'] text-[0.9375rem] leading-[1.6875rem] tracking-[0.75px] uppercase max-md:text-sm max-md:leading-[1.375rem] max-md:tracking-[0.7px]">
+          <div className="box-content block mb-[0.4375rem] text-accent [font-family:'Public_Sans'] text-[0.9375rem] leading-[1.6875rem] tracking-[0.75px] uppercase max-md:text-sm max-md:leading-[1.375rem] max-md:tracking-[0.7px]">
             {d.text}
           </div>
           <div className="box-content block">
