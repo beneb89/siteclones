@@ -38,6 +38,17 @@ on:
       - 'targets*.txt'
       - '.github/workflows/clone.yml'
 
+# One run of this workflow per branch at a time. Two runs cloning the same
+# list into the same folder raced: both finished near each other and the
+# second could not rebase onto what the first had just committed, so four
+# hours of capture were discarded. Queue rather than cancel — a job already
+# hours into a capture should finish and commit, not be killed by a newer
+# trigger. This lives at workflow level because a job-level group cannot read
+# the matrix context; trying that made the run fail before any job started.
+concurrency:
+  group: clone-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -88,14 +99,6 @@ jobs:
       matrix:
         target: ${{ fromJSON(needs.plan.outputs.lists) }}
     name: clone (${{ matrix.target.list }})
-    # One capture per list at a time. Two runs cloning the same list into the
-    # same folder raced here: both finished near each other and the second
-    # could not rebase onto what the first had just committed, so four hours
-    # of capture were thrown away. Queue instead of cancel — a run that is
-    # already hours in should be allowed to finish and commit.
-    concurrency:
-      group: clone-${{ matrix.target.list }}
-      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
