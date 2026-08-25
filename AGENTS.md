@@ -76,6 +76,13 @@ This repo is a workspace for cloning websites into runnable apps with
   reach the target instead: `.github/workflows/clone.yml` does exactly that and
   commits the output back to the branch. A wider network policy or a local run
   are the other two options; none of them is a code change.
+- A run that dies within seconds — `plan` failed, the clone job skipped, no
+  logs at all — is a startup failure, not a broken workflow file. Do not
+  bisect the YAML for it. The reason is in the check-run annotation:
+  `/repos/{owner}/{repo}/commits/{sha}/check-runs`, then the failed run's
+  `annotations_url`. It said "the job was not started because recent account
+  payments have failed or your spending limit needs to be increased" — an
+  Actions billing stop, which no change in this repo can fix.
 - Chromium is preinstalled at `PLAYWRIGHT_BROWSERS_PATH` in the remote
   sandbox — don't run `playwright install` unless setup says it's missing.
 - ditto respects robots.txt by default.
