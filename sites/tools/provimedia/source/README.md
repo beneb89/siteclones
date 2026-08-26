@@ -4,7 +4,9 @@ The clone in `../app` reproduces what the browser painted. It does not carry
 the page's JavaScript: ditto's capture stores images, svg, video, fonts and
 css as assets and drops everything else, so a page whose point is its script —
 here, a calculator — comes through as a working-looking widget that cannot
-compute. This folder holds the code that is missing from it.
+compute. This folder holds the code that is missing from it; the clone itself
+now computes, out of `../app/src/app/llm-pricing.ts`, which was written from
+what is in here.
 
 Two folders, from two sources:
 

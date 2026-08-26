@@ -1,10 +1,6 @@
+import Calculator from "./components/calculator";
 import MediaTile, { type MediaTileData } from "./components/media-tile";
 import Icon from "./svgs/svg-icon";
-import TextLink, { type TextLinkData } from "./components/text-link";
-import Tile, { type TileData } from "./components/tile";
-import Logo, { type LogoData } from "./components/logo";
-import Tile2, { type Tile2Data } from "./components/tile2";
-import Tile3, { type Tile3Data } from "./components/tile3";
 import MediaTile2, { type MediaTile2Data } from "./components/media-tile2";
 import FeatureCard, { type FeatureCardData } from "./components/feature-card";
 import Icon2 from "./svgs/svg-icon2";
@@ -18,7 +14,7 @@ import ListRow3, { type ListRow3Data } from "./components/list-row3";
 import TextLink2, { type TextLink2Data } from "./components/text-link2";
 import Icon7 from "./svgs/svg-icon7";
 import TextLink3, { type TextLink3Data } from "./components/text-link3";
-import { MediaTile_styles, TextLink_styles, Logo_styles, Tile2_styles, MediaTile2_styles, FeatureCard_styles, ListRow_styles, ListRow_styles2, ListRow2_styles, ListRow_styles3, ListRow3_styles, TextLink3_styles } from "./_styles";
+import { MediaTile_styles, MediaTile2_styles, FeatureCard_styles, ListRow_styles, ListRow_styles2, ListRow2_styles, ListRow_styles3, ListRow3_styles, TextLink3_styles } from "./_styles";
 
 const MediaTile_data: MediaTileData[] = [
     { href: "/leistungen", label: " Leistungen ", ariahaspopup: "true", ariaLabel: "Untermenü Leistungen" },
@@ -29,43 +25,6 @@ const MediaTile_data: MediaTileData[] = [
     { href: "/company-audit", label: "Company Audit", ariaLabel: "Untermenü Company Audit" },
     { href: "/code-guardian", label: "Code Guardian", ariaLabel: "Untermenü Code Guardian" },
     { href: "/community", label: "Community", ariaLabel: "Untermenü Community" }
-];
-const TextLink_data: TextLinkData[] = [
-    { ariapressed: "true", label: "Chatbot-Antwort" },
-    { ariapressed: "false", label: "Dokument-Zusammenfassung" },
-    { ariapressed: "false", label: "RAG-Suche mit Kontext" },
-    { ariapressed: "false", label: "Code-Assistent" }
-];
-const Tile_data: TileData[] = [
-    { htmlFor: "llm-requests", text: " Anfragen pro Monat ", id: "llm-requests", max: "10000000", min: "1" },
-    { htmlFor: "llm-input-tokens", text: " Ø Input-Tokens / Anfrage ", id: "llm-input-tokens", max: "1000000", min: "0" },
-    { htmlFor: "llm-output-tokens", text: " Ø Output-Tokens / Anfrage ", id: "llm-output-tokens", max: "1000000", min: "0" }
-];
-const Logo_data: LogoData[] = [
-    { value: "claude-opus", text: "Claude Opus 4.8", text2: "Anthropic" },
-    { value: "claude-sonnet", text: "Claude Sonnet 5", text2: "Anthropic" },
-    { value: "claude-haiku-4-5", text: "Claude Haiku 4.5", text2: "Anthropic" },
-    { value: "gpt-5", text: "GPT-5", text2: "OpenAI" },
-    { value: "gpt-5-mini", text: "GPT-5 mini", text2: "OpenAI" },
-    { value: "gemini-2-5-pro", text: "Gemini 2.5 Pro", text2: "Google" },
-    { value: "mistral-large", text: "Mistral Large", text2: "Mistral" }
-];
-const Tile2_data: Tile2Data[] = [
-    { description: "GPT-5 mini", description2: "OpenAI", text: " Günstigstes Modell ", text2: "8,00 $", text3: "7,04 €" },
-    { description: "Claude Haiku 4.5", description2: "Anthropic", text: "× 2,9", text2: "23,00 $", text3: "20,24 €" },
-    { description: "Mistral Large", description2: "Mistral", text: "× 4,3", text2: "34,00 $", text3: "29,92 €" },
-    { description: "GPT-5", description2: "OpenAI", text: "× 5,0", text2: "40,00 $", text3: "35,20 €" },
-    { description: "Gemini 2.5 Pro", description2: "Google", text: "× 5,0", text2: "40,00 $", text3: "35,20 €" },
-    { description: "Claude Sonnet 5", description2: "Anthropic", text: "× 8,6", text2: "69,00 $", text3: "60,72 €" },
-    { description: "Claude Opus 4.8", description2: "Anthropic", text: "× 14,4", text2: "115,00 $", text3: "101,20 €" }
-];
-const Tile3_data: Tile3Data[] = [
-    { text: "Claude Haiku 4.5", text2: "Anthropic", text3: "23,00 $", text4: "20,24 € ", text5: "× 2,9" },
-    { text: "Mistral Large", text2: "Mistral", text3: "34,00 $", text4: "29,92 € ", text5: "× 4,3" },
-    { text: "GPT-5", text2: "OpenAI", text3: "40,00 $", text4: "35,20 € ", text5: "× 5,0" },
-    { text: "Gemini 2.5 Pro", text2: "Google", text3: "40,00 $", text4: "35,20 € ", text5: "× 5,0" },
-    { text: "Claude Sonnet 5", text2: "Anthropic", text3: "69,00 $", text4: "60,72 € ", text5: "× 8,6" },
-    { text: "Claude Opus 4.8", text2: "Anthropic", text3: "115,00 $", text4: "101,20 € ", text5: "× 14,4" }
 ];
 const MediaTile2_data: MediaTile2Data[] = [
     { text: "Was kostet die ChatGPT-API pro Monat?", description: "Das hängt von Anfragen und Token-Volumen ab. Beispiel: Ein Chatbot mit 10.000 Anfragen pro Monat (durchschnittlich 800 Input- und 300 Output-Tokens je Anfrage) kostet mit GPT-5 (1,25 USD Input / 10 USD Output pro 1 Mio. Tokens) rund 40 US-Dollar im Monat, mit GPT-5 mini rund 8 US-Dollar. Die Formel: Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis)." },
@@ -231,77 +190,7 @@ export default function Page() {
               </section>
               <div className="block mx-auto px-8 max-w-4xl max-md:px-4 md:max-lg:px-6">
                 <section className="border border-solid border-border block p-8 rounded-2xl bg-color-001 shadow-[var(--clr-1)_0px_0px_0px_0px,var(--clr-1)_0px_0px_0px_0px,var(--clr-1)_0px_0px_0px_0px,var(--clr-1)_0px_0px_0px_0px,var(--clr-2)_0px_1px_3px_0px,var(--clr-2)_0px_1px_2px_-1px] max-md:p-5">
-                  <div className="block">
-                    <div className="block mb-8">
-                      <p className="block mb-3 text-sm font-semibold leading-5 text-pretty">
-                        Anwendungsfall
-                      </p>
-                      <div className="grid gap-3 grid-cols-4 max-md:grid-cols-2">
-                        {TextLink_data.map((d, i) => <TextLink key={i} d={d} styles={TextLink_styles[i]} />)}
-                      </div>
-                    </div>
-                    <div className="grid mb-8 gap-5 grid-cols-3 max-md:grid-cols-1">
-                      {Tile_data.map((d, i) => <Tile key={i} d={d} />)}
-                    </div>
-                    <div className="block mb-8">
-                      <p className="block mb-3 text-sm font-semibold leading-5 text-pretty">
-                        Modelle vergleichen
-                      </p>
-                      <div className="flex flex-wrap gap-2.5">
-                        {Logo_data.map((d, i) => <Logo key={i} d={d} styles={Logo_styles[i]} />)}
-                      </div>
-                    </div>
-                    <div className="block">
-                      <div className="hidden max-md:block">
-                        {Tile2_data.map((d, i) => <Tile2 key={i} d={d} styles={Tile2_styles[i]} />)}
-                      </div>
-                      <div className="block overflow-auto max-md:hidden">
-                        <table className="table text-left [border-collapse:collapse] [border-spacing:2px] w-full">
-                          <thead className="table-header-group align-middle [border-collapse:collapse] [border-spacing:2px]">
-                            <tr className="border-b border-solid border-b-border table-row align-middle text-muted-foreground text-xs leading-4 tracking-[0.6px] uppercase [border-collapse:collapse] [border-spacing:2px]">
-                              <th className="table-cell py-3 pr-4 align-middle font-semibold [border-collapse:collapse] [border-spacing:2px]">
-                                Modell
-                              </th>
-                              <th className="table-cell py-3 pr-4 align-middle font-semibold [border-collapse:collapse] [border-spacing:2px]">
-                                Anbieter
-                              </th>
-                              <th className="table-cell py-3 pr-4 align-middle font-semibold text-right [border-collapse:collapse] [border-spacing:2px]">
-                                USD / Monat
-                              </th>
-                              <th className="table-cell py-3 align-middle font-semibold text-right [border-collapse:collapse] [border-spacing:2px]">
-                                EUR / Monat
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody className="table-row-group align-middle [border-collapse:collapse] [border-spacing:2px]">
-                            <tr className="border-b border-solid border-b-surface-3 table-row align-middle bg-clr-3 [border-collapse:collapse] [border-spacing:2px]">
-                              <td className="table-cell py-3 pr-4 align-middle [border-collapse:collapse] [border-spacing:2px]">
-                                <span className="inline text-primary font-semibold [border-collapse:collapse] [border-spacing:2px]">
-                                  GPT-5 mini
-                                </span>
-                                <span className="inline ml-2 py-0.5 px-2 rounded-full align-middle text-primary text-[0.6875rem] font-semibold leading-[1.0625rem] tracking-[0.55px] uppercase bg-surface [border-collapse:collapse] [border-spacing:2px]">
-                                  {" Günstigstes Modell "}
-                                </span>
-                              </td>
-                              <td className="table-cell py-3 pr-4 align-middle text-muted-foreground [border-collapse:collapse] [border-spacing:2px]">
-                                OpenAI
-                              </td>
-                              <td className="table-cell py-3 pr-4 align-middle font-semibold text-right [border-collapse:collapse] [border-spacing:2px]">
-                                8,00 $
-                              </td>
-                              <td className="table-cell py-3 align-middle text-muted-foreground text-right [border-collapse:collapse] [border-spacing:2px]">
-                                {"7,04 € "}
-                              </td>
-                            </tr>
-                            {Tile3_data.map((d, i) => <Tile3 key={i} d={d} />)}
-                          </tbody>
-                        </table>
-                      </div>
-                      <p className="block mt-4 text-muted-foreground text-xs leading-[1.25rem] text-pretty">
-                        Listenpreise der Anbieter, Stand: 14. Juli 2026 · EUR-Umrechnung ≈ Kurs 0,88 (Stand: 14. Juli 2026) · ohne Rabatte durch Caching oder Batch-Verarbeitung · alle Angaben ohne Gewähr.
-                      </p>
-                    </div>
-                  </div>
+                  <Calculator />
                 </section>
               </div>
               <div className="block mx-auto pb-20 px-8 max-w-4xl max-md:pb-16 max-md:px-4 md:max-lg:px-6">

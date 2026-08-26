@@ -6,7 +6,7 @@ whole point of its own URL, so there is no navigation worth following from it.
 
 | Folder | Page | Note |
 | --- | --- | --- |
-| `provimedia` | provimedia.de/tools/llm-kosten-rechner | LLM API cost calculator; `source/` holds the page's own JavaScript |
+| `provimedia` | provimedia.de/tools/llm-kosten-rechner | LLM API cost calculator; `source/` holds the page's own JavaScript, and the clone computes |
 
 ## What a clone of a tool page is and is not
 
@@ -24,3 +24,18 @@ Where that matters, the page's own scripts are fetched separately and kept in
 LLM calculator that is the full price table, the hard-coded USD→EUR rate and
 the workload presets: everything the rendered page shows a result for without
 saying how.
+
+## The calculator runs
+
+For `provimedia` the gap is closed rather than only documented: the price
+table, presets, USD/EUR rate and formula were read out of the fetched chunk
+into `app/src/app/llm-pricing.ts`, and `app/src/app/components/calculator.tsx`
+drives the captured controls with them. Entering 10,000 requests at 800/300
+tokens reproduces the captured table row for row; changing anything
+recomputes, re-sorts and moves the "Günstigstes Modell" badge.
+
+```bash
+cd provimedia/app && npm install && npm run dev
+```
+
+Re-cloning the site overwrites the generated app, those two files included.

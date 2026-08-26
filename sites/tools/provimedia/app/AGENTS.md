@@ -18,6 +18,26 @@ This is a generated ditto.site clone app for https://www.provimedia.de/tools/llm
 - `src/app/ditto.css`: fidelity CSS for captured layout, pseudos, keyframes, and interaction states. Small visual tweaks are reasonable; broad rewrites can break clone fidelity.
 - Root SEO/docs files such as `AGENTS.md`, `ARCHITECTURE.md`, and `src/app/robots.ts`, `src/app/sitemap.ts`, and `src/app/llms.txt/route.ts`.
 
+## Hand-added: the working calculator
+
+Everything below this heading is generated. This part is not.
+
+The capture froze one workload into markup — 10,000 requests at 800 input and
+300 output tokens — because a clone reproduces what the browser painted and
+the page's script never comes with it. Two files restore the behaviour:
+
+- `src/app/llm-pricing.ts` — the price table, the presets, the USD/EUR rate and
+  the formula, read out of the site's own chunk (kept in `../source/`), not
+  guessed from the rendered numbers.
+- `src/app/components/calculator.tsx` — a client component holding the state
+  and driving the generated `text-link`, `tile`, `logo`, `tile2` and `tile3`
+  components, which gained optional interaction props for it.
+
+`page.tsx` renders `<Calculator />` in place of the frozen block. The classes
+are the captured ones; selected and unselected variants both come from
+`_styles.ts`, which happens to contain both because the capture contained
+both. Re-cloning this site overwrites all of it — save the two files first.
+
 ## Generated Runtime
 
 `src/app/ditto` contains generated runtime utilities for captured interactions and motion. Current runtime utilities: none emitted for this capture. Do not casually rewrite these files; they are plumbing that maps captured recipes to stable `data-ditto-id` anchors in delivered apps.

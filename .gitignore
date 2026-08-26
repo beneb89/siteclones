@@ -11,6 +11,8 @@ sites/**/node_modules/
 sites/**/.next/
 sites/**/dist/
 sites/**/.turbo/
+sites/**/package-lock.json
+sites/**/tsconfig.tsbuildinfo
 
 # raw capture working dirs (screenshots + IR, large and machine-specific)
 sites/**/.clone/
