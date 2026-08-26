@@ -1,0 +1,2050 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LLM-API-Kostenrechner: GPT, Claude &amp; Gemini | Provimedia</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/0bcc6d5713b9.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/88bfa42585ee.woff2") format("woff2");
+}
+
+/* tokens */
+:root {
+  --background: rgb(244, 243, 239);
+  --foreground: rgb(21, 22, 26);
+  --primary: rgb(28, 107, 90);
+  --accent: rgb(79, 183, 156);
+  --border: rgb(227, 225, 218);
+  --muted-foreground: rgb(100, 107, 120);
+  --muted: oklch(0.707 0.022 261.325);
+  --surface: rgb(231, 240, 237);
+  --surface-2: oklch(0.928 0.006 264.531);
+  --surface-3: oklab(0.909277 -0.000561208 0.00965476 / 0.7);
+  --surface-4: oklch(0.967 0.003 264.542);
+  --surface-5: oklab(0.999994 0.0000455678 0.0000200868 / 0.1);
+  --surface-6: oklab(0.999994 0.0000455678 0.0000200868 / 0.4);
+  --color-001: rgb(255, 255, 255);
+  --color-002: oklab(0.200857 0.000648633 -0.00809099 / 0.8);
+  --color-003: oklch(0.872 0.01 258.338);
+}
+
+:root {
+  /* fonts */
+  --font-body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 16px;
+  --font-size-004: 18px;
+  --font-size-005: 24px;
+  --font-size-006: 30px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 20px;
+  --line-height-003: 16px;
+  --line-height-004: 28px;
+  --line-height-005: 27.2px;
+  --line-height-006: 26px;
+  --line-height-007: 31.2px;
+  --line-height-008: 22.75px;
+  --line-height-009: 19.5px;
+  --line-height-010: 36px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 2px;
+  --space-003: 4px;
+  --space-004: 6px;
+  --space-005: 8px;
+  --space-006: 10px;
+  --space-007: 12px;
+  --space-008: 14px;
+  --space-009: 16px;
+  --space-010: 20px;
+  --space-011: 24px;
+  --space-012: 32px;
+  --space-013: 40px;
+  --space-014: 48px;
+  --space-015: 80px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  --radius-002: 4px;
+  --radius-003: 8px;
+  --radius-004: 12px;
+  --radius-005: 16px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+.cn0{display:block;color:var(--foreground);font-family:var(--font-body);font-size:var(--font-size-003);font-weight:var(--font-weight-001);font-style:normal;line-height:var(--line-height-001);letter-spacing:normal;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{display:block}
+.cn2{height:5608.25px;min-height:100vh;display:flex;flex-direction:column;background-color:var(--background)}
+.cn3{width:1px;height:1px;display:block;position:absolute;top:0px;left:0px;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:pointer}
+.cn4{height:0px;display:block}
+.cn5{height:81px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:block;position:fixed;right:0px;left:0px;z-index:50;background-color:oklab(0.963732 -0.000438422 0.00541788 / 0.95);backdrop-filter:blur(24px)}
+.cn6{display:block;max-width:1280px;padding-right:var(--space-012);padding-left:var(--space-012);margin-left:auto;margin-right:auto}
+.cn7{height:80px;display:flex;justify-content:space-between;align-items:center}
+.cn8{height:28px;display:block;flex-shrink:0;cursor:pointer}
+.cn9{display:inline;font-size:20px;font-weight:var(--font-weight-004);line-height:var(--line-height-004);letter-spacing:-0.5px}
+.cn10{height:36px;display:flex;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);white-space:nowrap;text-wrap:nowrap}
+.cn11{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn12{display:block;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);cursor:pointer}
+.cn13{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn14{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn15{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn16{display:block;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);cursor:pointer}
+.cn17{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn18{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn19{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn20{display:block;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);cursor:pointer}
+.cn21{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn22{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn23{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002)}
+.cn24{height:36px;display:flex;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);cursor:pointer}
+.cn25{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn26{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn27{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn28{height:36px;display:flex;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);cursor:pointer}
+.cn29{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn30{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn31{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn32{height:36px;display:flex;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);cursor:pointer}
+.cn33{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn34{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn35{height:36px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn36{height:36px;display:flex;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);cursor:pointer}
+.cn37{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn38{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn39{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);align-items:center;color:var(--color-002);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002)}
+.cn40{height:36px;display:flex;padding-top:var(--space-005);padding-right:var(--space-003);padding-bottom:var(--space-005);padding-left:var(--space-007);align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);cursor:pointer}
+.cn41{display:flex;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-002);align-items:center;text-align:center;cursor:default}
+.cn42{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn43{width:44px;height:44px;display:none;position:relative;z-index:50;min-width:0px;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;text-align:center;cursor:default}
+.cn44{width:22px;display:flex;flex-direction:column;row-gap:5px;column-gap:5px}
+.cn45{height:2.5px;display:block;min-width:0px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);background-color:var(--foreground)}
+.cn46{height:2.5px;display:block;min-width:0px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);background-color:var(--foreground);scale:1}
+.cn47{height:2.5px;display:block;min-width:0px;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);background-color:var(--foreground)}
+.cn48{display:block;flex-grow:1;flex-basis:0%}
+.cn49{height:100%;display:block;background-color:var(--background)}
+.cn50{display:block;max-width:896px;margin-right:auto;margin-left:auto;padding-top:var(--space-014);padding-right:var(--space-012);padding-bottom:var(--space-012);padding-left:var(--space-012)}
+.cn51{display:block;margin-bottom:var(--space-011);color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-002)}
+.cn52{height:20px;display:flex;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);overflow-x:auto;overflow-y:auto;white-space:nowrap;text-wrap:nowrap;list-style-type:none;list-style-position:outside}
+.cn53{display:flex;align-items:center}
+.cn54{display:flex;align-items:center;row-gap:var(--space-003);column-gap:var(--space-003);cursor:pointer}
+.cn55{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn56{display:block}
+.cn57{display:flex;align-items:center}
+.cn58{display:block;margin-right:var(--space-005);margin-left:var(--space-005);color:var(--color-003)}
+.cn59{display:block;cursor:pointer}
+.cn60{height:20px;display:flex;align-items:center}
+.cn61{display:block;margin-right:var(--space-005);margin-left:var(--space-005);color:var(--color-003)}
+.cn62{display:block;color:var(--foreground);font-weight:var(--font-weight-002)}
+.cn63{display:inline-block;padding-top:var(--space-003);padding-right:var(--space-007);padding-bottom:var(--space-003);padding-left:var(--space-007);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);color:var(--primary);font-size:var(--font-size-001);font-weight:var(--font-weight-003);line-height:var(--line-height-003);letter-spacing:0.6px;text-transform:uppercase;background-color:var(--surface)}
+.cn64{display:block;margin-top:var(--space-009);font-size:48px;font-weight:var(--font-weight-004);line-height:48px;text-wrap:balance}
+.cn65{width:100%;max-width:672px;display:block;margin-top:var(--space-009);color:var(--muted-foreground);font-size:var(--font-size-004);line-height:29.25px;text-wrap:pretty}
+.cn66{display:block;max-width:896px;margin-right:auto;margin-left:auto;padding-right:var(--space-012);padding-left:var(--space-012)}
+.cn67{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-012);padding-right:var(--space-012);padding-bottom:var(--space-012);padding-left:var(--space-012);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--color-001);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px}
+.cn68{display:block}
+.cn69{display:block;margin-bottom:var(--space-012)}
+.cn70{display:block;margin-bottom:var(--space-007);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);text-wrap:pretty}
+.cn71{display:grid;row-gap:var(--space-007);column-gap:var(--space-007);grid-template-rows:58px;grid-template-columns:repeat(auto-fit, minmax(144px, 1fr))}
+.cn72{min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);text-align:center;background-color:var(--surface);cursor:default}
+.cn73{min-height:44px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);text-align:center;background-color:var(--background);cursor:default}
+.cn74{min-height:44px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);text-align:center;background-color:var(--background);cursor:default}
+.cn75{min-height:44px;border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);text-align:center;background-color:var(--background);cursor:default}
+.cn76{display:grid;margin-bottom:var(--space-012);row-gap:var(--space-010);column-gap:var(--space-010);grid-template-rows:70px;grid-template-columns:repeat(auto-fit, minmax(204px, 1fr))}
+.cn77{display:block}
+.cn78{display:block;margin-bottom:var(--space-004);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:default}
+.cn79{width:100%;height:44px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--border);display:inline-block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;background-color:var(--background);cursor:text}
+.cn80{display:block}
+.cn81{display:block;margin-bottom:var(--space-004);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:default}
+.cn82{width:100%;height:44px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--border);display:inline-block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;background-color:var(--background);cursor:text}
+.cn83{display:block}
+.cn84{display:block;margin-bottom:var(--space-004);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);cursor:default}
+.cn85{width:100%;height:44px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--border);display:inline-block;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;background-color:var(--background);cursor:text}
+.cn86{display:block;margin-bottom:var(--space-012)}
+.cn87{display:block;margin-bottom:var(--space-007);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);text-wrap:pretty}
+.cn88{display:flex;flex-wrap:wrap;row-gap:var(--space-006);column-gap:var(--space-006)}
+.cn89{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn90{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn91{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn92{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn93{height:36px;display:block;line-height:var(--line-height-002)}
+.cn94{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);white-space:nowrap}
+.cn95{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn96{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn97{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn98{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn99{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn100{height:36px;display:block;line-height:var(--line-height-002)}
+.cn101{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);white-space:nowrap}
+.cn102{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn103{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn104{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn105{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn106{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn107{height:36px;display:block;line-height:var(--line-height-002)}
+.cn108{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);white-space:nowrap}
+.cn109{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn110{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn111{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn112{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn113{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn114{display:block;line-height:var(--line-height-002)}
+.cn115{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002)}
+.cn116{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn117{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn118{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn119{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn120{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn121{display:block;line-height:var(--line-height-002)}
+.cn122{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);white-space:nowrap}
+.cn123{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn124{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn125{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn126{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn127{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn128{height:36px;display:block;line-height:var(--line-height-002)}
+.cn129{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);white-space:nowrap}
+.cn130{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn131{height:54px;min-height:44px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;padding-top:var(--space-005);padding-right:var(--space-008);padding-bottom:var(--space-005);padding-left:var(--space-008);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);background-color:var(--surface);cursor:pointer}
+.cn132{width:1px;height:1px;display:block;position:absolute;min-width:0px;margin-top:var(--space-001);margin-right:var(--space-001);margin-bottom:var(--space-001);margin-left:var(--space-001);overflow-x:hidden;overflow-y:hidden;white-space:nowrap;text-wrap:nowrap;clip-path:inset(50%);cursor:default}
+.cn133{width:16px;height:16px;border-width:1px;border-style:solid;border-color:var(--primary);display:flex;border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;color:var(--color-001);background-color:var(--primary)}
+.cn134{width:auto;height:12px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn135{height:36px;display:block;line-height:var(--line-height-002)}
+.cn136{display:block;color:var(--primary);font-size:var(--font-size-002);font-weight:var(--font-weight-002);white-space:nowrap}
+.cn137{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn138{display:block}
+.cn139{display:none}
+.cn140{border-width:1px;border-style:solid;border-color:var(--primary);display:block;margin-bottom:var(--space-007);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:oklab(0.947435 -0.0102584 0.00105584 / 0.4)}
+.cn141{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn142{display:block;min-width:0px}
+.cn143{display:block;color:var(--primary);font-weight:var(--font-weight-003);text-wrap:pretty}
+.cn144{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn145{display:block;min-width:0px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);flex-shrink:0;color:var(--primary);font-size:11px;font-weight:var(--font-weight-003);line-height:16.5px;letter-spacing:0.55px;text-transform:uppercase;background-color:var(--surface)}
+.cn146{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn147{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn148{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn149{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-bottom:var(--space-007);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--background)}
+.cn150{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn151{display:block;min-width:0px}
+.cn152{display:block;font-weight:var(--font-weight-003);text-wrap:pretty;white-space:nowrap}
+.cn153{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn154{display:block;min-width:0px;flex-shrink:0;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn155{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn156{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn157{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn158{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-bottom:var(--space-007);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--background)}
+.cn159{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn160{display:block;min-width:0px}
+.cn161{display:block;font-weight:var(--font-weight-003);text-wrap:pretty;white-space:nowrap}
+.cn162{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn163{display:block;min-width:0px;flex-shrink:0;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn164{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn165{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn166{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn167{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-bottom:var(--space-007);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--background)}
+.cn168{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn169{display:block;min-width:0px}
+.cn170{display:block;font-weight:var(--font-weight-003);text-wrap:pretty;white-space:nowrap}
+.cn171{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn172{display:block;min-width:0px;flex-shrink:0;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn173{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn174{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn175{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn176{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-bottom:var(--space-007);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--background)}
+.cn177{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn178{display:block;min-width:0px}
+.cn179{display:block;font-weight:var(--font-weight-003);text-wrap:pretty;white-space:nowrap}
+.cn180{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn181{display:block;min-width:0px;flex-shrink:0;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn182{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn183{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn184{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn185{border-width:1px;border-style:solid;border-color:var(--border);display:block;margin-bottom:var(--space-007);padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--background)}
+.cn186{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn187{display:block;min-width:0px}
+.cn188{display:block;font-weight:var(--font-weight-003);text-wrap:pretty;white-space:nowrap}
+.cn189{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn190{display:block;min-width:0px;flex-shrink:0;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn191{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn192{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn193{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn194{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--background)}
+.cn195{display:flex;justify-content:space-between;align-items:flex-start;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn196{display:block;min-width:0px}
+.cn197{display:block;font-weight:var(--font-weight-003);text-wrap:pretty;white-space:nowrap}
+.cn198{display:block;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);text-wrap:pretty}
+.cn199{display:block;min-width:0px;flex-shrink:0;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003)}
+.cn200{display:flex;margin-top:var(--space-007);align-items:baseline;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn201{display:block;min-width:0px;font-size:var(--font-size-004);font-weight:var(--font-weight-004);line-height:var(--line-height-004)}
+.cn202{display:block;min-width:0px;color:var(--muted-foreground)}
+.cn203{height:384px;display:block;overflow-x:auto;overflow-y:auto}
+.cn204{width:100%;height:384px;display:table;text-align:left;border-collapse:collapse;border-spacing:2px}
+.cn205{display:table-header-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn206{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--border);display:table-row;vertical-align:middle;color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);letter-spacing:0.6px;text-transform:uppercase;border-collapse:collapse;border-spacing:2px}
+.cn207{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn208{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn209{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn210{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn211{height:343px;display:table-row-group;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn212{height:49px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;background-color:oklab(0.947435 -0.0102584 0.00105584 / 0.4);border-collapse:collapse;border-spacing:2px}
+.cn213{height:49px;display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn214{display:inline;color:var(--primary);font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn215{display:inline;margin-left:var(--space-005);padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);vertical-align:middle;color:var(--primary);font-size:11px;font-weight:var(--font-weight-003);line-height:16.5px;letter-spacing:0.55px;text-transform:uppercase;background-color:var(--surface);border-collapse:collapse;border-spacing:2px}
+.cn216{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn217{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn218{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn219{height:49px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn220{height:49px;display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn221{display:inline;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn222{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn223{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn224{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn225{display:inline;margin-left:var(--space-005);font-size:var(--font-size-001);line-height:var(--line-height-003);border-collapse:collapse;border-spacing:2px}
+.cn226{height:49px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn227{height:49px;display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn228{display:inline;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn229{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn230{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn231{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn232{display:inline;margin-left:var(--space-005);font-size:var(--font-size-001);line-height:var(--line-height-003);border-collapse:collapse;border-spacing:2px}
+.cn233{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn234{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn235{display:inline;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn236{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn237{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn238{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn239{display:inline;margin-left:var(--space-005);font-size:var(--font-size-001);line-height:var(--line-height-003);border-collapse:collapse;border-spacing:2px}
+.cn240{height:49px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn241{height:49px;display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn242{display:inline;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn243{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn244{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn245{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn246{display:inline;margin-left:var(--space-005);font-size:var(--font-size-001);line-height:var(--line-height-003);border-collapse:collapse;border-spacing:2px}
+.cn247{height:49px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn248{height:49px;display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn249{display:inline;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn250{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn251{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn252{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn253{display:inline;margin-left:var(--space-005);font-size:var(--font-size-001);line-height:var(--line-height-003);border-collapse:collapse;border-spacing:2px}
+.cn254{height:49px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-3);display:table-row;vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn255{height:49px;display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;border-collapse:collapse;border-spacing:2px}
+.cn256{display:inline;font-weight:var(--font-weight-003);border-collapse:collapse;border-spacing:2px}
+.cn257{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);border-collapse:collapse;border-spacing:2px}
+.cn258{display:table-cell;padding-top:var(--space-007);padding-right:var(--space-009);padding-bottom:var(--space-007);vertical-align:middle;font-weight:var(--font-weight-003);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn259{display:table-cell;padding-top:var(--space-007);padding-bottom:var(--space-007);vertical-align:middle;color:var(--muted-foreground);text-align:right;border-collapse:collapse;border-spacing:2px}
+.cn260{display:inline;margin-left:var(--space-005);font-size:var(--font-size-001);line-height:var(--line-height-003);border-collapse:collapse;border-spacing:2px}
+.cn261{display:block;margin-top:var(--space-009);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-009);text-wrap:pretty}
+.cn262{display:block;max-width:896px;margin-right:auto;margin-left:auto;padding-right:var(--space-012);padding-bottom:var(--space-015);padding-left:var(--space-012)}
+.cn263{display:block;margin-top:64px}
+.cn264{display:block;margin-top:var(--space-012);margin-bottom:var(--space-007);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-007);overflow-wrap:break-word;text-wrap:balance}
+.cn265{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn266{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn267{display:block;margin-top:var(--space-012);margin-bottom:var(--space-007);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-007);overflow-wrap:break-word;text-wrap:balance}
+.cn268{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn269{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn270{display:block;margin-top:var(--space-012);margin-bottom:var(--space-007);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-007);overflow-wrap:break-word;text-wrap:balance}
+.cn271{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn272{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn273{display:block;margin-top:var(--space-012);margin-bottom:var(--space-007);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-007);overflow-wrap:break-word;text-wrap:balance}
+.cn274{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn275{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn276{display:block;margin-top:var(--space-012);margin-bottom:var(--space-007);font-size:var(--font-size-005);font-weight:var(--font-weight-004);line-height:var(--line-height-007);overflow-wrap:break-word;text-wrap:balance}
+.cn277{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn278{display:block;margin-bottom:var(--space-009);color:var(--muted-foreground);line-height:var(--line-height-005);text-wrap:pretty}
+.cn279{display:block;margin-top:64px}
+.cn280{display:block;margin-bottom:var(--space-005);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-010);text-wrap:balance}
+.cn281{display:block;margin-top:var(--space-009)}
+.cn282{height:69px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-2);display:block}
+.cn283{height:100%;display:flex;padding-top:var(--space-010);padding-bottom:var(--space-010);justify-content:space-between;align-items:center;list-style-position:inside;cursor:pointer}
+.cn284{height:100%;display:block;padding-right:var(--space-009);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn285{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--muted-foreground)}
+.cn286{display:block;padding-bottom:var(--space-010);color:var(--muted-foreground);line-height:var(--line-height-006);text-wrap:pretty}
+.cn287{height:69px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-2);display:block}
+.cn288{height:100%;display:flex;padding-top:var(--space-010);padding-bottom:var(--space-010);justify-content:space-between;align-items:center;list-style-position:inside;cursor:pointer}
+.cn289{height:100%;display:block;padding-right:var(--space-009);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn290{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--muted-foreground)}
+.cn291{display:block;padding-bottom:var(--space-010);color:var(--muted-foreground);line-height:var(--line-height-006);text-wrap:pretty}
+.cn292{height:69px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-2);display:block}
+.cn293{height:100%;display:flex;padding-top:var(--space-010);padding-bottom:var(--space-010);justify-content:space-between;align-items:center;list-style-position:inside;cursor:pointer}
+.cn294{height:100%;display:block;padding-right:var(--space-009);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn295{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--muted-foreground)}
+.cn296{display:block;padding-bottom:var(--space-010);color:var(--muted-foreground);line-height:var(--line-height-006);text-wrap:pretty}
+.cn297{height:69px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--surface-2);display:block}
+.cn298{height:100%;display:flex;padding-top:var(--space-010);padding-bottom:var(--space-010);justify-content:space-between;align-items:center;list-style-position:inside;cursor:pointer}
+.cn299{height:100%;display:block;padding-right:var(--space-009);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn300{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--muted-foreground)}
+.cn301{display:block;padding-bottom:var(--space-010);color:var(--muted-foreground);line-height:var(--line-height-006);text-wrap:pretty}
+.cn302{height:68px;display:block}
+.cn303{height:100%;display:flex;padding-top:var(--space-010);padding-bottom:var(--space-010);justify-content:space-between;align-items:center;list-style-position:inside;cursor:pointer}
+.cn304{height:100%;display:block;padding-right:var(--space-009);font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004)}
+.cn305{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle;color:var(--muted-foreground)}
+.cn306{display:block;padding-bottom:var(--space-010);color:var(--muted-foreground);line-height:var(--line-height-006);text-wrap:pretty}
+.cn307{display:block;margin-top:var(--space-015)}
+.cn308{display:block;padding-top:56px;padding-right:var(--space-014);padding-bottom:56px;padding-left:var(--space-014);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);text-align:center;background-color:var(--foreground)}
+.cn309{display:block;color:var(--accent);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:pretty}
+.cn310{display:block;margin-top:var(--space-007);color:var(--background);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-010);text-wrap:balance}
+.cn311{display:block;max-width:672px;margin-top:var(--space-009);margin-right:auto;margin-left:auto;color:var(--color-003);line-height:var(--line-height-006);text-wrap:pretty}
+.cn312{display:block;margin-top:var(--space-012)}
+.cn313{height:100%;display:inline-flex;padding-top:var(--space-009);padding-right:var(--space-012);padding-bottom:var(--space-009);padding-left:var(--space-012);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004);background-color:var(--color-001);cursor:pointer}
+.cn314{display:block;margin-top:var(--space-015)}
+.cn315{display:block;margin-bottom:var(--space-011);font-size:var(--font-size-006);font-weight:var(--font-weight-004);line-height:var(--line-height-010);text-wrap:balance}
+.cn316{display:grid;row-gap:var(--space-010);column-gap:var(--space-010);grid-template-rows:205px;grid-template-columns:repeat(auto-fit, minmax(263px, 1fr))}
+.cn317{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-011);padding-right:var(--space-011);padding-bottom:var(--space-011);padding-left:var(--space-011);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--color-001);cursor:pointer}
+.cn318{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004);text-wrap:balance}
+.cn319{display:block;margin-top:var(--space-005);color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-008);text-wrap:pretty}
+.cn320{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-011);padding-right:var(--space-011);padding-bottom:var(--space-011);padding-left:var(--space-011);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--color-001);cursor:pointer}
+.cn321{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004);text-wrap:balance}
+.cn322{display:block;margin-top:var(--space-005);color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-008);text-wrap:pretty}
+.cn323{border-width:1px;border-style:solid;border-color:var(--border);display:block;padding-top:var(--space-011);padding-right:var(--space-011);padding-bottom:var(--space-011);padding-left:var(--space-011);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:var(--color-001);cursor:pointer}
+.cn324{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-003);line-height:var(--line-height-004);text-wrap:balance}
+.cn325{display:block;margin-top:var(--space-005);color:var(--muted-foreground);font-size:var(--font-size-002);line-height:var(--line-height-008);text-wrap:pretty}
+.cn326{border-top-width:1px;border-top-style:solid;border-top-color:var(--surface-4);display:block;padding-top:var(--space-011);padding-bottom:var(--space-011);color:var(--muted-foreground);font-size:var(--font-size-001);line-height:var(--line-height-003);background-color:var(--background)}
+.cn327{display:block;max-width:1280px;padding-right:var(--space-012);padding-left:var(--space-012);text-align:center;margin-left:auto;margin-right:auto}
+.cn328{display:block;margin-bottom:var(--space-005);color:var(--color-002);text-wrap:pretty}
+.cn329{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;row-gap:var(--space-005);column-gap:var(--space-011)}
+.cn330{height:16px;display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn331{width:auto;height:14px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn332{height:16px;display:block}
+.cn333{display:inline;color:var(--foreground);font-weight:var(--font-weight-002);cursor:pointer}
+.cn334{height:16px;display:block}
+.cn335{display:inline;color:var(--foreground);font-weight:var(--font-weight-002)}
+.cn336{display:block}
+.cn337{display:block}
+.cn338{display:block;background-color:var(--foreground)}
+.cn339{display:block;max-width:1280px;padding-top:var(--space-015);padding-right:var(--space-012);padding-bottom:var(--space-015);padding-left:var(--space-012);margin-left:auto;margin-right:auto}
+.cn340{display:grid;row-gap:var(--space-013);column-gap:var(--space-013);grid-template-rows:388px 424px;grid-template-columns:repeat(3, minmax(0, 1fr))}
+.cn341{height:388px;display:block;grid-column-start:span 1;grid-column-end:span 1}
+.cn342{height:36px;display:inline-block;padding-top:var(--space-003);padding-bottom:var(--space-003);cursor:pointer}
+.cn343{display:inline;color:var(--color-001);font-size:20px;font-weight:var(--font-weight-004);line-height:var(--line-height-004);letter-spacing:-0.5px}
+.cn344{display:block;margin-top:var(--space-009);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-008);text-wrap:pretty}
+.cn345{display:block;margin-top:var(--space-011)}
+.cn346{display:block;margin-bottom:var(--space-005);color:var(--color-003);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);text-wrap:pretty}
+.cn347{height:40px;display:block;color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);text-wrap:pretty}
+.cn348{display:inline}
+.cn349{height:388px;display:block}
+.cn350{display:block;margin-bottom:var(--space-010);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn351{display:block;list-style-type:none;list-style-position:outside}
+.cn352{display:list-item;margin-bottom:var(--space-007)}
+.cn353{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn354{display:list-item;margin-bottom:var(--space-007)}
+.cn355{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn356{display:list-item;margin-bottom:var(--space-007)}
+.cn357{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn358{display:list-item;margin-bottom:var(--space-007)}
+.cn359{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn360{display:list-item;margin-bottom:var(--space-007)}
+.cn361{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn362{display:list-item}
+.cn363{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn364{display:block}
+.cn365{display:block;margin-bottom:var(--space-010);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn366{display:block;list-style-type:none;list-style-position:outside}
+.cn367{display:list-item;margin-bottom:var(--space-007)}
+.cn368{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn369{display:list-item;margin-bottom:var(--space-007)}
+.cn370{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn371{display:list-item;margin-bottom:var(--space-007)}
+.cn372{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn373{display:list-item;margin-bottom:var(--space-007)}
+.cn374{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn375{display:list-item;margin-bottom:var(--space-007)}
+.cn376{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn377{display:list-item;margin-bottom:var(--space-007)}
+.cn378{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn379{display:list-item;margin-bottom:var(--space-007)}
+.cn380{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn381{display:list-item;margin-bottom:var(--space-007)}
+.cn382{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn383{display:list-item;margin-bottom:var(--space-007)}
+.cn384{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn385{display:list-item}
+.cn386{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn387{display:block}
+.cn388{display:block;margin-bottom:var(--space-010);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn389{display:block;list-style-type:none;list-style-position:outside}
+.cn390{display:list-item;margin-bottom:var(--space-007)}
+.cn391{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--accent);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);cursor:pointer}
+.cn392{display:list-item;margin-bottom:var(--space-007)}
+.cn393{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn394{display:list-item;margin-bottom:var(--space-007)}
+.cn395{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn396{display:list-item;margin-bottom:var(--space-007)}
+.cn397{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn398{display:list-item;margin-bottom:var(--space-007)}
+.cn399{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn400{display:list-item;margin-bottom:var(--space-007)}
+.cn401{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn402{display:list-item;margin-bottom:var(--space-007)}
+.cn403{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn404{display:list-item;margin-bottom:var(--space-007)}
+.cn405{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn406{display:list-item;margin-bottom:var(--space-007)}
+.cn407{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn408{display:list-item;margin-bottom:var(--space-007)}
+.cn409{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn410{display:list-item}
+.cn411{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn412{height:424px;display:block}
+.cn413{display:block;margin-bottom:var(--space-010);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn414{display:block;list-style-type:none;list-style-position:outside}
+.cn415{display:list-item;margin-bottom:var(--space-007)}
+.cn416{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn417{display:list-item;margin-bottom:var(--space-007)}
+.cn418{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn419{display:list-item;margin-bottom:var(--space-007)}
+.cn420{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn421{display:list-item;margin-bottom:var(--space-007)}
+.cn422{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn423{display:list-item;margin-bottom:var(--space-007)}
+.cn424{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn425{display:list-item;margin-bottom:var(--space-007)}
+.cn426{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn427{display:list-item;margin-bottom:var(--space-007)}
+.cn428{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn429{display:list-item;margin-bottom:var(--space-007)}
+.cn430{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn431{display:list-item;margin-bottom:var(--space-007)}
+.cn432{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn433{display:list-item}
+.cn434{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn435{height:424px;display:block}
+.cn436{display:block;margin-bottom:var(--space-010);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn437{display:block;list-style-type:none;list-style-position:outside}
+.cn438{display:list-item;margin-bottom:var(--space-007)}
+.cn439{height:28px;display:inline-flex;padding-top:var(--space-003);padding-bottom:var(--space-003);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn440{width:auto;height:16px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn441{display:list-item;margin-bottom:var(--space-007)}
+.cn442{height:28px;display:inline-flex;padding-top:var(--space-003);padding-bottom:var(--space-003);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn443{width:auto;height:16px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn444{display:list-item;margin-bottom:var(--space-007)}
+.cn445{height:28px;display:inline-flex;padding-top:var(--space-003);padding-bottom:var(--space-003);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn446{width:auto;height:16px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn447{display:list-item;padding-top:var(--space-005)}
+.cn448{height:28px;display:inline-flex;padding-top:var(--space-003);padding-bottom:var(--space-003);align-items:center;row-gap:var(--space-005);column-gap:var(--space-005);color:var(--accent);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);cursor:pointer}
+.cn449{width:auto;height:16px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn450{border-top-width:1px;border-top-style:solid;border-top-color:var(--surface-5);display:block;margin-top:var(--space-014);padding-top:var(--space-013)}
+.cn451{display:block;margin-bottom:var(--space-010);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn452{display:flex;flex-wrap:wrap;row-gap:var(--space-007);column-gap:var(--space-011);list-style-type:none;list-style-position:outside}
+.cn453{height:24px;display:list-item}
+.cn454{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn455{height:24px;display:list-item}
+.cn456{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn457{height:24px;display:list-item}
+.cn458{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn459{display:list-item}
+.cn460{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn461{height:24px;display:list-item}
+.cn462{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn463{height:24px;display:list-item}
+.cn464{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn465{height:24px;display:list-item}
+.cn466{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn467{height:24px;display:list-item}
+.cn468{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn469{height:24px;display:list-item}
+.cn470{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn471{height:24px;display:list-item}
+.cn472{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn473{height:24px;display:list-item}
+.cn474{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn475{height:24px;display:list-item}
+.cn476{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn477{height:24px;display:list-item}
+.cn478{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn479{height:24px;display:list-item}
+.cn480{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn481{height:24px;display:list-item}
+.cn482{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn483{display:list-item}
+.cn484{display:inline;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn485{border-top-width:1px;border-top-style:solid;border-top-color:var(--surface-5);display:block;margin-top:var(--space-014);padding-top:var(--space-013)}
+.cn486{height:108px;display:flex;align-items:center;row-gap:var(--space-012);column-gap:var(--space-012)}
+.cn487{height:85px;display:flex;align-items:center;flex-grow:1;flex-basis:0%;row-gap:var(--space-012);column-gap:var(--space-012)}
+.cn488{width:276.031px;height:44px;display:block;flex-shrink:0}
+.cn489{display:block;color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);letter-spacing:0.7px;text-transform:uppercase;text-wrap:balance}
+.cn490{display:block;margin-top:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);text-wrap:pretty}
+.cn491{width:100%;max-width:384px;height:85px;display:block;flex-grow:1;flex-basis:0%}
+.cn492{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn493{width:200px;height:24px;display:block;position:absolute;top:0px;left:0px;opacity:0;pointer-events:none}
+.cn494{width:100%;height:24px;display:inline-block;overflow-x:clip;overflow-y:clip;cursor:text;pointer-events:none}
+.cn495{display:block}
+.cn496{display:flex;row-gap:var(--space-005);column-gap:var(--space-005)}
+.cn497{width:265px;height:38px;border-width:1px;border-style:solid;border-color:var(--surface-6);display:block;min-width:0px;padding-top:var(--space-005);padding-right:var(--space-007);padding-bottom:var(--space-005);padding-left:var(--space-007);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-grow:1;flex-basis:0%;overflow-x:clip;overflow-y:clip;color:var(--color-001);font-size:var(--font-size-002);line-height:var(--line-height-002);background-color:var(--surface-5);cursor:text}
+.cn497::placeholder{color:oklch(0.551 0.027 264.364)}
+.cn498{display:block;padding-top:var(--space-005);padding-right:var(--space-009);padding-bottom:var(--space-005);padding-left:var(--space-009);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-shrink:0;color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);text-align:center;background-color:var(--primary);cursor:default}
+.cn499{display:inline}
+.cn500{height:39px;display:block;margin-top:var(--space-005);color:var(--muted);font-size:var(--font-size-001);line-height:var(--line-height-009);text-wrap:pretty}
+.cn501{display:inline;text-decoration-line:underline;cursor:pointer}
+.cn502{height:108px;display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);flex-shrink:0;cursor:pointer}
+.cn503{width:280px;height:100px;display:block;max-width:100%;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);overflow-x:clip;overflow-y:clip;aspect-ratio:auto 280 / 100;vertical-align:middle}
+.cn504{border-top-width:1px;border-top-style:solid;border-top-color:var(--surface-5);display:block}
+.cn505{height:112px;display:flex;max-width:1280px;padding-top:var(--space-011);padding-right:var(--space-012);padding-bottom:var(--space-011);padding-left:var(--space-012);justify-content:space-between;align-items:center;row-gap:var(--space-009);column-gap:var(--space-009);margin-left:auto;margin-right:auto}
+.cn506{display:block;color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);text-wrap:pretty}
+.cn507{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;row-gap:var(--space-005);column-gap:var(--space-011)}
+.cn508{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn509{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn510{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn511{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn512{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn513{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn514{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);cursor:pointer}
+.cn515{display:block;padding-top:var(--space-003);padding-bottom:var(--space-003);color:var(--muted);font-size:var(--font-size-002);line-height:var(--line-height-002);text-align:center;cursor:pointer}
+.cn516{height:0px;display:block}
+.cn517{width:56px;height:56px;display:flex;position:fixed;right:22px;bottom:32px;z-index:50;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);align-items:center;color:var(--color-001);background-color:rgb(37, 211, 102);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;cursor:pointer}
+.cn518{width:0px;height:20px;display:block;opacity:0;max-width:0px;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);white-space:nowrap;text-wrap:nowrap}
+.cn519{width:56px;height:56px;display:flex;justify-content:center;align-items:center;flex-shrink:0}
+.cn520{width:auto;height:28px;display:block;overflow-x:hidden;overflow-y:hidden;vertical-align:middle}
+.cn521{height:244px;display:block;position:fixed;right:0px;bottom:0px;left:0px;z-index:100;padding-top:var(--space-011);padding-right:var(--space-011);padding-bottom:var(--space-011);padding-left:var(--space-011);pointer-events:none}
+.cn522{height:100%;border-width:1px;border-style:solid;border-color:var(--surface-4);display:block;max-width:768px;margin-right:auto;margin-left:auto;padding-top:var(--space-012);padding-right:var(--space-012);padding-bottom:var(--space-012);padding-left:var(--space-012);border-top-left-radius:var(--radius-005);border-top-right-radius:var(--radius-005);border-bottom-right-radius:var(--radius-005);border-bottom-left-radius:var(--radius-005);background-color:oklab(0.999994 0.0000455678 0.0000200868 / 0.95);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(10, 15, 28, 0.12) 0px 8px 40px 0px;backdrop-filter:blur(24px)}
+.cn523{height:100%;display:flex;flex-direction:column;row-gap:var(--space-009);column-gap:var(--space-009)}
+.cn524{height:100%;display:flex;align-items:center;row-gap:var(--space-011);column-gap:var(--space-011)}
+.cn525{width:174.031px;display:block;min-width:0px;flex-grow:1;flex-basis:0%}
+.cn526{height:130px;display:block;color:rgb(10, 15, 28);font-family:Inter;line-height:var(--line-height-006);text-wrap:pretty}
+.cn527{display:inline;color:var(--foreground);font-weight:var(--font-weight-002);text-decoration-line:underline;cursor:pointer}
+.cn528{width:503.969px;display:flex;align-items:center;flex-shrink:0;row-gap:var(--space-007);column-gap:var(--space-007)}
+.cn529{border-width:2px;border-style:solid;border-color:var(--foreground);display:block;padding-top:var(--space-006);padding-right:var(--space-010);padding-bottom:var(--space-006);padding-left:var(--space-010);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-001);cursor:pointer}
+.cn530{border-width:1px;border-style:solid;border-color:var(--surface-2);display:block;padding-top:var(--space-006);padding-right:var(--space-010);padding-bottom:var(--space-006);padding-left:var(--space-010);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);font-size:var(--font-size-002);font-weight:var(--font-weight-002);line-height:var(--line-height-002);text-align:center;white-space:nowrap;text-wrap:nowrap;cursor:pointer}
+.cn531{border-width:2px;border-style:solid;border-color:var(--foreground);display:block;padding-top:var(--space-006);padding-right:var(--space-010);padding-bottom:var(--space-006);padding-left:var(--space-010);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);color:var(--color-001);font-size:var(--font-size-002);font-weight:var(--font-weight-003);line-height:var(--line-height-002);text-align:center;white-space:nowrap;text-wrap:nowrap;background-color:var(--foreground);cursor:pointer}
+
+@media (max-width: 571px) {
+.cn2{height:9737px}
+.cn6{padding-right:var(--space-009);padding-left:var(--space-009)}
+.cn10{display:none}
+.cn43{display:flex;top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn45{min-width:0}
+.cn46{min-width:0}
+.cn47{min-width:0}
+.cn50{padding-top:var(--space-012);padding-right:var(--space-009);padding-left:var(--space-009)}
+.cn64{font-size:var(--font-size-006);line-height:var(--line-height-010)}
+.cn66{padding-right:var(--space-009);padding-left:var(--space-009)}
+.cn67{padding-top:var(--space-010);padding-right:var(--space-010);padding-bottom:var(--space-010);padding-left:var(--space-010)}
+.cn71{grid-template-rows:58px 58px}
+.cn76{grid-template-rows:70px 70px 70px}
+.cn139{display:block}
+.cn141{height:64px}
+.cn142{min-width:0}
+.cn145{min-width:0}
+.cn147{min-width:0}
+.cn148{min-width:0}
+.cn150{height:40px}
+.cn151{height:40px;min-width:0}
+.cn154{min-width:0}
+.cn156{min-width:0}
+.cn157{min-width:0}
+.cn159{height:40px}
+.cn160{height:40px;min-width:0}
+.cn163{min-width:0}
+.cn165{min-width:0}
+.cn166{min-width:0}
+.cn169{min-width:0}
+.cn172{min-width:0}
+.cn174{min-width:0}
+.cn175{min-width:0}
+.cn177{height:40px}
+.cn178{height:40px;min-width:0}
+.cn181{min-width:0}
+.cn183{min-width:0}
+.cn184{min-width:0}
+.cn186{height:40px}
+.cn187{height:40px;min-width:0}
+.cn190{min-width:0}
+.cn192{min-width:0}
+.cn193{min-width:0}
+.cn195{height:40px}
+.cn196{height:40px;min-width:0}
+.cn199{min-width:0}
+.cn201{min-width:0}
+.cn202{min-width:0}
+.cn203{display:none}
+.cn262{padding-right:var(--space-009);padding-bottom:64px;padding-left:var(--space-009)}
+.cn263{margin-top:56px}
+.cn279{margin-top:56px}
+.cn280{font-size:var(--font-size-005);line-height:32px}
+.cn282{height:97px}
+.cn287{height:97px}
+.cn292{height:97px}
+.cn297{height:97px}
+.cn302{height:96px}
+.cn307{margin-top:64px}
+.cn308{padding-top:var(--space-014);padding-right:var(--space-011);padding-bottom:var(--space-014);padding-left:var(--space-011)}
+.cn310{font-size:var(--font-size-005);line-height:32px}
+.cn313{padding-top:var(--space-008);padding-right:var(--space-011);padding-bottom:var(--space-008);padding-left:var(--space-011);font-size:inherit;line-height:inherit}
+.cn314{margin-top:64px}
+.cn315{font-size:var(--font-size-005);line-height:32px}
+.cn316{grid-template-rows:154.25px 154.25px 154.25px}
+.cn327{padding-right:var(--space-009);padding-left:var(--space-009)}
+.cn339{padding-top:64px;padding-right:var(--space-009);padding-bottom:64px;padding-left:var(--space-009)}
+.cn340{column-gap:var(--space-012);grid-template-rows:166.75px 436px 472px 218px;grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn341{height:166.75px;grid-column-start:span 2;grid-column-end:span 2}
+.cn349{height:436px}
+.cn412{height:472px}
+.cn435{height:218px}
+.cn442{height:48px}
+.cn486{height:277px;flex-direction:column;row-gap:var(--space-011);column-gap:var(--space-011);align-items:initial}
+.cn487{height:145px;flex-direction:column;row-gap:var(--space-009);column-gap:var(--space-009);align-items:initial}
+.cn488{width:343px}
+.cn497{width:224px}
+.cn505{height:240px;padding-right:var(--space-009);padding-left:var(--space-009);flex-direction:column}
+.cn521{height:320.25px;padding-top:var(--space-009);padding-right:var(--space-009);padding-bottom:var(--space-009);padding-left:var(--space-009)}
+.cn522{padding-top:var(--space-011);padding-right:var(--space-011);padding-bottom:var(--space-011);padding-left:var(--space-011)}
+.cn524{flex-direction:column;row-gap:var(--space-009);column-gap:var(--space-009);align-items:initial}
+.cn525{width:293px}
+.cn526{height:68.25px;font-size:var(--font-size-002);line-height:var(--line-height-008)}
+.cn528{width:293px;flex-direction:column;align-items:stretch}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn2{height:6111.88px}
+.cn6{padding-right:var(--space-011);padding-left:var(--space-011)}
+.cn10{display:none}
+.cn43{display:flex;top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn45{min-width:0}
+.cn46{min-width:0}
+.cn47{min-width:0}
+.cn50{padding-right:var(--space-011);padding-left:var(--space-011)}
+.cn66{padding-right:var(--space-011);padding-left:var(--space-011)}
+.cn76{grid-template-rows:90px}
+.cn262{padding-right:var(--space-011);padding-left:var(--space-011)}
+.cn316{grid-template-rows:154.25px 154.25px}
+.cn327{padding-right:var(--space-011);padding-left:var(--space-011)}
+.cn339{padding-top:64px;padding-right:var(--space-011);padding-bottom:64px;padding-left:var(--space-011)}
+.cn340{column-gap:var(--space-012);grid-template-rows:412px 424px}
+.cn341{height:412px}
+.cn349{height:412px}
+.cn486{height:217px;flex-direction:column;row-gap:var(--space-011);column-gap:var(--space-011);align-items:initial}
+.cn505{padding-right:var(--space-011);padding-left:var(--space-011)}
+.cn521{height:296px}
+.cn525{width:126.031px}
+.cn526{height:182px}
+}
+
+</style>
+</head>
+<body class="cn0">
+    <div class="cn1" id="app">
+      <div class="cn2">
+        <a class="cn3" href="#main-content">
+           Zum Inhalt springen 
+        </a>
+        <div class="cn4">
+          <header class="cn5">
+            <nav class="cn6" aria-label="Hauptnavigation">
+              <div class="cn7">
+                <a class="cn8" aria-label="Provimedia Startseite" href="https://www.provimedia.de/">
+                  <span class="cn9">
+                     PROVIMEDIA 
+                  </span>
+                </a>
+                <div class="cn10">
+                  <div class="cn11">
+                    <a class="cn12" href="https://www.provimedia.de/leistungen">
+                       Leistungen 
+                    </a>
+                    <button class="cn13" aria-expanded="false" aria-haspopup="true" aria-label="Untermenü Leistungen">
+                      <svg class="cn14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn15">
+                    <a class="cn16" href="https://www.provimedia.de/projekte">
+                       Projekte 
+                    </a>
+                    <button class="cn17" aria-expanded="false" aria-haspopup="true" aria-label="Untermenü Projekte">
+                      <svg class="cn18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn19">
+                    <a class="cn20" href="https://www.provimedia.de/ueber-uns">
+                       Unternehmen 
+                    </a>
+                    <button class="cn21" aria-expanded="false" aria-haspopup="true" aria-label="Untermenü Unternehmen">
+                      <svg class="cn22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn23">
+                    <a class="cn24" href="https://www.provimedia.de/ki-zertifikat">
+                      KI-Zertifikat
+                    </a>
+                    <button class="cn25" aria-expanded="false" aria-label="Untermenü KI-Zertifikat">
+                      <svg class="cn26" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn27">
+                    <a class="cn28" href="https://www.provimedia.de/dsgvo-schulung">
+                      DSGVO-Schulung
+                    </a>
+                    <button class="cn29" aria-expanded="false" aria-label="Untermenü DSGVO-Schulung">
+                      <svg class="cn30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn31">
+                    <a class="cn32" href="https://www.provimedia.de/company-audit">
+                      Company Audit
+                    </a>
+                    <button class="cn33" aria-expanded="false" aria-label="Untermenü Company Audit">
+                      <svg class="cn34" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn35">
+                    <a class="cn36" href="https://www.provimedia.de/code-guardian">
+                      Code Guardian
+                    </a>
+                    <button class="cn37" aria-expanded="false" aria-label="Untermenü Code Guardian">
+                      <svg class="cn38" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                  <div class="cn39">
+                    <a class="cn40" href="https://www.provimedia.de/community">
+                      Community
+                    </a>
+                    <button class="cn41" aria-expanded="false" aria-label="Untermenü Community">
+                      <svg class="cn42" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <button class="cn43" aria-expanded="false" aria-label="Menue oeffnen">
+                  <div class="cn44">
+                    <span class="cn45"></span>
+                    <span class="cn46"></span>
+                    <span class="cn47"></span>
+                  </div>
+                </button>
+              </div>
+            </nav>
+          </header>
+        </div>
+        <main class="cn48" id="main-content">
+          <div class="cn49">
+            <section class="cn50">
+              <nav class="cn51" aria-label="Breadcrumb">
+                <ol class="cn52">
+                  <li class="cn53">
+                    <a class="cn54" href="https://www.provimedia.de/">
+                      <svg class="cn55" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                      <span class="cn56">
+                        Startseite
+                      </span>
+                    </a>
+                  </li>
+                  <li class="cn57">
+                    <span class="cn58">
+                      /
+                    </span>
+                    <a class="cn59" href="https://www.provimedia.de/tools">
+                      Tools
+                    </a>
+                  </li>
+                  <li class="cn60">
+                    <span class="cn61">
+                      /
+                    </span>
+                    <span class="cn62">
+                      LLM-API-Kostenrechner
+                    </span>
+                  </li>
+                </ol>
+              </nav>
+              <span class="cn63">
+                 Kostenloses Tool 
+              </span>
+              <h1 class="cn64">
+                LLM-API-Kostenrechner
+              </h1>
+              <p class="cn65">
+                Was kostet die GPT-, Claude- oder Gemini-API? Anfragen und Tokens eingeben, Monatskosten in USD und Euro vergleichen – kostenlos und ohne Anmeldung.
+              </p>
+            </section>
+            <div class="cn66">
+              <section class="cn67">
+                <div class="cn68">
+                  <div class="cn69">
+                    <p class="cn70">
+                      Anwendungsfall
+                    </p>
+                    <div class="cn71">
+                      <button class="cn72" aria-pressed="true" type="button">
+                        Chatbot-Antwort
+                      </button>
+                      <button class="cn73" aria-pressed="false" type="button">
+                        Dokument-Zusammenfassung
+                      </button>
+                      <button class="cn74" aria-pressed="false" type="button">
+                        RAG-Suche mit Kontext
+                      </button>
+                      <button class="cn75" aria-pressed="false" type="button">
+                        Code-Assistent
+                      </button>
+                    </div>
+                  </div>
+                  <div class="cn76">
+                    <div class="cn77">
+                      <label class="cn78" for="llm-requests">
+                         Anfragen pro Monat 
+                      </label>
+                      <input class="cn79" id="llm-requests" max="10000000" min="1" step="1" type="number" />
+                    </div>
+                    <div class="cn80">
+                      <label class="cn81" for="llm-input-tokens">
+                         Ø Input-Tokens / Anfrage 
+                      </label>
+                      <input class="cn82" id="llm-input-tokens" max="1000000" min="0" step="1" type="number" />
+                    </div>
+                    <div class="cn83">
+                      <label class="cn84" for="llm-output-tokens">
+                         Ø Output-Tokens / Anfrage 
+                      </label>
+                      <input class="cn85" id="llm-output-tokens" max="1000000" min="0" step="1" type="number" />
+                    </div>
+                  </div>
+                  <div class="cn86">
+                    <p class="cn87">
+                      Modelle vergleichen
+                    </p>
+                    <div class="cn88">
+                      <label class="cn89">
+                        <input class="cn90" type="checkbox" value="claude-opus" />
+                        <span class="cn91" aria-hidden="true">
+                          <svg class="cn92" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn93">
+                          <span class="cn94">
+                            Claude Opus 4.8
+                          </span>
+                          <span class="cn95">
+                            Anthropic
+                          </span>
+                        </span>
+                      </label>
+                      <label class="cn96">
+                        <input class="cn97" type="checkbox" value="claude-sonnet" />
+                        <span class="cn98" aria-hidden="true">
+                          <svg class="cn99" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn100">
+                          <span class="cn101">
+                            Claude Sonnet 5
+                          </span>
+                          <span class="cn102">
+                            Anthropic
+                          </span>
+                        </span>
+                      </label>
+                      <label class="cn103">
+                        <input class="cn104" type="checkbox" value="claude-haiku-4-5" />
+                        <span class="cn105" aria-hidden="true">
+                          <svg class="cn106" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn107">
+                          <span class="cn108">
+                            Claude Haiku 4.5
+                          </span>
+                          <span class="cn109">
+                            Anthropic
+                          </span>
+                        </span>
+                      </label>
+                      <label class="cn110">
+                        <input class="cn111" type="checkbox" value="gpt-5" />
+                        <span class="cn112" aria-hidden="true">
+                          <svg class="cn113" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn114">
+                          <span class="cn115">
+                            GPT-5
+                          </span>
+                          <span class="cn116">
+                            OpenAI
+                          </span>
+                        </span>
+                      </label>
+                      <label class="cn117">
+                        <input class="cn118" type="checkbox" value="gpt-5-mini" />
+                        <span class="cn119" aria-hidden="true">
+                          <svg class="cn120" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn121">
+                          <span class="cn122">
+                            GPT-5 mini
+                          </span>
+                          <span class="cn123">
+                            OpenAI
+                          </span>
+                        </span>
+                      </label>
+                      <label class="cn124">
+                        <input class="cn125" type="checkbox" value="gemini-2-5-pro" />
+                        <span class="cn126" aria-hidden="true">
+                          <svg class="cn127" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn128">
+                          <span class="cn129">
+                            Gemini 2.5 Pro
+                          </span>
+                          <span class="cn130">
+                            Google
+                          </span>
+                        </span>
+                      </label>
+                      <label class="cn131">
+                        <input class="cn132" type="checkbox" value="mistral-large" />
+                        <span class="cn133" aria-hidden="true">
+                          <svg class="cn134" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                        <span class="cn135">
+                          <span class="cn136">
+                            Mistral Large
+                          </span>
+                          <span class="cn137">
+                            Mistral
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="cn138">
+                    <div class="cn139">
+                      <div class="cn140">
+                        <div class="cn141">
+                          <div class="cn142">
+                            <p class="cn143">
+                              GPT-5 mini
+                            </p>
+                            <p class="cn144">
+                              OpenAI
+                            </p>
+                          </div>
+                          <span class="cn145">
+                             Günstigstes Modell 
+                          </span>
+                        </div>
+                        <div class="cn146">
+                          <span class="cn147">
+                            8,00 $
+                          </span>
+                          <span class="cn148">
+                            7,04 €
+                          </span>
+                        </div>
+                      </div>
+                      <div class="cn149">
+                        <div class="cn150">
+                          <div class="cn151">
+                            <p class="cn152">
+                              Claude Haiku 4.5
+                            </p>
+                            <p class="cn153">
+                              Anthropic
+                            </p>
+                          </div>
+                          <span class="cn154">
+                            × 2,9
+                          </span>
+                        </div>
+                        <div class="cn155">
+                          <span class="cn156">
+                            23,00 $
+                          </span>
+                          <span class="cn157">
+                            20,24 €
+                          </span>
+                        </div>
+                      </div>
+                      <div class="cn158">
+                        <div class="cn159">
+                          <div class="cn160">
+                            <p class="cn161">
+                              Mistral Large
+                            </p>
+                            <p class="cn162">
+                              Mistral
+                            </p>
+                          </div>
+                          <span class="cn163">
+                            × 4,3
+                          </span>
+                        </div>
+                        <div class="cn164">
+                          <span class="cn165">
+                            34,00 $
+                          </span>
+                          <span class="cn166">
+                            29,92 €
+                          </span>
+                        </div>
+                      </div>
+                      <div class="cn167">
+                        <div class="cn168">
+                          <div class="cn169">
+                            <p class="cn170">
+                              GPT-5
+                            </p>
+                            <p class="cn171">
+                              OpenAI
+                            </p>
+                          </div>
+                          <span class="cn172">
+                            × 5,0
+                          </span>
+                        </div>
+                        <div class="cn173">
+                          <span class="cn174">
+                            40,00 $
+                          </span>
+                          <span class="cn175">
+                            35,20 €
+                          </span>
+                        </div>
+                      </div>
+                      <div class="cn176">
+                        <div class="cn177">
+                          <div class="cn178">
+                            <p class="cn179">
+                              Gemini 2.5 Pro
+                            </p>
+                            <p class="cn180">
+                              Google
+                            </p>
+                          </div>
+                          <span class="cn181">
+                            × 5,0
+                          </span>
+                        </div>
+                        <div class="cn182">
+                          <span class="cn183">
+                            40,00 $
+                          </span>
+                          <span class="cn184">
+                            35,20 €
+                          </span>
+                        </div>
+                      </div>
+                      <div class="cn185">
+                        <div class="cn186">
+                          <div class="cn187">
+                            <p class="cn188">
+                              Claude Sonnet 5
+                            </p>
+                            <p class="cn189">
+                              Anthropic
+                            </p>
+                          </div>
+                          <span class="cn190">
+                            × 8,6
+                          </span>
+                        </div>
+                        <div class="cn191">
+                          <span class="cn192">
+                            69,00 $
+                          </span>
+                          <span class="cn193">
+                            60,72 €
+                          </span>
+                        </div>
+                      </div>
+                      <div class="cn194">
+                        <div class="cn195">
+                          <div class="cn196">
+                            <p class="cn197">
+                              Claude Opus 4.8
+                            </p>
+                            <p class="cn198">
+                              Anthropic
+                            </p>
+                          </div>
+                          <span class="cn199">
+                            × 14,4
+                          </span>
+                        </div>
+                        <div class="cn200">
+                          <span class="cn201">
+                            115,00 $
+                          </span>
+                          <span class="cn202">
+                            101,20 €
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cn203">
+                      <table class="cn204">
+                        <thead class="cn205">
+                          <tr class="cn206">
+                            <th class="cn207">
+                              Modell
+                            </th>
+                            <th class="cn208">
+                              Anbieter
+                            </th>
+                            <th class="cn209">
+                              USD / Monat
+                            </th>
+                            <th class="cn210">
+                              EUR / Monat
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="cn211">
+                          <tr class="cn212">
+                            <td class="cn213">
+                              <span class="cn214">
+                                GPT-5 mini
+                              </span>
+                              <span class="cn215">
+                                 Günstigstes Modell 
+                              </span>
+                            </td>
+                            <td class="cn216">
+                              OpenAI
+                            </td>
+                            <td class="cn217">
+                              8,00 $
+                            </td>
+                            <td class="cn218">
+                              7,04 € 
+                            </td>
+                          </tr>
+                          <tr class="cn219">
+                            <td class="cn220">
+                              <span class="cn221">
+                                Claude Haiku 4.5
+                              </span>
+                            </td>
+                            <td class="cn222">
+                              Anthropic
+                            </td>
+                            <td class="cn223">
+                              23,00 $
+                            </td>
+                            <td class="cn224">
+                              20,24 € 
+                              <span class="cn225">
+                                × 2,9
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="cn226">
+                            <td class="cn227">
+                              <span class="cn228">
+                                Mistral Large
+                              </span>
+                            </td>
+                            <td class="cn229">
+                              Mistral
+                            </td>
+                            <td class="cn230">
+                              34,00 $
+                            </td>
+                            <td class="cn231">
+                              29,92 € 
+                              <span class="cn232">
+                                × 4,3
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="cn233">
+                            <td class="cn234">
+                              <span class="cn235">
+                                GPT-5
+                              </span>
+                            </td>
+                            <td class="cn236">
+                              OpenAI
+                            </td>
+                            <td class="cn237">
+                              40,00 $
+                            </td>
+                            <td class="cn238">
+                              35,20 € 
+                              <span class="cn239">
+                                × 5,0
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="cn240">
+                            <td class="cn241">
+                              <span class="cn242">
+                                Gemini 2.5 Pro
+                              </span>
+                            </td>
+                            <td class="cn243">
+                              Google
+                            </td>
+                            <td class="cn244">
+                              40,00 $
+                            </td>
+                            <td class="cn245">
+                              35,20 € 
+                              <span class="cn246">
+                                × 5,0
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="cn247">
+                            <td class="cn248">
+                              <span class="cn249">
+                                Claude Sonnet 5
+                              </span>
+                            </td>
+                            <td class="cn250">
+                              Anthropic
+                            </td>
+                            <td class="cn251">
+                              69,00 $
+                            </td>
+                            <td class="cn252">
+                              60,72 € 
+                              <span class="cn253">
+                                × 8,6
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="cn254">
+                            <td class="cn255">
+                              <span class="cn256">
+                                Claude Opus 4.8
+                              </span>
+                            </td>
+                            <td class="cn257">
+                              Anthropic
+                            </td>
+                            <td class="cn258">
+                              115,00 $
+                            </td>
+                            <td class="cn259">
+                              101,20 € 
+                              <span class="cn260">
+                                × 14,4
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="cn261">
+                      Listenpreise der Anbieter, Stand: 14. Juli 2026 · EUR-Umrechnung ≈ Kurs 0,88 (Stand: 14. Juli 2026) · ohne Rabatte durch Caching oder Batch-Verarbeitung · alle Angaben ohne Gewähr.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="cn262">
+              <section class="cn263">
+                <h2 class="cn264">
+                  Was sind Tokens?
+                </h2>
+                <p class="cn265">
+                  Ein Token ist die kleinste Abrechnungseinheit eines Sprachmodells – im Deutschen entspricht ein Token grob 3 bis 4 Zeichen. Eine DIN-A4-Seite Text mit rund 3.000 Zeichen sind damit etwa 750 bis 1.000 Tokens.
+                </p>
+                <p class="cn266">
+                  Wichtig für die Kostenrechnung: Input-Tokens (Ihr Prompt inklusive Kontext) und Output-Tokens (die Antwort des Modells) werden getrennt gezählt und unterschiedlich bepreist. Wer die Kosten einer LLM-Anwendung realistisch einschätzen will, muss deshalb beide Seiten im Blick behalten – nicht nur die eigene Anfrage, sondern auch die erwartete Antwortlänge.
+                </p>
+                <h2 class="cn267">
+                  Preismodelle der Anbieter
+                </h2>
+                <p class="cn268">
+                  Alle großen Anbieter rechnen in US-Dollar pro 1 Million Tokens ab, und bei jedem Modell ist der Output deutlich teurer als der Input – bei den verglichenen Modellen um den Faktor 3 bis 8. Drei Modellklassen stehen zur Wahl: Frontier-Modelle wie die Claude-Opus-Klasse (5 USD Input / 25 USD Output), Mittelklasse-Modelle wie die Claude-Sonnet-Klasse (3 / 15 USD) oder GPT-5.x (1,25 / 10 USD), und Effizienz-Modelle wie Claude Haiku 4.5 (1 / 5 USD) oder GPT-5 mini (0,25 / 2 USD).
+                </p>
+                <p class="cn269">
+                  Der Vergleichsrechner oben zeigt alle Modelle nebeneinander samt aktuellem Preisstand – so sehen Sie auf einen Blick, welches Modell für Ihren konkreten Anwendungsfall am wirtschaftlichsten ist.
+                </p>
+                <h2 class="cn270">
+                  Versteckte Kostenfaktoren: Caching, Batch &amp; Co.
+                </h2>
+                <p class="cn271">
+                  Die reine Token-Rechnung ist nur die halbe Wahrheit. Prompt-Caching rabattiert wiederholte Prompt-Teile teils erheblich, und Batch-APIs bieten bei asynchroner Verarbeitung typischerweise rund 50 % Rabatt gegenüber Echtzeit-Anfragen. Ohne diese Hebel zahlen Sie oft mehr als nötig.
+                </p>
+                <p class="cn272">
+                  Umgekehrt treiben lange System-Prompts und RAG-Kontexte die Kosten in die Höhe, weil sie bei jeder einzelnen Anfrage erneut abgerechnet werden. Agenten-Workflows mit mehreren Tool-Aufrufen multiplizieren den Tokenverbrauch pro Nutzeranfrage zusätzlich, und auch Wiederholungsversuche bei Fehlern schlagen auf die Rechnung durch.
+                </p>
+                <h2 class="cn273">
+                  Wann lohnt sich welches Modell?
+                </h2>
+                <p class="cn274">
+                  Die Grundregel lautet: einfache, hochvolumige Aufgaben wie Klassifikation, FAQ-Chat oder Textextraktion gehören auf ein Effizienz-Modell, komplexes Reasoning oder anspruchsvolle Code-Aufgaben auf ein Frontier-Modell. Der Unterschied ist erheblich: Bei einem identischen Chatbot-Workload mit 10.000 Anfragen pro Monat kostet Claude Haiku 4.5 rund 23 US-Dollar, die Claude-Opus-Klasse dagegen rund 115 US-Dollar – Faktor 5 für dieselbe Aufgabe.
+                </p>
+                <p class="cn275">
+                  Wer nicht sauber routet und alles über ein teures Modell laufen lässt, zahlt also ein Vielfaches, ohne einen entsprechenden Qualitätsgewinn zu erhalten.
+                </p>
+                <h2 class="cn276">
+                  Kostenoptimierung im KI-Projekt
+                </h2>
+                <p class="cn277">
+                  Optimieren Sie erst, nachdem Sie gemessen haben – der Rechner oben liefert dafür die Ausgangszahlen. Die wirksamsten Hebel in der Reihenfolge ihres Effekts: ein kleineres Modell oder Model-Routing einsetzen, Prompt-Caching für wiederkehrende Inhalte nutzen, System-Prompts kürzen, die Output-Länge begrenzen und Batch-Verarbeitung für alles, was nicht in Echtzeit laufen muss.
+                </p>
+                <p class="cn278">
+                  Wer eine KI-Integration von Anfang an mit diesen Hebeln plant, spart oft einen zweistelligen Prozentsatz der laufenden API-Kosten. Bei der kosteneffizienten Konzeption solcher Integrationen unterstützt Sie eine erfahrene Beratung.
+                </p>
+              </section>
+              <section class="cn279">
+                <h2 class="cn280">
+                   Häufige Fragen 
+                </h2>
+                <div class="cn281">
+                  <details class="cn282">
+                    <summary class="cn283">
+                      <span class="cn284">
+                        Was kostet die ChatGPT-API pro Monat?
+                      </span>
+                      <svg class="cn285" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-f82cd26a=""><path data-v-f82cd26a="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </summary>
+                    <p class="cn286">
+                      Das hängt von Anfragen und Token-Volumen ab. Beispiel: Ein Chatbot mit 10.000 Anfragen pro Monat (durchschnittlich 800 Input- und 300 Output-Tokens je Anfrage) kostet mit GPT-5 (1,25 USD Input / 10 USD Output pro 1 Mio. Tokens) rund 40 US-Dollar im Monat, mit GPT-5 mini rund 8 US-Dollar. Die Formel: Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis).
+                    </p>
+                  </details>
+                  <details class="cn287">
+                    <summary class="cn288">
+                      <span class="cn289">
+                        Wie berechnen sich die Kosten einer LLM-API?
+                      </span>
+                      <svg class="cn290" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-f82cd26a=""><path data-v-f82cd26a="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </summary>
+                    <p class="cn291">
+                      Alle großen Anbieter rechnen pro Token ab, getrennt nach Input (Ihr Prompt inklusive Kontext) und Output (die Antwort des Modells). Output-Tokens sind dabei deutlich teurer als Input-Tokens — bei den gängigen Modellen um den Faktor 3 bis 8. Die Monatskosten ergeben sich aus: Anzahl der Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis). Genau diese Rechnung führt der Rechner oben für alle ausgewählten Modelle gleichzeitig aus.
+                    </p>
+                  </details>
+                  <details class="cn292">
+                    <summary class="cn293">
+                      <span class="cn294">
+                        Was ist ein Token und wie viele Tokens hat ein Text?
+                      </span>
+                      <svg class="cn295" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-f82cd26a=""><path data-v-f82cd26a="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </summary>
+                    <p class="cn296">
+                      Ein Token ist die kleinste Abrechnungseinheit eines Sprachmodells — im Deutschen entspricht ein Token grob 3 bis 4 Zeichen. Eine DIN-A4-Seite Text mit rund 3.000 Zeichen sind etwa 750 bis 1.000 Tokens. 1 Million Tokens — die übliche Preiseinheit der Anbieter — entsprechen damit ungefähr 1.000 bis 1.300 Seiten Text.
+                    </p>
+                  </details>
+                  <details class="cn297">
+                    <summary class="cn298">
+                      <span class="cn299">
+                        Welches LLM ist am günstigsten?
+                      </span>
+                      <svg class="cn300" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-f82cd26a=""><path data-v-f82cd26a="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </summary>
+                    <p class="cn301">
+                      Für einfache, hochvolumige Aufgaben sind Effizienz-Modelle am günstigsten: GPT-5 mini (0,25 USD Input / 2 USD Output pro 1 Mio. Tokens) und Claude Haiku 4.5 (1 USD / 5 USD). Frontier-Modelle wie die Claude-Opus-Klasse (5 USD / 25 USD) lohnen sich nur für komplexes Reasoning oder anspruchsvolle Code-Aufgaben. Beim identischen Chatbot-Workload mit 10.000 Anfragen pro Monat liegt der Unterschied bei 23 US-Dollar (Haiku 4.5) gegenüber 115 US-Dollar (Opus-Klasse) — Faktor 5.
+                    </p>
+                  </details>
+                  <details class="cn302">
+                    <summary class="cn303">
+                      <span class="cn304">
+                        Wie kann ich meine LLM-API-Kosten senken?
+                      </span>
+                      <svg class="cn305" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-f82cd26a=""><path data-v-f82cd26a="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </summary>
+                    <p class="cn306">
+                      Die fünf wirksamsten Hebel: Erstens ein kleineres Modell oder Model-Routing einsetzen — einfache Teilaufgaben ans günstige Modell, nur komplexe ans teure. Zweitens Prompt-Caching nutzen: wiederholte Prompt-Teile werden je nach Anbieter mit bis zu 90 Prozent Rabatt abgerechnet. Drittens Batch-APIs für Nicht-Echtzeit-Jobs verwenden (typischerweise rund 50 Prozent Rabatt). Viertens System-Prompts und mitgeschickten Kontext kürzen, denn Input-Tokens zahlen bei jeder Anfrage erneut ein. Fünftens die Output-Länge begrenzen, weil Output-Tokens am teuersten sind.
+                    </p>
+                  </details>
+                </div>
+              </section>
+              <section class="cn307">
+                <div class="cn308">
+                  <p class="cn309">
+                    Provimedia
+                  </p>
+                  <h2 class="cn310">
+                    Sprechen wir über Ihr Projekt
+                  </h2>
+                  <p class="cn311">
+                    Sie wollen aus dem Ergebnis mehr machen? Wir zeigen Ihnen unverbindlich, wie — mit einem konkreten Angebot statt Verkaufsgespräch.
+                  </p>
+                  <div class="cn312">
+                    <a class="cn313" href="https://www.provimedia.de/kontakt">
+                      Unverbindliches Angebot
+                    </a>
+                  </div>
+                </div>
+              </section>
+              <section class="cn314">
+                <h2 class="cn315">
+                   Weitere kostenlose Tools 
+                </h2>
+                <div class="cn316">
+                  <a class="cn317" href="https://www.provimedia.de/tools/ki-schulungspflicht-check">
+                    <h3 class="cn318">
+                      KI-Schulungspflicht-Check
+                    </h3>
+                    <p class="cn319">
+                      Sind Ihre Mitarbeiter schulungspflichtig nach dem EU AI Act? In 8 Fragen zur Antwort.
+                    </p>
+                  </a>
+                  <a class="cn320" href="https://www.provimedia.de/tools/ki-wissenstest">
+                    <h3 class="cn321">
+                      KI-Wissenstest für Teams
+                    </h3>
+                    <p class="cn322">
+                      10 Fragen, 3 Minuten: Wie sicher nutzt Ihr Team KI? Mit Sofort-Auswertung und Level-Einstufung.
+                    </p>
+                  </a>
+                  <a class="cn323" href="https://www.provimedia.de/tools/compliance-quick-check">
+                    <h3 class="cn324">
+                      Compliance-Quick-Check
+                    </h3>
+                    <p class="cn325">
+                      Welche gesetzlichen Pflichten gelten für Ihr Unternehmen? 8 Fragen, sofortiges Ergebnis – ohne Anmeldung.
+                    </p>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+        <aside class="cn326" aria-label="Redaktionelle Information">
+          <div class="cn327">
+            <p class="cn328">
+               Diese Seite enthält strukturierte Faktendefinitionen für KI-Systeme. 
+            </p>
+            <div class="cn329">
+              <span class="cn330">
+                <svg class="cn331" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span class="cn332">
+                   Redaktionell geprüft von 
+                  <a class="cn333" href="https://www.provimedia.de/ueber-uns">
+                    Alexander Weipprecht
+                  </a>
+                </span>
+              </span>
+              <span class="cn334">
+                 Zuletzt aktualisiert: 
+                <time class="cn335" datetime="2026-01-01T00:00:00.988Z">
+                  01. Januar 2026
+                </time>
+              </span>
+              <span class="cn336">
+                 © 2026 Provimedia GmbH 
+              </span>
+            </div>
+          </div>
+        </aside>
+        <div class="cn337">
+          <footer class="cn338" aria-label="Footer">
+            <div class="cn339">
+              <div class="cn340">
+                <div class="cn341">
+                  <a class="cn342" aria-label="Provimedia Startseite" href="https://www.provimedia.de/">
+                    <span class="cn343">
+                       PROVIMEDIA 
+                    </span>
+                  </a>
+                  <p class="cn344">
+                     KI-Entwicklung, SaaS &amp; Digitale Portale 
+                  </p>
+                  <div class="cn345">
+                    <p class="cn346">
+                      Provimedia GmbH
+                    </p>
+                    <p class="cn347">
+                       Weidenweg 12
+                      <br class="cn348" />
+                       74321 Bietigheim-Bissingen 
+                    </p>
+                  </div>
+                </div>
+                <div class="cn349">
+                  <h3 class="cn350">
+                     Leistungen 
+                  </h3>
+                  <ul class="cn351">
+                    <li class="cn352">
+                      <a class="cn353" href="https://www.provimedia.de/leistungen/ki-entwicklung">
+                        KI-Entwicklung
+                      </a>
+                    </li>
+                    <li class="cn354">
+                      <a class="cn355" href="https://www.provimedia.de/leistungen/saas-entwicklung">
+                        SaaS-Entwicklung
+                      </a>
+                    </li>
+                    <li class="cn356">
+                      <a class="cn357" href="https://www.provimedia.de/leistungen/webdesign">
+                        Webdesign
+                      </a>
+                    </li>
+                    <li class="cn358">
+                      <a class="cn359" href="https://www.provimedia.de/leistungen/seo-marketing">
+                        SEO &amp; Marketing
+                      </a>
+                    </li>
+                    <li class="cn360">
+                      <a class="cn361" href="https://www.provimedia.de/leistungen/portal-entwicklung">
+                        Portal-Entwicklung
+                      </a>
+                    </li>
+                    <li class="cn362">
+                      <a class="cn363" href="https://www.provimedia.de/leistungen/google-ads">
+                        Google Ads
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn364">
+                  <h3 class="cn365">
+                     Mehr entdecken 
+                  </h3>
+                  <ul class="cn366">
+                    <li class="cn367">
+                      <a class="cn368" href="https://www.provimedia.de/projekte">
+                        Alle Projekte
+                      </a>
+                    </li>
+                    <li class="cn369">
+                      <a class="cn370" href="https://www.provimedia.de/referenzen">
+                        Referenzen
+                      </a>
+                    </li>
+                    <li class="cn371">
+                      <a class="cn372" href="https://www.provimedia.de/blog">
+                        Blog
+                      </a>
+                    </li>
+                    <li class="cn373">
+                      <a class="cn374" href="https://www.provimedia.de/wissen">
+                        Wissensgraph
+                      </a>
+                    </li>
+                    <li class="cn375">
+                      <a class="cn376" href="https://www.provimedia.de/glossar">
+                        Tech-Glossar
+                      </a>
+                    </li>
+                    <li class="cn377">
+                      <a class="cn378" href="https://www.provimedia.de/ueber-uns">
+                        Über uns
+                      </a>
+                    </li>
+                    <li class="cn379">
+                      <a class="cn380" href="https://www.provimedia.de/studien/ki-programmierung-2025">
+                        Studie: KI-Programmierung 2025
+                      </a>
+                    </li>
+                    <li class="cn381">
+                      <a class="cn382" href="https://www.provimedia.de/ki-arbeitgeber-token">
+                        KI Arbeitgeber Token
+                      </a>
+                    </li>
+                    <li class="cn383">
+                      <a class="cn384" href="https://www.provimedia.de/code-guardian">
+                        Code Guardian
+                      </a>
+                    </li>
+                    <li class="cn385">
+                      <a class="cn386" href="https://www.provimedia.de/community">
+                        Community
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn387">
+                  <h3 class="cn388">
+                     KI-Zertifikat 
+                  </h3>
+                  <ul class="cn389">
+                    <li class="cn390">
+                      <a class="cn391" href="https://www.provimedia.de/ki-zertifikat">
+                        KI-Zertifikat
+                      </a>
+                    </li>
+                    <li class="cn392">
+                      <a class="cn393" href="https://www.provimedia.de/ki-schulung">
+                        KI-Schulung
+                      </a>
+                    </li>
+                    <li class="cn394">
+                      <a class="cn395" href="https://www.provimedia.de/ki-weiterbildung">
+                        KI-Weiterbildung
+                      </a>
+                    </li>
+                    <li class="cn396">
+                      <a class="cn397" href="https://www.provimedia.de/ki-fuehrerschein">
+                        KI-Führerschein
+                      </a>
+                    </li>
+                    <li class="cn398">
+                      <a class="cn399" href="https://www.provimedia.de/eu-ai-act-schulung">
+                        EU AI Act Schulung
+                      </a>
+                    </li>
+                    <li class="cn400">
+                      <a class="cn401" href="https://www.provimedia.de/ki-schulung-mitarbeiter">
+                        KI-Schulung Mitarbeiter
+                      </a>
+                    </li>
+                    <li class="cn402">
+                      <a class="cn403" href="https://www.provimedia.de/chatgpt-schulung">
+                        ChatGPT Schulung
+                      </a>
+                    </li>
+                    <li class="cn404">
+                      <a class="cn405" href="https://www.provimedia.de/ki-kurs-online">
+                        KI-Kurs Online
+                      </a>
+                    </li>
+                    <li class="cn406">
+                      <a class="cn407" href="https://www.provimedia.de/ki-schulung-stuttgart">
+                        KI-Schulung Stuttgart
+                      </a>
+                    </li>
+                    <li class="cn408">
+                      <a class="cn409" href="https://www.provimedia.de/ki-compliance">
+                        KI-Compliance
+                      </a>
+                    </li>
+                    <li class="cn410">
+                      <a class="cn411" href="https://www.provimedia.de/eu-ai-act-anforderungen">
+                        EU AI Act Anforderungen
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn412">
+                  <h3 class="cn413">
+                     Regional 
+                  </h3>
+                  <ul class="cn414">
+                    <li class="cn415">
+                      <a class="cn416" href="https://www.provimedia.de/webdesign">
+                        Webdesign
+                      </a>
+                    </li>
+                    <li class="cn417">
+                      <a class="cn418" href="https://www.provimedia.de/softwareentwicklung">
+                        Softwareentwicklung
+                      </a>
+                    </li>
+                    <li class="cn419">
+                      <a class="cn420" href="https://www.provimedia.de/seo-agentur">
+                        SEO Agentur
+                      </a>
+                    </li>
+                    <li class="cn421">
+                      <a class="cn422" href="https://www.provimedia.de/ki-entwicklung">
+                        KI-Entwicklung
+                      </a>
+                    </li>
+                    <li class="cn423">
+                      <a class="cn424" href="https://www.provimedia.de/webagentur">
+                        Webagentur
+                      </a>
+                    </li>
+                    <li class="cn425">
+                      <a class="cn426" href="https://www.provimedia.de/app-entwicklung">
+                        App-Entwicklung
+                      </a>
+                    </li>
+                    <li class="cn427">
+                      <a class="cn428" href="https://www.provimedia.de/online-marketing">
+                        Online Marketing
+                      </a>
+                    </li>
+                    <li class="cn429">
+                      <a class="cn430" href="https://www.provimedia.de/consulting">
+                        IT-Consulting
+                      </a>
+                    </li>
+                    <li class="cn431">
+                      <a class="cn432" href="https://www.provimedia.de/google-ads-agentur">
+                        Google Ads Agentur
+                      </a>
+                    </li>
+                    <li class="cn433">
+                      <a class="cn434" href="https://www.provimedia.de/performance-marketing-agentur">
+                        Performance Marketing Agentur
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cn435">
+                  <h3 class="cn436">
+                     Kontakt 
+                  </h3>
+                  <ul class="cn437">
+                    <li class="cn438">
+                      <a class="cn439" href="mailto:info@provimedia.de">
+                        <svg class="cn440" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-7a47f934=""><path data-v-7a47f934="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                         info@provimedia.de 
+                      </a>
+                    </li>
+                    <li class="cn441">
+                      <a class="cn442" href="tel:+4971429170511">
+                        <svg class="cn443" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-7a47f934=""><path data-v-7a47f934="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                         +49 (0)7142-9170511 
+                      </a>
+                    </li>
+                    <li class="cn444">
+                      <a class="cn445" href="https://wa.me/4971429170511?text=Hallo%20Provimedia%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen%20und%20habe%20eine%20Frage%3A" rel="noopener noreferrer" target="_blank">
+                        <svg class="cn446" aria-hidden="true" viewBox="0 0 32 32" data-v-7a47f934="" fill="currentColor"><path data-v-7a47f934="" d="M16.003 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.257.59 4.46 1.712 6.4L3.2 28.8l6.57-1.69a12.74 12.74 0 0 0 6.233 1.612h.005c7.06 0 12.8-5.74 12.8-12.8 0-3.42-1.332-6.635-3.752-9.056A12.71 12.71 0 0 0 16.003 3.2Zm0 2.133c2.84 0 5.51 1.107 7.52 3.117a10.58 10.58 0 0 1 3.114 7.55c0 5.885-4.788 10.667-10.667 10.667h-.004a10.6 10.6 0 0 1-5.4-1.48l-.387-.23-4.003 1.03 1.07-3.9-.252-.4a10.56 10.56 0 0 1-1.62-5.654c0-5.884 4.787-10.666 10.666-10.666ZM10.66 9.493c-.253 0-.663.095-1.01.475-.347.38-1.326 1.296-1.326 3.16 0 1.865 1.358 3.666 1.547 3.92.19.252 2.638 4.03 6.488 5.65.906.39 1.613.624 2.165.8.91.29 1.737.248 2.39.15.73-.108 2.246-.918 2.563-1.805.317-.886.317-1.645.222-1.805-.095-.158-.347-.253-.726-.443-.38-.19-2.246-1.108-2.594-1.234-.347-.127-.6-.19-.853.19-.252.38-.978 1.234-1.2 1.487-.22.253-.442.285-.82.095-.38-.19-1.604-.59-3.054-1.884-1.13-1.007-1.89-2.25-2.112-2.63-.222-.38-.024-.585.166-.774.17-.17.38-.443.57-.665.19-.222.252-.38.38-.633.126-.253.063-.475-.032-.665-.095-.19-.83-2.066-1.183-2.82-.28-.6-.567-.607-.82-.617-.21-.01-.453-.012-.696-.012Z"></path></svg>
+                         WhatsApp 
+                      </a>
+                    </li>
+                    <li class="cn447">
+                      <a class="cn448" href="https://www.provimedia.de/kontakt">
+                         Kontaktformular 
+                        <svg class="cn449" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-7a47f934=""><path data-v-7a47f934="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cn450">
+                <h3 class="cn451">
+                   Kostenlose Tools 
+                </h3>
+                <ul class="cn452">
+                  <li class="cn453">
+                    <a class="cn454" href="https://www.provimedia.de/tools/ki-schulungspflicht-check">
+                      KI-Schulungspflicht-Check
+                    </a>
+                  </li>
+                  <li class="cn455">
+                    <a class="cn456" href="https://www.provimedia.de/tools/ki-wissenstest">
+                      KI-Wissenstest für Teams
+                    </a>
+                  </li>
+                  <li class="cn457">
+                    <a class="cn458" href="https://www.provimedia.de/tools/google-ads-budget-rechner">
+                      Google-Ads-Budget-Rechner
+                    </a>
+                  </li>
+                  <li class="cn459">
+                    <a class="cn460" href="https://www.provimedia.de/tools/roas-rechner">
+                      ROAS-Rechner
+                    </a>
+                  </li>
+                  <li class="cn461">
+                    <a class="cn462" href="https://www.provimedia.de/tools/llm-kosten-rechner">
+                      LLM-API-Kostenrechner
+                    </a>
+                  </li>
+                  <li class="cn463">
+                    <a class="cn464" href="https://www.provimedia.de/tools/serp-snippet-optimizer">
+                      SERP-Snippet-Optimizer
+                    </a>
+                  </li>
+                  <li class="cn465">
+                    <a class="cn466" href="https://www.provimedia.de/tools/compliance-quick-check">
+                      Compliance-Quick-Check
+                    </a>
+                  </li>
+                  <li class="cn467">
+                    <a class="cn468" href="https://www.provimedia.de/tools/compliance-fristen-kalender">
+                      Compliance-Fristen-Kalender
+                    </a>
+                  </li>
+                  <li class="cn469">
+                    <a class="cn470" href="https://www.provimedia.de/tools/geo-check">
+                      GEO-Check (KI-Sichtbarkeit)
+                    </a>
+                  </li>
+                  <li class="cn471">
+                    <a class="cn472" href="https://www.provimedia.de/tools/ki-richtlinie-generator">
+                      KI-Richtlinien-Generator
+                    </a>
+                  </li>
+                  <li class="cn473">
+                    <a class="cn474" href="https://www.provimedia.de/tools/diashow-erstellen">
+                      Diashow erstellen
+                    </a>
+                  </li>
+                  <li class="cn475">
+                    <a class="cn476" href="https://www.provimedia.de/tools/bilder-komprimieren">
+                      Bilder komprimieren
+                    </a>
+                  </li>
+                  <li class="cn477">
+                    <a class="cn478" href="https://www.provimedia.de/tools/video-komprimieren">
+                      Video komprimieren
+                    </a>
+                  </li>
+                  <li class="cn479">
+                    <a class="cn480" href="https://www.provimedia.de/tools/utm-builder">
+                      UTM-Link-Builder
+                    </a>
+                  </li>
+                  <li class="cn481">
+                    <a class="cn482" href="https://www.provimedia.de/tools/website-kosten-rechner">
+                      Website-Kosten-Rechner
+                    </a>
+                  </li>
+                  <li class="cn483">
+                    <a class="cn484" href="https://www.provimedia.de/tools/bfsg-check">
+                      BFSG-Check
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cn485">
+                <div class="cn486">
+                  <div class="cn487">
+                    <div class="cn488">
+                      <h3 class="cn489">
+                        Newsletter
+                      </h3>
+                      <p class="cn490">
+                        Über KI auf dem neusten Stand bleiben
+                      </p>
+                    </div>
+                    <div class="cn491">
+                      <form class="cn492">
+                        <div class="cn493" aria-hidden="true">
+                          <input class="cn494" name="website_url" type="text" />
+                        </div>
+                        <div class="cn495">
+                          <div class="cn496">
+                            <input class="cn497" data-ditto-id="style-input" placeholder="E-Mail-Adresse" type="email" />
+                            <button class="cn498" type="submit">
+                              <span class="cn499">
+                                Anmelden
+                              </span>
+                            </button>
+                          </div>
+                          <p class="cn500">
+                             Abmeldung jederzeit möglich. Es gilt unsere 
+                            <a class="cn501" href="https://www.provimedia.de/datenschutz">
+                              Datenschutzerklärung
+                            </a>
+                            . 
+                          </p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <a class="cn502" href="https://www.provimedia.de/ki-zertifikat/siegel/Kj1JViJdA43np7zF" rel="noopener" target="_blank">
+                    <img class="cn503" alt="KI-Kompetenz verifiziert" height="100" src="public/assets/cloned/svg/55cc8438f538.svg" width="280" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cn504">
+              <div class="cn505">
+                <p class="cn506">
+                   © 2026 Provimedia GmbH. Alle Rechte vorbehalten. 
+                </p>
+                <div class="cn507">
+                  <a class="cn508" href="https://www.provimedia.de/impressum">
+                     Impressum 
+                  </a>
+                  <a class="cn509" href="https://www.provimedia.de/datenschutz">
+                     Datenschutz 
+                  </a>
+                  <a class="cn510" href="https://www.provimedia.de/agb">
+                     AGB 
+                  </a>
+                  <a class="cn511" href="https://www.provimedia.de/code-guardian/kuendigen">
+                     Verträge hier kündigen 
+                  </a>
+                  <a class="cn512" href="https://www.provimedia.de/barrierefreiheit">
+                     Barrierefreiheit 
+                  </a>
+                  <a class="cn513" href="https://www.provimedia.de/ki-transparenz">
+                     KI-Transparenz 
+                  </a>
+                  <a class="cn514" href="https://www.provimedia.de/widerruf">
+                     Widerruf 
+                  </a>
+                  <button class="cn515">
+                     Cookie-Einstellungen 
+                  </button>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="cn516">
+          <a class="cn517" aria-label="Kontakt über WhatsApp aufnehmen" href="https://wa.me/4971429170511?text=Hallo%20Provimedia%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen%20und%20habe%20eine%20Frage%3A" rel="noopener noreferrer" target="_blank">
+            <span class="cn518">
+               Schreiben Sie uns 
+            </span>
+            <span class="cn519">
+              <svg class="cn520" aria-hidden="true" viewBox="0 0 32 32" fill="currentColor"><path d="M16.003 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.257.59 4.46 1.712 6.4L3.2 28.8l6.57-1.69a12.74 12.74 0 0 0 6.233 1.612h.005c7.06 0 12.8-5.74 12.8-12.8 0-3.42-1.332-6.635-3.752-9.056A12.71 12.71 0 0 0 16.003 3.2Zm0 2.133c2.84 0 5.51 1.107 7.52 3.117a10.58 10.58 0 0 1 3.114 7.55c0 5.885-4.788 10.667-10.667 10.667h-.004a10.6 10.6 0 0 1-5.4-1.48l-.387-.23-4.003 1.03 1.07-3.9-.252-.4a10.56 10.56 0 0 1-1.62-5.654c0-5.884 4.787-10.666 10.666-10.666ZM10.66 9.493c-.253 0-.663.095-1.01.475-.347.38-1.326 1.296-1.326 3.16 0 1.865 1.358 3.666 1.547 3.92.19.252 2.638 4.03 6.488 5.65.906.39 1.613.624 2.165.8.91.29 1.737.248 2.39.15.73-.108 2.246-.918 2.563-1.805.317-.886.317-1.645.222-1.805-.095-.158-.347-.253-.726-.443-.38-.19-2.246-1.108-2.594-1.234-.347-.127-.6-.19-.853.19-.252.38-.978 1.234-1.2 1.487-.22.253-.442.285-.82.095-.38-.19-1.604-.59-3.054-1.884-1.13-1.007-1.89-2.25-2.112-2.63-.222-.38-.024-.585.166-.774.17-.17.38-.443.57-.665.19-.222.252-.38.38-.633.126-.253.063-.475-.032-.665-.095-.19-.83-2.066-1.183-2.82-.28-.6-.567-.607-.82-.617-.21-.01-.453-.012-.696-.012Z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+     
+    <div class="cn521">
+      <div class="cn522" aria-label="Cookie-Einstellungen" role="region">
+        <div class="cn523">
+          <div class="cn524">
+            <div class="cn525">
+              <p class="cn526">
+                 Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung zu bieten. 
+                <a class="cn527" href="https://www.provimedia.de/datenschutz">
+                   Mehr erfahren 
+                </a>
+              </p>
+            </div>
+            <div class="cn528">
+              <button class="cn529">
+                 Nur notwendige 
+              </button>
+              <button class="cn530">
+                 Einstellungen 
+              </button>
+              <button class="cn531">
+                 Alle akzeptieren 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

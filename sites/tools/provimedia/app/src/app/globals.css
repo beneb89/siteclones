@@ -1,0 +1,210 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./";
+
+/* Tailwind theme: color tokens (so bg-primary/text-foreground resolve to our vars) +
+   breakpoints. @theme inline keeps the var() reference (theme-swappable at runtime). */
+@theme inline {
+  --breakpoint-vp375: 375px;
+  --breakpoint-vp768: 768px;
+  --breakpoint-vp1280: 1280px;
+  --breakpoint-vp1920: 1920px;
+  --breakpoint-md: 572px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-2xl: 1601px;
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-border: var(--border);
+  --color-clr-0: var(--clr-0);
+  --color-color-002: var(--color-002);
+  --color-primary: var(--primary);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-color-003: var(--color-003);
+  --color-surface: var(--surface);
+  --color-color-001: var(--color-001);
+  --color-clr-1: var(--clr-1);
+  --color-clr-2: var(--clr-2);
+  --color-clr-3: var(--clr-3);
+  --color-surface-3: var(--surface-3);
+  --color-surface-2: var(--surface-2);
+  --color-accent: var(--accent);
+  --color-surface-4: var(--surface-4);
+  --color-muted: var(--muted);
+  --color-surface-5: var(--surface-5);
+  --color-surface-6: var(--surface-6);
+  --color-clr-4: var(--clr-4);
+  --color-clr-5: var(--clr-5);
+  --color-clr-6: var(--clr-6);
+  --color-clr-7: var(--clr-7);
+  --color-clr-8: var(--clr-8);
+  --color-clr-9: var(--clr-9);
+  --color-clr-10: var(--clr-10);
+  --color-clr-11: var(--clr-11);
+  --color-clr-12: var(--clr-12);
+  --color-clr-13: var(--clr-13);
+  --color-clr-14: var(--clr-14);
+  --color-clr-15: var(--clr-15);
+  --color-clr-16: var(--clr-16);
+  --color-clr-17: var(--clr-17);
+  --color-clr-18: var(--clr-18);
+  --color-clr-19: var(--clr-19);
+  --color-clr-20: var(--clr-20);
+  --color-clr-21: var(--clr-21);
+  --color-clr-22: var(--clr-22);
+  --color-clr-23: var(--clr-23);
+  --color-clr-24: var(--clr-24);
+  --color-clr-25: var(--clr-25);
+}
+
+/* Design tokens (values). */
+:root {
+  --background: rgb(244, 243, 239);
+  --foreground: rgb(21, 22, 26);
+  --primary: rgb(28, 107, 90);
+  --accent: rgb(79, 183, 156);
+  --border: rgb(227, 225, 218);
+  --muted-foreground: rgb(100, 107, 120);
+  --muted: oklch(0.707 0.022 261.325);
+  --surface: rgb(231, 240, 237);
+  --surface-2: oklch(0.928 0.006 264.531);
+  --surface-3: oklab(0.909277 -0.000561208 0.00965476 / 0.7);
+  --surface-4: oklch(0.967 0.003 264.542);
+  --surface-5: oklab(0.999994 0.0000455678 0.0000200868 / 0.1);
+  --surface-6: oklab(0.999994 0.0000455678 0.0000200868 / 0.4);
+  --color-001: rgb(255, 255, 255);
+  --color-002: oklab(0.200857 0.000648633 -0.00809099 / 0.8);
+  --color-003: oklch(0.872 0.01 258.338);
+}
+
+:root {
+  /* fonts */
+  --font-body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* fontSizes */
+  --font-size-001: 12px;
+  --font-size-002: 14px;
+  --font-size-003: 16px;
+  --font-size-004: 18px;
+  --font-size-005: 24px;
+  --font-size-006: 30px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 500;
+  --font-weight-003: 600;
+  --font-weight-004: 700;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 20px;
+  --line-height-003: 16px;
+  --line-height-004: 28px;
+  --line-height-005: 27.2px;
+  --line-height-006: 26px;
+  --line-height-007: 31.2px;
+  --line-height-008: 22.75px;
+  --line-height-009: 19.5px;
+  --line-height-010: 36px;
+  /* spacing */
+  --space-001: -1px;
+  --space-002: 2px;
+  --space-003: 4px;
+  --space-004: 6px;
+  --space-005: 8px;
+  --space-006: 10px;
+  --space-007: 12px;
+  --space-008: 14px;
+  --space-009: 16px;
+  --space-010: 20px;
+  --space-011: 24px;
+  --space-012: 32px;
+  --space-013: 40px;
+  --space-014: 48px;
+  --space-015: 80px;
+  /* radii */
+  --radius-001: 3.35544e+07px;
+  --radius-002: 4px;
+  --radius-003: 8px;
+  --radius-004: 12px;
+  --radius-005: 16px;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+:root {
+  --clr-0: oklab(0.963732 -0.000438422 0.00541788 / 0.95);
+  --clr-1: rgba(0, 0, 0, 0);
+  --clr-2: rgba(0, 0, 0, 0.1);
+  --clr-3: oklab(0.947435 -0.0102584 0.00105584 / 0.4);
+  --clr-4: rgb(37, 211, 102);
+  --clr-5: oklab(0.999994 0.0000455678 0.0000200868 / 0.95);
+  --clr-6: rgba(10, 15, 28, 0.12);
+  --clr-7: rgb(10, 15, 28);
+  --clr-8: rgb(36, 112, 95);
+  --clr-9: rgb(31, 109, 92);
+  --clr-10: rgb(65, 131, 117);
+  --clr-11: rgb(217, 217, 218);
+  --clr-12: oklab(0.710467 -0.100121 0.010572);
+  --clr-13: rgb(252, 254, 253);
+  --clr-14: rgb(20, 86, 74);
+  --clr-15: rgba(80, 81, 84, 0.067);
+  --clr-16: oklab(0.985 -0.00075442 -0.00185226 / 0.983502);
+  --clr-17: rgb(42, 43, 48);
+  --clr-18: rgb(16, 16, 16);
+  --clr-19: rgb(219, 220, 213);
+  --clr-20: rgb(224, 223, 216);
+  --clr-21: rgb(234, 241, 240);
+  --clr-22: rgb(42, 43, 47);
+  --clr-23: rgb(82, 184, 158);
+  --clr-24: oklab(0.476224 -0.0792721 0.00683278 / 0.5);
+  --clr-25: oklab(0.985 -0.00075442 -0.00185226 / 0.0158543);
+}
+
+@layer base {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/0bcc6d5713b9.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/cloned/fonts/88bfa42585ee.woff2") format("woff2");
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+}
