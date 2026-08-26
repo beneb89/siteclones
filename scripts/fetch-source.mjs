@@ -17,6 +17,7 @@
 //   node scripts/fetch-source.mjs <url> [--dest=<subdir>] [--slug=<name>]
 //                                       [--all] [--out=<dir>]
 //
+//   --no-chunks  skip the second pass over the downloaded bundles (below).
 //   --all   also download scripts from other domains (analytics, consent,
 //           widgets). Off by default — but note that plenty of sites serve
 //           their own bundles from a CDN domain (github.com loads every one of
@@ -38,6 +39,7 @@ const opt = (name, fallback) => {
   return hit ? hit.slice(name.length + 3) : fallback;
 };
 const all = args.includes("--all");
+const chunks = !args.includes("--no-chunks");
 const slug = opt("slug", slugsFor([url]).get(url));
 const dest = opt("dest", "tools");
 const outDir = opt("out", join("sites", dest, slug, "source"));
@@ -127,16 +129,64 @@ for (const m of html.matchAll(/<link\b[^>]*>/gi)) {
 }
 
 let failed = 0;
+const downloaded = [];
 for (const src of srcs) {
   try {
     const res = await get(src);
     const rel = fileFor(src);
-    if (res.status < 400) write(rel, res.body);
+    if (res.status < 400) { write(rel, res.body); downloaded.push({ url: src, bytes: res.body }); }
     else failed++;
     manifest.push([String(res.status), String(res.body.length), rel, src]);
   } catch (err) {
     failed++;
     manifest.push(["error", "0", "—", `${src} (${err.message})`]);
+  }
+}
+
+// Second pass: the chunks a bundle imports on demand.
+//
+// A page's own component is usually not referenced by the HTML at all. On this
+// site the server-rendered markup preloads the entry bundle and gsap and
+// nothing else — the calculator's chunk is named only inside the bundle's
+// import map, as "assets/LlmKostenRechner-PULna0r3.js" and as
+// "./LlmKostenRechner-PULna0r3.js". (A browser that has navigated the app does
+// emit modulepreload tags for it, which is why a hand-saved page and a plain
+// fetch disagree about what the page needs.)
+//
+// So read the hashed filenames back out of every bundle downloaded above and
+// fetch them from beside that bundle, which is where a bundler puts them. One
+// hop only, and capped: the map lists every route's chunk, not just this
+// page's, and following those recursively would mirror the whole build.
+const CHUNK_CAP = 250;
+let chunkCount = 0;
+if (chunks) {
+  const found = [];
+  for (const { url: from, bytes } of downloaded) {
+    if (!from.endsWith(".js")) continue;
+    for (const m of bytes.toString("utf8").matchAll(/["'`]([^"'`\s]*?[A-Za-z0-9_$.-]+-[A-Za-z0-9_-]{6,}\.js)["'`]/g)) {
+      const name = m[1].split("/").pop();
+      if (!name) continue;
+      let abs;
+      try { abs = new URL(name, from).href; } catch { continue; }
+      if (seen.has(abs)) continue;
+      seen.add(abs);
+      found.push(abs);
+    }
+  }
+  for (const target of found.slice(0, CHUNK_CAP)) {
+    try {
+      const res = await get(target);
+      const rel = fileFor(target);
+      if (res.status < 400) { write(rel, res.body); chunkCount++; }
+      else failed++;
+      manifest.push([String(res.status), String(res.body.length), rel, target]);
+    } catch (err) {
+      failed++;
+      manifest.push(["error", "0", "—", `${target} (${err.message})`]);
+    }
+  }
+  if (found.length > CHUNK_CAP) {
+    console.log(`  ${found.length - CHUNK_CAP} further chunk(s) beyond the ${CHUNK_CAP} cap were not fetched`);
   }
 }
 
@@ -146,6 +196,7 @@ write("MANIFEST.tsv", Buffer.from(manifest.map((r) => r.join("\t")).join("\n") +
 
 console.log(`${url} -> ${outDir}`);
 console.log(`  page + ${inline} inline block(s) + ${srcs.length} script file(s)` +
+            (chunkCount ? ` + ${chunkCount} imported chunk(s)` : "") +
             (failed ? `, ${failed} failed` : ""));
 if (skipped.length) {
   const hosts = [...new Set(skipped.map((s) => new URL(s).hostname))];
