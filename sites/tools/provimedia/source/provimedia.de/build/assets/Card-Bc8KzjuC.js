@@ -1,0 +1,1 @@
+import{c as a,P as o,n as s,o as t}from"./app-C2UqCN8s.js";const d={__name:"Card",props:{hover:{type:Boolean,default:!0}},setup(e){return(r,l)=>(t(),a("div",{class:s(["bg-surface rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8",e.hover?"hover:shadow-xl hover:-translate-y-1 transition-all duration-300":""])},[o(r.$slots,"default")],2))}};export{d as _};

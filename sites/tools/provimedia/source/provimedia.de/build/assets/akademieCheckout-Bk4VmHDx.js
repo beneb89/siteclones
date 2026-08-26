@@ -1,0 +1,1 @@
+const i={de:"/ki-zertifikat",en:"/en/ai-certificate",fr:"/fr/certificat-ia",es:"/es/certificado-ia",it:"/it/certificato-ia",nl:"/nl/ai-certificaat",uk:"/uk/ai-sertyfikat",tr:"/tr/yapay-zeka-sertifikasi"};function r(e){return i[e]||i.de}function t(e){return e==="de"?"/kurs":"/course"}function a(e){return e==="de"?"/kurs/vorschau":"/course/preview"}export{r as b,t as c,a as p};
