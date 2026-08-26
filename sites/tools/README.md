@@ -20,4 +20,7 @@ happens.
 
 Where that matters, the page's own scripts are fetched separately and kept in
 `<slug>/source/` next to the clone — see `scripts/fetch-source.mjs` and the
-`fetch-source` workflow, and that folder's README for what is in it.
+`fetch-source` workflow, and that folder's README for what is in it. For the
+LLM calculator that is the full price table, the hard-coded USD→EUR rate and
+the workload presets: everything the rendered page shows a result for without
+saying how.

@@ -6,6 +6,17 @@ css as assets and drops everything else, so a page whose point is its script —
 here, a calculator — comes through as a working-looking widget that cannot
 compute. This folder holds the code that is missing from it.
 
+Two folders, from two sources:
+
+- `provimedia.de/` — fetched from the live site by `scripts/fetch-source.mjs`
+  on a runner: the entry bundle and all 165 chunks of the build, the
+  calculator's among them.
+- `saved-page/` — a browser export of the page, supplied by hand. It is the
+  server-rendered markup plus what the browser had already loaded.
+
+`MANIFEST.tsv` records every script the fetch found, with its HTTP status —
+including any it chose not to download.
+
 ## `saved-page/`
 
 A browser "save page as, complete" export of the live page, supplied by hand.
@@ -30,27 +41,51 @@ https://www.provimedia.de/build/assets/LlmKostenRechner-PULna0r3.js
 https://www.provimedia.de/build/assets/ToolShell-CBPUm-7K.js
 ```
 
-`scripts/fetch-source.mjs` follows those preload tags for exactly this reason;
-run it (or the `fetch-source` workflow, since the sandbox proxy blocks the
-host) to put the missing chunks beside this folder.
+Both are here now, in `provimedia.de/build/assets/`. Getting them took a
+second pass: a plain fetch of the page preloads only the entry bundle and
+gsap — the chunk names live inside the entry bundle's import map, and a
+browser that has already navigated the app is what emits the extra
+modulepreload tags the hand-saved page shows. `scripts/fetch-source.mjs`
+therefore reads the hashed filenames back out of each downloaded bundle and
+fetches them from beside it. That is the whole build's chunk set, 165 files
+and 3.4 MB, not just this page's chain; the import map does not separate by
+page.
 
-## What the arithmetic is
+## The calculator, in full
 
-It does not need reverse engineering — the page states it, in the FAQ that the
-clone captured:
+`provimedia.de/build/assets/LlmKostenRechner-PULna0r3.js` (13 KB) holds everything the clone
+cannot do. The formula is the one the FAQ states:
 
 ```
-Kosten = Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis
-                   + Output-Tokens ÷ 1 Mio. × Output-Preis)
+USD = Anfragen × (Input-Tokens ÷ 1e6 × inputPerMTok
+                + Output-Tokens ÷ 1e6 × outputPerMTok)
+EUR = USD × 0.88
 ```
 
-The prices are per 1M tokens, input and output billed separately. Four are
-named outright in the same FAQ text: GPT-5 at 1.25 / 10 USD, GPT-5 mini at
-0.25 / 2, Claude Haiku 4.5 at 1 / 5, and the Claude Opus class at 5 / 25. The
-rest of the table — Sonnet, Gemini 2.5 Pro, Mistral Large — appears only as
-monthly totals for the default workload (10,000 requests, 800 input and 300
-output tokens each), which fixes one equation per model and cannot be split
-back into an input and an output price. Those come from the chunk above.
+The USD→EUR rate is hard-coded at `0.88`, stamped `2026-07-14`, as is the
+price table — which is the part that could not be read off the rendered page:
+
+| Model | Vendor | Input / 1M | Output / 1M |
+| --- | --- | ---: | ---: |
+| Claude Opus 4.8 | Anthropic | 5 USD | 25 USD |
+| Claude Sonnet 5 | Anthropic | 3 USD | 15 USD |
+| Claude Haiku 4.5 | Anthropic | 1 USD | 5 USD |
+| GPT-5 | OpenAI | 1.25 USD | 10 USD |
+| GPT-5 mini | OpenAI | 0.25 USD | 2 USD |
+| Gemini 2.5 Pro | Google | 1.25 USD | 10 USD |
+| Mistral Large | Mistral | 2 USD | 6 USD |
+
+The workload presets behind the token sliders:
+
+| Preset | Input tokens | Output tokens |
+| --- | ---: | ---: |
+| Chatbot-Antwort | 800 | 300 |
+| Dokument-Zusammenfassung | 4,000 | 500 |
+| RAG-Suche mit Kontext | 2,500 | 400 |
+| Code-Assistent | 3,000 | 1,200 |
+
+Request count is bounded at 1 … 10,000,000, tokens at 0 … 1,000,000 — the
+same `min`/`max` the clone's sliders carry.
 
 ## Provenance
 
