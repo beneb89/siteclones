@@ -112,6 +112,28 @@ and keeps each target's full log in `logs/<dest>/<slug>.log`.
 
 `sites/top20-personal-brands/README.md` indexes that bundle site by site.
 
+## Getting a page's own JavaScript
+
+A clone is what the browser painted, and script bodies are not part of that —
+the compiler stores images, svg, video, fonts and css as assets and drops the
+rest. For a page whose point is its script (a calculator, a configurator) the
+clone therefore shows the widget without the code that makes it work.
+
+```bash
+node scripts/fetch-source.mjs https://example.com/tools/calc --dest=tools
+node scripts/fetch-source.mjs https://example.com/tools/calc --all   # other domains too
+```
+
+It saves the page, its inline scripts and the script files it references into
+`sites/<dest>/<slug>/source/`, with a `MANIFEST.tsv` listing every script it
+found — including the ones it chose not to download, so nothing goes missing
+quietly. It follows `<link rel="modulepreload">` as well as `<script src>`:
+a bundler puts a per-page component in a preloaded chunk, which is exactly
+where a calculator's arithmetic tends to live.
+
+The same egress rule applies as for capture, so there is a workflow for it:
+Actions → *fetch-source* → *Run workflow*, with the page URL.
+
 ## Checking how complete the clones are
 
 ```bash

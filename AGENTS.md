@@ -12,6 +12,10 @@ This repo is a workspace for cloning websites into runnable apps with
 - `scripts/slugs.mjs <list>` — prints the `<slug>` folder each URL maps to
 - `scripts/qa-clones.mjs` — reports per target whether the capture is complete,
   capped, thin or missing; reads list/dest/flags out of the workflow
+- `scripts/fetch-source.mjs <url> [--dest=] [--slug=] [--all]` — saves a page's
+  own scripts (inline, `<script src>` and `modulepreload` chunks) into
+  `sites/<dest>/<slug>/source/`; run via the `fetch-source` workflow, since the
+  sandbox proxy blocks the target hosts the same way it blocks capture
 - `scripts/funnel-map.mjs [dest]` — writes a `FUNNEL.md` per site from its
   capture: routes, CTAs and their targets, email capture, visible prices
 - `targets.txt`, `targets-full.txt` and `targets-deep.txt`
@@ -88,4 +92,11 @@ This repo is a workspace for cloning websites into runnable apps with
   Actions billing stop, which no change in this repo can fix.
 - Chromium is preinstalled at `PLAYWRIGHT_BROWSERS_PATH` in the remote
   sandbox — don't run `playwright install` unless setup says it's missing.
+- A clone never contains the page's JavaScript. `classifyAsset` in the
+  compiler's capture step keeps images, svg, video, fonts, lottie, manifest and
+  css, and returns null for everything else, so script bodies are dropped. Do
+  not go looking for them in `.clone/` — use `scripts/fetch-source.mjs`.
+- `scripts/slugs.mjs` runs its CLI only when it is the entry point. It is also
+  imported for `slugsFor`, and an unguarded body would read the caller's first
+  argument as a targets file.
 - ditto respects robots.txt by default.

@@ -1,0 +1,510 @@
+{
+  "component": "Tools/LlmKostenRechner",
+  "props": {
+    "errors": {},
+    "keywordGroups": [
+      {
+        "id": 1,
+        "name": "Webdesign",
+        "slug": "webdesign",
+        "icon": "monitor",
+        "description": "Professionelle Webauftritte für Unternehmen"
+      },
+      {
+        "id": 2,
+        "name": "Softwareentwicklung",
+        "slug": "softwareentwicklung",
+        "icon": "code",
+        "description": "Individuelle Softwarelösungen und SaaS-Plattformen"
+      },
+      {
+        "id": 3,
+        "name": "SEO Agentur",
+        "slug": "seo-agentur",
+        "icon": "chart-bar",
+        "description": "Mehr Sichtbarkeit und Traffic durch professionelles SEO"
+      },
+      {
+        "id": 4,
+        "name": "KI-Entwicklung",
+        "slug": "ki-entwicklung",
+        "icon": "cpu-chip",
+        "description": "KI-Agenten, Chatbots und intelligente Automation"
+      },
+      {
+        "id": 5,
+        "name": "Webagentur",
+        "slug": "webagentur",
+        "icon": "globe",
+        "description": "Full-Service Digitalagentur für alle digitalen Bedürfnisse"
+      },
+      {
+        "id": 6,
+        "name": "App-Entwicklung",
+        "slug": "app-entwicklung",
+        "icon": "device-phone-mobile",
+        "description": "Web- und Mobile-App-Entwicklung"
+      },
+      {
+        "id": 7,
+        "name": "Online Marketing",
+        "slug": "online-marketing",
+        "icon": "megaphone",
+        "description": "Digitale Reichweite und messbare Marketing-Ergebnisse"
+      },
+      {
+        "id": 8,
+        "name": "IT-Consulting",
+        "slug": "consulting",
+        "icon": "light-bulb",
+        "description": "Strategische IT- und Digitalberatung für Unternehmen"
+      },
+      {
+        "id": 9,
+        "name": "Google Ads Agentur",
+        "slug": "google-ads-agentur",
+        "icon": "chart-bar-square",
+        "description": "KI-optimierte Google Ads Kampagnen mit Landing Page Optimierung"
+      },
+      {
+        "id": 10,
+        "name": "Performance Marketing Agentur",
+        "slug": "performance-marketing-agentur",
+        "icon": "presentation-chart-line",
+        "description": "Datengetriebenes Performance Marketing: Ads, CRO & Analytics"
+      }
+    ],
+    "footerTools": [
+      {
+        "slug": "ki-schulungspflicht-check",
+        "name": "KI-Schulungspflicht-Check"
+      },
+      {
+        "slug": "ki-wissenstest",
+        "name": "KI-Wissenstest für Teams"
+      },
+      {
+        "slug": "google-ads-budget-rechner",
+        "name": "Google-Ads-Budget-Rechner"
+      },
+      {
+        "slug": "roas-rechner",
+        "name": "ROAS-Rechner"
+      },
+      {
+        "slug": "llm-kosten-rechner",
+        "name": "LLM-API-Kostenrechner"
+      },
+      {
+        "slug": "serp-snippet-optimizer",
+        "name": "SERP-Snippet-Optimizer"
+      },
+      {
+        "slug": "compliance-quick-check",
+        "name": "Compliance-Quick-Check"
+      },
+      {
+        "slug": "compliance-fristen-kalender",
+        "name": "Compliance-Fristen-Kalender"
+      },
+      {
+        "slug": "geo-check",
+        "name": "GEO-Check (KI-Sichtbarkeit)"
+      },
+      {
+        "slug": "ki-richtlinie-generator",
+        "name": "KI-Richtlinien-Generator"
+      },
+      {
+        "slug": "diashow-erstellen",
+        "name": "Diashow erstellen"
+      },
+      {
+        "slug": "bilder-komprimieren",
+        "name": "Bilder komprimieren"
+      },
+      {
+        "slug": "video-komprimieren",
+        "name": "Video komprimieren"
+      },
+      {
+        "slug": "utm-builder",
+        "name": "UTM-Link-Builder"
+      },
+      {
+        "slug": "website-kosten-rechner",
+        "name": "Website-Kosten-Rechner"
+      },
+      {
+        "slug": "bfsg-check",
+        "name": "BFSG-Check"
+      }
+    ],
+    "locale": "de",
+    "auth": {
+      "community": false,
+      "akademie": null,
+      "company": false,
+      "guardian": false
+    },
+    "trackingScripts": [],
+    "glossary": {
+      "fastapi": "fastapi",
+      "filament": "filament",
+      "flask": "flask",
+      "graphql": "graphql",
+      "java": "java",
+      "kotlin": "kotlin",
+      "kotlin (android)": "kotlin",
+      "laravel": "laravel",
+      "laravel framework": "laravel",
+      "node.js": "nodejs",
+      "node": "nodejs",
+      "php": "php",
+      "php 8": "php",
+      "php 8+": "php",
+      "python": "python",
+      "rest api": "rest-api",
+      "rest apis": "rest-api",
+      "swift": "swift",
+      "swift (ios)": "swift",
+      "symfony": "symfony",
+      "websocket": "websocket",
+      "websockets": "websocket",
+      "elementor": "elementor",
+      "shopify": "shopify",
+      "shopware": "shopware",
+      "typo3": "typo3",
+      "woocommerce": "woocommerce",
+      "wordpress": "wordpress",
+      "algolia": "algolia",
+      "amazon s3": "amazon-s3",
+      "s3": "amazon-s3",
+      "elasticsearch": "elasticsearch",
+      "mongodb": "mongodb",
+      "mysql": "mysql",
+      "pinecone": "pinecone",
+      "postgresql": "postgresql",
+      "postgres": "postgresql",
+      "redis": "redis",
+      "redis caching": "redis",
+      "aws": "aws",
+      "amazon web services": "aws",
+      "amazon web services (aws)": "aws",
+      "amazon aws": "aws",
+      "aws cloud services": "aws",
+      "aws cloud": "aws",
+      "ansible": "ansible",
+      "apache kafka": "apache-kafka",
+      "kafka": "apache-kafka",
+      "apache spark": "apache-spark",
+      "spark": "apache-spark",
+      "ci/cd": "ci-cd",
+      "continuous integration": "ci-cd",
+      "continuous delivery": "ci-cd",
+      "cloudflare": "cloudflare",
+      "docker": "docker",
+      "docker containerization": "docker",
+      "git": "git",
+      "github": "github",
+      "github actions": "github-actions",
+      "gitlab": "gitlab",
+      "google cloud": "google-cloud",
+      "google cloud platform": "google-cloud",
+      "gcp": "google-cloud",
+      "jenkins": "jenkins",
+      "kubernetes": "kubernetes",
+      "kubernetes orchestration": "kubernetes",
+      "k8s": "kubernetes",
+      "microsoft azure": "microsoft-azure",
+      "azure": "microsoft-azure",
+      "nginx": "nginx",
+      "terraform": "terraform",
+      "alpine.js": "alpinejs",
+      "alpine": "alpinejs",
+      "angular": "angular",
+      "bootstrap": "bootstrap",
+      "css3": "css3",
+      "css": "css3",
+      "flutter": "flutter",
+      "gsap": "gsap",
+      "html5": "html5",
+      "html": "html5",
+      "inertia.js": "inertiajs",
+      "inertia": "inertiajs",
+      "javascript": "javascript",
+      "es6": "javascript",
+      "javascript es6+": "javascript",
+      "javascript es6": "javascript",
+      "livewire": "livewire",
+      "next.js": "nextjs",
+      "nuxt.js": "nuxtjs",
+      "nuxt": "nuxtjs",
+      "progressive web app (pwa)": "pwa",
+      "pwa": "pwa",
+      "progressive web apps": "pwa",
+      "progressive web app": "pwa",
+      "react": "react",
+      "react.js": "react",
+      "react native": "react-native",
+      "redux": "redux",
+      "sass/scss": "sass",
+      "sass": "sass",
+      "scss": "sass",
+      "tailwind css": "tailwind-css",
+      "tailwind": "tailwind-css",
+      "tailwindcss": "tailwind-css",
+      "three.js": "threejs",
+      "typescript": "typescript",
+      "vite": "vite",
+      "vue.js": "vuejs",
+      "vue": "vuejs",
+      "vuejs": "vuejs",
+      "webpack": "webpack",
+      "anthropic claude": "anthropic-claude",
+      "claude": "anthropic-claude",
+      "apache airflow": "apache-airflow",
+      "airflow": "apache-airflow",
+      "cuda": "cuda",
+      "elevenlabs": "elevenlabs",
+      "hugging face": "hugging-face",
+      "hugging face transformers": "hugging-face",
+      "transformers": "hugging-face",
+      "keras": "keras",
+      "langchain": "langchain",
+      "mlflow": "mlflow",
+      "nltk": "nltk",
+      "natural language toolkit": "nltk",
+      "natural language toolkit (nltk)": "nltk",
+      "openai": "openai",
+      "openai gpt": "openai",
+      "openai api": "openai",
+      "openai gpt-4": "openai",
+      "opencv": "opencv",
+      "pytorch": "pytorch",
+      "scikit-learn": "scikit-learn",
+      "tensorflow": "tensorflow",
+      "whisper": "whisper",
+      "openai whisper": "whisper",
+      "spacy": "spacy",
+      "ahrefs": "ahrefs",
+      "core web vitals": "core-web-vitals",
+      "google ads": "google-ads",
+      "google analytics 4": "google-analytics-4",
+      "google analytics": "google-analytics-4",
+      "ga4": "google-analytics-4",
+      "google my business": "google-my-business",
+      "google my business api": "google-my-business",
+      "google business profile": "google-my-business",
+      "google search console": "google-search-console",
+      "search console": "google-search-console",
+      "google tag manager": "google-tag-manager",
+      "gtm": "google-tag-manager",
+      "hotjar": "hotjar",
+      "hubspot": "hubspot",
+      "hubspot marketing hub": "hubspot",
+      "hubspot crm": "hubspot",
+      "lighthouse": "lighthouse",
+      "looker studio": "looker-studio",
+      "google looker studio": "looker-studio",
+      "mailchimp": "mailchimp",
+      "meta business suite": "meta-business-suite",
+      "meta business manager": "meta-business-suite",
+      "facebook business manager": "meta-business-suite",
+      "facebook business": "meta-business-suite",
+      "optimizely": "optimizely",
+      "pagespeed insights": "pagespeed-insights",
+      "performance max": "performance-max",
+      "semrush": "semrush",
+      "schema.org": "schema-org",
+      "schema.org markup": "schema-org",
+      "schema markup": "schema-org",
+      "structured data": "schema-org",
+      "screaming frog": "screaming-frog",
+      "screaming frog seo spider": "screaming-frog",
+      "search ads 360": "search-ads-360",
+      "sistrix": "sistrix",
+      "stripe": "stripe"
+    },
+    "flash": {
+      "newsletter_success": null,
+      "success": null,
+      "error": null,
+      "conversion_value": null
+    },
+    "seo": {
+      "canonicalUrl": "https://www.provimedia.de/tools/llm-kosten-rechner",
+      "siteName": "Provimedia",
+      "defaultOgImage": "https://www.provimedia.de/images/og-default.jpg"
+    },
+    "tool": {
+      "slug": "llm-kosten-rechner",
+      "name": "LLM-API-Kostenrechner",
+      "h1": "LLM-API-Kostenrechner",
+      "title": "LLM-API-Kostenrechner: GPT, Claude & Gemini",
+      "description": "Was kostet die GPT-, Claude- oder Gemini-API? Anfragen und Tokens eingeben, Monatskosten in USD und Euro vergleichen – kostenlos und ohne Anmeldung.",
+      "cta": "kontakt"
+    },
+    "faqs": [
+      {
+        "question": "Was kostet die ChatGPT-API pro Monat?",
+        "answer": "Das hängt von Anfragen und Token-Volumen ab. Beispiel: Ein Chatbot mit 10.000 Anfragen pro Monat (durchschnittlich 800 Input- und 300 Output-Tokens je Anfrage) kostet mit GPT-5 (1,25 USD Input / 10 USD Output pro 1 Mio. Tokens) rund 40 US-Dollar im Monat, mit GPT-5 mini rund 8 US-Dollar. Die Formel: Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis)."
+      },
+      {
+        "question": "Wie berechnen sich die Kosten einer LLM-API?",
+        "answer": "Alle großen Anbieter rechnen pro Token ab, getrennt nach Input (Ihr Prompt inklusive Kontext) und Output (die Antwort des Modells). Output-Tokens sind dabei deutlich teurer als Input-Tokens — bei den gängigen Modellen um den Faktor 3 bis 8. Die Monatskosten ergeben sich aus: Anzahl der Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis). Genau diese Rechnung führt der Rechner oben für alle ausgewählten Modelle gleichzeitig aus."
+      },
+      {
+        "question": "Was ist ein Token und wie viele Tokens hat ein Text?",
+        "answer": "Ein Token ist die kleinste Abrechnungseinheit eines Sprachmodells — im Deutschen entspricht ein Token grob 3 bis 4 Zeichen. Eine DIN-A4-Seite Text mit rund 3.000 Zeichen sind etwa 750 bis 1.000 Tokens. 1 Million Tokens — die übliche Preiseinheit der Anbieter — entsprechen damit ungefähr 1.000 bis 1.300 Seiten Text."
+      },
+      {
+        "question": "Welches LLM ist am günstigsten?",
+        "answer": "Für einfache, hochvolumige Aufgaben sind Effizienz-Modelle am günstigsten: GPT-5 mini (0,25 USD Input / 2 USD Output pro 1 Mio. Tokens) und Claude Haiku 4.5 (1 USD / 5 USD). Frontier-Modelle wie die Claude-Opus-Klasse (5 USD / 25 USD) lohnen sich nur für komplexes Reasoning oder anspruchsvolle Code-Aufgaben. Beim identischen Chatbot-Workload mit 10.000 Anfragen pro Monat liegt der Unterschied bei 23 US-Dollar (Haiku 4.5) gegenüber 115 US-Dollar (Opus-Klasse) — Faktor 5."
+      },
+      {
+        "question": "Wie kann ich meine LLM-API-Kosten senken?",
+        "answer": "Die fünf wirksamsten Hebel: Erstens ein kleineres Modell oder Model-Routing einsetzen — einfache Teilaufgaben ans günstige Modell, nur komplexe ans teure. Zweitens Prompt-Caching nutzen: wiederholte Prompt-Teile werden je nach Anbieter mit bis zu 90 Prozent Rabatt abgerechnet. Drittens Batch-APIs für Nicht-Echtzeit-Jobs verwenden (typischerweise rund 50 Prozent Rabatt). Viertens System-Prompts und mitgeschickten Kontext kürzen, denn Input-Tokens zahlen bei jeder Anfrage erneut ein. Fünftens die Output-Länge begrenzen, weil Output-Tokens am teuersten sind."
+      }
+    ],
+    "related": [
+      {
+        "slug": "ki-schulungspflicht-check",
+        "name": "KI-Schulungspflicht-Check",
+        "teaser": "Sind Ihre Mitarbeiter schulungspflichtig nach dem EU AI Act? In 8 Fragen zur Antwort."
+      },
+      {
+        "slug": "ki-wissenstest",
+        "name": "KI-Wissenstest für Teams",
+        "teaser": "10 Fragen, 3 Minuten: Wie sicher nutzt Ihr Team KI? Mit Sofort-Auswertung und Level-Einstufung."
+      },
+      {
+        "slug": "compliance-quick-check",
+        "name": "Compliance-Quick-Check",
+        "teaser": "Welche gesetzlichen Pflichten gelten für Ihr Unternehmen? 8 Fragen, sofortiges Ergebnis – ohne Anmeldung."
+      }
+    ],
+    "markdownUrl": "https://www.provimedia.de/tools/llm-kosten-rechner.md",
+    "_schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "LLM-API-Kostenrechner",
+        "serviceType": "BusinessApplication",
+        "description": "Was kostet die GPT-, Claude- oder Gemini-API? Anfragen und Tokens eingeben, Monatskosten in USD und Euro vergleichen – kostenlos und ohne Anmeldung.",
+        "provider": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://www.provimedia.de/#organization",
+          "name": "Provimedia",
+          "legalName": "Provimedia GmbH",
+          "url": "https://www.provimedia.de",
+          "logo": "https://www.provimedia.de/favicon.svg",
+          "description": "Provimedia ist eine deutsche Digitalagentur mit Sitz in Bietigheim-Bissingen, spezialisiert auf KI-Entwicklung, SaaS-Plattformen und thematische Online-Portale.",
+          "foundingDate": "2007",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Weidenweg 12",
+            "addressLocality": "Bietigheim-Bissingen",
+            "postalCode": "74321",
+            "addressRegion": "Baden-Württemberg",
+            "addressCountry": "DE"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@provimedia.de",
+            "telephone": "+4971429170511",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "German",
+              "English"
+            ]
+          },
+          "founder": {
+            "@id": "https://www.provimedia.de/#alexander-weipprecht"
+          },
+          "employee": {
+            "@id": "https://www.provimedia.de/#alexander-weipprecht"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/provimedia"
+          ],
+          "dateModified": "2026-08-26T09:06:40+00:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Was kostet die ChatGPT-API pro Monat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Das hängt von Anfragen und Token-Volumen ab. Beispiel: Ein Chatbot mit 10.000 Anfragen pro Monat (durchschnittlich 800 Input- und 300 Output-Tokens je Anfrage) kostet mit GPT-5 (1,25 USD Input / 10 USD Output pro 1 Mio. Tokens) rund 40 US-Dollar im Monat, mit GPT-5 mini rund 8 US-Dollar. Die Formel: Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie berechnen sich die Kosten einer LLM-API?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Alle großen Anbieter rechnen pro Token ab, getrennt nach Input (Ihr Prompt inklusive Kontext) und Output (die Antwort des Modells). Output-Tokens sind dabei deutlich teurer als Input-Tokens — bei den gängigen Modellen um den Faktor 3 bis 8. Die Monatskosten ergeben sich aus: Anzahl der Anfragen × (Input-Tokens ÷ 1 Mio. × Input-Preis + Output-Tokens ÷ 1 Mio. × Output-Preis). Genau diese Rechnung führt der Rechner oben für alle ausgewählten Modelle gleichzeitig aus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was ist ein Token und wie viele Tokens hat ein Text?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ein Token ist die kleinste Abrechnungseinheit eines Sprachmodells — im Deutschen entspricht ein Token grob 3 bis 4 Zeichen. Eine DIN-A4-Seite Text mit rund 3.000 Zeichen sind etwa 750 bis 1.000 Tokens. 1 Million Tokens — die übliche Preiseinheit der Anbieter — entsprechen damit ungefähr 1.000 bis 1.300 Seiten Text."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welches LLM ist am günstigsten?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Für einfache, hochvolumige Aufgaben sind Effizienz-Modelle am günstigsten: GPT-5 mini (0,25 USD Input / 2 USD Output pro 1 Mio. Tokens) und Claude Haiku 4.5 (1 USD / 5 USD). Frontier-Modelle wie die Claude-Opus-Klasse (5 USD / 25 USD) lohnen sich nur für komplexes Reasoning oder anspruchsvolle Code-Aufgaben. Beim identischen Chatbot-Workload mit 10.000 Anfragen pro Monat liegt der Unterschied bei 23 US-Dollar (Haiku 4.5) gegenüber 115 US-Dollar (Opus-Klasse) — Faktor 5."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie kann ich meine LLM-API-Kosten senken?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Die fünf wirksamsten Hebel: Erstens ein kleineres Modell oder Model-Routing einsetzen — einfache Teilaufgaben ans günstige Modell, nur komplexe ans teure. Zweitens Prompt-Caching nutzen: wiederholte Prompt-Teile werden je nach Anbieter mit bis zu 90 Prozent Rabatt abgerechnet. Drittens Batch-APIs für Nicht-Echtzeit-Jobs verwenden (typischerweise rund 50 Prozent Rabatt). Viertens System-Prompts und mitgeschickten Kontext kürzen, denn Input-Tokens zahlen bei jeder Anfrage erneut ein. Fünftens die Output-Länge begrenzen, weil Output-Tokens am teuersten sind."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://www.provimedia.de"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://www.provimedia.de/tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "LLM-API-Kostenrechner"
+          }
+        ]
+      }
+    ]
+  },
+  "url": "/tools/llm-kosten-rechner",
+  "version": "38f739f98f157bb72924c071a56d8f39",
+  "clearHistory": false,
+  "encryptHistory": false
+}

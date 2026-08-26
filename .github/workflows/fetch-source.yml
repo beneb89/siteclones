@@ -1,0 +1,80 @@
+name: fetch-source
+
+# Downloads a page's own JavaScript and puts it next to that page's clone.
+#
+# A ditto clone is what the browser painted; script bundles are not part of it
+# (the compiler's classifyAsset keeps images, svg, video, fonts and css, and
+# drops everything else). For a page whose point is its script — a calculator,
+# a configurator — the clone shows the widget without the code behind it.
+#
+# Runs here for the same reason the cloner does: the sandbox's egress proxy
+# answers 403 to the target hosts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Page whose scripts to fetch
+        type: string
+        required: true
+      dest:
+        description: Folder under sites/ the page's clone lives in
+        type: string
+        default: tools
+      slug:
+        description: Site folder name (leave empty to derive it from the URL)
+        type: string
+        default: ''
+      all:
+        description: Also fetch scripts hosted on other domains
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch scripts
+        env:
+          URL: ${{ inputs.url }}
+          DEST: ${{ inputs.dest }}
+          SLUG: ${{ inputs.slug }}
+          ALL: ${{ inputs.all == true && '--all' || '' }}
+        run: |
+          node scripts/fetch-source.mjs "$URL" --dest="$DEST" \
+            ${SLUG:+--slug="$SLUG"} $ALL | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A sites
+          if git diff --cached --quiet; then
+            echo "nothing new to commit"
+            exit 0
+          fi
+          git commit -q -m "Fetch page scripts for ${{ inputs.url }}
+
+          Downloaded on a GitHub runner (run ${{ github.run_id }}), since the
+          sandbox's egress policy blocks the target hosts."
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME"; then
+              git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            else
+              git rebase --abort || true
+            fi
+            echo "push attempt $attempt failed, retrying in $((attempt * 15))s"
+            sleep $((attempt * 15))
+          done
+          echo "could not push results after 3 attempts" >&2
+          exit 1

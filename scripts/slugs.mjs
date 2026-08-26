@@ -7,6 +7,7 @@
 // the same domain — 15 dataforseo.com pages, 4 github.com repos — the path is
 // folded in to keep every target in its own folder.
 import { readFileSync } from "node:fs";
+import { pathToFileURL } from "node:url";
 
 const MULTIPART_TLDS = new Set([
   "co.uk", "org.uk", "ac.uk", "gov.uk", "co.jp", "co.kr", "co.nz", "co.za",
@@ -95,7 +96,11 @@ export function readTargets(file) {
 // `node scripts/slugs.mjs <file> | head` closes the pipe early; that's not an error.
 process.stdout.on("error", (err) => { if (err.code === "EPIPE") process.exit(0); });
 
-if (process.argv[2]) {
+// Only when run as a command. The module is also imported (fetch-source.mjs
+// wants slugsFor), and an import would otherwise take that caller's first
+// argument for a targets file and try to read a URL off disk.
+const runAsCli = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (runAsCli) {
   const file = process.argv[2];
   if (!file) {
     console.error("usage: slugs.mjs <targets-file>");
