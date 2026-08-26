@@ -1,0 +1,5 @@
+status	bytes	file	url
+200	90477	index.html	https://www.provimedia.de/tools/llm-kosten-rechner
+inline	5557	inline/01.json	application/ld+json
+200	456162	provimedia.de/build/assets/app-C2UqCN8s.js	https://www.provimedia.de/build/assets/app-C2UqCN8s.js
+200	70279	provimedia.de/build/assets/gsap-BDA7kSH2.js	https://www.provimedia.de/build/assets/gsap-BDA7kSH2.js
