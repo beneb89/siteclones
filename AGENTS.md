@@ -17,7 +17,8 @@ This repo is a workspace for cloning websites into runnable apps with
 - `targets.txt`, `targets-full.txt` and `targets-deep.txt`
   (→ `top20-personal-brands`, multi-page; `deep` carries a higher route cap),
   `targets-galleries.txt` (→ `top20-personal-brands/galleries`, single page),
-  `targets-seo.txt` (→ `seo-reference`, single page)
+  `targets-seo.txt` (→ `seo-reference`, single page),
+  `targets-tools.txt` (→ `tools`, single page)
 - `.github/workflows/clone.yml` — runs the batch on a GitHub runner (open
   egress) and commits the results back to the branch
 - `logs/<dest>/<slug>.log` — full compiler output per batch target

@@ -73,13 +73,18 @@ Each list has a folder under `sites/` that its output is grouped into:
 | `targets-competitors-portals.txt` | `sites/decaid-competitors/` | the corporate-portal competitors, captured shallower |
 | `targets-conversion.txt` | `sites/conversion-personal-brands/` | personal brands picked for their funnel craft, captured shallow |
 | `targets-seo.txt` | `sites/seo-reference/` | 57 reference pages from the SEO/GEO/paid-media note |
+| `targets-tools.txt` | `sites/tools/` | standalone interactive tool pages, single page each |
 
 Everything in `sites/top20-personal-brands/` itself is captured in full
 (`--mode=multi --max-routes=60`): ditto follows each site's navigation and
 clones the subpages it reaches. The galleries in `galleries/` stay
 landing-page only — they sit on large third-party portals, so a crawl there
 follows someone else's site rather than a personal brand's menu. The
-SEO reference pages are single pages by nature.
+SEO reference pages are single pages by nature, and so are the tool pages in
+`tools/` — a calculator is the whole point of its own URL. What a clone of one
+gives back is the rendered page, inputs and labels included; the arithmetic
+behind them stays in the original site's JavaScript, which ditto does not
+reimplement.
 
 Two lists can share a `--dest`: `targets-full.txt` lands beside the roundup
 brands but tracks additions the roundup never named, so it stays its own list.

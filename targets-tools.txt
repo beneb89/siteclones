@@ -1,0 +1,15 @@
+# Clone targets — one URL per line, "#" starts a comment.
+#
+# Standalone tool pages: interactive calculators and the like, cloned as
+# single pages. A tool page is the whole point of its URL — the crawl has
+# nothing to follow that is worth keeping, so this list stays single-page
+# (no --mode=multi) like targets-galleries.txt and targets-seo.txt.
+#
+# What comes through is the rendered page: layout, copy, inputs and their
+# labels. The calculator's arithmetic lives in the site's own JavaScript,
+# which ditto does not reimplement — the clone reproduces what the browser
+# painted, so expect the fields to be there and the maths not to run.
+#
+# Run with: ./scripts/clone-batch.sh --file=targets-tools.txt --dest=tools
+
+https://www.provimedia.de/tools/llm-kosten-rechner   # LLM cost calculator

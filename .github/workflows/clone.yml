@@ -24,6 +24,7 @@ on:
           - targets-competitors-portals.txt
           - targets-conversion.txt
           - targets-seo.txt
+          - targets-tools.txt
         default: all
       force:
         description: Re-clone sites that already exist
@@ -62,6 +63,7 @@ jobs:
           competitors='{"list":"targets-competitors.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=60 --depth=2"}'
           conversion='{"list":"targets-conversion.txt","dest":"conversion-personal-brands","flags":"--mode=multi --max-routes=15 --depth=1 --no-screenshots --no-motion"}'
           seo='{"list":"targets-seo.txt","dest":"seo-reference","flags":""}'
+          tools='{"list":"targets-tools.txt","dest":"tools","flags":""}'
           more='{"list":"targets-competitors-more.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=200 --depth=2"}'
           portals='{"list":"targets-competitors-portals.txt","dest":"decaid-competitors","flags":"--mode=multi --max-routes=80 --depth=1"}'
           case "$WANTED" in
@@ -74,7 +76,8 @@ jobs:
             targets-deep.txt)      lists="[$deep]" ;;
             targets-conversion.txt)  lists="[$conversion]" ;;
             targets-seo.txt)       lists="[$seo]" ;;
-            *) lists="[$brands,$galleries,$full,$deep,$competitors,$more,$portals,$conversion,$seo]" ;;
+            targets-tools.txt)     lists="[$tools]" ;;
+            *) lists="[$brands,$galleries,$full,$deep,$competitors,$more,$portals,$conversion,$seo,$tools]" ;;
           esac
           echo "lists=$lists" >>"$GITHUB_OUTPUT"
           echo "cloning: $lists"
